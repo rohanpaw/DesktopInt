@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="dd555244-9323-49fb-a4fe-87da8b30f3e7"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_Imapact_Of_2nd_PSU_On_Battery_Loading
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_Imapact_Of_2nd_PSU_On_Battery_Loading"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyImpactOfSecondPSUOnBatteryAndAlarm"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c4043c69-acc7-46bb-9885-8445144f2c3c">
+				<argument
+				argname="sFileName"
+				id="1d917447-feec-43e1-ac52-58a668a78b39">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_51852_Verify_Impact_of_2nd_PSU_on_Battery_Loading
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelSheet"
+				id="fe0844da-8004-47ff-bfee-f88f19f9b80d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_Imapact_Of_2nd_PSU_On_Battery_Loading.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

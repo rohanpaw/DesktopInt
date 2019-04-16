@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1ce07a05-a87a-431c-8de2-857e3832d7cb"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Changing_CPU_And_PSU
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Changing_CPU_And_PSU"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyBatteryStandbyAndAlarmLoadOnChangingCPUAndPSU"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c3b7d6d5-2de1-40a6-9dad-263400946875">
+				<argument
+				argname="sFileName"
+				id="406f47df-78c5-4bad-b21e-0f3aab044988">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_144_145_Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Changing_CPU_And_PSU
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelSheet"
+				id="455f5284-d07a-4911-b1e3-61b1acad693d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Changing_CPU_And_PSU.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

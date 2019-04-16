@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="482a1462-e779-4a48-b5ff-323d2abde574"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Slot_Cards
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Slot_Cards"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyBatteryStandbyAndAlarmLoadOnSlotCardAddDelete"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2de5fc6f-9cc7-460c-96f8-4966a9d912bf">
+				<argument
+				argname="sFileName"
+				id="4461b9d2-66c4-48a3-9f07-9255a645b0a7">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_148_Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Slot_Cards
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelSheet"
+				id="e0d9062a-f23c-49cc-b5cb-7706d0d0f646">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Slot_Cards.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

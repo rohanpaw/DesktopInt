@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="f4a8a6ff-46bb-4b6c-a7fc-d56eb3158c6d"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_24V_Load_On_Addition_Deletion_Of_Accessories
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_24V_Load_On_Addition_Deletion_Of_Accessories"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verify24VPsuLoadOnAdditionDeletionOfAccessories"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="8a1bc609-f9d9-4fa6-bfee-3ab99d7e19a8">
+				<argument
+				argname="sFileName"
+				id="04aaad88-b6de-4930-9887-29482f1be672">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Verify_24V_Load_On_Addition_Deletion_Of_Accessories
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelandDevicesSheet"
+				id="c2b7994d-b741-473c-b40e-20fae195a9e0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels and Devices
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_24V_Load_On_Addition_Deletion_Of_Accessories.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

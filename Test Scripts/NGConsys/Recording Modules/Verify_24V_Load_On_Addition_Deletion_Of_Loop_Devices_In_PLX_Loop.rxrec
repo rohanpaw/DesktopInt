@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="76f7efe8-a448-4c9b-8751-049cf3b351de"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_PLX_Loop
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_PLX_Loop"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInPLXLoop"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="19a21951-7b78-4c73-b039-fb5a74a6e185">
+				<argument
+				argname="sFileName"
+				id="cae5f647-b9ca-4659-a801-c5012ec4b6f5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_PLX_Loop
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelandDevicesSheet"
+				id="2c8113f2-7886-46d6-9231-fd90cf70b30d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels and Devices
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_PLX_Loop.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

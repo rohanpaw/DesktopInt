@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a7ba48e6-87da-430b-bb20-93aec3ba7bbe"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_40V_load_calculation_for_PFI
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_40V_load_calculation_for_PFI"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verify40VCalculationforPFI"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9dd7a98f-4a32-43fa-abdd-1f2627f50c93">
+				<argument
+				argname="sFileName"
+				id="f096d4ea-d5d7-4f3c-bfbc-f2fe351d718d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Verify_40V_Calculation_For_PFI
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelSheet"
+				id="cb451d39-613c-41f3-808f-6d28fbfb3570">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_40V_load_calculation_for_PFI.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

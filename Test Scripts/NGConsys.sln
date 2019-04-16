@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 8.3
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C454BB53-6183-46A6-96DD-02881C671519}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGConsys", "NGConsys\NGConsys.csproj", "{2AFC11C6-AF13-412E-88E0-B5B8D28C1BA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranorex Automation Helpers", "RanorexAutomationHelpers\Ranorex Automation Helpers.csproj", "{D936E077-7C8C-47CC-B3C9-E35F75ED262A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AFC11C6-AF13-412E-88E0-B5B8D28C1BA0}.Debug|x86.Build.0 = Debug|x86
+		{2AFC11C6-AF13-412E-88E0-B5B8D28C1BA0}.Debug|x86.ActiveCfg = Debug|x86
+		{2AFC11C6-AF13-412E-88E0-B5B8D28C1BA0}.Release|x86.Build.0 = Release|x86
+		{2AFC11C6-AF13-412E-88E0-B5B8D28C1BA0}.Release|x86.ActiveCfg = Release|x86
+		{D936E077-7C8C-47CC-B3C9-E35F75ED262A}.Debug|x86.Build.0 = Debug|x86
+		{D936E077-7C8C-47CC-B3C9-E35F75ED262A}.Debug|x86.ActiveCfg = Debug|x86
+		{D936E077-7C8C-47CC-B3C9-E35F75ED262A}.Release|x86.Build.0 = Release|x86
+		{D936E077-7C8C-47CC-B3C9-E35F75ED262A}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

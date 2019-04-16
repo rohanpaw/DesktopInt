@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="47e0c49e-5bf3-42fa-a403-9c3f9d9642ab"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Addition_Deletion_Of_Ethernet
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Addition_Deletion_Of_Ethernet"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyBatteryStandbyAndAlarmLoadOnEthernetAddDelete"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="b80a33e5-e7bb-43cf-a33f-1c434fd825ff">
+				<argument
+				argname="sFileName"
+				id="f062ea89-7d45-4328-9619-00ba6e318078">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_146_Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Addition_Deletion_Of_Ethernet
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelSheet"
+				id="b4cade1a-25d2-4640-9c49-f6eef8786d8f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Addition_Deletion_Of_Ethernet.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

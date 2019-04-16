@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="14873f37-b9cd-45ee-9bbe-7ed985cda72d"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_40V_Load_On_Changing_CPU_Of_Panel
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_40V_Load_On_Changing_CPU_Of_Panel"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verify40VLoadOnChangingCPU"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0f8316b9-dba7-42c2-8180-d939bb831c85">
+				<argument
+				argname="sFileName"
+				id="30e02bbf-9b22-4c34-95eb-6166bd7c8ff8">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Verify_40V_Load_On_Changing_CPU_Of_Panel
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelSheet"
+				id="71c04958-340d-493e-93b8-3d2e68e8b1d5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_40V_Load_On_Changing_CPU_Of_Panel.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

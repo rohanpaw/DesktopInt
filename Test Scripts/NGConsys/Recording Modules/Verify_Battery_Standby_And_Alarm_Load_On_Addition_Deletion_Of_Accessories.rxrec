@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="90ca7bba-d172-4271-86c4-6b96aba2ee03"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyBatteryStandbyAndAlarmLoadOnAdditionAndDeletionOfAccessories"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="1b0d4836-ed68-4cda-ae2a-79520394186e">
+				<argument
+				argname="sFileName"
+				id="bbb161c4-2c7b-4d69-ab7e-61455bc68566">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_149_Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelSheet"
+				id="255d8aec-dc54-4b1e-842f-961a40306790">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

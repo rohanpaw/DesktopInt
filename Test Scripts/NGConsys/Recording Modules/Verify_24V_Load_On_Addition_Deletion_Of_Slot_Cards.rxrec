@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4adaba41-4a16-4327-9c0a-6873dadafd5f"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_24V_Load_On_Addition_Deletion_Of_Slot_Cards
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_24V_Load_On_Addition_Deletion_Of_Slot_Cards"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verify24VPsuLoadOnAdditionDeletionOfSlotCards"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="499a55cb-1625-4abf-9bea-6fba1a42a180">
+				<argument
+				argname="sFileName"
+				id="dc705028-0208-43fe-87ef-fbda10f0011e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Verify_24V_Load_On_Addition_Deletion_Of_Slot_Cards
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelandDevicesSheet"
+				id="1bb64da1-ceda-48c4-be18-d269be7ac26c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels and Devices
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_24V_Load_On_Addition_Deletion_Of_Slot_Cards.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

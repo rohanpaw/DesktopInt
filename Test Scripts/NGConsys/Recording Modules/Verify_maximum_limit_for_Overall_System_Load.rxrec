@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="508d59ad-2965-4c76-927e-7ce98d3ea7cc"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_maximum_limit_for_Overall_System_Load
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_maximum_limit_for_Overall_System_Load"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyMaxSystemLoadValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e9d1985e-919b-4068-81a5-4a3d5238d06f">
+				<argument
+				argname="sFileName"
+				id="1a224aec-7912-4aa9-af4e-d9d10f70a63f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						50944_Verify_maximum_limit_for_Overall_System_Load
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelSheet"
+				id="6841f28f-0f53-4507-9823-2dad6296142c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_maximum_limit_for_Overall_System_Load.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
