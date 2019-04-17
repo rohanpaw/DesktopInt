@@ -47,7 +47,7 @@ namespace TestProject.Libraries
 			string[] splitPath = dirPath.Split('\\');
 			
 			string actualDirPath = string.Empty;
-			for (int i = 0; i < splitPath.Length && !actualDirPath.Contains("NGConsys Automation"); i++)
+			for (int i = 0; i < splitPath.Length && !actualDirPath.Contains("consys-uiauto"); i++)
 			{
 				actualDirPath = actualDirPath + splitPath[i] + "\\";
 			}
