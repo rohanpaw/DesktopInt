@@ -156,5 +156,6 @@ namespace Ranorex.AutomationHelpers.UserCodeCollections
         {
             return path.StartsWith(".") ? Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, path)) : path;
         }
+        
     }
 }
