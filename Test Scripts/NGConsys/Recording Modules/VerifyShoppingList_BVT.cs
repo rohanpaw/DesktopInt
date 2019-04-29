@@ -128,8 +128,8 @@ namespace TestProject.Recording_Modules
             Validate.AttributeEqual(repo.PrintPreview.PrintInfo, "Enabled", "True");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.PARTCloseButton' at Center.", repo.PrintPreview.PARTCloseButtonInfo, new RecordItemIndex(13));
-            repo.PrintPreview.PARTCloseButton.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_Close' at Center.", repo.PrintPreview.btn_CloseInfo, new RecordItemIndex(13));
+            repo.PrintPreview.btn_Close.Click();
             Delay.Milliseconds(200);
             
         }

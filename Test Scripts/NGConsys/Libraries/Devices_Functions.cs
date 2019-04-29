@@ -4233,7 +4233,232 @@ namespace TestProject.Libraries
 		}
 		
 		
-	
+	/********************************************************************
+		 * Function Name: ChangeCableCapacitance
+		 * Function Details: To change cable capacitance
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 19/04/2019
+		 ********************************************************************/
+		// Change cable capacitance method
+		[UserCodeMethod]
+		public static void ChangeCableCapacitance(int fchangeCableCapacitance, string sLabelName)
+		{
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			//Click on Panel Node
+			repo.ProfileConsys1.PanelNode.Click();
+			
+			//Click on Loop A in Navigation tree tab
+			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			
+			SelectRowUsingLabelName(sLabelName);
+			
+			//Click on cable capacitance cell
+			repo.ProfileConsys1.cell_CableCapacitance.Click();
+			
+			//Change the value of cable length
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableCapacitance + "{Enter}");
+			
+			//Click on Panel Node
+			repo.ProfileConsys1.PanelNode.Click();
+			Delay.Duration(1000, false);
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyCableLength
+		 * Function Details: To verify cable length
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/04/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyCableLength(string sCableLength)
+		{
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			//Click on Panel Node
+			repo.ProfileConsys1.PanelNode.Click();
+			
+			//Click on Loop A in Navigation tree tab
+			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			
+			//Click on cable length cell
+			repo.ProfileConsys1.cell_CableLength.Click();
+			
+			string actualCableLength = repo.ProfileConsys1.txt_CableLength.TextValue;
+			
+			
+			// Comparing actual and expected value
+			if(actualCableLength.Equals(sCableLength))
+			{
+				Report.Log(ReportLevel.Success,"Cable length value " +sCableLength+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Cable length value is displayed as "+actualCableLength+ " instead of "+ sCableLength);
+			}
+
+
+				
+		}
+			
+		 /********************************************************************
+		 * Function Name: VerifyCableLengthInNodeGalleryItems
+		 * Function Details: To verify cable length
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/04/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyCableLengthInNodeGalleryItems(string sCableLength)
+		{	
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Day Matches night text in Search Properties fields to view cable length;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Length" +"{ENTER}" );
+			
+			repo.FormMe.cell_CableLength.Click();
+			
+			string actualCableLength = repo.FormMe.txt_InventoryProperty.TextValue;
+			
+			// Comparing actual and expected value
+			if(actualCableLength.Equals(sCableLength))
+			{
+				Report.Log(ReportLevel.Success,"Cable length value " +sCableLength+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Cable length value is displayed as "+actualCableLength+ " instead of "+ sCableLength);
+			}
+
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: verifyMinMaxThroughSpinControlForCableLength
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/04/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void verifyMinMaxThroughSpinControlForCableLength(string minLimit,string maxLimit)
+		{
+			// Click on Cable Length cell
+			repo.FormMe.cell_CableLength.Click();
+			
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+ maxLimit +"{ENTER}");
+			
+			// Click on Cable Length cell
+			repo.FormMe.cell_CableLength.Click();
+			
+			repo.FormMe.cableLengthSpinUpButton.Click();
+			
+			string actualCableLengthValue = repo.FormMe.txt_InventoryProperty.TextValue;
+			
+			if(actualCableLengthValue.Equals(maxLimit))
+			{
+				Report.Log(ReportLevel.Success,"Spin control accepts values within specified max limit");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Spin control does not accepts values within specified max limit");
+			}
+			Keyboard.Press("{ENTER}");
+			
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+ minLimit +"{ENTER}");
+			
+			// Click on Cable Length cell
+			repo.FormMe.cell_CableLength.Click();
+			
+			repo.FormMe.cableLengthSpinDownButton.Click();
+		
+			actualCableLengthValue =repo.FormMe.txt_InventoryProperty.TextValue;
+			
+			if(actualCableLengthValue.Equals(minLimit))
+			{
+				Report.Log(ReportLevel.Success,"Spin control accepts values within specified min limit");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Spin control does not accepts values within specified min limit");
+			}
+		}
+		
+		/********************************************************************
+		 * Function Name: SelectNodeInventoryLabel
+		 * Function Details: To select points grid row
+		 * Parameter/Arguments: sRowNumber
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 25/04/2018
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void SelectNodeInventoryLabel(string sRowNumber)
+		{
+			sRow=sRowNumber;
+			//Click on row from points grid
+			repo.FormMe.NodeInventoryLabel.Click();
+		}
+		
+		/***********************************************************************************************************
+		 * Function Name: verifyShoppingListDevicesTextForPxD
+		 * Function Details: To verify shopping list devices via clicking on its row
+		 * Parameter/Arguments: sFileName,sDeviceSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :  26/04/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyShoppingListDevicesTextForPxD(string sExpectedText)
+		{
+			
+			string actualText = repo.ShoppingListCompatibilityModeE.Cell18.Text;
+				
+			if(actualText.Equals(sExpectedText))
+			{
+				Report.Log(ReportLevel.Success,"Model name " +actualText+ " is displayed successfully");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Model name" +sExpectedText+ " is not displayed correctly instead " +actualText+  "is displayed " );
+			}
+		}
+		
+		
+		/***********************************************************************************************************
+		 * Function Name: verifyShoppingListDevicesTextForPSC
+		 * Function Details: To verify shopping list devices via clicking on its row
+		 * Parameter/Arguments: sFileName,sDeviceSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 26/04/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyShoppingListDevicesTextForPSC(string sExpectedText)
+		{
+			
+			string actualText = repo.ShoppingListCompatibilityModeE.CellF22.Text;
+				
+			if(actualText.Equals(sExpectedText))
+			{
+				Report.Log(ReportLevel.Success,"Model name " +actualText+ " is displayed successfully");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Model name" +sExpectedText+ " is not displayed correctly instead " +actualText+  "is displayed " );
+			}
+		}
+		
+		
 }
 }
 

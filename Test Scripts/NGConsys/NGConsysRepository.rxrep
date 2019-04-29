@@ -3100,6 +3100,103 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[2]//container[@automationid='PART_ItemsPresenter']/row[@index=$sRowIndex]/?/?/progressbar
 			</item>
+			<item
+			capname="text"
+			id="af798fdb-5ace-4417-b439-3b1a020626f3"
+			name="DeviceModeAfterReopen"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="text"
+			id="f6ee292f-0629-4fa8-a56f-f620834b1045"
+			name="DeviceSensitivityAfterReopen"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="cell"
+			id="103cbd47-0037-40a6-b35b-62cfbcaeb884"
+			name="cell_CableLength"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/?/?/cell[@isheader='False']
+			</item>
+			<item
+			capname="button"
+			id="b56bf299-c06b-4863-9ee8-b67f1dde30f1"
+			name="cableLengthSpinUpButton"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//text/list[2]/button[@automationid='PART_SpinUpButton']
+			</item>
+			<item
+			capname="button"
+			id="cefba304-8b5e-46e3-b858-02a3953d62d7"
+			name="cableLengthSpinDownButton"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//text/list[2]/button[@automationid='PART_SpinDownButton']
+			</item>
+			<item
+			capname="text"
+			id="eda9330d-8312-41fd-946d-c96a3f4cff2f"
+			name="NodeInventoryLabel"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row[$sRow]/row/cell[3]/text
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="c8664b74-fb5a-4463-bcdd-6730aad5a906"
+			name="OtherSlotCards"
+			refimgid="5cb9a71b-5a8c-4853-9219-c927687a81b3"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@text='Other Slot Cards  (0 of 6)']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="e824eba8-fd71-419f-90da-a0c3b8d9fe49"
+			name="Backplane2_Expander"
+			refimgid="167b200d-81ac-43c3-9646-2af1b16f10c0"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[4]/button[@automationid='Expander']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="259e25d1-e8dd-4c7b-962d-b2beed423a94"
+			name="Backplane2_OtherSlotCards"
+			refimgid="be438f89-1cda-4dd1-b702-58db57b60e83"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[4]/treeitem/text[@text='Other Slot Cards  (1 of 6)']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="f34854bd-6e29-4b2f-8a27-677327158935"
+			name="Backplane3_Expander"
+			refimgid="5c1a5807-5f82-4d4b-b0cf-429953487b7f"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[5]/button[@automationid='Expander']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="1ec2d9f3-6ab6-43b4-b94d-60c270ad0a0e"
+			name="Backplane3_OtherSlotCards"
+			refimgid="87b925e2-bcd6-4480-8408-5cca3bb8cdc1"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[5]/treeitem/text[@text='Other Slot Cards  (1 of 6)']
+			</item>
+			<item
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="container"
+			id="8e84cde2-938e-46e4-afc6-e8a89ec14ff2"
+			name="Header_ProfileConsys"
+			refimgid="70aa537b-0be6-416b-8ccc-a3521ae511c9"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/container[@automationid='PART_HeaderBorder']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/container[@automationid='PART_HeaderBorder']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -3134,11 +3231,40 @@ W/AAAAAASUVORK5CYII=
 			addcaps="button,wpfelement,wpfgroupelement"
 			capname="button"
 			id="143c5434-4ee7-4582-9b76-f7136459f644"
-			name="PARTCloseButton"
+			name="btn_Close"
 			refimgid="c8c2cf5f-eb37-4840-8328-34a0c58f597f"
 			refpath="/form[@title='Print Preview']/grip[@automationid='PART_DragWidget']/container[@automationid='PART_Grid']/list[@automationid='PART_HeaderButtons']/button[@automationid='PART_CloseButton']"
 			searchtimeout="30000ms">
 				/form[@title='Print Preview']//list[@automationid='PART_HeaderButtons']/button[@automationid='PART_CloseButton']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="ba741b31-3c34-4b05-b54b-79946f6e6659"
+			name="PARTMaximize"
+			refimgid="81f1be28-b202-442e-a69f-31e9bffd741c"
+			refpath="/form[@title='Print Preview']/grip[@automationid='PART_DragWidget']/container[@automationid='PART_Grid']/list[@automationid='PART_HeaderButtons']/button[@automationid='PART_Maximize']"
+			searchtimeout="30000ms">
+				/form[@title='Print Preview']//list[@automationid='PART_HeaderButtons']/button[@automationid='PART_Maximize']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="132c808b-0d42-40b5-8781-939a5e68c753"
+			name="ExportDropdown"
+			refimgid="a41b1d59-002a-4f0d-9f40-f32e18ecb2c0"
+			refpath="/form[@title='Print Preview']/list[2]/button[@automationid='PART_Button']/button[@text='Export...']"
+			searchtimeout="30000ms">
+				/form[@title='Print Preview']/list[2]/button[@automationid='PART_Button']/button[@text='Export...']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="da5d2408-f0f2-47f7-8850-f47457d51ea8"
+			name="btn_CloseB"
+			refimgid="3bd1ddef-ae4e-4387-bad3-2e88557db09e"
+			searchtimeout="30000ms">
+				/form[@title='Print Preview']/grip[@automationid='AdditionalDragWidget']//list[@automationid='PART_HeaderButtons']/button[@automationid='PART_CloseButton']
 			</item>
 			<basepath>
 				/form[@title='Print Preview']
@@ -3287,6 +3413,112 @@ ZqZtt9vBcdzpAmazGXmuhJ19WSmeebKOZHkb5XJ5x+/3P+B5fm+ogMFgAOlPmQmWb+JDrg5R2obL
 5UIwGKTtYCQB+m0ymZRlNBqh0+kQDochSdLoAhqNBlqtFjabDYIgHMbj8RR5MwcjC+j1evh8vgNy
 bSEQCMwRytR/TbRYLCBvBLIsH7Es26pUKg8dDscltVo9QTkk1yZDBPI7TxcgV0Sr1eqT4tVoNHqN
 hM8MsgM0m802GX90Oh38BvNsx7yLsF6zAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="0d7f56ff-8408-4ae3-aca2-348ccd3be36b"
+		isrooted="True"
+		name="ExportDocument"
+		refpath="/form[@title='Export Document...']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="801b9ae8-0457-4542-8018-d143d7871c5e"
+			name="ExcelFormat"
+			refimgid="7e74160f-b7a8-491f-a9c1-b1cd08ec555d"
+			refpath="/form[@title='Export Document...']/combobox/text[2]"
+			searchtimeout="30000ms">
+				/form[@title='Export Document...']/combobox/text[2]
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="f6dfe232-b48a-4bf6-be88-03a5ec92fcf0"
+			name="ButtonOK"
+			refimgid="fe957215-8fff-49b2-8959-f56ca13a5f80"
+			refpath="/form[@title='Export Document...']/list[1]/button[1]/button[@text='OK']"
+			searchtimeout="30000ms">
+				/form[@title='Export Document...']/list[1]/?/?/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@title='Export Document...']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAF9SURBVDhPrZIxS4JRFIbvH/BPuPsP3JwdrMWh
+IcFNUEQUjdzE1TEQXBUEQQTBQQoXRdEwQ1BDSFGCCEILNcXzdP1sjAa/DjzDvZfzct73XCUi7Pf7
+k1FOpxMzqGaziRkUJsu8wHg8Jh6Pk81micVi9Pt9NpMJcn2NnJ8fOTvjpVQiGo3SaDRYLpcMBgP8
+fj/KbreTTqcJBoNkMhkcDgeDbhceHpC7O0TfycUF69tbWq0WoVCIfD5PKpWiWCyidFHS6l6vl0ql
+gsViod1uw26HPD8jLhdSLsPnp7G20WiEz+cjl8uxWq3+EHh6Ojbf3yObzY/jY3k8HsoHUV2/C+iz
+XF0hNzfIcAizGbuPDyY6m0AgYFhOJpPU63WU1WqlWq0aAdVqNWw2G49aXS4vEbcb0cISifCq3xKJ
+BIVCgfl8bjSHw2FUVwe2WCyYTqdGur1ej9X7u2GBQ5gH9Ga+3t4M/+v12hh9u90y1NP9w0fS/syg
+dHpHnyei6HQ4nQ7fKeJJm+Bzy4oAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="f2e559ec-480a-4e45-a5ee-fd9bf2827c71"
+		isrooted="True"
+		name="ShoppingListCompatibilityModeE"
+		refpath="/form[@processname='EXCEL' and @class='XLMAIN' and @instance='0']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="41e4425c-c906-41fc-85c5-89d08892e1e6"
+			name="Cell18"
+			refimgid="9081413f-bc4d-43f3-8867-1852f42ec6a5"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index='18']/cell[@address='F18']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="8d90adaf-eb72-478f-813c-c8ea1586b7f1"
+			name="CellF22"
+			refimgid="f5a8efd0-d246-43db-8790-7a5b788c02ab"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index='22']/cell[@address='F22']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="d310acd1-db24-4e50-98e7-e684a624b40a"
+			name="btn_CloseExcel"
+			refimgid="edaf1610-48b7-471a-8ce9-3dbedb25b9ad"
+			refpath="/form[@processname='EXCEL']/element[@class='EXCEL2' and @instance='0']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/button[@name='Close']"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='0']/element[2]/container[@caption='Ribbon']//container[@name='Ribbon']/button[@name='Close']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="5d62c05d-0c22-4eb1-b268-c146165ce95f"
+			name="CellF18"
+			refimgid="bfaaa1e4-5458-4eb1-b76d-5d306b68c922"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index=$sRow]/cell[@address=$sRow]
+			</item>
+			<basepath>
+				/form[@class='XLMAIN' and @instance='0']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIgSURBVDhPY8AGlMpd+OUKnL3l85ya5XMdd8nm
+Oq2FSmEChXIvO8Uyj2SFMo8exSK3bfJFrg8Uilz/KxS6/JfPd/4PNOS/XK7TefliZwdkDJS3lyt2
+0gLa5vlbqdzjP9CQ/4olbv8VioEYzQDrhqj/E3YuQsH9Oxb+dWhLuMCgVOH5n5ABuuX+/yOmlvy/
++vQumAbh1ad2/g+fWvwXbIBRY9j/2QfX/G/ZNBNsQOOGaUDFd/47tSWADZDPcwYbevzORYjhQAxy
+BcggsAHqlT7/u3cs+H/75aP/RvWh/y8+vvm/Z9uC/yrFHmADPDrTwJo/fvsCpkH48bsXCANAXvDo
+z/x/88WD/+vO7Pl/HehUt84UuBcIugBkgEqF9//Vp3f9//P3z/9FRzb9Vy52hxtAlAvMmiP/X3h0
+4/+rT+/+n7535b9+dSDxLlCt9P5ft2EqMAwe/vfuy/r/7P2r/+Urev8rFbqCDcAWC2tO70QYYNIU
+/n/RsU3/O7bOAcfCGqBX9l87+d+iIQJsACwdgJwNokH4BNA1cAM0qnz/23cm/tevDQIbYNkU9d+/
+P/u/Zpk3cV4glJDCJhX+Rwe/gYENTEg/QEn5HyED5HKd3wPF9qPgQtc9QLoW5IJapTL3mYpl7lsV
+S1wvKBS5vQFKoGem/dC8hx2ol/rxqhZ6S8sXuWkoFrqZKRa7+soXuFQp5Dkvk8tzPCef67QFqhQN
+MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
 		<basepath>

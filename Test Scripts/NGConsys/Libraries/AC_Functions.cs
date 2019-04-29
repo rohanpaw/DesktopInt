@@ -441,7 +441,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
+		 * Last Update : 19/04/2019 - Alpesh Dhakad - Added last line in this method
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void verifyMaxACUnitsValue(string expectedMaxACUnits)
@@ -456,8 +456,8 @@ namespace TestProject.Libraries
 			else
 			{
 				Report.Log(ReportLevel.Failure,"Max AC Units are not displayed correctly" +maxACUnits);
-			}
-			
+			}		
+			repo.ProfileConsys1.tab_Points.Click();			
 		}
 		
 		/********************************************************************
@@ -483,6 +483,45 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"AC Units are not displayed correctly" + ", Expected AC Units:  " + expectedACUnits  + " Actual AC Units: "+ ActualAcUnits);
 			}
 			
+		}
+		
+		/*****************************************************************************************************************
+		 * Function Name: VerifyACUnitIndicationWithISDevices
+		 * Function Details: 
+		 * Parameter/Arguments:   
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 19/04/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyACUnitIndicationWithISDevices()
+		{
+			string actualColour,expectedColor;
+			
+			//Go to Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			//Go to Physical layout
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			
+
+			float ActualACUnits = float.Parse(repo.ProfileConsys1.ACUnits.TextValue);
+			
+			//Retrieve foreground color
+			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
+			
+			
+			//Fetch max AC value drop text value and storing it in string
+			float maxACUnitsValue = float.Parse(repo.ProfileConsys1.MaxACUnits.TextValue);
+			
+			// To calculate and get the expected color value
+			expectedColor = Devices_Functions.calculatePercentage(ActualACUnits, maxACUnitsValue);
+			
+			// To verify Percentage
+			Devices_Functions.VerifyPercentage(expectedColor, actualColour);
+			
+			//Go to Points tab
+			repo.ProfileConsys1.tab_Points.Click();
 		}
 		
 		

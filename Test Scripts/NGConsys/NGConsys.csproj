@@ -736,6 +736,30 @@
       <UserCode>true</UserCode>
       <id>6c4f7cd6-5203-4b26-9d08-c536cb2bb43b</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_AC_Units_Calculation_For_Loops_With_IS_Devices.cs">
+      <BoundTo>dd2910d3-bf03-4aae-8726-b743cb0802d9</BoundTo>
+      <DependentUpon>Verify_AC_Units_Calculation_For_Loops_With_IS_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5af31ba5-87b1-4e27-97fd-a2636bb811e2</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_AC_Units_Calculation_For_Loops_With_IS_Devices.UserCode.cs">
+      <BoundTo>dd2910d3-bf03-4aae-8726-b743cb0802d9</BoundTo>
+      <DependentUpon>Verify_AC_Units_Calculation_For_Loops_With_IS_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9d4f5224-c854-4a2d-a0ab-480f7f7bf0b9</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_AC_Units_Calculation_For_Loops_With_IS_Devices_For_FIM.cs">
+      <BoundTo>1be20993-588e-4680-b890-9157b41bb5df</BoundTo>
+      <DependentUpon>Verify_AC_Units_Calculation_For_Loops_With_IS_Devices_For_FIM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c62ddc60-c929-45dd-bcf7-42da9bba7f57</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_AC_Units_Calculation_For_Loops_With_IS_Devices_For_FIM.UserCode.cs">
+      <BoundTo>1be20993-588e-4680-b890-9157b41bb5df</BoundTo>
+      <DependentUpon>Verify_AC_Units_Calculation_For_Loops_With_IS_Devices_For_FIM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3b9cba22-f5ff-427e-9c68-ac030bd87458</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Addition_Deletion_Of_Sounders_In_LPS800_Reflects_In_Shopping_List.cs">
       <BoundTo>24095037-571a-4d47-8239-9929cbe199e1</BoundTo>
       <DependentUpon>Verify_Addition_Deletion_Of_Sounders_In_LPS800_Reflects_In_Shopping_List.rxrec</DependentUpon>
@@ -771,6 +795,18 @@
       <DependentUpon>Verify_Addition_Of_IS_Devices_To_EXI800.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>1a61a860-c2dc-4346-b6ce-aadffc5d204b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Addition_Of_PxD_PSC_800_In_Shopping_List.cs">
+      <BoundTo>185a807f-8b28-4feb-a569-7ef042007059</BoundTo>
+      <DependentUpon>Verify_Addition_Of_PxD_PSC_800_In_Shopping_List.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a068af1f-7eb8-4b25-93e2-77f27ee435e0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Addition_Of_PxD_PSC_800_In_Shopping_List.UserCode.cs">
+      <BoundTo>185a807f-8b28-4feb-a569-7ef042007059</BoundTo>
+      <DependentUpon>Verify_Addition_Of_PxD_PSC_800_In_Shopping_List.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dc0193f1-e62c-4ce3-afea-0bb9ff2b91bf</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Addition_Of_Sounders_In_LPS800.cs">
       <BoundTo>e4fbbfae-6589-4d7b-ac66-cc9b88406dc2</BoundTo>
@@ -975,6 +1011,18 @@
       <DependentUpon>Verify_Cable_Capacitance_Based_On_Max_Allowed_IS_Units_for_Split_Loops.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>44e07686-9951-4503-889d-cc78fd9db0b7</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Cable_Length_Displayed_For_Pro_Panels.cs">
+      <BoundTo>09e6c353-b68f-4dd0-8ffc-d9e11524a752</BoundTo>
+      <DependentUpon>Verify_Cable_Length_Displayed_For_Pro_Panels.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2fa522d9-9ad5-464f-ab1b-5872a37ac959</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Cable_Length_Displayed_For_Pro_Panels.UserCode.cs">
+      <BoundTo>09e6c353-b68f-4dd0-8ffc-d9e11524a752</BoundTo>
+      <DependentUpon>Verify_Cable_Length_Displayed_For_Pro_Panels.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4cd416c2-427d-4a9b-8983-b810f8c3997d</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Copy_option_isdisabled_for_single_sounders.cs">
       <BoundTo>706dafb3-c3c4-4435-a95d-7b58a8b9039c</BoundTo>
@@ -1227,6 +1275,18 @@
       <DependentUpon>Verify_Deletion_Of_IS_Devices_To_EXI800.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a618cbe8-57b7-4143-98d0-4289f271b481</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Deletion_Of_PxD_PSC_800_From_Shopping_List.cs">
+      <BoundTo>9fca4674-9fae-4ef6-9829-a1196327c5b7</BoundTo>
+      <DependentUpon>Verify_Deletion_Of_PxD_PSC_800_From_Shopping_List.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4a25a6fc-1d95-4e55-bfc5-3322b1117f28</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Deletion_Of_PxD_PSC_800_From_Shopping_List.UserCode.cs">
+      <BoundTo>9fca4674-9fae-4ef6-9829-a1196327c5b7</BoundTo>
+      <DependentUpon>Verify_Deletion_Of_PxD_PSC_800_From_Shopping_List.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ceb4bcfe-9d83-4da1-9dd2-96d10272f5e6</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Deletion_Of_Sounders_Connected_To_LPS800.cs">
       <BoundTo>40a2c7b4-44a7-40ff-823f-723e9d241d5d</BoundTo>
@@ -1924,6 +1984,30 @@
       <UserCode>true</UserCode>
       <id>84aaec5c-1f35-4c9a-b8ca-fc9cdc82b782</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.cs">
+      <BoundTo>9fbf9143-514e-42d8-8452-8dccb042c2c9</BoundTo>
+      <DependentUpon>Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>45997939-6c98-4e54-9faf-a14ad8c6082d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.UserCode.cs">
+      <BoundTo>9fbf9143-514e-42d8-8452-8dccb042c2c9</BoundTo>
+      <DependentUpon>Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>555d08d5-928e-4935-a792-6dc4ffc9d7ca</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.cs">
+      <BoundTo>84b06e8b-efc6-49b5-9d87-61a7f9ef6124</BoundTo>
+      <DependentUpon>Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c58f20e7-8b12-4ebf-aeda-49094c66681a</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.UserCode.cs">
+      <BoundTo>84b06e8b-efc6-49b5-9d87-61a7f9ef6124</BoundTo>
+      <DependentUpon>Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>366ba626-dd2b-4ca2-a407-7a8acb035075</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Remote_LED_Indicator_Property_For_Devices.cs">
       <BoundTo>bc0d6f9c-370b-4560-b54d-60378d8e3bb1</BoundTo>
       <DependentUpon>Verify_Remote_LED_Indicator_Property_For_Devices.rxrec</DependentUpon>
@@ -1947,6 +2031,18 @@
       <DependentUpon>Verify_Cable_Capacitance_Based_On_Max_Allowed_IS_Units_for_Non_Split_Loops.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a52350cc-b008-46c3-97fd-31d229f30822</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.cs">
+      <BoundTo>a8f86c08-32d1-4097-aa88-e21aa70361c7</BoundTo>
+      <DependentUpon>Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>88813cac-3d7f-45a8-b60d-135f61990ba9</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.UserCode.cs">
+      <BoundTo>a8f86c08-32d1-4097-aa88-e21aa70361c7</BoundTo>
+      <DependentUpon>Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>14fbf36d-a409-4ff6-beaa-9c96f817b623</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project.cs">
       <BoundTo>ced9b1c6-103a-4494-a8fa-fa058d6793c4</BoundTo>
@@ -1996,6 +2092,30 @@
       <UserCode>true</UserCode>
       <id>b39ff580-be43-4081-80eb-fde094ceae84</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.cs">
+      <BoundTo>8ae08a22-7e86-463a-a398-6af7d6f52b4b</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8283ec6e-5e09-4743-b9a0-14525804ff3c</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.UserCode.cs">
+      <BoundTo>8ae08a22-7e86-463a-a398-6af7d6f52b4b</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6347056e-b65f-4466-b281-62a4ce93f3b0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.cs">
+      <BoundTo>7bb9b11d-7d7e-44b5-93c0-de4df087295a</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>605a80ff-07ff-4f6f-b7d4-cdbefc17b1e1</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.UserCode.cs">
+      <BoundTo>7bb9b11d-7d7e-44b5-93c0-de4df087295a</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b754b58e-2e5b-4fe1-8d71-ebf5d58263f2</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_If_User_Changed_And_Saved_Power_Source.cs">
       <BoundTo>87301a6f-290a-464f-9059-4ab512d46ef5</BoundTo>
       <DependentUpon>Verify_Reopen_Project_If_User_Changed_And_Saved_Power_Source.rxrec</DependentUpon>
@@ -2019,6 +2139,18 @@
       <DependentUpon>Verify_Reopen_Project_To_Verify_Device_Order.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a40a0f38-d22d-4f90-8d03-e3c0dfe51897</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.cs">
+      <BoundTo>60711ecb-1170-4b17-af59-08c71e7e3525</BoundTo>
+      <DependentUpon>Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f58f0c6b-2f87-4fc1-95ff-206efba7eb87</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.UserCode.cs">
+      <BoundTo>60711ecb-1170-4b17-af59-08c71e7e3525</BoundTo>
+      <DependentUpon>Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>79858ac1-9722-4757-8c9a-20b50e428379</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_The_Behaviour_When_ASC_For_LPS800__75mA.cs">
       <BoundTo>bb1a0e58-f116-443f-9b12-48692efd841b</BoundTo>
@@ -2079,6 +2211,30 @@
       <DependentUpon>Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a47a95fe-8766-41c5-9736-a28a5f67c324</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.cs">
+      <BoundTo>f9c93b2c-03cc-4dd2-83b8-7c0d941f54ef</BoundTo>
+      <DependentUpon>Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8a39052e-45ad-4bfc-a196-5715dbb673cf</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.UserCode.cs">
+      <BoundTo>f9c93b2c-03cc-4dd2-83b8-7c0d941f54ef</BoundTo>
+      <DependentUpon>Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>102094e1-cc94-40cf-8439-8578434a087d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.cs">
+      <BoundTo>f8707724-938c-48d2-a2ec-3d7d777b68f5</BoundTo>
+      <DependentUpon>Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b41b7b3d-2b26-4fbe-9dad-388a6af18ee0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.UserCode.cs">
+      <BoundTo>f8707724-938c-48d2-a2ec-3d7d777b68f5</BoundTo>
+      <DependentUpon>Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2adca04d-773d-4c70-8204-6420162eddf9</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_the_indication_should_be_shown_for_selected_loops.cs">
       <BoundTo>3a13ba89-f118-430a-81e1-3be294103485</BoundTo>
@@ -2574,6 +2730,16 @@
       <id>76b76f65-c045-483e-ad9c-8903454797bc</id>
       <recordtableid>7e18e2f7-e0da-42dc-8d17-d5c59120acf2</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_AC_Units_Calculation_For_Loops_With_IS_Devices.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>dd2910d3-bf03-4aae-8726-b743cb0802d9</id>
+      <recordtableid>55ec67c7-3815-4ead-bddd-dedeba62e4cd</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_AC_Units_Calculation_For_Loops_With_IS_Devices_For_FIM.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>1be20993-588e-4680-b890-9157b41bb5df</id>
+      <recordtableid>455cd66b-5450-4487-b677-84049b89d7ef</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Addition_Deletion_Of_Sounders_In_LPS800_Reflects_In_Shopping_List.rxrec">
       <id>24095037-571a-4d47-8239-9929cbe199e1</id>
       <recordtableid>19afc002-51fb-44c7-98d4-83fc78e4dd53</recordtableid>
@@ -2588,6 +2754,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>a6335752-2b49-4ce9-92ac-bc60248ce880</id>
       <recordtableid>d8713ec5-dab2-42e0-a45c-7104e120c02a</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Addition_Of_PxD_PSC_800_In_Shopping_List.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>185a807f-8b28-4feb-a569-7ef042007059</id>
+      <recordtableid>fcb2f185-af6c-4426-a57c-1b395e8ee55c</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Addition_Of_Sounders_In_LPS800.rxrec">
       <id>e4fbbfae-6589-4d7b-ac66-cc9b88406dc2</id>
@@ -2673,6 +2844,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>b5a3643f-6207-40e0-a42f-d8494828d68c</id>
       <recordtableid>525a3158-0208-44ad-b43b-b865390ac04a</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Cable_Length_Displayed_For_Pro_Panels.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>09e6c353-b68f-4dd0-8ffc-d9e11524a752</id>
+      <recordtableid>c58ad405-a54b-464f-90d6-e00bc9fad745</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Copy_option_isdisabled_for_single_sounders.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -2778,6 +2954,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>e09c53e5-8537-4903-a4cb-72cd7ceebdc9</id>
       <recordtableid>6f7bd713-6d79-4e7a-82ce-2c6b2c881060</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Deletion_Of_PxD_PSC_800_From_Shopping_List.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>9fca4674-9fae-4ef6-9829-a1196327c5b7</id>
+      <recordtableid>d67b5e7a-b58a-4f13-b496-83226254abae</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Deletion_Of_Sounders_Connected_To_LPS800.rxrec">
       <id>40a2c7b4-44a7-40ff-823f-723e9d241d5d</id>
@@ -3069,6 +3250,16 @@
       <id>e3c24116-042a-4cb7-be1d-458e2c71e5c3</id>
       <recordtableid>387d5123-db0f-45db-a452-e3fc164c89db</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>9fbf9143-514e-42d8-8452-8dccb042c2c9</id>
+      <recordtableid>ecc6fe71-acd3-4456-851f-05c423b0cadd</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>84b06e8b-efc6-49b5-9d87-61a7f9ef6124</id>
+      <recordtableid>615b092c-057c-479d-8fc6-24e9a59c812f</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Remote_LED_Indicator_Property_For_Devices.rxrec">
       <id>bc0d6f9c-370b-4560-b54d-60378d8e3bb1</id>
       <recordtableid>6cff6cb3-f140-4e43-bb38-0a73648a772a</recordtableid>
@@ -3078,6 +3269,11 @@
       <id>8d56b95f-a77e-4611-ad32-11028912c4e3</id>
       <recordtableid>fb4bf083-4531-4339-b06c-dbcea50b5aa5</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>a8f86c08-32d1-4097-aa88-e21aa70361c7</id>
+      <recordtableid>9f8925d2-cea3-47f3-995a-95dcba6d9e8c</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project.rxrec">
       <id>ced9b1c6-103a-4494-a8fa-fa058d6793c4</id>
@@ -3099,6 +3295,16 @@
       <recordtableid>79643dcd-8cd5-4d6a-a36d-de046882de58</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>8ae08a22-7e86-463a-a398-6af7d6f52b4b</id>
+      <recordtableid>cfdacfdd-ac10-49d9-b1a9-0274f0e3f249</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>7bb9b11d-7d7e-44b5-93c0-de4df087295a</id>
+      <recordtableid>66349f0d-08a0-42d6-93a1-1b30d4e0a0be</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Reopen_Project_If_User_Changed_And_Saved_Power_Source.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>87301a6f-290a-464f-9059-4ab512d46ef5</id>
@@ -3108,6 +3314,11 @@
       <id>d2577c0e-9952-445f-9be2-70df0ca02c46</id>
       <recordtableid>1aa3c0f7-435f-44c7-9c86-52b8440ff9c4</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>60711ecb-1170-4b17-af59-08c71e7e3525</id>
+      <recordtableid>24aaa9ba-5aac-4310-b303-d4087b7c09a9</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_The_Behaviour_When_ASC_For_LPS800__75mA.rxrec">
       <id>bb1a0e58-f116-443f-9b12-48692efd841b</id>
@@ -3133,6 +3344,16 @@
       <id>92442275-dec4-4116-a4d5-17fd5073ce80</id>
       <recordtableid>4ec672da-99ea-4948-8228-a93a772b2f47</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>f9c93b2c-03cc-4dd2-83b8-7c0d941f54ef</id>
+      <recordtableid>32074e17-16ec-4b54-87c0-29ce24977e24</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>f8707724-938c-48d2-a2ec-3d7d777b68f5</id>
+      <recordtableid>3aa07f72-6e83-443e-8a5a-745f77ecf137</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_the_indication_should_be_shown_for_selected_loops.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
