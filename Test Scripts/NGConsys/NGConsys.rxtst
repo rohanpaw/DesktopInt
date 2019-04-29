@@ -2214,6 +2214,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="2f9f6251-3e48-4518-8f66-8d66f55cb1ec"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="d7e82aeb-bdb5-43a9-aeaa-d36cb1c80632"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="2fd6f03e-2fb6-45a9-a314-af1b98441259"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -3293,6 +3307,12 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4d8f66b2-e02a-47a3-9731-1ec99a9d0487"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4dc0b826-22b1-447f-b5a0-68ae7fc0e6a1"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -3536,7 +3556,10 @@ loops.</SPAN>]]>
 			</testcase>
 			<testcase
 			id="53fb8455-16c7-4271-9d88-1201610516bc"
-			name="Verify_The_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop">
+			name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop">
+				<description>
+					<![CDATA[<p>NGC-1256/TC-53955</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -4908,7 +4931,7 @@ loops.</SPAN>]]>
 			</testcase>
 			<testmodule
 			id="720097cf-3495-4921-96d5-843b056cc0d5"
-			name="Verify_The_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop"
+			name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop"
 			ref="05c101fd-c8ba-4950-ae56-dcb8faf7f9e9"
 			type="Recording">
 			</testmodule>
@@ -6553,6 +6576,12 @@ MxDesigner]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="99a59dbb-5d19-4180-ad0f-b7e2a2760a1e"
+			name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop_FIM"
+			ref="a14895cd-ab9f-4425-82e4-f2824325eadc"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="9a40a015-79db-40ae-ac02-fddf7be01ac8"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -6887,6 +6916,26 @@ MxDesigner]]>
 					datasourceid="e740575d-dc81-4250-af8e-18f8f80306d6"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a3fe94c8-8363-461b-8870-7452762d291f"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -8553,6 +8602,19 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="d7e82aeb-bdb5-43a9-aeaa-d36cb1c80632"
+			name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop_FIM">
+				<description>
+					<![CDATA[<p>NGC-1256/TC-53955</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="d84b912a-c07c-4109-9cb4-789ebfd8d98a"
 			name="Close_Application"
@@ -8810,6 +8872,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="e0a73e2b-4709-4b30-95eb-19979261f55b"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="e123e7f4-aa9a-4884-98aa-b72c106c143a"
@@ -12898,7 +12966,7 @@ persisted in panel properties&nbsp;]]>
 					</testcase>
 					<testcase
 					id="53fb8455-16c7-4271-9d88-1201610516bc"
-					name="Verify_The_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop">
+					name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop">
 						<testmodule
 						id="b58911e1-f2a8-41cd-a61b-7c206b82b41d"
 						name="Application_Open">
@@ -12909,7 +12977,31 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="720097cf-3495-4921-96d5-843b056cc0d5"
-						name="Verify_The_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop">
+						name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop">
+						</testmodule>
+						<testmodule
+						id="4d8f66b2-e02a-47a3-9731-1ec99a9d0487"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="d7e82aeb-bdb5-43a9-aeaa-d36cb1c80632"
+					name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop_FIM">
+						<testmodule
+						id="a3fe94c8-8363-461b-8870-7452762d291f"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="2f9f6251-3e48-4518-8f66-8d66f55cb1ec"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="99a59dbb-5d19-4180-ad0f-b7e2a2760a1e"
+						name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop_FIM">
+						</testmodule>
+						<testmodule
+						id="e0a73e2b-4709-4b30-95eb-19979261f55b"
+						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<teardown
@@ -12975,7 +13067,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="53fb8455-16c7-4271-9d88-1201610516bc">
+			id="d7e82aeb-bdb5-43a9-aeaa-d36cb1c80632">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

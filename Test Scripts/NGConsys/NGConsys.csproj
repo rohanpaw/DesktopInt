@@ -1504,6 +1504,18 @@
       <UserCode>true</UserCode>
       <id>eb159dee-39de-4f30-8894-eff5eb5928ee</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop_FIM.cs">
+      <BoundTo>ac4c81c0-d921-45d9-874a-b4fe4b6dc503</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop_FIM.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2309c62c-97d3-458f-99db-ddaf52139057</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop_FIM.UserCode.cs">
+      <BoundTo>ac4c81c0-d921-45d9-874a-b4fe4b6dc503</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop_FIM.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6555f0a1-4f9f-4922-b091-8e9fab870562</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices.cs">
       <BoundTo>48a4076e-72c2-42c5-8593-508291d0330d</BoundTo>
       <DependentUpon>Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices.rxrec</DependentUpon>
@@ -2080,15 +2092,15 @@
       <UserCode>true</UserCode>
       <id>031878d4-69d0-4ec8-891c-ec21917c5ba6</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_The_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop.cs">
+    <Compile Include="Recording Modules\Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop.cs">
       <BoundTo>e9f8bfaa-0553-48a8-8967-efc245d34922</BoundTo>
-      <DependentUpon>Verify_The_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop.rxrec</DependentUpon>
+      <DependentUpon>Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>5a5e5d66-ca21-4350-bccf-a5b406dd49e9</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_The_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop.UserCode.cs">
       <BoundTo>e9f8bfaa-0553-48a8-8967-efc245d34922</BoundTo>
-      <DependentUpon>Verify_The_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop.rxrec</DependentUpon>
+      <DependentUpon>Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>56c51dbe-d3af-4af0-9539-4ef2856792e4</id>
     </Compile>
@@ -2882,6 +2894,11 @@
       <id>a36bd080-548b-4645-b45f-06378941845e</id>
       <recordtableid>3e3e221f-b844-44be-b90b-4627e588f4af</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop_FIM.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>ac4c81c0-d921-45d9-874a-b4fe4b6dc503</id>
+      <recordtableid>a14895cd-ab9f-4425-82e4-f2824325eadc</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices.rxrec">
       <id>48a4076e-72c2-42c5-8593-508291d0330d</id>
       <recordtableid>4fa5fd75-9943-4ef9-9772-692c89781b88</recordtableid>
@@ -3122,7 +3139,7 @@
       <id>3a13ba89-f118-430a-81e1-3be294103485</id>
       <recordtableid>45b2ee79-ebb8-4ec4-ba40-f65ab565b812</recordtableid>
     </None>
-    <None Include="Recording Modules\Verify_The_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop.rxrec">
+    <None Include="Recording Modules\Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>e9f8bfaa-0553-48a8-8967-efc245d34922</id>
       <recordtableid>05c101fd-c8ba-4950-ae56-dcb8faf7f9e9</recordtableid>
