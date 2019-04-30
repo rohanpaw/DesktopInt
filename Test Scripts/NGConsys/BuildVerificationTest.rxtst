@@ -664,12 +664,6 @@ rxversion="8.3">
 	default="Default">
 		<testconfiguration
 		name="Default">
-			<testcontainer
-			id="187daa63-7f01-41f8-8ea7-329d42f303ec">
-			</testcontainer>
-			<testcontainer
-			id="9af212f0-03f7-4bdb-9e0e-6f27caeb7fc7">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

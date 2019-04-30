@@ -1288,6 +1288,18 @@
       <UserCode>true</UserCode>
       <id>ceb4bcfe-9d83-4da1-9dd2-96d10272f5e6</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane.cs">
+      <BoundTo>a98146df-daf9-4a5e-9fae-eadba9704cf1</BoundTo>
+      <DependentUpon>Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d08d803-73b9-4bc5-acd7-7c979c97449b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane.UserCode.cs">
+      <BoundTo>a98146df-daf9-4a5e-9fae-eadba9704cf1</BoundTo>
+      <DependentUpon>Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b07aaae1-404e-41a3-b775-88c058874787</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Deletion_Of_Sounders_Connected_To_LPS800.cs">
       <BoundTo>40a2c7b4-44a7-40ff-823f-723e9d241d5d</BoundTo>
       <DependentUpon>Verify_Deletion_Of_Sounders_Connected_To_LPS800.rxrec</DependentUpon>
@@ -2956,9 +2968,14 @@
       <recordtableid>6f7bd713-6d79-4e7a-82ce-2c6b2c881060</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Deletion_Of_PxD_PSC_800_From_Shopping_List.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>9fca4674-9fae-4ef6-9829-a1196327c5b7</id>
       <recordtableid>d67b5e7a-b58a-4f13-b496-83226254abae</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>a98146df-daf9-4a5e-9fae-eadba9704cf1</id>
+      <recordtableid>14538bbb-cbf3-40fb-beca-4fe164e73005</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Deletion_Of_Sounders_Connected_To_LPS800.rxrec">
       <id>40a2c7b4-44a7-40ff-823f-723e9d241d5d</id>

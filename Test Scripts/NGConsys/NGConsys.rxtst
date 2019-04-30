@@ -1202,6 +1202,19 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="17c9e370-efd0-4dec-ad11-5fbe9d5fa378"
+			name="Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane">
+				<description>
+					<![CDATA[<p>NGC-362/TC-14</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="181b6087-be84-41fe-b148-539de689e8a5"
 			name="Close_Application"
@@ -1721,6 +1734,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="21bdb3d0-1ce6-4d64-80f5-e102d7cc6bde"
+			name="Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane"
+			ref="14538bbb-cbf3-40fb-beca-4fe164e73005"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="21c9014e-e6a5-45a9-821d-79b6a1221f39"
 			name="Verify_AC_Units_Calculation_For_Loops_With_IS_Devices_For_FIM"
@@ -3029,6 +3048,20 @@ rxversion="8.3">
 					<var
 					dataname="sListIndex"
 					datasourceid="87ffa96c-e0b5-4071-9c27-812f51d30973"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="43af21a6-e675-41f0-ac80-2e8fbebf72a1"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="17c9e370-efd0-4dec-ad11-5fbe9d5fa378"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -7591,6 +7624,26 @@ project]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="af073c08-8e07-4224-8e03-d081edf48fbe"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="b01c5bf4-e8f7-4e88-b7ef-5db3d6b954da"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -10454,6 +10507,12 @@ persisted in panel properties&nbsp;]]>
 			id="fb1d03da-82dd-4166-aef6-15adfc3bf1c6"
 			name="Verify_Device_Order_Of_Sounders_Added_In_LPS800"
 			ref="31c8e708-c6a7-4e5f-9e6d-b2800ff527c8"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fb577faf-c6d1-496b-ab4f-d44c6cef42e0"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -13807,12 +13866,12 @@ persisted in panel properties&nbsp;]]>
 						name="Create_Project">
 						</testmodule>
 						<testmodule
-						id="3d1e808d-2189-47e9-b4dd-d32824e251c6"
-						name="Close_Application">
-						</testmodule>
-						<testmodule
 						id="085ec18d-04b0-4e9c-8975-1af35c6f8035"
 						name="Verify_AC_Units_Calculation_For_Loops_With_IS_Devices">
+						</testmodule>
+						<testmodule
+						id="3d1e808d-2189-47e9-b4dd-d32824e251c6"
+						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -13895,6 +13954,26 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="17c9e370-efd0-4dec-ad11-5fbe9d5fa378"
+					name="Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane">
+						<testmodule
+						id="af073c08-8e07-4224-8e03-d081edf48fbe"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="43af21a6-e675-41f0-ac80-2e8fbebf72a1"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="21bdb3d0-1ce6-4d64-80f5-e102d7cc6bde"
+						name="Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane">
+						</testmodule>
+						<testmodule
+						id="fb577faf-c6d1-496b-ab4f-d44c6cef42e0"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -13955,40 +14034,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="1f2e49c2-f34b-48df-a278-0b37276558bf">
+			id="17c9e370-efd0-4dec-ad11-5fbe9d5fa378">
 			</testcontainer>
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="31bdc4a3-6299-44fa-ab6a-9c4402b42cf0">
-			</testcontainer>
-			<testcontainer
-			id="53fb8455-16c7-4271-9d88-1201610516bc">
-			</testcontainer>
-			<testcontainer
-			id="99979e33-ab40-4086-ae9b-f848dcc21aac">
-			</testcontainer>
-			<testcontainer
-			id="a5ebb69f-e394-4d5f-9f2e-4b1e12ec63c4">
-			</testcontainer>
-			<testcontainer
-			id="b5725cea-eed2-4bd5-93cf-68a865613e19">
-			</testcontainer>
-			<testcontainer
-			id="c71c0d6b-d6ed-43d4-ba4c-1d25ad997a40">
-			</testcontainer>
-			<testcontainer
-			id="d29a6c80-d886-4c37-ac9c-50f9c0ba75bf">
-			</testcontainer>
-			<testcontainer
-			id="d7e82aeb-bdb5-43a9-aeaa-d36cb1c80632">
-			</testcontainer>
-			<testcontainer
-			id="d8f95cc6-b027-4b5b-b4ae-0fb905076b76">
-			</testcontainer>
-			<testcontainer
-			id="f32e1dde-d28a-42c4-aae0-2f4a10a4d36e">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

@@ -4459,6 +4459,31 @@ namespace TestProject.Libraries
 		}
 		
 		
+		/***********************************************************************************************************
+		 * Function Name: VerifyDeleteButton
+		 * Function Details: VerifyDeleteButton state
+		 * Parameter/Arguments: IsReadOnly
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 30/04/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyDeleteButton(bool isReadOnly)
+		{
+			
+			bool result = repo.ProfileConsys1.btn_Delete.Enabled;
+			if(result==isReadOnly)
+			{
+				Report.Log(ReportLevel.Success,"Delete button displaying is as expected");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Delete button displaying is not as expected");
+			}
+			
+		}
+		
+		
 }
 }
 
