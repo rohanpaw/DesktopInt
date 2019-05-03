@@ -4483,7 +4483,29 @@ namespace TestProject.Libraries
 			
 		}
 		
-		
+		/***********************************************************************************************************
+		 * Function Name: VerifySlotCardsTextForBackplane2
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 02/05/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifySlotCardsTextForBackplane2(string expectedText)
+		{
+			string ActualText = repo.FormMe.Backplane2_OtherSlotCards.TextValue;
+			
+				if(ActualText.Equals(expectedText))
+			{
+				Report.Log(ReportLevel.Success,"Other slot cards text is as expected");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Other slot cards text is displayed as " +ActualText+ "instead of " +expectedText);
+			}
+			
+		}
 }
 }
 

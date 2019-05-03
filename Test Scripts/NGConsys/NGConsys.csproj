@@ -1300,6 +1300,18 @@
       <UserCode>true</UserCode>
       <id>b07aaae1-404e-41a3-b775-88c058874787</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Deletion_Of_Slot_Loop_Cards_From_Pro32xD_Pro32xBB_Panels.cs">
+      <BoundTo>65e9b77e-3e77-4615-b746-15ec1b823e1e</BoundTo>
+      <DependentUpon>Verify_Deletion_Of_Slot_Loop_Cards_From_Pro32xD_Pro32xBB_Panels.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aa96e35c-329b-43c8-b379-b3e63ad39b9b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Deletion_Of_Slot_Loop_Cards_From_Pro32xD_Pro32xBB_Panels.UserCode.cs">
+      <BoundTo>65e9b77e-3e77-4615-b746-15ec1b823e1e</BoundTo>
+      <DependentUpon>Verify_Deletion_Of_Slot_Loop_Cards_From_Pro32xD_Pro32xBB_Panels.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>99bb0de5-b98f-41df-b684-a127f70f3139</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Deletion_Of_Sounders_Connected_To_LPS800.cs">
       <BoundTo>40a2c7b4-44a7-40ff-823f-723e9d241d5d</BoundTo>
       <DependentUpon>Verify_Deletion_Of_Sounders_Connected_To_LPS800.rxrec</DependentUpon>
@@ -1347,6 +1359,18 @@
       <DependentUpon>Verify_Device_Order_Of_Sounders_Added_In_LPS800.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>518ee61d-15b8-4ac8-9838-0139a01a5685</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Export_Of_Shopping_List.cs">
+      <BoundTo>68494711-9511-4133-a830-9c280f08a997</BoundTo>
+      <DependentUpon>Verify_Export_Of_Shopping_List.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>378c55fa-a45b-4670-8603-2ecd5604cd6d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Export_Of_Shopping_List.UserCode.cs">
+      <BoundTo>68494711-9511-4133-a830-9c280f08a997</BoundTo>
+      <DependentUpon>Verify_Export_Of_Shopping_List.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cb3375b7-819f-4898-aa57-c55ee4701e6b</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Extra_IS_Units_Required_In_Case_of_Non_Split_Loops.cs">
       <BoundTo>84c1de4d-3e57-4122-9d6b-643cc9c5141f</BoundTo>
@@ -2768,9 +2792,9 @@
       <recordtableid>d8713ec5-dab2-42e0-a45c-7104e120c02a</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Addition_Of_PxD_PSC_800_In_Shopping_List.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>185a807f-8b28-4feb-a569-7ef042007059</id>
       <recordtableid>fcb2f185-af6c-4426-a57c-1b395e8ee55c</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Addition_Of_Sounders_In_LPS800.rxrec">
       <id>e4fbbfae-6589-4d7b-ac66-cc9b88406dc2</id>
@@ -2973,9 +2997,14 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>a98146df-daf9-4a5e-9fae-eadba9704cf1</id>
       <recordtableid>14538bbb-cbf3-40fb-beca-4fe164e73005</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Deletion_Of_Slot_Loop_Cards_From_Pro32xD_Pro32xBB_Panels.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>65e9b77e-3e77-4615-b746-15ec1b823e1e</id>
+      <recordtableid>f2137f57-f0f8-4489-bd0c-01380e88918a</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Deletion_Of_Sounders_Connected_To_LPS800.rxrec">
       <id>40a2c7b4-44a7-40ff-823f-723e9d241d5d</id>
@@ -2996,6 +3025,11 @@
       <id>2145b00e-558c-467c-9b39-c89a5720490f</id>
       <recordtableid>31c8e708-c6a7-4e5f-9e6d-b2800ff527c8</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Export_Of_Shopping_List.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>68494711-9511-4133-a830-9c280f08a997</id>
+      <recordtableid>fd263429-f8ad-4d41-bf7b-07bdbb8e8fd0</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Extra_IS_Units_Required_In_Case_of_Non_Split_Loops.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

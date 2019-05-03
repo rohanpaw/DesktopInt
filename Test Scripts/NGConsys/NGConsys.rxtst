@@ -2596,6 +2596,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="373de5a3-7455-4d3c-be87-3e8691a7ebcd"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="376396b1-5979-4b2d-a738-60bcc5e15c74"
 			name="Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light"
 			ref="5bd96ef8-bd6f-436f-b45f-bf57de82c162"
@@ -2689,6 +2709,20 @@ rxversion="8.3">
 			name="Verify_40V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection"
 			ref="9aeaad6e-51a0-401a-9411-5a075aebeacb"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="39dbfedf-13e5-4dd2-9fef-6231dad4009f"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="d6418927-4366-415d-8a36-214627c8ef62"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="3a13277c-4a1a-48f0-b640-b343da245b94"
@@ -3661,6 +3695,12 @@ loops.</SPAN>]]>
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="4ffaf558-6ca7-402c-a4c0-87c42c201695"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="5027a08b-fbdc-4d1c-a923-710258af23ea"
@@ -5219,6 +5259,12 @@ loops.</SPAN>]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="7232169b-ebdf-401c-8622-5d8257fea1f5"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="72851cbf-5fc7-4c78-aaf6-3a439b4b09b4"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -5741,6 +5787,20 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7e1fa87d-ab7a-447e-a7d8-353b6496d5d8"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="d2cdb4f7-be4e-48bd-9b3c-2a8fb55099db"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="7f053118-c4fe-4a83-ae40-20ef7a787248"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -6096,6 +6156,12 @@ MxDesigner]]>
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="85883898-4355-4a9f-b122-870caa9a9dc2"
+			name="Verify_Deletion_Of_Slot_Loop_Cards_From_Pro32xD_Pro32xBB_Panels"
+			ref="f2137f57-f0f8-4489-bd0c-01380e88918a"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="8589c953-9535-40d9-94d0-523f450ee6fc"
@@ -7748,6 +7814,12 @@ project]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="b23f1200-51ee-4e3d-9f47-dc9d765d0473"
+			name="Verify_Export_Of_Shopping_List"
+			ref="fd263429-f8ad-4d41-bf7b-07bdbb8e8fd0"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="b34a5590-eacc-4eef-80e2-e16f6b1d723d"
 			name="Verify_Trip_Current_FIM"
 			ref="25f38091-80a0-4e7d-8b04-2bd59fe18892"
@@ -9040,6 +9112,19 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testcase
+			id="d2cdb4f7-be4e-48bd-9b3c-2a8fb55099db"
+			name="Verify_Deletion_Of_Slot_Loop_Cards_From_Pro32xD_Pro32xBB_Panels">
+				<description>
+					<![CDATA[<p>NGC-362/TC-15</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="d2ebb42b-d2ea-48f9-a1ae-976bfa404bca"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_PLX_Loop">
 				<description>
@@ -9061,6 +9146,26 @@ persisted in panel properties&nbsp;]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d3bfdd68-9ff2-426f-8c8c-b3bdf2813b78"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="d3d0c0e3-fd18-4844-8cf1-e8787c5dcc4b"
@@ -9116,6 +9221,19 @@ persisted in panel properties&nbsp;]]>
 			ref="fb7a0d27-d5fa-4d39-ab8e-595db3a6d4d2"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="d6418927-4366-415d-8a36-214627c8ef62"
+			name="Verify_Export_Of_Shopping_List">
+				<description>
+					<![CDATA[<p>NGC-362/TC-22</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="d6434f34-9861-4fb0-9277-d1806df340f3"
 			name="Create_Project"
@@ -13974,6 +14092,46 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="d2cdb4f7-be4e-48bd-9b3c-2a8fb55099db"
+					name="Verify_Deletion_Of_Slot_Loop_Cards_From_Pro32xD_Pro32xBB_Panels">
+						<testmodule
+						id="373de5a3-7455-4d3c-be87-3e8691a7ebcd"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="7e1fa87d-ab7a-447e-a7d8-353b6496d5d8"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="85883898-4355-4a9f-b122-870caa9a9dc2"
+						name="Verify_Deletion_Of_Slot_Loop_Cards_From_Pro32xD_Pro32xBB_Panels">
+						</testmodule>
+						<testmodule
+						id="4ffaf558-6ca7-402c-a4c0-87c42c201695"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="d6418927-4366-415d-8a36-214627c8ef62"
+					name="Verify_Export_Of_Shopping_List">
+						<testmodule
+						id="d3bfdd68-9ff2-426f-8c8c-b3bdf2813b78"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="39dbfedf-13e5-4dd2-9fef-6231dad4009f"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="b23f1200-51ee-4e3d-9f47-dc9d765d0473"
+						name="Verify_Export_Of_Shopping_List">
+						</testmodule>
+						<testmodule
+						id="7232169b-ebdf-401c-8622-5d8257fea1f5"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -14034,10 +14192,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="17c9e370-efd0-4dec-ad11-5fbe9d5fa378">
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			id="d6418927-4366-415d-8a36-214627c8ef62">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
