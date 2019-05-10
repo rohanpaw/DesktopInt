@@ -863,6 +863,19 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="0fc53bd4-0bdf-43bf-98da-406f0d7c5914"
+			name="Accessories_Gallery_Update_On_Max_Limit_Of_IOB/FB/PCS/POS_Supported_By_Panel_Is_Reached">
+				<description>
+					<![CDATA[<p>NGC-390/TC-0061</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="0ff286ca-5890-4463-8e73-4a8133c1673b"
 			name="LogResult"
@@ -916,6 +929,26 @@ rxversion="8.3">
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="11241c44-8bf7-40ac-b8fb-e25bda086e4a"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="1181bebb-24b0-44e9-a4cf-c65783172213"
@@ -1060,6 +1093,26 @@ rxversion="8.3">
 					datasourceid="c5b3a580-078e-4de9-885d-e8b076238efd"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="143919be-76d2-42e0-91c1-2da8fbd3c5aa"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1840,6 +1893,12 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="23c31a97-c96a-458b-b73c-a35a6d6b8644"
+			name="Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached"
+			ref="d7004e74-b6ad-48ca-9651-bdd5f6064efd"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="2505aba5-fd2d-4b9b-be40-8b0f1e2cd0fa"
 			name="Verify_Main_Processor_5V_Maximum_Value"
 			ref="b2733578-894d-425f-85b2-520268fd0490"
@@ -1886,6 +1945,20 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="25a37492-bebe-4c07-8df7-9503ec5cf238"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="806a3da2-08f7-4a69-9405-d6ae07f52512"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="25fcb35a-22f4-43eb-a128-7d3dcd0bb80c"
 			name="Application_Open"
@@ -2918,6 +2991,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="3e4897b6-df59-4463-bc67-7ba68f7c676f"
+			name="Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop"
+			ref="a157ba0d-2782-4f48-a857-2986df13cc29"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="3e709791-3289-47f2-b926-d1a6286eb638"
 			name="Verify_IS_Devices_Drag_And_Drop_On_Non_Addressable_Devices"
 			ref="46f52e99-bd6b-4eb4-a95a-71bbb1520c9f"
@@ -3558,6 +3637,20 @@ loops.</SPAN>]]>
 			name="Verify_deletion_of_devices_in_panel"
 			ref="adb54511-c317-48ee-8b6d-8219fdc223af"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4c701c60-59a5-40c7-a5f7-c9c2e7f38154"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="0fc53bd4-0bdf-43bf-98da-406f0d7c5914"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="4cc1a4c2-3ba3-45eb-8d65-8ed3eff2891f"
@@ -4610,6 +4703,12 @@ loops.</SPAN>]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="631df1fe-40c8-4651-ae54-28bdf895abdb"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="634f807c-071e-4099-9f15-c499bafc86ae"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -5061,6 +5160,19 @@ loops.</SPAN>]]>
 			type="Recording">
 			</testmodule>
 			<testcase
+			id="6bab3c88-91e1-47d4-8c62-025c840f9d18"
+			name="Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop">
+				<description>
+					<![CDATA[<p>NGC-488/TC-0150 Issue in the values</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="6cdd96ff-9d27-484d-bfb6-e9214381620b"
 			name="Verify_IB_Units_On_Assigning_Base_And_Additional_Base">
 				<description>
@@ -5257,6 +5369,26 @@ loops.</SPAN>]]>
 			name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop"
 			ref="05c101fd-c8ba-4950-ae56-dcb8faf7f9e9"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="722d5ba8-0d75-4f56-9336-cc34f1bffbeb"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="7232169b-ebdf-401c-8622-5d8257fea1f5"
@@ -5860,6 +5992,19 @@ loops.</SPAN>]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="806a3da2-08f7-4a69-9405-d6ae07f52512"
+			name="Verify_Current(DC_Units)_Calculation">
+				<description>
+					<![CDATA[<p>NGC-494/TC-0160</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="808a2a8e-0dff-44bf-bae0-c67ac9ea96f4"
 			name="Close_Application"
@@ -5976,6 +6121,20 @@ loops.</SPAN>]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="82496c2f-5443-497e-a53b-5502efa0a85f"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="6bab3c88-91e1-47d4-8c62-025c840f9d18"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="827af031-2c95-45c3-a3be-07380b7f07a2"
 			name="Verify_max_DC_units_displayed_for_FIM">
@@ -6423,6 +6582,12 @@ MxDesigner]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="8a40db69-3636-4d85-a907-45d7cad1ca79"
+			name="Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery"
+			ref="ff41e8ae-1e9f-4c7c-8bd6-e24148d6b192"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="8a6e51d9-3e80-4089-aa87-64335928ae50"
@@ -7580,10 +7745,36 @@ MxDesigner]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="aac530fe-f99c-4d85-851e-2579267c57f4"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="ab78826e-294c-476b-b1e2-e8d7d0bc292b"
 			name="Verify_Addition_Deletion_Of_Sounders_In_LPS800_Reflects_In_Shopping_List"
 			ref="19afc002-51fb-44c7-98d4-83fc78e4dd53"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="abc13da1-40aa-4cf6-adb9-16b16883cc75"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ac1eda44-e443-48dc-a4d8-20a6099fc055"
@@ -7926,6 +8117,12 @@ project]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="b56506e5-426f-4d02-88eb-caedcc2d8980"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="b5708a95-d513-463a-861b-3d401f1c53d9"
@@ -8477,6 +8674,12 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c28141b2-73f4-4529-8042-fa94055c874d"
+			name="Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery"
+			ref="8a5657d5-5a28-4966-acd7-0e9a47e689cf"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="c30a84f3-6499-47ae-afb7-ba787af3c408"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -8684,6 +8887,20 @@ persisted in panel properties&nbsp;]]>
 			ref="fb4bf083-4531-4339-b06c-dbcea50b5aa5"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="c845de9c-c3b9-449b-bd85-294dab18fa44"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="f1d3870d-d8a9-422c-b25a-5f345a8f5418"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="c868d8b7-e2fe-4222-97b2-e27171de49b6"
 			name="Verify_Integral/internal_LED_Indicator_Property_For_Devices">
@@ -8786,6 +9003,26 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="5c6f9f0d-92d3-4f42-ab23-94479bb53443"
 					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
 					variablename="PanelNode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="caeed39d-d2b1-44d2-b220-4c58f4e4c514"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -9994,6 +10231,12 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="ea293737-868a-4a6e-b73f-59c967f1a350"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="ea870356-ba15-4878-b9cc-8c3e5af2d2bc"
 			name="Verify_5V_Load_On_Addition_Deletion_Of_Slot_Cards"
 			ref="2858bbbe-c907-4cf4-b03d-09a82823a099"
@@ -10226,6 +10469,12 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="ef78b8bb-a78d-4fdf-b171-dd0aeacf4e04"
+			name="Verify_CurrentDC_Units_Calculation"
+			ref="8e8b55a1-3f6c-47cd-9e5a-c941d2f00530"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="f07610ab-4c5f-4b6e-a8ef-335374f01d58"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -10337,6 +10586,19 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="f1d3870d-d8a9-422c-b25a-5f345a8f5418"
+			name="Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery">
+				<description>
+					<![CDATA[<p>NGC-1066/TC-54084 &amp; 540845</p><p><br></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="f29c0cd8-1f57-4620-832f-19352d364fec"
 			name="Create_Project"
@@ -14132,6 +14394,94 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="806a3da2-08f7-4a69-9405-d6ae07f52512"
+					name="Verify_Current(DC_Units)_Calculation">
+						<testmodule
+						id="722d5ba8-0d75-4f56-9336-cc34f1bffbeb"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="25a37492-bebe-4c07-8df7-9503ec5cf238"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="ef78b8bb-a78d-4fdf-b171-dd0aeacf4e04"
+						name="Verify_CurrentDC_Units_Calculation">
+						</testmodule>
+						<testmodule
+						id="ea293737-868a-4a6e-b73f-59c967f1a350"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="f1d3870d-d8a9-422c-b25a-5f345a8f5418"
+					name="Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery">
+						<testmodule
+						id="143919be-76d2-42e0-91c1-2da8fbd3c5aa"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="c845de9c-c3b9-449b-bd85-294dab18fa44"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="c28141b2-73f4-4529-8042-fa94055c874d"
+						name="Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery">
+						</testmodule>
+						<testmodule
+						id="b56506e5-426f-4d02-88eb-caedcc2d8980"
+						name="Close_Application">
+						</testmodule>
+						<testmodule
+						id="abc13da1-40aa-4cf6-adb9-16b16883cc75"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="8a40db69-3636-4d85-a907-45d7cad1ca79"
+						name="Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="0fc53bd4-0bdf-43bf-98da-406f0d7c5914"
+					name="Accessories_Gallery_Update_On_Max_Limit_Of_IOB/FB/PCS/POS_Supported_By_Panel_Is_Reached">
+						<testmodule
+						id="11241c44-8bf7-40ac-b8fb-e25bda086e4a"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="4c701c60-59a5-40c7-a5f7-c9c2e7f38154"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="23c31a97-c96a-458b-b73c-a35a6d6b8644"
+						name="Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached">
+						</testmodule>
+						<testmodule
+						id="631df1fe-40c8-4651-ae54-28bdf895abdb"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="6bab3c88-91e1-47d4-8c62-025c840f9d18"
+					name="Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop">
+						<testmodule
+						id="caeed39d-d2b1-44d2-b220-4c58f4e4c514"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="82496c2f-5443-497e-a53b-5502efa0a85f"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="3e4897b6-df59-4463-bc67-7ba68f7c676f"
+						name="Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop">
+						</testmodule>
+						<testmodule
+						id="aac530fe-f99c-4d85-851e-2579267c57f4"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -14192,19 +14542,28 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="0fc53bd4-0bdf-43bf-98da-406f0d7c5914">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="d6418927-4366-415d-8a36-214627c8ef62">
+			id="6bab3c88-91e1-47d4-8c62-025c840f9d18">
+			</testcontainer>
+			<testcontainer
+			id="806a3da2-08f7-4a69-9405-d6ae07f52512">
+			</testcontainer>
+			<testcontainer
+			id="f1d3870d-d8a9-422c-b25a-5f345a8f5418">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

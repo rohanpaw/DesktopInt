@@ -955,6 +955,122 @@ namespace TestProject.Libraries
 			
 		}
 		
+		/*****************************************************************************************************************
+		 * Function Name:  VerifyCurrentDCUnitscalculation
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasim
+		 * Last Update : 08/01/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyCurrentDCUnitscalculation(string sFileName,string sAddPanelSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared variables
+			string ModelNumber,sType,sLabelName,sAssignedBase,expectedDCUnits,DefaultDCUnits,ChangedDCUnit,sPanelLEDCount;
+			int PanelLED;
+			
+			PanelLED=0;
+			ChangedDCUnit=string.Empty;
+			expectedDCUnits=string.Empty;
+			DefaultDCUnits=string.Empty;
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				
+				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				sAssignedBase = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				DefaultDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sPanelLEDCount = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				ChangedDCUnit = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				
+				int.TryParse(sPanelLEDCount,out PanelLED);
+				
+				// Click on Expander node
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on Loop Card node
+				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				
+				// Click on Loop A node
+				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				
+				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
+				
+				//Assign Base to the device
+				Devices_Functions.AssignDeviceBase(sLabelName,sAssignedBase,sRowIndex);
+				
+
+				//Verify Default DC Units
+				verifyDCUnitsValue(expectedDCUnits);
+				
+				repo.ProfileConsys1.SiteNode.Click();
+				
+			}
+			//Go to Loop A
+			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			
+			//go to points grid
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
+			
+			//Copy Devices
+			repo.FormMe.btn_Copy.Click();
+			
+			//Go to Loop C
+			repo.ProfileConsys1.NavigationTree.Loop_C.Click();
+			
+			//Paste the devices
+			repo.FormMe.Paste.Click();
+			
+			//Verify DC Units
+			verifyDCUnitsValue(expectedDCUnits);
+			
+			repo.ProfileConsys1.SiteNode.Click();
+			
+			//Go to Loop C
+			repo.ProfileConsys1.NavigationTree.Loop_C.Click();
+			
+			//go to points grid
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
+			
+			//Copy Devices
+			repo.FormMe.ButtonCut.Click();
+			
+			//Verify Default DC Units
+			verifyDCUnitsValue(DefaultDCUnits);
+			
+			repo.ProfileConsys1.SiteNode.Click();
+			
+			// Click on Expander node
+			repo.ProfileConsys1.NavigationTree.Expander.Click();
+			
+			Panel_Functions.changePanelLED(PanelLED);
+			
+			// Click on Loop Card node
+			repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+			
+			// Click on Loop A node
+			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			
+			//Verify Default DC Units
+			verifyDCUnitsValue(ChangedDCUnit);
+
+		}
+		
 	}
 
 }

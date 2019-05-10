@@ -1912,6 +1912,13 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/contextmenu/list/button[@text='Custom']
 			</item>
+			<item
+			capname="listitem"
+			id="bd9007c8-c307-4845-904b-ca40813f66eb"
+			name="PanelAccessories_Device"
+			searchtimeout="30000ms">
+				/contextmenu/list/?/?/listitem[@index=$sDeviceIndex]
+			</item>
 			<basepath>
 				/contextmenu
 			</basepath>
@@ -3197,6 +3204,34 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/container[@automationid='PART_HeaderBorder']
 			</item>
+			<item
+			capname="text"
+			id="89c635fb-7454-4d1a-b18b-9f084f3ea95f"
+			name="OtherSlotCards_Text"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@caption~'^Other\ Slot\ Cards\ \ \(2\ of\ 6']
+			</item>
+			<item
+			capname="text"
+			id="f914c84d-1b82-4624-810b-a60ad9eb3307"
+			name="OtherSlotCards2_Text"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@caption~'^Other\ Slot\ Cards\ \ \(2\ of\ 6']
+			</item>
+			<item
+			capname="listitem"
+			id="c3e1bbce-1682-48e3-86cb-36f5486b65ac"
+			name="Custom_Item_In_Gallery_For_Sounders"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[3]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='0']
+			</item>
+			<item
+			capname="listitem"
+			id="9c0ebd81-49ce-4d15-8d40-31371874e49d"
+			name="Custom_Item_In_Gallery_For_Others"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']//button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='0']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -3830,6 +3865,10 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 		<var
 		id="9e4df5d7-0018-411e-954e-1476298db4f4"
 		name="sColumnIndex">
+		</var>
+		<var
+		id="5d7859e8-0bea-4912-bd57-a8a990ed9326"
+		name="sDeviceIndex">
 		</var>
 	</variables>
 </repository>

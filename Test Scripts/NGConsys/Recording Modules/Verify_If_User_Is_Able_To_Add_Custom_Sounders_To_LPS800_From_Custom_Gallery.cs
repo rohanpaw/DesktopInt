@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop recording.
+    ///The Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery recording.
     /// </summary>
-    [TestModule("05c101fd-c8ba-4950-ae56-dcb8faf7f9e9", ModuleType.Recording, 1)]
-    public partial class Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop : ITestModule
+    [TestModule("8a5657d5-5a28-4966-acd7-0e9a47e689cf", ModuleType.Recording, 1)]
+    public partial class Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop instance = new Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop();
+        static Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery instance = new Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop()
+        public Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop Instance
+        public static Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery Instance
         {
             get { return instance; }
         }
@@ -94,81 +94,57 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.NavigationTree.Loop_A.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("Exi800", "Other");
+            Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 CHEx IS", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("LPS 800", "Sounders/Beacons");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectPointsGridRow("1");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("LPS 800 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 CHEx IS", "Detectors");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("Exi800", "Other");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectPointsGridRow("4");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 CHEx IS", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Generic Sounder", "Conventional Sounders");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 PH", "Detectors");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 PC", "Detectors");
+            Libraries.Devices_Functions.ChangeLabelName("Generic");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(14));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SaveAsCustom' at Center.", repo.FormMe.SaveAsCustomInfo, new RecordItemIndex(11));
+            repo.FormMe.SaveAsCustom.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(15));
-            repo.ProfileConsys1.tab_Points.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(16));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Devices_Functions.VerifyDeviceDisplayedInPhysicalLayout("9", "A:3", "801 CHEx IS");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceDisplayedInPhysicalLayout("11", "A:1", "801 CHEx IS");
+            Libraries.Devices_Functions.ChangeLabelName("Generic");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceDisplayedInPhysicalLayout("19", "A:5", "801 PH");
+            Libraries.Devices_Functions.ChangeLabelName("ABC");
             Delay.Milliseconds(0);
             
-            Libraries.IS_Functions.VerifyIsolatorUnits("1", "PFI");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("LPS 800 - 1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(21));
-            repo.ProfileConsys1.tab_Points.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Devices_Functions.SelectPointsGridRow("2");
+            Libraries.Devices_Functions.VerifySounderCustomDeviceDisplayedInCustomGallery("Custom", ValueConverter.ArgumentFromString<bool>("isEnabled", "True"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(23));
-            repo.ProfileConsys1.btn_Delete.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Devices_Functions.SelectPointsGridRow("6");
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("Generic");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ButtonCut' at Center.", repo.FormMe.ButtonCutInfo, new RecordItemIndex(25));
-            repo.FormMe.ButtonCut.Click();
-            Delay.Milliseconds(200);
+            Libraries.Devices_Functions.SelectRowUsingLabelName("801 CH - 2");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(26));
-            repo.FormMe.Paste.Click();
-            Delay.Milliseconds(200);
+            Libraries.Devices_Functions.VerifySounderCustomDeviceDisplayedInCustomGallery("Custom", ValueConverter.ArgumentFromString<bool>("isEnabled", "False"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.SaveProject("54084");
+            Delay.Milliseconds(0);
             
         }
 

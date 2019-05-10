@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM recording.
+    ///The Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached recording.
     /// </summary>
-    [TestModule("9f8925d2-cea3-47f3-995a-95dcba6d9e8c", ModuleType.Recording, 1)]
-    public partial class Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM : ITestModule
+    [TestModule("d7004e74-b6ad-48ca-9651-bdd5f6064efd", ModuleType.Recording, 1)]
+    public partial class Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM instance = new Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM();
+        static Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached instance = new Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM()
+        public Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM Instance
+        public static Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached Instance
         {
             get { return instance; }
         }
@@ -79,28 +79,18 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Common_Functions.ReopenProject("53633_FIM");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(1));
             repo.ProfileConsys1.NavigationTree.Expander.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(2));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(2));
+            repo.FormMe.tab_PanelAccessories.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(3));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Devices_Functions.SelectPointsGridRow("2");
-            Delay.Milliseconds(0);
-            
-            verifyLabelInPropertiesSection("Generic Sounder Test");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.VerifyAlarmLoad("5");
+            Libraries.Devices_Functions.AddAndVerifyMaxNumberOfPanelAccessories("TC_0061_Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached", "Add Panels");
             Delay.Milliseconds(0);
             
         }

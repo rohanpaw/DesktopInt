@@ -61,6 +61,12 @@ namespace TestProject.Libraries
 			set { repo.sGalleryIndex = value; }
 		}
 		
+		static string sDeviceIndex
+		{
+			get { return repo.sDeviceIndex; }
+			set { repo.sDeviceIndex = value; }
+		}
+		
 		static string sACUnits
 		{
 			get { return repo.sACUnits; }
@@ -330,6 +336,45 @@ namespace TestProject.Libraries
 					break;
 			}
 			return sGalleryIndex;
+		}
+		
+		/********************************************************************
+		 * Function Name: SelectDeviceFromPanelAccessories
+		 * Function Details: to check if the device is enabled/disabled in panel accessories gallery
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update :
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static string SelectDeviceFromPanelAccessories(string DeviceName)
+		{
+			switch (DeviceName)
+			{
+				case "IOB800":
+					sDeviceIndex="0";
+					break;
+				case "FB800":
+					sDeviceIndex="1";;
+					break;
+				case "PCS800":
+					sDeviceIndex="2";
+					break;
+				case "POS800-S":
+					sDeviceIndex="3";
+					break;
+				case "POS800-M":
+					sDeviceIndex="4";
+					break;
+				case "PBB801":
+					sDeviceIndex="5";
+					break;
+				
+				default:
+					Console.WriteLine("Please specify correct Device name");
+					break;
+			}
+			return sDeviceIndex;
 		}
 		
 		/********************************************************************
@@ -4506,7 +4551,313 @@ namespace TestProject.Libraries
 			}
 			
 		}
-}
+		
+		/*****************************************************************************************************************
+		 * Function Name:  VerifyCurrentDCUnitscalculation
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasim
+		 * Last Update : 08/01/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyCurrentDCUnitscalculation(string sFileName,string sAddPanelSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared variables
+			string ModelNumber,sType,sLabelName,sAssignedBase,expectedDCUnits,DefaultDCUnits,ChangedDCUnit,sPanelLEDCount;
+			int PanelLED;
+			
+			PanelLED=0;
+			ChangedDCUnit=string.Empty;
+			expectedDCUnits=string.Empty;
+			DefaultDCUnits=string.Empty;
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				
+				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				sAssignedBase = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				DefaultDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sPanelLEDCount = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				ChangedDCUnit = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				
+				int.TryParse(sPanelLEDCount,out PanelLED);
+				
+				// Click on Expander node
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on Loop Card node
+				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				
+				// Click on Loop A node
+				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				
+				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
+				
+				//Assign Base to the device
+				Devices_Functions.AssignDeviceBase(sLabelName,sAssignedBase,sRowIndex);
+				
+
+				//Verify Default DC Units
+				verifyDCUnitsValue(expectedDCUnits);
+				
+				repo.ProfileConsys1.SiteNode.Click();
+				
+			}
+			//Go to Loop A
+			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			
+			//go to points grid
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
+			
+			//Copy Devices
+			repo.FormMe.btn_Copy.Click();
+			
+			//Go to Loop C
+			repo.ProfileConsys1.NavigationTree.Loop_C.Click();
+			
+			//Paste the devices
+			repo.FormMe.Paste.Click();
+			
+			//Verify DC Units
+			verifyDCUnitsValue(expectedDCUnits);
+			
+			repo.ProfileConsys1.SiteNode.Click();
+			
+			//Go to Loop C
+			repo.ProfileConsys1.NavigationTree.Loop_C.Click();
+			
+			//go to points grid
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
+			
+			//Copy Devices
+			repo.FormMe.ButtonCut.Click();
+			
+			//Verify Default DC Units
+			verifyDCUnitsValue(DefaultDCUnits);
+			
+			repo.ProfileConsys1.SiteNode.Click();
+			
+			// Click on Expander node
+			repo.ProfileConsys1.NavigationTree.Expander.Click();
+			
+			Panel_Functions.changePanelLED(PanelLED);
+			
+			// Click on Loop Card node
+			repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+			
+			// Click on Loop A node
+			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			
+			//Verify Default DC Units
+			verifyDCUnitsValue(ChangedDCUnit);
+
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: AddMaxNumberOfPanelAccessories(
+		 * Function Details: Add devices from panel accessories
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Date: 26/4/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void AddAndVerifyMaxNumberOfPanelAccessories(string sFileName, string sDeviceSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sDeviceSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+
+			// Declared string type
+			string ModelNumber,sType,Maxnumber;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				Maxnumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				
+				int MaxNumber = Convert.ToInt32(Maxnumber);
+				
+				
+				for(int j=1; j<=MaxNumber; j++)
+				{
+					AddDevicefromPanelAccessoriesGallery(ModelNumber,sType);
+				}
+				
+				bool EnabledStatus = false;
+				//Verify gallery disabled
+				VerifyDeviceIsDisabledOrEnabled(ModelNumber,sType,EnabledStatus);
+				
+				//Verify slot cards
+				if(MaxNumber>6)
+				{
+					int remainingSlots = MaxNumber-6;
+					string sremainingSlots = remainingSlots.ToString();
+					string expectedText = "Other Slot Cards ("+MaxNumber+" of 6)";
+					
+					//Verify Other slot cards 1
+					string actualSlotText = repo.FormMe.OtherSlotCards_Text.TextValue;
+					if(actualSlotText.Equals(expectedText))
+					{
+						Report.Log(ReportLevel.Success,"Other slot cards are dispayed correctly ");
+					}
+					else
+					{
+						Report.Log(ReportLevel.Success,"Other slot cards are not dispayed correctly ");
+					}
+					
+					string expectedText2 = "Other Slot Cards ("+remainingSlots+" of 6)";
+					repo.FormMe.Backplane2_Expander.Click();
+					
+					//Verify Other slot cards 2
+					string actualSlotText2 = repo.FormMe.OtherSlotCards2_Text.TextValue;
+					
+					if(actualSlotText2.Equals(expectedText2))
+					{
+						Report.Log(ReportLevel.Success,"Other slot cards are dispayed correctly ");
+					}
+					else
+					{
+						Report.Log(ReportLevel.Success,"Other slot cards are not dispayed correctly ");
+					}
+				}
+				else
+				{
+					//Verify other slot cards 1
+					string expectedText = "Other Slot Cards ("+MaxNumber+" of 6)";
+				}
+				
+				//Delete slot cards from Panel Accessories
+				for(int j=1; j<=MaxNumber; j++)
+				{
+					string labelName= ModelNumber+"-"+j;
+					
+					//Delete device using label name
+					DeleteAccessoryFromPanelAccessoriesTab();
+					
+					
+					if(j==1)
+					{
+						//Verify Gallery
+						EnabledStatus = true;
+				        //Verify gallery disabled
+				        VerifyDeviceIsDisabledOrEnabled(ModelNumber,sType,EnabledStatus);
+					}
+				}
+				
+				
+				
+		
+				
+			}
+			
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: VerifyCustomDeviceDisplayedInCustomGallery
+		 * Function Details: Verify if custom device is displayed in custom Gallery
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 16/4/19
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifySounderCustomDeviceDisplayedInCustomGallery(string DeviceName, bool isEnabled)
+		{
+			//DeleteDevicesPresentInCustomGallery();
+			if(isEnabled)
+			{
+				if(repo.FormMe.Custom_Item_In_Gallery_For_Sounders.Enabled)
+				{
+					repo.FormMe.Custom_Item_In_Gallery_For_Sounders.Click();
+					Report.Log(ReportLevel.Success, "Device " +DeviceName+ " is enabled in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Device " +DeviceName+ " is disabled in gallery");
+				}
+				
+			}
+			else
+			{
+				if(repo.FormMe.Custom_Item_In_Gallery_For_Others.Enabled)
+				{
+					Report.Log(ReportLevel.Failure, "Device " +DeviceName+ " is enabled in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Device " +DeviceName+ " is disabled in gallery");
+				}
+			}
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyDeviceIsDisabledOrEnabled
+		 * Function Details:Verify device is enabled in panel accessories
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 26/04/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyDeviceIsDisabledOrEnabled(string sDeviceName,string sType,bool sEnabled)
+		{
+			sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
+			ModelNumber=sDeviceName;
+			sDeviceIndex = SelectDeviceFromPanelAccessories(ModelNumber);
+			repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+			
+
+			
+			if(sEnabled)
+			{
+				if(repo.ContextMenu.PanelAccessories_Device.Enabled)
+				{
+					Report.Log(ReportLevel.Success,"Panel Accessories device " + sDeviceName + " is enabled" );
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Panel Accessories device " + sDeviceName + " is not enabled" );
+				}
+			}
+			else
+			{
+				if(repo.ContextMenu.PanelAccessories_Device.Enabled)
+				{
+					Report.Log(ReportLevel.Failure,"Panel Accessories device " + sDeviceName + " is not disabled even after reaching max limit " );
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success,"Panel Accessories device " + sDeviceName + " is disabled even after reaching max limit " );
+				}
+			}
+			
+			
+			
+		}
+
+	}
 }
 
 

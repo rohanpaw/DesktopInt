@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM recording.
+    ///The Verify_CurrentDC_Units_Calculation recording.
     /// </summary>
-    [TestModule("9f8925d2-cea3-47f3-995a-95dcba6d9e8c", ModuleType.Recording, 1)]
-    public partial class Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM : ITestModule
+    [TestModule("8e8b55a1-3f6c-47cd-9e5a-c941d2f00530", ModuleType.Recording, 1)]
+    public partial class Verify_CurrentDC_Units_Calculation : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM instance = new Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM();
+        static Verify_CurrentDC_Units_Calculation instance = new Verify_CurrentDC_Units_Calculation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM()
+        public Verify_CurrentDC_Units_Calculation()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM Instance
+        public static Verify_CurrentDC_Units_Calculation Instance
         {
             get { return instance; }
         }
@@ -79,28 +79,10 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Common_Functions.ReopenProject("53633_FIM");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(1));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(2));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(3));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Devices_Functions.SelectPointsGridRow("2");
-            Delay.Milliseconds(0);
-            
-            verifyLabelInPropertiesSection("Generic Sounder Test");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.VerifyAlarmLoad("5");
+            Libraries.DC_Functions.VerifyCurrentDCUnitscalculation("TC_0160_ Verify Current(DC Units) calculation", "Add Devices");
             Delay.Milliseconds(0);
             
         }

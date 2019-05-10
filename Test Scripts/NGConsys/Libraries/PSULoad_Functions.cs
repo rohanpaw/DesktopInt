@@ -2863,6 +2863,46 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Battery Standby value is not displayed correctly, it is displayed as: " + BatteryStandby + " instead of : " +expectedBatteryStandby);
 			}
 		}
+		
+		/*****************************************************************************************************************
+		 * Function Name: verifyBatteryStandbyAccToRow
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 4/2/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyBatteryStandbyAccToRow(string expectedBatteryStandby, string rowNum, string PanelType)
+		{
+			
+			sRow = rowNum; //rowNum should be present in Excell acc to the number of isolator Devices added 
+			if(PanelType.Equals("FIM"))
+			{
+				sCell= "[4]";
+			}
+			else
+			{
+				sCell= "[3]";
+			}
+			
+			
+			// Click on Physical layout tab
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			
+			// Fetch Default Battery Standby limit value
+			string BatteryStandby = repo.FormMe.BatteryStandBy.TextValue;
+			
+			// Compare Default Battery Standby value with expected value
+			if(BatteryStandby.Equals(expectedBatteryStandby))
+			{
+				Report.Log(ReportLevel.Success,"Battery Standby " + BatteryStandby + " is displayed correctly " );
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Battery Standby value is not displayed correctly, it is displayed as: " + BatteryStandby + " instead of : " +expectedBatteryStandby);
+			}
+		}
+		
 		/*****************************************************************************************************************
 		 * Function Name: verifyBatteryStandbyOnChangingCPU
 		 * Function Details:
@@ -2990,6 +3030,44 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Max Alarm Load value is not displayed correctly, it is displayed as: " + AlarmLoad + " instead of : " +expectedAlarmLoad);
 			}
 
+		}
+		
+		/*****************************************************************************************************************
+		 * Function Name: verifyAlarmLoadAccToRow
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 4/2/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyAlarmLoadAccToRow(string expectedAlarmLoad, string rowNum, string PanelType)
+		{
+			
+			sRow = rowNum; //rowNum should be present in Excell acc to the number of isolator Devices added 
+			if(PanelType.Equals("FIM"))
+			{
+				sCell= "[5]";
+			}
+			else
+			{
+				sCell= "[4]";
+			}
+			
+			// Click on Physical layout tab
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			
+			// Fetch Default Alarm Load limit value
+			string AlarmLoad = repo.FormMe.AlarmLoad.TextValue;
+			
+			// Compare Default Alarm Load value with expected value
+			if(AlarmLoad.Equals(expectedAlarmLoad))
+			{
+				Report.Log(ReportLevel.Success,"Alarm Load " + AlarmLoad + " is displayed correctly " );
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Alarm Load value is not displayed correctly, it is displayed as: " + AlarmLoad + " instead of : " +expectedAlarmLoad);
+			}
 		}
 
 		/*****************************************************************************************************************
@@ -5120,9 +5198,120 @@ namespace TestProject.Libraries
 			}
 			
 		}
-		
-		
-		
+		/*****************************************************************************************************************
+		 * Function Name:VerifyNormalLoadandAlarmLoadPropertyOnAdditionDeletionOfDevicesInPLXOrXLMLoop
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner:Purvi Bhasin
+		 * Last Update :4/2/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyNormalLoadandAlarmLoadPropertyOnAdditionDeletionOfDevicesInPLXOrXLMLoop(string sFileName,string sAddPanelSheet, string sAddDeviceSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+
+			// Declared string type
+			string PanelName, PanelNode,RowNumber,RowNumberForAlarm,CPUType,PanelType,BatterStandby,AlarmLoad,ChangePanelLED,LEDBatterStandby,LEDAlarmLoad,ModelNumber,sType;
+			int PanelLED;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				BatterStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				AlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				RowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				RowNumberForAlarm = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				ChangePanelLED = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				LEDBatterStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				LEDAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				
+				int.TryParse(ChangePanelLED, out PanelLED);
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
+				
+				
+				// Click on Expander node
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on Loop Card node
+				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				
+				// Click on Loop A node
+				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				
+				Excel_Utilities.CloseExcel();
+				
+				Excel_Utilities.OpenExcelFile(sFileName,sAddDeviceSheet);
+				
+				// Count number of rows in excel and store it in rows variable
+				int rows2= Excel_Utilities.ExcelRange.Rows.Count;
+				
+				for(int j=2; j<=rows2; j++)
+				{
+					ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[j,1]).Value.ToString();
+					Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,2]).Value.ToString();
+					
+					Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
+					
+				}
+				
+				Excel_Utilities.CloseExcel();
+				
+				Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+				
+				//Verify Battery Standby
+				verifyBatteryStandbyAccToRow(BatterStandby,RowNumber,PanelType);
+				
+				//Verify Alarm Load
+				verifyAlarmLoadAccToRow(AlarmLoad,RowNumberForAlarm,PanelType);
+				
+				//Click on Site Node
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				// Click on Expander node
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				//Change Panel LED
+				Panel_Functions.changePanelLED(PanelLED);
+				
+				// Click on Loop Card node
+				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				
+				// Click on Loop A node
+				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				
+				// Verify Default Battery Standby load value
+				verifyBatteryStandbyAccToRow(LEDBatterStandby,RowNumber,PanelType);
+				
+				// Verify Default Alarm load value
+				verifyAlarmLoadAccToRow(LEDAlarmLoad,RowNumberForAlarm,PanelType);
+				
+				//Site Node
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				// Delete added Panel
+				Panel_Functions.DeletePanel(1,PanelNode,1);
+				
+				//Open excel sheet and read it values,
+				Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+				
+				
+				
+			}
+			Excel_Utilities.CloseExcel();
+		}
 		
 		
 	}

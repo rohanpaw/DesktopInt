@@ -979,6 +979,18 @@ namespace TestProject
             set { _sColumnIndex = value; }
         }
 
+        string _sDeviceIndex = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable sDeviceIndex.
+        /// </summary>
+        [TestVariable("5d7859e8-0bea-4912-bd57-a8a990ed9326")]
+        public string sDeviceIndex
+        {
+            get { return _sDeviceIndex; }
+            set { _sDeviceIndex = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -5638,6 +5650,7 @@ namespace TestProject
             RepoItemInfo _droppedgallerylistInfo;
             RepoItemInfo _text5bi5517050018801rilInfo;
             RepoItemInfo _custom_in_context_menuInfo;
+            RepoItemInfo _panelaccessories_deviceInfo;
 
             /// <summary>
             /// Creates a new ContextMenu  folder.
@@ -5678,6 +5691,7 @@ namespace TestProject
                 _droppedgallerylistInfo = new RepoItemInfo(this, "DroppedGalleryList", "list/?/?/listitem[@index=$listItem]", 30000, null, "7125ccc9-1030-48ef-9941-44f913231adb");
                 _text5bi5517050018801rilInfo = new RepoItemInfo(this, "Text5BI5517050018801RIL", "?/?/container/?/?/text", 30000, null, "2740a078-4124-43ad-a540-0bed31633f66");
                 _custom_in_context_menuInfo = new RepoItemInfo(this, "Custom_In_Context_Menu", "list/button[@text='Custom']", 30000, null, "e6baecb4-0da9-4e26-82d6-b6f66c654770");
+                _panelaccessories_deviceInfo = new RepoItemInfo(this, "PanelAccessories_Device", "list/?/?/listitem[@index=$sDeviceIndex]", 30000, null, "bd9007c8-c307-4845-904b-ca40813f66eb");
             }
 
             /// <summary>
@@ -6495,6 +6509,30 @@ namespace TestProject
                     return _custom_in_context_menuInfo;
                 }
             }
+
+            /// <summary>
+            /// The PanelAccessories_Device item.
+            /// </summary>
+            [RepositoryItem("bd9007c8-c307-4845-904b-ca40813f66eb")]
+            public virtual Ranorex.ListItem PanelAccessories_Device
+            {
+                get
+                {
+                    return _panelaccessories_deviceInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PanelAccessories_Device item info.
+            /// </summary>
+            [RepositoryItemInfo("bd9007c8-c307-4845-904b-ca40813f66eb")]
+            public virtual RepoItemInfo PanelAccessories_DeviceInfo
+            {
+                get
+                {
+                    return _panelaccessories_deviceInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -7233,6 +7271,10 @@ namespace TestProject
             RepoItemInfo _backplane3_expanderInfo;
             RepoItemInfo _backplane3_otherslotcardsInfo;
             RepoItemInfo _header_profileconsysInfo;
+            RepoItemInfo _otherslotcards_textInfo;
+            RepoItemInfo _otherslotcards2_textInfo;
+            RepoItemInfo _custom_item_in_gallery_for_soundersInfo;
+            RepoItemInfo _custom_item_in_gallery_for_othersInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7342,6 +7384,10 @@ namespace TestProject
                 _backplane3_expanderInfo = new RepoItemInfo(this, "Backplane3_Expander", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[5]/button[@automationid='Expander']", 30000, null, "f34854bd-6e29-4b2f-8a27-677327158935");
                 _backplane3_otherslotcardsInfo = new RepoItemInfo(this, "Backplane3_OtherSlotCards", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[5]/treeitem/text[@text='Other Slot Cards  (1 of 6)']", 30000, null, "1ec2d9f3-6ab6-43b4-b94d-60c270ad0a0e");
                 _header_profileconsysInfo = new RepoItemInfo(this, "Header_ProfileConsys", "?/?/container[@automationid='PART_AutoHideControl']/?/?/container[@automationid='PART_HeaderBorder']", 30000, null, "8e84cde2-938e-46e4-afc6-e8a89ec14ff2");
+                _otherslotcards_textInfo = new RepoItemInfo(this, "OtherSlotCards_Text", "progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@caption~'^Other\\ Slot\\ Cards\\ \\ \\(2\\ of\\ 6']", 30000, null, "89c635fb-7454-4d1a-b18b-9f084f3ea95f");
+                _otherslotcards2_textInfo = new RepoItemInfo(this, "OtherSlotCards2_Text", "progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@caption~'^Other\\ Slot\\ Cards\\ \\ \\(2\\ of\\ 6']", 30000, null, "f914c84d-1b82-4624-810b-a60ad9eb3307");
+                _custom_item_in_gallery_for_soundersInfo = new RepoItemInfo(this, "Custom_Item_In_Gallery_For_Sounders", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[3]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='0']", 30000, null, "c3e1bbce-1682-48e3-86cb-36f5486b65ac");
+                _custom_item_in_gallery_for_othersInfo = new RepoItemInfo(this, "Custom_Item_In_Gallery_For_Others", "?/?/container[@automationid='PART_AutoHideControl']//button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='0']", 30000, null, "9c0ebd81-49ce-4d15-8d40-31371874e49d");
             }
 
             /// <summary>
@@ -9765,6 +9811,102 @@ namespace TestProject
                 get
                 {
                     return _header_profileconsysInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OtherSlotCards_Text item.
+            /// </summary>
+            [RepositoryItem("89c635fb-7454-4d1a-b18b-9f084f3ea95f")]
+            public virtual Ranorex.Text OtherSlotCards_Text
+            {
+                get
+                {
+                    return _otherslotcards_textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OtherSlotCards_Text item info.
+            /// </summary>
+            [RepositoryItemInfo("89c635fb-7454-4d1a-b18b-9f084f3ea95f")]
+            public virtual RepoItemInfo OtherSlotCards_TextInfo
+            {
+                get
+                {
+                    return _otherslotcards_textInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OtherSlotCards2_Text item.
+            /// </summary>
+            [RepositoryItem("f914c84d-1b82-4624-810b-a60ad9eb3307")]
+            public virtual Ranorex.Text OtherSlotCards2_Text
+            {
+                get
+                {
+                    return _otherslotcards2_textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OtherSlotCards2_Text item info.
+            /// </summary>
+            [RepositoryItemInfo("f914c84d-1b82-4624-810b-a60ad9eb3307")]
+            public virtual RepoItemInfo OtherSlotCards2_TextInfo
+            {
+                get
+                {
+                    return _otherslotcards2_textInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Custom_Item_In_Gallery_For_Sounders item.
+            /// </summary>
+            [RepositoryItem("c3e1bbce-1682-48e3-86cb-36f5486b65ac")]
+            public virtual Ranorex.ListItem Custom_Item_In_Gallery_For_Sounders
+            {
+                get
+                {
+                    return _custom_item_in_gallery_for_soundersInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Custom_Item_In_Gallery_For_Sounders item info.
+            /// </summary>
+            [RepositoryItemInfo("c3e1bbce-1682-48e3-86cb-36f5486b65ac")]
+            public virtual RepoItemInfo Custom_Item_In_Gallery_For_SoundersInfo
+            {
+                get
+                {
+                    return _custom_item_in_gallery_for_soundersInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Custom_Item_In_Gallery_For_Others item.
+            /// </summary>
+            [RepositoryItem("9c0ebd81-49ce-4d15-8d40-31371874e49d")]
+            public virtual Ranorex.ListItem Custom_Item_In_Gallery_For_Others
+            {
+                get
+                {
+                    return _custom_item_in_gallery_for_othersInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Custom_Item_In_Gallery_For_Others item info.
+            /// </summary>
+            [RepositoryItemInfo("9c0ebd81-49ce-4d15-8d40-31371874e49d")]
+            public virtual RepoItemInfo Custom_Item_In_Gallery_For_OthersInfo
+            {
+                get
+                {
+                    return _custom_item_in_gallery_for_othersInfo;
                 }
             }
 

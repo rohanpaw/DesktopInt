@@ -169,6 +169,18 @@
     <Compile Include="Libraries\VoltageDrop_Functions.cs">
       <id>4db8548a-1485-4278-bb41-187d70c49611</id>
     </Compile>
+    <Compile Include="Recording Modules\Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.cs">
+      <BoundTo>293cf98b-fbdf-43a7-90b6-cc14a117c092</BoundTo>
+      <DependentUpon>Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>33a948db-42f0-4ff2-9c76-d08e0f6e5bf8</id>
+    </Compile>
+    <Compile Include="Recording Modules\Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.UserCode.cs">
+      <BoundTo>293cf98b-fbdf-43a7-90b6-cc14a117c092</BoundTo>
+      <DependentUpon>Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e70c980d-7214-4902-9c4d-2ea1b7816ca1</id>
+    </Compile>
     <Compile Include="Recording Modules\AddDevices_BVT.cs">
       <BoundTo>759e06ef-676e-418f-8bca-3bad17165f87</BoundTo>
       <DependentUpon>AddDevices_BVT.rxrec</DependentUpon>
@@ -315,6 +327,18 @@
       <DependentUpon>Reopen_Remote_LED_Indicator_Property_For_Devices.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d7fda5bd-058b-4656-b7db-6db7a912a54e</id>
+    </Compile>
+    <Compile Include="Recording Modules\Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.cs">
+      <BoundTo>2425b2fa-2792-4823-92ef-151467004074</BoundTo>
+      <DependentUpon>Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>39dd905a-27c2-498d-aafd-676e64f30412</id>
+    </Compile>
+    <Compile Include="Recording Modules\Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.UserCode.cs">
+      <BoundTo>2425b2fa-2792-4823-92ef-151467004074</BoundTo>
+      <DependentUpon>Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d919c980-a9de-4b69-adf1-cd1ddd6f2196</id>
     </Compile>
     <Compile Include="Recording Modules\Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light.cs">
       <BoundTo>ce0afa44-9e9c-4a88-b613-8609c59b57a4</BoundTo>
@@ -952,6 +976,18 @@
       <UserCode>true</UserCode>
       <id>bcf4d665-8791-4963-a1fe-ebb74eddb1a9</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.cs">
+      <BoundTo>b3d19b24-3a32-4ed8-a8cd-a1519abe4fbc</BoundTo>
+      <DependentUpon>Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b5377857-521a-48c5-8796-d7a36b56e1b5</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.UserCode.cs">
+      <BoundTo>b3d19b24-3a32-4ed8-a8cd-a1519abe4fbc</BoundTo>
+      <DependentUpon>Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>42694ac5-ff2d-46a4-ab6a-0ddd7e77f3e5</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_cable_capacitance.cs">
       <BoundTo>dbf7fae4-992e-42fd-a6ec-fbb9ea2b38f5</BoundTo>
       <DependentUpon>Verify_cable_capacitance.rxrec</DependentUpon>
@@ -1107,6 +1143,18 @@
       <DependentUpon>Verify_CPU_selection_on_reopening_project.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>f01d36fc-697c-40da-8204-bceaad860ae0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_CurrentDC_Units_Calculation.cs">
+      <BoundTo>1a41f936-d6db-47a3-9442-6740cab21da7</BoundTo>
+      <DependentUpon>Verify_CurrentDC_Units_Calculation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1ef4a7a2-7178-42d0-9d9b-a544b574b968</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_CurrentDC_Units_Calculation.UserCode.cs">
+      <BoundTo>1a41f936-d6db-47a3-9442-6740cab21da7</BoundTo>
+      <DependentUpon>Verify_CurrentDC_Units_Calculation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4118a7d5-95eb-4a11-b40c-e2e1ec4f74ff</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.cs">
       <BoundTo>db24c100-87f4-4d4e-93cf-ac0104c47b85</BoundTo>
@@ -1527,6 +1575,18 @@
       <DependentUpon>Verify_If_The_Device_Order_Is_Shown_As_Exi_Order_IS_Order.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8501d40d-ec68-4bac-afd4-33bfc991d1ab</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.cs">
+      <BoundTo>e93d6f07-fed2-4000-8ce3-d92f8cd21ae8</BoundTo>
+      <DependentUpon>Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>68d460b5-faef-4e5f-8b95-329889d9ce9c</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.UserCode.cs">
+      <BoundTo>e93d6f07-fed2-4000-8ce3-d92f8cd21ae8</BoundTo>
+      <DependentUpon>Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>12df7f2a-517f-4f15-947c-c88a613dfe0a</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_If_User_Is_Able_To_Switch_Allowed_Power_Source.cs">
       <BoundTo>8797b126-1008-4dd8-a2bf-9726ac1f82cd</BoundTo>
@@ -2525,6 +2585,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>38163132-2381-4d2c-90cf-3231723569af</id>
     </Content>
+    <None Include="Recording Modules\Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec">
+      <id>293cf98b-fbdf-43a7-90b6-cc14a117c092</id>
+      <recordtableid>d7004e74-b6ad-48ca-9651-bdd5f6064efd</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\AddDevices_BVT.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>759e06ef-676e-418f-8bca-3bad17165f87</id>
@@ -2590,6 +2655,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>b9a62ef7-3829-4313-be10-b1c607364429</id>
       <recordtableid>e73f96f3-4666-4073-ac1f-47a0d436ba82</recordtableid>
+    </None>
+    <None Include="Recording Modules\Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.rxrec">
+      <id>2425b2fa-2792-4823-92ef-151467004074</id>
+      <recordtableid>ff41e8ae-1e9f-4c7c-8bd6-e24148d6b192</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -2856,6 +2926,11 @@
       <id>cca74faa-2182-47b5-93db-2f00d188b5c3</id>
       <recordtableid>1ce07a05-a87a-431c-8de2-857e3832d7cb</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.rxrec">
+      <id>b3d19b24-3a32-4ed8-a8cd-a1519abe4fbc</id>
+      <recordtableid>a157ba0d-2782-4f48-a857-2986df13cc29</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_cable_capacitance.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>dbf7fae4-992e-42fd-a6ec-fbb9ea2b38f5</id>
@@ -2920,6 +2995,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>d755f850-9800-42d0-8a34-7dc69283f00b</id>
       <recordtableid>d3423d07-20a8-4a25-92c4-70d42448937c</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_CurrentDC_Units_Calculation.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>1a41f936-d6db-47a3-9442-6740cab21da7</id>
+      <recordtableid>8e8b55a1-3f6c-47cd-9e5a-c941d2f00530</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -3095,6 +3175,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>85999bf8-6725-4080-9a5f-041adb1f84c1</id>
       <recordtableid>10207dea-59fe-49bb-868f-50522215d526</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.rxrec">
+      <id>e93d6f07-fed2-4000-8ce3-d92f8cd21ae8</id>
+      <recordtableid>8a5657d5-5a28-4966-acd7-0e9a47e689cf</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_If_User_Is_Able_To_Switch_Allowed_Power_Source.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
