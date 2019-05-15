@@ -169,6 +169,11 @@ namespace TestProject.Libraries
 			set { repo.sDeviceAddress = value; }
 		}
 		
+		static string sOtherSlotCardName
+		{
+			get { return repo.sOtherSlotCardName; }
+			set { repo.sOtherSlotCardName = value; }
+		}
 		
 		/********************************************************************
 		 * Function Name: AddDevices
@@ -4528,29 +4533,6 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/***********************************************************************************************************
-		 * Function Name: VerifySlotCardsTextForBackplane2
-		 * Function Details: 
-		 * Parameter/Arguments: 
-		 * Output:
-		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 02/05/2019
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifySlotCardsTextForBackplane2(string expectedText)
-		{
-			string ActualText = repo.FormMe.Backplane2_OtherSlotCards.TextValue;
-			
-				if(ActualText.Equals(expectedText))
-			{
-				Report.Log(ReportLevel.Success,"Other slot cards text is as expected");
-			}
-			else
-			{
-				Report.Log(ReportLevel.Failure,"Other slot cards text is displayed as " +ActualText+ "instead of " +expectedText);
-			}
-			
-		}
 		
 		/*****************************************************************************************************************
 		 * Function Name:  VerifyCurrentDCUnitscalculation
@@ -4857,6 +4839,136 @@ namespace TestProject.Libraries
 			
 		}
 
+		
+		
+		/********************************************************************
+		 * Function Name: VerifyPanelNodePanelAccessoriesGallery
+		 * Function Details: To verify day mode field
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 06/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyPanelNodePanelAccessoriesGallery(string sDeviceName,string sType,string state)
+		{
+			if(state.Equals("Enabled"))
+			{
+				sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
+				ModelNumber=sDeviceName;
+				repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+				
+				if (repo.ContextMenu.txt_SelectDevice.Enabled)
+				{
+					Report.Log(ReportLevel.Success, "Gallery Item: " + sDeviceName+ " Enabled in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Gallery Item: " + sDeviceName+ " Disabled in gallery");
+				}
+			}
+			else
+			{
+				sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
+				ModelNumber=sDeviceName;
+				repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+				
+				if (repo.ContextMenu.txt_SelectDevice.Enabled)
+				{
+					Report.Log(ReportLevel.Failure, "Gallery Item: " + sDeviceName+ " enabled in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Gallery Item: " + sDeviceName+ " disabled in gallery");
+				}
+			}
+			
+		}
+		
+		/********************************************************************
+		 * Function Name: SelectPanelNodePanelAccessoriesRow
+		 * Function Details: To select item from grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 06/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void SelectPanelNodePanelAccessoriesRow(string RowNumber)
+		{
+			sRow = RowNumber;
+			repo.FormMe.SelectPanelAccessoriesLabel.Click();
+			Report.Log(ReportLevel.Success, "Device with Label name selected");
+		}
+		
+
+		/********************************************************************
+		 * Function Name: AddDevicesfromPanelNodeGallery
+		 * Function Details: Add devices from panel node gallery
+		 * Parameter/Arguments: devicename , device type and panel type
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 10/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void AddDevicesfromPanelNodeGallery(string sDeviceName,string sType, string PanelType)
+		{
+			sMainProcessorGalleryIndex = SelectMainProcessorGalleryType(sType, PanelType);
+			ModelNumber=sDeviceName;
+			repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+			repo.ContextMenu.txt_SelectDevice.Click();
+			Report.Log(ReportLevel.Info, "Device "+sDeviceName+" added successfully");
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyNodeGallery
+		 * Function Details: To verify node gallery
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 14/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyNodeGallery(string sDeviceName,string sType,string state,string PanelType)
+		{
+			if(state.Equals("Enabled"))
+			{
+				sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,PanelType);
+				ModelNumber=sDeviceName;
+				repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+				
+				
+				if (repo.ContextMenu.txt_SelectDevice.Enabled)
+				{
+					Report.Log(ReportLevel.Success, "Gallery Item: " + sDeviceName+ " Enabled in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Gallery Item: " + sDeviceName+ " Disabled in gallery");
+				}
+			}
+			else
+			{
+				sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,PanelType);
+				ModelNumber=sDeviceName;
+				repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+				
+				if (repo.ContextMenu.txt_SelectDevice.Enabled)
+				{
+					Report.Log(ReportLevel.Failure, "Gallery Item: " + sDeviceName+ " enabled in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Gallery Item: " + sDeviceName+ " disabled in gallery");
+				}
+			}
+			
+		}
+		
+		
+		
+		
+		
 	}
 }
 

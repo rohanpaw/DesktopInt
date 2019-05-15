@@ -90,8 +90,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.OtherSlotCards' at Center.", repo.FormMe.OtherSlotCardsInfo, new RecordItemIndex(3));
-            repo.FormMe.OtherSlotCards.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.OtherSlotCards_BP1' at Center.", repo.FormMe.OtherSlotCards_BP1Info, new RecordItemIndex(3));
+            repo.FormMe.OtherSlotCards_BP1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");

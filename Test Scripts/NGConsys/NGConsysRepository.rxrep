@@ -2520,6 +2520,13 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 				searchtimeout="30000ms">
 					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/?/?/container[@automationid='ItemsHost']/?/?/text[@caption~'^Built-in\ Loop-A\ \(2\ of\ 125']
 				</item>
+				<item
+				capname="text"
+				id="c97420a6-c154-46d5-8650-3a547c2f4e34"
+				name="Backplane2_OtherSlotCardsWithPLX"
+				searchtimeout="30000ms">
+					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/?/?/container[@automationid='ItemsHost']/?/?/text[@text=$sOtherSlotCardName]
+				</item>
 				<basepath>
 					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/?/?/container[@automationid='ItemsHost']
 				</basepath>
@@ -2548,7 +2555,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			name="tab_PanelAccessories"
 			refimgid="b9cf53c7-1f4c-4b3f-9f88-df22166bb6c3"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']
+				/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Panel Accessories']
 			</item>
 			<item
 			capname="text"
@@ -2556,7 +2563,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			name="tab_Inventory"
 			refimgid="09fb3464-208d-44fa-80cc-15826db14c2a"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']
+				/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Inventory']
 			</item>
 			<item
 			capname="row"
@@ -3153,10 +3160,19 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			addcaps="text,wpfelement"
 			capname="text"
 			id="c8664b74-fb5a-4463-bcdd-6730aad5a906"
-			name="OtherSlotCards"
+			name="OtherSlotCards_BP1"
 			refimgid="5cb9a71b-5a8c-4853-9219-c927687a81b3"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@text='Other Slot Cards  (0 of 6)']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="8ae0a5ed-652a-4f96-b481-d1828e7b65b5"
+			name="Backplane1_OtherSlotCards"
+			refimgid="5cb9a71b-5a8c-4853-9219-c927687a81b3"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@text=$sOtherSlotCardName]
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -3171,10 +3187,19 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			addcaps="text,wpfelement"
 			capname="text"
 			id="259e25d1-e8dd-4c7b-962d-b2beed423a94"
-			name="Backplane2_OtherSlotCards"
+			name="OtherSlotCards_BP2"
 			refimgid="be438f89-1cda-4dd1-b702-58db57b60e83"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[4]/treeitem/text[@text='Other Slot Cards  (1 of 6)']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="a739b5ef-195a-4cdf-a39f-16936d82706d"
+			name="Backplane2_OtherSlotCards"
+			refimgid="be438f89-1cda-4dd1-b702-58db57b60e83"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[4]/treeitem/text[@text=$sOtherSlotCardName]
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -3189,10 +3214,28 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			addcaps="text,wpfelement"
 			capname="text"
 			id="1ec2d9f3-6ab6-43b4-b94d-60c270ad0a0e"
-			name="Backplane3_OtherSlotCards"
+			name="OtherSlotCards_BP3"
 			refimgid="87b925e2-bcd6-4480-8408-5cca3bb8cdc1"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[5]/treeitem/text[@text='Other Slot Cards  (1 of 6)']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="907a1b72-f190-44db-b5dd-6d1a25f656e7"
+			name="Backplane3_OtherSlotCards"
+			refimgid="87b925e2-bcd6-4480-8408-5cca3bb8cdc1"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[5]/treeitem/text[@text=$sOtherSlotCardName]
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="e0b66ff1-fd10-4528-92ac-62b8e1caef00"
+			name="Backplane3_OtherSlotCards_Reopen"
+			refimgid="87b925e2-bcd6-4480-8408-5cca3bb8cdc1"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@text=$sOtherSlotCardName]
 			</item>
 			<item
 			addcaps="container,wpfelement,wpfgroupelement"
@@ -3231,6 +3274,45 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			name="Custom_Item_In_Gallery_For_Others"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']//button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='0']
+			</item>
+			<item
+			capname="button"
+			id="ab73090f-216e-42f1-9093-a740c5cfe418"
+			name="Node1Expander_AfterReopen"
+			refimgid="6d45b616-2a9b-4532-8e60-602aecbda8f2"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[3]/tree/treeitem[2]/button[@automationid='Expander']
+			</item>
+			<item
+			capname="button"
+			id="cda370d1-fa71-42b9-aeca-911184a0b55a"
+			name="Backplane1Expander_AfterReopen"
+			refimgid="8a9142a9-7140-4ecf-8401-142d95f51311"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']
+			</item>
+			<item
+			capname="button"
+			id="1523b351-604a-4cf5-b106-2ef07b4c468b"
+			name="Backplane2Expander_AfterReopen"
+			refimgid="9a61972c-446b-4cce-a65c-06b0797a39d3"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[4]/button[@automationid='Expander']
+			</item>
+			<item
+			capname="button"
+			id="6cb713f3-051f-4121-b788-ea9f6b66ff09"
+			name="Backplane3Expander_AfterReopen"
+			refimgid="62fe7fe0-dbea-4cae-bc0e-499a84e3897f"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[5]/button[@automationid='Expander']
+			</item>
+			<item
+			capname="text"
+			id="146c1f55-49b0-4746-aad8-6316e82c5570"
+			name="SelectPanelAccessoriesLabel"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/container[$sRow]/row/cell[3]/text
 			</item>
 			<basepath>
 				/form[@automationid='me']
@@ -3869,6 +3951,10 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 		<var
 		id="5d7859e8-0bea-4912-bd57-a8a990ed9326"
 		name="sDeviceIndex">
+		</var>
+		<var
+		id="ef656c22-b93a-4540-a8a8-5550bc44e65c"
+		name="sOtherSlotCardName">
 		</var>
 	</variables>
 </repository>

@@ -42,6 +42,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="0124de72-2b14-4fd8-8c0a-711551122322"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="018fd0d7-d4ab-4834-af18-66c0b5da250a"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -498,6 +504,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="09619b11-5f25-4b4f-ac71-0a5a13588a43"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="8479bd43-158f-4492-b7b8-1e5cc3a64b9b"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="096477af-82c4-45ba-981c-a790420a9e84"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -823,6 +843,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="0ef5bde3-0d64-4e2e-98ab-766340e9b6bf"
+			name="Verify_Backplane_Logic_For_Pro32xD_Pro32xBB"
+			ref="a5d8435d-ba8b-4a7d-a1b3-6339a0fe27a8"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="0f1bb88f-b902-4b73-b6d0-aaa82535dc20"
 			name="Verify_Alarm_and_Battery_Load_After_Adding_1_2_IOBs"
@@ -1181,6 +1207,12 @@ rxversion="8.3">
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="166154e7-2bf1-4f3a-9411-27abf49f82f8"
+			name="Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane"
+			ref="dcb002d8-81ef-4a04-8ea5-46f5d33091b7"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="16d12f1c-0776-4d47-8189-8e41f715185e"
@@ -1694,6 +1726,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="207f42db-fb57-4546-bc27-883b9abd16ec"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="20855ba4-3f79-4167-94a4-73de9f41c4f0"
 			name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template"
 			ref="87e23d30-e029-4ef0-822b-ca9138a251bf"
@@ -1956,6 +1994,26 @@ rxversion="8.3">
 					datasourceid="806a3da2-08f7-4a69-9405-d6ae07f52512"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="25e783b3-f362-4e7d-a802-e49ca6b02c5f"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2859,6 +2917,12 @@ rxversion="8.3">
 			id="3b07c41f-e99e-4423-bb05-b9314bc33f57"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3b60cb9f-0493-4a52-aa1d-c78b918f2b33"
+			name="Verify_Reopen_Of_PCH_And_PLX_Device_Slot_Allocation_In_Backplane"
+			ref="493cfefb-ce7d-4104-8993-d8d6be32815a"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -4138,6 +4202,20 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="577d00b2-e4a1-4b13-9a4d-b69d6207e9ad"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="76ad7198-b7e5-4810-9894-591cc807d9ce"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="57db93fe-5ae3-4dfd-8f78-95cd3200902b"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -5267,6 +5345,12 @@ loops.</SPAN>]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="6efc1434-33f0-48e5-92d8-119405bac44e"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="6f0dd331-64ce-4b54-822e-be6c1f59f460"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -5580,6 +5664,19 @@ loops.</SPAN>]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="76ad7198-b7e5-4810-9894-591cc807d9ce"
+			name="Verify_FB_IOB_Slot_Allocation_In_Backplane">
+				<description>
+					<![CDATA[<p>NGC-376/TC-51388</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="77056d02-a16f-40d2-9b9e-b3dde336ddae"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Slot_Cards"
@@ -5676,6 +5773,12 @@ loops.</SPAN>]]>
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="78dda96c-6049-4a75-95a1-b0cdb0496214"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="792153b4-1602-45d1-a1c2-e8490d1945cc"
@@ -6207,6 +6310,26 @@ MxDesigner]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="82ff8339-2644-4fea-b685-10a01548727f"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="830cd51c-3a85-4086-80ca-a0f18c2cb9de"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -6270,6 +6393,19 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="8479bd43-158f-4492-b7b8-1e5cc3a64b9b"
+			name="Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane">
+				<description>
+					<![CDATA[<p>NGC-376/TC-51410</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="847a2e70-e086-4205-9ca8-85b0d34a0a22"
 			name="Close_Application"
@@ -6832,6 +6968,26 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8f20c240-1123-4703-a6cf-26cb3a7ed18f"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8f252faa-b96c-4276-a502-1d192c739744"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -7096,6 +7252,19 @@ MxDesigner]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="97583be1-8d6e-4fee-8f1f-9313dafd3742"
+			name="Verify_Backplane_Logic_For_Pro32xD_Pro32xBB">
+				<description>
+					<![CDATA[<p>NGC-376/TC-51390</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="980ef039-ce0b-4ee0-8f38-071ff586a883"
 			name="Application_Open"
@@ -7191,6 +7360,20 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="9949f37f-fd63-4e7f-a148-0dacefebd3b4"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="97583be1-8d6e-4fee-8f1f-9313dafd3742"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="994b27e2-3ec9-4f72-979f-61f439307d9b"
 			name="Close_Application"
@@ -8242,6 +8425,26 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="b6508c2c-c355-4893-9991-2c29e4d3742a"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="b6613894-1904-4154-baca-5e33788c30fa"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -8537,6 +8740,26 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="be896445-9777-492b-b64b-7b9417a89d89"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="be8b7684-8452-492d-b827-2816c370024a"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -8653,6 +8876,19 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="c0e9a555-b7ea-494e-97e0-551ab587c47c"
+			name="Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane">
+				<description>
+					<![CDATA[<p>NGC-376/TC-51409</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="c2199060-4134-49e2-b84f-19deb893fb99"
 			name="Application_Open"
@@ -9108,6 +9344,26 @@ persisted in panel properties&nbsp;]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="cd789e01-d58d-42ba-9d17-c6d83b2bbff3"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ce14dbf2-f6cf-460d-a415-ec82b5734c12"
@@ -9584,6 +9840,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="d7f0611d-2739-417c-8a93-ee446a4abe9e"
+			name="Verify_FB_IOB_Slot_Allocation_In_Backplane"
+			ref="97a6fcd4-06d8-4d1a-822d-39f831aa97f0"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="d7f27795-1f3d-48f1-b2a6-05e92ca2d667"
 			name="Verify_Addition_Of_PxD_PSC_800_In_Shopping_List"
@@ -10493,6 +10755,12 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="f0c27aa9-476f-4ae6-97c5-4ae3aeb5f567"
+			name="Verify_Reopen_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane"
+			ref="e6621d8b-fdb4-4f9b-9678-a0571b0cb652"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="f109aae1-543d-4b31-9cc8-a57cdb375ed0"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -10599,6 +10867,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="f1e57ad3-1cbf-476a-8c9f-d7edc405b106"
+			name="Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane"
+			ref="50b02cdd-3f07-45d7-8b50-359e1f9bb80b"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="f29c0cd8-1f57-4620-832f-19352d364fec"
 			name="Create_Project"
@@ -10883,6 +11157,20 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="fb12f028-e3a3-457f-b112-d2021ae347d6"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="c0e9a555-b7ea-494e-97e0-551ab587c47c"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="fb1d03da-82dd-4166-aef6-15adfc3bf1c6"
 			name="Verify_Device_Order_Of_Sounders_Added_In_LPS800"
@@ -14482,6 +14770,102 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="76ad7198-b7e5-4810-9894-591cc807d9ce"
+					name="Verify_FB_IOB_Slot_Allocation_In_Backplane">
+						<testmodule
+						id="8f20c240-1123-4703-a6cf-26cb3a7ed18f"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="577d00b2-e4a1-4b13-9a4d-b69d6207e9ad"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="d7f0611d-2739-417c-8a93-ee446a4abe9e"
+						name="Verify_FB_IOB_Slot_Allocation_In_Backplane">
+						</testmodule>
+						<testmodule
+						id="6efc1434-33f0-48e5-92d8-119405bac44e"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="97583be1-8d6e-4fee-8f1f-9313dafd3742"
+					name="Verify_Backplane_Logic_For_Pro32xD_Pro32xBB">
+						<testmodule
+						id="be896445-9777-492b-b64b-7b9417a89d89"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="9949f37f-fd63-4e7f-a148-0dacefebd3b4"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="0ef5bde3-0d64-4e2e-98ab-766340e9b6bf"
+						name="Verify_Backplane_Logic_For_Pro32xD_Pro32xBB">
+						</testmodule>
+						<testmodule
+						id="0124de72-2b14-4fd8-8c0a-711551122322"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="8479bd43-158f-4492-b7b8-1e5cc3a64b9b"
+					name="Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane">
+						<testmodule
+						id="cd789e01-d58d-42ba-9d17-c6d83b2bbff3"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="09619b11-5f25-4b4f-ac71-0a5a13588a43"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="f1e57ad3-1cbf-476a-8c9f-d7edc405b106"
+						name="Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane">
+						</testmodule>
+						<testmodule
+						id="25e783b3-f362-4e7d-a802-e49ca6b02c5f"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="f0c27aa9-476f-4ae6-97c5-4ae3aeb5f567"
+						name="Verify_Reopen_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane">
+						</testmodule>
+						<testmodule
+						id="78dda96c-6049-4a75-95a1-b0cdb0496214"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="c0e9a555-b7ea-494e-97e0-551ab587c47c"
+					name="Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane">
+						<testmodule
+						id="82ff8339-2644-4fea-b685-10a01548727f"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="fb12f028-e3a3-457f-b112-d2021ae347d6"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="166154e7-2bf1-4f3a-9411-27abf49f82f8"
+						name="Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane">
+						</testmodule>
+						<testmodule
+						id="b6508c2c-c355-4893-9991-2c29e4d3742a"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="3b60cb9f-0493-4a52-aa1d-c78b918f2b33"
+						name="Verify_Reopen_Of_PCH_And_PLX_Device_Slot_Allocation_In_Backplane">
+						</testmodule>
+						<testmodule
+						id="207f42db-fb57-4546-bc27-883b9abd16ec"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -14542,28 +14926,16 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0fc53bd4-0bdf-43bf-98da-406f0d7c5914">
-			</testcontainer>
-			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="6bab3c88-91e1-47d4-8c62-025c840f9d18">
-			</testcontainer>
-			<testcontainer
-			id="806a3da2-08f7-4a69-9405-d6ae07f52512">
-			</testcontainer>
-			<testcontainer
-			id="f1d3870d-d8a9-422c-b25a-5f345a8f5418">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

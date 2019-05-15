@@ -90,8 +90,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.OtherSlotCards' at Center.", repo.FormMe.OtherSlotCardsInfo, new RecordItemIndex(3));
-            repo.FormMe.OtherSlotCards.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.OtherSlotCards_BP1' at Center.", repo.FormMe.OtherSlotCards_BP1Info, new RecordItemIndex(3));
+            repo.FormMe.OtherSlotCards_BP1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");
@@ -112,11 +112,11 @@ namespace TestProject.Recording_Modules
             repo.FormMe.Backplane2_Expander.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane2_OtherSlotCards' at Center.", repo.FormMe.Backplane2_OtherSlotCardsInfo, new RecordItemIndex(9));
-            repo.FormMe.Backplane2_OtherSlotCards.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.OtherSlotCards_BP2' at Center.", repo.FormMe.OtherSlotCards_BP2Info, new RecordItemIndex(9));
+            repo.FormMe.OtherSlotCards_BP2.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.VerifySlotCardsTextForBackplane2("Other Slot Cards  (1 of 6)");
+            Libraries.SlotCards_Functions.VerifySlotCardsTextForBackplane2("Other Slot Cards  (1 of 6)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");
@@ -126,8 +126,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.Backplane3_Expander.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane3_OtherSlotCards' at Center.", repo.FormMe.Backplane3_OtherSlotCardsInfo, new RecordItemIndex(13));
-            repo.FormMe.Backplane3_OtherSlotCards.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.OtherSlotCards_BP3' at Center.", repo.FormMe.OtherSlotCards_BP3Info, new RecordItemIndex(13));
+            repo.FormMe.OtherSlotCards_BP3.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(14));
@@ -142,8 +142,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.Backplane3_Expander.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane3_OtherSlotCards' at Center.", repo.FormMe.Backplane3_OtherSlotCardsInfo, new RecordItemIndex(17));
-            repo.FormMe.Backplane3_OtherSlotCards.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.OtherSlotCards_BP3' at Center.", repo.FormMe.OtherSlotCards_BP3Info, new RecordItemIndex(17));
+            repo.FormMe.OtherSlotCards_BP3.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(18));
@@ -157,8 +157,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "5"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane3_OtherSlotCards' at Center.", repo.FormMe.Backplane3_OtherSlotCardsInfo, new RecordItemIndex(21));
-            repo.FormMe.Backplane3_OtherSlotCards.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.OtherSlotCards_BP3' at Center.", repo.FormMe.OtherSlotCards_BP3Info, new RecordItemIndex(21));
+            repo.FormMe.OtherSlotCards_BP3.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("PCH800-3");

@@ -163,6 +163,9 @@
     <Compile Include="Libraries\PSULoad_Functions.cs">
       <id>671beab8-a2e8-416a-9877-fc1fba004849</id>
     </Compile>
+    <Compile Include="Libraries\SlotCards_Functions.cs">
+      <id>7f0a882a-392d-4315-8d16-20b42e614a0b</id>
+    </Compile>
     <Compile Include="Libraries\UserCodeModule1.cs">
       <id>e1ce2b06-4a08-4665-a561-3a38f246f44c</id>
     </Compile>
@@ -904,6 +907,18 @@
       <UserCode>true</UserCode>
       <id>6c9f5b92-2aaf-4729-985e-b76cca1d2f4c</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Backplane_Logic_For_Pro32xD_Pro32xBB.cs">
+      <BoundTo>ba203223-ea8b-44cd-bfe0-1987115f8ed5</BoundTo>
+      <DependentUpon>Verify_Backplane_Logic_For_Pro32xD_Pro32xBB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0918a230-9c70-4c20-bf82-746a6bdcf236</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Backplane_Logic_For_Pro32xD_Pro32xBB.UserCode.cs">
+      <BoundTo>ba203223-ea8b-44cd-bfe0-1987115f8ed5</BoundTo>
+      <DependentUpon>Verify_Backplane_Logic_For_Pro32xD_Pro32xBB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4569dc33-abec-453c-88d4-097153cc1617</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories.cs">
       <BoundTo>0da60123-f3f3-4e92-8b7d-37c612019baf</BoundTo>
       <DependentUpon>Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories.rxrec</DependentUpon>
@@ -1444,6 +1459,18 @@
       <UserCode>true</UserCode>
       <id>3ecb7609-e369-49ed-b49e-e045a340d5d7</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_FB_IOB_Slot_Allocation_In_Backplane.cs">
+      <BoundTo>ce55a45c-b006-4294-8fe5-c48dac998931</BoundTo>
+      <DependentUpon>Verify_FB_IOB_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b5571255-8f04-46fb-89cf-797de13bbf20</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_FB_IOB_Slot_Allocation_In_Backplane.UserCode.cs">
+      <BoundTo>ce55a45c-b006-4294-8fe5-c48dac998931</BoundTo>
+      <DependentUpon>Verify_FB_IOB_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>67dcc565-07ab-4780-8fdf-4374a6f52c30</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_IB_Units_On_Assigning_Base_And_Additional_Base.cs">
       <BoundTo>4b489a0e-e800-42b9-becc-6fcb22cbf814</BoundTo>
       <DependentUpon>Verify_IB_Units_On_Assigning_Base_And_Additional_Base.rxrec</DependentUpon>
@@ -1936,6 +1963,30 @@
       <UserCode>true</UserCode>
       <id>745738ae-53db-4b88-9f89-e6e0ef53f79b</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.cs">
+      <BoundTo>6cbe4ee2-6efd-4701-9486-5b6fc83a6f70</BoundTo>
+      <DependentUpon>Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3c5ec98c-41c7-4acc-bd07-e271bff72e0d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.UserCode.cs">
+      <BoundTo>6cbe4ee2-6efd-4701-9486-5b6fc83a6f70</BoundTo>
+      <DependentUpon>Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e5f30713-d39e-4f47-a851-ba6f630db1db</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.cs">
+      <BoundTo>d352bb85-43b4-4bff-8149-aaa1b40ca5b4</BoundTo>
+      <DependentUpon>Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>edda5aee-bbd7-4496-84a8-cd59c45be95b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.UserCode.cs">
+      <BoundTo>d352bb85-43b4-4bff-8149-aaa1b40ca5b4</BoundTo>
+      <DependentUpon>Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>db9d2ed4-dd78-41c3-bfbc-69c7154dc84e</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Power_Calculation_Is_Populated_Warning_Error_Messages_For_24V_And_System_Load_FIM.cs">
       <BoundTo>99ddf116-6003-4f64-a30a-15662a3b158b</BoundTo>
       <DependentUpon>Verify_Power_Calculation_Is_Populated_Warning_Error_Messages_For_24V_And_System_Load_FIM.rxrec</DependentUpon>
@@ -2128,6 +2179,18 @@
       <UserCode>true</UserCode>
       <id>a52350cc-b008-46c3-97fd-31d229f30822</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Of_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.cs">
+      <BoundTo>0f17372f-dfbe-4f27-9e75-6e3f5846d985</BoundTo>
+      <DependentUpon>Verify_Reopen_Of_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>30ebd5a9-029b-4156-85aa-862a46190246</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Of_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.UserCode.cs">
+      <BoundTo>0f17372f-dfbe-4f27-9e75-6e3f5846d985</BoundTo>
+      <DependentUpon>Verify_Reopen_Of_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eafc5a80-9f48-4eaa-a557-ae5f6ede147b</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.cs">
       <BoundTo>a8f86c08-32d1-4097-aa88-e21aa70361c7</BoundTo>
       <DependentUpon>Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.rxrec</DependentUpon>
@@ -2139,6 +2202,18 @@
       <DependentUpon>Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>14fbf36d-a409-4ff6-beaa-9c96f817b623</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.cs">
+      <BoundTo>7e1886ad-0198-476a-ab1a-5b95ef681a43</BoundTo>
+      <DependentUpon>Verify_Reopen_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f651e060-a2b5-484a-9668-ae0a9283bcb9</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.UserCode.cs">
+      <BoundTo>7e1886ad-0198-476a-ab1a-5b95ef681a43</BoundTo>
+      <DependentUpon>Verify_Reopen_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8c8b73f5-f1df-4b3d-85eb-c6babac92a61</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project.cs">
       <BoundTo>ced9b1c6-103a-4494-a8fa-fa058d6793c4</BoundTo>
@@ -2896,6 +2971,11 @@
       <id>bc504ad7-471f-48e1-8937-076d5bd7af42</id>
       <recordtableid>fb7a0d27-d5fa-4d39-ab8e-595db3a6d4d2</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Backplane_Logic_For_Pro32xD_Pro32xBB.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>ba203223-ea8b-44cd-bfe0-1987115f8ed5</id>
+      <recordtableid>a5d8435d-ba8b-4a7d-a1b3-6339a0fe27a8</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>0da60123-f3f3-4e92-8b7d-37c612019baf</id>
@@ -3121,6 +3201,11 @@
       <id>f5f3f294-72d6-4b11-b6cc-6f48a7ea3aa2</id>
       <recordtableid>03f1ad7a-7073-445b-b9d7-2352e9793931</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_FB_IOB_Slot_Allocation_In_Backplane.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>ce55a45c-b006-4294-8fe5-c48dac998931</id>
+      <recordtableid>97a6fcd4-06d8-4d1a-822d-39f831aa97f0</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_IB_Units_On_Assigning_Base_And_Additional_Base.rxrec">
       <id>4b489a0e-e800-42b9-becc-6fcb22cbf814</id>
       <recordtableid>372a24a2-d89a-426c-a1a7-fecc90209eab</recordtableid>
@@ -3326,6 +3411,16 @@
       <id>ff438fb9-26a2-45cd-91d3-d8b79db591d0</id>
       <recordtableid>10117878-e5a0-4c26-a744-12970fd87940</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>6cbe4ee2-6efd-4701-9486-5b6fc83a6f70</id>
+      <recordtableid>50b02cdd-3f07-45d7-8b50-359e1f9bb80b</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>d352bb85-43b4-4bff-8149-aaa1b40ca5b4</id>
+      <recordtableid>dcb002d8-81ef-4a04-8ea5-46f5d33091b7</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Power_Calculation_Is_Populated_Warning_Error_Messages_For_24V_And_System_Load_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>99ddf116-6003-4f64-a30a-15662a3b158b</id>
@@ -3406,10 +3501,20 @@
       <recordtableid>fb4bf083-4531-4339-b06c-dbcea50b5aa5</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_Reopen_Of_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>0f17372f-dfbe-4f27-9e75-6e3f5846d985</id>
+      <recordtableid>493cfefb-ce7d-4104-8993-d8d6be32815a</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>a8f86c08-32d1-4097-aa88-e21aa70361c7</id>
       <recordtableid>9f8925d2-cea3-47f3-995a-95dcba6d9e8c</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>7e1886ad-0198-476a-ab1a-5b95ef681a43</id>
+      <recordtableid>e6621d8b-fdb4-4f9b-9678-a0571b0cb652</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project.rxrec">
       <id>ced9b1c6-103a-4494-a8fa-fa058d6793c4</id>
