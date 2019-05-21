@@ -1919,6 +1919,14 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/contextmenu/list/?/?/listitem[@index=$sDeviceIndex]
 			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="97af81f2-4164-4836-8a5e-db7a60934f91"
+			name="ContextMenuOption"
+			searchtimeout="30000ms">
+				/contextmenu/list/button[@text=$slistindex]
+			</item>
 			<basepath>
 				/contextmenu
 			</basepath>
@@ -3955,6 +3963,10 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 		<var
 		id="ef656c22-b93a-4540-a8a8-5550bc44e65c"
 		name="sOtherSlotCardName">
+		</var>
+		<var
+		id="5a8e391c-5b0f-4380-be6f-f865aa6585d2"
+		name="sMenuOption">
 		</var>
 	</variables>
 </repository>

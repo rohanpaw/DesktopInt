@@ -374,7 +374,7 @@ namespace TestProject.Libraries
 				case "PBB801":
 					sDeviceIndex="5";
 					break;
-				
+					
 				default:
 					Console.WriteLine("Please specify correct Device name");
 					break;
@@ -2638,8 +2638,8 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void RightClickOnSelectedRow(string RowNumber)
 		{
-			sRow = RowNumber;
-			repo.FormMe.GridRow.Click(System.Windows.Forms.MouseButtons.Right);
+			sRowIndex = RowNumber;
+			repo.FormMe.PointsGridRow.Click(System.Windows.Forms.MouseButtons.Right);
 			
 		}
 		
@@ -4283,7 +4283,7 @@ namespace TestProject.Libraries
 		}
 		
 		
-	/********************************************************************
+		/********************************************************************
 		 * Function Name: ChangeCableCapacitance
 		 * Function Details: To change cable capacitance
 		 * Parameter/Arguments:
@@ -4354,10 +4354,10 @@ namespace TestProject.Libraries
 			}
 
 
-				
-		}
 			
-		 /********************************************************************
+		}
+		
+		/********************************************************************
 		 * Function Name: VerifyCableLengthInNodeGalleryItems
 		 * Function Details: To verify cable length
 		 * Parameter/Arguments:
@@ -4367,7 +4367,7 @@ namespace TestProject.Libraries
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCableLengthInNodeGalleryItems(string sCableLength)
-		{	
+		{
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
@@ -4430,7 +4430,7 @@ namespace TestProject.Libraries
 			repo.FormMe.cell_CableLength.Click();
 			
 			repo.FormMe.cableLengthSpinDownButton.Click();
-		
+			
 			actualCableLengthValue =repo.FormMe.txt_InventoryProperty.TextValue;
 			
 			if(actualCableLengthValue.Equals(minLimit))
@@ -4472,7 +4472,7 @@ namespace TestProject.Libraries
 		{
 			
 			string actualText = repo.ShoppingListCompatibilityModeE.Cell18.Text;
-				
+			
 			if(actualText.Equals(sExpectedText))
 			{
 				Report.Log(ReportLevel.Success,"Model name " +actualText+ " is displayed successfully");
@@ -4497,7 +4497,7 @@ namespace TestProject.Libraries
 		{
 			
 			string actualText = repo.ShoppingListCompatibilityModeE.CellF22.Text;
-				
+			
 			if(actualText.Equals(sExpectedText))
 			{
 				Report.Log(ReportLevel.Success,"Model name " +actualText+ " is displayed successfully");
@@ -4742,14 +4742,14 @@ namespace TestProject.Libraries
 					{
 						//Verify Gallery
 						EnabledStatus = true;
-				        //Verify gallery disabled
-				        VerifyDeviceIsDisabledOrEnabled(ModelNumber,sType,EnabledStatus);
+						//Verify gallery disabled
+						VerifyDeviceIsDisabledOrEnabled(ModelNumber,sType,EnabledStatus);
 					}
 				}
 				
 				
 				
-		
+				
 				
 			}
 			
@@ -4964,12 +4964,102 @@ namespace TestProject.Libraries
 			}
 			
 		}
+		/********************************************************************
+		 * Function Name: RightClickOnSelectedGridRow
+		 * Function Details: To open the context menu options using right click in grid
+		 * Parameter/Arguments: RowNumber
+		 * Output:
+		 * Function Owner: Poonam
+		 * Last Update : 15/5/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void RightClickOnSelectedInventoryGridRow(string RowNumber)
+		{
+			sRow = RowNumber;
+				repo.FormMe.InventoryGridRow.Click(System.Windows.Forms.MouseButtons.Right);
+			
+		}
 		
+		/********************************************************************
+		 * Function Name: clickContextMenuOptionOnRightClick
+		 * Function Details: To verify if paste button is enabled
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam
+		 * Last Update : 20/5/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void clickContextMenuOptionOnRightClick(string sContectMenuOption)
+		{
+			sListIndex=sContectMenuOption;
+			repo.ContextMenu.ContextMenuOption.Click();
+			Report.Log(ReportLevel.Success, sContectMenuOption+" button is clicked");
+		}
 		
+			/********************************************************************
+		 * Function Name:verifyContextMenuOptionOnRightClickEnabledOrDisabled
+		 * Function Details: To verify if context menu option is enabled or disabled when we right click on grid row
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam
+		 * Last Update : 20/5/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void verifyContextMenuOptionOnRightClickEnabledOrDisabled(string sContectMenuOption)
+		{
+			sListIndex=sContectMenuOption;
+			if(repo.ContextMenu.ContextMenuOption.Enabled)
+			{
+			Report.Log(ReportLevel.Success, sContectMenuOption+" button is enabled");
+			}
+			else{
+			Report.Log(ReportLevel.Success, sContectMenuOption+" button is disabled");
+			}
+		}
+		/********************************************************************
+		 * Function Name: verifyPasteButtonEnabled
+		 * Function Details: To verify if paste button is enabled in ribbon
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam
+		 * Last Update : 20/5/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void verifyPasteButtonEnabled()
+		{
+			if (repo.FormMe.Paste.Enabled)
+			{
+				Report.Log(ReportLevel.Success, "Paste button is enabled");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure, "Paste button is disabled");
+			}
+		}
 		
-		
+		/********************************************************************
+		 * Function Name: verifyPasteButtonDisabled
+		 * Function Details: To verify if paste button is disabled in ribbon
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam
+		 * Last Update : 20/5/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void verifyPasteButtonDisabled()
+		{
+			if (repo.FormMe.Paste.Enabled)
+			{
+				Report.Log(ReportLevel.Failure, "Paste button is enabled");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Success, "Paste button is disabled");
+			}
+		}
 		
 	}
+	
 }
 
 

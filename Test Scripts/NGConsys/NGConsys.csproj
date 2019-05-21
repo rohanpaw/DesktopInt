@@ -1963,6 +1963,18 @@
       <UserCode>true</UserCode>
       <id>745738ae-53db-4b88-9f89-e6e0ef53f79b</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Paste_Options_Displayed_For_Loop.cs">
+      <BoundTo>f7c06438-90b7-4099-ab03-91badee966c9</BoundTo>
+      <DependentUpon>Verify_Paste_Options_Displayed_For_Loop.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>31944939-9c9c-441d-81ba-51756ed602eb</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Paste_Options_Displayed_For_Loop.UserCode.cs">
+      <BoundTo>f7c06438-90b7-4099-ab03-91badee966c9</BoundTo>
+      <DependentUpon>Verify_Paste_Options_Displayed_For_Loop.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>53b57c81-78f6-480d-87df-8a1e3b876d70</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.cs">
       <BoundTo>6cbe4ee2-6efd-4701-9486-5b6fc83a6f70</BoundTo>
       <DependentUpon>Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
@@ -3410,6 +3422,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>ff438fb9-26a2-45cd-91d3-d8b79db591d0</id>
       <recordtableid>10117878-e5a0-4c26-a744-12970fd87940</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Paste_Options_Displayed_For_Loop.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>f7c06438-90b7-4099-ab03-91badee966c9</id>
+      <recordtableid>a2460558-217d-4451-affa-e0ba9edbdb7f</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

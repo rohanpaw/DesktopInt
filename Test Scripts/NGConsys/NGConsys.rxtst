@@ -7657,6 +7657,23 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="a0f00c7a-352a-4ea6-8590-7d09ca6a596f"
+			name="Verify_Paste_Options_Displayed_For_Loop">
+				<description>
+					<![CDATA[NGC-372/TC-0031]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="a1a63151-2abc-4d76-8d9c-7515ebe41a4e"
 			name="Close_Application"
@@ -9714,6 +9731,26 @@ persisted in panel properties&nbsp;]]>
 			ref="fb7a0d27-d5fa-4d39-ab8e-595db3a6d4d2"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="d56f829d-aef6-46da-83a0-6464f021541a"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="d6418927-4366-415d-8a36-214627c8ef62"
 			name="Verify_Export_Of_Shopping_List">
@@ -10550,6 +10587,20 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="ebb57b90-2c43-40b3-826d-85959ed33419"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="a0f00c7a-352a-4ea6-8590-7d09ca6a596f"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="ebcf62d6-4e36-4989-86eb-5022fdcb36d4"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -11319,6 +11370,20 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="fdfd0443-1ba3-45f4-b1b2-5d6b39dc7c3b"
+			name="Verify_Paste_Options_Displayed_For_Loop"
+			ref="a2460558-217d-4451-affa-e0ba9edbdb7f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="a0f00c7a-352a-4ea6-8590-7d09ca6a596f"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -14866,6 +14931,22 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="a0f00c7a-352a-4ea6-8590-7d09ca6a596f"
+					name="Verify_Paste_Options_Displayed_For_Loop">
+						<testmodule
+						id="d56f829d-aef6-46da-83a0-6464f021541a"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="ebb57b90-2c43-40b3-826d-85959ed33419"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="fdfd0443-1ba3-45f4-b1b2-5d6b39dc7c3b"
+						name="Verify_Paste_Options_Displayed_For_Loop">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -14928,14 +15009,17 @@ persisted in panel properties&nbsp;]]>
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
+			<testcontainer
+			id="a0f00c7a-352a-4ea6-8590-7d09ca6a596f">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

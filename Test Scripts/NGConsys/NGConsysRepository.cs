@@ -1003,6 +1003,18 @@ namespace TestProject
             set { _sOtherSlotCardName = value; }
         }
 
+        string _sMenuOption = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable sMenuOption.
+        /// </summary>
+        [TestVariable("5a8e391c-5b0f-4380-be6f-f865aa6585d2")]
+        public string sMenuOption
+        {
+            get { return _sMenuOption; }
+            set { _sMenuOption = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -5663,6 +5675,7 @@ namespace TestProject
             RepoItemInfo _text5bi5517050018801rilInfo;
             RepoItemInfo _custom_in_context_menuInfo;
             RepoItemInfo _panelaccessories_deviceInfo;
+            RepoItemInfo _contextmenuoptionInfo;
 
             /// <summary>
             /// Creates a new ContextMenu  folder.
@@ -5704,6 +5717,7 @@ namespace TestProject
                 _text5bi5517050018801rilInfo = new RepoItemInfo(this, "Text5BI5517050018801RIL", "?/?/container/?/?/text", 30000, null, "2740a078-4124-43ad-a540-0bed31633f66");
                 _custom_in_context_menuInfo = new RepoItemInfo(this, "Custom_In_Context_Menu", "list/button[@text='Custom']", 30000, null, "e6baecb4-0da9-4e26-82d6-b6f66c654770");
                 _panelaccessories_deviceInfo = new RepoItemInfo(this, "PanelAccessories_Device", "list/?/?/listitem[@index=$sDeviceIndex]", 30000, null, "bd9007c8-c307-4845-904b-ca40813f66eb");
+                _contextmenuoptionInfo = new RepoItemInfo(this, "ContextMenuOption", "list/button[@text=$slistindex]", 30000, null, "97af81f2-4164-4836-8a5e-db7a60934f91");
             }
 
             /// <summary>
@@ -6543,6 +6557,30 @@ namespace TestProject
                 get
                 {
                     return _panelaccessories_deviceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ContextMenuOption item.
+            /// </summary>
+            [RepositoryItem("97af81f2-4164-4836-8a5e-db7a60934f91")]
+            public virtual Ranorex.Button ContextMenuOption
+            {
+                get
+                {
+                    return _contextmenuoptionInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ContextMenuOption item info.
+            /// </summary>
+            [RepositoryItemInfo("97af81f2-4164-4836-8a5e-db7a60934f91")]
+            public virtual RepoItemInfo ContextMenuOptionInfo
+            {
+                get
+                {
+                    return _contextmenuoptionInfo;
                 }
             }
         }
