@@ -4981,6 +4981,74 @@ namespace TestProject.Libraries
 		}
 		
 		/********************************************************************
+		 * Function Name: VerifyPanelType
+		 * Function Details: To Verify panel type
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 15/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyPanelType(string sFileName,string sAddDevicesSheet, string sPanelName)
+		{
+			//Click on Panel Node
+			repo.ProfileConsys1.PanelNodeText.Click();
+			
+			repo.ProfileConsys1.SiteNode.Click();
+			
+			repo.ProfileConsys1.PanelNodeText.Click();
+			
+			repo.ProfileConsys1.SiteNode.Click();
+			
+			repo.ProfileConsys1.PanelNodeText.Click();
+			
+			repo.FormMe.tab_PanelAccessories.Click();
+			
+			repo.ProfileConsys1.PanelNodeText.Click();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Panel type ext in Search Properties fields to view Panel type text;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Panel Type" +"{ENTER}" );
+			
+			// Click on Panel type cell
+			repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
+			
+			//Retrieve value of Panel type text and store in PanelType
+			string actualPanelName = repo.FormMe.PanelType.TextValue;
+
+			if(actualPanelName.Equals(sPanelName))
+			{
+				Report.Log(ReportLevel.Success, "Panel name " +actualPanelName+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure, "Panel name is not displayed correctly");
+				
+			}
+			
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			int columns = Excel_Utilities.ExcelRange.Columns.Count;
+
+			
+			string PanelTypeName = ((Range)Excel_Utilities.ExcelRange.Cells[10,17]).Value.ToString();
+			
+			
+			VerifyPanelTypeNames(PanelTypeName);
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+
+		}
+		/********************************************************************
 		 * Function Name: clickContextMenuOptionOnRightClick
 		 * Function Details: To verify if paste button is enabled
 		 * Parameter/Arguments:
@@ -5038,6 +5106,49 @@ namespace TestProject.Libraries
 		}
 		
 		/********************************************************************
+		 * Function Name: VerifyPanelTypeNames
+		 * Function Details: To Verify panel type
+		 * Parameter/Arguments:PanelTypeNameList
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 16/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyPanelTypeNames(string PanelTypeNameList)
+		{
+			// Split Paneltype name and then add panels in the collection list
+			List<string>  splitPanelTypesNames  = PanelTypeNameList.Split(',').ToList();
+			
+			foreach(string item in splitPanelTypesNames)
+			{
+				bool found=false;
+				foreach(ListItem listitem in repo.ContextMenu.PanelTypeList.Items)
+				{
+					if(item == listitem.Text)
+					{
+						found = true;
+						Report.Log(ReportLevel.Success, "Panel name " +listitem.Text+ " is displayed correctly in panel type dropdown list");
+						break;	
+					}
+					
+				}
+				
+				if(found == false)
+				{
+					Report.Log(ReportLevel.Info,"Panel " +item+ " not  found in the list");
+					
+
+				}
+				
+				
+			}
+			
+			
+			
+		}			
+						
+						
+		/********************************************************************
 		 * Function Name: verifyPasteButtonDisabled
 		 * Function Details: To verify if paste button is disabled in ribbon
 		 * Parameter/Arguments:
@@ -5056,6 +5167,108 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Success, "Paste button is disabled");
 			}
+		}
+
+		
+		/********************************************************************
+		 * Function Name: VerifyPanelType
+		 * Function Details: To Verify panel type
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 15/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyPanelTypeInDropdown(string PanelName, string PanelTypeNameList,string PanelTypeNameListNotAvailable)
+		{
+			//Click on Panel Node
+			repo.ProfileConsys1.PanelNodeText.Click();
+			
+			repo.ProfileConsys1.SiteNode.Click();
+			
+			repo.ProfileConsys1.PanelNodeText.Click();
+			
+			repo.ProfileConsys1.SiteNode.Click();
+			
+			repo.ProfileConsys1.PanelNodeText.Click();
+			
+			repo.FormMe.tab_PanelAccessories.Click();
+			
+			repo.ProfileConsys1.PanelNodeText.Click();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Panel type ext in Search Properties fields to view Panel type text;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Panel Type" +"{ENTER}" );
+			
+			// Click on Panel type cell
+			repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
+			
+			//Retrieve value of Panel type text and store in PanelType
+			string actualPanelName = repo.FormMe.PanelType.TextValue;
+
+			if(actualPanelName.Equals(PanelName))
+			{
+				Report.Log(ReportLevel.Success, "Panel name " +actualPanelName+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure, "Panel name is not displayed correctly");
+				
+			}
+			
+			VerifyPanelTypeNames(PanelTypeNameList);
+			VerifyPanelTypeNamesNotAvailable(PanelTypeNameListNotAvailable);
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyPanelTypeNames
+		 * Function Details: To Verify panel type
+		 * Parameter/Arguments:PanelTypeNameList
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 16/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyPanelTypeNamesNotAvailable(string PanelTypeNameListNotAvailable)
+		{
+			// Split Paneltype name and then add panels in the collection list
+			List<string>  splitPanelTypesNamesNotAvailable  = PanelTypeNameListNotAvailable.Split(',').ToList();
+			
+			foreach(string item in splitPanelTypesNamesNotAvailable)
+			{
+				bool found=true;
+				foreach(ListItem listitem in repo.ContextMenu.PanelTypeList.Items)
+				{
+					if(item == listitem.Text)
+					{
+						found = false;
+						Report.Log(ReportLevel.Failure, "Panel name " +listitem.Text+ " is displayed incorrectly in panel type dropdown list");
+						break;	
+					}
+					
+				}
+				
+				if(found == true)
+				{
+					Report.Log(ReportLevel.Success, "Panel " +item+ " not  found in the list as expected");
+					
+
+				}
+				
+				
+			}
+			
+			
+			
 		}
 		
 	}

@@ -1567,6 +1567,42 @@
       <UserCode>true</UserCode>
       <id>6fceec35-a679-48ca-a3cf-f16a70e19ef8</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PCH800.cs">
+      <BoundTo>3bb8b2f6-0d59-4c7f-91dd-04a43a83e28d</BoundTo>
+      <DependentUpon>Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PCH800.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>18bd3488-cfb4-4477-b499-a043abd317a0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PCH800.UserCode.cs">
+      <BoundTo>3bb8b2f6-0d59-4c7f-91dd-04a43a83e28d</BoundTo>
+      <DependentUpon>Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PCH800.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>93984ca7-5234-4df5-b9cf-d66e6cb91f82</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800.cs">
+      <BoundTo>e80903dd-f0d1-4a9e-b9de-517a9da9b997</BoundTo>
+      <DependentUpon>Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>662d2041-5f45-4789-b85b-301ffda07f96</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800.UserCode.cs">
+      <BoundTo>e80903dd-f0d1-4a9e-b9de-517a9da9b997</BoundTo>
+      <DependentUpon>Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cfccfafc-9d2e-4fd9-a1ba-bcc88841b31c</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied.cs">
+      <BoundTo>010f2ca0-685e-4fee-93cb-367814eeec77</BoundTo>
+      <DependentUpon>Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a6984a37-47e5-4a1b-aa26-71aaa97c827c</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied.UserCode.cs">
+      <BoundTo>010f2ca0-685e-4fee-93cb-367814eeec77</BoundTo>
+      <DependentUpon>Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e7a6aeba-f595-4438-a88e-60d4a9b4aaae</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_If_Selecting_An_EXI800_In_Points_Grid_Will_Enable_IS_Devices.cs">
       <BoundTo>26ca0179-bd4c-4da8-98bf-b0e7501d9b60</BoundTo>
       <DependentUpon>Verify_If_Selecting_An_EXI800_In_Points_Grid_Will_Enable_IS_Devices.rxrec</DependentUpon>
@@ -2984,9 +3020,9 @@
       <recordtableid>fb7a0d27-d5fa-4d39-ab8e-595db3a6d4d2</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Backplane_Logic_For_Pro32xD_Pro32xBB.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>ba203223-ea8b-44cd-bfe0-1987115f8ed5</id>
       <recordtableid>a5d8435d-ba8b-4a7d-a1b3-6339a0fe27a8</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -3257,6 +3293,21 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f1a8898d-692e-4a7a-8986-e82fccadbded</id>
       <recordtableid>e10c907b-2b10-4934-b21b-fe87d60f16fe</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PCH800.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>3bb8b2f6-0d59-4c7f-91dd-04a43a83e28d</id>
+      <recordtableid>2ff4fb12-423c-4860-9630-3fbeadadf617</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>e80903dd-f0d1-4a9e-b9de-517a9da9b997</id>
+      <recordtableid>4b4e92db-9afe-47c2-8fbb-08f8fd9300e2</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied.rxrec">
+      <id>010f2ca0-685e-4fee-93cb-367814eeec77</id>
+      <recordtableid>7903f6ef-8da9-46ba-8a5a-2fa09296eb62</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_If_Selecting_An_EXI800_In_Points_Grid_Will_Enable_IS_Devices.rxrec">
       <id>26ca0179-bd4c-4da8-98bf-b0e7501d9b60</id>

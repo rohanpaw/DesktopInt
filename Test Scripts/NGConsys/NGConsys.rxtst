@@ -204,6 +204,12 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="038238b8-d204-416d-986b-94aaf660739c"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="03a4c366-ff37-4c4a-b029-652a321fc113"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -1662,6 +1668,19 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testcase
+			id="1f70b4ae-017a-4718-beec-bbfa1571746b"
+			name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800">
+				<description>
+					<![CDATA[<p>NGC-1060/TC-51999</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="1fdcb6e9-9984-46fd-939a-7c89434db1b9"
 			name="Verify_devices_order_for_Sounders_in_Non_dropped_gallery">
 				<description>
@@ -2566,6 +2585,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="33207f34-dba8-4774-80a3-c6a4f8a24f44"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="33c481bb-b6e6-4be6-a534-c76aaecb68da"
 			name="Application_Open"
@@ -5481,6 +5506,26 @@ loops.</SPAN>]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="725727c1-e4b1-41cd-a049-3b3b61e1b137"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="72851cbf-5fc7-4c78-aaf6-3a439b4b09b4"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -6082,6 +6127,12 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="80092272-300a-4a70-b0f5-c2050e263b09"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="804c6219-82f6-463d-95e4-c38489733a88"
 			name="Verify_the_Isolator_units_Intrinsically_safe_units_have_separate_property_section_to_displayed"
 			ref="30adcbb5-53f1-4fc3-8805-eb77505595e2"
@@ -6338,6 +6389,20 @@ MxDesigner]]>
 					<var
 					dataname="sListIndex"
 					datasourceid="6f80e22c-106d-4460-8342-b80881d135ab"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8395e183-6f6b-46bf-afac-63fba084c416"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="ff9c805f-d5fb-4720-8ab0-00e0c8e02780"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -6654,6 +6719,20 @@ MxDesigner]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="88478df8-d84c-450e-958f-00ff06673d16"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="f0823aa5-fc64-4087-b843-00c59abdebf5"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="88997d95-4977-4b25-9625-c37270594c56"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -6898,6 +6977,26 @@ MxDesigner]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="8ca3c266-7a96-44de-8ce7-6e6bd30ec9da"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8cd3d6a5-7f87-4730-9ff9-f41e4cd4db4b"
 			name="Verify_Extra_IS_Units_Required_In_Case_of_Non_Split_Loops"
 			ref="7e191a43-cae6-4e25-8175-a25c11734139"
@@ -6945,6 +7044,12 @@ MxDesigner]]>
 			id="8e78bbf4-a35e-4e11-9c94-b31300c58259"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8e80e94d-0462-4024-92fb-f05fec51f87d"
+			name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800"
+			ref="4b4e92db-9afe-47c2-8fbb-08f8fd9300e2"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -7103,6 +7208,20 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="92b5eacb-ea0f-4c2a-a79e-0fa4655b0f2b"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="1f70b4ae-017a-4718-beec-bbfa1571746b"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="933c0968-1e28-468b-b226-6edd57b849fa"
 			name="Application_Open"
@@ -7567,6 +7686,26 @@ MxDesigner]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9e55fa26-262c-49e2-be92-5f0b0e69c472"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -10103,6 +10242,12 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="dfa33584-a0c6-4c65-8e24-5f7e7400ec6b"
+			name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied"
+			ref="7903f6ef-8da9-46ba-8a5a-2fa09296eb62"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="dfed6d71-0498-41ee-b9bf-f00ca2aff9b1"
 			name="Verify_Max_IS_Units_For_Exi800_Using_PFI_Loop">
@@ -10799,6 +10944,19 @@ persisted in panel properties&nbsp;]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="f0823aa5-fc64-4087-b843-00c59abdebf5"
+			name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied">
+				<description>
+					<![CDATA[<p>NGC-1060/TC-51987</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="f09ad460-574c-4dcb-af79-173c0b8ff5ec"
 			name="Verify_Integralinternal_LED_Indicator_Property_For_Devices"
@@ -11407,6 +11565,25 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="fef51684-99ab-4483-9251-6689c26a1dd1"
+			name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PCH800"
+			ref="2ff4fb12-423c-4860-9630-3fbeadadf617"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="ff9c805f-d5fb-4720-8ab0-00e0c8e02780"
+			name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PCH800">
+				<description>
+					<![CDATA[<p>NGC-1060/TC-51990</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -14947,6 +15124,66 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Paste_Options_Displayed_For_Loop">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="f0823aa5-fc64-4087-b843-00c59abdebf5"
+					name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied">
+						<testmodule
+						id="725727c1-e4b1-41cd-a049-3b3b61e1b137"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="88478df8-d84c-450e-958f-00ff06673d16"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="dfa33584-a0c6-4c65-8e24-5f7e7400ec6b"
+						name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied">
+						</testmodule>
+						<testmodule
+						id="33207f34-dba8-4774-80a3-c6a4f8a24f44"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="ff9c805f-d5fb-4720-8ab0-00e0c8e02780"
+					name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PCH800">
+						<testmodule
+						id="8ca3c266-7a96-44de-8ce7-6e6bd30ec9da"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="8395e183-6f6b-46bf-afac-63fba084c416"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="fef51684-99ab-4483-9251-6689c26a1dd1"
+						name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PCH800">
+						</testmodule>
+						<testmodule
+						id="038238b8-d204-416d-986b-94aaf660739c"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="1f70b4ae-017a-4718-beec-bbfa1571746b"
+					name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800">
+						<testmodule
+						id="9e55fa26-262c-49e2-be92-5f0b0e69c472"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="92b5eacb-ea0f-4c2a-a79e-0fa4655b0f2b"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="8e80e94d-0462-4024-92fb-f05fec51f87d"
+						name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800">
+						</testmodule>
+						<testmodule
+						id="80092272-300a-4a70-b0f5-c2050e263b09"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -15009,17 +15246,14 @@ persisted in panel properties&nbsp;]]>
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
-			<testcontainer
-			id="a0f00c7a-352a-4ea6-8590-7d09ca6a596f">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

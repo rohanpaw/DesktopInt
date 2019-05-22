@@ -1664,6 +1664,7 @@ namespace TestProject
             RepoItemInfo _textnewInfo;
             RepoItemInfo _sitenodeInfo;
             RepoItemInfo _panelnodeInfo;
+            RepoItemInfo _panelnodetextInfo;
             RepoItemInfo _unitsgallerydropdownInfo;
             RepoItemInfo _txt_labelInfo;
             RepoItemInfo _btn_deleteInfo;
@@ -1766,6 +1767,7 @@ namespace TestProject
                 _textnewInfo = new RepoItemInfo(this, "TextNew", ".//container[@name='PART_Content' and @caption='New']/text[@caption='New']", 30000, null, "7db77983-9820-4f8d-b902-339f832985bc");
                 _sitenodeInfo = new RepoItemInfo(this, "SiteNode", "progressbar/picture[6]/?/?/treeitem", 30000, null, "bc08d139-50e4-40ed-8f7d-d14b24fa877b");
                 _panelnodeInfo = new RepoItemInfo(this, "PanelNode", "progressbar/picture?[6]/?/?/treeitem[2]", 30000, null, "4d618850-a421-4ab3-b788-2d513a1972b5");
+                _panelnodetextInfo = new RepoItemInfo(this, "PanelNodeText", "progressbar/picture[6]/list[@automationid='PART_BarContainerControl']//text[@text~'Node1']", 30000, null, "03b442fd-e9f5-40ca-9a18-b0b62dded380");
                 _unitsgallerydropdownInfo = new RepoItemInfo(this, "UnitsGalleryDropDown", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 30000, null, "7e38a872-8622-4851-931e-f090f17fdcbd");
                 _txt_labelInfo = new RepoItemInfo(this, "txt_Label", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/container//text[@text=$sLabelName]", 30000, null, "8d8eb242-88ce-4703-9514-fa43c8b685cc");
                 _btn_deleteInfo = new RepoItemInfo(this, "btn_Delete", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Delete']", 60000, null, "8e8210c0-314f-4c7d-97b4-86fb85d69656");
@@ -1995,6 +1997,30 @@ namespace TestProject
                 get
                 {
                     return _panelnodeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PanelNodeText item.
+            /// </summary>
+            [RepositoryItem("03b442fd-e9f5-40ca-9a18-b0b62dded380")]
+            public virtual Ranorex.Text PanelNodeText
+            {
+                get
+                {
+                    return _panelnodetextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PanelNodeText item info.
+            /// </summary>
+            [RepositoryItemInfo("03b442fd-e9f5-40ca-9a18-b0b62dded380")]
+            public virtual RepoItemInfo PanelNodeTextInfo
+            {
+                get
+                {
+                    return _panelnodetextInfo;
                 }
             }
 
@@ -5646,7 +5672,7 @@ namespace TestProject
             RepoItemInfo _txt_selectpanelInfo;
             RepoItemInfo _txt_selectdeviceInfo;
             RepoItemInfo _btn_baseselectionInfo;
-            RepoItemInfo _partcontentInfo;
+            RepoItemInfo _paneltypelistInfo;
             RepoItemInfo _lstpsuInfo;
             RepoItemInfo _partimageInfo;
             RepoItemInfo _low60dbInfo;
@@ -5688,7 +5714,7 @@ namespace TestProject
                 _txt_selectpanelInfo = new RepoItemInfo(this, "txt_SelectPanel", ".//listitem/text[@caption=$PanelName]", 30000, null, "492b2e42-6b92-4dbf-93f0-87456a170bb0");
                 _txt_selectdeviceInfo = new RepoItemInfo(this, "txt_SelectDevice", ".//listitem//text[@caption=$ModelNumber]", 30000, null, "dda50043-1c98-4316-852e-cb5dd36bf6bb");
                 _btn_baseselectionInfo = new RepoItemInfo(this, "btn_BaseSelection", "list/button/text[@text=$sBase]", 30000, null, "3862dd18-b089-44cf-891d-4d5f7c68e104");
-                _partcontentInfo = new RepoItemInfo(this, "PARTContent", "list", 30000, null, "7e4237ad-7dc9-41c4-a7f8-b4765b697390");
+                _paneltypelistInfo = new RepoItemInfo(this, "PanelTypeList", "list", 30000, null, "7e4237ad-7dc9-41c4-a7f8-b4765b697390");
                 _lstpsuInfo = new RepoItemInfo(this, "lstPSU", "?/?/listitem[@text='PSU830']", 30000, null, "816a52b5-4d24-4d3f-b470-2bff4059eb0f");
                 _partimageInfo = new RepoItemInfo(this, "PARTImage", "?/?/listitem[1]/picture[@automationid='PART_Image']", 30000, null, "03eae35b-5236-4331-a7f1-a532057b0f70");
                 _low60dbInfo = new RepoItemInfo(this, "Low60dB", "?/?/listitem[1]/text[@caption='Low (60dB)']", 30000, null, "8e76d1ad-0165-4153-a9bb-a9bb5678e292");
@@ -5865,26 +5891,26 @@ namespace TestProject
             }
 
             /// <summary>
-            /// The PARTContent item.
+            /// The PanelTypeList item.
             /// </summary>
             [RepositoryItem("7e4237ad-7dc9-41c4-a7f8-b4765b697390")]
-            public virtual Ranorex.List PARTContent
+            public virtual Ranorex.List PanelTypeList
             {
                 get
                 {
-                    return _partcontentInfo.CreateAdapter<Ranorex.List>(true);
+                    return _paneltypelistInfo.CreateAdapter<Ranorex.List>(true);
                 }
             }
 
             /// <summary>
-            /// The PARTContent item info.
+            /// The PanelTypeList item info.
             /// </summary>
             [RepositoryItemInfo("7e4237ad-7dc9-41c4-a7f8-b4765b697390")]
-            public virtual RepoItemInfo PARTContentInfo
+            public virtual RepoItemInfo PanelTypeListInfo
             {
                 get
                 {
-                    return _partcontentInfo;
+                    return _paneltypelistInfo;
                 }
             }
 
@@ -7334,6 +7360,7 @@ namespace TestProject
             RepoItemInfo _backplane2expander_afterreopenInfo;
             RepoItemInfo _backplane3expander_afterreopenInfo;
             RepoItemInfo _selectpanelaccessorieslabelInfo;
+            RepoItemInfo _paneltypeInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7456,6 +7483,7 @@ namespace TestProject
                 _backplane2expander_afterreopenInfo = new RepoItemInfo(this, "Backplane2Expander_AfterReopen", "progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[4]/button[@automationid='Expander']", 30000, null, "1523b351-604a-4cf5-b106-2ef07b4c468b");
                 _backplane3expander_afterreopenInfo = new RepoItemInfo(this, "Backplane3Expander_AfterReopen", "progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[5]/button[@automationid='Expander']", 30000, null, "6cb713f3-051f-4121-b788-ea9f6b66ff09");
                 _selectpanelaccessorieslabelInfo = new RepoItemInfo(this, "SelectPanelAccessoriesLabel", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/container[$sRow]/row/cell[3]/text", 30000, null, "146c1f55-49b0-4746-aad8-6316e82c5570");
+                _paneltypeInfo = new RepoItemInfo(this, "PanelType", "progressbar/picture[7]/picture/list/row[@index='4']//combobox/text[@automationid='PART_Editor']", 30000, null, "8ffbf18e-7948-4450-aa7e-d271b5aa3cec");
             }
 
             /// <summary>
@@ -10191,6 +10219,30 @@ namespace TestProject
                 get
                 {
                     return _selectpanelaccessorieslabelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PanelType item.
+            /// </summary>
+            [RepositoryItem("8ffbf18e-7948-4450-aa7e-d271b5aa3cec")]
+            public virtual Ranorex.Text PanelType
+            {
+                get
+                {
+                    return _paneltypeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PanelType item info.
+            /// </summary>
+            [RepositoryItemInfo("8ffbf18e-7948-4450-aa7e-d271b5aa3cec")]
+            public virtual RepoItemInfo PanelTypeInfo
+            {
+                get
+                {
+                    return _paneltypeInfo;
                 }
             }
 

@@ -168,15 +168,10 @@ namespace TestProject.Libraries
 				{
 					Report.Log(ReportLevel.Failure,"Other slot cards text is displayed as " +ActualText+ "instead of " +expectedText);
 				}
-			}
-			
-			
-			
+			}	
 			
 		}
-		
-		
-		
+
 		/********************************************************************
 		 * Function Name: VerifySlotCardsAndBackplanesDistribution
 		 * Function Details: To verify slot cards and backplane distribution
@@ -618,7 +613,174 @@ namespace TestProject.Libraries
 			
 		}
 		
-		
-		
+		/***********************************************************************************************************
+		 * Function Name: VerifyPanelTypeDropdownOnSlotCardsPosition
+		 * Function Details: string sFileName,string sAddDevicesSheet, string sPanelName
+		 * Parameter/Arguments: expectedText
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 15/05/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyPanelTypeDropdownOnSlotCardsPosition(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			int columns = Excel_Utilities.ExcelRange.Columns.Count;
+			int deviceCount;
+			// Declared string type
+			string sType,sDeviceCount,sDeviceName,PanelType,ExpectedBackplane1,ExpectedBackplane2,ExpectedBackplane3,PanelName,PanelNode,CPUType;
+			string sBackplane1SlotCardName,sBackplane2SlotCardName,sBackplane3SlotCardName,PanelTypeNameList,PanelTypeNameListNotAvailable;
+
+			for(int i=10; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				ExpectedBackplane1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				ExpectedBackplane2 = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				ExpectedBackplane3 = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				sBackplane1SlotCardName = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				sBackplane2SlotCardName = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				sBackplane3SlotCardName = ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				PanelTypeNameList = ((Range)Excel_Utilities.ExcelRange.Cells[i,17]).Value.ToString();
+				PanelTypeNameListNotAvailable = ((Range)Excel_Utilities.ExcelRange.Cells[i,18]).Value.ToString();
+				// Add panels
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				
+				for(int j=4; j<=10; j++){
+					
+					
+					sDeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[8,j]).Value.ToString();
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[9,j]).Value.ToString();
+					sDeviceCount = ((Range)Excel_Utilities.ExcelRange.Cells[i,j]).Value.ToString();
+					
+					
+					PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
+					
+					int.TryParse(sDeviceCount, out deviceCount);
+					
+					// Verify device count and then add devices from panel accessories gallery or panel node gallery
+					if(deviceCount>0)
+					{
+						if (sType.Equals("Accessories"))
+						{
+							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.tab_PanelAccessories.Click();
+							for(int k=1; k<=deviceCount;k++)
+							{
+								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+							}
+						}
+						else
+						{
+							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.tab_Inventory.Click();
+							
+							for(int k=1; k<=deviceCount;k++)
+							{
+								Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
+							}
+						}
+					}
+					
+				}
+				
+				// Verify expected backplane1
+				if(ExpectedBackplane1.Equals("Yes"))
+				{
+					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
+					{
+						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+						Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
+						
+						VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
+						VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
+						
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
+					}
+					
+				}
+				else
+				{
+					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
+					{
+						Report.Log(ReportLevel.Failure, "Backplane1 should not be displayed");
+					}
+					
+				}
+				
+				// Verify expected backplane2
+				if(ExpectedBackplane2.Equals("Yes"))
+				{
+					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
+					{
+						repo.FormMe.Backplane2_Expander.Click();
+						Report.Log(ReportLevel.Success, "Backplane2 is available and displaying correctly");
+						
+						VerifyandClickOtherSlotCardsForBackplane2(sBackplane2SlotCardName);
+						VerifySlotCardsTextForBackplane2(sBackplane2SlotCardName);
+						
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure, "Backplane2 is not displayed");
+					}
+					
+				}
+				else
+				{
+					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
+					{
+						Report.Log(ReportLevel.Failure, "Backplane2 should not be displayed");
+					}
+					
+				}
+				
+				// Verify expected backplane3
+				if(ExpectedBackplane3.Equals("Yes"))
+				{
+					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
+					{
+						repo.FormMe.Backplane3_Expander.Click();
+						Report.Log(ReportLevel.Success, "Backplane3 is available and displaying correctly");
+						
+						VerifyandClickOtherSlotCardsForBackplane3(sBackplane3SlotCardName);
+						VerifySlotCardsTextForBackplane3(sBackplane3SlotCardName);
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure, "Backplane3 is not displayed");
+					}
+				}
+				else
+				{
+					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
+					{
+						Report.Log(ReportLevel.Failure, "Backplane3 should not be displayed");
+					}
+				}
+				
+				Devices_Functions.VerifyPanelTypeInDropdown(PanelName,PanelTypeNameList,PanelTypeNameListNotAvailable);
+				
+				
+				if(rows!=10)
+				{
+					// Delete Panel
+					Panel_Functions.DeletePanel(1,PanelNode,1);
+				}
+			}
+			
+			// Close Excel
+			Excel_Utilities.CloseExcel();
+
+		}
     }
 }
