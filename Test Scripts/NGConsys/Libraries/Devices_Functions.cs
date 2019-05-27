@@ -3123,13 +3123,17 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/03/2019
+		 * Last Update : 13/03/2019  24/05/2019 - Updated script, added if statement for tab_Points and cell_properties
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyDescription(string sDescription)
 		{
+			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
+			{
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
+			}
+			
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -3137,23 +3141,60 @@ namespace TestProject.Libraries
 			// Search Alarm Load property
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Description" +"{ENTER}" );
 			
+			
+			
+			if(repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceModeInfo.Exists())
+			{
 			// Click on Alarm Load cell
 			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
-			
-			// Retrieve value alarm load
-			string actualDescription = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
-			
-			// Comparing DayMode and sDayMode values
-			if(actualDescription.Equals(sDescription))
-			{
-				Report.Log(ReportLevel.Success,"Description " +sDescription+ " is displayed correctly");
 			}
 			else
 			{
-				Report.Log(ReportLevel.Failure,"Description is displayed as "+actualDescription+ " instead of "+ sDescription);
+			// Click on Properties cell
+			repo.FormMe.cell_Properties.Click();
+			
 			}
+
+			if(repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNightInfo.Exists())
+			{
+			// Retrieve value alarm load
+			string actualDescription = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+			
+				// Comparing DayMode and sDayMode values
+				if(actualDescription.Equals(sDescription))
+				{
+					Report.Log(ReportLevel.Success,"Description " +sDescription+ " is displayed correctly");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Description is displayed as "+actualDescription+ " instead of "+ sDescription);
+				}
+				
+			}
+			else
+			{
+			string actualDescription =	repo.FormMe.txt_PropertiesTextValue.TextValue;
+			
+			// Comparing DayMode and sDayMode values
+				if(actualDescription.Equals(sDescription))
+				{
+					Report.Log(ReportLevel.Success,"Description " +sDescription+ " is displayed correctly");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Description is displayed as "+actualDescription+ " instead of "+ sDescription);
+				}
+				
+			
+			}
+			
+			
+			
+			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
+			{
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
+			}
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -5270,6 +5311,301 @@ namespace TestProject.Libraries
 			
 			
 		}
+	
+		/********************************************************************
+		 * Function Name: VerifyEnableDisablePanelAccessoriesGallery
+		 * Function Details:
+		 * Parameter/Arguments: sType,deviceName,state
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 23/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyEnableDisablePanelAccessoriesGallery(string sType,string deviceName, string state)
+		{
+			if(state.Equals("Enabled"))
+			{
+				sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
+				ModelNumber=deviceName;
+				repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+				if (repo.ContextMenu.txt_SelectDevice.Enabled)
+				{
+					Report.Log(ReportLevel.Success, "Accessories : " + deviceName+ " Enabled in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Accessories : " + deviceName+ " Disabled in gallery");
+				}
+			}
+			else
+			{
+				sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
+				ModelNumber=deviceName;
+				repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+				if (repo.ContextMenu.txt_SelectDevice.Enabled)
+				{
+					Report.Log(ReportLevel.Failure, "Accessories : " + deviceName+ " enabled in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Accessories: " + deviceName+ " disabled in gallery");
+				}
+			}
+			
+		}
+
+
+			
+		/********************************************************************
+		 * Function Name: VerifyLabelInSearchProperties
+		 * Function Details: To verify label in search properties
+		 * Parameter/Arguments:expected Label text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyLabelInSearchProperties(string sLabel)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Label" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties.Click();
+			
+			// Retrieve value of label
+			string actualLabel = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			
+			// Comparing actualLabel and sLabel values
+			if(actualLabel.Equals(sLabel))
+			{
+				Report.Log(ReportLevel.Success,"Label text " +sLabel+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Label text is not displayed as "+actualLabel+ " instead of "+ sLabel);
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+			
+		/********************************************************************
+		 * Function Name: VerifySKUInSearchProperties
+		 * Function Details: To verify SKU in search properties
+		 * Parameter/Arguments:expected Label text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifySKUInSearchProperties(string sSKU)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("SKU" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties.Click();
+			
+			// Retrieve value of label
+			string actualSKUValue = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			
+			// Comparing actualLabel and sLabel values
+			if(actualSKUValue.Equals(sSKU))
+			{
+				Report.Log(ReportLevel.Success,"Actual SKU value " +actualSKUValue+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Actual SKU Value is displayed as "+actualSKUValue+ " instead of "+ sSKU);
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+	
+		/********************************************************************
+		 * Function Name: VerifyModelInSearchProperties
+		 * Function Details: To verify Model in search properties
+		 * Parameter/Arguments:expected Model text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyModelInSearchProperties(string sModel)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Model" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties.Click();
+			
+			// Retrieve value of label
+			string actualModelText = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			
+			// Comparing actualModelText and sModel values
+			if(actualModelText.Equals(sModel))
+			{
+				Report.Log(ReportLevel.Success,"Model text " +actualModelText+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Model text is displayed as "+actualModelText+ " instead of "+ sModel);
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: VerifyFOMInSearchProperties
+		 * Function Details: To verify FOM in search properties
+		 * Parameter/Arguments:expected FOM text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyFOMInSearchProperties(string sFOM)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("FOM" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties.Click();
+			
+			// Retrieve value of label
+			string actualFOM = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			
+			// Comparing actualModelText and sModel values
+			if(actualFOM.Equals(sFOM))
+			{
+				Report.Log(ReportLevel.Success,"FOM text " +actualFOM+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"FOM text is displayed as "+actualFOM+ " instead of "+ sFOM);
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+				
+		/********************************************************************
+		 * Function Name: VerifyFOMInSearchProperties
+		 * Function Details: To verify FOM in search properties
+		 * Parameter/Arguments:expected FOM text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyMPMInSearchProperties()
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("MPM" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties.Click();
+			
+			
+			// To retrieve the attribute value as boolean by its ischecked properties and store in actual state
+			bool actualState =  repo.FormMe.chkbox_MPM800.GetAttributeValue<bool>("ischecked");
+			
+			//As per actual state and expected state values verfiying day mode and day sensitivity field state and action performed on checkbox
+			if(actualState)
+			{
+				Report.Log(ReportLevel.Info,"MPM checkbox is available and is checked");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Info,"MPM checkbox is available and is not checked");
+			}
+
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: VerifyDescriptionTextRowInSearchProperties
+		 * Function Details: To verify Verify Description Text Row in Search Properties
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 25/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyDescriptionTextRowInSearchProperties()
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Description" +"{ENTER}" );
+			
+			// Click on 
+			repo.FormMe.txt_PropertiesTextRow.Click();
+			
+			if(repo.FormMe.txt_PropertiesTextRowInfo.Exists())
+			{
+				Report.Log(ReportLevel.Success,"Description text row available");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Description text row is not available");
+			}
+			
+				
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}	
+
 		
 	}
 	

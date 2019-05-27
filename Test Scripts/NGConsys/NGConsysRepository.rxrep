@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
 name="NGConsysRepository"
 rxversion="8.3">
@@ -3113,6 +3112,15 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			capname="text"
 			id="7eb8ad20-55fa-4493-87ac-4ee648507e5a"
 			name="txt_InventoryProperty"
+			refimgid="b47c2a43-cc67-4060-9ad3-4149a7338362"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//text
+			</item>
+			<item
+			capname="text"
+			id="5229b4f7-5565-4f6e-ac0b-a3146dd61fdc"
+			name="txt_PropertiesTextValue"
+			refimgid="b47c2a43-cc67-4060-9ad3-4149a7338362"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//text
 			</item>
@@ -3150,6 +3158,15 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			capname="cell"
 			id="103cbd47-0037-40a6-b35b-62cfbcaeb884"
 			name="cell_CableLength"
+			refimgid="4da32680-f349-473f-b2a9-1bd3eac0dfe7"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/?/?/cell[@isheader='False']
+			</item>
+			<item
+			capname="cell"
+			id="3d8bbf98-14ae-4e23-a8a2-59bc36211fea"
+			name="cell_Properties"
+			refimgid="4da32680-f349-473f-b2a9-1bd3eac0dfe7"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/?/?/cell[@isheader='False']
 			</item>
@@ -3340,6 +3357,25 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			refimgid="2064d12d-456c-4a1c-9d71-f3dc167ea969"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='4']//combobox/text[@automationid='PART_Editor']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="6bd9942b-cd2f-45b2-90c0-c497a3a265bf"
+			name="chkbox_MPM800"
+			refimgid="cd52edc1-9af3-4625-ad4e-959efa299cb5"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//button[@automationid='PART_Editor']
+			</item>
+			<item
+			addcaps="row,wpfelement,wpfgroupelement"
+			capname="row"
+			id="66ed420a-9357-481e-97ad-51210a5769ed"
+			name="txt_PropertiesTextRow"
+			refimgid="13c0a944-319b-4725-a8c1-557b761bb72b"
+			refpath="/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='1']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='1']
 			</item>
 			<basepath>
 				/form[@automationid='me']

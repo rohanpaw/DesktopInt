@@ -2216,6 +2216,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="2a6b2f48-31dd-4c6f-b26e-05198b8e5798"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="2a72235a-3c22-4741-9424-cd3625409dc0"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -2446,6 +2452,26 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="2f0533f6-e89f-4803-9e51-bf08353af1fd"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="2f18b4f1-59aa-493c-8a90-36e2d50b4021"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Cards"
 			ref="e51a88cd-f042-4763-ad6d-66f79029466b"
@@ -2642,6 +2668,20 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="34a7ab9d-aec0-4716-8d96-d556c3b46266"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="cdbd11ed-c284-43f3-8080-7bc5dcad544a"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="34abeb3f-69b9-420f-9c5b-a3b1852b887d"
 			name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_RBus_Connection">
@@ -2748,6 +2788,20 @@ rxversion="8.3">
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="370d965f-5dcf-4601-85be-23c4512f1d0d"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="b96d100c-442a-427f-ae89-c0471236f378"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2942,6 +2996,12 @@ rxversion="8.3">
 			id="3b07c41f-e99e-4423-bb05-b9314bc33f57"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3b41e968-8e05-4d1c-9c11-f12ffa43c5b7"
+			name="Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery"
+			ref="3d91b06d-c532-467f-b253-14c0a67afb02"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -3879,6 +3939,12 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4f84a294-1a0a-4d6a-94d9-bfb4c63fd7ce"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4ffaf558-6ca7-402c-a4c0-87c42c201695"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -3981,6 +4047,12 @@ loops.</SPAN>]]>
 			id="5243cb3c-7346-4de1-940a-92b29a18d774"
 			name="Verify_Power_Calculation_Is_Populated_Warning_Error_Messages_For_40V_And_DC_Units"
 			ref="50444d12-05dc-495b-b480-1db13b0b1710"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="52475bc7-6831-4914-af21-a9606b85a196"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -4940,6 +5012,19 @@ loops.</SPAN>]]>
 			ref="1ce07a05-a87a-431c-8de2-857e3832d7cb"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="665f2de6-a321-40d9-a3b1-88863115cde3"
+			name="Verify_The_Network_Card_Is_Added_To_Panel">
+				<description>
+					<![CDATA[<p>NGC-1031/TC-54166</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="66995717-4af6-4593-8e6b-666e6f0bcf01"
 			name="Verify_If_The_Device_Order_Is_Shown_As_Exi_Order_IS_Order"
@@ -7243,6 +7328,12 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="9355b583-4746-44b5-b6e3-43d85db532f2"
+			name="Verify_The_Network_Card_Is_Added_To_Panel"
+			ref="1e66c130-cd29-457b-a28a-fe9ac1cb5f64"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="93d6b44c-ebf0-4e0f-9bc2-cb1dd9302d25"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -7409,38 +7500,6 @@ MxDesigner]]>
 			name="ReportToPDFModule"
 			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
 			type="UserCode">
-				<databinding>
-					<var
-					dataname="PdfName"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
-					variablename="PdfName">
-					</var>
-					<var
-					dataname="PdfDirectoryPath"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="536f8a69-f246-4f2b-ae9e-1f62babb2ba9"
-					variablename="PdfDirectoryPath">
-					</var>
-					<var
-					dataname="Xml"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
-					variablename="Xml">
-					</var>
-					<var
-					dataname="Details"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
-					variablename="Details">
-					</var>
-					<var
-					dataname="DeleteRanorexReport"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
-					variablename="DeleteRanorexReport">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="9864a36b-ae6f-461e-b088-99301d83c7e8"
@@ -8719,6 +8778,19 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="b96d100c-442a-427f-ae89-c0471236f378"
+			name="Verify_The_Properties_Of_TLI800">
+				<description>
+					<![CDATA[<p>NGC-1031/TC-54231</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="ba0db839-ed99-4a04-a90f-5378c531aa1e"
 			name="Application_Open"
@@ -8749,6 +8821,12 @@ persisted in panel properties&nbsp;]]>
 			id="ba34f9f5-b2c9-408b-adb1-e681b34664a9"
 			name="Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light"
 			ref="a524d7f2-60bf-431d-a51e-67afbdc7ba1d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ba7dd585-2cfa-4764-a8f4-a9a6a808941a"
+			name="Verify_The_Properties_Of_TLI800"
+			ref="155e3ff8-bcca-4c1c-ab0a-c36d7a2b2d2b"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -9521,6 +9599,19 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="cdbd11ed-c284-43f3-8080-7bc5dcad544a"
+			name="Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery">
+				<description>
+					<![CDATA[<p>NGC-1031/TC-54167</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="ce14dbf2-f6cf-460d-a415-ec82b5734c12"
 			name="Application_Open"
@@ -9701,6 +9792,26 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="c429ef57-3fbd-44e7-a8f0-15f9b9f136a2"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="d21c3d0b-36b4-4303-9029-c80de182b363"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -10201,6 +10312,26 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="de24ec8a-b0c8-45ca-834a-e2787065021c"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -11463,6 +11594,20 @@ persisted in panel properties&nbsp;]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fcd84e10-4fa1-4e74-97c9-8f51e9025782"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="665f2de6-a321-40d9-a3b1-88863115cde3"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="fcde886e-6c66-4fd0-bee7-64504dfaf105"
@@ -15181,6 +15326,66 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="80092272-300a-4a70-b0f5-c2050e263b09"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="665f2de6-a321-40d9-a3b1-88863115cde3"
+					name="Verify_The_Network_Card_Is_Added_To_Panel">
+						<testmodule
+						id="d21c3d0b-36b4-4303-9029-c80de182b363"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="fcd84e10-4fa1-4e74-97c9-8f51e9025782"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="9355b583-4746-44b5-b6e3-43d85db532f2"
+						name="Verify_The_Network_Card_Is_Added_To_Panel">
+						</testmodule>
+						<testmodule
+						id="52475bc7-6831-4914-af21-a9606b85a196"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="cdbd11ed-c284-43f3-8080-7bc5dcad544a"
+					name="Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery">
+						<testmodule
+						id="de24ec8a-b0c8-45ca-834a-e2787065021c"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="34a7ab9d-aec0-4716-8d96-d556c3b46266"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="3b41e968-8e05-4d1c-9c11-f12ffa43c5b7"
+						name="Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery">
+						</testmodule>
+						<testmodule
+						id="2a6b2f48-31dd-4c6f-b26e-05198b8e5798"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="b96d100c-442a-427f-ae89-c0471236f378"
+					name="Verify_The_Properties_Of_TLI800">
+						<testmodule
+						id="2f0533f6-e89f-4803-9e51-bf08353af1fd"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="370d965f-5dcf-4601-85be-23c4512f1d0d"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="ba7dd585-2cfa-4764-a8f4-a9a6a808941a"
+						name="Verify_The_Properties_Of_TLI800">
+						</testmodule>
+						<testmodule
+						id="4f84a294-1a0a-4d6a-94d9-bfb4c63fd7ce"
 						name="Close_Application">
 						</testmodule>
 					</testcase>

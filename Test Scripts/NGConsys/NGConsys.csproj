@@ -787,6 +787,18 @@
       <UserCode>true</UserCode>
       <id>3b9cba22-f5ff-427e-9c68-ac030bd87458</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.cs">
+      <BoundTo>7f6b2f26-92d4-41e1-9988-23635ece29cf</BoundTo>
+      <DependentUpon>Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>26ccaea3-66f0-469a-a940-fc62372cbd0e</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.UserCode.cs">
+      <BoundTo>7f6b2f26-92d4-41e1-9988-23635ece29cf</BoundTo>
+      <DependentUpon>Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ab2d22c7-e190-48c4-ba92-f9af4a130cb9</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Addition_Deletion_Of_Sounders_In_LPS800_Reflects_In_Shopping_List.cs">
       <BoundTo>24095037-571a-4d47-8239-9929cbe199e1</BoundTo>
       <DependentUpon>Verify_Addition_Deletion_Of_Sounders_In_LPS800_Reflects_In_Shopping_List.rxrec</DependentUpon>
@@ -2503,6 +2515,30 @@
       <UserCode>true</UserCode>
       <id>8b9ff063-01d4-42bc-950a-78e325705f34</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_The_Network_Card_Is_Added_To_Panel.cs">
+      <BoundTo>144ea792-7286-454e-abc5-6b9803fb7582</BoundTo>
+      <DependentUpon>Verify_The_Network_Card_Is_Added_To_Panel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d1a46268-828f-4c05-adfe-410117383496</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Network_Card_Is_Added_To_Panel.UserCode.cs">
+      <BoundTo>144ea792-7286-454e-abc5-6b9803fb7582</BoundTo>
+      <DependentUpon>Verify_The_Network_Card_Is_Added_To_Panel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b08f2efc-525b-44ca-9a78-869f010c8a3f</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Properties_Of_TLI800.cs">
+      <BoundTo>da483530-9948-4bab-8e1b-2fbcfaeca069</BoundTo>
+      <DependentUpon>Verify_The_Properties_Of_TLI800.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>306c27c8-17aa-4d52-afca-dbba16a09532</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Properties_Of_TLI800.UserCode.cs">
+      <BoundTo>da483530-9948-4bab-8e1b-2fbcfaeca069</BoundTo>
+      <DependentUpon>Verify_The_Properties_Of_TLI800.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>90cfd707-ac27-41c0-805f-25dfffc1a153</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_The_Respective_5V24V40V_Property_On_Changing_Power_Source.cs">
       <BoundTo>d594399a-7ff5-4438-b4b4-03165d779d5a</BoundTo>
       <DependentUpon>Verify_The_Respective_5V24V40V_Property_On_Changing_Power_Source.rxrec</DependentUpon>
@@ -2969,6 +3005,11 @@
       <id>1be20993-588e-4680-b890-9157b41bb5df</id>
       <recordtableid>455cd66b-5450-4487-b677-84049b89d7ef</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>7f6b2f26-92d4-41e1-9988-23635ece29cf</id>
+      <recordtableid>3d91b06d-c532-467f-b253-14c0a67afb02</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Addition_Deletion_Of_Sounders_In_LPS800_Reflects_In_Shopping_List.rxrec">
       <id>24095037-571a-4d47-8239-9929cbe199e1</id>
       <recordtableid>19afc002-51fb-44c7-98d4-83fc78e4dd53</recordtableid>
@@ -3250,9 +3291,9 @@
       <recordtableid>03f1ad7a-7073-445b-b9d7-2352e9793931</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_FB_IOB_Slot_Allocation_In_Backplane.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>ce55a45c-b006-4294-8fe5-c48dac998931</id>
       <recordtableid>97a6fcd4-06d8-4d1a-822d-39f831aa97f0</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_IB_Units_On_Assigning_Base_And_Additional_Base.rxrec">
       <id>4b489a0e-e800-42b9-becc-6fcb22cbf814</id>
@@ -3684,6 +3725,16 @@
       <id>b9256fd9-8602-43d6-9d50-7c58270e9cf0</id>
       <recordtableid>f3235564-3543-407b-8e53-67ecf272d30a</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_The_Network_Card_Is_Added_To_Panel.rxrec">
+      <id>144ea792-7286-454e-abc5-6b9803fb7582</id>
+      <recordtableid>1e66c130-cd29-457b-a28a-fe9ac1cb5f64</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_The_Properties_Of_TLI800.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>da483530-9948-4bab-8e1b-2fbcfaeca069</id>
+      <recordtableid>155e3ff8-bcca-4c1c-ab0a-c36d7a2b2d2b</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_The_Respective_5V24V40V_Property_On_Changing_Power_Source.rxrec">
       <id>d594399a-7ff5-4438-b4b4-03165d779d5a</id>
       <recordtableid>d6bd24c8-5182-4f9d-bdcb-859457805967</recordtableid>
@@ -3775,14 +3826,9 @@
       <id>8ebf85de-3d44-4943-ad4d-648a982f309f</id>
     </Content>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{D936E077-7C8C-47CC-B3C9-E35F75ED262A}</Project>
-      <Name>Ranorex Automation Helpers</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{D936E077-7C8C-47CC-B3C9-E35F75ED262A}</Project>
+      <Project>{06C8FF6A-9C9F-4248-B019-8D77CE4C35F6}</Project>
       <Name>Ranorex Automation Helpers</Name>
     </ProjectReference>
   </ItemGroup>

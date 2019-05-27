@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="155e3ff8-bcca-4c1c-ab0a-c36d7a2b2d2b"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_The_Properties_Of_TLI800
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_The_Properties_Of_TLI800"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="SlotCards_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyTLI800Properties"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4d587879-4235-4c73-a1b2-6e41be48406b">
+				<argument
+				argname="sFileName"
+				id="e3088da4-e8a4-4712-9b04-939dfe03643a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_54231_Verify_The_Properties_Of_TLI800
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddDevicesSheet"
+				id="a4653bf1-2572-45e9-a445-edf119b3e829">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Devices
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_The_Properties_Of_TLI800.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

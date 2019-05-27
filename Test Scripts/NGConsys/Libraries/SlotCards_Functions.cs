@@ -23,16 +23,16 @@ using Ranorex.Core.Testing;
 
 namespace TestProject.Libraries
 {
-    /// <summary>
-    /// Ranorex user code collection. A collection is used to publish user code methods to the user code library.
-    /// </summary>
-    [UserCodeCollection]
-    public class SlotCards_Functions
-    {
-    	// You can use the "Insert New User Code Method" functionality from the context menu,
-        // to add a new method with the attribute [UserCodeMethod].
-    	
-    	//Create instance of repository to access repository items
+	/// <summary>
+	/// Ranorex user code collection. A collection is used to publish user code methods to the user code library.
+	/// </summary>
+	[UserCodeCollection]
+	public class SlotCards_Functions
+	{
+		// You can use the "Insert New User Code Method" functionality from the context menu,
+		// to add a new method with the attribute [UserCodeMethod].
+		
+		//Create instance of repository to access repository items
 		static NGConsysRepository repo = NGConsysRepository.Instance;
 		
 		static string ModelNumber
@@ -112,7 +112,7 @@ namespace TestProject.Libraries
 			get { return repo.sOtherSlotCardName; }
 			set { repo.sOtherSlotCardName = value; }
 		}
-    	
+		
 		
 		
 		/***********************************************************************************************************
@@ -168,7 +168,7 @@ namespace TestProject.Libraries
 				{
 					Report.Log(ReportLevel.Failure,"Other slot cards text is displayed as " +ActualText+ "instead of " +expectedText);
 				}
-			}	
+			}
 			
 		}
 
@@ -338,7 +338,7 @@ namespace TestProject.Libraries
 		
 		
 		
-        /********************************************************************
+		/********************************************************************
 		 * Function Name: VerifySlotCardsAndBackplanesDistributionWithOnePanel
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
@@ -782,5 +782,133 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 
 		}
-    }
+		
+		/***********************************************************************************************************
+		 * Function Name: VerifyAddingRemovingOfTLI800SlotCards
+		 * Function Details:
+		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2019
+		 ***********************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyAddingRemovingOfTLI800SlotCards(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string sType,sDeviceName,PanelName,PanelNode,CPUType,initialState,afterDeletechangedState,newDeviceName,lastChangedState;
+			
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				sType =  ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				initialState = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				newDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				afterDeletechangedState = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				lastChangedState = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				
+				// Add panels
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				repo.FormMe.tab_PanelAccessories.Click();
+				
+				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+				
+				sDeviceName = newDeviceName;
+				
+				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,initialState);
+				
+				Devices_Functions.DeleteAccessoryFromPanelAccessoriesTab();
+				
+				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,afterDeletechangedState);
+				
+				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+				
+				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,lastChangedState);
+				
+				if(rows!=8)
+				{
+					// Delete Panel
+					Panel_Functions.DeletePanel(1,PanelNode,1);
+				}
+			}
+			
+			// Close Excel
+			Excel_Utilities.CloseExcel();
+			
+		}
+		
+		/***********************************************************************************************************
+		 * Function Name: VerifyAddingRemovingOfTLI800SlotCards
+		 * Function Details:
+		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2019
+		 ***********************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyTLI800Properties(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string sType,sDeviceName,PanelName,PanelNode,CPUType,sSKU,sModel,sDescription,sMPM,sLabel,sFOM;
+			
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				sType =  ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				sLabel = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sSKU = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sModel = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sFOM = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				
+				
+				// Add panels
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				repo.FormMe.tab_PanelAccessories.Click();
+				
+				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+				
+				Devices_Functions.VerifyLabelInSearchProperties(sLabel);
+
+				Devices_Functions.VerifySKUInSearchProperties(sSKU);
+				
+				Devices_Functions.VerifyModelInSearchProperties(sModel);
+				
+				Devices_Functions.VerifyDescriptionTextRowInSearchProperties();
+
+				Devices_Functions.VerifyFOMInSearchProperties(sFOM);
+				
+				Devices_Functions.VerifyMPMInSearchProperties();
+			}
+			
+			// Close Excel
+			Excel_Utilities.CloseExcel();
+		}
+		
+		
+		
+		
+	}
 }
