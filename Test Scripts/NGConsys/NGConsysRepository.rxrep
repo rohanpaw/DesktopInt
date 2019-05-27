@@ -1944,6 +1944,14 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/contextmenu/list/button[@text=$slistindex]
 			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="387ea824-48ec-43bf-b4f4-9d3c07e4b935"
+			name="MultiPointWizardRegionComboBox"
+			searchtimeout="30000ms">
+				/contextmenu/container/?/?/listitem[@index=$sRowIndex]
+			</item>
 			<basepath>
 				/contextmenu
 			</basepath>
@@ -2217,6 +2225,26 @@ W/AAAAAASUVORK5CYII=
 			refpath="/form[@title='Add Devices']/container[1]/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row/cell[1]/picture[1]"
 			searchtimeout="30000ms">
 				/form[@title='Add Devices']/?/?/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']//row/cell[1]/picture[1]
+			</item>
+			<item
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="container"
+			id="8880e1d7-ca70-41ca-8d43-f8faaecff2bb"
+			name="MultiPointWizardRegionDropDownBtn"
+			refimgid="409edb7f-2096-4209-8dbe-a046105f0bf6"
+			refpath="/form[@title='Add Devices']/container[1]/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row/cell[3]/text/combobox[@automationid='PART_Editor']/button[@automationid='ToggleButton']/container[@automationid='States']"
+			searchtimeout="30000ms">
+				/form[@title='Add Devices']/?/?/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']//row//combobox[@automationid='PART_Editor']/button[@automationid='ToggleButton']/container[@automationid='States']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="647afbe0-89ee-442a-af16-574722f75696"
+			name="MPWRegionBox"
+			refimgid="b49be0c6-e878-4e6c-b958-7b4e058850f6"
+			refpath="/form[@title='Add Devices']/container[1]/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row[1]/cell[3]/text"
+			searchtimeout="30000ms">
+				/form[@title='Add Devices']/?/?/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row[1]/cell[3]/text
 			</item>
 			<basepath>
 				/form[@title='Add Devices']
@@ -2560,6 +2588,26 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 				name="Backplane2_OtherSlotCardsWithPLX"
 				searchtimeout="30000ms">
 					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/?/?/container[@automationid='ItemsHost']/?/?/text[@text=$sOtherSlotCardName]
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="c0cb9cc9-c17f-4db0-a517-1b5c916e2733"
+				name="PLX_External_Loop_Card_3_Expander"
+				refimgid="ae4a08e8-50fe-4ddd-a41a-18b52724c649"
+				refpath="/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']"
+				searchtimeout="30000ms">
+					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/?/?/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']
+				</item>
+				<item
+				addcaps="treeitem,wpfelement,wpfgroupelement"
+				capname="treeitem"
+				id="69710ff1-f2fa-4eee-9b4a-f6c10aa175a6"
+				name="PLX800_9_Loop"
+				refimgid="b5a32770-ad70-4dbb-9b56-1e4f7887a940"
+				refpath="/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[1]"
+				searchtimeout="30000ms">
+					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/?/?/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[1]
 				</item>
 				<basepath>
 					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/?/?/container[@automationid='ItemsHost']
@@ -3124,6 +3172,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			capname="text"
 			id="49f14c1e-6e32-4e32-b190-85dea335cd6f"
 			name="PanelAccessoriesLabel"
+			refimgid="059f0083-b588-4f25-9c4e-7f32f212479c"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[3]/text
 			</item>
@@ -3410,6 +3459,43 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			refimgid="b0aade65-74cc-4ca0-bdea-5a969d2e21b2"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[3]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
+			</item>
+			<item
+			addcaps="grip,wpfelement,wpfgroupelement"
+			capname="grip"
+			id="7e2c6509-4384-455e-bfef-560ba1a34c78"
+			name="HorizontalScrollBarPointsGrid"
+			refimgid="0bdb9777-a997-478f-99a7-164e1bfd5146"
+			refpath="/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/slider[@automationid='PART_Track']/grip"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/?/?/grip
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="db7accc1-f202-4d75-a34a-4697cba99132"
+			name="UpArrowScrollButtonPointsGrid"
+			refimgid="18fb5363-aa99-4e7a-bf86-fbe348a530c3"
+			refpath="/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineUpButton']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineUpButton']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="e5b8f017-2c40-4279-a72b-4d652feb9530"
+			name="DownArrowScrollButtonPointsGrid"
+			refimgid="da553fbc-4afe-46bf-8761-cab91ed58a33"
+			refpath="/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineDownButton']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineDownButton']
+			</item>
+			<item
+			capname="text"
+			id="93ca5dfd-0bc3-42d0-8130-9986aca2076b"
+			name="LastPointGridLabel"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[26]//text[@automationid='PART_Editor']
 			</item>
 			<basepath>
 				/form[@automationid='me']

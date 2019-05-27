@@ -206,9 +206,10 @@ namespace TestProject.Libraries
 			sColumnIndex = getColumnNumberForInventoryGrid(ExpectedInventoryGridColumn);
 			sRowIndex = ExpectedInventoryGridRowCount;
 			
-			Report.Log(ReportLevel.Success,"Row an column values are set as"+sColumnIndex+sRowIndex);
-			
+			Report.Log(ReportLevel.Success,"Column and row values are set as "+sColumnIndex+sRowIndex);
+			repo.FormMe.txt_InventoryGridDeviceProperty.Click();
 			string ActualInventoryGridProperty = repo.FormMe.txt_InventoryGridDeviceProperty.TextValue;
+			
 			// Compare Actual and Expected Point Grid Row count
 			Report.Log(ReportLevel.Success,"Actual"+ActualInventoryGridProperty+"  Expected"+ExpectedDeviceProperty);
 			
@@ -299,7 +300,7 @@ namespace TestProject.Libraries
 		
 		/***********************************************************************************************************
 		 * Function Name: verifyInventoryDeviceProperty
-		 * Function Details: Verify device property from Inventory section
+		 * Function Details: Verify device property from Inventory properties section
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam

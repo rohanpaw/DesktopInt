@@ -326,6 +326,23 @@ rxversion="8.3">
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="05c8b575-b5b5-4e1a-8970-570d93ed8c21"
+			name="Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds">
+				<description>
+					<![CDATA[<p>NGC-372/TC-0035</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="05f89754-b1b0-4720-8f27-26dbf5166858"
 			name="Application_Open"
@@ -970,6 +987,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="10a902bf-7b23-4682-a1ca-74bf1f4f4bcb"
+			name="Verify_Paste_Of_Points_Only"
+			ref="925e64c6-c496-4160-82b4-2b68be5eac59"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="81be8bf4-897f-4cb4-966f-7e48fbbb98ce"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="10e215c2-ed7f-4a42-9d59-e12168027323"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -1306,6 +1337,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="1771ac3b-7bc3-48d3-9be2-1ca14c757380"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="17c9e370-efd0-4dec-ad11-5fbe9d5fa378"
 			name="Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane">
@@ -1693,6 +1730,26 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="1f168498-989f-4edd-aa8b-2f5c4e0ee356"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="1f2e49c2-f34b-48df-a278-0b37276558bf"
 			name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM">
@@ -2759,6 +2816,20 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="3509cde6-ebd8-4d99-97f0-377bd7db1e81"
+			name="Verify_Paste_Of_Unit_Only"
+			ref="1e0e124e-8162-4f46-9fae-f627dd9297c7"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="e2708cf8-0006-4cee-b114-108e2c344b48"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="35a77868-41b5-4550-9d0b-0aaffca05fed"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -3270,6 +3341,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="4146486c-7379-4b21-b620-451f7c319acc"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="41bf905a-16e8-43c1-a543-822881d216b9"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -3366,6 +3443,13 @@ rxversion="8.3">
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="4315861a-9467-4079-b0b6-186628cddf6d"
+			name="Verify_Paste_Of_Unit_With_Points">
+				<description>
+					<![CDATA[<p>NGC-372/TC-0036</p>]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="432f7321-94dd-4896-b2fc-255f88d78e17"
 			name="Create_Project"
@@ -3927,6 +4011,20 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4dc8b5eb-4353-4323-b44a-7069ebb68016"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="81be8bf4-897f-4cb4-966f-7e48fbbb98ce"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4e37fd1f-81a8-4c01-b495-ea66c338b9ad"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -4120,6 +4218,26 @@ loops.</SPAN>]]>
 			name="Verify_Reopen_Project_After_Deleting_Devices"
 			ref="d8eca13f-b210-4121-8a72-d2d7222922e6"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="522ceca4-e0d8-40be-a640-fcccc21d17c1"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="5243cb3c-7346-4de1-940a-92b29a18d774"
@@ -4693,6 +4811,20 @@ loops.</SPAN>]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5e405b5a-9e4d-440e-bc9e-e931ed1b5ba3"
+			name="Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds"
+			ref="3ac8ba58-8356-437c-8589-5e08fa919379"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="05c8b575-b5b5-4e1a-8970-570d93ed8c21"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -6422,6 +6554,23 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testcase
+			id="81be8bf4-897f-4cb4-966f-7e48fbbb98ce"
+			name="Verify_Paste_Of_Points_Only">
+				<description>
+					<![CDATA[<p>NGC-372/TC-0033</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="8229ec8d-24b2-4223-b623-61911af6a44e"
 			name="Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base">
 				<description>
@@ -6940,6 +7089,12 @@ MxDesigner]]>
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="8947b625-9364-41bc-8624-d4fe9e03f5f5"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="89f51586-485b-4090-84c9-5b76ba974274"
@@ -8155,6 +8310,12 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="a76e5d55-6d49-4ccc-9557-edbe826a494a"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="a7932ef9-588a-47d5-8230-f4d52efedcad"
 			name="Verify_copy_paste_functionality_for_LPS800">
@@ -8537,6 +8698,20 @@ project]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b40d89a4-7f2b-4cf1-a97d-5aea11f912e3"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="05c8b575-b5b5-4e1a-8970-570d93ed8c21"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="b45221b1-77b4-4907-a173-84571d7932c6"
@@ -9241,6 +9416,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="c1ee1edc-cd24-48ab-801d-aa7f779a278a"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="c2199060-4134-49e2-b84f-19deb893fb99"
 			name="Application_Open"
@@ -10627,6 +10808,23 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="e2708cf8-0006-4cee-b114-108e2c344b48"
+			name="Verify_Paste_Of_Unit_Only">
+				<description>
+					<![CDATA[NGC-372/TC-0032]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="e2aaf346-d0ac-4ab6-b31b-a599b027df73"
 			name="Application_Open"
@@ -10644,6 +10842,26 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e36eed15-ad6e-464c-b7b0-013e3f8510e0"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -10876,6 +11094,20 @@ persisted in panel properties&nbsp;]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e8f2d43e-770b-481c-81b3-046c60d1acba"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="e2708cf8-0006-4cee-b114-108e2c344b48"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="e91f28b1-80e5-4e00-9495-5238bb23dfe6"
@@ -11142,6 +11374,26 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_40V_load_calculation_for_FIM"
 			ref="ac8bea27-1785-4975-b099-0d3b3238a1f9"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="edcc1cbd-9281-4456-901c-8c5889db8e6c"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ee410dbb-3714-4862-8658-d3214b065693"
@@ -11524,6 +11776,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="sRowIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="f7f1d54a-d759-4a52-8b94-a6192dc6be15"
+			name="Verify_Paste_Of_Unit_With_Points"
+			ref="21df85d8-aea5-4759-a8a8-44db0ff18796"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="f8a27eff-4791-4891-9db3-3830d7b5381d"
@@ -15386,6 +15644,10 @@ persisted in panel properties&nbsp;]]>
 						id="fdfd0443-1ba3-45f4-b1b2-5d6b39dc7c3b"
 						name="Verify_Paste_Options_Displayed_For_Loop">
 						</testmodule>
+						<testmodule
+						id="a76e5d55-6d49-4ccc-9557-edbe826a494a"
+						name="Close_Application">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="f0823aa5-fc64-4087-b843-00c59abdebf5"
@@ -15547,6 +15809,82 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="e2708cf8-0006-4cee-b114-108e2c344b48"
+					name="Verify_Paste_Of_Unit_Only">
+						<testmodule
+						id="edcc1cbd-9281-4456-901c-8c5889db8e6c"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="e8f2d43e-770b-481c-81b3-046c60d1acba"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="3509cde6-ebd8-4d99-97f0-377bd7db1e81"
+						name="Verify_Paste_Of_Unit_Only">
+						</testmodule>
+						<testmodule
+						id="8947b625-9364-41bc-8624-d4fe9e03f5f5"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="81be8bf4-897f-4cb4-966f-7e48fbbb98ce"
+					name="Verify_Paste_Of_Points_Only">
+						<testmodule
+						id="522ceca4-e0d8-40be-a640-fcccc21d17c1"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="4dc8b5eb-4353-4323-b44a-7069ebb68016"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="10a902bf-7b23-4682-a1ca-74bf1f4f4bcb"
+						name="Verify_Paste_Of_Points_Only">
+						</testmodule>
+						<testmodule
+						id="c1ee1edc-cd24-48ab-801d-aa7f779a278a"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="05c8b575-b5b5-4e1a-8970-570d93ed8c21"
+					name="Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds">
+						<testmodule
+						id="1f168498-989f-4edd-aa8b-2f5c4e0ee356"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="b40d89a4-7f2b-4cf1-a97d-5aea11f912e3"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="5e405b5a-9e4d-440e-bc9e-e931ed1b5ba3"
+						name="Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds">
+						</testmodule>
+						<testmodule
+						id="1771ac3b-7bc3-48d3-9be2-1ca14c757380"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="4315861a-9467-4079-b0b6-186628cddf6d"
+					name="Verify_Paste_Of_Unit_With_Points">
+						<testmodule
+						id="e36eed15-ad6e-464c-b7b0-013e3f8510e0"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="4146486c-7379-4b21-b620-451f7c319acc"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="f7f1d54a-d759-4a52-8b94-a6192dc6be15"
+						name="Verify_Paste_Of_Unit_With_Points">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -15608,6 +15946,9 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="4315861a-9467-4079-b0b6-186628cddf6d">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

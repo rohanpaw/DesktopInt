@@ -5715,6 +5715,7 @@ namespace TestProject
             RepoItemInfo _custom_in_context_menuInfo;
             RepoItemInfo _panelaccessories_deviceInfo;
             RepoItemInfo _contextmenuoptionInfo;
+            RepoItemInfo _multipointwizardregioncomboboxInfo;
 
             /// <summary>
             /// Creates a new ContextMenu  folder.
@@ -5758,6 +5759,7 @@ namespace TestProject
                 _custom_in_context_menuInfo = new RepoItemInfo(this, "Custom_In_Context_Menu", "list/button[@text='Custom']", 30000, null, "e6baecb4-0da9-4e26-82d6-b6f66c654770");
                 _panelaccessories_deviceInfo = new RepoItemInfo(this, "PanelAccessories_Device", "list/?/?/listitem[@index=$sDeviceIndex]", 30000, null, "bd9007c8-c307-4845-904b-ca40813f66eb");
                 _contextmenuoptionInfo = new RepoItemInfo(this, "ContextMenuOption", "list/button[@text=$slistindex]", 30000, null, "97af81f2-4164-4836-8a5e-db7a60934f91");
+                _multipointwizardregioncomboboxInfo = new RepoItemInfo(this, "MultiPointWizardRegionComboBox", "container/?/?/listitem[@index=$sRowIndex]", 30000, null, "387ea824-48ec-43bf-b4f4-9d3c07e4b935");
             }
 
             /// <summary>
@@ -6647,6 +6649,30 @@ namespace TestProject
                     return _contextmenuoptionInfo;
                 }
             }
+
+            /// <summary>
+            /// The MultiPointWizardRegionComboBox item.
+            /// </summary>
+            [RepositoryItem("387ea824-48ec-43bf-b4f4-9d3c07e4b935")]
+            public virtual Ranorex.ListItem MultiPointWizardRegionComboBox
+            {
+                get
+                {
+                    return _multipointwizardregioncomboboxInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MultiPointWizardRegionComboBox item info.
+            /// </summary>
+            [RepositoryItemInfo("387ea824-48ec-43bf-b4f4-9d3c07e4b935")]
+            public virtual RepoItemInfo MultiPointWizardRegionComboBoxInfo
+            {
+                get
+                {
+                    return _multipointwizardregioncomboboxInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -7002,6 +7028,8 @@ namespace TestProject
             RepoItemInfo _txt_quantityInfo;
             RepoItemInfo _cancel_multiple_point_wizardInfo;
             RepoItemInfo _multiplepointwizardwarningsignInfo;
+            RepoItemInfo _multipointwizardregiondropdownbtnInfo;
+            RepoItemInfo _mpwregionboxInfo;
 
             /// <summary>
             /// Creates a new AddDevices  folder.
@@ -7016,6 +7044,8 @@ namespace TestProject
                 _txt_quantityInfo = new RepoItemInfo(this, "txt_Quantity", "?/?/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']//row/cell[2]/text", 30000, null, "94369f9f-f839-4d1d-9922-ecce8235b4a0");
                 _cancel_multiple_point_wizardInfo = new RepoItemInfo(this, "Cancel_Multiple_Point_Wizard", "?/?/button[@text='Delete all Devices']/?/?/button[@text='Cancel']", 30000, null, "6a31dfcd-c410-42c4-9144-845b9a885fab");
                 _multiplepointwizardwarningsignInfo = new RepoItemInfo(this, "MultiplePointWizardWarningSign", "?/?/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']//row/cell[1]/picture[1]", 30000, null, "99503cd6-6c21-4192-90a6-62bf93516b9c");
+                _multipointwizardregiondropdownbtnInfo = new RepoItemInfo(this, "MultiPointWizardRegionDropDownBtn", "?/?/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']//row//combobox[@automationid='PART_Editor']/button[@automationid='ToggleButton']/container[@automationid='States']", 30000, null, "8880e1d7-ca70-41ca-8d43-f8faaecff2bb");
+                _mpwregionboxInfo = new RepoItemInfo(this, "MPWRegionBox", "?/?/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row[1]/cell[3]/text", 30000, null, "647afbe0-89ee-442a-af16-574722f75696");
             }
 
             /// <summary>
@@ -7207,6 +7237,54 @@ namespace TestProject
                 get
                 {
                     return _multiplepointwizardwarningsignInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MultiPointWizardRegionDropDownBtn item.
+            /// </summary>
+            [RepositoryItem("8880e1d7-ca70-41ca-8d43-f8faaecff2bb")]
+            public virtual Ranorex.Container MultiPointWizardRegionDropDownBtn
+            {
+                get
+                {
+                    return _multipointwizardregiondropdownbtnInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MultiPointWizardRegionDropDownBtn item info.
+            /// </summary>
+            [RepositoryItemInfo("8880e1d7-ca70-41ca-8d43-f8faaecff2bb")]
+            public virtual RepoItemInfo MultiPointWizardRegionDropDownBtnInfo
+            {
+                get
+                {
+                    return _multipointwizardregiondropdownbtnInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MPWRegionBox item.
+            /// </summary>
+            [RepositoryItem("647afbe0-89ee-442a-af16-574722f75696")]
+            public virtual Ranorex.Text MPWRegionBox
+            {
+                get
+                {
+                    return _mpwregionboxInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MPWRegionBox item info.
+            /// </summary>
+            [RepositoryItemInfo("647afbe0-89ee-442a-af16-574722f75696")]
+            public virtual RepoItemInfo MPWRegionBoxInfo
+            {
+                get
+                {
+                    return _mpwregionboxInfo;
                 }
             }
         }
@@ -7406,6 +7484,10 @@ namespace TestProject
             RepoItemInfo _chkbox_mpm800Info;
             RepoItemInfo _txt_propertiestextrowInfo;
             RepoItemInfo _btn_dropdownpanelsgalleryInfo;
+            RepoItemInfo _horizontalscrollbarpointsgridInfo;
+            RepoItemInfo _uparrowscrollbuttonpointsgridInfo;
+            RepoItemInfo _downarrowscrollbuttonpointsgridInfo;
+            RepoItemInfo _lastpointgridlabelInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7532,6 +7614,10 @@ namespace TestProject
                 _backplane2expander_afterreopenInfo = new RepoItemInfo(this, "Backplane2Expander_AfterReopen", "progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[4]/button[@automationid='Expander']", 30000, null, "1523b351-604a-4cf5-b106-2ef07b4c468b");
                 _backplane3expander_afterreopenInfo = new RepoItemInfo(this, "Backplane3Expander_AfterReopen", "progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[5]/button[@automationid='Expander']", 30000, null, "6cb713f3-051f-4121-b788-ea9f6b66ff09");
                 _selectpanelaccessorieslabelInfo = new RepoItemInfo(this, "SelectPanelAccessoriesLabel", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/container[$sRow]/row/cell[3]/text", 30000, null, "146c1f55-49b0-4746-aad8-6316e82c5570");
+                _horizontalscrollbarpointsgridInfo = new RepoItemInfo(this, "HorizontalScrollBarPointsGrid", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/?/?/grip", 30000, null, "7e2c6509-4384-455e-bfef-560ba1a34c78");
+                _uparrowscrollbuttonpointsgridInfo = new RepoItemInfo(this, "UpArrowScrollButtonPointsGrid", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineUpButton']", 30000, null, "db7accc1-f202-4d75-a34a-4697cba99132");
+                _downarrowscrollbuttonpointsgridInfo = new RepoItemInfo(this, "DownArrowScrollButtonPointsGrid", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineDownButton']", 30000, null, "e5b8f017-2c40-4279-a72b-4d652feb9530");
+                _lastpointgridlabelInfo = new RepoItemInfo(this, "LastPointGridLabel", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[26]//text[@automationid='PART_Editor']", 30000, null, "93ca5dfd-0bc3-42d0-8130-9986aca2076b");
                 _paneltypeInfo = new RepoItemInfo(this, "PanelType", "progressbar/picture[7]/picture/list/row[@index='4']//combobox/text[@automationid='PART_Editor']", 30000, null, "8ffbf18e-7948-4450-aa7e-d271b5aa3cec");
                 _chkbox_mpm800Info = new RepoItemInfo(this, "chkbox_MPM800", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//button[@automationid='PART_Editor']", 30000, null, "6bd9942b-cd2f-45b2-90c0-c497a3a265bf");
                 _txt_propertiestextrowInfo = new RepoItemInfo(this, "txt_PropertiesTextRow", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='1']", 30000, null, "66ed420a-9357-481e-97ad-51210a5769ed");
@@ -10419,6 +10505,102 @@ namespace TestProject
             }
 
             /// <summary>
+            /// The HorizontalScrollBarPointsGrid item.
+            /// </summary>
+            [RepositoryItem("7e2c6509-4384-455e-bfef-560ba1a34c78")]
+            public virtual Ranorex.Grip HorizontalScrollBarPointsGrid
+            {
+                get
+                {
+                    return _horizontalscrollbarpointsgridInfo.CreateAdapter<Ranorex.Grip>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HorizontalScrollBarPointsGrid item info.
+            /// </summary>
+            [RepositoryItemInfo("7e2c6509-4384-455e-bfef-560ba1a34c78")]
+            public virtual RepoItemInfo HorizontalScrollBarPointsGridInfo
+            {
+                get
+                {
+                    return _horizontalscrollbarpointsgridInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UpArrowScrollButtonPointsGrid item.
+            /// </summary>
+            [RepositoryItem("db7accc1-f202-4d75-a34a-4697cba99132")]
+            public virtual Ranorex.Button UpArrowScrollButtonPointsGrid
+            {
+                get
+                {
+                    return _uparrowscrollbuttonpointsgridInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UpArrowScrollButtonPointsGrid item info.
+            /// </summary>
+            [RepositoryItemInfo("db7accc1-f202-4d75-a34a-4697cba99132")]
+            public virtual RepoItemInfo UpArrowScrollButtonPointsGridInfo
+            {
+                get
+                {
+                    return _uparrowscrollbuttonpointsgridInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DownArrowScrollButtonPointsGrid item.
+            /// </summary>
+            [RepositoryItem("e5b8f017-2c40-4279-a72b-4d652feb9530")]
+            public virtual Ranorex.Button DownArrowScrollButtonPointsGrid
+            {
+                get
+                {
+                    return _downarrowscrollbuttonpointsgridInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DownArrowScrollButtonPointsGrid item info.
+            /// </summary>
+            [RepositoryItemInfo("e5b8f017-2c40-4279-a72b-4d652feb9530")]
+            public virtual RepoItemInfo DownArrowScrollButtonPointsGridInfo
+            {
+                get
+                {
+                    return _downarrowscrollbuttonpointsgridInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LastPointGridLabel item.
+            /// </summary>
+            [RepositoryItem("93ca5dfd-0bc3-42d0-8130-9986aca2076b")]
+            public virtual Ranorex.Text LastPointGridLabel
+            {
+                get
+                {
+                    return _lastpointgridlabelInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LastPointGridLabel item info.
+            /// </summary>
+            [RepositoryItemInfo("93ca5dfd-0bc3-42d0-8130-9986aca2076b")]
+            public virtual RepoItemInfo LastPointGridLabelInfo
+            {
+                get
+                {
+                    return _lastpointgridlabelInfo;
+                }
+            }
+
+            /// <summary>
             /// The txt_PropertiesTextRow item.
             /// </summary>
             [RepositoryItem("66ed420a-9357-481e-97ad-51210a5769ed")]
@@ -10536,6 +10718,8 @@ namespace TestProject
             RepoItemInfo _serialportInfo;
             RepoItemInfo _builtinloopa2of125Info;
             RepoItemInfo _backplane2_otherslotcardswithplxInfo;
+            RepoItemInfo _plx_external_loop_card_3_expanderInfo;
+            RepoItemInfo _plx800_9_loopInfo;
 
             /// <summary>
             /// Creates a new MainProcessorList  folder.
@@ -10548,6 +10732,8 @@ namespace TestProject
                 _serialportInfo = new RepoItemInfo(this, "SerialPort", "treeitem[1]", 30000, null, "619cc805-02bc-4760-a349-9a6cd8a72c7c");
                 _builtinloopa2of125Info = new RepoItemInfo(this, "BuiltInLoopA2Of125", "?/?/text[@caption~'^Built-in\\ Loop-A\\ \\(2\\ of\\ 125']", 30000, null, "4cf2e28a-3902-4e76-8028-30eac5d0633f");
                 _backplane2_otherslotcardswithplxInfo = new RepoItemInfo(this, "Backplane2_OtherSlotCardsWithPLX", "?/?/text[@text=$sOtherSlotCardName]", 30000, null, "c97420a6-c154-46d5-8650-3a547c2f4e34");
+                _plx_external_loop_card_3_expanderInfo = new RepoItemInfo(this, "PLX_External_Loop_Card_3_Expander", "treeitem[3]/button[@automationid='Expander']", 30000, null, "c0cb9cc9-c17f-4db0-a517-1b5c916e2733");
+                _plx800_9_loopInfo = new RepoItemInfo(this, "PLX800_9_Loop", "treeitem[3]/container[@automationid='ItemsHost']/treeitem[1]", 30000, null, "69710ff1-f2fa-4eee-9b4a-f6c10aa175a6");
             }
 
             /// <summary>
@@ -10691,6 +10877,54 @@ namespace TestProject
                 get
                 {
                     return _backplane2_otherslotcardswithplxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PLX_External_Loop_Card_3_Expander item.
+            /// </summary>
+            [RepositoryItem("c0cb9cc9-c17f-4db0-a517-1b5c916e2733")]
+            public virtual Ranorex.Button PLX_External_Loop_Card_3_Expander
+            {
+                get
+                {
+                    return _plx_external_loop_card_3_expanderInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLX_External_Loop_Card_3_Expander item info.
+            /// </summary>
+            [RepositoryItemInfo("c0cb9cc9-c17f-4db0-a517-1b5c916e2733")]
+            public virtual RepoItemInfo PLX_External_Loop_Card_3_ExpanderInfo
+            {
+                get
+                {
+                    return _plx_external_loop_card_3_expanderInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PLX800_9_Loop item.
+            /// </summary>
+            [RepositoryItem("69710ff1-f2fa-4eee-9b4a-f6c10aa175a6")]
+            public virtual Ranorex.TreeItem PLX800_9_Loop
+            {
+                get
+                {
+                    return _plx800_9_loopInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLX800_9_Loop item info.
+            /// </summary>
+            [RepositoryItemInfo("69710ff1-f2fa-4eee-9b4a-f6c10aa175a6")]
+            public virtual RepoItemInfo PLX800_9_LoopInfo
+            {
+                get
+                {
+                    return _plx800_9_loopInfo;
                 }
             }
         }

@@ -5017,7 +5017,7 @@ namespace TestProject.Libraries
 		public static void RightClickOnSelectedInventoryGridRow(string RowNumber)
 		{
 			sRow = RowNumber;
-				repo.FormMe.InventoryGridRow.Click(System.Windows.Forms.MouseButtons.Right);
+			repo.FormMe.InventoryGridRow.Click(System.Windows.Forms.MouseButtons.Right);
 			
 		}
 		
@@ -5105,7 +5105,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success, sContectMenuOption+" button is clicked");
 		}
 		
-			/********************************************************************
+		/********************************************************************
 		 * Function Name:verifyContextMenuOptionOnRightClickEnabledOrDisabled
 		 * Function Details: To verify if context menu option is enabled or disabled when we right click on grid row
 		 * Parameter/Arguments:
@@ -5119,10 +5119,10 @@ namespace TestProject.Libraries
 			sListIndex=sContectMenuOption;
 			if(repo.ContextMenu.ContextMenuOption.Enabled)
 			{
-			Report.Log(ReportLevel.Success, sContectMenuOption+" button is enabled");
+				Report.Log(ReportLevel.Success, sContectMenuOption+" button is enabled");
 			}
 			else{
-			Report.Log(ReportLevel.Success, sContectMenuOption+" button is disabled");
+				Report.Log(ReportLevel.Success, sContectMenuOption+" button is disabled");
 			}
 		}
 		/********************************************************************
@@ -5808,8 +5808,68 @@ namespace TestProject.Libraries
 			
 		}
 		
+		/********************************************************************
+		 * Function Name: AddDevicesfromMultiplePointWizardWithRegion
+		 * Function Details: To add multiple devices using multiple point wizard with different loop
+		 * Parameter/Arguments: Device name, Region and its quantity
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 23/05/19
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void AddDevicesfromMultiplePointWizardWithRegion(string sDeviceName,int DeviceQty, string sRegion )
+		{
+			repo.FormMe.btn_MultiplePointWizard.Click();
+			//repo.ProfileConsys1.btn_MultiplePointWizard_DoNotUse.Click();
+			repo.AddDevices.txt_AllDevices.Click();
+			
+			repo.AddDevices.txt_SearchDevices.Click();
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+sDeviceName);
+			ModelNumber = sDeviceName;
+			repo.AddDevices.txt_ModelNumber.Click();
+			repo.AddDevices.txt_Quantity.Click();
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+DeviceQty.ToString());
+			repo.AddDevices.MPWRegionBox.Click();
+			repo.AddDevices.MultiPointWizardRegionDropDownBtn.Click();
+			sRowIndex=sRegion;
+			Report.Log(ReportLevel.Success,"sRowIndex="+sRowIndex);
+			repo.ContextMenu.MultiPointWizardRegionComboBox.Click();
+			repo.AddDevices.btn_AddDevices.Click();
+			Report.Log(ReportLevel.Success,+DeviceQty+" \""+sDeviceName+ "\" Device Added successfully");
+			Delay.Milliseconds(200);
+
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: MoveScrollBarDownInPointsGrid
+		 * Function Details: To move scroll bar down vertically in points grid
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 23/05/19
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void MoveScrollBarDownInPointsGrid()
+		{
+			// Create a adapter and stored in source adapter element
+			//Adapter sourceE = repo.FormMe.UpArrowScrollButtonPointsGrid;//HorizontalScrollBarPointsGrid;
+			
+			// Create a adapter and stored in targer adapter element
+			//Adapter targetE = repo.FormMe.DownArrowScrollButtonPointsGrid;
+
+			// Drag scroll bar from First position to its defined position
+			//Ranorex.AutomationHelpers.UserCodeCollections.DragNDropLibrary.DragAndDrop(sourceE,targetE);
+			//Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
+			//repo.FormMe.HorizontalScrollBarPointsGrid.
+			SelectPointsGridRow("1");
+			Keyboard.Press("{PageDown}");
+			Keyboard.Press("{PageDown}");
+			Keyboard.Press("{PageDown}");
+			Keyboard.Press("{PageDown}");
+			Keyboard.Press("{PageDown}");
+			Keyboard.Press("{PageDown}");
+		}
+
 	}
-	
 }
-
-

@@ -169,7 +169,7 @@
     <Compile Include="Libraries\UserCodeModule1.cs">
       <id>e1ce2b06-4a08-4665-a561-3a38f246f44c</id>
     </Compile>
-    <Compile Include="Libraries\VoltageDrop_Functions.cs">
+    <Compile Include="Project_Creation_and_Closure\VoltageDrop_Functions.cs">
       <id>4db8548a-1485-4278-bb41-187d70c49611</id>
     </Compile>
     <Compile Include="Recording Modules\Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.cs">
@@ -247,18 +247,6 @@
     <Compile Include="Project_Creation_and_Closure\Application_Open.cs">
       <id>374c194e-cb4a-422d-94b4-56d9c065cedb</id>
     </Compile>
-    <Compile Include="Project_Creation_and_Closure\Create_Project.cs">
-      <DependentUpon>Create_Project.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>41ba8f78-931b-47b5-a2ca-159b28d60e11</id>
-      <BoundTo>025b95a2-e0a5-4f85-bed7-8f9ab0822c71</BoundTo>
-    </Compile>
-    <Compile Include="Project_Creation_and_Closure\Create_Project.UserCode.cs">
-      <DependentUpon>Create_Project.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>d16fad46-c53b-41c1-a630-cbe89b7adb50</id>
-      <BoundTo>025b95a2-e0a5-4f85-bed7-8f9ab0822c71</BoundTo>
-    </Compile>
     <Compile Include="Project_Creation_and_Closure\LogResult.cs">
       <id>5a850499-184e-4056-b89e-57a2c97c015c</id>
     </Compile>
@@ -282,6 +270,18 @@
       <DependentUpon>Close_Application.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>49dd13dd-eed5-4e14-b155-d2afb3caad8b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Create_Project.cs">
+      <DependentUpon>Create_Project.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>41ba8f78-931b-47b5-a2ca-159b28d60e11</id>
+      <BoundTo>025b95a2-e0a5-4f85-bed7-8f9ab0822c71</BoundTo>
+    </Compile>
+    <Compile Include="Recording Modules\Create_Project.UserCode.cs">
+      <DependentUpon>Create_Project.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d16fad46-c53b-41c1-a630-cbe89b7adb50</id>
+      <BoundTo>025b95a2-e0a5-4f85-bed7-8f9ab0822c71</BoundTo>
     </Compile>
     <Compile Include="Recording Modules\DeleteDevices_BVT.cs">
       <BoundTo>7b077e53-23f5-48e4-a9b2-b1fb245a9111</BoundTo>
@@ -2011,6 +2011,42 @@
       <UserCode>true</UserCode>
       <id>745738ae-53db-4b88-9f89-e6e0ef53f79b</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Paste_Of_Points_Only.cs">
+      <BoundTo>30ee1db1-357b-40de-a9c7-f33aef1bff34</BoundTo>
+      <DependentUpon>Verify_Paste_Of_Points_Only.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ccf68ef9-606b-4e60-a2b6-2cf3130d8968</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Paste_Of_Points_Only.UserCode.cs">
+      <BoundTo>30ee1db1-357b-40de-a9c7-f33aef1bff34</BoundTo>
+      <DependentUpon>Verify_Paste_Of_Points_Only.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ae7505ed-f907-452b-b106-9c670b7e20c0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Paste_Of_Unit_Only.cs">
+      <BoundTo>0f37826e-935e-4ac9-b892-33300f4672a2</BoundTo>
+      <DependentUpon>Verify_Paste_Of_Unit_Only.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>129516e7-9345-47b7-b094-12112e188a15</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Paste_Of_Unit_Only.UserCode.cs">
+      <BoundTo>0f37826e-935e-4ac9-b892-33300f4672a2</BoundTo>
+      <DependentUpon>Verify_Paste_Of_Unit_Only.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9aa3eea0-f9ae-4c57-9d00-9eddd8b08d75</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Paste_Of_Unit_With_Points.cs">
+      <BoundTo>580d812c-3520-4396-8418-706619709beb</BoundTo>
+      <DependentUpon>Verify_Paste_Of_Unit_With_Points.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3221502a-d195-4501-8f81-dcb007b0e430</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Paste_Of_Unit_With_Points.UserCode.cs">
+      <BoundTo>580d812c-3520-4396-8418-706619709beb</BoundTo>
+      <DependentUpon>Verify_Paste_Of_Unit_With_Points.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>93108fab-2795-4b45-a1f5-12002d695034</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Paste_Options_Displayed_For_Loop.cs">
       <BoundTo>f7c06438-90b7-4099-ab03-91badee966c9</BoundTo>
       <DependentUpon>Verify_Paste_Options_Displayed_For_Loop.rxrec</DependentUpon>
@@ -2022,6 +2058,18 @@
       <DependentUpon>Verify_Paste_Options_Displayed_For_Loop.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>53b57c81-78f6-480d-87df-8a1e3b876d70</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds.cs">
+      <BoundTo>f2872eb9-df54-499c-8e2b-6f5f73c75ba6</BoundTo>
+      <DependentUpon>Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fb4c37b2-2277-4df4-be5a-682f91d34fcc</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds.UserCode.cs">
+      <BoundTo>f2872eb9-df54-499c-8e2b-6f5f73c75ba6</BoundTo>
+      <DependentUpon>Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2423b91b-59a9-4d95-b894-91b56905cefd</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.cs">
       <BoundTo>6cbe4ee2-6efd-4701-9486-5b6fc83a6f70</BoundTo>
@@ -2809,14 +2857,14 @@
       <repoid>73d81cd9-9fc6-4e00-a974-a404f4cb1628</repoid>
       <reporootid>031894a4-4ddd-4c79-8ec3-4b201f74a5f3</reporootid>
     </None>
-    <None Include="Project_Creation_and_Closure\Create_Project.rxrec">
-      <id>025b95a2-e0a5-4f85-bed7-8f9ab0822c71</id>
-      <recordtableid>28850e8e-b478-423e-9533-d1c1ec13c838</recordtableid>
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
-    </None>
     <None Include="Recording Modules\Close_Application.rxrec">
       <id>50fb6901-9380-46a7-9d98-973968a89bcd</id>
       <recordtableid>04f2c1bc-a14b-44db-b656-60d601f7de36</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Create_Project.rxrec">
+      <id>025b95a2-e0a5-4f85-bed7-8f9ab0822c71</id>
+      <recordtableid>28850e8e-b478-423e-9533-d1c1ec13c838</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\DeleteDevices_BVT.rxrec">
@@ -3539,10 +3587,30 @@
       <id>ff438fb9-26a2-45cd-91d3-d8b79db591d0</id>
       <recordtableid>10117878-e5a0-4c26-a744-12970fd87940</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Paste_Of_Points_Only.rxrec">
+      <id>30ee1db1-357b-40de-a9c7-f33aef1bff34</id>
+      <recordtableid>925e64c6-c496-4160-82b4-2b68be5eac59</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Paste_Of_Unit_Only.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>0f37826e-935e-4ac9-b892-33300f4672a2</id>
+      <recordtableid>1e0e124e-8162-4f46-9fae-f627dd9297c7</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Paste_Of_Unit_With_Points.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>580d812c-3520-4396-8418-706619709beb</id>
+      <recordtableid>21df85d8-aea5-4759-a8a8-44db0ff18796</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Paste_Options_Displayed_For_Loop.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f7c06438-90b7-4099-ab03-91badee966c9</id>
       <recordtableid>a2460558-217d-4451-affa-e0ba9edbdb7f</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>f2872eb9-df54-499c-8e2b-6f5f73c75ba6</id>
+      <recordtableid>3ac8ba58-8356-437c-8589-5e08fa919379</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
