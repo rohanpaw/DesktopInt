@@ -1668,6 +1668,14 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			<item
 			addcaps="text,wpfelement,wpfgroupelement"
 			capname="text"
+			id="048b806d-8634-4341-aabf-8b006ca17d5b"
+			name="Copy_of_txt_SelectPanel"
+			searchtimeout="30000ms">
+				/contextmenu//listitem/text[@caption='MX 1000']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
 			id="dda50043-1c98-4316-852e-cb5dd36bf6bb"
 			name="txt_SelectDevice"
 			searchtimeout="30000ms">
@@ -2326,10 +2334,19 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			capname="button"
 			id="ca7d6bd4-690e-408d-bb58-b05a6b3da3bb"
 			name="Export"
-			refimgid="4e7d5d2b-ab35-43f2-a59a-c68efcc4cd49"
+			refimgid="dddf0ecd-d1d2-4417-897a-f1995100b991"
 			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Export']"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Export']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="f32d3100-749f-454a-b2a2-fd7f30bf02dc"
+			name="Export2ndTime"
+			refimgid="dddf0ecd-d1d2-4417-897a-f1995100b991"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Export']
 			</item>
 			<folder
 			addcaps="list,wpfelement,wpfgroupelement"
@@ -2573,6 +2590,15 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			refimgid="b9cf53c7-1f4c-4b3f-9f88-df22166bb6c3"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Panel Accessories']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="807335c2-6d69-4d81-90fb-2bda276e0630"
+			name="tab_Panel_Network"
+			refimgid="b9cf53c7-1f4c-4b3f-9f88-df22166bb6c3"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Panel Network']
 			</item>
 			<item
 			capname="text"
@@ -3377,6 +3403,14 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='1']
 			</item>
+			<item
+			capname="container"
+			id="cfa7c7de-8a3b-4349-b9db-7f1556ddb860"
+			name="btn_DropDownPanelsGallery"
+			refimgid="b0aade65-74cc-4ca0-bdea-5a969d2e21b2"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[3]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -3658,11 +3692,47 @@ dHpHnyei6HQ4nQ7fKeJJm+Bzy4oAAAAASUVORK5CYII=
 			<item
 			addcaps="cell,excelrange"
 			capname="cell"
+			id="c9df3e54-b71a-4ac9-8988-ebc5b090c1a3"
+			name="CellF3"
+			refimgid="9081413f-bc4d-43f3-8867-1852f42ec6a5"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index='3']/cell[@address='F3']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
 			id="8d90adaf-eb72-478f-813c-c8ea1586b7f1"
 			name="CellF22"
 			refimgid="f5a8efd0-d246-43db-8790-7a5b788c02ab"
 			searchtimeout="30000ms">
 				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index='22']/cell[@address='F22']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="5c18ca4d-b7a2-43be-a269-c0725aa5c97f"
+			name="CellF14"
+			refimgid="f5a8efd0-d246-43db-8790-7a5b788c02ab"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index='14']/cell[@address='F14']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="87580053-fad2-46eb-bbe0-e1944d333a3e"
+			name="CellF21"
+			refimgid="f5a8efd0-d246-43db-8790-7a5b788c02ab"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index='21']/cell[@address='F21']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="39478b25-5c90-4746-85c6-fc6dbf55fb91"
+			name="CellF26"
+			refimgid="f5a8efd0-d246-43db-8790-7a5b788c02ab"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index='26']/cell[@address='F26']
 			</item>
 			<item
 			addcaps="button,uiautomation,uiautomationinvoke"
@@ -3678,10 +3748,20 @@ dHpHnyei6HQ4nQ7fKeJJm+Bzy4oAAAAASUVORK5CYII=
 			addcaps="cell,excelrange"
 			capname="cell"
 			id="5d62c05d-0c22-4eb1-b268-c146165ce95f"
-			name="CellF18"
+			name="txt_ExcelRows"
 			refimgid="bfaaa1e4-5458-4eb1-b76d-5d306b68c922"
 			searchtimeout="30000ms">
-				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index=$sRow]/cell[@address=$sRow]
+				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index=$sExcelRow]/cell[@address=$sExcelRow]
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="074caa05-2660-4797-97dc-5b5d8d90ae15"
+			name="CellF17"
+			refimgid="f872a2a1-388e-467f-a18d-8460d8b4f388"
+			refpath="/form[@processname='EXCEL']/element[@class='XLDESK']/workbook[@name='Shopping List.xls']/table[@name='Sheet']/row[@index='17']/cell[@address='F17']"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index='17']/cell[@address='F17']
 			</item>
 			<basepath>
 				/form[@class='XLMAIN' and @instance='0']
@@ -4022,6 +4102,10 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 		<var
 		id="5a8e391c-5b0f-4380-be6f-f865aa6585d2"
 		name="sMenuOption">
+		</var>
+		<var
+		id="cd1740ae-70be-4af4-83b0-24f74e7e5eea"
+		name="sExcelRow">
 		</var>
 	</variables>
 </repository>

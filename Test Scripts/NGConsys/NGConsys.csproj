@@ -2383,6 +2383,18 @@
       <UserCode>true</UserCode>
       <id>79858ac1-9722-4757-8c9a-20b50e428379</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card.cs">
+      <BoundTo>c3de33ac-ad37-4a9d-9c22-e10c699a4862</BoundTo>
+      <DependentUpon>Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3b446088-eacb-4e92-82ae-3e45d83c7bb4</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card.UserCode.cs">
+      <BoundTo>c3de33ac-ad37-4a9d-9c22-e10c699a4862</BoundTo>
+      <DependentUpon>Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>773a57a3-6d13-486f-8d85-5cb553afbfc9</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_The_Behaviour_When_ASC_For_LPS800__75mA.cs">
       <BoundTo>bb1a0e58-f116-443f-9b12-48692efd841b</BoundTo>
       <DependentUpon>Verify_The_Behaviour_When_ASC_For_LPS800__75mA.rxrec</DependentUpon>
@@ -2730,6 +2742,18 @@
       <DependentUpon>Verify_when_user_edit_the_HVR800_Properties.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>638a406d-b645-4852-ac55-3d59954f8a1c</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List.cs">
+      <BoundTo>ecfe529b-c728-4b2f-b16a-80663c4fdf2e</BoundTo>
+      <DependentUpon>Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e659b686-9d6a-4d9b-9b8a-9728dca96cf6</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List.UserCode.cs">
+      <BoundTo>ecfe529b-c728-4b2f-b16a-80663c4fdf2e</BoundTo>
+      <DependentUpon>Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ee094c40-50f5-4386-bcce-931c64249ee1</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -3670,6 +3694,11 @@
       <id>60711ecb-1170-4b17-af59-08c71e7e3525</id>
       <recordtableid>24aaa9ba-5aac-4310-b303-d4087b7c09a9</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>c3de33ac-ad37-4a9d-9c22-e10c699a4862</id>
+      <recordtableid>da57bb22-d09f-4579-bef0-4365a462e6e4</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_The_Behaviour_When_ASC_For_LPS800__75mA.rxrec">
       <id>bb1a0e58-f116-443f-9b12-48692efd841b</id>
       <recordtableid>3461a92b-f5d9-4014-b3a4-b16172bd65f5</recordtableid>
@@ -3814,6 +3843,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>27f3abf7-e1f3-4d04-a5c6-44d619466fd7</id>
       <recordtableid>6c9a9ca9-f1e0-48ca-a169-5d36d6d0c20a</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>ecfe529b-c728-4b2f-b16a-80663c4fdf2e</id>
+      <recordtableid>d9f4115d-c340-4f6f-baa9-f332cc4e7c19</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

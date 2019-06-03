@@ -3,6 +3,19 @@
 rxversion="8.3">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testcase
+			id="0039cc0c-9f5f-447f-8a9e-43c23d62bdb2"
+			name="Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card">
+				<description>
+					<![CDATA[<p>NGC-1031/TC-54170&nbsp; Tested with 2 Panels test data at a time. Not tested with more panels as Cell issues due to text changes, cell also gets changed.</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="00ac04a3-a6d6-4d20-8a91-3ae53f3213a6"
 			name="Close_Application"
@@ -1591,6 +1604,26 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="1cd1a0ac-53e9-4169-b133-e8fcfb3adf52"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="1ce3b10a-935f-4a35-aa2c-91499474b3b3"
 			name="Verify_LPS800_And_Its_Sounders">
@@ -1604,6 +1637,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="1d7aa0da-f15d-43f4-b49a-f526acd62579"
+			name="Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List"
+			ref="d9f4115d-c340-4f6f-baa9-f332cc4e7c19"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="1db44b77-ad41-4b24-a5f2-2a071e35fdc8"
 			name="Application_Open"
@@ -2492,6 +2531,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="2f409694-0063-4c7b-b932-0a089e3c6496"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="2f630597-bf16-4f41-bfbc-4f458482aa49"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="0039cc0c-9f5f-447f-8a9e-43c23d62bdb2"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="2f9db21a-454f-4ed5-ab22-d5e95c7f7de0"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -2944,6 +3003,12 @@ rxversion="8.3">
 			id="3a3b8532-71ea-41c1-aa2c-2b4a8c0cfc73"
 			name="Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section"
 			ref="24aaa9ba-5aac-4310-b303-d4087b7c09a9"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3a5cfe69-f6b7-4f18-9443-bc955df01e54"
+			name="Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card"
+			ref="da57bb22-d09f-4579-bef0-4365a462e6e4"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -4012,6 +4077,19 @@ loops.</SPAN>]]>
 			name="Verify_Impact_of_2nd_PSU_on_Battery_Loading">
 				<description>
 					<![CDATA[<p>TC-51852</p><p><br></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="518a26c1-d79f-4c8a-88bf-3301da933f85"
+			name="Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List">
+				<description>
+					<![CDATA[<p>NGC-1031/TC-54238</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -6792,6 +6870,26 @@ MxDesigner]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="88251e1c-2318-4184-9d33-ca481308bd39"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8830cdfb-1b48-4738-ac22-6410d021db4e"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -8077,6 +8175,12 @@ MxDesigner]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="a7bcfa80-690d-4cc1-9ceb-3a6a321fa64b"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="a7d052a4-8d2c-4779-9f8f-1367431a9b3b"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -8908,6 +9012,20 @@ persisted in panel properties&nbsp;]]>
 					<var
 					dataname="sListIndex"
 					datasourceid="82a6e413-e353-4696-bf42-120f2aaae10c"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="bcd81244-812b-45bb-a96e-9cba0867babc"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="518a26c1-d79f-4c8a-88bf-3301da933f85"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -15386,6 +15504,46 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="4f84a294-1a0a-4d6a-94d9-bfb4c63fd7ce"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="518a26c1-d79f-4c8a-88bf-3301da933f85"
+					name="Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List">
+						<testmodule
+						id="88251e1c-2318-4184-9d33-ca481308bd39"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="bcd81244-812b-45bb-a96e-9cba0867babc"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="1d7aa0da-f15d-43f4-b49a-f526acd62579"
+						name="Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List">
+						</testmodule>
+						<testmodule
+						id="2f409694-0063-4c7b-b932-0a089e3c6496"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="0039cc0c-9f5f-447f-8a9e-43c23d62bdb2"
+					name="Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card">
+						<testmodule
+						id="1cd1a0ac-53e9-4169-b133-e8fcfb3adf52"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="2f630597-bf16-4f41-bfbc-4f458482aa49"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="3a5cfe69-f6b7-4f18-9443-bc955df01e54"
+						name="Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card">
+						</testmodule>
+						<testmodule
+						id="a7bcfa80-690d-4cc1-9ceb-3a6a321fa64b"
 						name="Close_Application">
 						</testmodule>
 					</testcase>

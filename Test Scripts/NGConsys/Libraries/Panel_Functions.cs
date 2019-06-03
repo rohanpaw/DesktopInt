@@ -350,6 +350,113 @@ namespace TestProject.Libraries
 			repo.FormMe.PoweredFrom.PressKeys(PoweredBy+"{ENTER}");
 			
 		}
+		
+		/********************************************************************
+		 * Function Name: AddPanelsInBetween
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 30/05/2019 
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void AddPanelOnAddingOnePanel(int NumberofPanels,string PanelNames,string sPanelCPU)
+		{
+			for (int i=1; i<NumberofPanels;i++)
+			{
+				string[] splitPanelNames = PanelNames.Split(',');
+				
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				string PanelNameWithSpace=splitPanelNames[i];
+				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
+				if(PanelName.StartsWith("P"))
+				{
+					sPanelLabelIndex ="5";
+				}
+				else
+				{
+					sPanelLabelIndex ="7";
+				}
+				repo.ProfileConsys1.btnDropDownPanelsGallery.Click();
+				repo.ContextMenu.txt_SelectPanel.Click();
+				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
+				iAddress=i+1;
+				Address =iAddress.ToString();
+				repo.ContextMenu.lstPanelAddress.Click();
+				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				Label="Node"+iAddress;
+				Keyboard.Press(Label);
+				if (!sPanelCPU.IsEmpty())
+				{
+					repo.AddANewPanel.AddNewPanelContainer.cmb_CPU.Click();
+					sCPU=sPanelCPU;
+					repo.ContextMenu.lstPanelCPU.Click();
+				}
+				repo.AddANewPanel.ButtonOK.Click();
+				
+				if(PanelNameWithSpace == "MZX252")
+				{
+					PanelNameWithSpace = "MZX 252";
+				}
+				PanelNode = Label+" "+"-"+" "+PanelNameWithSpace;
+				
+				//Commenting below line as for Panel name with Space and hi-fen it is not displaying as it is displaying while adding panel
+				//Validate.AttributeEqual(repo.ProfileConsys1.NavigationTree.VerifyPanelNodeInfo, "Text", PanelNode);
+				
+			}
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: AddMorePanels
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 30/05/2019 
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void AddOnePanel(int NodeNumber,string PanelNames,string sPanelCPU)
+		{
+		
+			//string[] splitPanelNames = PanelNames.Split(',');
+				
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				string PanelNameWithSpace=PanelNames;
+				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
+				if(PanelName.StartsWith("P"))
+				{
+					sPanelLabelIndex ="5";
+				}
+				else
+				{
+					sPanelLabelIndex ="7";
+				}
+				
+				
+				
+				repo.FormMe.btn_DropDownPanelsGallery.Click();
+				
+				repo.ContextMenu.txt_SelectPanel.Click();
+				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
+				iAddress=NodeNumber;
+			
+				Address =iAddress.ToString();
+				repo.ContextMenu.lstPanelAddress.Click();
+				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				Label="Node"+iAddress;
+				Keyboard.Press(Label);
+				if (!sPanelCPU.IsEmpty())
+				{
+					repo.AddANewPanel.AddNewPanelContainer.cmb_CPU.Click();
+					sCPU=sPanelCPU;
+					repo.ContextMenu.lstPanelCPU.Click();
+				}
+				repo.AddANewPanel.ButtonOK.Click();
+				
+		}
 	}
 }
 

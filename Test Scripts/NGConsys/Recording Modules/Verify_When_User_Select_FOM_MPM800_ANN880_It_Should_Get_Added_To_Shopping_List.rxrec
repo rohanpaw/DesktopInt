@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d9f4115d-c340-4f6f-baa9-f332cc4e7c19"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="SlotCards_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyShoppingListOnSelectingFOMandMPM"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="35a8937c-ba95-4e3c-b7ba-2e0800a14eb0">
+				<argument
+				argname="sFileName"
+				id="476238d2-fcc7-4de6-95fd-f0ef9e172260">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_54238_Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddDevicesSheet"
+				id="6cd9f5ac-1af9-4365-be2c-b9d433c8b6a6">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Devices
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

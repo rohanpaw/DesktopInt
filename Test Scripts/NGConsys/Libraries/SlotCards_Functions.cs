@@ -113,8 +113,6 @@ namespace TestProject.Libraries
 			set { repo.sOtherSlotCardName = value; }
 		}
 		
-		
-		
 		/***********************************************************************************************************
 		 * Function Name: VerifyandClickOtherSlotCardsForBackplane1
 		 * Function Details:
@@ -849,7 +847,7 @@ namespace TestProject.Libraries
 		}
 		
 		/***********************************************************************************************************
-		 * Function Name: VerifyAddingRemovingOfTLI800SlotCards
+		 * Function Name: VerifyTLI800Properties
 		 * Function Details:
 		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
 		 * Output:
@@ -866,7 +864,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string sType,sDeviceName,PanelName,PanelNode,CPUType,sSKU,sModel,sDescription,sMPM,sLabel,sFOM;
+			string sType,sDeviceName,PanelName,PanelNode,CPUType,sSKU,sModel,sLabel,sFOM;
 			
 			for(int i=8; i<=rows; i++)
 			{
@@ -884,23 +882,238 @@ namespace TestProject.Libraries
 				// Add panels
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
+				// Click on navigation tree expander
 				repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
+				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
 				
+				// Add devices from panel accessories gallery
 				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
 				
+				// Verify label in search properties
 				Devices_Functions.VerifyLabelInSearchProperties(sLabel);
 
+				// Verify SKU in search properties
 				Devices_Functions.VerifySKUInSearchProperties(sSKU);
 				
+				// Verify Model in search properties
 				Devices_Functions.VerifyModelInSearchProperties(sModel);
 				
+				// Verify Description row in search properties
 				Devices_Functions.VerifyDescriptionTextRowInSearchProperties();
 
+				// Verify FOM in search properties
 				Devices_Functions.VerifyFOMInSearchProperties(sFOM);
 				
+				// Verify MPM in search properties
 				Devices_Functions.VerifyMPMInSearchProperties();
+				
+			}
+			
+			// Close Excel
+			Excel_Utilities.CloseExcel();
+		}
+		
+		/***********************************************************************************************************
+		 * Function Name: VerifyShoppingListOnSelectingFOMandMPM
+		 * Function Details:
+		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 30/05/2019
+		 ***********************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyShoppingListOnSelectingFOMandMPM(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string sType,sDeviceName,PanelName,PanelNode,CPUType,sSKU,sModel,sLabel,sFOMChange,sMPMExpectedState,sFOMExpectedText,sShoppingListCount;
+			string sMPMExpectedText,sANNExpectedText,sShoppingListCountAfterUncheck,sMPMExpectedStateAgain,sMPMExpectedTextAfterUncheck,sANNExpectedTextAfterUncheck;
+			bool changeCheckboxStateTo,changeCheckboxStateToAgain;
+			int shoppingListCount,shoppingListCountAfterUncheck;
+			
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				sType =  ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				sLabel = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sSKU = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sModel = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sFOMChange = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				sMPMExpectedState = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				sShoppingListCount = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				sFOMExpectedText = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				sMPMExpectedText = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				sANNExpectedText = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				sMPMExpectedStateAgain = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				sShoppingListCountAfterUncheck = ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				sMPMExpectedTextAfterUncheck = ((Range)Excel_Utilities.ExcelRange.Cells[i,17]).Value.ToString();
+				sANNExpectedTextAfterUncheck = ((Range)Excel_Utilities.ExcelRange.Cells[i,18]).Value.ToString();
+				
+				
+				
+				int.TryParse(sShoppingListCount, out shoppingListCount);
+				int.TryParse(sShoppingListCountAfterUncheck, out shoppingListCountAfterUncheck);
+				bool.TryParse(sMPMExpectedState, out changeCheckboxStateTo);
+				bool.TryParse(sMPMExpectedStateAgain, out changeCheckboxStateToAgain);
+				
+				
+				// Add panels
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				
+				// Click on navigation tree expander
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on panel accessories tab
+				repo.FormMe.tab_PanelAccessories.Click();
+				
+				// Add devices from panel accessories gallery
+				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+				
+				// Change FOM Value in Search properties
+				Devices_Functions.ChangeFOMInSearchProperties(sFOMChange);
+				
+				// Verify and perform check or uncheck MPM checkbox in search properties
+				Devices_Functions.CheckUncheckMPMCheckboxInSearchProperties(changeCheckboxStateTo);
+				
+				// Click on Site node
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				// Click on Shopping list tab
+				repo.FormMe.ShoppingList.Click();
+				
+				// Verify shopping list count
+				Devices_Functions.verifyShoppingList(shoppingListCount);
+				Delay.Milliseconds(200);
+				
+				// Click on Export button
+				repo.FormMe.Export2ndTime.Click();
+				Delay.Milliseconds(200);
+				
+				// Click on Maximize button
+				repo.PrintPreview.PARTMaximize.Click();
+				
+				// Click on export drop down button
+				repo.PrintPreview.ExportDropdown.Click();
+				
+				// Click on excel format document
+				repo.ExportDocument.ExcelFormat.Click();
+				Delay.Duration(5000, false);
+				
+				// Set the attribute value to xls
+				repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
+				Delay.Duration(5000, false);
+				
+				// Click on OK button of export document
+				repo.ExportDocument.ButtonOK.Click();
+				Delay.Milliseconds(200);
+				
+				// Click on OK button of export document again
+				repo.ExportDocument.ButtonOK.Click();
+				
+				// Click on shopping list Cell 18 of excel sheet
+				repo.ShoppingListCompatibilityModeE.Cell18.Click();
+				Delay.Milliseconds(200);
+				
+				// Verify Cell 18 text of excel sheet
+				Libraries.Devices_Functions.verifyShoppingListDevicesTextForPxD(sFOMExpectedText);
+				Delay.Milliseconds(0);
+				
+				// Verify Cell 22 text of excel sheet
+				Devices_Functions.verifyShoppingListDevicesTextForPSC(sMPMExpectedText);
+				
+				// Verify Cell 26 text of excel sheet
+				Devices_Functions.verifyShoppingListDevicesTextForThirdDevice(sANNExpectedText);
+				
+				// Click on button to close excel
+				repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
+				
+				// Click on button to close print preview window
+				repo.PrintPreview.btn_CloseB.Click();
+				
+				// Click on navigation tree expander
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on panel accessories tab
+				repo.FormMe.tab_PanelAccessories.Click();
+				
+				// Verify and perform check or uncheck MPM checkbox in search properties
+				Devices_Functions.CheckUncheckMPMCheckboxInSearchProperties(changeCheckboxStateToAgain);
+				
+				// Click on site node
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				// Click on shopping list tab
+				repo.FormMe.ShoppingList.Click();
+				
+				// Verify shopping list count
+				Devices_Functions.verifyShoppingList(shoppingListCountAfterUncheck);
+				Delay.Milliseconds(500);
+				
+				// Click on Export button
+				repo.FormMe.Export2ndTime.Click();
+				Delay.Milliseconds(200);
+				
+				// Click on maximize button
+				repo.PrintPreview.PARTMaximize.Click();
+				
+				// Click on export drop down button
+				repo.PrintPreview.ExportDropdown.Click();
+				
+				// Click on Export document to select excel format
+				repo.ExportDocument.ExcelFormat.Click();
+				Delay.Duration(5000, false);
+				
+				// Set the attribute value to xls
+				repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
+				Delay.Duration(5000, false);
+				
+				// Click on Ok button
+				repo.ExportDocument.ButtonOK.Click();
+				Delay.Milliseconds(200);
+				
+				// Click on Ok button again
+				repo.ExportDocument.ButtonOK.Click();
+				
+				// Click Cell 18 text of excel sheet
+				repo.ShoppingListCompatibilityModeE.Cell18.Click();
+				Delay.Milliseconds(200);
+				
+				// Verify Cell 18 text of excel sheet
+				Libraries.Devices_Functions.verifyShoppingListDevicesTextForPxD(sFOMExpectedText);
+				Delay.Milliseconds(0);
+				
+				// Verify Cell 22 text of excel sheet
+				Devices_Functions.verifyShoppingListDevicesTextForPSC(sMPMExpectedTextAfterUncheck);
+				
+				// Verify Cell 26 text of excel sheet
+				Devices_Functions.verifyShoppingListDevicesTextForThirdDevice(sANNExpectedTextAfterUncheck);
+				
+				// Click to close excel sheet
+				repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
+				
+				// Click on close button
+				repo.PrintPreview.btn_CloseB.Click();
+				
+				// Click on Site node
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				// Verify if row count is more than 8 then delete the panel
+				if(rows!=8)
+				{
+					// Delete Panel
+					Panel_Functions.DeletePanel(1,PanelNode,1);
+				}
+				
 			}
 			
 			// Close Excel
@@ -908,7 +1121,174 @@ namespace TestProject.Libraries
 		}
 		
 		
-		
-		
+		/***********************************************************************************************************
+		 * Function Name: VerifyShoppingListOnSelectingFOMandMPM
+		 * Function Details:
+		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 27/05/2019
+		 ***********************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyShoppingListOnAddingTLI800AndTLI800EN(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string sType,sDeviceName,PanelName,PanelNode,CPUType,initialState,sShoppingListCount,newDeviceName,secondPanelName;
+			string sSecondCPUType,sSecondDeviceName,sSecondDeviceType,sSecondShoppingListCount,secondDisableDevice,secondDeviceState;
+			
+			int shoppingListCount,secondShoppingListCount;
+			
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				sType =  ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				initialState = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				newDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sShoppingListCount = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				secondPanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				sSecondCPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				sSecondDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				sSecondDeviceType =  ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				secondDeviceState =  ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				sSecondShoppingListCount =  ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				secondDisableDevice =  ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				
+				
+				int.TryParse(sShoppingListCount, out shoppingListCount);
+				int.TryParse(sSecondShoppingListCount, out secondShoppingListCount);
+				
+				
+				// Add panels
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				
+				// Click on navigation tree expander
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on panel accessories tab
+				repo.FormMe.tab_PanelAccessories.Click();
+				
+				// Add devices from panel accessories gallery
+				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+				
+				// Set newDevice name value in sDeviceName
+				sDeviceName = newDeviceName;
+				
+				// Verify Enable or disable of devices in panel accessories gallery
+				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,initialState);
+				
+				// Click on site node
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				// Click on shopping list tab
+				repo.FormMe.ShoppingList.Click();
+				
+				// Verify shopping list count
+				Devices_Functions.verifyShoppingList(shoppingListCount);
+				
+				// Click on panel accessories tab
+				repo.FormMe.tab_Panel_Network.Click();
+				
+				// Click on site node
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				// Add one panel after adding 1 one panel
+				Panel_Functions.AddOnePanel(2,secondPanelName,sSecondCPUType);
+			
+				// Click on navigation tree expander
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on panel accessories tab
+				repo.FormMe.tab_PanelAccessories.Click();
+				
+				// Set newDevice name value in sDeviceName
+				sDeviceName = sSecondDeviceName;
+				
+				// Set sType value
+				sType = sSecondDeviceType;
+				
+				// Add devices from panel accessories gallery
+				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+				
+				// set sDeviceName
+				sDeviceName = secondDisableDevice;
+				
+				// Verify Enable or disable of devices in panel accessories gallery
+				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,secondDeviceState);
+				
+				// Click on site node
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				// Click on shopping list tab
+				repo.FormMe.ShoppingList.Click();
+				
+				// Verify shopping list count
+				Devices_Functions.verifyShoppingList(secondShoppingListCount);
+				Delay.Milliseconds(500);
+				
+				// Click on Export button
+				repo.FormMe.Export2ndTime.Click();
+				Delay.Milliseconds(200);
+				
+				// Click on maximize button
+				repo.PrintPreview.PARTMaximize.Click();
+				
+				// Click on export drop down button
+				repo.PrintPreview.ExportDropdown.Click();
+				
+				// Click on Export document to select excel format
+				repo.ExportDocument.ExcelFormat.Click();
+				Delay.Duration(5000, false);
+				
+				// Set the attribute value to xls
+				repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
+				Delay.Duration(5000, false);
+				
+				// Click on Ok button
+				repo.ExportDocument.ButtonOK.Click();
+				Delay.Milliseconds(200);
+				
+				// Click on Ok button again
+				repo.ExportDocument.ButtonOK.Click();
+			
+				// Verify shopping list excel text for first device and panel
+				Devices_Functions.verifyShoppingListDevicesTextForCell3And14(PanelName,sDeviceName);
+				
+				// Verify shopping list excel text for second device and panel
+				Devices_Functions.verifyShoppingListDevicesTextForCell17And21(secondPanelName,sSecondDeviceName);
+				
+				// Click to close excel sheet
+				repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
+				
+				// Click on close button
+				repo.PrintPreview.btn_CloseB.Click();
+				
+				// Click on Site node
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				// Verify if row count is more than 8 then delete the panel
+				if(rows!=8)
+				{
+					// Delete Panel
+					Panel_Functions.DeletePanel(2,PanelNode,1);
+				}
+				
+			}
+			
+			
+			
+			Excel_Utilities.CloseExcel();
+		}
 	}
 }
+
+
+		

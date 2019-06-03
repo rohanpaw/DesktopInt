@@ -4520,7 +4520,7 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				Report.Log(ReportLevel.Failure,"Model name" +sExpectedText+ " is not displayed correctly instead " +actualText+  "is displayed " );
+				Report.Log(ReportLevel.Failure,"Model name" +sExpectedText+ " is not displayed correctly instead " +actualText+  " is displayed " );
 			}
 		}
 		
@@ -5606,6 +5606,207 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}	
 
+		
+		/********************************************************************
+		 * Function Name: ChangeFOMInSearchProperties
+		 * Function Details: To selected FOM in search properties
+		 * Parameter/Arguments:expected FOM text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void ChangeFOMInSearchProperties(string changeFOMValue)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("FOM" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties.Click();
+			
+			// Enter the value to change FOM value
+			repo.FormMe.txt_PropertiesTextValue.PressKeys((changeFOMValue) +"{ENTER}" + "{ENTER}");
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties.Click();
+			
+			// Retrieve value of label
+			string actualFOM = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			
+			//Comparing expected and actual changed values for FOM
+			if(actualFOM.Equals(changeFOMValue))
+			{
+				Report.Log(ReportLevel.Success,"FOM text changed successfully to  " +actualFOM+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"FOM text is not changed to "+changeFOMValue+ " and displayed incorrectly");
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: CheckUncheckMPMCheckboxInSearchProperties
+		 * Function Details: To Check Uncheck MPMCheckbox In SearchProperties
+		 * Parameter/Arguments:expected FOM text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 27/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void CheckUncheckMPMCheckboxInSearchProperties(bool ExpectedState)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("MPM" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties.Click();
+
+			// To retrieve the attribute value as boolean by its ischecked properties and store in actual state
+			bool actualState =  repo.FormMe.chkbox_MPM800.GetAttributeValue<bool>("ischecked");
+			
+			//As per actual state and expected state values verfiying day mode and day sensitivity field state and action performed on checkbox
+			if(actualState.Equals(ExpectedState))
+			{
+				Report.Log(ReportLevel.Success,"MPM checkbox is displayed as expected");
+			}
+			else
+			{
+				// Click on MPM checkbox
+				repo.FormMe.chkbox_MPM800.Click();
+				Report.Log(ReportLevel.Success,"Action performed on MPM checkbox");
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+			
+			
+					
+		/***********************************************************************************************************
+		 * Function Name: verifyShoppingListDevicesTextForThirdDevice
+		 * Function Details: To verify shopping list devices via clicking on its row
+		 * Parameter/Arguments: sFileName,sDeviceSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 27/05/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyShoppingListDevicesTextForThirdDevice(string sExpectedText)
+		{
+			
+			string actualText = repo.ShoppingListCompatibilityModeE.CellF26.Text;
+			
+			if(actualText.Equals(sExpectedText))
+			{
+				Report.Log(ReportLevel.Success,"Model name " +actualText+ " is displayed successfully");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Model name" +sExpectedText+ " is not displayed correctly instead " +actualText+  "is displayed " );
+			}
+		}
+			
+		/***********************************************************************************************************
+		 * Function Name: verifyShoppingListDevicesTextForCell3And14
+* 		 * Function Details: To verify shopping list devices via clicking on its row
+		 * Parameter/Arguments: sFileName,sDeviceSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 01/06/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyShoppingListDevicesTextForCell3And14(string sExpectedPanelText, string sExpectedDeviceText)
+		{
+			repo.ShoppingListCompatibilityModeE.CellF3.Click();
+			
+			string actualPanelText = repo.ShoppingListCompatibilityModeE.CellF3.Text;
+			
+			if(actualPanelText.Equals(sExpectedPanelText))
+			{
+				Report.Log(ReportLevel.Success,"Model name " +actualPanelText+ " is displayed successfully");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Model name" +sExpectedPanelText+ " is not displayed correctly instead " +actualPanelText+  "is displayed " );
+			}
+			
+			repo.ShoppingListCompatibilityModeE.CellF14.Click();
+			
+			string actualDeviceText = repo.ShoppingListCompatibilityModeE.CellF14.Text;
+			
+			if(actualDeviceText.Equals(sExpectedDeviceText))
+			{
+				Report.Log(ReportLevel.Success,"Model name " +actualDeviceText+ " is displayed successfully");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Model name" +sExpectedDeviceText+ " is not displayed correctly instead " +actualDeviceText+  "is displayed " );
+			}	
+		}
+			
+		
+		/***********************************************************************************************************
+		 * Function Name: verifyShoppingListDevicesTextForCell17And21
+* 		 * Function Details: To verify shopping list devices via clicking on its row
+		 * Parameter/Arguments: sFileName,sDeviceSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 01/06/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyShoppingListDevicesTextForCell17And21(string sExpectedPanelText, string sExpectedDeviceText)
+		{
+			repo.ShoppingListCompatibilityModeE.CellF17.Click();
+			
+			string actualPanelText = repo.ShoppingListCompatibilityModeE.CellF17.Text;
+			
+			if(actualPanelText.Equals(sExpectedPanelText))
+			{
+				Report.Log(ReportLevel.Success,"Model name " +actualPanelText+ " is displayed successfully");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Model name" +sExpectedPanelText+ " is not displayed correctly instead " +actualPanelText+  "is displayed " );
+			}
+			
+			repo.ShoppingListCompatibilityModeE.CellF21.Click();
+			
+			string actualDeviceText = repo.ShoppingListCompatibilityModeE.CellF21.Text;
+			
+			if(actualDeviceText.Equals(sExpectedDeviceText))
+			{
+				Report.Log(ReportLevel.Success,"Model name " +actualDeviceText+ " is displayed successfully");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Model name" +sExpectedDeviceText+ " is not displayed correctly instead " +actualDeviceText+  "is displayed " );
+			}
+			
+		}
 		
 	}
 	
