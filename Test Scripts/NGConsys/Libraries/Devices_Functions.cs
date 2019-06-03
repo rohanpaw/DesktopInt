@@ -5850,6 +5850,21 @@ namespace TestProject.Libraries
 		 * Last Update : 23/05/19
 		 ********************************************************************/
 		[UserCodeMethod]
+		public static void VerifySelectedNode()
+		{
+			string stext=repo.FormMe.NavigationTree.SelectedItems.ToString();
+		Report.Log(ReportLevel.Success," Device Added successfully"+stext);
+		}
+
+		/********************************************************************
+		 * Function Name: MoveScrollBarDownInPointsGrid
+		 * Function Details: To verify selected node
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 27/05/19
+		 ********************************************************************/
+		[UserCodeMethod]
 		public static void MoveScrollBarDownInPointsGrid()
 		{
 			// Create a adapter and stored in source adapter element
@@ -5870,6 +5885,26 @@ namespace TestProject.Libraries
 			Keyboard.Press("{PageDown}");
 			Keyboard.Press("{PageDown}");
 		}
-
+		
+		/********************************************************************
+		 * Function Name:verifyExportButtonInGalleryEnabledOrDisabled
+		 * Function Details: To verify if Export button is enabled or disabled in Ribbon
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 03/6/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void verifyExportButtonInGalleryEnabledOrDisabled()
+		{
+			if(repo.FormMe.Export.Enabled)
+			{
+				Report.Log(ReportLevel.Success, sContectMenuOption+" button is enabled");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Success, sContectMenuOption+" button is disabled");
+			}
+		}
 	}
 }

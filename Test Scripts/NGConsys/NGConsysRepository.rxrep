@@ -1952,6 +1952,14 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/contextmenu/container/?/?/listitem[@index=$sRowIndex]
 			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="8e00dc9e-ec28-4e3c-ad69-1d735a80549c"
+			name="ModelFilterList"
+			searchtimeout="30000ms">
+				/contextmenu//listitem[$sColumnIndex]/text
+			</item>
 			<basepath>
 				/contextmenu
 			</basepath>
@@ -2362,6 +2370,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			capname="button"
 			id="ca7d6bd4-690e-408d-bb58-b05a6b3da3bb"
 			name="Export"
+			refimgid="b0f10fb0-e81f-429d-8796-a92df83e0e5f"
 			refimgid="dddf0ecd-d1d2-4417-897a-f1995100b991"
 			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Export']"
 			searchtimeout="30000ms">
@@ -3497,6 +3506,36 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[26]//text[@automationid='PART_Editor']
 			</item>
+			<item
+			addcaps="tree,wpfelement,wpfgroupelement"
+			capname="tree"
+			id="05d64cfc-4656-4551-9388-162b60f83d11"
+			name="NavigationTree"
+			refimgid="41a05c31-ddb1-4224-b605-9d12fab1fa81"
+			refpath="/form[@automationid='me']/progressbar/picture[1]/tree"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[1]/tree
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="4344284d-a1eb-49a9-a8ba-ad330921cc43"
+			name="ModelFilterButtoon"
+			refimgid="00603fe0-5976-4e49-8511-183e52d9ad71"
+			refpath="/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='PART_HeadersPanel']/button[2]/list[@automationid='headerItemsControl']/button[2]/combobox/button"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='PART_HeadersPanel']/?/?/list[@automationid='headerItemsControl']/?/?/combobox/button
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="ee004f0a-91ee-4da7-9760-91cf72af4717"
+			name="ModelColumn"
+			refimgid="414bf333-31a9-463b-b408-5d8a3edacb41"
+			refpath="/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='PART_HeadersPanel']/button[2]/list[@automationid='headerItemsControl']/button[2]"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_HeadersPanel']/?/?/list[@automationid='headerItemsControl']/button[2]
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -3514,6 +3553,7 @@ W/AAAAAASUVORK5CYII=
 		id="a32ad286-4801-42ed-9c91-f86c574de621"
 		isrooted="True"
 		name="PrintPreview"
+		refimgid="822771c7-77b5-44cb-9966-c3b37343d2e7"
 		refpath="/form[@title='Print Preview']"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -4188,6 +4228,14 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 		<var
 		id="5a8e391c-5b0f-4380-be6f-f865aa6585d2"
 		name="sMenuOption">
+		</var>
+		<var
+		id="03d520df-c659-45d4-8163-57e7c2a739ec"
+		name="sIndex">
+		</var>
+		<var
+		id="a91db641-cdf1-4922-bab7-693b96ea0913"
+		name="ColumnsIndex">
 		</var>
 		<var
 		id="cd1740ae-70be-4af4-83b0-24f74e7e5eea"

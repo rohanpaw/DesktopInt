@@ -1015,6 +1015,30 @@ namespace TestProject
             set { _sMenuOption = value; }
         }
 
+        string _sIndex = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable sIndex.
+        /// </summary>
+        [TestVariable("03d520df-c659-45d4-8163-57e7c2a739ec")]
+        public string sIndex
+        {
+            get { return _sIndex; }
+            set { _sIndex = value; }
+        }
+
+        string _ColumnsIndex = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable ColumnsIndex.
+        /// </summary>
+        [TestVariable("a91db641-cdf1-4922-bab7-693b96ea0913")]
+        public string ColumnsIndex
+        {
+            get { return _ColumnsIndex; }
+            set { _ColumnsIndex = value; }
+        }
+
         string _sExcelRow = "";
 
         /// <summary>
@@ -5716,6 +5740,7 @@ namespace TestProject
             RepoItemInfo _panelaccessories_deviceInfo;
             RepoItemInfo _contextmenuoptionInfo;
             RepoItemInfo _multipointwizardregioncomboboxInfo;
+            RepoItemInfo _modelfilterlistInfo;
 
             /// <summary>
             /// Creates a new ContextMenu  folder.
@@ -5760,6 +5785,7 @@ namespace TestProject
                 _panelaccessories_deviceInfo = new RepoItemInfo(this, "PanelAccessories_Device", "list/?/?/listitem[@index=$sDeviceIndex]", 30000, null, "bd9007c8-c307-4845-904b-ca40813f66eb");
                 _contextmenuoptionInfo = new RepoItemInfo(this, "ContextMenuOption", "list/button[@text=$slistindex]", 30000, null, "97af81f2-4164-4836-8a5e-db7a60934f91");
                 _multipointwizardregioncomboboxInfo = new RepoItemInfo(this, "MultiPointWizardRegionComboBox", "container/?/?/listitem[@index=$sRowIndex]", 30000, null, "387ea824-48ec-43bf-b4f4-9d3c07e4b935");
+                _modelfilterlistInfo = new RepoItemInfo(this, "ModelFilterList", ".//listitem[$sColumnIndex]/text", 30000, null, "8e00dc9e-ec28-4e3c-ad69-1d735a80549c");
             }
 
             /// <summary>
@@ -6673,6 +6699,30 @@ namespace TestProject
                     return _multipointwizardregioncomboboxInfo;
                 }
             }
+
+            /// <summary>
+            /// The ModelFilterList item.
+            /// </summary>
+            [RepositoryItem("8e00dc9e-ec28-4e3c-ad69-1d735a80549c")]
+            public virtual Ranorex.Text ModelFilterList
+            {
+                get
+                {
+                    return _modelfilterlistInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ModelFilterList item info.
+            /// </summary>
+            [RepositoryItemInfo("8e00dc9e-ec28-4e3c-ad69-1d735a80549c")]
+            public virtual RepoItemInfo ModelFilterListInfo
+            {
+                get
+                {
+                    return _modelfilterlistInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -7488,6 +7538,9 @@ namespace TestProject
             RepoItemInfo _uparrowscrollbuttonpointsgridInfo;
             RepoItemInfo _downarrowscrollbuttonpointsgridInfo;
             RepoItemInfo _lastpointgridlabelInfo;
+            RepoItemInfo _navigationtreeInfo;
+            RepoItemInfo _modelfilterbuttoonInfo;
+            RepoItemInfo _modelcolumnInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7622,6 +7675,9 @@ namespace TestProject
                 _chkbox_mpm800Info = new RepoItemInfo(this, "chkbox_MPM800", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//button[@automationid='PART_Editor']", 30000, null, "6bd9942b-cd2f-45b2-90c0-c497a3a265bf");
                 _txt_propertiestextrowInfo = new RepoItemInfo(this, "txt_PropertiesTextRow", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='1']", 30000, null, "66ed420a-9357-481e-97ad-51210a5769ed");
                 _btn_dropdownpanelsgalleryInfo = new RepoItemInfo(this, "btn_DropDownPanelsGallery", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[3]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 30000, null, "cfa7c7de-8a3b-4349-b9db-7f1556ddb860");
+                _navigationtreeInfo = new RepoItemInfo(this, "NavigationTree", "progressbar/picture[1]/tree", 30000, null, "05d64cfc-4656-4551-9388-162b60f83d11");
+                _modelfilterbuttoonInfo = new RepoItemInfo(this, "ModelFilterButtoon", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='PART_HeadersPanel']/?/?/list[@automationid='headerItemsControl']/?/?/combobox/button", 30000, null, "4344284d-a1eb-49a9-a8ba-ad330921cc43");
+                _modelcolumnInfo = new RepoItemInfo(this, "ModelColumn", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_HeadersPanel']/?/?/list[@automationid='headerItemsControl']/button[2]", 30000, null, "ee004f0a-91ee-4da7-9760-91cf72af4717");
             }
 
             /// <summary>
@@ -10597,6 +10653,78 @@ namespace TestProject
                 get
                 {
                     return _lastpointgridlabelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NavigationTree item.
+            /// </summary>
+            [RepositoryItem("05d64cfc-4656-4551-9388-162b60f83d11")]
+            public virtual Ranorex.Tree NavigationTree
+            {
+                get
+                {
+                    return _navigationtreeInfo.CreateAdapter<Ranorex.Tree>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NavigationTree item info.
+            /// </summary>
+            [RepositoryItemInfo("05d64cfc-4656-4551-9388-162b60f83d11")]
+            public virtual RepoItemInfo NavigationTreeInfo
+            {
+                get
+                {
+                    return _navigationtreeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ModelFilterButtoon item.
+            /// </summary>
+            [RepositoryItem("4344284d-a1eb-49a9-a8ba-ad330921cc43")]
+            public virtual Ranorex.Button ModelFilterButtoon
+            {
+                get
+                {
+                    return _modelfilterbuttoonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ModelFilterButtoon item info.
+            /// </summary>
+            [RepositoryItemInfo("4344284d-a1eb-49a9-a8ba-ad330921cc43")]
+            public virtual RepoItemInfo ModelFilterButtoonInfo
+            {
+                get
+                {
+                    return _modelfilterbuttoonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ModelColumn item.
+            /// </summary>
+            [RepositoryItem("ee004f0a-91ee-4da7-9760-91cf72af4717")]
+            public virtual Ranorex.Button ModelColumn
+            {
+                get
+                {
+                    return _modelcolumnInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ModelColumn item info.
+            /// </summary>
+            [RepositoryItemInfo("ee004f0a-91ee-4da7-9760-91cf72af4717")]
+            public virtual RepoItemInfo ModelColumnInfo
+            {
+                get
+                {
+                    return _modelcolumnInfo;
                 }
             }
 

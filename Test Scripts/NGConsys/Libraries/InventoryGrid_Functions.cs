@@ -191,7 +191,7 @@ namespace TestProject.Libraries
 			
 		}
 		
-			/***********************************************************************************************************
+		/***********************************************************************************************************
 		 * Function Name: verifyInventoryGridProperties
 		 * Function Details: To verify inventory grid properties for a device
 		 * Parameter/Arguments:
@@ -292,10 +292,10 @@ namespace TestProject.Libraries
 			
 			//Modifying the label
 			repo.FormMe.txt_InventoryGridDeviceProperty.Click();
-			repo.FormMe.txt_InventoryGridDeviceProperty.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");	
+			repo.FormMe.txt_InventoryGridDeviceProperty.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 			repo.FormMe.txt_InventoryGridDeviceProperty.PressKeys(sNewLabel +"{ENTER}" );
 			Report.Log(ReportLevel.Success,"Label is editied to " +sNewLabel);
-		
+			
 		}
 		
 		/***********************************************************************************************************
@@ -318,7 +318,7 @@ namespace TestProject.Libraries
 			
 			// Click on Label property cell
 			repo.FormMe.txt_InventoryProperty.Click();
-		
+			
 			// Get the text value of Device Sensitivity field
 			string actualValue = repo.FormMe.txt_InventoryProperty.TextValue;
 			
@@ -339,5 +339,57 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
 		
-	}
-}
+		
+		/***********************************************************************************************************
+		 * Function Name: verifyModelFilterListText
+		 * Function Details: To verify Model column filter lists in inventory grid
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 05/31/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyModelFilterListText(string sListSize, string sListText)
+		{
+			Report.Log(ReportLevel.Success,"sColumnIndex"+sColumnIndex);
+			string ActualFilterList = "";
+			int size=Convert.ToInt32(sListSize);
+			string[] strArray = sListText.Split(',');
+			for(int i=0;i<size;i++)
+			{
+				sColumnIndex=(i+1).ToString();
+				ActualFilterList=repo.ContextMenu.ModelFilterList.TextValue;
+				// Compare Actual and Expected Point Grid Row count
+				Report.Log(ReportLevel.Success,"Actual"+ActualFilterList+"  Expected"+strArray[i]);
+				
+				if(ActualFilterList.Equals(strArray[i]))
+				{
+					Report.Log(ReportLevel.Success,"Model filter list verified");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Model filter list not verified");
+				}
+				
+			}
+			
+		}
+		
+		
+		/***********************************************************************************************************
+		 * Function Name: selectModelFilterListText
+		 * Function Details: To select Model column filter lists
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 05/31/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void selectModelFilterListText(string sColumnNo)
+		{
+			sColumnIndex=sColumnNo;
+			repo.ContextMenu.ModelFilterList.Click();
+		}
+		
+		
+	}}

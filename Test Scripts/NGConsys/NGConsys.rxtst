@@ -61,6 +61,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="017fb84e-2043-4aa9-bd14-8dac9d8a4d9c"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="018fd0d7-d4ab-4834-af18-66c0b5da250a"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -851,6 +857,20 @@ rxversion="8.3">
 					datasourceid="21af50ab-cce7-44c4-95b8-d1786b3cef5d"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="0e03f52b-fe2b-42f4-8a1d-171edc76fe5e"
+			name="VerifySelection"
+			ref="e317640f-cd77-4e4e-8ded-f5815c540794"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="86352391-b529-4e22-a04e-8b880571243a"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1772,6 +1792,23 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="1f366e1b-8d91-423c-880a-a84229356f67"
+			name="Verify_Model_Number_Filter_In_Main_Processor,R-Bus,Ethernet,PFI,BackplaneGrids">
+				<description>
+					<![CDATA[NGC-383/TC-0042]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
 					value="">
 					</param>
 				</parameters>
@@ -3345,6 +3382,14 @@ rxversion="8.3">
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="4315861a-9467-4079-b0b6-186628cddf6d"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="41bf905a-16e8-43c1-a543-822881d216b9"
@@ -3449,6 +3494,16 @@ rxversion="8.3">
 				<description>
 					<![CDATA[<p>NGC-372/TC-0036</p>]]>
 				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="432f7321-94dd-4896-b2fc-255f88d78e17"
@@ -3985,6 +4040,26 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4d77fa59-bbbd-4065-910a-c969f394318d"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4d8f66b2-e02a-47a3-9731-1ec99a9d0487"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -4023,6 +4098,12 @@ loops.</SPAN>]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="4df6365a-0ac1-4a80-ba0f-c52f2686edc2"
+			name="Verify_Export_Of_Region_Data"
+			ref="560b4584-e27b-4c2f-88ad-c4ea33c42460"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="4e37fd1f-81a8-4c01-b495-ea66c338b9ad"
@@ -4147,6 +4228,20 @@ loops.</SPAN>]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="507a48ca-50fe-4524-85fb-44c4a4929962"
+			name="Verify_Model_Number_Filter_In_Main_Processor_RBus_Ethernet_PFIBackplane_Grids"
+			ref="78cbd3fc-a9ce-4714-b932-aaa1a9ecab06"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="1f366e1b-8d91-423c-880a-a84229356f67"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5235,6 +5330,26 @@ loops.</SPAN>]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="66954431-5bcf-419f-ab3d-2f75b2d5504f"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="66995717-4af6-4593-8e6b-666e6f0bcf01"
 			name="Verify_If_The_Device_Order_Is_Shown_As_Exi_Order_IS_Order"
@@ -6514,6 +6629,26 @@ loops.</SPAN>]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="80f6ddd0-8ddb-4dd7-8648-ffba21fcad99"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8144ddb1-801f-45fc-9519-6cc24e46f240"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -6886,6 +7021,23 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="86352391-b529-4e22-a04e-8b880571243a"
+			name="Verify_Paste_Of_Unit_With_Points1">
+				<description>
+					<![CDATA[<p>NGC-372/TC-0036</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="8674abe7-51b4-4a8d-949a-6fb8cbbca639"
 			name="Verify_DC_Units_on_changing_Device_Sensitivity_and_Device_Mode_for_Sounders"
@@ -7198,6 +7350,12 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8b308101-fcb1-494a-96ff-c4abaf8311fb"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="8b588559-8039-4917-b02e-478d9da96dc4"
 			name="Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices"
 			ref="54037372-2321-44a3-b95a-7f5f8a74cbaa"
@@ -7216,6 +7374,12 @@ MxDesigner]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="8b9ad508-9c8c-4a98-b8ca-276aee356ef4"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="8beda494-3ec7-497e-99a2-b3e6a8c43b0e"
@@ -9166,6 +9330,10 @@ persisted in panel properties&nbsp;]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96"
+			name="Verify_Export_Of_Region_Data">
+			</testcase>
 			<testmodule
 			id="bc7ae423-18ed-4b27-83cb-7d61247a138f"
 			name="Close_Application"
@@ -10635,6 +10803,20 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="dd433365-ee87-4112-ad31-40eafe36bec4"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="86352391-b529-4e22-a04e-8b880571243a"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="de8ffc65-aed5-4cf2-b159-84db50e2b1df"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -10744,6 +10926,20 @@ persisted in panel properties&nbsp;]]>
 					<var
 					dataname="sListIndex"
 					datasourceid="a5ebb69f-e394-4d5f-9f2e-4b1e12ec63c4"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e089c3d0-1af3-4e27-bcdc-39a182917150"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="1f366e1b-8d91-423c-880a-a84229356f67"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -11434,6 +11630,12 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="f0580eaa-b03a-4b57-a43f-e8c6687fd8d9"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="f07610ab-4c5f-4b6e-a8ef-335374f01d58"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -11782,6 +11984,14 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_Paste_Of_Unit_With_Points"
 			ref="21df85d8-aea5-4759-a8a8-44db0ff18796"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="4315861a-9467-4079-b0b6-186628cddf6d"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="f8a27eff-4791-4891-9db3-3830d7b5381d"
@@ -15884,6 +16094,66 @@ persisted in panel properties&nbsp;]]>
 						id="f7f1d54a-d759-4a52-8b94-a6192dc6be15"
 						name="Verify_Paste_Of_Unit_With_Points">
 						</testmodule>
+						<testmodule
+						id="f0580eaa-b03a-4b57-a43f-e8c6687fd8d9"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="86352391-b529-4e22-a04e-8b880571243a"
+					name="Verify_Paste_Of_Unit_With_Points1">
+						<testmodule
+						id="66954431-5bcf-419f-ab3d-2f75b2d5504f"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="dd433365-ee87-4112-ad31-40eafe36bec4"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="0e03f52b-fe2b-42f4-8a1d-171edc76fe5e"
+						name="VerifySelection">
+						</testmodule>
+						<testmodule
+						id="8b9ad508-9c8c-4a98-b8ca-276aee356ef4"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="1f366e1b-8d91-423c-880a-a84229356f67"
+					name="Verify_Model_Number_Filter_In_Main_Processor,R-Bus,Ethernet,PFI,BackplaneGrids">
+						<testmodule
+						id="4d77fa59-bbbd-4065-910a-c969f394318d"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="e089c3d0-1af3-4e27-bcdc-39a182917150"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="507a48ca-50fe-4524-85fb-44c4a4929962"
+						name="Verify_Model_Number_Filter_In_Main_Processor_RBus_Ethernet_PFIBackplane_Grids">
+						</testmodule>
+						<testmodule
+						id="017fb84e-2043-4aa9-bd14-8dac9d8a4d9c"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96"
+					name="Verify_Export_Of_Region_Data">
+						<testmodule
+						id="80f6ddd0-8ddb-4dd7-8648-ffba21fcad99"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="8b308101-fcb1-494a-96ff-c4abaf8311fb"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="4df6365a-0ac1-4a80-ba0f-c52f2686edc2"
+						name="Verify_Export_Of_Region_Data">
+						</testmodule>
 					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
@@ -15945,10 +16215,13 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="1f366e1b-8d91-423c-880a-a84229356f67">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="4315861a-9467-4079-b0b6-186628cddf6d">
+			id="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
