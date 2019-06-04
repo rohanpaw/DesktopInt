@@ -113,6 +113,37 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyExportButtonInGalleryEnabledOrDisabled();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(7));
+            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyExportButtonInGalleryEnabledOrDisabled();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(10));
+            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.verifyExportButtonInGalleryEnabledOrDisabled();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyExportButtonInGalleryEnabledOrDisabled();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(14));
+            repo.FormMe.Export2ndTime.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'PrintPreview'.", repo.PrintPreview.SelfInfo, new RecordItemIndex(15));
+            Validate.Exists(repo.PrintPreview.SelfInfo);
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

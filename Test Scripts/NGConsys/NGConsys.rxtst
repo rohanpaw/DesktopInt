@@ -861,20 +861,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="0e03f52b-fe2b-42f4-8a1d-171edc76fe5e"
-			name="VerifySelection"
-			ref="e317640f-cd77-4e4e-8ded-f5815c540794"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="86352391-b529-4e22-a04e-8b880571243a"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="0e2fb3a5-3248-4228-b2f6-05f86b2e201a"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -1784,19 +1770,6 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testcase
-			id="1f70b4ae-017a-4718-beec-bbfa1571746b"
-			name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800">
-				<description>
-					<![CDATA[<p>NGC-1060/TC-51999</p>]]>
-				</description>
-				<parameters>
-					<param
-					name="sListIndex"
-					value="">
-					</param>
-				</parameters>
-			</testcase>
-			<testcase
 			id="1f366e1b-8d91-423c-880a-a84229356f67"
 			name="Verify_Model_Number_Filter_In_Main_Processor,R-Bus,Ethernet,PFI,BackplaneGrids">
 				<description>
@@ -1809,6 +1782,19 @@ rxversion="8.3">
 					</param>
 					<param
 					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="1f70b4ae-017a-4718-beec-bbfa1571746b"
+			name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800">
+				<description>
+					<![CDATA[<p>NGC-1060/TC-51999</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
 					value="">
 					</param>
 				</parameters>
@@ -4104,6 +4090,14 @@ loops.</SPAN>]]>
 			name="Verify_Export_Of_Region_Data"
 			ref="560b4584-e27b-4c2f-88ad-c4ea33c42460"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="4e37fd1f-81a8-4c01-b495-ea66c338b9ad"
@@ -5330,26 +5324,6 @@ loops.</SPAN>]]>
 					</param>
 				</parameters>
 			</testcase>
-			<testmodule
-			id="66954431-5bcf-419f-ab3d-2f75b2d5504f"
-			name="Application_Open"
-			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="Application_Path"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
-					variablename="App_Path">
-					</var>
-					<var
-					dataname="Mode"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
-					variablename="App_Mode">
-					</var>
-				</databinding>
-			</testmodule>
 			<testmodule
 			id="66995717-4af6-4593-8e6b-666e6f0bcf01"
 			name="Verify_If_The_Device_Order_Is_Shown_As_Exi_Order_IS_Order"
@@ -7021,23 +6995,6 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
-			<testcase
-			id="86352391-b529-4e22-a04e-8b880571243a"
-			name="Verify_Paste_Of_Unit_With_Points1">
-				<description>
-					<![CDATA[<p>NGC-372/TC-0036</p>]]>
-				</description>
-				<parameters>
-					<param
-					name="sListIndex"
-					value="">
-					</param>
-					<param
-					name="PanelNode"
-					value="">
-					</param>
-				</parameters>
-			</testcase>
 			<testmodule
 			id="8674abe7-51b4-4a8d-949a-6fb8cbbca639"
 			name="Verify_DC_Units_on_changing_Device_Sensitivity_and_Device_Mode_for_Sounders"
@@ -7354,6 +7311,14 @@ MxDesigner]]>
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="8b588559-8039-4917-b02e-478d9da96dc4"
@@ -7374,12 +7339,6 @@ MxDesigner]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="8b9ad508-9c8c-4a98-b8ca-276aee356ef4"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
 			</testmodule>
 			<testcase
 			id="8beda494-3ec7-497e-99a2-b3e6a8c43b0e"
@@ -7917,6 +7876,38 @@ MxDesigner]]>
 			name="ReportToPDFModule"
 			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
 			type="UserCode">
+				<databinding>
+					<var
+					dataname="PdfName"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
+					variablename="PdfName">
+					</var>
+					<var
+					dataname="PdfDirectoryPath"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="536f8a69-f246-4f2b-ae9e-1f62babb2ba9"
+					variablename="PdfDirectoryPath">
+					</var>
+					<var
+					dataname="Xml"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
+					variablename="Xml">
+					</var>
+					<var
+					dataname="Details"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
+					variablename="Details">
+					</var>
+					<var
+					dataname="DeleteRanorexReport"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
+					variablename="DeleteRanorexReport">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="9864a36b-ae6f-461e-b088-99301d83c7e8"
@@ -9333,6 +9324,19 @@ persisted in panel properties&nbsp;]]>
 			<testcase
 			id="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96"
 			name="Verify_Export_Of_Region_Data">
+				<description>
+					<![CDATA[<p>NGC-387/TC-0043</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="bc7ae423-18ed-4b27-83cb-7d61247a138f"
@@ -10799,20 +10803,6 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
 					variablename="App_Mode">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="dd433365-ee87-4112-ad31-40eafe36bec4"
-			name="Create_Project"
-			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="86352391-b529-4e22-a04e-8b880571243a"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -16100,26 +16090,6 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
-					id="86352391-b529-4e22-a04e-8b880571243a"
-					name="Verify_Paste_Of_Unit_With_Points1">
-						<testmodule
-						id="66954431-5bcf-419f-ab3d-2f75b2d5504f"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="dd433365-ee87-4112-ad31-40eafe36bec4"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="0e03f52b-fe2b-42f4-8a1d-171edc76fe5e"
-						name="VerifySelection">
-						</testmodule>
-						<testmodule
-						id="8b9ad508-9c8c-4a98-b8ca-276aee356ef4"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="1f366e1b-8d91-423c-880a-a84229356f67"
 					name="Verify_Model_Number_Filter_In_Main_Processor,R-Bus,Ethernet,PFI,BackplaneGrids">
 						<testmodule
@@ -16215,9 +16185,6 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="1f366e1b-8d91-423c-880a-a84229356f67">
-			</testcontainer>
-			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
@@ -16227,10 +16194,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

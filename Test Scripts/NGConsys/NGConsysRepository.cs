@@ -7667,14 +7667,14 @@ namespace TestProject
                 _backplane2expander_afterreopenInfo = new RepoItemInfo(this, "Backplane2Expander_AfterReopen", "progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[4]/button[@automationid='Expander']", 30000, null, "1523b351-604a-4cf5-b106-2ef07b4c468b");
                 _backplane3expander_afterreopenInfo = new RepoItemInfo(this, "Backplane3Expander_AfterReopen", "progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[5]/button[@automationid='Expander']", 30000, null, "6cb713f3-051f-4121-b788-ea9f6b66ff09");
                 _selectpanelaccessorieslabelInfo = new RepoItemInfo(this, "SelectPanelAccessoriesLabel", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/container[$sRow]/row/cell[3]/text", 30000, null, "146c1f55-49b0-4746-aad8-6316e82c5570");
-                _horizontalscrollbarpointsgridInfo = new RepoItemInfo(this, "HorizontalScrollBarPointsGrid", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/?/?/grip", 30000, null, "7e2c6509-4384-455e-bfef-560ba1a34c78");
-                _uparrowscrollbuttonpointsgridInfo = new RepoItemInfo(this, "UpArrowScrollButtonPointsGrid", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineUpButton']", 30000, null, "db7accc1-f202-4d75-a34a-4697cba99132");
-                _downarrowscrollbuttonpointsgridInfo = new RepoItemInfo(this, "DownArrowScrollButtonPointsGrid", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineDownButton']", 30000, null, "e5b8f017-2c40-4279-a72b-4d652feb9530");
-                _lastpointgridlabelInfo = new RepoItemInfo(this, "LastPointGridLabel", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[26]//text[@automationid='PART_Editor']", 30000, null, "93ca5dfd-0bc3-42d0-8130-9986aca2076b");
                 _paneltypeInfo = new RepoItemInfo(this, "PanelType", "progressbar/picture[7]/picture/list/row[@index='4']//combobox/text[@automationid='PART_Editor']", 30000, null, "8ffbf18e-7948-4450-aa7e-d271b5aa3cec");
                 _chkbox_mpm800Info = new RepoItemInfo(this, "chkbox_MPM800", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//button[@automationid='PART_Editor']", 30000, null, "6bd9942b-cd2f-45b2-90c0-c497a3a265bf");
                 _txt_propertiestextrowInfo = new RepoItemInfo(this, "txt_PropertiesTextRow", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='1']", 30000, null, "66ed420a-9357-481e-97ad-51210a5769ed");
                 _btn_dropdownpanelsgalleryInfo = new RepoItemInfo(this, "btn_DropDownPanelsGallery", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[3]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 30000, null, "cfa7c7de-8a3b-4349-b9db-7f1556ddb860");
+                _horizontalscrollbarpointsgridInfo = new RepoItemInfo(this, "HorizontalScrollBarPointsGrid", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/?/?/grip", 30000, null, "7e2c6509-4384-455e-bfef-560ba1a34c78");
+                _uparrowscrollbuttonpointsgridInfo = new RepoItemInfo(this, "UpArrowScrollButtonPointsGrid", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineUpButton']", 30000, null, "db7accc1-f202-4d75-a34a-4697cba99132");
+                _downarrowscrollbuttonpointsgridInfo = new RepoItemInfo(this, "DownArrowScrollButtonPointsGrid", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/scrollbar[@automationid='PART_VerticalScrollBar']/button[@automationid='PART_LineDownButton']", 30000, null, "e5b8f017-2c40-4279-a72b-4d652feb9530");
+                _lastpointgridlabelInfo = new RepoItemInfo(this, "LastPointGridLabel", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[26]//text[@automationid='PART_Editor']", 30000, null, "93ca5dfd-0bc3-42d0-8130-9986aca2076b");
                 _navigationtreeInfo = new RepoItemInfo(this, "NavigationTree", "progressbar/picture[1]/tree", 30000, null, "05d64cfc-4656-4551-9388-162b60f83d11");
                 _modelfilterbuttoonInfo = new RepoItemInfo(this, "ModelFilterButtoon", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='PART_HeadersPanel']/?/?/list[@automationid='headerItemsControl']/?/?/combobox/button", 30000, null, "4344284d-a1eb-49a9-a8ba-ad330921cc43");
                 _modelcolumnInfo = new RepoItemInfo(this, "ModelColumn", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_HeadersPanel']/?/?/list[@automationid='headerItemsControl']/button[2]", 30000, null, "ee004f0a-91ee-4da7-9760-91cf72af4717");
@@ -10561,6 +10561,54 @@ namespace TestProject
             }
 
             /// <summary>
+            /// The txt_PropertiesTextRow item.
+            /// </summary>
+            [RepositoryItem("66ed420a-9357-481e-97ad-51210a5769ed")]
+            public virtual Ranorex.Row txt_PropertiesTextRow
+            {
+                get
+                {
+                    return _txt_propertiestextrowInfo.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_PropertiesTextRow item info.
+            /// </summary>
+            [RepositoryItemInfo("66ed420a-9357-481e-97ad-51210a5769ed")]
+            public virtual RepoItemInfo txt_PropertiesTextRowInfo
+            {
+                get
+                {
+                    return _txt_propertiestextrowInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btn_DropDownPanelsGallery item.
+            /// </summary>
+            [RepositoryItem("cfa7c7de-8a3b-4349-b9db-7f1556ddb860")]
+            public virtual Ranorex.Container btn_DropDownPanelsGallery
+            {
+                get
+                {
+                    return _btn_dropdownpanelsgalleryInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btn_DropDownPanelsGallery item info.
+            /// </summary>
+            [RepositoryItemInfo("cfa7c7de-8a3b-4349-b9db-7f1556ddb860")]
+            public virtual RepoItemInfo btn_DropDownPanelsGalleryInfo
+            {
+                get
+                {
+                    return _btn_dropdownpanelsgalleryInfo;
+                }
+            }
+
+            /// <summary>
             /// The HorizontalScrollBarPointsGrid item.
             /// </summary>
             [RepositoryItem("7e2c6509-4384-455e-bfef-560ba1a34c78")]
@@ -10725,54 +10773,6 @@ namespace TestProject
                 get
                 {
                     return _modelcolumnInfo;
-                }
-            }
-
-            /// <summary>
-            /// The txt_PropertiesTextRow item.
-            /// </summary>
-            [RepositoryItem("66ed420a-9357-481e-97ad-51210a5769ed")]
-            public virtual Ranorex.Row txt_PropertiesTextRow
-            {
-                get
-                {
-                    return _txt_propertiestextrowInfo.CreateAdapter<Ranorex.Row>(true);
-                }
-            }
-
-            /// <summary>
-            /// The txt_PropertiesTextRow item info.
-            /// </summary>
-            [RepositoryItemInfo("66ed420a-9357-481e-97ad-51210a5769ed")]
-            public virtual RepoItemInfo txt_PropertiesTextRowInfo
-            {
-                get
-                {
-                    return _txt_propertiestextrowInfo;
-                }
-            }
-
-            /// <summary>
-            /// The btn_DropDownPanelsGallery item.
-            /// </summary>
-            [RepositoryItem("cfa7c7de-8a3b-4349-b9db-7f1556ddb860")]
-            public virtual Ranorex.Container btn_DropDownPanelsGallery
-            {
-                get
-                {
-                    return _btn_dropdownpanelsgalleryInfo.CreateAdapter<Ranorex.Container>(true);
-                }
-            }
-
-            /// <summary>
-            /// The btn_DropDownPanelsGallery item info.
-            /// </summary>
-            [RepositoryItemInfo("cfa7c7de-8a3b-4349-b9db-7f1556ddb860")]
-            public virtual RepoItemInfo btn_DropDownPanelsGalleryInfo
-            {
-                get
-                {
-                    return _btn_dropdownpanelsgalleryInfo;
                 }
             }
 

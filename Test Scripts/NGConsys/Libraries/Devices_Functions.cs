@@ -5894,16 +5894,16 @@ namespace TestProject.Libraries
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 03/6/2019
 		 ********************************************************************/
-		[UserCodeMethod]
+	[UserCodeMethod]
 		public static void verifyExportButtonInGalleryEnabledOrDisabled()
 		{
-			if(repo.FormMe.Export.Enabled)
+			if(repo.FormMe.Export2ndTime.Enabled)
 			{
-				//Report.Log(ReportLevel.Success, sContectMenuOption+" button is enabled");
+				Report.Log(ReportLevel.Success, "Export button is enabled");
 			}
 			else
 			{
-				//Report.Log(ReportLevel.Success, sContectMenuOption+" button is disabled");
+				Report.Log(ReportLevel.Success,"Export button is disabled");
 			}
 		}
 	}
