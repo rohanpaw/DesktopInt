@@ -3769,6 +3769,12 @@ loops.</SPAN>]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="48097a07-4469-4416-8253-3ba0f2118497"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4840920d-3211-4560-a8a2-010f336074f5"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -6136,6 +6142,26 @@ loops.</SPAN>]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="77b48e46-8c4c-46d5-8b59-b2cfdb11311d"
+			name="Verify_PNI800_Card_Details"
+			ref="e98d6837-8011-47bb-85f8-f5ee4125cf87"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+					<var
+					dataname="NewVariable"
+					datasourceid="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
+					variableid="607503f4-debb-4655-b43e-9b8896d25698"
+					variablename="NewVariable">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="77d4dcdb-9258-43d0-9cfb-cf57cf699106"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -8020,6 +8046,26 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="9bb90fdd-f811-4e7a-87d8-d00cde3a0b38"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="9c89dd15-1f49-473d-a8fd-8d892549f38a"
 			name="Verify_IS_Units_On_Updating_Cable_Capacitance_for_FIM"
 			ref="0a76f712-5b0b-4b55-bc02-5dd1a8143f3a"
@@ -9538,6 +9584,20 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="c0060891-f8c7-4dd0-9331-ad48bb3e912d"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="c072cf02-e092-40e6-bada-79fe192fd3dc"
 			name="Verify_40V_Load_On_Addition_Deletion_Of_Accessories">
@@ -11031,6 +11091,24 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
+			name="Verify_PNI800_Card_Details">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+					<param
+					name="NewVariable"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="e36eed15-ad6e-464c-b7b0-013e3f8510e0"
 			name="Application_Open"
@@ -11791,6 +11869,12 @@ persisted in panel properties&nbsp;]]>
 			</testmodule>
 			<testmodule
 			id="f2ce0eff-05d2-426d-a2ed-f9c439bbfea5"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f310fda6-ded8-4e8e-868a-20baa5e946c7"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -16124,6 +16208,30 @@ persisted in panel properties&nbsp;]]>
 						id="4df6365a-0ac1-4a80-ba0f-c52f2686edc2"
 						name="Verify_Export_Of_Region_Data">
 						</testmodule>
+						<testmodule
+						id="f310fda6-ded8-4e8e-868a-20baa5e946c7"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
+					name="Verify_PNI800_Card_Details">
+						<testmodule
+						id="9bb90fdd-f811-4e7a-87d8-d00cde3a0b38"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="c0060891-f8c7-4dd0-9331-ad48bb3e912d"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="77b48e46-8c4c-46d5-8b59-b2cfdb11311d"
+						name="Verify_PNI800_Card_Details">
+						</testmodule>
+						<testmodule
+						id="48097a07-4469-4416-8253-3ba0f2118497"
+						name="Close_Application">
+						</testmodule>
 					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
@@ -16188,7 +16296,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96">
+			id="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

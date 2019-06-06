@@ -2131,6 +2131,18 @@
       <UserCode>true</UserCode>
       <id>db9d2ed4-dd78-41c3-bfbc-69c7154dc84e</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_PNI800_Card_Details.cs">
+      <BoundTo>ff94b46c-d344-4667-8dc8-39a284382bdf</BoundTo>
+      <DependentUpon>Verify_PNI800_Card_Details.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aebaa9e2-e82e-4ca9-8a23-65e7b830810b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_PNI800_Card_Details.UserCode.cs">
+      <BoundTo>ff94b46c-d344-4667-8dc8-39a284382bdf</BoundTo>
+      <DependentUpon>Verify_PNI800_Card_Details.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5ccedeab-b2f8-407b-ac84-e03a477c5e42</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Power_Calculation_Is_Populated_Warning_Error_Messages_For_24V_And_System_Load_FIM.cs">
       <BoundTo>99ddf116-6003-4f64-a30a-15662a3b158b</BoundTo>
       <DependentUpon>Verify_Power_Calculation_Is_Populated_Warning_Error_Messages_For_24V_And_System_Load_FIM.rxrec</DependentUpon>
@@ -3672,6 +3684,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>d352bb85-43b4-4bff-8149-aaa1b40ca5b4</id>
       <recordtableid>dcb002d8-81ef-4a04-8ea5-46f5d33091b7</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_PNI800_Card_Details.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>ff94b46c-d344-4667-8dc8-39a284382bdf</id>
+      <recordtableid>e98d6837-8011-47bb-85f8-f5ee4125cf87</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Power_Calculation_Is_Populated_Warning_Error_Messages_For_24V_And_System_Load_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

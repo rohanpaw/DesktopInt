@@ -7541,6 +7541,9 @@ namespace TestProject
             RepoItemInfo _navigationtreeInfo;
             RepoItemInfo _modelfilterbuttoonInfo;
             RepoItemInfo _modelcolumnInfo;
+            img_PNI800InfoClass _img_pni800Info;
+            RepoItemInfo _img_pni800_propertiessectionInfo;
+            RepoItemInfo _saveInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7678,6 +7681,44 @@ namespace TestProject
                 _navigationtreeInfo = new RepoItemInfo(this, "NavigationTree", "progressbar/picture[1]/tree", 30000, null, "05d64cfc-4656-4551-9388-162b60f83d11");
                 _modelfilterbuttoonInfo = new RepoItemInfo(this, "ModelFilterButtoon", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='PART_HeadersPanel']/?/?/list[@automationid='headerItemsControl']/?/?/combobox/button", 30000, null, "4344284d-a1eb-49a9-a8ba-ad330921cc43");
                 _modelcolumnInfo = new RepoItemInfo(this, "ModelColumn", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_HeadersPanel']/?/?/list[@automationid='headerItemsControl']/button[2]", 30000, null, "ee004f0a-91ee-4da7-9760-91cf72af4717");
+                _img_pni800Info = new img_PNI800InfoClass(this);
+                _img_pni800_propertiessectionInfo = new RepoItemInfo(this, "img_PNI800_PropertiesSection", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture", 30000, null, "243efd2d-1198-44a5-9cf8-02b1587260ef");
+                _saveInfo = new RepoItemInfo(this, "Save", "progressbar/container[15]/text[@caption='Save']", 30000, null, "0b2c1138-fbad-4074-8a3a-bf22853d1c93");
+            }
+
+            /// <summary>
+            /// The img_PNI800InfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("fd9518f0-e2fc-4b4d-b64c-929d065e3824")]
+            public class img_PNI800InfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// img_PNI800InfoClass class constructor.
+                /// </summary>
+                public img_PNI800InfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "img_PNI800", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[5]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='1']/picture", 30000, null, "fd9518f0-e2fc-4b4d-b64c-929d065e3824")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("aa0ece90-184e-48b9-837f-75a9955e47ae")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("aa0ece90-184e-48b9-837f-75a9955e47ae");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("aa0ece90-184e-48b9-837f-75a9955e47ae")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("aa0ece90-184e-48b9-837f-75a9955e47ae", cropRect);
+                }
             }
 
             /// <summary>
@@ -10773,6 +10814,78 @@ namespace TestProject
                 get
                 {
                     return _modelcolumnInfo;
+                }
+            }
+
+            /// <summary>
+            /// The img_PNI800 item.
+            /// </summary>
+            [RepositoryItem("fd9518f0-e2fc-4b4d-b64c-929d065e3824")]
+            public virtual Ranorex.Picture img_PNI800
+            {
+                get
+                {
+                    return _img_pni800Info.CreateAdapter<Ranorex.Picture>(true);
+                }
+            }
+
+            /// <summary>
+            /// The img_PNI800 item info.
+            /// </summary>
+            [RepositoryItemInfo("fd9518f0-e2fc-4b4d-b64c-929d065e3824")]
+            public virtual img_PNI800InfoClass img_PNI800Info
+            {
+                get
+                {
+                    return _img_pni800Info;
+                }
+            }
+
+            /// <summary>
+            /// The img_PNI800_PropertiesSection item.
+            /// </summary>
+            [RepositoryItem("243efd2d-1198-44a5-9cf8-02b1587260ef")]
+            public virtual Ranorex.Picture img_PNI800_PropertiesSection
+            {
+                get
+                {
+                    return _img_pni800_propertiessectionInfo.CreateAdapter<Ranorex.Picture>(true);
+                }
+            }
+
+            /// <summary>
+            /// The img_PNI800_PropertiesSection item info.
+            /// </summary>
+            [RepositoryItemInfo("243efd2d-1198-44a5-9cf8-02b1587260ef")]
+            public virtual RepoItemInfo img_PNI800_PropertiesSectionInfo
+            {
+                get
+                {
+                    return _img_pni800_propertiessectionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Save item.
+            /// </summary>
+            [RepositoryItem("0b2c1138-fbad-4074-8a3a-bf22853d1c93")]
+            public virtual Ranorex.Text Save
+            {
+                get
+                {
+                    return _saveInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Save item info.
+            /// </summary>
+            [RepositoryItemInfo("0b2c1138-fbad-4074-8a3a-bf22853d1c93")]
+            public virtual RepoItemInfo SaveInfo
+            {
+                get
+                {
+                    return _saveInfo;
                 }
             }
 

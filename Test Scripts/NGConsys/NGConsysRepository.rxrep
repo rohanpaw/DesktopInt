@@ -709,7 +709,7 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			capname="button"
 			id="c4756093-03d3-4eab-9331-515476cdd346"
 			name="btn_Save"
-			refimgid="3fe9e7da-4724-4656-b866-3c29c392da4e"
+			refimgid="f823f138-2fa6-4627-be9b-bd39feb2f3a2"
 			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/list[2]/container[@automationid='PART_LeftContentControl']/container[1]/button[@text='Save']"
 			searchtimeout="30000ms">
 				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/list[2]//button[@text='Save']
@@ -2370,7 +2370,6 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			capname="button"
 			id="ca7d6bd4-690e-408d-bb58-b05a6b3da3bb"
 			name="Export"
-			refimgid="b0f10fb0-e81f-429d-8796-a92df83e0e5f"
 			refimgid="dddf0ecd-d1d2-4417-897a-f1995100b991"
 			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Export']"
 			searchtimeout="30000ms">
@@ -3535,6 +3534,60 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			refpath="/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='PART_HeadersPanel']/button[2]/list[@automationid='headerItemsControl']/button[2]"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_HeadersPanel']/?/?/list[@automationid='headerItemsControl']/button[2]
+			</item>
+			<item
+			addcaps="picture,wpfelement,wpfgroupelement"
+			capname="picture"
+			id="fd9518f0-e2fc-4b4d-b64c-929d065e3824"
+			name="img_PNI800"
+			refimgid="c58ca6f5-d0d3-4e77-bbe5-ce5572153bd7"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[5]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='1']/picture"
+			searchtimeout="30000ms">
+				<image
+				guid="aa0ece90-184e-48b9-837f-75a9955e47ae"
+				name="Screenshot1">
+					iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAP4SURBVGhD7ZXrU1RlGMD7B+pjH2pqUqmcLuM4
+TQ18KP3AkFCBRTFTy0qCGbAiEBdBBAYUUdRCUmiJSbGpKRIHKbzAIBIXDUhu6iIgCOFyWWjZXfZ+
++XX2oFPO0pfty8k5v0/PeeZ5n3l/533Pcx7hIUEWkRqyiNSQRaSGLCI1ZBGp8fCKaAb7aG5u5nLr
+r4xP/IHL7cZlt9Da2op2dl6s8bgcdF7pwi3E+oV5Rkdu43C6sZpNXGq6yOnTtXT93ovVZhPrZ6Ym
+qD9bR8O5C8zMzeMRck6Hg+6rHdTW1nK1u1dY7xRr/cVHJPNTJenZBZQcKCY5NZ3+G0Po747w8rr1
+5O8/gl3YsMP8J8HBEdiF+t/aWigpPoLeZOPr0iJSd+VRValGpUqiU9ig3WIkIS6Gz8uOUZC3h70l
+pSyZLXQ2N6BKSqZSXUHc1q209Qwub8BPfEQUYa/zw88d6GanyclIoaK6Bu1wH4+vepFYpYK27n7s
+Jh1r1qzD+75bLvxCRkoW84tmwt5YT0PHdSymRXZnpvFT/Xlaz9UQGqnEYFpiTNPL25ujuDszR4Li
+Hb49cx6rxUL54UJ25hQvb8BPVhSpb+7HaTOTn51G1fe1TI/28/yrG6lWHyUrr4jFhekVRCycKNtP
+4IY3qa4+yfb4RAY1o5QWZpBVdEzs7bQZeTcslGvD47zy3DPcGNeJ+faLZ9gUuUWM/WVFkS3bkslI
+SyEuPomh0TvoxgZ4ISiEEc0AOxITaLnUyOrVvicyMTZEZFgIrwUGkbmnEO2Mjn1ZKnIPq8XebqeV
+qIhQ2ntvErDqaW5NLYr57ssNbHwrSoz9ZUWRgpKvaO/oZEFvEHP3RZx2KxVHD5GXn8sTT659QESr
+nSZ8UzA/nm1kdkZLRnIix6tOUbp3FzuyD4h9rMZ5NodHoBmfIPClZ+nRTIr5prrveD9GJcb+8q9X
+65/cF/EyeVuD8sNIHn3sqQdEJseGCQhYS8/1WxgNeg4W5nDwi3I6muoI2hDCnSkt7cIHHh0bj25B
+T2rcBxw6/g26uVl2f5bIlydqxP7+4iOyL2snnX3j956WMUyPEaNKF2OP20V9zSnC34vGOzD7uq6g
+Lq9k0WDipLqM6Ggl0UolKemZXBu8ic2yJEjt4SOFgrht22lobMHpdKEZ6OaT2I9RCPnsXOEazi6I
+/f3FR8RmteByef8Qf+PxuLFYrPeewCXMfLMwQsXY5cJutws1wsfsdGA0GjEYDJiFaeR2e/8Y4LDb
+hFMyYBIml7fei0dYYF5aEmutVpu4/r/gI/J/RRaRGrKI1JBFpIYsIjVkEakhi0gNWURqyCJSQxaR
+GrKI1JBFpIYsIjVkEakhi0gL+Auq3PSCnCPc7gAAAABJRU5ErkJggg==
+				</image>
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[5]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='1']/picture
+			</item>
+			<item
+			addcaps="picture,wpfelement,wpfgroupelement"
+			capname="picture"
+			id="243efd2d-1198-44a5-9cf8-02b1587260ef"
+			name="img_PNI800_PropertiesSection"
+			refimgid="695e30ce-09f4-4fd1-a00f-12bea3fd700e"
+			refpath="/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='1']/cell[@isheader='False']/picture"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="0b2c1138-fbad-4074-8a3a-bf22853d1c93"
+			name="Save"
+			refimgid="9dc8220b-7b21-4abc-aa17-0e797d9d5b1d"
+			refpath="/form[@automationid='me']/progressbar/container[15]/text[@caption='Save']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[15]/text[@caption='Save']
 			</item>
 			<basepath>
 				/form[@automationid='me']

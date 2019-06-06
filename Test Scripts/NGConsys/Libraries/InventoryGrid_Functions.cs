@@ -319,7 +319,8 @@ namespace TestProject.Libraries
 			// Click on Label property cell
 			repo.FormMe.txt_InventoryProperty.Click();
 			
-			// Get the text value of Device Sensitivity field
+			// Get the text value of property
+			repo.FormMe.txt_InventoryProperty.Click();
 			string actualValue = repo.FormMe.txt_InventoryProperty.TextValue;
 			
 			Report.Log(ReportLevel.Success,"Actual: "+actualValue+" Expected"+sExpectedValue);

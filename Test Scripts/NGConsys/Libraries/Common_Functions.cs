@@ -295,6 +295,52 @@ namespace TestProject.Libraries
 			
 		}
 		
+		/********************************************************************
+		 * Function Name: SaveProjectFromFileOption
+		 * Function Details: To save project from File->Save
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update :04/06/19
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void SaveProjectFromFileOption(string sProjectName)
+		{
+			if (repo.ProfileConsys1.File.Enabled)
+			{
+				repo.ProfileConsys1.File.Click();
+				repo.FormMe.Save.Click();
+				
+				if(repo.ProjectChangeDescription.btn_OK.Visible)
+				{
+					repo.ProjectChangeDescription.txt_Desc.Click();
+					Keyboard.Press("Automation....");
+					repo.ProjectChangeDescription.btn_OK.Click();
+				}
+				
+				if(repo.SaveConfirmationWindow.ButtonSave.Visible)
+				{
+					
+					string actualDirPath= Common_Functions.GetDirPath();
+					string sSaveProjectDirPath = actualDirPath+ "NGDesigner Saved Projects";
+					repo.SaveConfirmationWindow.Save_Open_Window.Click();
+					sProjectName= sSaveProjectDirPath + "\\"+ sProjectName;
+					repo.SaveConfirmationWindow.txt_Path.PressKeys(sProjectName);
+					//repo.SaveConfirmationWindow.txt_Path.PressKeys("{Return}");
+					
+					//   	repo.SaveConfirmationWindow.txt_ProjectName.Click();
+					//	repo.SaveConfirmationWindow.txt_ProjectName.PressKeys(sProjectName);
+					repo.SaveConfirmationWindow.ButtonSave.Click();
+					
+				}
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure, "Save button is not enabled");
+			}
+		}
+		
+		
 	}
 }
 
