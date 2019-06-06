@@ -3998,6 +3998,12 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4c73c62c-f253-487f-a823-5698bb7d8b14"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4cc1a4c2-3ba3-45eb-8d65-8ed3eff2891f"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -4187,6 +4193,20 @@ loops.</SPAN>]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4fca1204-78bd-4924-9a90-87f4511cccec"
+			name="Verify_FBI800_card_details"
+			ref="aa209ed5-2360-4a04-b4f0-d223a15560e0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="83e5e305-9ded-4d01-84a4-86f97e98ade9"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="4ffaf558-6ca7-402c-a4c0-87c42c201695"
@@ -6885,6 +6905,20 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="83e5e305-9ded-4d01-84a4-86f97e98ade9"
+			name="Verify_FBI800_card_details">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="8455dbc8-d9d3-417c-9a50-26238ab9d607"
 			name="Application_Open"
@@ -8355,6 +8389,20 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="a218c015-7b09-48e0-a641-54ebfef84061"
+			name="CreateProject_German"
+			ref="19660af1-4e58-4290-badb-20687f7b3401"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="83e5e305-9ded-4d01-84a4-86f97e98ade9"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="a22d751d-559b-4394-824d-987c2938b929"
 			name="Application_Open"
@@ -10160,6 +10208,26 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ce2d7dfe-c750-4f23-a224-6c6f4e28ea52"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -16233,6 +16301,26 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="83e5e305-9ded-4d01-84a4-86f97e98ade9"
+					name="Verify_FBI800_card_details">
+						<testmodule
+						id="ce2d7dfe-c750-4f23-a224-6c6f4e28ea52"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="a218c015-7b09-48e0-a641-54ebfef84061"
+						name="CreateProject_German">
+						</testmodule>
+						<testmodule
+						id="4fca1204-78bd-4924-9a90-87f4511cccec"
+						name="Verify_FBI800_card_details">
+						</testmodule>
+						<testmodule
+						id="4c73c62c-f253-487f-a823-5698bb7d8b14"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -16296,7 +16384,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e">
+			id="83e5e305-9ded-4d01-84a4-86f97e98ade9">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

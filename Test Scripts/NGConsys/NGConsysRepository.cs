@@ -7544,6 +7544,7 @@ namespace TestProject
             img_PNI800InfoClass _img_pni800Info;
             RepoItemInfo _img_pni800_propertiessectionInfo;
             RepoItemInfo _saveInfo;
+            RepoItemInfo _germanmarketInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7684,6 +7685,7 @@ namespace TestProject
                 _img_pni800Info = new img_PNI800InfoClass(this);
                 _img_pni800_propertiessectionInfo = new RepoItemInfo(this, "img_PNI800_PropertiesSection", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture", 30000, null, "243efd2d-1198-44a5-9cf8-02b1587260ef");
                 _saveInfo = new RepoItemInfo(this, "Save", "progressbar/container[15]/text[@caption='Save']", 30000, null, "0b2c1138-fbad-4074-8a3a-bf22853d1c93");
+                _germanmarketInfo = new RepoItemInfo(this, "GermanMarket", ".//container[@automationid='PART_Right']/text[@caption='Markets']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/container", 30000, null, "8b1015af-8a82-47e9-97e3-c7cb37949b47");
             }
 
             /// <summary>
@@ -10886,6 +10888,30 @@ namespace TestProject
                 get
                 {
                     return _saveInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GermanMarket item.
+            /// </summary>
+            [RepositoryItem("8b1015af-8a82-47e9-97e3-c7cb37949b47")]
+            public virtual Ranorex.Container GermanMarket
+            {
+                get
+                {
+                    return _germanmarketInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GermanMarket item info.
+            /// </summary>
+            [RepositoryItemInfo("8b1015af-8a82-47e9-97e3-c7cb37949b47")]
+            public virtual RepoItemInfo GermanMarketInfo
+            {
+                get
+                {
+                    return _germanmarketInfo;
                 }
             }
 

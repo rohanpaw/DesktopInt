@@ -271,6 +271,18 @@
       <UserCode>true</UserCode>
       <id>49dd13dd-eed5-4e14-b155-d2afb3caad8b</id>
     </Compile>
+    <Compile Include="Recording Modules\CreateProject_German.cs">
+      <BoundTo>71b9de17-f957-4cac-9c8c-d6a4902a2e60</BoundTo>
+      <DependentUpon>CreateProject_German.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9e93bc81-e724-44c2-8142-1d20684f9537</id>
+    </Compile>
+    <Compile Include="Recording Modules\CreateProject_German.UserCode.cs">
+      <BoundTo>71b9de17-f957-4cac-9c8c-d6a4902a2e60</BoundTo>
+      <DependentUpon>CreateProject_German.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>de7bb609-e4e4-4798-937a-6802b71bf02b</id>
+    </Compile>
     <Compile Include="Recording Modules\Create_Project.cs">
       <DependentUpon>Create_Project.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1494,6 +1506,18 @@
       <DependentUpon>Verify_Extra_IS_Units_Required_In_Case_of_Split_Loops.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>3ecb7609-e369-49ed-b49e-e045a340d5d7</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_FBI800_card_details.cs">
+      <BoundTo>921a8b7e-0733-46ca-b161-8ad7af3f2d5e</BoundTo>
+      <DependentUpon>Verify_FBI800_card_details.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4fe748b1-3b1b-43f8-b951-dc7a9467691a</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_FBI800_card_details.UserCode.cs">
+      <BoundTo>921a8b7e-0733-46ca-b161-8ad7af3f2d5e</BoundTo>
+      <DependentUpon>Verify_FBI800_card_details.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6a716e44-7522-4ded-9d0d-3e4748328f24</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_FB_IOB_Slot_Allocation_In_Backplane.cs">
       <BoundTo>ce55a45c-b006-4294-8fe5-c48dac998931</BoundTo>
@@ -2910,6 +2934,11 @@
       <recordtableid>04f2c1bc-a14b-44db-b656-60d601f7de36</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\CreateProject_German.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>71b9de17-f957-4cac-9c8c-d6a4902a2e60</id>
+      <recordtableid>19660af1-4e58-4290-badb-20687f7b3401</recordtableid>
+    </None>
     <None Include="Recording Modules\Create_Project.rxrec">
       <id>025b95a2-e0a5-4f85-bed7-8f9ab0822c71</id>
       <recordtableid>28850e8e-b478-423e-9533-d1c1ec13c838</recordtableid>
@@ -3419,6 +3448,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f5f3f294-72d6-4b11-b6cc-6f48a7ea3aa2</id>
       <recordtableid>03f1ad7a-7073-445b-b9d7-2352e9793931</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_FBI800_card_details.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>921a8b7e-0733-46ca-b161-8ad7af3f2d5e</id>
+      <recordtableid>aa209ed5-2360-4a04-b4f0-d223a15560e0</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_FB_IOB_Slot_Allocation_In_Backplane.rxrec">
       <id>ce55a45c-b006-4294-8fe5-c48dac998931</id>

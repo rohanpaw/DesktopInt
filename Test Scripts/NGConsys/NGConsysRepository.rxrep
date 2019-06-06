@@ -3589,6 +3589,15 @@ GrKI1JBFpIYsIjVkEakhi0gL+Auq3PSCnCPc7gAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/container[15]/text[@caption='Save']
 			</item>
+			<item
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="container"
+			id="8b1015af-8a82-47e9-97e3-c7cb37949b47"
+			name="GermanMarket"
+			refpath="/form[@automationid='me']/progressbar/container[20]/container[@automationid='PART_Right']/text[@caption='Markets']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='0']/container"
+			searchtimeout="30000ms">
+				/form[@automationid='me']//container[@automationid='PART_Right']/text[@caption='Markets']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/container
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>

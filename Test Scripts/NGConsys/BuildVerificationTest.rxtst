@@ -42,14 +42,6 @@ rxversion="8.3">
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="6173c3ad-0e0f-4915-bffa-f82b550c1ba6"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="187daa63-7f01-41f8-8ea7-329d42f303ec"
@@ -125,14 +117,6 @@ rxversion="8.3">
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="bf7e72f4-fac9-4d8a-985d-e553d59bc4ee"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="35e89fc3-c8cd-48fa-9258-6c7633165530"
@@ -205,14 +189,6 @@ rxversion="8.3">
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="ProjectName"
-					datasourceid="9507adf0-1595-4988-a179-03bfcecd8e18"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="6dd0510d-7ecc-404a-acb7-b7156f43053f"
@@ -233,14 +209,6 @@ rxversion="8.3">
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="0a36b563-06bd-410b-8812-dadacd54e00c"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="834ca684-ccee-49fc-b8d8-d0df2a190535"
@@ -357,14 +325,6 @@ rxversion="8.3">
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="9af212f0-03f7-4bdb-9e0e-6f27caeb7fc7"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="bc3e70cd-eea0-472b-ad1e-a618501ef94c"
@@ -447,14 +407,6 @@ rxversion="8.3">
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="6dd0510d-7ecc-404a-acb7-b7156f43053f"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="f74b1706-ad8e-43cc-ad2f-a6976216aca0"
@@ -481,14 +433,6 @@ rxversion="8.3">
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="2aad57d2-a38d-4f39-bf0d-124b07fdc0ba"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
