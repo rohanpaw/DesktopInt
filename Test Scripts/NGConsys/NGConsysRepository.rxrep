@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
 name="NGConsysRepository"
 rxversion="8.3">
@@ -3562,7 +3561,6 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			refimgid="c58ca6f5-d0d3-4e77-bbe5-ce5572153bd7"
 			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[5]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='1']/picture"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[5]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='1']/picture
 				<image
 				guid="aa0ece90-184e-48b9-837f-75a9955e47ae"
 				name="Screenshot1">
@@ -3587,6 +3585,7 @@ Lq9k0WDipLqM6Ggl0UolKemZXBu8ic2yJEjt4SOFgrht22lobMHpdKEZ6OaT2I9RCPnsXOEazi6I
 hFMyYBIml7fei0dYYF5aEmutVpu4/r/gI/J/RRaRGrKI1JBFpIYsIjVkEakhi0gNWURqyCJSQxaR
 GrKI1JBFpIYsIjVkEakhi0gL+Auq3PSCnCPc7gAAAABJRU5ErkJggg==
 				</image>
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[5]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='1']/picture
 			</item>
 			<item
 			addcaps="picture,wpfelement,wpfgroupelement"
@@ -3625,7 +3624,6 @@ GrKI1JBFpIYsIjVkEakhi0gL+Auq3PSCnCPc7gAAAABJRU5ErkJggg==
 			refimgid="815d0df0-009a-4631-a72e-4de52bcef7be"
 			refpath="/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[8]/cell[@isheader='False']/picture"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 				<image
 				guid="11461faf-0d1e-4674-a4d2-13574e2943d9"
 				name="Screenshot1">
@@ -6655,6 +6653,7 @@ apMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1q
 kyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWID
 /idv0HEloKLk6QAAAABJRU5ErkJggg==
 				</image>
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 			</item>
 			<item
 			addcaps="text,wpfelement"
