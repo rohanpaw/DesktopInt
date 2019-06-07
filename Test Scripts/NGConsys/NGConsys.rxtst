@@ -1093,6 +1093,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="12222809-489c-4492-98fe-0ae3ac09de80"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="125cabe0-004d-4dcb-a9df-487294ef890d"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -5775,6 +5795,12 @@ loops.</SPAN>]]>
 			ref="18ef900d-c144-4970-b519-5d9e9cf9cec2"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="6b0e87f2-411a-46dd-9267-f9b533a05f0d"
+			name="CreateProject_German"
+			ref="19660af1-4e58-4290-badb-20687f7b3401"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="6b229399-99c5-41f8-a854-d083b93798f0"
 			name="Verify_AC_units_for_Base">
@@ -7004,6 +7030,12 @@ MxDesigner]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="82cd4982-b875-4424-83fd-82db1c249e24"
+			name="VerifyDeletion_of_FBI800_And_PNI800_Cards"
+			ref="4773fcb4-472b-417b-948b-4068b6d25da3"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="82ff8339-2644-4fea-b685-10a01548727f"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -7084,6 +7116,9 @@ MxDesigner]]>
 			<testcase
 			id="83e5e305-9ded-4d01-84a4-86f97e98ade9"
 			name="Verify_FBI800_card_details">
+				<description>
+					<![CDATA[<p><span style="text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">NGC-389/TC-0045</span></p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -11460,6 +11495,9 @@ persisted in panel properties&nbsp;]]>
 			<testcase
 			id="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
 			name="Verify_PNI800_Card_Details">
+				<description>
+					<![CDATA[<p><span style="text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">NGC-389/TC-0044</span></p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -11759,6 +11797,10 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="e920721a-3dae-4973-96f4-2f314ac9cef1"
+			name="Verify_Deletion_of__FBI800_And_PNI800_Cards">
+			</testcase>
 			<testmodule
 			id="e93c47f0-d52b-4703-9331-29cdb310f719"
 			name="Verify_CPU_selection_on_reopening_project"
@@ -16702,6 +16744,22 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="e920721a-3dae-4973-96f4-2f314ac9cef1"
+					name="Verify_Deletion_of__FBI800_And_PNI800_Cards">
+						<testmodule
+						id="12222809-489c-4492-98fe-0ae3ac09de80"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="6b0e87f2-411a-46dd-9267-f9b533a05f0d"
+						name="CreateProject_German">
+						</testmodule>
+						<testmodule
+						id="82cd4982-b875-4424-83fd-82db1c249e24"
+						name="VerifyDeletion_of_FBI800_And_PNI800_Cards">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="5025fcf1-c285-41aa-b0ae-bef9f25fa974"
 					name="Verify_IOB_In_Accessories_Gallery">
 						<testmodule
@@ -16892,6 +16950,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="e920721a-3dae-4973-96f4-2f314ac9cef1">
 			id="4d38270d-d85a-452d-90a9-0653eee357f1">
 			</testcontainer>
 		</testconfiguration>

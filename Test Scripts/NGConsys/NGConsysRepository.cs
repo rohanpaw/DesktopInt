@@ -7547,6 +7547,7 @@ namespace TestProject
             RepoItemInfo _img_pni800_propertiessectionInfo;
             RepoItemInfo _saveInfo;
             RepoItemInfo _germanmarketInfo;
+            RepoItemInfo _backplane1afterreopenInfo;
             Image_IOB800InfoClass _image_iob800Info;
             RepoItemInfo _txt_backplane1Info;
             RepoItemInfo _backplane1_expanderInfo;
@@ -7693,6 +7694,7 @@ namespace TestProject
                 _img_pni800_propertiessectionInfo = new RepoItemInfo(this, "img_PNI800_PropertiesSection", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture", 30000, null, "243efd2d-1198-44a5-9cf8-02b1587260ef");
                 _saveInfo = new RepoItemInfo(this, "Save", "progressbar/container[15]/text[@caption='Save']", 30000, null, "0b2c1138-fbad-4074-8a3a-bf22853d1c93");
                 _germanmarketInfo = new RepoItemInfo(this, "GermanMarket", ".//container[@automationid='PART_Right']/text[@caption='Markets']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/container", 30000, null, "8b1015af-8a82-47e9-97e3-c7cb37949b47");
+                _backplane1afterreopenInfo = new RepoItemInfo(this, "Backplane1AfterReopen", "progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']", 30000, null, "97f5e8e7-8d7b-41c6-9865-2f80882c91e7");
                 _image_iob800Info = new Image_IOB800InfoClass(this);
                 _txt_backplane1Info = new RepoItemInfo(this, "txt_Backplane1", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='Backplane  1/3']", 30000, null, "74a72bb0-b7f0-4a5b-9d8c-eed3dedab87b");
                 _backplane1_expanderInfo = new RepoItemInfo(this, "Backplane1_Expander", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']", 30000, null, "86554d09-4f4d-412c-adbf-56373ab71504");
@@ -11026,6 +11028,30 @@ namespace TestProject
                 get
                 {
                     return _germanmarketInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Backplane1AfterReopen item.
+            /// </summary>
+            [RepositoryItem("97f5e8e7-8d7b-41c6-9865-2f80882c91e7")]
+            public virtual Ranorex.Button Backplane1AfterReopen
+            {
+                get
+                {
+                    return _backplane1afterreopenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Backplane1AfterReopen item info.
+            /// </summary>
+            [RepositoryItemInfo("97f5e8e7-8d7b-41c6-9865-2f80882c91e7")]
+            public virtual RepoItemInfo Backplane1AfterReopenInfo
+            {
+                get
+                {
+                    return _backplane1afterreopenInfo;
                 }
             }
 

@@ -3617,6 +3617,16 @@ GrKI1JBFpIYsIjVkEakhi0gL+Auq3PSCnCPc7gAAAABJRU5ErkJggg==
 				/form[@automationid='me']//container[@automationid='PART_Right']/text[@caption='Markets']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/container
 			</item>
 			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="97f5e8e7-8d7b-41c6-9865-2f80882c91e7"
+			name="Backplane1AfterReopen"
+			refimgid="869f2607-311e-45a6-b9bb-a53010bc778a"
+			refpath="/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']
+			</item>
+			<item
 			addcaps="picture,wpfelement,wpfgroupelement"
 			capname="picture"
 			id="bdb1d94c-d649-4a3c-a9d8-5aa3c0e0f4e8"
