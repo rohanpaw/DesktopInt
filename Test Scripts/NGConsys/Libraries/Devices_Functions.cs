@@ -4203,8 +4203,11 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void editDeviceLabel(string sPropertyLabel, string sNewLabel)
 		{
+			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
+			{
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
+			}
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -4212,7 +4215,9 @@ namespace TestProject.Libraries
 			// Search for the Label property
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sPropertyLabel +"{ENTER}" );
 			
-			// Click on Label property cell
+			if(repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceModeInfo.Exists())
+			{
+				// Click on Label property cell
 			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
 			
 			//Modifying the label
@@ -4220,9 +4225,24 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.PressKeys(sNewLabel +"{ENTER}" );
 			Report.Log(ReportLevel.Success,"Label is editied to " +sNewLabel);
 			
+			}
+			else
+			{
+				// Click on label cell
+			repo.FormMe.cell_Properties.Click();
+			
+			//Modifying the label
+			repo.FormMe.cell_Properties.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			repo.FormMe.cell_Properties.PressKeys(sNewLabel +"{ENTER}" );
+			Report.Log(ReportLevel.Success,"Label is edited to " +sNewLabel);
+			
+			}
+			
+			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
+			{
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
-			
+			}
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
@@ -5906,5 +5926,33 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Success,"Export button is disabled");
 			}
 		}
+		
+		/********************************************************************
+		 * Function Name: VerifyLabelInPanelAccessories
+		 * Function Details: To verify label text  in Panel Accessories
+		 * Parameter/Arguments:expected Label text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 04/06/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyLabelInPanelAccessories(string sLabel)
+		{
+			repo.FormMe.PanelAccessoriesLabel.Click();
+			
+			// Retrieve value of label
+			string actualLabel = repo.FormMe.PanelAccessoriesLabel.TextValue;
+			
+			// Comparing actualLabel and sLabel values
+			if(actualLabel.Equals(sLabel))
+			{
+				Report.Log(ReportLevel.Success,"Label text " +actualLabel+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Label text is displayed as "+actualLabel+ " instead of "+ sLabel);
+			}
+		}
+		
 	}
 }

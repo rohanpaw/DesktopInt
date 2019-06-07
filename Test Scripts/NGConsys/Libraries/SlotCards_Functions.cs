@@ -1202,7 +1202,7 @@ namespace TestProject.Libraries
 				
 				// Add one panel after adding 1 one panel
 				Panel_Functions.AddOnePanel(2,secondPanelName,sSecondCPUType);
-			
+				
 				// Click on navigation tree expander
 				repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
@@ -1258,7 +1258,7 @@ namespace TestProject.Libraries
 				
 				// Click on Ok button again
 				repo.ExportDocument.ButtonOK.Click();
-			
+				
 				// Verify shopping list excel text for first device and panel
 				Devices_Functions.verifyShoppingListDevicesTextForCell3And14(PanelName,sDeviceName);
 				
@@ -1282,13 +1282,591 @@ namespace TestProject.Libraries
 				}
 				
 			}
-			
-			
-			
+			// Close Excel sheet
 			Excel_Utilities.CloseExcel();
 		}
+		
+		/***********************************************************************************************************
+		 * Function Name: VerifyIOBInAccessoriesGallery
+		 * Function Details: To Verify IOB state In Accessories Gallery
+		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 03/06/2019
+		 ***********************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyIOBInAccessoriesGallery(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string sType,sDeviceName,PanelName,PanelNode,CPUType,InitialState;
+			
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				sType =  ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				InitialState = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				
+				// Add panels
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				
+				// Click on navigation tree expander
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on panel accessories tab
+				repo.FormMe.tab_PanelAccessories.Click();
+				
+				// Verify enable or disable state of devices in panel accessories gallery
+				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType, sDeviceName, InitialState);
+
+				// Verify if row count is more than 8 then delete the panel
+				if(rows!=8)
+				{
+					// Delete Panel
+					Panel_Functions.DeletePanel(1,PanelNode,1);
+				}
+			}
+			// Close open excel file
+			Excel_Utilities.CloseExcel();
+		}
+		
+		/***********************************************************************************************************
+		 * Function Name: VerifyIOBProperties
+		 * Function Details: To Verify IOB properties
+		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 03/06/2019
+		 ***********************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyIOBProperties(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string sType,sDeviceName,PanelName,PanelNode,CPUType,sLabel,sSKU,sModel,sNewLabel;
+			
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				sType =  ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				sLabel = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sSKU = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sModel = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sOtherSlotCardName = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				sNewLabel = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				
+				// Add panels
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				
+				// Click on navigation tree expander
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on panel accessories tab
+				repo.FormMe.tab_PanelAccessories.Click();
+				
+				// Add devices from panel accessories gallery
+				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+				
+				//  Verify label in Search properties
+				Devices_Functions.VerifyLabelInSearchProperties(sLabel);
+				
+				// Verify SKU in Search properties
+				Devices_Functions.VerifySKUInSearchProperties(sSKU);
+				
+				// Verify Model in Search properties
+				Devices_Functions.VerifyModelInSearchProperties(sModel);
+				
+				// Verify Description field in Search properties
+				Devices_Functions.VerifyDescriptionTextRowInSearchProperties();
+				
+				// Click on navigation tree expander
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Verify and click backplane1 expander
+				if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
+				{
+					repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+					Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
+				}
+				
+				// Click on Panel Accessories label
+				repo.FormMe.PanelAccessoriesLabel.Click();
+				
+				//  Verify label in Search properties
+				Devices_Functions.VerifyLabelInSearchProperties(sLabel);
+				
+				// Verify SKU in Search properties
+				Devices_Functions.VerifySKUInSearchProperties(sSKU);
+				
+				// Verify Model in Search properties
+				Devices_Functions.VerifyModelInSearchProperties(sModel);
+				
+				// Verify Description field in Search properties
+				Devices_Functions.VerifyDescriptionTextRowInSearchProperties();
+				
+				//  Verify label in Search properties
+				Devices_Functions.editDeviceLabel("Label",sNewLabel);
+				
+				Devices_Functions.VerifyLabelInPanelAccessories(sNewLabel);
+
+			}
+			// Close open excel file
+			Excel_Utilities.CloseExcel();
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyAdditionOfDevicesInBackplaneWithOnePanel
+		 * Function Details: To verify slot cards and backplane distribution
+		 * Parameter/Arguments: sFileName, sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 06/06/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyAdditionOfDevicesInBackplaneWithOnePanel(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			int columns = Excel_Utilities.ExcelRange.Columns.Count;
+			int deviceCount;
+			// Declared string type
+			string sType,sDeviceCount,sDeviceName,PanelType,ExpectedBackplane1,ExpectedBackplane2,ExpectedBackplane3,PanelName,PanelNode,CPUType;
+			string sBackplane1SlotCardName,sBackplane2SlotCardName,sBackplane3SlotCardName;
+
+			for(int i=10; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				ExpectedBackplane1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				ExpectedBackplane2 = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				ExpectedBackplane3 = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				sBackplane1SlotCardName = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				sBackplane2SlotCardName = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				sBackplane3SlotCardName = ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				
+				for(int j=4; j<=10; j++){
+					
+					
+					sDeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[8,j]).Value.ToString();
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[9,j]).Value.ToString();
+					sDeviceCount = ((Range)Excel_Utilities.ExcelRange.Cells[i,j]).Value.ToString();
+					
+					
+					PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
+					
+					int.TryParse(sDeviceCount, out deviceCount);
+					
+					// Verify device count and then add devices from panel accessories gallery or panel node gallery
+					if(deviceCount>0)
+					{
+						if (sType.Equals("Accessories"))
+						{
+							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.tab_PanelAccessories.Click();
+							for(int k=1; k<=deviceCount;k++)
+							{
+								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+							}
+						}
+						else
+						{
+							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.tab_Inventory.Click();
+							
+							for(int k=1; k<=deviceCount;k++)
+							{
+								Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
+							}
+						}
+					}
+					
+				}
+				
+				// Verify expected backplane1
+				if(ExpectedBackplane1.Equals("Yes"))
+				{
+					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
+					{
+						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+						Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
+						
+						VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
+						VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
+						
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
+					}
+					
+				}
+				else
+				{
+					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
+					{
+						Report.Log(ReportLevel.Failure, "Backplane1 should not be displayed");
+					}
+					
+				}
+				
+				// Verify expected backplane2
+				if(ExpectedBackplane2.Equals("Yes"))
+				{
+					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
+					{
+						repo.FormMe.Backplane2_Expander.Click();
+						Report.Log(ReportLevel.Success, "Backplane2 is available and displaying correctly");
+						
+						VerifyandClickOtherSlotCardsForBackplane2(sBackplane2SlotCardName);
+						VerifySlotCardsTextForBackplane2(sBackplane2SlotCardName);
+						
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure, "Backplane2 is not displayed");
+					}
+					
+				}
+				else
+				{
+					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
+					{
+						Report.Log(ReportLevel.Failure, "Backplane2 should not be displayed");
+					}
+					
+				}
+				
+				// Verify expected backplane3
+				if(ExpectedBackplane3.Equals("Yes"))
+				{
+					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
+					{
+						repo.FormMe.Backplane3_Expander.Click();
+						Report.Log(ReportLevel.Success, "Backplane3 is available and displaying correctly");
+						
+						VerifyandClickOtherSlotCardsForBackplane3(sBackplane3SlotCardName);
+						VerifySlotCardsTextForBackplane3(sBackplane3SlotCardName);
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure, "Backplane3 is not displayed");
+					}
+				}
+				else
+				{
+					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
+					{
+						Report.Log(ReportLevel.Failure, "Backplane3 should not be displayed");
+					}
+				}
+				
+			}
+			
+			// Close Excel
+			Excel_Utilities.CloseExcel();
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyShoppingListDevicesAfterAdditionOfDevices
+		 * Function Details: To verify slot cards and backplane distribution
+		 * Parameter/Arguments: sFileName, sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 06/06/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyShoppingListDevicesAfterAdditionOfDevices(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			string FirstDevice,SecondDevice,ThirdDevice,FourthDevice,sShoppingListCount;
+			int shoppingListCount;
+			
+			
+			sShoppingListCount =  ((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			FirstDevice =  ((Range)Excel_Utilities.ExcelRange.Cells[4,9]).Value.ToString();
+			SecondDevice = ((Range)Excel_Utilities.ExcelRange.Cells[4,10]).Value.ToString();
+			ThirdDevice = ((Range)Excel_Utilities.ExcelRange.Cells[4,11]).Value.ToString();
+			FourthDevice = ((Range)Excel_Utilities.ExcelRange.Cells[4,12]).Value.ToString();
+			
+			
+			int.TryParse(sShoppingListCount, out shoppingListCount);
+			
+			// Click on site node
+			repo.ProfileConsys1.SiteNode.Click();
+			
+			// Click on shopping list tab
+			repo.FormMe.tab_ShoppingList.Click();
+			
+			// Verify shopping list count
+			Devices_Functions.verifyShoppingList(shoppingListCount);
+			Delay.Milliseconds(500);
+			
+			Export_Functions.ExportAndGenerateShoppingListInExcelFormat();
+			Export_Functions.verifyShoppingListDevicesTextForCell14(FirstDevice);
+			
+			Export_Functions.verifyShoppingListDevicesTextForCell17(SecondDevice);
+			
+			Export_Functions.verifyShoppingListDevicesTextForCell21(ThirdDevice);
+			
+			Export_Functions.verifyShoppingListDevicesTextForCell24(FourthDevice);
+			
+			Export_Functions.CloseShoppingListExcel();
+			
+			// Close Excel
+			Excel_Utilities.CloseExcel();
+			
+		}
+		
+		
+		/***********************************************************************************************************
+		 * Function Name: VerifyDeletionOfDevicesInBackplane
+		 * Function Details: To Verify
+		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 06/06/2019
+		 ***********************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyDeletionOfDevicesInBackplane(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			int columns = Excel_Utilities.ExcelRange.Columns.Count;
+			
+			// Declared string type
+			string ThirdDeviceLabel,FirstDevice,SecondDevice,FourthDevice,sShoppingListCount,sBackplane1SlotCardName,ExpectedBackplane1;
+			int shoppingListCount;
+			
+			sShoppingListCount =  ((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			ThirdDeviceLabel =  ((Range)Excel_Utilities.ExcelRange.Cells[4,9]).Value.ToString();
+			
+			
+			FirstDevice = ((Range)Excel_Utilities.ExcelRange.Cells[4,10]).Value.ToString();
+			SecondDevice = ((Range)Excel_Utilities.ExcelRange.Cells[4,11]).Value.ToString();
+			FourthDevice = ((Range)Excel_Utilities.ExcelRange.Cells[4,12]).Value.ToString();
+			sBackplane1SlotCardName = ((Range)Excel_Utilities.ExcelRange.Cells[10,14]).Value.ToString();
+			ExpectedBackplane1 = ((Range)Excel_Utilities.ExcelRange.Cells[10,11]).Value.ToString();
+			
+			int.TryParse(sShoppingListCount, out shoppingListCount);
+			
+			Devices_Functions.SelectRowUsingLabelName(ThirdDeviceLabel);
+			
+			repo.ProfileConsys1.btn_Delete.Click();
+			
+			// Verify expected backplane1
+			if(ExpectedBackplane1.Equals("Yes"))
+			{
+				if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
+				{
+					repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+					Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
+					
+					VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
+					VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
+					
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
+				}
+				
+			}
+			
+			// Click on site node
+			repo.ProfileConsys1.SiteNode.Click();
+			
+			// Click on shopping list tab
+			repo.FormMe.tab_ShoppingList.Click();
+			
+			// Verify shopping list count
+			Devices_Functions.verifyShoppingList(shoppingListCount);
+			Delay.Milliseconds(500);
+			
+			Export_Functions.ExportAndGenerateShoppingListInExcelFormat();
+			Export_Functions.verifyShoppingListDevicesTextForCell14(FirstDevice);
+			
+			Export_Functions.verifyShoppingListDevicesTextForCell17(SecondDevice);
+			
+			Export_Functions.verifyShoppingListDevicesTextForCell21(FourthDevice);
+			
+			
+			
+			Export_Functions.CloseShoppingListExcel();
+			
+			// Close Excel
+			Excel_Utilities.CloseExcel();
+			
+			
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyAccessoriesGalleryUpdateOnMaxLimitSupportedByPanel
+		 * Function Details: To verify slot cards and backplane distribution
+		 * Parameter/Arguments: sFileName, sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 07/06/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyAccessoriesGalleryUpdateOnMaxLimitSupportedByPanel(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			int columns = Excel_Utilities.ExcelRange.Columns.Count;
+			int deviceCount;
+			// Declared string type
+			string sType,sDeviceCount,sDeviceName,PanelType,ExpectedBackplane1,ExpectedBackplane2,ExpectedBackplane3,PanelName,PanelNode,CPUType;
+			string sBackplane1SlotCardName,sBackplane2SlotCardName,sBackplane3SlotCardName,sDeviceState;
+
+			for(int i=10; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				ExpectedBackplane1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				ExpectedBackplane2 = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				ExpectedBackplane3 = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sBackplane1SlotCardName = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				sBackplane2SlotCardName = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				sBackplane3SlotCardName = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				sDeviceState = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				
+				
+				for(int j=4; j<=5; j++){
+					
+					
+					sDeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[8,j]).Value.ToString();
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[9,j]).Value.ToString();
+					sDeviceCount = ((Range)Excel_Utilities.ExcelRange.Cells[i,j]).Value.ToString();
+					
+					
+					PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
+					
+					int.TryParse(sDeviceCount, out deviceCount);
+					
+					// Verify device count and then add devices from panel accessories gallery or panel node gallery
+					if(deviceCount>0)
+					{
+						if (sType.Equals("Accessories"))
+						{
+							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.tab_PanelAccessories.Click();
+							for(int k=1; k<=deviceCount;k++)
+							{
+								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+							}
+						}
+						else
+						{
+							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.tab_Inventory.Click();
+							
+							for(int k=1; k<=deviceCount;k++)
+							{
+								Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
+							}
+						}
+					}
+					Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,sDeviceState);
+				
+				}
+				
+				// Verify expected backplane1
+				if(ExpectedBackplane1.Equals("Yes"))
+				{
+					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
+					{
+						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+						Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
+						
+						VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
+						VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
+						
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
+					}
+					
+				}
+				else
+				{
+					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
+					{
+						Report.Log(ReportLevel.Failure, "Backplane1 should not be displayed");
+					}
+					
+				}
+				
+				// Verify expected backplane2
+				if(ExpectedBackplane2.Equals("Yes"))
+				{
+					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
+					{
+						repo.FormMe.Backplane2_Expander.Click();
+						Report.Log(ReportLevel.Success, "Backplane2 is available and displaying correctly");
+						
+						VerifyandClickOtherSlotCardsForBackplane2(sBackplane2SlotCardName);
+						VerifySlotCardsTextForBackplane2(sBackplane2SlotCardName);
+						
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure, "Backplane2 is not displayed");
+					}
+					
+				}
+				else
+				{
+					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
+					{
+						Report.Log(ReportLevel.Failure, "Backplane2 should not be displayed");
+					}
+					
+				}
+				
+			}
+
+			// Close Excel
+			Excel_Utilities.CloseExcel();
+		}
+		
+		
 	}
 }
 
 
-		
