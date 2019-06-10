@@ -2250,6 +2250,30 @@
       <UserCode>true</UserCode>
       <id>db9d2ed4-dd78-41c3-bfbc-69c7154dc84e</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_persistance_Of_Loop_Properties_on_Copy_Paste.cs">
+      <BoundTo>caad22e2-73a9-4304-849b-49e5881ed310</BoundTo>
+      <DependentUpon>Verify_persistance_Of_Loop_Properties_on_Copy_Paste.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>82edcdcd-f3f0-45df-b932-38fa39cc28a7</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_persistance_Of_Loop_Properties_on_Copy_Paste.UserCode.cs">
+      <BoundTo>caad22e2-73a9-4304-849b-49e5881ed310</BoundTo>
+      <DependentUpon>Verify_persistance_Of_Loop_Properties_on_Copy_Paste.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8c557579-b14f-45f8-b049-22d90ca9d788</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Persistance_Of_Loop_Properties_on_Cut_Paste.cs">
+      <BoundTo>85117e02-d7b4-4537-82f4-997c1a39c2d4</BoundTo>
+      <DependentUpon>Verify_Persistance_Of_Loop_Properties_on_Cut_Paste.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e50a0a2c-99ef-4471-8c69-0bb95f87e21e</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Persistance_Of_Loop_Properties_on_Cut_Paste.UserCode.cs">
+      <BoundTo>85117e02-d7b4-4537-82f4-997c1a39c2d4</BoundTo>
+      <DependentUpon>Verify_Persistance_Of_Loop_Properties_on_Cut_Paste.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ad7fd0b5-dbb1-46e0-a967-45666b346a64</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_PNI800_Card_Details.cs">
       <BoundTo>ff94b46c-d344-4667-8dc8-39a284382bdf</BoundTo>
       <DependentUpon>Verify_PNI800_Card_Details.rxrec</DependentUpon>
@@ -3832,9 +3856,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Paste_Of_Unit_Only.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>0f37826e-935e-4ac9-b892-33300f4672a2</id>
       <recordtableid>1e0e124e-8162-4f46-9fae-f627dd9297c7</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Paste_Of_Unit_With_Points.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -3847,9 +3871,9 @@
       <recordtableid>a2460558-217d-4451-affa-e0ba9edbdb7f</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f2872eb9-df54-499c-8e2b-6f5f73c75ba6</id>
       <recordtableid>3ac8ba58-8356-437c-8589-5e08fa919379</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.rxrec">
       <id>6cbe4ee2-6efd-4701-9486-5b6fc83a6f70</id>
@@ -3860,6 +3884,16 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>d352bb85-43b4-4bff-8149-aaa1b40ca5b4</id>
       <recordtableid>dcb002d8-81ef-4a04-8ea5-46f5d33091b7</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_persistance_Of_Loop_Properties_on_Copy_Paste.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>caad22e2-73a9-4304-849b-49e5881ed310</id>
+      <recordtableid>4a0775d8-a68f-48c8-b0fa-9133aa087947</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Persistance_Of_Loop_Properties_on_Cut_Paste.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>85117e02-d7b4-4537-82f4-997c1a39c2d4</id>
+      <recordtableid>de7fad75-5906-482a-9bc4-a81b49538003</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_PNI800_Card_Details.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

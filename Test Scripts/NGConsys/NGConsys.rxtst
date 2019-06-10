@@ -1072,6 +1072,23 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="11cb5c8d-38a9-4f65-9fa2-4dc0bbc3e5f5"
+			name="Verify_persistance_Of_Loop_Properties_on_Copy_Paste">
+				<description>
+					<![CDATA[<p>NGC-373/TC-0053- Failing on build 84 since points are not pasted with PLX loop</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="12097a21-81ab-41d9-a992-278f23ae3ad3"
 			name="Verify_If_IS_Devices_Are_Disabled_On_Selecting_Non_EXI_device"
@@ -4727,6 +4744,26 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="573b41c7-4a34-49e7-b81f-c0b8172c6270"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="573cd929-fe9f-40d3-8e24-ed9f1c36a909"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -7557,6 +7594,20 @@ MxDesigner]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="8a7d56ba-d5ad-4f66-adc6-2700a3e4607f"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="d600789f-44ee-4896-a3d1-a08d1c4f8ff8"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8aa20ebc-44fc-48e4-a31b-af7e1590c1bc"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -8047,6 +8098,14 @@ MxDesigner]]>
 			name="VerifyDeletionOfFBI800AndPNI800Cards"
 			ref="5db13383-7f65-4b13-98b6-ce5b4620edfb"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="e920721a-3dae-4973-96f4-2f314ac9cef1"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="93d6b44c-ebf0-4e0f-9bc2-cb1dd9302d25"
@@ -8378,6 +8437,20 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="9b90e873-f253-46ce-b27c-a6fce8418e7c"
+			name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste"
+			ref="de7fad75-5906-482a-9bc4-a81b49538003"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="d600789f-44ee-4896-a3d1-a08d1c4f8ff8"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="9bb90fdd-f811-4e7a-87d8-d00cde3a0b38"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -8531,6 +8604,20 @@ MxDesigner]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9df43902-00b5-4bf5-a22c-c6baa5f190df"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="11cb5c8d-38a9-4f65-9fa2-4dc0bbc3e5f5"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -8842,6 +8929,20 @@ MxDesigner]]>
 			name="Verify_Reopen_Project_To_Verify_Device_Order"
 			ref="1aa3c0f7-435f-44c7-9c86-52b8440ff9c4"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a6a84e82-cc0f-470b-93e7-23af06c377c4"
+			name="Verify_persistance_Of_Loop_Properties_on_Copy_Paste"
+			ref="4a0775d8-a68f-48c8-b0fa-9133aa087947"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="11cb5c8d-38a9-4f65-9fa2-4dc0bbc3e5f5"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="a6e4b703-3ae3-476d-9922-6b45915091e2"
@@ -10139,6 +10240,12 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="c6408a40-fc88-44a7-a4f0-b480f71b6d40"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="c7015850-0626-4096-acfd-4bb026d01a09"
 			name="Verify_when_user_edit_the_HVR800_Properties"
 			ref="6c9a9ca9-f1e0-48ca-a169-5d36d6d0c20a"
@@ -10936,6 +11043,23 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testcase
+			id="d600789f-44ee-4896-a3d1-a08d1c4f8ff8"
+			name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste">
+				<description>
+					<![CDATA[NGC-373/TC-0054- Failing on build 84 since points are not pasted with PLX loop]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="d6418927-4366-415d-8a36-214627c8ef62"
 			name="Verify_Export_Of_Shopping_List">
 				<description>
@@ -11481,6 +11605,26 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="e2819177-45b6-462b-a27e-9eb3a1aa44a8"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="e2aaf346-d0ac-4ab6-b31b-a599b027df73"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -11814,6 +11958,10 @@ persisted in panel properties&nbsp;]]>
 				<parameters>
 					<param
 					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
 					value="">
 					</param>
 				</parameters>
@@ -12324,6 +12472,12 @@ persisted in panel properties&nbsp;]]>
 			id="f1e57ad3-1cbf-476a-8c9f-d7edc405b106"
 			name="Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane"
 			ref="50b02cdd-3f07-45d7-8b50-359e1f9bb80b"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f20f7bf9-5d9a-450e-9e93-75990b974811"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -16914,6 +17068,46 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="d600789f-44ee-4896-a3d1-a08d1c4f8ff8"
+					name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste">
+						<testmodule
+						id="573b41c7-4a34-49e7-b81f-c0b8172c6270"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="8a7d56ba-d5ad-4f66-adc6-2700a3e4607f"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="9b90e873-f253-46ce-b27c-a6fce8418e7c"
+						name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste">
+						</testmodule>
+						<testmodule
+						id="f20f7bf9-5d9a-450e-9e93-75990b974811"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="11cb5c8d-38a9-4f65-9fa2-4dc0bbc3e5f5"
+					name="Verify_persistance_Of_Loop_Properties_on_Copy_Paste">
+						<testmodule
+						id="e2819177-45b6-462b-a27e-9eb3a1aa44a8"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="9df43902-00b5-4bf5-a22c-c6baa5f190df"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="a6a84e82-cc0f-470b-93e7-23af06c377c4"
+						name="Verify_persistance_Of_Loop_Properties_on_Copy_Paste">
+						</testmodule>
+						<testmodule
+						id="c6408a40-fc88-44a7-a4f0-b480f71b6d40"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -16977,7 +17171,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="e920721a-3dae-4973-96f4-2f314ac9cef1">
+			id="d600789f-44ee-4896-a3d1-a08d1c4f8ff8">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

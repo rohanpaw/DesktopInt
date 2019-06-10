@@ -4433,7 +4433,7 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
 			// Enter the Day Matches night text in Search Properties fields to view cable length;
-			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Length" +"{ENTER}" );
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("{LControlKey down}{Akey}{LControlKey up}Length" +"{ENTER}" );
 			
 			repo.FormMe.cell_CableLength.Click();
 			
@@ -5952,6 +5952,33 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"Label text is displayed as "+actualLabel+ " instead of "+ sLabel);
 			}
+		}
+		
+			/********************************************************************
+		 * Function Name: ChangeCableLengthFromInventory
+		 * Function Details: To change cable length from inventory properties section
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update :07/Jun/19
+		 ********************************************************************/
+		// Change cable length method
+		[UserCodeMethod]
+		public static void ChangeCableLengthFromInventory(int fchangeCableLength)
+		{
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Day Matches night text in Search Properties fields to view cable length;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Leng" +"{ENTER}" );
+			
+			//Click on cable length cell
+			repo.FormMe.txt_InventoryProperty.Click();
+			
+			//Change the value of cable length
+			repo.FormMe.txt_InventoryProperty.PressKeys(fchangeCableLength + "{ENTER}");
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}{ENTER}");
 		}
 		
 	}
