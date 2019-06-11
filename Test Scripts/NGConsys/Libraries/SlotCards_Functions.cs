@@ -1802,7 +1802,7 @@ namespace TestProject.Libraries
 						}
 					}
 					Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,sDeviceState);
-				
+					
 				}
 				
 				// Verify expected backplane1
@@ -1861,6 +1861,205 @@ namespace TestProject.Libraries
 				
 			}
 
+			// Close Excel
+			Excel_Utilities.CloseExcel();
+		}
+		
+		/*************************************************************************************
+		 * Function Name: VerifyMaxLimitForRepeatersSupportedByPanelOnEthernet
+		 * Function Details: To verify max limit for repeaters supported by panel on Ethernet
+		 * Parameter/Arguments: sFileName, sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 10/06/2019
+		 ***************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyMaxLimitForRepeatersSupportedByPanelOnEthernet(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			int columns = Excel_Utilities.ExcelRange.Columns.Count;
+			int deviceCount;
+			// Declared string type
+			string PanelName,PanelNode,CPUType,sType,sDeviceCount,sDeviceName,PanelType,sFirstDeviceName,sFirstDeviceState,sSecondDeviceName,sSecondDeviceState;
+			
+			for(int i=10; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[9,4]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
+				
+				sFirstDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sFirstDeviceState = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sSecondDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sSecondDeviceState = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				
+				// Add panels
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				
+				// Click on Node expander
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on Main processor tab
+				repo.FormMe.MainProcessor.Click();
+				
+				// Click on Ethernet under Main processor
+				repo.FormMe.MainProcessorList.Ethernet.Click();
+				
+				for(int j=4; j<=5; j++)
+				{
+					
+					sDeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[8,j]).Value.ToString();
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[9,j]).Value.ToString();
+					sDeviceCount = ((Range)Excel_Utilities.ExcelRange.Cells[i,j]).Value.ToString();
+					
+					int.TryParse(sDeviceCount, out deviceCount);
+					
+					// Verify device count and then add devices from panel accessories gallery or panel node gallery
+					if(deviceCount>0)
+					{
+						// Click on Node expander
+						repo.ProfileConsys1.NavigationTree.Expander.Click();
+						
+						// Click on Main processor tab
+						repo.FormMe.MainProcessor.Click();
+						
+						// Click on Ethernet under Main processor
+						repo.FormMe.MainProcessorList.Ethernet.Click();
+						
+						// Click on Inventory tab
+						repo.FormMe.tab_Inventory.Click();
+						
+						for(int k=1; k<=deviceCount;k++)
+						{
+							// Add Devices from main processor gallery
+							Devices_Functions.AddDevicesfromMainProcessorGallery(sDeviceName,sType,PanelType);
+						}
+					}
+					
+				}
+				// Verify Node gallery devices state for first device
+				Devices_Functions.VerifyNodeGallery(sFirstDeviceName,sType,sFirstDeviceState,PanelType);
+				
+				// Verify Node gallery devices state for second device
+				Devices_Functions.VerifyNodeGallery(sSecondDeviceName,sType,sSecondDeviceState,PanelType);
+				
+				// Verify if row count is more than 8 then delete the panel
+				if(rows!=10)
+				{
+					// Delete Panel
+					Panel_Functions.DeletePanel(1,PanelNode,1);
+				}
+				
+			}
+			
+			// Close Excel
+			Excel_Utilities.CloseExcel();
+		}
+		
+		
+		/**********************************************************************************
+		 * Function Name: VerifyMaxLimitForRepeatersSupportedByPanelOnRBus
+		 * Function Details: To verify max limit for repeaters supported by panel on RBUS
+		 * Parameter/Arguments: sFileName, sAddDevicesSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 11/06/2019
+		 **********************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyMaxLimitForRepeatersSupportedByPanelOnRBus(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			int columns = Excel_Utilities.ExcelRange.Columns.Count;
+			int deviceCount;
+			// Declared string type
+			string PanelName,PanelNode,CPUType,sType,sDeviceCount,sDeviceName,PanelType,sFirstDeviceName,sFirstDeviceState,sSecondDeviceName,sSecondDeviceState;
+			
+			for(int i=10; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[9,4]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
+				
+				sFirstDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sFirstDeviceState = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sSecondDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sSecondDeviceState = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				
+				// Add panels
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				
+				// Click on Node expander
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on Main processor tab
+				repo.FormMe.MainProcessor.Click();
+				
+				// Click on RBus under Main processor
+				 repo.FormMe.MainProcessorList.RBus.Click();
+				
+				for(int j=4; j<=5; j++)
+				{
+					
+					sDeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[8,j]).Value.ToString();
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[9,j]).Value.ToString();
+					sDeviceCount = ((Range)Excel_Utilities.ExcelRange.Cells[i,j]).Value.ToString();
+					
+					int.TryParse(sDeviceCount, out deviceCount);
+					
+					// Verify device count and then add devices from panel accessories gallery or panel node gallery
+					if(deviceCount>0)
+					{
+						// Click on Node expander
+						repo.ProfileConsys1.NavigationTree.Expander.Click();
+						
+						// Click on Main processor tab
+						repo.FormMe.MainProcessor.Click();
+						
+						// Click on RBus under Main processor
+						 repo.FormMe.MainProcessorList.RBus.Click();
+						 
+						// Click on Inventory tab
+						repo.FormMe.tab_Inventory.Click();
+						
+						for(int k=1; k<=deviceCount;k++)
+						{
+							// Add Devices from main processor gallery
+							Devices_Functions.AddDevicesfromMainProcessorGallery(sDeviceName,sType,PanelType);
+						}
+					}
+					
+				}
+				// Verify Node gallery devices state for first device
+				Devices_Functions.VerifyNodeGallery(sFirstDeviceName,sType,sFirstDeviceState,PanelType);
+				
+				// Verify Node gallery devices state for second device
+				Devices_Functions.VerifyNodeGallery(sSecondDeviceName,sType,sSecondDeviceState,PanelType);
+				
+				// Verify if row count is more than 8 then delete the panel
+				if(rows!=10)
+				{
+					// Delete Panel
+					Panel_Functions.DeletePanel(1,PanelNode,1);
+				}
+				
+			}
+			
 			// Close Excel
 			Excel_Utilities.CloseExcel();
 		}

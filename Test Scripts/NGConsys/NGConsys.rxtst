@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -2332,6 +2332,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="28e68b31-f53a-43e2-83c5-f0c4c42410b0"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="e41f071a-6575-464f-a0a7-ea377f12d19a"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="2917074b-ac64-4f2a-b37c-0ede74181172"
 			name="Verify_Copy_option_is_disabled_for_single_sounders">
@@ -3046,6 +3060,12 @@ rxversion="8.3">
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="373e0a84-b40d-4efe-adf1-8cbbf79700e1"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="376396b1-5979-4b2d-a738-60bcc5e15c74"
@@ -4122,7 +4142,7 @@ loops.</SPAN>]]>
 			id="4d38270d-d85a-452d-90a9-0653eee357f1"
 			name="Verify_Accessories_Gallery_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied">
 				<description>
-					<![CDATA[<p>NGC-390/TC-62</p>]]>
+					<![CDATA[<p>NGC-390/TC-62/TC-69</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -4913,7 +4933,7 @@ loops.</SPAN>]]>
 			id="595fd481-b6cf-43cf-92a7-40db4df3f9b3"
 			name="Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached">
 				<description>
-					<![CDATA[<p>NGC-390/TC-61 Executed with wrong test data to get executed, now updated test data as expected</p>]]>
+					<![CDATA[<p>NGC-390/TC-61/TC-68 Executed with wrong test data to get executed, now updated test data as expected</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7109,6 +7129,26 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="836db8fc-2a46-4ed1-93be-871afb312028"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8395e183-6f6b-46bf-afac-63fba084c416"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -8727,6 +8767,12 @@ MxDesigner]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="a0202888-65f9-4ecd-9079-c7a3c9daf386"
+			name="Verify_Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel"
+			ref="54b73774-45c1-4423-b4ea-e013fc09555d"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="a0f00c7a-352a-4ea6-8590-7d09ca6a596f"
@@ -11696,6 +11742,19 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_Normal_Load_And_Alarm_Load_Property_On_Changing_Power_Source">
 				<description>
 					<![CDATA[<p>NGC-699/TC-220</p><p><br></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="e41f071a-6575-464f-a0a7-ea377f12d19a"
+			name="Verify_Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel">
+				<description>
+					<![CDATA[<p>NGC-158/TC-68 For RBUS related is automated in this and for&nbsp;Slotcards/Loops it is&nbsp;with TC-61</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -17108,6 +17167,26 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="e41f071a-6575-464f-a0a7-ea377f12d19a"
+					name="Verify_Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel">
+						<testmodule
+						id="836db8fc-2a46-4ed1-93be-871afb312028"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="28e68b31-f53a-43e2-83c5-f0c4c42410b0"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="a0202888-65f9-4ecd-9079-c7a3c9daf386"
+						name="Verify_Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel">
+						</testmodule>
+						<testmodule
+						id="373e0a84-b40d-4efe-adf1-8cbbf79700e1"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -17173,14 +17252,17 @@ persisted in panel properties&nbsp;]]>
 			<testcontainer
 			id="d600789f-44ee-4896-a3d1-a08d1c4f8ff8">
 			</testcontainer>
+			<testcontainer
+			id="e41f071a-6575-464f-a0a7-ea377f12d19a">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll
