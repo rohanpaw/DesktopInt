@@ -7062,6 +7062,44 @@ S1wvKBS5vQFKoGem/dC8hx2ol/rxqhZ6S8sXuWkoFrqZKRa7+soXuFQp5Dkvk8tzPCef67QFqhQN
 MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			</icon>
 		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow,wpfwin32element,wpfelement,wpfgroupelement"
+		capname="form"
+		id="ee1e2d60-cfa5-4cc5-bd2f-c99233037569"
+		isrooted="True"
+		name="HwndWrapperProfileConsysExe0c643c73"
+		refpath="/form"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="9e6793ab-09f3-452a-bc89-8a74a3a87737"
+			name="SomeText"
+			refimgid="cff11119-cbda-409d-ba17-078bb7c79582"
+			refpath="/form/progressbar/list/table/container/container/row/row/cell/text"
+			searchtimeout="30000ms">
+				/form/?/?/list/table//row/row/?/?/text
+			</item>
+			<basepath>
+				/form
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJRSURBVDhPpZPrS5NhGIf3l/QhoqQiMgii6OBx
+5cwPElaEfSqIJJCgzAikQgsELSlI7SCUnayoIKkPghWZhxxpc861Oedh6jZ1mzu8x1092wS10KBu
++H177+t3Pc/LY/jvaWgxc+eVg5rmAaqafnC50cyZ6k5OVHZTXPGFonOtFJa+pKDkybIcPP0Y45Fy
+DHXPbTS1azS2adxqlal+HaHyWZCKR7OUN/k5e9dHye1JTtaOc7zazdEqF4euOMkvM7MmbQeG2mYz
+dW8C3Hwb5uKDKU7dcFN83cmxaw4OX7VTWGGj4NIgpnIrBy4MYCyzkHveQkZpN+vSjRhqGl7gD8QI
+RzXmRUIRlWBYISAyG0rFG1DwzMi4vTIOj4R1TKLL6mHj1u0CUN/CahOPg6JCRIozF9GZCmqM+lUs
+Li8bNm/DcP/p+4VP/xxNB0mJMx/TmZnXmJzTcPsUfk4q9Az9BaCLZlksJ5vDOtOieUw0O6cUrOMy
+ndbVAAltTSzLcYJRHV9IY2JWw+VVsE0o9I/IfLYIwKYVAIvqcWbEckpdxS7ULaMyvcMS7X0rAJLq
+akJdT6kHUuqOpLrCd5dMl0OizZwApC8HJG9cg6g4d2Cp+nRKvc8t0eOU6LDF+ND7G0Dsoi6oh4S6
+P3nrKiMJdc+i+ld7jE/WKO96vKxPAO4tMRDlSOKfh2IIAEzMgcsXZ8ij0T+q8W1YpcOu8HFQTgLW
+pm0Rb6H+Ibn788kxmsgWyRLJFMnINbEvx8Te7Dz2iOzOymNXZio7M1LJyS9i4U3+6xgMvwD+1+a2
+GORSxAAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
 		<basepath>
 		</basepath>
 	</rootfolder>

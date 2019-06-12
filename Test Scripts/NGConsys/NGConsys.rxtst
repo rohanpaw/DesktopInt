@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -4357,6 +4357,26 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4f65f60c-e706-4d49-99a2-4c50294406a4"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4f84a294-1a0a-4d6a-94d9-bfb4c63fd7ce"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -7555,6 +7575,20 @@ MxDesigner]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="899247e0-cc68-477d-9853-2c6d810ea13c"
+			name="Verify_Persistance_Of_Region_Name_Property_On_Copy_Paste">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="89f51586-485b-4090-84c9-5b76ba974274"
 			name="Application_Open"
@@ -9192,6 +9226,12 @@ MxDesigner]]>
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="accae1ad-059a-41d5-8bf1-5b967a460a3d"
+			name="Verify_Persistance_of_Region_Name_Property_On_CopyPaste"
+			ref="edb6e3e4-3a6c-40d0-869f-aedf5d4e47df"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="ad56b832-3587-4780-9343-a901aa77b875"
@@ -11462,6 +11502,20 @@ persisted in panel properties&nbsp;]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="df2485ee-8be3-4ea7-b0f1-5e049231be12"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="899247e0-cc68-477d-9853-2c6d810ea13c"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="df725f83-ec71-4b89-897f-f8ed61fba4de"
@@ -17168,6 +17222,22 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="899247e0-cc68-477d-9853-2c6d810ea13c"
+					name="Verify_Persistance_Of_Region_Name_Property_On_Copy_Paste">
+						<testmodule
+						id="4f65f60c-e706-4d49-99a2-4c50294406a4"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="df2485ee-8be3-4ea7-b0f1-5e049231be12"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="accae1ad-059a-41d5-8bf1-5b967a460a3d"
+						name="Verify_Persistance_of_Region_Name_Property_On_CopyPaste">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="e41f071a-6575-464f-a0a7-ea377f12d19a"
 					name="Verify_Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel">
 						<testmodule
@@ -17250,19 +17320,16 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="d600789f-44ee-4896-a3d1-a08d1c4f8ff8">
-			</testcontainer>
-			<testcontainer
-			id="e41f071a-6575-464f-a0a7-ea377f12d19a">
+			id="899247e0-cc68-477d-9853-2c6d810ea13c">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

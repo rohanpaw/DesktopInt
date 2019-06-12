@@ -43,6 +43,7 @@ namespace TestProject
         NGConsysRepositoryFolders.CustomDevicesAppFolder _customdevices;
         NGConsysRepositoryFolders.ExportDocumentAppFolder _exportdocument;
         NGConsysRepositoryFolders.ShoppingListCompatibilityModeEAppFolder _shoppinglistcompatibilitymodee;
+        NGConsysRepositoryFolders.HwndWrapperProfileConsysExe0c643c73AppFolder _hwndwrapperprofileconsysexe0c643c73;
 
         /// <summary>
         /// Gets the singleton class instance representing the NGConsysRepository element repository.
@@ -75,6 +76,7 @@ namespace TestProject
             _customdevices = new NGConsysRepositoryFolders.CustomDevicesAppFolder(this);
             _exportdocument = new NGConsysRepositoryFolders.ExportDocumentAppFolder(this);
             _shoppinglistcompatibilitymodee = new NGConsysRepositoryFolders.ShoppingListCompatibilityModeEAppFolder(this);
+            _hwndwrapperprofileconsysexe0c643c73 = new NGConsysRepositoryFolders.HwndWrapperProfileConsysExe0c643c73AppFolder(this);
         }
 
 #region Variables
@@ -1207,6 +1209,15 @@ namespace TestProject
         public virtual NGConsysRepositoryFolders.ShoppingListCompatibilityModeEAppFolder ShoppingListCompatibilityModeE
         {
             get { return _shoppinglistcompatibilitymodee; }
+        }
+
+        /// <summary>
+        /// The HwndWrapperProfileConsysExe0c643c73 folder.
+        /// </summary>
+        [RepositoryFolder("ee1e2d60-cfa5-4cc5-bd2f-c99233037569")]
+        public virtual NGConsysRepositoryFolders.HwndWrapperProfileConsysExe0c643c73AppFolder HwndWrapperProfileConsysExe0c643c73
+        {
+            get { return _hwndwrapperprofileconsysexe0c643c73; }
         }
     }
 
@@ -12242,6 +12253,72 @@ namespace TestProject
                 get
                 {
                     return _cellf17Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The HwndWrapperProfileConsysExe0c643c73AppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ee1e2d60-cfa5-4cc5-bd2f-c99233037569")]
+        public partial class HwndWrapperProfileConsysExe0c643c73AppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _sometextInfo;
+
+            /// <summary>
+            /// Creates a new HwndWrapperProfileConsysExe0c643c73  folder.
+            /// </summary>
+            public HwndWrapperProfileConsysExe0c643c73AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("HwndWrapperProfileConsysExe0c643c73", "/form", parentFolder, 30000, null, true, "ee1e2d60-cfa5-4cc5-bd2f-c99233037569", "")
+            {
+                _sometextInfo = new RepoItemInfo(this, "SomeText", "?/?/list/table//row/row/?/?/text", 30000, null, "9e6793ab-09f3-452a-bc89-8a74a3a87737");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ee1e2d60-cfa5-4cc5-bd2f-c99233037569")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ee1e2d60-cfa5-4cc5-bd2f-c99233037569")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SomeText item.
+            /// </summary>
+            [RepositoryItem("9e6793ab-09f3-452a-bc89-8a74a3a87737")]
+            public virtual Ranorex.Text SomeText
+            {
+                get
+                {
+                    return _sometextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SomeText item info.
+            /// </summary>
+            [RepositoryItemInfo("9e6793ab-09f3-452a-bc89-8a74a3a87737")]
+            public virtual RepoItemInfo SomeTextInfo
+            {
+                get
+                {
+                    return _sometextInfo;
                 }
             }
         }
