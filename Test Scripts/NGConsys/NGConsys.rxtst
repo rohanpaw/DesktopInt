@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -1964,6 +1964,26 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="2117e09e-3752-4998-ba26-bc80c22d1661"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="212bb5fa-de4a-439a-ad23-4f490411702a"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -3601,6 +3621,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="433e4f30-5f77-4f99-b463-c0764d8bc606"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="43af21a6-e675-41f0-ac80-2e8fbebf72a1"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -5054,6 +5080,12 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5c0ae7c9-50ed-42bd-9479-116190d21306"
+			name="Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards"
+			ref="f2f4c419-b7c6-4511-a86c-2ea1f1151191"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="5c3b0691-4307-4626-a13d-c062f67d0230"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -6248,6 +6280,19 @@ loops.</SPAN>]]>
 			ref="8ee45c97-429a-486d-839c-fbe34cc88ee5"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="73253962-76cb-4087-8b68-ce6f77f1850b"
+			name="Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards">
+				<description>
+					<![CDATA[<p>NGC-381/TC-40</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="7333403a-cf27-42a3-a82b-43809dd74af0"
 			name="Close_Application"
@@ -8369,22 +8414,10 @@ MxDesigner]]>
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="PdfName"
+					dataname="DeleteRanorexReport"
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
-					variablename="PdfName">
-					</var>
-					<var
-					dataname="PdfDirectoryPath"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="536f8a69-f246-4f2b-ae9e-1f62babb2ba9"
-					variablename="PdfDirectoryPath">
-					</var>
-					<var
-					dataname="Xml"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
-					variablename="Xml">
+					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
+					variablename="DeleteRanorexReport">
 					</var>
 					<var
 					dataname="Details"
@@ -8393,10 +8426,22 @@ MxDesigner]]>
 					variablename="Details">
 					</var>
 					<var
-					dataname="DeleteRanorexReport"
+					dataname="Xml"
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
-					variablename="DeleteRanorexReport">
+					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
+					variablename="Xml">
+					</var>
+					<var
+					dataname="PdfDirectoryPath"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="536f8a69-f246-4f2b-ae9e-1f62babb2ba9"
+					variablename="PdfDirectoryPath">
+					</var>
+					<var
+					dataname="PdfName"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
+					variablename="PdfName">
 					</var>
 				</databinding>
 			</testmodule>
@@ -8980,6 +9025,20 @@ MxDesigner]]>
 					<var
 					dataname="sListIndex"
 					datasourceid="0b994740-d598-48b5-9de2-cbc55320c04a"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a42f16c4-d93d-4157-868f-6d409596432c"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="73253962-76cb-4087-8b68-ce6f77f1850b"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -17254,6 +17313,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="373e0a84-b40d-4efe-adf1-8cbbf79700e1"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="73253962-76cb-4087-8b68-ce6f77f1850b"
+					name="Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards">
+						<testmodule
+						id="2117e09e-3752-4998-ba26-bc80c22d1661"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="a42f16c4-d93d-4157-868f-6d409596432c"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="5c0ae7c9-50ed-42bd-9479-116190d21306"
+						name="Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards">
+						</testmodule>
+						<testmodule
+						id="433e4f30-5f77-4f99-b463-c0764d8bc606"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
