@@ -12264,6 +12264,7 @@ namespace TestProject
         public partial class HwndWrapperProfileConsysExe0c643c73AppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _sometextInfo;
+            RepoItemInfo _plxexternalloopcard2Info;
 
             /// <summary>
             /// Creates a new HwndWrapperProfileConsysExe0c643c73  folder.
@@ -12272,6 +12273,7 @@ namespace TestProject
                     base("HwndWrapperProfileConsysExe0c643c73", "/form", parentFolder, 30000, null, true, "ee1e2d60-cfa5-4cc5-bd2f-c99233037569", "")
             {
                 _sometextInfo = new RepoItemInfo(this, "SomeText", "?/?/list/table//row/row/?/?/text", 30000, null, "9e6793ab-09f3-452a-bc89-8a74a3a87737");
+                _plxexternalloopcard2Info = new RepoItemInfo(this, "PLXExternalLoopCard2", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX/External Loop Card 2']", 30000, null, "332c1b94-5e6f-4ffa-ae17-b93482e73806");
             }
 
             /// <summary>
@@ -12319,6 +12321,30 @@ namespace TestProject
                 get
                 {
                     return _sometextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PLXExternalLoopCard2 item.
+            /// </summary>
+            [RepositoryItem("332c1b94-5e6f-4ffa-ae17-b93482e73806")]
+            public virtual Ranorex.Text PLXExternalLoopCard2
+            {
+                get
+                {
+                    return _plxexternalloopcard2Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLXExternalLoopCard2 item info.
+            /// </summary>
+            [RepositoryItemInfo("332c1b94-5e6f-4ffa-ae17-b93482e73806")]
+            public virtual RepoItemInfo PLXExternalLoopCard2Info
+            {
+                get
+                {
+                    return _plxexternalloopcard2Info;
                 }
             }
         }

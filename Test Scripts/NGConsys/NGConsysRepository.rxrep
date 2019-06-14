@@ -7081,6 +7081,16 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form/?/?/list/table//row/row/?/?/text
 			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="332c1b94-5e6f-4ffa-ae17-b93482e73806"
+			name="PLXExternalLoopCard2"
+			refimgid="af96608e-879f-407f-a7ec-f28417d62cee"
+			refpath="/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/text[@caption='PLX/External Loop Card 2']"
+			searchtimeout="30000ms">
+				/form/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX/External Loop Card 2']
+			</item>
 			<basepath>
 				/form
 			</basepath>

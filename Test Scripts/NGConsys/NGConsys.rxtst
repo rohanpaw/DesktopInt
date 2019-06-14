@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -1202,6 +1202,20 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="13a771c8-b417-481a-85c9-f682736aff49"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="66188497-5922-44e7-86fd-f98bac6e43e9"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="140262c6-ea6d-4f65-bed6-6ccebb15e469"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -2143,6 +2157,12 @@ rxversion="8.3">
 			id="23c31a97-c96a-458b-b73c-a35a6d6b8644"
 			name="Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached"
 			ref="d7004e74-b6ad-48ca-9651-bdd5f6064efd"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="24890442-e3e4-490b-b7ad-3c4dbbcbf212"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -4013,6 +4033,26 @@ loops.</SPAN>]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="4aeaf50a-6b28-4259-b63f-1eff4d917ae4"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4b028e78-cf66-4d50-9879-e7798a1a4066"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -5630,6 +5670,19 @@ loops.</SPAN>]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="66188497-5922-44e7-86fd-f98bac6e43e9"
+			name="Verify_Other_Slot_Cards_Grid">
+				<description>
+					<![CDATA[<p>NGC-382/TC-41</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="661e0e8d-ccfa-4933-a1a6-ddbeaa804eb6"
 			name="Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Changing_CPU_And_PSU"
@@ -11445,6 +11498,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="da01c22a-0edc-40fe-80de-00c43ef98fbd"
+			name="Verify_Other_Slot_Cards_Grid"
+			ref="0dff0108-fa36-4b28-a13c-b77f3cff3ec4"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="da12ab7e-93ef-477d-9cad-2a9157d6e2ec"
 			name="Verify_Reopen_Project_IOB_Properties"
@@ -17336,6 +17395,26 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="66188497-5922-44e7-86fd-f98bac6e43e9"
+					name="Verify_Other_Slot_Cards_Grid">
+						<testmodule
+						id="4aeaf50a-6b28-4259-b63f-1eff4d917ae4"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="13a771c8-b417-481a-85c9-f682736aff49"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="da01c22a-0edc-40fe-80de-00c43ef98fbd"
+						name="Verify_Other_Slot_Cards_Grid">
+						</testmodule>
+						<testmodule
+						id="24890442-e3e4-490b-b7ad-3c4dbbcbf212"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -17399,16 +17478,16 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="899247e0-cc68-477d-9853-2c6d810ea13c">
+			id="66188497-5922-44e7-86fd-f98bac6e43e9">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll
