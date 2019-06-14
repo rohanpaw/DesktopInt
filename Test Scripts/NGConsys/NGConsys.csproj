@@ -4324,7 +4324,7 @@
   <Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)">
   </Import>
   <PropertyGroup>
-    <PreBuildEvent>xcopy /Y /E "C:\work\consys-uiauto\Test Data" "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug"
+    <PreBuildEvent>
 </PreBuildEvent>
   </PropertyGroup>
 </Project>
