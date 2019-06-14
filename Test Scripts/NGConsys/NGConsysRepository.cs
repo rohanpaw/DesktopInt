@@ -5742,7 +5742,7 @@ namespace TestProject
             RepoItemInfo _plx800cardInfo;
             RepoItemInfo _panelaccessorygallerydeviceInfo;
             RepoItemInfo _showcolumnchooserInfo;
-            RepoItemInfo _showcolumnchooser1Info;
+            RepoItemInfo _columnchooserlisttextInfo;
             RepoItemInfo _txt_galleryitemInfo;
             RepoItemInfo _txt_gallerylistitemInfo;
             RepoItemInfo _droppedgallerylistInfo;
@@ -5787,7 +5787,7 @@ namespace TestProject
                 _plx800cardInfo = new RepoItemInfo(this, "PLX800Card", "?/?/listitem[@index='0']/container/text[@caption='PLX800']", 30000, null, "b3e4a238-9fbe-4c37-8ed9-f724674eb812");
                 _panelaccessorygallerydeviceInfo = new RepoItemInfo(this, "PanelAccessoryGalleryDevice", ".//listitem[@index=$sAccessoryGalleryIndex]/text[@caption=$sDeviceName]", 30000, null, "5714a850-f5eb-4577-a20b-6c0f7a636d57");
                 _showcolumnchooserInfo = new RepoItemInfo(this, "ShowColumnChooser", "list/button[@text='Show Column Chooser']", 30000, null, "aef5c381-df4b-4920-8463-88a5f410389d");
-                _showcolumnchooser1Info = new RepoItemInfo(this, "ShowColumnChooser1", "list/?/?/text", 30000, null, "dab95348-0da5-4535-a2be-8a8369474049");
+                _columnchooserlisttextInfo = new RepoItemInfo(this, "ColumnChooserListText", "list/?/?/text[@caption=$sListItem]", 30000, null, "dab95348-0da5-4535-a2be-8a8369474049");
                 _txt_galleryitemInfo = new RepoItemInfo(this, "txt_galleryItem", "list/?/?/listitem/text[@caption=$ModelNumber]", 30000, null, "0138ee24-d494-419e-b54e-edf43106b33e");
                 _txt_gallerylistitemInfo = new RepoItemInfo(this, "txt_GalleryListItem", "list/?/?/listitem[@index=$listItem]/text", 30000, null, "d4f9cda7-2c2c-460c-8c47-9cc8f034e9bc");
                 _droppedgallerylistInfo = new RepoItemInfo(this, "DroppedGalleryList", "list/?/?/listitem[@index=$listItem]", 30000, null, "7125ccc9-1030-48ef-9941-44f913231adb");
@@ -6496,26 +6496,26 @@ namespace TestProject
             }
 
             /// <summary>
-            /// The ShowColumnChooser1 item.
+            /// The ColumnChooserListText item.
             /// </summary>
             [RepositoryItem("dab95348-0da5-4535-a2be-8a8369474049")]
-            public virtual Ranorex.Text ShowColumnChooser1
+            public virtual Ranorex.Text ColumnChooserListText
             {
                 get
                 {
-                    return _showcolumnchooser1Info.CreateAdapter<Ranorex.Text>(true);
+                    return _columnchooserlisttextInfo.CreateAdapter<Ranorex.Text>(true);
                 }
             }
 
             /// <summary>
-            /// The ShowColumnChooser1 item info.
+            /// The ColumnChooserListText item info.
             /// </summary>
             [RepositoryItemInfo("dab95348-0da5-4535-a2be-8a8369474049")]
-            public virtual RepoItemInfo ShowColumnChooser1Info
+            public virtual RepoItemInfo ColumnChooserListTextInfo
             {
                 get
                 {
-                    return _showcolumnchooser1Info;
+                    return _columnchooserlisttextInfo;
                 }
             }
 
@@ -11210,6 +11210,10 @@ namespace TestProject
             RepoItemInfo _backplane2_otherslotcardswithplxInfo;
             RepoItemInfo _plx_external_loop_card_3_expanderInfo;
             RepoItemInfo _plx800_9_loopInfo;
+            RepoItemInfo _plx800e0of125Info;
+            RepoItemInfo _plx800f0of125Info;
+            RepoItemInfo _plx800g0of125Info;
+            RepoItemInfo _plx800h0of125Info;
 
             /// <summary>
             /// Creates a new MainProcessorList  folder.
@@ -11224,6 +11228,10 @@ namespace TestProject
                 _backplane2_otherslotcardswithplxInfo = new RepoItemInfo(this, "Backplane2_OtherSlotCardsWithPLX", "?/?/text[@text=$sOtherSlotCardName]", 30000, null, "c97420a6-c154-46d5-8650-3a547c2f4e34");
                 _plx_external_loop_card_3_expanderInfo = new RepoItemInfo(this, "PLX_External_Loop_Card_3_Expander", "treeitem[3]/button[@automationid='Expander']", 30000, null, "c0cb9cc9-c17f-4db0-a517-1b5c916e2733");
                 _plx800_9_loopInfo = new RepoItemInfo(this, "PLX800_9_Loop", "treeitem[3]/container[@automationid='ItemsHost']/treeitem[1]", 30000, null, "69710ff1-f2fa-4eee-9b4a-f6c10aa175a6");
+                _plx800e0of125Info = new RepoItemInfo(this, "PLX800E0Of125", "treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-E (0 of 125)']", 30000, null, "10b534ac-c178-4dfa-a127-2789ede95ec3");
+                _plx800f0of125Info = new RepoItemInfo(this, "PLX800F0Of125", "treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-F (0 of 125)']", 30000, null, "cb977326-5de5-4112-be18-5cc5c26a6cc8");
+                _plx800g0of125Info = new RepoItemInfo(this, "PLX800G0Of125", "treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-G (0 of 125)']", 30000, null, "f42228d0-7d0a-4347-8718-68eb7b8e5bf9");
+                _plx800h0of125Info = new RepoItemInfo(this, "PLX800H0Of125", "treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-H (0 of 125)']", 30000, null, "e596b963-8cb3-43e8-af0e-cc3ea4efebce");
             }
 
             /// <summary>
@@ -11415,6 +11423,102 @@ namespace TestProject
                 get
                 {
                     return _plx800_9_loopInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PLX800E0Of125 item.
+            /// </summary>
+            [RepositoryItem("10b534ac-c178-4dfa-a127-2789ede95ec3")]
+            public virtual Ranorex.Text PLX800E0Of125
+            {
+                get
+                {
+                    return _plx800e0of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLX800E0Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("10b534ac-c178-4dfa-a127-2789ede95ec3")]
+            public virtual RepoItemInfo PLX800E0Of125Info
+            {
+                get
+                {
+                    return _plx800e0of125Info;
+                }
+            }
+
+            /// <summary>
+            /// The PLX800F0Of125 item.
+            /// </summary>
+            [RepositoryItem("cb977326-5de5-4112-be18-5cc5c26a6cc8")]
+            public virtual Ranorex.Text PLX800F0Of125
+            {
+                get
+                {
+                    return _plx800f0of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLX800F0Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("cb977326-5de5-4112-be18-5cc5c26a6cc8")]
+            public virtual RepoItemInfo PLX800F0Of125Info
+            {
+                get
+                {
+                    return _plx800f0of125Info;
+                }
+            }
+
+            /// <summary>
+            /// The PLX800G0Of125 item.
+            /// </summary>
+            [RepositoryItem("f42228d0-7d0a-4347-8718-68eb7b8e5bf9")]
+            public virtual Ranorex.Text PLX800G0Of125
+            {
+                get
+                {
+                    return _plx800g0of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLX800G0Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("f42228d0-7d0a-4347-8718-68eb7b8e5bf9")]
+            public virtual RepoItemInfo PLX800G0Of125Info
+            {
+                get
+                {
+                    return _plx800g0of125Info;
+                }
+            }
+
+            /// <summary>
+            /// The PLX800H0Of125 item.
+            /// </summary>
+            [RepositoryItem("e596b963-8cb3-43e8-af0e-cc3ea4efebce")]
+            public virtual Ranorex.Text PLX800H0Of125
+            {
+                get
+                {
+                    return _plx800h0of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLX800H0Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("e596b963-8cb3-43e8-af0e-cc3ea4efebce")]
+            public virtual RepoItemInfo PLX800H0Of125Info
+            {
+                get
+                {
+                    return _plx800h0of125Info;
                 }
             }
         }
@@ -12264,6 +12368,10 @@ namespace TestProject
         public partial class HwndWrapperProfileConsysExe0c643c73AppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _sometextInfo;
+            RepoItemInfo _builtinloopa0of125Info;
+            RepoItemInfo _builtinloopb0of125Info;
+            RepoItemInfo _builtinloopc0of125Info;
+            RepoItemInfo _builtinloopd0of125Info;
             RepoItemInfo _plxexternalloopcard2Info;
 
             /// <summary>
@@ -12273,6 +12381,10 @@ namespace TestProject
                     base("HwndWrapperProfileConsysExe0c643c73", "/form", parentFolder, 30000, null, true, "ee1e2d60-cfa5-4cc5-bd2f-c99233037569", "")
             {
                 _sometextInfo = new RepoItemInfo(this, "SomeText", "?/?/list/table//row/row/?/?/text", 30000, null, "9e6793ab-09f3-452a-bc89-8a74a3a87737");
+                _builtinloopa0of125Info = new RepoItemInfo(this, "BuiltInLoopA0Of125", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption~'^Built-in\\ Loop-A\\ \\(0\\ of\\ 125']", 30000, null, "ddd3b37c-5dc5-4717-b401-af77f1091df3");
+                _builtinloopb0of125Info = new RepoItemInfo(this, "BuiltInLoopB0Of125", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption~'^Built-in\\ Loop-B\\ \\(0\\ of\\ 125']", 30000, null, "01c11215-7b2b-4065-b93f-2459ea81a37f");
+                _builtinloopc0of125Info = new RepoItemInfo(this, "BuiltInLoopC0Of125", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption~'^Built-in\\ Loop-C\\ \\(0\\ of\\ 125']", 30000, null, "bbfcf29c-abf6-4e75-ad87-f8a95dd79629");
+                _builtinloopd0of125Info = new RepoItemInfo(this, "BuiltInLoopD0Of125", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption~'^Built-in\\ Loop-D\\ \\(0\\ of\\ 125']", 30000, null, "f0efbfb6-f1c4-4323-99eb-f88ffcb3b19c");
                 _plxexternalloopcard2Info = new RepoItemInfo(this, "PLXExternalLoopCard2", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX/External Loop Card 2']", 30000, null, "332c1b94-5e6f-4ffa-ae17-b93482e73806");
             }
 
@@ -12321,6 +12433,102 @@ namespace TestProject
                 get
                 {
                     return _sometextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BuiltInLoopA0Of125 item.
+            /// </summary>
+            [RepositoryItem("ddd3b37c-5dc5-4717-b401-af77f1091df3")]
+            public virtual Ranorex.Text BuiltInLoopA0Of125
+            {
+                get
+                {
+                    return _builtinloopa0of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BuiltInLoopA0Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("ddd3b37c-5dc5-4717-b401-af77f1091df3")]
+            public virtual RepoItemInfo BuiltInLoopA0Of125Info
+            {
+                get
+                {
+                    return _builtinloopa0of125Info;
+                }
+            }
+
+            /// <summary>
+            /// The BuiltInLoopB0Of125 item.
+            /// </summary>
+            [RepositoryItem("01c11215-7b2b-4065-b93f-2459ea81a37f")]
+            public virtual Ranorex.Text BuiltInLoopB0Of125
+            {
+                get
+                {
+                    return _builtinloopb0of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BuiltInLoopB0Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("01c11215-7b2b-4065-b93f-2459ea81a37f")]
+            public virtual RepoItemInfo BuiltInLoopB0Of125Info
+            {
+                get
+                {
+                    return _builtinloopb0of125Info;
+                }
+            }
+
+            /// <summary>
+            /// The BuiltInLoopC0Of125 item.
+            /// </summary>
+            [RepositoryItem("bbfcf29c-abf6-4e75-ad87-f8a95dd79629")]
+            public virtual Ranorex.Text BuiltInLoopC0Of125
+            {
+                get
+                {
+                    return _builtinloopc0of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BuiltInLoopC0Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("bbfcf29c-abf6-4e75-ad87-f8a95dd79629")]
+            public virtual RepoItemInfo BuiltInLoopC0Of125Info
+            {
+                get
+                {
+                    return _builtinloopc0of125Info;
+                }
+            }
+
+            /// <summary>
+            /// The BuiltInLoopD0Of125 item.
+            /// </summary>
+            [RepositoryItem("f0efbfb6-f1c4-4323-99eb-f88ffcb3b19c")]
+            public virtual Ranorex.Text BuiltInLoopD0Of125
+            {
+                get
+                {
+                    return _builtinloopd0of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BuiltInLoopD0Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("f0efbfb6-f1c4-4323-99eb-f88ffcb3b19c")]
+            public virtual RepoItemInfo BuiltInLoopD0Of125Info
+            {
+                get
+                {
+                    return _builtinloopd0of125Info;
                 }
             }
 

@@ -3130,8 +3130,8 @@ namespace TestProject.Libraries
 		{
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
-			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+				//Click on Points tab
+				repo.ProfileConsys1.tab_Points.Click();
 			}
 			
 			
@@ -3145,21 +3145,21 @@ namespace TestProject.Libraries
 			
 			if(repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceModeInfo.Exists())
 			{
-			// Click on Alarm Load cell
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+				// Click on Alarm Load cell
+				repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
 			}
 			else
 			{
-			// Click on Properties cell
-			repo.FormMe.cell_Properties.Click();
-			
+				// Click on Properties cell
+				repo.FormMe.cell_Properties.Click();
+				
 			}
 
 			if(repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNightInfo.Exists())
 			{
-			// Retrieve value alarm load
-			string actualDescription = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
-			
+				// Retrieve value alarm load
+				string actualDescription = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+				
 				// Comparing DayMode and sDayMode values
 				if(actualDescription.Equals(sDescription))
 				{
@@ -3173,9 +3173,9 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-			string actualDescription =	repo.FormMe.txt_PropertiesTextValue.TextValue;
-			
-			// Comparing DayMode and sDayMode values
+				string actualDescription =	repo.FormMe.txt_PropertiesTextValue.TextValue;
+				
+				// Comparing DayMode and sDayMode values
 				if(actualDescription.Equals(sDescription))
 				{
 					Report.Log(ReportLevel.Success,"Description " +sDescription+ " is displayed correctly");
@@ -3185,15 +3185,15 @@ namespace TestProject.Libraries
 					Report.Log(ReportLevel.Failure,"Description is displayed as "+actualDescription+ " instead of "+ sDescription);
 				}
 				
-			
+				
 			}
 			
 			
 			
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
-			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+				//Click on Points tab
+				repo.ProfileConsys1.tab_Points.Click();
 			}
 			
 			// Click on SearchProperties text field
@@ -4205,8 +4205,8 @@ namespace TestProject.Libraries
 		{
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
-			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+				//Click on Points tab
+				repo.ProfileConsys1.tab_Points.Click();
 			}
 			
 			// Click on SearchProperties text field
@@ -4218,30 +4218,30 @@ namespace TestProject.Libraries
 			if(repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceModeInfo.Exists())
 			{
 				// Click on Label property cell
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
-			
-			//Modifying the label
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.PressKeys(sNewLabel +"{ENTER}" );
-			Report.Log(ReportLevel.Success,"Label is editied to " +sNewLabel);
-			
+				repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+				
+				//Modifying the label
+				repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.PressKeys(sNewLabel +"{ENTER}" );
+				Report.Log(ReportLevel.Success,"Label is editied to " +sNewLabel);
+				
 			}
 			else
 			{
 				// Click on label cell
-			repo.FormMe.cell_Properties.Click();
-			
-			//Modifying the label
-			repo.FormMe.cell_Properties.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
-			repo.FormMe.cell_Properties.PressKeys(sNewLabel +"{ENTER}" );
-			Report.Log(ReportLevel.Success,"Label is edited to " +sNewLabel);
-			
+				repo.FormMe.cell_Properties.Click();
+				
+				//Modifying the label
+				repo.FormMe.cell_Properties.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				repo.FormMe.cell_Properties.PressKeys(sNewLabel +"{ENTER}" );
+				Report.Log(ReportLevel.Success,"Label is edited to " +sNewLabel);
+				
 			}
 			
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
-			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+				//Click on Points tab
+				repo.ProfileConsys1.tab_Points.Click();
 			}
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -5189,7 +5189,7 @@ namespace TestProject.Libraries
 					{
 						found = true;
 						Report.Log(ReportLevel.Success, "Panel name " +listitem.Text+ " is displayed correctly in panel type dropdown list");
-						break;	
+						break;
 					}
 					
 				}
@@ -5206,9 +5206,9 @@ namespace TestProject.Libraries
 			
 			
 			
-		}			
-						
-						
+		}
+		
+		
 		/********************************************************************
 		 * Function Name: verifyPasteButtonDisabled
 		 * Function Details: To verify if paste button is disabled in ribbon
@@ -5313,7 +5313,7 @@ namespace TestProject.Libraries
 					{
 						found = false;
 						Report.Log(ReportLevel.Failure, "Panel name " +listitem.Text+ " is displayed incorrectly in panel type dropdown list");
-						break;	
+						break;
 					}
 					
 				}
@@ -5331,7 +5331,7 @@ namespace TestProject.Libraries
 			
 			
 		}
-	
+		
 		/********************************************************************
 		 * Function Name: VerifyEnableDisablePanelAccessoriesGallery
 		 * Function Details:
@@ -5375,7 +5375,7 @@ namespace TestProject.Libraries
 		}
 
 
-			
+		
 		/********************************************************************
 		 * Function Name: VerifyLabelInSearchProperties
 		 * Function Details: To verify label in search properties
@@ -5416,7 +5416,7 @@ namespace TestProject.Libraries
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
-			
+		
 		/********************************************************************
 		 * Function Name: VerifySKUInSearchProperties
 		 * Function Details: To verify SKU in search properties
@@ -5457,7 +5457,7 @@ namespace TestProject.Libraries
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
-	
+		
 		/********************************************************************
 		 * Function Name: VerifyModelInSearchProperties
 		 * Function Details: To verify Model in search properties
@@ -5540,7 +5540,7 @@ namespace TestProject.Libraries
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
-				
+		
 		/********************************************************************
 		 * Function Name: VerifyFOMInSearchProperties
 		 * Function Details: To verify FOM in search properties
@@ -5605,7 +5605,7 @@ namespace TestProject.Libraries
 			// Search Label properties
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Description" +"{ENTER}" );
 			
-			// Click on 
+			// Click on
 			repo.FormMe.txt_PropertiesTextRow.Click();
 			
 			if(repo.FormMe.txt_PropertiesTextRowInfo.Exists())
@@ -5617,14 +5617,14 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Description text row is not available");
 			}
 			
-				
+			
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
-		}	
+		}
 
 		
 		/********************************************************************
@@ -5723,9 +5723,9 @@ namespace TestProject.Libraries
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
-			
-			
-					
+		
+		
+		
 		/***********************************************************************************************************
 		 * Function Name: verifyShoppingListDevicesTextForThirdDevice
 		 * Function Details: To verify shopping list devices via clicking on its row
@@ -5749,10 +5749,10 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Model name" +sExpectedText+ " is not displayed correctly instead " +actualText+  "is displayed " );
 			}
 		}
-			
+		
 		/***********************************************************************************************************
 		 * Function Name: verifyShoppingListDevicesTextForCell3And14
-* 		 * Function Details: To verify shopping list devices via clicking on its row
+		 * 		 * Function Details: To verify shopping list devices via clicking on its row
 		 * Parameter/Arguments: sFileName,sDeviceSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
@@ -5785,13 +5785,13 @@ namespace TestProject.Libraries
 			else
 			{
 				Report.Log(ReportLevel.Failure,"Model name" +sExpectedDeviceText+ " is not displayed correctly instead " +actualDeviceText+  "is displayed " );
-			}	
+			}
 		}
-			
+		
 		
 		/***********************************************************************************************************
 		 * Function Name: verifyShoppingListDevicesTextForCell17And21
-* 		 * Function Details: To verify shopping list devices via clicking on its row
+		 * 		 * Function Details: To verify shopping list devices via clicking on its row
 		 * Parameter/Arguments: sFileName,sDeviceSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
@@ -5873,7 +5873,7 @@ namespace TestProject.Libraries
 		public static void VerifySelectedNode()
 		{
 			string stext=repo.FormMe.NavigationTree.SelectedItems.ToString();
-		Report.Log(ReportLevel.Success," Device Added successfully"+stext);
+			Report.Log(ReportLevel.Success," Device Added successfully"+stext);
 		}
 
 		/********************************************************************
@@ -5914,7 +5914,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 03/6/2019
 		 ********************************************************************/
-	[UserCodeMethod]
+		[UserCodeMethod]
 		public static void verifyExportButtonInGalleryEnabledOrDisabled()
 		{
 			if(repo.FormMe.Export2ndTime.Enabled)
@@ -5954,7 +5954,7 @@ namespace TestProject.Libraries
 			}
 		}
 		
-			/********************************************************************
+		/********************************************************************
 		 * Function Name: ChangeCableLengthFromInventory
 		 * Function Details: To change cable length from inventory properties section
 		 * Parameter/Arguments:
@@ -5979,6 +5979,27 @@ namespace TestProject.Libraries
 			repo.FormMe.txt_InventoryProperty.PressKeys(fchangeCableLength + "{ENTER}");
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}{ENTER}");
+		}
+		
+		/********************************************************************
+		 * Function Name:verifyContextMenuOptionTextOnRightClickInPointsGrid
+		 * Function Details: To verify if context menu option text when we right click on points grid row
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam
+		 * Last Update : 14/6/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void verifyContextMenuOptionTextOnRightClickInPointsGrid(string sContectMenuOption)
+		{
+			sListIndex=sContectMenuOption;
+			if(repo.ContextMenu.ColumnChooserListText.Visible)
+			{
+				Report.Log(ReportLevel.Success, sContectMenuOption+" button is displayed");
+			}
+			else{
+				Report.Log(ReportLevel.Success, sContectMenuOption+" button is not displayed");
+			}
 		}
 		
 	}

@@ -1630,6 +1630,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="1ab10241-2198-4a0c-a2c0-67761ff2220b"
+			name="Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste"
+			ref="d77c9b28-e21b-4f69-b248-b21217a9522c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="d1da618b-b2cb-48f3-b850-bfaa48518970"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="1af66e62-032b-4eb5-ab1f-dff9efc291cf"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -4706,6 +4720,20 @@ loops.</SPAN>]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="543dac32-77c3-47c5-913a-90a89d28f4e1"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="d1da618b-b2cb-48f3-b850-bfaa48518970"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="5474d9e2-13ec-4a4e-9e7a-99f38f3cef18"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -4920,6 +4948,26 @@ loops.</SPAN>]]>
 					datasourceid="76ad7198-b7e5-4810-9894-591cc807d9ce"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="578ab21f-7215-4d66-9a60-be9a7cfa33a6"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5426,6 +5474,20 @@ loops.</SPAN>]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="605a76fe-dd6c-4640-86fc-478471965b65"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="f157f4c6-7818-4ec8-b4b6-8f47f7939a3c"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="61bd2aee-5ac1-4b52-a1c6-fdb67574b6cf"
@@ -6051,6 +6113,12 @@ loops.</SPAN>]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="6c1e4cf4-a0b1-4c2e-ab78-2e0068d52e7b"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="6cdd96ff-9d27-484d-bfb6-e9214381620b"
 			name="Verify_IB_Units_On_Assigning_Base_And_Additional_Base">
@@ -7446,6 +7514,20 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="85976b70-66f4-435f-b281-f8ebe974a0dd"
+			name="Verify_Loop_Numbering"
+			ref="a0b6028c-8bd4-43ba-abc5-93b4fc948ab6"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="f157f4c6-7818-4ec8-b4b6-8f47f7939a3c"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="859e9cfa-b3cd-4eff-ac18-c966a5740f26"
 			name="Verify_IS_Units_On_Updating_Cable_Capacitance_for_FIM">
@@ -7676,6 +7758,9 @@ MxDesigner]]>
 			<testcase
 			id="899247e0-cc68-477d-9853-2c6d810ea13c"
 			name="Verify_Persistance_Of_Region_Name_Property_On_Copy_Paste">
+				<description>
+					<![CDATA[<p>NGC-373/TC-0055</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -8518,6 +8603,26 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="98c28383-623b-48bd-b312-b5b0318ca646"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="990fb1c3-efc1-4b21-b6d1-b909097e3b06"
 			name="Verify_Extra_IS_Units_Required_In_Case_of_Split_Loops">
@@ -8987,6 +9092,12 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a275391b-e215-4ebb-bc6b-08c992dc82f1"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="a279c40e-0f97-41d7-9682-fb0666e4a467"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -9344,6 +9455,14 @@ MxDesigner]]>
 			name="Verify_Persistance_of_Region_Name_Property_On_CopyPaste"
 			ref="edb6e3e4-3a6c-40d0-869f-aedf5d4e47df"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="899247e0-cc68-477d-9853-2c6d810ea13c"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ad56b832-3587-4780-9343-a901aa77b875"
@@ -9894,6 +10013,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="b922ad77-0e8e-4d60-b497-4bb3ab394046"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="b956701a-9337-4bc1-ba4f-68915628131f"
@@ -11034,6 +11159,23 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="d1da618b-b2cb-48f3-b850-bfaa48518970"
+			name="Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste">
+				<description>
+					<![CDATA[<p>NGC-373/TC-00556</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="d21c3d0b-36b4-4303-9029-c80de182b363"
 			name="Application_Open"
@@ -12631,6 +12773,23 @@ persisted in panel properties&nbsp;]]>
 					</param>
 					<param
 					name="ProjectName"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="f157f4c6-7818-4ec8-b4b6-8f47f7939a3c"
+			name="Verify_Loop_Numbering">
+				<description>
+					<![CDATA[<p>NGC-418/TC-0080</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
 					value="">
 					</param>
 				</parameters>
@@ -17354,6 +17513,10 @@ persisted in panel properties&nbsp;]]>
 						id="accae1ad-059a-41d5-8bf1-5b967a460a3d"
 						name="Verify_Persistance_of_Region_Name_Property_On_CopyPaste">
 						</testmodule>
+						<testmodule
+						id="b922ad77-0e8e-4d60-b497-4bb3ab394046"
+						name="Close_Application">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="e41f071a-6575-464f-a0a7-ea377f12d19a"
@@ -17372,6 +17535,46 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="373e0a84-b40d-4efe-adf1-8cbbf79700e1"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="d1da618b-b2cb-48f3-b850-bfaa48518970"
+					name="Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste">
+						<testmodule
+						id="578ab21f-7215-4d66-9a60-be9a7cfa33a6"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="543dac32-77c3-47c5-913a-90a89d28f4e1"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="1ab10241-2198-4a0c-a2c0-67761ff2220b"
+						name="Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste">
+						</testmodule>
+						<testmodule
+						id="6c1e4cf4-a0b1-4c2e-ab78-2e0068d52e7b"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="f157f4c6-7818-4ec8-b4b6-8f47f7939a3c"
+					name="Verify_Loop_Numbering">
+						<testmodule
+						id="98c28383-623b-48bd-b312-b5b0318ca646"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="605a76fe-dd6c-4640-86fc-478471965b65"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="85976b70-66f4-435f-b281-f8ebe974a0dd"
+						name="Verify_Loop_Numbering">
+						</testmodule>
+						<testmodule
+						id="a275391b-e215-4ebb-bc6b-08c992dc82f1"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
@@ -17478,6 +17681,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="f157f4c6-7818-4ec8-b4b6-8f47f7939a3c">
 			id="66188497-5922-44e7-86fd-f98bac6e43e9">
 			</testcontainer>
 		</testconfiguration>

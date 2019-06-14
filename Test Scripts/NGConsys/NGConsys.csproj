@@ -1974,6 +1974,18 @@
       <UserCode>true</UserCode>
       <id>87dc8f37-6b08-4e42-804e-45657e0216c3</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Loop_Numbering.cs">
+      <BoundTo>d88dedd7-1900-41ba-af5a-59675e3e9fa7</BoundTo>
+      <DependentUpon>Verify_Loop_Numbering.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0660c7e-2a9a-4b06-a7e9-ad9e8d17aae0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Loop_Numbering.UserCode.cs">
+      <BoundTo>d88dedd7-1900-41ba-af5a-59675e3e9fa7</BoundTo>
+      <DependentUpon>Verify_Loop_Numbering.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c2052ec2-5702-4136-81f4-b5be22088a08</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_LPS800_And_Its_Sounders.cs">
       <BoundTo>c06b2b1c-47cd-4bd4-bfb3-3643bd15b69d</BoundTo>
       <DependentUpon>Verify_LPS800_And_Its_Sounders.rxrec</DependentUpon>
@@ -2309,6 +2321,18 @@
       <DependentUpon>Verify_Persistance_of_Region_Name_Property_On_CopyPaste.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>7ecfc816-5c2b-4139-a67a-b6a863443724</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste.cs">
+      <BoundTo>f825bb48-36f3-49b1-a014-442c7e995e79</BoundTo>
+      <DependentUpon>Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>30db2af8-e43f-4683-9d45-100089052200</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste.UserCode.cs">
+      <BoundTo>f825bb48-36f3-49b1-a014-442c7e995e79</BoundTo>
+      <DependentUpon>Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>50ea0316-3b85-477b-b4a0-c48d095a4bf1</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_PNI800_Card_Details.cs">
       <BoundTo>ff94b46c-d344-4667-8dc8-39a284382bdf</BoundTo>
@@ -3654,9 +3678,9 @@
       <recordtableid>03f1ad7a-7073-445b-b9d7-2352e9793931</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_FBI800_card_details.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>921a8b7e-0733-46ca-b161-8ad7af3f2d5e</id>
       <recordtableid>aa209ed5-2360-4a04-b4f0-d223a15560e0</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_FB_IOB_Slot_Allocation_In_Backplane.rxrec">
       <id>ce55a45c-b006-4294-8fe5-c48dac998931</id>
@@ -3818,6 +3842,11 @@
       <id>86cd9dd1-c857-4f4f-88f3-8926fc238479</id>
       <recordtableid>00b2c140-16c5-4ba0-bee6-774b1528e034</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Loop_Numbering.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>d88dedd7-1900-41ba-af5a-59675e3e9fa7</id>
+      <recordtableid>a0b6028c-8bd4-43ba-abc5-93b4fc948ab6</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_LPS800_And_Its_Sounders.rxrec">
       <id>c06b2b1c-47cd-4bd4-bfb3-3643bd15b69d</id>
       <recordtableid>18ef900d-c144-4970-b519-5d9e9cf9cec2</recordtableid>
@@ -3957,6 +3986,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>fad1755b-4a80-4201-8ac8-26034714161c</id>
       <recordtableid>edb6e3e4-3a6c-40d0-869f-aedf5d4e47df</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>f825bb48-36f3-49b1-a014-442c7e995e79</id>
+      <recordtableid>d77c9b28-e21b-4f69-b248-b21217a9522c</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_PNI800_Card_Details.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
