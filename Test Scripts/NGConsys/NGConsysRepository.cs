@@ -5787,7 +5787,7 @@ namespace TestProject
                 _plx800cardInfo = new RepoItemInfo(this, "PLX800Card", "?/?/listitem[@index='0']/container/text[@caption='PLX800']", 30000, null, "b3e4a238-9fbe-4c37-8ed9-f724674eb812");
                 _panelaccessorygallerydeviceInfo = new RepoItemInfo(this, "PanelAccessoryGalleryDevice", ".//listitem[@index=$sAccessoryGalleryIndex]/text[@caption=$sDeviceName]", 30000, null, "5714a850-f5eb-4577-a20b-6c0f7a636d57");
                 _showcolumnchooserInfo = new RepoItemInfo(this, "ShowColumnChooser", "list/button[@text='Show Column Chooser']", 30000, null, "aef5c381-df4b-4920-8463-88a5f410389d");
-                _columnchooserlisttextInfo = new RepoItemInfo(this, "ColumnChooserListText", "list/?/?/text[@caption=$sListItem]", 30000, null, "dab95348-0da5-4535-a2be-8a8369474049");
+                _columnchooserlisttextInfo = new RepoItemInfo(this, "ColumnChooserListText", "list/?/?/text[@caption=$sListIndex]", 30000, null, "dab95348-0da5-4535-a2be-8a8369474049");
                 _txt_galleryitemInfo = new RepoItemInfo(this, "txt_galleryItem", "list/?/?/listitem/text[@caption=$ModelNumber]", 30000, null, "0138ee24-d494-419e-b54e-edf43106b33e");
                 _txt_gallerylistitemInfo = new RepoItemInfo(this, "txt_GalleryListItem", "list/?/?/listitem[@index=$listItem]/text", 30000, null, "d4f9cda7-2c2c-460c-8c47-9cc8f034e9bc");
                 _droppedgallerylistInfo = new RepoItemInfo(this, "DroppedGalleryList", "list/?/?/listitem[@index=$listItem]", 30000, null, "7125ccc9-1030-48ef-9941-44f913231adb");

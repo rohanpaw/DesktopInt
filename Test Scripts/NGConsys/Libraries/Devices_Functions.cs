@@ -5995,10 +5995,10 @@ namespace TestProject.Libraries
 			sListIndex=sContectMenuOption;
 			if(repo.ContextMenu.ColumnChooserListText.Visible)
 			{
-				Report.Log(ReportLevel.Success, sContectMenuOption+" button is displayed");
+				Report.Log(ReportLevel.Success, sContectMenuOption+" option is displayed");
 			}
 			else{
-				Report.Log(ReportLevel.Success, sContectMenuOption+" button is not displayed");
+				Report.Log(ReportLevel.Success, sContectMenuOption+" option is not displayed");
 			}
 		}
 		

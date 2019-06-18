@@ -2848,6 +2848,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="31e248c2-f7ec-499f-87fb-9f0b85c8092f"
+			name="Observe_Devices_Order_Displayed_In_Context_Menu">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="31ea8ce4-b7d4-44d3-a635-cfa018941c33"
 			name="Verify_CPU800_selection_on_Import_from_MxDesigner_project"
@@ -3983,6 +3997,26 @@ loops.</SPAN>]]>
 			</testmodule>
 			<testmodule
 			id="49865561-800c-48d4-99f5-8f570ae534e5"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="49c2d6db-f0f7-422a-a3f8-5454782c6f35"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
 			type="UserCode">
@@ -6237,6 +6271,20 @@ loops.</SPAN>]]>
 			ref="76f7efe8-a448-4c9b-8751-049cf3b351de"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="6f5e308f-09f2-4194-a4ce-9115c7382370"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="31e248c2-f7ec-499f-87fb-9f0b85c8092f"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="6f80e22c-106d-4460-8342-b80881d135ab"
 			name="Verify_the_Isolator_units_Intrinsically_safe_units_have_separate_property_section_to_displayed">
@@ -7433,6 +7481,20 @@ MxDesigner]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8495309c-171c-4d6e-84de-790cf6c44945"
+			name="Observe_Devices_Order_Displayed_In_Context_Menu"
+			ref="660de8e4-d434-4c63-85b7-ce3df90b906c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="31e248c2-f7ec-499f-87fb-9f0b85c8092f"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="84a5ad16-3cc9-4277-90fc-6e522d10ffae"
@@ -10323,6 +10385,12 @@ persisted in panel properties&nbsp;]]>
 			</testmodule>
 			<testmodule
 			id="bf91d31f-f8f5-4609-9381-b249ae314685"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="bf9bdcf5-989c-4a29-8ef9-a24debe2aaa3"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -17618,6 +17686,26 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="31e248c2-f7ec-499f-87fb-9f0b85c8092f"
+					name="Observe_Devices_Order_Displayed_In_Context_Menu">
+						<testmodule
+						id="49c2d6db-f0f7-422a-a3f8-5454782c6f35"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="6f5e308f-09f2-4194-a4ce-9115c7382370"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="8495309c-171c-4d6e-84de-790cf6c44945"
+						name="Observe_Devices_Order_Displayed_In_Context_Menu">
+						</testmodule>
+						<testmodule
+						id="bf9bdcf5-989c-4a29-8ef9-a24debe2aaa3"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -17681,7 +17769,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="f157f4c6-7818-4ec8-b4b6-8f47f7939a3c">
+			id="31e248c2-f7ec-499f-87fb-9f0b85c8092f">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

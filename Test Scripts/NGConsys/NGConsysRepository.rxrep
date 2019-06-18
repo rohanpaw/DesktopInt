@@ -1885,7 +1885,7 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			id="dab95348-0da5-4535-a2be-8a8369474049"
 			name="ColumnChooserListText"
 			searchtimeout="30000ms">
-				/contextmenu/list/?/?/text[@caption=$sListItem]
+				/contextmenu/list/?/?/text[@caption=$sListIndex]
 			</item>
 			<item
 			addcaps="text,wpfelement,wpfgroupelement"

@@ -1,0 +1,1060 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="660de8e4-d434-4c63-85b7-ce3df90b906c"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Observe_Devices_Order_Displayed_In_Context_Menu
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Observe_Devices_Order_Displayed_In_Context_Menu"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddPanels"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="90340d02-d5ae-4de2-9d6d-c3de8f26b0c8">
+				<argument
+				argname="NumberofPanels"
+				id="88c2f2dd-3e1f-4e61-8061-27d459ae05b5">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNames"
+				id="3b1e74fe-1884-497c-bd91-aa4dba8cd66f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Pro32xD
+					</argvalue>
+				</argument>
+				<argument
+				argname="sPanelCPU"
+				id="dc0ea196-3015-4526-a6a0-3d370ffb508a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="328b20d5-693a-4dd4-8ab1-cb17b14951b9"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="239b5b88-586a-4959-b95b-241692771141"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/?/?/text[@caption=$PanelNode]
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="b5477b1d-cb79-4285-b062-c8e5b333fa59"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/button[@automationid='Expander']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7d434a17-506d-4f99-8a30-967b091064f9"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="78b7f34d-62fa-4a52-b39e-076e5d6068df"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/button[@automationid='Expander']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="cc171dc2-c730-4862-85d8-012089372ac6"
+		sx="298"
+		sy="347"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ed3605ef-41c4-4036-82a4-6ced4fb82da1"
+			sourcename="Recorder">
+				<element
+				capabilities="wpfelement, wpfgroupelement"
+				dontcache="False"
+				enabled="True"
+				flavor="wpf"
+				hasfocus="True"
+				index="0"
+				prefcap="treeitem"
+				rect="59,334,252,25"
+				role="treeitem"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="expanded"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="automationproperties_acceleratorkey"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_accesskey"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_helptext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_iscolumnheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="automationproperties_isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="automationproperties_isrowheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="automationproperties_itemstatus"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_itemtype"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_name"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="basetype"
+					type="System.String">
+						System.Windows.Controls.TreeViewItem
+					</attribute>
+					<attribute
+					name="fulltype"
+					type="System.String">
+						Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem&gt;
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						DepoGroup&lt;TreeViewItem&gt;
+					</attribute>
+					<attribute
+					name="ranorexgroupleaderid"
+					type="System.Guid">
+						f0823799-2398-4c41-a093-206259ecdeaf
+					</attribute>
+					<attribute
+					name="ranorexgroupmemberids"
+					type="System.Guid[]">
+						AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAACQAAAAMLU3lzdGVtLkd1aWQE/v///wtTeXN0ZW0u
+R3VpZAsAAAACX2ECX2ICX2MCX2QCX2UCX2YCX2cCX2gCX2kCX2oCX2sAAAAAAAAAAAAAAAgHBwIC
+AgICAgICmTeC8JgjQUygkyBiWezerwH9/////v///1WFpcQFv7RMkMFFW0NkYgYB/P////7///8x
+WolqMmf0Rq8XbTDhENmwAfv////+////acVGUbrKDEqsIMgsQXQqlwH6/////v///3BJs1ou98tC
+hBFA2MneB8MB+f////7///+2wTx4B+6MR53zc91uFX1AAfj////+////JaBbvdKrm0m9MTTpIRUC
+CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
+					</attribute>
+					<attribute
+					name="ranorexgroupobjectid"
+					type="System.Guid">
+						a8acf3a6-40fa-4057-ba7a-0a60e4b1fb92
+					</attribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ActualHeight property of type Double."
+					name="ActualHeight"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ActualWidth property of type Double."
+					name="ActualWidth"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.AllowDrop property of type Boolean."
+					name="AllowDrop"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.AlternationCount property of type Int32."
+					name="AlternationCount"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.AlternationIndex property of type Int32."
+					name="AlternationIndex"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Background property of type Brush."
+					name="Background"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.BackgroundColor property of type String."
+					name="BackgroundColor"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.BindingGroup property of type BindingGroup."
+					name="BindingGroup"
+					readonly="False"
+					type="System.Windows.Data.BindingGroup, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.BitmapEffect property of type BitmapEffect."
+					name="BitmapEffect"
+					readonly="False"
+					type="System.Windows.Media.Effects.BitmapEffect, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.BitmapEffectInput property of type BitmapEffectInput."
+					name="BitmapEffectInput"
+					readonly="False"
+					type="System.Windows.Media.Effects.BitmapEffectInput, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.BorderBrush property of type Brush."
+					name="BorderBrush"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.CacheMode property of type CacheMode."
+					name="CacheMode"
+					readonly="False"
+					type="System.Windows.Media.CacheMode, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Clip property of type Geometry."
+					name="Clip"
+					readonly="False"
+					type="System.Windows.Media.Geometry, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ClipToBounds property of type Boolean."
+					name="ClipToBounds"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Column property of type Int32."
+					name="Column"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ColumnSpan property of type Int32."
+					name="ColumnSpan"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Content property of type Object."
+					name="Content"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ContentSource property of type String."
+					name="ContentSource"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ContentStringFormat property of type String."
+					name="ContentStringFormat"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ContextMenu property of type ContextMenu."
+					name="ContextMenu"
+					readonly="False"
+					type="System.Windows.Controls.ContextMenu, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.DataContext property of type Object."
+					name="DataContext"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.DefaultStyleKey property of type Object."
+					name="DefaultStyleKey"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.DisplayMemberPath property of type String."
+					name="DisplayMemberPath"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Effect property of type Effect."
+					name="Effect"
+					readonly="False"
+					type="System.Windows.Media.Effects.Effect, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.FlowDirection property of type FlowDirection."
+					name="FlowDirection"
+					readonly="False"
+					type="System.Windows.FlowDirection, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Focusable property of type Boolean."
+					name="Focusable"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.FontSize property of type Double."
+					name="FontSize"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ForceCursor property of type Boolean."
+					name="ForceCursor"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Foreground property of type Brush."
+					name="Foreground"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ForegroundColor property of type String."
+					name="ForegroundColor"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.GroupStyleSelector property of type GroupStyleSelector."
+					name="GroupStyleSelector"
+					readonly="False"
+					type="System.Windows.Controls.GroupStyleSelector, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.HasHeader property of type Boolean."
+					name="HasHeader"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.HasItems property of type Boolean."
+					name="HasItems"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Header property of type Object."
+					name="Header"
+					readonly="False"
+					type="System.Object"
+					weight="107">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.HeaderStringFormat property of type String."
+					name="HeaderStringFormat"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Height property of type Double."
+					name="Height"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.HorizontalAlignment property of type HorizontalAlignment."
+					name="HorizontalAlignment"
+					readonly="False"
+					type="System.Windows.HorizontalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.HorizontalContentAlignment property of type HorizontalAlignment."
+					name="HorizontalContentAlignment"
+					readonly="False"
+					type="System.Windows.HorizontalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsExpanded property of type Boolean."
+					name="IsExpanded"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsGrouping property of type Boolean."
+					name="IsGrouping"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsHitTestVisible property of type Boolean."
+					name="IsHitTestVisible"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsItemsHost property of type Boolean."
+					name="IsItemsHost"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsManipulationEnabled property of type Boolean."
+					name="IsManipulationEnabled"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsSelected property of type Boolean."
+					name="IsSelected"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsSelectionActive property of type Boolean."
+					name="IsSelectionActive"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsSharedSizeScope property of type Boolean."
+					name="IsSharedSizeScope"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsTabStop property of type Boolean."
+					name="IsTabStop"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsTextSearchCaseSensitive property of type Boolean."
+					name="IsTextSearchCaseSensitive"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsTextSearchEnabled property of type Boolean."
+					name="IsTextSearchEnabled"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsVirtualizing property of type Boolean."
+					name="IsVirtualizing"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.IsVirtualizingWhenGrouping property of type Boolean."
+					name="IsVirtualizingWhenGrouping"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ItemBindingGroup property of type BindingGroup."
+					name="ItemBindingGroup"
+					readonly="False"
+					type="System.Windows.Data.BindingGroup, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ItemForItemContainer property of type Object."
+					name="ItemForItemContainer"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ItemStringFormat property of type String."
+					name="ItemStringFormat"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.LayoutTransform property of type Transform."
+					name="LayoutTransform"
+					readonly="False"
+					type="System.Windows.Media.Transform, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.MaxHeight property of type Double."
+					name="MaxHeight"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.MaxWidth property of type Double."
+					name="MaxWidth"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.MinHeight property of type Double."
+					name="MinHeight"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.MinWidth property of type Double."
+					name="MinWidth"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Opacity property of type Double."
+					name="Opacity"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.OpacityMask property of type Brush."
+					name="OpacityMask"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.OverridesDefaultStyle property of type Boolean."
+					name="OverridesDefaultStyle"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.RecognizesAccessKey property of type Boolean."
+					name="RecognizesAccessKey"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.RenderTransform property of type Transform."
+					name="RenderTransform"
+					readonly="False"
+					type="System.Windows.Media.Transform, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.RenderTransformOrigin property of type Point."
+					name="RenderTransformOrigin"
+					readonly="False"
+					type="System.Windows.Point, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Row property of type Int32."
+					name="Row"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.RowSpan property of type Int32."
+					name="RowSpan"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ScrollUnit property of type ScrollUnit."
+					name="ScrollUnit"
+					readonly="False"
+					type="System.Windows.Controls.ScrollUnit, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ShowGridLines property of type Boolean."
+					name="ShowGridLines"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.SnapsToDevicePixels property of type Boolean."
+					name="SnapsToDevicePixels"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.TabIndex property of type Int32."
+					name="TabIndex"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Tag property of type Object."
+					name="Tag"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ToolTip property of type Object."
+					name="ToolTip"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Uid property of type String."
+					name="Uid"
+					readonly="False"
+					type="System.String"
+					weight="150">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.UseLayoutRounding property of type Boolean."
+					name="UseLayoutRounding"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.VerticalAlignment property of type VerticalAlignment."
+					name="VerticalAlignment"
+					readonly="False"
+					type="System.Windows.VerticalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.VerticalContentAlignment property of type VerticalAlignment."
+					name="VerticalContentAlignment"
+					readonly="False"
+					type="System.Windows.VerticalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.VirtualizationMode property of type VirtualizationMode."
+					name="VirtualizationMode"
+					readonly="False"
+					type="System.Windows.Controls.VirtualizationMode, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Visibility property of type Visibility."
+					name="Visibility"
+					readonly="False"
+					type="System.Windows.Visibility, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.Width property of type Double."
+					name="Width"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ZIndex property of type Int32."
+					name="ZIndex"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicaction
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TreeViewItem>.ExpandSubtree method."
+					displayName="ExpandSubtree">
+						<returns
+						description="Return value."
+						displayName="returns"
+						type="System.Void">
+						</returns>
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[1]
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="55079282-bad2-46c8-a0df-26e062eff0ba">
+				<argument
+				argname="sDeviceName"
+				id="e38e4584-9067-4b5a-9740-1d2cf37fc9a9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						801 CH
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="231165ed-83dc-4c6a-bc81-536e3caaeb40">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Detectors
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="55079282-bad2-46c8-a0df-26e062eff0ba">
+				<argument
+				argname="sDeviceName"
+				id="e38e4584-9067-4b5a-9740-1d2cf37fc9a9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						801 CH
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="231165ed-83dc-4c6a-bc81-536e3caaeb40">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Detectors
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="RightClickOnSelectedRow"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="bf067cf8-6fe3-467b-9a9c-41d133aa15f1">
+				<argument
+				argname="RowNumber"
+				id="8545dbf7-964f-49b7-8e93-92b9c4859d94">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyContextMenuOptionTextOnRightClickInPointsGrid"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a7938094-d2bf-4ffd-8e37-c4ea09a4d831">
+				<argument
+				argname="sContectMenuOption"
+				id="a1545a79-801e-45d1-ad00-bffc0d392ad9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Detectors
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyContextMenuOptionTextOnRightClickInPointsGrid"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a7938094-d2bf-4ffd-8e37-c4ea09a4d831">
+				<argument
+				argname="sContectMenuOption"
+				id="a1545a79-801e-45d1-ad00-bffc0d392ad9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Call points
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyContextMenuOptionTextOnRightClickInPointsGrid"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a7938094-d2bf-4ffd-8e37-c4ea09a4d831">
+				<argument
+				argname="sContectMenuOption"
+				id="a1545a79-801e-45d1-ad00-bffc0d392ad9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Sounders/Beacons
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyContextMenuOptionTextOnRightClickInPointsGrid"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a7938094-d2bf-4ffd-8e37-c4ea09a4d831">
+				<argument
+				argname="sContectMenuOption"
+				id="a1545a79-801e-45d1-ad00-bffc0d392ad9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Ancillary
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyContextMenuOptionTextOnRightClickInPointsGrid"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a7938094-d2bf-4ffd-8e37-c4ea09a4d831">
+				<argument
+				argname="sContectMenuOption"
+				id="a1545a79-801e-45d1-ad00-bffc0d392ad9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Ancillary Conventional
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyContextMenuOptionTextOnRightClickInPointsGrid"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a7938094-d2bf-4ffd-8e37-c4ea09a4d831">
+				<argument
+				argname="sContectMenuOption"
+				id="a1545a79-801e-45d1-ad00-bffc0d392ad9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Ancillary Specific
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyContextMenuOptionTextOnRightClickInPointsGrid"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a7938094-d2bf-4ffd-8e37-c4ea09a4d831">
+				<argument
+				argname="sContectMenuOption"
+				id="a1545a79-801e-45d1-ad00-bffc0d392ad9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Other
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Observe_Devices_Order_Displayed_In_Context_Menu.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
