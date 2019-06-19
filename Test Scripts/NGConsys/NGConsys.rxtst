@@ -1159,6 +1159,12 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="12fc594c-b149-4d2d-b6eb-fcb92b751835"
+			name="Verify_Sensitivity_Column_In_Points_Grid"
+			ref="f63be1c8-2f64-41a4-a329-467aa23a3924"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="1359e51a-189d-4f00-89de-e891285f4779"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -3632,6 +3638,12 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="42d3e4c9-abb5-481e-a2c0-2b64e6918f97"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="42de605d-ef38-4023-9e44-35000840c1e4"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -5766,6 +5778,10 @@ loops.</SPAN>]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="66147d7f-cf5e-45f9-b4d7-b0d7ba953821"
+			name="Verify_Sensitivity_Column_In_Points_Grid">
+			</testcase>
 			<testcase
 			id="66188497-5922-44e7-86fd-f98bac6e43e9"
 			name="Verify_Other_Slot_Cards_Grid">
@@ -10286,6 +10302,26 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_Main_Processor_24V_Maximum_Value"
 			ref="68cd4554-5a36-401c-ac2f-01ae02bf3f18"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="bdc216b8-eb57-4fcc-b43b-cea0c89115be"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="bdf26eaa-7b90-465d-a8b5-fc7c4babfd34"
@@ -17706,6 +17742,22 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="66147d7f-cf5e-45f9-b4d7-b0d7ba953821"
+					name="Verify_Sensitivity_Column_In_Points_Grid">
+						<testmodule
+						id="bdc216b8-eb57-4fcc-b43b-cea0c89115be"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="42d3e4c9-abb5-481e-a2c0-2b64e6918f97"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="12fc594c-b149-4d2d-b6eb-fcb92b751835"
+						name="Verify_Sensitivity_Column_In_Points_Grid">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -17769,7 +17821,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="31e248c2-f7ec-499f-87fb-9f0b85c8092f">
+			id="66147d7f-cf5e-45f9-b4d7-b0d7ba953821">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

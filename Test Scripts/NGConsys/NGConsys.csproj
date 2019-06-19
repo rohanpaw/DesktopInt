@@ -2706,6 +2706,18 @@
       <UserCode>true</UserCode>
       <id>79858ac1-9722-4757-8c9a-20b50e428379</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Sensitivity_Column_In_Points_Grid.cs">
+      <BoundTo>20938c4e-5bfd-41eb-ab63-f481e3dac042</BoundTo>
+      <DependentUpon>Verify_Sensitivity_Column_In_Points_Grid.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5b8d85f6-f419-40ca-abf0-876279789e9b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Sensitivity_Column_In_Points_Grid.UserCode.cs">
+      <BoundTo>20938c4e-5bfd-41eb-ab63-f481e3dac042</BoundTo>
+      <DependentUpon>Verify_Sensitivity_Column_In_Points_Grid.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2be27950-04b3-4171-9253-8138750752f6</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card.cs">
       <BoundTo>c3de33ac-ad37-4a9d-9c22-e10c699a4862</BoundTo>
       <DependentUpon>Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card.rxrec</DependentUpon>
@@ -4159,6 +4171,11 @@
       <id>60711ecb-1170-4b17-af59-08c71e7e3525</id>
       <recordtableid>24aaa9ba-5aac-4310-b303-d4087b7c09a9</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Sensitivity_Column_In_Points_Grid.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>20938c4e-5bfd-41eb-ab63-f481e3dac042</id>
+      <recordtableid>f63be1c8-2f64-41a4-a329-467aa23a3924</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>c3de33ac-ad37-4a9d-9c22-e10c699a4862</id>
@@ -4342,6 +4359,6 @@
   </Import>
   <PropertyGroup>
     <PreBuildEvent>
-</PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
 </Project>

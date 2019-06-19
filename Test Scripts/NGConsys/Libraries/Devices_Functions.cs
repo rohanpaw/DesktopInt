@@ -4071,8 +4071,7 @@ namespace TestProject.Libraries
 			else
 			{
 				Report.Log(ReportLevel.Failure,"Device property is not verified not in Points grid");
-			}
-			
+			}	
 		}
 		
 		/***********************************************************************************************************
@@ -4139,6 +4138,11 @@ namespace TestProject.Libraries
 					
 				case "Address":
 					columnNumber="4";
+					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					break;
+					
+				case "Sensitivity":
+					columnNumber="5";
 					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
 					break;
 					
@@ -6001,6 +6005,58 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Success, sContectMenuOption+" option is not displayed");
 			}
 		}
+		
+		
+		/********************************************************************
+		 * Function Name: ChangeDeviceSensitivityInPointsGrid
+		 * Function Details: To change device sensitivity in points grid
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update :
+		 ********************************************************************/
+		// To change device sensitivity value as per the argument
+		[UserCodeMethod]
+		public static void ChangeDeviceSensitivityInPointsGrid(string changeDeviceSensitivity)
+		{
+			
+			// Click on Device Sensitivity cell
+			repo.HwndWrapperProfileConsysExe0c643c73.GridSensitivityCombo1.Click();
+			
+			// Enter the value to change device sensitivity
+			repo.HwndWrapperProfileConsysExe0c643c73.GridSensitivityCombo.PressKeys((changeDeviceSensitivity) +"{ENTER}" + "{ENTER}");
+			Report.Log(ReportLevel.Info," Device sensitivity changed successfully ");
+			
+		}
+		
+		/***********************************************************************************************************
+		 * Function Name: AddColumnFromColumnChooser
+		 * Function Details: To add Sensitivity column from column chooser
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 18/06/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void AddColumnFromColumnChooser(string sColumnName)
+		{
+			
+			// Select Point grid and right click on it
+			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			
+			// Click Show column chooser to select column
+			repo.ContextMenu.ShowColumnChooser.Click();
+			
+			// Click on Device order checkbox to add the column in points grid
+			repo.ProfileConsys.txt_ColumnChooserSearch.PressKeys((sColumnName) +"{ENTER}" + "{ENTER}");
+			repo.ProfileConsys.ColumnChooserSearchCheckbox.Click();
+			Report.Log(ReportLevel.Info,sColumnName+" column added successfully ");
+			
+			// Close column choose window
+			repo.ProfileConsys.btn_CloseColumnChooser.Click();
+			
+		}
+		
 		
 	}
 }

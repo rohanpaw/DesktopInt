@@ -11767,6 +11767,8 @@ namespace TestProject
         {
             RepoItemInfo _chkbox_deviceorderInfo;
             RepoItemInfo _btn_closecolumnchooserInfo;
+            RepoItemInfo _txt_columnchoosersearchInfo;
+            RepoItemInfo _columnchoosersearchcheckboxInfo;
 
             /// <summary>
             /// Creates a new ProfileConsys  folder.
@@ -11776,6 +11778,8 @@ namespace TestProject
             {
                 _chkbox_deviceorderInfo = new RepoItemInfo(this, "chkBox_DeviceOrder", "indicator[@automationid='PART_LoadingPanel']/tree/container[@automationid='rowPresenterGrid']/?/?/container[@automationid='dataPresenter']/container[3]/row/cell[1]/button[@automationid='PART_Editor']", 30000, null, "b52c7389-871f-4c3e-9198-e99054daa317");
                 _btn_closecolumnchooserInfo = new RepoItemInfo(this, "btn_CloseColumnChooser", ".//list[@automationid='PART_HeaderButtons']/button[@automationid='PART_CloseButton']", 30000, null, "6938610d-0ad1-493d-b7e5-c51dc6eeef9f");
+                _txt_columnchoosersearchInfo = new RepoItemInfo(this, "txt_ColumnChooserSearch", "indicator[@automationid='PART_LoadingPanel']//combobox[@automationid='SearchComboBox']/text[@automationid='PART_Editor']", 30000, null, "3e7308bc-33f2-406f-b2cd-5c71d6563849");
+                _columnchoosersearchcheckboxInfo = new RepoItemInfo(this, "ColumnChooserSearchCheckbox", "indicator[@automationid='PART_LoadingPanel']/tree/container[@automationid='rowPresenterGrid']//button[@automationid='PART_Editor']", 30000, null, "1cc3d693-98ff-4a3d-9b77-3f1cdd9f4f11");
             }
 
             /// <summary>
@@ -11847,6 +11851,54 @@ namespace TestProject
                 get
                 {
                     return _btn_closecolumnchooserInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_ColumnChooserSearch item.
+            /// </summary>
+            [RepositoryItem("3e7308bc-33f2-406f-b2cd-5c71d6563849")]
+            public virtual Ranorex.Text txt_ColumnChooserSearch
+            {
+                get
+                {
+                    return _txt_columnchoosersearchInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_ColumnChooserSearch item info.
+            /// </summary>
+            [RepositoryItemInfo("3e7308bc-33f2-406f-b2cd-5c71d6563849")]
+            public virtual RepoItemInfo txt_ColumnChooserSearchInfo
+            {
+                get
+                {
+                    return _txt_columnchoosersearchInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ColumnChooserSearchCheckbox item.
+            /// </summary>
+            [RepositoryItem("1cc3d693-98ff-4a3d-9b77-3f1cdd9f4f11")]
+            public virtual Ranorex.Button ColumnChooserSearchCheckbox
+            {
+                get
+                {
+                    return _columnchoosersearchcheckboxInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ColumnChooserSearchCheckbox item info.
+            /// </summary>
+            [RepositoryItemInfo("1cc3d693-98ff-4a3d-9b77-3f1cdd9f4f11")]
+            public virtual RepoItemInfo ColumnChooserSearchCheckboxInfo
+            {
+                get
+                {
+                    return _columnchoosersearchcheckboxInfo;
                 }
             }
         }
@@ -12373,6 +12425,8 @@ namespace TestProject
             RepoItemInfo _builtinloopc0of125Info;
             RepoItemInfo _builtinloopd0of125Info;
             RepoItemInfo _plxexternalloopcard2Info;
+            RepoItemInfo _gridsensitivitycombo1Info;
+            RepoItemInfo _gridsensitivitycomboInfo;
 
             /// <summary>
             /// Creates a new HwndWrapperProfileConsysExe0c643c73  folder.
@@ -12386,6 +12440,8 @@ namespace TestProject
                 _builtinloopc0of125Info = new RepoItemInfo(this, "BuiltInLoopC0Of125", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption~'^Built-in\\ Loop-C\\ \\(0\\ of\\ 125']", 30000, null, "bbfcf29c-abf6-4e75-ad87-f8a95dd79629");
                 _builtinloopd0of125Info = new RepoItemInfo(this, "BuiltInLoopD0Of125", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption~'^Built-in\\ Loop-D\\ \\(0\\ of\\ 125']", 30000, null, "f0efbfb6-f1c4-4323-99eb-f88ffcb3b19c");
                 _plxexternalloopcard2Info = new RepoItemInfo(this, "PLXExternalLoopCard2", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX/External Loop Card 2']", 30000, null, "332c1b94-5e6f-4ffa-ae17-b93482e73806");
+                _gridsensitivitycombo1Info = new RepoItemInfo(this, "GridSensitivityCombo1", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[5]/text", 30000, null, "0764643e-2bb6-41d0-9705-30b12aaace93");
+                _gridsensitivitycomboInfo = new RepoItemInfo(this, "GridSensitivityCombo", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[5]/text/combobox/text", 30000, null, "d35acae3-f1dd-40bd-9a69-7bd64cf68033");
             }
 
             /// <summary>
@@ -12553,6 +12609,54 @@ namespace TestProject
                 get
                 {
                     return _plxexternalloopcard2Info;
+                }
+            }
+
+            /// <summary>
+            /// The GridSensitivityCombo1 item.
+            /// </summary>
+            [RepositoryItem("0764643e-2bb6-41d0-9705-30b12aaace93")]
+            public virtual Ranorex.Text GridSensitivityCombo1
+            {
+                get
+                {
+                    return _gridsensitivitycombo1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GridSensitivityCombo1 item info.
+            /// </summary>
+            [RepositoryItemInfo("0764643e-2bb6-41d0-9705-30b12aaace93")]
+            public virtual RepoItemInfo GridSensitivityCombo1Info
+            {
+                get
+                {
+                    return _gridsensitivitycombo1Info;
+                }
+            }
+
+            /// <summary>
+            /// The GridSensitivityCombo item.
+            /// </summary>
+            [RepositoryItem("d35acae3-f1dd-40bd-9a69-7bd64cf68033")]
+            public virtual Ranorex.Text GridSensitivityCombo
+            {
+                get
+                {
+                    return _gridsensitivitycomboInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GridSensitivityCombo item info.
+            /// </summary>
+            [RepositoryItemInfo("d35acae3-f1dd-40bd-9a69-7bd64cf68033")]
+            public virtual RepoItemInfo GridSensitivityComboInfo
+            {
+                get
+                {
+                    return _gridsensitivitycomboInfo;
                 }
             }
         }

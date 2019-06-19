@@ -3559,6 +3559,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			capname="text"
 			id="93ca5dfd-0bc3-42d0-8130-9986aca2076b"
 			name="LastPointGridLabel"
+			refimgid="17163ab5-a7a8-49e2-829c-20ea927f510a"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[26]//text[@automationid='PART_Editor']
 			</item>
@@ -6870,6 +6871,26 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@title='' and @processname='ProfileConsys']//list[@automationid='PART_HeaderButtons']/button[@automationid='PART_CloseButton']
 			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="3e7308bc-33f2-406f-b2cd-5c71d6563849"
+			name="txt_ColumnChooserSearch"
+			refimgid="639cb784-f68d-4073-85fc-ccfabbf17ad4"
+			refpath="/form[@title='' and @processname='ProfileConsys']/indicator[@automationid='PART_LoadingPanel']/tree/text[@automationid='PART_SearchControl']/combobox[@automationid='SearchComboBox']/text[@automationid='PART_Editor']"
+			searchtimeout="30000ms">
+				/form[@title='' and @processname='ProfileConsys']/indicator[@automationid='PART_LoadingPanel']//combobox[@automationid='SearchComboBox']/text[@automationid='PART_Editor']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="1cc3d693-98ff-4a3d-9b77-3f1cdd9f4f11"
+			name="ColumnChooserSearchCheckbox"
+			refimgid="f93642a6-c384-4855-a526-a47e58dd5bde"
+			refpath="/form[@title='' and @processname='ProfileConsys']/indicator[@automationid='PART_LoadingPanel']/tree/container[@automationid='rowPresenterGrid']/container[@caption='']/row/cell[1]/button[@automationid='PART_Editor']"
+			searchtimeout="30000ms">
+				/form[@title='' and @processname='ProfileConsys']/indicator[@automationid='PART_LoadingPanel']/tree/container[@automationid='rowPresenterGrid']//button[@automationid='PART_Editor']
+			</item>
 			<basepath>
 				/form[@title='' and @processname='ProfileConsys']
 			</basepath>
@@ -7169,6 +7190,26 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			refpath="/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/text[@caption='PLX/External Loop Card 2']"
 			searchtimeout="30000ms">
 				/form/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX/External Loop Card 2']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="0764643e-2bb6-41d0-9705-30b12aaace93"
+			name="GridSensitivityCombo1"
+			refimgid="c2940d52-71a4-4630-b89b-1bae40b5f6ab"
+			refpath="/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row/cell[5]/text"
+			searchtimeout="30000ms">
+				/form/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[5]/text
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="d35acae3-f1dd-40bd-9a69-7bd64cf68033"
+			name="GridSensitivityCombo"
+			refimgid="23fb0c6f-51cd-4368-8e47-f277a02a4bd5"
+			refpath="/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row/cell[5]/text/combobox/text"
+			searchtimeout="30000ms">
+				/form/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[5]/text/combobox/text
 			</item>
 			<basepath>
 				/form
