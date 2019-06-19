@@ -7211,6 +7211,45 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[5]/text/combobox/text
 			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="bdbf09ba-8721-4f0c-90ec-d524f823cd67"
+			name="txt_SiteLable"
+			refimgid="36194093-32a2-4363-a511-b9b9450f250e"
+			searchtimeout="30000ms">
+				/form/progressbar/picture[7]/tree/?/?/text
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="7ebdcfee-f231-4339-a5eb-a1b78626aa9b"
+			name="PanelsGallery"
+			refimgid="31cb2b18-2d6e-4e9f-a4d4-6cec465a209e"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[3]/container[@automationid='PART_Caption']/text[@caption='Panels']"
+			searchtimeout="30000ms">
+				/form/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[3]/container[@automationid='PART_Caption']/text[@caption='Panels']
+			</item>
+			<item
+			addcaps="list,wpfelement,wpfgroupelement"
+			capname="list"
+			id="fa18ffc9-0766-461e-bb9b-a613464ab5f1"
+			name="OtherNodesGallery"
+			refimgid="48929f11-79cb-4f5c-b520-f28d7ab98a01"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']"
+			searchtimeout="30000ms">
+				/form/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="69be2d4d-f8fd-4e45-b45a-fcd7ad728f0d"
+			name="tab_SiteAccessories"
+			refimgid="5616038c-bad0-4b5e-8ed5-271fbc21bd44"
+			refpath="/form[@automationid='me']/progressbar/list[2]/container[@caption='']/container[@automationid='PART_HeadersPanelPresenter']/picture[1]/text[@automationid='PART_Text']"
+			searchtimeout="30000ms">
+				/form/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']
+			</item>
 			<basepath>
 				/form
 			</basepath>

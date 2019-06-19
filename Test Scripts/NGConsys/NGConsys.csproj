@@ -1278,6 +1278,18 @@
       <UserCode>true</UserCode>
       <id>f01d36fc-697c-40da-8204-bceaad860ae0</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Create_New_Project.cs">
+      <BoundTo>3d8ea352-a5a5-4e46-a00d-b463442e78d8</BoundTo>
+      <DependentUpon>Verify_Create_New_Project.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e93d1b97-2898-4f6b-bf7f-65d5f4b5363c</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Create_New_Project.UserCode.cs">
+      <BoundTo>3d8ea352-a5a5-4e46-a00d-b463442e78d8</BoundTo>
+      <DependentUpon>Verify_Create_New_Project.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ccbab19a-6c1e-44c9-9181-48d6cc8e5621</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_CurrentDC_Units_Calculation.cs">
       <BoundTo>1a41f936-d6db-47a3-9442-6740cab21da7</BoundTo>
       <DependentUpon>Verify_CurrentDC_Units_Calculation.rxrec</DependentUpon>
@@ -3599,6 +3611,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>d755f850-9800-42d0-8a34-7dc69283f00b</id>
       <recordtableid>d3423d07-20a8-4a25-92c4-70d42448937c</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Create_New_Project.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>3d8ea352-a5a5-4e46-a00d-b463442e78d8</id>
+      <recordtableid>c65c37e7-54e2-4fe9-a1ab-af6120b0cb7b</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_CurrentDC_Units_Calculation.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

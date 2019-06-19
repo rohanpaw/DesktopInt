@@ -12427,6 +12427,10 @@ namespace TestProject
             RepoItemInfo _plxexternalloopcard2Info;
             RepoItemInfo _gridsensitivitycombo1Info;
             RepoItemInfo _gridsensitivitycomboInfo;
+            RepoItemInfo _txt_sitelableInfo;
+            RepoItemInfo _panelsgalleryInfo;
+            RepoItemInfo _othernodesgalleryInfo;
+            RepoItemInfo _tab_siteaccessoriesInfo;
 
             /// <summary>
             /// Creates a new HwndWrapperProfileConsysExe0c643c73  folder.
@@ -12442,6 +12446,10 @@ namespace TestProject
                 _plxexternalloopcard2Info = new RepoItemInfo(this, "PLXExternalLoopCard2", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX/External Loop Card 2']", 30000, null, "332c1b94-5e6f-4ffa-ae17-b93482e73806");
                 _gridsensitivitycombo1Info = new RepoItemInfo(this, "GridSensitivityCombo1", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[5]/text", 30000, null, "0764643e-2bb6-41d0-9705-30b12aaace93");
                 _gridsensitivitycomboInfo = new RepoItemInfo(this, "GridSensitivityCombo", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[5]/text/combobox/text", 30000, null, "d35acae3-f1dd-40bd-9a69-7bd64cf68033");
+                _txt_sitelableInfo = new RepoItemInfo(this, "txt_SiteLable", "progressbar/picture[7]/tree/?/?/text", 30000, null, "bdbf09ba-8721-4f0c-90ec-d524f823cd67");
+                _panelsgalleryInfo = new RepoItemInfo(this, "PanelsGallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[3]/container[@automationid='PART_Caption']/text[@caption='Panels']", 30000, null, "7ebdcfee-f231-4339-a5eb-a1b78626aa9b");
+                _othernodesgalleryInfo = new RepoItemInfo(this, "OtherNodesGallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']", 30000, null, "fa18ffc9-0766-461e-bb9b-a613464ab5f1");
+                _tab_siteaccessoriesInfo = new RepoItemInfo(this, "tab_SiteAccessories", "progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']", 30000, null, "69be2d4d-f8fd-4e45-b45a-fcd7ad728f0d");
             }
 
             /// <summary>
@@ -12657,6 +12665,102 @@ namespace TestProject
                 get
                 {
                     return _gridsensitivitycomboInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_SiteLable item.
+            /// </summary>
+            [RepositoryItem("bdbf09ba-8721-4f0c-90ec-d524f823cd67")]
+            public virtual Ranorex.Text txt_SiteLable
+            {
+                get
+                {
+                    return _txt_sitelableInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_SiteLable item info.
+            /// </summary>
+            [RepositoryItemInfo("bdbf09ba-8721-4f0c-90ec-d524f823cd67")]
+            public virtual RepoItemInfo txt_SiteLableInfo
+            {
+                get
+                {
+                    return _txt_sitelableInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PanelsGallery item.
+            /// </summary>
+            [RepositoryItem("7ebdcfee-f231-4339-a5eb-a1b78626aa9b")]
+            public virtual Ranorex.Text PanelsGallery
+            {
+                get
+                {
+                    return _panelsgalleryInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PanelsGallery item info.
+            /// </summary>
+            [RepositoryItemInfo("7ebdcfee-f231-4339-a5eb-a1b78626aa9b")]
+            public virtual RepoItemInfo PanelsGalleryInfo
+            {
+                get
+                {
+                    return _panelsgalleryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OtherNodesGallery item.
+            /// </summary>
+            [RepositoryItem("fa18ffc9-0766-461e-bb9b-a613464ab5f1")]
+            public virtual Ranorex.List OtherNodesGallery
+            {
+                get
+                {
+                    return _othernodesgalleryInfo.CreateAdapter<Ranorex.List>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OtherNodesGallery item info.
+            /// </summary>
+            [RepositoryItemInfo("fa18ffc9-0766-461e-bb9b-a613464ab5f1")]
+            public virtual RepoItemInfo OtherNodesGalleryInfo
+            {
+                get
+                {
+                    return _othernodesgalleryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tab_SiteAccessories item.
+            /// </summary>
+            [RepositoryItem("69be2d4d-f8fd-4e45-b45a-fcd7ad728f0d")]
+            public virtual Ranorex.Text tab_SiteAccessories
+            {
+                get
+                {
+                    return _tab_siteaccessoriesInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tab_SiteAccessories item info.
+            /// </summary>
+            [RepositoryItemInfo("69be2d4d-f8fd-4e45-b45a-fcd7ad728f0d")]
+            public virtual RepoItemInfo tab_SiteAccessoriesInfo
+            {
+                get
+                {
+                    return _tab_siteaccessoriesInfo;
                 }
             }
         }

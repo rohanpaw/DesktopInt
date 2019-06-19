@@ -1584,6 +1584,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="19a58070-0e61-4f65-a875-ff368a85e35a"
+			name="Verify_Create_New_Project"
+			ref="c65c37e7-54e2-4fe9-a1ab-af6120b0cb7b"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="19c73c68-5a68-4cd9-9319-da0db1bde6cb"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -4870,6 +4876,20 @@ loops.</SPAN>]]>
 					<var
 					dataname="sListIndex"
 					datasourceid="d8bf6f00-ec7e-4bdf-b805-92f516db03ed"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="550940c4-51f0-484c-8bd1-6003cd5c907f"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="a9e4bbe6-698e-40af-971d-6929b60a9823"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -9476,6 +9496,16 @@ MxDesigner]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="a9e4bbe6-698e-40af-971d-6929b60a9823"
+			name="Verify_Create_New_Project">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="aa07b483-d7dd-4cc5-8291-e087ab79ec31"
 			name="Close_Application"
@@ -9627,6 +9657,26 @@ MxDesigner]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ae8e1166-d7a9-4f63-8075-0b82dee64c36"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="aeea16f2-0df6-40e9-841a-8206a8860ffd"
@@ -17952,6 +18002,22 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="a9e4bbe6-698e-40af-971d-6929b60a9823"
+					name="Verify_Create_New_Project">
+						<testmodule
+						id="ae8e1166-d7a9-4f63-8075-0b82dee64c36"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="550940c4-51f0-484c-8bd1-6003cd5c907f"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="19a58070-0e61-4f65-a875-ff368a85e35a"
+						name="Verify_Create_New_Project">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -18013,6 +18079,9 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="a9e4bbe6-698e-40af-971d-6929b60a9823">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
