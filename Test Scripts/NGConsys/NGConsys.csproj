@@ -282,6 +282,18 @@
       <UserCode>true</UserCode>
       <id>49dd13dd-eed5-4e14-b155-d2afb3caad8b</id>
     </Compile>
+    <Compile Include="Recording Modules\CreateProject_CzecRepublic.cs">
+      <BoundTo>3f8f2635-f8e1-494f-bdd1-b8ed261fc8fc</BoundTo>
+      <DependentUpon>CreateProject_CzecRepublic.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d663e112-99bf-48e9-904d-3bf7c792fe7d</id>
+    </Compile>
+    <Compile Include="Recording Modules\CreateProject_CzecRepublic.UserCode.cs">
+      <BoundTo>3f8f2635-f8e1-494f-bdd1-b8ed261fc8fc</BoundTo>
+      <DependentUpon>CreateProject_CzecRepublic.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>36481df9-9477-4601-8d67-11a30088de29</id>
+    </Compile>
     <Compile Include="Recording Modules\CreateProject_German.cs">
       <BoundTo>71b9de17-f957-4cac-9c8c-d6a4902a2e60</BoundTo>
       <DependentUpon>CreateProject_German.rxrec</DependentUpon>
@@ -2730,6 +2742,18 @@
       <UserCode>true</UserCode>
       <id>773a57a3-6d13-486f-8d85-5cb553afbfc9</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Slot_Cards_In_Slot_Cards_Gallery.cs">
+      <BoundTo>2676f9ee-e77d-473b-860c-62feea329cf0</BoundTo>
+      <DependentUpon>Verify_Slot_Cards_In_Slot_Cards_Gallery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>74d87f57-ed61-4e30-9275-ac7a1deaaba0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Slot_Cards_In_Slot_Cards_Gallery.UserCode.cs">
+      <BoundTo>2676f9ee-e77d-473b-860c-62feea329cf0</BoundTo>
+      <DependentUpon>Verify_Slot_Cards_In_Slot_Cards_Gallery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>73f65616-8d2e-4795-b882-6d59663ef746</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_The_Behaviour_When_ASC_For_LPS800__75mA.cs">
       <BoundTo>bb1a0e58-f116-443f-9b12-48692efd841b</BoundTo>
       <DependentUpon>Verify_The_Behaviour_When_ASC_For_LPS800__75mA.rxrec</DependentUpon>
@@ -3160,6 +3184,11 @@
       <id>50fb6901-9380-46a7-9d98-973968a89bcd</id>
       <recordtableid>04f2c1bc-a14b-44db-b656-60d601f7de36</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\CreateProject_CzecRepublic.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>3f8f2635-f8e1-494f-bdd1-b8ed261fc8fc</id>
+      <recordtableid>997a25f3-ef51-44fa-ab39-638170c1f61c</recordtableid>
     </None>
     <None Include="Recording Modules\CreateProject_German.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4180,6 +4209,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>c3de33ac-ad37-4a9d-9c22-e10c699a4862</id>
       <recordtableid>da57bb22-d09f-4579-bef0-4365a462e6e4</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Slot_Cards_In_Slot_Cards_Gallery.rxrec">
+      <id>2676f9ee-e77d-473b-860c-62feea329cf0</id>
+      <recordtableid>5e03fc6d-462d-44a1-b7f7-949806efd4c2</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_The_Behaviour_When_ASC_For_LPS800__75mA.rxrec">
       <id>bb1a0e58-f116-443f-9b12-48692efd841b</id>

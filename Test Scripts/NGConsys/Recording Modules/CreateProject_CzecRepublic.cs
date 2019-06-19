@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CreateProject_German recording.
+    ///The CreateProject_CzecRepublic recording.
     /// </summary>
-    [TestModule("19660af1-4e58-4290-badb-20687f7b3401", ModuleType.Recording, 1)]
-    public partial class CreateProject_German : ITestModule
+    [TestModule("997a25f3-ef51-44fa-ab39-638170c1f61c", ModuleType.Recording, 1)]
+    public partial class CreateProject_CzecRepublic : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static CreateProject_German instance = new CreateProject_German();
+        static CreateProject_CzecRepublic instance = new CreateProject_CzecRepublic();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CreateProject_German()
+        public CreateProject_CzecRepublic()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CreateProject_German Instance
+        public static CreateProject_CzecRepublic Instance
         {
             get { return instance; }
         }

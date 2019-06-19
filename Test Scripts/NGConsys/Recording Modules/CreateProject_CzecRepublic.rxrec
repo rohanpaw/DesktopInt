@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="19660af1-4e58-4290-badb-20687f7b3401"
+id="997a25f3-ef51-44fa-ab39-638170c1f61c"
 mode="Global"
 rxversion="8.3">
 	<name>
-		CreateProject_German
+		CreateProject_CzecRepublic
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="CreateProject_German"
+	classname="CreateProject_CzecRepublic"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -533,8 +533,7 @@ wwJPr14706iilGKjsOUnLcKKKKokKKKKACpZLaWMEsF4AJwwOAe/BpsP+vj/AN4fzrVv/wDkJj/r
 			</info>
 		</mouseitem>
 		<userrecorditem
-		autogenmethod="True"
-		classname="Create_Project"
+		classname="CreateProject_CzecRepublic"
 		enabled="True"
 		isexternaltestmethod="False"
 		methodname="Select_Market"
@@ -546,10 +545,10 @@ wwJPr14706iilGKjsOUnLcKKKKokKKKKACpZLaWMEsF4AJwwOAe/BpsP+vj/AN4fzrVv/wDkJj/r
 			<bindings>
 			</bindings>
 			<arguments
-			id="af45987c-2571-4a00-b67e-19147d602021">
+			id="24484a04-4e0b-4697-bea4-97aed52e276d">
 				<argument
 				argname="sMarket"
-				id="2041712f-4cdf-4451-8e40-8551e7b72529">
+				id="aeb77615-48e3-445a-8b02-aeba091db6bb">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -2227,7 +2226,7 @@ OB2xVmiikAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		CreateProject_German.UserCode.cs
+		CreateProject_CzecRepublic.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

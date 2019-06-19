@@ -6057,6 +6057,49 @@ namespace TestProject.Libraries
 			
 		}
 		
-		
+		/********************************************************************
+		 * Function Name: VerifyNodeGalleryforPFI
+		 * Function Details: To verify node gallery for pro panels
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam
+		 * Last Update : 19/06/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyNodeGalleryForPFI(string sDeviceName,string sType,string state)
+		{
+			if(state.Equals("Enabled"))
+			{
+				sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,"PFI");
+				ModelNumber=sDeviceName;
+				repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+				
+				
+				if (repo.ContextMenu.txt_SelectDevice.Enabled)
+				{
+					Report.Log(ReportLevel.Success, "Gallery Item: " + sDeviceName+ " Enabled in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Gallery Item: " + sDeviceName+ " Disabled in gallery");
+				}
+			}
+			else
+			{
+				sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,"PFI");
+				ModelNumber=sDeviceName;
+				repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+				
+				if (repo.ContextMenu.txt_SelectDevice.Enabled)
+				{
+					Report.Log(ReportLevel.Failure, "Gallery Item: " + sDeviceName+ " enabled in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Gallery Item: " + sDeviceName+ " disabled in gallery");
+				}
+			}
+			
+		}
 	}
 }
