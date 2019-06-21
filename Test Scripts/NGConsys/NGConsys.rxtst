@@ -2877,6 +2877,9 @@ rxversion="8.3">
 			<testcase
 			id="31e248c2-f7ec-499f-87fb-9f0b85c8092f"
 			name="Observe_Devices_Order_Displayed_In_Context_Menu">
+				<description>
+					<![CDATA[<p>NGC-217/TC-0077</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -5837,6 +5840,9 @@ loops.</SPAN>]]>
 			<testcase
 			id="66147d7f-cf5e-45f9-b4d7-b0d7ba953821"
 			name="Verify_Sensitivity_Column_In_Points_Grid">
+				<description>
+					<![CDATA[<p>NGC-366/TC-0078</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -8908,6 +8914,9 @@ MxDesigner]]>
 			<testcase
 			id="9b79d666-e220-4b5b-94b5-d9e5ed7ca047"
 			name="Observe_Units_Gallery_On_Navigation_Tree_Node_Selection">
+				<description>
+					<![CDATA[<p>NGC-180/TC-0087</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -9543,6 +9552,9 @@ MxDesigner]]>
 			<testcase
 			id="a9e4bbe6-698e-40af-971d-6929b60a9823"
 			name="Verify_Create_New_Project">
+				<description>
+					<![CDATA[NGC-358/TC-0001]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -10756,6 +10768,9 @@ persisted in panel properties&nbsp;]]>
 			<testcase
 			id="c2ad215c-10b4-4b99-8fa6-63da244837a0"
 			name="Verify_Slot_Cards_In_Slot_Cards_Gallery">
+				<description>
+					<![CDATA[<p>NGC-497/TC-0120</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -13518,6 +13533,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="fa4ea110-d2fd-4c23-9a82-920a19afbf62"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="fa553440-071c-4ccb-b43c-655beb3203b5"
@@ -18082,6 +18103,10 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="f0b3e787-87b1-4793-9034-fde18e086011"
 						name="Observe_Units_Gallery_On_Navigation_Tree_Node_Selection">
+						</testmodule>
+						<testmodule
+						id="fa4ea110-d2fd-4c23-9a82-920a19afbf62"
+						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<teardown
