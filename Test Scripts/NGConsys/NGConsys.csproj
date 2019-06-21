@@ -354,6 +354,18 @@
       <UserCode>true</UserCode>
       <id>48baff08-9438-44d0-8dad-3bc44cba26b8</id>
     </Compile>
+    <Compile Include="Recording Modules\Observe_Units_Gallery_On_Navigation_Tree_Node_Selection.cs">
+      <BoundTo>b89afd1f-57cf-4fc5-9d9a-a3d4681b6a7c</BoundTo>
+      <DependentUpon>Observe_Units_Gallery_On_Navigation_Tree_Node_Selection.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>90abd37c-0be6-4274-b88d-037f034c4858</id>
+    </Compile>
+    <Compile Include="Recording Modules\Observe_Units_Gallery_On_Navigation_Tree_Node_Selection.UserCode.cs">
+      <BoundTo>b89afd1f-57cf-4fc5-9d9a-a3d4681b6a7c</BoundTo>
+      <DependentUpon>Observe_Units_Gallery_On_Navigation_Tree_Node_Selection.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d6b30504-290f-40db-8fb6-c5a8295aab67</id>
+    </Compile>
     <Compile Include="Recording Modules\Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.cs">
       <BoundTo>a9f453dd-9eb6-4866-a12f-6744f3fa87ec</BoundTo>
       <DependentUpon>Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec</DependentUpon>
@@ -3226,6 +3238,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>7b9f9318-b244-4be9-9ecb-10ef5092f632</id>
       <recordtableid>660de8e4-d434-4c63-85b7-ce3df90b906c</recordtableid>
+    </None>
+    <None Include="Recording Modules\Observe_Units_Gallery_On_Navigation_Tree_Node_Selection.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>b89afd1f-57cf-4fc5-9d9a-a3d4681b6a7c</id>
+      <recordtableid>ffcac337-4901-4f88-970a-dc4cc97128bb</recordtableid>
     </None>
     <None Include="Recording Modules\Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

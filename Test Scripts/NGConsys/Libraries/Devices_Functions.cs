@@ -6099,7 +6099,7 @@ namespace TestProject.Libraries
 					Report.Log(ReportLevel.Success, "Gallery Item: " + sDeviceName+ " disabled in gallery");
 				}
 			}
-			
+			SelectInventoryGridRow("2");
 		}
 	}
 }

@@ -5996,6 +5996,26 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="68b675ef-132c-4587-b56f-e3c0ae65bc0f"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="68d36fdf-db0b-4efb-ae82-64d45d58920d"
 			name="Verify_Non_IS_Devices_Drag_And_Drop_On_Non_Addressable_Devices"
 			ref="3bb68516-b8fa-4a40-aff0-c4f09f5cd404"
@@ -8684,6 +8704,20 @@ MxDesigner]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="97a5500c-37d4-498a-8e76-6b6e30ce4840"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="9b79d666-e220-4b5b-94b5-d9e5ed7ca047"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="980ef039-ce0b-4ee0-8f38-071ff586a883"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -8871,6 +8905,16 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="9b79d666-e220-4b5b-94b5-d9e5ed7ca047"
+			name="Observe_Units_Gallery_On_Navigation_Tree_Node_Selection">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="9b90e873-f253-46ce-b27c-a6fce8418e7c"
 			name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste"
@@ -13034,6 +13078,12 @@ persisted in panel properties&nbsp;]]>
 			id="f09ad460-574c-4dcb-af79-173c0b8ff5ec"
 			name="Verify_Integralinternal_LED_Indicator_Property_For_Devices"
 			ref="3e3e221f-b844-44be-b90b-4627e588f4af"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f0b3e787-87b1-4793-9034-fde18e086011"
+			name="Observe_Units_Gallery_On_Navigation_Tree_Node_Selection"
+			ref="ffcac337-4901-4f88-970a-dc4cc97128bb"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -18018,6 +18068,22 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Create_New_Project">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="9b79d666-e220-4b5b-94b5-d9e5ed7ca047"
+					name="Observe_Units_Gallery_On_Navigation_Tree_Node_Selection">
+						<testmodule
+						id="68b675ef-132c-4587-b56f-e3c0ae65bc0f"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="97a5500c-37d4-498a-8e76-6b6e30ce4840"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="f0b3e787-87b1-4793-9034-fde18e086011"
+						name="Observe_Units_Gallery_On_Navigation_Tree_Node_Selection">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -18081,7 +18147,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="a9e4bbe6-698e-40af-971d-6929b60a9823">
+			id="9b79d666-e220-4b5b-94b5-d9e5ed7ca047">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
