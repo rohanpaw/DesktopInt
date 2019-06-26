@@ -990,6 +990,30 @@
       <UserCode>true</UserCode>
       <id>f3881219-5946-4c76-b7f4-e87ea30208fe</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D.cs">
+      <BoundTo>a3f9abbc-1776-45b2-9593-92a85149ffa0</BoundTo>
+      <DependentUpon>Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c953ff30-1927-4ea6-964f-b8f514f76272</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D.UserCode.cs">
+      <BoundTo>a3f9abbc-1776-45b2-9593-92a85149ffa0</BoundTo>
+      <DependentUpon>Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>32c604a5-12a8-44cb-a0ba-e1baf9c5fb5d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB.cs">
+      <BoundTo>fa48cf7c-ddd7-4244-8029-0d36929de10e</BoundTo>
+      <DependentUpon>Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9512d155-ac9c-4458-bfe6-c4fb808a5838</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB.UserCode.cs">
+      <BoundTo>fa48cf7c-ddd7-4244-8029-0d36929de10e</BoundTo>
+      <DependentUpon>Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f5948f81-56cc-441e-89f4-d924c81d5619</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Alarm_and_Battery_Load_After_Adding_1_2_IOBs.cs">
       <BoundTo>92680737-bdbe-4d2d-97a5-53d0c73a5ceb</BoundTo>
       <DependentUpon>Verify_Alarm_and_Battery_Load_After_Adding_1_2_IOBs.rxrec</DependentUpon>
@@ -3240,9 +3264,9 @@
       <recordtableid>660de8e4-d434-4c63-85b7-ce3df90b906c</recordtableid>
     </None>
     <None Include="Recording Modules\Observe_Units_Gallery_On_Navigation_Tree_Node_Selection.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>b89afd1f-57cf-4fc5-9d9a-a3d4681b6a7c</id>
       <recordtableid>ffcac337-4901-4f88-970a-dc4cc97128bb</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -3503,6 +3527,16 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>09ed30f3-c207-4fcf-b991-b94e7645c075</id>
       <recordtableid>496de603-0d69-4fc6-b09f-6903beac02eb</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>a3f9abbc-1776-45b2-9593-92a85149ffa0</id>
+      <recordtableid>fe925e8f-2f7c-4103-9ef2-879d58f92b33</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB.rxrec">
+      <id>fa48cf7c-ddd7-4244-8029-0d36929de10e</id>
+      <recordtableid>f6bffd3d-cac0-433b-82a2-2c50388c30ed</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Alarm_and_Battery_Load_After_Adding_1_2_IOBs.rxrec">
       <id>92680737-bdbe-4d2d-97a5-53d0c73a5ceb</id>
@@ -4020,9 +4054,9 @@
       <recordtableid>8029acf8-7514-4ca0-8a40-5433fd251ee9</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Other_Slot_Cards_Grid.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f90421d1-dd71-4d6d-9743-ac74e8110e8b</id>
       <recordtableid>0dff0108-fa36-4b28-a13c-b77f3cff3ec4</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Panel_LED.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4235,9 +4269,9 @@
       <recordtableid>24aaa9ba-5aac-4310-b303-d4087b7c09a9</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Sensitivity_Column_In_Points_Grid.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>20938c4e-5bfd-41eb-ab63-f481e3dac042</id>
       <recordtableid>f63be1c8-2f64-41a4-a329-467aa23a3924</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4417,7 +4451,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{C98B2ABE-133B-42C5-885C-03D33BD78A7B}</Project>
+      <Project>{669BFBFF-553D-4843-82C5-5DD6353050EA}</Project>
       <Name>Ranorex Automation Helpers</Name>
     </ProjectReference>
   </ItemGroup>

@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "");
             Delay.Milliseconds(0);
             
         }

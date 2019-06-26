@@ -141,7 +141,7 @@ namespace Ranorex.AutomationHelpers.Modules
 
             Report.Zip(TestReport.ReportEnvironment, zippedReportFileDirectory, name);
 
-           // Ranorex.PDF.Creator.CreatePDF(input, PDFReportFilePath, xml, details);
+            Ranorex.PDF.Creator.CreatePDF(input, PDFReportFilePath, xml, details);
 
             return PDFReportFilePath;
         }

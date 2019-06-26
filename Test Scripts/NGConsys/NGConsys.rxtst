@@ -526,6 +526,26 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="0941cea7-cfea-4f26-a405-23907201d7d3"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="09488d83-0c1d-4d39-9f87-c2954d90711a"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -608,6 +628,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="09b611f4-5ec3-4f75-b153-4e31b784f82a"
+			name="Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D"
+			ref="fe925e8f-2f7c-4103-9ef2-879d58f92b33"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="09dee1e5-45d0-4773-b3d7-0f6ea4ed5441"
 			name="Close_Application"
@@ -2624,6 +2650,19 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="2bb77d07-695c-4f1f-97c9-ad3d54e10be8"
+			name="Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB">
+				<description>
+					<![CDATA[<p>NGC-360/TC-27/TC-28/Defect-1559/Defect-1545 . </p><p>Note : Defect 1545 and 1565 was not completed automated so need to test it manually</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="2bbaefea-1871-4e47-adc7-20bc4c889230"
 			name="Application_Open"
@@ -3226,6 +3265,20 @@ rxversion="8.3">
 			name="Verify_DC_Unit_For_Multiple_Built_In_Non_Built_In_Isolator_Devices_Integral_Non_Integral_LED_of_PFI"
 			ref="7a0400bc-3467-4088-9be0-bbb90fd71110"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3829955f-2bd1-4436-96b0-6d0329a98510"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="70acad87-81db-41b2-995c-68a497b0d309"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="39144249-d324-4202-a49f-583fb59373c0"
@@ -4825,6 +4878,12 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="545934f5-7fc3-4a9c-8930-3259131453e3"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="5474d9e2-13ec-4a4e-9e7a-99f38f3cef18"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -5358,6 +5417,20 @@ loops.</SPAN>]]>
 					<var
 					dataname="sListIndex"
 					datasourceid="0d0f09ca-f27d-495e-a89f-8d23fd904b2a"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5cb50e1c-8844-4c4d-ad13-3c781422826c"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="2bb77d07-695c-4f1f-97c9-ad3d54e10be8"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -6430,6 +6503,19 @@ loops.</SPAN>]]>
 			ref="47e0c49e-5bf3-42fa-a403-9c3f9d9642ab"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="70acad87-81db-41b2-995c-68a497b0d309"
+			name="Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D">
+				<description>
+					<![CDATA[<p>NGC-360/TC-29/TC-30</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="70c34b7a-cb48-4ecb-a838-9233030de88f"
 			name="Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection"
@@ -8750,22 +8836,10 @@ MxDesigner]]>
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="DeleteRanorexReport"
+					dataname="PdfName"
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
-					variablename="DeleteRanorexReport">
-					</var>
-					<var
-					dataname="Details"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
-					variablename="Details">
-					</var>
-					<var
-					dataname="Xml"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
-					variablename="Xml">
+					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
+					variablename="PdfName">
 					</var>
 					<var
 					dataname="PdfDirectoryPath"
@@ -8774,10 +8848,22 @@ MxDesigner]]>
 					variablename="PdfDirectoryPath">
 					</var>
 					<var
-					dataname="PdfName"
+					dataname="Xml"
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
-					variablename="PdfName">
+					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
+					variablename="Xml">
+					</var>
+					<var
+					dataname="Details"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
+					variablename="Details">
+					</var>
+					<var
+					dataname="DeleteRanorexReport"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
+					variablename="DeleteRanorexReport">
 					</var>
 				</databinding>
 			</testmodule>
@@ -9222,6 +9308,12 @@ MxDesigner]]>
 			ref="54b73774-45c1-4423-b4ea-e013fc09555d"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="a08bae7d-0003-47e3-a25f-6f01355bd12a"
+			name="Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB"
+			ref="f6bffd3d-cac0-433b-82a2-2c50388c30ed"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="a0f00c7a-352a-4ea6-8590-7d09ca6a596f"
 			name="Verify_Paste_Options_Displayed_For_Loop">
@@ -9443,6 +9535,26 @@ MxDesigner]]>
 			name="Verify_Reopen_Project_To_Verify_Device_Order"
 			ref="1aa3c0f7-435f-44c7-9c86-52b8440ff9c4"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a642d5b0-87ea-4340-a1fa-98c766bf12e3"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="a6639628-4b26-4cc3-add5-f20a539dded1"
@@ -10856,6 +10968,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="c4687f66-fc59-4d99-b182-6dddb090ddfc"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="c52e6dae-b6c6-4683-90ae-ee313985f895"
 			name="Close_Application"
@@ -18109,6 +18227,46 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="2bb77d07-695c-4f1f-97c9-ad3d54e10be8"
+					name="Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB">
+						<testmodule
+						id="0941cea7-cfea-4f26-a405-23907201d7d3"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="5cb50e1c-8844-4c4d-ad13-3c781422826c"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="a08bae7d-0003-47e3-a25f-6f01355bd12a"
+						name="Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB">
+						</testmodule>
+						<testmodule
+						id="c4687f66-fc59-4d99-b182-6dddb090ddfc"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="70acad87-81db-41b2-995c-68a497b0d309"
+					name="Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D">
+						<testmodule
+						id="a642d5b0-87ea-4340-a1fa-98c766bf12e3"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="3829955f-2bd1-4436-96b0-6d0329a98510"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="09b611f4-5ec3-4f75-b153-4e31b784f82a"
+						name="Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D">
+						</testmodule>
+						<testmodule
+						id="545934f5-7fc3-4a9c-8930-3259131453e3"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -18171,17 +18329,14 @@ persisted in panel properties&nbsp;]]>
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
-			<testcontainer
-			id="9b79d666-e220-4b5b-94b5-d9e5ed7ca047">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll
