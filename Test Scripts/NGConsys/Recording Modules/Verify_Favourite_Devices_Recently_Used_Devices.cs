@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D recording.
+    ///The Verify_Favourite_Devices_Recently_Used_Devices recording.
     /// </summary>
-    [TestModule("fe925e8f-2f7c-4103-9ef2-879d58f92b33", ModuleType.Recording, 1)]
-    public partial class Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D : ITestModule
+    [TestModule("4f5e0545-2c87-496e-9524-2a653e3cda5d", ModuleType.Recording, 1)]
+    public partial class Verify_Favourite_Devices_Recently_Used_Devices : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D instance = new Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D();
+        static Verify_Favourite_Devices_Recently_Used_Devices instance = new Verify_Favourite_Devices_Recently_Used_Devices();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D()
+        public Verify_Favourite_Devices_Recently_Used_Devices()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D Instance
+        public static Verify_Favourite_Devices_Recently_Used_Devices Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,25 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.SlotCards_Functions.VerifyAddUnitDetails("TC_29_30_Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D", "Add Devices");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(1));
+            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(2));
+            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(3));
+            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.verifyNonDroppedGalleryWithImage("Detectors", "801 I", "801 PS");
+            Delay.Milliseconds(0);
+            
+            Report.Screenshot(ReportLevel.Info, "User", "Screenshot captured", null, false, new RecordItemIndex(5));
             
         }
 

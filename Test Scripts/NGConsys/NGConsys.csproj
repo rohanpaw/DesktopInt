@@ -1650,6 +1650,18 @@
       <UserCode>true</UserCode>
       <id>3ecb7609-e369-49ed-b49e-e045a340d5d7</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Favourite_Devices_Recently_Used_Devices.cs">
+      <BoundTo>67da36d8-5796-4378-a199-6bfabc83dad7</BoundTo>
+      <DependentUpon>Verify_Favourite_Devices_Recently_Used_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ccf13b03-79b5-4afc-9b92-4af5ca65dae2</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Favourite_Devices_Recently_Used_Devices.UserCode.cs">
+      <BoundTo>67da36d8-5796-4378-a199-6bfabc83dad7</BoundTo>
+      <DependentUpon>Verify_Favourite_Devices_Recently_Used_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8303205e-c326-49a6-949a-4f866d53b907</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_FBI800_card_details.cs">
       <BoundTo>921a8b7e-0733-46ca-b161-8ad7af3f2d5e</BoundTo>
       <DependentUpon>Verify_FBI800_card_details.rxrec</DependentUpon>
@@ -3802,6 +3814,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f5f3f294-72d6-4b11-b6cc-6f48a7ea3aa2</id>
       <recordtableid>03f1ad7a-7073-445b-b9d7-2352e9793931</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Favourite_Devices_Recently_Used_Devices.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>67da36d8-5796-4378-a199-6bfabc83dad7</id>
+      <recordtableid>4f5e0545-2c87-496e-9524-2a653e3cda5d</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_FBI800_card_details.rxrec">
       <id>921a8b7e-0733-46ca-b161-8ad7af3f2d5e</id>

@@ -3385,6 +3385,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="3ae8327f-5d4f-4e8f-ad06-8b56dea4f810"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="3aea2687-26f0-4bc0-9c11-946200d7697f"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -7635,6 +7641,19 @@ MxDesigner]]>
 				</parameters>
 			</testcase>
 			<testcase
+			id="83ca4e15-2870-4e86-9a79-407a1263b31f"
+			name="Verify_Favourite_Devices_Recently_Used_Devices">
+				<description>
+					<![CDATA[<p>NGC-216/TC-50</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="83e5e305-9ded-4d01-84a4-86f97e98ade9"
 			name="Verify_FBI800_card_details">
 				<description>
@@ -9640,6 +9659,26 @@ MxDesigner]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a8af013d-fa14-45d2-ace1-b8f7843b3cb1"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="a8b87d81-3ab8-40f3-8755-9d23bffe5d16"
@@ -12588,6 +12627,12 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="e4b3daef-6c22-4828-ad38-7a13a5e175e8"
+			name="Verify_Favourite_Devices_Recently_Used_Devices"
+			ref="4f5e0545-2c87-496e-9524-2a653e3cda5d"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="e56c6ca4-deab-4f6b-a953-dd7db48ca8fd"
 			name="Verify_Trip_Current_For_FIM">
@@ -13435,6 +13480,20 @@ persisted in panel properties&nbsp;]]>
 					<var
 					dataname="sListIndex"
 					datasourceid="4d38270d-d85a-452d-90a9-0653eee357f1"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f4d9608d-0884-4f6f-9241-693d938e5e67"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="83ca4e15-2870-4e86-9a79-407a1263b31f"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -18264,6 +18323,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="545934f5-7fc3-4a9c-8930-3259131453e3"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="83ca4e15-2870-4e86-9a79-407a1263b31f"
+					name="Verify_Favourite_Devices_Recently_Used_Devices">
+						<testmodule
+						id="a8af013d-fa14-45d2-ace1-b8f7843b3cb1"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="f4d9608d-0884-4f6f-9241-693d938e5e67"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="e4b3daef-6c22-4828-ad38-7a13a5e175e8"
+						name="Verify_Favourite_Devices_Recently_Used_Devices">
+						</testmodule>
+						<testmodule
+						id="3ae8327f-5d4f-4e8f-ad06-8b56dea4f810"
 						name="Close_Application">
 						</testmodule>
 					</testcase>

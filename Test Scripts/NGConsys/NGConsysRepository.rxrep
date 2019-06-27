@@ -6722,6 +6722,27 @@ kyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWID
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']
 			</item>
+			<item
+			capname="text"
+			id="7048f5c3-e347-42ba-856e-a85ba433b17d"
+			name="txt_NonDroppedGalleryItemTextForItemsWithImage"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/?/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text
+			</item>
+			<item
+			capname="text"
+			id="cec46550-efea-42a9-897d-e291d130a315"
+			name="txt_NonDroppedGalleryItemTextForItems"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text
+			</item>
+			<item
+			capname="button"
+			id="d98f06c9-caec-41f7-9b0c-a3ecca07c43f"
+			name="GalleryPARTDown"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/?/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/button[@automationid='PART_Down']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -7249,6 +7270,15 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			refpath="/form[@automationid='me']/progressbar/list[2]/container[@caption='']/container[@automationid='PART_HeadersPanelPresenter']/picture[1]/text[@automationid='PART_Text']"
 			searchtimeout="30000ms">
 				/form/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="36776dfd-d1e5-43cf-b6c7-6702d23f9f13"
+			name="SomeListItem"
+			refimgid="b93eebe4-9cf5-44f7-9866-e0395f74e832"
+			searchtimeout="30000ms">
+				/form/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@actualcaption=$sDeviceName]
 			</item>
 			<basepath>
 				/form

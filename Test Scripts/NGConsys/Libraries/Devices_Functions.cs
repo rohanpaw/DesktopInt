@@ -6101,5 +6101,63 @@ namespace TestProject.Libraries
 			}
 			SelectInventoryGridRow("2");
 		}
+		
+		/********************************************************************
+         * Function Name: GetDevicesofNonDroppedGallery
+         * Function Details: It will verify favourite items list displayed in non dropped gallery for devices having an image
+         * Parameter/Arguments:GalleryType, Device1,Device2
+         * Output:
+         * Function Owner: Purvi Bhasin
+         * created on :25/6/2019
+         ********************************************************************/
+        [UserCodeMethod]
+        public static void verifyNonDroppedGalleryWithImage(string GalleryType,string Device1,string Device2)
+        {
+            string firstGalleryItemText;
+            sGalleryIndex = Devices_Functions.SelectGalleryType(GalleryType);
+            //string firstGalleryItemText = repo.FormMe.GalleryList.Text;
+            Devices_Functions.AddDevicesfromGallery(Device1,GalleryType);
+            sDeviceName = Device1;
+            firstGalleryItemText = repo.FormMe.txt_NonDroppedGalleryItemTextForItemsWithImage.TextValue;
+            if(firstGalleryItemText.Equals(Device1))
+            {
+                Report.Log(ReportLevel.Success, "Gallery: " + Device1+ " displayed as favourite device");
+            }
+            
+            else
+            {
+                Report.Log(ReportLevel.Failure, "Gallery: " + Device1+ " not displayed as favourite device");
+            }
+            
+            Devices_Functions.AddDevicesfromGallery(Device2,GalleryType);
+            sDeviceName = Device2;
+            firstGalleryItemText = repo.FormMe.txt_NonDroppedGalleryItemTextForItemsWithImage.TextValue;
+            if(firstGalleryItemText.Equals(Device2))
+            {
+                Report.Log(ReportLevel.Success, "Gallery: " + Device2+ " displayed as favourite device");
+            }
+            
+            else
+            {
+                Report.Log(ReportLevel.Failure, "Gallery: " + Device2+ " not displayed as favourite device");
+            }
+            
+            
+            repo.FormMe.GalleryPARTDown.Click();
+            sDeviceName = Device1;        
+            
+           if(repo.HwndWrapperProfileConsysExe0c643c73.SomeListItem.EnsureVisible())
+           {
+           	Report.Log(ReportLevel.Success, "Gallery: " + Device1+ " remains as 2nd favourite device");
+           }
+           
+           else
+            {
+                Report.Log(ReportLevel.Failure, "Gallery: " + Device1+ " not remains as 2nd favourite device");
+            }
+           
+        }
+		
+		
 	}
 }

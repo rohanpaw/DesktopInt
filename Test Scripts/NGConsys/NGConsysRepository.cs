@@ -7562,6 +7562,9 @@ namespace TestProject
             Image_IOB800InfoClass _image_iob800Info;
             RepoItemInfo _txt_backplane1Info;
             RepoItemInfo _backplane1_expanderInfo;
+            RepoItemInfo _txt_nondroppedgalleryitemtextforitemswithimageInfo;
+            RepoItemInfo _txt_nondroppedgalleryitemtextforitemsInfo;
+            RepoItemInfo _gallerypartdownInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7709,6 +7712,9 @@ namespace TestProject
                 _image_iob800Info = new Image_IOB800InfoClass(this);
                 _txt_backplane1Info = new RepoItemInfo(this, "txt_Backplane1", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='Backplane  1/3']", 30000, null, "74a72bb0-b7f0-4a5b-9d8c-eed3dedab87b");
                 _backplane1_expanderInfo = new RepoItemInfo(this, "Backplane1_Expander", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']", 30000, null, "86554d09-4f4d-412c-adbf-56373ab71504");
+                _txt_nondroppedgalleryitemtextforitemswithimageInfo = new RepoItemInfo(this, "txt_NonDroppedGalleryItemTextForItemsWithImage", "?/?/container[@automationid='PART_AutoHideControl']/list/?/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text", 30000, null, "7048f5c3-e347-42ba-856e-a85ba433b17d");
+                _txt_nondroppedgalleryitemtextforitemsInfo = new RepoItemInfo(this, "txt_NonDroppedGalleryItemTextForItems", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text", 30000, null, "cec46550-efea-42a9-897d-e291d130a315");
+                _gallerypartdownInfo = new RepoItemInfo(this, "GalleryPARTDown", "?/?/container[@automationid='PART_AutoHideControl']/list/?/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/button[@automationid='PART_Down']", 30000, null, "d98f06c9-caec-41f7-9b0c-a3ecca07c43f");
             }
 
             /// <summary>
@@ -11139,6 +11145,78 @@ namespace TestProject
             }
 
             /// <summary>
+            /// The txt_NonDroppedGalleryItemTextForItemsWithImage item.
+            /// </summary>
+            [RepositoryItem("7048f5c3-e347-42ba-856e-a85ba433b17d")]
+            public virtual Ranorex.Text txt_NonDroppedGalleryItemTextForItemsWithImage
+            {
+                get
+                {
+                    return _txt_nondroppedgalleryitemtextforitemswithimageInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_NonDroppedGalleryItemTextForItemsWithImage item info.
+            /// </summary>
+            [RepositoryItemInfo("7048f5c3-e347-42ba-856e-a85ba433b17d")]
+            public virtual RepoItemInfo txt_NonDroppedGalleryItemTextForItemsWithImageInfo
+            {
+                get
+                {
+                    return _txt_nondroppedgalleryitemtextforitemswithimageInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_NonDroppedGalleryItemTextForItems item.
+            /// </summary>
+            [RepositoryItem("cec46550-efea-42a9-897d-e291d130a315")]
+            public virtual Ranorex.Text txt_NonDroppedGalleryItemTextForItems
+            {
+                get
+                {
+                    return _txt_nondroppedgalleryitemtextforitemsInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_NonDroppedGalleryItemTextForItems item info.
+            /// </summary>
+            [RepositoryItemInfo("cec46550-efea-42a9-897d-e291d130a315")]
+            public virtual RepoItemInfo txt_NonDroppedGalleryItemTextForItemsInfo
+            {
+                get
+                {
+                    return _txt_nondroppedgalleryitemtextforitemsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GalleryPARTDown item.
+            /// </summary>
+            [RepositoryItem("d98f06c9-caec-41f7-9b0c-a3ecca07c43f")]
+            public virtual Ranorex.Button GalleryPARTDown
+            {
+                get
+                {
+                    return _gallerypartdownInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GalleryPARTDown item info.
+            /// </summary>
+            [RepositoryItemInfo("d98f06c9-caec-41f7-9b0c-a3ecca07c43f")]
+            public virtual RepoItemInfo GalleryPARTDownInfo
+            {
+                get
+                {
+                    return _gallerypartdownInfo;
+                }
+            }
+
+            /// <summary>
             /// The SomeList folder.
             /// </summary>
             [RepositoryFolder("620d6297-3f52-4bc0-9274-9459d72f61d6")]
@@ -12431,6 +12509,7 @@ namespace TestProject
             RepoItemInfo _panelsgalleryInfo;
             RepoItemInfo _othernodesgalleryInfo;
             RepoItemInfo _tab_siteaccessoriesInfo;
+            RepoItemInfo _somelistitemInfo;
 
             /// <summary>
             /// Creates a new HwndWrapperProfileConsysExe0c643c73  folder.
@@ -12450,6 +12529,7 @@ namespace TestProject
                 _panelsgalleryInfo = new RepoItemInfo(this, "PanelsGallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[3]/container[@automationid='PART_Caption']/text[@caption='Panels']", 30000, null, "7ebdcfee-f231-4339-a5eb-a1b78626aa9b");
                 _othernodesgalleryInfo = new RepoItemInfo(this, "OtherNodesGallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']", 30000, null, "fa18ffc9-0766-461e-bb9b-a613464ab5f1");
                 _tab_siteaccessoriesInfo = new RepoItemInfo(this, "tab_SiteAccessories", "progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']", 30000, null, "69be2d4d-f8fd-4e45-b45a-fcd7ad728f0d");
+                _somelistitemInfo = new RepoItemInfo(this, "SomeListItem", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@actualcaption=$sDeviceName]", 30000, null, "36776dfd-d1e5-43cf-b6c7-6702d23f9f13");
             }
 
             /// <summary>
@@ -12761,6 +12841,30 @@ namespace TestProject
                 get
                 {
                     return _tab_siteaccessoriesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SomeListItem item.
+            /// </summary>
+            [RepositoryItem("36776dfd-d1e5-43cf-b6c7-6702d23f9f13")]
+            public virtual Ranorex.ListItem SomeListItem
+            {
+                get
+                {
+                    return _somelistitemInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SomeListItem item info.
+            /// </summary>
+            [RepositoryItemInfo("36776dfd-d1e5-43cf-b6c7-6702d23f9f13")]
+            public virtual RepoItemInfo SomeListItemInfo
+            {
+                get
+                {
+                    return _somelistitemInfo;
                 }
             }
         }
