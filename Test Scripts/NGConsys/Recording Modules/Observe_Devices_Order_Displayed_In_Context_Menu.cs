@@ -138,6 +138,58 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyContextMenuOptionTextOnRightClickInPointsGrid("Other");
             Delay.Milliseconds(0);
             
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX 4000", "");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.VerifyPanelNode' at Center.", repo.ProfileConsys1.NavigationTree.VerifyPanelNodeInfo, new RecordItemIndex(17));
+            repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(18));
+            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(19));
+            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(20));
+            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedRow("1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyContextMenuOptionTextOnRightClickInPointsGrid("Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyContextMenuOptionTextOnRightClickInPointsGrid("Call points");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyContextMenuOptionTextOnRightClickInPointsGrid("Sounders/Beacons");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyContextMenuOptionTextOnRightClickInPointsGrid("Ancillary");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyContextMenuOptionTextOnRightClickInPointsGrid("Ancillary Conventional");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyContextMenuOptionTextOnRightClickInPointsGrid("Ancillary Specific");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyContextMenuOptionTextOnRightClickInPointsGrid("Other");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

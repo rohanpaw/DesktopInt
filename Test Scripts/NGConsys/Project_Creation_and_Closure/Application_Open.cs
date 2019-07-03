@@ -13,6 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
+using System.Diagnostics;
 
 using Ranorex;
 using Ranorex.Core;
@@ -63,6 +64,15 @@ namespace TestProject
 			Mouse.DefaultMoveTime = 300;
 			Keyboard.DefaultKeyPressTime = 100;
 			Delay.SpeedFactor = 1.0;
+			
+			//check if app process is running and kill 
+			Process[] processes = null; 
+			processes = Process.GetProcessesByName("ProfileConsys");
+			foreach (Process proces in processes) 
+			{ 
+				proces.Kill(); 
+			}
+			
 			
 			
 			Host.Local.RunApplication("C:\\Windows\\System32\\cmd.exe", "", "", false);

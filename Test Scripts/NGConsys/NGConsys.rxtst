@@ -1102,7 +1102,7 @@ rxversion="8.3">
 			id="11cb5c8d-38a9-4f65-9fa2-4dc0bbc3e5f5"
 			name="Verify_persistance_Of_Loop_Properties_on_Copy_Paste">
 				<description>
-					<![CDATA[<p>NGC-373/TC-0053- Failing on build 84 since points are not pasted with PLX loop</p>]]>
+					<![CDATA[<p>NGC-373/TC-53- Failing on build 84 since points are not pasted with PLX loop</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -2917,7 +2917,7 @@ rxversion="8.3">
 			id="31e248c2-f7ec-499f-87fb-9f0b85c8092f"
 			name="Observe_Devices_Order_Displayed_In_Context_Menu">
 				<description>
-					<![CDATA[<p>NGC-217/TC-0077</p>]]>
+					<![CDATA[<p>NGC-216/TC-77</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -5920,7 +5920,7 @@ loops.</SPAN>]]>
 			id="66147d7f-cf5e-45f9-b4d7-b0d7ba953821"
 			name="Verify_Sensitivity_Column_In_Points_Grid">
 				<description>
-					<![CDATA[<p>NGC-366/TC-0078</p>]]>
+					<![CDATA[<p>NGC-366/TC-78&nbsp; Note : Step 12 is set as Enable Continue on Fail. Need to update it</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7633,6 +7633,9 @@ MxDesigner]]>
 			<testcase
 			id="83bc95e7-6f8d-4c5c-af5d-923ef3c19cdc"
 			name="Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light">
+				<description>
+					<![CDATA[<p>NGC-603/TC-194</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -7644,7 +7647,7 @@ MxDesigner]]>
 			id="83ca4e15-2870-4e86-9a79-407a1263b31f"
 			name="Verify_Favourite_Devices_Recently_Used_Devices">
 				<description>
-					<![CDATA[<p>NGC-216/TC-50</p>]]>
+					<![CDATA[<p>NGC-216/TC-50 Note : Not verify user.config file verification step</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -8048,7 +8051,7 @@ MxDesigner]]>
 			id="899247e0-cc68-477d-9853-2c6d810ea13c"
 			name="Verify_Persistance_Of_Region_Name_Property_On_Copy_Paste">
 				<description>
-					<![CDATA[<p>NGC-373/TC-0055</p>]]>
+					<![CDATA[<p>NGC-373/TC-55</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10920,7 +10923,7 @@ persisted in panel properties&nbsp;]]>
 			id="c2ad215c-10b4-4b99-8fa6-63da244837a0"
 			name="Verify_Slot_Cards_In_Slot_Cards_Gallery">
 				<description>
-					<![CDATA[<p>NGC-497/TC-0120</p>]]>
+					<![CDATA[<p>NGC-497/TC-120</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -11633,7 +11636,7 @@ persisted in panel properties&nbsp;]]>
 			id="d1da618b-b2cb-48f3-b850-bfaa48518970"
 			name="Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste">
 				<description>
-					<![CDATA[<p>NGC-373/TC-00556</p>]]>
+					<![CDATA[<p>NGC-373/TC-56</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -11876,7 +11879,7 @@ persisted in panel properties&nbsp;]]>
 			id="d600789f-44ee-4896-a3d1-a08d1c4f8ff8"
 			name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste">
 				<description>
-					<![CDATA[NGC-373/TC-0054- Failing on build 84 since points are not pasted with PLX loop]]>
+					<![CDATA[NGC-373/TC-54- Failing on build 84 since points are not pasted with PLX loop]]>
 				</description>
 				<parameters>
 					<param
@@ -13317,7 +13320,7 @@ persisted in panel properties&nbsp;]]>
 			id="f157f4c6-7818-4ec8-b4b6-8f47f7939a3c"
 			name="Verify_Loop_Numbering">
 				<description>
-					<![CDATA[<p>NGC-418/TC-0080</p>]]>
+					<![CDATA[<p>NGC-418/TC-80</p>]]>
 				</description>
 				<parameters>
 					<param

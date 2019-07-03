@@ -5994,15 +5994,15 @@ namespace TestProject.Libraries
 		 * Last Update : 14/6/2019
 		 ********************************************************************/
 		[UserCodeMethod]
-		public static void verifyContextMenuOptionTextOnRightClickInPointsGrid(string sContectMenuOption)
+		public static void verifyContextMenuOptionTextOnRightClickInPointsGrid(string sContextMenuOption)
 		{
-			sListIndex=sContectMenuOption;
+			sListIndex=sContextMenuOption;
 			if(repo.ContextMenu.ColumnChooserListText.Visible)
 			{
-				Report.Log(ReportLevel.Success, sContectMenuOption+" option is displayed");
+				Report.Log(ReportLevel.Success, sContextMenuOption+" option is displayed");
 			}
 			else{
-				Report.Log(ReportLevel.Success, sContectMenuOption+" option is not displayed");
+				Report.Log(ReportLevel.Success, sContextMenuOption+" option is not displayed");
 			}
 		}
 		
@@ -6062,7 +6062,7 @@ namespace TestProject.Libraries
 		 * Function Details: To verify node gallery for pro panels
 		 * Parameter/Arguments:
 		 * Output:
-		 * Function Owner: Poonam
+		 * Function Owner: Poonam Kadam
 		 * Last Update : 19/06/2019
 		 ********************************************************************/
 		[UserCodeMethod]
@@ -6102,14 +6102,14 @@ namespace TestProject.Libraries
 			SelectInventoryGridRow("2");
 		}
 		
-		/********************************************************************
-         * Function Name: GetDevicesofNonDroppedGallery
-         * Function Details: It will verify favourite items list displayed in non dropped gallery for devices having an image
+		/********************************************************************************************************************
+         * Function Name: verifyNonDroppedGalleryWithImage
+         * Function Details: To verify non dropped gallery with image and text
          * Parameter/Arguments:GalleryType, Device1,Device2
          * Output:
          * Function Owner: Purvi Bhasin
-         * created on :25/6/2019
-         ********************************************************************/
+         * Last Update : 25/06/2019   26/06/2019 - Alpesh Dhakad - Updated code to execute it
+         *********************************************************************************************************************/
         [UserCodeMethod]
         public static void verifyNonDroppedGalleryWithImage(string GalleryType,string Device1,string Device2)
         {

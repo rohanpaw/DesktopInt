@@ -197,7 +197,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 05/04/2019
+		 * Last Update : 05/04/2019  Updated on 02/07/2019 by Alpesh Dhakad : Updated log reports as readable format
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyInventoryGridProperties(string ExpectedInventoryGridRowCount, string ExpectedInventoryGridColumn, string ExpectedDeviceProperty)
@@ -206,12 +206,12 @@ namespace TestProject.Libraries
 			sColumnIndex = getColumnNumberForInventoryGrid(ExpectedInventoryGridColumn);
 			sRowIndex = ExpectedInventoryGridRowCount;
 			
-			Report.Log(ReportLevel.Success,"Column and row values are set as "+sColumnIndex+sRowIndex);
+			Report.Log(ReportLevel.Success,"Column and row values are set as " +sColumnIndex+  " and " +sRowIndex+ " respectively ");
 			repo.FormMe.txt_InventoryGridDeviceProperty.Click();
 			string ActualInventoryGridProperty = repo.FormMe.txt_InventoryGridDeviceProperty.TextValue;
 			
 			// Compare Actual and Expected Point Grid Row count
-			Report.Log(ReportLevel.Success,"Actual"+ActualInventoryGridProperty+"  Expected"+ExpectedDeviceProperty);
+			Report.Log(ReportLevel.Success,"Actual " +ActualInventoryGridProperty+ "  Expected " +ExpectedDeviceProperty);
 			
 			if(ActualInventoryGridProperty.Equals(ExpectedDeviceProperty))
 			{
@@ -224,14 +224,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/*************************************************************************************************************
 		 * Function Name: getColumnNumberForInventoryGrid
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : 05/04/2019  Updated on 02/07/2019 by Alpesh Dhakad : Updated log reports as readable format
+		 **************************************************************************************************************/
 		[UserCodeMethod]
 		public static string getColumnNumberForInventoryGrid(string columnName)
 		{
@@ -240,32 +240,32 @@ namespace TestProject.Libraries
 			{
 				case "SKU":
 					columnNumber="1";
-					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
 					break;
 					
 				case "Model":
 					columnNumber="2";
-					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
 					break;
 					
 				case "Label":
 					columnNumber="3";
-					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
 					break;
 					
 				case "Address":
 					columnNumber="4";
-					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
 					break;
 					
 				case "Slot Address":
 					columnNumber="5";
-					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
 					break;
 					
 				case "Connection":
 					columnNumber="6";
-					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
 					break;
 					
 			}
@@ -288,7 +288,7 @@ namespace TestProject.Libraries
 			sColumnIndex = getColumnNumberForInventoryGrid(ExpectedInventoryGridColumn);
 			sRowIndex = ExpectedInventoryGridRowCount;
 			
-			Report.Log(ReportLevel.Success,"Row an column values are set as"+sColumnIndex+sRowIndex);
+			Report.Log(ReportLevel.Success,"Row an column values are set as" +sColumnIndex  +sRowIndex);
 			
 			//Modifying the label
 			repo.FormMe.txt_InventoryGridDeviceProperty.Click();
