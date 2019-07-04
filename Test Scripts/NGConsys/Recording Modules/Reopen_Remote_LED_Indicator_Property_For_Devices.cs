@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Common_Functions.ReopenProject("test_device");
+            Libraries.Common_Functions.ReopenProject("TC_105");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(1));
@@ -94,7 +94,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.NavigationTree.Loop_A.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.VerifyBaseAfterReopening("801 CH - 1", "5B 5\" & 801RIL");
+            Libraries.Devices_Functions.VerifyBaseAfterReopening("801 CH - 1", "13", "5B 5\" [517.050.017] & 801RIL");
             Delay.Milliseconds(0);
             
         }

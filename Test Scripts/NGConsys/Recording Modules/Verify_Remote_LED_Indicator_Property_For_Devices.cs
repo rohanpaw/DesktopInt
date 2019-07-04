@@ -109,7 +109,13 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyBaseIsVisibleInList("801 F Ex - 2", "5B 5\" [517.050.017] & 801RIL", "13", ValueConverter.ArgumentFromString<bool>("IsVisible", "False"));
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.SaveProject("test_device");
+            Libraries.Devices_Functions.VerifyBaseVisibilityInList("5B 5\" [517.050.017] & 801RIL", ValueConverter.ArgumentFromString<bool>("IsVisible", "False"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.SaveProject("TC_105");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
             
         }

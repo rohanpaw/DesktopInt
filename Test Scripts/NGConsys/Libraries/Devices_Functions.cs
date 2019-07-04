@@ -175,6 +175,12 @@ namespace TestProject.Libraries
 			set { repo.sOtherSlotCardName = value; }
 		}
 		
+		static string sGalleryName
+        {
+            get { return repo.sGalleryName; }
+            set { repo.sGalleryName = value; }
+        } 
+		
 		/********************************************************************
 		 * Function Name: AddDevices
 		 * Function Details:
@@ -3691,89 +3697,39 @@ namespace TestProject.Libraries
 			//Close Excel sheet
 			Excel_Utilities.CloseExcel();
 		}
-		
-		/********************************************************************
-		 * Function Name: VerifyBaseAfterReopening
-		 * Function Details:
-		 * Parameter/Arguments:
-		 * Output:
-		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
-		[UserCodeMethod]
-		public static void VerifyBaseAfterReopening(string DeviceLabel, string sBaseName)
-		{
-			sLabelName = DeviceLabel;
-			repo.ProfileConsys1.tab_Points.Click();
-			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
-			repo.ProfileConsys1.Cell_BaseofDevice.Click();
-			string sActualBaseName = repo.ProfileConsys1.Cell_BaseofDevice.Text;
-			if(sActualBaseName.Equals(sBaseName))
-			{
-				Report.Log(ReportLevel.Success,"Base value is retained");
-			}
-			else
-			{
-				Report.Log(ReportLevel.Failure,"Base value is not retained");
-			}
-			
-		}
-		
-		
+
 		/********************************************************************
 		 * Function Name: VerifyBaseIsVisibleInList
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
+		 * Last Update : Purvi Bhasin - Updated on 28/06/2019
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyBaseIsVisibleInList(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex,bool IsVisible)
-		{
-			int iRowIndex;
-			sBase = sBaseofDevice;
-			sRowIndex = sBasePropertyRowIndex;
-			sLabelName = DeviceLabel;
-			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
-			repo.ProfileConsys1.BaseofDeviceRow.Click();
-			repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
-			int.TryParse(sRowIndex, out iRowIndex);
-			iRowIndex = iRowIndex+1;
-			sRowIndex = iRowIndex.ToString();
-			repo.ProfileConsys1.Cell_BaseofDevice.Click();
-			repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
-			repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
-			int.TryParse(sRowIndex, out iRowIndex);
-			iRowIndex = iRowIndex-1;
-			sRowIndex = iRowIndex.ToString();
-			repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
-			repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
-			bool state = repo.ContextMenu.btn_BaseSelection.Visible;
-			if(IsVisible)
-			{
-				if(state.Equals(IsVisible))
-				{
-					Report.Log(ReportLevel.Success,"Base "+ sBase +" exist in list");
-				}
-				else
-				{
-					Report.Log(ReportLevel.Failure,"Base "+ sBase +" doesn't exist in list");
-				}
-			}
-			else
-			{
-				if(state.Equals(IsVisible))
-				{
-					Report.Log(ReportLevel.Failure,"Base "+ sBase +"  exist in list");
-				}
-				else
-				{
-					Report.Log(ReportLevel.Success,"Base "+ sBase +" doesn't exist in list");
-				}
-				
-			}
-		}
+		        {
+            int iRowIndex;
+            sBase = sBaseofDevice;
+            sRowIndex = sBasePropertyRowIndex;
+            sLabelName = DeviceLabel;
+            repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+            repo.ProfileConsys1.BaseofDeviceRow.Click();
+            repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+            int.TryParse(sRowIndex, out iRowIndex);
+            iRowIndex = iRowIndex+1;
+            sRowIndex = iRowIndex.ToString();
+            repo.ProfileConsys1.Cell_BaseofDevice.Click();
+            repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+            repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+            int.TryParse(sRowIndex, out iRowIndex);
+            iRowIndex = iRowIndex-1;
+            sRowIndex = iRowIndex.ToString();
+            repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+            repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+            
+        }
+
 		
 		/*****************************************************************************************************************
 		 * Function Name:verifySwitchingAllowedPowerSource
@@ -6157,6 +6113,187 @@ namespace TestProject.Libraries
             }
            
         }
+        
+        /********************************************************************
+         * Function Name: VerifyBaseVisibilityInList
+         * Function Details:
+         * Parameter/Arguments:
+         * Output:
+         * Function Owner: Purvi Bhasin
+         * Last Update :28/06/2019
+         ********************************************************************/
+        [UserCodeMethod]
+        public static void VerifyBaseVisibilityInList(string sBaseofDevice,bool IsVisible)
+        {
+            sBase = sBaseofDevice;
+            if(IsVisible)
+            {
+                if(repo.ContextMenu.Button_BaseSelectionInfo.Exists())
+                {
+                    Report.Log(ReportLevel.Success,"Base "+ sBase +" exist in list");
+                }
+                else
+                {
+                    Report.Log(ReportLevel.Failure,"Base "+ sBase +" doesn't exist in list");
+                }
+            }
+            else
+            {
+                if(repo.ContextMenu.Button_BaseSelectionInfo.Exists())
+                {
+                    Report.Log(ReportLevel.Success,"Base "+ sBase +" doesn't exist in list");
+                }
+                else
+                {
+                    Report.Log(ReportLevel.Failure,"Base "+ sBase +" exist in list");
+                }
+            }
+        }
+
+
+		/********************************************************************
+         * Function Name: VerifyBaseAfterReopening
+         * Function Details:
+         * Parameter/Arguments:
+         * Output:
+         * Function Owner: Purvi Bhasin
+         * Last Update : 28/06/2019
+         ********************************************************************/
+        [UserCodeMethod]
+        public static void VerifyBaseAfterReopening(string DeviceLabel,string sBasePropertyRowIndex,string sBaseName)
+        {
+            int iRowIndex; 
+            string sExistingBase;
+            sRowIndex = sBasePropertyRowIndex;
+            sLabelName = DeviceLabel;
+            repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+            repo.ProfileConsys1.BaseofDeviceRow.Click();
+            repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+            int.TryParse(sRowIndex, out iRowIndex);
+            iRowIndex = iRowIndex+1;
+            sRowIndex = iRowIndex.ToString();
+            repo.ProfileConsys1.Cell_BaseofDevice_Reopen.Click();
+            sExistingBase = repo.ProfileConsys1.SomeText_Reopen.TextValue;
+            
+            if(sExistingBase.Equals(sBaseName))
+            {
+                Report.Log(ReportLevel.Success,"Base value is retained");
+            }
+            else
+            {
+                Report.Log(ReportLevel.Failure,"Base value is not retained");
+            }
+        }
+
+        /********************************************************************
+         * Function Name: VerifyDeviceOrderForGalleryExpansionAndContextMenu
+         * Function Details: To verify device order when gallery is expanded
+         * Parameter/Arguments:
+         * Output:
+         * Function Owner: Purvi Bhasin
+         * Last Update : 24/06/2019
+         ********************************************************************/
+        [UserCodeMethod]
+        public static void VerifyDeviceOrderForGalleryExpansion(string sFileName,string sAddDevicesSheet)
+        {
+            //Open excel sheet and read it values,
+            Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+            
+            // Count number of rows in excel and store it in rows variable
+            int rows= Excel_Utilities.ExcelRange.Rows.Count;
+
+            // Declared string type
+            string sType,DeviceIndex,sDeviceName;
+            
+            // For loop to iterate on data present in excel
+            for(int i=10; i<=rows; i++)
+            {
+                sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+                DeviceIndex = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+                sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+                
+                sGalleryIndex = SelectGalleryType(sType);
+                sDeviceIndex = DeviceIndex;
+                //Click on Expand for gallery
+                repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+                
+                string ActualDeviceName = repo.ContextMenu.DeviceOrder_GalleryExpanded.TextValue;
+                
+                if(ActualDeviceName.Equals(sDeviceName))
+                {
+                    Report.Log(ReportLevel.Success,"Device " +sDeviceName+ "is placed correctly");
+                }
+                else
+                {
+                    Report.Log(ReportLevel.Failure,"Device " +sDeviceName+ "is placed incorrectly");
+                }
+                
+                //Click on Points Tab
+                repo.ProfileConsys1.tab_Points.Click();
+                
+            }
+            
+            //Close Excel Sheet
+            Excel_Utilities.CloseExcel();
+            
+        }
+        
+        /********************************************************************
+         * Function Name: VerifyDeviceOrderForGalleryExpansionAndContextMenu
+         * Function Details: To verify device order when gallery is expanded
+         * Parameter/Arguments:
+         * Output:
+         * Function Owner: Purvi Bhasin
+         * Last Update : 24/06/2019
+         ********************************************************************/
+        [UserCodeMethod]
+        public static void VerifyDeviceOrderForContextMenu(string sFileName,string sAddDevicesSheet)
+        {
+            //Open excel sheet and read it values,
+            Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+            
+            // Count number of rows in excel and store it in rows variable
+            int rows= Excel_Utilities.ExcelRange.Rows.Count;
+
+            // Declared string type
+            string sType,DeviceIndex,DeviceName;
+            
+            // For loop to iterate on data present in excel
+            for(int j=2; j<=2; j++)
+            {
+                sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,1]).Value.ToString();
+                
+                string RowIndex = "1";
+                RightClickOnSelectedRow(RowIndex);
+                
+                sGalleryName = sType;
+                repo.ContextMenu.Gallery_In_Context_Menu.Click();
+
+                
+                for(int i=2; i<=rows; i++)
+                {
+                    DeviceIndex = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+                    DeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+                    
+                    sDeviceIndex = DeviceIndex;
+                    sDeviceName = DeviceName;
+                    string ActualDeviceName = repo.ContextMenu.DeviceOrder_ContextMenu.TextValue;
+                    
+                    if(ActualDeviceName.Equals(sDeviceName))
+                    {
+                        Report.Log(ReportLevel.Success,"Device " +sDeviceName+ "is placed correctly");
+                    }
+                    else
+                    {
+                        Report.Log(ReportLevel.Failure,"Device " +sDeviceName+ "is placed incorrectly");
+                    }
+                }
+                
+                
+            }
+            
+        }
+
         
         
 	}

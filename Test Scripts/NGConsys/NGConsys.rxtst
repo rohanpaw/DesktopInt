@@ -798,6 +798,9 @@ rxversion="8.3">
 			<testcase
 			id="0c996d84-1678-4311-bc0a-d3f4a4507eb5"
 			name="Verify_Remote_LED_Indicator_Property_For_Devices">
+				<description>
+					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"><p>NGC-260/TC-105</p></font></font></p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -1619,6 +1622,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="19bff4c9-ca3d-4c20-9dca-c616f03d7537"
+			name="Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21"
+			ref="0a83c020-8e5c-4235-a7c3-66d8bf0ee58c"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="19c73c68-5a68-4cd9-9319-da0db1bde6cb"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -1695,6 +1704,20 @@ rxversion="8.3">
 					datasourceid="d1da618b-b2cb-48f3-b850-bfaa48518970"
 					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
 					variablename="PanelNode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1ac845bf-b59d-433e-bd59-cd44baac65a3"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="c67c29b5-929e-4b9a-9e38-3101646bb95e"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1920,6 +1943,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="1f5b7f61-4838-42de-82ca-7bb0788eab07"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="1f70b4ae-017a-4718-beec-bbfa1571746b"
 			name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800">
@@ -6067,6 +6096,26 @@ loops.</SPAN>]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="684bc255-729f-4e05-9bd6-51cc07535d38"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6877f410-7c05-48fd-8bb1-c92da22e4409"
 			name="Verify_Cable_Capacitance_Based_On_Max_Allowed_IS_Units_for_Split_Loops"
 			ref="525a3158-0208-44ad-b43b-b865390ac04a"
@@ -6650,6 +6699,12 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="728aa60a-1515-4744-9bec-3907e2761c13"
+			name="Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21"
+			ref="68913109-5493-41d7-b161-69504dbdd219"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="72a1588b-2f43-4822-a548-647f57a2810a"
 			name="Verify_Reopen_Project_After_Adding_Devices"
 			ref="8ee45c97-429a-486d-839c-fbe34cc88ee5"
@@ -6767,6 +6822,26 @@ loops.</SPAN>]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="755f458e-3b2d-4316-9aa4-cc1a4e1356b6"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="75a45c03-5651-4144-b690-345d91426e92"
@@ -9454,6 +9529,19 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="a2ca527b-d5da-49f7-846b-cc2c56ef6d2b"
+			name="Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815D-CH_Pro21">
+				<description>
+					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"><p>NGC-358/TC-02/TC-03</p></font></font></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="a2d0de02-8085-498d-81bc-a418684484ad"
 			name="Verify_copy_paste_functionality_for_LPS800"
@@ -9823,6 +9911,20 @@ MxDesigner]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ac4e7bcd-a518-4acb-82dc-a128c5b308bb"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="a2ca527b-d5da-49f7-846b-cc2c56ef6d2b"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -11053,6 +11155,19 @@ persisted in panel properties&nbsp;]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="c67c29b5-929e-4b9a-9e38-3101646bb95e"
+			name="Verify_Devices_Order_In_Dropped_Gallery">
+				<description>
+					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"><p>NGC-216/TC-52</p></font></font></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="c7015850-0626-4096-acfd-4bb026d01a09"
 			name="Verify_when_user_edit_the_HVR800_Properties"
@@ -11662,6 +11777,12 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="d1e8ebfd-fbae-4548-b94c-52aaf768051c"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="d21c3d0b-36b4-4303-9029-c80de182b363"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -11952,12 +12073,6 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="d7080a65-3e66-465c-8a03-495cb181b8e8"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="d70a77ae-6c18-419d-86aa-879d1055d333"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -12145,6 +12260,26 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="d9b1dd20-faa5-443f-84bf-a23f9f1ff22c"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="da01c22a-0edc-40fe-80de-00c43ef98fbd"
 			name="Verify_Other_Slot_Cards_Grid"
@@ -12846,6 +12981,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="e9109492-19dc-43fe-82c4-0ea914519c8e"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="e91f28b1-80e5-4e00-9495-5238bb23dfe6"
@@ -13581,6 +13722,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="f5decabf-ef15-412e-b678-e3ef3f22abdc"
+			name="Verify_Devices_Order_In_Dropped_Gallery"
+			ref="7a8b3990-0e5a-4fa0-a297-9821e1d09343"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="f62a5f8a-e45e-4c83-9b04-358559dbdf19"
 			name="Create_Project"
@@ -16561,16 +16708,16 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Remote_LED_Indicator_Property_For_Devices">
 						</testmodule>
 						<testmodule
-						id="d7080a65-3e66-465c-8a03-495cb181b8e8"
-						name="Close_Application">
-						</testmodule>
-						<testmodule
 						id="573cd929-fe9f-40d3-8e24-ed9f1c36a909"
 						name="Application_Open">
 						</testmodule>
 						<testmodule
 						id="e8b44ea3-2bc5-4bfc-9da8-4a1846f268a7"
 						name="Reopen_Remote_LED_Indicator_Property_For_Devices">
+						</testmodule>
+						<testmodule
+						id="e9109492-19dc-43fe-82c4-0ea914519c8e"
+						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -18365,6 +18512,54 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="c67c29b5-929e-4b9a-9e38-3101646bb95e"
+					name="Verify_Devices_Order_In_Dropped_Gallery">
+						<testmodule
+						id="684bc255-729f-4e05-9bd6-51cc07535d38"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="1ac845bf-b59d-433e-bd59-cd44baac65a3"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="f5decabf-ef15-412e-b678-e3ef3f22abdc"
+						name="Verify_Devices_Order_In_Dropped_Gallery">
+						</testmodule>
+						<testmodule
+						id="d1e8ebfd-fbae-4548-b94c-52aaf768051c"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="a2ca527b-d5da-49f7-846b-cc2c56ef6d2b"
+					name="Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815D-CH_Pro21">
+						<testmodule
+						id="755f458e-3b2d-4316-9aa4-cc1a4e1356b6"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="ac4e7bcd-a518-4acb-82dc-a128c5b308bb"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="728aa60a-1515-4744-9bec-3907e2761c13"
+						name="Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21">
+						</testmodule>
+						<testmodule
+						id="d9b1dd20-faa5-443f-84bf-a23f9f1ff22c"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="19bff4c9-ca3d-4c20-9dca-c616f03d7537"
+						name="Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21">
+						</testmodule>
+						<testmodule
+						id="1f5b7f61-4838-42de-82ca-7bb0788eab07"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -18429,6 +18624,9 @@ persisted in panel properties&nbsp;]]>
 			</testcontainer>
 			<testcontainer
 			id="61f2f4b6-d528-4a97-9cb8-56f65a20b21b">
+			</testcontainer>
+			<testcontainer
+			id="a2ca527b-d5da-49f7-846b-cc2c56ef6d2b">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

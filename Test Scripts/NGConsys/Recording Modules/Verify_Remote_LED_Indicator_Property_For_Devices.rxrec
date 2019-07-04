@@ -357,6 +357,42 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyBaseVisibilityInList"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e2f6b83f-5823-4fe8-8597-0c47b29e6312">
+				<argument
+				argname="sBaseofDevice"
+				id="b312c3a0-988c-481c-aacc-1b5588377dfc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						5B 5&quot; [517.050.017] &amp; 801RIL
+					</argvalue>
+				</argument>
+				<argument
+				argname="IsVisible"
+				id="ed9a5aaa-e7d5-411e-8508-e99d43649a1f">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -377,7 +413,52 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						test_device
+						TC_105
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Application_Close"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4dcd8907-6334-4d3e-8b55-d4b180f8bb7f">
+				<argument
+				argname="Save"
+				id="3169105c-ed7f-4e0c-bfc7-91bfe44e33ab">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="SaveConfirmation"
+				id="5cf4ced8-440b-4fa3-a07e-c7cb4a5b5c1c">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="sProjectName"
+				id="028f3d7d-3e77-4ec7-8b77-ba4ea90e4847">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>

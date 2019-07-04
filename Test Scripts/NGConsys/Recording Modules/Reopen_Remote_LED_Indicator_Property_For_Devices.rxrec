@@ -50,7 +50,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						test_device
+						TC_105
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1899,13 +1899,23 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 					</argvalue>
 				</argument>
 				<argument
-				argname="sBaseName"
+				argname="sBasePropertyRowIndex"
 				id="1596e6a5-e027-447d-8a1f-9b5cb5ea6a71">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						5B 5&quot; &amp; 801RIL
+						13
+					</argvalue>
+				</argument>
+				<argument
+				argname="sBaseName"
+				id="8ecee4fe-9abb-48a0-b8e0-ac75ba72888a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						5B 5&quot; [517.050.017] &amp; 801RIL
 					</argvalue>
 				</argument>
 			</arguments>

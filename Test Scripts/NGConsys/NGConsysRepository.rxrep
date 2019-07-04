@@ -1540,6 +1540,20 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@win32ownerwindowlevel='0']/progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//text[@automationid='PART_Editor']
 			</item>
+			<item
+			capname="cell"
+			id="1748332e-094f-447b-a573-25f521376e45"
+			name="Cell_BaseofDevice_Reopen"
+			searchtimeout="30000ms">
+				/form[@win32ownerwindowlevel='0']/progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='14']/cell[@isheader='False']
+			</item>
+			<item
+			capname="text"
+			id="5fefcb42-4a92-4739-aa13-430a1bf8cfac"
+			name="SomeText_Reopen"
+			searchtimeout="30000ms">
+				/form[@win32ownerwindowlevel='0']/progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='14']/?/?/text
+			</item>
 			<basepath>
 				/form[@win32ownerwindowlevel='0']
 			</basepath>
@@ -1958,6 +1972,34 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			name="ModelFilterList"
 			searchtimeout="30000ms">
 				/contextmenu//listitem[$sColumnIndex]/text
+			</item>
+			<item
+			capname="button"
+			id="cf024b5a-a7c8-4e3c-8cde-a9e25d5ec386"
+			name="Button_BaseSelection"
+			searchtimeout="30000ms">
+				/contextmenu/list/button
+			</item>
+			<item
+			capname="text"
+			id="56a07697-2d7c-4e69-b2e0-33a49f842723"
+			name="DeviceOrder_GalleryExpanded"
+			searchtimeout="30000ms">
+				/contextmenu//listitem[@index=$sDeviceIndex]/text
+			</item>
+			<item
+			capname="button"
+			id="b986475c-2b2f-41f6-b74b-39da567281c8"
+			name="Gallery_In_Context_Menu"
+			searchtimeout="30000ms">
+				/contextmenu/list/button[@text=$sGalleryName]
+			</item>
+			<item
+			capname="text"
+			id="e34cbfae-aa42-4972-9fb7-c4ca02843c91"
+			name="DeviceOrder_ContextMenu"
+			searchtimeout="30000ms">
+				/contextmenu/list/button[@text=$sDeviceName]/text[@caption=$sDeviceName]
 			</item>
 			<basepath>
 				/contextmenu
@@ -6742,6 +6784,27 @@ kyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWID
 			name="GalleryPARTDown"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/?/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/button[@automationid='PART_Down']
+			</item>
+			<item
+			capname="treeitem"
+			id="17dfb1b8-1159-4693-81ae-f50a6e0fc676"
+			name="PLXTreeList"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[$sDeviceIndex]
+			</item>
+			<item
+			capname="treeitem"
+			id="40166a68-2b94-41fc-80fc-4976fe3ae676"
+			name="PLXTreeList_Reopen"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[$sDeviceIndex]
+			</item>
+			<item
+			capname="text"
+			id="e23940a2-ab9e-4d78-bddb-4a61ded645f5"
+			name="Backplane1_OtherSlotCards1_Reopen"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@text=$sOtherSlotCardName]
 			</item>
 			<basepath>
 				/form[@automationid='me']

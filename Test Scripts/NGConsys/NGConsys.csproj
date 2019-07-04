@@ -414,6 +414,18 @@
       <UserCode>true</UserCode>
       <id>03a7641f-9227-45de-8df8-953c523f12bc</id>
     </Compile>
+    <Compile Include="Recording Modules\Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.cs">
+      <BoundTo>b32cfb97-e41b-495a-8789-22ba50a872d5</BoundTo>
+      <DependentUpon>Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>308ba091-83fe-4cf2-ba8b-df408ff0d74e</id>
+    </Compile>
+    <Compile Include="Recording Modules\Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.UserCode.cs">
+      <BoundTo>b32cfb97-e41b-495a-8789-22ba50a872d5</BoundTo>
+      <DependentUpon>Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c07859b7-4f81-44d0-8342-a63d46261c9b</id>
+    </Compile>
     <Compile Include="Recording Modules\SaveConfiguration.cs">
       <BoundTo>5385e435-d6af-4322-9f9f-f22dcbd17151</BoundTo>
       <DependentUpon>SaveConfiguration.rxrec</DependentUpon>
@@ -1590,6 +1602,18 @@
       <UserCode>true</UserCode>
       <id>69faef94-49c8-4dbb-a7cd-9e2c13609bb1</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Devices_Order_In_Dropped_Gallery.cs">
+      <BoundTo>9ba4a6c9-38ad-4179-92e2-e8f02592248f</BoundTo>
+      <DependentUpon>Verify_Devices_Order_In_Dropped_Gallery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aea2d019-a7dc-4d72-a0d1-515ea9cec317</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Devices_Order_In_Dropped_Gallery.UserCode.cs">
+      <BoundTo>9ba4a6c9-38ad-4179-92e2-e8f02592248f</BoundTo>
+      <DependentUpon>Verify_Devices_Order_In_Dropped_Gallery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2e3a73f6-9e55-4cb0-b836-b2582bfd43e7</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Device_Order_Of_Sounders_Added_In_LPS800.cs">
       <BoundTo>2145b00e-558c-467c-9b39-c89a5720490f</BoundTo>
       <DependentUpon>Verify_Device_Order_Of_Sounders_Added_In_LPS800.rxrec</DependentUpon>
@@ -2057,6 +2081,18 @@
       <DependentUpon>Verify_IS_Units_On_Updating_Cable_Capacitance_for_PFI.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>87dc8f37-6b08-4e42-804e-45657e0216c3</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.cs">
+      <BoundTo>4e9d578d-5320-4c4c-a01e-252efd3d3b5c</BoundTo>
+      <DependentUpon>Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4d58b015-048c-464f-93a3-433154edcb76</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.UserCode.cs">
+      <BoundTo>4e9d578d-5320-4c4c-a01e-252efd3d3b5c</BoundTo>
+      <DependentUpon>Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fab58095-7e94-40f4-af54-5eeb9e9554e3</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Loop_Numbering.cs">
       <BoundTo>d88dedd7-1900-41ba-af5a-59675e3e9fa7</BoundTo>
@@ -3300,6 +3336,11 @@
       <id>ce0afa44-9e9c-4a88-b613-8609c59b57a4</id>
       <recordtableid>a524d7f2-60bf-431d-a51e-67afbdc7ba1d</recordtableid>
     </None>
+    <None Include="Recording Modules\Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>b32cfb97-e41b-495a-8789-22ba50a872d5</id>
+      <recordtableid>0a83c020-8e5c-4235-a7c3-66d8bf0ee58c</recordtableid>
+    </None>
     <None Include="Recording Modules\SaveConfiguration.rxrec">
       <id>5385e435-d6af-4322-9f9f-f22dcbd17151</id>
       <recordtableid>62fe3f99-3017-4bbe-bcc2-58667da321fa</recordtableid>
@@ -3790,6 +3831,11 @@
       <recordtableid>d5921199-49c5-4e6c-a74b-fa8920dacd22</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_Devices_Order_In_Dropped_Gallery.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>9ba4a6c9-38ad-4179-92e2-e8f02592248f</id>
+      <recordtableid>7a8b3990-0e5a-4fa0-a297-9821e1d09343</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Device_Order_Of_Sounders_Added_In_LPS800.rxrec">
       <id>2145b00e-558c-467c-9b39-c89a5720490f</id>
       <recordtableid>31c8e708-c6a7-4e5f-9e6d-b2800ff527c8</recordtableid>
@@ -3984,6 +4030,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>86cd9dd1-c857-4f4f-88f3-8926fc238479</id>
       <recordtableid>00b2c140-16c5-4ba0-bee6-774b1528e034</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>4e9d578d-5320-4c4c-a01e-252efd3d3b5c</id>
+      <recordtableid>68913109-5493-41d7-b161-69504dbdd219</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Loop_Numbering.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
