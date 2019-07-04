@@ -336,7 +336,7 @@ rxversion="8.3">
 			id="05c8b575-b5b5-4e1a-8970-570d93ed8c21"
 			name="Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds">
 				<description>
-					<![CDATA[<p>NGC-372/TC-0035</p>]]>
+					<![CDATA[<p>NGC-372/TC-35</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -465,6 +465,9 @@ rxversion="8.3">
 			<testcase
 			id="07bc3436-edc3-41a4-bbef-0c7eb81dcaf1"
 			name="Verify_if_adding_EXI800_from_multipoint_wizard_should_check_the_existing_rules_of_adding_EXI800">
+				<description>
+					<![CDATA[<p>NGC-720/TC-50449</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -961,7 +964,7 @@ rxversion="8.3">
 			id="0fc53bd4-0bdf-43bf-98da-406f0d7c5914"
 			name="Accessories_Gallery_Update_On_Max_Limit_Of_IOB/FB/PCS/POS_Supported_By_Panel_Is_Reached">
 				<description>
-					<![CDATA[<p>NGC-390/TC-0061</p>]]>
+					<![CDATA[<p>NGC-390/TC-61</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -1904,7 +1907,7 @@ rxversion="8.3">
 			id="1f366e1b-8d91-423c-880a-a84229356f67"
 			name="Verify_Model_Number_Filter_In_Main_Processor,R-Bus,Ethernet,PFI,BackplaneGrids">
 				<description>
-					<![CDATA[NGC-383/TC-0042]]>
+					<![CDATA[NGC-383/TC-42]]>
 				</description>
 				<parameters>
 					<param
@@ -3757,7 +3760,7 @@ rxversion="8.3">
 			id="4315861a-9467-4079-b0b6-186628cddf6d"
 			name="Verify_Paste_Of_Unit_With_Points">
 				<description>
-					<![CDATA[<p>NGC-372/TC-0036</p>]]>
+					<![CDATA[<p>NGC-372/TC-36</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -5716,6 +5719,9 @@ loops.</SPAN>]]>
 			<testcase
 			id="61f2f4b6-d528-4a97-9cb8-56f65a20b21b"
 			name="Verify_the_behaviour_when_user_copies_both_IS_and_Non_IS_devices">
+				<description>
+					<![CDATA[<p>NGC-720/TC-50445</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -7427,7 +7433,7 @@ loops.</SPAN>]]>
 			id="81be8bf4-897f-4cb4-966f-7e48fbbb98ce"
 			name="Verify_Paste_Of_Points_Only">
 				<description>
-					<![CDATA[<p>NGC-372/TC-0033</p>]]>
+					<![CDATA[<p>NGC-372/TC-33</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7470,6 +7476,12 @@ loops.</SPAN>]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="82691930-3e1f-4b7f-90e0-1fd7a123a025"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="827af031-2c95-45c3-a3be-07380b7f07a2"
@@ -7660,7 +7672,7 @@ MxDesigner]]>
 			id="83e5e305-9ded-4d01-84a4-86f97e98ade9"
 			name="Verify_FBI800_card_details">
 				<description>
-					<![CDATA[<p><span style="text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">NGC-389/TC-0045</span></p>]]>
+					<![CDATA[<p><span style="text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">NGC-389/TC-45</span></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -9340,7 +9352,7 @@ MxDesigner]]>
 			id="a0f00c7a-352a-4ea6-8590-7d09ca6a596f"
 			name="Verify_Paste_Options_Displayed_For_Loop">
 				<description>
-					<![CDATA[NGC-372/TC-0031]]>
+					<![CDATA[NGC-372/TC-31]]>
 				</description>
 				<parameters>
 					<param
@@ -9707,7 +9719,7 @@ MxDesigner]]>
 			id="a9e4bbe6-698e-40af-971d-6929b60a9823"
 			name="Verify_Create_New_Project">
 				<description>
-					<![CDATA[NGC-358/TC-0001]]>
+					<![CDATA[NGC-358/TC-01]]>
 				</description>
 				<parameters>
 					<param
@@ -10564,7 +10576,7 @@ persisted in panel properties&nbsp;]]>
 			id="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96"
 			name="Verify_Export_Of_Region_Data">
 				<description>
-					<![CDATA[<p>NGC-387/TC-0043</p>]]>
+					<![CDATA[<p>NGC-387/TC-43</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -12478,7 +12490,7 @@ persisted in panel properties&nbsp;]]>
 			id="e2708cf8-0006-4cee-b114-108e2c344b48"
 			name="Verify_Paste_Of_Unit_Only">
 				<description>
-					<![CDATA[NGC-372/TC-0032]]>
+					<![CDATA[NGC-372/TC-32]]>
 				</description>
 				<parameters>
 					<param
@@ -12535,7 +12547,7 @@ persisted in panel properties&nbsp;]]>
 			id="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
 			name="Verify_PNI800_Card_Details">
 				<description>
-					<![CDATA[<p><span style="text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">NGC-389/TC-0044</span></p>]]>
+					<![CDATA[<p><span style="text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">NGC-389/TC-44</span></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -12859,7 +12871,7 @@ persisted in panel properties&nbsp;]]>
 			id="e920721a-3dae-4973-96f4-2f314ac9cef1"
 			name="Verify_Deletion_of__FBI800_And_PNI800_Cards">
 				<description>
-					<![CDATA[NGC-389/TC-0046]]>
+					<![CDATA[NGC-389/TC-46]]>
 				</description>
 				<parameters>
 					<param
@@ -18268,6 +18280,10 @@ persisted in panel properties&nbsp;]]>
 						id="19a58070-0e61-4f65-a875-ff368a85e35a"
 						name="Verify_Create_New_Project">
 						</testmodule>
+						<testmodule
+						id="82691930-3e1f-4b7f-90e0-1fd7a123a025"
+						name="Close_Application">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="9b79d666-e220-4b5b-94b5-d9e5ed7ca047"
@@ -18410,6 +18426,9 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="61f2f4b6-d528-4a97-9cb8-56f65a20b21b">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

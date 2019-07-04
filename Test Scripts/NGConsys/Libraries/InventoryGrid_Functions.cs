@@ -352,7 +352,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyModelFilterListText(string sListSize, string sListText)
 		{
-			Report.Log(ReportLevel.Success,"sColumnIndex"+sColumnIndex);
+			Report.Log(ReportLevel.Success,"sColumnIndex " +sColumnIndex);
 			string ActualFilterList = "";
 			int size=Convert.ToInt32(sListSize);
 			string[] strArray = sListText.Split(',');
@@ -361,7 +361,7 @@ namespace TestProject.Libraries
 				sColumnIndex=(i+1).ToString();
 				ActualFilterList=repo.ContextMenu.ModelFilterList.TextValue;
 				// Compare Actual and Expected Point Grid Row count
-				Report.Log(ReportLevel.Success,"Actual"+ActualFilterList+"  Expected"+strArray[i]);
+				Report.Log(ReportLevel.Success,"Actual "+ActualFilterList+"  Expected "+strArray[i]);
 				
 				if(ActualFilterList.Equals(strArray[i]))
 				{

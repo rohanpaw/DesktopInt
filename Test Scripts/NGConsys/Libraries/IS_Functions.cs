@@ -3002,7 +3002,7 @@ namespace TestProject.Libraries
 			repo.FormMe.txt_DeviceOrderLabel.Click();
 			
 			string actualDeviceOrderValue = repo.FormMe.txt_DeviceOrderLabel.TextValue;
-			Report.Log(ReportLevel.Info,"Actual Device Order "+actualDeviceOrderValue+"Expected Device Order"+sDeviceOrderName);
+			Report.Log(ReportLevel.Info,"Actual Device Order "+actualDeviceOrderValue+ " Expected Device Order "+sDeviceOrderName);
 			// Compare actualDeviceOrderValue and sDeviceOrderName values and then displaying result
 			if(actualDeviceOrderValue.Equals(sDeviceOrderName))
 			{

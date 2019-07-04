@@ -5129,24 +5129,24 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success, sContectMenuOption+" button is clicked");
 		}
 		
-		/********************************************************************
+		/**************************************************************************************************************
 		 * Function Name:verifyContextMenuOptionOnRightClickEnabledOrDisabled
 		 * Function Details: To verify if context menu option is enabled or disabled when we right click on grid row
 		 * Parameter/Arguments:
 		 * Output:
-		 * Function Owner: Poonam
-		 * Last Update : 20/5/2019
-		 ********************************************************************/
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 20/5/2019  03/07/2019 - Alpesh Dhakad - Updated sContectMenuOptions to sContextMenuOption spelling
+		 **************************************************************************************************************/
 		[UserCodeMethod]
-		public static void verifyContextMenuOptionOnRightClickEnabledOrDisabled(string sContectMenuOption)
+		public static void verifyContextMenuOptionOnRightClickEnabledOrDisabled(string sContextMenuOption)
 		{
-			sListIndex=sContectMenuOption;
+			sListIndex=sContextMenuOption;
 			if(repo.ContextMenu.ContextMenuOption.Enabled)
 			{
-				Report.Log(ReportLevel.Success, sContectMenuOption+" button is enabled");
+				Report.Log(ReportLevel.Success, sContextMenuOption+" button is enabled");
 			}
 			else{
-				Report.Log(ReportLevel.Success, sContectMenuOption+" button is disabled");
+				Report.Log(ReportLevel.Success, sContextMenuOption+" button is disabled");
 			}
 		}
 		/********************************************************************
@@ -6157,7 +6157,7 @@ namespace TestProject.Libraries
             }
            
         }
-		
-		
+        
+        
 	}
 }
