@@ -2719,7 +2719,7 @@ rxversion="8.3">
 			id="2c315ac7-ffad-4e21-abab-0872d77c399b"
 			name="Verification_for_device_Label">
 				<description>
-					<![CDATA[NGC-606\55850]]>
+					<![CDATA[NGC-606/TC-55850]]>
 				</description>
 				<parameters>
 					<param
@@ -4562,6 +4562,14 @@ loops.</SPAN>]]>
 					name="PanelNode"
 					value="">
 					</param>
+					<param
+					name="sRow"
+					value="">
+					</param>
+					<param
+					name="sColumn"
+					value="">
+					</param>
 				</parameters>
 			</testcase>
 			<testmodule
@@ -6242,7 +6250,7 @@ loops.</SPAN>]]>
 			id="6a871e73-ce77-46f8-adc3-8d0b793d76be"
 			name="Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories">
 				<description>
-					<![CDATA[NGC-1277/55853]]>
+					<![CDATA[NGC-606/TC-55853]]>
 				</description>
 				<parameters>
 					<param
@@ -6557,6 +6565,12 @@ loops.</SPAN>]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="701dbaa5-0d1a-44f6-92ed-52bf74268485"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="70551ab8-9654-4500-8781-bf59afea6dc5"
@@ -12293,6 +12307,32 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="dab45c4c-2218-4ca2-8bb1-cc2a535e6d35"
+			name="Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800"
+			ref="496de603-0d69-4fc6-b09f-6903beac02eb"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="PanelNode"
+					datasourceid="4e8e429d-5507-428e-b2ab-40c1df197167"
+					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
+					variablename="PanelNode">
+					</var>
+					<var
+					dataname="sRow"
+					datasourceid="4e8e429d-5507-428e-b2ab-40c1df197167"
+					variableid="a610866c-7085-4bec-8c50-ccf9db7fc18b"
+					variablename="sRow">
+					</var>
+					<var
+					dataname="sColumn"
+					datasourceid="4e8e429d-5507-428e-b2ab-40c1df197167"
+					variableid="5b381f08-b8c2-4ac0-bd6e-0ea0a8bde220"
+					variablename="sColumn">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="dad56cb6-7946-48ff-b750-34cc9ab3658c"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -13673,7 +13713,7 @@ persisted in panel properties&nbsp;]]>
 			id="f521de22-99d9-415f-93dc-e107663f9e8e"
 			name="Verify_when_user_edit_the_HVR800_Properties">
 				<description>
-					<![CDATA[NGC-606/55208]]>
+					<![CDATA[NGC-1277/TC-55208]]>
 				</description>
 				<parameters>
 					<param
@@ -16579,6 +16619,10 @@ persisted in panel properties&nbsp;]]>
 						id="fcf8094f-7ca5-4905-a9a3-6568584a7fde"
 						name="Verify_If_IS_Devices_Are_Invisible_In_Multipoint_Wizard">
 						</testmodule>
+						<testmodule
+						id="701dbaa5-0d1a-44f6-92ed-52bf74268485"
+						name="Close_Application">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="6e24e3cd-d477-4529-acc0-fe227050c7f4"
@@ -17018,6 +17062,10 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="4bcb591f-dc43-4690-9d6c-3820d2d225a8"
 						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="dab45c4c-2218-4ca2-8bb1-cc2a535e6d35"
+						name="Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800">
 						</testmodule>
 						<testmodule
 						id="dee0d0ea-2e49-4766-8f1e-6059fc89e70b"
@@ -18621,12 +18669,6 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="61f2f4b6-d528-4a97-9cb8-56f65a20b21b">
-			</testcontainer>
-			<testcontainer
-			id="a2ca527b-d5da-49f7-846b-cc2c56ef6d2b">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

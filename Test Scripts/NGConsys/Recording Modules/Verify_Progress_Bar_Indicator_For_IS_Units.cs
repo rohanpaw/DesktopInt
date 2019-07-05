@@ -94,7 +94,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.NavigationTree.Loop_A.Click();
             Delay.Milliseconds(200);
             
-            Libraries.IS_Functions.VerifyProgressBarIndicatorForISUnits("Verify_Progress_Bar_Indicator_For_IS_Units", "Add EXI Devices Loop A_FIM");
+            Libraries.IS_Functions.VerifyProgressBarIndicatorForISUnits("TC_172_Verify_Progress_Bar_Indicator_For_IS_Units", "Add EXI Devices Loop A_FIM");
             Delay.Milliseconds(0);
             
         }

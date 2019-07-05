@@ -3540,7 +3540,7 @@ namespace TestProject.Libraries
 			ModelNumber = sDeviceName;
 			if(repo.AddDevices.txt_ModelNumberInfo.Exists())
 			{
-				Report.Log(ReportLevel.Failure,"IS Devices are presnt in Multiple Point Wizard");
+				Report.Log(ReportLevel.Failure,"IS Devices are present in Multiple Point Wizard");
 				
 			}
 			else
@@ -4030,14 +4030,14 @@ namespace TestProject.Libraries
 			}	
 		}
 		
-		/***********************************************************************************************************
+		/******************************************************************************************************************
 		 * Function Name: verifyBlankDeviceAddress
 		 * Function Details: To verify points grid for blank device address
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 03/04/2019
-		 ************************************************************************************************************/
+		 * Last Update : 03/04/2019  05/07/2019-Alpesh Dhakad - Updated report log for row & column in readable format
+		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBlankDeviceAddress(string ExpectedPointGridRowCount, string ExpectedPointGridColumn)
 		{
@@ -4045,11 +4045,11 @@ namespace TestProject.Libraries
 			sColumn = getColumnNumberForPointsGrid(ExpectedPointGridColumn);
 			sRow = ExpectedPointGridRowCount;
 			
-			Report.Log(ReportLevel.Success,"Row an column values are set as"+sColumn+sRow);
+			Report.Log(ReportLevel.Success,"Row and column values are set as "+sRow+  "and "+sColumn+ " respectively");
 			
 			string ActualPointGridProperty = repo.FormMe.txt_PointGridDeviceProperty.TextValue;
 			// Compare Actual and Expected Point Grid Row count
-			Report.Log(ReportLevel.Success,"Actual"+ActualPointGridProperty);
+			Report.Log(ReportLevel.Success,"Actual "+ActualPointGridProperty);
 			
 			if(ActualPointGridProperty==null)
 			{
@@ -4291,7 +4291,7 @@ namespace TestProject.Libraries
 			sDeviceAddress = ExpectedDeviceAddress;
 			string ActualDeviceName = repo.FormMe.lst_PhysicalLayoutDevice.TextValue;
 			string ActualDeviceAddress=repo.FormMe.txt_PhysicalLayoutDeviceAddress.TextValue;
-			Report.Log(ReportLevel.Success,"Expected"+ActualDeviceName + ActualDeviceAddress);
+			Report.Log(ReportLevel.Success,"Expected "+ActualDeviceName + ActualDeviceAddress);
 			// Compare actualIndex and sPhysicalLayoutDeviceIndex values and then displaying result
 			if(ActualDeviceName.Equals(ExpectedDeviceName)&&(ActualDeviceAddress.Equals(ExpectedDeviceAddress)))
 			{

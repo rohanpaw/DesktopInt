@@ -135,14 +135,14 @@ namespace TestProject.Libraries
 		/// </summary>
 		/// 
 		
-		/********************************************************************
+		/**********************************************************************************
 		 * Function Name: VerifyRowNotExist
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : 05/07/2019 - Alpesh Dhakad - Update Report log for success message
+		 **********************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyRowNotExist(int iRowNumber,string sItemName,string sSKUofItem)
 		{
@@ -155,7 +155,7 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				Report.Log(ReportLevel.Success,"Item: "+sItemName+" not deleted successfully");
+				Report.Log(ReportLevel.Success,"Item: "+sItemName+" deleted successfully");
 			}
 			
 		}

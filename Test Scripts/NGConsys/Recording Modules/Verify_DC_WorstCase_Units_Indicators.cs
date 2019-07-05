@@ -94,7 +94,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.NavigationTree.Loop_A.Click();
             Delay.Milliseconds(200);
             
-            Libraries.DC_Functions.VerifyDCUnitsAndWorstCaseIndicators("Verify_DC_WorstCase_Units_Indicator", "Add Devices");
+            Libraries.DC_Functions.VerifyDCUnitsAndWorstCaseIndicators("TC_164_Verify_DC_WorstCase_Units_Indicator", "Add Devices");
             Delay.Milliseconds(0);
             
         }

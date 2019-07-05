@@ -94,7 +94,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.NavigationTree.Loop_A.Click();
             Delay.Milliseconds(200);
             
-            Libraries.DC_Functions.verifyTripCurrentForDCCalculation("Verify Trip Current Calculation for PFI", "Add Devices Loop A", "Other Devices Loop A");
+            Libraries.DC_Functions.verifyTripCurrentForDCCalculation("TC_226_Verify Trip Current Calculation for PFI", "Add Devices Loop A", "Other Devices Loop A");
             Delay.Milliseconds(0);
             
         }

@@ -94,7 +94,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.NavigationTree.Loop_A.Click();
             Delay.Milliseconds(200);
             
-            Libraries.IS_Functions.VerifyISCalculationOnAddDeleteISDevice("Verify IS Calculation On Addition Deletion of IS Device", "Add EXI Devices Loop A", "Add IS Devices to EXI800");
+            Libraries.IS_Functions.VerifyISCalculationOnAddDeleteISDevice("TC_169_Verify IS Calculation On Addition Deletion of IS Device", "Add EXI Devices Loop A", "Add IS Devices to EXI800");
             Delay.Milliseconds(0);
             
         }
