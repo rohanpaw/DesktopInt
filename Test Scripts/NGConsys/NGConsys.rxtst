@@ -7431,6 +7431,9 @@ loops.</SPAN>]]>
 			<testcase
 			id="8090bcf5-9f70-480c-abee-688d770e680c"
 			name="Verify_Properties_of_Backplane_and_Slot_Cards">
+				<description>
+					<![CDATA[NGC-358/TC-04]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -9395,6 +9398,50 @@ MxDesigner]]>
 			<testcase
 			id="9f1a196c-841e-4d44-b4ae-4252e63d2bbe"
 			name="Verify_the_max/min_section_displayed_for_Isolator_units_Intrinsically_safe_units">
+				<description>
+					<![CDATA[<meta name="Generator" content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+
+
+
+
+<p class="WordSection1">
+
+<p class="MsoNormal" style="line-height: normal; margin-bottom: 0pt; -ms-text-autospace:;"><span style='color: black; font-family: "Segoe UI",sans-serif; font-size: 10pt;'>NGC-1256/54158</span></p>
+
+</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -14926,6 +14973,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="8090bcf5-9f70-480c-abee-688d770e680c"
+					name="Verify_Properties_of_Backplane_and_Slot_Cards">
+						<testmodule
+						id="44b69852-9f4d-4004-a89a-c45899135fde"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="866e5f3a-6344-4627-8eed-c0784bb38c45"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="e2ace497-3c6f-4357-972d-afda71add10b"
+						name="Verify_Properties_of_Backplane_and_Slot_Cards">
+						</testmodule>
+						<testmodule
+						id="8d4f7ac5-4943-4af8-971a-2266bf4db8e9"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="2bb77d07-695c-4f1f-97c9-ad3d54e10be8"
 					name="Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB">
 						<testmodule
@@ -18446,6 +18513,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="9f1a196c-841e-4d44-b4ae-4252e63d2bbe"
+					name="Verify_the_max/min_section_displayed_for_Isolator_units_Intrinsically_safe_units">
+						<testmodule
+						id="78911c81-8769-4aee-ae54-38c0d9f5f8a3"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="77d4dcdb-9258-43d0-9cfb-cf57cf699106"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="69806b1c-240b-43d8-92b9-2836e9b507fd"
+						name="Verify_the_max_min_section_displayed_for_Isolator_units_Intrinsically_safe_units">
+						</testmodule>
+						<testmodule
+						id="8da2167b-3394-4732-a42b-bcdefc871800"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="4e8e429d-5507-428e-b2ab-40c1df197167"
 					name="Verify_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800">
 						<testmodule
@@ -18622,46 +18709,6 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="05c10e2a-d39d-4828-a8f2-ab3070e97184"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="9f1a196c-841e-4d44-b4ae-4252e63d2bbe"
-					name="Verify_the_max/min_section_displayed_for_Isolator_units_Intrinsically_safe_units">
-						<testmodule
-						id="78911c81-8769-4aee-ae54-38c0d9f5f8a3"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="77d4dcdb-9258-43d0-9cfb-cf57cf699106"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="69806b1c-240b-43d8-92b9-2836e9b507fd"
-						name="Verify_the_max_min_section_displayed_for_Isolator_units_Intrinsically_safe_units">
-						</testmodule>
-						<testmodule
-						id="8da2167b-3394-4732-a42b-bcdefc871800"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="8090bcf5-9f70-480c-abee-688d770e680c"
-					name="Verify_Properties_of_Backplane_and_Slot_Cards">
-						<testmodule
-						id="44b69852-9f4d-4004-a89a-c45899135fde"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="866e5f3a-6344-4627-8eed-c0784bb38c45"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="e2ace497-3c6f-4357-972d-afda71add10b"
-						name="Verify_Properties_of_Backplane_and_Slot_Cards">
-						</testmodule>
-						<testmodule
-						id="8d4f7ac5-4943-4af8-971a-2266bf4db8e9"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
