@@ -7724,6 +7724,10 @@ namespace TestProject
             RepoItemInfo _plxtreelistInfo;
             RepoItemInfo _plxtreelist_reopenInfo;
             RepoItemInfo _backplane1_otherslotcards1_reopenInfo;
+            RepoItemInfo _cell_properties_backplaneInfo;
+            BackplaneImageInfoClass _backplaneimageInfo;
+            RepoItemInfo _inventory_tab_backplaneInfo;
+            PLX_ImageInfoClass _plx_imageInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7877,6 +7881,10 @@ namespace TestProject
                 _plxtreelistInfo = new RepoItemInfo(this, "PLXTreeList", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[$sDeviceIndex]", 30000, null, "17dfb1b8-1159-4693-81ae-f50a6e0fc676");
                 _plxtreelist_reopenInfo = new RepoItemInfo(this, "PLXTreeList_Reopen", "progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[$sDeviceIndex]", 30000, null, "40166a68-2b94-41fc-80fc-4976fe3ae676");
                 _backplane1_otherslotcards1_reopenInfo = new RepoItemInfo(this, "Backplane1_OtherSlotCards1_Reopen", "progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@text=$sOtherSlotCardName]", 30000, null, "e23940a2-ab9e-4d78-bddb-4a61ded645f5");
+                _cell_properties_backplaneInfo = new RepoItemInfo(this, "cell_Properties_backplane", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/?/?/cell[@isheader='False']", 30000, null, "bccf0edd-d19d-4223-adb3-c1ce33a99116");
+                _backplaneimageInfo = new BackplaneImageInfoClass(this);
+                _inventory_tab_backplaneInfo = new RepoItemInfo(this, "Inventory_Tab_Backplane", "progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']", 30000, null, "c97a6509-f577-48d2-a0fc-107687fefa60");
+                _plx_imageInfo = new PLX_ImageInfoClass(this);
             }
 
             /// <summary>
@@ -7967,6 +7975,76 @@ namespace TestProject
                 public CompressedImage GetScreenshot2(System.Drawing.Rectangle cropRect)
                 {
                     return GetImage("405478cc-2b97-4039-b186-496665a06906", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The BackplaneImageInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("c3e8fad3-3b3f-4685-9686-e8de737672a7")]
+            public class BackplaneImageInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// BackplaneImageInfoClass class constructor.
+                /// </summary>
+                public BackplaneImageInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "BackplaneImage", "progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']//picture", 30000, null, "c3e8fad3-3b3f-4685-9686-e8de737672a7")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("b25e233e-6fe9-465d-8940-92a8372a6960")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("b25e233e-6fe9-465d-8940-92a8372a6960");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("b25e233e-6fe9-465d-8940-92a8372a6960")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("b25e233e-6fe9-465d-8940-92a8372a6960", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The PLX_ImageInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("3205a377-b082-47fb-9610-d937281d4b42")]
+            public class PLX_ImageInfoClass : RepoItemInfo
+            {
+                /// <summary>
+                /// PLX_ImageInfoClass class constructor.
+                /// </summary>
+                public PLX_ImageInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "PLX_Image", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture", 30000, null, "3205a377-b082-47fb-9610-d937281d4b42")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("77f984db-87eb-439d-b70a-f6f07ad3700a")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("77f984db-87eb-439d-b70a-f6f07ad3700a");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("77f984db-87eb-439d-b70a-f6f07ad3700a")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("77f984db-87eb-439d-b70a-f6f07ad3700a", cropRect);
                 }
             }
 
@@ -11447,6 +11525,102 @@ namespace TestProject
                 get
                 {
                     return _backplane1_otherslotcards1_reopenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cell_Properties_backplane item.
+            /// </summary>
+            [RepositoryItem("bccf0edd-d19d-4223-adb3-c1ce33a99116")]
+            public virtual Ranorex.Cell cell_Properties_backplane
+            {
+                get
+                {
+                    return _cell_properties_backplaneInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cell_Properties_backplane item info.
+            /// </summary>
+            [RepositoryItemInfo("bccf0edd-d19d-4223-adb3-c1ce33a99116")]
+            public virtual RepoItemInfo cell_Properties_backplaneInfo
+            {
+                get
+                {
+                    return _cell_properties_backplaneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BackplaneImage item.
+            /// </summary>
+            [RepositoryItem("c3e8fad3-3b3f-4685-9686-e8de737672a7")]
+            public virtual Ranorex.Picture BackplaneImage
+            {
+                get
+                {
+                    return _backplaneimageInfo.CreateAdapter<Ranorex.Picture>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BackplaneImage item info.
+            /// </summary>
+            [RepositoryItemInfo("c3e8fad3-3b3f-4685-9686-e8de737672a7")]
+            public virtual BackplaneImageInfoClass BackplaneImageInfo
+            {
+                get
+                {
+                    return _backplaneimageInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Inventory_Tab_Backplane item.
+            /// </summary>
+            [RepositoryItem("c97a6509-f577-48d2-a0fc-107687fefa60")]
+            public virtual Ranorex.Text Inventory_Tab_Backplane
+            {
+                get
+                {
+                    return _inventory_tab_backplaneInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Inventory_Tab_Backplane item info.
+            /// </summary>
+            [RepositoryItemInfo("c97a6509-f577-48d2-a0fc-107687fefa60")]
+            public virtual RepoItemInfo Inventory_Tab_BackplaneInfo
+            {
+                get
+                {
+                    return _inventory_tab_backplaneInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PLX_Image item.
+            /// </summary>
+            [RepositoryItem("3205a377-b082-47fb-9610-d937281d4b42")]
+            public virtual Ranorex.Picture PLX_Image
+            {
+                get
+                {
+                    return _plx_imageInfo.CreateAdapter<Ranorex.Picture>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLX_Image item info.
+            /// </summary>
+            [RepositoryItemInfo("3205a377-b082-47fb-9610-d937281d4b42")]
+            public virtual PLX_ImageInfoClass PLX_ImageInfo
+            {
+                get
+                {
+                    return _plx_imageInfo;
                 }
             }
 

@@ -2634,6 +2634,18 @@
       <UserCode>true</UserCode>
       <id>366ba626-dd2b-4ca2-a407-7a8acb035075</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Properties_of_Backplane_and_Slot_Cards.cs">
+      <BoundTo>da7d18e6-843a-4d57-8453-6d8f577b60c6</BoundTo>
+      <DependentUpon>Verify_Properties_of_Backplane_and_Slot_Cards.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8a77e986-35ae-4d76-8220-1b8c5ded970a</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Properties_of_Backplane_and_Slot_Cards.UserCode.cs">
+      <BoundTo>da7d18e6-843a-4d57-8453-6d8f577b60c6</BoundTo>
+      <DependentUpon>Verify_Properties_of_Backplane_and_Slot_Cards.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2ea4319d-4422-4544-a2c6-8cd5bb587237</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Remote_LED_Indicator_Property_For_Devices.cs">
       <BoundTo>bc0d6f9c-370b-4560-b54d-60378d8e3bb1</BoundTo>
       <DependentUpon>Verify_Remote_LED_Indicator_Property_For_Devices.rxrec</DependentUpon>
@@ -4261,6 +4273,11 @@
       <id>84b06e8b-efc6-49b5-9d87-61a7f9ef6124</id>
       <recordtableid>615b092c-057c-479d-8fc6-24e9a59c812f</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Properties_of_Backplane_and_Slot_Cards.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>da7d18e6-843a-4d57-8453-6d8f577b60c6</id>
+      <recordtableid>f8b16155-ecb9-47df-a1d6-27bca78454e5</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Remote_LED_Indicator_Property_For_Devices.rxrec">
       <id>bc0d6f9c-370b-4560-b54d-60378d8e3bb1</id>
       <recordtableid>6cff6cb3-f140-4e43-bb38-0a73648a772a</recordtableid>
@@ -4519,7 +4536,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{669BFBFF-553D-4843-82C5-5DD6353050EA}</Project>
+      <Project>{F5A7C3D5-95B7-48B7-9AA3-A72FA02F1E37}</Project>
       <Name>Ranorex Automation Helpers</Name>
     </ProjectReference>
   </ItemGroup>

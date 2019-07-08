@@ -393,4 +393,40 @@ namespace TestProject.Libraries
 		}
 		
 		
+		/***********************************************************************************************************
+		 * Function Name: EditDeviceProperty
+		 * Function Details: Verify Edit property from Inventory properties section
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 05/04/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void EditDevicePropertyWhichAreReadOnly(string ExpectedInventoryGridRowCount, string ExpectedInventoryGridColumn, string sNewValue)
+		{
+			// Retrieve Point grid rows and column count
+			sColumnIndex = getColumnNumberForInventoryGrid(ExpectedInventoryGridColumn);
+			sRowIndex = ExpectedInventoryGridRowCount;
+			
+			Report.Log(ReportLevel.Success,"Row an column values are set as"+sColumnIndex+sRowIndex);
+			
+			//Modifying the label
+			repo.FormMe.txt_InventoryGridDeviceProperty.Click();
+			repo.FormMe.txt_InventoryGridDeviceProperty.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			repo.FormMe.txt_InventoryGridDeviceProperty.PressKeys(sNewValue+"{ENTER}" );
+			Report.Log(ReportLevel.Info,"Parameter is editied to " +sNewValue);
+			
+			string ActualInventoryGridProperty = repo.FormMe.txt_InventoryGridDeviceProperty.TextValue;
+			
+			if(ActualInventoryGridProperty.Equals(sNewValue))
+			{
+				Report.Log(ReportLevel.Failure,"Device property has got edited");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Success,"Device property has not got edited");
+			}
+			
+		}
+		
 	}}

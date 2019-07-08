@@ -3885,6 +3885,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="44b69852-9f4d-4004-a89a-c45899135fde"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4553af55-df6d-4198-bc19-781168fa501c"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -7409,6 +7429,16 @@ loops.</SPAN>]]>
 			type="Recording">
 			</testmodule>
 			<testcase
+			id="8090bcf5-9f70-480c-abee-688d770e680c"
+			name="Verify_Properties_of_Backplane_and_Slot_Cards">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="809819bd-bb6a-4d4f-a7dc-db08d939d5ea"
 			name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Slot_Cards">
 				<description>
@@ -7942,6 +7972,20 @@ MxDesigner]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="866e5f3a-6344-4627-8eed-c0784bb38c45"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="8090bcf5-9f70-480c-abee-688d770e680c"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8674abe7-51b4-4a8d-949a-6fb8cbbca639"
 			name="Verify_DC_Units_on_changing_Device_Sensitivity_and_Device_Mode_for_Sounders"
 			ref="7211342f-8500-4f6b-9439-65a0c5a3c171"
@@ -8473,6 +8517,18 @@ MxDesigner]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="8d4f7ac5-4943-4af8-971a-2266bf4db8e9"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8da2167b-3394-4732-a42b-bcdefc871800"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="8db15a7e-ed45-4e21-9e95-b763970defe5"
 			name="Trip_Current_With_MultipleBase"
 			ref="773e468a-067e-4503-a291-e3f9eeebaeba"
@@ -8960,38 +9016,6 @@ MxDesigner]]>
 			name="ReportToPDFModule"
 			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
 			type="UserCode">
-				<databinding>
-					<var
-					dataname="PdfName"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
-					variablename="PdfName">
-					</var>
-					<var
-					dataname="PdfDirectoryPath"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="536f8a69-f246-4f2b-ae9e-1f62babb2ba9"
-					variablename="PdfDirectoryPath">
-					</var>
-					<var
-					dataname="Xml"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
-					variablename="Xml">
-					</var>
-					<var
-					dataname="Details"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
-					variablename="Details">
-					</var>
-					<var
-					dataname="DeleteRanorexReport"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
-					variablename="DeleteRanorexReport">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="9864a36b-ae6f-461e-b088-99301d83c7e8"
@@ -12720,6 +12744,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="e2ace497-3c6f-4357-972d-afda71add10b"
+			name="Verify_Properties_of_Backplane_and_Slot_Cards"
+			ref="f8b16155-ecb9-47df-a1d6-27bca78454e5"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
@@ -18610,6 +18640,30 @@ persisted in panel properties&nbsp;]]>
 						id="69806b1c-240b-43d8-92b9-2836e9b507fd"
 						name="Verify_the_max_min_section_displayed_for_Isolator_units_Intrinsically_safe_units">
 						</testmodule>
+						<testmodule
+						id="8da2167b-3394-4732-a42b-bcdefc871800"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="8090bcf5-9f70-480c-abee-688d770e680c"
+					name="Verify_Properties_of_Backplane_and_Slot_Cards">
+						<testmodule
+						id="44b69852-9f4d-4004-a89a-c45899135fde"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="866e5f3a-6344-4627-8eed-c0784bb38c45"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="e2ace497-3c6f-4357-972d-afda71add10b"
+						name="Verify_Properties_of_Backplane_and_Slot_Cards">
+						</testmodule>
+						<testmodule
+						id="8d4f7ac5-4943-4af8-971a-2266bf4db8e9"
+						name="Close_Application">
+						</testmodule>
 					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
@@ -18677,10 +18731,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

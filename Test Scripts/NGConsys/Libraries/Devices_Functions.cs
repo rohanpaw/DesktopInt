@@ -6293,6 +6293,49 @@ namespace TestProject.Libraries
             }
             
         }
+        
+        /***********************************************************************************************************
+		 * Function Name: verifyPicture
+		 * Function Details: To verify Picture from properties
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 3/07/2019 
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyPicture()
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Alarm Load property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Picture" +"{ENTER}" );
+			
+			//After this method Validate the image
+			
+			//After validating delete the Picture word from searvh properties using ErasePictureFromProperties()
+			
+		}
+		
+		/***********************************************************************************************************
+		 * Function Name: ErasePictureFromProperties
+		 * Function Details: To erase Picture from search properties
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 3/07/2019  
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void ErasePictureFromProperties()
+		{
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+
+		}
 
         
         
