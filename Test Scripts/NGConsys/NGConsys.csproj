@@ -3609,9 +3609,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Alarm_load_property_for_Non_Standard_Sounders.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>0e30d6fa-f729-4a3f-afcf-2f746884ac25</id>
       <recordtableid>f69b18a8-ee34-420e-9b12-8b539c261eec</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Alarm_load_property_for_Standard_Sounders.rxrec">
       <id>b70799d2-9a48-41bc-865a-05f619eae58e</id>

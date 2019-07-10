@@ -12918,6 +12918,9 @@ namespace TestProject
             RepoItemInfo _othernodesgalleryInfo;
             RepoItemInfo _tab_siteaccessoriesInfo;
             RepoItemInfo _somelistitemInfo;
+            RepoItemInfo _gallerylistInfo;
+            RepoItemInfo _detectorsInfo;
+            RepoItemInfo _mainlistInfo;
 
             /// <summary>
             /// Creates a new HwndWrapperProfileConsysExe0c643c73  folder.
@@ -12938,6 +12941,9 @@ namespace TestProject
                 _othernodesgalleryInfo = new RepoItemInfo(this, "OtherNodesGallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']", 30000, null, "fa18ffc9-0766-461e-bb9b-a613464ab5f1");
                 _tab_siteaccessoriesInfo = new RepoItemInfo(this, "tab_SiteAccessories", "progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']", 30000, null, "69be2d4d-f8fd-4e45-b45a-fcd7ad728f0d");
                 _somelistitemInfo = new RepoItemInfo(this, "SomeListItem", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@actualcaption=$sDeviceName]", 30000, null, "36776dfd-d1e5-43cf-b6c7-6702d23f9f13");
+                _gallerylistInfo = new RepoItemInfo(this, "GalleryList", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]", 30000, null, "643ac1fb-0dc7-4896-871d-cad97711bf28");
+                _detectorsInfo = new RepoItemInfo(this, "Detectors", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_Caption']/text[@text='Detectors']", 30000, null, "0a1e294c-ac64-4b1a-aa54-865b65b15aba");
+                _mainlistInfo = new RepoItemInfo(this, "MainList", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]", 30000, null, "90788ead-fe35-4dbd-981c-395de4f948c9");
             }
 
             /// <summary>
@@ -13273,6 +13279,78 @@ namespace TestProject
                 get
                 {
                     return _somelistitemInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GalleryList item.
+            /// </summary>
+            [RepositoryItem("643ac1fb-0dc7-4896-871d-cad97711bf28")]
+            public virtual Ranorex.List GalleryList
+            {
+                get
+                {
+                    return _gallerylistInfo.CreateAdapter<Ranorex.List>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GalleryList item info.
+            /// </summary>
+            [RepositoryItemInfo("643ac1fb-0dc7-4896-871d-cad97711bf28")]
+            public virtual RepoItemInfo GalleryListInfo
+            {
+                get
+                {
+                    return _gallerylistInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Detectors item.
+            /// </summary>
+            [RepositoryItem("0a1e294c-ac64-4b1a-aa54-865b65b15aba")]
+            public virtual Ranorex.Text Detectors
+            {
+                get
+                {
+                    return _detectorsInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Detectors item info.
+            /// </summary>
+            [RepositoryItemInfo("0a1e294c-ac64-4b1a-aa54-865b65b15aba")]
+            public virtual RepoItemInfo DetectorsInfo
+            {
+                get
+                {
+                    return _detectorsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MainList item.
+            /// </summary>
+            [RepositoryItem("90788ead-fe35-4dbd-981c-395de4f948c9")]
+            public virtual Ranorex.List MainList
+            {
+                get
+                {
+                    return _mainlistInfo.CreateAdapter<Ranorex.List>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MainList item info.
+            /// </summary>
+            [RepositoryItemInfo("90788ead-fe35-4dbd-981c-395de4f948c9")]
+            public virtual RepoItemInfo MainListInfo
+            {
+                get
+                {
+                    return _mainlistInfo;
                 }
             }
         }

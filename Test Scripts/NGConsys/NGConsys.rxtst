@@ -2365,6 +2365,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="261015c7-af22-4c48-825f-04bee6acd185"
+			name="Verify_DC_Unit_For_Built_In_Isolator_Devices_With_Non_Integral_LED_On_FIM_Loop_Considering_Trip_Curr"
+			ref="8d96ec4c-823d-433c-b189-1446cab232e4"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="26bb2109-624f-4954-900d-23be8c135f7d"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -14284,6 +14290,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="ffd4b359-f777-4e59-9d08-867aa74985ef"
+			name="Verify_DC_Unit_For_Built_In_Isolator_Devices_With_Non_Integral_LED_On_PFI_Loop_Considering_Trip_Curr"
+			ref="28e13f5c-8c30-426c-a46a-4b31266a36ff"
+			type="Recording">
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -18412,6 +18424,10 @@ persisted in panel properties&nbsp;]]>
 						name="Create_Project">
 						</testmodule>
 						<testmodule
+						id="ffd4b359-f777-4e59-9d08-867aa74985ef"
+						name="Verify_DC_Unit_For_Built_In_Isolator_Devices_With_Non_Integral_LED_On_PFI_Loop_Considering_Trip_Curr">
+						</testmodule>
+						<testmodule
 						id="5d8cf0c4-f303-4c36-b365-f6752b7c343d"
 						name="Close_Application">
 						</testmodule>
@@ -18426,6 +18442,10 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="81817846-a8f5-4aee-a319-8b9627f98245"
 						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="261015c7-af22-4c48-825f-04bee6acd185"
+						name="Verify_DC_Unit_For_Built_In_Isolator_Devices_With_Non_Integral_LED_On_FIM_Loop_Considering_Trip_Curr">
 						</testmodule>
 						<testmodule
 						id="4b1aa10e-2c52-42fc-a51d-8a7cb809cbfc"
@@ -18774,14 +18794,23 @@ persisted in panel properties&nbsp;]]>
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
+			<testcontainer
+			id="34abeb3f-69b9-420f-9c5b-a3b1852b887d">
+			</testcontainer>
+			<testcontainer
+			id="4568f5cd-852c-4854-931f-3a3d85e7fdf1">
+			</testcontainer>
+			<testcontainer
+			id="ecfd79ea-8275-4f6e-89a6-09b478da25ec">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

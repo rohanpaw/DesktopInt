@@ -16308,6 +16308,35 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@actualcaption=$sDeviceName]
 			</item>
+			<item
+			addcaps="list,wpfelement,wpfgroupelement"
+			capname="list"
+			id="643ac1fb-0dc7-4896-871d-cad97711bf28"
+			name="GalleryList"
+			refimgid="0151f3e6-62b8-4148-9cb9-e19e8a7049a6"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]"
+			searchtimeout="30000ms">
+				/form/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="0a1e294c-ac64-4b1a-aa54-865b65b15aba"
+			name="Detectors"
+			refimgid="551a293f-eeed-422e-98ae-571b353803fc"
+			searchtimeout="30000ms">
+				/form/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_Caption']/text[@text='Detectors']
+			</item>
+			<item
+			addcaps="list,wpfelement,wpfgroupelement"
+			capname="list"
+			id="90788ead-fe35-4dbd-981c-395de4f948c9"
+			name="MainList"
+			refimgid="4bfc6ec8-ea5d-43ae-af86-71c03bc13df7"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]"
+			searchtimeout="30000ms">
+				/form/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]
+			</item>
 			<basepath>
 				/form
 			</basepath>

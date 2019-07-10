@@ -16,6 +16,8 @@ using System.Threading;
 using WinForms = System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Microsoft.Office.Interop.Excel;
+using System.Windows;
+using System.Collections.Generic;
 
 using Ranorex;
 using Ranorex.Core;
@@ -6336,8 +6338,6 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 
 		}
-
-        
-        
+   
 	}
 }
