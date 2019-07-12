@@ -432,14 +432,14 @@ namespace TestProject.Libraries
 		
 
 		
-		/********************************************************************
+		/*****************************************************************************************************
 		 * Function Name: CableCapacitance
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale/Alpesh Dhakad
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : 11/07/2019 - Alpesh Dhakad - Update script and added InventoryGridFirstRow xpath 
+		 *****************************************************************************************************/
 		[UserCodeMethod]
 		public static void CableCapacitance(string sFileName,string sSheetName)
 		{
@@ -456,7 +456,14 @@ namespace TestProject.Libraries
 				string state =  ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				VerifyGalleryItem(sType,sDeviceName,state);
 				
-				repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
+				if(sRow.Equals("1"))
+				{
+					repo.FormMe.InventoryGridFirstRow.Click();
+				}
+				else
+				{
+					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();	
+				}
 				
 				string CableCapacitanceValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				repo.ProfileConsys1.cell_CableCapacitance.Click();
@@ -486,13 +493,28 @@ namespace TestProject.Libraries
 				repo.ProfileConsys1.txt_CableCapacitance.PressKeys((ChangedValue) +"{ENTER}");
 
 				
-				repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
+				if(sRow.Equals("1"))
+				{
+					repo.FormMe.InventoryGridFirstRow.Click();
+				}
+				else
+				{
+					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();	
+				}
+				
 				repo.ProfileConsys1.tab_Points.Click();
 				
 				state =  ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				VerifyGalleryItem(sType,sDeviceName,state);
 				
-				repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
+				if(sRow.Equals("1"))
+				{
+					repo.FormMe.InventoryGridFirstRow.Click();
+				}
+				else
+				{
+					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();	
+				}
 				
 				//=================================
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
@@ -889,17 +911,18 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/*********************************************************************************************
 		 * Function Name: getProgressBarColor
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 11/07/2019 - Added step to click on Physical Layout tab
+		 *******************************************************************************************/
 		[UserCodeMethod]
 		public static string getProgressBarColor(string LoadingType)
 		{
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			string actualColour;
 			switch (LoadingType)
 			{
@@ -6223,11 +6246,11 @@ namespace TestProject.Libraries
                 
                 if(ActualDeviceName.Equals(sDeviceName))
                 {
-                    Report.Log(ReportLevel.Success,"Device " +sDeviceName+ "is placed correctly");
+                    Report.Log(ReportLevel.Success,"Device " +sDeviceName+ " is placed correctly");
                 }
                 else
                 {
-                    Report.Log(ReportLevel.Failure,"Device " +sDeviceName+ "is placed incorrectly");
+                    Report.Log(ReportLevel.Failure,"Device " +sDeviceName+ " is placed incorrectly");
                 }
                 
                 //Click on Points Tab

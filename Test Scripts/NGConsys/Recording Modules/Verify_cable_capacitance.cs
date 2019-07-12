@@ -94,7 +94,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.NavigationTree.Loop_A.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.CableCapacitance("Cable_capacitance", "Devices");
+            Libraries.Devices_Functions.CableCapacitance("TC_114_Verify_Cable_capacitance", "Devices");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.ChangeCableLength("PFI", ValueConverter.ArgumentFromString<int>("fCableLength1", "500"), ValueConverter.ArgumentFromString<int>("fCableLength2", "500"));

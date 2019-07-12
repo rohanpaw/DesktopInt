@@ -7728,6 +7728,7 @@ namespace TestProject
             BackplaneImageInfoClass _backplaneimageInfo;
             RepoItemInfo _inventory_tab_backplaneInfo;
             PLX_ImageInfoClass _plx_imageInfo;
+            RepoItemInfo _inventorygridfirstrowInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7885,6 +7886,7 @@ namespace TestProject
                 _backplaneimageInfo = new BackplaneImageInfoClass(this);
                 _inventory_tab_backplaneInfo = new RepoItemInfo(this, "Inventory_Tab_Backplane", "progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']", 30000, null, "c97a6509-f577-48d2-a0fc-107687fefa60");
                 _plx_imageInfo = new PLX_ImageInfoClass(this);
+                _inventorygridfirstrowInfo = new RepoItemInfo(this, "InventoryGridFirstRow", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/?/?/text[@automationid='PART_Editor']", 30000, null, "78c3cb5c-ed89-4929-ba32-2b396f70cb5a");
             }
 
             /// <summary>
@@ -11621,6 +11623,30 @@ namespace TestProject
                 get
                 {
                     return _plx_imageInfo;
+                }
+            }
+
+            /// <summary>
+            /// The InventoryGridFirstRow item.
+            /// </summary>
+            [RepositoryItem("78c3cb5c-ed89-4929-ba32-2b396f70cb5a")]
+            public virtual Ranorex.Text InventoryGridFirstRow
+            {
+                get
+                {
+                    return _inventorygridfirstrowInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The InventoryGridFirstRow item info.
+            /// </summary>
+            [RepositoryItemInfo("78c3cb5c-ed89-4929-ba32-2b396f70cb5a")]
+            public virtual RepoItemInfo InventoryGridFirstRowInfo
+            {
+                get
+                {
+                    return _inventorygridfirstrowInfo;
                 }
             }
 

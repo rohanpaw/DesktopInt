@@ -103,7 +103,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 I", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceOrderForContextMenu("TC_052_Verify_Devices_Order_in_Dropped_Gallery", "Device Order Gallery Expansion");
+            Libraries.Devices_Functions.VerifyDeviceOrderForContextMenu("TC_52_Verify_Devices_Order_in_Dropped_Gallery", "Device Order Gallery Expansion");
             Delay.Milliseconds(0);
             
         }
