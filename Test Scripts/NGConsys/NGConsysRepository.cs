@@ -7833,10 +7833,10 @@ namespace TestProject
             RepoItemInfo _inventory_tab_backplaneInfo;
             PLX_ImageInfoClass _plx_imageInfo;
             RepoItemInfo _txt_pointgridpropertiesInfo;
-            RepoItemInfo _inventorygridfirstrowInfo;
             RepoItemInfo _saveascustom_reopenInfo;
             RepoItemInfo _sometextInfo;
             RepoItemInfo _systemloadInfo;
+            RepoItemInfo _inventorygridfirstrowInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7998,7 +7998,6 @@ namespace TestProject
                 _saveascustom_reopenInfo = new RepoItemInfo(this, "SaveAsCustom_Reopen", "progressbar/picture[2]/?/?/list[@automationid='PART_BarControl']/button[@text='Save as Custom']", 30000, null, "93dc5af3-c7f3-4b27-be50-732ec88afcae");
                 _sometextInfo = new RepoItemInfo(this, "SomeText", "progressbar/picture[2]/container/list/container//text", 30000, null, "b8acabbc-b09f-41c5-a1bc-8046c3abd660");
                 _systemloadInfo = new RepoItemInfo(this, "SystemLoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='15']//text[@caption=$sPsuV]", 30000, null, "e28129b7-fa8f-4ebe-992a-3931a1c7e24c");
-            }
                 _inventorygridfirstrowInfo = new RepoItemInfo(this, "InventoryGridFirstRow", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/?/?/text[@automationid='PART_Editor']", 30000, null, "78c3cb5c-ed89-4929-ba32-2b396f70cb5a");
             }
 

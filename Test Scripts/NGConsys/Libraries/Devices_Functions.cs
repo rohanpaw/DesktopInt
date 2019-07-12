@@ -6268,7 +6268,6 @@ namespace TestProject.Libraries
         }
         
         /********************************************************************
-<<<<<<< .mine
          * Function Name: VerifyDeviceOrderForGalleryExpansionAndContextMenu
          * Function Details: To verify device order when gallery is expanded
          * Parameter/Arguments:
@@ -6277,22 +6276,6 @@ namespace TestProject.Libraries
          * Last Update : 24/06/2019
          ********************************************************************/
         [UserCodeMethod]
-        public static void VerifyDeviceOrderForContextMenu(string sFileName,string sAddDevicesSheet)
-        {
-            //Open excel sheet and read it values,
-            Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
-            
-            // Count number of rows in excel and store it in rows variable
-            int rows= Excel_Utilities.ExcelRange.Rows.Count;
-=======
-		 * Function Name: VerifyDeviceOrderForGalleryExpansionAndContextMenu
-		 * Function Details: To verify device order when gallery is expanded
-		 * Parameter/Arguments:
-		 * Output:
-		 * Function Owner: Purvi Bhasin
-		 * Last Update : 24/06/2019
-		 ********************************************************************/
-		[UserCodeMethod]
 		public static void VerifyDeviceOrderForContextMenu(string sFileName,string sAddDevicesSheet)
 		{
 			//Open excel sheet and read it values,
@@ -6300,8 +6283,6 @@ namespace TestProject.Libraries
 			
 			// Count number of rows in excel and store it in rows variable
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
->>>>>>> .theirs
-
 			// Declared string type
 			string sType,DeviceIndex,DeviceName;
 			
@@ -6667,7 +6648,4 @@ namespace TestProject.Libraries
 		
 	}
 	}
-}
-	
-	
-}
+
