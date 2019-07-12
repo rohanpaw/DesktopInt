@@ -1644,11 +1644,11 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery"
 		enabled="True"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="VerifySounderCustomDeviceDisplayedInCustomGallery"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False"
 		varname="">
 			<comment>
@@ -1732,11 +1732,11 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery"
 		enabled="True"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="VerifySounderCustomDeviceDisplayedInCustomGallery"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False"
 		varname="">
 			<comment>
@@ -1789,6 +1789,51 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 					</argvaluetype>
 					<argvalue>
 						54084
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Application_Close"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="6869fd1a-83e3-4ee4-91ef-4d8973d52c15">
+				<argument
+				argname="Save"
+				id="e55fe4f5-2124-43b7-8eef-07bbf74caf28">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="SaveConfirmation"
+				id="41403ce0-795d-44f5-93f4-1752bf2826ce">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="sProjectName"
+				id="f5df41d4-54e7-47d2-aa4f-6f3cd9466b95">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>

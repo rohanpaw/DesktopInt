@@ -1353,6 +1353,42 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="aaa6fc3c-a167-42d1-8955-e8c7cff29500">
+				<argument
+				argname="sDeviceName"
+				id="ff3d8f44-de33-4d12-9384-d016fc639892">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						801 CH
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="14e5f7d2-ed82-4757-a840-9427d1440907">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Detectors
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelName"
 		namespace="TestProject.Libraries"
 		optional="False"
@@ -1489,7 +1525,7 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelName"
 		namespace="TestProject.Libraries"
@@ -1567,7 +1603,7 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="DeleteDevicesPresentInCustomGallery"
+		methodname="VerifyCustomDevicesInContextMenu"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -1576,7 +1612,119 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 			<bindings>
 			</bindings>
 			<arguments
-			id="ea423053-cd83-4575-b602-fc4213f89157">
+			id="9d83b62c-b79d-45f3-ace8-47b902c53bd8">
+				<argument
+				argname="sExist"
+				id="e49d740a-b243-42c3-aedc-04a72d406462">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelName"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9e244060-b4d9-4230-b6eb-96759e8485a0">
+				<argument
+				argname="sLabel"
+				id="053ccecd-3684-44a4-ae6e-c87c627a8d9f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						801 CH - 2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="RightClickOnSelectedRow"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="76b55c79-fde6-4b92-aac9-bab868fd984d">
+				<argument
+				argname="RowNumber"
+				id="391e0738-3c1d-4b90-bff9-0610213637f7">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8bca1e4c-3e3f-4af5-9b7b-15c754f33469"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e6baecb4-0da9-4e26-82d6-b6f66c654770"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/contextmenu/list/button[@text='Custom']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyCustomDevicesInContextMenu"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9d83b62c-b79d-45f3-ace8-47b902c53bd8">
+				<argument
+				argname="sExist"
+				id="e49d740a-b243-42c3-aedc-04a72d406462">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 	</recorditems>

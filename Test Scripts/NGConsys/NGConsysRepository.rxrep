@@ -1554,6 +1554,13 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@win32ownerwindowlevel='0']/progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='14']/?/?/text
 			</item>
+			<item
+			capname="text"
+			id="f6b40161-2304-42e3-9083-39d26ab48f2e"
+			name="txt_LabelName_MainProcessor"
+			searchtimeout="30000ms">
+				/form[@win32ownerwindowlevel='0']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row[2]/row/cell[3]/text[@text=$sLabelName]
+			</item>
 			<basepath>
 				/form[@win32ownerwindowlevel='0']
 			</basepath>
@@ -1693,7 +1700,7 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			id="dda50043-1c98-4316-852e-cb5dd36bf6bb"
 			name="txt_SelectDevice"
 			searchtimeout="30000ms">
-				/contextmenu//listitem//text[@caption=$ModelNumber]
+				/contextmenu//?//text[@caption=$ModelNumber]
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -2000,6 +2007,31 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			name="DeviceOrder_ContextMenu"
 			searchtimeout="30000ms">
 				/contextmenu/list/button[@text=$sDeviceName]/text[@caption=$sDeviceName]
+			</item>
+			<item
+			capname="text"
+			id="21f125d6-dfac-458f-a870-5c4c91b7f328"
+			name="txt_SelectAttachedFunctionalityItem"
+			searchtimeout="30000ms">
+				/contextmenu/listitem[@index=$sDeviceIndex]/text[@caption=$sDeviceName]
+			</item>
+			<item
+			addcaps="menuitem,wpfelement,wpfgroupelement"
+			capname="menuitem"
+			id="a43466b3-5055-4b51-a4dc-475c96a27a8b"
+			name="btn_DeleteDevice_CustomGallery"
+			refpath="/contextmenu/menuitem[@text='Delete Device']"
+			searchtimeout="30000ms">
+				/contextmenu/menuitem[@text='Delete Device']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="680e9974-55e6-46e5-a7ff-0c3c34009c74"
+			name="btn_CustomDevice_ContextMenu"
+			refpath="/contextmenu/list/button[@text='Custom']"
+			searchtimeout="30000ms">
+				/contextmenu/?/?/button[@text='Custom']
 			</item>
 			<basepath>
 				/contextmenu
@@ -3037,8 +3069,8 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="f4f72640-8721-416a-b01c-0018a4546ff3"
 			name="Paste"
 			refimgid="ccfa5778-f825-4f0d-9c0b-fa44faf66600"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Paste']
+			searchtimeout="60000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Paste']
 			</item>
 			<item
 			capname="cell"
@@ -3227,9 +3259,8 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="27ada95f-a2b2-4569-b272-1daf826563e7"
 			name="SaveAsCustom"
 			refimgid="571453ff-07fd-4d38-8e87-d9f5b5a675c7"
-			refpath="/form[@automationid='me']/progressbar/picture[2]/container[2]/list[@automationid='PART_BarControl']/button[@text='Save as Custom']"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[2]/?/?/list[@automationid='PART_BarControl']/button[@text='Save as Custom']
+				/form[@automationid='me']/progressbar/picture[7]/?/?/list[@automationid='PART_BarControl']/button[@text='Save as Custom']
 			</item>
 			<item
 			addcaps="cell,wpfelement,wpfgroupelement"
@@ -15773,6 +15804,36 @@ AAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="text"
+			id="60400636-80ed-4ba8-a9a1-609a88eced0f"
+			name="txt_PointGridProperties"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/container[$sRowIndex]/row/cell[$sColumnIndex]/text
+			</item>
+			<item
+			capname="button"
+			id="93dc5af3-c7f3-4b27-be50-732ec88afcae"
+			name="SaveAsCustom_Reopen"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[2]/?/?/list[@automationid='PART_BarControl']/button[@text='Save as Custom']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="b8acabbc-b09f-41c5-a1bc-8046c3abd660"
+			name="SomeText"
+			refpath="/form[@automationid='me']/progressbar/picture[2]/container/list/container/row/cell/text/text"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[2]/container/list/container//text
+			</item>
+			<item
+			capname="text"
+			id="e28129b7-fa8f-4ebe-992a-3931a1c7e24c"
+			name="SystemLoad"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='15']//text[@caption=$sPsuV]
+			</item>
+			<item
+			capname="text"
 			id="78c3cb5c-ed89-4929-ba32-2b396f70cb5a"
 			name="InventoryGridFirstRow"
 			searchtimeout="30000ms">
@@ -15998,6 +16059,16 @@ dHpHnyei6HQ4nQ7fKeJJm+Bzy4oAAAAASUVORK5CYII=
 			refpath="/form[@title='Custom Devices']/container[1]/list[@automationid='listBox']/listitem[@index='0']/button[@automationid='deleteButton']"
 			searchtimeout="30000ms">
 				/form[@title='Custom Devices']/?/?/list[@automationid='listBox']/?/?/button[@automationid='deleteButton']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="5777c208-3d0f-4f10-97fb-98ee2ecb7dfd"
+			name="ButtonOK_CustomGallery"
+			refimgid="c14d21db-7bce-44bc-88c7-ad44f9323f92"
+			refpath="/form[@title='Custom Devices']/container[1]/container[2]/button[@text='OK']"
+			searchtimeout="30000ms">
+				/form[@title='Custom Devices']/container[1]/?/?/button[@text='OK']
 			</item>
 			<basepath>
 				/form[@title='Custom Devices']
