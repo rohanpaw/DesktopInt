@@ -178,10 +178,10 @@ namespace TestProject.Libraries
 		}
 		
 		static string sGalleryName
-        {
-            get { return repo.sGalleryName; }
-            set { repo.sGalleryName = value; }
-        } 
+		{
+			get { return repo.sGalleryName; }
+			set { repo.sGalleryName = value; }
+		}
 		
 		/********************************************************************
 		 * Function Name: AddDevices
@@ -2679,8 +2679,8 @@ namespace TestProject.Libraries
 		 * Function Details: To delete devices from custom gallery
 		 * Parameter/Arguments:
 		 * Output:
-		 * Function Owner: Shweta
-		 * Last Update : 11/4/2019
+		 * Function Owner: Shweta 
+		 * Last Update : 11/4/2019 Updated on 10/07/2019 by Purvi Bhasin
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void DeleteDevicesPresentInCustomGallery()
@@ -2692,9 +2692,9 @@ namespace TestProject.Libraries
 				for(int i=0;i<=numberOfCustomDevices;i++)
 				{
 					sListIndex=i.ToString();
-					repo.CustomDevices.CustomGalleyListItem.Click();
-					repo.CustomDevices.CustomGalleyListItem.MoveTo("510;278");
-					repo.CustomDevices.DeleteButtonforCustom.Click();
+					repo.CustomDevices.CustomGalleyListItem.Click(System.Windows.Forms.MouseButtons.Right);
+					repo.ContextMenu.btn_DeleteDevice_CustomGallery.Click();
+					repo.CustomDevices.ButtonOK_CustomGallery.Click();
 				}
 			}
 			else
@@ -3733,27 +3733,27 @@ namespace TestProject.Libraries
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyBaseIsVisibleInList(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex,bool IsVisible)
-		        {
-            int iRowIndex;
-            sBase = sBaseofDevice;
-            sRowIndex = sBasePropertyRowIndex;
-            sLabelName = DeviceLabel;
-            repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
-            repo.ProfileConsys1.BaseofDeviceRow.Click();
-            repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
-            int.TryParse(sRowIndex, out iRowIndex);
-            iRowIndex = iRowIndex+1;
-            sRowIndex = iRowIndex.ToString();
-            repo.ProfileConsys1.Cell_BaseofDevice.Click();
-            repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
-            repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
-            int.TryParse(sRowIndex, out iRowIndex);
-            iRowIndex = iRowIndex-1;
-            sRowIndex = iRowIndex.ToString();
-            repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
-            repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
-            
-        }
+		{
+			int iRowIndex;
+			sBase = sBaseofDevice;
+			sRowIndex = sBasePropertyRowIndex;
+			sLabelName = DeviceLabel;
+			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+			repo.ProfileConsys1.BaseofDeviceRow.Click();
+			repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+			int.TryParse(sRowIndex, out iRowIndex);
+			iRowIndex = iRowIndex+1;
+			sRowIndex = iRowIndex.ToString();
+			repo.ProfileConsys1.Cell_BaseofDevice.Click();
+			repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+			repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+			int.TryParse(sRowIndex, out iRowIndex);
+			iRowIndex = iRowIndex-1;
+			sRowIndex = iRowIndex.ToString();
+			repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+			repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+			
+		}
 
 		
 		/*****************************************************************************************************************
@@ -4052,7 +4052,7 @@ namespace TestProject.Libraries
 			else
 			{
 				Report.Log(ReportLevel.Failure,"Device property is not verified not in Points grid");
-			}	
+			}
 		}
 		
 		/******************************************************************************************************************
@@ -4143,8 +4143,12 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyDeviceProperties(string sPropertyLabel, string sPropertyValue)
 		{
-			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
+			{
+				//Click on Points tab
+				repo.ProfileConsys1.tab_Points.Click();
+			}
+			
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -6084,148 +6088,148 @@ namespace TestProject.Libraries
 		}
 		
 		/********************************************************************************************************************
-         * Function Name: verifyNonDroppedGalleryWithImage
-         * Function Details: To verify non dropped gallery with image and text
-         * Parameter/Arguments:GalleryType, Device1,Device2
-         * Output:
-         * Function Owner: Purvi Bhasin
-         * Last Update : 25/06/2019   26/06/2019 - Alpesh Dhakad - Updated code to execute it
-         *********************************************************************************************************************/
-        [UserCodeMethod]
-        public static void verifyNonDroppedGalleryWithImage(string GalleryType,string Device1,string Device2)
-        {
-            string firstGalleryItemText;
-            sGalleryIndex = Devices_Functions.SelectGalleryType(GalleryType);
-            //string firstGalleryItemText = repo.FormMe.GalleryList.Text;
-            Devices_Functions.AddDevicesfromGallery(Device1,GalleryType);
-            sDeviceName = Device1;
-            firstGalleryItemText = repo.FormMe.txt_NonDroppedGalleryItemTextForItemsWithImage.TextValue;
-            if(firstGalleryItemText.Equals(Device1))
-            {
-                Report.Log(ReportLevel.Success, "Gallery: " + Device1+ " displayed as favourite device");
-            }
-            
-            else
-            {
-                Report.Log(ReportLevel.Failure, "Gallery: " + Device1+ " not displayed as favourite device");
-            }
-            
-            Devices_Functions.AddDevicesfromGallery(Device2,GalleryType);
-            sDeviceName = Device2;
-            firstGalleryItemText = repo.FormMe.txt_NonDroppedGalleryItemTextForItemsWithImage.TextValue;
-            if(firstGalleryItemText.Equals(Device2))
-            {
-                Report.Log(ReportLevel.Success, "Gallery: " + Device2+ " displayed as favourite device");
-            }
-            
-            else
-            {
-                Report.Log(ReportLevel.Failure, "Gallery: " + Device2+ " not displayed as favourite device");
-            }
-            
-            
-            repo.FormMe.GalleryPARTDown.Click();
-            sDeviceName = Device1;        
-            
-           if(repo.HwndWrapperProfileConsysExe0c643c73.SomeListItem.EnsureVisible())
-           {
-           	Report.Log(ReportLevel.Success, "Gallery: " + Device1+ " remains as 2nd favourite device");
-           }
-           
-           else
-            {
-                Report.Log(ReportLevel.Failure, "Gallery: " + Device1+ " not remains as 2nd favourite device");
-            }
-           
-        }
-        
-        /********************************************************************
-         * Function Name: VerifyBaseVisibilityInList
-         * Function Details:
-         * Parameter/Arguments:
-         * Output:
-         * Function Owner: Purvi Bhasin
-         * Last Update :28/06/2019
-         ********************************************************************/
-        [UserCodeMethod]
-        public static void VerifyBaseVisibilityInList(string sBaseofDevice,bool IsVisible)
-        {
-            sBase = sBaseofDevice;
-            if(IsVisible)
-            {
-                if(repo.ContextMenu.Button_BaseSelectionInfo.Exists())
-                {
-                    Report.Log(ReportLevel.Success,"Base "+ sBase +" exist in list");
-                }
-                else
-                {
-                    Report.Log(ReportLevel.Failure,"Base "+ sBase +" doesn't exist in list");
-                }
-            }
-            else
-            {
-                if(repo.ContextMenu.Button_BaseSelectionInfo.Exists())
-                {
-                    Report.Log(ReportLevel.Success,"Base "+ sBase +" doesn't exist in list");
-                }
-                else
-                {
-                    Report.Log(ReportLevel.Failure,"Base "+ sBase +" exist in list");
-                }
-            }
-        }
+		 * Function Name: verifyNonDroppedGalleryWithImage
+		 * Function Details: To verify non dropped gallery with image and text
+		 * Parameter/Arguments:GalleryType, Device1,Device2
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 25/06/2019   26/06/2019 - Alpesh Dhakad - Updated code to execute it
+		 *********************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyNonDroppedGalleryWithImage(string GalleryType,string Device1,string Device2)
+		{
+			string firstGalleryItemText;
+			sGalleryIndex = Devices_Functions.SelectGalleryType(GalleryType);
+			//string firstGalleryItemText = repo.FormMe.GalleryList.Text;
+			Devices_Functions.AddDevicesfromGallery(Device1,GalleryType);
+			sDeviceName = Device1;
+			firstGalleryItemText = repo.FormMe.txt_NonDroppedGalleryItemTextForItemsWithImage.TextValue;
+			if(firstGalleryItemText.Equals(Device1))
+			{
+				Report.Log(ReportLevel.Success, "Gallery: " + Device1+ " displayed as favourite device");
+			}
+			
+			else
+			{
+				Report.Log(ReportLevel.Failure, "Gallery: " + Device1+ " not displayed as favourite device");
+			}
+			
+			Devices_Functions.AddDevicesfromGallery(Device2,GalleryType);
+			sDeviceName = Device2;
+			firstGalleryItemText = repo.FormMe.txt_NonDroppedGalleryItemTextForItemsWithImage.TextValue;
+			if(firstGalleryItemText.Equals(Device2))
+			{
+				Report.Log(ReportLevel.Success, "Gallery: " + Device2+ " displayed as favourite device");
+			}
+			
+			else
+			{
+				Report.Log(ReportLevel.Failure, "Gallery: " + Device2+ " not displayed as favourite device");
+			}
+			
+			
+			repo.FormMe.GalleryPARTDown.Click();
+			sDeviceName = Device1;
+			
+			if(repo.HwndWrapperProfileConsysExe0c643c73.SomeListItem.EnsureVisible())
+			{
+				Report.Log(ReportLevel.Success, "Gallery: " + Device1+ " remains as 2nd favourite device");
+			}
+			
+			else
+			{
+				Report.Log(ReportLevel.Failure, "Gallery: " + Device1+ " not remains as 2nd favourite device");
+			}
+			
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyBaseVisibilityInList
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update :28/06/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyBaseVisibilityInList(string sBaseofDevice,bool IsVisible)
+		{
+			sBase = sBaseofDevice;
+			if(IsVisible)
+			{
+				if(repo.ContextMenu.Button_BaseSelectionInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success,"Base "+ sBase +" exist in list");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Base "+ sBase +" doesn't exist in list");
+				}
+			}
+			else
+			{
+				if(repo.ContextMenu.Button_BaseSelectionInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success,"Base "+ sBase +" doesn't exist in list");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Base "+ sBase +" exist in list");
+				}
+			}
+		}
 
 
 		/********************************************************************
-         * Function Name: VerifyBaseAfterReopening
-         * Function Details:
-         * Parameter/Arguments:
-         * Output:
-         * Function Owner: Purvi Bhasin
-         * Last Update : 28/06/2019
-         ********************************************************************/
-        [UserCodeMethod]
-        public static void VerifyBaseAfterReopening(string DeviceLabel,string sBasePropertyRowIndex,string sBaseName)
-        {
-            int iRowIndex; 
-            string sExistingBase;
-            sRowIndex = sBasePropertyRowIndex;
-            sLabelName = DeviceLabel;
-            repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
-            repo.ProfileConsys1.BaseofDeviceRow.Click();
-            repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
-            int.TryParse(sRowIndex, out iRowIndex);
-            iRowIndex = iRowIndex+1;
-            sRowIndex = iRowIndex.ToString();
-            repo.ProfileConsys1.Cell_BaseofDevice_Reopen.Click();
-            sExistingBase = repo.ProfileConsys1.SomeText_Reopen.TextValue;
-            
-            if(sExistingBase.Equals(sBaseName))
-            {
-                Report.Log(ReportLevel.Success,"Base value is retained");
-            }
-            else
-            {
-                Report.Log(ReportLevel.Failure,"Base value is not retained");
-            }
-        }
+		 * Function Name: VerifyBaseAfterReopening
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 28/06/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyBaseAfterReopening(string DeviceLabel,string sBasePropertyRowIndex,string sBaseName)
+		{
+			int iRowIndex;
+			string sExistingBase;
+			sRowIndex = sBasePropertyRowIndex;
+			sLabelName = DeviceLabel;
+			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+			repo.ProfileConsys1.BaseofDeviceRow.Click();
+			repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+			int.TryParse(sRowIndex, out iRowIndex);
+			iRowIndex = iRowIndex+1;
+			sRowIndex = iRowIndex.ToString();
+			repo.ProfileConsys1.Cell_BaseofDevice_Reopen.Click();
+			sExistingBase = repo.ProfileConsys1.SomeText_Reopen.TextValue;
+			
+			if(sExistingBase.Equals(sBaseName))
+			{
+				Report.Log(ReportLevel.Success,"Base value is retained");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Base value is not retained");
+			}
+		}
 
-        /********************************************************************
-         * Function Name: VerifyDeviceOrderForGalleryExpansionAndContextMenu
-         * Function Details: To verify device order when gallery is expanded
-         * Parameter/Arguments:
-         * Output:
-         * Function Owner: Purvi Bhasin
-         * Last Update : 24/06/2019
-         ********************************************************************/
-        [UserCodeMethod]
-        public static void VerifyDeviceOrderForGalleryExpansion(string sFileName,string sAddDevicesSheet)
-        {
-            //Open excel sheet and read it values,
-            Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
-            
-            // Count number of rows in excel and store it in rows variable
-            int rows= Excel_Utilities.ExcelRange.Rows.Count;
+		/********************************************************************
+		 * Function Name: VerifyDeviceOrderForGalleryExpansionAndContextMenu
+		 * Function Details: To verify device order when gallery is expanded
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 24/06/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyDeviceOrderForGalleryExpansion(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 
             // Declared string type
             string sType,DeviceIndex,sDeviceName;
@@ -6272,60 +6276,59 @@ namespace TestProject.Libraries
          * Last Update : 24/06/2019
          ********************************************************************/
         [UserCodeMethod]
-        public static void VerifyDeviceOrderForContextMenu(string sFileName,string sAddDevicesSheet)
-        {
-            //Open excel sheet and read it values,
-            Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
-            
-            // Count number of rows in excel and store it in rows variable
-            int rows= Excel_Utilities.ExcelRange.Rows.Count;
+		public static void VerifyDeviceOrderForContextMenu(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			// Declared string type
+			string sType,DeviceIndex,DeviceName;
+			
+			// For loop to iterate on data present in excel
+			for(int j=2; j<=2; j++)
+			{
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,1]).Value.ToString();
+				
+				string RowIndex = "1";
+				RightClickOnSelectedRow(RowIndex);
+				
+				sGalleryName = sType;
+				repo.ContextMenu.Gallery_In_Context_Menu.Click();
 
-            // Declared string type
-            string sType,DeviceIndex,DeviceName;
-            
-            // For loop to iterate on data present in excel
-            for(int j=2; j<=2; j++)
-            {
-                sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,1]).Value.ToString();
-                
-                string RowIndex = "1";
-                RightClickOnSelectedRow(RowIndex);
-                
-                sGalleryName = sType;
-                repo.ContextMenu.Gallery_In_Context_Menu.Click();
-
-                
-                for(int i=2; i<=rows; i++)
-                {
-                    DeviceIndex = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
-                    DeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
-                    
-                    sDeviceIndex = DeviceIndex;
-                    sDeviceName = DeviceName;
-                    string ActualDeviceName = repo.ContextMenu.DeviceOrder_ContextMenu.TextValue;
-                    
-                    if(ActualDeviceName.Equals(sDeviceName))
-                    {
-                        Report.Log(ReportLevel.Success,"Device " +sDeviceName+ "is placed correctly");
-                    }
-                    else
-                    {
-                        Report.Log(ReportLevel.Failure,"Device " +sDeviceName+ "is placed incorrectly");
-                    }
-                }
-                
-                
-            }
-            
-        }
-        
-        /***********************************************************************************************************
+				
+				for(int i=2; i<=rows; i++)
+				{
+					DeviceIndex = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+					DeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+					
+					sDeviceIndex = DeviceIndex;
+					sDeviceName = DeviceName;
+					string ActualDeviceName = repo.ContextMenu.DeviceOrder_ContextMenu.TextValue;
+					
+					if(ActualDeviceName.Equals(sDeviceName))
+					{
+						Report.Log(ReportLevel.Success,"Device " +sDeviceName+ "is placed correctly");
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure,"Device " +sDeviceName+ "is placed incorrectly");
+					}
+				}
+				
+				
+			}
+			
+		}
+		
+		/***********************************************************************************************************
 		 * Function Name: verifyPicture
 		 * Function Details: To verify Picture from properties
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 3/07/2019 
+		 * Last Update : 3/07/2019
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyPicture()
@@ -6349,7 +6352,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 3/07/2019  
+		 * Last Update : 3/07/2019
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void ErasePictureFromProperties()
@@ -6362,5 +6365,287 @@ namespace TestProject.Libraries
 
 		}
    
+		/********************************************************************
+		 * Function Name: VerifyDeviceExists
+		 * Function Details: To verify item with label name exists in inventory grid
+		 * Parameter/Arguments: sExists, sLabelName
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 8/7/2019
+		 ********************************************************************/
+		// Change cable resistance method
+		[UserCodeMethod]
+		public static void VerifyDeviceExists(bool sExists, string sLabel)
+		{
+			sLabelName = sLabel;
+			
+			if(sExists)
+			{
+				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+				{
+					Report.Log(ReportLevel.Success,"Device with label name " +sLabel+ " is displayed correctly");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device with label name " +sLabel+ " not is displayed correctly");
+				}
+			}
+			else
+			{
+				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+				{
+					Report.Log(ReportLevel.Failure,"Device with label name " +sLabel+ " is getting displayed");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success,"Device with label name " +sLabel+ " is correctly not displayed");
+				}
+			}
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyProductCodeInSearchProperties
+		 * Function Details: To verify SKU in search properties
+		 * Parameter/Arguments:expected Label text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyProductCodeInSearchProperties(string sProductLabel)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Product code" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties_backplane.Click();
+			
+			// Retrieve value of label
+			string actualProductLabel = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			
+			// Comparing actualLabel and sLabel values
+			if(actualProductLabel.Equals(sProductLabel))
+			{
+				Report.Log(ReportLevel.Success,"Actual SKU value " +actualProductLabel+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Actual SKU Value is displayed as "+actualProductLabel+ " instead of "+ sProductLabel);
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+
+		
+		/********************************************************************
+		 * Function Name: VerifyProductInSearchProperties
+		 * Function Details: To verify Product Name in search properties
+		 * Parameter/Arguments:expected Label text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyProductInSearchProperties(string sProductName)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Product" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties_backplane.Click();
+			
+			// Retrieve value of label
+			string actualSKUValue = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			
+			// Comparing actualLabel and sLabel values
+			if(actualSKUValue.Equals(sProductName))
+			{
+				Report.Log(ReportLevel.Success,"Actual SKU value " +actualSKUValue+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Actual SKU Value is displayed as "+actualSKUValue+ " instead of "+ sProductName);
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyRegionNameInSearchProperties
+		 * Function Details: To verify Product Name in search properties
+		 * Parameter/Arguments:expected Label text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyRegionNameInSearchProperties(string sRegionName)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Region Name" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties_backplane.Click();
+			
+			// Retrieve value of label
+			string actualRegionName = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			
+			// Comparing actualLabel and sLabel values
+			if(actualRegionName.Equals(sRegionName))
+			{
+				Report.Log(ReportLevel.Success,"Actual Region Name " +actualRegionName+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Actual Region Name is displayed as "+actualRegionName+ " instead of "+ sRegionName);
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		/***********************************************************************************************************
+		 * Function Name: editRegionName
+		 * Function Details: To edit device label from properties section
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 05/04/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void editRegionName(string sNewLabel)
+		{
+			
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search for the Label property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Region Name" +"{ENTER}" );
+			
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties_backplane.Click();
+			
+			//Modifying the label
+			repo.FormMe.cell_Properties_backplane.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			repo.FormMe.cell_Properties_backplane.PressKeys(sNewLabel +"{ENTER}" );
+			Report.Log(ReportLevel.Success,"Label is edited to " +sNewLabel);
+			
+			
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		/***********************************************************************************************************
+		 * Function Name: verifyFunctionality
+		 * Function Details: To verify Functionality from properties
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 09/07/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyFunctionality(string sDescription)
+		{
+			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
+			{
+				//Click on Points tab
+				repo.ProfileConsys1.tab_Points.Click();
+			}
+			
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Alarm Load property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Functionality" +"{ENTER}" );
+	
+			string actualDescription =	repo.FormMe.txt_PropertiesTextValue.TextValue;
+			
+			// Comparing DayMode and sDayMode values
+			if(actualDescription.Equals(sDescription))
+			{
+				Report.Log(ReportLevel.Success,"Description " +sDescription+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Description is displayed as "+actualDescription+ " instead of "+ sDescription);
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyCustomDevicesInContextMenu
+		 * Function Details: To delete devices from custom gallery
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Shweta 
+		 * Last Update : 11/4/2019 Updated on 10/07/2019 by Purvi Bhasin
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyCustomDevicesInContextMenu(bool sExist)
+		{
+			if(sExist)
+			{
+				if(repo.ContextMenu.btn_CustomDevice_ContextMenuInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success, "Custom devices are present in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Custom devices are not present in gallery");
+				}
+			}
+			else
+			{
+				if(repo.ContextMenu.btn_CustomDevice_ContextMenuInfo.Exists())
+				{
+					Report.Log(ReportLevel.Failure, "Custom devices are present in gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Custom devices are not present in gallery");
+				}
+				
+			}
+		}
+		
+		
+		
+		
 	}
-}
+	}
+

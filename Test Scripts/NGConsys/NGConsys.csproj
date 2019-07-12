@@ -402,6 +402,18 @@
       <UserCode>true</UserCode>
       <id>d919c980-a9de-4b69-adf1-cd1ddd6f2196</id>
     </Compile>
+    <Compile Include="Recording Modules\Reopen_Verify_LPS800_And_Its_Sounders.cs">
+      <BoundTo>b6fcb03e-7112-4070-8ec9-932f3cc82b36</BoundTo>
+      <DependentUpon>Reopen_Verify_LPS800_And_Its_Sounders.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ba4e2de1-2058-410d-b9fb-0c229eb1bbdf</id>
+    </Compile>
+    <Compile Include="Recording Modules\Reopen_Verify_LPS800_And_Its_Sounders.UserCode.cs">
+      <BoundTo>b6fcb03e-7112-4070-8ec9-932f3cc82b36</BoundTo>
+      <DependentUpon>Reopen_Verify_LPS800_And_Its_Sounders.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cee4e8ca-ad32-45f3-a17e-c3f7204a607a</id>
+    </Compile>
     <Compile Include="Recording Modules\Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light.cs">
       <BoundTo>ce0afa44-9e9c-4a88-b613-8609c59b57a4</BoundTo>
       <DependentUpon>Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light.rxrec</DependentUpon>
@@ -1625,6 +1637,18 @@
       <DependentUpon>Verify_Device_Order_Of_Sounders_Added_In_LPS800.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>518ee61d-15b8-4ac8-9838-0139a01a5685</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix.cs">
+      <BoundTo>4e08f8c3-2152-45ab-9e45-eeb28f0b1281</BoundTo>
+      <DependentUpon>Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8051b946-0212-4ab8-93dc-51cadeef20a8</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix.UserCode.cs">
+      <BoundTo>4e08f8c3-2152-45ab-9e45-eeb28f0b1281</BoundTo>
+      <DependentUpon>Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aa83737f-c05a-48e5-83f4-dbcce5ad8012</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Export_Of_Region_Data.cs">
       <BoundTo>80b32744-0f3a-40c9-be30-c0a1736f9e26</BoundTo>
@@ -2862,6 +2886,30 @@
       <UserCode>true</UserCode>
       <id>73f65616-8d2e-4795-b882-6d59663ef746</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M.cs">
+      <BoundTo>f8b52d33-e145-4fcb-b146-09aa4197918a</BoundTo>
+      <DependentUpon>Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73ae967c-ddf3-4f3f-a8a5-4ddca8ed1a80</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M.UserCode.cs">
+      <BoundTo>f8b52d33-e145-4fcb-b146-09aa4197918a</BoundTo>
+      <DependentUpon>Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>879b00ca-07b8-40b6-93b2-e712e4044761</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_System_Load_On_Changing_CPU_Of_Panel.cs">
+      <BoundTo>d7ab598e-996f-47db-9e17-6caaefd7d167</BoundTo>
+      <DependentUpon>Verify_System_Load_On_Changing_CPU_Of_Panel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aab9253c-f24e-480b-8c9e-0fd080d2d9de</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_System_Load_On_Changing_CPU_Of_Panel.UserCode.cs">
+      <BoundTo>d7ab598e-996f-47db-9e17-6caaefd7d167</BoundTo>
+      <DependentUpon>Verify_System_Load_On_Changing_CPU_Of_Panel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1f5e0d4a-29e3-44f9-93d4-bd41c7b76723</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_The_Behaviour_When_ASC_For_LPS800__75mA.cs">
       <BoundTo>bb1a0e58-f116-443f-9b12-48692efd841b</BoundTo>
       <DependentUpon>Verify_The_Behaviour_When_ASC_For_LPS800__75mA.rxrec</DependentUpon>
@@ -3005,6 +3053,18 @@
       <DependentUpon>Verify_The_Network_Card_Is_Added_To_Panel.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>b08f2efc-525b-44ca-9a78-869f010c8a3f</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_the_properties_of_Audix_Interface.cs">
+      <BoundTo>089525c0-3a87-437e-9334-2b80ced94d20</BoundTo>
+      <DependentUpon>Verify_the_properties_of_Audix_Interface.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>78785b6b-b498-4247-a477-643143a2acb5</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_the_properties_of_Audix_Interface.UserCode.cs">
+      <BoundTo>089525c0-3a87-437e-9334-2b80ced94d20</BoundTo>
+      <DependentUpon>Verify_the_properties_of_Audix_Interface.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c25c379f-9ac8-4aa3-b0c5-86ba4ad2cb26</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_The_Properties_Of_TLI800.cs">
       <BoundTo>da483530-9948-4bab-8e1b-2fbcfaeca069</BoundTo>
@@ -3210,6 +3270,18 @@
       <UserCode>true</UserCode>
       <id>d705b0de-cba7-48fc-8d21-3465c5ce6af9</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.cs">
+      <BoundTo>d77bf6dc-7315-412d-8570-f66a513bb1b5</BoundTo>
+      <DependentUpon>Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>63043637-e126-4a21-87b2-a130b29ad0f0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.UserCode.cs">
+      <BoundTo>d77bf6dc-7315-412d-8570-f66a513bb1b5</BoundTo>
+      <DependentUpon>Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>edf27828-ba7e-43ca-88c6-2f4089702068</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_when_user_edit_the_HVR800_Properties.cs">
       <BoundTo>27f3abf7-e1f3-4d04-a5c6-44d619466fd7</BoundTo>
       <DependentUpon>Verify_when_user_edit_the_HVR800_Properties.rxrec</DependentUpon>
@@ -3342,6 +3414,11 @@
       <id>2425b2fa-2792-4823-92ef-151467004074</id>
       <recordtableid>ff41e8ae-1e9f-4c7c-8bd6-e24148d6b192</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Reopen_Verify_LPS800_And_Its_Sounders.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>b6fcb03e-7112-4070-8ec9-932f3cc82b36</id>
+      <recordtableid>62e3d6fa-fa93-46f9-a7b4-8288f82d1236</recordtableid>
     </None>
     <None Include="Recording Modules\Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -3853,6 +3930,11 @@
       <recordtableid>31c8e708-c6a7-4e5f-9e6d-b2800ff527c8</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>4e08f8c3-2152-45ab-9e45-eeb28f0b1281</id>
+      <recordtableid>973b545f-daf4-47a9-b82e-d0a7b6dbfca9</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Export_Of_Region_Data.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>80b32744-0f3a-40c9-be30-c0a1736f9e26</id>
@@ -4274,9 +4356,9 @@
       <recordtableid>615b092c-057c-479d-8fc6-24e9a59c812f</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Properties_of_Backplane_and_Slot_Cards.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>da7d18e6-843a-4d57-8453-6d8f577b60c6</id>
       <recordtableid>f8b16155-ecb9-47df-a1d6-27bca78454e5</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Remote_LED_Indicator_Property_For_Devices.rxrec">
       <id>bc0d6f9c-370b-4560-b54d-60378d8e3bb1</id>
@@ -4368,6 +4450,16 @@
       <recordtableid>5e03fc6d-462d-44a1-b7f7-949806efd4c2</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>f8b52d33-e145-4fcb-b146-09aa4197918a</id>
+      <recordtableid>d94bab78-2f0e-4c8a-8998-48d36343be6c</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_System_Load_On_Changing_CPU_Of_Panel.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>d7ab598e-996f-47db-9e17-6caaefd7d167</id>
+      <recordtableid>226d2808-17b5-476f-804b-8ef9c24d6157</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_The_Behaviour_When_ASC_For_LPS800__75mA.rxrec">
       <id>bb1a0e58-f116-443f-9b12-48692efd841b</id>
       <recordtableid>3461a92b-f5d9-4014-b3a4-b16172bd65f5</recordtableid>
@@ -4427,6 +4519,11 @@
       <id>144ea792-7286-454e-abc5-6b9803fb7582</id>
       <recordtableid>1e66c130-cd29-457b-a28a-fe9ac1cb5f64</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_the_properties_of_Audix_Interface.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>089525c0-3a87-437e-9334-2b80ced94d20</id>
+      <recordtableid>e5591827-cfa7-4c05-9578-6ea1d74f4404</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_The_Properties_Of_TLI800.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4512,6 +4609,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>03fdc858-13e7-4a00-8db5-49e5f89f8ae9</id>
       <recordtableid>24868221-cbc4-40c8-927e-77d4ec6d7e1e</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.rxrec">
+      <id>d77bf6dc-7315-412d-8570-f66a513bb1b5</id>
+      <recordtableid>54485363-a8fb-4263-8ff8-4d85b9a71b19</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_when_user_edit_the_HVR800_Properties.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

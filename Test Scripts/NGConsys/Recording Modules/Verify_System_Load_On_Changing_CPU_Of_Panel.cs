@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery recording.
+    ///The Verify_System_Load_On_Changing_CPU_Of_Panel recording.
     /// </summary>
-    [TestModule("8a5657d5-5a28-4966-acd7-0e9a47e689cf", ModuleType.Recording, 1)]
-    public partial class Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery : ITestModule
+    [TestModule("226d2808-17b5-476f-804b-8ef9c24d6157", ModuleType.Recording, 1)]
+    public partial class Verify_System_Load_On_Changing_CPU_Of_Panel : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery instance = new Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery();
+        static Verify_System_Load_On_Changing_CPU_Of_Panel instance = new Verify_System_Load_On_Changing_CPU_Of_Panel();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery()
+        public Verify_System_Load_On_Changing_CPU_Of_Panel()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery Instance
+        public static Verify_System_Load_On_Changing_CPU_Of_Panel Instance
         {
             get { return instance; }
         }
@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", "");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(1));
@@ -94,59 +94,44 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.NavigationTree.Loop_A.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("LPS 800", "Sounders/Beacons");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelName("LPS 800 - 1");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Generic Sounder", "Conventional Sounders");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.ChangeLabelName("Generic");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SaveAsCustom' at Center.", repo.FormMe.SaveAsCustomInfo, new RecordItemIndex(11));
-            repo.FormMe.SaveAsCustom.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(4));
+            repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder");
+            // Data isnt present
+            Libraries.PSULoad_Functions.verifySystemLoadValue("0.224");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.ChangeLabelName("Generic");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(6));
+            repo.ProfileConsys1.SiteNode.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(7));
+            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Delay.Milliseconds(200);
+            
+            // Different oin test data
+            Libraries.Panel_Functions.ChangeCPUType("CPU 801");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.ChangeLabelName("ABC");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(9));
+            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("LPS 800 - 1");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(10));
+            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+            Delay.Milliseconds(200);
             
-            VerifySounderCustomDeviceDisplayedInCustomGallery("Custom", ValueConverter.ArgumentFromString<bool>("isEnabled", "True"));
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(11));
+            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("Generic");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(12));
+            repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("801 CH - 2");
-            Delay.Milliseconds(0);
-            
-            VerifySounderCustomDeviceDisplayedInCustomGallery("Custom", ValueConverter.ArgumentFromString<bool>("isEnabled", "False"));
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.SaveProject("54084");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
+            // Data isnt present
+            Libraries.PSULoad_Functions.verifySystemLoadValue("0.256");
             Delay.Milliseconds(0);
             
         }

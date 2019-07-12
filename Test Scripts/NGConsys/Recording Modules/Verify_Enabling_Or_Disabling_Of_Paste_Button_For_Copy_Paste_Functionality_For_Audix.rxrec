@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="f8b16155-ecb9-47df-a1d6-27bca78454e5"
+id="973b545f-daf4-47a9-b82e-d0a7b6dbfca9"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_Properties_of_Backplane_and_Slot_Cards
+		Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Properties_of_Backplane_and_Slot_Cards"
+	classname="Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -678,11 +678,35 @@ oooAzNJ/5AEH+5/WtJPuL9KzdJ/5AEH+5/WtJPuL9Kb3EthaKKKQwooooAKKKKACiiigAooooAzN
 J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			</helperscreenshot>
 		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d6491839-4ba8-4b89-8d80-7521ae231209"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a126ca17-a4e0-4fdb-9b5b-27702ed23e06"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem/container/treeitem/button
+				</path>
+			</info>
+		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromPanelNodeGallery"
+		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -691,34 +715,35 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="39ac392c-a348-4da7-b117-23f526158fb7">
+			id="cb51a23b-7ca8-456e-8802-c191aa00385a">
 				<argument
 				argname="sDeviceName"
-				id="58bdc869-aab9-4ff7-94a1-3421da73ff7b">
+				id="c7a8bffb-0e80-4b2f-b014-8915db9d71db">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800
+						MPM800
 					</argvalue>
 				</argument>
 				<argument
 				argname="sType"
-				id="37e948f2-e963-40b5-834d-e794d0ac98c1">
+				id="ae352925-db1b-4a2a-87da-fb747b883cac">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Loops
+						Miscellaneous
 					</argvalue>
 				</argument>
 				<argument
 				argname="PanelType"
-				id="a3e28eda-8155-40a5-a005-5b374b8191ba">
+				id="7b0b565a-404c-4d95-a989-30cf0aa0272b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						PFI
 					</argvalue>
 				</argument>
 			</arguments>
@@ -731,7 +756,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="ac39f5b3-fe90-4e21-826f-08b2c8b00500"
+		searchpropertyid="48c798d6-3034-41d9-a87b-94189b50e22d"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -740,18 +765,18 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<info
-			id="24c81530-aec5-4287-b309-bde13ebb66b7"
+			id="a132b8d7-c763-4e9c-b961-327a18b252f9"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']
+					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Inventory']
 				</path>
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="Devices_Functions"
-		enabled="False"
+		classname="InventoryGrid_Functions"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyDescription"
+		methodname="SelectRowUsingDevicePropertyForMainProcessorGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -760,24 +785,44 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="97b3081b-342c-4029-a2cb-ee4c190121fb">
+			id="38ab73d7-75e1-4503-92d3-d40c3f0425ea">
 				<argument
-				argname="sDescription"
-				id="e40928a7-ee66-4475-9277-ebd2a58ccfb9">
+				argname="ExpectedInventoryGridRowCount"
+				id="875307d5-521f-4f6b-ad23-f9bfc5d9b28a">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Backplane Assembly with 6 slots for use with PxD
+						2
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedInventoryGridColumn"
+				id="c1c7d9ec-5917-458c-b7b3-c5414c4bdfae">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Label
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedDeviceProperty"
+				id="c50ad0a7-14e8-4add-813c-1de51d7431b6">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MPM800-1
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyPicture"
+		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -786,18 +831,210 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="c94bd54d-a304-44c7-bfed-c8d45fdf8925">
+			id="cb51a23b-7ca8-456e-8802-c191aa00385a">
+				<argument
+				argname="sDeviceName"
+				id="c7a8bffb-0e80-4b2f-b014-8915db9d71db">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Audix 8
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="ae352925-db1b-4a2a-87da-fb747b883cac">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Attached Functionality
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="7b0b565a-404c-4d95-a989-30cf0aa0272b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PFI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="InventoryGrid_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingDevicePropertyForMainProcessorGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="38ab73d7-75e1-4503-92d3-d40c3f0425ea">
+				<argument
+				argname="ExpectedInventoryGridRowCount"
+				id="875307d5-521f-4f6b-ad23-f9bfc5d9b28a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedInventoryGridColumn"
+				id="c1c7d9ec-5917-458c-b7b3-c5414c4bdfae">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Label
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedDeviceProperty"
+				id="c50ad0a7-14e8-4add-813c-1de51d7431b6">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Audix 8
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyCopyButton"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f0efea11-1477-4e93-9b29-2a35d1886481">
+				<argument
+				argname="isEnabled"
+				id="ac9514e2-46a3-493f-b56e-b8d6113085b4">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyPasteButtonDisabled"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="8ccd60af-d3d1-46c4-81ee-3b5da32b2ce8">
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9681ca04-9242-45b9-943f-2df8dc9f2a0d"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="78b7f34d-62fa-4a52-b39e-076e5d6068df"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/button[@automationid='Expander']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="61af4319-cdf6-4376-b804-029fde516fc1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ed3605ef-41c4-4036-82a4-6ced4fb82da1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[1]
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelName"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="46651c96-7c31-47f1-8ee0-171e212fbe7d">
+				<argument
+				argname="sLabel"
+				id="c89b1abc-253b-4529-b83d-54c8c3572ffc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						SIO 800 - 1
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="0276feb9-1399-4858-96c5-cc2a799e0122"
+		searchpropertyid="9d220296-371a-426a-aadb-b3f3217d7494"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -806,45 +1043,42 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<info
-			id="bccf0edd-d19d-4223-adb3-c1ce33a99116"
+			id="57f9fc13-5b4b-44c8-bd91-35515c8dfa12"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/?/?/cell[@isheader='False']
+					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']//container[@automationid='PART_ItemsPresenter']/button[@text='Copy']
 				</path>
 			</info>
 		</mouseitem>
-		<validationitem
-		action="ContainsImage"
-		codegenpropertyname="BackplaneImage_Screenshot1"
-		enabled="False"
-		imagerect="0,0,313,735"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		screenshotguid="b25e233e-6fe9-465d-8940-92a8372a6960"
-		screenshotname="Screenshot1"
-		searchpropertyid="e2e059a2-1c62-443d-9b81-5f8c34d1d421">
+		searchpropertyid="871bd260-f829-4231-ba98-2725b2a48695"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="c3e8fad3-3b3f-4685-9686-e8de737672a7"
+			id="f4f72640-8721-416a-b01c-0018a4546ff3"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
+					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Paste']
 				</path>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
+		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ErasePictureFromProperties"
+		methodname="VerifyDeviceExists"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -853,32 +1087,51 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="cb5e9d98-d1e9-441f-aaea-bc7851c99881">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
-		enabled="False"
-		isexternaltestmethod="False"
-		methodname="VerifyProductCodeInSearchProperties"
-		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
-			<comment>
-				Have to verify the value for backplane SKU
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="565780a6-bb1e-4edb-8deb-af717133a98b">
+			id="16ac52b4-d671-44eb-8fce-8c1931da218b">
 				<argument
-				argname="sProductLabel"
-				id="d1e4498d-4188-44e6-81a1-73d505b7ebd0">
+				argname="sExists"
+				id="10a86f63-044d-420c-8c2b-91e5a6f09d43">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+				<argument
+				argname="sLabel"
+				id="d2e324d7-6101-4bc7-8713-36774fdb0b08">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						123
+						SIO 800 - 3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelName"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="46651c96-7c31-47f1-8ee0-171e212fbe7d">
+				<argument
+				argname="sLabel"
+				id="c89b1abc-253b-4529-b83d-54c8c3572ffc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						RIM 800 - 2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -887,11 +1140,11 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="4e13e1e2-5c58-4d2c-973c-468783ba2f14"
+		searchpropertyid="9d220296-371a-426a-aadb-b3f3217d7494"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -900,610 +1153,42 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<info
-			id="c97a6509-f577-48d2-a0fc-107687fefa60"
+			id="57f9fc13-5b4b-44c8-bd91-35515c8dfa12"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']
+					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']//container[@automationid='PART_ItemsPresenter']/button[@text='Copy']
 				</path>
 			</info>
 		</mouseitem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						SKU
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						123.456.789
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Model
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Label
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800-E
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-				Slot address wont be displayed in grid as told
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Address
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						E
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Connection
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX/External Loop Card 2
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="EditDevicePropertyWhichAreReadOnly"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="21fefc25-54b7-4a8e-a28f-74e974ac3771">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="84a7eb78-162f-4778-bd59-de86796c2b50">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="57807ec3-6af6-4047-8e50-45182e1d0c14">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						SKU
-					</argvalue>
-				</argument>
-				<argument
-				argname="sNewValue"
-				id="aacc918f-461b-47f4-9747-303c44dfa0ab">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						123
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="EditDevicePropertyWhichAreReadOnly"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="21fefc25-54b7-4a8e-a28f-74e974ac3771">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="84a7eb78-162f-4778-bd59-de86796c2b50">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="57807ec3-6af6-4047-8e50-45182e1d0c14">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Address
-					</argvalue>
-				</argument>
-				<argument
-				argname="sNewValue"
-				id="aacc918f-461b-47f4-9747-303c44dfa0ab">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						12
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="EditDevicePropertyWhichAreReadOnly"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="21fefc25-54b7-4a8e-a28f-74e974ac3771">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="84a7eb78-162f-4778-bd59-de86796c2b50">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="57807ec3-6af6-4047-8e50-45182e1d0c14">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Connection
-					</argvalue>
-				</argument>
-				<argument
-				argname="sNewValue"
-				id="aacc918f-461b-47f4-9747-303c44dfa0ab">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						abc
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="EditDevicePropertyWhichAreReadOnly"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="21fefc25-54b7-4a8e-a28f-74e974ac3771">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="84a7eb78-162f-4778-bd59-de86796c2b50">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="57807ec3-6af6-4047-8e50-45182e1d0c14">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Model
-					</argvalue>
-				</argument>
-				<argument
-				argname="sNewValue"
-				id="aacc918f-461b-47f4-9747-303c44dfa0ab">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						pqr
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Label
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800-E
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="VerifyProductCodeInSearchProperties"
-		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="565780a6-bb1e-4edb-8deb-af717133a98b">
-				<argument
-				argname="sProductLabel"
-				id="d1e4498d-4188-44e6-81a1-73d505b7ebd0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						123.456.789
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<validationitem
-		action="ContainsImage"
-		codegenpropertyname="PLX_Image_Screenshot1"
-		enabled="True"
-		imagerect="0,0,380,380"
-		optional="False"
-		screenshotguid="77f984db-87eb-439d-b70a-f6f07ad3700a"
-		screenshotname="Screenshot1"
-		searchpropertyid="1e4f8d57-8fce-4e6e-aaff-f6ea5a16d4f2">
+		searchpropertyid="871bd260-f829-4231-ba98-2725b2a48695"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="3205a377-b082-47fb-9610-d937281d4b42"
+			id="f4f72640-8721-416a-b01c-0018a4546ff3"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
+					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Paste']
 				</path>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
+		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyDescription"
-		namespace="TestProject.Libraries"
-		optional="True"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="97b3081b-342c-4029-a2cb-ee4c190121fb">
-				<argument
-				argname="sDescription"
-				id="e40928a7-ee66-4475-9277-ebd2a58ccfb9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						(Slot card) Provides MX Loop interfaces for connection fire detectors and ancillaries. Card is connected to panel using Internal N-Bus interface
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="VerifyRegionNameInSearchProperties"
-		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="095d6b0a-a195-4915-acff-0402c80a52b4">
-				<argument
-				argname="sRegionName"
-				id="58a9136d-e8c3-4166-81c7-53a6a824c9d5">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800-E
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
-		enabled="False"
-		isexternaltestmethod="False"
-		methodname="VerifyProductInSearchProperties"
-		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="1dee6783-ab81-451f-9017-ce67ca9f71d9">
-				<argument
-				argname="sProductName"
-				id="855a710a-4fcb-4641-82d1-5403d8eab68d">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="editDeviceLabel"
+		methodname="VerifyDeviceExists"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -1512,133 +1197,25 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="484a34aa-fda4-470e-a83b-7ae6c2b61e49">
+			id="16ac52b4-d671-44eb-8fce-8c1931da218b">
 				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="e183e8d5-ce95-4b96-b4ff-83394e3371b9">
+				argname="sExists"
+				id="10a86f63-044d-420c-8c2b-91e5a6f09d43">
 					<argvaluetype>
-						System.String
+						System.Boolean
 					</argvaluetype>
 					<argvalue>
-						1
+						True
 					</argvalue>
 				</argument>
 				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="7b3ad711-b3fe-4fe9-a9d8-c00a1fe4fd96">
+				argname="sLabel"
+				id="d2e324d7-6101-4bc7-8713-36774fdb0b08">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Label
-					</argvalue>
-				</argument>
-				<argument
-				argname="sNewLabel"
-				id="521cd473-bfe1-4214-984a-e11f54c5c42a">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="VerifyRegionNameInSearchProperties"
-		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="095d6b0a-a195-4915-acff-0402c80a52b4">
-				<argument
-				argname="sRegionName"
-				id="58a9136d-e8c3-4166-81c7-53a6a824c9d5">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="editRegionName"
-		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="b28085de-0e9e-4d84-a432-8e22a091b521">
-				<argument
-				argname="sNewLabel"
-				id="40e3f12e-0960-4e6d-8c48-8605da7709e9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Label
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX
+						RIM 800 - 4
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1660,7 +1237,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Properties_of_Backplane_and_Slot_Cards.UserCode.cs
+		Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

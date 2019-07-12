@@ -198,6 +198,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 05/04/2019  Updated on 02/07/2019 by Alpesh Dhakad : Updated log reports as readable format
+		 				Updated on 9/7/2019 by Purvi Bhasin : to verify Properties in Points grid
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyInventoryGridProperties(string ExpectedInventoryGridRowCount, string ExpectedInventoryGridColumn, string ExpectedDeviceProperty)
@@ -207,20 +208,44 @@ namespace TestProject.Libraries
 			sRowIndex = ExpectedInventoryGridRowCount;
 			
 			Report.Log(ReportLevel.Success,"Column and row values are set as " +sColumnIndex+  " and " +sRowIndex+ " respectively ");
-			repo.FormMe.txt_InventoryGridDeviceProperty.Click();
-			string ActualInventoryGridProperty = repo.FormMe.txt_InventoryGridDeviceProperty.TextValue;
 			
-			// Compare Actual and Expected Point Grid Row count
-			Report.Log(ReportLevel.Success,"Actual " +ActualInventoryGridProperty+ "  Expected " +ExpectedDeviceProperty);
-			
-			if(ActualInventoryGridProperty.Equals(ExpectedDeviceProperty))
+			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
-				Report.Log(ReportLevel.Success,"Device property is verified in Inventory grid");
+				repo.FormMe.txt_PointGridProperties.Click();
+				string ActualInventoryGridProperty = repo.FormMe.txt_PointGridProperties.TextValue;
+				
+				// Compare Actual and Expected Point Grid Row count
+				Report.Log(ReportLevel.Success,"Actual " +ActualInventoryGridProperty+ "  Expected " +ExpectedDeviceProperty);
+				
+				if(ActualInventoryGridProperty.Equals(ExpectedDeviceProperty))
+				{
+					Report.Log(ReportLevel.Success,"Device property is verified in Inventory grid");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device property is not verified not in Inventory grid");
+				}
 			}
+			
 			else
 			{
-				Report.Log(ReportLevel.Failure,"Device property is not verified not in Inventory grid");
+				repo.FormMe.txt_InventoryGridDeviceProperty.Click();
+				string ActualInventoryGridProperty = repo.FormMe.txt_InventoryGridDeviceProperty.TextValue;
+				
+				// Compare Actual and Expected Point Grid Row count
+				Report.Log(ReportLevel.Success,"Actual " +ActualInventoryGridProperty+ "  Expected " +ExpectedDeviceProperty);
+				
+				if(ActualInventoryGridProperty.Equals(ExpectedDeviceProperty))
+				{
+					Report.Log(ReportLevel.Success,"Device property is verified in Inventory grid");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device property is not verified not in Inventory grid");
+				}
 			}
+			
+			
 			
 		}
 		
@@ -428,5 +453,26 @@ namespace TestProject.Libraries
 			}
 			
 		}
+		
+		/********************************************************************
+		 * Function Name: SelectRowUsingDevicePropertyForMainProcessorGallery
+		 * Function Details: To select item from main processor grid using Device Property
+		 * Parameter/Arguments:ExpectedInventoryGridRowCount, ExpectedInventoryGridColumn, ExpectedDeviceProperty
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 8/7/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingDevicePropertyForMainProcessorGallery(string ExpectedInventoryGridRowCount, string ExpectedInventoryGridColumn, string ExpectedDeviceProperty)
+		{
+			// Retrieve Point grid rows and column count
+			sColumnIndex = InventoryGrid_Functions.getColumnNumberForInventoryGrid(ExpectedInventoryGridColumn);
+			sRowIndex = ExpectedInventoryGridRowCount;
+			
+			Report.Log(ReportLevel.Success,"Column and row values are set as " +sColumnIndex+  " and " +sRowIndex+ " respectively ");
+			repo.FormMe.txt_InventoryGridDeviceProperty.Click();
+		}
+		
+		
 		
 	}}

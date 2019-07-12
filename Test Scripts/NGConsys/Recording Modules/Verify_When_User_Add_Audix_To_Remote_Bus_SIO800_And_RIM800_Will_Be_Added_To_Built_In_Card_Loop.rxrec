@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="f8b16155-ecb9-47df-a1d6-27bca78454e5"
+id="54485363-a8fb-4263-8ff8-4d85b9a71b19"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_Properties_of_Backplane_and_Slot_Cards
+		Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Properties_of_Backplane_and_Slot_Cards"
+	classname="Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -678,11 +678,35 @@ oooAzNJ/5AEH+5/WtJPuL9KzdJ/5AEH+5/WtJPuL9Kb3EthaKKKQwooooAKKKKACiiigAooooAzN
 J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			</helperscreenshot>
 		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d6491839-4ba8-4b89-8d80-7521ae231209"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a126ca17-a4e0-4fdb-9b5b-27702ed23e06"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem/container/treeitem/button
+				</path>
+			</info>
+		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromPanelNodeGallery"
+		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -691,34 +715,35 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="39ac392c-a348-4da7-b117-23f526158fb7">
+			id="cb51a23b-7ca8-456e-8802-c191aa00385a">
 				<argument
 				argname="sDeviceName"
-				id="58bdc869-aab9-4ff7-94a1-3421da73ff7b">
+				id="c7a8bffb-0e80-4b2f-b014-8915db9d71db">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800
+						MPM800
 					</argvalue>
 				</argument>
 				<argument
 				argname="sType"
-				id="37e948f2-e963-40b5-834d-e794d0ac98c1">
+				id="ae352925-db1b-4a2a-87da-fb747b883cac">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Loops
+						Miscellaneous
 					</argvalue>
 				</argument>
 				<argument
 				argname="PanelType"
-				id="a3e28eda-8155-40a5-a005-5b374b8191ba">
+				id="7b0b565a-404c-4d95-a989-30cf0aa0272b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						PFI
 					</argvalue>
 				</argument>
 			</arguments>
@@ -731,7 +756,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="ac39f5b3-fe90-4e21-826f-08b2c8b00500"
+		searchpropertyid="48c798d6-3034-41d9-a87b-94189b50e22d"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -740,18 +765,18 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<info
-			id="24c81530-aec5-4287-b309-bde13ebb66b7"
+			id="a132b8d7-c763-4e9c-b961-327a18b252f9"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']
+					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Inventory']
 				</path>
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="Devices_Functions"
-		enabled="False"
+		classname="InventoryGrid_Functions"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyDescription"
+		methodname="SelectRowUsingDevicePropertyForMainProcessorGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -760,24 +785,44 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="97b3081b-342c-4029-a2cb-ee4c190121fb">
+			id="38ab73d7-75e1-4503-92d3-d40c3f0425ea">
 				<argument
-				argname="sDescription"
-				id="e40928a7-ee66-4475-9277-ebd2a58ccfb9">
+				argname="ExpectedInventoryGridRowCount"
+				id="875307d5-521f-4f6b-ad23-f9bfc5d9b28a">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Backplane Assembly with 6 slots for use with PxD
+						2
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedInventoryGridColumn"
+				id="c1c7d9ec-5917-458c-b7b3-c5414c4bdfae">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Label
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedDeviceProperty"
+				id="c50ad0a7-14e8-4add-813c-1de51d7431b6">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MPM800-1
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyPicture"
+		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -786,112 +831,48 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="c94bd54d-a304-44c7-bfed-c8d45fdf8925">
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="0276feb9-1399-4858-96c5-cc2a799e0122"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="bccf0edd-d19d-4223-adb3-c1ce33a99116"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/?/?/cell[@isheader='False']
-				</path>
-			</info>
-		</mouseitem>
-		<validationitem
-		action="ContainsImage"
-		codegenpropertyname="BackplaneImage_Screenshot1"
-		enabled="False"
-		imagerect="0,0,313,735"
-		optional="False"
-		screenshotguid="b25e233e-6fe9-465d-8940-92a8372a6960"
-		screenshotname="Screenshot1"
-		searchpropertyid="e2e059a2-1c62-443d-9b81-5f8c34d1d421">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="c3e8fad3-3b3f-4685-9686-e8de737672a7"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
-				</path>
-			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ErasePictureFromProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="cb5e9d98-d1e9-441f-aaea-bc7851c99881">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
-		enabled="False"
-		isexternaltestmethod="False"
-		methodname="VerifyProductCodeInSearchProperties"
-		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
-			<comment>
-				Have to verify the value for backplane SKU
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="565780a6-bb1e-4edb-8deb-af717133a98b">
+			id="cb51a23b-7ca8-456e-8802-c191aa00385a">
 				<argument
-				argname="sProductLabel"
-				id="d1e4498d-4188-44e6-81a1-73d505b7ebd0">
+				argname="sDeviceName"
+				id="c7a8bffb-0e80-4b2f-b014-8915db9d71db">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						123
+						Audix 8
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="ae352925-db1b-4a2a-87da-fb747b883cac">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Attached Functionality
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="7b0b565a-404c-4d95-a989-30cf0aa0272b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PFI
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<mouseitem
-		action="Click"
+		action="DoubleClick"
 		button="Left"
 		duration="500ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="4e13e1e2-5c58-4d2c-973c-468783ba2f14"
+		searchpropertyid="9681ca04-9242-45b9-943f-2df8dc9f2a0d"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -900,10 +881,58 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<info
-			id="c97a6509-f577-48d2-a0fc-107687fefa60"
+			id="78b7f34d-62fa-4a52-b39e-076e5d6068df"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/button[@automationid='Expander']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="61af4319-cdf6-4376-b804-029fde516fc1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ed3605ef-41c4-4036-82a4-6ced4fb82da1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[1]
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1b40c080-c96b-4032-aeb8-d41ccb1a3ccd"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
 				</path>
 			</info>
 		</mouseitem>
@@ -948,7 +977,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 						System.String
 					</argvaluetype>
 					<argvalue>
-						123.456.789
+						555.800.064
 					</argvalue>
 				</argument>
 			</arguments>
@@ -994,7 +1023,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800
+						SIO 800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1040,7 +1069,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-E
+						SIO 800 - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1054,7 +1083,6 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 		optional="False"
 		varname="">
 			<comment>
-				Slot address wont be displayed in grid as told
 			</comment>
 			<bindings>
 			</bindings>
@@ -1087,7 +1115,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 						System.String
 					</argvaluetype>
 					<argvalue>
-						E
+						1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1113,58 +1141,12 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1
+						2
 					</argvalue>
 				</argument>
 				<argument
 				argname="ExpectedInventoryGridColumn"
 				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Connection
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX/External Loop Card 2
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="EditDevicePropertyWhichAreReadOnly"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="21fefc25-54b7-4a8e-a28f-74e974ac3771">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="84a7eb78-162f-4778-bd59-de86796c2b50">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="57807ec3-6af6-4047-8e50-45182e1d0c14">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -1173,13 +1155,13 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 					</argvalue>
 				</argument>
 				<argument
-				argname="sNewValue"
-				id="aacc918f-461b-47f4-9747-303c44dfa0ab">
+				argname="ExpectedDeviceProperty"
+				id="050b1474-f19d-49ef-b52e-088ec419a783">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						123
+						568.800.033
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1188,7 +1170,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 		classname="InventoryGrid_Functions"
 		enabled="False"
 		isexternaltestmethod="True"
-		methodname="EditDevicePropertyWhichAreReadOnly"
+		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -1197,112 +1179,20 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="21fefc25-54b7-4a8e-a28f-74e974ac3771">
+			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
 				<argument
 				argname="ExpectedInventoryGridRowCount"
-				id="84a7eb78-162f-4778-bd59-de86796c2b50">
+				id="0460ada9-c302-4112-be8f-914545b0c992">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1
+						2
 					</argvalue>
 				</argument>
 				<argument
 				argname="ExpectedInventoryGridColumn"
-				id="57807ec3-6af6-4047-8e50-45182e1d0c14">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Address
-					</argvalue>
-				</argument>
-				<argument
-				argname="sNewValue"
-				id="aacc918f-461b-47f4-9747-303c44dfa0ab">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						12
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="EditDevicePropertyWhichAreReadOnly"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="21fefc25-54b7-4a8e-a28f-74e974ac3771">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="84a7eb78-162f-4778-bd59-de86796c2b50">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="57807ec3-6af6-4047-8e50-45182e1d0c14">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Connection
-					</argvalue>
-				</argument>
-				<argument
-				argname="sNewValue"
-				id="aacc918f-461b-47f4-9747-303c44dfa0ab">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						abc
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="EditDevicePropertyWhichAreReadOnly"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="21fefc25-54b7-4a8e-a28f-74e974ac3771">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="84a7eb78-162f-4778-bd59-de86796c2b50">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="57807ec3-6af6-4047-8e50-45182e1d0c14">
+				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -1311,20 +1201,20 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 					</argvalue>
 				</argument>
 				<argument
-				argname="sNewValue"
-				id="aacc918f-461b-47f4-9747-303c44dfa0ab">
+				argname="ExpectedDeviceProperty"
+				id="050b1474-f19d-49ef-b52e-088ec419a783">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						pqr
+						RIM 800
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -1343,7 +1233,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1
+						2
 					</argvalue>
 				</argument>
 				<argument
@@ -1363,17 +1253,17 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-E
+						RIM 800 - 2
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="VerifyProductCodeInSearchProperties"
-		namespace="TestProject.Recording_Modules"
+		classname="InventoryGrid_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="verifyInventoryGridProperties"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>
@@ -1381,78 +1271,117 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="565780a6-bb1e-4edb-8deb-af717133a98b">
+			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
 				<argument
-				argname="sProductLabel"
-				id="d1e4498d-4188-44e6-81a1-73d505b7ebd0">
+				argname="ExpectedInventoryGridRowCount"
+				id="0460ada9-c302-4112-be8f-914545b0c992">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						123.456.789
+						2
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedInventoryGridColumn"
+				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Address
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedDeviceProperty"
+				id="050b1474-f19d-49ef-b52e-088ec419a783">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						2
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<validationitem
-		action="ContainsImage"
-		codegenpropertyname="PLX_Image_Screenshot1"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
-		imagerect="0,0,380,380"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		screenshotguid="77f984db-87eb-439d-b70a-f6f07ad3700a"
-		screenshotname="Screenshot1"
-		searchpropertyid="1e4f8d57-8fce-4e6e-aaff-f6ea5a16d4f2">
+		searchpropertyid="323a5e9b-2282-4db0-99bf-c60d5339c7d0"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="3205a377-b082-47fb-9610-d937281d4b42"
+			id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/button[@automationid='Expander']
 				</path>
 			</info>
-			<matchname>
-				Text
-			</matchname>
-			<matchvalue>
-				yourtext
-			</matchvalue>
-		</validationitem>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="813df1ae-a0a5-4668-a4ae-a65d8f8c7f27"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a126ca17-a4e0-4fdb-9b5b-27702ed23e06"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem/container/treeitem/button
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="48c798d6-3034-41d9-a87b-94189b50e22d"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a132b8d7-c763-4e9c-b961-327a18b252f9"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Inventory']
+				</path>
+			</info>
+		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyDescription"
-		namespace="TestProject.Libraries"
-		optional="True"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="97b3081b-342c-4029-a2cb-ee4c190121fb">
-				<argument
-				argname="sDescription"
-				id="e40928a7-ee66-4475-9277-ebd2a58ccfb9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						(Slot card) Provides MX Loop interfaces for connection fire detectors and ancillaries. Card is connected to panel using Internal N-Bus interface
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
 		enabled="True"
-		isexternaltestmethod="False"
-		methodname="VerifyRegionNameInSearchProperties"
-		namespace="TestProject.Recording_Modules"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelName"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>
@@ -1460,25 +1389,133 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="095d6b0a-a195-4915-acff-0402c80a52b4">
+			id="46651c96-7c31-47f1-8ee0-171e212fbe7d">
 				<argument
-				argname="sRegionName"
-				id="58a9136d-e8c3-4166-81c7-53a6a824c9d5">
+				argname="sLabel"
+				id="c89b1abc-253b-4529-b83d-54c8c3572ffc">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-E
+						Audix 8
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="b6fbc980-3674-4a1e-a0c6-9dba46b6fe0f"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8e8210c0-314f-4c7d-97b4-86fb85d69656"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Delete']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9681ca04-9242-45b9-943f-2df8dc9f2a0d"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="78b7f34d-62fa-4a52-b39e-076e5d6068df"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/button[@automationid='Expander']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="61af4319-cdf6-4376-b804-029fde516fc1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ed3605ef-41c4-4036-82a4-6ced4fb82da1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[1]
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyDeviceExists"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="16ac52b4-d671-44eb-8fce-8c1931da218b">
+				<argument
+				argname="sExists"
+				id="10a86f63-044d-420c-8c2b-91e5a6f09d43">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="sLabel"
+				id="d2e324d7-6101-4bc7-8713-36774fdb0b08">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						SIO 800 - 1
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
-		enabled="False"
-		isexternaltestmethod="False"
-		methodname="VerifyProductInSearchProperties"
-		namespace="TestProject.Recording_Modules"
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyDeviceExists"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>
@@ -1486,24 +1523,686 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="1dee6783-ab81-451f-9017-ce67ca9f71d9">
+			id="16ac52b4-d671-44eb-8fce-8c1931da218b">
 				<argument
-				argname="sProductName"
-				id="855a710a-4fcb-4641-82d1-5403d8eab68d">
+				argname="sExists"
+				id="10a86f63-044d-420c-8c2b-91e5a6f09d43">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="sLabel"
+				id="d2e324d7-6101-4bc7-8713-36774fdb0b08">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800
+						RIM 800 - 2
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="57e540f8-c662-433d-9302-ae6e012d610b"
+		sx="23"
+		sy="273"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
+			sourcename="Recorder">
+				<element
+				capabilities="wpfelement, wpfgroupelement"
+				dontcache="False"
+				enabled="True"
+				flavor="wpf"
+				hasfocus="False"
+				index="1"
+				prefcap="button"
+				rect="12,261,22,22"
+				role="button"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="pressed"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="automationid"
+					type="System.String">
+						Expander
+					</attribute>
+					<attribute
+					name="automationproperties_acceleratorkey"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_accesskey"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_helptext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_iscolumnheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="automationproperties_isrequiredforform"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="automationproperties_isrowheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="automationproperties_itemstatus"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_itemtype"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="automationproperties_name"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="basetype"
+					type="System.String">
+						System.Windows.Controls.Primitives.ToggleButton
+					</attribute>
+					<attribute
+					name="fulltype"
+					type="System.String">
+						Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton&gt;
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Expander
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						DepoGroup&lt;ToggleButton&gt;
+					</attribute>
+					<attribute
+					name="ranorexgroupleaderid"
+					type="System.Guid">
+						7436bbf4-868c-4e87-b652-4e448f6b75f1
+					</attribute>
+					<attribute
+					name="ranorexgroupmemberids"
+					type="System.Guid[]">
+						AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAABAAAAAMLU3lzdGVtLkd1aWQE/v///wtTeXN0ZW0u
+R3VpZAsAAAACX2ECX2ICX2MCX2QCX2UCX2YCX2cCX2gCX2kCX2oCX2sAAAAAAAAAAAAAAAgHBwIC
+AgICAgIC9Ls2dIyGh062Uk5Ej2t18QH9/////v///8z4V+xXHZ1NlAC5E+NSIicB/P////7///9f
+jfh8RBoNTaGrdOdUCw7dAfv////+////PsG+j0gGkUuGJivn05AE+ws=
+					</attribute>
+					<attribute
+					name="ranorexgroupobjectid"
+					type="System.Guid">
+						64563ee2-7a92-47a2-8605-134acc3d1833
+					</attribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ActualHeight property of type Double."
+					name="ActualHeight"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ActualWidth property of type Double."
+					name="ActualWidth"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.AllowDrop property of type Boolean."
+					name="AllowDrop"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Background property of type Brush."
+					name="Background"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.BackgroundColor property of type String."
+					name="BackgroundColor"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.BindingGroup property of type BindingGroup."
+					name="BindingGroup"
+					readonly="False"
+					type="System.Windows.Data.BindingGroup, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.BitmapEffect property of type BitmapEffect."
+					name="BitmapEffect"
+					readonly="False"
+					type="System.Windows.Media.Effects.BitmapEffect, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.BitmapEffectInput property of type BitmapEffectInput."
+					name="BitmapEffectInput"
+					readonly="False"
+					type="System.Windows.Media.Effects.BitmapEffectInput, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.BorderBrush property of type Brush."
+					name="BorderBrush"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.BorderColor property of type String."
+					name="BorderColor"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.CacheMode property of type CacheMode."
+					name="CacheMode"
+					readonly="False"
+					type="System.Windows.Media.CacheMode, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.caption property of type Object."
+					name="caption"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ClickMode property of type ClickMode."
+					name="ClickMode"
+					readonly="False"
+					type="System.Windows.Controls.ClickMode, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Clip property of type Geometry."
+					name="Clip"
+					readonly="False"
+					type="System.Windows.Media.Geometry, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ClipToBounds property of type Boolean."
+					name="ClipToBounds"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Column property of type Int32."
+					name="Column"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ColumnSpan property of type Int32."
+					name="ColumnSpan"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.CommandParameter property of type Object."
+					name="CommandParameter"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Content property of type Object."
+					name="Content"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ContentStringFormat property of type String."
+					name="ContentStringFormat"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ContextMenu property of type ContextMenu."
+					name="ContextMenu"
+					readonly="False"
+					type="System.Windows.Controls.ContextMenu, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.DataContext property of type Object."
+					name="DataContext"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.DefaultStyleKey property of type Object."
+					name="DefaultStyleKey"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Effect property of type Effect."
+					name="Effect"
+					readonly="False"
+					type="System.Windows.Media.Effects.Effect, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.FlowDirection property of type FlowDirection."
+					name="FlowDirection"
+					readonly="False"
+					type="System.Windows.FlowDirection, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Focusable property of type Boolean."
+					name="Focusable"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.FontSize property of type Double."
+					name="FontSize"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ForceCursor property of type Boolean."
+					name="ForceCursor"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Foreground property of type Brush."
+					name="Foreground"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ForegroundColor property of type String."
+					name="ForegroundColor"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.HasContent property of type Boolean."
+					name="HasContent"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Height property of type Double."
+					name="Height"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.HorizontalAlignment property of type HorizontalAlignment."
+					name="HorizontalAlignment"
+					readonly="False"
+					type="System.Windows.HorizontalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.HorizontalContentAlignment property of type HorizontalAlignment."
+					name="HorizontalContentAlignment"
+					readonly="False"
+					type="System.Windows.HorizontalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.IsChecked property of type Nullable`1."
+					name="IsChecked"
+					readonly="False"
+					type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.IsHitTestVisible property of type Boolean."
+					name="IsHitTestVisible"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.IsItemsHost property of type Boolean."
+					name="IsItemsHost"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.IsManipulationEnabled property of type Boolean."
+					name="IsManipulationEnabled"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.IsPressed property of type Boolean."
+					name="IsPressed"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.IsSharedSizeScope property of type Boolean."
+					name="IsSharedSizeScope"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.IsTabStop property of type Boolean."
+					name="IsTabStop"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.IsThreeState property of type Boolean."
+					name="IsThreeState"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.LayoutTransform property of type Transform."
+					name="LayoutTransform"
+					readonly="False"
+					type="System.Windows.Media.Transform, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.MaxHeight property of type Double."
+					name="MaxHeight"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.MaxWidth property of type Double."
+					name="MaxWidth"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.MinHeight property of type Double."
+					name="MinHeight"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.MinWidth property of type Double."
+					name="MinWidth"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Opacity property of type Double."
+					name="Opacity"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.OpacityMask property of type Brush."
+					name="OpacityMask"
+					readonly="False"
+					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.OverridesDefaultStyle property of type Boolean."
+					name="OverridesDefaultStyle"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.RenderTransform property of type Transform."
+					name="RenderTransform"
+					readonly="False"
+					type="System.Windows.Media.Transform, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.RenderTransformOrigin property of type Point."
+					name="RenderTransformOrigin"
+					readonly="False"
+					type="System.Windows.Point, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Row property of type Int32."
+					name="Row"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.RowSpan property of type Int32."
+					name="RowSpan"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ShowGridLines property of type Boolean."
+					name="ShowGridLines"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.SnapsToDevicePixels property of type Boolean."
+					name="SnapsToDevicePixels"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Stretch property of type Stretch."
+					name="Stretch"
+					type="System.Windows.Media.Stretch, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.StrokeDashCap property of type PenLineCap."
+					name="StrokeDashCap"
+					type="System.Windows.Media.PenLineCap, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.StrokeDashOffset property of type Double."
+					name="StrokeDashOffset"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.StrokeEndLineCap property of type PenLineCap."
+					name="StrokeEndLineCap"
+					type="System.Windows.Media.PenLineCap, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.StrokeLineJoin property of type PenLineJoin."
+					name="StrokeLineJoin"
+					type="System.Windows.Media.PenLineJoin, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.StrokeMiterLimit property of type Double."
+					name="StrokeMiterLimit"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.StrokeStartLineCap property of type PenLineCap."
+					name="StrokeStartLineCap"
+					type="System.Windows.Media.PenLineCap, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.StrokeThickness property of type Double."
+					name="StrokeThickness"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.TabIndex property of type Int32."
+					name="TabIndex"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Tag property of type Object."
+					name="Tag"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ToolTip property of type Object."
+					name="ToolTip"
+					readonly="False"
+					type="System.Object">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Uid property of type String."
+					name="Uid"
+					readonly="False"
+					type="System.String"
+					weight="150">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.UseLayoutRounding property of type Boolean."
+					name="UseLayoutRounding"
+					readonly="False"
+					type="System.Boolean">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.VerticalAlignment property of type VerticalAlignment."
+					name="VerticalAlignment"
+					readonly="False"
+					type="System.Windows.VerticalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.VerticalContentAlignment property of type VerticalAlignment."
+					name="VerticalContentAlignment"
+					readonly="False"
+					type="System.Windows.VerticalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Visibility property of type Visibility."
+					name="Visibility"
+					readonly="False"
+					type="System.Windows.Visibility, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.Width property of type Double."
+					name="Width"
+					readonly="False"
+					type="System.Double">
+					</dynamicattribute>
+					<dynamicattribute
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ZIndex property of type Int32."
+					name="ZIndex"
+					readonly="False"
+					type="System.Int32">
+					</dynamicattribute>
+					<dynamicaction
+					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.Primitives.ToggleButton>.ToString method."
+					displayName="ToString">
+						<returns
+						description="Return value."
+						displayName="returns"
+						type="System.String">
+						</returns>
+					</dynamicaction>
+				</element>
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/picture[6]/tree/treeitem[2]/button[@automationid='Expander']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="7e196855-e016-4092-a133-cd2f30b51d13">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d6491839-4ba8-4b89-8d80-7521ae231209"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a126ca17-a4e0-4fdb-9b5b-27702ed23e06"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem/container/treeitem/button
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="48c798d6-3034-41d9-a87b-94189b50e22d"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a132b8d7-c763-4e9c-b961-327a18b252f9"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Inventory']
+				</path>
+			</info>
+		</mouseitem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="editDeviceLabel"
+		methodname="SelectRowUsingDevicePropertyForMainProcessorGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -1512,118 +2211,20 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 			<bindings>
 			</bindings>
 			<arguments
-			id="484a34aa-fda4-470e-a83b-7ae6c2b61e49">
+			id="38ab73d7-75e1-4503-92d3-d40c3f0425ea">
 				<argument
 				argname="ExpectedInventoryGridRowCount"
-				id="e183e8d5-ce95-4b96-b4ff-83394e3371b9">
+				id="875307d5-521f-4f6b-ad23-f9bfc5d9b28a">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1
+						2
 					</argvalue>
 				</argument>
 				<argument
 				argname="ExpectedInventoryGridColumn"
-				id="7b3ad711-b3fe-4fe9-a9d8-c00a1fe4fd96">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Label
-					</argvalue>
-				</argument>
-				<argument
-				argname="sNewLabel"
-				id="521cd473-bfe1-4214-984a-e11f54c5c42a">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="VerifyRegionNameInSearchProperties"
-		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="095d6b0a-a195-4915-acff-0402c80a52b4">
-				<argument
-				argname="sRegionName"
-				id="58a9136d-e8c3-4166-81c7-53a6a824c9d5">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
-		enabled="True"
-		isexternaltestmethod="False"
-		methodname="editRegionName"
-		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="b28085de-0e9e-4d84-a432-8e22a091b521">
-				<argument
-				argname="sNewLabel"
-				id="40e3f12e-0960-4e6d-8c48-8605da7709e9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
+				id="c1c7d9ec-5917-458c-b7b3-c5414c4bdfae">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -1633,12 +2234,178 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 				</argument>
 				<argument
 				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
+				id="c50ad0a7-14e8-4add-813c-1de51d7431b6">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX
+						MPM800-1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromMainProcessorGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="cb51a23b-7ca8-456e-8802-c191aa00385a">
+				<argument
+				argname="sDeviceName"
+				id="c7a8bffb-0e80-4b2f-b014-8915db9d71db">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Audix 16
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="ae352925-db1b-4a2a-87da-fb747b883cac">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Attached Functionality
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="7b0b565a-404c-4d95-a989-30cf0aa0272b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PFI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9681ca04-9242-45b9-943f-2df8dc9f2a0d"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="78b7f34d-62fa-4a52-b39e-076e5d6068df"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/button[@automationid='Expander']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="61af4319-cdf6-4376-b804-029fde516fc1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ed3605ef-41c4-4036-82a4-6ced4fb82da1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[1]
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyDeviceExists"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="16ac52b4-d671-44eb-8fce-8c1931da218b">
+				<argument
+				argname="sExists"
+				id="10a86f63-044d-420c-8c2b-91e5a6f09d43">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+				<argument
+				argname="sLabel"
+				id="d2e324d7-6101-4bc7-8713-36774fdb0b08">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						SIO 800 - 1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyDeviceExists"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="16ac52b4-d671-44eb-8fce-8c1931da218b">
+				<argument
+				argname="sExists"
+				id="10a86f63-044d-420c-8c2b-91e5a6f09d43">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+				<argument
+				argname="sLabel"
+				id="d2e324d7-6101-4bc7-8713-36774fdb0b08">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						RIM 800 - 2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1660,7 +2427,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Properties_of_Backplane_and_Slot_Cards.UserCode.cs
+		Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

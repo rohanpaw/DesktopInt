@@ -174,14 +174,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyDeviceOrder("2", "126/1", ValueConverter.ArgumentFromString<bool>("Present", "True"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(29));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Devices_Functions.VerifyDeviceOrder("1", "1", ValueConverter.ArgumentFromString<bool>("Present", "False"));
+            Libraries.Common_Functions.SaveProject("TC_54105");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceOrder("3", "1/1", ValueConverter.ArgumentFromString<bool>("Present", "False"));
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
             
         }

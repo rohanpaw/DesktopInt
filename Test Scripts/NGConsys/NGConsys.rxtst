@@ -188,6 +188,12 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="0324d795-ae4a-4522-8650-95ea4e370d04"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="0326356e-9f92-4955-b531-f51571009876"
 			name="Verify_maximum_limit_for_Overall_System_Load">
@@ -727,6 +733,12 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="0b75b0ef-543d-49ed-8939-2e9f1990323c"
+			name="Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M"
+			ref="d94bab78-2f0e-4c8a-8998-48d36343be6c"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="0b79ab4e-f3cf-41ad-9eb5-77b299995bd6"
 			name="Verify_the_indication_should_be_shown_for_selected_loops">
@@ -1172,6 +1184,20 @@ rxversion="8.3">
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="12c5ce4b-9d50-496a-b63b-7faa42167cff"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="5d6cf3a6-3f2f-48aa-a965-c29bfdffc1fd"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="12e05269-8e6d-4b92-b975-a570df62fea6"
@@ -1726,6 +1752,20 @@ rxversion="8.3">
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1b19f2a0-ee28-47a0-9882-9ed958f80447"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="474c6892-03ee-434f-bf30-3507cfa123ee"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="1b2a80e8-1f2a-4a63-b4f9-c7c32f49fed1"
@@ -2773,6 +2813,12 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="2cefc93a-a2ff-4e22-8e1d-ae48095d5866"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="2cf6fb54-7ae3-4640-b512-07ab6534fac1"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -3417,6 +3463,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="3a9798a8-3290-423e-a49d-4d110e6a41e7"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="3ac6fe4f-a127-4210-9e8b-cb4ee56fa01f"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -3619,6 +3671,12 @@ rxversion="8.3">
 			ref="3ed5c674-82b4-450c-802a-70c81d481a3a"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="404856da-9ec8-42c7-b5cc-cf3723c80fdc"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="405fcb6b-fb0a-45a5-b360-e8602f537671"
 			name="Verify_40V_Load_On_Changing_CPU_Of_Panel">
@@ -3646,6 +3704,12 @@ rxversion="8.3">
 			id="40c8d36d-f3e7-4064-83e2-076c16e95617"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="40e254cf-83f4-4343-990f-eec4d93ca429"
+			name="Reopen_Verify_LPS800_And_Its_Sounders"
+			ref="62e3d6fa-fa93-46f9-a7b4-8288f82d1236"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -4101,6 +4165,19 @@ loops.</SPAN>]]>
 					</param>
 					<param
 					name="ProjectName"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="474c6892-03ee-434f-bf30-3507cfa123ee"
+			name="Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop">
+				<description>
+					<![CDATA[<p>NGC-1113/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">52677, 52679 &amp; 52682</font></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
 					value="">
 					</param>
 				</parameters>
@@ -4909,6 +4986,20 @@ loops.</SPAN>]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="53f60cbb-eb5a-406e-8aeb-f4a42bf4d525"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="7705eef2-8e6f-4b98-8629-6fda694997a9"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="53fb8455-16c7-4271-9d88-1201610516bc"
 			name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop">
@@ -5537,6 +5628,19 @@ loops.</SPAN>]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="5d6cf3a6-3f2f-48aa-a965-c29bfdffc1fd"
+			name="Verify_the_properties_of_Audix_Interface">
+				<description>
+					<![CDATA[NGC-1113/ TC-52685]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="5d8cf0c4-f303-4c36-b365-f6752b7c343d"
 			name="Close_Application"
@@ -6121,6 +6225,12 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="67a010b0-d3a4-4085-a939-a4e8ee40c845"
+			name="Verify_System_Load_On_Changing_CPU_Of_Panel"
+			ref="226d2808-17b5-476f-804b-8ef9c24d6157"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="67fd168a-69a3-4aa4-9cd6-06331ec625c3"
 			name="Verify_Cable_Length_Displayed_For_Pro_Panels"
 			ref="c58ad405-a54b-464f-90d6-e00bc9fad745"
@@ -6652,6 +6762,12 @@ loops.</SPAN>]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="716cc138-6c96-41b9-b0e0-779edfd84365"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="71e2d7f3-0da9-4054-8721-c56c8a32abe5"
 			name="Verify_Alarm_load_property_for_Non_Standard_Sounders">
@@ -6669,6 +6785,12 @@ loops.</SPAN>]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="71e7310f-e7f2-47f6-bba2-e67c8bde96b1"
+			name="Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop"
+			ref="54485363-a8fb-4263-8ff8-4d85b9a71b19"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="720097cf-3495-4921-96d5-843b056cc0d5"
 			name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop"
@@ -6766,6 +6888,12 @@ loops.</SPAN>]]>
 					variablename="PanelNode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="72e9c057-5b94-4cf6-9670-4c36c260d38d"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="73253962-76cb-4087-8b68-ce6f77f1850b"
@@ -6977,6 +7105,19 @@ loops.</SPAN>]]>
 			ref="4adaba41-4a16-4327-9c0a-6873dadafd5f"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="7705eef2-8e6f-4b98-8629-6fda694997a9"
+			name="Verify_System_Load_On_Changing_CPU_Of_Panel">
+				<description>
+					<![CDATA[<p>NGC-605/TC-50945</p><p><br></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="7742f2fc-e849-4669-bb3b-2ec81c264c21"
 			name="Close_Application"
@@ -7685,6 +7826,19 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="82fac0cc-8149-49ea-9128-3bd476ad4daa"
+			name="Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix">
+				<description>
+					<![CDATA[NGC-1113/TC-52775]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="82ff8339-2644-4fea-b685-10a01548727f"
 			name="Application_Open"
@@ -7870,6 +8024,12 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="849e49fa-0078-4206-bda7-44b41df71a30"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="84a5ad16-3cc9-4277-90fc-6e522d10ffae"
 			name="Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800"
 			ref="d4029ebc-dfbd-43ba-9c84-b12192982322"
@@ -8034,6 +8194,12 @@ MxDesigner]]>
 			id="86e44436-95e2-400b-bff6-48ff4827b30c"
 			name="Verify_The_Respective_5V24V40V_Property_On_Changing_Power_Source"
 			ref="d6bd24c8-5182-4f9d-bdcb-859457805967"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="86f53df3-5f09-4714-b276-e476627e3907"
+			name="Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix"
+			ref="973b545f-daf4-47a9-b82e-d0a7b6dbfca9"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -8659,6 +8825,26 @@ MxDesigner]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="901cba91-1820-45f8-8696-98fa8d538b2d"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="90776d39-8e4f-4ed1-a7b2-c7688e766137"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -8830,6 +9016,26 @@ MxDesigner]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="93f2c88a-8d5b-48df-9ee5-b2d81aeb8f33"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="9419b42d-c491-4923-a171-665c26b4de5c"
@@ -9109,6 +9315,20 @@ MxDesigner]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="9977dffe-c3c1-4774-ad48-3f7d8ae8ce5c"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="82fac0cc-8149-49ea-9128-3bd476ad4daa"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="99979e33-ab40-4086-ae9b-f848dcc21aac"
 			name="Verify_Cable_Length_Displayed_For_Pro_Panels">
@@ -9128,6 +9348,19 @@ MxDesigner]]>
 			ref="a14895cd-ab9f-4425-82e4-f2824325eadc"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="99f2ef92-02c4-4fca-9563-77ae5bce5696"
+			name="Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M">
+				<description>
+					<![CDATA[NGC-605/TC-509546 &amp; 509547]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="9a40a015-79db-40ae-ac02-fddf7be01ac8"
 			name="Create_Project"
@@ -10377,12 +10610,6 @@ project]]>
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="b56506e5-426f-4d02-88eb-caedcc2d8980"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="b5708a95-d513-463a-861b-3d401f1c53d9"
 			name="Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values"
 			ref="cfdacfdd-ac10-49d9-b1a9-0274f0e3f249"
@@ -10715,6 +10942,20 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="ba95a7c2-fa36-40c5-8940-2ddc27cb2cdf"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="99f2ef92-02c4-4fca-9563-77ae5bce5696"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="bb812c4d-012f-47fb-90eb-66d7c8a04008"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -10976,6 +11217,26 @@ persisted in panel properties&nbsp;]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="bfaa0ef7-2422-4571-b6b0-7cc81afafe35"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="bfba9c09-a706-481b-8bd4-ccab3eb917ad"
@@ -11241,6 +11502,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="c5dc08b7-be10-4e46-afba-cd1390b23f90"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="c6408a40-fc88-44a7-a4f0-b480f71b6d40"
 			name="Close_Application"
@@ -11669,6 +11936,26 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="ce24c206-ee81-4ee0-9e16-c5425713b927"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="ce2d7dfe-c750-4f23-a224-6c6f4e28ea52"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -12000,6 +12287,26 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="d2f537a0-c86e-484d-b138-4f0b3e41e63e"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="d325a494-4d14-4039-ba1a-d1e50078358c"
 			name="Close_Application"
@@ -12504,6 +12811,12 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="de200f5c-48c0-4920-a1a1-041c1782aa6a"
+			name="Verify_the_properties_of_Audix_Interface"
+			ref="e5591827-cfa7-4c05-9578-6ea1d74f4404"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="de24ec8a-b0c8-45ca-834a-e2787065021c"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -12877,12 +13190,6 @@ persisted in panel properties&nbsp;]]>
 			</testcase>
 			<testmodule
 			id="e4736fe1-2040-4c5b-829e-bf182d1ee6e4"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="e475b991-5cde-4549-b44f-24b8db33e13b"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -14203,6 +14510,26 @@ persisted in panel properties&nbsp;]]>
 			</testmodule>
 			<testmodule
 			id="fd99de59-b44a-4fad-a92b-c69b4fb2ea5a"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="fda316ef-6807-4d3e-a46f-961bdef54daf"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
 			type="UserCode">
@@ -18321,6 +18648,10 @@ persisted in panel properties&nbsp;]]>
 						id="75a45c03-5651-4144-b690-345d91426e92"
 						name="Verify_If_Custom_Gallery_Can_Be_Updated_For_LPS800_Sounders">
 						</testmodule>
+						<testmodule
+						id="404856da-9ec8-42c7-b5cc-cf3723c80fdc"
+						name="Close_Application">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="1ce3b10a-935f-4a35-aa2c-91499474b3b3"
@@ -18338,7 +18669,15 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_LPS800_And_Its_Sounders">
 						</testmodule>
 						<testmodule
-						id="e475b991-5cde-4549-b44f-24b8db33e13b"
+						id="93f2c88a-8d5b-48df-9ee5-b2d81aeb8f33"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="40e254cf-83f4-4343-990f-eec4d93ca429"
+						name="Reopen_Verify_LPS800_And_Its_Sounders">
+						</testmodule>
+						<testmodule
+						id="72e9c057-5b94-4cf6-9670-4c36c260d38d"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
@@ -18358,16 +18697,16 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery">
 						</testmodule>
 						<testmodule
-						id="b56506e5-426f-4d02-88eb-caedcc2d8980"
-						name="Close_Application">
-						</testmodule>
-						<testmodule
 						id="abc13da1-40aa-4cf6-adb9-16b16883cc75"
 						name="Application_Open">
 						</testmodule>
 						<testmodule
 						id="8a40db69-3636-4d85-a907-45d7cad1ca79"
 						name="Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery">
+						</testmodule>
+						<testmodule
+						id="2cefc93a-a2ff-4e22-8e1d-ae48095d5866"
+						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -18730,6 +19069,106 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="474c6892-03ee-434f-bf30-3507cfa123ee"
+					name="Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop">
+						<testmodule
+						id="bfaa0ef7-2422-4571-b6b0-7cc81afafe35"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="1b19f2a0-ee28-47a0-9882-9ed958f80447"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="71e7310f-e7f2-47f6-bba2-e67c8bde96b1"
+						name="Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop">
+						</testmodule>
+						<testmodule
+						id="3a9798a8-3290-423e-a49d-4d110e6a41e7"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="5d6cf3a6-3f2f-48aa-a965-c29bfdffc1fd"
+					name="Verify_the_properties_of_Audix_Interface">
+						<testmodule
+						id="fda316ef-6807-4d3e-a46f-961bdef54daf"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="12c5ce4b-9d50-496a-b63b-7faa42167cff"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="de200f5c-48c0-4920-a1a1-041c1782aa6a"
+						name="Verify_the_properties_of_Audix_Interface">
+						</testmodule>
+						<testmodule
+						id="0324d795-ae4a-4522-8650-95ea4e370d04"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="82fac0cc-8149-49ea-9128-3bd476ad4daa"
+					name="Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix">
+						<testmodule
+						id="d2f537a0-c86e-484d-b138-4f0b3e41e63e"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="9977dffe-c3c1-4774-ad48-3f7d8ae8ce5c"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="86f53df3-5f09-4714-b276-e476627e3907"
+						name="Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix">
+						</testmodule>
+						<testmodule
+						id="716cc138-6c96-41b9-b0e0-779edfd84365"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="7705eef2-8e6f-4b98-8629-6fda694997a9"
+					name="Verify_System_Load_On_Changing_CPU_Of_Panel">
+						<testmodule
+						id="ce24c206-ee81-4ee0-9e16-c5425713b927"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="53f60cbb-eb5a-406e-8aeb-f4a42bf4d525"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="67a010b0-d3a4-4085-a939-a4e8ee40c845"
+						name="Verify_System_Load_On_Changing_CPU_Of_Panel">
+						</testmodule>
+						<testmodule
+						id="849e49fa-0078-4206-bda7-44b41df71a30"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="99f2ef92-02c4-4fca-9563-77ae5bce5696"
+					name="Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M">
+						<testmodule
+						id="901cba91-1820-45f8-8696-98fa8d538b2d"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="ba95a7c2-fa36-40c5-8940-2ddc27cb2cdf"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="0b75b0ef-543d-49ed-8939-2e9f1990323c"
+						name="Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M">
+						</testmodule>
+						<testmodule
+						id="c5dc08b7-be10-4e46-afba-cd1390b23f90"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -18931,7 +19370,22 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="0039cc0c-9f5f-447f-8a9e-43c23d62bdb2">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="518a26c1-d79f-4c8a-88bf-3301da933f85">
+			</testcontainer>
+			<testcontainer
+			id="665f2de6-a321-40d9-a3b1-88863115cde3">
+			</testcontainer>
+			<testcontainer
+			id="b96d100c-442a-427f-ae89-c0471236f378">
+			</testcontainer>
+			<testcontainer
+			id="cdbd11ed-c284-43f3-8080-7bc5dcad544a">
 			</testcontainer>
 			<testcontainer
 			id="f57ad780-8e6c-419f-8605-77de066ab808">
@@ -18964,10 +19418,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

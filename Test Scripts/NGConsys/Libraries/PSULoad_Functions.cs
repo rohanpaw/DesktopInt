@@ -5313,7 +5313,124 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 		
+		/*****************************************************************************************************************
+		 * Function Name: verifySystemLoadValue
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 4/2/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifySystemLoadValue(string sSystemLoadValue)
+		{
+			sPsuV = sSystemLoadValue;
+			repo.FormMe.SystemLoad.Click();
+			string sActualLoadValue = repo.FormMe.SystemLoad.TextValue;
+			
+			Report.Log(ReportLevel.Info,"System Load value is"+sActualLoadValue);
+			
+			if(sSystemLoadValue.Equals(sActualLoadValue))
+			{
+				Report.Log(ReportLevel.Success,"System Load value is displayed "+sActualLoadValue+"correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"System Load value is displayed "+sActualLoadValue+"instad of"+sSystemLoadValue);
+			}
+		}
 		
+		/*****************************************************************************************************************
+		 * Function Name: verifySystemLoadValueOnChangingPSU
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 4/2/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifySystemLoadValueOnChangingPSU(string sFileName,string sAddPanelSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,PSUType,expectedSystemLoad,DefaultSystemLoad;
+			int rowNumber;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				PSUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				expectedSystemLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				DefaultSystemLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				
+				int.TryParse(sRowNumber, out rowNumber);
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
+				
+				
+				
+				// Click on Expander node
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on Loop Card node
+				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				
+				// Click on Loop A node
+				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				
+				//Click on Physical Layout Tab
+				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				
+				// Verify max System Load load value
+				verifySystemLoadValue(DefaultSystemLoad);
+				
+				//Click on Site node due to refreshment
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				// Click on Expander node
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				//Change PSU
+				Panel_Functions.ChangePSUType(PSUType);
+				
+				//Click on Panel Node
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on Loop Card node
+				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				
+				// Click on Loop A node
+				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				
+				//Click on Physical Layout Tab
+				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				
+				// Verify max System Load load value
+				verifySystemLoadValue(expectedSystemLoad);
+				
+				
+				//Click on Site node
+				repo.ProfileConsys1.SiteNode.Click();
+				
+				// Delete panel using PanelNode details from excel sheet
+				Panel_Functions.DeletePanel(1,PanelNode,1);
+				
+			}
+			//Close opened excel sheet
+			Excel_Utilities.CloseExcel();
+			
+		}
+
 	}
 	
 
