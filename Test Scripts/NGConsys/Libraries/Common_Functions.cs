@@ -139,8 +139,8 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void Application_Close(bool Save, bool SaveConfirmation, string sProjectName)
 		{
-			repo.ProfileConsys1.btn_Close.Click();
-			
+			//repo.ProfileConsys1.btn_Close.Click();
+			repo.FormMe.btn_Close.Click();
 			if (Save)
 			{
 				if(repo.SaveConfirmationWindow.SelfInfo.Exists())

@@ -143,7 +143,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						TC_0061_Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached
+						TC_61_Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached
 					</argvalue>
 				</argument>
 				<argument

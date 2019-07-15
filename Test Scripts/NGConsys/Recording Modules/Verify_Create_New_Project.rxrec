@@ -121,6 +121,30 @@ rxversion="8.3">
 				yourtext
 			</matchvalue>
 		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="2c17aabd-8258-4b61-9427-3ff3b348e91f"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c513d0ed-62ca-4535-8465-97cd5b14bc98"
+			sourcename="RepositoryEditor">
+				<path>
+					/form/container[@automationid='Root_Grid']//button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_CloseButton']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"

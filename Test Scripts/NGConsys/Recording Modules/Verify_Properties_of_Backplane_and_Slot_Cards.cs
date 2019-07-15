@@ -96,7 +96,7 @@ namespace TestProject.Recording_Modules
             //Libraries.Devices_Functions.verifyDescription("Backplane Assembly with 6 slots for use with PxD");
             //Delay.Milliseconds(0);
             
-            //verifyPicture();
+            //Libraries.Devices_Functions.verifyPicture();
             //Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.cell_Properties_backplane' at Center.", repo.FormMe.cell_Properties_backplaneInfo, new RecordItemIndex(6));
@@ -107,7 +107,7 @@ namespace TestProject.Recording_Modules
             //Validate.ContainsImage(repo.FormMe.BackplaneImageInfo, BackplaneImage_Screenshot1, BackplaneImage_Screenshot1_Options);
             //Delay.Milliseconds(0);
             
-            //ErasePictureFromProperties();
+            //Libraries.Devices_Functions.ErasePictureFromProperties();
             //Delay.Milliseconds(0);
             
             // Have to verify the value for backplane SKU

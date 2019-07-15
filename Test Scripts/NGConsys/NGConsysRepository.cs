@@ -7837,6 +7837,7 @@ namespace TestProject
             RepoItemInfo _sometextInfo;
             RepoItemInfo _systemloadInfo;
             RepoItemInfo _inventorygridfirstrowInfo;
+            RepoItemInfo _btn_closeInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7999,6 +8000,7 @@ namespace TestProject
                 _sometextInfo = new RepoItemInfo(this, "SomeText", "progressbar/picture[2]/container/list/container//text", 30000, null, "b8acabbc-b09f-41c5-a1bc-8046c3abd660");
                 _systemloadInfo = new RepoItemInfo(this, "SystemLoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='15']//text[@caption=$sPsuV]", 30000, null, "e28129b7-fa8f-4ebe-992a-3931a1c7e24c");
                 _inventorygridfirstrowInfo = new RepoItemInfo(this, "InventoryGridFirstRow", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/?/?/text[@automationid='PART_Editor']", 30000, null, "78c3cb5c-ed89-4929-ba32-2b396f70cb5a");
+                _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "button[@automationid='PART_Fill']/container[@automationid='PART_Buttons']//button[@automationid='PART_CloseButton']", 30000, null, "5763368f-3a5f-4ed4-8a10-17d3cba96009");
             }
 
             /// <summary>
@@ -11859,6 +11861,30 @@ namespace TestProject
             }
 
             /// <summary>
+            /// The btn_Close item.
+            /// </summary>
+            [RepositoryItem("5763368f-3a5f-4ed4-8a10-17d3cba96009")]
+            public virtual Ranorex.Button btn_Close
+            {
+                get
+                {
+                    return _btn_closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btn_Close item info.
+            /// </summary>
+            [RepositoryItemInfo("5763368f-3a5f-4ed4-8a10-17d3cba96009")]
+            public virtual RepoItemInfo btn_CloseInfo
+            {
+                get
+                {
+                    return _btn_closeInfo;
+                }
+            }
+
+            /// <summary>
             /// The SomeList folder.
             /// </summary>
             [RepositoryFolder("620d6297-3f52-4bc0-9274-9459d72f61d6")]
@@ -13181,6 +13207,7 @@ namespace TestProject
             RepoItemInfo _gallerylistInfo;
             RepoItemInfo _detectorsInfo;
             RepoItemInfo _mainlistInfo;
+            RepoItemInfo _btn_closeInfo;
 
             /// <summary>
             /// Creates a new HwndWrapperProfileConsysExe0c643c73  folder.
@@ -13204,6 +13231,7 @@ namespace TestProject
                 _gallerylistInfo = new RepoItemInfo(this, "GalleryList", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]", 30000, null, "643ac1fb-0dc7-4896-871d-cad97711bf28");
                 _detectorsInfo = new RepoItemInfo(this, "Detectors", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_Caption']/text[@text='Detectors']", 30000, null, "0a1e294c-ac64-4b1a-aa54-865b65b15aba");
                 _mainlistInfo = new RepoItemInfo(this, "MainList", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]", 30000, null, "90788ead-fe35-4dbd-981c-395de4f948c9");
+                _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "container[@automationid='Root_Grid']//button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_CloseButton']", 30000, null, "c513d0ed-62ca-4535-8465-97cd5b14bc98");
             }
 
             /// <summary>
@@ -13611,6 +13639,30 @@ namespace TestProject
                 get
                 {
                     return _mainlistInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btn_Close item.
+            /// </summary>
+            [RepositoryItem("c513d0ed-62ca-4535-8465-97cd5b14bc98")]
+            public virtual Ranorex.Button btn_Close
+            {
+                get
+                {
+                    return _btn_closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btn_Close item info.
+            /// </summary>
+            [RepositoryItemInfo("c513d0ed-62ca-4535-8465-97cd5b14bc98")]
+            public virtual RepoItemInfo btn_CloseInfo
+            {
+                get
+                {
+                    return _btn_closeInfo;
                 }
             }
         }

@@ -15839,6 +15839,13 @@ AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/?/?/text[@automationid='PART_Editor']
 			</item>
+			<item
+			capname="button"
+			id="5763368f-3a5f-4ed4-8a10-17d3cba96009"
+			name="btn_Close"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/button[@automationid='PART_Fill']/container[@automationid='PART_Buttons']//button[@automationid='PART_CloseButton']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -16414,6 +16421,16 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]"
 			searchtimeout="30000ms">
 				/form/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="c513d0ed-62ca-4535-8465-97cd5b14bc98"
+			name="btn_Close"
+			refimgid="ebc5d527-f5a1-47b8-b9a4-6086f34f9b34"
+			refpath="/form[@automationid='me']/container[@automationid='Root_Grid']/container[@automationid='PART_Buttons']/container[@automationid='PART_ControlBoxContainer']/button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_CloseButton']"
+			searchtimeout="30000ms">
+				/form/container[@automationid='Root_Grid']//button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_CloseButton']
 			</item>
 			<basepath>
 				/form

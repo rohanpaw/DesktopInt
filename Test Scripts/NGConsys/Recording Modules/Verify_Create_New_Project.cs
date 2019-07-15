@@ -95,6 +95,10 @@ namespace TestProject.Recording_Modules
             Validate.Exists(repo.HwndWrapperProfileConsysExe0c643c73.tab_SiteAccessoriesInfo);
             Delay.Milliseconds(0);
             
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HwndWrapperProfileConsysExe0c643c73.btn_Close' at Center.", repo.HwndWrapperProfileConsysExe0c643c73.btn_CloseInfo, new RecordItemIndex(4));
+            //repo.HwndWrapperProfileConsysExe0c643c73.btn_Close.Click();
+            //Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data
