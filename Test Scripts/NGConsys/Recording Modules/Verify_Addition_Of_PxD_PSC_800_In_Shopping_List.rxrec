@@ -4238,6 +4238,30 @@ oD5/cKgPQr6Un8D6p+ZdAfv////+////ulDzjmWi60yVu2hcxUE1pws=
 		loc="Center"
 		movetime="300ms"
 		optional="False"
+		searchpropertyid="dbf3b1af-8822-4f40-9b8b-46772d5cea30"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f32d3100-749f-454a-b2a2-fd7f30bf02dc"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Export']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
 		searchpropertyid="ccda942f-ddd1-4fe3-adf1-82390fc3d103"
 		sx="168"
 		sy="88"
@@ -8624,7 +8648,7 @@ h1Cb2V0L
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -9097,7 +9121,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -9566,6 +9590,22 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 				</path>
 			</info>
 		</mouseitem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="validateAndClickOKButtonOnExportDocument"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e986e9f8-fc6b-4aff-b76f-0bb704c65728">
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -9787,7 +9827,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"

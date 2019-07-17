@@ -144,6 +144,14 @@ namespace TestProject.Recording_Modules
             Validate.Exists(repo.PrintPreview.SelfInfo);
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.PARTMaximize' at Center.", repo.PrintPreview.PARTMaximizeInfo, new RecordItemIndex(16));
+            repo.PrintPreview.PARTMaximize.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(17));
+            repo.PrintPreview.btn_CloseB.Click();
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

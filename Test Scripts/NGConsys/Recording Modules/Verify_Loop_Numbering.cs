@@ -104,20 +104,20 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-A (0 of 125)') on item 'HwndWrapperProfileConsysExe0c643c73.BuiltInLoopA0Of125'.", repo.HwndWrapperProfileConsysExe0c643c73.BuiltInLoopA0Of125Info, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.HwndWrapperProfileConsysExe0c643c73.BuiltInLoopA0Of125Info, "Text", "Built-in Loop-A (0 of 125)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-A (0 of 125)') on item 'FormMe2.BuiltInLoopA0Of125'.", repo.FormMe2.BuiltInLoopA0Of125Info, new RecordItemIndex(4));
+            Validate.AttributeContains(repo.FormMe2.BuiltInLoopA0Of125Info, "Text", "Built-in Loop-A (0 of 125)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-B (0 of 125)') on item 'HwndWrapperProfileConsysExe0c643c73.BuiltInLoopB0Of125'.", repo.HwndWrapperProfileConsysExe0c643c73.BuiltInLoopB0Of125Info, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.HwndWrapperProfileConsysExe0c643c73.BuiltInLoopB0Of125Info, "Text", "Built-in Loop-B (0 of 125)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-B (0 of 125)') on item 'FormMe2.BuiltInLoopB0Of125'.", repo.FormMe2.BuiltInLoopB0Of125Info, new RecordItemIndex(5));
+            Validate.AttributeContains(repo.FormMe2.BuiltInLoopB0Of125Info, "Text", "Built-in Loop-B (0 of 125)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-C (0 of 125)') on item 'HwndWrapperProfileConsysExe0c643c73.BuiltInLoopC0Of125'.", repo.HwndWrapperProfileConsysExe0c643c73.BuiltInLoopC0Of125Info, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.HwndWrapperProfileConsysExe0c643c73.BuiltInLoopC0Of125Info, "Text", "Built-in Loop-C (0 of 125)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-C (0 of 125)') on item 'FormMe2.BuiltInLoopC0Of125'.", repo.FormMe2.BuiltInLoopC0Of125Info, new RecordItemIndex(6));
+            Validate.AttributeContains(repo.FormMe2.BuiltInLoopC0Of125Info, "Text", "Built-in Loop-C (0 of 125)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-D (0 of 125)') on item 'HwndWrapperProfileConsysExe0c643c73.BuiltInLoopD0Of125'.", repo.HwndWrapperProfileConsysExe0c643c73.BuiltInLoopD0Of125Info, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.HwndWrapperProfileConsysExe0c643c73.BuiltInLoopD0Of125Info, "Text", "Built-in Loop-D (0 of 125)");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-D (0 of 125)') on item 'FormMe2.BuiltInLoopD0Of125'.", repo.FormMe2.BuiltInLoopD0Of125Info, new RecordItemIndex(7));
+            Validate.AttributeContains(repo.FormMe2.BuiltInLoopD0Of125Info, "Text", "Built-in Loop-D (0 of 125)");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(8));

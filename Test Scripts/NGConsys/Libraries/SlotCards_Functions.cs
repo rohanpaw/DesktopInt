@@ -135,12 +135,12 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 02/05/2019  14/05/2019 - Alpesh Dhakad - Updated code
+		 * Last Update : 02/05/2019  14/05/2019 - Alpesh Dhakad - Updated code 17/07/2019 - Alpesh Dhakad - Updated code
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifySlotCardsTextForBackplane2(string expectedText)
 		{
-			
+			sOtherSlotCardName = expectedText;
 			if(repo.FormMe.MainProcessorList.Backplane2_OtherSlotCardsWithPLXInfo.Exists())
 			{
 				string ActualText = repo.FormMe.MainProcessorList.Backplane2_OtherSlotCardsWithPLX.TextValue;
@@ -921,7 +921,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 30/05/2019
+		 * Last Update : 30/05/2019  17/07/2019 - Alpesh Dhakad - Updated code 
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyShoppingListOnSelectingFOMandMPM(string sFileName,string sAddDevicesSheet)
@@ -1013,12 +1013,20 @@ namespace TestProject.Libraries
 				repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
 				Delay.Duration(5000, false);
 				
-				// Click on OK button of export document
-				repo.ExportDocument.ButtonOK.Click();
-				Delay.Milliseconds(200);
 				
-				// Click on OK button of export document again
-				repo.ExportDocument.ButtonOK.Click();
+				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
+				// Click on OK Button of export document
+				Export_Functions.validateAndClickOKButtonOnExportDocument();
+				
+//				// Click on OK button of export document
+//				repo.ExportDocument.ButtonOK.Click();
+//				Delay.Milliseconds(200);
+//				
+//				// Click on OK button of export document again
+//				repo.ExportDocument.ButtonOK.Click();
+				
+				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
+				
 				
 				// Click on shopping list Cell 18 of excel sheet
 				repo.ShoppingListCompatibilityModeE.Cell18.Click();
@@ -1077,12 +1085,19 @@ namespace TestProject.Libraries
 				repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
 				Delay.Duration(5000, false);
 				
-				// Click on Ok button
-				repo.ExportDocument.ButtonOK.Click();
-				Delay.Milliseconds(200);
+				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
+				// Click on OK Button of export document
+				Export_Functions.validateAndClickOKButtonOnExportDocument();
 				
-				// Click on Ok button again
-				repo.ExportDocument.ButtonOK.Click();
+//				// Click on OK button of export document
+//				repo.ExportDocument.ButtonOK.Click();
+//				Delay.Milliseconds(200);
+//				
+//				// Click on OK button of export document again
+//				repo.ExportDocument.ButtonOK.Click();
+				
+				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
+				
 				
 				// Click Cell 18 text of excel sheet
 				repo.ShoppingListCompatibilityModeE.Cell18.Click();
@@ -1122,12 +1137,12 @@ namespace TestProject.Libraries
 		
 		
 		/***********************************************************************************************************
-		 * Function Name: VerifyShoppingListOnSelectingFOMandMPM
+		 * Function Name: VerifyShoppingListOnAddingTLI800AndTLI800EN
 		 * Function Details:
 		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 27/05/2019
+		 * Last Update : 27/05/2019  17/07/2019 - Alpesh Dhakad - Updated code
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyShoppingListOnAddingTLI800AndTLI800EN(string sFileName,string sAddDevicesSheet)
@@ -1252,12 +1267,18 @@ namespace TestProject.Libraries
 				repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
 				Delay.Duration(5000, false);
 				
-				// Click on Ok button
-				repo.ExportDocument.ButtonOK.Click();
-				Delay.Milliseconds(200);
+				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
+				// Click on OK Button of export document
+				Export_Functions.validateAndClickOKButtonOnExportDocument();
 				
-				// Click on Ok button again
-				repo.ExportDocument.ButtonOK.Click();
+//				// Click on OK button of export document
+//				repo.ExportDocument.ButtonOK.Click();
+//				Delay.Milliseconds(200);
+//				
+//				// Click on OK button of export document again
+//				repo.ExportDocument.ButtonOK.Click();
+				
+				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
 				
 				// Verify shopping list excel text for first device and panel
 				Devices_Functions.verifyShoppingListDevicesTextForCell3And14(PanelName,sDeviceName);
@@ -2581,7 +2602,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void VerifyPLXLoopCardTextForBackplane1(string expectedText)
 		{
-			string ActualText = repo.HwndWrapperProfileConsysExe0c643c73.PLXExternalLoopCard2.TextValue;
+			string ActualText = repo.FormMe2.PLXExternalLoopCard2.TextValue;
 			
 			if(ActualText.Equals(expectedText))
 			{

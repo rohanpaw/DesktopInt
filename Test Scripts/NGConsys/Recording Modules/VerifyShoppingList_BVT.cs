@@ -120,8 +120,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.ShoppingList.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export' at Center.", repo.FormMe.ExportInfo, new RecordItemIndex(11));
-            repo.FormMe.Export.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(11));
+            repo.FormMe.Export2ndTime.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'PrintPreview.Print'.", repo.PrintPreview.PrintInfo, new RecordItemIndex(12));

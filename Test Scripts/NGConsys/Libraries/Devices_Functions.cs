@@ -6006,10 +6006,10 @@ namespace TestProject.Libraries
 		{
 			
 			// Click on Device Sensitivity cell
-			repo.HwndWrapperProfileConsysExe0c643c73.GridSensitivityCombo1.Click();
+			repo.FormMe2.GridSensitivityCombo1.Click();
 			
 			// Enter the value to change device sensitivity
-			repo.HwndWrapperProfileConsysExe0c643c73.GridSensitivityCombo.PressKeys((changeDeviceSensitivity) +"{ENTER}" + "{ENTER}");
+			repo.FormMe2.GridSensitivityCombo.PressKeys((changeDeviceSensitivity) +"{ENTER}" + "{ENTER}");
 			Report.Log(ReportLevel.Info," Device sensitivity changed successfully ");
 			
 		}
@@ -6131,7 +6131,7 @@ namespace TestProject.Libraries
 			repo.FormMe.GalleryPARTDown.Click();
 			sDeviceName = Device1;
 			
-			if(repo.HwndWrapperProfileConsysExe0c643c73.SomeListItem.EnsureVisible())
+			if(repo.FormMe2.SomeListItem.EnsureVisible())
 			{
 				Report.Log(ReportLevel.Success, "Gallery: " + Device1+ " remains as 2nd favourite device");
 			}
@@ -6642,9 +6642,7 @@ namespace TestProject.Libraries
 				
 			}
 		}
-		
-		
-		
+
 		
 	}
 	}

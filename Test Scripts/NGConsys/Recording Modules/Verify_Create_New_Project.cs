@@ -83,20 +83,20 @@ namespace TestProject.Recording_Modules
             Validate.Exists(repo.ProfileConsys1.SiteNodeInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Panels') on item 'HwndWrapperProfileConsysExe0c643c73.PanelsGallery'.", repo.HwndWrapperProfileConsysExe0c643c73.PanelsGalleryInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.HwndWrapperProfileConsysExe0c643c73.PanelsGalleryInfo, "Text", "Panels");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Panels') on item 'FormMe2.PanelsGallery'.", repo.FormMe2.PanelsGalleryInfo, new RecordItemIndex(1));
+            Validate.AttributeContains(repo.FormMe2.PanelsGalleryInfo, "Text", "Panels");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'HwndWrapperProfileConsysExe0c643c73.OtherNodesGallery'.", repo.HwndWrapperProfileConsysExe0c643c73.OtherNodesGalleryInfo, new RecordItemIndex(2));
-            Validate.Exists(repo.HwndWrapperProfileConsysExe0c643c73.OtherNodesGalleryInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormMe2.OtherNodesGallery'.", repo.FormMe2.OtherNodesGalleryInfo, new RecordItemIndex(2));
+            Validate.Exists(repo.FormMe2.OtherNodesGalleryInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'HwndWrapperProfileConsysExe0c643c73.tab_SiteAccessories'.", repo.HwndWrapperProfileConsysExe0c643c73.tab_SiteAccessoriesInfo, new RecordItemIndex(3));
-            Validate.Exists(repo.HwndWrapperProfileConsysExe0c643c73.tab_SiteAccessoriesInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormMe2.tab_SiteAccessories'.", repo.FormMe2.tab_SiteAccessoriesInfo, new RecordItemIndex(3));
+            Validate.Exists(repo.FormMe2.tab_SiteAccessoriesInfo);
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'HwndWrapperProfileConsysExe0c643c73.btn_Close' at Center.", repo.HwndWrapperProfileConsysExe0c643c73.btn_CloseInfo, new RecordItemIndex(4));
-            //repo.HwndWrapperProfileConsysExe0c643c73.btn_Close.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe2.btn_Close' at Center.", repo.FormMe2.btn_CloseInfo, new RecordItemIndex(4));
+            //repo.FormMe2.btn_Close.Click();
             //Delay.Milliseconds(200);
             
         }

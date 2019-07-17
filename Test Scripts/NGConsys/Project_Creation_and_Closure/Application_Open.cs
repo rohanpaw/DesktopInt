@@ -96,8 +96,8 @@ namespace TestProject
 			}
 			
 			Keyboard.Press("{Return}");
-			//Keyboard.Press("exit");
-			//Keyboard.Press("{Return}");
+			Keyboard.Press("exit");
+			Keyboard.Press("{Return}");
 			
 			
 		}

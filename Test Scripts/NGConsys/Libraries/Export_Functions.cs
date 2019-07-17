@@ -119,7 +119,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/06/2019
+		 * Last Update : 06/06/2019 17/07/2019 - Alpesh Dhakad - Updated code
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void ExportAndGenerateShoppingListInExcelFormat()
@@ -142,12 +142,18 @@ namespace TestProject.Libraries
 			repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
 			Delay.Duration(5000, false);
 			
-			// Click on Ok button
-			repo.ExportDocument.ButtonOK.Click();
-			Delay.Milliseconds(200);
-			
-			// Click on Ok button again
-			repo.ExportDocument.ButtonOK.Click();
+			//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
+				// Click on OK Button of export document
+				Export_Functions.validateAndClickOKButtonOnExportDocument();
+				
+//				// Click on OK button of export document
+//				repo.ExportDocument.ButtonOK.Click();
+//				Delay.Milliseconds(200);
+//				
+//				// Click on OK button of export document again
+//				repo.ExportDocument.ButtonOK.Click();
+				
+				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
 		}
 		
 		
@@ -264,6 +270,37 @@ namespace TestProject.Libraries
 			else
 			{
 				Report.Log(ReportLevel.Failure,"Model name" +sExpectedText+ " is not displayed correctly instead " +actualText+  "is displayed " );
+			}
+		}
+	
+
+/***********************************************************************************************************
+		 * Function Name: validateAndClickOKButtonOnExportDocument
+		 * Function Details: To validate export document window and then click on Ok after verification
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :  17/07/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void validateAndClickOKButtonOnExportDocument()
+		{
+			//repo.ExportDocument.PARTDragWidget.Click();
+			
+			if(repo.FormMe2.ButtonOKInfo.Exists())
+			{
+				repo.FormMe2.ButtonOK.Click();
+				Delay.Milliseconds(200);
+				
+				repo.FormMe2.ButtonOK.Click();
+			}
+			else
+			{
+				
+				repo.ExportDocument.ButtonOK.Click();
+				Delay.Milliseconds(200);
+				
+				repo.ExportDocument.ButtonOK.Click();		
 			}
 		}
 		

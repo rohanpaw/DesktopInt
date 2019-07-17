@@ -9466,7 +9466,7 @@ h1Cb2V0L
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -9939,7 +9939,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -10408,6 +10408,22 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 				</path>
 			</info>
 		</mouseitem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="validateAndClickOKButtonOnExportDocument"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e986e9f8-fc6b-4aff-b76f-0bb704c65728">
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -15930,11 +15946,27 @@ h1Cb2V0L
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="validateAndClickOKButtonOnExportDocument"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e986e9f8-fc6b-4aff-b76f-0bb704c65728">
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -16407,7 +16439,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"

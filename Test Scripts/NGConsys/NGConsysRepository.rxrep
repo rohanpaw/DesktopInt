@@ -2260,7 +2260,7 @@ W/AAAAAASUVORK5CYII=
 			name="txt_SearchDevices"
 			refimgid="cf80efcb-0ca2-44b7-b13d-25cfc1c10b01"
 			searchtimeout="30000ms">
-				/form[@title='Add Devices']//text[@automationid='searchDevice']/text[@caption='']
+				/form[@title='Add Devices']/container[1]/?/?/text[@automationid='searchDevice']
 			</item>
 			<item
 			addcaps="text,wpfelement"
@@ -15903,9 +15903,8 @@ W/AAAAAASUVORK5CYII=
 			id="132c808b-0d42-40b5-8781-939a5e68c753"
 			name="ExportDropdown"
 			refimgid="a41b1d59-002a-4f0d-9f40-f32e18ecb2c0"
-			refpath="/form[@title='Print Preview']/list[2]/button[@automationid='PART_Button']/button[@text='Export...']"
 			searchtimeout="30000ms">
-				/form[@title='Print Preview']/list[2]/button[@automationid='PART_Button']/button[@text='Export...']
+				/form[@title='Print Preview']/?/?/button[@text='Export...']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -16119,9 +16118,8 @@ hM8MsgM0m802GX90Oh38BvNsx7yLsF6zAAAAAElFTkSuQmCC
 			id="f6dfe232-b48a-4bf6-be88-03a5ec92fcf0"
 			name="ButtonOK"
 			refimgid="fe957215-8fff-49b2-8959-f56ca13a5f80"
-			refpath="/form[@title='Export Document...']/list[1]/button[1]/button[@text='OK']"
 			searchtimeout="30000ms">
-				/form[@title='Export Document...']/list[1]/?/?/button[@text='OK']
+				/form[@title='Export Document...']/list[1]/button[@caption='OK']
 			</item>
 			<basepath>
 				/form[@title='Export Document...']
@@ -16261,7 +16259,7 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 		capname="form"
 		id="ee1e2d60-cfa5-4cc5-bd2f-c99233037569"
 		isrooted="True"
-		name="HwndWrapperProfileConsysExe0c643c73"
+		name="FormMe2"
 		refpath="/form"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -16431,6 +16429,16 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			refpath="/form[@automationid='me']/container[@automationid='Root_Grid']/container[@automationid='PART_Buttons']/container[@automationid='PART_ControlBoxContainer']/button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_CloseButton']"
 			searchtimeout="30000ms">
 				/form/container[@automationid='Root_Grid']//button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_CloseButton']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="3a52b075-40ce-4c40-beb3-38420ff259de"
+			name="ButtonOK"
+			refimgid="7f5c0cbd-5134-4839-ba8a-bae57d649505"
+			refpath="/form[@title='Export Document...']/list[1]/button[1]/button[@text='OK']"
+			searchtimeout="30000ms">
+				/form/list[1]/?/?/button[@text='OK']
 			</item>
 			<basepath>
 				/form

@@ -43,7 +43,7 @@ namespace TestProject
         NGConsysRepositoryFolders.CustomDevicesAppFolder _customdevices;
         NGConsysRepositoryFolders.ExportDocumentAppFolder _exportdocument;
         NGConsysRepositoryFolders.ShoppingListCompatibilityModeEAppFolder _shoppinglistcompatibilitymodee;
-        NGConsysRepositoryFolders.HwndWrapperProfileConsysExe0c643c73AppFolder _hwndwrapperprofileconsysexe0c643c73;
+        NGConsysRepositoryFolders.FormMe2AppFolder _formme2;
 
         /// <summary>
         /// Gets the singleton class instance representing the NGConsysRepository element repository.
@@ -76,7 +76,7 @@ namespace TestProject
             _customdevices = new NGConsysRepositoryFolders.CustomDevicesAppFolder(this);
             _exportdocument = new NGConsysRepositoryFolders.ExportDocumentAppFolder(this);
             _shoppinglistcompatibilitymodee = new NGConsysRepositoryFolders.ShoppingListCompatibilityModeEAppFolder(this);
-            _hwndwrapperprofileconsysexe0c643c73 = new NGConsysRepositoryFolders.HwndWrapperProfileConsysExe0c643c73AppFolder(this);
+            _formme2 = new NGConsysRepositoryFolders.FormMe2AppFolder(this);
         }
 
 #region Variables
@@ -1212,12 +1212,12 @@ namespace TestProject
         }
 
         /// <summary>
-        /// The HwndWrapperProfileConsysExe0c643c73 folder.
+        /// The FormMe2 folder.
         /// </summary>
         [RepositoryFolder("ee1e2d60-cfa5-4cc5-bd2f-c99233037569")]
-        public virtual NGConsysRepositoryFolders.HwndWrapperProfileConsysExe0c643c73AppFolder HwndWrapperProfileConsysExe0c643c73
+        public virtual NGConsysRepositoryFolders.FormMe2AppFolder FormMe2
         {
-            get { return _hwndwrapperprofileconsysexe0c643c73; }
+            get { return _formme2; }
         }
     }
 
@@ -7359,7 +7359,7 @@ namespace TestProject
                     base("AddDevices", "/form[@title='Add Devices']", parentFolder, 30000, null, true, "97798097-5651-427b-b0e3-53a4167793eb", "")
             {
                 _txt_alldevicesInfo = new RepoItemInfo(this, "txt_AllDevices", ".//button[@automationid='PART_PanelNewButton']/container/button[@automationid='PART_CloseButton']/text[@caption='All Devices']", 30000, null, "02c7a3e7-7186-464a-b477-97ffbd03071a");
-                _txt_searchdevicesInfo = new RepoItemInfo(this, "txt_SearchDevices", ".//text[@automationid='searchDevice']/text[@caption='']", 30000, null, "398195b8-1b6b-448a-859a-411ce700b714");
+                _txt_searchdevicesInfo = new RepoItemInfo(this, "txt_SearchDevices", "container[1]/?/?/text[@automationid='searchDevice']", 30000, null, "398195b8-1b6b-448a-859a-411ce700b714");
                 _txt_modelnumberInfo = new RepoItemInfo(this, "txt_ModelNumber", "container[1]/list/list/?/?/text[@caption=$ModelNumber]", 30000, null, "30ae1b47-2ca5-4198-b87b-8104a311ba7a");
                 _btn_adddevicesInfo = new RepoItemInfo(this, "btn_AddDevices", "?/?/button[@text='Delete all Devices']/?/?/button[@text~'Add *']", 30000, null, "7fbfa368-7a81-4936-a195-52099769cdcd");
                 _txt_quantityInfo = new RepoItemInfo(this, "txt_Quantity", "?/?/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']//row/cell[2]/text", 30000, null, "94369f9f-f839-4d1d-9922-ecce8235b4a0");
@@ -12290,7 +12290,7 @@ namespace TestProject
                 _printInfo = new RepoItemInfo(this, "Print", "list[2]/button[@automationid='PART_Button']/button[@text='Print...']", 30000, null, "2f43b9ae-d908-4729-8059-b2f9c971df4e");
                 _btn_closeInfo = new RepoItemInfo(this, "btn_Close", ".//list[@automationid='PART_HeaderButtons']/button[@automationid='PART_CloseButton']", 30000, null, "143c5434-4ee7-4582-9b76-f7136459f644");
                 _partmaximizeInfo = new RepoItemInfo(this, "PARTMaximize", ".//list[@automationid='PART_HeaderButtons']/button[@automationid='PART_Maximize']", 30000, null, "ba741b31-3c34-4b05-b54b-79946f6e6659");
-                _exportdropdownInfo = new RepoItemInfo(this, "ExportDropdown", "list[2]/button[@automationid='PART_Button']/button[@text='Export...']", 30000, null, "132c808b-0d42-40b5-8781-939a5e68c753");
+                _exportdropdownInfo = new RepoItemInfo(this, "ExportDropdown", "?/?/button[@text='Export...']", 30000, null, "132c808b-0d42-40b5-8781-939a5e68c753");
                 _btn_closebInfo = new RepoItemInfo(this, "btn_CloseB", "grip[@automationid='AdditionalDragWidget']//list[@automationid='PART_HeaderButtons']/button[@automationid='PART_CloseButton']", 30000, null, "da5d2408-f0f2-47f7-8850-f47457d51ea8");
             }
 
@@ -12809,7 +12809,7 @@ namespace TestProject
                     base("ExportDocument", "/form[@title='Export Document...']", parentFolder, 30000, null, true, "0d7f56ff-8408-4ae3-aca2-348ccd3be36b", "")
             {
                 _excelformatInfo = new RepoItemInfo(this, "ExcelFormat", "combobox/text[2]", 30000, null, "801b9ae8-0457-4542-8018-d143d7871c5e");
-                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "list[1]/?/?/button[@text='OK']", 30000, null, "f6dfe232-b48a-4bf6-be88-03a5ec92fcf0");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "list[1]/button[@caption='OK']", 30000, null, "f6dfe232-b48a-4bf6-be88-03a5ec92fcf0");
             }
 
             /// <summary>
@@ -13186,10 +13186,10 @@ namespace TestProject
         }
 
         /// <summary>
-        /// The HwndWrapperProfileConsysExe0c643c73AppFolder folder.
+        /// The FormMe2AppFolder folder.
         /// </summary>
         [RepositoryFolder("ee1e2d60-cfa5-4cc5-bd2f-c99233037569")]
-        public partial class HwndWrapperProfileConsysExe0c643c73AppFolder : RepoGenBaseFolder
+        public partial class FormMe2AppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _sometextInfo;
             RepoItemInfo _builtinloopa0of125Info;
@@ -13208,12 +13208,13 @@ namespace TestProject
             RepoItemInfo _detectorsInfo;
             RepoItemInfo _mainlistInfo;
             RepoItemInfo _btn_closeInfo;
+            RepoItemInfo _buttonokInfo;
 
             /// <summary>
-            /// Creates a new HwndWrapperProfileConsysExe0c643c73  folder.
+            /// Creates a new FormMe2  folder.
             /// </summary>
-            public HwndWrapperProfileConsysExe0c643c73AppFolder(RepoGenBaseFolder parentFolder) :
-                    base("HwndWrapperProfileConsysExe0c643c73", "/form", parentFolder, 30000, null, true, "ee1e2d60-cfa5-4cc5-bd2f-c99233037569", "")
+            public FormMe2AppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormMe2", "/form", parentFolder, 30000, null, true, "ee1e2d60-cfa5-4cc5-bd2f-c99233037569", "")
             {
                 _sometextInfo = new RepoItemInfo(this, "SomeText", "?/?/list/table//row/row/?/?/text", 30000, null, "9e6793ab-09f3-452a-bc89-8a74a3a87737");
                 _builtinloopa0of125Info = new RepoItemInfo(this, "BuiltInLoopA0Of125", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption~'^Built-in\\ Loop-A\\ \\(0\\ of\\ 125']", 30000, null, "ddd3b37c-5dc5-4717-b401-af77f1091df3");
@@ -13232,6 +13233,7 @@ namespace TestProject
                 _detectorsInfo = new RepoItemInfo(this, "Detectors", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_Caption']/text[@text='Detectors']", 30000, null, "0a1e294c-ac64-4b1a-aa54-865b65b15aba");
                 _mainlistInfo = new RepoItemInfo(this, "MainList", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]", 30000, null, "90788ead-fe35-4dbd-981c-395de4f948c9");
                 _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "container[@automationid='Root_Grid']//button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_CloseButton']", 30000, null, "c513d0ed-62ca-4535-8465-97cd5b14bc98");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "list[1]/?/?/button[@text='OK']", 30000, null, "3a52b075-40ce-4c40-beb3-38420ff259de");
             }
 
             /// <summary>
@@ -13663,6 +13665,30 @@ namespace TestProject
                 get
                 {
                     return _btn_closeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("3a52b075-40ce-4c40-beb3-38420ff259de")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("3a52b075-40ce-4c40-beb3-38420ff259de")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
                 }
             }
         }
