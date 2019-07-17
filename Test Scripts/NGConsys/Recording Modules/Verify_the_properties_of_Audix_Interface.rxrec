@@ -940,7 +940,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 		isexternaltestmethod="True"
 		methodname="VerifyModelInSearchProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
+		optional="True"
 		varname="">
 			<comment>
 			</comment>
@@ -966,7 +966,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 		isexternaltestmethod="False"
 		methodname="VerifyProductCodeInSearchProperties"
 		namespace="TestProject.Recording_Modules"
-		optional="False"
+		optional="True"
 		varname="">
 			<comment>
 			</comment>
@@ -992,7 +992,7 @@ J/5AEH+5/WtJPuL9KKKb3EthaKKKQwooooAKKKKACiiigAooooA//9k=
 		isexternaltestmethod="True"
 		methodname="verifyFunctionality"
 		namespace="TestProject.Libraries"
-		optional="False"
+		optional="True"
 		varname="">
 			<comment>
 			</comment>

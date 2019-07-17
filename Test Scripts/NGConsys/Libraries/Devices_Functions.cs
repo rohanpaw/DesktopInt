@@ -2687,20 +2687,23 @@ namespace TestProject.Libraries
 		{
 			if(repo.FormMe.CustomGalleryInfo.Exists())
 			{
+				Report.Log(ReportLevel.Info, "Custom devices are present in gallery");
 				repo.FormMe.btn_CustomDevices.Click();
-				int numberOfCustomDevices= repo.CustomDevices.ListBox.Children.Count;
-				for(int i=0;i<=numberOfCustomDevices;i++)
+				int numberOfCustomDevices= repo.CustomDevices.Custom_Gallery_Container.Children.Count;
+				for(int i=1;i<=numberOfCustomDevices;i++)
 				{
-					sListIndex=i.ToString();
+					int j=0;
+					sListIndex=j.ToString();
 					repo.CustomDevices.CustomGalleyListItem.Click(System.Windows.Forms.MouseButtons.Right);
 					repo.ContextMenu.btn_DeleteDevice_CustomGallery.Click();
-					repo.CustomDevices.ButtonOK_CustomGallery.Click();
 				}
+				repo.CustomDevices.ButtonOK_CustomGallery.Click();
 			}
 			else
 			{
 				Report.Log(ReportLevel.Info, "Custom devices are not present in gallery");
 			}
+			
 		}
 		/********************************************************************
 		 * Function Name: VerifyDeviceUsingLabelName

@@ -128,14 +128,20 @@ namespace TestProject.Recording_Modules
                 Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
-            Libraries.Devices_Functions.VerifyModelInSearchProperties("XIOM");
-            Delay.Milliseconds(0);
+            try {
+                Libraries.Devices_Functions.VerifyModelInSearchProperties("XIOM");
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
-            VerifyProductCodeInSearchProperties("557.180.016");
-            Delay.Milliseconds(0);
+            try {
+                VerifyProductCodeInSearchProperties("557.180.016");
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
             
-            Libraries.Devices_Functions.verifyFunctionality("XIOM configured to communicate with an 8 zone Audix Voice Alarm System");
-            Delay.Milliseconds(0);
+            try {
+                Libraries.Devices_Functions.verifyFunctionality("XIOM configured to communicate with an 8 zone Audix Voice Alarm System");
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(11)); }
             
         }
 

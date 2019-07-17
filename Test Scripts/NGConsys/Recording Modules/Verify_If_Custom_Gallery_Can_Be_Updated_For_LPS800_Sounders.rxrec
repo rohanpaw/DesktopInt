@@ -1317,6 +1317,22 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
+		methodname="DeleteDevicesPresentInCustomGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="30015401-e90a-4e74-b428-8f68d33118c5">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False"

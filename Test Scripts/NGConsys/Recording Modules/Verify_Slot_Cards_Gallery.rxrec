@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="508d59ad-2965-4c76-927e-7ce98d3ea7cc"
+id="5c8ca288-c740-4161-90bc-203732c6f586"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_maximum_limit_for_Overall_System_Load
+		Verify_Slot_Cards_Gallery
 	</name>
 	<repeatcount>
 		1
@@ -23,17 +23,17 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_maximum_limit_for_Overall_System_Load"
+	classname="Verify_Slot_Cards_Gallery"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Gallery_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyMaxSystemLoadValue"
+		methodname="VerifyGalleryItemsWithoutAddingAnyOtherEntity"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -42,25 +42,35 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="e9d1985e-919b-4068-81a5-4a3d5238d06f">
+			id="b7a6e78f-b09a-424a-9f6b-937180889a36">
 				<argument
 				argname="sFileName"
-				id="1a224aec-7912-4aa9-af4e-d9d10f70a63f">
+				id="df28a246-ef76-40cb-81cc-2c2e0ecaa94b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						TC_50944_Verify_maximum_limit_for_Overall_System_Load
+						TC_0066_Verify_Slot_Cards_Gallery
 					</argvalue>
 				</argument>
 				<argument
 				argname="sAddPanelSheet"
-				id="6841f28f-0f53-4507-9823-2dad6296142c">
+				id="1d6e0118-4b57-4126-881d-5e6dd60aaab4">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
 						Add Panels
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddDeviceSheet"
+				id="2c7c725b-f532-4171-a397-fd8625ad6360">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Devices
 					</argvalue>
 				</argument>
 			</arguments>
@@ -82,7 +92,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_maximum_limit_for_Overall_System_Load.UserCode.cs
+		Verify_Slot_Cards_Gallery.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

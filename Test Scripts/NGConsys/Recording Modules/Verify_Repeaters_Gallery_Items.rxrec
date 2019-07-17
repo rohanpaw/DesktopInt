@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="508d59ad-2965-4c76-927e-7ce98d3ea7cc"
+id="577aff4e-ad54-4fd8-9190-329c28c8968b"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_maximum_limit_for_Overall_System_Load
+		Verify_Repeaters_Gallery_Items
 	</name>
 	<repeatcount>
 		1
@@ -23,17 +23,17 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_maximum_limit_for_Overall_System_Load"
+	classname="Verify_Repeaters_Gallery_Items"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Gallery_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyMaxSystemLoadValue"
+		methodname="VerifyGalleryItems"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -42,25 +42,35 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="e9d1985e-919b-4068-81a5-4a3d5238d06f">
+			id="7807fcfc-2bf3-486f-9737-748a723ebec9">
 				<argument
 				argname="sFileName"
-				id="1a224aec-7912-4aa9-af4e-d9d10f70a63f">
+				id="2a123527-c139-45e6-bf8e-db095e628ff7">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						TC_50944_Verify_maximum_limit_for_Overall_System_Load
+						TC_0064_Verify_Repeaters_Gallery_Items
 					</argvalue>
 				</argument>
 				<argument
 				argname="sAddPanelSheet"
-				id="6841f28f-0f53-4507-9823-2dad6296142c">
+				id="0e29450d-1c54-4104-9130-4f02e6a98cfa">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
 						Add Panels
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddDeviceSheet"
+				id="c470b339-7862-4f1d-962a-6a2e7ffaec7a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Devices
 					</argvalue>
 				</argument>
 			</arguments>
@@ -82,7 +92,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_maximum_limit_for_Overall_System_Load.UserCode.cs
+		Verify_Repeaters_Gallery_Items.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

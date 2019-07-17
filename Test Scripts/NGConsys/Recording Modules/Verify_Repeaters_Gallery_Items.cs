@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M recording.
+    ///The Verify_Repeaters_Gallery_Items recording.
     /// </summary>
-    [TestModule("d94bab78-2f0e-4c8a-8998-48d36343be6c", ModuleType.Recording, 1)]
-    public partial class Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M : ITestModule
+    [TestModule("577aff4e-ad54-4fd8-9190-329c28c8968b", ModuleType.Recording, 1)]
+    public partial class Verify_Repeaters_Gallery_Items : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M instance = new Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M();
+        static Verify_Repeaters_Gallery_Items instance = new Verify_Repeaters_Gallery_Items();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M()
+        public Verify_Repeaters_Gallery_Items()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M Instance
+        public static Verify_Repeaters_Gallery_Items Instance
         {
             get { return instance; }
         }
@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.PSULoad_Functions.verifySystemLoadValueOnChangingPSU("TC_50946_50947_Verify_System_Load_On_Changing_PSU_Of_Panel", "Add Panels");
+            Libraries.Gallery_Functions.VerifyGalleryItems("TC_0064_Verify_Repeaters_Gallery_Items", "Add Panels", "Add Devices");
             Delay.Milliseconds(0);
             
         }

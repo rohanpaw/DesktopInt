@@ -514,7 +514,7 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			name="UnitsGalleryDropDown"
 			refimgid="a806664d-3960-427a-a678-5a51dc706d71"
 			searchtimeout="30000ms">
-				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
+				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/?/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
 			</item>
 			<folder
 			capname="list"
@@ -2033,6 +2033,20 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/contextmenu/?/?/button[@text='Custom']
 			</item>
+			<item
+			capname="text"
+			id="13bbcbbd-fc22-482d-bb6c-e04f87f244b9"
+			name="Device_Name"
+			searchtimeout="30000ms">
+				/contextmenu//listitem[@index=$sDeviceIndex]/text[@caption=$sDeviceName]
+			</item>
+			<item
+			capname="text"
+			id="baf639a3-2912-47ed-8af2-8bf7fe9a980d"
+			name="Txt_DeviceWithoutImage_Expanded"
+			searchtimeout="30000ms">
+				/contextmenu/list//text[@caption=$sDeviceName]
+			</item>
 			<basepath>
 				/contextmenu
 			</basepath>
@@ -2805,7 +2819,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="f9adce9c-c7d2-4ae5-b3eb-3fb3df9e4920"
 			name="btn_PanelNodelGalleryDropDown"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sMainProcessorGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/?/list[$sMainProcessorGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
 			</item>
 			<item
 			capname="text"
@@ -3520,6 +3534,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			capname="listitem"
 			id="9c0ebd81-49ce-4d15-8d40-31371874e49d"
 			name="Custom_Item_In_Gallery_For_Others"
+			refimgid="e727cb00-f40c-484b-9e68-939852f9d744"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']//button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='0']
 			</item>
@@ -15840,6 +15855,49 @@ AAAAAElFTkSuQmCC
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/?/?/text[@automationid='PART_Editor']
 			</item>
 			<item
+			addcaps="text,uiautomation"
+			capname="text"
+			id="fedbd320-f5b5-48f4-b91f-ab238389ac05"
+			name="Gallery_Name"
+			refimgid="a8be0ee8-c2ab-4fc3-823c-aa78f25c953d"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/container[@automationid='BarManager']//container[@name='Repeaters']/text[@name=$sGalleryName]
+			</item>
+			<item
+			addcaps="container,wpfelement"
+			capname="container"
+			id="d4e81891-27c9-4123-ab05-602246961fe2"
+			name="GalleryContainer"
+			refimgid="f3c5fc35-d812-45ba-8379-292faa5defe0"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[$sGalleryIndex]/container[1]
+			</item>
+			<item
+			capname="listitem"
+			id="340e6999-fc83-43c0-867a-909831ef1e23"
+			name="Repeaters_Without_Expanding"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']//button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index=$sDeviceIndex]
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="8fcd3856-65b5-486b-8ae0-779899bfa4f3"
+			name="Gallery_PARTDown"
+			refimgid="165e6830-492e-41fa-b893-22653c4763c5"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/button[@automationid='PART_Down']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="d7a981eb-bf7e-4bce-b924-13151e412606"
+			name="txt_DevicesWithoutImage"
+			refimgid="5b64b4fc-0041-41b9-8728-67a0256822a2"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[6]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text[@caption=$sDeviceName]
+			</item>
+			<item
 			capname="button"
 			id="5763368f-3a5f-4ed4-8a10-17d3cba96009"
 			name="btn_Close"
@@ -16039,16 +16097,6 @@ dHpHnyei6HQ4nQ7fKeJJm+Bzy4oAAAAASUVORK5CYII=
 		searchtimeout="30000ms"
 		usecache="True">
 			<item
-			addcaps="list,wpfelement,wpfgroupelement"
-			capname="list"
-			id="086e43d3-1268-42e3-a246-61529034fd76"
-			name="ListBox"
-			refimgid="2cd0d382-2faa-446c-8d77-c0b6cf65aa32"
-			refpath="/form[@title='Custom Devices']/container[1]/list[@automationid='listBox']"
-			searchtimeout="30000ms">
-				/form[@title='Custom Devices']/?/?/list[@automationid='listBox']
-			</item>
-			<item
 			addcaps="listitem,wpfelement,wpfgroupelement"
 			capname="listitem"
 			id="38afc299-876a-44cd-97ac-dd4d3d3a1cd5"
@@ -16075,6 +16123,13 @@ dHpHnyei6HQ4nQ7fKeJJm+Bzy4oAAAAASUVORK5CYII=
 			refpath="/form[@title='Custom Devices']/container[1]/container[2]/button[@text='OK']"
 			searchtimeout="30000ms">
 				/form[@title='Custom Devices']/container[1]/?/?/button[@text='OK']
+			</item>
+			<item
+			capname="list"
+			id="e6ddb1dc-fa15-48a7-a108-b9ef105f4a39"
+			name="Custom_Gallery_Container"
+			searchtimeout="30000ms">
+				/form[@title='Custom Devices']/?/?/list[@automationid='listBox']
 			</item>
 			<basepath>
 				/form[@title='Custom Devices']
@@ -16419,6 +16474,16 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]"
 			searchtimeout="30000ms">
 				/form/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]
+			</item>
+			<item
+			addcaps="list,wpfelement,wpfgroupelement"
+			capname="list"
+			id="62427c7b-882e-4013-adc1-10b1a78cdb7e"
+			name="SomeList"
+			refimgid="ab947b81-695c-4da0-8760-c255db38d332"
+			refpath="/form/container/list"
+			searchtimeout="30000ms">
+				/form/?/?/list
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"

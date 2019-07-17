@@ -2262,6 +2262,18 @@
       <UserCode>true</UserCode>
       <id>de7fae4c-690e-4ddc-81e2-b1ec4b36f15e</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Miscellaneous_Gallery.cs">
+      <BoundTo>d8a691c7-d383-4d03-a037-fa6e67a37145</BoundTo>
+      <DependentUpon>Verify_Miscellaneous_Gallery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>34aeda2c-e286-4f64-a036-da88b11457cb</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Miscellaneous_Gallery.UserCode.cs">
+      <BoundTo>d8a691c7-d383-4d03-a037-fa6e67a37145</BoundTo>
+      <DependentUpon>Verify_Miscellaneous_Gallery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>80a7c2d2-4da6-4aac-87d4-d8dd980e9392</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Model_Number_Filter_In_Main_Processor_RBus_Ethernet_PFIBackplane_Grids.cs">
       <BoundTo>c8a4022f-23b1-44db-843e-e31507d6cd62</BoundTo>
       <DependentUpon>Verify_Model_Number_Filter_In_Main_Processor_RBus_Ethernet_PFIBackplane_Grids.rxrec</DependentUpon>
@@ -2850,6 +2862,18 @@
       <UserCode>true</UserCode>
       <id>79858ac1-9722-4757-8c9a-20b50e428379</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Repeaters_Gallery_Items.cs">
+      <BoundTo>01b67a79-e8e4-4a5c-836a-f913ff0dc7e6</BoundTo>
+      <DependentUpon>Verify_Repeaters_Gallery_Items.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3fc82f66-d914-49ac-9ccc-c2e20cbace87</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Repeaters_Gallery_Items.UserCode.cs">
+      <BoundTo>01b67a79-e8e4-4a5c-836a-f913ff0dc7e6</BoundTo>
+      <DependentUpon>Verify_Repeaters_Gallery_Items.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d09d2ecf-8bd9-496f-8571-5b6b7c4da67f</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Sensitivity_Column_In_Points_Grid.cs">
       <BoundTo>20938c4e-5bfd-41eb-ab63-f481e3dac042</BoundTo>
       <DependentUpon>Verify_Sensitivity_Column_In_Points_Grid.rxrec</DependentUpon>
@@ -2873,6 +2897,18 @@
       <DependentUpon>Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>773a57a3-6d13-486f-8d85-5cb553afbfc9</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Slot_Cards_Gallery.cs">
+      <BoundTo>2aa44e6e-2beb-4096-a936-8fb861f88aeb</BoundTo>
+      <DependentUpon>Verify_Slot_Cards_Gallery.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8d3761c4-3f21-4783-afb9-a06d502d4a79</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Slot_Cards_Gallery.UserCode.cs">
+      <BoundTo>2aa44e6e-2beb-4096-a936-8fb861f88aeb</BoundTo>
+      <DependentUpon>Verify_Slot_Cards_Gallery.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>48e38a49-d9f9-4a55-9295-846f00869714</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Slot_Cards_In_Slot_Cards_Gallery.cs">
       <BoundTo>2676f9ee-e77d-473b-860c-62feea329cf0</BoundTo>
@@ -4190,6 +4226,11 @@
       <id>d8e5b3aa-4f25-4084-937b-8cf7b4549a52</id>
       <recordtableid>22087d36-093f-40db-949d-c18b3ffbbdec</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Miscellaneous_Gallery.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>d8a691c7-d383-4d03-a037-fa6e67a37145</id>
+      <recordtableid>f69d2f4f-43ff-4af5-8eb0-93ab363e0967</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Model_Number_Filter_In_Main_Processor_RBus_Ethernet_PFIBackplane_Grids.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>c8a4022f-23b1-44db-843e-e31507d6cd62</id>
@@ -4435,6 +4476,11 @@
       <id>60711ecb-1170-4b17-af59-08c71e7e3525</id>
       <recordtableid>24aaa9ba-5aac-4310-b303-d4087b7c09a9</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Repeaters_Gallery_Items.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>01b67a79-e8e4-4a5c-836a-f913ff0dc7e6</id>
+      <recordtableid>577aff4e-ad54-4fd8-9190-329c28c8968b</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Sensitivity_Column_In_Points_Grid.rxrec">
       <id>20938c4e-5bfd-41eb-ab63-f481e3dac042</id>
       <recordtableid>f63be1c8-2f64-41a4-a329-467aa23a3924</recordtableid>
@@ -4444,6 +4490,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>c3de33ac-ad37-4a9d-9c22-e10c699a4862</id>
       <recordtableid>da57bb22-d09f-4579-bef0-4365a462e6e4</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Slot_Cards_Gallery.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>2aa44e6e-2beb-4096-a936-8fb861f88aeb</id>
+      <recordtableid>5c8ca288-c740-4161-90bc-203732c6f586</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Slot_Cards_In_Slot_Cards_Gallery.rxrec">
       <id>2676f9ee-e77d-473b-860c-62feea329cf0</id>

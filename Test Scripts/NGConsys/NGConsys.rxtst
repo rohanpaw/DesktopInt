@@ -2350,6 +2350,19 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="259f8d52-f0c3-4774-abcb-474b5e48cdd3"
+			name="Verify_Miscellaneous_Gallery">
+				<description>
+					<![CDATA[<p>NGC-158/TC_0067</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="25a37492-bebe-4c07-8df7-9503ec5cf238"
 			name="Create_Project"
@@ -2525,6 +2538,20 @@ rxversion="8.3">
 					<var
 					dataname="sListIndex"
 					datasourceid="e41f071a-6575-464f-a0a7-ea377f12d19a"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="29030d26-aa82-45de-a53b-2664a5f2292b"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="259f8d52-f0c3-4774-abcb-474b5e48cdd3"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -2839,6 +2866,20 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="2e44afc4-eea2-42e8-9995-53f22e2ef780"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="50b1a41b-403b-4791-bd00-072ad87bae0e"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="2e561edb-132b-4be7-8ad9-7de0a51f95d1"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_Zetfast_Loop"
 			ref="6be2adcb-4a28-4060-a3b9-cd16c83c0be1"
@@ -2943,6 +2984,26 @@ rxversion="8.3">
 					datasourceid="534c0419-c49f-48e5-b622-6c96911d2e38"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="31a86402-6420-4ae2-96e5-7df4657fe131"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3710,6 +3771,12 @@ rxversion="8.3">
 			id="40e254cf-83f4-4343-990f-eec4d93ca429"
 			name="Reopen_Verify_LPS800_And_Its_Sounders"
 			ref="62e3d6fa-fa93-46f9-a7b4-8288f82d1236"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="40e9abcb-5e60-4b60-b808-02ac62519256"
+			name="Verify_Repeaters_Gallery_Items"
+			ref="577aff4e-ad54-4fd8-9190-329c28c8968b"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -4484,6 +4551,12 @@ loops.</SPAN>]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="4c7710ae-01a2-456c-b30d-d5b2476c3d66"
+			name="Verify_Miscellaneous_Gallery"
+			ref="f69d2f4f-43ff-4af5-8eb0-93ab363e0967"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4cc1a4c2-3ba3-45eb-8d65-8ed3eff2891f"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -4860,6 +4933,19 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testcase
+			id="50b1a41b-403b-4791-bd00-072ad87bae0e"
+			name="Verify_Slot_Cards_Gallery">
+				<description>
+					<![CDATA[<p>NGC-158/TC_0066</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="50f6e607-9d97-48ba-b708-8439b972a22b"
 			name="Verify_Impact_of_2nd_PSU_on_Battery_Loading">
 				<description>
@@ -5027,6 +5113,20 @@ loops.</SPAN>]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="542c9403-617b-4d98-92c6-3c6d9712e835"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="c902363f-68fc-4135-ae09-f1a7b9746129"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="543dac32-77c3-47c5-913a-90a89d28f4e1"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -5131,6 +5231,26 @@ loops.</SPAN>]]>
 					datasourceid="0ad228c5-f2bf-48fe-a7e2-80a3b969107f"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="556ae579-c626-467a-8096-8338d435a84e"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5447,6 +5567,12 @@ loops.</SPAN>]]>
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="5b2dc1f4-5c06-4b0f-9895-5ae84d783291"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="5b49458c-fe21-446e-bd10-e532f44675c1"
@@ -8674,6 +8800,12 @@ MxDesigner]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="8ce30e2f-29db-4d63-a14f-2899c944df30"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="8d12aaf6-07d1-4ad0-b2d0-6660ad96c91b"
 			name="Verify_max_IS_Units_for_Exi800_using_FIM"
 			ref="c13669ab-9169-45b2-8709-07afb831b5e7"
@@ -9109,6 +9241,12 @@ MxDesigner]]>
 			id="95f33b5b-222a-497d-b677-34243f5b0fcc"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="960085f9-c9af-4aaa-a340-4a38da70e6d3"
+			name="Verify_Slot_Cards_Gallery"
+			ref="5c8ca288-c740-4161-90bc-203732c6f586"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -11450,6 +11588,26 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c3d06518-2c88-4784-812e-075dae69731d"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="c40a7f5b-bb64-42de-9e10-c173008e867d"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -11719,6 +11877,19 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="c902363f-68fc-4135-ae09-f1a7b9746129"
+			name="Verify_Repeaters_Gallery_Items">
+				<description>
+					<![CDATA[NGC-158/TC_0064]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="ca05dbba-9ad7-4b09-b170-1a8dc97430b1"
 			name="Application_Open"
@@ -14044,6 +14215,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="f368fc5f-fcd8-43bc-a96c-eb3fd8fe9dc4"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="f4111b63-8157-48a7-8fb9-d078ddb0da08"
 			name="Create_Project"
@@ -19169,6 +19346,66 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="c902363f-68fc-4135-ae09-f1a7b9746129"
+					name="Verify_Repeaters_Gallery_Items">
+						<testmodule
+						id="c3d06518-2c88-4784-812e-075dae69731d"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="542c9403-617b-4d98-92c6-3c6d9712e835"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="40e9abcb-5e60-4b60-b808-02ac62519256"
+						name="Verify_Repeaters_Gallery_Items">
+						</testmodule>
+						<testmodule
+						id="8ce30e2f-29db-4d63-a14f-2899c944df30"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="50b1a41b-403b-4791-bd00-072ad87bae0e"
+					name="Verify_Slot_Cards_Gallery">
+						<testmodule
+						id="556ae579-c626-467a-8096-8338d435a84e"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="2e44afc4-eea2-42e8-9995-53f22e2ef780"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="960085f9-c9af-4aaa-a340-4a38da70e6d3"
+						name="Verify_Slot_Cards_Gallery">
+						</testmodule>
+						<testmodule
+						id="f368fc5f-fcd8-43bc-a96c-eb3fd8fe9dc4"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="259f8d52-f0c3-4774-abcb-474b5e48cdd3"
+					name="Verify_Miscellaneous_Gallery">
+						<testmodule
+						id="31a86402-6420-4ae2-96e5-7df4657fe131"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="29030d26-aa82-45de-a53b-2664a5f2292b"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="4c7710ae-01a2-456c-b30d-d5b2476c3d66"
+						name="Verify_Miscellaneous_Gallery">
+						</testmodule>
+						<testmodule
+						id="5b2dc1f4-5c06-4b0f-9895-5ae84d783291"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -19373,10 +19610,38 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="03688da3-830c-4e17-8e2b-68b58cd2daa2">
+			</testcontainer>
+			<testcontainer
+			id="0991cd5e-c9f2-49d5-88d4-3f9591b2693c">
+			</testcontainer>
+			<testcontainer
+			id="1375cbd4-04a1-4b5d-9000-29b42686818e">
+			</testcontainer>
+			<testcontainer
+			id="20d08d34-9da0-47dd-96a5-2a7032d81c67">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="426e3bc5-e34b-40a9-92ee-168c251f6162">
 			id="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96">
+			</testcontainer>
+			<testcontainer
+			id="699cfce9-e9fb-4eff-8ada-ae76e6df5221">
+			</testcontainer>
+			<testcontainer
+			id="95184c5c-2f88-4bfb-8110-b16620ccbb7e">
+			</testcontainer>
+			<testcontainer
+			id="cec97de6-afba-4b6e-bc97-83a8068f10f2">
+			</testcontainer>
+			<testcontainer
+			id="d0ee9bdf-ae42-4b9c-a980-5cdd21d7b5e1">
+			</testcontainer>
+			<testcontainer
+			id="f1520a3b-ed41-4183-af81-060a94933147">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

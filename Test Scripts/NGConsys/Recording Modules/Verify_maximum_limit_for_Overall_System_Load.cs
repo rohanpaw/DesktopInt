@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.PSULoad_Functions.verifyMaxSystemLoadValue("50944_Verify_maximum_limit_for_Overall_System_Load", "Add Panels");
+            Libraries.PSULoad_Functions.verifyMaxSystemLoadValue("TC_50944_Verify_maximum_limit_for_Overall_System_Load", "Add Panels");
             Delay.Milliseconds(0);
             
         }

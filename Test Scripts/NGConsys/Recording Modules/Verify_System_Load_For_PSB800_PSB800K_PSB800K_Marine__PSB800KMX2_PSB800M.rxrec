@@ -50,7 +50,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						50946_50947_Verify_System_Load_On_Changing_PSU_Of_Panel
+						TC_50946_50947_Verify_System_Load_On_Changing_PSU_Of_Panel
 					</argvalue>
 				</argument>
 				<argument

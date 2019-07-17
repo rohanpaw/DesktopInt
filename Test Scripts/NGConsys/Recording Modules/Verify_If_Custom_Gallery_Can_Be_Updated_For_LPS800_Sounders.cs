@@ -94,6 +94,9 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.NavigationTree.Loop_A.Click();
             Delay.Milliseconds(200);
             
+            Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromGallery("LPS 800", "Sounders/Beacons");
             Delay.Milliseconds(0);
             
@@ -112,7 +115,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangeLabelName("Generic");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SaveAsCustom' at Center.", repo.FormMe.SaveAsCustomInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SaveAsCustom' at Center.", repo.FormMe.SaveAsCustomInfo, new RecordItemIndex(11));
             repo.FormMe.SaveAsCustom.Click();
             Delay.Milliseconds(200);
             
@@ -122,7 +125,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedRow("1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(14));
             repo.ContextMenu.Custom_In_Context_Menu.Click();
             Delay.Milliseconds(200);
             
@@ -135,7 +138,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedRow("1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(18));
             repo.ContextMenu.Custom_In_Context_Menu.Click();
             Delay.Milliseconds(200);
             

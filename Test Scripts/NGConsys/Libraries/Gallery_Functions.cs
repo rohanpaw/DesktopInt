@@ -13,6 +13,7 @@ using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
 
 using Ranorex;
 using Ranorex.Core;
@@ -65,6 +66,17 @@ namespace TestProject.Libraries
 			set { repo.sGalleryName = value; }
 		}
 		
+		static string sDeviceIndex
+		{
+			get { return repo.sDeviceIndex; }
+			set { repo.sDeviceIndex = value; }
+		}
+		
+		static string sDeviceName
+		{
+			get { return repo.sDeviceName; }
+			set { repo.sDeviceName = value; }
+		}
 		
 		/// <summary>
 		/// This is function used to select any item from units gallery
@@ -530,7 +542,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void VerifyDisabledItemFromDevicesGallery(int iNumberOfItems, string sItemNames, string sType)
 		{
-				
+			
 			for(int i=0;i<iNumberOfItems;i++)
 			{
 				string [] arrItemNames= sItemNames.Split(',');
@@ -554,7 +566,315 @@ namespace TestProject.Libraries
 			
 		}
 		
+		/*****************************************************************************************************************
+		 * Function Name:VerifyGalleryItems
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner:Purvi Bhasin
+		 * Last Update :30/4/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyGalleryItems(string sFileName,string sAddPanelSheet, string sAddDeviceSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+
+			// Declared string type
+			string PanelName, PanelNode,CPUType,PanelType,sType,sEnabledDevices,ModelName,GalleryName,DeviceType,sNoOfDevicesAdded,sDownClicked;
+			int EnabledDevices,NoOfDevicesAdded,DownClicked;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sEnabledDevices = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				ModelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				DeviceType = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sNoOfDevicesAdded = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sDownClicked = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				
+				int.TryParse(sEnabledDevices, out EnabledDevices);
+				int.TryParse(sNoOfDevicesAdded, out NoOfDevicesAdded);
+				int.TryParse(sDownClicked, out DownClicked);
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
+				
+				
+				// Click on Expander node
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				//Close excel sheet and read it values,
+				Excel_Utilities.CloseExcel();
+				
+				//Open excel sheet and read it values,
+				Excel_Utilities.OpenExcelFile(sFileName,sAddDeviceSheet);
+				
+				// Count number of rows in excel and store it in rows variable
+				int Drows= Excel_Utilities.ExcelRange.Rows.Count;
+				
+				for(int t=2; t<=Drows; t++)
+				{
+					GalleryName = ((Range)Excel_Utilities.ExcelRange.Cells[t,2]).Value.ToString();
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[t,3]).Value.ToString();
+		
+					ExpandUnitsGallery(sType);
+					
+					int DeviceIndex = t-2;
+					sDeviceIndex = DeviceIndex.ToString();
+					sDeviceName = GalleryName;
+					
+					string ExpectedGalleryName = repo.ContextMenu.Device_Name.TextValue;
+					
+					//Click on panel node
+					repo.ProfileConsys1.NavigationTree.Expander.Click();
+					
+					if(GalleryName.Equals(ExpectedGalleryName))
+					{
+						Report.Log(ReportLevel.Success, "Repeater : " + GalleryName+ " is present");
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure, "Repeater : " + GalleryName+ " is absent");
+					}
+					
+					for(int n=1; n<=DownClicked; n++)
+					{
+						//No of items in the container
+						int NoOfItems = repo.FormMe.GalleryContainer.Children.Count;
+						Report.Log(ReportLevel.Info,"NoOfItems: " +NoOfItems);
+						for(int j=0; j<=NoOfItems; j++)
+						{
+							sDeviceIndex = j.ToString();
+							
+							if(repo.FormMe.Repeaters_Without_Expanding.Enabled)
+							{
+								Report.Log(ReportLevel.Success, "Repeater is enabled");
+							}
+							else
+							{
+								Report.Log(ReportLevel.Failure, "Repeater is disabled");
+							}
+							
+						}
+						
+						if(repo.FormMe.Gallery_PARTDown.Enabled)
+						{
+							repo.FormMe.Gallery_PARTDown.Click();
+						}
+						
+						NoOfItems = repo.FormMe.GalleryContainerInfo.Children.Count;
+					}
+					
+				}
+				
+				for(int k=1;k<=NoOfDevicesAdded;k++)
+						{
+							//Add Loop cards
+							Devices_Functions.AddDevicesfromPanelNodeGallery(ModelName,DeviceType,PanelType);
+						}
+				
+				for(int j=2; j<=Drows; j++)
+				{
+					GalleryName = ((Range)Excel_Utilities.ExcelRange.Cells[j,2]).Value.ToString();
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,3]).Value.ToString();
+					
+					string Status = ((Range)Excel_Utilities.ExcelRange.Cells[j,4]).Value.ToString();
+					
+					ExpandUnitsGallery(sType);
+					
+					int DeviceIndex = j-2;
+					sDeviceIndex = DeviceIndex.ToString();
+					sDeviceName = GalleryName;
+					
+					string ExpectedGalleryName = repo.ContextMenu.Device_Name.TextValue;
+					
+					//Click on panel node
+					repo.ProfileConsys1.NavigationTree.Expander.Click();
+					
+					if(Status.Equals("Enabled"))
+					{
+						if(repo.ContextMenu.Device_Name.Enabled)
+						{
+							Report.Log(ReportLevel.Success, "Repeater : " + GalleryName+ " is Enabled");
+						}
+						else
+						{
+							Report.Log(ReportLevel.Failure, "Repeater : " + GalleryName+ " is disabled");
+						}
+						
+					}
+					else
+					{
+						if(repo.ContextMenu.Device_Name.Enabled)
+						{
+							Report.Log(ReportLevel.Failure, "Repeater : " + GalleryName+ " is Enabled");
+						}
+						else
+						{
+							Report.Log(ReportLevel.Success, "Repeater : " + GalleryName+ " is disabled");
+						}
+						
+					}
+				
+			}
+			
+			
+			Excel_Utilities.CloseExcel();
+			//Delete Panel
+			Panel_Functions.DeletePanel(1,PanelNode,1);
+			Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+			
+		}
+		Excel_Utilities.CloseExcel();
+	}
+	
+	
+	/*****************************************************************************************************************
+	 * Function Name:VerifyGalleryItemsWithoutAddingAnyOtherEntity
+	 * Function Details:
+	 * Parameter/Arguments:
+	 * Output:
+	 * Function Owner:Purvi Bhasin
+	 * Last Update :30/4/2019
+	 *****************************************************************************************************************/
+	[UserCodeMethod]
+	public static void VerifyGalleryItemsWithoutAddingAnyOtherEntity(string sFileName,string sAddPanelSheet, string sAddDeviceSheet)
+	{
+		//Open excel sheet and read it values,
+		Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+		
+		// Count number of rows in excel and store it in rows variable
+		int rows= Excel_Utilities.ExcelRange.Rows.Count;
+
+		// Declared string type
+		string PanelName,PanelNode,CPUType,PanelType,sType,sEnabledDevices,GalleryName,sNoOfItems,sDownClicked,ExpectedGalleryName;
+		int EnabledDevices,DownClicked,NoOfItems;
+		string Present = "No";
+		string ImagePresence = string.Empty;
+		// For loop to iterate on data present in excel
+		for(int i=8; i<=rows; i++)
+		{
+			PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+			PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+			PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+			CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+			sEnabledDevices = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+			sDownClicked = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+			sNoOfItems = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+			
+			int.TryParse(sEnabledDevices, out EnabledDevices);
+			int.TryParse(sDownClicked, out DownClicked);
+			int.TryParse(sNoOfItems, out NoOfItems);
+			
+			// Add panels using test data in excel sheet
+			Panel_Functions.AddPanels(1,PanelName,CPUType);
+			Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
+			
+			
+			// Click on Expander node
+			repo.ProfileConsys1.NavigationTree.Expander.Click();
+			
+			//Close excel sheet and read it values,
+			Excel_Utilities.CloseExcel();
+			
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDeviceSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int Drows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			for(int j=2; j<=Drows; j++)
+			{
+				GalleryName = ((Range)Excel_Utilities.ExcelRange.Cells[j,2]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,3]).Value.ToString();
+				ImagePresence = ((Range)Excel_Utilities.ExcelRange.Cells[j,4]).Value.ToString();
+				
+				
+				ExpandUnitsGallery(sType);
+				
+				int DeviceIndex = j-2;
+				sDeviceIndex = DeviceIndex.ToString();
+				sDeviceName = GalleryName;
+				
+				if(ImagePresence.Equals(Present))
+				{
+					ExpectedGalleryName = repo.ContextMenu.Txt_DeviceWithoutImage_Expanded.TextValue;
+				}
+				else
+				{
+					ExpectedGalleryName = repo.ContextMenu.Device_Name.TextValue;
+				}
+				
+				
+				//Click on panel node
+				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				if(GalleryName.Equals(ExpectedGalleryName))
+				{
+					Report.Log(ReportLevel.Success, "Entity : " + GalleryName+ " is present");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Entity  : " + GalleryName+ " is absent");
+				}
+				
+			}
+			
+			
+			for(int n=0; n<=DownClicked; n++)
+			{
+				for(int j=1; j<=NoOfItems; j++)
+				{
+					sDeviceIndex = j.ToString();
+					if(ImagePresence.Equals(Present))
+					{
+						if(repo.FormMe.txt_DevicesWithoutImage.Enabled)
+						{
+							Report.Log(ReportLevel.Success, "Entity:" +sDeviceIndex+ "is enabled");
+						}
+						else
+						{
+							Report.Log(ReportLevel.Failure, "Entity:" +sDeviceIndex+ "is disabled");
+						}
+						
+					}
+					
+					else
+					{
+						if(repo.FormMe.Repeaters_Without_Expanding.Enabled)
+						{
+							Report.Log(ReportLevel.Success, "Entity:" +sDeviceIndex+ "is enabled");
+						}
+						else
+						{
+							Report.Log(ReportLevel.Failure, "Entity:" +sDeviceIndex+ "is disabled");
+						}
+					}
+					
+					repo.FormMe.Gallery_PARTDown.Click();
+				}
+				NoOfItems = EnabledDevices - NoOfItems;
+			}
+			
+		}
+		
+		Excel_Utilities.CloseExcel();
+		//Delete Panel
+		//Panel_Functions.DeletePanel(1,PanelNode,1);
+		Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
 		
 	}
+
+	
+}
 }
 
