@@ -82,7 +82,7 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.VerifyCurrentDCUnitscalculation("TC_160_ Verify Current(DC Units) calculation", "Add Devices");
+            Libraries.DC_Functions.VerifyCurrentDCUnitscalculation("TC_160_Verify Current(DC Units) calculation", "Add Devices");
             Delay.Milliseconds(0);
             
         }

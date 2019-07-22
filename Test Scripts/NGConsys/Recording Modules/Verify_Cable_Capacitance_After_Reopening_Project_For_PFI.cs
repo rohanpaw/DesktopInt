@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.IS_Functions.VerifyCableCapacitanceOnReopen("TC_222_Verify_Cable_Capacitance_Based_On_Max_Allowed_IS_Units_for_Split_Loops", "Add Devices Loop A");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "");
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
             
         }

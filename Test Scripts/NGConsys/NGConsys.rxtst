@@ -19610,38 +19610,7 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="03688da3-830c-4e17-8e2b-68b58cd2daa2">
-			</testcontainer>
-			<testcontainer
-			id="0991cd5e-c9f2-49d5-88d4-3f9591b2693c">
-			</testcontainer>
-			<testcontainer
-			id="1375cbd4-04a1-4b5d-9000-29b42686818e">
-			</testcontainer>
-			<testcontainer
-			id="20d08d34-9da0-47dd-96a5-2a7032d81c67">
-			</testcontainer>
-			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="426e3bc5-e34b-40a9-92ee-168c251f6162">
-			id="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96">
-			</testcontainer>
-			<testcontainer
-			id="699cfce9-e9fb-4eff-8ada-ae76e6df5221">
-			</testcontainer>
-			<testcontainer
-			id="95184c5c-2f88-4bfb-8110-b16620ccbb7e">
-			</testcontainer>
-			<testcontainer
-			id="cec97de6-afba-4b6e-bc97-83a8068f10f2">
-			</testcontainer>
-			<testcontainer
-			id="d0ee9bdf-ae42-4b9c-a980-5cdd21d7b5e1">
-			</testcontainer>
-			<testcontainer
-			id="f1520a3b-ed41-4183-af81-060a94933147">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

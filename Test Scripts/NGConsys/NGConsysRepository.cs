@@ -7890,11 +7890,11 @@ namespace TestProject
             RepoItemInfo _systemloadInfo;
             RepoItemInfo _inventorygridfirstrowInfo;
             RepoItemInfo _gallery_nameInfo;
-            RepoItemInfo _btn_closeInfo;
             RepoItemInfo _gallerycontainerInfo;
             RepoItemInfo _repeaters_without_expandingInfo;
             RepoItemInfo _gallery_partdownInfo;
             RepoItemInfo _txt_deviceswithoutimageInfo;
+            RepoItemInfo _btn_closeInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -13390,7 +13390,6 @@ namespace TestProject
             RepoItemInfo _detectorsInfo;
             RepoItemInfo _mainlistInfo;
             RepoItemInfo _somelistInfo;
-
             RepoItemInfo _btn_closeInfo;
             RepoItemInfo _buttonokInfo;
 
@@ -13417,7 +13416,6 @@ namespace TestProject
                 _detectorsInfo = new RepoItemInfo(this, "Detectors", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_Caption']/text[@text='Detectors']", 30000, null, "0a1e294c-ac64-4b1a-aa54-865b65b15aba");
                 _mainlistInfo = new RepoItemInfo(this, "MainList", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]", 30000, null, "90788ead-fe35-4dbd-981c-395de4f948c9");
                 _somelistInfo = new RepoItemInfo(this, "SomeList", "?/?/list", 30000, null, "62427c7b-882e-4013-adc1-10b1a78cdb7e");
-            }
                 _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "container[@automationid='Root_Grid']//button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_CloseButton']", 30000, null, "c513d0ed-62ca-4535-8465-97cd5b14bc98");
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "list[1]/?/?/button[@text='OK']", 30000, null, "3a52b075-40ce-4c40-beb3-38420ff259de");
             }

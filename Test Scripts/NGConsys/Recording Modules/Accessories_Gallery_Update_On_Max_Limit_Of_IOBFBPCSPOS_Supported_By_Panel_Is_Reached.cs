@@ -90,7 +90,7 @@ namespace TestProject.Recording_Modules
             repo.FormMe.tab_PanelAccessories.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.AddAndVerifyMaxNumberOfPanelAccessories("TC_61_Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached", "Add Panels");
+            Libraries.Devices_Functions.AddAndVerifyMaxNumberOfPanelAccessories("TC_61_Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached", "Add Panels");
             Delay.Milliseconds(0);
             
         }
