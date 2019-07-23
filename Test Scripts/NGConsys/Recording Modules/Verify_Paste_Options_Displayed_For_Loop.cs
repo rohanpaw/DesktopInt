@@ -168,6 +168,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyPasteButtonEnabled();
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(24));
+            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Delay.Milliseconds(200);
+            
             Libraries.Devices_Functions.RightClickOnSelectedRow("1");
             Delay.Milliseconds(0);
             

@@ -710,7 +710,7 @@ rxversion="8.3">
 			id="0ae3a1cf-bdae-4750-9a3d-dfd54127efb4"
 			name="Verify_UI_Design_For_Additional_PSUs">
 				<description>
-					<![CDATA[<p>NGC-254</p><p><br></p>]]>
+					<![CDATA[<p>NGC-245/TC-50941 &amp; 50942</p><p><br></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -19610,6 +19610,9 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="0ae3a1cf-bdae-4750-9a3d-dfd54127efb4">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 		</testconfiguration>
@@ -19640,10 +19643,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

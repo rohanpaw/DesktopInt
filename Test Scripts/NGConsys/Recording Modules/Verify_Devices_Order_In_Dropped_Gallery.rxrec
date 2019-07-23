@@ -285,7 +285,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Device Order Gallery Expansion
+						Device Order Context Menu
 					</argvalue>
 				</argument>
 			</arguments>

@@ -684,7 +684,7 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			name="cmb_PanelType"
 			refimgid="722090db-9551-415f-895a-d99455707b34"
 			searchtimeout="30000ms">
-				/form[@win32ownerwindowlevel='0']/progressbar/picture?[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='3']//combobox/list[2]/button[@automationid='PART_Item']
+				/form[@win32ownerwindowlevel='0']/progressbar/picture?[7]/picture/list/?/row[@index='3']//combobox/list[2]/button[@automationid='PART_Item']
 			</item>
 			<item
 			addcaps="text,wpfelement"
@@ -2763,7 +2763,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			name="btn_MainProcessorGalleryDropDown"
 			refimgid="c1df95ec-174a-4cce-9eff-47f51eabd5d5"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sMainProcessorGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/list[$sMainProcessorGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
 			</item>
 			<item
 			addcaps="container,wpfelement,wpfgroupelement"
@@ -2956,14 +2956,14 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="63b8e912-eec4-4d76-bc20-4cc5463e0654"
 			name="BatteryStandBy"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='16']/cell[@text='[4]']/text/text[1]
+				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='16']/?/?/text[1]
 			</item>
 			<item
 			capname="text"
 			id="d6b79699-26f6-4563-9147-43b695b7281f"
 			name="AlarmLoad"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='17']/cell[@text='[5]']/text/text[1]
+				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='17']/?/?/text[1]
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -3092,7 +3092,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			name="Cell_AdditionalPSU"
 			refimgid="f6885ef7-6ec5-47a5-839a-739ef17f199d"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@isheader='False']
+				/form[@automationid='me']/progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@text='Additional PSU']
 			</item>
 			<item
 			capname="cell"

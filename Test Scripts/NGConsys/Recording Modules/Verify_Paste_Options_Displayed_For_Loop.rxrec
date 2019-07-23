@@ -1279,6 +1279,30 @@ UtFABRRRQB//2Q==
 			id="d35419c8-0622-4c92-a548-0371789fb899">
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d096c510-0754-4fdc-b3ae-cf1e94907025"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="ed3605ef-41c4-4036-82a4-6ced4fb82da1"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[1]
+				</path>
+			</info>
+		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"

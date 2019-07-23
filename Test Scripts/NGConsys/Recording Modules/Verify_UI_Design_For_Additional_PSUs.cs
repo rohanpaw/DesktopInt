@@ -79,86 +79,63 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(1));
-            repo.ProfileConsys1.SiteNode.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(1));
+            repo.ProfileConsys1.NavigationTree.Expander.Click();
             Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verifyUIOnAddingSecondPSU(ValueConverter.ArgumentFromString<bool>("isSecondPSU", "True"));
+            Libraries.Panel_Functions.ChangeSecondPSUType("PSU830");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(3));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(3));
+            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(4));
             repo.ProfileConsys1.NavigationTree.Loop_A.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(5));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Panel_Functions.ChangeSecondPSUType("None");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(7));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(8));
-            repo.ProfileConsys1.SiteNode.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(5));
+            repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
             Libraries.PSULoad_Functions.verifyUIOnAddingSecondPSU(ValueConverter.ArgumentFromString<bool>("isSecondPSU", "True"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(10));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(7));
+            repo.ProfileConsys1.SiteNode.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(8));
+            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Panel_Functions.ChangeSecondPSUType("None");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(10));
+            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(11));
             repo.ProfileConsys1.NavigationTree.Loop_A.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(12));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Panel_Functions.ChangeSecondPSUType("PSU830");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(14));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(15));
-            repo.ProfileConsys1.SiteNode.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(12));
+            repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
             Libraries.PSULoad_Functions.verifyUIOnAddingSecondPSU(ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(17));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(14));
+            repo.ProfileConsys1.SiteNode.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(18));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", "");
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(20));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(21));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
-            Delay.Milliseconds(200);
             
         }
 
