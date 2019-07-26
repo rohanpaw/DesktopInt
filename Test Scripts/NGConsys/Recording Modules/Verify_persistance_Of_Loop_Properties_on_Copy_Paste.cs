@@ -128,7 +128,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("6");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.ChangeCableLengthFromInventory(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "500"));
+            Libraries.Devices_Functions.ChangeCableLengthFromInventory(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "1000"));
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
@@ -146,7 +146,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("6");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("600");
+            Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("1000");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PLXExternalLoopCard_Expander' at Center.", repo.FormMe.PLXExternalLoopCard_ExpanderInfo, new RecordItemIndex(18));
@@ -169,7 +169,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("6");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.ChangeCableLengthFromInventory(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "500"));
+            Libraries.Devices_Functions.ChangeCableLengthFromInventory(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "1000"));
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
@@ -187,7 +187,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("6");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("500");
+            Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("1000");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PLXExternalLoopCard_Expander' at Center.", repo.FormMe.PLXExternalLoopCard_ExpanderInfo, new RecordItemIndex(30));

@@ -7895,6 +7895,7 @@ namespace TestProject
             RepoItemInfo _gallery_partdownInfo;
             RepoItemInfo _txt_deviceswithoutimageInfo;
             RepoItemInfo _btn_closeInfo;
+            RepoItemInfo _expandnode1afterreopenInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7939,7 +7940,7 @@ namespace TestProject
                 _cell_psuInfo = new RepoItemInfo(this, "Cell_PSU", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@isheader='False']", 30000, null, "7da5c35f-9a6a-4920-8f66-f18e4aac81ec");
                 _cmb_psuInfo = new RepoItemInfo(this, "cmb_PSU", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='6']//combobox/list[2]/button[@automationid='PART_Item']", 30000, null, "aaeffdd1-f6aa-4b24-b4ca-9318e3d55719");
                 _backplaneorxlmexternalloopcard_expanderInfo = new RepoItemInfo(this, "BackplaneOrXLMExternalLoopCard_Expander", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']", 30000, null, "24c81530-aec5-4287-b309-bde13ebb66b7");
-                _plxexternalloopcard_expanderInfo = new RepoItemInfo(this, "PLXExternalLoopCard_Expander", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/button[@automationid='Expander']", 30000, null, "1cace44c-7508-4887-9cc7-114e4ab9cf7a");
+                _plxexternalloopcard_expanderInfo = new RepoItemInfo(this, "PLXExternalLoopCard_Expander", "progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/button[@automationid='Expander']", 30000, null, "1cace44c-7508-4887-9cc7-114e4ab9cf7a");
                 _plx800loopcard_eInfo = new RepoItemInfo(this, "PLX800LoopCard_E", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[1]", 30000, null, "75b632e9-2618-418e-a7d9-a4b3db483d03");
                 _xlmexternalloopcarddevices_cInfo = new RepoItemInfo(this, "XLMExternalLoopCardDevices_C", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[1]", 30000, null, "2c184b48-f23c-43df-a5f0-b21b3d7071af");
                 _xlmexternalloopcarddevices_dInfo = new RepoItemInfo(this, "XLMExternalLoopCardDevices_D", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]", 30000, null, "a2a61f72-d5fc-482a-8d4a-d9035eb1d413");
@@ -8063,6 +8064,7 @@ namespace TestProject
                 _gallery_partdownInfo = new RepoItemInfo(this, "Gallery_PARTDown", "?/?/container[@automationid='PART_AutoHideControl']/list/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/button[@automationid='PART_Down']", 30000, null, "8fcd3856-65b5-486b-8ae0-779899bfa4f3");
                 _txt_deviceswithoutimageInfo = new RepoItemInfo(this, "txt_DevicesWithoutImage", "?/?/container[@automationid='PART_AutoHideControl']/list/list[6]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text[@caption=$sDeviceName]", 30000, null, "d7a981eb-bf7e-4bce-b924-13151e412606");
                 _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "button[@automationid='PART_Fill']/container[@automationid='PART_Buttons']//button[@automationid='PART_CloseButton']", 30000, null, "5763368f-3a5f-4ed4-8a10-17d3cba96009");
+                _expandnode1afterreopenInfo = new RepoItemInfo(this, "ExpandNode1AfterReopen", "progressbar/picture[7]/tree/treeitem[2]/button[@automationid='Expander']", 30000, null, "a0efb44c-accf-4fff-9653-ba572fa93af1");
             }
 
             /// <summary>
@@ -12067,6 +12069,30 @@ namespace TestProject
             }
 
             /// <summary>
+            /// The ExpandNode1AfterReopen item.
+            /// </summary>
+            [RepositoryItem("a0efb44c-accf-4fff-9653-ba572fa93af1")]
+            public virtual Ranorex.Button ExpandNode1AfterReopen
+            {
+                get
+                {
+                    return _expandnode1afterreopenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExpandNode1AfterReopen item info.
+            /// </summary>
+            [RepositoryItemInfo("a0efb44c-accf-4fff-9653-ba572fa93af1")]
+            public virtual RepoItemInfo ExpandNode1AfterReopenInfo
+            {
+                get
+                {
+                    return _expandnode1afterreopenInfo;
+                }
+            }
+
+            /// <summary>
             /// The SomeList folder.
             /// </summary>
             [RepositoryFolder("620d6297-3f52-4bc0-9274-9459d72f61d6")]
@@ -13373,6 +13399,7 @@ namespace TestProject
         [RepositoryFolder("ee1e2d60-cfa5-4cc5-bd2f-c99233037569")]
         public partial class FormMe2AppFolder : RepoGenBaseFolder
         {
+            NGConsysRepositoryFolders.ItemsHostFolder _itemshost;
             RepoItemInfo _sometextInfo;
             RepoItemInfo _builtinloopa0of125Info;
             RepoItemInfo _builtinloopb0of125Info;
@@ -13392,6 +13419,7 @@ namespace TestProject
             RepoItemInfo _somelistInfo;
             RepoItemInfo _btn_closeInfo;
             RepoItemInfo _buttonokInfo;
+            RepoItemInfo _plx80060of125Info;
 
             /// <summary>
             /// Creates a new FormMe2  folder.
@@ -13399,6 +13427,7 @@ namespace TestProject
             public FormMe2AppFolder(RepoGenBaseFolder parentFolder) :
                     base("FormMe2", "/form", parentFolder, 30000, null, true, "ee1e2d60-cfa5-4cc5-bd2f-c99233037569", "")
             {
+                _itemshost = new NGConsysRepositoryFolders.ItemsHostFolder(this);
                 _sometextInfo = new RepoItemInfo(this, "SomeText", "?/?/list/table//row/row/?/?/text", 30000, null, "9e6793ab-09f3-452a-bc89-8a74a3a87737");
                 _builtinloopa0of125Info = new RepoItemInfo(this, "BuiltInLoopA0Of125", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption~'^Built-in\\ Loop-A\\ \\(0\\ of\\ 125']", 30000, null, "ddd3b37c-5dc5-4717-b401-af77f1091df3");
                 _builtinloopb0of125Info = new RepoItemInfo(this, "BuiltInLoopB0Of125", "progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption~'^Built-in\\ Loop-B\\ \\(0\\ of\\ 125']", 30000, null, "01c11215-7b2b-4065-b93f-2459ea81a37f");
@@ -13418,6 +13447,7 @@ namespace TestProject
                 _somelistInfo = new RepoItemInfo(this, "SomeList", "?/?/list", 30000, null, "62427c7b-882e-4013-adc1-10b1a78cdb7e");
                 _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "container[@automationid='Root_Grid']//button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_CloseButton']", 30000, null, "c513d0ed-62ca-4535-8465-97cd5b14bc98");
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "list[1]/?/?/button[@text='OK']", 30000, null, "3a52b075-40ce-4c40-beb3-38420ff259de");
+                _plx80060of125Info = new RepoItemInfo(this, "PLX80060Of125", "progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-6 (0 of 125)']", 30000, null, "cc836e38-fa97-4f72-867a-4c9dcc78e272");
             }
 
             /// <summary>
@@ -13897,6 +13927,157 @@ namespace TestProject
                 get
                 {
                     return _buttonokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PLX80060Of125 item.
+            /// </summary>
+            [RepositoryItem("cc836e38-fa97-4f72-867a-4c9dcc78e272")]
+            public virtual Ranorex.Text PLX80060Of125
+            {
+                get
+                {
+                    return _plx80060of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLX80060Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("cc836e38-fa97-4f72-867a-4c9dcc78e272")]
+            public virtual RepoItemInfo PLX80060Of125Info
+            {
+                get
+                {
+                    return _plx80060of125Info;
+                }
+            }
+
+            /// <summary>
+            /// The ItemsHost folder.
+            /// </summary>
+            [RepositoryFolder("c37f841e-4a4e-4a34-bb65-228844cb0968")]
+            public virtual NGConsysRepositoryFolders.ItemsHostFolder ItemsHost
+            {
+                get { return _itemshost; }
+            }
+        }
+
+        /// <summary>
+        /// The ItemsHostFolder folder.
+        /// </summary>
+        [RepositoryFolder("c37f841e-4a4e-4a34-bb65-228844cb0968")]
+        public partial class ItemsHostFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _plx80070of125Info;
+            RepoItemInfo _plx80080of125Info;
+            RepoItemInfo _text50of125Info;
+
+            /// <summary>
+            /// Creates a new ItemsHost  folder.
+            /// </summary>
+            public ItemsHostFolder(RepoGenBaseFolder parentFolder) :
+                    base("ItemsHost", "progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']", parentFolder, 30000, null, false, "c37f841e-4a4e-4a34-bb65-228844cb0968", "")
+            {
+                _plx80070of125Info = new RepoItemInfo(this, "PLX80070Of125", "?/?/text[@caption='PLX800-7 (0 of 125)']", 30000, null, "d54d0310-6065-4200-8b07-fb49fd978cf0");
+                _plx80080of125Info = new RepoItemInfo(this, "PLX80080Of125", "?/?/text[@caption='PLX800-8 (0 of 125)']", 30000, null, "e7503db4-4d43-4660-b055-867c2073d218");
+                _text50of125Info = new RepoItemInfo(this, "TEXT50Of125", "?/?/text[@caption='TEXT-5 (0 of 125)']", 30000, null, "0667d187-1b40-4ce4-8de9-34efad1c14bf");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c37f841e-4a4e-4a34-bb65-228844cb0968")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c37f841e-4a4e-4a34-bb65-228844cb0968")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PLX80070Of125 item.
+            /// </summary>
+            [RepositoryItem("d54d0310-6065-4200-8b07-fb49fd978cf0")]
+            public virtual Ranorex.Text PLX80070Of125
+            {
+                get
+                {
+                    return _plx80070of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLX80070Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("d54d0310-6065-4200-8b07-fb49fd978cf0")]
+            public virtual RepoItemInfo PLX80070Of125Info
+            {
+                get
+                {
+                    return _plx80070of125Info;
+                }
+            }
+
+            /// <summary>
+            /// The PLX80080Of125 item.
+            /// </summary>
+            [RepositoryItem("e7503db4-4d43-4660-b055-867c2073d218")]
+            public virtual Ranorex.Text PLX80080Of125
+            {
+                get
+                {
+                    return _plx80080of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLX80080Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("e7503db4-4d43-4660-b055-867c2073d218")]
+            public virtual RepoItemInfo PLX80080Of125Info
+            {
+                get
+                {
+                    return _plx80080of125Info;
+                }
+            }
+
+            /// <summary>
+            /// The TEXT50Of125 item.
+            /// </summary>
+            [RepositoryItem("0667d187-1b40-4ce4-8de9-34efad1c14bf")]
+            public virtual Ranorex.Text TEXT50Of125
+            {
+                get
+                {
+                    return _text50of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TEXT50Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("0667d187-1b40-4ce4-8de9-34efad1c14bf")]
+            public virtual RepoItemInfo TEXT50Of125Info
+            {
+                get
+                {
+                    return _text50of125Info;
                 }
             }
         }

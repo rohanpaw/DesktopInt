@@ -403,7 +403,7 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						500
+						1000
 					</argvalue>
 				</argument>
 			</arguments>
@@ -559,7 +559,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						600
+						1000
 					</argvalue>
 				</argument>
 			</arguments>
@@ -709,7 +709,7 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						500
+						1000
 					</argvalue>
 				</argument>
 			</arguments>

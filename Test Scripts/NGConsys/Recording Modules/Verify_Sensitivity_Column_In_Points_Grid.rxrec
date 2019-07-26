@@ -938,7 +938,7 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 		isexternaltestmethod="True"
 		methodname="verifyPointGridProperties"
 		namespace="TestProject.Libraries"
-		optional="True"
+		optional="False"
 		varname="">
 			<comment>
 			</comment>

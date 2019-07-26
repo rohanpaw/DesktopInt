@@ -1075,7 +1075,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						5
 					</argvalue>
 				</argument>
 				<argument
@@ -1100,6 +1100,170 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="46b756c7-df47-45ad-a98d-186642de136e"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a0efb44c-accf-4fff-9653-ba572fa93af1"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/button[@automationid='Expander']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0ee05930-87af-40cf-8cfc-51321f6bbbb5"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="97f5e8e7-8d7b-41c6-9865-2f80882c91e7"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="ecaa6edc-468a-460d-a8d5-82e74fdf0774"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1cace44c-7508-4887-9cc7-114e4ab9cf7a"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/button[@automationid='Expander']
+				</path>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="16c9affb-3138-415f-90e2-3885f003e57a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cc836e38-fa97-4f72-867a-4c9dcc78e272"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-6 (0 of 125)']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				PLX800-6 (0 of 125)
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="16c9affb-3138-415f-90e2-3885f003e57a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d54d0310-6065-4200-8b07-fb49fd978cf0"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-7 (0 of 125)']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				PLX800-7 (0 of 125)
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="16c9affb-3138-415f-90e2-3885f003e57a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e7503db4-4d43-4660-b055-867c2073d218"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-8 (0 of 125)']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				PLX800-8 (0 of 125)
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="16c9affb-3138-415f-90e2-3885f003e57a">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="0667d187-1b40-4ce4-8de9-34efad1c14bf"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='TEXT-5 (0 of 125)']
+				</path>
+			</info>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				TEXT-5 (0 of 125)
+			</matchvalue>
+		</validationitem>
 	</recorditems>
 	<repository
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"

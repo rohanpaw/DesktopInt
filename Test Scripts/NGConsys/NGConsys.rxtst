@@ -6222,7 +6222,7 @@ loops.</SPAN>]]>
 			id="66147d7f-cf5e-45f9-b4d7-b0d7ba953821"
 			name="Verify_Sensitivity_Column_In_Points_Grid">
 				<description>
-					<![CDATA[<p>NGC-366/TC-78&nbsp; Note : Step 12 is set as Enable Continue on Fail. Need to update it</p>]]>
+					<![CDATA[<p>NGC-366/TC-78.&nbsp; Note : Due to bug NGC-1581, this will fail.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -19610,10 +19610,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0ae3a1cf-bdae-4750-9a3d-dfd54127efb4">
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			id="f157f4c6-7818-4ec8-b4b6-8f47f7939a3c">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

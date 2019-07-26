@@ -126,10 +126,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
             
-            try {
-                Libraries.Devices_Functions.verifyPointGridProperties("1", "Sensitivity", "Normal");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(11)); }
+            Libraries.Devices_Functions.verifyPointGridProperties("1", "Sensitivity", "Normal");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "1"));
             Delay.Milliseconds(0);

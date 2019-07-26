@@ -198,7 +198,35 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.NavigationTree.Expander.Click();
             Delay.Milliseconds(200);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "TEXT-5");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("5", "Label", "TEXT-5");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ExpandNode1AfterReopen' at Center.", repo.FormMe.ExpandNode1AfterReopenInfo, new RecordItemIndex(32));
+            repo.FormMe.ExpandNode1AfterReopen.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane1AfterReopen' at Center.", repo.FormMe.Backplane1AfterReopenInfo, new RecordItemIndex(33));
+            repo.FormMe.Backplane1AfterReopen.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PLXExternalLoopCard_Expander' at Center.", repo.FormMe.PLXExternalLoopCard_ExpanderInfo, new RecordItemIndex(34));
+            repo.FormMe.PLXExternalLoopCard_Expander.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='PLX800-6 (0 of 125)') on item 'FormMe2.PLX80060Of125'.", repo.FormMe2.PLX80060Of125Info, new RecordItemIndex(35));
+            Validate.AttributeEqual(repo.FormMe2.PLX80060Of125Info, "Text", "PLX800-6 (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='PLX800-7 (0 of 125)') on item 'FormMe2.ItemsHost.PLX80070Of125'.", repo.FormMe2.ItemsHost.PLX80070Of125Info, new RecordItemIndex(36));
+            Validate.AttributeEqual(repo.FormMe2.ItemsHost.PLX80070Of125Info, "Text", "PLX800-7 (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='PLX800-8 (0 of 125)') on item 'FormMe2.ItemsHost.PLX80080Of125'.", repo.FormMe2.ItemsHost.PLX80080Of125Info, new RecordItemIndex(37));
+            Validate.AttributeEqual(repo.FormMe2.ItemsHost.PLX80080Of125Info, "Text", "PLX800-8 (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='TEXT-5 (0 of 125)') on item 'FormMe2.ItemsHost.TEXT50Of125'.", repo.FormMe2.ItemsHost.TEXT50Of125Info, new RecordItemIndex(38));
+            Validate.AttributeEqual(repo.FormMe2.ItemsHost.TEXT50Of125Info, "Text", "TEXT-5 (0 of 125)");
             Delay.Milliseconds(0);
             
         }

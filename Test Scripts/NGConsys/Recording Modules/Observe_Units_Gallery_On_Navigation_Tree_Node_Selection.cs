@@ -327,6 +327,64 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(80));
+            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("6");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(82));
+            repo.ProfileConsys1.btn_Delete.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("7");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(84));
+            repo.ProfileConsys1.btn_Delete.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("7");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(86));
+            repo.ProfileConsys1.btn_Delete.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MXR", "Repeaters", "Enabled");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MX2 Repeater", "Repeaters", "Enabled");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MXR-F", "Repeaters", "Enabled");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PLX800", "Loops", "Enabled");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800", "Slot Cards", "Enabled");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PNI800", "Slot Cards", "Enabled");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("GMPIM", "Miscellaneous", "Enabled");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MPM800", "Miscellaneous", "Enabled");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1 D2", "Miscellaneous", "Enabled");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("Generic 3rd Party Interface", "Printers", "Enabled");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

@@ -391,7 +391,7 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 				capname="button"
 				id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
 				name="Expander"
-				refimgid="b95e5201-c2f7-402c-92e8-aab1898c736b"
+				refimgid="69f14094-98e8-4c96-bc49-043cd1a0122a"
 				searchtimeout="30000ms">
 					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/button[@automationid='Expander']
 				</item>
@@ -2876,7 +2876,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			name="PLXExternalLoopCard_Expander"
 			refimgid="c0e48c58-ab7d-449b-8cf6-2ec2473def36"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/button[@automationid='Expander']
+				/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/button[@automationid='Expander']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -15904,6 +15904,14 @@ AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/button[@automationid='PART_Fill']/container[@automationid='PART_Buttons']//button[@automationid='PART_CloseButton']
 			</item>
+			<item
+			capname="button"
+			id="a0efb44c-accf-4fff-9653-ba572fa93af1"
+			name="ExpandNode1AfterReopen"
+			refimgid="e2da883e-d4ad-4dd7-a210-dd62f94536ad"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/button[@automationid='Expander']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -16505,6 +16513,59 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form/list[1]/?/?/button[@text='OK']
 			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="cc836e38-fa97-4f72-867a-4c9dcc78e272"
+			name="PLX80060Of125"
+			refimgid="46a2d8a2-89f6-4423-963b-feec948813ca"
+			refpath="/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[1]/text[@caption='PLX800-6 (0 of 125)']"
+			searchtimeout="30000ms">
+				/form/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-6 (0 of 125)']
+			</item>
+			<folder
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="container"
+			id="c37f841e-4a4e-4a34-bb65-228844cb0968"
+			isrooted="True"
+			name="ItemsHost"
+			refpath="/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="d54d0310-6065-4200-8b07-fb49fd978cf0"
+				name="PLX80070Of125"
+				refimgid="37023422-3251-4d3d-92f6-a10aabd45dd9"
+				refpath="/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/text[@caption='PLX800-7 (0 of 125)']"
+				searchtimeout="30000ms">
+					/form/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-7 (0 of 125)']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="e7503db4-4d43-4660-b055-867c2073d218"
+				name="PLX80080Of125"
+				refimgid="8d1a9c76-3b36-40d6-a5df-5292c1021fa6"
+				refpath="/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/text[@caption='PLX800-8 (0 of 125)']"
+				searchtimeout="30000ms">
+					/form/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-8 (0 of 125)']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="0667d187-1b40-4ce4-8de9-34efad1c14bf"
+				name="TEXT50Of125"
+				refimgid="2751b2b0-4807-446b-ac9c-2993992b2a80"
+				refpath="/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[4]/text[@caption='TEXT-5 (0 of 125)']"
+				searchtimeout="30000ms">
+					/form/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='TEXT-5 (0 of 125)']
+				</item>
+				<basepath>
+					/form/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']
+				</basepath>
+			</folder>
 			<basepath>
 				/form
 			</basepath>
