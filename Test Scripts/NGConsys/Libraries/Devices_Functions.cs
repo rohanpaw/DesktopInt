@@ -244,10 +244,21 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void AddDevicesfromGallery(string sDeviceName,string sType)
 		{
-			sGalleryIndex = SelectGalleryType(sType);
 			ModelNumber=sDeviceName;
-			repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+
+			
+			
+			repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+			
+			repo.FormMe.btn_DevicesGalleryDropDown1.EnsureVisible();
+			
 			repo.ContextMenu.txt_SelectDevice.Click();
+			
+			
+//			sGalleryIndex = SelectGalleryType(sType);
+//			ModelNumber=sDeviceName;
+//			repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+//			repo.ContextMenu.txt_SelectDevice.Click();
 			Report.Log(ReportLevel.Success, "Device "+sDeviceName+" Added Successfully");
 		}
 		
@@ -548,7 +559,9 @@ namespace TestProject.Libraries
 			{
 				sGalleryIndex = SelectGalleryType(sType);
 				ModelNumber=deviceName;
-				repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+				
+				repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+				//repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
 				{
 					Report.Log(ReportLevel.Success, "Gallery Item: " + deviceName+ " Enabled in gallery");
@@ -562,7 +575,9 @@ namespace TestProject.Libraries
 			{
 				sGalleryIndex = SelectGalleryType(sType);
 				ModelNumber=deviceName;
-				repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+				
+				repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+				//repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
 				{
 					Report.Log(ReportLevel.Failure, "Gallery Item: " + deviceName+ " enabled in gallery");
@@ -590,19 +605,34 @@ namespace TestProject.Libraries
 		{
 			float fMaxACUnits;
 			repo.ProfileConsys1.tab_Points.Click();
-			repo.ProfileConsys1.PanelNode.Click();
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
-			repo.ProfileConsys1.cell_CableLength.Click();
+			
+			repo.FormMe.PanelNode1.Click();
+			//repo.ProfileConsys1.PanelNode.Click();
+			
+			repo.FormMe.Loop_A1.Click();
+//			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			
+			repo.FormMe.cell_CableLength1.Click();
+			//repo.ProfileConsys1.cell_CableLength.Click();
 			
 			if(sLoopType.Equals("PFI"))
 			{
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fCableLength1 + "{Enter}");
 				//repo.ProfileConsys1.tab_Points.Click();
-				repo.ProfileConsys1.PanelNode.Click();
+				
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.PanelNode.Click();
+				
 				Delay.Duration(1000, false);
-				repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+				
+				repo.FormMe.Loop_B1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+				
 				Delay.Duration(1000, false);
-				repo.ProfileConsys1.cell_CableLength.Click();
+				
+				repo.FormMe.cell_CableLength1.Click();
+				//repo.ProfileConsys1.cell_CableLength.Click();
+				
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fCableLength2 + "{Enter}");
 				Delay.Duration(500, false);
 				fMaxACUnits = (450-(fCableLength1+fCableLength2)/10);
@@ -2882,7 +2912,8 @@ namespace TestProject.Libraries
 			repo.AddDevices.txt_SearchDevices.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+sDeviceName);
 			ModelNumber = sDeviceName;
-			repo.AddDevices.txt_ModelNumber.Click();
+			repo.AddDevices.txt_ModelNumber1.Click();
+//			repo.AddDevices.txt_ModelNumber.Click();
 			repo.AddDevices.txt_Quantity.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+DeviceQty.ToString());
 			
@@ -6647,7 +6678,26 @@ namespace TestProject.Libraries
 			}
 		}
 
-		
+		/***********************************************************************************************************
+		 * Function Name: 
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner:
+		 * Last Update : 
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void testGallery(string sDeviceName)	
+		{
+			ModelNumber=sDeviceName;
+			
+			repo.FormMe.btn_DevicesGalleryDropDown1.EnsureVisible();
+			
+			repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+			repo.ContextMenu.txt_SelectDevice.Click();
+			Report.Log(ReportLevel.Success, "Device "+sDeviceName+" Added Successfully");
+			
+		}
 	}
 	}
 

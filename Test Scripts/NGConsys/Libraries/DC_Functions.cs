@@ -261,9 +261,13 @@ namespace TestProject.Libraries
 				int PanelLED;
 				string sPanelLEDCount =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
 				int.TryParse(sPanelLEDCount,out PanelLED);
-				repo.ProfileConsys1.PanelNode.Click();
+				
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.PanelNode.Click();
 				Panel_Functions.changePanelLED(PanelLED);
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				
+					repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
 				verifyDCUnitsValue(expectedDCUnits);
@@ -864,7 +868,9 @@ namespace TestProject.Libraries
 			
 			//Verify DC Units of Loop B
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on addition of devices in Loop A");
-			repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			
+			repo.FormMe.Loop_B1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_B.Click();
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[3,2]).Value.ToString();
 			verifyDCUnitsValue(expectedDCUnits);
 			verifyDCUnitsWorstCaseValue(expectedDCUnits);
@@ -874,7 +880,10 @@ namespace TestProject.Libraries
 			//Add devices in loop B
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesLoopB);
 			rows= Excel_Utilities.ExcelRange.Rows.Count;
-			repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			
+			repo.FormMe.Loop_B1.Click();
+				
+			//repo.ProfileConsys1.NavigationTree.Loop_B.Click();
 			for(int i=8; i<=rows; i++)
 			{
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
@@ -894,7 +903,10 @@ namespace TestProject.Libraries
 			verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
 			//Verify DC Units of Loop A
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			
+				repo.FormMe.Loop_A1.Click();
+			
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop A on addition of devices in Loop B");
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[2,2]).Value.ToString();
 			verifyDCUnitsValue(expectedDCUnits);

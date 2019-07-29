@@ -129,7 +129,9 @@ namespace TestProject.Libraries
 			{
 				string[] splitPanelNames = PanelNames.Split(',');
 				
-				repo.ProfileConsys1.SiteNode.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
+				
+				repo.FormMe.SiteNode1.Click();
 				
 				string PanelNameWithSpace=splitPanelNames[i];
 				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
@@ -217,10 +219,14 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void changePanelLED(int PanelLED)
 		{
-			repo.ProfileConsys1.NavigationTree.Expander.Click();
+			//repo.ProfileConsys1.NavigationTree.Expander.Click();
+			repo.FormMe.NodeExpander1.Click();
+			
 			repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+PanelLED +"{ENTER}");
-			repo.ProfileConsys1.NavigationTree.Expander.Click();
+			
+			repo.FormMe.NodeExpander1.Click();
+			//repo.ProfileConsys1.NavigationTree.Expander.Click();
 		}
 		
 		/********************************************************************
@@ -257,7 +263,9 @@ namespace TestProject.Libraries
 			{
 				sRow = rowNumber.ToString();
 				sLabelName=PanelNode;
-				repo.ProfileConsys1.SiteNode.Click();
+				
+				repo.FormMe.SiteNode1.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
 				
 				/*  If else statement added as when we have added only 1 panel and then to delete the same Xpath is different
 				 * Date : 27/11/2018

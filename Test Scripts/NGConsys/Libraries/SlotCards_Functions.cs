@@ -2666,7 +2666,8 @@ namespace TestProject.Libraries
 					
 					int.TryParse(sDeviceCount, out deviceCount);
 					
-					repo.ProfileConsys1.NavigationTree.Expander.Click();
+					//repo.ProfileConsys1.NavigationTree.Expander.Click();
+					repo.FormMe.NodeExpander1.Click();
 					
 					// Verify device count and then add devices from panel accessories gallery or panel node gallery
 					if(deviceCount>0)
@@ -2682,7 +2683,8 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.NodeExpander1.Click();
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
