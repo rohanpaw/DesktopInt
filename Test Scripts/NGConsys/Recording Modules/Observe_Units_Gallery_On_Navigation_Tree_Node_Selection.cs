@@ -82,8 +82,8 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(1));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(1));
+            repo.FormMe.PanelNode1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MXR", "Repeaters", "Enabled");
@@ -119,8 +119,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor' at Center.", repo.FormMe.MainProcessorInfo, new RecordItemIndex(13));
-            repo.FormMe.MainProcessor.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor1' at Center.", repo.FormMe.MainProcessor1Info, new RecordItemIndex(13));
+            repo.FormMe.MainProcessor1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MXR", "Repeaters", "Enabled");
@@ -156,8 +156,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessorList.RBus' at Center.", repo.FormMe.MainProcessorList.RBusInfo, new RecordItemIndex(25));
-            repo.FormMe.MainProcessorList.RBus.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.RBus1' at Center.", repo.FormMe.RBus1Info, new RecordItemIndex(25));
+            repo.FormMe.RBus1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("MXR", "Repeaters", "PFI");
@@ -199,8 +199,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessorList.Ethernet' at Center.", repo.FormMe.MainProcessorList.EthernetInfo, new RecordItemIndex(39));
-            repo.FormMe.MainProcessorList.Ethernet.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Ethernet1' at Center.", repo.FormMe.Ethernet1Info, new RecordItemIndex(39));
+            repo.FormMe.Ethernet1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PR1DS", "Repeaters", "PFI");
@@ -242,12 +242,12 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PZ4DS", "Attached Functionality", "Enabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(53));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(53));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(54));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(54));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MXR", "Repeaters", "Disabled");
@@ -283,8 +283,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(66));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(66));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.BackplaneOrXLMExternalLoopCard_Expander' at Center.", repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo, new RecordItemIndex(67));
@@ -327,8 +327,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(80));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(80));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.SelectInventoryGridRow("6");

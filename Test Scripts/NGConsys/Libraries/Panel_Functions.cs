@@ -305,8 +305,11 @@ namespace TestProject.Libraries
 		public static void SelectPanelNode(string sPanelName)
 		{
 			PanelName=sPanelName.ToString();
-			repo.FormMe.PanelNode.Click();
-			Report.Log(ReportLevel.Success, "Panel Node"+sPanelName+" selected");
+			
+			//repo.FormMe.PanelNode.Click();
+			repo.FormMe.PanelNode1.Click();
+			
+			Report.Log(ReportLevel.Success, "Panel Node "+sPanelName+" selected");
 		}
 		
 		/********************************************************************

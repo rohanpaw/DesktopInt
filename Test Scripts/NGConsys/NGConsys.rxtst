@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -10024,7 +10024,7 @@ div.WordSection1
 			id="a2ca527b-d5da-49f7-846b-cc2c56ef6d2b"
 			name="Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815D-CH_Pro21">
 				<description>
-					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"><p>NGC-358/TC-02/TC-03</p></font></font></p>]]>
+					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"></font></font><p><font face="Calibri" size="3"><font face="Calibri" size="3">NGC-358/TC-02/TC-03</font></font></p><p></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -19676,38 +19676,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0991cd5e-c9f2-49d5-88d4-3f9591b2693c">
-				id=&quot;222bd839-2099-4f92-ab1f-04972d99f2e0&quot;&gt;
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="f157f4c6-7818-4ec8-b4b6-8f47f7939a3c">
-			</testcontainer>
-			<testcontainer
-			id="405fcb6b-fb0a-45a5-b360-e8602f537671">
-			</testcontainer>
-			<testcontainer
-			id="46d24ebf-efc4-459d-a132-0b9dc55e0ba1">
-			</testcontainer>
-			<testcontainer
-			id="5c52c642-07a9-49e7-89a2-2266f89a782c">
-			</testcontainer>
-			<testcontainer
-			id="699cfce9-e9fb-4eff-8ada-ae76e6df5221">
-			</testcontainer>
-			<testcontainer
-			id="b7618595-1949-4373-bf5c-e474f06cd552">
-			</testcontainer>
-			<testcontainer
-			id="b8090baf-7b09-46da-bb64-d8988ca2d463">
-			</testcontainer>
-			<testcontainer
-			id="c072cf02-e092-40e6-bada-79fe192fd3dc">
-			</testcontainer>
-			<testcontainer
-			id="d0c34cef-95cd-4083-b02b-d372bc193cc3">
-			</testcontainer>
-			<testcontainer
-			id="377591ae-1cd8-4791-ae2d-87f4de3a9304">
+			id="c71c0d6b-d6ed-43d4-ba4c-1d25ad997a40">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

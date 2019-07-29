@@ -1892,7 +1892,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 10/06/2019
+		 * Last Update : 10/06/2019 Alpesh Dhakad- 29/07/2019 - Updated script as per new build xpath updates
 		 ***************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyMaxLimitForRepeatersSupportedByPanelOnEthernet(string sFileName,string sAddDevicesSheet)
@@ -1925,14 +1925,14 @@ namespace TestProject.Libraries
 				// Add panels
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
-				// Click on Node expander
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				// Click on Expander node
+				repo.FormMe.NodeExpander1.Click();
 				
 				// Click on Main processor tab
-				repo.FormMe.MainProcessor.Click();
+				repo.FormMe.MainProcessor1.Click();
 				
 				// Click on Ethernet under Main processor
-				repo.FormMe.MainProcessorList.Ethernet.Click();
+				repo.FormMe.Ethernet1.Click();
 				
 				for(int j=4; j<=5; j++)
 				{
@@ -1946,14 +1946,14 @@ namespace TestProject.Libraries
 					// Verify device count and then add devices from panel accessories gallery or panel node gallery
 					if(deviceCount>0)
 					{
-						// Click on Node expander
-						repo.ProfileConsys1.NavigationTree.Expander.Click();
-						
-						// Click on Main processor tab
-						repo.FormMe.MainProcessor.Click();
-						
-						// Click on Ethernet under Main processor
-						repo.FormMe.MainProcessorList.Ethernet.Click();
+						/// Click on Expander node
+				repo.FormMe.NodeExpander1.Click();
+				
+				// Click on Main processor tab
+				repo.FormMe.MainProcessor1.Click();
+				
+				// Click on Ethernet under Main processor
+				repo.FormMe.Ethernet1.Click();
 						
 						// Click on Inventory tab
 						repo.FormMe.tab_Inventory.Click();
@@ -1992,7 +1992,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 11/06/2019
+		 * Last Update : 11/06/2019 Alpesh Dhakad- 29/07/2019 - Updated script as per new build xpath updates
 		 **********************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyMaxLimitForRepeatersSupportedByPanelOnRBus(string sFileName,string sAddDevicesSheet)
@@ -2025,14 +2025,14 @@ namespace TestProject.Libraries
 				// Add panels
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
-				// Click on Node expander
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				// Click on Expander node
+				repo.FormMe.NodeExpander1.Click();
 				
 				// Click on Main processor tab
-				repo.FormMe.MainProcessor.Click();
+				repo.FormMe.MainProcessor1.Click();
 				
 				// Click on RBus under Main processor
-				repo.FormMe.MainProcessorList.RBus.Click();
+				repo.FormMe.RBus1.Click();
 				
 				for(int j=4; j<=5; j++)
 				{
@@ -2046,15 +2046,15 @@ namespace TestProject.Libraries
 					// Verify device count and then add devices from panel accessories gallery or panel node gallery
 					if(deviceCount>0)
 					{
-						// Click on Node expander
-						repo.ProfileConsys1.NavigationTree.Expander.Click();
-						
-						// Click on Main processor tab
-						repo.FormMe.MainProcessor.Click();
-						
-						// Click on RBus under Main processor
-						repo.FormMe.MainProcessorList.RBus.Click();
-						
+						// Click on Expander node
+				repo.FormMe.NodeExpander1.Click();
+				
+				// Click on Main processor tab
+				repo.FormMe.MainProcessor1.Click();
+				
+				// Click on RBus under Main processor
+				repo.FormMe.RBus1.Click();
+				
 						// Click on Inventory tab
 						repo.FormMe.tab_Inventory.Click();
 						
@@ -2616,14 +2616,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/**************************************************************************************************
 		 * Function Name: VerifyAddUnitDetails
 		 * Function Details: Verify Add Unit Details and its status
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 25/06/2019
-		 ********************************************************************/
+		 * Last Update : 25/06/2019 Alpesh Dhakad - 29/07/2019 - Updated scripts as per new build xpaths
+		 **************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAddUnitDetails(string sFileName,string sAddDevicesSheet)
 		{
@@ -2793,14 +2793,14 @@ namespace TestProject.Libraries
 		}
 		
 
-		/********************************************************************
+		/************************************************************************************************************
 		 * Function Name: VerifySlotCardsAndLoopCardsDistribution
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 26/06/2019
-		 ********************************************************************/
+		 * Last Update : 26/06/2019  Alpesh Dhakad - 29/07/2019 - Updated script as per new build xpaths
+		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifySlotCardsAndLoopCardsDistribution(string sFileName,string sAddDevicesSheet)
 		{
@@ -2849,7 +2849,8 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.NodeExpander1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -2858,7 +2859,10 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							
+							repo.FormMe.NodeExpander1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
@@ -2891,7 +2895,8 @@ namespace TestProject.Libraries
 											VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
 
 											//Go back to Panel Node in order to add device
-											repo.ProfileConsys1.NavigationTree.Expander.Click();
+											repo.FormMe.PanelNode1.Click();
+											//repo.ProfileConsys1.NavigationTree.Expander.Click();
 										}
 										else
 										{
@@ -2904,7 +2909,8 @@ namespace TestProject.Libraries
 											VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
 											
 											//Go back to Panel Node in order to add device
-											repo.ProfileConsys1.NavigationTree.Expander.Click();
+											repo.FormMe.PanelNode1.Click();
+											//repo.ProfileConsys1.NavigationTree.Expander.Click();
 										}
 										
 										

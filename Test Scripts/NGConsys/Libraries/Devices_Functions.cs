@@ -824,22 +824,25 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
 		}
 
-		/********************************************************************
+		/***********************************************************************************
 		 * Function Name: changeAndVerifyNumberOfAlarmLED
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 29/07/2019 - Updated script as per new build xpaths
+		 *************************************************************************************/
 		[UserCodeMethod]
 		public static void changeAndVerifyNumberOfAlarmLED(int LEDNumber, string rangeState, int expectedResult)
 		{
 			
 			int Value,actualValue,revertTo;
 			string sActualValue;
-			repo.ProfileConsys1.SiteNode.Click();
-			repo.ProfileConsys1.PanelNode.Click();
+			
+			repo.FormMe.SiteNode1.Click();
+			repo.FormMe.PanelNode1.Click();
+			
+			
 			Delay.Duration(500);
 			// repo.ProfileConsys1.NavigationTree.Node1Pro32xD.Click();
 			
@@ -6249,14 +6252,14 @@ namespace TestProject.Libraries
 			}
 		}
 
-		/********************************************************************
+		/*************************************************************************************************
 		 * Function Name: VerifyDeviceOrderForGalleryExpansionAndContextMenu
 		 * Function Details: To verify device order when gallery is expanded
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 24/06/2019
-		 ********************************************************************/
+		 * Last Update : 24/06/2019 Alpesh Dhakad - 29/07/2019 - Updated script as per new build xpaths
+		 *************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDeviceOrderForGalleryExpansion(string sFileName,string sAddDevicesSheet)
 		{
@@ -6279,7 +6282,8 @@ namespace TestProject.Libraries
                 sGalleryIndex = SelectGalleryType(sType);
                 sDeviceIndex = DeviceIndex;
                 //Click on Expand for gallery
-                repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+                repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+                //repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
                 
                 string ActualDeviceName = repo.ContextMenu.DeviceOrder_GalleryExpanded.TextValue;
                 

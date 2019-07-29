@@ -172,7 +172,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: file name and add panel sheet name  and row number is 12 by default for FIM and 13 for PFI
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 28/01/2019
+		 * Last Update : 28/01/2019  Alpesh Dhakad- 29/07/2019 - Updated script as per new build xpath updates
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify5VPsuLoadOnAdditionDeletionOfAccessories(string sFileName,string sAddPanelandDevicesSheet)
@@ -209,43 +209,43 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
 				
 				// Verify 24V PSU load value
 				verify5VPSULoadValue(expected5VPSU,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
 				
 				// Add devices from Panel node gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
 				
 				// Verify 24V PSU load value
 				verify5VPSULoadValue(expected2nd5VPSU,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
-
+				repo.FormMe.NodeExpander1.Click();
+				
 				// Delete devices using its Label name
 				Devices_Functions.DeleteDeviceUsingLabel(sLabelName);
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
 				
 				// Verify 24V PSU load value
 				verify5VPSULoadValue(expected3rd5VPSU,PanelType);
