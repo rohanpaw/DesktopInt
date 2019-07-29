@@ -107,8 +107,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.MainProcessor.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(5));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(5));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "SKU", "557.202.006");

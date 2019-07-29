@@ -2916,14 +2916,6 @@ rxversion="8.3">
 			name="Verify_if_adding_EXI800_from_multipoint_wizard_should_check_the_existing_rules_of_adding_EXI800"
 			ref="b143f017-9d5c-44e0-bddc-07d09d434bc4"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="07bc3436-edc3-41a4-bbef-0c7eb81dcaf1"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="2f409694-0063-4c7b-b932-0a089e3c6496"
@@ -6325,14 +6317,6 @@ loops.</SPAN>]]>
 			name="Verify_the_behaviour_when_user_copies_both_IS_and_Non_IS_devices"
 			ref="787a9c2e-0e9c-4df6-9275-18024c452172"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="61f2f4b6-d528-4a97-9cb8-56f65a20b21b"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="6793a2db-69cb-4f23-8ed5-20599ceac5ab"
@@ -6477,14 +6461,6 @@ loops.</SPAN>]]>
 			name="Verify_the_max_min_section_displayed_for_Isolator_units_Intrinsically_safe_units"
 			ref="f3235564-3543-407b-8e53-67ecf272d30a"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="9f1a196c-841e-4d44-b4ae-4252e63d2bbe"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="699cfce9-e9fb-4eff-8ada-ae76e6df5221"
@@ -6632,14 +6608,6 @@ loops.</SPAN>]]>
 			name="Verify_the_indication_should_be_shown_for_selected_loops"
 			ref="45b2ee79-ebb8-4ec4-ba40-f65ab565b812"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="0b79ab4e-f3cf-41ad-9eb5-77b299995bd6"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="6b6e3dad-65b9-4199-8981-831641ad2db3"
@@ -7663,14 +7631,6 @@ loops.</SPAN>]]>
 			name="Verify_the_Isolator_units_Intrinsically_safe_units_have_separate_property_section_to_displayed"
 			ref="30adcbb5-53f1-4fc3-8805-eb77505595e2"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="6f80e22c-106d-4460-8342-b80881d135ab"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="806a3da2-08f7-4a69-9405-d6ae07f52512"
@@ -8150,14 +8110,6 @@ MxDesigner]]>
 			name="Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800"
 			ref="d4029ebc-dfbd-43ba-9c84-b12192982322"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="5c6f9f0d-92d3-4f42-ab23-94479bb53443"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="852b1405-8222-4414-ac0a-2175f81db7cf"
@@ -11933,14 +11885,6 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800"
 			ref="d06aa5da-a769-490f-ac17-1b54645a0b7b"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="5c6f9f0d-92d3-4f42-ab23-94479bb53443"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="caeed39d-d2b1-44d2-b220-4c58f4e4c514"
@@ -14664,14 +14608,6 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_If_IS_Devices_Are_Invisible_In_Multipoint_Wizard"
 			ref="e10c907b-2b10-4934-b21b-fe87d60f16fe"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="949ea218-fccb-4922-9615-08781a24122f"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="fd6a5e83-cefa-476f-ac2e-05151c121731"
@@ -19642,9 +19578,11 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			id="1ee7057c-11f3-460d-97bf-818221fe934b">
 			</testcontainer>
 			<testcontainer
+			id="d0ee9bdf-ae42-4b9c-a980-5cdd21d7b5e1">
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 		</testconfiguration>
@@ -19675,10 +19613,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

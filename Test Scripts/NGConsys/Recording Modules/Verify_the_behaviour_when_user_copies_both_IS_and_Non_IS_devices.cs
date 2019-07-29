@@ -53,16 +53,6 @@ namespace TestProject.Recording_Modules
 
 #region Variables
 
-        /// <summary>
-        /// Gets or sets the value of variable PanelNode.
-        /// </summary>
-        [TestVariable("361584a9-c082-463b-bb0a-d3f851f66bcb")]
-        public string PanelNode
-        {
-            get { return repo.PanelNode; }
-            set { repo.PanelNode = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -92,20 +82,16 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.VerifyPanelNode' at Center.", repo.ProfileConsys1.NavigationTree.VerifyPanelNodeInfo, new RecordItemIndex(1));
-            repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(1));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(2));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(2));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(3));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(4));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(3));
+            repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("Exi800", "Other");
@@ -127,15 +113,15 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(11));
+                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(10));
                 repo.FormMe.btn_Copy.Click();
                 Delay.Milliseconds(200);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(11)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
             
             Libraries.Devices_Functions.SelectPointsGridRow("2");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(12));
             repo.FormMe.Paste.Click();
             Delay.Milliseconds(200);
             
@@ -148,11 +134,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectPointsGridRow("3");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(16));
             repo.FormMe.btn_Copy.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(17));
             repo.FormMe.Paste.Click();
             Delay.Milliseconds(200);
             
@@ -162,11 +148,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectPointsGridRow("4");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(20));
             repo.FormMe.btn_Copy.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(21));
             repo.FormMe.Paste.Click();
             Delay.Milliseconds(200);
             
@@ -176,16 +162,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("50445");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(24));
             repo.ProfileConsys1.NavigationTree.Expander.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(25));
             repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(27));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(26));
+            repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.verifyPointGridProperties("1", "Label", "801 CH - 1");

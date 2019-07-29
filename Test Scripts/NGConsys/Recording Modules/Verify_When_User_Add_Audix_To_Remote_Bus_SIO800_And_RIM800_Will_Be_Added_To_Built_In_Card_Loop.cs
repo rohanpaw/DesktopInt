@@ -82,8 +82,8 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(1));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(1));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor' at Center.", repo.FormMe.MainProcessorInfo, new RecordItemIndex(2));
@@ -103,12 +103,12 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Audix 8", "Attached Functionality", "PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(7));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(7));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(8));
-            repo.ProfileConsys1.NavigationTree.Loop_A.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(8));
+            repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(9));
@@ -158,12 +158,12 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(23));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(23));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(24));
-            repo.ProfileConsys1.NavigationTree.Loop_A.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(24));
+            repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.VerifyDeviceExists(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "SIO 800 - 1");
@@ -190,12 +190,12 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Audix 16", "Attached Functionality", "PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(32));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(32));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(33));
-            repo.ProfileConsys1.NavigationTree.Loop_A.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(33));
+            repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.VerifyDeviceExists(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "SIO 800 - 1");

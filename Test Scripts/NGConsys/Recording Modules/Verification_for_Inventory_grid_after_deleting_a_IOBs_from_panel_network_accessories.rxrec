@@ -199,10 +199,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
+			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/button[@automationid='Expander']
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
 				</path>
 			</info>
 		</mouseitem>
@@ -333,10 +333,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
+			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/button[@automationid='Expander']
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
 				</path>
 			</info>
 		</mouseitem>

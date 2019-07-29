@@ -103,16 +103,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(4));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(4));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(5));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(5));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(6));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse XButton2 Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(6));
+            repo.FormMe.Loop_A1.Click(System.Windows.Forms.MouseButtons.XButton2);
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(7));

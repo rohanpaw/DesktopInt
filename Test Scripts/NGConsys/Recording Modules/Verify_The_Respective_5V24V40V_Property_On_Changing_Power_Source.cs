@@ -79,22 +79,26 @@ namespace TestProject.Recording_Modules
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(0));
+            repo.FormMe.NodeExpander1.Click();
+            Delay.Milliseconds(200);
+            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(1));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(2));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(2));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(3));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(3));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse XButton2 Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(4));
+            repo.FormMe.Loop_A1.Click(System.Windows.Forms.MouseButtons.XButton2);
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(5));
             repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
@@ -107,23 +111,23 @@ namespace TestProject.Recording_Modules
             Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(9));
             repo.ProfileConsys1.SiteNode.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(9));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(10));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor' at Center.", repo.FormMe.MainProcessorInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor' at Center.", repo.FormMe.MainProcessorInfo, new RecordItemIndex(11));
             repo.FormMe.MainProcessor.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("MPM800", "Miscellaneous", "FIM");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(12));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(13));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("MPM800-1");
@@ -132,16 +136,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyPowerSupply("24V");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(15));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(16));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(16));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(17));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(17));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse XButton2 Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(18));
+            repo.FormMe.Loop_A1.Click(System.Windows.Forms.MouseButtons.XButton2);
             Delay.Milliseconds(200);
             
             Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM");
@@ -153,12 +157,12 @@ namespace TestProject.Recording_Modules
             Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(22));
             repo.ProfileConsys1.SiteNode.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(22));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(23));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("MPM800-1");
@@ -169,10 +173,6 @@ namespace TestProject.Recording_Modules
             
             Libraries.Devices_Functions.VerifyErrorMessageFor5V("5V", ValueConverter.ArgumentFromString<bool>("sWarningSign", "True"));
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(26));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
-            Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(27));
             repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
@@ -195,8 +195,8 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.SiteNode.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(33));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(33));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("MPM800-1");
@@ -205,16 +205,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangePowerSupply("Dual (24V/5V)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(36));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(36));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(37));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(37));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(38));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse XButton2 Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(38));
+            repo.FormMe.Loop_A1.Click(System.Windows.Forms.MouseButtons.XButton2);
             Delay.Milliseconds(200);
             
             Libraries.PSULoad_Functions.verify5VPSULoadValue("0.461", "FIM");
@@ -230,8 +230,8 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.SiteNode.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(43));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(43));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("MPM800-1");
@@ -243,16 +243,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyErrorMessageFor5V("Remote Power", ValueConverter.ArgumentFromString<bool>("sWarningSign", "False"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(47));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(47));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(48));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(48));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(49));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse XButton2 Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(49));
+            repo.FormMe.Loop_A1.Click(System.Windows.Forms.MouseButtons.XButton2);
             Delay.Milliseconds(200);
             
             Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM");

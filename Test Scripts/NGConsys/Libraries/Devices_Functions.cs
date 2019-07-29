@@ -2726,7 +2726,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void DeleteDevicesPresentInCustomGallery()
 		{
-			if(repo.FormMe.CustomGalleryInfo.Exists())
+			if(repo.FormMe.btn_CustomDevices.Enabled)
 			{
 				Report.Log(ReportLevel.Info, "Custom devices are present in gallery");
 				repo.FormMe.btn_CustomDevices.Click();

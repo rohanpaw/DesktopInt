@@ -2925,9 +2925,8 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="52850e4b-1abe-4d09-a568-d919c4d2fe7e"
 			name="HeadersPanel"
 			refimgid="355c16dc-0619-4029-851f-502d426f283b"
-			refpath="/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='PART_HeadersPanel']"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_HeadersPanel']
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[1]
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
