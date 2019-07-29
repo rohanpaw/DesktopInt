@@ -1706,7 +1706,7 @@ namespace TestProject.Libraries
 				// Click on Loop Card node
 				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
-				for(int j=8; j<=9; j++)
+				for(int j=8; j<9; j++)
 				{
 					
 					ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[j,7]).Value.ToString();
@@ -1828,7 +1828,7 @@ namespace TestProject.Libraries
 					sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[j,9]).Value.ToString();
 					s40VLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
 					
-					if(j==8)
+					if(j==7)
 					{
 						Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 						Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");

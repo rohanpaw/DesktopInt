@@ -2690,7 +2690,8 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Custom devices are present in gallery");
 				repo.FormMe.btn_CustomDevices.Click();
 				int numberOfCustomDevices= repo.CustomDevices.Custom_Gallery_Container.Children.Count;
-				for(int i=1;i<=numberOfCustomDevices;i++)
+				Report.Log(ReportLevel.Info, "No of Custom devices are "+numberOfCustomDevices);
+				for(int i=2;i<numberOfCustomDevices;i++)
 				{
 					int j=0;
 					sListIndex=j.ToString();

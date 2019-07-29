@@ -778,9 +778,8 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			id="d664416e-71c0-42d4-9d16-41f519943375"
 			name="btn_MultiplePointWizard_DoNotUse"
 			refimgid="4c6dc490-de33-4816-9c19-f20cd0d4794b"
-			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/button[@text='Multiple Point Wizard']"
 			searchtimeout="30000ms">
-				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/button[@text='Multiple Point Wizard']
+				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/?/?/list[2]/container[@automationid='PART_ItemsPresenter']/button[@text='Multiple Point Wizard']
 			</item>
 			<item
 			addcaps="combobox,wpfelement,wpfgroupelement"
@@ -2762,8 +2761,8 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="ccb1c63f-1e1f-4eec-82a4-34584459c5a0"
 			name="btn_MainProcessorGalleryDropDown"
 			refimgid="c1df95ec-174a-4cce-9eff-47f51eabd5d5"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/list[$sMainProcessorGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/?/?/list[$sMainProcessorGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
 			</item>
 			<item
 			addcaps="container,wpfelement,wpfgroupelement"
@@ -3202,7 +3201,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="7694f0f2-ba3c-4ec4-b564-1476565f3b68"
 			name="btn_MultiplePointWizard"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/button[@text='Multiple Point Wizard']
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/list[2]/container[@automationid='PART_ItemsPresenter']/button[@text='Multiple Point Wizard']
 			</item>
 			<item
 			addcaps="combobox,wpfelement,wpfgroupelement"
@@ -3292,7 +3291,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			name="btn_CustomDevices"
 			refimgid="bbcebe21-fca5-43ce-ae3a-e4a585b94357"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Custom Devices']
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Custom Devices']
 			</item>
 			<item
 			addcaps="list,wpfelement,wpfgroupelement"
@@ -3300,9 +3299,8 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="25744074-87ed-4a0c-a600-f7e7d5552a2c"
 			name="CustomGallery"
 			refimgid="cad7e28b-f3bf-48f3-8713-5539b187309f"
-			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[3]"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[3]
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/?/list[3]
 			</item>
 			<item
 			capname="text"
@@ -3527,8 +3525,9 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			capname="listitem"
 			id="c3e1bbce-1682-48e3-86cb-36f5486b65ac"
 			name="Custom_Item_In_Gallery_For_Sounders"
+			refimgid="2a415cc0-19bd-4f2a-a921-b163b7636bf6"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[3]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='0']
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/list[3]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='0']
 			</item>
 			<item
 			capname="listitem"
@@ -3649,7 +3648,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			name="LastPointGridLabel"
 			refimgid="17163ab5-a7a8-49e2-829c-20ea927f510a"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[26]//text[@automationid='PART_Editor']
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[27]//text[@automationid='PART_Editor']
 			</item>
 			<item
 			addcaps="tree,wpfelement,wpfgroupelement"
