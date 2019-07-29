@@ -7947,6 +7947,7 @@ namespace TestProject
             RepoItemInfo _gallery_partdownInfo;
             RepoItemInfo _txt_deviceswithoutimageInfo;
             RepoItemInfo _btn_closeInfo;
+            RepoItemInfo _expandnode1afterreopenInfo;
             RepoItemInfo _btn_devicesgallerydropdown1Info;
             RepoItemInfo _copy_of_btn_devicesgallerydropdownInfo;
             RepoItemInfo _sitenode1Info;
@@ -7964,7 +7965,6 @@ namespace TestProject
             RepoItemInfo _ethernet1Info;
             RepoItemInfo _serialport1Info;
             RepoItemInfo _rbus1Info;
-            RepoItemInfo _expandnode1afterreopenInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -8133,6 +8133,7 @@ namespace TestProject
                 _gallery_partdownInfo = new RepoItemInfo(this, "Gallery_PARTDown", "?/?/container[@automationid='PART_AutoHideControl']/list/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/button[@automationid='PART_Down']", 30000, null, "8fcd3856-65b5-486b-8ae0-779899bfa4f3");
                 _txt_deviceswithoutimageInfo = new RepoItemInfo(this, "txt_DevicesWithoutImage", "?/?/container[@automationid='PART_AutoHideControl']/list/list[6]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text[@caption=$sDeviceName]", 30000, null, "d7a981eb-bf7e-4bce-b924-13151e412606");
                 _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "button[@automationid='PART_Fill']/container[@automationid='PART_Buttons']//button[@automationid='PART_CloseButton']", 30000, null, "5763368f-3a5f-4ed4-8a10-17d3cba96009");
+                _expandnode1afterreopenInfo = new RepoItemInfo(this, "ExpandNode1AfterReopen", "progressbar/picture[7]/tree/treeitem[2]/button[@automationid='Expander']", 30000, null, "a0efb44c-accf-4fff-9653-ba572fa93af1");
                 _btn_devicesgallerydropdown1Info = new RepoItemInfo(this, "btn_DevicesGalleryDropDown1", "progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption=$ModelNumber]/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']", 30000, null, "d3c40847-c329-45f6-a08b-ab1ef99f5d25");
                 _copy_of_btn_devicesgallerydropdownInfo = new RepoItemInfo(this, "Copy_of_btn_DevicesGalleryDropDown", "progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption='801 CH']/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']", 30000, null, "ce5451cf-a238-43f0-b78a-5a358cf5162c");
                 _sitenode1Info = new RepoItemInfo(this, "SiteNode1", "progressbar/picture[@automationid='PART_Image']/tree//text", 30000, null, "6b36f1de-1f4a-4f75-8c4f-b965d96a3330");
@@ -8150,7 +8151,6 @@ namespace TestProject
                 _ethernet1Info = new RepoItemInfo(this, "Ethernet1", "progressbar/picture[6]/tree/container[8]//text[@text~'^Ethernet']", 30000, null, "8c50fdd6-19dd-4acd-9e01-1b873946fed0");
                 _serialport1Info = new RepoItemInfo(this, "SerialPort1", "progressbar/picture[6]/tree/container[8]//text[@text~'^Serial']", 30000, null, "230218ed-152d-4b63-b82c-7c3f42eae4a6");
                 _rbus1Info = new RepoItemInfo(this, "RBus1", "progressbar/picture[6]/tree/container[8]//text[@text~'^R-BUS']", 30000, null, "da84799c-5c5b-4372-9d21-c6e5e74225cf");
-                _expandnode1afterreopenInfo = new RepoItemInfo(this, "ExpandNode1AfterReopen", "progressbar/picture[7]/tree/treeitem[2]/button[@automationid='Expander']", 30000, null, "a0efb44c-accf-4fff-9653-ba572fa93af1");
             }
 
             /// <summary>
@@ -12155,6 +12155,30 @@ namespace TestProject
             }
 
             /// <summary>
+            /// The ExpandNode1AfterReopen item.
+            /// </summary>
+            [RepositoryItem("a0efb44c-accf-4fff-9653-ba572fa93af1")]
+            public virtual Ranorex.Button ExpandNode1AfterReopen
+            {
+                get
+                {
+                    return _expandnode1afterreopenInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ExpandNode1AfterReopen item info.
+            /// </summary>
+            [RepositoryItemInfo("a0efb44c-accf-4fff-9653-ba572fa93af1")]
+            public virtual RepoItemInfo ExpandNode1AfterReopenInfo
+            {
+                get
+                {
+                    return _expandnode1afterreopenInfo;
+                }
+            }
+
+            /// <summary>
             /// The btn_DevicesGalleryDropDown1 item.
             /// </summary>
             [RepositoryItem("d3c40847-c329-45f6-a08b-ab1ef99f5d25")]
@@ -12559,30 +12583,6 @@ namespace TestProject
                 get
                 {
                     return _rbus1Info;
-                }
-            }
-
-            /// <summary>
-            /// The ExpandNode1AfterReopen item.
-            /// </summary>
-            [RepositoryItem("a0efb44c-accf-4fff-9653-ba572fa93af1")]
-            public virtual Ranorex.Button ExpandNode1AfterReopen
-            {
-                get
-                {
-                    return _expandnode1afterreopenInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The ExpandNode1AfterReopen item info.
-            /// </summary>
-            [RepositoryItemInfo("a0efb44c-accf-4fff-9653-ba572fa93af1")]
-            public virtual RepoItemInfo ExpandNode1AfterReopenInfo
-            {
-                get
-                {
-                    return _expandnode1afterreopenInfo;
                 }
             }
 
@@ -13913,10 +13913,10 @@ namespace TestProject
             RepoItemInfo _somelistInfo;
             RepoItemInfo _btn_closeInfo;
             RepoItemInfo _buttonokInfo;
+            RepoItemInfo _plx80060of125Info;
             RepoItemInfo _btn_launchokInfo;
             RepoItemInfo _chkbox_licenseagreementInfo;
             RepoItemInfo _btn_installcloseInfo;
-            RepoItemInfo _plx80060of125Info;
 
             /// <summary>
             /// Creates a new FormMe2  folder.
@@ -13944,10 +13944,10 @@ namespace TestProject
                 _somelistInfo = new RepoItemInfo(this, "SomeList", "?/?/list", 30000, null, "62427c7b-882e-4013-adc1-10b1a78cdb7e");
                 _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "container[@automationid='Root_Grid']//button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_CloseButton']", 30000, null, "c513d0ed-62ca-4535-8465-97cd5b14bc98");
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "list[1]/?/?/button[@text='OK']", 30000, null, "3a52b075-40ce-4c40-beb3-38420ff259de");
+                _plx80060of125Info = new RepoItemInfo(this, "PLX80060Of125", "progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-6 (0 of 125)']", 30000, null, "cc836e38-fa97-4f72-867a-4c9dcc78e272");
                 _btn_launchokInfo = new RepoItemInfo(this, "btn_LaunchOK", "button[@name='OK']", 30000, null, "d815faa0-bcfe-4954-b296-fbbc084055f7");
                 _chkbox_licenseagreementInfo = new RepoItemInfo(this, "chkBox_LicenseAgreement", "checkbox[@automationid='CheckBox_1']", 30000, null, "33de9895-c1c2-46e8-9356-805449f11a53");
                 _btn_installcloseInfo = new RepoItemInfo(this, "btn_InstallClose", "?/?/button[@automationid='Button_1']/text[@text='Close']", 30000, null, "ae6fff5f-18ca-42de-b5c4-43828287d1e9");
-                _plx80060of125Info = new RepoItemInfo(this, "PLX80060Of125", "progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/?/?/text[@caption='PLX800-6 (0 of 125)']", 30000, null, "cc836e38-fa97-4f72-867a-4c9dcc78e272");
             }
 
             /// <summary>
@@ -14431,6 +14431,30 @@ namespace TestProject
             }
 
             /// <summary>
+            /// The PLX80060Of125 item.
+            /// </summary>
+            [RepositoryItem("cc836e38-fa97-4f72-867a-4c9dcc78e272")]
+            public virtual Ranorex.Text PLX80060Of125
+            {
+                get
+                {
+                    return _plx80060of125Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PLX80060Of125 item info.
+            /// </summary>
+            [RepositoryItemInfo("cc836e38-fa97-4f72-867a-4c9dcc78e272")]
+            public virtual RepoItemInfo PLX80060Of125Info
+            {
+                get
+                {
+                    return _plx80060of125Info;
+                }
+            }
+
+            /// <summary>
             /// The btn_LaunchOK item.
             /// </summary>
             [RepositoryItem("d815faa0-bcfe-4954-b296-fbbc084055f7")]
@@ -14499,30 +14523,6 @@ namespace TestProject
                 get
                 {
                     return _btn_installcloseInfo;
-                }
-            }
-
-            /// <summary>
-            /// The PLX80060Of125 item.
-            /// </summary>
-            [RepositoryItem("cc836e38-fa97-4f72-867a-4c9dcc78e272")]
-            public virtual Ranorex.Text PLX80060Of125
-            {
-                get
-                {
-                    return _plx80060of125Info.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The PLX80060Of125 item info.
-            /// </summary>
-            [RepositoryItemInfo("cc836e38-fa97-4f72-867a-4c9dcc78e272")]
-            public virtual RepoItemInfo PLX80060Of125Info
-            {
-                get
-                {
-                    return _plx80060of125Info;
                 }
             }
 

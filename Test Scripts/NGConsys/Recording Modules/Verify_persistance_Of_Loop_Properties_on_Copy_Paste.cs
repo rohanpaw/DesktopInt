@@ -187,7 +187,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("6");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("1000");
+            Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("500");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PLXExternalLoopCard_Expander' at Center.", repo.FormMe.PLXExternalLoopCard_ExpanderInfo, new RecordItemIndex(30));
