@@ -2911,7 +2911,7 @@ namespace TestProject.Libraries
 		
 
 		/********************************************************************
-		 * Function Name:
+		 * Function Name:VerifyCableCapacitanceOnReopen
 		 * Function Details: To verify IS calculation of IS devices
 		 * Parameter/Arguments:  fileName, sheetName
 		 * Output:

@@ -242,14 +242,14 @@ namespace TestProject.Libraries
 		
 		
 
-		/********************************************************************
+		/**************************************************************************************************************************************
 		 * Function Name: verifyPanelLEDEffectOnDC
 		 * Function Details: Verification of DC Units of on changing Panel LED
 		 * Parameter/Arguments: Excel sheet name to use and its sheet name
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : 29/11/2018 by Alpesh Dhakad
-		 ********************************************************************/
+		 * Last Update :Alpesh Dhakad 29/11/2018   Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
+		 **************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyPanelLEDEffectOnDC(string sFileName,string sPanelLED)
 		{
@@ -496,15 +496,15 @@ namespace TestProject.Libraries
 			}
 		}
 		
-		/********************************************************************
+		/***************************************************************************************************************************************************
 		 * Function Name: verifyTripCurrentForDCCalculation
 		 * Function Details: To verify trip current DC calculation value by adding devices
 		 					and also verify other loop DC value 
 		 * Parameter/Arguments: fileName, sheetName for Add devices in loop A and add other devices
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 30/11/2018  Updated on 22/01/2018 - Alpesh Dhakad
-		 ********************************************************************/
+		 * Last Update : 30/11/2018  Updated on 22/01/2018 - Alpesh Dhakad Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
+		 ***************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyTripCurrentForDCCalculation(string sFileName, string sAddDevicesLoopA, string sAddOtherDevices)
 		{
@@ -528,7 +528,8 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			//Click on Loop A
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			int rowNumber=8;
 			ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[rowNumber,1]).Value.ToString();
@@ -570,7 +571,8 @@ namespace TestProject.Libraries
 					Report.Log(ReportLevel.Info, "Base " + sBase + " assigned to "+ "ModelNumber");
 				}
 				
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 			}
 			//Select Physical Layout tab
@@ -585,7 +587,9 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			//Click on Loop A
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			
 			//Close excel
 			Excel_Utilities.CloseExcel();
 			
@@ -608,7 +612,8 @@ namespace TestProject.Libraries
 				// Add devices from the gallery as per test data from the excel sheet
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added to Panel");
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 			}
 			//Select Physical Layout tab
@@ -752,7 +757,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: fileName, sheetNameA, sheetNameB
 		 * Output:
 		 * Function Owner: Devendra Kulkarni
-		 * Last Update : 30/11/2018
+		 * Last Update : 30/11/2018   Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void verifyTripCurrentWithMultipleLoop(string fileName, string sheetNameA, string sheetNameB)
@@ -772,7 +777,8 @@ namespace TestProject.Libraries
 			//Select Points tab
 			repo.ProfileConsys1.tab_Points.Click();
 			
-			repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			repo.FormMe.Loop_B1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_B.Click();
 			
 			AddDevicesFromExcel(fileName, sheetNameB);
 			
@@ -833,14 +839,14 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 
-		/********************************************************************
+		/******************************************************************************************************
 		 * Function Name: VerifyDCCalculationOnAddingDevices()
 		 * Function Details: To verify DC calculation on adding devices on Loop A and Loop B
 		 * Parameter/Arguments: sFileName, sAddDevicesLoopA, sAddDevicesLoopB
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
+		 *******************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDCCalculationOnAddingDevices(string sFileName, string sAddDevicesLoopA, string sAddDevicesLoopB)
 		{
@@ -882,8 +888,8 @@ namespace TestProject.Libraries
 			rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			repo.FormMe.Loop_B1.Click();
-				
 			//repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			
 			for(int i=8; i<=rows; i++)
 			{
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
@@ -903,9 +909,9 @@ namespace TestProject.Libraries
 			verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
 			//Verify DC Units of Loop A
+			repo.FormMe.Loop_A1.Click();
 			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
-				repo.FormMe.Loop_A1.Click();
 			
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop A on addition of devices in Loop B");
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[2,2]).Value.ToString();
@@ -973,7 +979,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasim
-		 * Last Update : 08/01/2019
+		 * Last Update : 08/01/2019 Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCurrentDCUnitscalculation(string sFileName,string sAddPanelSheet)
@@ -1009,13 +1015,16 @@ namespace TestProject.Libraries
 				int.TryParse(sPanelLEDCount,out PanelLED);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
@@ -1026,11 +1035,13 @@ namespace TestProject.Libraries
 				//Verify Default DC Units
 				verifyDCUnitsValue(expectedDCUnits);
 				
-				repo.ProfileConsys1.SiteNode.Click();
+				repo.FormMe.SiteNode1.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
 				
 			}
 			//Go to Loop A
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			//go to points grid
 			repo.ProfileConsys1.tab_Points.Click();
@@ -1041,7 +1052,8 @@ namespace TestProject.Libraries
 			repo.FormMe.btn_Copy.Click();
 			
 			//Go to Loop C
-			repo.ProfileConsys1.NavigationTree.Loop_C.Click();
+			repo.FormMe.Loop_C1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_C.Click();
 			
 			//Paste the devices
 			repo.FormMe.Paste.Click();
@@ -1049,10 +1061,12 @@ namespace TestProject.Libraries
 			//Verify DC Units
 			verifyDCUnitsValue(expectedDCUnits);
 			
-			repo.ProfileConsys1.SiteNode.Click();
+			repo.FormMe.SiteNode1.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
 			
 			//Go to Loop C
-			repo.ProfileConsys1.NavigationTree.Loop_C.Click();
+			repo.FormMe.Loop_C1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_C.Click();
 			
 			//go to points grid
 			repo.ProfileConsys1.tab_Points.Click();
@@ -1065,18 +1079,22 @@ namespace TestProject.Libraries
 			//Verify Default DC Units
 			verifyDCUnitsValue(DefaultDCUnits);
 			
-			repo.ProfileConsys1.SiteNode.Click();
+			repo.FormMe.SiteNode1.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
 			
 			// Click on Expander node
-			repo.ProfileConsys1.NavigationTree.Expander.Click();
+			repo.FormMe.PanelNode1.Click();
+			//repo.ProfileConsys1.NavigationTree.Expander.Click();
 			
 			Panel_Functions.changePanelLED(PanelLED);
 			
 			// Click on Loop Card node
-			repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+			repo.FormMe.LoopExpander1.Click();
+			//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 			
 			// Click on Loop A node
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			//Verify Default DC Units
 			verifyDCUnitsValue(ChangedDCUnit);

@@ -117,12 +117,12 @@ namespace TestProject.Recording_Modules
             Libraries.Gallery_Functions.SelectItemFromUnitsGallery(ValueConverter.ArgumentFromString<int>("iNumberOfItems", "1"), "MX2 Repeater", "Repeaters");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(9));
-            repo.ProfileConsys1.SiteNode.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(9));
+            repo.FormMe.SiteNode1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.PanelNode' at Center.", repo.ProfileConsys1.PanelNodeInfo, new RecordItemIndex(10));
-            repo.ProfileConsys1.PanelNode.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(10));
+            repo.FormMe.PanelNode1.Click();
             Delay.Milliseconds(200);
             
             Libraries.InventoryGrid_Functions.VerifyRowExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "10"), "MX2 Repeater", "557.200.206");

@@ -233,14 +233,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/****************************************************************************************************
 		 * Function Name: AddDevicesfromGallery
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 26/07/2019 - Updated script as per new build xpaths
+		 ****************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddDevicesfromGallery(string sDeviceName,string sType)
 		{
@@ -279,20 +279,21 @@ namespace TestProject.Libraries
 			repo.ContextMenu.txt_galleryItem.Click();
 		}
 		
-		/********************************************************************
+		/***********************************************************************************************
 		 * Function Name: verifyDevicesfromGalleryNotHavingImages
 		 * Function Details: verify Given device exist in gallery
 		 * Parameter/Arguments: Device name(Model Number), type of gallery, Visibility
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Created on :11/3/2019
-		 ********************************************************************/
+		 * Created on :11/3/2019 Alpesh Dhakad - 30/07/2019 Updated script as per new build and xpath
+		 ***********************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyDevicesfromGalleryNotHavingImages(string sDeviceName,string sType,bool Visibility)
 		{
 			sGalleryIndex = SelectGalleryType(sType);
 			ModelNumber=sDeviceName;
-			repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+			repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+			//repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
 			if(Visibility)
 			{
 				if(repo.ContextMenu.txt_galleryItemInfo.Exists())
@@ -598,7 +599,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
+		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void ChangeCableLength(String sLoopType,int fCableLength1,int fCableLength2)
@@ -2071,14 +2072,14 @@ namespace TestProject.Libraries
 		//	}
 		
 		
-		/********************************************************************
+		/*****************************************************************************************
 		 * Function Name: ChangeCableLength
 		 * Function Details: To change cable length
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpath
+		 *****************************************************************************************/
 		// Change cable length method
 		[UserCodeMethod]
 		public static void ChangeCableLength(int fchangeCableLength)
@@ -2087,10 +2088,12 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			//Click on Panel Node
-			repo.ProfileConsys1.PanelNode.Click();
+			repo.FormMe.PanelNode1.Click();
+			//repo.ProfileConsys1.PanelNode.Click();
 			
 			//Click on Loop A in Navigation tree tab
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			//Click on cable length cell
 			repo.ProfileConsys1.cell_CableLength.Click();
@@ -2099,18 +2102,19 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableLength + "{Enter}");
 			
 			//Click on Panel Node
-			repo.ProfileConsys1.PanelNode.Click();
+			repo.FormMe.PanelNode1.Click();
+			//repo.ProfileConsys1.PanelNode.Click();
 			Delay.Duration(1000, false);
 		}
 		
-		/********************************************************************
+		/***************************************************************************************************
 		 * Function Name: ChangeCableResistance
 		 * Function Details: To change cable resistance
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated script as per new build and xpath
+		 ***************************************************************************************************/
 		// Change cable resistance method
 		[UserCodeMethod]
 		public static void ChangeCableResistance(string fchangeCableResistance)
@@ -2119,10 +2123,12 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			//Click on Panel Node
-			repo.ProfileConsys1.PanelNode.Click();
+			repo.FormMe.PanelNode1.Click();
+			//repo.ProfileConsys1.PanelNode.Click();
 			
 			//Click on Loop A in Navigation tree tab
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			//Click on cable resistance cell
 			repo.ProfileConsys1.cell_CableResistance.Click();
@@ -2131,7 +2137,9 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableResistance + "{Enter}");
 			
 			//Click on Panel Node
-			repo.ProfileConsys1.PanelNode.Click();
+			repo.FormMe.PanelNode1.Click();
+			//repo.ProfileConsys1.PanelNode.Click();
+			
 			Delay.Duration(1000, false);
 		}
 		
@@ -4451,7 +4459,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 24/04/2019
+		 * Last Update : 24/04/2019 
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCableLengthInNodeGalleryItems(string sCableLength)
@@ -4628,7 +4636,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasim
-		 * Last Update : 08/01/2019
+		 * Last Update : 08/01/2019  Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCurrentDCUnitscalculation(string sFileName,string sAddPanelSheet)
@@ -4664,13 +4672,16 @@ namespace TestProject.Libraries
 				int.TryParse(sPanelLEDCount,out PanelLED);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
@@ -4681,11 +4692,13 @@ namespace TestProject.Libraries
 				//Verify Default DC Units
 				verifyDCUnitsValue(expectedDCUnits);
 				
-				repo.ProfileConsys1.SiteNode.Click();
+				repo.FormMe.SiteNode1.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
 				
 			}
 			//Go to Loop A
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			//go to points grid
 			repo.ProfileConsys1.tab_Points.Click();
@@ -4696,7 +4709,8 @@ namespace TestProject.Libraries
 			repo.FormMe.btn_Copy.Click();
 			
 			//Go to Loop C
-			repo.ProfileConsys1.NavigationTree.Loop_C.Click();
+			repo.FormMe.Loop_C1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_C.Click();
 			
 			//Paste the devices
 			repo.FormMe.Paste.Click();
@@ -4704,10 +4718,12 @@ namespace TestProject.Libraries
 			//Verify DC Units
 			verifyDCUnitsValue(expectedDCUnits);
 			
-			repo.ProfileConsys1.SiteNode.Click();
+			repo.FormMe.SiteNode1.Click();
+			//repo.ProfileConsys1.SiteNode.Click();
 			
 			//Go to Loop C
-			repo.ProfileConsys1.NavigationTree.Loop_C.Click();
+			repo.FormMe.Loop_C1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_C.Click();
 			
 			//go to points grid
 			repo.ProfileConsys1.tab_Points.Click();
@@ -4720,18 +4736,22 @@ namespace TestProject.Libraries
 			//Verify Default DC Units
 			verifyDCUnitsValue(DefaultDCUnits);
 			
-			repo.ProfileConsys1.SiteNode.Click();
+			repo.FormMe.SiteNode1.Click();
+			//repo.ProfileConsys1.SiteNode.Click();
 			
 			// Click on Expander node
-			repo.ProfileConsys1.NavigationTree.Expander.Click();
+			repo.FormMe.PanelNode1.Click();
+			//repo.ProfileConsys1.NavigationTree.Expander.Click();
 			
 			Panel_Functions.changePanelLED(PanelLED);
 			
 			// Click on Loop Card node
-			repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+			repo.FormMe.LoopExpander1.Click();
+			//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 			
 			// Click on Loop A node
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			//Verify Default DC Units
 			verifyDCUnitsValue(ChangedDCUnit);
@@ -5136,20 +5156,20 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 
 		}
-		/********************************************************************
+		/********************************************************************************************
 		 * Function Name: clickContextMenuOptionOnRightClick
 		 * Function Details: To verify if paste button is enabled
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam
-		 * Last Update : 20/5/2019
-		 ********************************************************************/
+		 * Last Update : 20/5/2019 Alpesh Dhakad - 29/07/2019 - Updated argument spelling
+		 *********************************************************************************************/
 		[UserCodeMethod]
-		public static void clickContextMenuOptionOnRightClick(string sContectMenuOption)
+		public static void clickContextMenuOptionOnRightClick(string sContextMenuOption)
 		{
-			sListIndex=sContectMenuOption;
+			sListIndex=sContextMenuOption;
 			repo.ContextMenu.ContextMenuOption.Click();
-			Report.Log(ReportLevel.Success, sContectMenuOption+" button is clicked");
+			Report.Log(ReportLevel.Success, sContextMenuOption+" button is clicked");
 		}
 		
 		/**************************************************************************************************************

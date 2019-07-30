@@ -99,19 +99,20 @@ namespace TestProject.Libraries
 		/// </summary>
 		/// 
 		
-		/********************************************************************
+		/**********************************************************************************************
 		 * Function Name: SelectPanelNode
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
+		 **********************************************************************************************/
 		[UserCodeMethod]
 		public static void SelectPanelNode(Int32 iNodeNumber)
 		{
 			sNode=iNodeNumber.ToString();
-			repo.ProfileConsys1.PanelNode.Click();
+			repo.FormMe.PanelNode1.Click();
+			//repo.ProfileConsys1.PanelNode.Click();
 		}
 		
 		/********************************************************************
@@ -172,20 +173,21 @@ namespace TestProject.Libraries
 			}
 		}
 		
-		/********************************************************************
+		/********************************************************************************************
 		 * Function Name: VerifyCPUType
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpaths
+		 ********************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCPUType(string sExpectedCPU,int PanelNode, bool AfterImport)
 		{
 			string sActualText;
 			Panel_Functions.SelectPanelNode(PanelNode);
-			repo.ProfileConsys1.PanelNode.Click();
+			repo.FormMe.PanelNode1.Click();
+			//repo.ProfileConsys1.PanelNode.Click();
 			if(AfterImport)
 			{
 				repo.ProfileConsys1.Cell_CPU_afterimport.DoubleClick();

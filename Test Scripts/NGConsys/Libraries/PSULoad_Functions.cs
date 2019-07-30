@@ -357,7 +357,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:   Filename and Add devices sheet as excel input and row number is 13 by default for FIM
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 07/01/2019
+		 * Last Update : 07/01/2019 Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMax24VPSULoadOnAdditionOfPanels(string sFileName,string sAddDevicesSheet)
@@ -389,13 +389,16 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Expander loop card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify max 24V PSU load value
 				verifyMax24VPSULoad(expectedMax24VPSU,PanelType,rowNumber);
@@ -416,7 +419,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: file name and add panel sheet name  and row number is 13 by default for FIM
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 08/01/2019
+		 * Last Update : 08/01/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VLoadOnChangingCPU(string sFileName,string sAddPanelSheet)
@@ -452,19 +455,23 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Change CPU Type as per test data in sheet
 				Panel_Functions.ChangeCPUType(changeCPUType);
 				
-				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				/// Click on Expander node
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify max 24V PSU load value
 				verifyMax24VPSULoad(expectedMax24VPSU,PanelType,rowNumber);
@@ -473,25 +480,30 @@ namespace TestProject.Libraries
 				verify24VPSULoadValue(expected24VPSU,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Search Properties text field
 				repo.ProfileConsys1.txt_SearchProperties.Click();
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Change CPU Type as per test data in sheet
 				Panel_Functions.ChangeCPUType(change2CPUType);
 				
-				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				/// Click on Expander node
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
-				// Click on Expand loop card
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
@@ -512,7 +524,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: file name and add panel sheet name  and row number is 13 by default for FIM and 14 for PFI
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 16/01/2019
+		 * Last Update : 16/01/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopCards(string sFileName,string sAddPanelandDevicesSheet)
@@ -549,35 +561,42 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected24VPSU,PanelType);
 				
 				// Click on Panel Node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Add Devices from gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
 				
 				// Click on Panel Node
 				// repo.ProfileConsys1.PanelNode.Click();
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+			//	repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 				
@@ -585,10 +604,12 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
@@ -609,7 +630,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: file name and add panel sheet name  and row number is 13 by default for FIM and 14 for PFI
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 18/01/2019
+		 * Last Update : 18/01/2019   Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfSlotCards(string sFileName,string sAddPanelandDevicesSheet)
@@ -651,19 +672,23 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected24VPSU,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Split Device name and then add devices as per the device name and number of devices from Panel node gallery
 				string[] splitDeviceName  = ModelNumber.Split(',');
@@ -675,17 +700,20 @@ namespace TestProject.Libraries
 					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 				}
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Panel Accessories in Panel node
 				repo.FormMe.tab_PanelAccessories.Click();
@@ -703,17 +731,20 @@ namespace TestProject.Libraries
 					Devices_Functions.AddDevicefromPanelAccessoriesGallery(ModelNumber,sType);
 				}
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Split Device name and then delete devices using label name
 				string[] splitLabelName  = sLabelName.Split(',');
@@ -725,11 +756,13 @@ namespace TestProject.Libraries
 					Devices_Functions.DeleteDeviceUsingLabel(sLabelName);
 				}
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected4th24VPSU,PanelType);
@@ -750,7 +783,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: file name and add panel sheet name  and row number is 13 by default for FIM and 14 for PFI
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 21/01/2019
+		 * Last Update : 21/01/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfAccessories(string sFileName,string sAddPanelandDevicesSheet)
@@ -787,43 +820,53 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected24VPSU,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Add devices from Panel node gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+			
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 
 				// Delete devices using its Label name
 				Devices_Functions.DeleteDeviceUsingLabel(sLabelName);
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
@@ -843,7 +886,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: file name and add panel sheet name  and row number is 13 by default for FIM and 14 for PFI
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 22/01/2019
+		 * Last Update : 22/01/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInZetfastLoop(string sFileName,string sAddPanelandDevicesSheet)
@@ -884,28 +927,34 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected24VPSU,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Add devices from Panel node gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
@@ -928,7 +977,8 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
@@ -947,7 +997,8 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected4th24VPSU,PanelType);
@@ -968,7 +1019,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: file name and add panel sheet name  and row number is 13 by default for FIM and 14 for PFI
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 22/01/2019
+		 * Last Update : 22/01/2019   Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInXLMLoop(string sFileName,string sAddPanelandDevicesSheet)
@@ -1009,28 +1060,34 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected24VPSU,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Add devices from Panel node gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
@@ -1053,7 +1110,8 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
@@ -1072,7 +1130,8 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected4th24VPSU,PanelType);
@@ -1093,7 +1152,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: file name and add panel sheet name  and row number is 13 by default for FIM and 14 for PFI
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 23/01/2019
+		 * Last Update : 23/01/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInPLXLoop(string sFileName,string sAddPanelandDevicesSheet)
@@ -1134,28 +1193,34 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected24VPSU,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Add devices from Panel node gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 				
-				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				// Click on Expander loop card node
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
@@ -1181,7 +1246,8 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
@@ -1200,7 +1266,8 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify 24V PSU load value
 				verify24VPSULoadValue(expected4th24VPSU,PanelType);
@@ -2724,7 +2791,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:Purvi Bhasin
-		 * Last Update :4/2/2019
+		 * Last Update :4/2/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMaxBatteryStandbyAndAlarmLoad(string sFileName,string sAddPanelSheet)
@@ -2757,13 +2824,16 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify max Battery Standby load value
 				verifyMaxBatteryStandby(expectedMaxBatteryStandby,false);
@@ -2772,7 +2842,8 @@ namespace TestProject.Libraries
 				verifyMaxAlarmLoad(expectedMaxAlarmLoad,false);
 				
 				//Click on Site node
-				repo.ProfileConsys1.SiteNode.Click();
+				repo.FormMe.SiteNode1.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
 				
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -3076,7 +3147,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:Purvi Bhasin
-		 * Last Update :4/2/2019
+		 * Last Update :4/2/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnChangingCPUAndPSU(string sFileName,string sAddPanelSheet)
@@ -3113,14 +3184,18 @@ namespace TestProject.Libraries
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 
+				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify Default Battery Standby load value
 				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
@@ -3133,8 +3208,10 @@ namespace TestProject.Libraries
 				// Click on Loop Card node
 				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
-				repo.ProfileConsys1.SiteNode.Click();
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.SiteNode1.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				
 				// Change CPU Type as per test data in sheet
@@ -3149,14 +3226,18 @@ namespace TestProject.Libraries
 					Panel_Functions.ChangePSUType(changePSUType);
 				}
 				
+				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify Battery Standby on changing CPU load value
 				verifyBatteryStandbyOnChangingCPU(expectedBatteryStandby);
@@ -3165,7 +3246,8 @@ namespace TestProject.Libraries
 				verifyAlarmLoadOnChangingCPU(expectedAlarmLoad);
 
 				//Click on Site node
-				repo.ProfileConsys1.SiteNode.Click();
+				repo.FormMe.SiteNode1.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
 				
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -3182,7 +3264,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasim
-		 * Last Update : 08/01/2019
+		 * Last Update : 08/01/2019 Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnEthernetAddDelete(string sFileName,string sAddPanelSheet)
@@ -3215,14 +3297,18 @@ namespace TestProject.Libraries
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
+				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify Default Battery Standby load value
 				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
@@ -3231,18 +3317,28 @@ namespace TestProject.Libraries
 				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
 				
 				// Click on Sitenode
-				repo.ProfileConsys1.SiteNode.Click();
+				repo.FormMe.SiteNode1.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
-				repo.FormMe.MainProcessor.Click();
-				repo.FormMe.MainProcessorList.Ethernet.Click();
+				repo.FormMe.PanelNode1.Click();
+				repo.FormMe.MainProcessor1.Click();
+
+				repo.FormMe.Ethernet1.Click();
+				
+				
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
+				//repo.FormMe.MainProcessor.Click();
+				//repo.FormMe.MainProcessorList.Ethernet.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				for(int j=8; j<=9; j++)
 				{
@@ -3259,7 +3355,8 @@ namespace TestProject.Libraries
 					Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
 					
 					// Click on Loop A node
-					repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+					repo.FormMe.Loop_A1.Click();
+					//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 					
 					//Get Battery Standby from UI
 					sDefaultBatteryStandyby = GetBatteryStandbyValue(PanelType);
@@ -3291,7 +3388,8 @@ namespace TestProject.Libraries
 					expectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
 					
 					//Select Ethernet node
-					repo.FormMe.MainProcessorList.Ethernet.Click();
+					repo.FormMe.Ethernet1.Click();
+					//repo.FormMe.MainProcessorList.Ethernet.Click();
 					
 					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 					
@@ -3302,7 +3400,8 @@ namespace TestProject.Libraries
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
-						repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+						repo.FormMe.Loop_A1.Click();
+						//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 						
 						// Verify Battery Standby and alarm load PSU load value on addition of Ethernet
 						verifyBatteryStandby(expectedBatteryStandyby,false,PanelType);
@@ -3335,7 +3434,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:   expected Maximum value, panel type (FIM or PFI)  and row number is 16 and 17 by default
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 22/01/2019
+		 * Last Update : 22/01/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnRbusAddDelete(string sFileName,string sAddPanelSheet)
@@ -3369,13 +3468,16 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify Default Battery Standby load value
 				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
@@ -3384,15 +3486,21 @@ namespace TestProject.Libraries
 				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on R-Bus node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
-				repo.FormMe.MainProcessor.Click();
-				repo.FormMe.MainProcessorList.RBus.Click();
+				repo.FormMe.PanelNode1.Click();
+				repo.FormMe.MainProcessor1.Click();
+				repo.FormMe.RBus1.Click();
+				
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
+				//repo.FormMe.MainProcessor.Click();
+				//repo.FormMe.MainProcessorList.RBus.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				for(int j=8; j<9; j++)
 				{
@@ -3404,7 +3512,8 @@ namespace TestProject.Libraries
 					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,13]).Value.ToString();
 					
 					//Add RBus connection
-					repo.FormMe.MainProcessorList.RBus.Click();
+					repo.FormMe.RBus1.Click();
+					//repo.FormMe.MainProcessorList.RBus.Click();
 					float.TryParse(sBatteryStandby, out RBusBatteryStandby);
 					float.TryParse(sAlarmLoad, out RBusAlarmLoad);
 					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
@@ -3426,7 +3535,8 @@ namespace TestProject.Libraries
 					Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
 					
 					// Click on Loop A node
-					repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+					repo.FormMe.Loop_A1.Click();
+					//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 					
 					//Get Battery Standby from UI
 					sDefaultBatteryStandby = GetBatteryStandbyValue(PanelType);
@@ -3467,7 +3577,8 @@ namespace TestProject.Libraries
 					sExpectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
 					
 					//Select R-Bus node
-					repo.FormMe.MainProcessorList.RBus.Click();
+					repo.FormMe.RBus1.Click();
+					//repo.FormMe.MainProcessorList.RBus.Click();
 					
 					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 					
@@ -3478,7 +3589,8 @@ namespace TestProject.Libraries
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
-						repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+						repo.FormMe.Loop_A1.Click();
+						//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 						
 						// Verify Battery Standby and Alarm load value on addition of Ethernet
 						verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
@@ -3576,7 +3688,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:   expected Maximum value, panel type (FIM or PFI)  and row number is 13 by default for FIM
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 22/01/2019
+		 * Last Update : 22/01/2019   Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnAdditionAndDeletionOfAccessories(string sFileName,string sAddPanelSheet)
@@ -3610,13 +3722,16 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify Default Battery Standby load value
 				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
@@ -3625,7 +3740,8 @@ namespace TestProject.Libraries
 				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
 				
 				
 				for(int j=8; j<9; j++)
@@ -3647,7 +3763,8 @@ namespace TestProject.Libraries
 					
 					
 					// Click on Loop A node
-					repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+					repo.FormMe.Loop_A1.Click();
+					//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 					
 					//Get Battery Standby from UI
 					sDefaultBatteryStandby = GetBatteryStandbyValue(PanelType);
@@ -3688,7 +3805,8 @@ namespace TestProject.Libraries
 					sExpectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
 					
 					// Click on Panel node
-					repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
+					repo.FormMe.PanelNode1.Click();
+					//repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
 					
 					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 					
@@ -3699,7 +3817,8 @@ namespace TestProject.Libraries
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
-						repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+						repo.FormMe.Loop_A1.Click();
+						//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 						
 						// Verify Battery Standby and Alarm load value on addition of Ethernet
 						verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
@@ -3732,7 +3851,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:   expected Maximum value, panel type (FIM or PFI)  and row number is 13 by default for FIM
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 23/01/2019
+		 * Last Update : 23/01/2019 Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnZetfastLoopAddDelete(string sFileName,string sAddPanelSheet)
@@ -3766,7 +3885,8 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Panel node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				
 				
@@ -3799,7 +3919,8 @@ namespace TestProject.Libraries
 						
 					}
 					
-					repo.ProfileConsys1.NavigationTree.Expander.Click();
+					repo.FormMe.NodeExpander1.Click();
+					//repo.ProfileConsys1.NavigationTree.Expander.Click();
 					
 					// Click on XLM Loop Card Expander
 					repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
@@ -3865,7 +3986,8 @@ namespace TestProject.Libraries
 					if(k==8)
 					{
 						// Click on Panel node
-						repo.ProfileConsys1.NavigationTree.Expander.Click();
+						repo.FormMe.NodeExpander1.Click();
+						//repo.ProfileConsys1.NavigationTree.Expander.Click();
 						
 						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 						
@@ -3876,7 +3998,8 @@ namespace TestProject.Libraries
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
 							// Click on Loop A node
-							repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+							repo.FormMe.Loop_A1.Click();
+							//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 							
 							// Verify Battery Standby load value on deletion of Zetfast loop
 							verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
@@ -3904,7 +4027,8 @@ namespace TestProject.Libraries
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
 							// Click on Loop A node
-							repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+							repo.FormMe.Loop_A1.Click();
+							//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 							
 							// Verify Battery Standby load value on deletion of Zetfast loop
 							verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
@@ -3943,7 +4067,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:   expected value, panel type (FIM or PFI)  and row number is 14 by default for PFI
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 22/01/2019
+		 * Last Update : 22/01/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnSlotCardAddDelete(string sFileName,string sAddPanelSheet)
@@ -3977,13 +4101,16 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify Default Battery Standby load value
 				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
@@ -3992,7 +4119,8 @@ namespace TestProject.Libraries
 				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
 				
 				
 				for(int j=8; j<9; j++)
@@ -4005,7 +4133,8 @@ namespace TestProject.Libraries
 					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,13]).Value.ToString();
 					
 					//Add Slot Card
-					repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
+					repo.FormMe.PanelNode1.Click();
+					//repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
 					float.TryParse(sBatteryStandby, out SCBatteryStandby);
 					float.TryParse(sAlarmLoad, out SCAlarmLoad);
 					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
@@ -4014,7 +4143,8 @@ namespace TestProject.Libraries
 					
 					
 					// Click on Loop A node
-					repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+					repo.FormMe.Loop_A1.Click();
+					//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 					
 					//Get Battery Standby from UI
 					sDefaultBatteryStandby = GetBatteryStandbyValue(PanelType);
@@ -4055,7 +4185,8 @@ namespace TestProject.Libraries
 					sExpectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
 					
 					// Click on Panel node
-					repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
+					repo.FormMe.PanelNode1.Click();
+					//repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
 					
 					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 					
@@ -4066,7 +4197,8 @@ namespace TestProject.Libraries
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
-						repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+						repo.FormMe.Loop_A1.Click();
+						//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 						
 						// Verify Battery Standby and Alarm load value on addition of Ethernet
 						verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
@@ -4102,7 +4234,8 @@ namespace TestProject.Libraries
 					
 					
 					// Click on Loop A node
-					repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+					repo.FormMe.Loop_A1.Click();
+					//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 					
 					//Get Battery Standby from UI
 					sDefaultBatteryStandby = GetBatteryStandbyValue(PanelType);
@@ -4143,7 +4276,8 @@ namespace TestProject.Libraries
 					sExpectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
 					
 					// Click on Panel node
-					repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
+					repo.FormMe.PanelNode1.Click();
+					//repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
 					
 					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 					
@@ -4154,7 +4288,8 @@ namespace TestProject.Libraries
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
-						repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+						repo.FormMe.Loop_A1.Click();
+						//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 						
 						// Verify Battery Standby and Alarm load value on addition of Ethernet
 						verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
@@ -4698,7 +4833,7 @@ namespace TestProject.Libraries
 		
 		
 		/*****************************************************************************************************************
-		 * Function Name:
+		 * Function Name:verifyPowerCalculationsForExtraISUnits
 		 * Function Details: To verify Power Calculations For Extra IS Units
 		 * Parameter/Arguments: filename and sheetname
 		 * Output:
@@ -5004,7 +5139,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: filename and sheetname
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update :
+		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyPowerCalculationsText(string sExpectedPowerCalculationText)
@@ -5058,7 +5193,8 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			// Click on Loop A  under navigation tree
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 		}
 		
 		
@@ -5204,7 +5340,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:Purvi Bhasin
-		 * Last Update :4/2/2019
+		 * Last Update :4/2/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyNormalLoadandAlarmLoadPropertyOnAdditionDeletionOfDevicesInPLXOrXLMLoop(string sFileName,string sAddPanelSheet, string sAddDeviceSheet)
@@ -5242,13 +5378,16 @@ namespace TestProject.Libraries
 				
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				Excel_Utilities.CloseExcel();
 				
@@ -5278,19 +5417,23 @@ namespace TestProject.Libraries
 				verifyAlarmLoadAccToRow(AlarmLoad,RowNumberForAlarm,PanelType);
 				
 				//Click on Site Node
-				repo.ProfileConsys1.SiteNode.Click();
+				repo.FormMe.SiteNode1.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
 				
 				// Click on Expander node
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				//Change Panel LED
 				Panel_Functions.changePanelLED(PanelLED);
 				
 				// Click on Loop Card node
-				repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+				repo.FormMe.LoopExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
+				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				// Verify Default Battery Standby load value
 				verifyBatteryStandbyAccToRow(LEDBatterStandby,RowNumber,PanelType);
@@ -5299,7 +5442,8 @@ namespace TestProject.Libraries
 				verifyAlarmLoadAccToRow(LEDAlarmLoad,RowNumberForAlarm,PanelType);
 				
 				//Site Node
-				repo.ProfileConsys1.SiteNode.Click();
+				repo.FormMe.SiteNode1.Click();
+				//repo.ProfileConsys1.SiteNode.Click();
 				
 				// Delete added Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);

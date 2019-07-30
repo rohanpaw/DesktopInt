@@ -108,7 +108,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: sFileName, Add device, Delete Device 
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
+		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyACCalculation(string sFileName,string sAddDevicesSheet, string sDeleteDevicesSheet)
@@ -145,7 +145,8 @@ namespace TestProject.Libraries
 			
 			//Verify AC units displayed for loop B
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B");
-			repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			repo.FormMe.Loop_B1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_B.Click();
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			
 			//verify Max AC units and AC Units
@@ -179,7 +180,8 @@ namespace TestProject.Libraries
 			
 			//Verify AC units displayed for loop A
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop A");
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
 			verifyACUnits();
@@ -214,14 +216,16 @@ namespace TestProject.Libraries
 			
 			//Verify AC units displayed for loop A
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop A");
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
 			verifyACUnits();
 			
 			//Verify AC units displayed for loop B
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B");
-			repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			repo.FormMe.Loop_B1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_B.Click();
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
 			verifyACUnits();
@@ -299,14 +303,14 @@ namespace TestProject.Libraries
 			}
 		}
 		
-		/********************************************************************
+		/**************************************************************************************************
 		 * Function Name: VerifyACCalculationforFIM
 		 * Function Details: verify AC Calculation for FIM loop 
 		 * Parameter/Arguments: sFileName, Add device, Delete Device
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpaths
+		 **************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyACCalculationforFIM(string sFileName,string sAddDevicesSheet, string sDeleteDevicesSheet)
 		{
@@ -342,7 +346,8 @@ namespace TestProject.Libraries
 			
 			//Verify AC units displayed for loop B : AC units of Loop A should not be reflected in Loop B
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B");
-			repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			repo.FormMe.Loop_B1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_B.Click();
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			
 			//verify Max AC units and AC Units
@@ -379,7 +384,8 @@ namespace TestProject.Libraries
 			
 			//Verify AC units displayed for loop A
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop A");
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
 			sACUnits = calculatedAcUnitsofLoopA.ToString();
@@ -417,14 +423,16 @@ namespace TestProject.Libraries
 			
 			//Verify AC units displayed for loop A
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop A");
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
 			verifyACUnits();
 			
 			//Verify AC units displayed for loop B
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B");
-			repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			repo.FormMe.Loop_B1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_B.Click();
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
 			sACUnits = calculatedAcUnitsofLoopB.ToString();

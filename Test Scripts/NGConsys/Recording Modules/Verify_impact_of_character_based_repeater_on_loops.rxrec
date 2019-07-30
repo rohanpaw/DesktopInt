@@ -435,7 +435,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="da437ad1-ccd2-4607-bd2d-4e9e6f0fd1cc"
+		searchpropertyid="b583d99d-ce9d-41d0-a82e-a0bb05fdaa24"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -444,10 +444,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="bc08d139-50e4-40ed-8f7d-d14b24fa877b"
-			sourcename="ItemRecorderEditor">
+			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/picture[6]/?/?/treeitem
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
 				</path>
 			</info>
 		</mouseitem>
@@ -459,7 +459,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="da437ad1-ccd2-4607-bd2d-4e9e6f0fd1cc"
+		searchpropertyid="a2126007-1e9a-4910-971c-70d3592f9a40"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -468,10 +468,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="4d618850-a421-4ab3-b788-2d513a1972b5"
-			sourcename="ItemRecorderEditor">
+			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/picture?[6]/?/?/treeitem[2]
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
 				</path>
 			</info>
 		</mouseitem>
@@ -618,7 +618,7 @@ rxversion="8.3">
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
 	name="NGConsysRepository"
 	relativepath="..\NGConsysRepository.rxrep"
-	rxversion="8.1">
+	rxversion="8.3">
 		<codegen
 		classname="NGConsysRepository"
 		namespace="TestProject">

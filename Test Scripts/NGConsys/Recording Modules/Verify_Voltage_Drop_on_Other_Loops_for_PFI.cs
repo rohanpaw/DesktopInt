@@ -82,23 +82,23 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(1));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(1));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expand_LoopCard' at Center.", repo.ProfileConsys1.NavigationTree.Expand_LoopCardInfo, new RecordItemIndex(2));
-            repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(2));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_A' at Center.", repo.ProfileConsys1.NavigationTree.Loop_AInfo, new RecordItemIndex(3));
-            repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(3));
+            repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
             Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop A");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_B' at Center.", repo.ProfileConsys1.NavigationTree.Loop_BInfo, new RecordItemIndex(5));
-            repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_B1' at Center.", repo.FormMe.Loop_B1Info, new RecordItemIndex(5));
+            repo.FormMe.Loop_B1.Click();
             Delay.Milliseconds(200);
             
             verifyVoltDropValue("0.07");
@@ -107,15 +107,15 @@ namespace TestProject.Recording_Modules
             verifyVoltDropWorstCaseValue("0.15");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_B' at Center.", repo.ProfileConsys1.NavigationTree.Loop_BInfo, new RecordItemIndex(8));
-            repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_B1' at Center.", repo.FormMe.Loop_B1Info, new RecordItemIndex(8));
+            repo.FormMe.Loop_B1.Click();
             Delay.Milliseconds(200);
             
             Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop B");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_C' at Center.", repo.ProfileConsys1.NavigationTree.Loop_CInfo, new RecordItemIndex(10));
-            repo.ProfileConsys1.NavigationTree.Loop_C.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_C1' at Center.", repo.FormMe.Loop_C1Info, new RecordItemIndex(10));
+            repo.FormMe.Loop_C1.Click();
             Delay.Milliseconds(200);
             
             verifyVoltDropValue("0.00");
@@ -124,15 +124,15 @@ namespace TestProject.Recording_Modules
             verifyVoltDropWorstCaseValue("0.00");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_C' at Center.", repo.ProfileConsys1.NavigationTree.Loop_CInfo, new RecordItemIndex(13));
-            repo.ProfileConsys1.NavigationTree.Loop_C.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_C1' at Center.", repo.FormMe.Loop_C1Info, new RecordItemIndex(13));
+            repo.FormMe.Loop_C1.Click();
             Delay.Milliseconds(200);
             
             Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop C");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Loop_D' at Center.", repo.ProfileConsys1.NavigationTree.Loop_DInfo, new RecordItemIndex(15));
-            repo.ProfileConsys1.NavigationTree.Loop_D.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_D1' at Center.", repo.FormMe.Loop_D1Info, new RecordItemIndex(15));
+            repo.FormMe.Loop_D1.Click();
             Delay.Milliseconds(200);
             
             Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop D");

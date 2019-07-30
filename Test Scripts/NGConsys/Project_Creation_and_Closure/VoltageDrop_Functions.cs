@@ -102,14 +102,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/*******************************************************************************************
 		 * Function Name:
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 30/09/2019 - Updated script as per new build and xpath
+		 *******************************************************************************************/
 		// To verify voltage drop value on adding and removing devices
 		[UserCodeMethod]
 		public static void verifyVoltageDropOnAddingAndRemovingDevices(string sFileName,string sAddDevicesLoopA, string sDeleteDevicesLoopA)
@@ -171,7 +171,8 @@ namespace TestProject.Libraries
 			//Delete Devices from loop A
 			
 			// Click on Loop A
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
+			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();

@@ -33,23 +33,23 @@ rxversion="8.3">
 		action="Exists"
 		enabled="True"
 		optional="False"
-		searchpropertyid="624af8a5-fa7e-4236-99f6-03be392e0939">
+		searchpropertyid="ae30f36e-6781-438b-b68c-265fadc5663f">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="bc08d139-50e4-40ed-8f7d-d14b24fa877b"
-			sourcename="ItemRecorderEditor">
+			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/picture[6]/?/?/treeitem
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
 				</path>
 			</info>
 			<matchname>
-				Text
+				(Choose)
 			</matchname>
 			<matchvalue>
-				Site - Verify
+				yourValue
 			</matchvalue>
 		</validationitem>
 		<validationitem

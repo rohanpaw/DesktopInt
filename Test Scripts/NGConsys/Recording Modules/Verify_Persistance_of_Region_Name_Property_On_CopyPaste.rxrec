@@ -106,7 +106,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="b5477b1d-cb79-4285-b062-c8e5b333fa59"
+		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -115,10 +115,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
-			sourcename="ItemRecorderEditor">
+			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/button[@automationid='Expander']
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
 				</path>
 			</info>
 		</mouseitem>
@@ -340,7 +340,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="e51324e8-62f8-490a-9929-361b8b90325a"
+		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -349,10 +349,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
-			sourcename="ItemRecorderEditor">
+			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/button[@automationid='Expander']
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
 				</path>
 			</info>
 		</mouseitem>
@@ -410,7 +410,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="e51324e8-62f8-490a-9929-361b8b90325a"
+		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -419,10 +419,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
-			sourcename="ItemRecorderEditor">
+			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/button[@automationid='Expander']
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
 				</path>
 			</info>
 		</mouseitem>
@@ -493,7 +493,7 @@ rxversion="8.3">
 			<arguments
 			id="e5f920fa-8d4c-4ddb-8d8b-09ffd070083d">
 				<argument
-				argname="sContectMenuOption"
+				argname="sContextMenuOption"
 				id="f7739765-9e6d-4175-989a-f6d437d045aa">
 					<argvaluetype>
 						System.String
@@ -561,7 +561,7 @@ rxversion="8.3">
 			<arguments
 			id="e5f920fa-8d4c-4ddb-8d8b-09ffd070083d">
 				<argument
-				argname="sContectMenuOption"
+				argname="sContextMenuOption"
 				id="f7739765-9e6d-4175-989a-f6d437d045aa">
 					<argvaluetype>
 						System.String
@@ -856,7 +856,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="e51324e8-62f8-490a-9929-361b8b90325a"
+		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -865,10 +865,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
-			sourcename="ItemRecorderEditor">
+			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/button[@automationid='Expander']
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
 				</path>
 			</info>
 		</mouseitem>
@@ -913,7 +913,7 @@ rxversion="8.3">
 			<arguments
 			id="e5f920fa-8d4c-4ddb-8d8b-09ffd070083d">
 				<argument
-				argname="sContectMenuOption"
+				argname="sContextMenuOption"
 				id="f7739765-9e6d-4175-989a-f6d437d045aa">
 					<argvaluetype>
 						System.String
@@ -981,7 +981,7 @@ rxversion="8.3">
 			<arguments
 			id="e5f920fa-8d4c-4ddb-8d8b-09ffd070083d">
 				<argument
-				argname="sContectMenuOption"
+				argname="sContextMenuOption"
 				id="f7739765-9e6d-4175-989a-f6d437d045aa">
 					<argvaluetype>
 						System.String
@@ -1276,7 +1276,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="e51324e8-62f8-490a-9929-361b8b90325a"
+		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -1285,10 +1285,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
-			sourcename="ItemRecorderEditor">
+			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/button[@automationid='Expander']
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
 				</path>
 			</info>
 		</mouseitem>
@@ -1333,7 +1333,7 @@ rxversion="8.3">
 			<arguments
 			id="e5f920fa-8d4c-4ddb-8d8b-09ffd070083d">
 				<argument
-				argname="sContectMenuOption"
+				argname="sContextMenuOption"
 				id="f7739765-9e6d-4175-989a-f6d437d045aa">
 					<argvaluetype>
 						System.String
@@ -1401,7 +1401,7 @@ rxversion="8.3">
 			<arguments
 			id="e5f920fa-8d4c-4ddb-8d8b-09ffd070083d">
 				<argument
-				argname="sContectMenuOption"
+				argname="sContextMenuOption"
 				id="f7739765-9e6d-4175-989a-f6d437d045aa">
 					<argvaluetype>
 						System.String

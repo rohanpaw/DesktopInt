@@ -4688,14 +4688,6 @@ loops.</SPAN>]]>
 			name="Verify_Export_Of_Region_Data"
 			ref="560b4584-e27b-4c2f-88ad-c4ea33c42460"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="4e37fd1f-81a8-4c01-b495-ea66c338b9ad"
@@ -4833,14 +4825,6 @@ loops.</SPAN>]]>
 			name="Verify_FBI800_card_details"
 			ref="aa209ed5-2360-4a04-b4f0-d223a15560e0"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="83e5e305-9ded-4d01-84a4-86f97e98ade9"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="4ffaf558-6ca7-402c-a4c0-87c42c201695"
@@ -7026,14 +7010,6 @@ loops.</SPAN>]]>
 			name="Verify_Slot_Cards_In_Slot_Cards_Gallery"
 			ref="5e03fc6d-462d-44a1-b7f7-949806efd4c2"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="c2ad215c-10b4-4b99-8fa6-63da244837a0"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="72e9c057-5b94-4cf6-9670-4c36c260d38d"
@@ -7293,12 +7269,6 @@ loops.</SPAN>]]>
 			ref="e98d6837-8011-47bb-85f8-f5ee4125cf87"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
 					<var
 					dataname="NewVariable"
 					datasourceid="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
@@ -8254,14 +8224,6 @@ MxDesigner]]>
 			name="Verify_Loop_Numbering"
 			ref="a0b6028c-8bd4-43ba-abc5-93b4fc948ab6"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="f157f4c6-7818-4ec8-b4b6-8f47f7939a3c"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="859e9cfa-b3cd-4eff-ac18-c966a5740f26"
@@ -9162,14 +9124,6 @@ MxDesigner]]>
 			name="VerifyDeletionOfFBI800AndPNI800Cards"
 			ref="5db13383-7f65-4b13-98b6-ce5b4620edfb"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="e920721a-3dae-4973-96f4-2f314ac9cef1"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="93d6b44c-ebf0-4e0f-9bc2-cb1dd9302d25"
@@ -11307,14 +11261,6 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_Slot_Cards_In_Slot_Cards_Gallery"
 			ref="5e03fc6d-462d-44a1-b7f7-949806efd4c2"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="c2ad215c-10b4-4b99-8fa6-63da244837a0"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="be43e53b-1f12-4c16-8a6e-3954458b0bd1"
@@ -19677,9 +19623,6 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="c71c0d6b-d6ed-43d4-ba4c-1d25ad997a40">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

@@ -79,8 +79,8 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'ProfileConsys1.SiteNode'.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.ProfileConsys1.SiteNodeInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormMe.SiteNode1'.", repo.FormMe.SiteNode1Info, new RecordItemIndex(0));
+            Validate.Exists(repo.FormMe.SiteNode1Info);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Panels') on item 'FormMe2.PanelsGallery'.", repo.FormMe2.PanelsGalleryInfo, new RecordItemIndex(1));

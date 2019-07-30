@@ -170,14 +170,14 @@ namespace TestProject.Libraries
 			
 		}
 
-		/********************************************************************
+		/********************************************************************************************************
 		 * Function Name: VerifySlotCardsAndBackplanesDistribution
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 11/05/2019
-		 ********************************************************************/
+		 * Last Update : 11/05/2019 Alpesh Dhakad - 30/07/2019 - Updated test script as per new build xpath
+		 ********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifySlotCardsAndBackplanesDistribution(string sFileName,string sAddDevicesSheet)
 		{
@@ -226,7 +226,8 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -235,7 +236,8 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
@@ -336,14 +338,14 @@ namespace TestProject.Libraries
 		
 		
 		
-		/********************************************************************
+		/********************************************************************************************************************
 		 * Function Name: VerifySlotCardsAndBackplanesDistributionWithOnePanel
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/05/2019
-		 ********************************************************************/
+		 * Last Update : 13/05/2019  Alpesh Dhakad - 30/07/2019 - Updated test script as per new build xpaths
+		 ********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifySlotCardsAndBackplanesDistributionWithOnePanel(string sFileName,string sAddDevicesSheet)
 		{
@@ -391,7 +393,8 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -400,7 +403,8 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
@@ -1313,7 +1317,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 03/06/2019
+		 * Last Update : 03/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIOBInAccessoriesGallery(string sFileName,string sAddDevicesSheet)
@@ -1340,7 +1344,8 @@ namespace TestProject.Libraries
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
 				// Click on navigation tree expander
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
@@ -1365,7 +1370,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 03/06/2019
+		 * Last Update : 03/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIOBProperties(string sFileName,string sAddDevicesSheet)
@@ -1396,7 +1401,8 @@ namespace TestProject.Libraries
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
 				// Click on navigation tree expander
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.PanelNode1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
@@ -1417,7 +1423,8 @@ namespace TestProject.Libraries
 				Devices_Functions.VerifyDescriptionTextRowInSearchProperties();
 				
 				// Click on navigation tree expander
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				repo.FormMe.NodeExpander1.Click();
+				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Verify and click backplane1 expander
 				if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
@@ -1451,14 +1458,14 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 		
-		/********************************************************************
+		/*********************************************************************************************************
 		 * Function Name: VerifyAdditionOfDevicesInBackplaneWithOnePanel
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/06/2019
-		 ********************************************************************/
+		 * Last Update : 06/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
+		 **********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfDevicesInBackplaneWithOnePanel(string sFileName,string sAddDevicesSheet)
 		{
@@ -1503,7 +1510,8 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -1512,7 +1520,8 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
@@ -1608,14 +1617,14 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 		
-		/********************************************************************
+		/************************************************************************************************************
 		 * Function Name: VerifyShoppingListDevicesAfterAdditionOfDevices
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/06/2019
-		 ********************************************************************/
+		 * Last Update : 06/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
+		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyShoppingListDevicesAfterAdditionOfDevices(string sFileName,string sAddDevicesSheet)
 		{
@@ -1639,7 +1648,8 @@ namespace TestProject.Libraries
 			int.TryParse(sShoppingListCount, out shoppingListCount);
 			
 			// Click on site node
-			repo.ProfileConsys1.SiteNode.Click();
+			repo.FormMe.SiteNode1.Click();
+			//repo.ProfileConsys1.SiteNode.Click();
 			
 			// Click on shopping list tab
 			repo.FormMe.tab_ShoppingList.Click();
@@ -1671,7 +1681,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/06/2019
+		 * Last Update : 06/06/2019  Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDeletionOfDevicesInBackplane(string sFileName,string sAddDevicesSheet)
@@ -1724,7 +1734,8 @@ namespace TestProject.Libraries
 			}
 			
 			// Click on site node
-			repo.ProfileConsys1.SiteNode.Click();
+			repo.FormMe.SiteNode1.Click();
+			//repo.ProfileConsys1.SiteNode.Click();
 			
 			// Click on shopping list tab
 			repo.FormMe.tab_ShoppingList.Click();
@@ -1750,14 +1761,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/********************************************************************************************************
 		 * Function Name: VerifyAccessoriesGalleryUpdateOnMaxLimitSupportedByPanel
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 07/06/2019
-		 ********************************************************************/
+		 * Last Update : 07/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
+		 ********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAccessoriesGalleryUpdateOnMaxLimitSupportedByPanel(string sFileName,string sAddDevicesSheet)
 		{
@@ -1804,7 +1815,8 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -1813,7 +1825,8 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
@@ -1986,14 +1999,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/**********************************************************************************
+		/*********************************************************************************************************
 		 * Function Name: VerifyMaxLimitForRepeatersSupportedByPanelOnRBus
 		 * Function Details: To verify max limit for repeaters supported by panel on RBUS
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 11/06/2019 Alpesh Dhakad- 29/07/2019 - Updated script as per new build xpath updates
-		 **********************************************************************************/
+		 ********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyMaxLimitForRepeatersSupportedByPanelOnRBus(string sFileName,string sAddDevicesSheet)
 		{
@@ -2085,14 +2098,14 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 		
-		/********************************************************************
+		/********************************************************************************************************
 		 * Function Name: VerifyAdditionOfDevicesFromOtherSlotCards
 		 * Function Details: To verify slot cards
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/06/2019
-		 ********************************************************************/
+		 * Last Update : 13/06/2019 Alpesh Dhakad- 29/07/2019 - Updated script as per new build xpath updates
+		 ********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfDevicesFromOtherSlotCards(string sFileName,string sAddDevicesSheet)
 		{
@@ -2138,7 +2151,8 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -2147,7 +2161,8 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.NodeExpander1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							
 							repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
 							
@@ -2432,14 +2447,14 @@ namespace TestProject.Libraries
 
 		}
 
-		/********************************************************************
+		/**********************************************************************************************************
 		 * Function Name: VerifyOtherSlotCardGrid
 		 * Function Details: To verify other slot cards grid
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : : 14/06/2019
-		 ********************************************************************/
+		 * Last Update : : 14/06/2019 Alpesh Dhakad- 30/07/2019 - Updated script as per new build xpath updates
+		 *********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyOtherSlotCardGrid(string sFileName,string sAddDevicesSheet)
 		{
@@ -2485,7 +2500,8 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -2494,7 +2510,8 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							repo.FormMe.PanelNode1.Click();
+							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
