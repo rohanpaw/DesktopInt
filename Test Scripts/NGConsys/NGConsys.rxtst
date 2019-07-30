@@ -7865,6 +7865,12 @@ loops.</SPAN>]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="827847bc-998f-450a-b727-ace8c713cf15"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="827af031-2c95-45c3-a3be-07380b7f07a2"
 			name="Verify_max_DC_units_displayed_for_FIM">
@@ -13294,6 +13300,12 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="e35ce91d-9194-40bc-af3f-23edcb9bab9f"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e36eed15-ad6e-464c-b7b0-013e3f8510e0"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -17933,6 +17945,10 @@ persisted in panel properties&nbsp;]]>
 						id="51e371cf-b8cc-4d9c-8ac6-a35e6816ca8e"
 						name="Verify_Reopen_Project_After_Deleting_Devices">
 						</testmodule>
+						<testmodule
+						id="827847bc-998f-450a-b727-ace8c713cf15"
+						name="Close_Application">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="c5b3a580-078e-4de9-885d-e8b076238efd"
@@ -17956,6 +17972,10 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="a621c765-1cd1-4ace-8df0-6dbb5c9b0172"
 						name="Verify_Reopen_Project_To_Verify_Device_Order">
+						</testmodule>
+						<testmodule
+						id="e35ce91d-9194-40bc-af3f-23edcb9bab9f"
+						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -19621,6 +19641,9 @@ persisted in panel properties&nbsp;]]>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="1ee7057c-11f3-460d-97bf-818221fe934b">
+			</testcontainer>
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>

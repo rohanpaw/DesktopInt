@@ -16206,9 +16206,8 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			id="b52c7389-871f-4c3e-9198-e99054daa317"
 			name="chkBox_DeviceOrder"
 			refimgid="0024bc7d-bd73-4f08-9b8d-01d099cecfd6"
-			refpath="/form[@title='' and @processname='ProfileConsys']/indicator[@automationid='PART_LoadingPanel']/tree/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@automationid='dataPresenter']/container[3]/row/cell[1]/button[@automationid='PART_Editor']"
 			searchtimeout="30000ms">
-				/form[@title='' and @processname='ProfileConsys']/indicator[@automationid='PART_LoadingPanel']/tree/container[@automationid='rowPresenterGrid']/?/?/container[@automationid='dataPresenter']/container[3]/row/cell[1]/button[@automationid='PART_Editor']
+				/form[@title='' and @processname='ProfileConsys']/indicator[@automationid='PART_LoadingPanel']/tree/container[@automationid='rowPresenterGrid']/?/?/container[@automationid='dataPresenter']/container[2]/row/cell[1]/button[@automationid='PART_Editor']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
