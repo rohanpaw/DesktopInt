@@ -72,10 +72,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
+			id="ab73090f-216e-42f1-9093-a740c5cfe418"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
 				</path>
 			</info>
 		</mouseitem>
@@ -96,10 +96,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="9d9b9f29-f90b-47fc-8324-fe4a0d18047a"
+			id="2a6488c4-8ec3-4888-934e-5e3e41ab1711"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[4]/button[@automationid='PART_ExpandButton']
+					/form[@automationid='me']/progressbar/picture[3]/tree/container[8]/container[2]/indicator[4]/button[@automationid='PART_ExpandButton']/button[@automationid='toggleButton']
 				</path>
 			</info>
 		</mouseitem>
@@ -120,10 +120,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="0af98b21-9a1a-42db-9abf-6a39978b72b9"
+			id="6a3e72fb-0449-45c1-8d34-f95f57b1206b"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-B']
+					/form[@automationid='me']/progressbar/picture[3]/tree/container[8]//text[@caption~'^Built-in\ Loop-B']
 				</path>
 			</info>
 		</mouseitem>

@@ -33,5 +33,11 @@ namespace TestProject.Recording_Modules
             // Your recording specific initialization code goes here.
         }
 
+        public void Mouse_Click_NodeExpander1(RepoItemInfo buttonInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'buttonInfo' at Center.", buttonInfo);
+            buttonInfo.FindAdapter<Button>().Click();
+        }
+
     }
 }

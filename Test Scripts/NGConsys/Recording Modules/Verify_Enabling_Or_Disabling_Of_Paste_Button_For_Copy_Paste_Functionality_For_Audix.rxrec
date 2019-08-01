@@ -99,7 +99,7 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<mouseitem
-		action="Click"
+		action="DoubleClick"
 		button="Left"
 		duration="500ms"
 		enabled="True"
@@ -115,10 +115,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="a126ca17-a4e0-4fdb-9b5b-27702ed23e06"
+			id="f31d368a-a6f8-42cc-a54a-3ef0a9b98471"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem/container/treeitem/button
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption='Main Processor']
 				</path>
 			</info>
 		</mouseitem>

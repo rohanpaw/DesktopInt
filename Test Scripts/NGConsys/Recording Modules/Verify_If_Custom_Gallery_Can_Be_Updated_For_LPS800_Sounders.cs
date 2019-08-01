@@ -119,13 +119,10 @@ namespace TestProject.Recording_Modules
             repo.FormMe.SaveAsCustom.Click();
             Delay.Milliseconds(200);
             
-            //Libraries.Devices_Functions.SelectRowUsingLabelName("LPS 800 - 1");
-            //Delay.Milliseconds(0);
-            
             Libraries.Devices_Functions.RightClickOnSelectedRow("1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(13));
             repo.ContextMenu.Custom_In_Context_Menu.Click();
             Delay.Milliseconds(200);
             
@@ -138,11 +135,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedRow("1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(17));
             repo.ContextMenu.Custom_In_Context_Menu.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.VerifyCustomDevicesInContextMenu(ValueConverter.ArgumentFromString<bool>("sExist", "False"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
             Delay.Milliseconds(0);
             
         }

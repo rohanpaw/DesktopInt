@@ -1189,32 +1189,6 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelName"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9e244060-b4d9-4230-b6eb-96759e8485a0">
-				<argument
-				argname="sLabel"
-				id="053ccecd-3684-44a4-ae6e-c87c627a8d9f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						LPS 800 - 1
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedRow"
@@ -1389,6 +1363,22 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 						False
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="DeleteDevicesPresentInCustomGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="30015401-e90a-4e74-b428-8f68d33118c5">
 			</arguments>
 		</userrecorditem>
 	</recorditems>

@@ -82,8 +82,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("58");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Node1Expander_AfterReopen' at Center.", repo.FormMe.Node1Expander_AfterReopenInfo, new RecordItemIndex(1));
-            repo.FormMe.Node1Expander_AfterReopen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1_AfterReopen' at Center.", repo.FormMe.NodeExpander1_AfterReopenInfo, new RecordItemIndex(1));
+            repo.FormMe.NodeExpander1_AfterReopen.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane1Expander_AfterReopen' at Center.", repo.FormMe.Backplane1Expander_AfterReopenInfo, new RecordItemIndex(2));

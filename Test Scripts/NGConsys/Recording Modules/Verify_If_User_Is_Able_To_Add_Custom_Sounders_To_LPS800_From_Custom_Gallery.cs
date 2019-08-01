@@ -90,8 +90,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(3));
-            repo.FormMe.Loop_A1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(3));
+            repo.FormMe.Loop_A1.DoubleClick();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
@@ -131,7 +131,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("LPS 800 - 1");
             Delay.Milliseconds(0);
             
-            VerifySounderCustomDeviceDisplayedInCustomGallery("Custom", ValueConverter.ArgumentFromString<bool>("isEnabled", "True"));
+            Libraries.Devices_Functions.VerifySounderCustomDeviceDisplayedInCustomGallery("Custom", ValueConverter.ArgumentFromString<bool>("isEnabled", "True"));
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyDeviceUsingLabelName("Generic");
@@ -140,7 +140,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("801 CH - 2");
             Delay.Milliseconds(0);
             
-            VerifySounderCustomDeviceDisplayedInCustomGallery("Custom", ValueConverter.ArgumentFromString<bool>("isEnabled", "False"));
+            Libraries.Devices_Functions.VerifySounderCustomDeviceDisplayedInCustomGallery("Custom", ValueConverter.ArgumentFromString<bool>("isEnabled", "False"));
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.SaveProject("54084");

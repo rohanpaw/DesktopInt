@@ -115,8 +115,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Flashni Sounder", "Conventional Sounders");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(11));
-            repo.FormMe.btn_Copy.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(11));
+            repo.FormMe.btn_Copy1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(12));
@@ -161,7 +161,11 @@ namespace TestProject.Recording_Modules
             repo.FormMe.Loop_B1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(25));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(26));
             repo.FormMe.Paste.Click();
             Delay.Milliseconds(200);
             

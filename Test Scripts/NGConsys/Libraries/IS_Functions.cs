@@ -1008,13 +1008,13 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
 			// Click Show column chooser to select column
 			repo.ContextMenu.ShowColumnChooser.Click();
 			
 			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder.Click();
+			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
 			Report.Log(ReportLevel.Info," Device order column added successfully ");
 			
 			// Close column choose window
@@ -1197,13 +1197,13 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
 			// Click Show column chooser to select column
 			repo.ContextMenu.ShowColumnChooser.Click();
 			
 			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder.Click();
+			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
 			Report.Log(ReportLevel.Info," Device order column added successfully ");
 			
 			// Close column choose window
@@ -1337,13 +1337,13 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
 			// Click Show column chooser to select column
 			repo.ContextMenu.ShowColumnChooser.Click();
 			
 			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder.Click();
+			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
 			Report.Log(ReportLevel.Info," Device order column added successfully ");
 			
 			// Close column choose window
@@ -1487,13 +1487,13 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
 			// Click Show column chooser to select column
 			repo.ContextMenu.ShowColumnChooser.Click();
 			
 			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder.Click();
+			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
 			Report.Log(ReportLevel.Info," Device order column added successfully ");
 			
 			// Close column choose window
@@ -1658,13 +1658,13 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
 			// Click Show column chooser to select column
 			repo.ContextMenu.ShowColumnChooser.Click();
 			
 			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder.Click();
+			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
 			Report.Log(ReportLevel.Info," Device order column added successfully ");
 			
 			// Close column choose window
@@ -1788,13 +1788,13 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
 			// Click Show column chooser to select column
 			repo.ContextMenu.ShowColumnChooser.Click();
 			
 			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder.Click();
+			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
 			Report.Log(ReportLevel.Info," Device order column added successfully ");
 			
 			// Close column choose window
@@ -2147,13 +2147,13 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
 			// Click Show column chooser to select column
 			repo.ContextMenu.ShowColumnChooser.Click();
 			
 			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder.Click();
+			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
 			Report.Log(ReportLevel.Info," Device order column added successfully ");
 			
 			// Close column choose window
@@ -2986,13 +2986,13 @@ namespace TestProject.Libraries
 		{
 			sDeviceOrderRow=sRow;
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
 			// Click Show column chooser to select column
 			repo.ContextMenu.ShowColumnChooser.Click();
 			
 			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder.Click();
+			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
 			Report.Log(ReportLevel.Info," Device order column added successfully ");
 			
 			// Close column choose window

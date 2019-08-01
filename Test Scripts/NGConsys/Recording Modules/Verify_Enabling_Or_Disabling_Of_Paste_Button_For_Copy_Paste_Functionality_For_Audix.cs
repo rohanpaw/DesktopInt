@@ -86,8 +86,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor' at Center.", repo.FormMe.MainProcessorInfo, new RecordItemIndex(2));
-            repo.FormMe.MainProcessor.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FormMe.txt_MainProcessor1' at Center.", repo.FormMe.txt_MainProcessor1Info, new RecordItemIndex(2));
+            repo.FormMe.txt_MainProcessor1.DoubleClick();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("MPM800", "Miscellaneous", "PFI");
@@ -123,8 +123,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("SIO 800 - 1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(13));
-            repo.FormMe.btn_Copy.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(13));
+            repo.FormMe.btn_Copy1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(14));
@@ -137,8 +137,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 2");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(17));
-            repo.FormMe.btn_Copy.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(17));
+            repo.FormMe.btn_Copy1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(18));

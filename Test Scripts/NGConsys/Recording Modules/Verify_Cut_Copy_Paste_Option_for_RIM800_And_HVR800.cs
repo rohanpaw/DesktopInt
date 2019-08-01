@@ -106,8 +106,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(8));
-            repo.FormMe.btn_Copy.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(8));
+            repo.FormMe.btn_Copy1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(9));

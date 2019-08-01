@@ -2923,7 +2923,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			addcaps="container,wpfelement,wpfgroupelement"
 			capname="container"
 			id="52850e4b-1abe-4d09-a568-d919c4d2fe7e"
-			name="HeadersPanel"
+			name="HeadersPanel1"
 			refimgid="355c16dc-0619-4029-851f-502d426f283b"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[1]
@@ -3079,16 +3079,16 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			name="Copy"
 			refimgid="fdde1895-2efe-4134-9236-e6b8ebf7c2fd"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']//container[@automationid='PART_ItemsPresenter']/button[@text='Copy' and @enabled=$sEnabled]
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Copy' and @enabled=$sEnabled]
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
 			capname="button"
 			id="57f9fc13-5b4b-44c8-bd91-35515c8dfa12"
-			name="btn_Copy"
+			name="btn_Copy1"
 			refimgid="fdde1895-2efe-4134-9236-e6b8ebf7c2fd"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']//container[@automationid='PART_ItemsPresenter']/button[@text='Copy']
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Copy']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -3554,7 +3554,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			<item
 			capname="button"
 			id="ab73090f-216e-42f1-9093-a740c5cfe418"
-			name="Node1Expander_AfterReopen"
+			name="NodeExpander1_AfterReopen"
 			refimgid="d9d2070f-dfe1-477f-b2e7-1a004c3796ba"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
@@ -15929,8 +15929,8 @@ AAAAAElFTkSuQmCC
 			capname="container"
 			id="d3c40847-c329-45f6-a08b-ab1ef99f5d25"
 			name="btn_DevicesGalleryDropDown1"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption=$ModelNumber]/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']
+			searchtimeout="60000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
 			</item>
 			<item
 			capname="container"
@@ -16071,6 +16071,66 @@ AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@text~'^R-BUS']
 			</item>
+			<item
+			capname="container"
+			id="3c325e0e-79fc-405a-9d9f-38887d62a3a4"
+			name="HeadersPanel"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_HeadersPanel']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="2a6488c4-8ec3-4888-934e-5e3e41ab1711"
+			name="LoopExpander1_Reopen"
+			refimgid="29311995-3358-4d74-b25b-594c6185e719"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[1]/tree/container[8]/container[2]/indicator[4]/button[@automationid='PART_ExpandButton']/button[@automationid='toggleButton']
+			</item>
+			<item
+			capname="text"
+			id="6a3e72fb-0449-45c1-8d34-f95f57b1206b"
+			name="Loop_B1_Reopen"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[3]/tree/container[8]//text[@caption~'^Built-in\ Loop-B']
+			</item>
+			<item
+			capname="text"
+			id="a52c6012-367c-4f3a-ace7-3152f9a691c4"
+			name="Loop_A1_Reopen"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[3]/tree/container[8]//text[@caption~'^Built-in\ Loop-A']
+			</item>
+			<item
+			capname="text"
+			id="cbf12ca2-65ab-4297-b787-f94bb4a041eb"
+			name="Loop_C1_Reopen"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[3]/tree/container[8]//text[@caption~'^Built-in\ Loop-C']
+			</item>
+			<item
+			capname="text"
+			id="d6a9de75-2639-4ff0-a653-edc97d079134"
+			name="Loop_D1_Reopen"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-D']
+			</item>
+			<item
+			capname="text"
+			id="f31d368a-a6f8-42cc-a54a-3ef0a9b98471"
+			name="txt_MainProcessor1"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption='Main Processor']
+			</item>
+			<item
+			addcaps="treeitem,uiautomation,uiautomationinvoke"
+			capname="treeitem"
+			id="63d1ace4-8d8f-4184-86c4-70d5f27afef9"
+			name="TreeItemWorkspaceAPro32xD"
+			refpath="/form[@automationid='me']/container[@automationid='BarManager']/container[@automationid='dockLayoutManager']/container[@automationid='Root']/tabpagelist[@automationid='LeftHost']/container[@automationid='NavigationPanels']/tree[@orientation='None']/container[@automationid='dataPresenter']/treeitem[@name='{Workspace: a - Pro32xD}']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/container[@automationid='BarManager']/container[@automationid='dockLayoutManager']//container[@automationid='NavigationPanels']/?/?/container/treeitem[@name='{Workspace: a - Pro32xD}']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -16203,7 +16263,7 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			addcaps="button,wpfelement,wpfgroupelement"
 			capname="button"
 			id="b52c7389-871f-4c3e-9198-e99054daa317"
-			name="chkBox_DeviceOrder"
+			name="chkBox_DeviceOrder1"
 			refimgid="0024bc7d-bd73-4f08-9b8d-01d099cecfd6"
 			searchtimeout="30000ms">
 				/form[@title='' and @processname='ProfileConsys']/indicator[@automationid='PART_LoadingPanel']/tree/container[@automationid='rowPresenterGrid']/?/?/container[@automationid='dataPresenter']/container[2]/row/cell[1]/button[@automationid='PART_Editor']
@@ -16237,6 +16297,13 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			refpath="/form[@title='' and @processname='ProfileConsys']/indicator[@automationid='PART_LoadingPanel']/tree/container[@automationid='rowPresenterGrid']/container[@caption='']/row/cell[1]/button[@automationid='PART_Editor']"
 			searchtimeout="30000ms">
 				/form[@title='' and @processname='ProfileConsys']/indicator[@automationid='PART_LoadingPanel']/tree/container[@automationid='rowPresenterGrid']//button[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="button"
+			id="dac3e02c-cd9b-4741-8225-b231d691458a"
+			name="chkBox_DeviceOrder"
+			searchtimeout="30000ms">
+				/form[@title='' and @processname='ProfileConsys']/indicator[@automationid='PART_LoadingPanel']/tree/container[@automationid='rowPresenterGrid']/?/?/container[@automationid='dataPresenter']/container[3]/row/cell[1]/button[@automationid='PART_Editor']
 			</item>
 			<basepath>
 				/form[@title='' and @processname='ProfileConsys']

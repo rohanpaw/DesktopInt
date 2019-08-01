@@ -1707,6 +1707,30 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 		loc="Center"
 		movetime="300ms"
 		optional="False"
+		searchpropertyid="537776ff-4125-4533-ac16-cc8978a9f2f1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
 		searchpropertyid="c4d5f9ab-53af-4d1c-ae5d-8f4ac17d29aa"
 		sx="0"
 		sy="0"

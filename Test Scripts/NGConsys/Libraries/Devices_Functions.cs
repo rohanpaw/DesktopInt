@@ -246,6 +246,8 @@ namespace TestProject.Libraries
 		{
 			ModelNumber=sDeviceName;
 
+			sGalleryIndex = SelectGalleryType(sType);
+			
 			repo.FormMe.btn_DevicesGalleryDropDown1.Click();
 			
 			repo.FormMe.btn_DevicesGalleryDropDown1.EnsureVisible();
@@ -3044,13 +3046,13 @@ namespace TestProject.Libraries
 		{
 			
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
 			// Click Show column chooser to select column
 			repo.ContextMenu.ShowColumnChooser.Click();
 			
 			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder.Click();
+			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
 			Report.Log(ReportLevel.Info," Device order column added successfully ");
 			
 			// Close column choose window
@@ -3355,13 +3357,13 @@ namespace TestProject.Libraries
 		public static void verifySavedOpenProjectOnLPS800Addition(string sFileName, string sDeviceSheet)
 		{
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
 			// Click Show column chooser to select column
 			repo.ContextMenu.ShowColumnChooser.Click();
 			
 			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder.Click();
+			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
 			Report.Log(ReportLevel.Info," Device order column added successfully ");
 			
 			// Close column choose window
@@ -4690,7 +4692,7 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
 			
 			//Copy Devices
-			repo.FormMe.btn_Copy.Click();
+			repo.FormMe.btn_Copy1.Click();
 			
 			//Go to Loop C
 			repo.FormMe.Loop_C1.Click();
@@ -6062,7 +6064,7 @@ namespace TestProject.Libraries
 		{
 			
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel, System.Windows.Forms.MouseButtons.Right);
+			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
 			// Click Show column chooser to select column
 			repo.ContextMenu.ShowColumnChooser.Click();

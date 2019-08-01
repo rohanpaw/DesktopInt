@@ -1042,7 +1042,7 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
 			
 			//Copy Devices
-			repo.FormMe.btn_Copy.Click();
+			repo.FormMe.btn_Copy1.Click();
 			
 			//Go to Loop C
 			repo.FormMe.Loop_C1.Click();

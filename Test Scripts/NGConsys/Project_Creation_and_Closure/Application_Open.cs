@@ -78,7 +78,7 @@ namespace TestProject
 			Host.Local.RunApplication("C:\\Windows\\System32\\cmd.exe", "", "", false);
 			Delay.Milliseconds(500);
 			
-			
+			Delay.Milliseconds(500);
 			Keyboard.Press("cd ");
 			Keyboard.Press(App_Path);
 			Keyboard.Press("{Return}");

@@ -123,7 +123,7 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<mouseitem
-		action="Click"
+		action="DoubleClick"
 		button="Left"
 		duration="500ms"
 		enabled="True"
@@ -1292,11 +1292,11 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery"
+		classname="Devices_Functions"
 		enabled="True"
-		isexternaltestmethod="False"
+		isexternaltestmethod="True"
 		methodname="VerifySounderCustomDeviceDisplayedInCustomGallery"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>
@@ -1380,11 +1380,11 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery"
+		classname="Devices_Functions"
 		enabled="True"
-		isexternaltestmethod="False"
+		isexternaltestmethod="True"
 		methodname="VerifySounderCustomDeviceDisplayedInCustomGallery"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>

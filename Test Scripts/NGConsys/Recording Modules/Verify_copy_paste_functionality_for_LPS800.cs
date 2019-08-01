@@ -90,8 +90,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse XButton2 Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(3));
-            repo.FormMe.Loop_A1.Click(System.Windows.Forms.MouseButtons.XButton2);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(3));
+            repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("LPS 800", "Sounders/Beacons");
@@ -112,8 +112,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectPointsGridRow("1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(10));
-            repo.FormMe.btn_Copy.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(10));
+            repo.FormMe.btn_Copy1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_B1' at Center.", repo.FormMe.Loop_B1Info, new RecordItemIndex(11));

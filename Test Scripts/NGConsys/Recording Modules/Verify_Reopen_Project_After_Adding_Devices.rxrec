@@ -105,7 +105,7 @@ rxversion="8.3">
 		</mouseitem>
 		<mouseitem
 		action="Click"
-		button="XButton2"
+		button="Left"
 		duration="500ms"
 		enabled="True"
 		loc="Center"
