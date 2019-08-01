@@ -961,11 +961,11 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="DC_Functions"
+		classname="Verify_Trip_Current_After_Reopen"
 		enabled="True"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="verifyDCUnitsAfterReopen"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False"
 		varname="">
 			<comment>

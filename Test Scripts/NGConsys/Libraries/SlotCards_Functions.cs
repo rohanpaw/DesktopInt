@@ -249,6 +249,8 @@ namespace TestProject.Libraries
 					
 				}
 				
+				repo.FormMe.NodeExpander1.Click();
+				
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
@@ -925,7 +927,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 30/05/2019  17/07/2019 - Alpesh Dhakad - Updated code 
+		 * Last Update : 30/05/2019  17/07/2019 - Alpesh Dhakad - Updated code
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyShoppingListOnSelectingFOMandMPM(string sFileName,string sAddDevicesSheet)
@@ -1025,7 +1027,7 @@ namespace TestProject.Libraries
 //				// Click on OK button of export document
 //				repo.ExportDocument.ButtonOK.Click();
 //				Delay.Milliseconds(200);
-//				
+//
 //				// Click on OK button of export document again
 //				repo.ExportDocument.ButtonOK.Click();
 				
@@ -1096,7 +1098,7 @@ namespace TestProject.Libraries
 //				// Click on OK button of export document
 //				repo.ExportDocument.ButtonOK.Click();
 //				Delay.Milliseconds(200);
-//				
+//
 //				// Click on OK button of export document again
 //				repo.ExportDocument.ButtonOK.Click();
 				
@@ -1278,7 +1280,7 @@ namespace TestProject.Libraries
 //				// Click on OK button of export document
 //				repo.ExportDocument.ButtonOK.Click();
 //				Delay.Milliseconds(200);
-//				
+//
 //				// Click on OK button of export document again
 //				repo.ExportDocument.ButtonOK.Click();
 				
@@ -1960,13 +1962,13 @@ namespace TestProject.Libraries
 					if(deviceCount>0)
 					{
 						/// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
-				
-				// Click on Main processor tab
-				repo.FormMe.MainProcessor1.Click();
-				
-				// Click on Ethernet under Main processor
-				repo.FormMe.Ethernet1.Click();
+						repo.FormMe.NodeExpander1.Click();
+						
+						// Click on Main processor tab
+						repo.FormMe.MainProcessor1.Click();
+						
+						// Click on Ethernet under Main processor
+						repo.FormMe.Ethernet1.Click();
 						
 						// Click on Inventory tab
 						repo.FormMe.tab_Inventory.Click();
@@ -2060,14 +2062,14 @@ namespace TestProject.Libraries
 					if(deviceCount>0)
 					{
 						// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
-				
-				// Click on Main processor tab
-				repo.FormMe.MainProcessor1.Click();
-				
-				// Click on RBus under Main processor
-				repo.FormMe.RBus1.Click();
-				
+						repo.FormMe.NodeExpander1.Click();
+						
+						// Click on Main processor tab
+						repo.FormMe.MainProcessor1.Click();
+						
+						// Click on RBus under Main processor
+						repo.FormMe.RBus1.Click();
+						
 						// Click on Inventory tab
 						repo.FormMe.tab_Inventory.Click();
 						
@@ -2801,7 +2803,7 @@ namespace TestProject.Libraries
 				// Delete Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);
 				
-	
+				
 				
 			}
 			
@@ -2964,16 +2966,16 @@ namespace TestProject.Libraries
 		
 
 
-			/***********************************************************************************************************
-			 * Function Name: VerifyPLXTreeListForBackplane1
-			 * Function Details:
-			 * Parameter/Arguments:
-			 * Output:
-			 * Function Owner: Purvi Bhasin
-			 * Last Update : 26/06/2019
-			 ************************************************************************************************************/
-			[UserCodeMethod]
-			public static void VerifyPLXTreeListForBackplane1(string NoofPLXTree)
+		/***********************************************************************************************************
+		 * Function Name: VerifyPLXTreeListForBackplane1
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 26/06/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyPLXTreeListForBackplane1(string NoofPLXTree)
 		{
 			sDeviceIndex = NoofPLXTree;
 			repo.FormMe.PLXTreeList.Click();

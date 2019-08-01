@@ -105,7 +105,7 @@ namespace TestProject.Libraries
 		/********************************************************************
 		 * Function Name: VerifyACCalculation
 		 * Function Details: To verify AC calculation after adding and deleting devices
-		 * Parameter/Arguments: sFileName, Add device, Delete Device 
+		 * Parameter/Arguments: sFileName, Add device, Delete Device
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpaths
@@ -305,7 +305,7 @@ namespace TestProject.Libraries
 		
 		/**************************************************************************************************
 		 * Function Name: VerifyACCalculationforFIM
-		 * Function Details: verify AC Calculation for FIM loop 
+		 * Function Details: verify AC Calculation for FIM loop
 		 * Parameter/Arguments: sFileName, Add device, Delete Device
 		 * Output:
 		 * Function Owner: Shweta Bhosale
@@ -464,8 +464,8 @@ namespace TestProject.Libraries
 			else
 			{
 				Report.Log(ReportLevel.Failure,"Max AC Units are not displayed correctly" +maxACUnits);
-			}		
-			repo.ProfileConsys1.tab_Points.Click();			
+			}
+			repo.ProfileConsys1.tab_Points.Click();
 		}
 		
 		/********************************************************************
@@ -495,8 +495,8 @@ namespace TestProject.Libraries
 		
 		/*****************************************************************************************************************
 		 * Function Name: VerifyACUnitIndicationWithISDevices
-		 * Function Details: 
-		 * Parameter/Arguments:   
+		 * Function Details:
+		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 19/04/2019

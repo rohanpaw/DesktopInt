@@ -246,8 +246,6 @@ namespace TestProject.Libraries
 		{
 			ModelNumber=sDeviceName;
 
-			
-			
 			repo.FormMe.btn_DevicesGalleryDropDown1.Click();
 			
 			repo.FormMe.btn_DevicesGalleryDropDown1.EnsureVisible();
@@ -450,7 +448,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale/Alpesh Dhakad
-		 * Last Update : 11/07/2019 - Alpesh Dhakad - Update script and added InventoryGridFirstRow xpath 
+		 * Last Update : 11/07/2019 - Alpesh Dhakad - Update script and added InventoryGridFirstRow xpath
 		 *****************************************************************************************************/
 		[UserCodeMethod]
 		public static void CableCapacitance(string sFileName,string sSheetName)
@@ -474,7 +472,7 @@ namespace TestProject.Libraries
 				}
 				else
 				{
-					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();	
+					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
 				}
 				
 				string CableCapacitanceValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
@@ -511,7 +509,7 @@ namespace TestProject.Libraries
 				}
 				else
 				{
-					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();	
+					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
 				}
 				
 				repo.ProfileConsys1.tab_Points.Click();
@@ -525,7 +523,7 @@ namespace TestProject.Libraries
 				}
 				else
 				{
-					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();	
+					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
 				}
 				
 				//=================================
@@ -608,13 +606,10 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			repo.FormMe.PanelNode1.Click();
-			//repo.ProfileConsys1.PanelNode.Click();
 			
 			repo.FormMe.Loop_A1.Click();
-//			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			repo.FormMe.cell_CableLength1.Click();
-			//repo.ProfileConsys1.cell_CableLength.Click();
 			
 			if(sLoopType.Equals("PFI"))
 			{
@@ -622,12 +617,10 @@ namespace TestProject.Libraries
 				//repo.ProfileConsys1.tab_Points.Click();
 				
 				repo.FormMe.PanelNode1.Click();
-				//repo.ProfileConsys1.PanelNode.Click();
 				
 				Delay.Duration(1000, false);
 				
 				repo.FormMe.Loop_B1.Click();
-				//repo.ProfileConsys1.NavigationTree.Loop_B.Click();
 				
 				Delay.Duration(1000, false);
 				
@@ -1001,7 +994,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
+		 * Last Update : Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public void VerifyDCCalculationforPFI(string sFileName, string sAddDevicesLoopA, string sAddDevicesLoopB,string sPanelLED, string sDeleteDevicesLoopA, string sDeleteDevicesLoopB)
@@ -1026,7 +1019,7 @@ namespace TestProject.Libraries
 					AssignDeviceBase(sLabelName,sBase,sRowIndex);
 				}
 				
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
 				Delay.Milliseconds(500);
 			}
 			
@@ -1037,7 +1030,7 @@ namespace TestProject.Libraries
 			
 			//Verify DC Units of Loop B
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on addition of devices in Loop A");
-			repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			repo.FormMe.Loop_B1.Click();
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[3,2]).Value.ToString();
 			verifyDCUnitsValue(expectedDCUnits);
 			
@@ -1046,7 +1039,8 @@ namespace TestProject.Libraries
 			//Add devices in loop B
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesLoopB);
 			rows= Excel_Utilities.ExcelRange.Rows.Count;
-			repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			repo.FormMe.Loop_B1.Click();
+			
 			for(int i=7; i<=rows; i++)
 			{
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
@@ -1063,7 +1057,7 @@ namespace TestProject.Libraries
 					AssignDeviceBase(sLabelName,sBase,sRowIndex);
 				}
 				
-				repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+				repo.FormMe.Loop_B1.Click();
 				Delay.Milliseconds(500);
 			}
 			
@@ -1073,7 +1067,7 @@ namespace TestProject.Libraries
 			verifyDCUnitsValue(expectedDCUnits);
 			
 			//Verify DC Units of Loop A
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on addition of devices in Loop B");
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[3,2]).Value.ToString();
 			verifyDCUnitsValue(expectedDCUnits);
@@ -1085,7 +1079,7 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			//Delete Devices from loop A
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sDeleteDevicesLoopA);
@@ -1104,13 +1098,13 @@ namespace TestProject.Libraries
 			
 			//Verify DC Units of Loop B
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on deletion of devices from Loop A");
-			repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			repo.FormMe.Loop_B1.Click();
 			verifyDCUnitsValue(expectedDCUnits);
 			
 			Excel_Utilities.CloseExcel();
 			
 			//Delete Devices from loop B
-			repo.ProfileConsys1.NavigationTree.Loop_B.Click();
+			repo.FormMe.Loop_B1.Click();
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sDeleteDevicesLoopB);
@@ -1129,7 +1123,7 @@ namespace TestProject.Libraries
 			
 			//Verify DC Units of Loop A
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on deletion of devices from Loop B");
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
 			verifyDCUnitsValue(expectedDCUnits);
 		}
 
@@ -2089,11 +2083,9 @@ namespace TestProject.Libraries
 			
 			//Click on Panel Node
 			repo.FormMe.PanelNode1.Click();
-			//repo.ProfileConsys1.PanelNode.Click();
 			
 			//Click on Loop A in Navigation tree tab
 			repo.FormMe.Loop_A1.Click();
-			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			//Click on cable length cell
 			repo.ProfileConsys1.cell_CableLength.Click();
@@ -2103,7 +2095,7 @@ namespace TestProject.Libraries
 			
 			//Click on Panel Node
 			repo.FormMe.PanelNode1.Click();
-			//repo.ProfileConsys1.PanelNode.Click();
+			
 			Delay.Duration(1000, false);
 		}
 		
@@ -2124,11 +2116,9 @@ namespace TestProject.Libraries
 			
 			//Click on Panel Node
 			repo.FormMe.PanelNode1.Click();
-			//repo.ProfileConsys1.PanelNode.Click();
 			
 			//Click on Loop A in Navigation tree tab
 			repo.FormMe.Loop_A1.Click();
-			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			//Click on cable resistance cell
 			repo.ProfileConsys1.cell_CableResistance.Click();
@@ -2138,7 +2128,6 @@ namespace TestProject.Libraries
 			
 			//Click on Panel Node
 			repo.FormMe.PanelNode1.Click();
-			//repo.ProfileConsys1.PanelNode.Click();
 			
 			Delay.Duration(1000, false);
 		}
@@ -2720,7 +2709,7 @@ namespace TestProject.Libraries
 		 * Function Details: To delete devices from custom gallery
 		 * Parameter/Arguments:
 		 * Output:
-		 * Function Owner: Shweta 
+		 * Function Owner: Shweta
 		 * Last Update : 11/4/2019 Updated on 10/07/2019 by Purvi Bhasin
 		 ********************************************************************/
 		[UserCodeMethod]
@@ -4398,7 +4387,7 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.PanelNode.Click();
 			
 			//Click on Loop A in Navigation tree tab
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
 			
 			SelectRowUsingLabelName(sLabelName);
 			
@@ -4409,7 +4398,7 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableCapacitance + "{Enter}");
 			
 			//Click on Panel Node
-			repo.ProfileConsys1.PanelNode.Click();
+			repo.FormMe.PanelNode1.Click();
 			Delay.Duration(1000, false);
 		}
 		
@@ -4419,7 +4408,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 24/04/2019
+		 * Last Update : 24/04/2019 Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCableLength(string sCableLength)
@@ -4428,10 +4417,10 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			//Click on Panel Node
-			repo.ProfileConsys1.PanelNode.Click();
+			repo.FormMe.PanelNode1.Click();
 			
 			//Click on Loop A in Navigation tree tab
-			repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+			repo.FormMe.Loop_A1.Click();
 			
 			//Click on cable length cell
 			repo.ProfileConsys1.cell_CableLength.Click();
@@ -4459,7 +4448,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 24/04/2019 
+		 * Last Update : 24/04/2019
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCableLengthInNodeGalleryItems(string sCableLength)
@@ -4673,15 +4662,12 @@ namespace TestProject.Libraries
 				
 				// Click on Expander node
 				repo.FormMe.NodeExpander1.Click();
-				//repo.ProfileConsys1.NavigationTree.Expander.Click();
 				
 				// Click on Loop Card node
 				repo.FormMe.LoopExpander1.Click();
-				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				// Click on Loop A node
 				repo.FormMe.Loop_A1.Click();
-				//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 				
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
@@ -4693,12 +4679,10 @@ namespace TestProject.Libraries
 				verifyDCUnitsValue(expectedDCUnits);
 				
 				repo.FormMe.SiteNode1.Click();
-				//repo.ProfileConsys1.SiteNode.Click();
 				
 			}
 			//Go to Loop A
 			repo.FormMe.Loop_A1.Click();
-			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			//go to points grid
 			repo.ProfileConsys1.tab_Points.Click();
@@ -4710,7 +4694,6 @@ namespace TestProject.Libraries
 			
 			//Go to Loop C
 			repo.FormMe.Loop_C1.Click();
-			//repo.ProfileConsys1.NavigationTree.Loop_C.Click();
 			
 			//Paste the devices
 			repo.FormMe.Paste.Click();
@@ -4719,11 +4702,9 @@ namespace TestProject.Libraries
 			verifyDCUnitsValue(expectedDCUnits);
 			
 			repo.FormMe.SiteNode1.Click();
-			//repo.ProfileConsys1.SiteNode.Click();
 			
 			//Go to Loop C
 			repo.FormMe.Loop_C1.Click();
-			//repo.ProfileConsys1.NavigationTree.Loop_C.Click();
 			
 			//go to points grid
 			repo.ProfileConsys1.tab_Points.Click();
@@ -4737,21 +4718,17 @@ namespace TestProject.Libraries
 			verifyDCUnitsValue(DefaultDCUnits);
 			
 			repo.FormMe.SiteNode1.Click();
-			//repo.ProfileConsys1.SiteNode.Click();
 			
 			// Click on Expander node
 			repo.FormMe.PanelNode1.Click();
-			//repo.ProfileConsys1.NavigationTree.Expander.Click();
 			
 			Panel_Functions.changePanelLED(PanelLED);
 			
 			// Click on Loop Card node
 			repo.FormMe.LoopExpander1.Click();
-			//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 			
 			// Click on Loop A node
 			repo.FormMe.Loop_A1.Click();
-			//repo.ProfileConsys1.NavigationTree.Loop_A.Click();
 			
 			//Verify Default DC Units
 			verifyDCUnitsValue(ChangedDCUnit);
@@ -5094,25 +5071,25 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 15/05/2019
+		 * Last Update : 15/05/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyPanelType(string sFileName,string sAddDevicesSheet, string sPanelName)
 		{
 			//Click on Panel Node
-			repo.ProfileConsys1.PanelNodeText.Click();
+			repo.FormMe.PanelNode1.Click();
 			
-			repo.ProfileConsys1.SiteNode.Click();
+			repo.FormMe.SiteNode1.Click();
 			
-			repo.ProfileConsys1.PanelNodeText.Click();
+			repo.FormMe.PanelNode1.Click();
 			
-			repo.ProfileConsys1.SiteNode.Click();
+			repo.FormMe.SiteNode1.Click();
 			
-			repo.ProfileConsys1.PanelNodeText.Click();
+			repo.FormMe.PanelNode1.Click();
 			
 			repo.FormMe.tab_PanelAccessories.Click();
 			
-			repo.ProfileConsys1.PanelNodeText.Click();
+			repo.FormMe.PanelNode1.Click();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -5284,25 +5261,25 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 15/05/2019
+		 * Last Update : 15/05/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyPanelTypeInDropdown(string PanelName, string PanelTypeNameList,string PanelTypeNameListNotAvailable)
 		{
 			//Click on Panel Node
-			repo.ProfileConsys1.PanelNodeText.Click();
+			repo.FormMe.PanelNode1.Click();
 			
-			repo.ProfileConsys1.SiteNode.Click();
+			repo.FormMe.SiteNode1.Click();
 			
-			repo.ProfileConsys1.PanelNodeText.Click();
+			repo.FormMe.PanelNode1.Click();
 			
-			repo.ProfileConsys1.SiteNode.Click();
+			repo.FormMe.SiteNode1.Click();
 			
-			repo.ProfileConsys1.PanelNodeText.Click();
+			repo.FormMe.PanelNode1.Click();
 			
 			repo.FormMe.tab_PanelAccessories.Click();
 			
-			repo.ProfileConsys1.PanelNodeText.Click();
+			repo.FormMe.PanelNode1.Click();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -6289,52 +6266,52 @@ namespace TestProject.Libraries
 			// Count number of rows in excel and store it in rows variable
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 
-            // Declared string type
-            string sType,DeviceIndex,sDeviceName;
-            
-            // For loop to iterate on data present in excel
-            for(int i=10; i<=rows; i++)
-            {
-                sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
-                DeviceIndex = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
-                sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
-                
-                sGalleryIndex = SelectGalleryType(sType);
-                sDeviceIndex = DeviceIndex;
-                //Click on Expand for gallery
-                repo.FormMe.btn_DevicesGalleryDropDown1.Click();
-                //repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
-                
-                string ActualDeviceName = repo.ContextMenu.DeviceOrder_GalleryExpanded.TextValue;
-                
-                if(ActualDeviceName.Equals(sDeviceName))
-                {
-                    Report.Log(ReportLevel.Success,"Device " +sDeviceName+ " is placed correctly");
-                }
-                else
-                {
-                    Report.Log(ReportLevel.Failure,"Device " +sDeviceName+ " is placed incorrectly");
-                }
-                
-                //Click on Points Tab
-                repo.ProfileConsys1.tab_Points.Click();
-                
-            }
-            
-            //Close Excel Sheet
-            Excel_Utilities.CloseExcel();
-            
-        }
-        
-        /********************************************************************
-         * Function Name: VerifyDeviceOrderForGalleryExpansionAndContextMenu
-         * Function Details: To verify device order when gallery is expanded
-         * Parameter/Arguments:
-         * Output:
-         * Function Owner: Purvi Bhasin
-         * Last Update : 24/06/2019
-         ********************************************************************/
-        [UserCodeMethod]
+			// Declared string type
+			string sType,DeviceIndex,sDeviceName;
+			
+			// For loop to iterate on data present in excel
+			for(int i=10; i<=rows; i++)
+			{
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				DeviceIndex = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				
+				sGalleryIndex = SelectGalleryType(sType);
+				sDeviceIndex = DeviceIndex;
+				//Click on Expand for gallery
+				repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+				//repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+				
+				string ActualDeviceName = repo.ContextMenu.DeviceOrder_GalleryExpanded.TextValue;
+				
+				if(ActualDeviceName.Equals(sDeviceName))
+				{
+					Report.Log(ReportLevel.Success,"Device " +sDeviceName+ " is placed correctly");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device " +sDeviceName+ " is placed incorrectly");
+				}
+				
+				//Click on Points Tab
+				repo.ProfileConsys1.tab_Points.Click();
+				
+			}
+			
+			//Close Excel Sheet
+			Excel_Utilities.CloseExcel();
+			
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyDeviceOrderForGalleryExpansionAndContextMenu
+		 * Function Details: To verify device order when gallery is expanded
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 24/06/2019
+		 ********************************************************************/
+		[UserCodeMethod]
 		public static void VerifyDeviceOrderForContextMenu(string sFileName,string sAddDevicesSheet)
 		{
 			//Open excel sheet and read it values,
@@ -6423,7 +6400,7 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 
 		}
-   
+		
 		/********************************************************************
 		 * Function Name: VerifyDeviceExists
 		 * Function Details: To verify item with label name exists in inventory grid
@@ -6646,7 +6623,7 @@ namespace TestProject.Libraries
 			
 			// Search Alarm Load property
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Functionality" +"{ENTER}" );
-	
+			
 			string actualDescription =	repo.FormMe.txt_PropertiesTextValue.TextValue;
 			
 			// Comparing DayMode and sDayMode values
@@ -6671,7 +6648,7 @@ namespace TestProject.Libraries
 		 * Function Details: To delete devices from custom gallery
 		 * Parameter/Arguments:
 		 * Output:
-		 * Function Owner: Shweta 
+		 * Function Owner: Shweta
 		 * Last Update : 11/4/2019 Updated on 10/07/2019 by Purvi Bhasin
 		 ********************************************************************/
 		[UserCodeMethod]
@@ -6703,15 +6680,15 @@ namespace TestProject.Libraries
 		}
 
 		/***********************************************************************************************************
-		 * Function Name: 
-		 * Function Details: 
+		 * Function Name:
+		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:
-		 * Last Update : 
+		 * Last Update :
 		 ************************************************************************************************************/
 		[UserCodeMethod]
-		public static void testGallery(string sDeviceName)	
+		public static void testGallery(string sDeviceName)
 		{
 			ModelNumber=sDeviceName;
 			
@@ -6723,5 +6700,5 @@ namespace TestProject.Libraries
 			
 		}
 	}
-	}
+}
 

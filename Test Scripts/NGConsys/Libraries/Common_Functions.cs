@@ -33,7 +33,7 @@ namespace TestProject.Libraries
 		
 		/********************************************************************
 		 * Function Name: GetDirPath
-		 * Function Details: 
+		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale

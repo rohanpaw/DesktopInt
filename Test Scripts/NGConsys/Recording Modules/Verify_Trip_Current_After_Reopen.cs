@@ -100,7 +100,7 @@ namespace TestProject.Recording_Modules
             repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
-            Libraries.DC_Functions.verifyDCUnitsAfterReopen("Verify Trip Current Calculation for Multiple Base", "Add Devices Loop A", "338.9");
+            verifyDCUnitsAfterReopen("Verify Trip Current Calculation for Multiple Base", "Add Devices Loop A", "338.9");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

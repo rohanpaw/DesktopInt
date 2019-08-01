@@ -199,7 +199,7 @@ namespace TestProject.Recording_Modules
             repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
+            Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM1", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));

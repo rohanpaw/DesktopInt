@@ -1174,7 +1174,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: sFileName, sAddEXIDeviceSheet, sISDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/02/2019
+		 * Last Update : 06/02/2019   Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfMultipleISDevicesOnEXI(string sFileName,string sAddEXIDeviceSheet, string sISDevicesSheet)
@@ -1241,14 +1241,14 @@ namespace TestProject.Libraries
 				// Verify gallery item state
 				Devices_Functions.VerifyGalleryItem(sType,sDeviceName,state);
 				
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
 				Delay.Milliseconds(200);
 				
 				// Click on Physical Layout tab
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				Delay.Milliseconds(500);
 				
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
 				Delay.Milliseconds(200);
 				
 				// Click on Points tab
@@ -1314,7 +1314,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: sFileName, sAddEXIDeviceSheet, sISDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/02/2019
+		 * Last Update : 06/02/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyEnableDisableOfMultipleISDevicesOnEXI(string sFileName,string sAddEXIDeviceSheet, string sISDevicesSheet)
@@ -1382,14 +1382,14 @@ namespace TestProject.Libraries
 				// Verify gallery item state
 				Devices_Functions.VerifyGalleryItem(sType,sDeviceName,state);
 				
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
 				Delay.Milliseconds(200);
 				
 				// Click on Physical Layout tab
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				Delay.Milliseconds(500);
 				
-				repo.ProfileConsys1.NavigationTree.Loop_A.Click();
+				repo.FormMe.Loop_A1.Click();
 				Delay.Milliseconds(200);
 				
 				// Click on Points tab
@@ -3054,10 +3054,10 @@ namespace TestProject.Libraries
 			{
 				sRowIndex = (8).ToString();
 			}
-//			
+//
 //			// Fetch Isolator units
 //			string ActualIsolatorUnitsValue = repo.FormMe.IsolatorUnits.TextValue;
-//			
+//
 //			// Compare Actual and Expected 5V PSU load value
 //			if(ActualIsolatorUnitsValue.Equals(expectedIsolatorUnits))
 //			{

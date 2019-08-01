@@ -112,7 +112,7 @@ namespace TestProject.Libraries
 		{
 			sNode=iNodeNumber.ToString();
 			repo.FormMe.PanelNode1.Click();
-			//repo.ProfileConsys1.PanelNode.Click();
+			
 		}
 		
 		/********************************************************************
@@ -130,7 +130,7 @@ namespace TestProject.Libraries
 			{
 				string[] splitPanelNames = PanelNames.Split(',');
 				
-				//repo.ProfileConsys1.SiteNode.Click();
+				
 				
 				repo.FormMe.SiteNode1.Click();
 				
@@ -187,7 +187,7 @@ namespace TestProject.Libraries
 			string sActualText;
 			Panel_Functions.SelectPanelNode(PanelNode);
 			repo.FormMe.PanelNode1.Click();
-			//repo.ProfileConsys1.PanelNode.Click();
+			
 			if(AfterImport)
 			{
 				repo.ProfileConsys1.Cell_CPU_afterimport.DoubleClick();
@@ -216,19 +216,19 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
+		 * Last Update : Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void changePanelLED(int PanelLED)
 		{
-			//repo.ProfileConsys1.NavigationTree.Expander.Click();
+			
 			repo.FormMe.NodeExpander1.Click();
 			
 			repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+PanelLED +"{ENTER}");
 			
 			repo.FormMe.NodeExpander1.Click();
-			//repo.ProfileConsys1.NavigationTree.Expander.Click();
+			
 		}
 		
 		/********************************************************************
@@ -255,7 +255,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : 27/12/2018 by Alpesh Dhakad
+		 * Last Update : 27/12/2018 by Alpesh Dhakad  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void DeletePanel(int NumberofPanels,string PanelNode,int rowNumber )
@@ -267,7 +267,7 @@ namespace TestProject.Libraries
 				sLabelName=PanelNode;
 				
 				repo.FormMe.SiteNode1.Click();
-				//repo.ProfileConsys1.SiteNode.Click();
+				
 				
 				/*  If else statement added as when we have added only 1 panel and then to delete the same Xpath is different
 				 * Date : 27/11/2018
@@ -301,14 +301,14 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: PanelName
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 3/1/2019
+		 * Last Update : 3/1/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void SelectPanelNode(string sPanelName)
 		{
 			PanelName=sPanelName.ToString();
 			
-			//repo.FormMe.PanelNode.Click();
+			
 			repo.FormMe.PanelNode1.Click();
 			
 			Report.Log(ReportLevel.Success, "Panel Node "+sPanelName+" selected");
@@ -370,7 +370,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 30/05/2019 
+		 * Last Update : 30/05/2019
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void AddPanelOnAddingOnePanel(int NumberofPanels,string PanelNames,string sPanelCPU)
@@ -427,48 +427,48 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 30/05/2019 
+		 * Last Update : 30/05/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void AddOnePanel(int NodeNumber,string PanelNames,string sPanelCPU)
 		{
-		
-			//string[] splitPanelNames = PanelNames.Split(',');
-				
-				repo.ProfileConsys1.SiteNode.Click();
-				
-				string PanelNameWithSpace=PanelNames;
-				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
-				if(PanelName.StartsWith("P"))
-				{
-					sPanelLabelIndex ="5";
-				}
-				else
-				{
-					sPanelLabelIndex ="7";
-				}
-				
-				
-				
-				repo.FormMe.btn_DropDownPanelsGallery.Click();
-				
-				repo.ContextMenu.txt_SelectPanel.Click();
-				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
-				iAddress=NodeNumber;
 			
-				Address =iAddress.ToString();
-				repo.ContextMenu.lstPanelAddress.Click();
-				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
-				Label="Node"+iAddress;
-				Keyboard.Press(Label);
-				if (!sPanelCPU.IsEmpty())
-				{
-					repo.AddANewPanel.AddNewPanelContainer.cmb_CPU.Click();
-					sCPU=sPanelCPU;
-					repo.ContextMenu.lstPanelCPU.Click();
-				}
-				repo.AddANewPanel.ButtonOK.Click();
-				
+			//string[] splitPanelNames = PanelNames.Split(',');
+			
+			repo.FormMe.SiteNode1.Click();
+			
+			string PanelNameWithSpace=PanelNames;
+			PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
+			if(PanelName.StartsWith("P"))
+			{
+				sPanelLabelIndex ="5";
+			}
+			else
+			{
+				sPanelLabelIndex ="7";
+			}
+			
+			
+			
+			repo.FormMe.btn_DropDownPanelsGallery.Click();
+			
+			repo.ContextMenu.txt_SelectPanel.Click();
+			repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
+			iAddress=NodeNumber;
+			
+			Address =iAddress.ToString();
+			repo.ContextMenu.lstPanelAddress.Click();
+			repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+			Label="Node"+iAddress;
+			Keyboard.Press(Label);
+			if (!sPanelCPU.IsEmpty())
+			{
+				repo.AddANewPanel.AddNewPanelContainer.cmb_CPU.Click();
+				sCPU=sPanelCPU;
+				repo.ContextMenu.lstPanelCPU.Click();
+			}
+			repo.AddANewPanel.ButtonOK.Click();
+			
 		}
 	}
 }
