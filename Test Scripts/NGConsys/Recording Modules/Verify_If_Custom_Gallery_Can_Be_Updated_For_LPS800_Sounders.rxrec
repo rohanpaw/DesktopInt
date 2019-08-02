@@ -1241,7 +1241,7 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyCustomDevicesInContextMenu"
+		methodname="DeleteDevicesPresentInCustomGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -1250,45 +1250,33 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<arguments
-			id="9d83b62c-b79d-45f3-ace8-47b902c53bd8">
-				<argument
-				argname="sExist"
-				id="e49d740a-b243-42c3-aedc-04a72d406462">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						True
-					</argvalue>
-				</argument>
+			id="5ffc4d09-71c0-4821-bfee-e32caf168990">
 			</arguments>
 		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
-		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelName"
-		namespace="TestProject.Libraries"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		varname="">
+		searchpropertyid="362c3c64-7831-4d44-9d1b-7bed2ee88ee4"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<arguments
-			id="9e244060-b4d9-4230-b6eb-96759e8485a0">
-				<argument
-				argname="sLabel"
-				id="053ccecd-3684-44a4-ae6e-c87c627a8d9f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						801 CH - 2
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
+			<info
+			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
+				</path>
+			</info>
+		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
@@ -1310,7 +1298,7 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1
+						2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1352,10 +1340,10 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<arguments
-			id="9d83b62c-b79d-45f3-ace8-47b902c53bd8">
+			id="5ffc4d09-71c0-4821-bfee-e32caf168990">
 				<argument
 				argname="sExist"
-				id="e49d740a-b243-42c3-aedc-04a72d406462">
+				id="eb35530a-993f-42d0-b877-a4d182098771">
 					<argvaluetype>
 						System.Boolean
 					</argvaluetype>
@@ -1363,8 +1351,42 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 						False
 					</argvalue>
 				</argument>
+				<argument
+				argname="sExpectedLabelName"
+				id="7a740814-225e-48fd-bbe4-211c919a7679">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Generic
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="97bdf312-dd4d-4dd3-bf00-67f6598e28c0"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
+				</path>
+			</info>
+		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"

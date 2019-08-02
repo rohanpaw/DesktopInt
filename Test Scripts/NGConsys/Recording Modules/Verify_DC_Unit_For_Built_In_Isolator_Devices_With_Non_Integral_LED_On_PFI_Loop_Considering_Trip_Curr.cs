@@ -103,6 +103,14 @@ namespace TestProject.Recording_Modules
             Libraries.DC_Functions.verifyDCUnitsValue("277");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(7));
+            repo.FormMe.SiteNode1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(8));
+            repo.FormMe.Loop_A1.Click();
+            Delay.Milliseconds(200);
+            
             Libraries.Devices_Functions.AddDevicesfromGallery("P85SR", "Sounders/Beacons");
             Delay.Milliseconds(0);
             

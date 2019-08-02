@@ -2318,8 +2318,9 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 03/01/2018    Updated:23/01/2019 -  Shweta Bhosale-Added panel type check
+		                 Updated 02/08/2019 - Purvi Bhasin Index changes in 81.1.20
 		 * Updated:02/08/2019 - Updated code with conventional sounders additionin gallery and updated index for others
-		 **********************************************************************************************************************/
+		 ********************************************************************/
 		[UserCodeMethod]
 		public static string SelectMainProcessorGalleryType(string sType,string PanelType)
 		{
@@ -2365,6 +2366,16 @@ namespace TestProject.Libraries
 					else
 					{
 						sMainProcessorGalleryIndex="8";
+					}
+					break;
+				case "Attached Functionality":
+					if(PanelType.Equals("FIM"))
+					{
+						sMainProcessorGalleryIndex="8";
+					}
+					else
+					{
+						sMainProcessorGalleryIndex="9";
 					}
 					break;
 					
@@ -4369,6 +4380,7 @@ namespace TestProject.Libraries
 		{
 			sPhysicalLayoutDeviceIndex = DeviceIndex;
 			sDeviceAddress = ExpectedDeviceAddress;
+			repo.FormMe.lst_PhysicalLayoutDevice.Click();
 			string ActualDeviceName = repo.FormMe.lst_PhysicalLayoutDevice.TextValue;
 			string ActualDeviceAddress=repo.FormMe.txt_PhysicalLayoutDeviceAddress.TextValue;
 			Report.Log(ReportLevel.Success,"Expected "+ActualDeviceName + ActualDeviceAddress);
@@ -6670,11 +6682,16 @@ namespace TestProject.Libraries
 		 * Last Update : 11/4/2019 Updated on 10/07/2019 by Purvi Bhasin
 		 ********************************************************************/
 		[UserCodeMethod]
-		public static void VerifyCustomDevicesInContextMenu(bool sExist)
+		public static void VerifyCustomDevicesInContextMenu(bool sExist, string sExpectedLabelName)
 		{
+			repo.ContextMenu.btn_CustomDevice_ContextMenu.Click();
+			//Click Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			sLabelName = sExpectedLabelName;			
 			if(sExist)
 			{
-				if(repo.ContextMenu.btn_CustomDevice_ContextMenuInfo.Exists())
+
+				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 				{
 					Report.Log(ReportLevel.Success, "Custom devices are present in gallery");
 				}
@@ -6685,7 +6702,7 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				if(repo.ContextMenu.btn_CustomDevice_ContextMenuInfo.Exists())
+				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 				{
 					Report.Log(ReportLevel.Failure, "Custom devices are present in gallery");
 				}

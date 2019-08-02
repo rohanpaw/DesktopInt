@@ -126,21 +126,26 @@ namespace TestProject.Recording_Modules
             repo.ContextMenu.Custom_In_Context_Menu.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.VerifyCustomDevicesInContextMenu(ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("801 CH - 2");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(15));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.RightClickOnSelectedRow("1");
+            Libraries.Devices_Functions.RightClickOnSelectedRow("2");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(17));
             repo.ContextMenu.Custom_In_Context_Menu.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.VerifyCustomDevicesInContextMenu(ValueConverter.ArgumentFromString<bool>("sExist", "False"));
+            Libraries.Devices_Functions.VerifyCustomDevicesInContextMenu(ValueConverter.ArgumentFromString<bool>("sExist", "False"), "Generic");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(19));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
             Delay.Milliseconds(0);

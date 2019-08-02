@@ -35,7 +35,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="True"
+		optional="False"
 		varname="">
 			<comment>
 			</comment>
@@ -105,7 +105,7 @@ rxversion="8.3">
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="True"
+		optional="False"
 		searchpropertyid="d6491839-4ba8-4b89-8d80-7521ae231209"
 		sx="0"
 		sy="0"
@@ -115,10 +115,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="a126ca17-a4e0-4fdb-9b5b-27702ed23e06"
+			id="f31d368a-a6f8-42cc-a54a-3ef0a9b98471"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem/container/treeitem/button
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption='Main Processor']
 				</path>
 			</info>
 		</mouseitem>
@@ -128,7 +128,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
-		optional="True"
+		optional="False"
 		varname="">
 			<comment>
 			</comment>
@@ -175,7 +175,7 @@ rxversion="8.3">
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="True"
+		optional="False"
 		searchpropertyid="48c798d6-3034-41d9-a87b-94189b50e22d"
 		sx="0"
 		sy="0"
@@ -198,7 +198,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingDevicePropertyForMainProcessorGallery"
 		namespace="TestProject.Libraries"
-		optional="True"
+		optional="False"
 		varname="">
 			<comment>
 			</comment>
@@ -244,7 +244,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
-		optional="True"
+		optional="False"
 		varname="">
 			<comment>
 			</comment>
@@ -291,7 +291,7 @@ rxversion="8.3">
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="True"
+		optional="False"
 		searchpropertyid="48c798d6-3034-41d9-a87b-94189b50e22d"
 		sx="0"
 		sy="0"
@@ -314,7 +314,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingDevicePropertyForMainProcessorGallery"
 		namespace="TestProject.Libraries"
-		optional="True"
+		optional="False"
 		varname="">
 			<comment>
 			</comment>
@@ -360,7 +360,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyModelInSearchProperties"
 		namespace="TestProject.Libraries"
-		optional="True"
+		optional="False"
 		varname="">
 			<comment>
 			</comment>
@@ -386,7 +386,7 @@ rxversion="8.3">
 		isexternaltestmethod="False"
 		methodname="VerifyProductCodeInSearchProperties"
 		namespace="TestProject.Recording_Modules"
-		optional="True"
+		optional="False"
 		varname="">
 			<comment>
 			</comment>
@@ -412,7 +412,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyFunctionality"
 		namespace="TestProject.Libraries"
-		optional="True"
+		optional="False"
 		varname="">
 			<comment>
 			</comment>

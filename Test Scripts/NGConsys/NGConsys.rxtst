@@ -19573,10 +19573,15 @@ persisted in panel properties&nbsp;]]>
 			id="0ae3a1cf-bdae-4750-9a3d-dfd54127efb4">
 			</testcontainer>
 			<testcontainer
+			id="474c6892-03ee-434f-bf30-3507cfa123ee">
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="5d6cf3a6-3f2f-48aa-a965-c29bfdffc1fd">
 			id="8beda494-3ec7-497e-99a2-b3e6a8c43b0e">
+			</testcontainer>
+			<testcontainer
+			id="82fac0cc-8149-49ea-9128-3bd476ad4daa">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -19606,10 +19611,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

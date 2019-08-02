@@ -86,8 +86,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor' at Center.", repo.FormMe.MainProcessorInfo, new RecordItemIndex(2));
-            repo.FormMe.MainProcessor.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.txt_MainProcessor1' at Center.", repo.FormMe.txt_MainProcessor1Info, new RecordItemIndex(2));
+            repo.FormMe.txt_MainProcessor1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("MPM800", "Miscellaneous", "PFI");
@@ -115,36 +115,36 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
             
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "SKU", "555.800.064");
-            //Delay.Milliseconds(0);
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "SKU", "555.800.064");
+            Delay.Milliseconds(0);
             
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Model", "SIO 800");
-            //Delay.Milliseconds(0);
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Model", "SIO 800");
+            Delay.Milliseconds(0);
             
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Label", "SIO 800 - 1");
-            //Delay.Milliseconds(0);
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Label", "SIO 800 - 1");
+            Delay.Milliseconds(0);
             
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Address", "1");
-            //Delay.Milliseconds(0);
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Address", "1");
+            Delay.Milliseconds(0);
             
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "SKU", "568.800.033");
-            //Delay.Milliseconds(0);
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "SKU", "568.800.033");
+            Delay.Milliseconds(0);
             
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "Model", "RIM 800");
-            //Delay.Milliseconds(0);
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "Model", "RIM 800");
+            Delay.Milliseconds(0);
             
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "Label", "RIM 800 - 2");
-            //Delay.Milliseconds(0);
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "Label", "RIM 800 - 2");
+            Delay.Milliseconds(0);
             
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "Address", "2");
-            //Delay.Milliseconds(0);
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "Address", "2");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(18));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(18));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor' at Center.", repo.FormMe.MainProcessorInfo, new RecordItemIndex(19));
-            repo.FormMe.MainProcessor.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.txt_MainProcessor1' at Center.", repo.FormMe.txt_MainProcessor1Info, new RecordItemIndex(19));
+            repo.FormMe.txt_MainProcessor1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(20));
@@ -172,12 +172,12 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyDeviceExists(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "RIM 800 - 2");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(27));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(27));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor' at Center.", repo.FormMe.MainProcessorInfo, new RecordItemIndex(28));
-            repo.FormMe.MainProcessor.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.txt_MainProcessor1' at Center.", repo.FormMe.txt_MainProcessor1Info, new RecordItemIndex(28));
+            repo.FormMe.txt_MainProcessor1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(29));

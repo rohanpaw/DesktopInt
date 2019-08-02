@@ -1050,10 +1050,10 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<info
-			id="98a0901e-99bb-487b-adce-94943da5d188"
+			id="0af98b21-9a1a-42db-9abf-6a39978b72b9"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-B']
 				</path>
 			</info>
 		</mouseitem>
@@ -1182,10 +1182,10 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<info
-			id="ed3605ef-41c4-4036-82a4-6ced4fb82da1"
+			id="5ef2233c-dff3-4ed0-8c90-e2f8a85869ed"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[1]
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-A']
 				</path>
 			</info>
 		</mouseitem>
@@ -1266,10 +1266,10 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<info
-			id="98a0901e-99bb-487b-adce-94943da5d188"
+			id="0af98b21-9a1a-42db-9abf-6a39978b72b9"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]/container[@automationid='ItemsHost']/treeitem[2]
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-B']
 				</path>
 			</info>
 		</mouseitem>

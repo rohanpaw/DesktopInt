@@ -126,7 +126,7 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.ChangeCPUType("CPU 800");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(14));
             repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
