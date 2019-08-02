@@ -226,8 +226,8 @@ namespace TestProject.Libraries
 				// Add devices from Panel node gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 				
-				// Click on Loop Card node
-				repo.FormMe.LoopExpander1.Click();
+				// Click on Expander node
+				repo.FormMe.NodeExpander1.Click();
 				
 				// Click on Loop A node
 				repo.FormMe.Loop_A1.Click();
@@ -241,8 +241,8 @@ namespace TestProject.Libraries
 				// Delete devices using its Label name
 				Devices_Functions.DeleteDeviceUsingLabel(sLabelName);
 				
-				// Click on Loop Card node
-				repo.FormMe.LoopExpander1.Click();
+				// Click on Expander node
+				repo.FormMe.NodeExpander1.Click();
 				
 				// Click on Loop A node
 				repo.FormMe.Loop_A1.Click();

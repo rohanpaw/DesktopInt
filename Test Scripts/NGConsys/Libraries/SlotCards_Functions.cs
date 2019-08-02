@@ -1901,14 +1901,14 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 		
-		/*************************************************************************************
+		/*************************************************************************************************************************************************
 		 * Function Name: VerifyMaxLimitForRepeatersSupportedByPanelOnEthernet
 		 * Function Details: To verify max limit for repeaters supported by panel on Ethernet
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 10/06/2019 Alpesh Dhakad- 29/07/2019 - Updated script as per new build xpath updates
-		 ***************************************************************************************/
+		 * Last Update : 10/06/2019 Alpesh Dhakad- 29/07/2019 - Updated script and add AddDevicesfromEthernetGallery as per new build xpath updates
+		 ***************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyMaxLimitForRepeatersSupportedByPanelOnEthernet(string sFileName,string sAddDevicesSheet)
 		{
@@ -1961,11 +1961,6 @@ namespace TestProject.Libraries
 					// Verify device count and then add devices from panel accessories gallery or panel node gallery
 					if(deviceCount>0)
 					{
-						/// Click on Expander node
-						repo.FormMe.NodeExpander1.Click();
-						
-						// Click on Main processor tab
-						repo.FormMe.MainProcessor1.Click();
 						
 						// Click on Ethernet under Main processor
 						repo.FormMe.Ethernet1.Click();
@@ -1976,7 +1971,9 @@ namespace TestProject.Libraries
 						for(int k=1; k<=deviceCount;k++)
 						{
 							// Add Devices from main processor gallery
-							Devices_Functions.AddDevicesfromMainProcessorGallery(sDeviceName,sType,PanelType);
+							//Devices_Functions.AddDevicesfromMainProcessorGallery(sDeviceName,sType,PanelType);
+							Devices_Functions.AddDevicesfromEthernetGallery(sDeviceName,sType,PanelType);
+							
 						}
 					}
 					
@@ -1986,6 +1983,10 @@ namespace TestProject.Libraries
 				
 				// Verify Node gallery devices state for second device
 				Devices_Functions.VerifyNodeGallery(sSecondDeviceName,sType,sSecondDeviceState,PanelType);
+				
+				// Click on Panel Node
+				repo.FormMe.PanelNode1.Click();
+				
 				
 				// Verify if row count is more than 8 then delete the panel
 				if(rows!=10)
@@ -2061,11 +2062,6 @@ namespace TestProject.Libraries
 					// Verify device count and then add devices from panel accessories gallery or panel node gallery
 					if(deviceCount>0)
 					{
-						// Click on Expander node
-						repo.FormMe.NodeExpander1.Click();
-						
-						// Click on Main processor tab
-						repo.FormMe.MainProcessor1.Click();
 						
 						// Click on RBus under Main processor
 						repo.FormMe.RBus1.Click();
@@ -2086,6 +2082,9 @@ namespace TestProject.Libraries
 				
 				// Verify Node gallery devices state for second device
 				Devices_Functions.VerifyNodeGallery(sSecondDeviceName,sType,sSecondDeviceState,PanelType);
+				
+					// Click on Panel Node
+				repo.FormMe.PanelNode1.Click();
 				
 				// Verify if row count is more than 8 then delete the panel
 				if(rows!=10)

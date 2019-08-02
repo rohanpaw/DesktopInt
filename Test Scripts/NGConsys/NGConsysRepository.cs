@@ -7949,7 +7949,8 @@ namespace TestProject
             RepoItemInfo _btn_closeInfo;
             RepoItemInfo _expandnode1afterreopenInfo;
             RepoItemInfo _btn_devicesgallerydropdown1Info;
-            RepoItemInfo _copy_of_btn_devicesgallerydropdownInfo;
+            RepoItemInfo _copy_of_btn_devicesgallerydropdown1Info;
+            RepoItemInfo _btn_allgallerydropdownInfo;
             RepoItemInfo _sitenode1Info;
             RepoItemInfo _loop_a1Info;
             RepoItemInfo _loop_b1Info;
@@ -8143,7 +8144,8 @@ namespace TestProject
                 _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "button[@automationid='PART_Fill']/container[@automationid='PART_Buttons']//button[@automationid='PART_CloseButton']", 30000, null, "5763368f-3a5f-4ed4-8a10-17d3cba96009");
                 _expandnode1afterreopenInfo = new RepoItemInfo(this, "ExpandNode1AfterReopen", "progressbar/picture[7]/tree/treeitem[2]/button[@automationid='Expander']", 30000, null, "a0efb44c-accf-4fff-9653-ba572fa93af1");
                 _btn_devicesgallerydropdown1Info = new RepoItemInfo(this, "btn_DevicesGalleryDropDown1", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 60000, null, "d3c40847-c329-45f6-a08b-ab1ef99f5d25");
-                _copy_of_btn_devicesgallerydropdownInfo = new RepoItemInfo(this, "Copy_of_btn_DevicesGalleryDropDown", "progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption='801 CH']/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']", 30000, null, "ce5451cf-a238-43f0-b78a-5a358cf5162c");
+                _copy_of_btn_devicesgallerydropdown1Info = new RepoItemInfo(this, "Copy_of_btn_DevicesGalleryDropDown1", "progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption='PR1DS']/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']", 60000, null, "dc1b38cf-d1a9-46c6-929b-3b0fed420e06");
+                _btn_allgallerydropdownInfo = new RepoItemInfo(this, "btn_AllGalleryDropdown", "progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption=$ModelNumber]/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']", 60000, null, "ce5451cf-a238-43f0-b78a-5a358cf5162c");
                 _sitenode1Info = new RepoItemInfo(this, "SiteNode1", "progressbar/picture[@automationid='PART_Image']/tree//text", 30000, null, "6b36f1de-1f4a-4f75-8c4f-b965d96a3330");
                 _loop_a1Info = new RepoItemInfo(this, "Loop_A1", "progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\\ Loop-A']", 30000, null, "5ef2233c-dff3-4ed0-8c90-e2f8a85869ed");
                 _loop_b1Info = new RepoItemInfo(this, "Loop_B1", "progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\\ Loop-B']", 30000, null, "0af98b21-9a1a-42db-9abf-6a39978b72b9");
@@ -12219,26 +12221,50 @@ namespace TestProject
             }
 
             /// <summary>
-            /// The Copy_of_btn_DevicesGalleryDropDown item.
+            /// The Copy_of_btn_DevicesGalleryDropDown1 item.
             /// </summary>
-            [RepositoryItem("ce5451cf-a238-43f0-b78a-5a358cf5162c")]
-            public virtual Ranorex.Container Copy_of_btn_DevicesGalleryDropDown
+            [RepositoryItem("dc1b38cf-d1a9-46c6-929b-3b0fed420e06")]
+            public virtual Ranorex.Container Copy_of_btn_DevicesGalleryDropDown1
             {
                 get
                 {
-                    return _copy_of_btn_devicesgallerydropdownInfo.CreateAdapter<Ranorex.Container>(true);
+                    return _copy_of_btn_devicesgallerydropdown1Info.CreateAdapter<Ranorex.Container>(true);
                 }
             }
 
             /// <summary>
-            /// The Copy_of_btn_DevicesGalleryDropDown item info.
+            /// The Copy_of_btn_DevicesGalleryDropDown1 item info.
             /// </summary>
-            [RepositoryItemInfo("ce5451cf-a238-43f0-b78a-5a358cf5162c")]
-            public virtual RepoItemInfo Copy_of_btn_DevicesGalleryDropDownInfo
+            [RepositoryItemInfo("dc1b38cf-d1a9-46c6-929b-3b0fed420e06")]
+            public virtual RepoItemInfo Copy_of_btn_DevicesGalleryDropDown1Info
             {
                 get
                 {
-                    return _copy_of_btn_devicesgallerydropdownInfo;
+                    return _copy_of_btn_devicesgallerydropdown1Info;
+                }
+            }
+
+            /// <summary>
+            /// The btn_AllGalleryDropdown item.
+            /// </summary>
+            [RepositoryItem("ce5451cf-a238-43f0-b78a-5a358cf5162c")]
+            public virtual Ranorex.Container btn_AllGalleryDropdown
+            {
+                get
+                {
+                    return _btn_allgallerydropdownInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btn_AllGalleryDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("ce5451cf-a238-43f0-b78a-5a358cf5162c")]
+            public virtual RepoItemInfo btn_AllGalleryDropdownInfo
+            {
+                get
+                {
+                    return _btn_allgallerydropdownInfo;
                 }
             }
 

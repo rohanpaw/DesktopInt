@@ -2311,14 +2311,15 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/***********************************************************************************************************************
 		 * Function Name: SelectMainProcessorGalleryType
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 03/01/2018    Updated:23/01/2019 -  Shweta Bhosale-Added panel type check
-		 ********************************************************************/
+		 * Updated:02/08/2019 - Updated code with conventional sounders additionin gallery and updated index for others
+		 **********************************************************************************************************************/
 		[UserCodeMethod]
 		public static string SelectMainProcessorGalleryType(string sType,string PanelType)
 		{
@@ -2343,8 +2344,8 @@ namespace TestProject.Libraries
 						sMainProcessorGalleryIndex="6";
 					}
 					break;
-				case "Printers":
-
+					
+				case "Conventional Sounders":
 					if(PanelType.Equals("FIM"))
 					{
 						sMainProcessorGalleryIndex="6";
@@ -2354,7 +2355,9 @@ namespace TestProject.Libraries
 						sMainProcessorGalleryIndex="7";
 					}
 					break;
-				case "Attached Functionality":
+					
+				case "Printers":
+
 					if(PanelType.Equals("FIM"))
 					{
 						sMainProcessorGalleryIndex="7";
@@ -2362,6 +2365,17 @@ namespace TestProject.Libraries
 					else
 					{
 						sMainProcessorGalleryIndex="8";
+					}
+					break;
+					
+				case "Attached Functionality":
+					if(PanelType.Equals("FIM"))
+					{
+						sMainProcessorGalleryIndex="8";
+					}
+					else
+					{
+						sMainProcessorGalleryIndex="9";
 					}
 					break;
 				default:
@@ -5013,16 +5027,17 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 14/05/2019
+		 * Last Update : 14/05/2019  Alpesh Dhakad - 02/08/2019 - Updated test scripts as per new build and xpaths
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyNodeGallery(string sDeviceName,string sType,string state,string PanelType)
 		{
 			if(state.Equals("Enabled"))
 			{
-				sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,PanelType);
+				//sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,PanelType);
 				ModelNumber=sDeviceName;
-				repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+				repo.FormMe.btn_AllGalleryDropdown.Click();
+				//repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
 				
 				
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
@@ -5036,9 +5051,10 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,PanelType);
+				//sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,PanelType);
 				ModelNumber=sDeviceName;
-				repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+				repo.FormMe.btn_AllGalleryDropdown.Click();
+				//repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
 				
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
 				{
@@ -6701,6 +6717,25 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success, "Device "+sDeviceName+" Added Successfully");
 			
 		}
+		
+		/********************************************************************
+		 * Function Name: AddDevicesfromEthernetGallery
+		 * Function Details: Add devices from Ethernet gallery
+		 * Parameter/Arguments: devicename , device type and panel type
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void AddDevicesfromEthernetGallery(string sDeviceName,string sType, string PanelType)
+		{
+			//sMainProcessorGalleryIndex = SelectMainProcessorGalleryType(sType, PanelType);
+			ModelNumber=sDeviceName;
+			repo.FormMe.btn_AllGalleryDropdown.Click();
+			repo.ContextMenu.txt_SelectDevice.Click();
+			Report.Log(ReportLevel.Info, "Device "+sDeviceName+" added successfully");
+		}
+		
 	}
 }
 

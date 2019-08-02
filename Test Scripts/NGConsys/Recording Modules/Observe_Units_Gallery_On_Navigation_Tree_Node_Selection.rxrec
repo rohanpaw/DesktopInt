@@ -612,6 +612,30 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
+		searchpropertyid="c54bf31b-bb94-4366-b296-95f9db3477f4"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
 		searchpropertyid="2da5e46b-f252-41d6-96f8-f4f1261ca2e1"
 		sx="0"
 		sy="0"
@@ -2386,30 +2410,6 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
 		searchpropertyid="756be28e-a0f3-4330-bb28-c53a4d837d07"
 		sx="0"
 		sy="0"
@@ -2932,30 +2932,6 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
-				</path>
-			</info>
-		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -3540,7 +3516,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
+		searchpropertyid="0ba38cdb-2191-4f9c-9d35-0299992f0021"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -3549,10 +3525,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
+			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
 				</path>
 			</info>
 		</mouseitem>

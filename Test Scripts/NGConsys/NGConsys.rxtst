@@ -8090,14 +8090,6 @@ MxDesigner]]>
 			name="Observe_Devices_Order_Displayed_In_Context_Menu"
 			ref="660de8e4-d434-4c63-85b7-ce3df90b906c"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="31e248c2-f7ec-499f-87fb-9f0b85c8092f"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="849e49fa-0078-4206-bda7-44b41df71a30"
@@ -19578,14 +19570,13 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="0ae3a1cf-bdae-4750-9a3d-dfd54127efb4">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="2917074b-ac64-4f2a-b37c-0ede74181172">
-			id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed">
-			</testcontainer>
-			<testcontainer
-			id="dbd6d028-c646-4cba-86a1-4e69da22a4df">
+			id="8beda494-3ec7-497e-99a2-b3e6a8c43b0e">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

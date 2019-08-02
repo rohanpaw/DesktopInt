@@ -15934,10 +15934,17 @@ AAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="container"
+			id="dc1b38cf-d1a9-46c6-929b-3b0fed420e06"
+			name="Copy_of_btn_DevicesGalleryDropDown1"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption='PR1DS']/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']
+			</item>
+			<item
+			capname="container"
 			id="ce5451cf-a238-43f0-b78a-5a358cf5162c"
-			name="Copy_of_btn_DevicesGalleryDropDown"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption='801 CH']/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']
+			name="btn_AllGalleryDropdown"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption=$ModelNumber]/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']
 			</item>
 			<item
 			capname="text"

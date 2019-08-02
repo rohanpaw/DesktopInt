@@ -140,7 +140,7 @@ namespace TestProject.Recording_Modules
             repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM");
+            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM1");
             Delay.Milliseconds(0);
             
         }

@@ -1223,30 +1223,6 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="756be28e-a0f3-4330-bb28-c53a4d837d07"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="9d9b9f29-f90b-47fc-8324-fe4a0d18047a"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[4]/button[@automationid='PART_ExpandButton']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
 		searchpropertyid="e735920a-7f25-4494-983c-4ad36599d226"
 		sx="188"
 		sy="342"
