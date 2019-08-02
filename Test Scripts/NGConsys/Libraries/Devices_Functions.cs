@@ -2378,17 +2378,6 @@ namespace TestProject.Libraries
 						sMainProcessorGalleryIndex="9";
 					}
 					break;
-					
-				case "Attached Functionality":
-					if(PanelType.Equals("FIM"))
-					{
-						sMainProcessorGalleryIndex="8";
-					}
-					else
-					{
-						sMainProcessorGalleryIndex="9";
-					}
-					break;
 				default:
 					Console.WriteLine("Please specify correct gallery name");
 					break;
