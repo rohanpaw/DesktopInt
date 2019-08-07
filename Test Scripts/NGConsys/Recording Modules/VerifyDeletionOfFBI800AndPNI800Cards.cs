@@ -107,11 +107,7 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "FBI800-1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(8));
-            repo.FormMe.NodeExpander1.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.BackplaneOrXLMExternalLoopCard_Expander' at Center.", repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.BackplaneOrXLMExternalLoopCard_Expander' at Center.", repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo, new RecordItemIndex(8));
             repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
             Delay.Milliseconds(200);
             
@@ -124,14 +120,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(12));
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
             Libraries.SlotCards_Functions.VerifyandClickOtherSlotCardsForBackplane1("Other Slot Cards  (1 of 6)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(14));
             repo.FormMe.PanelNode1.Click();
             Delay.Milliseconds(200);
             
@@ -150,7 +146,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(20));
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
@@ -163,11 +159,11 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("389_5");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(24));
             repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormMe.Backplane1AfterReopen'.", repo.FormMe.Backplane1AfterReopenInfo, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormMe.Backplane1AfterReopen'.", repo.FormMe.Backplane1AfterReopenInfo, new RecordItemIndex(25));
             Validate.Exists(repo.FormMe.Backplane1AfterReopenInfo);
             Delay.Milliseconds(0);
             

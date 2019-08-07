@@ -82,7 +82,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="328b20d5-693a-4dd4-8ab1-cb17b14951b9"
+		searchpropertyid="d96bcb70-366c-44ea-ac5f-6fbab3d013e2"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -91,10 +91,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="239b5b88-586a-4959-b95b-241692771141"
-			sourcename="ItemRecorderEditor">
+			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/?/?/text[@caption=$PanelNode]
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
 				</path>
 			</info>
 		</mouseitem>
@@ -166,30 +166,6 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="7e01684c-98c9-4954-ac32-81185f6cadd7"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="14073c16-be92-433d-9cfe-bae704ce7356"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[3]/button[@automationid='PART_ExpandButton']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
 		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
 		sx="0"
 		sy="0"
@@ -203,6 +179,30 @@ rxversion="8.3">
 			sourcename="RepositoryEditor">
 				<path>
 					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="a9189d21-e45b-4b6d-b68c-bd1afdd08f5f"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a132b8d7-c763-4e9c-b961-327a18b252f9"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Inventory']
 				</path>
 			</info>
 		</mouseitem>

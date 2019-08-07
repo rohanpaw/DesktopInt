@@ -93,7 +93,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "IOB800", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.SlotCards_Functions.VerifyAccessoriesGalleryUpdateOnMaxLimitSupportedByPanel("TC_61_Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached", "Add Devices");
+            Libraries.SlotCards_Functions.VerifyAccessoriesGalleryUpdateOnMaxLimitSupportedByPanel("TC_61_Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached", "Add Panels");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("IOB800-1");
@@ -103,8 +103,8 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(7));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(7));
+            repo.FormMe.PanelNode1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(8));

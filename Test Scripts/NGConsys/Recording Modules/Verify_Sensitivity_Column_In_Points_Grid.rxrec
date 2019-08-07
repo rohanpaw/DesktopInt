@@ -82,30 +82,6 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="328b20d5-693a-4dd4-8ab1-cb17b14951b9"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="239b5b88-586a-4959-b95b-241692771141"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/?/?/text[@caption=$PanelNode]
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
 		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
 		sx="0"
 		sy="0"

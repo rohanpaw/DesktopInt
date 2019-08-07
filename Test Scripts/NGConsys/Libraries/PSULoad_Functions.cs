@@ -3240,9 +3240,6 @@ namespace TestProject.Libraries
 				repo.FormMe.SiteNode1.Click();
 				
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
-				
-				// Click on Expander node
 				repo.FormMe.PanelNode1.Click();
 				repo.FormMe.MainProcessor1.Click();
 
@@ -3343,6 +3340,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 22/01/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 07/0/2019 - Updated test scripts 
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnRbusAddDelete(string sFileName,string sAddPanelSheet)
@@ -3390,8 +3388,6 @@ namespace TestProject.Libraries
 				// Verify Default Alarm load value
 				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
 				
-				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
 				
 				// Click on R-Bus node
 				repo.FormMe.PanelNode1.Click();

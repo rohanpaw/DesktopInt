@@ -2075,6 +2075,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpath
+		 * Alpesh Dhakad - 07/08/2019 - Updated scripts for cable length
 		 *****************************************************************************************/
 		// Change cable length method
 		[UserCodeMethod]
@@ -2089,11 +2090,23 @@ namespace TestProject.Libraries
 			//Click on Loop A in Navigation tree tab
 			repo.FormMe.Loop_A1.Click();
 			
-			//Click on cable length cell
-			repo.ProfileConsys1.cell_CableLength.Click();
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
+			// Enter the Day Matches night text in Search Properties fields to view cable length;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("{LControlKey down}{Akey}{LControlKey up}Length" +"{ENTER}" );
+			
+			//Click on cable length cell
+			repo.FormMe.cell_CableLength.Click();
+
 			//Change the value of cable length
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableLength + "{Enter}");
+	
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 			
 			//Click on Panel Node
 			repo.FormMe.PanelNode1.Click();
@@ -4419,14 +4432,15 @@ namespace TestProject.Libraries
 			Delay.Duration(1000, false);
 		}
 		
-		/********************************************************************
+		/****************************************************************************************************************
 		 * Function Name: VerifyCableLength
 		 * Function Details: To verify cable length
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 24/04/2019 Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 * Alpesh Dhakad - 06/08/2019 Updated cable length code
+		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCableLength(string sCableLength)
 		{
@@ -4440,9 +4454,23 @@ namespace TestProject.Libraries
 			repo.FormMe.Loop_A1.Click();
 			
 			//Click on cable length cell
-			repo.ProfileConsys1.cell_CableLength.Click();
+			//repo.FormMe.cell_CableLength1.Click();
+			//repo.ProfileConsys1.cell_CableLength.Click();
 			
-			string actualCableLength = repo.ProfileConsys1.txt_CableLength.TextValue;
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Day Matches night text in Search Properties fields to view cable length;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("{LControlKey down}{Akey}{LControlKey up}Length" +"{ENTER}" );
+			
+			//Click on cable length cell
+			repo.FormMe.cell_CableLength.Click();
+
+			
+			
+			
+			string actualCableLength = repo.FormMe.txt_CableLength.TextValue;
+			//string actualCableLength = repo.ProfileConsys1.txt_CableLength.TextValue;
 			
 			
 			// Comparing actual and expected value
@@ -4459,14 +4487,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/**********************************************************************************************
 		 * Function Name: VerifyCableLengthInNodeGalleryItems
 		 * Function Details: To verify cable length
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 24/04/2019
-		 ********************************************************************/
+		 * Last Update : 24/04/2019 Alpesh Dhakad - 07/08/2019 - Updated xpath for cell_cableLength
+		 **********************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCableLengthInNodeGalleryItems(string sCableLength)
 		{
@@ -4493,14 +4521,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/**********************************************************************************************************************************
 		 * Function Name: verifyMinMaxThroughSpinControlForCableLength
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 24/04/2019
-		 ********************************************************************/
+		 * Last Update : 24/04/2019  Alpesh Dhakad - 07/08/2019 - Updated xpath for spin up down button
+		 **********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMinMaxThroughSpinControlForCableLength(string minLimit,string maxLimit)
 		{

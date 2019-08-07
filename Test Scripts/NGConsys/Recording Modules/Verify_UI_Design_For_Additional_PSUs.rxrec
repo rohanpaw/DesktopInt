@@ -98,6 +98,30 @@ rxversion="8.3">
 				</path>
 			</info>
 		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="13ab0baf-6a8c-4f0f-a14a-a8165990f208"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
+				</path>
+			</info>
+		</mouseitem>
 		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"
@@ -1069,7 +1093,7 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
+		searchpropertyid="3bd4659b-037b-4b86-896e-bcf95b14ea28"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -1078,10 +1102,10 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<info
-			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
+			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
 				</path>
 			</info>
 		</mouseitem>
@@ -1111,30 +1135,6 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="756be28e-a0f3-4330-bb28-c53a4d837d07"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="9d9b9f29-f90b-47fc-8324-fe4a0d18047a"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[4]/button[@automationid='PART_ExpandButton']
-				</path>
-			</info>
-		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"

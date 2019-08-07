@@ -86,8 +86,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FormMe.txt_MainProcessor1' at Center.", repo.FormMe.txt_MainProcessor1Info, new RecordItemIndex(2));
-            repo.FormMe.txt_MainProcessor1.DoubleClick();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FormMe.MainProcessorNode1' at Center.", repo.FormMe.MainProcessorNode1Info, new RecordItemIndex(2));
+            repo.FormMe.MainProcessorNode1.DoubleClick();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("MPM800", "Miscellaneous", "PFI");

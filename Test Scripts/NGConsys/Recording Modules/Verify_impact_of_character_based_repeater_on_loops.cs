@@ -99,16 +99,16 @@ namespace TestProject.Recording_Modules
             Libraries.Gallery_Functions.SelectItemFromUnitsGallery(ValueConverter.ArgumentFromString<int>("iNumberOfItems", "2"), "PLX800", "Loops");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.VerifyInventoryGrid(ValueConverter.ArgumentFromString<int>("iStartRowIndex", "6"), ValueConverter.ArgumentFromString<int>("iEndRowIndex", "13"), "123.456.789");
+            Libraries.InventoryGrid_Functions.VerifyInventoryGrid(ValueConverter.ArgumentFromString<int>("iStartRowIndex", "6"), ValueConverter.ArgumentFromString<int>("iEndRowIndex", "13"), "557.202.842");
             Delay.Milliseconds(100);
             
             Libraries.Gallery_Functions.VerifyDisabledItemFromUnitsGallery(ValueConverter.ArgumentFromString<int>("iNumberOfItems", "1"), "MX2 Repeater", "Repeaters");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.DeleteItemfromInventory(ValueConverter.ArgumentFromString<int>("iRowNumber", "6"), "PLX800", "123.456.789");
+            Libraries.InventoryGrid_Functions.DeleteItemfromInventory(ValueConverter.ArgumentFromString<int>("iRowNumber", "7"), "PLX800", "557.202.842");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "6"), "PLX800", "123.456.789");
+            Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "7"), "PLX800", "557.202.842");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.VerifyEnabledItemFromUnitsGallery(ValueConverter.ArgumentFromString<int>("iNumberOfItems", "1"), "MX2 Repeater", "Repeaters");

@@ -1041,14 +1041,6 @@ rxversion="8.3">
 			name="Verify_Paste_Of_Points_Only"
 			ref="925e64c6-c496-4160-82b4-2b68be5eac59"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="81be8bf4-897f-4cb4-966f-7e48fbbb98ce"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="10e215c2-ed7f-4a42-9d59-e12168027323"
@@ -1221,14 +1213,6 @@ rxversion="8.3">
 			name="Verify_Sensitivity_Column_In_Points_Grid"
 			ref="f63be1c8-2f64-41a4-a329-467aa23a3924"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="66147d7f-cf5e-45f9-b4d7-b0d7ba953821"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="1359e51a-189d-4f00-89de-e891285f4779"
@@ -1724,14 +1708,6 @@ rxversion="8.3">
 			name="Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste"
 			ref="d77c9b28-e21b-4f69-b248-b21217a9522c"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="d1da618b-b2cb-48f3-b850-bfaa48518970"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="1ac845bf-b59d-433e-bd59-cd44baac65a3"
@@ -3213,14 +3189,6 @@ rxversion="8.3">
 			name="Verify_Paste_Of_Unit_Only"
 			ref="1e0e124e-8162-4f46-9fae-f627dd9297c7"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="e2708cf8-0006-4cee-b114-108e2c344b48"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="35a77868-41b5-4550-9d0b-0aaffca05fed"
@@ -5780,14 +5748,6 @@ loops.</SPAN>]]>
 			name="Verify_Pasting_Of_Points_In_Loop_Where_Points_Limit_Exceeds"
 			ref="3ac8ba58-8356-437c-8589-5e08fa919379"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="05c8b575-b5b5-4e1a-8970-570d93ed8c21"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="5e52fb4a-a46d-417f-9899-404b3f80d070"
@@ -6807,6 +6767,12 @@ loops.</SPAN>]]>
 			id="701dbaa5-0d1a-44f6-92ed-52bf74268485"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="70229e8f-704b-49b9-8a82-8db8b652fd1d"
+			name="test5819"
+			ref="2b403617-e34d-4e39-9091-334c79bd0a3a"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -9477,14 +9443,6 @@ MxDesigner]]>
 			name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste"
 			ref="de7fad75-5906-482a-9bc4-a81b49538003"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="d600789f-44ee-4896-a3d1-a08d1c4f8ff8"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="9bb90fdd-f811-4e7a-87d8-d00cde3a0b38"
@@ -10084,14 +10042,6 @@ div.WordSection1
 			name="Verify_persistance_Of_Loop_Properties_on_Copy_Paste"
 			ref="4a0775d8-a68f-48c8-b0fa-9133aa087947"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="11cb5c8d-38a9-4f65-9fa2-4dc0bbc3e5f5"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="a6e4b703-3ae3-476d-9922-6b45915091e2"
@@ -10348,14 +10298,6 @@ div.WordSection1
 			name="Verify_Persistance_of_Region_Name_Property_On_CopyPaste"
 			ref="edb6e3e4-3a6c-40d0-869f-aedf5d4e47df"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="899247e0-cc68-477d-9853-2c6d810ea13c"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="ad56b832-3587-4780-9343-a901aa77b875"
@@ -14359,14 +14301,6 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_Paste_Of_Unit_With_Points"
 			ref="21df85d8-aea5-4759-a8a8-44db0ff18796"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="4315861a-9467-4079-b0b6-186628cddf6d"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="f8a27eff-4791-4891-9db3-3830d7b5381d"
@@ -14666,14 +14600,6 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_Paste_Options_Displayed_For_Loop"
 			ref="a2460558-217d-4451-affa-e0ba9edbdb7f"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="a0f00c7a-352a-4ea6-8590-7d09ca6a596f"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="fe30d5e2-4998-41be-9d81-5882f4cb243e"
@@ -19365,6 +19291,10 @@ persisted in panel properties&nbsp;]]>
 						id="c153d80d-34f2-4db4-ac2d-273f0547ed46"
 						name="Testing">
 						</testmodule>
+						<testmodule
+						id="70229e8f-704b-49b9-8a82-8db8b652fd1d"
+						name="test5819">
+						</testmodule>
 					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
@@ -19570,18 +19500,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0ae3a1cf-bdae-4750-9a3d-dfd54127efb4">
-			</testcontainer>
-			<testcontainer
-			id="474c6892-03ee-434f-bf30-3507cfa123ee">
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="5d6cf3a6-3f2f-48aa-a965-c29bfdffc1fd">
-			id="8beda494-3ec7-497e-99a2-b3e6a8c43b0e">
-			</testcontainer>
-			<testcontainer
-			id="82fac0cc-8149-49ea-9128-3bd476ad4daa">
+			id="4568f5cd-852c-4854-931f-3a3d85e7fdf1">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -19611,10 +19533,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

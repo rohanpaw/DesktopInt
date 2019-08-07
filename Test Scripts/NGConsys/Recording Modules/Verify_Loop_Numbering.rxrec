@@ -246,7 +246,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="b5477b1d-cb79-4285-b062-c8e5b333fa59"
+		searchpropertyid="590cb863-d195-44cf-83bb-d0ac102bba1d"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -255,10 +255,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="10bfbf2e-7290-4c00-bb4c-8fa9a7bb190b"
-			sourcename="ItemRecorderEditor">
+			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
+			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/?/tree/treeitem[2]/button[@automationid='Expander']
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
 				</path>
 			</info>
 		</mouseitem>

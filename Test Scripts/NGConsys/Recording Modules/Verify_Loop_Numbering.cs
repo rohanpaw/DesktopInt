@@ -110,8 +110,8 @@ namespace TestProject.Recording_Modules
             Validate.AttributeContains(repo.FormMe2.BuiltInLoopD0Of125Info, "Text", "Built-in Loop-D (0 of 125)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(8));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(8));
+            repo.FormMe.PanelNode1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");

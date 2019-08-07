@@ -58,14 +58,14 @@ namespace TestProject.Libraries
 		/// </summary>
 		/// 
 		
-		/********************************************************************
+		/****************************************************************************************
 		 * Function Name: VerifyInventoryGrid
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 07/08/2019 - Updated code and added Xpath for txt_SKU
+		 ****************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyInventoryGrid(int iStartRowIndex, int iEndRowIndex, string sSKUofItem)
 		{
@@ -74,7 +74,18 @@ namespace TestProject.Libraries
 			{
 				sRowIndex=i.ToString();
 				sSKU=sSKUofItem;
-				Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_SKUInfo, "Text", sSKU);
+				//Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_SKUInfo, "Text", sSKU);
+				//Validate.AttributeEqual(repo.FormMe.txt_SKUInfo, "Text", sSKU);
+				
+				if(repo.FormMe.txt_SKUInfo.Exists())
+				{
+				Report.Log(ReportLevel.Success,"Item: "+sSKUofItem+" displayed correctly");
+				}
+				else
+				{
+				Report.Log(ReportLevel.Failure,"Item: "+sSKUofItem+" not displayed correctly");
+				}
+				
 			}
 		}
 		
@@ -86,21 +97,22 @@ namespace TestProject.Libraries
 		/// 
 		
 		
-		/********************************************************************
+		/**********************************************************************************
 		 * Function Name: SelectRow
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 07/08/2019 - Updated code for txt_SKU and xpath
+		 **********************************************************************************/
 		[UserCodeMethod]
 		public static void SelectRow(int iRowNumber,string sItemName,string sSKUofItem)
 		{
 			sRowIndex=iRowNumber.ToString();
 			
 			sSKU=sSKUofItem;
-			repo.ProfileConsys1.PanelInvetoryGrid.txt_SKU.Click();
+			repo.FormMe.txt_SKU.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_SKU.Click();
 		}
 
 		/// <summary>
@@ -142,6 +154,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 05/07/2019 - Alpesh Dhakad - Update Report log for success message
+		 * Alpesh Dhakad - 07/08/2019 - Updated code and added Xpath for txt_SKU
 		 **********************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyRowNotExist(int iRowNumber,string sItemName,string sSKUofItem)
@@ -149,7 +162,7 @@ namespace TestProject.Libraries
 			sRowIndex=iRowNumber.ToString();
 			
 			sSKU=sSKUofItem;
-			if(repo.ProfileConsys1.PanelInvetoryGrid.txt_SKUInfo.Exists())
+			if(repo.FormMe.txt_SKUInfo.Exists())
 			{
 				Report.Log(ReportLevel.Failure,"Item: "+sItemName+" not deleted successfully");
 			}
@@ -167,20 +180,20 @@ namespace TestProject.Libraries
 		/// </summary>
 		/// 
 		
-		/********************************************************************
+		/**************************************************************************************************
 		 * Function Name: VerifyRowExist
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 07/08/2019 - Updated code and added Xpath for txt_SKU
+		 **************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyRowExist(int iRowNumber,string sItemName,string sSKUofItem)
 		{
 			sRowIndex=iRowNumber.ToString();
 			sSKU=sSKUofItem;
-			if(repo.ProfileConsys1.PanelInvetoryGrid.txt_SKUInfo.Exists())
+			if(repo.FormMe.txt_SKUInfo.Exists())
 			{
 				Report.Log(ReportLevel.Success,"Item: "+sItemName+" device added successfully");
 			}
@@ -323,14 +336,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/***********************************************************************************************************
+		/******************************************************************************************************************************************************
 		 * Function Name: verifyInventoryDeviceProperty
 		 * Function Details: Verify device property from Inventory properties section
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 05/04/2019
-		 ************************************************************************************************************/
+		 * Last Update : 05/04/2019 Alpesh Dhakad - 06/08/2019 - Updated code with cell_InventoryProperty and added/updated xpath for txt_InventoryProperty
+		 ******************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyInventoryDeviceProperty(string sPropertyLabel, string sExpectedValue)
 		{
@@ -342,10 +355,10 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sPropertyLabel +"{ENTER}" );
 			
 			// Click on Label property cell
-			repo.FormMe.txt_InventoryProperty.Click();
+			repo.FormMe.cell_InventoryProperty.Click();
 			
 			// Get the text value of property
-			repo.FormMe.txt_InventoryProperty.Click();
+			//repo.FormMe.txt_InventoryProperty.Click();
 			string actualValue = repo.FormMe.txt_InventoryProperty.TextValue;
 			
 			Report.Log(ReportLevel.Success,"Actual: "+actualValue+" Expected"+sExpectedValue);

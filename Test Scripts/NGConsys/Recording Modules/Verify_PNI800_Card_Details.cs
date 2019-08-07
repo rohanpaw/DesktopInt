@@ -135,8 +135,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("378_4");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(14));
-            repo.FormMe.NodeExpander1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1_AfterReopen' at Center.", repo.FormMe.PanelNode1_AfterReopenInfo, new RecordItemIndex(14));
+            repo.FormMe.PanelNode1_AfterReopen.Click();
             Delay.Milliseconds(200);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PNI800-3");

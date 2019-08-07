@@ -94,7 +94,7 @@ namespace TestProject.Recording_Modules
             repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.VerifyCableLength("1000");
+            Libraries.Devices_Functions.VerifyCableLength("1,000");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(5));
@@ -107,14 +107,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectNodeInventoryLabel("6");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("1000");
+            Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("1,000");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMinMaxThroughSpinControlForCableLength("100", "1000");
+            Libraries.Devices_Functions.verifyMinMaxThroughSpinControlForCableLength("100", "1,000");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(10));
-            repo.FormMe.LoopExpander1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(10));
+            repo.FormMe.PanelNode1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(11));
@@ -124,11 +124,35 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangeCableLength(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "450"));
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(13));
+            repo.FormMe.PanelNode1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(14));
+            repo.FormMe.Loop_A1.Click();
+            Delay.Milliseconds(200);
+            
             Libraries.Devices_Functions.VerifyCableLength("450");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(16));
+            repo.FormMe.PanelNode1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(17));
+            repo.FormMe.Loop_A1.Click();
+            Delay.Milliseconds(200);
+            
             Libraries.Devices_Functions.ChangeCableLength(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "4500"));
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(19));
+            repo.FormMe.PanelNode1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(20));
+            repo.FormMe.Loop_A1.Click();
+            Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("450");
             Delay.Milliseconds(0);

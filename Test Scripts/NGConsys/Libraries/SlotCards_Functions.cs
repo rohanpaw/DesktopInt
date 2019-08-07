@@ -1320,6 +1320,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 03/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
+		 * Alpesh Dhakad - 06/08/2019 - Added Site node click event before delete panel step
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIOBInAccessoriesGallery(string sFileName,string sAddDevicesSheet)
@@ -1355,6 +1356,8 @@ namespace TestProject.Libraries
 				// Verify enable or disable state of devices in panel accessories gallery
 				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType, sDeviceName, InitialState);
 
+				repo.FormMe.SiteNode1.Click();
+				
 				// Verify if row count is more than 8 then delete the panel
 				if(rows!=8)
 				{
