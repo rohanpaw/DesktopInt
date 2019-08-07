@@ -50,7 +50,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						TC_0067_Verify_Miscellaneous_Gallery
+						TC_67_Verify_Miscellaneous_Gallery
 					</argvalue>
 				</argument>
 				<argument

@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Gallery_Functions.VerifyGalleryItemsWithoutAddingAnyOtherEntity("TC_0067_Verify_Miscellaneous_Gallery", "Add Panels", "Add Devices");
+            Libraries.Gallery_Functions.VerifyGalleryItemsWithoutAddingAnyOtherEntity("TC_67_Verify_Miscellaneous_Gallery", "Add Panels", "Add Devices");
             Delay.Milliseconds(0);
             
         }

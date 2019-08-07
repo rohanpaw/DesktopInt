@@ -1386,6 +1386,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="152f4ae5-cb26-447c-8fc2-6ff75f88149b"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="166154e7-2bf1-4f3a-9411-27abf49f82f8"
 			name="Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane"
 			ref="dcb002d8-81ef-4a04-8ea5-46f5d33091b7"
@@ -11568,14 +11574,6 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_when_user_edit_the_HVR800_Properties"
 			ref="6c9a9ca9-f1e0-48ca-a169-5d36d6d0c20a"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="f521de22-99d9-415f-93dc-e107663f9e8e"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="c71c0d6b-d6ed-43d4-ba4c-1d25ad997a40"
@@ -12738,12 +12736,6 @@ persisted in panel properties&nbsp;]]>
 			ref="496de603-0d69-4fc6-b09f-6903beac02eb"
 			type="Recording">
 				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="4e8e429d-5507-428e-b2ab-40c1df197167"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
 					<var
 					dataname="sRow"
 					datasourceid="4e8e429d-5507-428e-b2ab-40c1df197167"
@@ -18178,6 +18170,10 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="ba34f9f5-b2c9-408b-adb1-e681b34664a9"
 						name="Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light">
+						</testmodule>
+						<testmodule
+						id="152f4ae5-cb26-447c-8fc2-6ff75f88149b"
+						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<testcase

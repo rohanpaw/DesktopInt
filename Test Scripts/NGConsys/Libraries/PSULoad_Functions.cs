@@ -1418,12 +1418,13 @@ namespace TestProject.Libraries
 				
 				// Click on Expander node
 				repo.FormMe.NodeExpander1.Click();
-				repo.FormMe.MainProcessor1.Click();
-				repo.FormMe.Ethernet1.Click();
-				
 				
 				// Click on Loop Card node
 				repo.FormMe.LoopExpander1.Click();
+				
+				repo.FormMe.MainProcessor1.Click();
+				repo.FormMe.Ethernet1.Click();
+				
 				
 				for(int j=8; j<=9; j++)
 				{
@@ -1432,10 +1433,11 @@ namespace TestProject.Libraries
 					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,8]).Value.ToString();
 					sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[j,9]).Value.ToString();
 					s40VLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
-					repo.FormMe.MainProcessorList.Ethernet.Click();
+					repo.FormMe.Ethernet1.Click();
 					float.TryParse(s40VLoad, out FourtyVLoad);
 					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 					Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
+					
 					
 					// Click on Loop A node
 					repo.FormMe.Loop_A1.Click();
@@ -1536,13 +1538,14 @@ namespace TestProject.Libraries
 				
 				// Click on R-Bus node
 				repo.FormMe.NodeExpander1.Click();
-				repo.FormMe.MainProcessor1.Click();
-				repo.FormMe.RBus1.Click();
 				
 				// Click on Loop Card node
 				repo.FormMe.LoopExpander1.Click();
 				
-				for(int j=8; j<=9; j++)
+				repo.FormMe.MainProcessor1.Click();
+				repo.FormMe.RBus1.Click();
+				
+				for(int j=8; j<9; j++)
 				{
 					
 					ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[j,7]).Value.ToString();
@@ -1701,11 +1704,14 @@ namespace TestProject.Libraries
 				
 				// Click on R-Bus node
 				repo.FormMe.NodeExpander1.Click();
-				repo.FormMe.MainProcessor1.Click();
-				repo.FormMe.RBus1.Click();
 				
 				// Click on Loop Card node
 				repo.FormMe.LoopExpander1.Click();
+				
+				repo.FormMe.MainProcessor1.Click();
+				repo.FormMe.RBus1.Click();
+				
+				
 				
 				for(int j=8; j<9; j++)
 				{
@@ -3256,7 +3262,7 @@ namespace TestProject.Libraries
 					sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
 					sBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,11]).Value.ToString();
 					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,12]).Value.ToString();
-					repo.FormMe.MainProcessorList.Ethernet.Click();
+					repo.FormMe.Ethernet1.Click();
 					float.TryParse(sBatteryStandby, out BatteryStandby);
 					float.TryParse(sAlarmLoad, out AlarmLoad);
 					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
@@ -4282,7 +4288,8 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 22/01/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
+		 * Last Update : 22/01/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths 
+		                 Purvi Bhasin - 07/08/2019 - Commented Node Expander so that Loop A remains visible
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyImpactOfSecondPSUOnBatteryAndAlarm(string sFileName,string sAddPanelSheet)
@@ -4359,10 +4366,10 @@ namespace TestProject.Libraries
 					Panel_Functions.ChangeSecondPSUType(SecondPSU);
 					
 					// Click on Expander node
-					repo.FormMe.NodeExpander1.Click();
+					//repo.FormMe.NodeExpander1.Click();
 					
 					// Click on Loop Card node
-					repo.FormMe.LoopExpander1.Click();
+					//repo.FormMe.LoopExpander1.Click();
 					
 					// Click on Loop A node
 					repo.FormMe.Loop_A1.Click();
@@ -4395,13 +4402,13 @@ namespace TestProject.Libraries
 						
 						
 						// Click on Expander node
-						repo.FormMe.NodeExpander1.Click();
+						//repo.FormMe.NodeExpander1.Click();
 						
 						// Add devices from Panel node gallery
 						Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 						
 						// Click on Loop Card node
-						repo.FormMe.LoopExpander1.Click();
+						//repo.FormMe.LoopExpander1.Click();
 						
 						// Click on Loop A node
 						repo.FormMe.Loop_A1.Click();
@@ -5403,10 +5410,10 @@ namespace TestProject.Libraries
 				Panel_Functions.ChangePSUType(PSUType);
 				
 				// Click on Panel node
-				repo.FormMe.NodeExpander1.Click();
+				/*repo.FormMe.NodeExpander1.Click();
 				
 				// Click on Expander loop card node
-				repo.FormMe.LoopExpander1.Click();
+				repo.FormMe.LoopExpander1.Click();*/
 				
 				// Click on Loop A node
 				repo.FormMe.Loop_A1.Click();

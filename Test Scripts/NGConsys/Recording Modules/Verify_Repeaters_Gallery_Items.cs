@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Gallery_Functions.VerifyGalleryItems("TC_0064_Verify_Repeaters_Gallery_Items", "Add Panels", "Add Devices");
+            Libraries.Gallery_Functions.VerifyGalleryItems("TC_64_Verify_Repeaters_Gallery_Items", "Add Panels", "Add Devices");
             Delay.Milliseconds(0);
             
         }

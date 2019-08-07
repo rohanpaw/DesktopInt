@@ -2713,6 +2713,7 @@ namespace TestProject.Libraries
 		public static void SelectRowUsingLabelName(string sLabel)
 		{
 			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
 			repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
 		}
@@ -3199,7 +3200,7 @@ namespace TestProject.Libraries
 			sColumn = ColumnNumber;
 			
 			// Retrieve Column text value
-			string actualColumnText = repo.FormMe.PointsGridHeaderColumn.TextValue;
+			string actualColumnText = repo.FormMe.PointsGridHeaderColumn1.TextValue;
 			
 			// Compare actual and expected column value
 			if(actualColumnText.Equals(expectedColumnText))
@@ -4757,7 +4758,7 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
 			
 			//Copy Devices
-			repo.FormMe.ButtonCut.Click();
+			repo.FormMe.ButtonCut1.Click();
 			
 			//Verify Default DC Units
 			verifyDCUnitsValue(DefaultDCUnits);

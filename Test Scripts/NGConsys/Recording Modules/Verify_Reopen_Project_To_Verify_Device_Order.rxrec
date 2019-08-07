@@ -72,10 +72,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
+			id="ab73090f-216e-42f1-9093-a740c5cfe418"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
 				</path>
 			</info>
 		</mouseitem>
@@ -96,10 +96,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="9d9b9f29-f90b-47fc-8324-fe4a0d18047a"
+			id="2a6488c4-8ec3-4888-934e-5e3e41ab1711"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[4]/button[@automationid='PART_ExpandButton']
+					/form[@automationid='me']/progressbar/picture[1]/tree/container[8]/container[2]/indicator[4]/button[@automationid='PART_ExpandButton']/button[@automationid='toggleButton']
 				</path>
 			</info>
 		</mouseitem>
@@ -120,10 +120,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="5ef2233c-dff3-4ed0-8c90-e2f8a85869ed"
+			id="a52c6012-367c-4f3a-ace7-3152f9a691c4"
 			sourcename="Recorder">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-A']
+					/form[@automationid='me']/progressbar/picture[3]/tree/container[8]//text[@caption~'^Built-in\ Loop-A']
 				</path>
 			</info>
 		</mouseitem>

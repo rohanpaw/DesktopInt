@@ -1112,10 +1112,10 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<info
-			id="bc08d139-50e4-40ed-8f7d-d14b24fa877b"
+			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/picture[6]/?/?/treeitem
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
 				</path>
 			</info>
 		</mouseitem>
@@ -2113,10 +2113,10 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<info
-			id="bc08d139-50e4-40ed-8f7d-d14b24fa877b"
+			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/picture[6]/?/?/treeitem
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
 				</path>
 			</info>
 		</mouseitem>

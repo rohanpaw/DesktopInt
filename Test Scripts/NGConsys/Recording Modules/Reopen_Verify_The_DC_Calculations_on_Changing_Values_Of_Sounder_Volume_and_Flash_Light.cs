@@ -82,16 +82,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("NGC-603");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(1));
-            repo.FormMe.NodeExpander1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1_AfterReopen' at Center.", repo.FormMe.NodeExpander1_AfterReopenInfo, new RecordItemIndex(1));
+            repo.FormMe.NodeExpander1_AfterReopen.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(2));
-            repo.FormMe.LoopExpander1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1_Reopen' at Center.", repo.FormMe.LoopExpander1_ReopenInfo, new RecordItemIndex(2));
+            repo.FormMe.LoopExpander1_Reopen.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse XButton2 Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(3));
-            repo.FormMe.Loop_A1.Click(System.Windows.Forms.MouseButtons.XButton2);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1_Reopen' at Center.", repo.FormMe.Loop_A1_ReopenInfo, new RecordItemIndex(3));
+            repo.FormMe.Loop_A1_Reopen.Click();
             Delay.Milliseconds(200);
             
             Libraries.DC_Functions.verifyDCUnitsValue("36");

@@ -115,10 +115,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="a126ca17-a4e0-4fdb-9b5b-27702ed23e06"
+			id="14073c16-be92-433d-9cfe-bae704ce7356"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem/container/treeitem/button
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[3]/button[@automationid='PART_ExpandButton']
 				</path>
 			</info>
 		</mouseitem>
@@ -139,10 +139,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="5094da79-0cba-408d-ae4b-1a1663c14b94"
+			id="da84799c-5c5b-4372-9d21-c6e5e74225cf"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/treeitem[2]/container[@automationid='ItemsHost']/?/?/container[@automationid='ItemsHost']/treeitem[2]
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@text~'^R-BUS']
 				</path>
 			</info>
 		</mouseitem>

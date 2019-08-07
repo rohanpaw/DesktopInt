@@ -610,7 +610,7 @@ namespace TestProject.Libraries
 				
 				
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
+				repo.FormMe.PanelNode1.Click();
 				
 				//Close excel sheet and read it values,
 				Excel_Utilities.CloseExcel();
@@ -621,7 +621,7 @@ namespace TestProject.Libraries
 				// Count number of rows in excel and store it in rows variable
 				int Drows= Excel_Utilities.ExcelRange.Rows.Count;
 				
-				for(int t=2; t<=Drows; t++)
+				for(int t=2; t<=3; t++)
 				{
 					GalleryName = ((Range)Excel_Utilities.ExcelRange.Cells[t,2]).Value.ToString();
 					sType = ((Range)Excel_Utilities.ExcelRange.Cells[t,3]).Value.ToString();
@@ -645,36 +645,36 @@ namespace TestProject.Libraries
 					{
 						Report.Log(ReportLevel.Failure, "Repeater : " + GalleryName+ " is absent");
 					}
-					
-					for(int n=1; n<=DownClicked; n++)
+				}
+				for(int n=1; n<=DownClicked; n++)
+				{
+					//No of items in the container
+					int NoOfItems = repo.FormMe.GalleryContainer.Children.Count;
+					Report.Log(ReportLevel.Info,"NoOfItems: " +NoOfItems);
+					for(int j=0; j<(NoOfItems-1); j++)
 					{
-						//No of items in the container
-						int NoOfItems = repo.FormMe.GalleryContainer.Children.Count;
-						Report.Log(ReportLevel.Info,"NoOfItems: " +NoOfItems);
-						for(int j=0; j<=NoOfItems; j++)
+						sDeviceIndex = j.ToString();
+						
+						if(repo.FormMe.Repeaters_Without_Expanding.Enabled)
 						{
-							sDeviceIndex = j.ToString();
-							
-							if(repo.FormMe.Repeaters_Without_Expanding.Enabled)
-							{
-								Report.Log(ReportLevel.Success, "Repeater is enabled");
-							}
-							else
-							{
-								Report.Log(ReportLevel.Failure, "Repeater is disabled");
-							}
-							
+							Report.Log(ReportLevel.Success, "Repeater is enabled");
+						}
+						else
+						{
+							Report.Log(ReportLevel.Failure, "Repeater is disabled");
 						}
 						
-						if(repo.FormMe.Gallery_PARTDown.Enabled)
-						{
-							repo.FormMe.Gallery_PARTDown.Click();
-						}
-						
-						NoOfItems = repo.FormMe.GalleryContainerInfo.Children.Count;
 					}
 					
+					if(repo.FormMe.Gallery_PARTDown.Enabled)
+					{
+						repo.FormMe.Gallery_PARTDown.Click();
+					}
+					
+					NoOfItems = repo.FormMe.GalleryContainerInfo.Children.Count;
 				}
+				
+				
 				
 				for(int k=1;k<=NoOfDevicesAdded;k++)
 				{
@@ -685,8 +685,7 @@ namespace TestProject.Libraries
 				for(int j=2; j<=Drows; j++)
 				{
 					GalleryName = ((Range)Excel_Utilities.ExcelRange.Cells[j,2]).Value.ToString();
-					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,3]).Value.ToString();
-					
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,3]).Value.ToString();					
 					string Status = ((Range)Excel_Utilities.ExcelRange.Cells[j,4]).Value.ToString();
 					
 					ExpandUnitsGallery(sType);
@@ -781,7 +780,7 @@ namespace TestProject.Libraries
 				
 				
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
+				repo.FormMe.PanelNode1.Click();
 				
 				//Close excel sheet and read it values,
 				Excel_Utilities.CloseExcel();
@@ -832,7 +831,7 @@ namespace TestProject.Libraries
 				
 				for(int n=0; n<=DownClicked; n++)
 				{
-					for(int j=1; j<=NoOfItems; j++)
+					for(int j=0; j<NoOfItems; j++)
 					{
 						sDeviceIndex = j.ToString();
 						if(ImagePresence.Equals(Present))
@@ -859,7 +858,7 @@ namespace TestProject.Libraries
 								Report.Log(ReportLevel.Failure, "Entity:" +sDeviceIndex+ "is disabled");
 							}
 						}
-						
+						repo.FormMe.tab_Inventory.Click();
 						repo.FormMe.Gallery_PARTDown.Click();
 					}
 					NoOfItems = EnabledDevices - NoOfItems;

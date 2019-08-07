@@ -1172,6 +1172,43 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			</info>
 		</mouseitem>
 		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+				Adding this step as object ref error occurs
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="b6fa2417-32a4-4f2f-8ed1-5472ba6c26d3">
+				<argument
+				argname="sDeviceName"
+				id="e9a627d4-863b-4d32-82ac-64c43aa4c6a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						801 CH
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="4ffa3b28-6957-466f-93ac-d8fb5754a307">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Detectors
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -1213,144 +1250,6 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 					</argvaluetype>
 					<argvalue>
 						555.800.064
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Model
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						SIO 800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Label
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						SIO 800 - 1
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Address
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1422,6 +1321,52 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 						System.String
 					</argvaluetype>
 					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedInventoryGridColumn"
+				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Model
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedDeviceProperty"
+				id="050b1474-f19d-49ef-b52e-088ec419a783">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						SIO 800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="InventoryGrid_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyInventoryGridProperties"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
+				<argument
+				argname="ExpectedInventoryGridRowCount"
+				id="0460ada9-c302-4112-be8f-914545b0c992">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 						2
 					</argvalue>
 				</argument>
@@ -1443,6 +1388,52 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 					</argvaluetype>
 					<argvalue>
 						RIM 800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="InventoryGrid_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyInventoryGridProperties"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
+				<argument
+				argname="ExpectedInventoryGridRowCount"
+				id="0460ada9-c302-4112-be8f-914545b0c992">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedInventoryGridColumn"
+				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Label
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedDeviceProperty"
+				id="050b1474-f19d-49ef-b52e-088ec419a783">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						SIO 800 - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1535,6 +1526,52 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 					</argvaluetype>
 					<argvalue>
 						2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="InventoryGrid_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyInventoryGridProperties"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
+				<argument
+				argname="ExpectedInventoryGridRowCount"
+				id="0460ada9-c302-4112-be8f-914545b0c992">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedInventoryGridColumn"
+				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Address
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedDeviceProperty"
+				id="050b1474-f19d-49ef-b52e-088ec419a783">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
 					</argvalue>
 				</argument>
 			</arguments>

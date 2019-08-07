@@ -1064,7 +1064,7 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
 			
 			//Copy Devices
-			repo.FormMe.ButtonCut.Click();
+			repo.FormMe.ButtonCut1.Click();
 			
 			//Verify Default DC Units
 			verifyDCUnitsValue(DefaultDCUnits);

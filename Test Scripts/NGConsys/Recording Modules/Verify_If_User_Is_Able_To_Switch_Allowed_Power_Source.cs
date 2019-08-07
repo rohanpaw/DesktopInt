@@ -86,12 +86,12 @@ namespace TestProject.Recording_Modules
             repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor' at Center.", repo.FormMe.MainProcessorInfo, new RecordItemIndex(2));
-            repo.FormMe.MainProcessor.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor1' at Center.", repo.FormMe.MainProcessor1Info, new RecordItemIndex(2));
+            repo.FormMe.MainProcessor1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessorList.RBus' at Center.", repo.FormMe.MainProcessorList.RBusInfo, new RecordItemIndex(3));
-            repo.FormMe.MainProcessorList.RBus.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.RBus1' at Center.", repo.FormMe.RBus1Info, new RecordItemIndex(3));
+            repo.FormMe.RBus1.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.verifySwitchingAllowedPowerSource("TC_218_Verify_If_User_Is_Able_To_Switch_Allowed_Power_Source", "Devices");
