@@ -4706,7 +4706,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{F5A7C3D5-95B7-48B7-9AA3-A72FA02F1E37}</Project>
+      <Project>{D1DDE47E-9A02-4935-BC99-0936EB6190A2}</Project>
       <Name>Ranorex Automation Helpers</Name>
     </ProjectReference>
   </ItemGroup>

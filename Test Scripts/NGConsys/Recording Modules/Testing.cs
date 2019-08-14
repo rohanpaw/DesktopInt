@@ -82,67 +82,97 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(1));
-            repo.FormMe.NodeExpander1.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(2));
-            repo.FormMe.LoopExpander1.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(3));
-            repo.FormMe.Loop_A1.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.DC_Functions.VerifyDCCalculationOnAddingDevices("Verify DC Units Calculation for PFI", "Add Devices Loop A", "Add Devices Loop B");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyPanelLEDEffectOnDC("Verify DC Units Calculation for PFI", "Panel LED");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_C1' at Center.", repo.FormMe.Loop_C1Info, new RecordItemIndex(6));
-            repo.FormMe.Loop_C1.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.DC_Functions.verifyDCUnitsValue("220");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_D1' at Center.", repo.FormMe.Loop_D1Info, new RecordItemIndex(8));
-            repo.FormMe.Loop_D1.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.DC_Functions.verifyDCUnitsValue("220");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(10));
-            repo.FormMe.Loop_A1.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Devices_Functions.DeleteDevices("Verify DC Units Calculation for PFI", "Delete Devices Loop A");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("366");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_B1' at Center.", repo.FormMe.Loop_B1Info, new RecordItemIndex(13));
-            repo.FormMe.Loop_B1.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.DC_Functions.verifyDCUnitsValue("366");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDevices("Verify DC Units Calculation for PFI", "Delete Devices Loop B");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("339.5");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(17));
-            repo.FormMe.Loop_A1.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.DC_Functions.verifyDCUnitsValue("339.5");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane  1/3");
             Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Other Slot Cards  (0 of 6)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Other Slot Cards  (1 of 6)");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyPanelLEDEffectOnDC("Verify DC Units Calculation for PFI", "Panel LED");
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_C1' at Center.", repo.FormMe.Loop_C1Info, new RecordItemIndex(17));
+            //repo.FormMe.Loop_C1.Click();
+            //Delay.Milliseconds(200);
+            
+            //Libraries.DC_Functions.verifyDCUnitsValue("220");
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_D1' at Center.", repo.FormMe.Loop_D1Info, new RecordItemIndex(19));
+            //repo.FormMe.Loop_D1.Click();
+            //Delay.Milliseconds(200);
+            
+            //Libraries.DC_Functions.verifyDCUnitsValue("220");
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(21));
+            //repo.FormMe.Loop_A1.Click();
+            //Delay.Milliseconds(200);
+            
+            //Libraries.Devices_Functions.DeleteDevices("Verify DC Units Calculation for PFI", "Delete Devices Loop A");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyDCUnitsValue("366");
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_B1' at Center.", repo.FormMe.Loop_B1Info, new RecordItemIndex(24));
+            //repo.FormMe.Loop_B1.Click();
+            //Delay.Milliseconds(200);
+            
+            //Libraries.DC_Functions.verifyDCUnitsValue("366");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.DeleteDevices("Verify DC Units Calculation for PFI", "Delete Devices Loop B");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyDCUnitsValue("339.5");
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(28));
+            //repo.FormMe.Loop_A1.Click();
+            //Delay.Milliseconds(200);
+            
+            //Libraries.DC_Functions.verifyDCUnitsValue("339.5");
+            //Delay.Milliseconds(0);
             
         }
 

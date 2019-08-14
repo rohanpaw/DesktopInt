@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{F5A7C3D5-95B7-48B7-9AA3-A72FA02F1E37}</ProjectGuid>
+    <ProjectGuid>{D1DDE47E-9A02-4935-BC99-0936EB6190A2}</ProjectGuid>
     <TargetFrameworkProfile />
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -95,7 +95,7 @@
     <Reference Include="Ranorex.Plugin.Wpf">
       <Private>False</Private>
     </Reference>
-    <Reference Include="Ranorex.ReportToPDF">
+    <Reference Include="Ranorex.ReportToPDF, Version=1.0.14.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\packages\Ranorex.ReportToPDF.1.0.14\lib\net40\Ranorex.ReportToPDF.exe</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -115,42 +115,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config">
-      <id>0441763d-41a7-4b73-81e6-103a809f3eb3</id>
+      <id>7d951d95-5ba3-4e48-ae17-c9c93f5eb61f</id>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\CollectRetryErrorMessagesModule.cs">
-      <id>ba6dc2e7-d7a0-4aa2-8832-354d0002642e</id>
+      <id>99934f71-710c-464e-a8a9-961a9e1590ba</id>
     </Compile>
     <Compile Include="Modules\EmailModule.cs">
-      <id>2665e3fc-39e2-4b80-9ed5-12a2a271f3ec</id>
+      <id>4cf9ef39-86cf-4723-bffa-9e716b73d277</id>
     </Compile>
     <Compile Include="Modules\ReportToPDFModule.cs">
-      <id>c7553d10-898d-4b18-9a3e-4c6aa4c6d844</id>
+      <id>083cbbfb-540b-4ec2-9acc-30dc39580da3</id>
     </Compile>
     <Compile Include="UserCodeCollections\DragNDropLibrary.cs">
-      <id>3ec37b52-aa74-4e5a-9304-389b41caef94</id>
+      <id>085f7623-3104-4ef4-9d03-49b79ec09b3b</id>
     </Compile>
     <Compile Include="UserCodeCollections\EmailLibrary.cs">
-      <id>b560b057-67cf-4b62-badd-5f2cdfe3d4b3</id>
+      <id>a70e059f-66d5-44f9-903c-29779c5c9557</id>
     </Compile>
     <Compile Include="UserCodeCollections\FileLibrary.cs">
-      <id>d9cbdb8e-cab8-470e-967c-4ef902c0f0a5</id>
+      <id>7c53a78f-fc14-4f3e-ac34-fb1049c96025</id>
     </Compile>
     <Compile Include="UserCodeCollections\PopupWatcherLibrary.cs">
-      <id>614f58bb-7b59-4888-af4a-d79babfd790b</id>
+      <id>98b5c6da-4279-44d5-ae86-ba0b980a2f17</id>
     </Compile>
     <Compile Include="UserCodeCollections\StringLibrary.cs">
-      <id>ae9d3ea9-ba50-4647-b909-71721de1d15e</id>
+      <id>f3ea162e-b8bb-425a-ac8b-b2c22f5880cc</id>
     </Compile>
     <Compile Include="UserCodeCollections\SystemLibrary.cs">
-      <id>97f138cd-b0b3-438e-905a-d301ee1df38e</id>
+      <id>8262d18d-8a4f-465c-bb22-6271a04ba7b5</id>
     </Compile>
     <Compile Include="UserCodeCollections\ValidationLibrary.cs">
-      <id>d8fb8019-6ab1-4696-b308-07f411d08dbd</id>
+      <id>a7c8e6b6-25a9-4771-b99d-62c1d1f5cb23</id>
     </Compile>
     <Compile Include="UserCodeCollections\WebLibrary.cs">
-      <id>9b8668b6-6504-4eeb-9bd4-229688f4c9a0</id>
+      <id>d4b873a1-c948-4c3a-af80-40ea0f47aefb</id>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

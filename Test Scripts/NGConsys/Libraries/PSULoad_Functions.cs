@@ -3087,6 +3087,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner:Purvi Bhasin
 		 * Last Update :4/2/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 08/08/2019 - Updated code from node expander to panel node
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnChangingCPUAndPSU(string sFileName,string sAddPanelSheet)
@@ -3145,7 +3146,7 @@ namespace TestProject.Libraries
 				//repo.ProfileConsys1.NavigationTree.Expand_LoopCard.Click();
 				
 				repo.FormMe.SiteNode1.Click();
-				repo.FormMe.NodeExpander1.Click();
+				repo.FormMe.PanelNode1.Click();
 				
 				// Change CPU Type as per test data in sheet
 				if (!changeCPUType.IsEmpty())
@@ -3158,13 +3159,6 @@ namespace TestProject.Libraries
 				{
 					Panel_Functions.ChangePSUType(changePSUType);
 				}
-				
-				
-				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
-				
-				// Click on Loop Card node
-				repo.FormMe.LoopExpander1.Click();
 				
 				// Click on Loop A node
 				repo.FormMe.Loop_A1.Click();
@@ -3587,6 +3581,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 22/01/2019   Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 08/08/2019 - Updated test script
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnAdditionAndDeletionOfAccessories(string sFileName,string sAddPanelSheet)
@@ -3647,7 +3642,7 @@ namespace TestProject.Libraries
 					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,13]).Value.ToString();
 					
 					//Add Printer connection
-					repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
+					repo.FormMe.PanelNode1.Click();
 					float.TryParse(sBatteryStandby, out PrinterBatteryStandby);
 					float.TryParse(sAlarmLoad, out PrinterAlarmLoad);
 					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
@@ -5014,6 +5009,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 09/08/2019 - Updated code to fetch text for single row and added xpath also
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyPowerCalculationsText(string sExpectedPowerCalculationText)
@@ -5045,7 +5041,23 @@ namespace TestProject.Libraries
 					// Set sRow value which is used in PowerCalculationText
 					sRow = (k+1).ToString();
 					
+					if(splitPowerCalculationTextCount==1)
+					{
+						string actualPowerCalculationText = repo.FormMe.PowerCalculationText_Single.TextValue;
+						
+						// Compare actual and expected power calculation text value
+					if (actualPowerCalculationText.Equals(sExpectedPowerCalculationText))
+					{
+						Report.Log(ReportLevel.Success,"Power calculation text message " +actualPowerCalculationText+ " is correctly displayed" );
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure,"Power calculation text message " +actualPowerCalculationText+ " is not displayed correctly" );
+					}
 					
+					}
+					else
+					{
 					// Retrieve PowerCalculation Text value
 					string actualPowerCalculationText = repo.FormMe.PowerCalculationText.TextValue;
 
@@ -5058,7 +5070,7 @@ namespace TestProject.Libraries
 					{
 						Report.Log(ReportLevel.Failure,"Power calculation text message " +actualPowerCalculationText+ " is not displayed correctly" );
 					}
-					
+					}
 				}
 				
 				
@@ -5215,6 +5227,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner:Purvi Bhasin
 		 * Last Update :4/2/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 08/08/2019 - Updated script
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyNormalLoadandAlarmLoadPropertyOnAdditionDeletionOfDevicesInPLXOrXLMLoop(string sFileName,string sAddPanelSheet, string sAddDeviceSheet)
@@ -5295,9 +5308,6 @@ namespace TestProject.Libraries
 				
 				//Change Panel LED
 				Panel_Functions.changePanelLED(PanelLED);
-				
-				// Click on Loop Card node
-				repo.FormMe.LoopExpander1.Click();
 				
 				// Click on Loop A node
 				repo.FormMe.Loop_A1.Click();

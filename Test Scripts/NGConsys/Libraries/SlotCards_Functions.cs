@@ -378,6 +378,8 @@ namespace TestProject.Libraries
 				// Add panels
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
 				for(int j=4; j<=10; j++){
 					
 					
@@ -395,23 +397,27 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.FormMe.PanelNode1.Click();
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+							//repo.FormMe.PanelNode1.Click();
 							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
-								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+								//Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+								Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
 							}
 						}
 						else
 						{
-							repo.FormMe.PanelNode1.Click();
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+							//repo.FormMe.PanelNode1.Click();
 							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
-								Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
+								//Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
+								Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
 							}
 						}
 					}
@@ -421,79 +427,45 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
-						
-						VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
-						VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
-						
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
-					}
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
 				else
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 should not be displayed");
-					}
-					
+					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3", ExpectedBackplane1);
 				}
 				
 				// Verify expected backplane2
 				if(ExpectedBackplane2.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane2_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane2 is available and displaying correctly");
-						
-						VerifyandClickOtherSlotCardsForBackplane2(sBackplane2SlotCardName);
-						VerifySlotCardsTextForBackplane2(sBackplane2SlotCardName);
-						
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 is not displayed");
-					}
-					
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
 				}
 				else
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 should not be displayed");
-					}
+					Common_Functions.VerifyNavigationTreeItem("Backplane  2/3", ExpectedBackplane2);
+					
 					
 				}
 				
 				// Verify expected backplane3
 				if(ExpectedBackplane3.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane3_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane3 is available and displaying correctly");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
 						
-						VerifyandClickOtherSlotCardsForBackplane3(sBackplane3SlotCardName);
-						VerifySlotCardsTextForBackplane3(sBackplane3SlotCardName);
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 is not displayed");
-					}
 				}
 				else
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 should not be displayed");
-					}
+					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
+					
 				}
 				
 			}
@@ -1520,7 +1492,8 @@ namespace TestProject.Libraries
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
-								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+								//Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+								Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
 							}
 						}
 						else
@@ -1531,7 +1504,8 @@ namespace TestProject.Libraries
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
-								Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
+								//Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
+								Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
 							}
 						}
 					}
@@ -1541,79 +1515,51 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
-						
-						VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
-						VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
-						
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
-					}
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
 				else
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 should not be displayed");
-					}
-					
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					Report.Log(ReportLevel.Failure, "Backplane1 should not be displayed");
 				}
 				
 				// Verify expected backplane2
 				if(ExpectedBackplane2.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane2_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane2 is available and displaying correctly");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
 						
-						VerifyandClickOtherSlotCardsForBackplane2(sBackplane2SlotCardName);
-						VerifySlotCardsTextForBackplane2(sBackplane2SlotCardName);
-						
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 is not displayed");
-					}
+				
 					
 				}
 				else
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
 						Report.Log(ReportLevel.Failure, "Backplane2 should not be displayed");
-					}
+			
 					
 				}
 				
 				// Verify expected backplane3
 				if(ExpectedBackplane3.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane3_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane3 is available and displaying correctly");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
 						
-						VerifyandClickOtherSlotCardsForBackplane3(sBackplane3SlotCardName);
-						VerifySlotCardsTextForBackplane3(sBackplane3SlotCardName);
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 is not displayed");
-					}
 				}
 				else
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 should not be displayed");
-					}
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+					Report.Log(ReportLevel.Failure, "Backplane3 should not be displayed");
+					
 				}
 				
 			}
@@ -3038,6 +2984,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info," Slot card name " +slotCardName + " is displayed  ");
 		}
 
+		
 		
 	}
 }

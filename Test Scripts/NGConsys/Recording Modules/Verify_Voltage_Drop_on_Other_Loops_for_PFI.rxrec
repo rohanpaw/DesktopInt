@@ -1160,12 +1160,11 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			</info>
 		</mouseitem>
 		<userrecorditem
-		autogenmethod="True"
-		classname="Devices_Functions"
+		classname="Verify_Voltage_Drop_on_Other_Loops_for_PFI"
 		enabled="True"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="verifyVoltDropValue"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False"
 		varname="">
 			<comment>
@@ -1187,12 +1186,11 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		autogenmethod="True"
-		classname="Devices_Functions"
+		classname="Verify_Voltage_Drop_on_Other_Loops_for_PFI"
 		enabled="True"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="verifyVoltDropWorstCaseValue"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False"
 		varname="">
 			<comment>

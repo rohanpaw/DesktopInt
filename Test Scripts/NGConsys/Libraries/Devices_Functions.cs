@@ -183,9 +183,21 @@ namespace TestProject.Libraries
 			set { repo.sGalleryName = value; }
 		}
 		
+		static string sExpanderName
+		{
+			get { return repo.sExpanderName; }
+			set { repo.sExpanderName = value; }
+		}
+		
+		static string sTreeItem
+		{
+			get { return repo.sTreeItem; }
+			set { repo.sTreeItem = value; }
+		}
+		
 		/********************************************************************
 		 * Function Name: AddDevices
-		 * Function Details:
+		 * Function Details: 
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
@@ -246,11 +258,13 @@ namespace TestProject.Libraries
 		{
 			ModelNumber=sDeviceName;
 
-			sGalleryIndex = SelectGalleryType(sType);
+			//sGalleryIndex = SelectGalleryType(sType);
 			
-			repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+			repo.FormMe.btn_AllGalleryDropdown.Click();
+			repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
+			//repo.FormMe.btn_DevicesGalleryDropDown1.Click();
 			
-			repo.FormMe.btn_DevicesGalleryDropDown1.EnsureVisible();
+			//repo.FormMe.btn_DevicesGalleryDropDown1.EnsureVisible();
 			
 			repo.ContextMenu.txt_SelectDevice.Click();
 			
@@ -275,7 +289,10 @@ namespace TestProject.Libraries
 		{
 			sGalleryIndex = SelectGalleryType(sType);
 			ModelNumber=sDeviceName;
-			repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+			repo.FormMe.btn_AllGalleryDropdown.Click();
+			repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
+			
+			//repo.ProfileConsys1.btn_DevicesGalleryDropDown1.Click();
 			repo.ContextMenu.txt_galleryItem.Click();
 		}
 		
@@ -1820,18 +1837,18 @@ namespace TestProject.Libraries
 		
 
 		
-		/********************************************************************
+		/****************************************************************************************************************************************
 		 * Function Name: AddMultipleDevices
 		 * Function Details: To add multiple devices
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 29/03/2019 Alpesh Dhakad- Updated btn_MultiplePointWizard xpath and change script accordingly
-		 ********************************************************************/
+		 * Alpesh Dhakad - 08/08/2019 - Updated script for model nuber text for multiple point wizard
+		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddMultipleDevices(string sFileName, string sSheetName)
-		{
-			
+		{	
 			Excel_Utilities.OpenExcelFile(sFileName,sSheetName);
 			//Excel_Utilities.OpenSheet(sSheetName);
 			int rows = Excel_Utilities.ExcelRange.Rows.Count;
@@ -1846,7 +1863,7 @@ namespace TestProject.Libraries
 			repo.AddDevices.txt_SearchDevices.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+sDeviceName);
 			ModelNumber = sDeviceName;
-			repo.AddDevices.txt_ModelNumber.Click();
+			repo.AddDevices.txt_ModelNumberForMultiPointWizard.Click();
 			repo.AddDevices.txt_Quantity.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+DeviceQty.ToString());
 			
@@ -2121,6 +2138,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated script as per new build and xpath
+		 * Alpesh Dhakad - 08/08/2019 - Updated code for cable resistance
 		 ***************************************************************************************************/
 		// Change cable resistance method
 		[UserCodeMethod]
@@ -2135,11 +2153,23 @@ namespace TestProject.Libraries
 			//Click on Loop A in Navigation tree tab
 			repo.FormMe.Loop_A1.Click();
 			
-			//Click on cable resistance cell
-			repo.ProfileConsys1.cell_CableResistance.Click();
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
-			//Change the value of cable length
+			// Enter the Day Matches night text in Search Properties fields to view cable length;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("{LControlKey down}{Akey}{LControlKey up}Details" +"{ENTER}" );
+			
+			//Click on cable resistance cell
+			repo.FormMe.cell_CableLength.Click();
+
+			//Change the value of cable resistance
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableResistance + "{Enter}");
+	
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 			
 			//Click on Panel Node
 			repo.FormMe.PanelNode1.Click();
@@ -2147,21 +2177,6 @@ namespace TestProject.Libraries
 			Delay.Duration(1000, false);
 		}
 		
-		
-		
-		
-		
-		
-//		 Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'ProfileConsys1.Row11' at 11;10.", repo.ProfileConsys1.Row11Info, new RecordItemIndex(5));
-		//            repo.ProfileConsys1.Row11.Click(System.Windows.Forms.MouseButtons.Right, "11;10");
-		//            Delay.Milliseconds(200);
-//
-		//            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'ProfileConsys1.Row11' at 12;11.", repo.ProfileConsys1.Row11Info, new RecordItemIndex(6));
-		//            repo.ProfileConsys1.Row11.MoveTo("12;11");
-		//            Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
-		//            Delay.Milliseconds(200)
-//
-
 		/********************************************************************
 		 * Function Name: AddDevicesForBVT
 		 * Function Details:
@@ -2519,6 +2534,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void AddDevicefromPanelAccessoriesGallery(string sDeviceName,string sType)
 		{
+			
 			sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
 			ModelNumber=sDeviceName;
 			repo.FormMe.btn_PanelAccessoriesDropDown.Click();
@@ -2924,14 +2940,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/****************************************************************************************************************************
 		 * Function Name: AddDevicesfromMultiplePointWizard
 		 * Function Details: To add multiple devices using multiple point wizard
 		 * Parameter/Arguments: Device name and its quantity
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 29/03/2019 Alpesh Dhakad- Updated btn_MultiplePointWizard xpath and change script accordingly
-		 ********************************************************************/
+		 ****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddDevicesfromMultiplePointWizard(string sDeviceName,int DeviceQty )
 		{
@@ -6770,6 +6786,8 @@ namespace TestProject.Libraries
 			repo.ContextMenu.txt_SelectDevice.Click();
 			Report.Log(ReportLevel.Info, "Device "+sDeviceName+" added successfully");
 		}
+		
+		
 		
 	}
 }

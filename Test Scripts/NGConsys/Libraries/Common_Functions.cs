@@ -30,6 +30,18 @@ namespace TestProject.Libraries
 		//Create instance of repository to access repository items
 		static NGConsysRepository repo = NGConsysRepository.Instance;
 		
+		static string sExpanderName
+		{
+			get { return repo.sExpanderName; }
+			set { repo.sExpanderName = value; }
+		}
+		
+		static string sTreeItem
+		{
+			get { return repo.sTreeItem; }
+			set { repo.sTreeItem = value; }
+		}
+		
 		
 		/********************************************************************
 		 * Function Name: GetDirPath
@@ -344,7 +356,134 @@ namespace TestProject.Libraries
 			}
 		}
 		
+			
+		/****************************************************************************************************
+		 * Function Name: ClickOnNavigationTreeExpanderButton
+		 * Function Details: To click on navigation tree item expander button
+		 * Parameter/Arguments: Tree item Expander button name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/08/2019
+		 ****************************************************************************************************/
+		[UserCodeMethod]
+		public static void ClickOnNavigationTreeExpander(string ExpanderName)
+		{
+			sExpanderName = ExpanderName;
+			repo.FormMe.btn_NavigationTreeExpander.Click();	
+			Report.Log(ReportLevel.Info," Tree Item with ExpanderName name " +ExpanderName + " is displayed and clicked successfully ");
+		} 
 		
+			
+		/****************************************************************************************************
+		 * Function Name: ClickOnNavigationTreeItem
+		 * Function Details: To click on navigation tree item 
+		 * Parameter/Arguments: Tree item name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/08/2019
+		 ****************************************************************************************************/
+		[UserCodeMethod]
+		public static void ClickOnNavigationTreeItem(string TreeItemName)
+		{
+			sTreeItem = TreeItemName;
+
+			repo.FormMe.NavigationTreeItem.Click();
+			Report.Log(ReportLevel.Info," Tree Item name " +TreeItemName + " is displayed and clicked successfully  ");
+		}
+		
+		/****************************************************************************************************
+		 * Function Name: VerifyNavigationTreeItemText
+		 * Function Details: To verify navigation tree item text
+		 * Parameter/Arguments: Tree Item name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/08/2019
+		 ****************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyNavigationTreeItemText(string TreeItemName)
+		{
+			sTreeItem = TreeItemName;
+			string ActualText = repo.FormMe.txt_NavigationTreeItem.TextValue;
+			
+			if(ActualText.Equals(TreeItemName))
+			{
+				Report.Log(ReportLevel.Success,"Tree Item " +ActualText+ " text is as displayed as expected");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Tree Item text is displayed as " +ActualText+ "instead of " +TreeItemName);
+			}
+		}
+		
+		
+		
+		/****************************************************************************************************
+		 * Function Name: VerifyAndClickNavigationTreeItemText
+		 * Function Details: To verify navigation tree item text and then click on it
+		 * Parameter/Arguments: Tree Item name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/08/2019
+		 ****************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyAndClickNavigationTreeItemText(string TreeItemName)
+		{
+			sTreeItem = TreeItemName;
+			string ActualText = repo.FormMe.txt_NavigationTreeItem.TextValue;
+			
+			
+			if(ActualText.Equals(TreeItemName))
+			{
+				Report.Log(ReportLevel.Success,"Tree Item " +ActualText+ " text is as displayed as expected");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Tree Item text is displayed as " +ActualText+ "instead of " +TreeItemName);
+			}
+			repo.FormMe.txt_NavigationTreeItem.Click();
+		}
+		
+		
+		/****************************************************************************************************
+		 * Function Name: VerifyNavigationTreeItemText
+		 * Function Details: To verify navigation tree Item and verify text is visible or not
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/08/2019
+		 ****************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyNavigationTreeItem(string TreeItemName, string Visibility)
+		{
+			sTreeItem = TreeItemName;
+			
+			bool sVisibility = Convert.ToBoolean(Visibility);
+			if(sVisibility)
+			{
+				if(repo.FormMe.NavigationTreeItemInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success, "Tree Item " +TreeItemName+ " text is displayed");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Tree Item " +TreeItemName+ " text is not displayed");
+				}
+			}
+			else
+			{
+				if(repo.FormMe.NavigationTreeItemInfo.Exists())
+				{
+					Report.Log(ReportLevel.Failure, "Tree Item " +TreeItemName+ " text is displayed");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Tree Item " +TreeItemName+ " text is not displayed ");
+				}
+				
+			}
+			
+			
+		}
 	}
 }
 

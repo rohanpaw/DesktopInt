@@ -100,6 +100,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangeCableLength(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "500"));
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(6));
+            repo.FormMe.Loop_A1.Click();
+            Delay.Milliseconds(200);
+            
             Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.22");
             Delay.Milliseconds(0);
             
@@ -108,6 +112,10 @@ namespace TestProject.Recording_Modules
             
             Libraries.Devices_Functions.ChangeCableResistance("15 Ohms (2.5 mm2)");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(10));
+            repo.FormMe.Loop_A1.Click();
+            Delay.Milliseconds(200);
             
             Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.16");
             Delay.Milliseconds(0);

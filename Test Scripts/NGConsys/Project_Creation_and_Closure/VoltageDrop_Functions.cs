@@ -121,13 +121,13 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared various fields as String type
-			string Multichannel,sLabelName,expectedDCUnits,expectedVoltDrop,expectedVoltDropWorstcase,expectedMaxVoltDrop,expectedMaxVoltDropWorstcase;
+			string Multichannel,sLabelName,expectedDCUnits,expectedVoltDrop,expectedVoltDropWorstcase,expectedMaxVoltDrop,expectedMaxVoltDropWorstcase,sType;
 			
 			// For loop to fetch values from the excel sheet and then add devices
 			for(int i=6; i<=rows; i++)
 			{
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
-				string sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				Multichannel = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
