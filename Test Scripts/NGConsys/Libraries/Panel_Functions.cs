@@ -247,6 +247,8 @@ namespace TestProject.Libraries
 			sCPU=sSelectCPU;
 			
 			repo.ContextMenu.lstPanelCPU.Click();
+			
+			Report.Log(ReportLevel.Info," CPU Type changed to " +sSelectCPU + " successfully  ");
 		}
 		
 		/********************************************************************

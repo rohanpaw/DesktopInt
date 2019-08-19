@@ -16293,9 +16293,8 @@ W/AAAAAASUVORK5CYII=
 			id="143c5434-4ee7-4582-9b76-f7136459f644"
 			name="btn_Close"
 			refimgid="c8c2cf5f-eb37-4840-8328-34a0c58f597f"
-			refpath="/form[@title='Print Preview']/grip[@automationid='PART_DragWidget']/container[@automationid='PART_Grid']/list[@automationid='PART_HeaderButtons']/button[@automationid='PART_CloseButton']"
 			searchtimeout="30000ms">
-				/form[@title='Print Preview']//list[@automationid='PART_HeaderButtons']/button[@automationid='PART_CloseButton']
+				/form[@title='Print Preview']/?/?/container[@automationid='PART_HeaderBorder']/button[@automationid='PART_CloseButton']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"

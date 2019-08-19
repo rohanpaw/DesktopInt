@@ -85,6 +85,12 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
@@ -130,21 +136,21 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyPanelLEDEffectOnDC("Verify DC Units Calculation for PFI", "Panel LED");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_C1' at Center.", repo.FormMe.Loop_C1Info, new RecordItemIndex(17));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_C1' at Center.", repo.FormMe.Loop_C1Info, new RecordItemIndex(19));
             //repo.FormMe.Loop_C1.Click();
             //Delay.Milliseconds(200);
             
             //Libraries.DC_Functions.verifyDCUnitsValue("220");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_D1' at Center.", repo.FormMe.Loop_D1Info, new RecordItemIndex(19));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_D1' at Center.", repo.FormMe.Loop_D1Info, new RecordItemIndex(21));
             //repo.FormMe.Loop_D1.Click();
             //Delay.Milliseconds(200);
             
             //Libraries.DC_Functions.verifyDCUnitsValue("220");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(21));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(23));
             //repo.FormMe.Loop_A1.Click();
             //Delay.Milliseconds(200);
             
@@ -154,7 +160,7 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsValue("366");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_B1' at Center.", repo.FormMe.Loop_B1Info, new RecordItemIndex(24));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_B1' at Center.", repo.FormMe.Loop_B1Info, new RecordItemIndex(26));
             //repo.FormMe.Loop_B1.Click();
             //Delay.Milliseconds(200);
             
@@ -167,7 +173,7 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsValue("339.5");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(28));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(30));
             //repo.FormMe.Loop_A1.Click();
             //Delay.Milliseconds(200);
             

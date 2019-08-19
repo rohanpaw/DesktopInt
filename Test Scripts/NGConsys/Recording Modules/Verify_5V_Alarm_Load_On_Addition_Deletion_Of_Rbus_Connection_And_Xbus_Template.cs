@@ -82,63 +82,53 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P405D", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(1));
-            repo.FormMe.NodeExpander1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(2));
-            repo.FormMe.LoopExpander1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(3));
-            repo.FormMe.Loop_A1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
             
             Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor1' at Center.", repo.FormMe.MainProcessor1Info, new RecordItemIndex(5));
-            repo.FormMe.MainProcessor1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.RBus1' at Center.", repo.FormMe.RBus1Info, new RecordItemIndex(6));
-            repo.FormMe.RBus1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.additionOfDevicesOnRBus("Verify_5V_Alarm_Load_On_Addition_Deletion_Of_RBus_And_XBus", "Add RBus Devices", "FIM");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(8));
-            repo.FormMe.Loop_A1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
             
             Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.RBus1' at Center.", repo.FormMe.RBus1Info, new RecordItemIndex(10));
-            repo.FormMe.RBus1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.additionOfDevicesForXBus("Verify_5V_Alarm_Load_On_Addition_Deletion_Of_RBus_And_XBus", "Add XBus Devices", "FIM");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(12));
-            repo.FormMe.Loop_A1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
             
             Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.RBus1' at Center.", repo.FormMe.RBus1Info, new RecordItemIndex(14));
-            repo.FormMe.RBus1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DeleteDevices("Verify_5V_Alarm_Load_On_Addition_Deletion_Of_RBus_And_XBus", "Delete Devices");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(16));
-            repo.FormMe.Loop_A1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
             
             Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM1");
             Delay.Milliseconds(0);

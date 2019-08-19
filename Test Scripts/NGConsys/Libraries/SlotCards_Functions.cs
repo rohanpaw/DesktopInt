@@ -1442,6 +1442,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 06/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
+		 * Alpesh Dhakad - 16/08/2019 and 19/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
 		 **********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfDevicesInBackplaneWithOnePanel(string sFileName,string sAddDevicesSheet)
@@ -1487,7 +1488,9 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.FormMe.PanelNode1.Click();
+							// Click on Panel node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+							
 							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
@@ -1498,8 +1501,9 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							repo.FormMe.PanelNode1.Click();
-							//repo.ProfileConsys1.NavigationTree.Expander.Click();
+							// Click on Panel node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+							
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
@@ -1857,6 +1861,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 10/06/2019 Alpesh Dhakad- 29/07/2019 - Updated script and add AddDevicesfromEthernetGallery as per new build xpath updates
+		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
 		 ***************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyMaxLimitForRepeatersSupportedByPanelOnEthernet(string sFileName,string sAddDevicesSheet)
@@ -1890,13 +1895,13 @@ namespace TestProject.Libraries
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
-				// Click on Main processor tab
-				repo.FormMe.MainProcessor1.Click();
+				// Click on Main processor expander
+				Common_Functions.ClickOnNavigationTreeExpander("Main");
 				
-				// Click on Ethernet under Main processor
-				repo.FormMe.Ethernet1.Click();
+				// Click on Ethernet node
+				Common_Functions.ClickOnNavigationTreeItem("Ethernet");
 				
 				for(int j=4; j<=5; j++)
 				{
@@ -1911,8 +1916,8 @@ namespace TestProject.Libraries
 					if(deviceCount>0)
 					{
 						
-						// Click on Ethernet under Main processor
-						repo.FormMe.Ethernet1.Click();
+						// Click on Ethernet node
+						Common_Functions.ClickOnNavigationTreeItem("Ethernet");
 						
 						// Click on Inventory tab
 						repo.FormMe.tab_Inventory.Click();
@@ -1934,8 +1939,7 @@ namespace TestProject.Libraries
 				Devices_Functions.VerifyNodeGallery(sSecondDeviceName,sType,sSecondDeviceState,PanelType);
 				
 				// Click on Panel Node
-				repo.FormMe.PanelNode1.Click();
-				
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
 				// Verify if row count is more than 8 then delete the panel
 				if(rows!=10)
@@ -1958,6 +1962,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 11/06/2019 Alpesh Dhakad- 29/07/2019 - Updated script as per new build xpath updates
+		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
 		 ********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyMaxLimitForRepeatersSupportedByPanelOnRBus(string sFileName,string sAddDevicesSheet)
@@ -1991,13 +1996,13 @@ namespace TestProject.Libraries
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
-				// Click on Main processor tab
-				repo.FormMe.MainProcessor1.Click();
+				// Click on Main processor expander
+				Common_Functions.ClickOnNavigationTreeExpander("Main");
 				
-				// Click on RBus under Main processor
-				repo.FormMe.RBus1.Click();
+				// Click on R-BUS node
+				Common_Functions.ClickOnNavigationTreeItem("R-BUS");
 				
 				for(int j=4; j<=5; j++)
 				{
@@ -2012,9 +2017,9 @@ namespace TestProject.Libraries
 					if(deviceCount>0)
 					{
 						
-						// Click on RBus under Main processor
-						repo.FormMe.RBus1.Click();
-						
+						// Click on R-BUS node
+						Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+				
 						// Click on Inventory tab
 						repo.FormMe.tab_Inventory.Click();
 						
@@ -2033,7 +2038,7 @@ namespace TestProject.Libraries
 				Devices_Functions.VerifyNodeGallery(sSecondDeviceName,sType,sSecondDeviceState,PanelType);
 				
 					// Click on Panel Node
-				repo.FormMe.PanelNode1.Click();
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
 				// Verify if row count is more than 8 then delete the panel
 				if(rows!=10)
@@ -2590,6 +2595,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 25/06/2019 Alpesh Dhakad - 29/07/2019 - Updated scripts as per new build xpaths
+		 * Alpesh Dhakad - 16/08/2019 & 19/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
 		 **************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAddUnitDetails(string sFileName,string sAddDevicesSheet)
@@ -2633,36 +2639,43 @@ namespace TestProject.Libraries
 					
 					int.TryParse(sDeviceCount, out deviceCount);
 					
-					//repo.ProfileConsys1.NavigationTree.Expander.Click();
-					repo.FormMe.NodeExpander1.Click();
-					
+					// Click on Expander node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
 					// Verify device count and then add devices from panel accessories gallery or panel node gallery
 					if(deviceCount>0)
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							// Click on Panel node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
 							repo.FormMe.tab_PanelAccessories.Click();
+							
 							for(int k=1; k<=deviceCount;k++)
 							{
-								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+								//Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+								Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
 							}
 						}
 						else
 						{
-							//repo.ProfileConsys1.NavigationTree.Expander.Click();
-							repo.FormMe.NodeExpander1.Click();
+							// Click on Panel node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
-								Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
+								//Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
+								Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
 							}
 						}
 						
 						if(sType.Equals("Accessories"))
 						{
-							Devices_Functions.VerifyPanelNodePanelAccessoriesGallery(sDeviceName,sType,sDeviceState);
+							//Devices_Functions.VerifyPanelNodePanelAccessoriesGallery(sDeviceName,sType,sDeviceState);
+							Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
 						}
 						else
 						{
@@ -2670,84 +2683,55 @@ namespace TestProject.Libraries
 						}
 					}
 				}
+				
+				// Click on Expander node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+					
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
-						
-						VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
-						VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
-						
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
-					}
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
 				else
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 should not be displayed");
-					}
-					
+					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3", ExpectedBackplane1);
 				}
 				
 				// Verify expected backplane2
 				if(ExpectedBackplane2.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane2_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane2 is available and displaying correctly");
-						
-						VerifyandClickOtherSlotCardsForBackplane2(sBackplane2SlotCardName);
-						VerifySlotCardsTextForBackplane2(sBackplane2SlotCardName);
-						
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 is not displayed");
-					}
-					
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
 				}
 				else
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 should not be displayed");
-					}
+					Common_Functions.VerifyNavigationTreeItem("Backplane  2/3", ExpectedBackplane2);
+					
 					
 				}
 				
 				// Verify expected backplane3
 				if(ExpectedBackplane3.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane3_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane3 is available and displaying correctly");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
 						
-						VerifyandClickOtherSlotCardsForBackplane3(sBackplane3SlotCardName);
-						VerifySlotCardsTextForBackplane3(sBackplane3SlotCardName);
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 is not displayed");
-					}
 				}
 				else
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 should not be displayed");
-					}
+					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
+					
 				}
 				
+			
 				// Delete Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);
 				
@@ -2767,6 +2751,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 26/06/2019  Alpesh Dhakad - 29/07/2019 - Updated script as per new build xpaths
+		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifySlotCardsAndLoopCardsDistribution(string sFileName,string sAddDevicesSheet)
@@ -2816,26 +2801,31 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.FormMe.NodeExpander1.Click();
-							//repo.ProfileConsys1.NavigationTree.Expander.Click();
+							// Click on Expander node
+							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+							
 							repo.FormMe.tab_PanelAccessories.Click();
+							
 							for(int k=1; k<=deviceCount;k++)
 							{
-								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+								//Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
+								Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
 							}
 						}
 						else
 						{
-							repo.FormMe.PanelNode1.Click();
+							// Click on Loop A node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+							// Click on Expander node
+							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 							
-							repo.FormMe.NodeExpander1.Click();
-							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
-								Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
-								
+								//Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
+								Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
 								// Verify expected backplane1
 								if(ExpectedBackplane1.Equals("Yes"))
 								{

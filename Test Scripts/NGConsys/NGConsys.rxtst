@@ -11700,7 +11700,7 @@ persisted in panel properties&nbsp;]]>
 			id="c868d8b7-e2fe-4222-97b2-e27171de49b6"
 			name="Verify_Integral/internal_LED_Indicator_Property_For_Devices">
 				<description>
-					<![CDATA[<p>NGC-260/TC-0106</p><p><br></p>]]>
+					<![CDATA[<p>NGC-260/TC-106</p><p><br></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -19489,7 +19489,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="8479bd43-158f-4492-b7b8-1e5cc3a64b9b">
+			id="2bb77d07-695c-4f1f-97c9-ad3d54e10be8">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

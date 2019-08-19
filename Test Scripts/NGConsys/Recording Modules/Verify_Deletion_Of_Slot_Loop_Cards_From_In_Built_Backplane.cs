@@ -82,31 +82,26 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(1));
-            repo.FormMe.NodeExpander1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.BackplaneOrXLMExternalLoopCard_Expander' at Center.", repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo, new RecordItemIndex(2));
-            repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.OtherSlotCards_BP1' at Center.", repo.FormMe.OtherSlotCards_BP1Info, new RecordItemIndex(3));
-            repo.FormMe.OtherSlotCards_BP1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.BackplaneOrXLMExternalLoopCard_Expander' at Center.", repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo, new RecordItemIndex(5));
-            repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(7));
-            repo.FormMe.NodeExpander1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
             Delay.Milliseconds(0);

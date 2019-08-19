@@ -173,6 +173,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 28/01/2019  Alpesh Dhakad- 29/07/2019 - Updated script as per new build xpath updates
+		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify5VPsuLoadOnAdditionDeletionOfAccessories(string sFileName,string sAddPanelandDevicesSheet)
@@ -209,43 +210,39 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				// Click on Loop Card node
-				repo.FormMe.LoopExpander1.Click();
+				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
 				// Click on Loop A node
-				repo.FormMe.Loop_A1.Click();
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
 				verify5VPSULoadValue(expected5VPSU,PanelType);
 				
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
 				
 				// Add devices from Panel node gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 				
-				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
-				
 				// Click on Loop A node
-				repo.FormMe.Loop_A1.Click();
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
 				
 				// Verify 24V PSU load value
 				verify5VPSULoadValue(expected2nd5VPSU,PanelType);
 				
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
 				// Delete devices using its Label name
 				Devices_Functions.DeleteDeviceUsingLabel(sLabelName);
 				
-				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
-				
 				// Click on Loop A node
-				repo.FormMe.Loop_A1.Click();
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
 				verify5VPSULoadValue(expected3rd5VPSU,PanelType);

@@ -82,9 +82,8 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(1));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MXR", "Repeaters", "Enabled");
             Delay.Milliseconds(0);
@@ -119,13 +118,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(13));
-            repo.FormMe.NodeExpander1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor1' at Center.", repo.FormMe.MainProcessor1Info, new RecordItemIndex(14));
-            repo.FormMe.MainProcessor1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MXR", "Repeaters", "Enabled");
             Delay.Milliseconds(0);
@@ -160,9 +157,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.RBus1' at Center.", repo.FormMe.RBus1Info, new RecordItemIndex(26));
-            repo.FormMe.RBus1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("MXR", "Repeaters", "PFI");
             Delay.Milliseconds(0);
@@ -203,9 +199,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Ethernet1' at Center.", repo.FormMe.Ethernet1Info, new RecordItemIndex(40));
-            repo.FormMe.Ethernet1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PR1DS", "Repeaters", "PFI");
             Delay.Milliseconds(0);
@@ -246,9 +241,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PZ4DS", "Attached Functionality", "Enabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(54));
-            repo.FormMe.LoopExpander1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MXR", "Repeaters", "Disabled");
             Delay.Milliseconds(0);
@@ -283,9 +277,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.BackplaneOrXLMExternalLoopCard_Expander' at Center.", repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo, new RecordItemIndex(66));
-            repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromPanelNodeGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
@@ -323,9 +316,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(79));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectInventoryGridRow("6");
             Delay.Milliseconds(0);

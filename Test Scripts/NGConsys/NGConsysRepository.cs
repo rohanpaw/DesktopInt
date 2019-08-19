@@ -13624,7 +13624,7 @@ namespace TestProject
                     base("PrintPreview", "/form[@title='Print Preview']", parentFolder, 30000, null, true, "a32ad286-4801-42ed-9c91-f86c574de621", "")
             {
                 _printInfo = new RepoItemInfo(this, "Print", "list[2]/button[@automationid='PART_Button']/button[@text='Print...']", 30000, null, "2f43b9ae-d908-4729-8059-b2f9c971df4e");
-                _btn_closeInfo = new RepoItemInfo(this, "btn_Close", ".//list[@automationid='PART_HeaderButtons']/button[@automationid='PART_CloseButton']", 30000, null, "143c5434-4ee7-4582-9b76-f7136459f644");
+                _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "?/?/container[@automationid='PART_HeaderBorder']/button[@automationid='PART_CloseButton']", 30000, null, "143c5434-4ee7-4582-9b76-f7136459f644");
                 _partmaximizeInfo = new RepoItemInfo(this, "PARTMaximize", "?/?/button[@automationid='PART_Maximize']", 30000, null, "ba741b31-3c34-4b05-b54b-79946f6e6659");
                 _exportdropdownInfo = new RepoItemInfo(this, "ExportDropdown", "?/?/button[@text='Export...']", 30000, null, "132c808b-0d42-40b5-8781-939a5e68c753");
                 _btn_closebInfo = new RepoItemInfo(this, "btn_CloseB", "?/?/button[@automationid='PART_CloseButton']", 30000, null, "da5d2408-f0f2-47f7-8850-f47457d51ea8");

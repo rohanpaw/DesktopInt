@@ -3954,9 +3954,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Deletion_Of_Slot_Loop_Cards_From_Pro32xD_Pro32xBB_Panels.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>65e9b77e-3e77-4615-b746-15ec1b823e1e</id>
       <recordtableid>f2137f57-f0f8-4489-bd0c-01380e88918a</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Deletion_Of_Sounders_Connected_To_LPS800.rxrec">
       <id>40a2c7b4-44a7-40ff-823f-723e9d241d5d</id>
@@ -4169,9 +4169,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_IS_Units_On_Updating_Cable_Capacitance_for_FIM.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>4a305522-40eb-4143-8510-c9182eba84e3</id>
       <recordtableid>0a76f712-5b0b-4b55-bc02-5dd1a8143f3a</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_IS_Units_On_Updating_Cable_Capacitance_for_PFI.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

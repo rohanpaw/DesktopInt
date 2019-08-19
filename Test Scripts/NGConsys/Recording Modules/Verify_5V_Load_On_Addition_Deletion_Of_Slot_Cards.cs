@@ -82,17 +82,14 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(1));
-            repo.FormMe.NodeExpander1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(2));
-            repo.FormMe.LoopExpander1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(3));
-            repo.FormMe.Loop_A1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
             
             Libraries.PSULoad_Functions.verify5VPSULoadValue("0.020", "PFI");
             Delay.Milliseconds(0);
@@ -101,7 +98,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Panel_Functions.SelectPanelNode("Node1 - Pro32xD");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(7));
@@ -136,9 +133,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PNI800", "Slot Cards", "PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(16));
-            repo.FormMe.Loop_A1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
             
             Libraries.PSULoad_Functions.verify5VPSULoadValue("0.050", "PFI");
             Delay.Milliseconds(0);
@@ -171,9 +167,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.DeleteDeviceUsingLabel("PCS800-1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(27));
-            repo.FormMe.Loop_A1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
             
             Libraries.PSULoad_Functions.verify5VPSULoadValue("0.020", "PFI");
             Delay.Milliseconds(0);

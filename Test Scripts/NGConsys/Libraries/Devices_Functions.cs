@@ -837,14 +837,15 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
 		}
 
-		/***********************************************************************************
+		/*****************************************************************************************************************
 		 * Function Name: changeAndVerifyNumberOfAlarmLED
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : Alpesh Dhakad - 29/07/2019 - Updated script as per new build xpaths
-		 *************************************************************************************/
+		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 *******************************************************************************************************************/
 		[UserCodeMethod]
 		public static void changeAndVerifyNumberOfAlarmLED(int LEDNumber, string rangeState, int expectedResult)
 		{
@@ -852,9 +853,13 @@ namespace TestProject.Libraries
 			int Value,actualValue,revertTo;
 			string sActualValue;
 			
-			repo.FormMe.SiteNode1.Click();
-			repo.FormMe.PanelNode1.Click();
+			// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
 			
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
+			
+		
 			
 			Delay.Duration(500);
 			// repo.ProfileConsys1.NavigationTree.Node1Pro32xD.Click();
@@ -2320,22 +2325,28 @@ namespace TestProject.Libraries
 			repo.FormMe.PointsGridRow.Click();
 		}
 
-		/********************************************************************
+		/******************************************************************************************************************************
 		 * Function Name: AddDevicesfromMainProcessorGallery
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 03/01/2019  Updated on 28/01/2019 - Added Report Log
-		 ********************************************************************/
+		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery
+		 ******************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddDevicesfromMainProcessorGallery(string sDeviceName,string sType, string PanelType)
 		{
-			sMainProcessorGalleryIndex = SelectMainProcessorGalleryType(sType, PanelType);
 			ModelNumber=sDeviceName;
-			repo.FormMe.btn_MainProcessorGalleryDropDown.Click();
+			repo.FormMe.btn_AllGalleryDropdown.Click();
+			repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
 			repo.ContextMenu.txt_SelectDevice.Click();
-			Report.Log(ReportLevel.Info, "Device "+sDeviceName+" added successfully");
+			Report.Log(ReportLevel.Success, "Device "+sDeviceName+" Added Successfully");
+//			sMainProcessorGalleryIndex = SelectMainProcessorGalleryType(sType, PanelType);
+//			ModelNumber=sDeviceName;
+//			repo.FormMe.btn_MainProcessorGalleryDropDown.Click();
+//			repo.ContextMenu.txt_SelectDevice.Click();
+//			Report.Log(ReportLevel.Info, "Device "+sDeviceName+" added successfully");
 		}
 		
 		
@@ -2523,23 +2534,30 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success, "Inventory grid row selected");
 		}
 		
-		/********************************************************************
+		/********************************************************************************************************************************
 		 * Function Name: AddDevicefromPanelAccessoriesGallery
 		 * Function Details: Add devices from panel accessories
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 04/01/2019, 18/01/2019 - Alpesh Dhakad - Updated Report log
-		 ********************************************************************/
+		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 ********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddDevicefromPanelAccessoriesGallery(string sDeviceName,string sType)
 		{
-			
-			sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
 			ModelNumber=sDeviceName;
-			repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+			repo.FormMe.btn_AllGalleryDropdown.Click();
+			repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
 			repo.ContextMenu.txt_SelectDevice.Click();
-			Report.Log(ReportLevel.Success,"Panel Accessories device " + sDeviceName + " added successfully " );
+			Report.Log(ReportLevel.Success, "Device "+sDeviceName+" Added Successfully");
+			
+			
+//			sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
+//			ModelNumber=sDeviceName;
+//			repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+//			repo.ContextMenu.txt_SelectDevice.Click();
+//			Report.Log(ReportLevel.Success,"Panel Accessories device " + sDeviceName + " added successfully " );
 		}
 		
 		/********************************************************************
@@ -4988,22 +5006,23 @@ namespace TestProject.Libraries
 
 		
 		
-		/********************************************************************
+		/********************************************************************************************************************************************
 		 * Function Name: VerifyPanelNodePanelAccessoriesGallery
 		 * Function Details: To verify day mode field
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/05/2019
-		 ********************************************************************/
+		 * Last Update : 06/05/2019 Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 ********************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyPanelNodePanelAccessoriesGallery(string sDeviceName,string sType,string state)
 		{
 			if(state.Equals("Enabled"))
 			{
-				sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
+				//sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
 				ModelNumber=sDeviceName;
-				repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+				//repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+				repo.FormMe.btn_AllGalleryDropdown.Click();
 				
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
 				{
@@ -5016,9 +5035,10 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
+				//sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
 				ModelNumber=sDeviceName;
-				repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+				//repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+				repo.FormMe.btn_AllGalleryDropdown.Click();
 				
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
 				{
@@ -5049,32 +5069,38 @@ namespace TestProject.Libraries
 		}
 		
 
-		/********************************************************************
+		/**************************************************************************************************************************************
 		 * Function Name: AddDevicesfromPanelNodeGallery
 		 * Function Details: Add devices from panel node gallery
 		 * Parameter/Arguments: devicename , device type and panel type
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 10/05/2019
-		 ********************************************************************/
+		 * Last Update : 10/05/2019  Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 **************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddDevicesfromPanelNodeGallery(string sDeviceName,string sType, string PanelType)
 		{
-			sMainProcessorGalleryIndex = SelectMainProcessorGalleryType(sType, PanelType);
 			ModelNumber=sDeviceName;
-			repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+			repo.FormMe.btn_AllGalleryDropdown.Click();
+			repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
 			repo.ContextMenu.txt_SelectDevice.Click();
-			Report.Log(ReportLevel.Info, "Device "+sDeviceName+" added successfully");
+			Report.Log(ReportLevel.Success, "Device "+sDeviceName+" Added Successfully");
+
+//			sMainProcessorGalleryIndex = SelectMainProcessorGalleryType(sType, PanelType);
+//			ModelNumber=sDeviceName;
+//			repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+//			repo.ContextMenu.txt_SelectDevice.Click();
+//			Report.Log(ReportLevel.Info, "Device "+sDeviceName+" added successfully");
 		}
 		
-		/********************************************************************
+		/****************************************************************************************************************
 		 * Function Name: VerifyNodeGallery
 		 * Function Details: To verify node gallery
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 14/05/2019  Alpesh Dhakad - 02/08/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyNodeGallery(string sDeviceName,string sType,string state,string PanelType)
 		{
@@ -6141,23 +6167,23 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/******************************************************************************************************************************************
 		 * Function Name: VerifyNodeGalleryforPFI
 		 * Function Details: To verify node gallery for pro panels
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 19/06/2019
-		 ********************************************************************/
+		 * Last Update : 19/06/2019 Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 ******************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyNodeGalleryForPFI(string sDeviceName,string sType,string state)
 		{
 			if(state.Equals("Enabled"))
 			{
-				sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,"PFI");
+				//sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,"PFI");
 				ModelNumber=sDeviceName;
-				repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
-				
+				//repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+				repo.FormMe.btn_AllGalleryDropdown.Click();
 				
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
 				{
@@ -6170,9 +6196,10 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,"PFI");
+				//sAccessoriesGalleryIndex= SelectMainProcessorGalleryType(sType,"PFI");
 				ModelNumber=sDeviceName;
-				repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+				//repo.FormMe.btn_PanelNodelGalleryDropDown.Click();
+				repo.FormMe.btn_AllGalleryDropdown.Click();
 				
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
 				{
@@ -6320,6 +6347,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 24/06/2019 Alpesh Dhakad - 29/07/2019 - Updated script as per new build xpaths
+		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
 		 *************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDeviceOrderForGalleryExpansion(string sFileName,string sAddDevicesSheet)
@@ -6343,8 +6371,10 @@ namespace TestProject.Libraries
 				sGalleryIndex = SelectGalleryType(sType);
 				sDeviceIndex = DeviceIndex;
 				//Click on Expand for gallery
-				repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+				//repo.FormMe.btn_DevicesGalleryDropDown1.Click();
 				//repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+				
+				repo.FormMe.btn_AllGalleryDropdown.Click();
 				
 				string ActualDeviceName = repo.ContextMenu.DeviceOrder_GalleryExpanded.TextValue;
 				
