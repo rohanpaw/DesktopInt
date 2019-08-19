@@ -3059,9 +3059,9 @@ namespace TestProject.Libraries
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				sRow=  ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				
-				repo.FormMe.ShoppingListDevices.Click();
+				repo.FormMe.ShoppingListDevices1.Click();
 				
-				repo.FormMe.ShoppingListDevices.EnsureVisible();
+				repo.FormMe.ShoppingListDevices1.EnsureVisible();
 				Report.Log(ReportLevel.Info,"Device is successfully displayed in shopping list as " +sDeviceName);
 				
 				
@@ -6503,7 +6503,6 @@ namespace TestProject.Libraries
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 8/7/2019
 		 ********************************************************************/
-		// Change cable resistance method
 		[UserCodeMethod]
 		public static void VerifyDeviceExists(bool sExists, string sLabel)
 		{
@@ -6817,6 +6816,163 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Device "+sDeviceName+" added successfully");
 		}
 		
+		/***********************************************************************************************************
+		 * Function Name: editDeviceAddress
+		 * Function Details: To edit device address from properties section
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 08/08/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void editDeviceAddress(string sDeviceAddress, string sNewAddress)
+		{
+			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
+			{
+				//Click on Points tab
+				repo.ProfileConsys1.tab_Points.Click();
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search for the address property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sDeviceAddress +"{ENTER}" );
+			
+			if(repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceModeInfo.Exists())
+			{
+				// Click on Address property cell
+				repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+				
+				//Modifying the Address
+				repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.PressKeys(sNewAddress +"{ENTER}" );
+				Report.Log(ReportLevel.Success,"Address is editied to " +sNewAddress);
+				
+			}
+			else
+			{
+				// Click on label cell
+				repo.FormMe.cell_Properties.Click();
+				
+				//Modifying the label
+				repo.FormMe.cell_Properties.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				repo.FormMe.cell_Properties.PressKeys(sNewAddress +"{ENTER}" );
+				Report.Log(ReportLevel.Success,"Label is edited to " +sNewAddress);
+				
+			}
+			
+			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
+			{
+				//Click on Points tab
+				repo.ProfileConsys1.tab_Points.Click();
+			}
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		/***********************************************************************************************************
+		 * Function Name: verifyDevicePresentInShoppingList
+		 * Function Details: To verify device is present in shopping list
+		 * Parameter/Arguments: sExist, sDeviceName
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 08/08/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyDevicePresentInShoppingList(bool sExist, string sDeviceName )
+		{
+            string ActualDeviceName;
+			int ActualShoppingListDeviceCount = repo.FormMe.ShoppingListContainer.Children.Count();	
+			Report.Log(ReportLevel.Info,"No of Rows in shopping list are " +ActualShoppingListDeviceCount);
+			
+			if(sExist)
+			{
+				for(int i=1;i<=ActualShoppingListDeviceCount;i++)
+				{
+					sRow = i.ToString();
+					ActualDeviceName = repo.FormMe.ShoppingListDevices1.TextValue;
+					Report.Log(ReportLevel.Info,"Device Name is displayed as " +ActualDeviceName);
+					
+					if(ActualDeviceName.Equals(sDeviceName))
+					{
+						Report.Log(ReportLevel.Success,"Device is successfully displayed in shopping list as " +sDeviceName);
+					}
+					else 
+					{
+						Report.Log(ReportLevel.Failure,"Device is not displayed in shopping list as " +sDeviceName);
+					}
+				}
+			}
+			else 
+			{
+				for(int i=1;i<=ActualShoppingListDeviceCount;i++)
+				{
+					sRow = i.ToString();
+					ActualDeviceName = repo.FormMe.ShoppingListDevices1.TextValue;
+					Report.Log(ReportLevel.Info,"Device Name is displayed as " +ActualDeviceName);
+					
+					if(ActualDeviceName.Equals(sDeviceName))
+					{
+						Report.Log(ReportLevel.Failure,"Device is displayed in shopping list as " +sDeviceName);
+					}
+					else 
+					{
+						Report.Log(ReportLevel.Success,"Device is not displayed in shopping list as " +sDeviceName);
+					}
+				}
+			}
+				
+			
+			
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyPropertyInSearchPropertiesInSecondLine
+		 * Function Details: To verify Product Name in search properties when product code is present
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 09/08/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyPropertyInSearchPropertiesInSecondLine(string sPropertyName,string sProductName)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Product" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.txt_PropertiesTextValue_2ndLine.Click();
+			
+			// Retrieve value of label
+			string actualSKUValue = repo.FormMe.txt_PropertiesTextValue_2ndLine.TextValue;
+			
+			// Comparing actualLabel and sLabel values
+			if(actualSKUValue.Equals(sProductName))
+			{
+				Report.Log(ReportLevel.Success,"Actual SKU value " +actualSKUValue+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Actual SKU Value is displayed as "+actualSKUValue+ " instead of "+ sProductName);
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		
+	}
 		
 		
 	}

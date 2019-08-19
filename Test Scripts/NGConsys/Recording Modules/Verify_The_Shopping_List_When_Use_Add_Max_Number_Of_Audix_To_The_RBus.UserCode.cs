@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace TestProject.Recording_Modules
 {
-    public partial class Verify_the_properties_of_Audix_Interface
+    public partial class Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,6 +33,5 @@ namespace TestProject.Recording_Modules
             // Your recording specific initialization code goes here.
         }
 
-       
     }
 }

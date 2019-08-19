@@ -4094,9 +4094,12 @@ namespace TestProject.Libraries
 					//Add Slot Card
 					repo.FormMe.PanelNode1.Click();
 					
+					//click panel Accessories tab
+					repo.FormMe.tab_PanelAccessories.Click();
+					
 					float.TryParse(sBatteryStandby, out PABatteryStandby);
 					float.TryParse(sAlarmLoad, out PAAlarmLoad);
-					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+					Devices_Functions.AddDevicefromPanelAccessoriesGallery(ModelNumber,sType);
 					Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
 					
 					
@@ -4144,6 +4147,9 @@ namespace TestProject.Libraries
 					
 					// Click on Panel node
 					repo.FormMe.PanelNode1.Click();
+					
+					//click on panel accessories tab
+					repo.FormMe.tab_PanelAccessories.Click();
 					
 					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 					

@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories recording.
+    ///The Verify_The_Properties_Of_APM800 recording.
     /// </summary>
-    [TestModule("bd0fa652-9ac0-4b53-8e39-f2af1ae93120", ModuleType.Recording, 1)]
-    public partial class Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories : ITestModule
+    [TestModule("c620bf21-83c7-4d0f-9160-e0373be4eb18", ModuleType.Recording, 1)]
+    public partial class Verify_The_Properties_Of_APM800 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories instance = new Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories();
+        static Verify_The_Properties_Of_APM800 instance = new Verify_The_Properties_Of_APM800();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories()
+        public Verify_The_Properties_Of_APM800()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories Instance
+        public static Verify_The_Properties_Of_APM800 Instance
         {
             get { return instance; }
         }
@@ -79,47 +79,54 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", "");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(1));
             repo.FormMe.PanelNode1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(2));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
+            Libraries.Panel_Functions.ChangePSUType("PSB800");
+            Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
+            Libraries.Panel_Functions.ChangeSecondPSUType("PSB800-K");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(4));
             repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessorNode1' at Center.", repo.FormMe.MainProcessorNode1Info, new RecordItemIndex(5));
-            repo.FormMe.MainProcessorNode1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(5));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "IOB800-1");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(6));
+            repo.FormMe.Loop_A1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(7));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelName("APM 800 - 1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(7));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
+            //Libraries.Devices_Functions.verifyDescription("APM800 part Of second PSU");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteAccessoryFromPanelAccessoriesTab();
+            Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Zone", "1 (Zone 01)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessorNode1' at Center.", repo.FormMe.MainProcessorNode1Info, new RecordItemIndex(9));
-            repo.FormMe.MainProcessorNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Address", "1");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(10));
-            repo.FormMe.NodeExpander1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Devices_Functions.editDeviceAddress("Address", "2");
+            Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "6"), "IOB800-1", "557.202.006");
+            Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Address", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Address", "2");
             Delay.Milliseconds(0);
             
         }

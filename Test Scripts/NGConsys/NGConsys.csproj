@@ -177,8 +177,8 @@
     <Compile Include="Libraries\Export_Functions.cs">
       <id>269e8ff2-7756-4049-a006-817d6d640fb3</id>
     </Compile>
-    <Compile Include="Libraries\UserCodeModule1.cs">
-      <id>e1ce2b06-4a08-4665-a561-3a38f246f44c</id>
+    <Compile Include="Libraries\LinkedHardware_Fuctions.cs">
+      <id>949dd528-33d0-4104-ad5c-e37a193ba420</id>
     </Compile>
     <Compile Include="Project_Creation_and_Closure\VoltageDrop_Functions.cs">
       <id>4db8548a-1485-4278-bb41-187d70c49611</id>
@@ -1098,6 +1098,30 @@
       <UserCode>true</UserCode>
       <id>6c9f5b92-2aaf-4729-985e-b76cca1d2f4c</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se.cs">
+      <BoundTo>616ef878-3fcd-43d4-9848-df8f489abc8d</BoundTo>
+      <DependentUpon>Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6ac35b7f-c8c8-40d8-938c-2872788b6da0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se.UserCode.cs">
+      <BoundTo>616ef878-3fcd-43d4-9848-df8f489abc8d</BoundTo>
+      <DependentUpon>Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f8a618b1-00fc-4b38-bffc-df06ca067ee9</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_APM800_Will_Get_Added_To_Available_Loop_Address_When_Second_PUSPSB800K_Is_Selected.cs">
+      <BoundTo>f51eccc3-f400-4e46-8366-d93dcaff9247</BoundTo>
+      <DependentUpon>Verify_APM800_Will_Get_Added_To_Available_Loop_Address_When_Second_PUSPSB800K_Is_Selected.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>39da30df-2cb1-4fbd-a5b6-8564564edda8</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_APM800_Will_Get_Added_To_Available_Loop_Address_When_Second_PUSPSB800K_Is_Selected.UserCode.cs">
+      <BoundTo>f51eccc3-f400-4e46-8366-d93dcaff9247</BoundTo>
+      <DependentUpon>Verify_APM800_Will_Get_Added_To_Available_Loop_Address_When_Second_PUSPSB800K_Is_Selected.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1488f18c-ac4f-4433-aa0a-1ecdbe2eb7e3</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Backplane_Logic_For_Pro32xD_Pro32xBB.cs">
       <BoundTo>ba203223-ea8b-44cd-bfe0-1987115f8ed5</BoundTo>
       <DependentUpon>Verify_Backplane_Logic_For_Pro32xD_Pro32xBB.rxrec</DependentUpon>
@@ -1913,6 +1937,30 @@
       <DependentUpon>Verify_If_The_Device_Order_Is_Shown_As_Exi_Order_IS_Order.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8501d40d-ec68-4bac-afd4-33bfc991d1ab</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List.cs">
+      <BoundTo>b4b4d01d-5ffc-4646-afa5-7c9eda127f71</BoundTo>
+      <DependentUpon>Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>128bfbba-2967-4a30-9ffc-bb7cb8d41713</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List.UserCode.cs">
+      <BoundTo>b4b4d01d-5ffc-4646-afa5-7c9eda127f71</BoundTo>
+      <DependentUpon>Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7644311f-658c-4125-ad21-92d48eb94c8b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete.cs">
+      <BoundTo>642cef4f-ed05-4bf4-8046-89d9f93737a9</BoundTo>
+      <DependentUpon>Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65895c2f-5277-4a70-bdff-c7c738a2ed34</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete.UserCode.cs">
+      <BoundTo>642cef4f-ed05-4bf4-8046-89d9f93737a9</BoundTo>
+      <DependentUpon>Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>698b4485-3f07-41e2-b718-71a6677e7a02</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.cs">
       <BoundTo>e93d6f07-fed2-4000-8ce3-d92f8cd21ae8</BoundTo>
@@ -3102,6 +3150,18 @@
       <UserCode>true</UserCode>
       <id>b08f2efc-525b-44ca-9a78-869f010c8a3f</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_The_Properties_Of_APM800.cs">
+      <BoundTo>fdc44857-88be-44c9-aff5-88358bda10c5</BoundTo>
+      <DependentUpon>Verify_The_Properties_Of_APM800.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>062e9010-4daf-4a9b-b3b0-2ef5f278f743</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Properties_Of_APM800.UserCode.cs">
+      <BoundTo>fdc44857-88be-44c9-aff5-88358bda10c5</BoundTo>
+      <DependentUpon>Verify_The_Properties_Of_APM800.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ed6f8eb4-795c-416a-b151-e28fb45514e5</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_the_properties_of_Audix_Interface.cs">
       <BoundTo>089525c0-3a87-437e-9334-2b80ced94d20</BoundTo>
       <DependentUpon>Verify_the_properties_of_Audix_Interface.rxrec</DependentUpon>
@@ -3126,6 +3186,18 @@
       <UserCode>true</UserCode>
       <id>90cfd707-ac27-41c0-805f-25dfffc1a153</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_The_Properties_Of_XLM800.cs">
+      <BoundTo>04c4c31c-ba73-49dd-a836-ed25435ffe52</BoundTo>
+      <DependentUpon>Verify_The_Properties_Of_XLM800.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>eec097e0-fa8f-417b-a2c7-c1eef23d34bc</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Properties_Of_XLM800.UserCode.cs">
+      <BoundTo>04c4c31c-ba73-49dd-a836-ed25435ffe52</BoundTo>
+      <DependentUpon>Verify_The_Properties_Of_XLM800.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9f13ba4d-0354-4775-ab7f-c0ead82d856a</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_The_Respective_5V24V40V_Property_On_Changing_Power_Source.cs">
       <BoundTo>d594399a-7ff5-4438-b4b4-03165d779d5a</BoundTo>
       <DependentUpon>Verify_The_Respective_5V24V40V_Property_On_Changing_Power_Source.rxrec</DependentUpon>
@@ -3137,6 +3209,30 @@
       <DependentUpon>Verify_The_Respective_5V24V40V_Property_On_Changing_Power_Source.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>7b40b400-7671-4361-91da-720f658a2f4b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus.cs">
+      <BoundTo>251a0edd-da0f-49ec-9b28-9eceb66978fe</BoundTo>
+      <DependentUpon>Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ea9c4205-8f7d-4c0a-ad37-67b71660286a</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus.UserCode.cs">
+      <BoundTo>251a0edd-da0f-49ec-9b28-9eceb66978fe</BoundTo>
+      <DependentUpon>Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c99e0dc2-eddc-4a4c-9abb-7fb67ea46cbb</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Shopping_List_When_XML800_Is_Addedremoved_From_Panel.cs">
+      <BoundTo>fc244ca6-ecce-4974-88a2-7e023d4a78c9</BoundTo>
+      <DependentUpon>Verify_The_Shopping_List_When_XML800_Is_Addedremoved_From_Panel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ad0595fc-b10b-46f6-971f-3a0f52a3dae9</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Shopping_List_When_XML800_Is_Addedremoved_From_Panel.UserCode.cs">
+      <BoundTo>fc244ca6-ecce-4974-88a2-7e023d4a78c9</BoundTo>
+      <DependentUpon>Verify_The_Shopping_List_When_XML800_Is_Addedremoved_From_Panel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7168facd-4e12-4725-a47f-be4b5212b287</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_TripCurrent_After_Reopen.cs">
       <BoundTo>dc75e587-a21e-427c-8502-18e6f02febe9</BoundTo>
@@ -3318,6 +3414,18 @@
       <UserCode>true</UserCode>
       <id>d705b0de-cba7-48fc-8d21-3465c5ce6af9</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.cs">
+      <BoundTo>e365b800-16c5-4276-8e8f-cad20ba01f25</BoundTo>
+      <DependentUpon>Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5633f0d2-90a9-4c3f-937d-09e8d132ec13</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.UserCode.cs">
+      <BoundTo>e365b800-16c5-4276-8e8f-cad20ba01f25</BoundTo>
+      <DependentUpon>Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>152384d5-aa10-4441-8842-d7f6c0e1f85f</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.cs">
       <BoundTo>d77bf6dc-7315-412d-8570-f66a513bb1b5</BoundTo>
       <DependentUpon>Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.rxrec</DependentUpon>
@@ -3353,6 +3461,18 @@
       <DependentUpon>Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ee094c40-50f5-4386-bcce-931c64249ee1</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.cs">
+      <BoundTo>1741d9a7-7b8d-427c-86f8-82ceed6322e5</BoundTo>
+      <DependentUpon>Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1fd2870b-9360-44fe-add4-c289c7671d0a</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.UserCode.cs">
+      <BoundTo>1741d9a7-7b8d-427c-86f8-82ceed6322e5</BoundTo>
+      <DependentUpon>Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fa580dc6-46a9-4628-9be9-f69df00bc612</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -3753,6 +3873,16 @@
       <id>bc504ad7-471f-48e1-8937-076d5bd7af42</id>
       <recordtableid>fb7a0d27-d5fa-4d39-ab8e-595db3a6d4d2</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>616ef878-3fcd-43d4-9848-df8f489abc8d</id>
+      <recordtableid>7f577429-755c-43ce-83fb-59270bc8b76b</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_APM800_Will_Get_Added_To_Available_Loop_Address_When_Second_PUSPSB800K_Is_Selected.rxrec">
+      <id>f51eccc3-f400-4e46-8366-d93dcaff9247</id>
+      <recordtableid>f59dd44e-6c73-4aad-b523-0efdb5c6cb37</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_Backplane_Logic_For_Pro32xD_Pro32xBB.rxrec">
       <id>ba203223-ea8b-44cd-bfe0-1987115f8ed5</id>
       <recordtableid>a5d8435d-ba8b-4a7d-a1b3-6339a0fe27a8</recordtableid>
@@ -4093,6 +4223,16 @@
       <id>85999bf8-6725-4080-9a5f-041adb1f84c1</id>
       <recordtableid>10207dea-59fe-49bb-868f-50522215d526</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List.rxrec">
+      <id>b4b4d01d-5ffc-4646-afa5-7c9eda127f71</id>
+      <recordtableid>1976ae21-1814-492b-875e-dde83f646d7c</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete.rxrec">
+      <id>642cef4f-ed05-4bf4-8046-89d9f93737a9</id>
+      <recordtableid>a8c25af4-b36a-408a-b158-6c1d71bbe31c</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.rxrec">
       <id>e93d6f07-fed2-4000-8ce3-d92f8cd21ae8</id>
       <recordtableid>8a5657d5-5a28-4966-acd7-0e9a47e689cf</recordtableid>
@@ -4404,9 +4544,9 @@
       <recordtableid>387d5123-db0f-45db-a452-e3fc164c89db</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>9fbf9143-514e-42d8-8452-8dccb042c2c9</id>
       <recordtableid>ecc6fe71-acd3-4456-851f-05c423b0cadd</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4489,9 +4629,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>60711ecb-1170-4b17-af59-08c71e7e3525</id>
       <recordtableid>24aaa9ba-5aac-4310-b303-d4087b7c09a9</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Repeaters_Gallery_Items.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4588,19 +4728,39 @@
       <recordtableid>1e66c130-cd29-457b-a28a-fe9ac1cb5f64</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="Recording Modules\Verify_the_properties_of_Audix_Interface.rxrec">
+    <None Include="Recording Modules\Verify_The_Properties_Of_APM800.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>fdc44857-88be-44c9-aff5-88358bda10c5</id>
+      <recordtableid>c620bf21-83c7-4d0f-9160-e0373be4eb18</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_the_properties_of_Audix_Interface.rxrec">
       <id>089525c0-3a87-437e-9334-2b80ced94d20</id>
       <recordtableid>e5591827-cfa7-4c05-9578-6ea1d74f4404</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_The_Properties_Of_TLI800.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>da483530-9948-4bab-8e1b-2fbcfaeca069</id>
       <recordtableid>155e3ff8-bcca-4c1c-ab0a-c36d7a2b2d2b</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_The_Properties_Of_XLM800.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>04c4c31c-ba73-49dd-a836-ed25435ffe52</id>
+      <recordtableid>0f96478c-09af-47c3-82ea-a8bdd39f711c</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_The_Respective_5V24V40V_Property_On_Changing_Power_Source.rxrec">
       <id>d594399a-7ff5-4438-b4b4-03165d779d5a</id>
       <recordtableid>d6bd24c8-5182-4f9d-bdcb-859457805967</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus.rxrec">
+      <id>251a0edd-da0f-49ec-9b28-9eceb66978fe</id>
+      <recordtableid>ac994224-9c7b-450d-ad16-0b038b64ebfa</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_The_Shopping_List_When_XML800_Is_Addedremoved_From_Panel.rxrec">
+      <id>fc244ca6-ecce-4974-88a2-7e023d4a78c9</id>
+      <recordtableid>7259ae3a-2387-405c-a951-459eb5e20671</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_TripCurrent_After_Reopen.rxrec">
@@ -4678,6 +4838,11 @@
       <id>03fdc858-13e7-4a00-8db5-49e5f89f8ae9</id>
       <recordtableid>24868221-cbc4-40c8-927e-77d4ec6d7e1e</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.rxrec">
+      <id>e365b800-16c5-4276-8e8f-cad20ba01f25</id>
+      <recordtableid>7e6e02e8-987a-4514-8daa-5159ece3cb9c</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.rxrec">
       <id>d77bf6dc-7315-412d-8570-f66a513bb1b5</id>
       <recordtableid>54485363-a8fb-4263-8ff8-4d85b9a71b19</recordtableid>
@@ -4692,6 +4857,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>ecfe529b-c728-4b2f-b16a-80663c4fdf2e</id>
       <recordtableid>d9f4115d-c340-4f6f-baa9-f332cc4e7c19</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.rxrec">
+      <id>1741d9a7-7b8d-427c-86f8-82ceed6322e5</id>
+      <recordtableid>4be5cc3d-6d55-49f9-8ff9-387dce87cc8a</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
   </ItemGroup>
   <ItemGroup>

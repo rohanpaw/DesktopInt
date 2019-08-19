@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e5591827-cfa7-4c05-9578-6ea1d74f4404"
+id="4be5cc3d-6d55-49f9-8ff9-387dce87cc8a"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_the_properties_of_Audix_Interface
+		Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_the_properties_of_Audix_Interface"
+	classname="Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -60,7 +60,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro32xD
+						MZX252
 					</argvalue>
 				</argument>
 				<argument
@@ -91,34 +91,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
+			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="d6491839-4ba8-4b89-8d80-7521ae231209"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="f31d368a-a6f8-42cc-a54a-3ef0a9b98471"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption='Main Processor']
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
 				</path>
 			</info>
 		</mouseitem>
@@ -126,7 +102,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromMainProcessorGallery"
+		methodname="AddDevicesfromPanelNodeGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -143,7 +119,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MPM800
+						XLM800
 					</argvalue>
 				</argument>
 				<argument
@@ -153,7 +129,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Loops
 					</argvalue>
 				</argument>
 				<argument
@@ -168,6 +144,58 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyCopyButton"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="fffdb768-f26a-47c6-82ac-4dde6c2a273f">
+				<argument
+				argname="isEnabled"
+				id="4abb4d89-91c4-4c7b-b5d4-3a69db7845a2">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyCutButton"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="1b123b36-5b3d-485a-bd3f-b33871a3eca7">
+				<argument
+				argname="isEnabled"
+				id="6b75625b-c9b2-49fc-b470-d516253b6d88">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -176,7 +204,183 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="48c798d6-3034-41d9-a87b-94189b50e22d"
+		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyValueOf2ndPSU"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f49660e9-977e-4f11-a591-a8ff822eed21">
+				<argument
+				argname="SecondPSU"
+				id="d5385231-c221-4e36-8cdb-f7a805cedc7c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PMM840
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SaveProject"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="97b3081b-342c-4029-a2cb-ee4c190121fb">
+				<argument
+				argname="sProjectName"
+				id="e40928a7-ee66-4475-9277-ebd2a58ccfb9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						55131
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ReopenProject"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4a9e4f8f-660e-46a9-971e-0a1cc25a8daf">
+				<argument
+				argname="sProjectName"
+				id="86b30bdc-9159-449d-8096-89253a3f84e4">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						55131
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d369c0f5-efac-4ef5-9457-c9e72bce432e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree/container[8]//text[@caption~'Node']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyValueOf2ndPSUOnReopen"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="47a6b2ec-82b8-41a7-9ee0-57e54427f810">
+				<argument
+				argname="SecondPSU"
+				id="b0f36078-0506-4bb9-bbd7-aac06dfe7f92">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PMM840
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d369c0f5-efac-4ef5-9457-c9e72bce432e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree/container[8]//text[@caption~'Node']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="2c4a4bf3-2b1a-494d-891b-a5ae00b26e5a"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -193,56 +397,10 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="SelectRowUsingDevicePropertyForMainProcessorGallery"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="38ab73d7-75e1-4503-92d3-d40c3f0425ea">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="875307d5-521f-4f6b-ad23-f9bfc5d9b28a">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						2
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="c1c7d9ec-5917-458c-b7b3-c5414c4bdfae">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Label
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="c50ad0a7-14e8-4add-813c-1de51d7431b6">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						MPM800-1
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromMainProcessorGallery"
+		methodname="SelectRowUsingLabelName"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -251,35 +409,15 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="cb51a23b-7ca8-456e-8802-c191aa00385a">
+			id="f0e92776-9f8a-4298-a9f0-b68944c561fb">
 				<argument
-				argname="sDeviceName"
-				id="c7a8bffb-0e80-4b2f-b014-8915db9d71db">
+				argname="sLabel"
+				id="b5971f15-5194-4b77-bf78-a8ef94bdcfb4">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Audix 8
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="ae352925-db1b-4a2a-87da-fb747b883cac">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Attached Functionality
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="7b0b565a-404c-4d95-a989-30cf0aa0272b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
+						XLM800-C
 					</argvalue>
 				</argument>
 			</arguments>
@@ -292,7 +430,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="48c798d6-3034-41d9-a87b-94189b50e22d"
+		searchpropertyid="12c59e4a-fdea-4d05-9441-8621643798f5"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -301,18 +439,42 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="a132b8d7-c763-4e9c-b961-327a18b252f9"
+			id="8e8210c0-314f-4c7d-97b4-86fb85d69656"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Inventory']
+					/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Delete']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d369c0f5-efac-4ef5-9457-c9e72bce432e"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree/container[8]//text[@caption~'Node']
 				</path>
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="InventoryGrid_Functions"
+		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingDevicePropertyForMainProcessorGallery"
+		methodname="VerifyValueOf2ndPSUOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -321,113 +483,15 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="38ab73d7-75e1-4503-92d3-d40c3f0425ea">
+			id="47a6b2ec-82b8-41a7-9ee0-57e54427f810">
 				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="875307d5-521f-4f6b-ad23-f9bfc5d9b28a">
+				argname="SecondPSU"
+				id="b0f36078-0506-4bb9-bbd7-aac06dfe7f92">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						3
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="c1c7d9ec-5917-458c-b7b3-c5414c4bdfae">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Label
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="c50ad0a7-14e8-4add-813c-1de51d7431b6">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Audix 8
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyModelInSearchProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="4b22ab69-ae7e-481c-b611-a7d3c8863d68">
-				<argument
-				argname="sModel"
-				id="67658876-65a9-4f71-94b1-477f3ecb2941">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						XIOM
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyProductCodeInSearchProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="bce02a46-cfc7-4280-9fb2-bd45ff8d427d">
-				<argument
-				argname="sProductLabel"
-				id="8a8d958f-2036-4bad-aa49-2fa80f6579be">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						557.180.016
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyFunctionality"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="52e848ae-5aaa-40cf-aa43-0ca1aca20bbe">
-				<argument
-				argname="sDescription"
-				id="3d4f57dc-4529-423b-86a8-159ed5dc8129">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						XIOM configured to communicate with an 8 zone Audix Voice Alarm System
+						None
 					</argvalue>
 				</argument>
 			</arguments>
@@ -449,7 +513,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_the_properties_of_Audix_Interface.UserCode.cs
+		Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

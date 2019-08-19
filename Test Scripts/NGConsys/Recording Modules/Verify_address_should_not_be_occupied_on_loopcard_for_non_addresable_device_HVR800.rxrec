@@ -1132,11 +1132,11 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800"
 		enabled="True"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="verifyBlankDeviceAddress"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False"
 		varname="">
 			<comment>

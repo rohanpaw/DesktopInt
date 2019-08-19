@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories recording.
+    ///The Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se recording.
     /// </summary>
-    [TestModule("bd0fa652-9ac0-4b53-8e39-f2af1ae93120", ModuleType.Recording, 1)]
-    public partial class Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories : ITestModule
+    [TestModule("7f577429-755c-43ce-83fb-59270bc8b76b", ModuleType.Recording, 1)]
+    public partial class Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories instance = new Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories();
+        static Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se instance = new Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories()
+        public Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories Instance
+        public static Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se Instance
         {
             get { return instance; }
         }
@@ -79,47 +79,44 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            Libraries.Panel_Functions.AddPanelAndAddCPUAndPSU(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX1000", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(1));
+            Libraries.Panel_Functions.AddPSUDuringPanelSelection("PSB800", "PSB800-KM");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(2));
             repo.FormMe.PanelNode1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(2));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(3));
             repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessorNode1' at Center.", repo.FormMe.MainProcessorNode1Info, new RecordItemIndex(5));
-            repo.FormMe.MainProcessorNode1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(4));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "IOB800-1");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(5));
+            repo.FormMe.Loop_A1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(6));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("APM 800 - 1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(7));
-            repo.FormMe.tab_PanelAccessories.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(8));
+            repo.FormMe.SiteNode1.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.DeleteAccessoryFromPanelAccessoriesTab();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessorNode1' at Center.", repo.FormMe.MainProcessorNode1Info, new RecordItemIndex(9));
-            repo.FormMe.MainProcessorNode1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(9));
+            repo.FormMe.tab_ShoppingList.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(10));
-            repo.FormMe.NodeExpander1.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "6"), "IOB800-1", "557.202.006");
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.202.027", ValueConverter.ArgumentFromString<bool>("sExist", "False"));
             Delay.Milliseconds(0);
             
         }

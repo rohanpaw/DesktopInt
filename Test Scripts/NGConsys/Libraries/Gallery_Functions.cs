@@ -621,7 +621,7 @@ namespace TestProject.Libraries
 				// Count number of rows in excel and store it in rows variable
 				int Drows= Excel_Utilities.ExcelRange.Rows.Count;
 				
-				for(int t=2; t<=3; t++)
+				for(int t=2; t<=Drows; t++)
 				{
 					GalleryName = ((Range)Excel_Utilities.ExcelRange.Cells[t,2]).Value.ToString();
 					sType = ((Range)Excel_Utilities.ExcelRange.Cells[t,3]).Value.ToString();
@@ -870,6 +870,43 @@ namespace TestProject.Libraries
 			//Delete Panel
 			//Panel_Functions.DeletePanel(1,PanelNode,1);
 			Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+			
+		}
+		
+		/***********************************************************************************************************
+		 * Function Name: VerifyCutButton
+		 * Function Details: VerifyCopyButton state
+		 * Parameter/Arguments: isEnabled
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 09/08/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyCutButton(bool isEnabled)
+		{
+			if(isEnabled)
+			{
+				if(repo.FormMe.ButtonCut1.Enabled)
+				{
+					Report.Log(ReportLevel.Success,"Cut button state is as expected");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Cut button state is  not " + isEnabled);
+				}
+			}
+			else 
+			{
+				if(repo.FormMe.ButtonCut1.Enabled)
+				{
+					Report.Log(ReportLevel.Failure,"Cut button state is not as expected");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success,"Cut button state is  as expected ");
+				}				
+			}
+			
 			
 		}
 

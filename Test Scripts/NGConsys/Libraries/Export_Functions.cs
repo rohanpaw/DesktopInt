@@ -113,6 +113,12 @@ namespace TestProject.Libraries
 			set { repo.sOtherSlotCardName = value; }
 		}
 		
+		static string sValue
+		{
+			get { return repo.sSKU; }
+			set { repo.sSKU = value; }
+		}
+		
 		/***********************************************************************************************************
 		 * Function Name: ExportAndGenerateShoppingListInExcelFormat
 		 * Function Details:
@@ -304,5 +310,61 @@ namespace TestProject.Libraries
 			}
 		}
 		
+		/***********************************************************************************************************
+		 * Function Name: SearchDeviceInExportUsingSKUOrDescription
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 09/08/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void SearchDeviceInExportUsingSKUOrDescription(string sValue,bool sExist)
+		{
+			 
+			// Click on Export button
+			repo.FormMe.Export2ndTime.Click();
+			Delay.Milliseconds(200);
+			
+			//Click on Search button
+			repo.PrintPreview.SearchExport1.Click();
+			
+			//Click on Search bar
+			repo.PrintPreview.SearchBox_Export1.Click();
+			
+			//Enter the required Device's SKU no
+			Keyboard.Press(sValue +"{ENTER}");
+			
+			if(sExist)
+			{
+				
+				string ActualValue = repo.PrintPreview.txt_ExportResult.TextValue;
+				
+				repo.PrintPreview.txt_ExportResult.Click();
+				
+				if(ActualValue.Equals(sValue))
+				{
+					Report.Log(ReportLevel.Success,"Device with SKU "+sValue+" is displayed correctly");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device with SKU "+sValue+" is not getting displayed");
+				}
+			}
+			else
+			{
+				if(repo.PrintPreview.NoMatches_InExportInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success,"Device with SKU "+sValue+" is not getting displayed");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device with SKU "+sValue+" is getting displayed");
+				}
+			}
+			repo.PrintPreview.btn_CloseB.Click();
+			Delay.Milliseconds(200);
 	}
 }
+}
+

@@ -53,16 +53,6 @@ namespace TestProject.Recording_Modules
 
 #region Variables
 
-        /// <summary>
-        /// Gets or sets the value of variable PanelNode.
-        /// </summary>
-        [TestVariable("361584a9-c082-463b-bb0a-d3f851f66bcb")]
-        public string PanelNode
-        {
-            get { return repo.PanelNode; }
-            set { repo.PanelNode = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -92,8 +82,8 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.VerifyPanelNode' at Center.", repo.ProfileConsys1.NavigationTree.VerifyPanelNodeInfo, new RecordItemIndex(1));
-            repo.ProfileConsys1.NavigationTree.VerifyPanelNode.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(1));
+            repo.FormMe.PanelNode1.Click();
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(2));
@@ -103,12 +93,12 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor' at Center.", repo.FormMe.MainProcessorInfo, new RecordItemIndex(4));
-            repo.FormMe.MainProcessor.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(4));
+            repo.FormMe.NodeExpander1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(5));
-            repo.FormMe.NodeExpander1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessorNode1' at Center.", repo.FormMe.MainProcessorNode1Info, new RecordItemIndex(5));
+            repo.FormMe.MainProcessorNode1.Click();
             Delay.Milliseconds(200);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "SKU", "557.202.006");

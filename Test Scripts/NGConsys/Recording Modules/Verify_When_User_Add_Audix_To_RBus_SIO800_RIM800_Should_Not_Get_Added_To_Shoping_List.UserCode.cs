@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace TestProject.Recording_Modules
 {
-    public partial class Verify_the_properties_of_Audix_Interface
+    public partial class Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,6 +33,5 @@ namespace TestProject.Recording_Modules
             // Your recording specific initialization code goes here.
         }
 
-       
     }
 }

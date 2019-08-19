@@ -24,34 +24,45 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_the_properties_of_Audix_Interface recording.
+    ///The Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List recording.
     /// </summary>
-    [TestModule("e5591827-cfa7-4c05-9578-6ea1d74f4404", ModuleType.Recording, 1)]
-    public partial class Verify_the_properties_of_Audix_Interface : ITestModule
+    [TestModule("7e6e02e8-987a-4514-8daa-5159ece3cb9c", ModuleType.Recording, 1)]
+    public partial class Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_the_properties_of_Audix_Interface instance = new Verify_the_properties_of_Audix_Interface();
+        static Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List instance = new Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_the_properties_of_Audix_Interface()
+        public Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List()
         {
+            NewVariable = "RIM 800";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_the_properties_of_Audix_Interface Instance
+        public static Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable NewVariable.
+        /// </summary>
+        [TestVariable("198f09b6-d7a6-4c5b-a226-c26ac3c4f584")]
+        public string NewVariable
+        {
+            get { return repo.NewVariable; }
+            set { repo.NewVariable = value; }
+        }
 
 #endregion
 
@@ -103,20 +114,48 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Audix 8", "Attached Functionality", "PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(7));
-            repo.FormMe.tab_Inventory.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(7));
+            repo.FormMe.LoopExpander1.Click();
             Delay.Milliseconds(200);
             
-            Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("3", "Label", "Audix 8");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(8));
+            repo.FormMe.Loop_A1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(9));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("SIO 800 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyModelInSearchProperties("XIOM");
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("RIM 800 - 2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyProductCodeInSearchProperties("557.180.016");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(12));
+            repo.FormMe.SiteNode1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(13));
+            repo.FormMe.tab_ShoppingList.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("568.800.033", ValueConverter.ArgumentFromString<bool>("sExist", "False"));
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyFunctionality("XIOM configured to communicate with an 8 zone Audix Voice Alarm System");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(15));
+            repo.FormMe.PanelNode1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(16));
+            repo.FormMe.SiteNode1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(17));
+            repo.FormMe.tab_ShoppingList.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("555.800.064", ValueConverter.ArgumentFromString<bool>("sExist", "False"));
             Delay.Milliseconds(0);
             
         }

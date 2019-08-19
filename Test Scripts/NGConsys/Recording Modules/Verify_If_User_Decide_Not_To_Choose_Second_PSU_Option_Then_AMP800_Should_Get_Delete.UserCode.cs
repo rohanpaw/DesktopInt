@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace TestProject.Recording_Modules
 {
-    public partial class Verify_the_properties_of_Audix_Interface
+    public partial class Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,6 +33,5 @@ namespace TestProject.Recording_Modules
             // Your recording specific initialization code goes here.
         }
 
-       
     }
 }

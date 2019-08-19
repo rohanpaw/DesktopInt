@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="bd0fa652-9ac0-4b53-8e39-f2af1ae93120"
+id="ac994224-9c7b-450d-ad16-0b038b64ebfa"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories
+		Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories"
+	classname="Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -42,10 +42,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="90340d02-d5ae-4de2-9d6d-c3de8f26b0c8">
+			id="53230b07-e9c3-4aac-843e-43f9d193aa49">
 				<argument
 				argname="NumberofPanels"
-				id="88c2f2dd-3e1f-4e61-8061-27d459ae05b5">
+				id="defa0673-41f7-4810-837a-724e61c6774b">
 					<argvaluetype>
 						System.Int32
 					</argvaluetype>
@@ -55,7 +55,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="PanelNames"
-				id="3b1e74fe-1884-497c-bd91-aa4dba8cd66f">
+				id="2b9f0c3a-7749-480b-aefd-646d0f43229b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -65,11 +65,47 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="sPanelCPU"
-				id="dc0ea196-3015-4526-a6a0-3d370ffb508a">
+				id="a20aa8b8-a1c1-4653-a946-112575281a2d">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="LinkedHardware_Fuctions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyLinkedDevicesGetAddedInLoop"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0e172579-80dd-4d93-8887-30c85bec16cc">
+				<argument
+				argname="sFileName"
+				id="17fb466c-3fab-45e1-af30-70d7fdea8316">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_55040_Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus
+					</argvalue>
+				</argument>
+				<argument
+				argname="sSheetName"
+				id="a6dd214d-c8d2-45b2-9dc9-8516e570aa75">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Devices
 					</argvalue>
 				</argument>
 			</arguments>
@@ -82,7 +118,91 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="328b20d5-693a-4dd4-8ab1-cb17b14951b9"
+		searchpropertyid="88ccaf9c-8e06-4877-8bcf-96c74966a9e8"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8f8912ea-7185-437d-9954-7cc89875720b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="21ef54bb-73d2-4c29-8719-e70db3e328ab"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/picture[2]/text[@text='Shopping List']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
+				<argument
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						568.800.033
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="88ccaf9c-8e06-4877-8bcf-96c74966a9e8"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -106,7 +226,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="b5477b1d-cb79-4285-b062-c8e5b333fa59"
+		searchpropertyid="88ccaf9c-8e06-4877-8bcf-96c74966a9e8"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -115,18 +235,42 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="90caf0d9-c2af-4c79-a4d1-bdb372ee3fa1"
+			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8f8912ea-7185-437d-9954-7cc89875720b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="21ef54bb-73d2-4c29-8719-e70db3e328ab"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/picture[2]/text[@text='Shopping List']
 				</path>
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicefromPanelAccessoriesGallery"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -135,253 +279,25 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="06e8d4ab-ec7f-4862-9cd7-d76794947b2d">
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
 				<argument
-				argname="sDeviceName"
-				id="60687fa3-29a1-429f-8e9c-dd7de2e9e9a8">
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						IOB800
+						555.800.064
 					</argvalue>
 				</argument>
 				<argument
-				argname="sType"
-				id="ed89b7b3-42dd-4a5d-9da0-278ecf9cc1d4">
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
 					<argvaluetype>
-						System.String
+						System.Boolean
 					</argvaluetype>
 					<argvalue>
-						Accessories
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="08d48e2b-0e15-47a9-9dcb-c5d893155251"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="cecacfb1-9fb1-44c4-b298-e4a375788c54"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="f31d368a-a6f8-42cc-a54a-3ef0a9b98471"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption='Main Processor']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						6
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Label
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						IOB800-1
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="b5477b1d-cb79-4285-b062-c8e5b333fa59"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="90caf0d9-c2af-4c79-a4d1-bdb372ee3fa1"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="DeleteAccessoryFromPanelAccessoriesTab"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="e66aaec7-7bc5-4292-bb47-bb32f5fb9570">
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="cecacfb1-9fb1-44c4-b298-e4a375788c54"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="f31d368a-a6f8-42cc-a54a-3ef0a9b98471"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption='Main Processor']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="328b20d5-693a-4dd4-8ab1-cb17b14951b9"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyRowNotExist"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="6025caae-536d-4b49-bb62-d28596717671">
-				<argument
-				argname="iRowNumber"
-				id="4ce130ad-68e6-44d9-b0b9-fd644c076413">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						6
-					</argvalue>
-				</argument>
-				<argument
-				argname="sItemName"
-				id="372c27c7-4ab8-4452-a0db-be49042a5f3d">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						IOB800-1
-					</argvalue>
-				</argument>
-				<argument
-				argname="sSKUofItem"
-				id="a66674b5-b61a-424b-8c78-61c3a52e2cbf">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						557.202.006
+						False
 					</argvalue>
 				</argument>
 			</arguments>
@@ -403,7 +319,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories.UserCode.cs
+		Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -472,6 +472,148 @@ namespace TestProject.Libraries
 			repo.AddANewPanel.ButtonOK.Click();
 			
 		}
+		
+		/********************************************************************
+		 * Function Name: AddPanelAndAddCPUAndPSU
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 8/8/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void AddPanelAndAddCPUAndPSU(int NumberofPanels,string PanelNames,string sPanelCPU)
+		{
+			for (int i=0; i<NumberofPanels;i++)
+			{
+				string[] splitPanelNames = PanelNames.Split(',');
+				
+				
+				
+				repo.FormMe.SiteNode1.Click();
+				
+				string PanelNameWithSpace=splitPanelNames[i];
+				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
+				if(PanelName.StartsWith("P"))
+				{
+					sPanelLabelIndex ="5";
+				}
+				else
+				{
+					sPanelLabelIndex ="7";
+				}
+				repo.ProfileConsys1.btnDropDownPanelsGallery.Click();
+				repo.ContextMenu.txt_SelectPanel.Click();
+				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
+				iAddress=i+1;
+				Address =iAddress.ToString();
+				repo.ContextMenu.lstPanelAddress.Click();
+				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				Label="Node"+iAddress;
+				Keyboard.Press(Label);
+				if (!sPanelCPU.IsEmpty())
+				{
+					repo.AddANewPanel.AddNewPanelContainer.cmb_CPU.Click();
+					sCPU=sPanelCPU;
+					repo.ContextMenu.lstPanelCPU.Click();
+				}
+				
+				if(PanelNameWithSpace == "MZX252")
+				{
+					PanelNameWithSpace = "MZX 252";
+				}
+				PanelNode = Label+" "+"-"+" "+PanelNameWithSpace;
+				
+				//Commenting below line as for Panel name with Space and hi-fen it is not displaying as it is displaying while adding panel
+				//Validate.AttributeEqual(repo.ProfileConsys1.NavigationTree.VerifyPanelNodeInfo, "Text", PanelNode);
+				
+				//After this add User Code AddPSUDuringPanelSelection
+				
+			}
+		}
+		
+		/********************************************************************
+		 * Function Name: AddPSUDuringPanelSelection
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 8/8/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void AddPSUDuringPanelSelection(string sPSU,string sSecondPSU)
+		{
+			//Before using this User code add AddPanelAndAddCPUAndPSU
+			repo.AddANewPanel.cmb_PowerSupply1.Click();
+			
+			//Add 1st PSU
+			repo.AddANewPanel.FirstPSU_cnt1.Click();
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			repo.AddANewPanel.FirstPSU_cnt1.PressKeys(sPSU);
+			
+			//Add Second PSU
+			if(!sSecondPSU.IsEmpty())
+			{
+				repo.AddANewPanel.SecondPSU_txt1.Click();
+				Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+				repo.AddANewPanel.SecondPSU_txt1.PressKeys(sSecondPSU);
+			}
+			repo.AddANewPanel.ButtonOK.Click();
+			
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyValueOf2ndPSU
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 09/09/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyValueOf2ndPSU(string SecondPSU)
+		{
+			repo.FormMe.Cell_SecondPSU.Click();
+			string ActualPSU = repo.ContextMenu.SecondPSU_Value.TextValue;
+			
+			if(ActualPSU.Equals(SecondPSU))
+			{
+				Report.Log(ReportLevel.Success, "PSU "+SecondPSU+" is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure, "PSU "+SecondPSU+" is not displayed");
+			}
+			
+		}
+		
+			
+		/********************************************************************
+		 * Function Name: VerifyValueOf2ndPSUOnReopen
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 09/09/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyValueOf2ndPSUOnReopen(string SecondPSU)
+		{
+			repo.FormMe.cell_SecondPSU_Reopen.Click();
+			string ActualPSU = repo.ContextMenu.SecondPSU_Value.TextValue;
+			
+			if(ActualPSU.Equals(SecondPSU))
+			{
+				Report.Log(ReportLevel.Success, "PSU "+SecondPSU+" is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure, "PSU "+SecondPSU+" is not displayed");
+			}
+			
+		}
 	}
 }
 

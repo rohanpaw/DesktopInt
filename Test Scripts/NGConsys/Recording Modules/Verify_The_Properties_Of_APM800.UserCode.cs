@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace TestProject.Recording_Modules
 {
-    public partial class Verify_the_properties_of_Audix_Interface
+    public partial class Verify_The_Properties_Of_APM800
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -33,6 +33,5 @@ namespace TestProject.Recording_Modules
             // Your recording specific initialization code goes here.
         }
 
-       
     }
 }

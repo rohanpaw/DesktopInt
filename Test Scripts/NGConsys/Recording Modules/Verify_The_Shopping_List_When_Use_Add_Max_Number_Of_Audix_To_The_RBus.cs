@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories recording.
+    ///The Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus recording.
     /// </summary>
-    [TestModule("bd0fa652-9ac0-4b53-8e39-f2af1ae93120", ModuleType.Recording, 1)]
-    public partial class Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories : ITestModule
+    [TestModule("ac994224-9c7b-450d-ad16-0b038b64ebfa", ModuleType.Recording, 1)]
+    public partial class Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories instance = new Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories();
+        static Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus instance = new Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories()
+        public Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories Instance
+        public static Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus Instance
         {
             get { return instance; }
         }
@@ -82,44 +82,33 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(1));
+            Libraries.LinkedHardware_Fuctions.VerifyLinkedDevicesGetAddedInLoop("TC_55040_Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus", "Add Devices");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(2));
+            repo.FormMe.SiteNode1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(3));
+            repo.FormMe.tab_ShoppingList.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("568.800.033", ValueConverter.ArgumentFromString<bool>("sExist", "False"));
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(5));
             repo.FormMe.PanelNode1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(2));
-            repo.FormMe.tab_PanelAccessories.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(6));
+            repo.FormMe.SiteNode1.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(4));
-            repo.FormMe.NodeExpander1.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(7));
+            repo.FormMe.tab_ShoppingList.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessorNode1' at Center.", repo.FormMe.MainProcessorNode1Info, new RecordItemIndex(5));
-            repo.FormMe.MainProcessorNode1.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "IOB800-1");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(7));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Devices_Functions.DeleteAccessoryFromPanelAccessoriesTab();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessorNode1' at Center.", repo.FormMe.MainProcessorNode1Info, new RecordItemIndex(9));
-            repo.FormMe.MainProcessorNode1.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(10));
-            repo.FormMe.NodeExpander1.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "6"), "IOB800-1", "557.202.006");
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("555.800.064", ValueConverter.ArgumentFromString<bool>("sExist", "False"));
             Delay.Milliseconds(0);
             
         }

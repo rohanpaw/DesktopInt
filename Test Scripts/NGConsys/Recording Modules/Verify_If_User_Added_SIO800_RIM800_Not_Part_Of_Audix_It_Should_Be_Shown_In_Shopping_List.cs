@@ -24,54 +24,34 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800 recording.
+    ///The Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List recording.
     /// </summary>
-    [TestModule("496de603-0d69-4fc6-b09f-6903beac02eb", ModuleType.Recording, 1)]
-    public partial class Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800 : ITestModule
+    [TestModule("1976ae21-1814-492b-875e-dde83f646d7c", ModuleType.Recording, 1)]
+    public partial class Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800 instance = new Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800();
+        static Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List instance = new Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800()
+        public Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800 Instance
+        public static Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable sRow.
-        /// </summary>
-        [TestVariable("a610866c-7085-4bec-8c50-ccf9db7fc18b")]
-        public string sRow
-        {
-            get { return repo.sRow; }
-            set { repo.sRow = value; }
-        }
-
-        /// <summary>
-        /// Gets or sets the value of variable sColumn.
-        /// </summary>
-        [TestVariable("5b381f08-b8c2-4ac0-bd6e-0ea0a8bde220")]
-        public string sColumn
-        {
-            get { return repo.sColumn; }
-            set { repo.sColumn = value; }
-        }
 
 #endregion
 
@@ -114,55 +94,36 @@ namespace TestProject.Recording_Modules
             repo.FormMe.Loop_A1.Click();
             Delay.Milliseconds(200);
             
+            Libraries.Devices_Functions.AddDevicesfromGallery("SIO 800", "Ancillary");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromGallery("RIM 800", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 1");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.VerifyGalleryItem("Other", "HVR800", "Enabled");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 1");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("HVR800", "Other");
-            Delay.Milliseconds(0);
-            
-            verifyBlankDeviceAddress("2", "Address");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("RIM 800", ValueConverter.ArgumentFromString<int>("DeviceQty", "124"));
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 2");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("HVR800", "Other");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.SaveProject("54250");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ReopenProject("54250");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1_AfterReopen' at Center.", repo.FormMe.NodeExpander1_AfterReopenInfo, new RecordItemIndex(15));
-            repo.FormMe.NodeExpander1_AfterReopen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(6));
+            repo.FormMe.SiteNode1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1_Reopen' at Center.", repo.FormMe.LoopExpander1_ReopenInfo, new RecordItemIndex(16));
-            repo.FormMe.LoopExpander1_Reopen.Click();
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(7));
+            repo.FormMe.tab_ShoppingList.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1_Reopen' at Center.", repo.FormMe.Loop_A1_ReopenInfo, new RecordItemIndex(17));
-            repo.FormMe.Loop_A1_Reopen.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("RIM 800 - 1");
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("568.800.033", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("RIM 800 - 2");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(9));
+            repo.FormMe.PanelNode1.DoubleClick();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(10));
+            repo.FormMe.SiteNode1.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(11));
+            repo.FormMe.tab_ShoppingList.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("555.800.064", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
         }

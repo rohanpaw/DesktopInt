@@ -375,19 +375,24 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="065a1a7d-5034-4dce-9553-d8f7c622aa75"
+			name="Verify_APM800_Will_Get_Added_To_Available_Loop_Address_When_Second_PUS(PSB800K)_Is_Selected">
+				<description>
+					<![CDATA[<p>NGC-1105/TC-52687 &amp; NGC-1344/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55045</font></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="067cc64a-0ee9-4bab-b7d7-43cdc9683344"
 			name="Verify_Main__Processor_loading_after_adding_12_IOB800_device"
 			ref="644334e8-adea-46d0-8f75-8fa2a6fd39d5"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="6e24e3cd-d477-4529-acc0-fe227050c7f4"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="0698aec8-bfed-4073-a1ff-37da24f9cab5"
@@ -844,6 +849,12 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="0cf9d215-a385-4871-ac60-472cd0e5feac"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="0d0f09ca-f27d-495e-a89f-8d23fd904b2a"
 			name="Verify_Addition_of_Multiple_Devices">
@@ -940,14 +951,6 @@ rxversion="8.3">
 			name="Verify_Alarm_and_Battery_Load_After_Adding_1_2_IOBs"
 			ref="0cdc518c-ba50-453a-b1e8-912b420cd78d"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="f91756d1-b8a2-41c6-aae8-ae2582d7e756"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="0f61bb4c-4d11-4307-bc01-874e604f96c6"
@@ -1021,6 +1024,12 @@ rxversion="8.3">
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="102cfa71-555e-48fc-874d-f8bdd6509353"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="10a5c5f7-e1f5-4a32-8385-7f497dfa231f"
@@ -1885,6 +1894,26 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="1dc62d71-7f1a-4224-ac13-af52187d5c7a"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="1e977f21-9de2-47b8-9509-2e731266f382"
 			name="Verify_Voltage_Drop_on_Other_Loops_for_FIM">
@@ -2054,6 +2083,19 @@ rxversion="8.3">
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="20836adb-a235-4806-8cc8-bcbe7485be64"
+			name="Verify_The_Shopping_List_When_XML800_Is_Added/removed_From_Panel">
+				<description>
+					<![CDATA[NGC-60/TC-55138]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="20855ba4-3f79-4167-94a4-73de9f41c4f0"
 			name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template"
@@ -2460,6 +2502,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="275f6af8-4bc0-42de-8ec7-5c94e995b530"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="27b01b2e-1b2b-4213-881f-722219ec09a4"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -2591,6 +2653,12 @@ rxversion="8.3">
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="2a387618-9c3c-49f9-87b8-eb4a0a32a265"
+			name="Verify_The_Shopping_List_When_XML800_Is_Addedremoved_From_Panel"
+			ref="7259ae3a-2387-405c-a951-459eb5e20671"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="2a433a01-f572-4674-8d09-b6fe66dd48ff"
@@ -2804,6 +2872,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="2c8a2b9c-8e9b-4ea5-9609-e7d995b245cb"
+			name="Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus"
+			ref="ac994224-9c7b-450d-ad16-0b038b64ebfa"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="2cef8ce4-9c3d-4839-8a70-58087c75dbe0"
 			name="Verify_DC_Units_Calculation_for_PFI">
@@ -3109,6 +3183,20 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="335c144e-0e9b-4af2-8a74-3ab2e6dfa2d1"
+			name="CreateProject_German"
+			ref="19660af1-4e58-4290-badb-20687f7b3401"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="6bab3c88-91e1-47d4-8c62-025c840f9d18"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="33c481bb-b6e6-4be6-a534-c76aaecb68da"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -3197,6 +3285,26 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="35594cee-ff92-4846-a3d7-08d966ff782d"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="35a77868-41b5-4550-9d0b-0aaffca05fed"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -3247,6 +3355,20 @@ rxversion="8.3">
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3644b5c8-4677-42cf-9c8c-e263925f6dd8"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="d4e2f572-a291-43ae-9769-cf8bd8686a40"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="36a29a41-2044-4ba3-a99c-fca7c1835834"
@@ -3426,6 +3548,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="39456ebb-20ea-4511-b0b8-e6c76526064e"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="844ee248-c88e-4ee8-a935-354096568590"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="3987bc33-7310-416e-bfb0-31f8a670f9da"
 			name="Verify_Deletion_Of_PxD_PSC_800_From_Shopping_List"
 			ref="d67b5e7a-b58a-4f13-b496-83226254abae"
@@ -3553,6 +3689,26 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="3b9e8d13-039b-43b7-a9d8-73515fcad2c9"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3bfcb696-22d5-45f1-8fc6-83d219ce38a9"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
 			type="UserCode">
@@ -4222,6 +4378,20 @@ loops.</SPAN>]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="47bf1053-c19a-44b1-aa8b-a8974fca52b2"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="7ab8afa3-08a9-4ecf-9046-2381eaf929fa"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="48097a07-4469-4416-8253-3ba0f2118497"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -4276,6 +4446,26 @@ loops.</SPAN>]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
 					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="49579577-f0db-4da9-b714-6c2957fb695a"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4487,6 +4677,20 @@ loops.</SPAN>]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="4c48c83f-e5f3-4800-9c26-55a1233967cd"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="cb92c02c-e1f9-422d-b78c-1f95b097a4b4"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5545,6 +5749,20 @@ loops.</SPAN>]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5b820100-71f5-415f-9296-d6930304a3e5"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="065a1a7d-5034-4dce-9553-d8f7c622aa75"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="5c027a38-cb50-4083-a1f0-f1fbc11376c9"
 			name="Verify_devices_order_for_Sounders_in_dropped_gallery"
 			ref="72529b57-0c4d-43a2-9870-9eda543a854a"
@@ -5915,6 +6133,20 @@ loops.</SPAN>]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="5f5a8355-a273-4209-8fb7-e0c4b64f2a2b"
+			name="Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List"
+			ref="7e6e02e8-987a-4514-8daa-5159ece3cb9c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="NewVariable"
+					datasourceid="d4e2f572-a291-43ae-9769-cf8bd8686a40"
+					variableid="198f09b6-d7a6-4c5b-a226-c26ac3c4f584"
+					variablename="NewVariable">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="5fc56f72-4ba9-4bf8-92c7-27babcff51e6"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -6063,6 +6295,19 @@ loops.</SPAN>]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="6358d864-fae6-4b0b-b9c2-d56543c3a4c2"
+			name="Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List">
+				<description>
+					<![CDATA[<p>NGC-1343/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55039</font></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="635df1a5-4589-457c-b2ce-e228550639e3"
 			name="Close_Application"
@@ -6446,6 +6691,20 @@ loops.</SPAN>]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="69bc7762-5326-48c7-ba58-38d0447d1b0f"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="6358d864-fae6-4b0b-b9c2-d56543c3a4c2"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6a1e26e1-5727-4edd-b18e-44613bc06f1d"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -6807,6 +7066,32 @@ loops.</SPAN>]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="70e5e8f9-4315-4761-b9bc-d701df2f0d75"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="71114e76-aba0-4d5e-b5d8-6d6e03398ae8"
+			name="Verify_APM800_Will_Get_Added_To_Available_Loop_Address_When_Second_PUSPSB800K_Is_Selected"
+			ref="f59dd44e-6c73-4aad-b523-0efdb5c6cb37"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="71633c23-a054-4ac9-b6b3-cd9d6443ca61"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -6931,6 +7216,12 @@ loops.</SPAN>]]>
 			id="728aa60a-1515-4744-9bec-3907e2761c13"
 			name="Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21"
 			ref="68913109-5493-41d7-b161-69504dbdd219"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="728ff3be-6fed-4fde-9487-4df69aebd2cc"
+			name="Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically"
+			ref="4be5cc3d-6d55-49f9-8ff9-387dce87cc8a"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -7373,6 +7664,19 @@ loops.</SPAN>]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="7ab8afa3-08a9-4ecf-9046-2381eaf929fa"
+			name="Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se">
+				<description>
+					<![CDATA[NGC-1344/TC-55129]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="7af02e2b-2302-4102-8e45-c3bfa7bf4dac"
 			name="Application_Open"
@@ -7435,6 +7739,32 @@ loops.</SPAN>]]>
 					datasourceid="f32e1dde-d28a-42c4-aae0-2f4a10a4d36e"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="7bc9931f-df10-44c8-bb0f-c7c2c1722580"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7c353b97-12bf-4297-8665-ca93d7fb6eac"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
 					</var>
 				</databinding>
 			</testmodule>
@@ -7540,6 +7870,19 @@ loops.</SPAN>]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="7e6db6e0-723e-447c-93c6-b8931f63de09"
+			name="Verify_The_Properties_Of_APM800">
+				<description>
+					<![CDATA[<p>NGC-1105/TC-52703</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="7f053118-c4fe-4a83-ae40-20ef7a787248"
 			name="Application_Open"
@@ -7778,20 +8121,6 @@ loops.</SPAN>]]>
 				</parameters>
 			</testcase>
 			<testmodule
-			id="82496c2f-5443-497e-a53b-5502efa0a85f"
-			name="Create_Project"
-			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="6bab3c88-91e1-47d4-8c62-025c840f9d18"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="827847bc-998f-450a-b727-ace8c713cf15"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -8008,6 +8337,19 @@ MxDesigner]]>
 					</param>
 					<param
 					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="844ee248-c88e-4ee8-a935-354096568590"
+			name="Verify_The_Properties_Of_XLM800">
+				<description>
+					<![CDATA[NGC-60/TC-55143]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
 					value="">
 					</param>
 				</parameters>
@@ -8790,14 +9132,6 @@ MxDesigner]]>
 			name="Verification_for_device_Label"
 			ref="5446ddf6-5984-44ac-9653-3a4ea504726a"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="2c315ac7-ffad-4e21-abab-0872d77c399b"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="8f20c240-1123-4703-a6cf-26cb3a7ed18f"
@@ -8962,6 +9296,19 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="9211a256-9176-4fce-87c6-e7858dd0b460"
+			name="Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete">
+				<description>
+					<![CDATA[<p>NGC-1105/TC-52689</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="9246f057-ab80-4e9f-ac33-18176c738c4b"
 			name="Application_Open"
@@ -9039,6 +9386,12 @@ MxDesigner]]>
 			id="9356cb94-c139-4933-a769-fed9d77734e0"
 			name="VerifyDeletionOfFBI800AndPNI800Cards"
 			ref="5db13383-7f65-4b13-98b6-ce5b4620edfb"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="93c03662-5bd2-4dd1-9e02-0c44a68dd33b"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -9636,6 +9989,12 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="9e5e961e-bba4-43df-9403-c420e8b9a18e"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="9e6c75fb-049f-40f6-884c-64265956ec6e"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -9718,6 +10077,12 @@ div.WordSection1
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="9f3fddd3-ae75-4f2a-b8fa-ab8e88a09f68"
+			name="Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se"
+			ref="7f577429-755c-43ce-83fb-59270bc8b76b"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="9f5705aa-aefb-485c-8268-ef4ba57c8907"
 			name="Close_Application"
@@ -9804,6 +10169,26 @@ div.WordSection1
 			name="Verify_Power_Calculation_Is_Populated_Warning_Error_Messages_For_40V_AC_And_DC_Units"
 			ref="fe08a76d-e2a7-4c98-89bf-808e00406233"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a1ecd748-639c-4e34-8e8c-7dee2b8b411c"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="a207c739-eb5c-4c9d-b188-95fdc048f215"
@@ -9918,6 +10303,12 @@ div.WordSection1
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="a2f6cb99-e7ca-4125-8679-2f951441a028"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="a305d2bb-791f-4dee-8738-6f6ce95af12b"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop"
@@ -10416,6 +10807,12 @@ project]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="b053025a-df68-412b-8b47-ccc355bc220f"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="b0972ffb-de91-4861-b098-19fdbc60088c"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -10554,6 +10951,20 @@ project]]>
 					<var
 					dataname="sListIndex"
 					datasourceid="8589c953-9535-40d9-94d0-523f450ee6fc"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b46e7db1-d53f-46aa-8acc-12c62df2f3cd"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="7e6db6e0-723e-447c-93c6-b8931f63de09"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -11055,6 +11466,12 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="bcd2b65f-210b-47e5-b2e3-2b2fbd1fd372"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="bcd63ecd-2ab2-4aac-a803-655fa54b0428"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -11456,14 +11873,6 @@ persisted in panel properties&nbsp;]]>
 			name="Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories"
 			ref="bd0fa652-9ac0-4b53-8e39-f2af1ae93120"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="PanelNode"
-					datasourceid="6a871e73-ce77-46f8-adc3-8d0b793d76be"
-					variableid="361584a9-c082-463b-bb0a-d3f851f66bcb"
-					variablename="PanelNode">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="c3d06518-2c88-4784-812e-075dae69731d"
@@ -11543,6 +11952,26 @@ persisted in panel properties&nbsp;]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="c625db8a-a1db-4e9a-bfd2-fffd39bf5d3a"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="c6408a40-fc88-44a7-a4f0-b480f71b6d40"
@@ -11838,6 +12267,19 @@ persisted in panel properties&nbsp;]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="cb92c02c-e1f9-422d-b78c-1f95b097a4b4"
+			name="Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus">
+				<description>
+					<![CDATA[<p>NGC-1343/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55040</font></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="cc479489-bf58-4f57-a031-e15162d7b25c"
 			name="Close_Application"
@@ -12158,6 +12600,20 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="d16cdf52-31e5-4025-a4b7-4a204538bbb0"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="e572ebf8-e8ca-45a2-b26d-4f148b229189"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="d176362c-3e6f-485b-a336-f48ddca64168"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -12387,6 +12843,12 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d3d55767-9f7a-43fd-b57f-e960368b9ae8"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="d40931b8-35a0-4528-851a-584f6ae2e241"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -12414,6 +12876,23 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="d4e2f572-a291-43ae-9769-cf8bd8686a40"
+			name="Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List">
+				<description>
+					<![CDATA[<p>NGC-1343/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55038</font></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="NewVariable"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="d541af0b-c4da-47d1-84cd-a51378a46fad"
 			name="Verify_Alarm_Load_Values_On_Save_Reopen"
@@ -12608,6 +13087,20 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="d858bd8f-262e-4f01-8311-12749568690a"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="9211a256-9176-4fce-87c6-e7858dd0b460"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="d8679eed-3781-4792-9f44-6fc74dfbff83"
 			name="Application_Open"
@@ -12836,6 +13329,18 @@ persisted in panel properties&nbsp;]]>
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="dd51e290-a235-4061-87b9-aa76192f7900"
+			name="Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List"
+			ref="1976ae21-1814-492b-875e-dde83f646d7c"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ddbbd7c4-2fa5-455b-9918-07026c27ed1f"
+			name="Verify_The_Properties_Of_XLM800"
+			ref="0f96478c-09af-47c3-82ea-a8bdd39f711c"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="de200f5c-48c0-4920-a1a1-041c1782aa6a"
@@ -13264,6 +13769,19 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="e572ebf8-e8ca-45a2-b26d-4f148b229189"
+			name="Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically">
+				<description>
+					<![CDATA[<p>NGC-60/TC-55131,55132 &amp; 55136</p><p><br></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="e580bf9a-0d40-4014-b1b5-74ae3f58211f"
 			name="Create_Project"
@@ -13380,6 +13898,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="e71ab731-9c7a-4a77-877b-5e7e9ee39ac2"
+			name="Verify_The_Properties_Of_APM800"
+			ref="c620bf21-83c7-4d0f-9160-e0373be4eb18"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="e7276f9d-6021-4029-9501-4f9f4c95ac8f"
@@ -13513,6 +14037,12 @@ persisted in panel properties&nbsp;]]>
 			id="e94ff0e1-0c0a-4624-a161-47011645918b"
 			name="Verify_If_IS_Devices_Are_Enabled_Or_Disabled_From_The_Gallery_When_Max_IS_Units_Is_Reached"
 			ref="ed8f0230-7449-439d-b71e-30b7981b4476"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e98ff6db-2971-4bd0-a589-a5b2977e151f"
+			name="Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete"
+			ref="a8c25af4-b36a-408a-b158-6c1d71bbe31c"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -13835,6 +14365,12 @@ persisted in panel properties&nbsp;]]>
 			id="ef78b8bb-a78d-4fdf-b171-dd0aeacf4e04"
 			name="Verify_CurrentDC_Units_Calculation"
 			ref="8e8b55a1-3f6c-47cd-9e5a-c941d2f00530"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="eff55cda-2507-4d8d-9513-76d2ccfba1ce"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -14222,6 +14758,20 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="f6772833-a21a-4e3f-85fa-9ba6fcedba72"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="20836adb-a235-4806-8cc8-bcbe7485be64"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="f67dd6a6-3b67-40d1-99e1-090aa4e17bce"
 			name="Verify_DC_Units_on_changing_Device_Sensitivity_and_Mode_except_Sounders_or_Beacons">
@@ -14287,6 +14837,26 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_Paste_Of_Unit_With_Points"
 			ref="21df85d8-aea5-4759-a8a8-44db0ff18796"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f7f80186-df20-4d2c-b60b-6a6d2853f90e"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="f8a27eff-4791-4891-9db3-3830d7b5381d"
@@ -16342,8 +16912,8 @@ persisted in panel properties&nbsp;]]>
 						name="Application_Open">
 						</testmodule>
 						<testmodule
-						id="82496c2f-5443-497e-a53b-5502efa0a85f"
-						name="Create_Project">
+						id="335c144e-0e9b-4af2-8a74-3ab2e6dfa2d1"
+						name="CreateProject_German">
 						</testmodule>
 						<testmodule
 						id="3e4897b6-df59-4463-bc67-7ba68f7c676f"
@@ -19282,6 +19852,206 @@ persisted in panel properties&nbsp;]]>
 						name="Testing">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="065a1a7d-5034-4dce-9553-d8f7c622aa75"
+					name="Verify_APM800_Will_Get_Added_To_Available_Loop_Address_When_Second_PUS(PSB800K)_Is_Selected">
+						<testmodule
+						id="3bfcb696-22d5-45f1-8fc6-83d219ce38a9"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="5b820100-71f5-415f-9296-d6930304a3e5"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="71114e76-aba0-4d5e-b5d8-6d6e03398ae8"
+						name="Verify_APM800_Will_Get_Added_To_Available_Loop_Address_When_Second_PUSPSB800K_Is_Selected">
+						</testmodule>
+						<testmodule
+						id="7bc9931f-df10-44c8-bb0f-c7c2c1722580"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="9211a256-9176-4fce-87c6-e7858dd0b460"
+					name="Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete">
+						<testmodule
+						id="f7f80186-df20-4d2c-b60b-6a6d2853f90e"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="d858bd8f-262e-4f01-8311-12749568690a"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="e98ff6db-2971-4bd0-a589-a5b2977e151f"
+						name="Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete">
+						</testmodule>
+						<testmodule
+						id="d3d55767-9f7a-43fd-b57f-e960368b9ae8"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="7e6db6e0-723e-447c-93c6-b8931f63de09"
+					name="Verify_The_Properties_Of_APM800">
+						<testmodule
+						id="a1ecd748-639c-4e34-8e8c-7dee2b8b411c"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="b46e7db1-d53f-46aa-8acc-12c62df2f3cd"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="e71ab731-9c7a-4a77-877b-5e7e9ee39ac2"
+						name="Verify_The_Properties_Of_APM800">
+						</testmodule>
+						<testmodule
+						id="93c03662-5bd2-4dd1-9e02-0c44a68dd33b"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="7ab8afa3-08a9-4ecf-9046-2381eaf929fa"
+					name="Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se">
+						<testmodule
+						id="70e5e8f9-4315-4761-b9bc-d701df2f0d75"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="47bf1053-c19a-44b1-aa8b-a8974fca52b2"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="9f3fddd3-ae75-4f2a-b8fa-ab8e88a09f68"
+						name="Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se">
+						</testmodule>
+						<testmodule
+						id="eff55cda-2507-4d8d-9513-76d2ccfba1ce"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="d4e2f572-a291-43ae-9769-cf8bd8686a40"
+					name="Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List">
+						<testmodule
+						id="275f6af8-4bc0-42de-8ec7-5c94e995b530"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="3644b5c8-4677-42cf-9c8c-e263925f6dd8"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="5f5a8355-a273-4209-8fb7-e0c4b64f2a2b"
+						name="Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List">
+						</testmodule>
+						<testmodule
+						id="a2f6cb99-e7ca-4125-8679-2f951441a028"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="6358d864-fae6-4b0b-b9c2-d56543c3a4c2"
+					name="Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List">
+						<testmodule
+						id="35594cee-ff92-4846-a3d7-08d966ff782d"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="69bc7762-5326-48c7-ba58-38d0447d1b0f"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="dd51e290-a235-4061-87b9-aa76192f7900"
+						name="Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List">
+						</testmodule>
+						<testmodule
+						id="bcd2b65f-210b-47e5-b2e3-2b2fbd1fd372"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="cb92c02c-e1f9-422d-b78c-1f95b097a4b4"
+					name="Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus">
+						<testmodule
+						id="1dc62d71-7f1a-4224-ac13-af52187d5c7a"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="4c48c83f-e5f3-4800-9c26-55a1233967cd"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="2c8a2b9c-8e9b-4ea5-9609-e7d995b245cb"
+						name="Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus">
+						</testmodule>
+						<testmodule
+						id="102cfa71-555e-48fc-874d-f8bdd6509353"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="e572ebf8-e8ca-45a2-b26d-4f148b229189"
+					name="Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically">
+						<testmodule
+						id="7c353b97-12bf-4297-8665-ca93d7fb6eac"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="d16cdf52-31e5-4025-a4b7-4a204538bbb0"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="728ff3be-6fed-4fde-9487-4df69aebd2cc"
+						name="Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically">
+						</testmodule>
+						<testmodule
+						id="0cf9d215-a385-4871-ac60-472cd0e5feac"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="20836adb-a235-4806-8cc8-bcbe7485be64"
+					name="Verify_The_Shopping_List_When_XML800_Is_Added/removed_From_Panel">
+						<testmodule
+						id="c625db8a-a1db-4e9a-bfd2-fffd39bf5d3a"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="f6772833-a21a-4e3f-85fa-9ba6fcedba72"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="2a387618-9c3c-49f9-87b8-eb4a0a32a265"
+						name="Verify_The_Shopping_List_When_XML800_Is_Addedremoved_From_Panel">
+						</testmodule>
+						<testmodule
+						id="b053025a-df68-412b-8b47-ccc355bc220f"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="844ee248-c88e-4ee8-a935-354096568590"
+					name="Verify_The_Properties_Of_XLM800">
+						<testmodule
+						id="49579577-f0db-4da9-b714-6c2957fb695a"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="39456ebb-20ea-4511-b0b8-e6c76526064e"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="ddbbd7c4-2fa5-455b-9918-07026c27ed1f"
+						name="Verify_The_Properties_Of_XLM800">
+						</testmodule>
+						<testmodule
+						id="9e5e961e-bba4-43df-9403-c420e8b9a18e"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -19519,10 +20289,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

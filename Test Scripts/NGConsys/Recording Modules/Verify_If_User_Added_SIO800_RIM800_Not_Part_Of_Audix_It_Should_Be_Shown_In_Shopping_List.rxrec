@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="644334e8-adea-46d0-8f75-8fa2a6fd39d5"
+id="1976ae21-1814-492b-875e-dde83f646d7c"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_Main__Processor_loading_after_adding_12_IOB800_device
+		Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Main__Processor_loading_after_adding_12_IOB800_device"
+	classname="Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -42,10 +42,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="90340d02-d5ae-4de2-9d6d-c3de8f26b0c8">
+			id="53230b07-e9c3-4aac-843e-43f9d193aa49">
 				<argument
 				argname="NumberofPanels"
-				id="88c2f2dd-3e1f-4e61-8061-27d459ae05b5">
+				id="defa0673-41f7-4810-837a-724e61c6774b">
 					<argvaluetype>
 						System.Int32
 					</argvaluetype>
@@ -55,7 +55,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="PanelNames"
-				id="3b1e74fe-1884-497c-bd91-aa4dba8cd66f">
+				id="2b9f0c3a-7749-480b-aefd-646d0f43229b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -65,95 +65,11 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="sPanelCPU"
-				id="dc0ea196-3015-4526-a6a0-3d370ffb508a">
+				id="a20aa8b8-a1c1-4653-a946-112575281a2d">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="328b20d5-693a-4dd4-8ab1-cb17b14951b9"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="b5477b1d-cb79-4285-b062-c8e5b333fa59"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="90caf0d9-c2af-4c79-a4d1-bdb372ee3fa1"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicefromPanelAccessoriesGallery"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="06e8d4ab-ec7f-4862-9cd7-d76794947b2d">
-				<argument
-				argname="sDeviceName"
-				id="60687fa3-29a1-429f-8e9c-dd7de2e9e9a8">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						IOB800
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="ed89b7b3-42dd-4a5d-9da0-278ecf9cc1d4">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Accessories
 					</argvalue>
 				</argument>
 			</arguments>
@@ -208,7 +124,7 @@ rxversion="8.3">
 		</mouseitem>
 		<mouseitem
 		action="Click"
-		button="XButton2"
+		button="Left"
 		duration="500ms"
 		enabled="True"
 		loc="Center"
@@ -1045,179 +961,11 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 				</path>
 			</info>
 		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="e6598826-789a-4ca0-87de-1648fa4e77bb"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="PSULoad_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verify5VPSULoadValue"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a11ffa08-b2cd-47d7-a140-25000ebee21c">
-				<argument
-				argname="expected5VPSU"
-				id="234d5074-ca2e-4aec-a94e-6b3d4ec6ce00">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						0.050
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="997e6d76-4791-4cfe-9aec-f15f323aa1ea">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="PSULoad_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verify24VPSULoadValue"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="611c41a6-868b-460b-ae5f-2a2500eebf5d">
-				<argument
-				argname="expected24VPSU"
-				id="ce7528a8-3813-4734-b408-69e4ee9fab1e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						0.601
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="4e0ae03a-d9ab-4e17-bb05-ba28981e1f73">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="acac424f-76f8-4e95-aad0-68f8028ab0eb"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="6a5686f1-b952-4cda-9a11-1fca2a9c512b"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="b5477b1d-cb79-4285-b062-c8e5b333fa59"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="90caf0d9-c2af-4c79-a4d1-bdb372ee3fa1"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@automationid='PART_Text']
-				</path>
-			</info>
-		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicefromPanelAccessoriesGallery"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -1226,82 +974,34 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<arguments
-			id="06e8d4ab-ec7f-4862-9cd7-d76794947b2d">
+			id="aaa6fc3c-a167-42d1-8955-e8c7cff29500">
 				<argument
 				argname="sDeviceName"
-				id="60687fa3-29a1-429f-8e9c-dd7de2e9e9a8">
+				id="ff3d8f44-de33-4d12-9384-d016fc639892">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						IOB800
+						SIO 800
 					</argvalue>
 				</argument>
 				<argument
 				argname="sType"
-				id="ed89b7b3-42dd-4a5d-9da0-278ecf9cc1d4">
+				id="14e5f7d2-ed82-4757-a840-9427d1440907">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Ancillary
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="6eca7c3b-a4cc-46af-a7d9-bdce2ed7b11e"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5ef2233c-dff3-4ed0-8c90-e2f8a85869ed"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-A']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="e6598826-789a-4ca0-87de-1648fa4e77bb"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
-				</path>
-			</info>
-		</mouseitem>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verify5VPSULoadValue"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -1310,61 +1010,25 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<arguments
-			id="a11ffa08-b2cd-47d7-a140-25000ebee21c">
+			id="aaa6fc3c-a167-42d1-8955-e8c7cff29500">
 				<argument
-				argname="expected5VPSU"
-				id="234d5074-ca2e-4aec-a94e-6b3d4ec6ce00">
+				argname="sDeviceName"
+				id="ff3d8f44-de33-4d12-9384-d016fc639892">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.080
+						RIM 800
 					</argvalue>
 				</argument>
 				<argument
-				argname="PanelType"
-				id="997e6d76-4791-4cfe-9aec-f15f323aa1ea">
+				argname="sType"
+				id="14e5f7d2-ed82-4757-a840-9427d1440907">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="PSULoad_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verify24VPSULoadValue"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="611c41a6-868b-460b-ae5f-2a2500eebf5d">
-				<argument
-				argname="expected24VPSU"
-				id="ce7528a8-3813-4734-b408-69e4ee9fab1e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						0.809
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="4e0ae03a-d9ab-4e17-bb05-ba28981e1f73">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
+						Ancillary
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1377,7 +1041,7 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="acac424f-76f8-4e95-aad0-68f8028ab0eb"
+		searchpropertyid="88ccaf9c-8e06-4877-8bcf-96c74966a9e8"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -1401,7 +1065,67 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="6a5686f1-b952-4cda-9a11-1fca2a9c512b"
+		searchpropertyid="8f8912ea-7185-437d-9954-7cc89875720b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="21ef54bb-73d2-4c29-8719-e70db3e328ab"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/picture[2]/text[@text='Shopping List']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
+				<argument
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						568.800.033
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="DoubleClick"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="88ccaf9c-8e06-4877-8bcf-96c74966a9e8"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -1417,32 +1141,6 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 				</path>
 			</info>
 		</mouseitem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="DeleteDeviceUsingLabel"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="7a96e6f9-8d57-403f-ab46-4020a8c7d50f">
-				<argument
-				argname="LabelName"
-				id="3e4763f7-33dc-4f90-80f0-259130530f2f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						IOB800-2
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1451,127 +1149,7 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="6eca7c3b-a4cc-46af-a7d9-bdce2ed7b11e"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5ef2233c-dff3-4ed0-8c90-e2f8a85869ed"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-A']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="e6598826-789a-4ca0-87de-1648fa4e77bb"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="PSULoad_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verify5VPSULoadValue"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a11ffa08-b2cd-47d7-a140-25000ebee21c">
-				<argument
-				argname="expected5VPSU"
-				id="234d5074-ca2e-4aec-a94e-6b3d4ec6ce00">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						0.050
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="997e6d76-4791-4cfe-9aec-f15f323aa1ea">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="PSULoad_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verify24VPSULoadValue"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="611c41a6-868b-460b-ae5f-2a2500eebf5d">
-				<argument
-				argname="expected24VPSU"
-				id="ce7528a8-3813-4734-b408-69e4ee9fab1e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						0.601
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="4e0ae03a-d9ab-4e17-bb05-ba28981e1f73">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="acac424f-76f8-4e95-aad0-68f8028ab0eb"
+		searchpropertyid="88ccaf9c-8e06-4877-8bcf-96c74966a9e8"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -1595,7 +1173,7 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="6a5686f1-b952-4cda-9a11-1fca2a9c512b"
+		searchpropertyid="8f8912ea-7185-437d-9954-7cc89875720b"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -1604,18 +1182,18 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<info
-			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
+			id="21ef54bb-73d2-4c29-8719-e70db3e328ab"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
+					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/picture[2]/text[@text='Shopping List']
 				</path>
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="DeleteDeviceUsingLabel"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -1624,205 +1202,25 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 			<bindings>
 			</bindings>
 			<arguments
-			id="7a96e6f9-8d57-403f-ab46-4020a8c7d50f">
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
 				<argument
-				argname="LabelName"
-				id="3e4763f7-33dc-4f90-80f0-259130530f2f">
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						IOB800-1
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="6eca7c3b-a4cc-46af-a7d9-bdce2ed7b11e"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5ef2233c-dff3-4ed0-8c90-e2f8a85869ed"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-A']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="e6598826-789a-4ca0-87de-1648fa4e77bb"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="PSULoad_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verify5VPSULoadValue"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a11ffa08-b2cd-47d7-a140-25000ebee21c">
-				<argument
-				argname="expected5VPSU"
-				id="234d5074-ca2e-4aec-a94e-6b3d4ec6ce00">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						0.020
+						555.800.064
 					</argvalue>
 				</argument>
 				<argument
-				argname="PanelType"
-				id="997e6d76-4791-4cfe-9aec-f15f323aa1ea">
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
 					<argvaluetype>
-						System.String
+						System.Boolean
 					</argvaluetype>
 					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="PSULoad_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verify24VPSULoadValue"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="611c41a6-868b-460b-ae5f-2a2500eebf5d">
-				<argument
-				argname="expected24VPSU"
-				id="ce7528a8-3813-4734-b408-69e4ee9fab1e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						0.393
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="4e0ae03a-d9ab-4e17-bb05-ba28981e1f73">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="ef595e98-a8f2-4a67-8bac-ed43ddf65066"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="bc08d139-50e4-40ed-8f7d-d14b24fa877b"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/picture[6]/?/?/treeitem
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="Panel_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="DeletePanel"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="cb38748b-2599-4c74-a160-a664df7f9a32">
-				<argument
-				argname="NumberofPanels"
-				id="321d52fb-67d4-4309-91dd-b8e155170b5e">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelNode"
-				id="38f6779d-1a3d-4b36-aa20-a834feeaf347">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Node1
-					</argvalue>
-				</argument>
-				<argument
-				argname="rowNumber"
-				id="f199c4b1-161e-42a2-9db8-86b415a4f43f">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
+						True
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1844,7 +1242,7 @@ AgICAgICLlXJrS0fgEKRzRoZi4/9YwH9/////v///1Jv2fc25H5NtjygRMEUDp8L
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Main__Processor_loading_after_adding_12_IOB800_device.UserCode.cs
+		Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
