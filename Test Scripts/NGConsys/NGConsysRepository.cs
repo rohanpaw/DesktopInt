@@ -1935,8 +1935,6 @@ namespace TestProject
                 _somecellInfo = new RepoItemInfo(this, "SomeCell", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='15']/cell[@isheader='False']", 30000, null, "ae0a135f-b0e5-49cc-89ac-830d76d1d5a3");
                 _isunits_notvisibleInfo = new RepoItemInfo(this, "ISUnits_NotVisible", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='9']/*[@text='[0]']//text[@caption=$sISUnits]", 30000, null, "2fbdcb32-b88e-4532-806c-67424b74d6ce");
                 _maxbatterystandbyInfo = new RepoItemInfo(this, "MaxBatteryStandby", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[3]", 30000, null, "01a2d87b-f4ba-4482-ad37-f4b1843eeca7");
-                _maxbatterystandbyInfo = new RepoItemInfo(this, "MaxBatteryStandby", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[3]", 30000, null, "01a2d87b-f4ba-4482-ad37-f4b1843eeca7");
-                _maxalarmloadInfo = new RepoItemInfo(this, "MaxAlarmLoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='17']//text[3]", 30000, null, "ccb5f7b9-5694-4c6f-b684-c89fe07795b2");
                 _maxalarmloadInfo = new RepoItemInfo(this, "MaxAlarmLoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[3]", 30000, null, "ccb5f7b9-5694-4c6f-b684-c89fe07795b2");
                 _galleryInfo = new RepoItemInfo(this, "Gallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[11]/container[@automationid='PART_Caption']/text[@caption=$sGalleryName]", 30000, null, "b35aad23-6e80-428d-b6c9-a593870fbe9f");
                 _devicesensitivityInfo = new RepoItemInfo(this, "DeviceSensitivity", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']", 30000, null, "e78b1807-bb5b-430d-a250-35031012d3a0");
@@ -8154,8 +8152,6 @@ namespace TestProject
             RepoItemInfo _txt_propertiestextvalue_2ndlineInfo;
             RepoItemInfo _sometext1Info;
             RepoItemInfo _cell_secondpsu_reopenInfo;
-            RepoItemInfo _cell_inventorypropertyInfo;
-            RepoItemInfo _txt_skuInfo;
             RepoItemInfo _loopexpander2Info;
             RepoItemInfo _navigationtreeitemInfo;
             RepoItemInfo _txt_navigationtreeitemInfo;
@@ -8368,10 +8364,6 @@ namespace TestProject
                 _txt_propertiestextvalue_2ndlineInfo = new RepoItemInfo(this, "txt_PropertiesTextValue_2ndLine", "progressbar/picture[2]/picture/list/row[@index='3']/?/?/text", 30000, null, "42550e69-12c1-4a1b-934a-b053d2f80dee");
                 _sometext1Info = new RepoItemInfo(this, "SomeText1", "progressbar/picture[8]//container/row[@index='7']/?/?/text", 30000, null, "59468f58-9c6a-499e-8d88-6bfb5c7c8946");
                 _cell_secondpsu_reopenInfo = new RepoItemInfo(this, "cell_SecondPSU_Reopen", "progressbar/picture[8]//container[@automationid='PART_ItemsPresenter']/row[@index='7']/?/?/text", 30000, null, "6bc4127e-f313-470d-a546-160e877191a1");
-            }
-                _labelname_txtInfo = new RepoItemInfo(this, "LabelName_txt", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[2]/row[2]/row/cell[3]/text[@caption=$sLabelName]", 30000, null, "03aa9211-55fc-46a2-94ab-d7a172507a8b");
-                _cell_inventorypropertyInfo = new RepoItemInfo(this, "cell_InventoryProperty", "progressbar/picture[7]/picture/list/?/?/cell[@isheader='False']", 30000, null, "4f75b6a7-f4a1-4597-9390-f45b61527852");
-                _txt_skuInfo = new RepoItemInfo(this, "txt_SKU", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[2]/row[$sRowIndex]/row/cell[1]/text[@caption=$sSKU]", 30000, null, "0df82917-e6d1-4261-bc0b-44074221cd63");
                 _loopexpander2Info = new RepoItemInfo(this, "LoopExpander2", "progressbar/picture[6]/tree//text[@text='PFI Loop Card']/following-sibling::button", 30000, null, "da437f69-35c1-4b89-8e39-83d737dc10c5");
                 _navigationtreeitemInfo = new RepoItemInfo(this, "NavigationTreeItem", "progressbar/picture/tree//text[@text~'(^'+$sTreeItem+')']", 30000, null, "436b8243-35ab-415b-9802-b1370f3aa0d5");
                 _txt_navigationtreeitemInfo = new RepoItemInfo(this, "txt_NavigationTreeItem", "progressbar/picture/tree//text[@text=$sTreeItem]", 30000, null, "183a21aa-aa3c-434c-a096-aa0f055e77de");
