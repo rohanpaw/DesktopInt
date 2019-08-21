@@ -352,18 +352,18 @@ namespace TestProject.Libraries
 			}
 		}
 		
-		/********************************************************************
-		 * Function Name: verifyDroppedGalleryForFavoutitesDevices
+		/****************************************************************************************************************************************
+		 * Function Name: verifyDroppedGalleryForFavouritesDevices
 		 * Function Details: It will verify devices list displayed in dropped gallery
 		 * Parameter/Arguments:GalleryType, Device1(1st device of alphabetical sorted order),Device2(any device in alphabetical
 		 * sorted order
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * created on :11/3/2019
-		 ******************************************DroppedGalleryList**************************/
+		 * created on :11/3/2019  Alpesh Dhakad - 21/08/2019 - Rename method name (corrected spelling)
+		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		
-		public static void verifyDroppedGalleryForFavoutitesDevices(string GalleryType,string Device1,string Device2)
+		public static void verifyDroppedGalleryForFavouritesDevices(string GalleryType,string Device1,string Device2)
 		{
 			listItem="0";
 			string firstGalleryItemText;

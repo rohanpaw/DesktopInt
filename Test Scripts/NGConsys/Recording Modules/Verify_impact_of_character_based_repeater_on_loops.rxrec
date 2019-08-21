@@ -79,10 +79,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Panel_Functions"
+		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectPanelNode"
+		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -91,24 +91,24 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="2e45fe8a-d948-4091-ab9f-063a6a5c791b">
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="iNodeNumber"
-				id="352ebaf9-d0c7-4c2c-abcb-cbb0e18d8621">
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
-						System.Int32
+						System.String
 					</argvaluetype>
 					<argvalue>
-						2
+						Node
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectItemFromUnitsGallery"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -119,18 +119,8 @@ rxversion="8.3">
 			<arguments
 			id="cd64659f-b73d-46f6-933a-c6cea7425d02">
 				<argument
-				argname="iNumberOfItems"
+				argname="sDeviceName"
 				id="05f470f8-2d22-407a-b23e-31d637f6dab3">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						2
-					</argvalue>
-				</argument>
-				<argument
-				argname="sItemName"
-				id="98564146-4394-410d-bfa4-b5fbffeee290">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -140,7 +130,43 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="sType"
-				id="a10d729f-0166-4e15-9074-ea5af027ed3a">
+				id="98564146-4394-410d-bfa4-b5fbffeee290">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Loops
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="cd64659f-b73d-46f6-933a-c6cea7425d02">
+				<argument
+				argname="sDeviceName"
+				id="05f470f8-2d22-407a-b23e-31d637f6dab3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PLX800
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="98564146-4394-410d-bfa4-b5fbffeee290">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -198,10 +224,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
+		classname="Devices_Functions"
+		duration="100ms"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDisabledItemFromUnitsGallery"
+		methodname="VerifyGalleryItem"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -210,20 +237,20 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="754c5473-bc23-4340-9563-ff8c68eeebff">
+			id="1e0be23e-d4c1-4a49-addc-2e92b15cc8f3">
 				<argument
-				argname="iNumberOfItems"
-				id="db0ad887-3aab-451e-8122-6cc4a40d0d6a">
+				argname="sType"
+				id="91c7e7ce-364f-49a2-9e13-4d3e14edaf32">
 					<argvaluetype>
-						System.Int32
+						System.String
 					</argvaluetype>
 					<argvalue>
-						1
+						Repeaters
 					</argvalue>
 				</argument>
 				<argument
-				argname="sItemNames"
-				id="90373aea-c16c-41a8-ada1-b8011350f28d">
+				argname="deviceName"
+				id="2f208c13-988a-4b0f-ac89-d7a674587d2f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -232,13 +259,13 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="sType"
-				id="d2cbc8d2-49e3-4e84-af88-26d94af3dd2c">
+				argname="state"
+				id="465b61bd-807a-423a-8129-5e0de2420eb2">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Disabled
 					</argvalue>
 				</argument>
 			</arguments>
@@ -336,10 +363,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
+		classname="Devices_Functions"
+		duration="100ms"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyEnabledItemFromUnitsGallery"
+		methodname="VerifyGalleryItem"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -348,20 +376,20 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="754c5473-bc23-4340-9563-ff8c68eeebff">
+			id="1e0be23e-d4c1-4a49-addc-2e92b15cc8f3">
 				<argument
-				argname="iNumberOfItems"
-				id="db0ad887-3aab-451e-8122-6cc4a40d0d6a">
+				argname="sType"
+				id="91c7e7ce-364f-49a2-9e13-4d3e14edaf32">
 					<argvaluetype>
-						System.Int32
+						System.String
 					</argvaluetype>
 					<argvalue>
-						1
+						Repeaters
 					</argvalue>
 				</argument>
 				<argument
-				argname="sItemNames"
-				id="90373aea-c16c-41a8-ada1-b8011350f28d">
+				argname="deviceName"
+				id="2f208c13-988a-4b0f-ac89-d7a674587d2f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -370,22 +398,22 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="sType"
-				id="d2cbc8d2-49e3-4e84-af88-26d94af3dd2c">
+				argname="state"
+				id="465b61bd-807a-423a-8129-5e0de2420eb2">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Enabled
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectItemFromUnitsGallery"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -396,18 +424,8 @@ rxversion="8.3">
 			<arguments
 			id="cd64659f-b73d-46f6-933a-c6cea7425d02">
 				<argument
-				argname="iNumberOfItems"
+				argname="sDeviceName"
 				id="05f470f8-2d22-407a-b23e-31d637f6dab3">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="sItemName"
-				id="98564146-4394-410d-bfa4-b5fbffeee290">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -417,7 +435,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="sType"
-				id="a10d729f-0166-4e15-9074-ea5af027ed3a">
+				id="98564146-4394-410d-bfa4-b5fbffeee290">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -427,54 +445,58 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
 		optional="False"
-		searchpropertyid="b583d99d-ce9d-41d0-a82e-a0bb05fdaa24"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Site
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
 		optional="False"
-		searchpropertyid="a2126007-1e9a-4910-971c-70d3592f9a40"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
 		enabled="True"
@@ -522,10 +544,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
+		classname="Devices_Functions"
+		duration="100ms"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDisabledItemFromUnitsGallery"
+		methodname="VerifyGalleryItem"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -534,35 +557,35 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="754c5473-bc23-4340-9563-ff8c68eeebff">
-				<argument
-				argname="iNumberOfItems"
-				id="db0ad887-3aab-451e-8122-6cc4a40d0d6a">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="sItemNames"
-				id="90373aea-c16c-41a8-ada1-b8011350f28d">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800
-					</argvalue>
-				</argument>
+			id="1e0be23e-d4c1-4a49-addc-2e92b15cc8f3">
 				<argument
 				argname="sType"
-				id="d2cbc8d2-49e3-4e84-af88-26d94af3dd2c">
+				id="91c7e7ce-364f-49a2-9e13-4d3e14edaf32">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Loops
+						Repeaters
+					</argvalue>
+				</argument>
+				<argument
+				argname="deviceName"
+				id="2f208c13-988a-4b0f-ac89-d7a674587d2f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MX2 Repeater
+					</argvalue>
+				</argument>
+				<argument
+				argname="state"
+				id="465b61bd-807a-423a-8129-5e0de2420eb2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Disabled
 					</argvalue>
 				</argument>
 			</arguments>

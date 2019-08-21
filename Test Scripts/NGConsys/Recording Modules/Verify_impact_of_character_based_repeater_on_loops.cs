@@ -93,17 +93,20 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.SelectPanelNode(ValueConverter.ArgumentFromString<int>("iNodeNumber", "2"));
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.SelectItemFromUnitsGallery(ValueConverter.ArgumentFromString<int>("iNumberOfItems", "2"), "PLX800", "Loops");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PLX800", "Loops");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("PLX800", "Loops");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.VerifyInventoryGrid(ValueConverter.ArgumentFromString<int>("iStartRowIndex", "6"), ValueConverter.ArgumentFromString<int>("iEndRowIndex", "13"), "557.202.842");
             Delay.Milliseconds(100);
             
-            Libraries.Gallery_Functions.VerifyDisabledItemFromUnitsGallery(ValueConverter.ArgumentFromString<int>("iNumberOfItems", "1"), "MX2 Repeater", "Repeaters");
-            Delay.Milliseconds(0);
+            Libraries.Devices_Functions.VerifyGalleryItem("Repeaters", "MX2 Repeater", "Disabled");
+            Delay.Milliseconds(100);
             
             Libraries.InventoryGrid_Functions.DeleteItemfromInventory(ValueConverter.ArgumentFromString<int>("iRowNumber", "7"), "PLX800", "557.202.842");
             Delay.Milliseconds(0);
@@ -111,25 +114,23 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "7"), "PLX800", "557.202.842");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.VerifyEnabledItemFromUnitsGallery(ValueConverter.ArgumentFromString<int>("iNumberOfItems", "1"), "MX2 Repeater", "Repeaters");
+            Libraries.Devices_Functions.VerifyGalleryItem("Repeaters", "MX2 Repeater", "Enabled");
+            Delay.Milliseconds(100);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("MX2 Repeater", "Repeaters");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.SelectItemFromUnitsGallery(ValueConverter.ArgumentFromString<int>("iNumberOfItems", "1"), "MX2 Repeater", "Repeaters");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(9));
-            repo.FormMe.SiteNode1.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(10));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.VerifyRowExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "10"), "MX2 Repeater", "557.200.206");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.VerifyDisabledItemFromUnitsGallery(ValueConverter.ArgumentFromString<int>("iNumberOfItems", "1"), "PLX800", "Loops");
-            Delay.Milliseconds(0);
+            Libraries.Devices_Functions.VerifyGalleryItem("Repeaters", "MX2 Repeater", "Disabled");
+            Delay.Milliseconds(100);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "True"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "NGC-473");
             Delay.Milliseconds(0);

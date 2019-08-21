@@ -82,37 +82,32 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(1));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(2));
-            repo.FormMe.NodeExpander1.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(3));
-            repo.FormMe.LoopExpander1.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-A (0 of 125)') on item 'FormMe2.BuiltInLoopA0Of125'.", repo.FormMe2.BuiltInLoopA0Of125Info, new RecordItemIndex(4));
-            Validate.AttributeContains(repo.FormMe2.BuiltInLoopA0Of125Info, "Text", "Built-in Loop-A (0 of 125)");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-B (0 of 125)') on item 'FormMe2.BuiltInLoopB0Of125'.", repo.FormMe2.BuiltInLoopB0Of125Info, new RecordItemIndex(5));
-            Validate.AttributeContains(repo.FormMe2.BuiltInLoopB0Of125Info, "Text", "Built-in Loop-B (0 of 125)");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-C (0 of 125)') on item 'FormMe2.BuiltInLoopC0Of125'.", repo.FormMe2.BuiltInLoopC0Of125Info, new RecordItemIndex(6));
-            Validate.AttributeContains(repo.FormMe2.BuiltInLoopC0Of125Info, "Text", "Built-in Loop-C (0 of 125)");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Built-in Loop-D (0 of 125)') on item 'FormMe2.BuiltInLoopD0Of125'.", repo.FormMe2.BuiltInLoopD0Of125Info, new RecordItemIndex(7));
-            Validate.AttributeContains(repo.FormMe2.BuiltInLoopD0Of125Info, "Text", "Built-in Loop-D (0 of 125)");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(8));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-A (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-B (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-C (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-D (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
@@ -129,33 +124,29 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Address", "H");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.BackplaneOrXLMExternalLoopCard_Expander' at Center.", repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo, new RecordItemIndex(14));
-            repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PLXExternalLoopCard_Expander' at Center.", repo.FormMe.PLXExternalLoopCard_ExpanderInfo, new RecordItemIndex(15));
-            repo.FormMe.PLXExternalLoopCard_Expander.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='PLX800-E (0 of 125)') on item 'FormMe.MainProcessorList.PLX800E0Of125'.", repo.FormMe.MainProcessorList.PLX800E0Of125Info, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.FormMe.MainProcessorList.PLX800E0Of125Info, "Text", "PLX800-E (0 of 125)");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='PLX800-F (0 of 125)') on item 'FormMe.MainProcessorList.PLX800F0Of125'.", repo.FormMe.MainProcessorList.PLX800F0Of125Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.FormMe.MainProcessorList.PLX800F0Of125Info, "Text", "PLX800-F (0 of 125)");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='PLX800-G (0 of 125)') on item 'FormMe.MainProcessorList.PLX800G0Of125'.", repo.FormMe.MainProcessorList.PLX800G0Of125Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.FormMe.MainProcessorList.PLX800G0Of125Info, "Text", "PLX800-G (0 of 125)");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='PLX800-H (0 of 125)') on item 'FormMe.MainProcessorList.PLX800H0Of125'.", repo.FormMe.MainProcessorList.PLX800H0Of125Info, new RecordItemIndex(19));
-            Validate.AttributeEqual(repo.FormMe.MainProcessorList.PLX800H0Of125Info, "Text", "PLX800-H (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-E (0 of 125)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(20));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-F (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-G (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-H (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
@@ -184,38 +175,31 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("418_81");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(30));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("5", "Label", "TEXT-5");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ExpandNode1AfterReopen' at Center.", repo.FormMe.ExpandNode1AfterReopenInfo, new RecordItemIndex(32));
-            repo.FormMe.ExpandNode1AfterReopen.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane1AfterReopen' at Center.", repo.FormMe.Backplane1AfterReopenInfo, new RecordItemIndex(33));
-            repo.FormMe.Backplane1AfterReopen.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PLXExternalLoopCard_Expander' at Center.", repo.FormMe.PLXExternalLoopCard_ExpanderInfo, new RecordItemIndex(34));
-            repo.FormMe.PLXExternalLoopCard_Expander.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='PLX800-6 (0 of 125)') on item 'FormMe2.PLX80060Of125'.", repo.FormMe2.PLX80060Of125Info, new RecordItemIndex(35));
-            Validate.AttributeEqual(repo.FormMe2.PLX80060Of125Info, "Text", "PLX800-6 (0 of 125)");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='PLX800-7 (0 of 125)') on item 'FormMe2.ItemsHost.PLX80070Of125'.", repo.FormMe2.ItemsHost.PLX80070Of125Info, new RecordItemIndex(36));
-            Validate.AttributeEqual(repo.FormMe2.ItemsHost.PLX80070Of125Info, "Text", "PLX800-7 (0 of 125)");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='PLX800-8 (0 of 125)') on item 'FormMe2.ItemsHost.PLX80080Of125'.", repo.FormMe2.ItemsHost.PLX80080Of125Info, new RecordItemIndex(37));
-            Validate.AttributeEqual(repo.FormMe2.ItemsHost.PLX80080Of125Info, "Text", "PLX800-8 (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-6 (0 of 125)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='TEXT-5 (0 of 125)') on item 'FormMe2.ItemsHost.TEXT50Of125'.", repo.FormMe2.ItemsHost.TEXT50Of125Info, new RecordItemIndex(38));
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-7 (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-8 (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-9 (0 of 125)");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='TEXT-5 (0 of 125)') on item 'FormMe2.ItemsHost.TEXT50Of125'.", repo.FormMe2.ItemsHost.TEXT50Of125Info, new RecordItemIndex(40));
             Validate.AttributeEqual(repo.FormMe2.ItemsHost.TEXT50Of125Info, "Text", "TEXT-5 (0 of 125)");
             Delay.Milliseconds(0);
             

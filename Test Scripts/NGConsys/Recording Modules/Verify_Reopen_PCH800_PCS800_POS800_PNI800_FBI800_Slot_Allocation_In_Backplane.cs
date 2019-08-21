@@ -94,22 +94,6 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane  3/3");
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1_AfterReopen' at Center.", repo.FormMe.NodeExpander1_AfterReopenInfo, new RecordItemIndex(5));
-            //repo.FormMe.NodeExpander1_AfterReopen.Click();
-            //Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane1Expander_AfterReopen' at Center.", repo.FormMe.Backplane1Expander_AfterReopenInfo, new RecordItemIndex(6));
-            //repo.FormMe.Backplane1Expander_AfterReopen.Click();
-            //Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane2Expander_AfterReopen' at Center.", repo.FormMe.Backplane2Expander_AfterReopenInfo, new RecordItemIndex(7));
-            //repo.FormMe.Backplane2Expander_AfterReopen.Click();
-            //Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane3Expander_AfterReopen' at Center.", repo.FormMe.Backplane3Expander_AfterReopenInfo, new RecordItemIndex(8));
-            //repo.FormMe.Backplane3Expander_AfterReopen.Click();
-            //Delay.Milliseconds(200);
-            
         }
 
 #region Image Feature Data

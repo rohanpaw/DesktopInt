@@ -3794,9 +3794,9 @@
       <recordtableid>7e18e2f7-e0da-42dc-8d17-d5c59120acf2</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_AC_Units_Calculation_For_Loops_With_IS_Devices.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>dd2910d3-bf03-4aae-8726-b743cb0802d9</id>
       <recordtableid>55ec67c7-3815-4ead-bddd-dedeba62e4cd</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_AC_Units_Calculation_For_Loops_With_IS_Devices_For_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4184,9 +4184,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_If_IS_Devices_Are_Enabled_Or_Disabled_From_The_Gallery_When_Max_IS_Units_Is_Reached.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>2b8ef7fe-46d1-4922-9514-8a1af2f9a7c4</id>
       <recordtableid>ed8f0230-7449-439d-b71e-30b7981b4476</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_If_IS_Devices_Are_Invisible_In_Multipoint_Wizard.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4474,9 +4474,9 @@
       <recordtableid>edb6e3e4-3a6c-40d0-869f-aedf5d4e47df</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f825bb48-36f3-49b1-a014-442c7e995e79</id>
       <recordtableid>d77c9b28-e21b-4f69-b248-b21217a9522c</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_PNI800_Card_Details.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

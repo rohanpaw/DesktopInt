@@ -81,14 +81,11 @@ namespace TestProject.Recording_Modules
 
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1' at Center.", repo.FormMe.NodeExpander1Info, new RecordItemIndex(1));
-            repo.FormMe.NodeExpander1.Click();
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1' at Center.", repo.FormMe.LoopExpander1Info, new RecordItemIndex(2));
-            repo.FormMe.LoopExpander1.Click();
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(3));
-            repo.FormMe.Loop_A1.Click();
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             
             Libraries.DC_Functions.verifyMaxDCUnits("4000");
             

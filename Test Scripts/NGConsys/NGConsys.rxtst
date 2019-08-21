@@ -7943,7 +7943,7 @@ loops.</SPAN>]]>
 			</testmodule>
 			<testcase
 			id="806a3da2-08f7-4a69-9405-d6ae07f52512"
-			name="Verify_Current(DC_Units)_Calculation">
+			name="Verify_Current(DC_Units)_Calculation_for_PFI">
 				<description>
 					<![CDATA[<p>NGC-494/TC-160</p>]]>
 				</description>
@@ -17206,7 +17206,7 @@ persisted in panel properties&nbsp;]]>
 					</testcase>
 					<testcase
 					id="806a3da2-08f7-4a69-9405-d6ae07f52512"
-					name="Verify_Current(DC_Units)_Calculation">
+					name="Verify_Current(DC_Units)_Calculation_for_PFI">
 						<testmodule
 						id="722d5ba8-0d75-4f56-9336-cc34f1bffbeb"
 						name="Application_Open">
@@ -20256,10 +20256,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			id="200b6f24-2d41-43ee-baff-a642c2702da4">
 			</testcontainer>
 			<testcontainer
-			id="2bb77d07-695c-4f1f-97c9-ad3d54e10be8">
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -20289,10 +20289,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

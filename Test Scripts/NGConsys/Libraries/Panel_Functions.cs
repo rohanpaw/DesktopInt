@@ -115,14 +115,15 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/**********************************************************************************************************************************
 		 * Function Name: AddPanels
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 28/12/2018 Alpesh Dhakad - Line 162 Commented
-		 ********************************************************************/
+		 * Alpesh Dhakad - 19/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 **********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddPanels(int NumberofPanels,string PanelNames,string sPanelCPU)
 		{
@@ -130,9 +131,8 @@ namespace TestProject.Libraries
 			{
 				string[] splitPanelNames = PanelNames.Split(',');
 				
-				
-				
-				repo.FormMe.SiteNode1.Click();
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
 				
 				string PanelNameWithSpace=splitPanelNames[i];
 				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
@@ -145,6 +145,7 @@ namespace TestProject.Libraries
 					sPanelLabelIndex ="7";
 				}
 				repo.ProfileConsys1.btnDropDownPanelsGallery.Click();
+				
 				repo.ContextMenu.txt_SelectPanel.Click();
 				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
 				iAddress=i+1;
@@ -169,24 +170,26 @@ namespace TestProject.Libraries
 				
 				//Commenting below line as for Panel name with Space and hi-fen it is not displaying as it is displaying while adding panel
 				//Validate.AttributeEqual(repo.ProfileConsys1.NavigationTree.VerifyPanelNodeInfo, "Text", PanelNode);
-				
+				Report.Log(ReportLevel.Success, "Panel "+PanelNames+" Added Successfully");
 			}
 		}
 		
-		/********************************************************************************************
+		/******************************************************************************************************************
 		 * Function Name: VerifyCPUType
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpaths
-		 ********************************************************************************************/
+		 * Last Update : Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated scripts as per new build and xpaths
+		 ******************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCPUType(string sExpectedCPU,int PanelNode, bool AfterImport)
 		{
 			string sActualText;
 			Panel_Functions.SelectPanelNode(PanelNode);
-			repo.FormMe.PanelNode1.Click();
+			
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
 			if(AfterImport)
 			{
@@ -251,14 +254,14 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info," CPU Type changed to " +sSelectCPU + " successfully  ");
 		}
 		
-		/********************************************************************
+		/****************************************************************************************************************************************
 		 * Function Name: DeletePanel
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : 27/12/2018 by Alpesh Dhakad  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 * Last Update : 27/12/2018 by Alpesh Dhakad  Alpesh Dhakad - 01/08/2019 & 19/08/2019 - Updated test scripts as per new build and xpaths
+		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void DeletePanel(int NumberofPanels,string PanelNode,int rowNumber )
 		{
@@ -268,8 +271,8 @@ namespace TestProject.Libraries
 				sRow = rowNumber.ToString();
 				sLabelName=PanelNode;
 				
-				repo.FormMe.SiteNode1.Click();
-				
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
 				
 				/*  If else statement added as when we have added only 1 panel and then to delete the same Xpath is different
 				 * Date : 27/11/2018
@@ -297,21 +300,21 @@ namespace TestProject.Libraries
 			}
 		}
 		
-		/********************************************************************
+		/********************************************************************************************************************************
 		 * Function Name: SelectPanelNode
 		 * Function Details: To select Panel Node
 		 * Parameter/Arguments: PanelName
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 3/1/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 * Last Update : 3/1/2019  Alpesh Dhakad - 01/08/2019 & 19/08/2019 - Updated test scripts as per new build and xpaths
+		 ********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void SelectPanelNode(string sPanelName)
 		{
 			PanelName=sPanelName.ToString();
 			
-			
-			repo.FormMe.PanelNode1.Click();
+			// Click on panel node
+				Common_Functions.ClickOnNavigationTreeItem("Node");
 			
 			Report.Log(ReportLevel.Success, "Panel Node "+sPanelName+" selected");
 		}

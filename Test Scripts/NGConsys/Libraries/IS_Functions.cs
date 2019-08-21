@@ -879,14 +879,14 @@ namespace TestProject.Libraries
 		}
 
 
-		/********************************************************************
+		/**********************************************************************************************
 		 * Function Name: VerifyISDevicesOnAddingEXI
 		 * Function Details: Verify the IS device state when we add  EXI800
 		 * Parameter/Arguments: sFileName, sAddEXIDevicesSheet, sVerifyISDevicesStateSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 29/01/2019
-		 ********************************************************************/
+		 **********************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyISDevicesOnAddingEXI(string sFileName,string sAddEXIDevicesSheet, string sVerifyISDevicesStateSheet)
 		{
@@ -931,14 +931,14 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 		
-		/********************************************************************
+		/**********************************************************************************************
 		 * Function Name: VerifyISDevicesOnAddingNonEXI
 		 * Function Details: Verify the IS device state when we add non-EXI device
 		 * Parameter/Arguments: sFileName, sAddNonEXIDevicesSheet, sVerifyISDevicesStateSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 29/01/2019
-		 ********************************************************************/
+		 **********************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyISDevicesOnAddingNonEXI(string sFileName,string sAddNonEXIDevicesSheet, string sVerifyISDevicesStateSheet)
 		{
@@ -1168,14 +1168,14 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 		
-		/********************************************************************
+		/******************************************************************************************************************************
 		 * Function Name: VerifyAdditionOfMultipleISDevicesOnEXI
 		 * Function Details: To verify addition of multiple IS devices and observe in Physical layout
 		 * Parameter/Arguments: sFileName, sAddEXIDeviceSheet, sISDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/02/2019   Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 * Last Update : 06/02/2019   Alpesh Dhakad - 01/08/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
+		 ******************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfMultipleISDevicesOnEXI(string sFileName,string sAddEXIDeviceSheet, string sISDevicesSheet)
 		{
@@ -1248,7 +1248,9 @@ namespace TestProject.Libraries
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				Delay.Milliseconds(500);
 				
-				repo.FormMe.Loop_A1.Click();
+				// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				Delay.Milliseconds(200);
 				
 				// Click on Points tab
@@ -1308,14 +1310,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/**************************************************************************************************************************************
 		 * Function Name: VerifyEnableDisableOfMultipleISDevicesOnEXI
 		 * Function Details: To verify addition of multiple IS devices and observe in Physical layout
 		 * Parameter/Arguments: sFileName, sAddEXIDeviceSheet, sISDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/02/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 * Last Update : 06/02/2019  Alpesh Dhakad - 01/08/2019 & 21/08/2019- Updated test scripts as per new build and xpaths
+		 **************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyEnableDisableOfMultipleISDevicesOnEXI(string sFileName,string sAddEXIDeviceSheet, string sISDevicesSheet)
 		{
@@ -1382,14 +1384,18 @@ namespace TestProject.Libraries
 				// Verify gallery item state
 				Devices_Functions.VerifyGalleryItem(sType,sDeviceName,state);
 				
-				repo.FormMe.Loop_A1.Click();
+				// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				Delay.Milliseconds(200);
 				
 				// Click on Physical Layout tab
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				Delay.Milliseconds(500);
 				
-				repo.FormMe.Loop_A1.Click();
+				// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				Delay.Milliseconds(200);
 				
 				// Click on Points tab

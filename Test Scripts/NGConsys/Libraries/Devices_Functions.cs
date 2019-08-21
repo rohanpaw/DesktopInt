@@ -296,20 +296,22 @@ namespace TestProject.Libraries
 			repo.ContextMenu.txt_galleryItem.Click();
 		}
 		
-		/***********************************************************************************************
+		/************************************************************************************************************
 		 * Function Name: verifyDevicesfromGalleryNotHavingImages
 		 * Function Details: verify Given device exist in gallery
 		 * Parameter/Arguments: Device name(Model Number), type of gallery, Visibility
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Created on :11/3/2019 Alpesh Dhakad - 30/07/2019 Updated script as per new build and xpath
-		 ***********************************************************************************************/
+		 * Created on :11/3/2019 Alpesh Dhakad - 30/07/2019 & 21/08/2019 Updated script as per new build and xpath
+		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyDevicesfromGalleryNotHavingImages(string sDeviceName,string sType,bool Visibility)
 		{
 			sGalleryIndex = SelectGalleryType(sType);
 			ModelNumber=sDeviceName;
-			repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+			
+			repo.FormMe.btn_AllGalleryDropdown.Click();
+			//repo.FormMe.btn_DevicesGalleryDropDown1.Click();
 			//repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
 			if(Visibility)
 			{
@@ -562,24 +564,23 @@ namespace TestProject.Libraries
 			
 		}
 
-		/********************************************************************
+		/****************************************************************************************************************
 		 * Function Name: VerifyGalleryItem
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 21/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyGalleryItem(string sType,string deviceName, string state)
 		{
 			if(state.Equals("Enabled"))
 			{
-				sGalleryIndex = SelectGalleryType(sType);
 				ModelNumber=deviceName;
 				
-				repo.FormMe.btn_DevicesGalleryDropDown1.Click();
-				//repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+				repo.FormMe.btn_AllGalleryDropdown.Click();
+				
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
 				{
 					Report.Log(ReportLevel.Success, "Gallery Item: " + deviceName+ " Enabled in gallery");
@@ -591,11 +592,11 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				sGalleryIndex = SelectGalleryType(sType);
+				
 				ModelNumber=deviceName;
 				
-				repo.FormMe.btn_DevicesGalleryDropDown1.Click();
-				//repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+				repo.FormMe.btn_AllGalleryDropdown.Click();
+				
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
 				{
 					Report.Log(ReportLevel.Failure, "Gallery Item: " + deviceName+ " enabled in gallery");
@@ -4129,7 +4130,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 03/04/2019
+		 * Last Update : 03/04/2019 Alpesh Dhakad - 20/08/2019 - Updated log text
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyPointGridProperties(string ExpectedPointGridRowCount, string ExpectedPointGridColumn, string ExpectedDeviceProperty)
@@ -4138,11 +4139,12 @@ namespace TestProject.Libraries
 			sColumn = getColumnNumberForPointsGrid(ExpectedPointGridColumn);
 			sRow = ExpectedPointGridRowCount;
 			
-			Report.Log(ReportLevel.Success,"Row an column values are set as"+sColumn+sRow);
+			Report.Log(ReportLevel.Success,"Row and column values are set as " +sRow+ " And " +sColumn+ " respectively");
 			
 			string ActualPointGridProperty = repo.FormMe.txt_PointGridDeviceProperty.TextValue;
+			
 			// Compare Actual and Expected Point Grid Row count
-			Report.Log(ReportLevel.Success,"Actual"+ActualPointGridProperty+"  Expected"+ExpectedDeviceProperty);
+			Report.Log(ReportLevel.Success,"Actual "+ActualPointGridProperty+"  Expected "+ExpectedDeviceProperty);
 			
 			if(ActualPointGridProperty.Equals(ExpectedDeviceProperty))
 			{
@@ -4203,27 +4205,27 @@ namespace TestProject.Libraries
 			{
 				case "SKU":
 					columnNumber="1";
-					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					Report.Log(ReportLevel.Success,"Column number is set as "+columnNumber);
 					break;
 					
 				case "Model":
 					columnNumber="2";
-					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					Report.Log(ReportLevel.Success,"Column number is set as "+columnNumber);
 					break;
 					
 				case "Label":
 					columnNumber="3";
-					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					Report.Log(ReportLevel.Success,"Column number is set as "+columnNumber);
 					break;
 					
 				case "Address":
 					columnNumber="4";
-					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					Report.Log(ReportLevel.Success,"Column number is set as "+columnNumber);
 					break;
 					
 				case "Sensitivity":
 					columnNumber="5";
-					Report.Log(ReportLevel.Success,"Column number is set as"+columnNumber);
+					Report.Log(ReportLevel.Success,"Column number is set as "+columnNumber);
 					break;
 					
 			}
@@ -4433,14 +4435,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/************************************************************************************************************************************
 		 * Function Name: ChangeCableCapacitance
 		 * Function Details: To change cable capacitance
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 19/04/2019
-		 ********************************************************************/
+		 * Last Update : 19/04/2019 Alpesh Dhakad - 21/08/2019 - Updated with new navigation tree method, xpath and devices gallery
+		 ************************************************************************************************************************************/
 		// Change cable capacitance method
 		[UserCodeMethod]
 		public static void ChangeCableCapacitance(int fchangeCableCapacitance, string sLabelName)
@@ -4448,11 +4450,12 @@ namespace TestProject.Libraries
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
 			
-			//Click on Panel Node
-			repo.ProfileConsys1.PanelNode.Click();
-			
-			//Click on Loop A in Navigation tree tab
-			repo.FormMe.Loop_A1.Click();
+			// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeExpander("Node");
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
 			
 			SelectRowUsingLabelName(sLabelName);
 			
@@ -4462,8 +4465,9 @@ namespace TestProject.Libraries
 			//Change the value of cable length
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableCapacitance + "{Enter}");
 			
-			//Click on Panel Node
-			repo.FormMe.PanelNode1.Click();
+			// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeExpander("Node");
+			
 			Delay.Duration(1000, false);
 		}
 		
@@ -4975,7 +4979,7 @@ namespace TestProject.Libraries
 			sDeviceIndex = SelectDeviceFromPanelAccessories(ModelNumber);
 			repo.FormMe.btn_PanelAccessoriesDropDown.Click();
 			
-
+			
 			
 			if(sEnabled)
 			{
@@ -5446,14 +5450,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/************************************************************************************************************************
 		 * Function Name: VerifyEnableDisablePanelAccessoriesGallery
 		 * Function Details:
 		 * Parameter/Arguments: sType,deviceName,state
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 23/05/2019
-		 ********************************************************************/
+		 * Last Update : 23/05/2019 Alpesh Dhakad - 20/08/2019 - Updated script as per new build updated xpath
+		 ************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyEnableDisablePanelAccessoriesGallery(string sType,string deviceName, string state)
 		{
@@ -5461,7 +5465,10 @@ namespace TestProject.Libraries
 			{
 				sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
 				ModelNumber=deviceName;
-				repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+				
+				repo.FormMe.btn_AllGalleryDropdown.Click();
+				
+				//repo.FormMe.btn_PanelAccessoriesDropDown.Click();
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
 				{
 					Report.Log(ReportLevel.Success, "Accessories : " + deviceName+ " Enabled in gallery");
@@ -5475,7 +5482,10 @@ namespace TestProject.Libraries
 			{
 				sAccessoriesGalleryIndex= SelectPanelAccessoriesGalleryType(sType);
 				ModelNumber=deviceName;
-				repo.FormMe.btn_PanelAccessoriesDropDown.Click();
+				
+				repo.FormMe.btn_AllGalleryDropdown.Click();
+				
+				//repo.FormMe.btn_PanelAccessoriesDropDown.Click();
 				if (repo.ContextMenu.txt_SelectDevice.Enabled)
 				{
 					Report.Log(ReportLevel.Failure, "Accessories : " + deviceName+ " enabled in gallery");
@@ -5942,14 +5952,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/**************************************************************************************************
 		 * Function Name: AddDevicesfromMultiplePointWizardWithRegion
 		 * Function Details: To add multiple devices using multiple point wizard with different loop
 		 * Parameter/Arguments: Device name, Region and its quantity
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 23/05/19
-		 ********************************************************************/
+		 * Last Update : 23/05/19 Alpesh Dhakad - 19/08/2019 - Updated script for model number selection
+		 **************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddDevicesfromMultiplePointWizardWithRegion(string sDeviceName,int DeviceQty, string sRegion )
 		{
@@ -5960,7 +5970,9 @@ namespace TestProject.Libraries
 			repo.AddDevices.txt_SearchDevices.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+sDeviceName);
 			ModelNumber = sDeviceName;
-			repo.AddDevices.txt_ModelNumber.Click();
+			repo.AddDevices.txt_ModelNumber1.Click();
+			
+			//repo.AddDevices.txt_ModelNumber.Click();
 			repo.AddDevices.txt_Quantity.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+DeviceQty.ToString());
 			repo.AddDevices.MPWRegionBox.Click();
@@ -6074,7 +6086,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update :07/Jun/19
+		 * Last Update :07/Jun/19 Alpesh Dhakad - 20/08/2019 - Updated xpath for cell_cableLength
 		 ********************************************************************/
 		// Change cable length method
 		[UserCodeMethod]
@@ -6087,10 +6099,12 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Leng" +"{ENTER}" );
 			
 			//Click on cable length cell
-			repo.FormMe.txt_InventoryProperty.Click();
+			repo.FormMe.cell_CableLength.Click();
+			//repo.FormMe.txt_InventoryProperty.Click();
 			
 			//Change the value of cable length
-			repo.FormMe.txt_InventoryProperty.PressKeys(fchangeCableLength + "{ENTER}");
+			repo.FormMe.txt_CableLength.PressKeys(fchangeCableLength + "{ENTER}");
+			//repo.FormMe.txt_InventoryProperty.PressKeys(fchangeCableLength + "{ENTER}");
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}{ENTER}");
 		}

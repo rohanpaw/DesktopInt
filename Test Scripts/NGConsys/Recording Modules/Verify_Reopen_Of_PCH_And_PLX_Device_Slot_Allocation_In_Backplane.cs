@@ -82,17 +82,14 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("51409");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1_AfterReopen' at Center.", repo.FormMe.NodeExpander1_AfterReopenInfo, new RecordItemIndex(1));
-            repo.FormMe.NodeExpander1_AfterReopen.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane1Expander_AfterReopen' at Center.", repo.FormMe.Backplane1Expander_AfterReopenInfo, new RecordItemIndex(2));
-            repo.FormMe.Backplane1Expander_AfterReopen.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  1");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Backplane2Expander_AfterReopen' at Center.", repo.FormMe.Backplane2Expander_AfterReopenInfo, new RecordItemIndex(3));
-            repo.FormMe.Backplane2Expander_AfterReopen.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  2");
+            Delay.Milliseconds(0);
             
         }
 

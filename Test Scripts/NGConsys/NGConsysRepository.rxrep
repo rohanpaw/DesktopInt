@@ -3288,8 +3288,8 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="7694f0f2-ba3c-4ec4-b564-1476565f3b68"
 			name="btn_MultiplePointWizard"
 			refimgid="6a018d65-2cf0-4b18-b480-99a13ab5d487"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/button[@text='Multiple Point Wizard']
+			searchtimeout="60ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/button[@text='Multiple Point Wizard']
 			</item>
 			<item
 			addcaps="combobox,wpfelement,wpfgroupelement"
