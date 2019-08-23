@@ -82,9 +82,8 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MZX252", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(1));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromPanelNodeGallery("XLM800", "Loops", "PFI");
             Delay.Milliseconds(0);
@@ -95,9 +94,8 @@ namespace TestProject.Recording_Modules
             Libraries.Gallery_Functions.VerifyCutButton(ValueConverter.ArgumentFromString<bool>("isEnabled", "False"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(5));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.VerifyValueOf2ndPSU("PMM840");
             Delay.Milliseconds(0);
@@ -108,16 +106,14 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("55131");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1_AfterReopen' at Center.", repo.FormMe.PanelNode1_AfterReopenInfo, new RecordItemIndex(9));
-            repo.FormMe.PanelNode1_AfterReopen.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.VerifyValueOf2ndPSUOnReopen("PMM840");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1_AfterReopen' at Center.", repo.FormMe.PanelNode1_AfterReopenInfo, new RecordItemIndex(11));
-            repo.FormMe.PanelNode1_AfterReopen.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(12));
             repo.FormMe.tab_Inventory.Click();
@@ -130,9 +126,8 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1_AfterReopen' at Center.", repo.FormMe.PanelNode1_AfterReopenInfo, new RecordItemIndex(15));
-            repo.FormMe.PanelNode1_AfterReopen.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.VerifyValueOf2ndPSUOnReopen("None");
             Delay.Milliseconds(0);

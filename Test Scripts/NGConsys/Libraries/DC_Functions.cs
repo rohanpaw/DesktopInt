@@ -279,14 +279,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/************************************************************************************************************
 		 * Function Name: changeDeviceSensitivityAndVerifyDCUnit
 		 * Function Details: To change device sensitivity, day mode and verify DC unit
 		 * Parameter/Arguments: fileName, sheetName of add device
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 01/08/2019 & 23/08/2019 - Updated test scripts as per new build and xpaths
+		 ************************************************************************************************************/
 		//Method to verify DC Unit after changing Device Sensitivity and Device Mode
 		[UserCodeMethod]
 		public static void changeDeviceSensitivityAndVerifyDCUnit(string sFileName,string sAddDevicesSheet)
@@ -365,8 +365,8 @@ namespace TestProject.Libraries
 					// Click on Points tab
 					repo.ProfileConsys1.tab_Points.Click();
 					
-					// Click on Loop A
-					repo.FormMe.Loop_A1.Click();
+					// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 					
 				}
 				
@@ -443,8 +443,9 @@ namespace TestProject.Libraries
 					// Click on Points tab
 					repo.ProfileConsys1.tab_Points.Click();
 					
-					// Click on Loop A
-					repo.FormMe.Loop_A1.Click();
+					// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 					
 				}
 			}

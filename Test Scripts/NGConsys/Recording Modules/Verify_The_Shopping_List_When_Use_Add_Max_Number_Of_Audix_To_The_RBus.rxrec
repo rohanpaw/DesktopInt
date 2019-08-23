@@ -110,30 +110,32 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
 		optional="False"
-		searchpropertyid="88ccaf9c-8e06-4877-8bcf-96c74966a9e8"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Site
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -194,54 +196,58 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
 		optional="False"
-		searchpropertyid="88ccaf9c-8e06-4877-8bcf-96c74966a9e8"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
 		optional="False"
-		searchpropertyid="88ccaf9c-8e06-4877-8bcf-96c74966a9e8"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Site
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"

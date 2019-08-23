@@ -566,14 +566,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/*****************************************************************************************************************
+		/*****************************************************************************************************************************
 		 * Function Name:VerifyGalleryItems
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:Purvi Bhasin
-		 * Last Update :30/4/2019 Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 *****************************************************************************************************************/
+		 * Last Update :30/4/2019 Alpesh Dhakad - 01/08/2019 & 23/08/2019 - Updated test scripts as per new build and xpaths
+		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyGalleryItems(string sFileName,string sAddPanelSheet, string sAddDeviceSheet)
 		{
@@ -609,9 +609,9 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				
-				// Click on Expander node
-				repo.FormMe.PanelNode1.Click();
-				
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 				//Close excel sheet and read it values,
 				Excel_Utilities.CloseExcel();
 				
@@ -634,9 +634,9 @@ namespace TestProject.Libraries
 					
 					string ExpectedGalleryName = repo.ContextMenu.Device_Name.TextValue;
 					
-					//Click on panel node
-					repo.FormMe.PanelNode1.Click();
-					
+					// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 					if(GalleryName.Equals(ExpectedGalleryName))
 					{
 						Report.Log(ReportLevel.Success, "Repeater : " + GalleryName+ " is present");
@@ -696,9 +696,9 @@ namespace TestProject.Libraries
 					
 					string ExpectedGalleryName = repo.ContextMenu.Device_Name.TextValue;
 					
-					//Click on panel node
-					repo.FormMe.PanelNode1.Click();
-					
+					// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 					if(Status.Equals("Enabled"))
 					{
 						if(repo.ContextMenu.Device_Name.Enabled)
@@ -737,14 +737,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/*****************************************************************************************************************
+		/***********************************************************************************************************************
 		 * Function Name:VerifyGalleryItemsWithoutAddingAnyOtherEntity
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:Purvi Bhasin
-		 * Last Update :30/4/2019   Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 *****************************************************************************************************************/
+		 * Last Update :30/4/2019   Alpesh Dhakad - 01/08/2019 & 23/08/2019 - Updated test scripts as per new build and xpaths
+		 ***********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyGalleryItemsWithoutAddingAnyOtherEntity(string sFileName,string sAddPanelSheet, string sAddDeviceSheet)
 		{
@@ -779,9 +779,9 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				
-				// Click on Expander node
-				repo.FormMe.PanelNode1.Click();
-				
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 				//Close excel sheet and read it values,
 				Excel_Utilities.CloseExcel();
 				
@@ -814,9 +814,9 @@ namespace TestProject.Libraries
 					}
 					
 					
-					//Click on panel node
-					repo.FormMe.PanelNode1.Click();
-					
+					// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 					if(GalleryName.Equals(ExpectedGalleryName))
 					{
 						Report.Log(ReportLevel.Success, "Entity : " + GalleryName+ " is present");

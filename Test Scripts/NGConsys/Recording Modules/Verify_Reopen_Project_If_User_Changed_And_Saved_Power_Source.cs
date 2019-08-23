@@ -82,17 +82,14 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("218");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.NavigationTree.Expander' at Center.", repo.ProfileConsys1.NavigationTree.ExpanderInfo, new RecordItemIndex(1));
-            repo.ProfileConsys1.NavigationTree.Expander.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.MainProcessor_AfterReopen' at Center.", repo.FormMe.MainProcessor_AfterReopenInfo, new RecordItemIndex(2));
-            repo.FormMe.MainProcessor_AfterReopen.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.RBUS_AfterReopen' at Center.", repo.FormMe.RBUS_AfterReopenInfo, new RecordItemIndex(3));
-            repo.FormMe.RBUS_AfterReopen.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("MPM800-1");
             Delay.Milliseconds(0);

@@ -88,6 +88,9 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("FBI800", "Slot Cards", "Enabled");
             Delay.Milliseconds(0);
             

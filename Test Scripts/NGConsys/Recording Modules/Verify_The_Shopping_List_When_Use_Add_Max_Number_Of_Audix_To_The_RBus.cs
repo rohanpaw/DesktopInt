@@ -85,9 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.LinkedHardware_Fuctions.VerifyLinkedDevicesGetAddedInLoop("TC_55040_Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus", "Add Devices");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(2));
-            repo.FormMe.SiteNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(3));
             repo.FormMe.tab_ShoppingList.Click();
@@ -96,13 +95,11 @@ namespace TestProject.Recording_Modules
             Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("568.800.033", ValueConverter.ArgumentFromString<bool>("sExist", "False"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(5));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(6));
-            repo.FormMe.SiteNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(7));
             repo.FormMe.tab_ShoppingList.Click();

@@ -74,78 +74,84 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeExpander"
+		namespace="TestProject.Libraries"
 		optional="False"
-		searchpropertyid="57e540f8-c662-433d-9302-ae6e012d610b"
-		sx="23"
-		sy="273"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="51eeefd0-30b0-4dda-92ee-577f9e216498"
-			sourcename="Recorder">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[2]/button[@automationid='PART_ExpandButton']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeExpander"
+		namespace="TestProject.Libraries"
 		optional="False"
-		searchpropertyid="43faf91c-68cb-4346-8ab6-3ea923550120"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="14073c16-be92-433d-9cfe-bae704ce7356"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]/container[2]/indicator[3]/button[@automationid='PART_ExpandButton']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Main
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
 		optional="False"
-		searchpropertyid="92ddafda-17e4-43fb-adb1-a1d693c03458"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="da84799c-5c5b-4372-9d21-c6e5e74225cf"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@text~'^R-BUS']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						R-BUS
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"

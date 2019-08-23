@@ -8150,6 +8150,7 @@ namespace TestProject
             RepoItemInfo _txt_skuInfo;
             RepoItemInfo _secondpsuInfo;
             RepoItemInfo _txt_propertiestextvalue_2ndlineInfo;
+            RepoItemInfo _cell_propertiestextvalue_2ndlineInfo;
             RepoItemInfo _sometext1Info;
             RepoItemInfo _cell_secondpsu_reopenInfo;
             RepoItemInfo _loopexpander2Info;
@@ -8361,7 +8362,8 @@ namespace TestProject
                 _cell_inventorypropertyInfo = new RepoItemInfo(this, "cell_InventoryProperty", "progressbar/picture[7]/picture/list/?/?/cell[@isheader='False']", 30000, null, "4f75b6a7-f4a1-4597-9390-f45b61527852");
                 _txt_skuInfo = new RepoItemInfo(this, "txt_SKU", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[2]/row[$sRowIndex]/row/cell[1]/text[@caption=$sSKU]", 30000, null, "0df82917-e6d1-4261-bc0b-44074221cd63");
                 _secondpsuInfo = new RepoItemInfo(this, "SecondPSU", "progressbar/picture[2]//container[@automationid='PART_ItemsPresenter']/row[@index='7']/?/?/text", 30000, null, "d4dc6959-26e8-45c3-9d74-2f83111fe40a");
-                _txt_propertiestextvalue_2ndlineInfo = new RepoItemInfo(this, "txt_PropertiesTextValue_2ndLine", "progressbar/picture[2]/picture/list/row[@index='3']/?/?/text", 30000, null, "42550e69-12c1-4a1b-934a-b053d2f80dee");
+                _txt_propertiestextvalue_2ndlineInfo = new RepoItemInfo(this, "txt_PropertiesTextValue_2ndLine", "progressbar/picture/picture/list/row[@index='3']/?/?/text", 30000, null, "42550e69-12c1-4a1b-934a-b053d2f80dee");
+                _cell_propertiestextvalue_2ndlineInfo = new RepoItemInfo(this, "cell_PropertiesTextValue_2ndLine", "progressbar/picture/picture/list/row[@index='3']/cell[@isheader='False']", 30000, null, "c3cbbfe3-510c-4319-b174-6cb8fb323641");
                 _sometext1Info = new RepoItemInfo(this, "SomeText1", "progressbar/picture[8]//container/row[@index='7']/?/?/text", 30000, null, "59468f58-9c6a-499e-8d88-6bfb5c7c8946");
                 _cell_secondpsu_reopenInfo = new RepoItemInfo(this, "cell_SecondPSU_Reopen", "progressbar/picture[8]//container[@automationid='PART_ItemsPresenter']/row[@index='7']/?/?/text", 30000, null, "6bc4127e-f313-470d-a546-160e877191a1");
                 _loopexpander2Info = new RepoItemInfo(this, "LoopExpander2", "progressbar/picture[6]/tree//text[@text='PFI Loop Card']/following-sibling::button", 30000, null, "da437f69-35c1-4b89-8e39-83d737dc10c5");
@@ -13257,6 +13259,30 @@ namespace TestProject
                 get
                 {
                     return _txt_propertiestextvalue_2ndlineInfo;
+                }
+            }
+
+            /// <summary>
+            /// The cell_PropertiesTextValue_2ndLine item.
+            /// </summary>
+            [RepositoryItem("c3cbbfe3-510c-4319-b174-6cb8fb323641")]
+            public virtual Ranorex.Cell cell_PropertiesTextValue_2ndLine
+            {
+                get
+                {
+                    return _cell_propertiestextvalue_2ndlineInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cell_PropertiesTextValue_2ndLine item info.
+            /// </summary>
+            [RepositoryItemInfo("c3cbbfe3-510c-4319-b174-6cb8fb323641")]
+            public virtual RepoItemInfo cell_PropertiesTextValue_2ndLineInfo
+            {
+                get
+                {
+                    return _cell_propertiestextvalue_2ndlineInfo;
                 }
             }
 

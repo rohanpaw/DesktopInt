@@ -16266,9 +16266,17 @@ AAAAAElFTkSuQmCC
 			id="42550e69-12c1-4a1b-934a-b053d2f80dee"
 			name="txt_PropertiesTextValue_2ndLine"
 			refimgid="11c79cfe-a71c-44c3-b7a8-7a8d33abf34f"
-			refpath="/form[@automationid='me']/progressbar/picture[2]/picture/list/row[@index='3']/cell[@isheader='False']/text"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[2]/picture/list/row[@index='3']/?/?/text
+				/form[@automationid='me']/progressbar/picture/picture/list/row[@index='3']/?/?/text
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="cell"
+			id="c3cbbfe3-510c-4319-b174-6cb8fb323641"
+			name="cell_PropertiesTextValue_2ndLine"
+			refimgid="11c79cfe-a71c-44c3-b7a8-7a8d33abf34f"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture/picture/list/row[@index='3']/cell[@isheader='False']
 			</item>
 			<item
 			addcaps="text,wpfelement"

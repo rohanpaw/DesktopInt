@@ -390,7 +390,7 @@ rxversion="8.3">
 			</testcase>
 			<testmodule
 			id="067cc64a-0ee9-4bab-b7d7-43cdc9683344"
-			name="Verify_Main__Processor_loading_after_adding_12_IOB800_device"
+			name="Verify_Main_Processor_loading_after_adding_1_2_IOB800_device"
 			ref="644334e8-adea-46d0-8f75-8fa2a6fd39d5"
 			type="Recording">
 			</testmodule>
@@ -2378,7 +2378,7 @@ rxversion="8.3">
 			id="259f8d52-f0c3-4774-abcb-474b5e48cdd3"
 			name="Verify_Miscellaneous_Gallery">
 				<description>
-					<![CDATA[<p>NGC-158/TC_0067</p>]]>
+					<![CDATA[<p>NGC-158/TC_67</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -5090,7 +5090,7 @@ loops.</SPAN>]]>
 			id="50b1a41b-403b-4791-bd00-072ad87bae0e"
 			name="Verify_Slot_Cards_Gallery">
 				<description>
-					<![CDATA[<p>NGC-158/TC_0066</p>]]>
+					<![CDATA[<p>NGC-158/TC_66</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -6944,7 +6944,7 @@ loops.</SPAN>]]>
 			</testmodule>
 			<testcase
 			id="6e24e3cd-d477-4529-acc0-fe227050c7f4"
-			name="Verify_Main__Processor_loading_after_adding_1/2_IOB800_device">
+			name="Verify_Main_Processor_loading_after_adding_1/2_IOB800_device">
 				<description>
 					<![CDATA[<p>NGC-606/TC-55851 &amp; 55852</p>]]>
 				</description>
@@ -12180,7 +12180,7 @@ persisted in panel properties&nbsp;]]>
 			id="c902363f-68fc-4135-ae09-f1a7b9746129"
 			name="Verify_Repeaters_Gallery_Items">
 				<description>
-					<![CDATA[NGC-158/TC_0064]]>
+					<![CDATA[NGC-158/TC_64]]>
 				</description>
 				<parameters>
 					<param
@@ -18858,7 +18858,7 @@ persisted in panel properties&nbsp;]]>
 					</testcase>
 					<testcase
 					id="6e24e3cd-d477-4529-acc0-fe227050c7f4"
-					name="Verify_Main__Processor_loading_after_adding_1/2_IOB800_device">
+					name="Verify_Main_Processor_loading_after_adding_1/2_IOB800_device">
 						<testmodule
 						id="5714a87f-0e87-4121-ac6d-a52eaee9920c"
 						name="Application_Open">
@@ -18869,7 +18869,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="067cc64a-0ee9-4bab-b7d7-43cdc9683344"
-						name="Verify_Main__Processor_loading_after_adding_12_IOB800_device">
+						name="Verify_Main_Processor_loading_after_adding_1_2_IOB800_device">
 						</testmodule>
 						<testmodule
 						id="93d6b44c-ebf0-4e0f-9bc2-cb1dd9302d25"
@@ -20256,10 +20256,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="200b6f24-2d41-43ee-baff-a642c2702da4">
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			id="c5b3a580-078e-4de9-885d-e8b076238efd">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

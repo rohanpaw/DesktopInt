@@ -36,14 +36,14 @@ namespace TestProject.Libraries
         //Create instance of repository to access repository items
 		static NGConsysRepository repo = NGConsysRepository.Instance;
         
-        /********************************************************************
+        /**************************************************************************************************************************************
 		 * Function Name: VerifyLinkedDevicesGetAddedInLoop
 		 * Function Details: Add a device and its child till Max Limit and check if linked devices get added in the Loop
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 9/08/2019 
-		 ********************************************************************/
+		 * Last Update : 9/08/2019  Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath and panel type column number
+		 **************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyLinkedDevicesGetAddedInLoop(string sFileName,string sSheetName)
 		{
@@ -64,11 +64,18 @@ namespace TestProject.Libraries
 				ParentLabel = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				ChildDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				ChildDeviceType = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
-				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				
-				//Click Panel Node
-				repo.FormMe.PanelNode1.Click();
+				 //Click on Loop Card node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
+			// Click on Loop Card node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+
+				
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
+					
 				//Add parent Device
 				Devices_Functions.AddDevicesfromPanelNodeGallery(ParentDeviceName,ParentDeviceType,PanelType);
 				
@@ -85,14 +92,10 @@ namespace TestProject.Libraries
 			}
 			//Verify Linked Devices are added in Loop A
 			
-			//Expand Panel Node
-			repo.FormMe.NodeExpander1.Click();
-			
-			//Expand Loop Card
-			repo.FormMe.LoopExpander1.Click();
-			
-			//Click on Loop A
-			repo.FormMe.Loop_A1.Click();
+					
+					// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 			
 			//Click Points Tab
 			

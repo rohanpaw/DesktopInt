@@ -82,17 +82,14 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("54241");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.NodeExpander1_AfterReopen' at Center.", repo.FormMe.NodeExpander1_AfterReopenInfo, new RecordItemIndex(1));
-            repo.FormMe.NodeExpander1_AfterReopen.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.LoopExpander1_Reopen' at Center.", repo.FormMe.LoopExpander1_ReopenInfo, new RecordItemIndex(2));
-            repo.FormMe.LoopExpander1_Reopen.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1_Reopen' at Center.", repo.FormMe.Loop_A1_ReopenInfo, new RecordItemIndex(3));
-            repo.FormMe.Loop_A1_Reopen.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 1");
             Delay.Milliseconds(0);

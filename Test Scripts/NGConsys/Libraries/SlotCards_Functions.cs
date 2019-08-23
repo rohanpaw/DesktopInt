@@ -568,7 +568,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: expectedText
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 15/05/2019
+		 * Last Update : 15/05/2019  Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method,
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyPanelTypeDropdownOnSlotCardsPosition(string sFileName,string sAddDevicesSheet)
@@ -618,7 +618,9 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							// Click on Panel node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -627,7 +629,9 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							repo.ProfileConsys1.NavigationTree.Expander.Click();
+							// Click on Panel node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
@@ -642,79 +646,45 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
-						
-						VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
-						VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
-						
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
-					}
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
 				else
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 should not be displayed");
-					}
-					
+					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3", ExpectedBackplane1);
 				}
 				
 				// Verify expected backplane2
 				if(ExpectedBackplane2.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane2_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane2 is available and displaying correctly");
-						
-						VerifyandClickOtherSlotCardsForBackplane2(sBackplane2SlotCardName);
-						VerifySlotCardsTextForBackplane2(sBackplane2SlotCardName);
-						
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 is not displayed");
-					}
-					
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
 				}
 				else
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 should not be displayed");
-					}
+					Common_Functions.VerifyNavigationTreeItem("Backplane  2/3", ExpectedBackplane2);
+					
 					
 				}
 				
 				// Verify expected backplane3
 				if(ExpectedBackplane3.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane3_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane3 is available and displaying correctly");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
 						
-						VerifyandClickOtherSlotCardsForBackplane3(sBackplane3SlotCardName);
-						VerifySlotCardsTextForBackplane3(sBackplane3SlotCardName);
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 is not displayed");
-					}
 				}
 				else
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 should not be displayed");
-					}
+					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
+					
 				}
 				
 				Devices_Functions.VerifyPanelTypeInDropdown(PanelName,PanelTypeNameList,PanelTypeNameListNotAvailable);
@@ -738,7 +708,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 24/05/2019
+		 * Last Update : 24/05/2019 Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath 
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAddingRemovingOfTLI800SlotCards(string sFileName,string sAddDevicesSheet)
@@ -767,7 +737,12 @@ namespace TestProject.Libraries
 				// Add panels
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				// Click on Expander node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+					
+					// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 				
 				repo.FormMe.tab_PanelAccessories.Click();
 				
@@ -803,7 +778,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 24/05/2019
+		 * Last Update : 24/05/2019 Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyTLI800Properties(string sFileName,string sAddDevicesSheet)
@@ -833,9 +808,9 @@ namespace TestProject.Libraries
 				// Add panels
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
-				// Click on navigation tree expander
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
-				
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
 				
@@ -873,6 +848,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 30/05/2019  17/07/2019 - Alpesh Dhakad - Updated code
+		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyShoppingListOnSelectingFOMandMPM(string sFileName,string sAddDevicesSheet)
@@ -921,8 +897,10 @@ namespace TestProject.Libraries
 				// Add panels
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
-				// Click on navigation tree expander
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
+				
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 				
 				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
@@ -937,7 +915,8 @@ namespace TestProject.Libraries
 				Devices_Functions.CheckUncheckMPMCheckboxInSearchProperties(changeCheckboxStateTo);
 				
 				// Click on Site node
-				repo.ProfileConsys1.SiteNode.Click();
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				
 				// Click on Shopping list tab
 				repo.FormMe.ShoppingList.Click();
@@ -999,18 +978,18 @@ namespace TestProject.Libraries
 				// Click on button to close print preview window
 				repo.PrintPreview.btn_CloseB.Click();
 				
-				// Click on navigation tree expander
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
-				
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
 				
 				// Verify and perform check or uncheck MPM checkbox in search properties
 				Devices_Functions.CheckUncheckMPMCheckboxInSearchProperties(changeCheckboxStateToAgain);
 				
-				// Click on site node
-				repo.ProfileConsys1.SiteNode.Click();
-				
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				// Click on shopping list tab
 				repo.FormMe.ShoppingList.Click();
 				
@@ -1071,8 +1050,8 @@ namespace TestProject.Libraries
 				repo.PrintPreview.btn_CloseB.Click();
 				
 				// Click on Site node
-				repo.ProfileConsys1.SiteNode.Click();
-				
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				// Verify if row count is more than 8 then delete the panel
 				if(rows!=8)
 				{
@@ -1094,6 +1073,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 27/05/2019  17/07/2019 - Alpesh Dhakad - Updated code
+		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath 
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyShoppingListOnAddingTLI800AndTLI800EN(string sFileName,string sAddDevicesSheet)
@@ -1136,9 +1116,9 @@ namespace TestProject.Libraries
 				// Add panels
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
-				// Click on navigation tree expander
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
-				
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
 				
@@ -1151,9 +1131,9 @@ namespace TestProject.Libraries
 				// Verify Enable or disable of devices in panel accessories gallery
 				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,initialState);
 				
-				// Click on site node
-				repo.ProfileConsys1.SiteNode.Click();
-				
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				// Click on shopping list tab
 				repo.FormMe.ShoppingList.Click();
 				
@@ -1163,15 +1143,15 @@ namespace TestProject.Libraries
 				// Click on panel accessories tab
 				repo.FormMe.tab_Panel_Network.Click();
 				
-				// Click on site node
-				repo.ProfileConsys1.SiteNode.Click();
-				
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				// Add one panel after adding 1 one panel
 				Panel_Functions.AddOnePanel(2,secondPanelName,sSecondCPUType);
 				
-				// Click on navigation tree expander
-				repo.ProfileConsys1.NavigationTree.Expander.Click();
-				
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
 				
@@ -1190,9 +1170,9 @@ namespace TestProject.Libraries
 				// Verify Enable or disable of devices in panel accessories gallery
 				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,secondDeviceState);
 				
-				// Click on site node
-				repo.ProfileConsys1.SiteNode.Click();
-				
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				// Click on shopping list tab
 				repo.FormMe.ShoppingList.Click();
 				
@@ -1244,8 +1224,8 @@ namespace TestProject.Libraries
 				repo.PrintPreview.btn_CloseB.Click();
 				
 				// Click on Site node
-				repo.ProfileConsys1.SiteNode.Click();
-				
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				// Verify if row count is more than 8 then delete the panel
 				if(rows!=8)
 				{

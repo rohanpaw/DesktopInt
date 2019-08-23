@@ -611,23 +611,27 @@ namespace TestProject.Libraries
 		
 		
 		
-		/********************************************************************
+		/****************************************************************************************************************
 		 * Function Name: ChangeCableLength
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 30/07/2019 & 23/08/2019 - Updated test scripts as per new build and xpaths
+		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void ChangeCableLength(String sLoopType,int fCableLength1,int fCableLength2)
 		{
 			float fMaxACUnits;
 			repo.ProfileConsys1.tab_Points.Click();
 			
-			repo.FormMe.PanelNode1.Click();
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
-			repo.FormMe.Loop_A1.Click();
+			// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				 
+			
 			
 			repo.FormMe.cell_CableLength1.Click();
 			
@@ -636,11 +640,15 @@ namespace TestProject.Libraries
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fCableLength1 + "{Enter}");
 				//repo.ProfileConsys1.tab_Points.Click();
 				
-				repo.FormMe.PanelNode1.Click();
+				// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeItem("Node");
+			
 				
 				Delay.Duration(1000, false);
 				
-				repo.FormMe.Loop_B1.Click();
+				// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+			
 				
 				Delay.Duration(1000, false);
 				
@@ -2099,6 +2107,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpath
 		 * Alpesh Dhakad - 07/08/2019 - Updated scripts for cable length
+		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath 
 		 *****************************************************************************************/
 		// Change cable length method
 		[UserCodeMethod]
@@ -2107,12 +2116,12 @@ namespace TestProject.Libraries
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
 			
-			//Click on Panel Node
-			repo.FormMe.PanelNode1.Click();
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
-			//Click on Loop A in Navigation tree tab
-			repo.FormMe.Loop_A1.Click();
-			
+			// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
@@ -2124,6 +2133,7 @@ namespace TestProject.Libraries
 
 			//Change the value of cable length
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableLength + "{Enter}");
+			Report.Log(ReportLevel.Info,"Cable Length changed to " +fchangeCableLength+ " successfully");
 	
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -2131,8 +2141,8 @@ namespace TestProject.Libraries
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 			
-			//Click on Panel Node
-			repo.FormMe.PanelNode1.Click();
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
 			Delay.Duration(1000, false);
 		}
@@ -2145,6 +2155,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated script as per new build and xpath
 		 * Alpesh Dhakad - 08/08/2019 - Updated code for cable resistance
+		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath 
 		 ***************************************************************************************************/
 		// Change cable resistance method
 		[UserCodeMethod]
@@ -2153,12 +2164,12 @@ namespace TestProject.Libraries
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
 			
-			//Click on Panel Node
-			repo.FormMe.PanelNode1.Click();
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
-			//Click on Loop A in Navigation tree tab
-			repo.FormMe.Loop_A1.Click();
-			
+			// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
@@ -2177,8 +2188,8 @@ namespace TestProject.Libraries
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 			
-			//Click on Panel Node
-			repo.FormMe.PanelNode1.Click();
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
 			Delay.Duration(1000, false);
 		}
@@ -4479,6 +4490,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 24/04/2019 Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 06/08/2019 Updated cable length code
+		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath 
 		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCableLength(string sCableLength)
@@ -4486,12 +4498,12 @@ namespace TestProject.Libraries
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
 			
-			//Click on Panel Node
-			repo.FormMe.PanelNode1.Click();
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
-			//Click on Loop A in Navigation tree tab
-			repo.FormMe.Loop_A1.Click();
-			
+			// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 			//Click on cable length cell
 			//repo.FormMe.cell_CableLength1.Click();
 			//repo.ProfileConsys1.cell_CableLength.Click();
@@ -4505,9 +4517,6 @@ namespace TestProject.Libraries
 			//Click on cable length cell
 			repo.FormMe.cell_CableLength.Click();
 
-			
-			
-			
 			string actualCableLength = repo.FormMe.txt_CableLength.TextValue;
 			//string actualCableLength = repo.ProfileConsys1.txt_CableLength.TextValue;
 			
@@ -5349,31 +5358,40 @@ namespace TestProject.Libraries
 		}
 
 		
-		/********************************************************************
+		/******************************************************************************************************************************************
 		 * Function Name: VerifyPanelType
 		 * Function Details: To Verify panel type
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 15/05/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 * Last Update : 15/05/2019  Alpesh Dhakad - 01/08/2019 & 23/08/2019 - Updated test scripts as per new build and xpaths
+		 ******************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyPanelTypeInDropdown(string PanelName, string PanelTypeNameList,string PanelTypeNameListNotAvailable)
 		{
-			//Click on Panel Node
-			repo.FormMe.PanelNode1.Click();
 			
-			repo.FormMe.SiteNode1.Click();
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
-			repo.FormMe.PanelNode1.Click();
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
 			
-			repo.FormMe.SiteNode1.Click();
 			
-			repo.FormMe.PanelNode1.Click();
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
+			
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
+			
 			
 			repo.FormMe.tab_PanelAccessories.Click();
 			
-			repo.FormMe.PanelNode1.Click();
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
+			
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -6963,7 +6981,7 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Product" +"{ENTER}" );
 			
 			// Click on label cell
-			repo.FormMe.txt_PropertiesTextValue_2ndLine.Click();
+			repo.FormMe.cell_PropertiesTextValue_2ndLine.Click();
 			
 			// Retrieve value of label
 			string actualSKUValue = repo.FormMe.txt_PropertiesTextValue_2ndLine.TextValue;

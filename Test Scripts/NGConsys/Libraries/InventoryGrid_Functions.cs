@@ -211,7 +211,8 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 05/04/2019  Updated on 02/07/2019 by Alpesh Dhakad : Updated log reports as readable format
-		 				Updated on 9/7/2019 by Purvi Bhasin : to verify Properties in Points grid
+		 * Updated on 9/7/2019 by Purvi Bhasin : to verify Properties in Points grid
+		 * Alpesh Dhakad - 23/08/2019 - Updated with new script to click on inventory tab			
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyInventoryGridProperties(string ExpectedInventoryGridRowCount, string ExpectedInventoryGridColumn, string ExpectedDeviceProperty)
@@ -242,6 +243,8 @@ namespace TestProject.Libraries
 			
 			else
 			{
+				repo.FormMe.tab_Inventory.Click();
+				
 				repo.FormMe.txt_InventoryGridDeviceProperty.Click();
 				string ActualInventoryGridProperty = repo.FormMe.txt_InventoryGridDeviceProperty.TextValue;
 				
@@ -326,13 +329,13 @@ namespace TestProject.Libraries
 			sColumnIndex = getColumnNumberForInventoryGrid(ExpectedInventoryGridColumn);
 			sRowIndex = ExpectedInventoryGridRowCount;
 			
-			Report.Log(ReportLevel.Success,"Row an column values are set as" +sColumnIndex  +sRowIndex);
+			Report.Log(ReportLevel.Success,"Column and row values are set as " +sColumnIndex+  " and " +sRowIndex+ " respectively");
 			
 			//Modifying the label
 			repo.FormMe.txt_InventoryGridDeviceProperty.Click();
 			repo.FormMe.txt_InventoryGridDeviceProperty.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 			repo.FormMe.txt_InventoryGridDeviceProperty.PressKeys(sNewLabel +"{ENTER}" );
-			Report.Log(ReportLevel.Success,"Label is editied to " +sNewLabel);
+			Report.Log(ReportLevel.Success,"Label is edited to " +sNewLabel);
 			
 		}
 		
@@ -342,7 +345,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 05/04/2019 Alpesh Dhakad - 06/08/2019 - Updated code with cell_InventoryProperty and added/updated xpath for txt_InventoryProperty
+		 * Last Update : 05/04/2019 Alpesh Dhakad - 06/08/2019 & 22/08/2019 - Updated code with cell_InventoryProperty and added/updated xpath for txt_InventoryProperty
 		 ******************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyInventoryDeviceProperty(string sPropertyLabel, string sExpectedValue)
@@ -355,11 +358,11 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sPropertyLabel +"{ENTER}" );
 			
 			// Click on Label property cell
-			repo.FormMe.cell_InventoryProperty.Click();
+			repo.FormMe.cell_CableLength.Click();
 			
 			// Get the text value of property
 			//repo.FormMe.txt_InventoryProperty.Click();
-			string actualValue = repo.FormMe.txt_InventoryProperty.TextValue;
+			string actualValue = repo.FormMe.txt_CableLength.TextValue;
 			
 			Report.Log(ReportLevel.Success,"Actual: "+actualValue+" Expected"+sExpectedValue);
 			//Comparing expected and actual Device Sensitivity value

@@ -2576,8 +2576,8 @@ namespace TestProject.Libraries
 					{
 						
 						// Click on Panel node
-						repo.FormMe.PanelNode1.Click();
-						
+					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+					
 						//Fetch XLM card details
 						ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[j,9]).Value.ToString();
 						sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
@@ -2698,14 +2698,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/*****************************************************************************************************************
+		/*****************************************************************************************************************************
 		 * Function Name:verifyMaxBatteryStandbyAndAlarmLoad
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:Purvi Bhasin
-		 * Last Update :4/2/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
-		 *****************************************************************************************************************/
+		 * Last Update :4/2/2019  Alpesh Dhakad - 30/07/2019 & 23/08/2019 - Updated test scripts as per new build and xpaths
+		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMaxBatteryStandbyAndAlarmLoad(string sFileName,string sAddPanelSheet)
 		{
@@ -2737,13 +2737,14 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
-				
-				// Click on Loop Card node
-				repo.FormMe.LoopExpander1.Click();
-				
-				// Click on Loop A node
-				repo.FormMe.Loop_A1.Click();
+					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+					
+					// Click on Loop Card node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+					
+					// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				
 				// Verify max Battery Standby load value
 				verifyMaxBatteryStandby(expectedMaxBatteryStandby,false);
@@ -2751,9 +2752,9 @@ namespace TestProject.Libraries
 				// Verify max Alarm load value
 				verifyMaxAlarmLoad(expectedMaxAlarmLoad,false);
 				
-				//Click on Site node
-				repo.FormMe.SiteNode1.Click();
-				
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
 				
@@ -3187,7 +3188,6 @@ namespace TestProject.Libraries
 				
 				// Add panels using test data in excel sheet
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
-				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				
 				// Click on Expander node
@@ -3212,9 +3212,9 @@ namespace TestProject.Libraries
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
-			// Click on Main processor node
-			Common_Functions.ClickOnNavigationTreeItem("Main");
-				
+			// Click on Main processor expander node
+				Common_Functions.ClickOnNavigationTreeExpander("Main");
+					
 			// Click on Ethernet node
 			Common_Functions.ClickOnNavigationTreeItem("Ethernet");
 			
@@ -3362,8 +3362,10 @@ namespace TestProject.Libraries
 				// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
-			// Click on Main processor node
-			Common_Functions.ClickOnNavigationTreeItem("Main");
+			
+			// Click on Main processor expander node
+				Common_Functions.ClickOnNavigationTreeExpander("Main");
+			
 				
 			// Click on RBus node
 			Common_Functions.ClickOnNavigationTreeItem("R-BUS");
@@ -4164,13 +4166,13 @@ namespace TestProject.Libraries
 			
 		}
 
-		/*****************************************************************************************************************
+		/*************************************************************************************************************************
 		 * Function Name: verifyMaxSystemLoadValue
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 4/2/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 *****************************************************************************************************************/
+		 * Last Update : 4/2/2019  Alpesh Dhakad - 01/08/2019 & 23/08/2019 - Updated test scripts as per new build and xpaths
+		 *************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMaxSystemLoadValue(string sFileName,string sAddPanelSheet)
 		{
@@ -4203,24 +4205,21 @@ namespace TestProject.Libraries
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
-				
-				
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
-				
-				// Click on Loop Card node
-				repo.FormMe.LoopExpander1.Click();
-				
-				// Click on Loop A node
-				repo.FormMe.Loop_A1.Click();
-				
+					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+					
+					// Click on Loop Card node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+					
+					// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				// Verify max System Load load value
 				verifyMaxSystemLoad(expectedMaxSystemLoad);
 				
-				
-				//Click on Site node
-				repo.FormMe.SiteNode1.Click();
-				
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
 				
@@ -4265,7 +4264,8 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 22/01/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths 
-		                 Purvi Bhasin - 07/08/2019 - Commented Node Expander so that Loop A remains visible
+		 *  Purvi Bhasin - 07/08/2019 - Commented Node Expander so that Loop A remains visible
+		 * Alpesh Dhakad - 23/08/2019 - Updated test scripts as per new build and xpaths 
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyImpactOfSecondPSUOnBatteryAndAlarm(string sFileName,string sAddPanelSheet)
@@ -4303,13 +4303,14 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
-				
-				// Click on Loop Card node
-				repo.FormMe.LoopExpander1.Click();
-				
-				// Click on Loop A node
-				repo.FormMe.Loop_A1.Click();
+					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+					
+					// Click on Loop Card node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+					
+					// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				
 				//Verify max Battery Standby and max Alarm Load
 				verifyMaxBatteryStandby(expectedMaxBatteryStandby,false);
@@ -4333,22 +4334,18 @@ namespace TestProject.Libraries
 					//Click on points tab
 					repo.ProfileConsys1.tab_Points.Click();
 					
-					//Click on site Node
-					repo.FormMe.SiteNode1.Click();
-					
-					//Click on Panel Node
-					repo.FormMe.PanelNode1.Click();
+				
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 					
 					Panel_Functions.ChangeSecondPSUType(SecondPSU);
 					
-					// Click on Expander node
-					//repo.FormMe.NodeExpander1.Click();
-					
-					// Click on Loop Card node
-					//repo.FormMe.LoopExpander1.Click();
-					
 					// Click on Loop A node
-					repo.FormMe.Loop_A1.Click();
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 					
 					//Verify max Battery Standby and max Alarm Load
 					verifyMaxBatteryStandby(expectedMaxBatteryStandby,true);
@@ -4360,9 +4357,9 @@ namespace TestProject.Libraries
 					// Verify Alarm load value
 					verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
 					
-					// Click on Expander node
-					repo.FormMe.PanelNode1.Click();
-					
+					// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 					
 					
 					
@@ -4377,17 +4374,12 @@ namespace TestProject.Libraries
 						sExpectedAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[k,23]).Value.ToString();
 						
 						
-						// Click on Expander node
-						//repo.FormMe.NodeExpander1.Click();
-						
 						// Add devices from Panel node gallery
 						Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 						
-						// Click on Loop Card node
-						//repo.FormMe.LoopExpander1.Click();
-						
 						// Click on Loop A node
-						repo.FormMe.Loop_A1.Click();
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 						
 						// Verify Battery Standby load value
 						verifyBatteryStandby(sExpectedBatteryStandby,true,PanelType);
@@ -4395,10 +4387,15 @@ namespace TestProject.Libraries
 						// Verify Alarm load value
 						verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
 						
-						repo.FormMe.SiteNode1.Click();
+						// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 						
 						//Change Powered From
-						repo.FormMe.PanelNode1.Click();
+						
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 						Panel_Functions.DevicePoweredFrom(PoweredBy);
 						
@@ -4407,8 +4404,8 @@ namespace TestProject.Libraries
 						
 						
 						// Click on Loop A node
-						repo.FormMe.Loop_A1.Click();
-						
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 						// Verify Battery Standby load value
 						verifyBatteryStandby(sExpectedBatteryStandby,true,PanelType);
 						
@@ -4417,8 +4414,8 @@ namespace TestProject.Libraries
 						
 						
 						// Click on Panel node
-						repo.FormMe.PanelNode1.Click();
-						
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 						
 						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
@@ -4428,9 +4425,8 @@ namespace TestProject.Libraries
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
 							// Click on Loop A node
-							repo.FormMe.Loop_A1.Click();
-							
-							
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 						}
 						
 						else
@@ -5066,14 +5062,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/*****************************************************************************************************************
+		/*******************************************************************************************************************************
 		 * Function Name:VerifyNormalLoadandAlarmLoadPropertyOnChangingPowerSource
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:Purvi Bhasin
-		 * Last Update :4/2/2019   Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 *****************************************************************************************************************/
+		 * Last Update :4/2/2019   Alpesh Dhakad - 01/08/2019 & 23/08/2019- Updated test scripts as per new build and xpaths
+		 *******************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyNormalLoadandAlarmLoadPropertyOnChangingPowerSource(string sFileName,string sAddPanelSheet)
 		{
@@ -5109,14 +5105,15 @@ namespace TestProject.Libraries
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 
-				// Click on Panel node
-				repo.FormMe.NodeExpander1.Click();
-				
-				// Click on Expander loop card node
-				repo.FormMe.LoopExpander1.Click();
-				
-				// Click on Loop A node
-				repo.FormMe.Loop_A1.Click();
+				// Click on Expander node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+					
+					// Click on Loop Card node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+					
+					// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				
 				// Verify Default Battery Standby load value
 				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
@@ -5124,35 +5121,29 @@ namespace TestProject.Libraries
 				// Verify Default Alarm load value
 				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
 				
-				//Click on Site Node
-				repo.FormMe.SiteNode1.Click();
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				
-				// Click on Expander node
-				repo.FormMe.PanelNode1.Click();
-				
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 				//Click on Main Processor
-				repo.FormMe.MainProcessor1.Click();
-				
+				Common_Functions.ClickOnNavigationTreeItem("Main");
+			
 				//Add Device from gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber, sType,PanelType);
 				
-				// Click on Expander node
-				repo.FormMe.PanelNode1.Click();
-				
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 				//Click on Device
 				Devices_Functions.SelectRowUsingLabelName(sLabel);
 				
 				Devices_Functions.VerifyPowerSupply(sPowerSupply);
 				
-				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
-				
-				
-				// Click on Loop Card node
-				repo.FormMe.LoopExpander1.Click();
-				
 				// Click on Loop A node
-				repo.FormMe.Loop_A1.Click();
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Default Battery Standby load value
 				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
@@ -5168,26 +5159,22 @@ namespace TestProject.Libraries
 					expectedBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,14]).Value.ToString();
 					expectedAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,15]).Value.ToString();
 					
-					//Click on Site Node
-					repo.FormMe.SiteNode1.Click();
-					
-					// Click on Expander node
-					repo.FormMe.PanelNode1.Click();
-					
+					// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
+				
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 					//Click on Device
 					Devices_Functions.SelectRowUsingLabelName(sLabel);
 					
 					//Change Power Supply
 					Devices_Functions.ChangePowerSupply(sChangePowerSupply);
 					
-					// Click on Panel node
-					repo.FormMe.NodeExpander1.Click();
-					
-					// Click on Expander loop card node
-					repo.FormMe.LoopExpander1.Click();
-					
 					// Click on Loop A node
-					repo.FormMe.Loop_A1.Click();
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 					
 					// Verify Default Battery Standby load value
 					verifyBatteryStandby(expectedBatteryStandby,false,PanelType);
@@ -5342,13 +5329,13 @@ namespace TestProject.Libraries
 			}
 		}
 		
-		/*****************************************************************************************************************
+		/********************************************************************************************************************************************
 		 * Function Name: verifySystemLoadValueOnChangingPSU
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 4/2/2019
-		 *****************************************************************************************************************/
+		 * Last Update : 4/2/2019 Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath and devices gallery
+		 ********************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifySystemLoadValueOnChangingPSU(string sFileName,string sAddPanelSheet)
 		{
@@ -5378,51 +5365,45 @@ namespace TestProject.Libraries
 				
 				// Add panels using test data in excel sheet
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
-				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
-				// Click on Panel node
-				repo.FormMe.NodeExpander1.Click();
-				
-				// Click on Expander loop card node
-				repo.FormMe.LoopExpander1.Click();
-				
-				// Click on Loop A node
-				repo.FormMe.Loop_A1.Click();
-				
+				// Click on Expander node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+					
+					// Click on Loop Card node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+					
+					// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				//Click on Physical Layout Tab
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				
 				// Verify max System Load load value
 				verifySystemLoadValue(DefaultSystemLoad);
 				
-				//Click on Site node due to refreshment
-				repo.FormMe.SiteNode1.Click();
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				
-				// Click on Expander node
-				repo.FormMe.PanelNode1.Click();
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+			
 				
 				//Change PSU
 				Panel_Functions.ChangePSUType(PSUType);
 				
-				// Click on Panel node
-				/*repo.FormMe.NodeExpander1.Click();
-				
-				// Click on Expander loop card node
-				repo.FormMe.LoopExpander1.Click();*/
-				
 				// Click on Loop A node
-				repo.FormMe.Loop_A1.Click();
-				
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				//Click on Physical Layout Tab
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				
 				// Verify max System Load load value
 				verifySystemLoadValue(expectedSystemLoad);
 				
-				
-				//Click on Site node
-				repo.FormMe.SiteNode1.Click();
-				
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
 				
