@@ -109,5 +109,108 @@ namespace TestProject.Libraries
 			}
 				
 		}
+		
+		/********************************************************************
+		 * Function Name: VerifyCheckboxOfProperties
+		 * Function Details: Add a device and its child till Max Limit and check if linked devices get added in the Loop
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 22/08/2019 
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyCheckboxOfProperties(string sFileName,string sSheetName)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sSheetName);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string DeviceName,sType,LabelName,CheckboxName,sDefaultStatus,SKUNo,sStatus,sSecondChannelCheckbox;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=8; i++)
+			{
+				DeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				LabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				CheckboxName = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sDefaultStatus = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				SKUNo = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sStatus = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sSecondChannelCheckbox = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				
+				bool DefaultStatus = Convert.ToBoolean(sDefaultStatus);
+				bool Status = Convert.ToBoolean(sStatus);
+				bool SecondChannelCheckbox = Convert.ToBoolean(sSecondChannelCheckbox);
+				
+				//Expand Panel Node
+				Common_Functions.ClickOnNavigationTreeExpander("Node");
+				
+				//Expand FIM/PFI Loop card
+				Common_Functions.ClickOnNavigationTreeExpander("PFI");
+				
+				//Click on Loop A
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				//Add Devices
+				Devices_Functions.AddDevicesfromGallery(DeviceName,sType);
+				
+				//Click on Points Tab
+				repo.ProfileConsys1.tab_Points.Click();
+				
+				//Click on device in grid
+				Devices_Functions.SelectRowUsingLabelName(LabelName);
+				
+				//Verify checkbox
+				Devices_Functions.verifyCheckboxInSearchProperties(CheckboxName,DefaultStatus);
+				
+				//Click on checkbox
+				Devices_Functions.ClickCheckboxInSearchProperties(CheckboxName);
+				
+				//Click on Points Tab
+				repo.ProfileConsys1.tab_Points.Click();
+				
+				//Click on device in grid
+				Devices_Functions.SelectRowUsingLabelName(LabelName);
+				
+				//Click on copy
+				repo.FormMe.btn_Copy1.Click();
+				
+				//Click on Loop A
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+				
+				//Click on Points Tab
+				repo.ProfileConsys1.tab_Points.Click();
+				
+				//Click on Paste
+				repo.FormMe.Paste.Click();
+				
+				string NewLabelName = DeviceName+" - 126";
+				
+				//Verify device is pasted
+				Devices_Functions.VerifyDeviceUsingLabelName(NewLabelName);
+				
+				//Verify checkbox
+				Devices_Functions.verifyCheckboxInSearchProperties(CheckboxName,Status);
+				
+				
+				string SecondChannelLabelName = DeviceName+" - 127";
+				
+				//Slect 2nd channel 
+				Devices_Functions.SelectRowUsingLabelName(SecondChannelLabelName);
+				
+				Devices_Functions.VerifyCheckboxExists(CheckboxName,SecondChannelCheckbox);
+				
+				//Click on Site Node and Shopping List
+				repo.FormMe.SiteNode1.Click();
+				repo.FormMe.ShoppingList.Click();
+				
+				//Verify in shopping list
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SKUNo,true);
+			}
     }
+}
 }

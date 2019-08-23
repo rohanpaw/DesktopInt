@@ -197,7 +197,7 @@ namespace TestProject.Libraries
 		
 		/********************************************************************
 		 * Function Name: AddDevices
-		 * Function Details: 
+		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
@@ -853,7 +853,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : Alpesh Dhakad - 29/07/2019 - Updated script as per new build xpaths
-		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery
 		 *******************************************************************************************************************/
 		[UserCodeMethod]
 		public static void changeAndVerifyNumberOfAlarmLED(int LEDNumber, string rangeState, int expectedResult)
@@ -868,7 +868,7 @@ namespace TestProject.Libraries
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
-		
+			
 			
 			Delay.Duration(500);
 			// repo.ProfileConsys1.NavigationTree.Node1Pro32xD.Click();
@@ -1862,7 +1862,7 @@ namespace TestProject.Libraries
 		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddMultipleDevices(string sFileName, string sSheetName)
-		{	
+		{
 			Excel_Utilities.OpenExcelFile(sFileName,sSheetName);
 			//Excel_Utilities.OpenSheet(sSheetName);
 			int rows = Excel_Utilities.ExcelRange.Rows.Count;
@@ -1880,6 +1880,7 @@ namespace TestProject.Libraries
 			repo.AddDevices.txt_ModelNumberForMultiPointWizard.Click();
 			repo.AddDevices.txt_Quantity.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+DeviceQty.ToString());
+			
 			
 			repo.AddDevices.btn_AddDevices.Click();
 			Report.Log(ReportLevel.Success,+DeviceQty+" \""+sDeviceName+ "\" Device Added successfully");
@@ -2133,6 +2134,7 @@ namespace TestProject.Libraries
 
 			//Change the value of cable length
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableLength + "{Enter}");
+			
 			Report.Log(ReportLevel.Info,"Cable Length changed to " +fchangeCableLength+ " successfully");
 	
 			// Click on SearchProperties text field
@@ -2181,7 +2183,7 @@ namespace TestProject.Libraries
 
 			//Change the value of cable resistance
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableResistance + "{Enter}");
-	
+			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
@@ -2200,7 +2202,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Devendra Kulkarni
-		 * Last Update :
+		 * Last Update : Purvi Bhasin - 22/08/2019 AddDevicesFromGalleryUsingIndex instead of AddDevicesFromGallery
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void AddDevicesForBVT(string sFileName, string singleDevice, string multipleDevices)
@@ -2223,7 +2225,7 @@ namespace TestProject.Libraries
 					sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
 					
 					// Add devices from the gallery as per test data from the excel sheet
-					AddDevicesfromGallery(modelNumber, sType);
+					AddDevicesFromGalleryUsingIndex(modelNumber, sType);
 				}
 				
 				// Close the currently opened excel sheet
@@ -2553,7 +2555,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 04/01/2019, 18/01/2019 - Alpesh Dhakad - Updated Report log
-		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery
 		 ********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddDevicefromPanelAccessoriesGallery(string sDeviceName,string sType)
@@ -5025,7 +5027,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/05/2019 Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 * Last Update : 06/05/2019 Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery
 		 ********************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyPanelNodePanelAccessoriesGallery(string sDeviceName,string sType,string state)
@@ -5088,7 +5090,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: devicename , device type and panel type
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 10/05/2019  Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 * Last Update : 10/05/2019  Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery
 		 **************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddDevicesfromPanelNodeGallery(string sDeviceName,string sType, string PanelType)
@@ -5988,10 +5990,10 @@ namespace TestProject.Libraries
 			repo.AddDevices.txt_SearchDevices.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+sDeviceName);
 			ModelNumber = sDeviceName;
+repo.AddDevices.txt_ModelNumber.Click();
 			repo.AddDevices.txt_ModelNumber1.Click();
 			
-			//repo.AddDevices.txt_ModelNumber.Click();
-			repo.AddDevices.txt_Quantity.Click();
+			//repo.AddDevices.txt_ModelNumber.Click();			repo.AddDevices.txt_Quantity.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+DeviceQty.ToString());
 			repo.AddDevices.MPWRegionBox.Click();
 			repo.AddDevices.MultiPointWizardRegionDropDownBtn.Click();
@@ -6205,7 +6207,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 19/06/2019 Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 * Last Update : 19/06/2019 Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery
 		 ******************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyNodeGalleryForPFI(string sDeviceName,string sType,string state)
@@ -6379,7 +6381,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 24/06/2019 Alpesh Dhakad - 29/07/2019 - Updated script as per new build xpaths
-		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery
 		 *************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDeviceOrderForGalleryExpansion(string sFileName,string sAddDevicesSheet)
@@ -6782,7 +6784,7 @@ namespace TestProject.Libraries
 			repo.ContextMenu.btn_CustomDevice_ContextMenu.Click();
 			//Click Points tab
 			repo.ProfileConsys1.tab_Points.Click();
-			sLabelName = sExpectedLabelName;			
+			sLabelName = sExpectedLabelName;
 			if(sExist)
 			{
 
@@ -6836,7 +6838,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: devicename , device type and panel type
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 
+		 * Last Update :
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void AddDevicesfromEthernetGallery(string sDeviceName,string sType, string PanelType)
@@ -6917,8 +6919,8 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyDevicePresentInShoppingList(bool sExist, string sDeviceName )
 		{
-            string ActualDeviceName;
-			int ActualShoppingListDeviceCount = repo.FormMe.ShoppingListContainer.Children.Count();	
+			string ActualDeviceName;
+			int ActualShoppingListDeviceCount = repo.FormMe.ShoppingListContainer.Children.Count();
 			Report.Log(ReportLevel.Info,"No of Rows in shopping list are " +ActualShoppingListDeviceCount);
 			
 			if(sExist)
@@ -6933,13 +6935,13 @@ namespace TestProject.Libraries
 					{
 						Report.Log(ReportLevel.Success,"Device is successfully displayed in shopping list as " +sDeviceName);
 					}
-					else 
+					else
 					{
 						Report.Log(ReportLevel.Failure,"Device is not displayed in shopping list as " +sDeviceName);
 					}
 				}
 			}
-			else 
+			else
 			{
 				for(int i=1;i<=ActualShoppingListDeviceCount;i++)
 				{
@@ -6951,13 +6953,13 @@ namespace TestProject.Libraries
 					{
 						Report.Log(ReportLevel.Failure,"Device is displayed in shopping list as " +sDeviceName);
 					}
-					else 
+					else
 					{
 						Report.Log(ReportLevel.Success,"Device is not displayed in shopping list as " +sDeviceName);
 					}
 				}
 			}
-				
+			
 			
 			
 		}
@@ -7004,9 +7006,285 @@ namespace TestProject.Libraries
 		}
 		
 		
-	}
+		/****************************************************************************************************************************
+		 * Function Name: VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard
+		 * Function Details: To add multiple devices using multiple point wizard till max limit
+		 * Parameter/Arguments: Device name and its quantity
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 19/08/2019
+		 ****************************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard(string sDeviceName,int DeviceQty,int MaxLimit)
+		{
+			repo.FormMe.btn_MultiplePointWizard.Click();
+			//repo.ProfileConsys1.btn_MultiplePointWizard_DoNotUse.Click();
+			repo.AddDevices.txt_AllDevices.Click();
+			
+			repo.AddDevices.txt_SearchDevices.Click();
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+sDeviceName);
+			ModelNumber = sDeviceName;
+			repo.AddDevices.txt_ModelNumber1.Click();
+//			repo.AddDevices.txt_ModelNumber.Click();
+			repo.AddDevices.txt_Quantity.Click();
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+DeviceQty.ToString());
+			
+			if(DeviceQty > MaxLimit)
+			{
+				if(repo.AddDevices.Error_Symbol_MultiplePointWizardInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success,"Error Symbol appears as expected");
+					repo.AddDevices.Cancel_Multiple_Point_Wizard.Click();
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Error Symbol doesn't appear");
+					repo.AddDevices.Cancel_Multiple_Point_Wizard.Click();
+				}
+			}
+			else
+			{
+				repo.AddDevices.btn_AddDevices.Click();
+				Report.Log(ReportLevel.Success,+DeviceQty+" \""+sDeviceName+ "\" Device Added successfully");
+			}
+			
+			Delay.Milliseconds(200);
+
+		}
 		
+		/***********************************************************************************************************
+		 * Function Name: verifyExcelCellValue
+		 * Function Details: To verify shopping list values via clicking on the cell of the Excell
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 20/08/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyExcelCellValue(string RowIndex,string Address,string sExpectedText)
+		{
+			Delay.Milliseconds(200);
+			sRowIndex = RowIndex;
+			sColumn = Address;
+			//sColumn is the actual address of the excel eg- H8,A1 etc.
+			//repo.ShoppingListCompatibilityModeE.AddressBox_Excel.Click();
+			//Keyboard.Press(sCellAddress+"{ENTER}");
+			repo.ShoppingListCompatibilityModeE.cell_ExcelCellAddress.DoubleClick();
+			string actualText = repo.ShoppingListCompatibilityModeE.cell_ExcelCellAddress.Text;
+			Report.Log(ReportLevel.Info,"Actual text is displayed as "+actualText);
+			if(actualText.Equals(sExpectedText))
+			{
+				Report.Log(ReportLevel.Success, "The value " +actualText+ " is displayed successfully");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"The value " +sExpectedText+ " is not displayed correctly instead " +actualText+  "is displayed " );
+			}
+		}
+		
+		/****************************************************************************************************
+		 * Function Name: AddDevicesFromGalleryUsingIndex
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 22/08/2019
+		 ****************************************************************************************************/
+		[UserCodeMethod]
+		public static void AddDevicesFromGalleryUsingIndex(string sDeviceName,string sType)
+		{
+			ModelNumber=sDeviceName;
+
+			sGalleryIndex = SelectGalleryType(sType);
+			
+			//repo.FormMe.btn_AllGalleryDropdown.Click();
+			//repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
+			repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+			
+			repo.FormMe.btn_DevicesGalleryDropDown1.EnsureVisible();
+			
+			repo.ContextMenu.txt_SelectDevice.Click();
+			
+			
+//			sGalleryIndex = SelectGalleryType(sType);
+//			ModelNumber=sDeviceName;
+//			repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
+//			repo.ContextMenu.txt_SelectDevice.Click();
+			Report.Log(ReportLevel.Success, "Device "+sDeviceName+" Added Successfully");
+		}
+		
+		/********************************************************************
+		 * Function Name:ClickCheckboxInSearchProperties
+		 * Function Details:
+		 * Parameter/Arguments: boolean value
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 22/08/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void ClickCheckboxInSearchProperties(string sCheckboxName)
+		{
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Day Matches night text in Search Properties fields to view day matches night related text;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sCheckboxName +"{ENTER}" );
+
+			// Click on cell
+			repo.ProfileConsys1.PARTItemsPresenter.cell_DayMatchesNight.Click();
+			//repo.FormMe.Chkbox_In_SearchProperties.Click();
+		}
+		
+		/********************************************************************
+		 * Function Name:verifyCheckboxInSearchProperties
+		 * Function Details:
+		 * Parameter/Arguments: boolean value
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 22/08/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void verifyCheckboxInSearchProperties(string sCheckboxName, bool ExpectedState)
+		{
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Day Matches night text in Search Properties fields to view day matches night related text;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sCheckboxName +"{ENTER}" );
+
+			// Click on Isolator  cell
+			repo.ProfileConsys1.PARTItemsPresenter.cell_DayMatchesNight.Click();
+			
+			//Click on row
+			//repo.ProfileConsys1.PARTItemsPresenter.row_SearchProperties.Click();
+			
+			// To retrieve the attribute value as boolean by its ischecked properties and store in actual state
+			bool actualState =  repo.ProfileConsys1.chkbox_Isolator.GetAttributeValue<bool>("ischecked");
+			
+			//As per actual state and expected state values
+			if(actualState.Equals(ExpectedState))
+			{
+				Report.Log(ReportLevel.Success, "Isolator device is displayed as expected ");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure, "Isolator device is not displayed as expected ");
+			}
+			
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+			
+			/* bool DefaultChecked,  //Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Day Matches night text in Search Properties fields to view day matches night related text;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sCheckboxName +"{ENTER}" );
+
+			// Click on cell
+			repo.ProfileConsys1.PARTItemsPresenter.row_SearchProperties.Click();
+			
+			
+			// To retrieve the attribute value as boolean by its ischecked properties and store in actual state
+			bool actualState =   repo.ProfileConsys1.chkbox_Isolator.GetAttributeValue<bool>("ischecked");
+			
+			if(DefaultChecked)
+			{
+				if(actualState.Equals(ExpectedState))
+				{
+					Report.Log(ReportLevel.Success, "Checkbox is checked");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Checkbox is not checked");
+				}
+			}
+			else
+			{
+				if(actualState.Equals(ExpectedState))
+				{
+					Report.Log(ReportLevel.Failure, "Checkbox is checked");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Checkbox is not checked");
+				}
+			}
+			
+			
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}*/
+		
+		/********************************************************************
+		 * Function Name:VerifyCheckboxExists
+		 * Function Details:
+		 * Parameter/Arguments: boolean value
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 22/08/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyCheckboxExists(string sCheckboxName, bool isExists)
+		{
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Day Matches night text in Search Properties fields to view day matches night related text;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sCheckboxName +"{ENTER}" );
+			
+			if(isExists)
+			{
+				if(repo.FormMe.Chkbox_In_SearchPropertiesInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success, "Checkbox is present");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Checkbox is absent");
+				}
+			}
+			else
+			{
+				if(repo.FormMe.Chkbox_In_SearchPropertiesInfo.Exists())
+				{
+					Report.Log(ReportLevel.Failure, "Checkbox is present");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Checkbox is absent");
+				}
+			}
+
+		}
+		
+
 		
 	}
+	
+	
+}
+
 
 

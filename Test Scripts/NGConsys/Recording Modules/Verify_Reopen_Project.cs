@@ -82,6 +82,40 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("TestProject");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(4));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LPBS 3000 - 1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 3");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LI800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 PH - 4");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LPBS 3000 - 14");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("CP 830", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.SaveProject("TestProject2");
+            Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
             

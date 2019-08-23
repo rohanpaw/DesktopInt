@@ -1352,7 +1352,8 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 				<item
 				capname="row"
 				id="0aabfc5f-1d7a-4771-8526-895a9f0b00a8"
-				name="row_DayMatchesNight"
+				name="row_SearchProperties"
+				refimgid="28653aa0-486c-4187-8dfb-5d90fa00f3fc"
 				searchtimeout="90000ms">
 					/form[@win32ownerwindowlevel='0']/progressbar/?/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='1']
 				</item>
@@ -2404,6 +2405,29 @@ W/AAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@title='Add Devices']/container[1]/list/container[@automationid='PART_ContentContainer']//text[@caption=$ModelNumber]
 			</item>
+			<item
+			addcaps="picture,wpfelement,wpfgroupelement"
+			capname="picture"
+			id="3973de5a-79b0-4c96-a7f5-cd712894b011"
+			name="Error_Symbol_MultiplePointWizard"
+			refimgid="c6d7a34c-29db-4fbb-94b3-e2529b379d68"
+			refpath="/form[@title='Add Devices']/container[1]/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[2]/row/cell[2]/text/picture"
+			searchtimeout="30000ms">
+				<image
+				guid="c9a984b6-b233-44c0-82b1-1575aad5f2d4"
+				name="Screenshot1">
+					iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAF2SURBVDhPrZRLS8NAFIXz4wRBcCUI4qpUQQo+
+EEHEB6hQuhMU6sKNCwURBJfiQumy6kIoSFub1Fjrk4oGDRGRI2fIDJN04sYcuKVM7/3uY+7UgkHB
+XROvxwe43yqguTQCZyGD9uYKOkf78O2r0CuqCCho2XjcWUdttBfVbI/R+Bt96KtLgVgFM9PRnh02
+QmiN6UHUc/1ozAzBr1fC6BBEupsfFxDvooTvtw6c+YwR8vVwKwCEufkJVZkAsVQGeuVTcUhxFq21
+OQXhd30+9GUMYymLLcl2WIkuWZmsRNdP4ONmNSeSfFTOYL0cbqusDDLBTBC3MKXiyLDaxWV1QIu3
+EFe8ZRoZlrOYjRzSkmAmCI2M9ECptaYPO+l2km5TxolhM8NfEN5O0m1K2Hv5JMWF5Id8Ilx7rn98
+T6TJylg5O+h6ItRn9RLXkwMCJjfWZIQRQj/vvBRGayCKdJb6r78RXXw7z3tF0R4z18b6RJVPuxti
+sN0CfgEA4iK9GuVptwAAAABJRU5ErkJggg==
+				</image>
+				/form[@title='Add Devices']/container[1]/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']//row/cell[2]/text/picture
+			</item>
 			<basepath>
 				/form[@title='Add Devices']
 			</basepath>
@@ -3257,7 +3281,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			name="PhysicalLayoutIndex_ISUnits"
 			refimgid="b62f5356-c939-4e16-9d9d-c283afb7fe66"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/list[12]/listitem[@index=$sPhysicalLayoutDeviceIndex]
+				/form[@automationid='me']/progressbar/list[5]/listitem[@index=$sPhysicalLayoutDeviceIndex]
 			</item>
 			<item
 			addcaps="text,wpfelement"
@@ -16334,6 +16358,32 @@ AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[6]/tree//text[@text~'^PLX800-E']
 			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="d6505d90-ff3b-480b-af27-93212d0272ad"
+			name="Project_Name"
+			refimgid="08bcf1c8-c8a3-4bd1-9d58-bf0743fce682"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/?/?/text[@caption=$sProjectName]
+			</item>
+			<item
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="container"
+			id="d56f426b-49c5-4d6e-b248-8a552fa83c49"
+			name="Close_In_File"
+			refimgid="6ab99a0f-b34a-46cb-81d2-1ac39045feb5"
+			refpath="/form[@automationid='me']/progressbar/container[18]"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[18]
+			</item>
+			<item
+			capname="button"
+			id="4792b971-0597-4b95-b9e2-4cc87a5f4171"
+			name="Chkbox_In_SearchProperties"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[10]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//button[@automationid='PART_Editor']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -16439,6 +16489,26 @@ W/AAAAAASUVORK5CYII=
 			refpath="/form[@title='Print Preview']/text[@caption='The document does not contain any pages.']/picture[@automationid='PART_Image']/container[@caption='']/text[@automationid='PART_SearchBox']"
 			searchtimeout="30000ms">
 				/form[@title='Print Preview']/?/?/picture[@automationid='PART_Image']/?/?/text[@automationid='PART_SearchBox']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="98c5f48a-e6d1-4354-9912-b196ef43a0fc"
+			name="Mail_Export"
+			refimgid="df374b7d-35ac-4aa7-85c5-554bf318501e"
+			refpath="/form[@title='Print Preview']/list[2]/button[@text='Send...']"
+			searchtimeout="30000ms">
+				/form[@title='Print Preview']/?/?/button[@text='Send...']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="04aa1e56-7676-4f7e-b697-8eeea5ff2ff1"
+			name="Print1"
+			refimgid="e309374c-e91b-41bf-9c70-f4d490dffead"
+			refpath="/form[@title='Print Preview']/list[2]/button[@text='Print...']"
+			searchtimeout="30000ms">
+				/form[@title='Print Preview']/?/?/button[@text='Print...']
 			</item>
 			<basepath>
 				/form[@title='Print Preview']
@@ -16763,6 +16833,25 @@ dHpHnyei6HQ4nQ7fKeJJm+Bzy4oAAAAASUVORK5CYII=
 			refpath="/form[@processname='EXCEL']/element[@class='XLDESK']/workbook[@name='Shopping List.xls']/table[@name='Sheet']/row[@index='17']/cell[@address='F17']"
 			searchtimeout="30000ms">
 				/form[@class='XLMAIN' and @instance='0']//table[@name='Sheet']/row[@index='17']/cell[@address='F17']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="fca6d97b-889b-4562-a3c6-724472cd31c6"
+			name="cell_ExcelCellAddress"
+			refimgid="c4519d2a-0706-412e-bfc6-601b04d5ead7"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='0']//table[@name='Shopping List']/row[@index=$sRowIndex]/cell[@address=$sColumn]
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="efe8e7b2-1361-4e6f-af27-e37b8cccaa99"
+			name="AddressBox_Excel"
+			refimgid="9dd2cd63-26ef-4de2-9456-331d226c677d"
+			refpath="/form[@processname='EXCEL' and @class='XLMAIN' and @instance='0']/element[@class='EXCEL;']/container[@accessiblerole='Client']/form[@accessiblerole='Window']/combobox[@accessiblerole='ComboBox']/form[1]/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@class='XLMAIN' and @instance='0']/element[@class='EXCEL;']/container[@accessiblerole='Client']/form[@accessiblerole='Window']/combobox[@accessiblerole='ComboBox']/form[1]/text[@accessiblerole='Text']
 			</item>
 			<basepath>
 				/form[@class='XLMAIN' and @instance='0']

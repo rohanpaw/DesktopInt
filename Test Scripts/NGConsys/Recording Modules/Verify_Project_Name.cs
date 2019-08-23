@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The DeleteDevices_BVT recording.
+    ///The Verify_Project_Name recording.
     /// </summary>
-    [TestModule("213b72c1-bb6c-45c9-8508-d9ebd7e004e2", ModuleType.Recording, 1)]
-    public partial class DeleteDevices_BVT : ITestModule
+    [TestModule("85662f0c-3bf3-4d05-9dd0-9a2bd578086a", ModuleType.Recording, 1)]
+    public partial class Verify_Project_Name : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static DeleteDevices_BVT instance = new DeleteDevices_BVT();
+        static Verify_Project_Name instance = new Verify_Project_Name();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public DeleteDevices_BVT()
+        public Verify_Project_Name()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static DeleteDevices_BVT Instance
+        public static Verify_Project_Name Instance
         {
             get { return instance; }
         }
@@ -79,13 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Devices_Functions.DeleteDevices("Build_Verification_Test", "TC06");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "12"));
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.DeleteAllDevices();
+            Libraries.Common_Functions.VerifyProjectNameForDifferentPanels("Build_Verification_Test", "TC-14_Panel", "TC-14_Device");
             Delay.Milliseconds(0);
             
         }

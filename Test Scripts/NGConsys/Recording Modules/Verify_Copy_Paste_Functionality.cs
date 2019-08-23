@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Delete_Panel recording.
+    ///The Verify_Copy_Paste_Functionality recording.
     /// </summary>
-    [TestModule("8be0600b-c1ac-42b1-a20d-f61faad8c119", ModuleType.Recording, 1)]
-    public partial class Delete_Panel : ITestModule
+    [TestModule("89db9bb9-3cb8-4e40-8420-d10d24fe946f", ModuleType.Recording, 1)]
+    public partial class Verify_Copy_Paste_Functionality : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Delete_Panel instance = new Delete_Panel();
+        static Verify_Copy_Paste_Functionality instance = new Verify_Copy_Paste_Functionality();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Delete_Panel()
+        public Verify_Copy_Paste_Functionality()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Delete_Panel Instance
+        public static Verify_Copy_Paste_Functionality Instance
         {
             get { return instance; }
         }
@@ -79,37 +79,56 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "3"), "Pro32xD,P405D,MX1000", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node1");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node2");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node3");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Devices_Functions.AddDevicesForBVT("Build_Verification_Test", "TC05_A", "");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node2", ValueConverter.ArgumentFromString<int>("rowNumber", "2"));
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node3", ValueConverter.ArgumentFromString<int>("rowNumber", "3"));
+            Libraries.Devices_Functions.AddDevicesForBVT("Build_Verification_Test", "TC07_A", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "Node1");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "Node2");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(8));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelName("LPBS 3000 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "Node3");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(10));
+            repo.FormMe.btn_Copy1.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(12));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(13));
+            repo.FormMe.Paste.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LPBS 3000 - 128");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LPBS 3000 - 129");
             Delay.Milliseconds(0);
             
         }

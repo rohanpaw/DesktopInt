@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="387d5123-db0f-45db-a452-e3fc164c89db"
+id="f0a549d9-d7cd-4c79-956e-7f55e4900786"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_Properties_BVT
+		Verify_Physical_Layout
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Properties_BVT"
+	classname="Verify_Physical_Layout"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -42,10 +42,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="fa54605a-4174-45ed-bcde-f4c4bc83dc3c">
+			id="ebc4926b-32b9-4606-abb7-f4b7c8becc3c">
 				<argument
 				argname="NumberofPanels"
-				id="a23cf5b8-fa95-4a42-be47-e21598d4e6b7">
+				id="7eefdf78-b814-476c-876e-e5270d81a090">
 					<argvaluetype>
 						System.Int32
 					</argvaluetype>
@@ -55,7 +55,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="PanelNames"
-				id="77570a40-3a58-4280-830b-2a6bee846e83">
+				id="c7467ce2-d2ea-4fb6-964f-6ff39c338c06">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -65,7 +65,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="sPanelCPU"
-				id="82101809-3c13-48c1-9e61-854a0b36fb76">
+				id="e15faea3-a4a4-41ec-ae21-6ab17736ca2d">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -95,7 +95,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
+						Node1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -165,10 +165,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="c2b9239f-ded1-4623-915f-0fd0b98658c1">
+			id="5a914827-7d0f-4092-b102-e263b7b609b7">
 				<argument
 				argname="sFileName"
-				id="964c122a-599e-44b6-b541-386059adfe09">
+				id="c6b35bec-f4e9-4a8d-97d6-67636f9b9f3f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -178,7 +178,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="singleDevice"
-				id="3942877c-68cc-4e59-ad1c-c8f2724aa476">
+				id="99735e56-66bf-4152-8924-1b098b9f9e7c">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -188,36 +188,139 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="multipleDevices"
-				id="ac982b79-9812-43c5-af5f-8ed708c1d834">
+				id="25f7b7a6-627b-4a4e-89a8-09b2a04736e7">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="56075459-fa85-4ac2-a039-7e6ae44e2a97"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f1122c6f-ae4f-4f1d-816a-41a9ba07923c"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+				Physical Layout refresh issue
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="56075459-fa85-4ac2-a039-7e6ae44e2a97"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyDeviceDisplayedInPhysicalLayout"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0e87c4be-a587-4847-b6d1-054dd1d8f333">
+				<argument
+				argname="DeviceIndex"
+				id="a8187588-ef63-4b52-ac73-b5515185c07f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedDeviceAddress"
+				id="fabcd441-186a-44b0-8c5c-8364996bc9ca">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						A:1
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedDeviceName"
+				id="0376b75d-65b7-44e1-ac17-fbe275be2cff">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						801 PH
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="VerifyProperties_BVT"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="7bf17a36-2c0c-4a0d-95e3-0d5554b70175">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
+		methodname="VerifyDeviceDisplayedInPhysicalLayout"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -226,237 +329,35 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			id="0e87c4be-a587-4847-b6d1-054dd1d8f333">
 				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
+				argname="DeviceIndex"
+				id="a8187588-ef63-4b52-ac73-b5515185c07f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryDeviceProperty"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="072b9ce8-9980-4d33-b046-5042712a142a">
-				<argument
-				argname="sPropertyLabel"
-				id="e26fdf90-8640-43b0-aba5-ac6cfcc6da70">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Panel Name
+						2
 					</argvalue>
 				</argument>
 				<argument
-				argname="sExpectedValue"
-				id="fa08ff38-6b68-44a1-bd2c-0158899d124b">
+				argname="ExpectedDeviceAddress"
+				id="fabcd441-186a-44b0-8c5c-8364996bc9ca">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Main Processor
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryDeviceProperty"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="072b9ce8-9980-4d33-b046-5042712a142a">
-				<argument
-				argname="sPropertyLabel"
-				id="e26fdf90-8640-43b0-aba5-ac6cfcc6da70">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Model
+						A:2
 					</argvalue>
 				</argument>
 				<argument
-				argname="sExpectedValue"
-				id="fa08ff38-6b68-44a1-bd2c-0158899d124b">
+				argname="ExpectedDeviceName"
+				id="0376b75d-65b7-44e1-ac17-fbe275be2cff">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Profile 800 Main Processor board
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryDeviceProperty"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="072b9ce8-9980-4d33-b046-5042712a142a">
-				<argument
-				argname="sPropertyLabel"
-				id="e26fdf90-8640-43b0-aba5-ac6cfcc6da70">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Model
-					</argvalue>
-				</argument>
-				<argument
-				argname="sExpectedValue"
-				id="fa08ff38-6b68-44a1-bd2c-0158899d124b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Built-in Loop
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Backplane
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryDeviceProperty"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="072b9ce8-9980-4d33-b046-5042712a142a">
-				<argument
-				argname="sPropertyLabel"
-				id="e26fdf90-8640-43b0-aba5-ac6cfcc6da70">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Model
-					</argvalue>
-				</argument>
-				<argument
-				argname="sExpectedValue"
-				id="fa08ff38-6b68-44a1-bd2c-0158899d124b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PSC800
+						801 CH
 					</argvalue>
 				</argument>
 			</arguments>
@@ -478,7 +379,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Properties_BVT.UserCode.cs
+		Verify_Physical_Layout.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

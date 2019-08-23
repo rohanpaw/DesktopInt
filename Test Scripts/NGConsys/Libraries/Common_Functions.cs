@@ -14,6 +14,7 @@ using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 using System.IO;
+using Microsoft.Office.Interop.Excel;
 
 using Ranorex;
 using Ranorex.Core;
@@ -42,7 +43,11 @@ namespace TestProject.Libraries
 			set { repo.sTreeItem = value; }
 		}
 		
-		
+		static string sProjectName
+		{
+			get { return repo.sProjectName; }
+			set { repo.sProjectName = value; }
+		}
 		/********************************************************************
 		 * Function Name: GetDirPath
 		 * Function Details:
@@ -356,7 +361,7 @@ namespace TestProject.Libraries
 			}
 		}
 		
-			
+		
 		/****************************************************************************************************
 		 * Function Name: ClickOnNavigationTreeExpanderButton
 		 * Function Details: To click on navigation tree item expander button
@@ -369,14 +374,14 @@ namespace TestProject.Libraries
 		public static void ClickOnNavigationTreeExpander(string ExpanderName)
 		{
 			sExpanderName = ExpanderName;
-			repo.FormMe.btn_NavigationTreeExpander.Click();	
+			repo.FormMe.btn_NavigationTreeExpander.Click();
 			Report.Log(ReportLevel.Info," Tree Item with ExpanderName name " +ExpanderName + " is displayed and clicked successfully ");
-		} 
+		}
 		
-			
+		
 		/****************************************************************************************************
 		 * Function Name: ClickOnNavigationTreeItem
-		 * Function Details: To click on navigation tree item 
+		 * Function Details: To click on navigation tree item
 		 * Parameter/Arguments: Tree item name
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
@@ -484,7 +489,251 @@ namespace TestProject.Libraries
 			
 			
 		}
+		
+		/********************************************************************
+		 * Function Name: VerifyProjectName
+		 * Function Details: To verify if project name for a new project and a saved project
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 19/8/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyProjectName(string ExpectedProjectName)
+		{
+			
+			sProjectName = ExpectedProjectName;
+			repo.FormMe.Project_Name.Click();
+			//string ActualProjectName = repo.FormMe.Project_Name.TextValue;
+			//Report.Log(ReportLevel.Info,"The name of the project displayed is "+ActualProjectName);
+			//ActualProjectName.Equals(ExpectedProjectName)
+			if(repo.FormMe.Project_NameInfo.Exists())
+			{
+				Report.Log(ReportLevel.Success, "Project Name " +ExpectedProjectName+ "is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure, "Project Name " +ExpectedProjectName+ "text is not displayed correctly");
+			}
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: VerifyProjectNameForDifferentPanels
+		 * Function Details: To verify if project name for a new project and a saved project for different Panels
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 20/8/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyProjectNameForDifferentPanels(string sFileName,string sAddPanelSheet, string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string PanelName,PanelNode,CPUType,PanelType,sExpectedProjectNameBefore,sSaveName,sExpectedProjectNameAfter,sModelName,sType;
+			int rowNumber;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sExpectedProjectNameBefore = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				sSaveName = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sExpectedProjectNameAfter = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				
+				
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
+				
+				//Verify Project Name
+				VerifyProjectName(sExpectedProjectNameBefore);
+				
+				//Save Project
+				SaveProject(sSaveName);
+				
+				//Reopen the project
+				ReopenProject(sSaveName);
+				
+				//Verify saved project name
+				VerifyProjectName(sExpectedProjectNameAfter);
+				
+				//Close Panel sheet and open device sheet
+				Excel_Utilities.CloseExcel();
+				Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+				
+				// Count number of rows in excel and store it in rows variable
+				int rows2= Excel_Utilities.ExcelRange.Rows.Count;
+				
+				for(int j=2;j<=rows2;j++)
+				{
+					sModelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+					
+					//Expand Panel Node
+					ClickOnNavigationTreeExpander("Node");
+					
+					//Expand PFI/FIM Loop card
+					ClickOnNavigationTreeExpander(PanelType);
+					
+					//Click on Loop A
+					ClickOnNavigationTreeItem("Built-in Loop-A");
+					
+					//Add Devices
+					Devices_Functions.AddDevicesfromGallery(sModelName,sType);
+					
+				}
+				
+				//Save Project
+				repo.ProfileConsys1.btn_Save.Click();
+				if(repo.ProjectChangeDescription.btn_OK.Visible)
+				{
+					repo.ProjectChangeDescription.txt_Desc.Click();
+					Keyboard.Press("Automation....");
+					repo.ProjectChangeDescription.btn_OK.Click();
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Description not asked");
+				}
+				
+				//Reopen the project
+				ReopenProject(sSaveName);
+				
+				//Verify saved project name
+				VerifyProjectName(sExpectedProjectNameAfter);
+			}
+			
+			Devices_Functions.CreateProject("United Kingdom",2);
+		}
+		
+		/********************************************************************
+		 * Function Name: VerifyElementVisibilityInNavigationTree
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 22/08/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyElementVisibilityInNavigationTree(bool sExists, string TreeItemName)
+		{
+			sTreeItem = TreeItemName;
+			if(sExists)
+			{
+
+				if(repo.FormMe.NavigationTreeItemInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success, "Element "+TreeItemName+" is displayed correctly");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Element "+TreeItemName+" is not displayed");
+				}
+			}
+			else
+			{
+				if(repo.FormMe.NavigationTreeItemInfo.Exists())
+				{
+					Report.Log(ReportLevel.Failure, "Element "+TreeItemName+" is getting displayed");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Element "+TreeItemName+" is not displayed as expected");
+				}
+			}
+		}
+		
+		/********************************************************************
+		 * Function Name: ApplicationCloseUsingCloseInFile
+		 * Function Details: To close application
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 22/08/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void ApplicationCloseUsingCloseInFile(bool Save, bool SaveConfirmation, string sProjectName)
+		{
+			//repo.ProfileConsys1.btn_Close.Click();
+			repo.ProfileConsys1.File.Click();
+			repo.FormMe.Close_In_File.Click();
+			//repo.FormMe.btn_Close.Click();
+			
+			
+			if (Save)
+			{
+				if(repo.SaveConfirmationWindow.SelfInfo.Exists())
+				{
+					repo.SaveConfirmationWindow.btnYes_SaveConfirmation.Click();
+					Report.Log(ReportLevel.Success, "Save confirmation asked");
+					
+					if(repo.ProjectChangeDescription.SelfInfo.Exists())
+					{
+						repo.ProjectChangeDescription.txt_Desc.Click();
+						Keyboard.Press("Automation....");
+						repo.ProjectChangeDescription.btn_OK.Click();
+					}
+					
+					if(repo.SaveConfirmationWindow.SelfInfo.Exists())
+					{
+						
+//						string actualDirPath= Common_Functions.GetDirPath();
+//						Console.WriteLine("PAth:" + actualDirPath);
+//						string sSaveProjectDirPath = actualDirPath+ "NGDesigner Saved Projects";
+//						repo.SaveConfirmationWindow.Btn_PreviousLocations.Click();
+//						repo.SaveConfirmationWindow.txt_Path.PressKeys("{Return}");
+//						repo.SaveConfirmationWindow.txt_Path.PressKeys(sSaveProjectDirPath);
+//						repo.SaveConfirmationWindow.txt_Path.PressKeys("{Return}");
+						
+						repo.SaveConfirmationWindow.txt_ProjectName.Click();
+						repo.SaveConfirmationWindow.txt_ProjectName.PressKeys(sProjectName);
+						repo.SaveConfirmationWindow.ButtonSave.Click();
+						
+					}
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Save confirmation not asked");
+				}
+				
+			}
+			
+			else
+			{
+				if(SaveConfirmation)
+				{
+					if(repo.SaveConfirmationWindow.btnNo_SaveConfirmationInfo.Exists())
+					{
+						repo.SaveConfirmationWindow.btnNo_SaveConfirmation.Click();
+						Report.Log(ReportLevel.Success, "Save confirmation asked");
+						
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure, "Save confirmation not asked");
+					}
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Save confirmation not asked");
+				}
+				
+			}
+			
+		}
 	}
 }
+
 
 

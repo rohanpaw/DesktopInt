@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The DeleteDevices_BVT recording.
+    ///The Add_Max_No_Of_Devices_Verify_Error_message recording.
     /// </summary>
-    [TestModule("213b72c1-bb6c-45c9-8508-d9ebd7e004e2", ModuleType.Recording, 1)]
-    public partial class DeleteDevices_BVT : ITestModule
+    [TestModule("6d7f4ef1-864a-47b2-95ba-78c69db4a003", ModuleType.Recording, 1)]
+    public partial class Add_Max_No_Of_Devices_Verify_Error_message : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static DeleteDevices_BVT instance = new DeleteDevices_BVT();
+        static Add_Max_No_Of_Devices_Verify_Error_message instance = new Add_Max_No_Of_Devices_Verify_Error_message();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public DeleteDevices_BVT()
+        public Add_Max_No_Of_Devices_Verify_Error_message()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static DeleteDevices_BVT Instance
+        public static Add_Max_No_Of_Devices_Verify_Error_message Instance
         {
             get { return instance; }
         }
@@ -79,13 +79,34 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Devices_Functions.DeleteDevices("Build_Verification_Test", "TC06");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "12"));
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteAllDevices();
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "126"), ValueConverter.ArgumentFromString<int>("MaxLimit", "125"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "126"), ValueConverter.ArgumentFromString<int>("MaxLimit", "125"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "126"), ValueConverter.ArgumentFromString<int>("MaxLimit", "125"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-D");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "126"), ValueConverter.ArgumentFromString<int>("MaxLimit", "125"));
             Delay.Milliseconds(0);
             
         }

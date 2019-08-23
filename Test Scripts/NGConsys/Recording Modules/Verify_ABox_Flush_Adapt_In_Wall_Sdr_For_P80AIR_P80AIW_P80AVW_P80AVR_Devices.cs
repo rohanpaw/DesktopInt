@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Delete_Panel recording.
+    ///The Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices recording.
     /// </summary>
-    [TestModule("8be0600b-c1ac-42b1-a20d-f61faad8c119", ModuleType.Recording, 1)]
-    public partial class Delete_Panel : ITestModule
+    [TestModule("0703a718-43c1-4e8b-8125-6bd336fac5aa", ModuleType.Recording, 1)]
+    public partial class Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Delete_Panel instance = new Delete_Panel();
+        static Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices instance = new Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Delete_Panel()
+        public Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Delete_Panel Instance
+        public static Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices Instance
         {
             get { return instance; }
         }
@@ -79,37 +79,45 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "3"), "Pro32xD,P405D,MX1000", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node1");
+            Libraries.LinkedHardware_Fuctions.VerifyCheckboxOfProperties("TC_55046_55052_55056_Verify_Combobox_And_Shopping_List", "TC_55052");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node2");
+            Libraries.Common_Functions.SaveProject("55052");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node3");
+            //Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ReopenProject("55052");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node2", ValueConverter.ArgumentFromString<int>("rowNumber", "2"));
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node3", ValueConverter.ArgumentFromString<int>("rowNumber", "3"));
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "Node1");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("P80AI - R/W  - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "Node2");
+            Libraries.Devices_Functions.verifyCheckboxInSearchProperties("A-Box Flush Adapt In Wall Sdr", ValueConverter.ArgumentFromString<bool>("ExpectedState", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "Node3");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(10));
+            repo.FormMe.SiteNode1.Click();
+            Delay.Milliseconds(200);
             
-            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(11));
+            repo.FormMe.tab_ShoppingList.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("576.080.011", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
         }

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="213b72c1-bb6c-45c9-8508-d9ebd7e004e2"
+id="18eb6648-4cab-41d9-aa7b-c0175484aeca"
 mode="Global"
 rxversion="8.3">
 	<name>
-		DeleteDevices_BVT
+		verify_save_Confirmation_Of_An_Already_Saved_Project
 	</name>
 	<repeatcount>
 		1
@@ -23,17 +23,17 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="DeleteDevices_BVT"
+	classname="verify_save_Confirmation_Of_An_Already_Saved_Project"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="DeleteDevices"
+		methodname="SaveProject"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -42,34 +42,24 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="afdfcde2-1333-4415-92f1-479ca386a3dd">
+			id="97b3081b-342c-4029-a2cb-ee4c190121fb">
 				<argument
-				argname="sFileName"
-				id="f3393ef0-ce77-47fe-8245-1afdf606b136">
+				argname="sProjectName"
+				id="e40928a7-ee66-4475-9277-ebd2a58ccfb9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Build_Verification_Test
-					</argvalue>
-				</argument>
-				<argument
-				argname="sSheetName"
-				id="c84458c6-c85c-4af5-88ee-b551ae00fb29">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						TC06
+						TestBVT_13
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromMultiplePointWizard"
+		methodname="ApplicationCloseUsingCloseInFile"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -78,43 +68,36 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="e314dcef-4955-44d1-8a79-da858aaa609f">
+			id="18b35e42-8239-421c-8d19-2385611adf12">
 				<argument
-				argname="sDeviceName"
-				id="14f33296-18e3-4dfd-bb8d-ae40310b2992">
+				argname="Save"
+				id="05a52a59-a93d-44db-9bb3-ebc14aa7b17d">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="SaveConfirmation"
+				id="2db362f4-ce26-4153-ade3-b2c689f8ca87">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="sProjectName"
+				id="1730dbc3-c02d-4e5c-8d9d-4964055f0349">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						801 CH
 					</argvalue>
 				</argument>
-				<argument
-				argname="DeviceQty"
-				id="74d27b95-23ce-4621-9476-52c54f3d8ab4">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						12
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="DeleteAllDevices"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="2d0f9d4c-ddb1-4591-b713-dba433fbb789">
 			</arguments>
 		</userrecorditem>
 	</recorditems>
@@ -134,7 +117,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		DeleteDevices_BVT.UserCode.cs
+		verify_save_Confirmation_Of_An_Already_Saved_Project.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

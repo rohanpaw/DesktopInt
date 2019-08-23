@@ -298,7 +298,7 @@ namespace TestProject.Libraries
 				repo.FormMe2.ButtonOK.Click();
 				Delay.Milliseconds(200);
 				
-				repo.FormMe2.ButtonOK.Click();
+				//repo.FormMe2.ButtonOK.Click(); updated Purvi-23/08/2019
 			}
 			else
 			{

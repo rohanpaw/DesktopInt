@@ -260,7 +260,9 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : 27/12/2018 by Alpesh Dhakad  Alpesh Dhakad - 01/08/2019 & 19/08/2019 - Updated test scripts as per new build and xpaths
+
+		 * Purvi Bhasin - 22/08/2019 commented Inventory_LabelCell.DoubleClick() as it causes an error
+
 		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void DeletePanel(int NumberofPanels,string PanelNode,int rowNumber )
@@ -271,6 +273,7 @@ namespace TestProject.Libraries
 				sRow = rowNumber.ToString();
 				sLabelName=PanelNode;
 				
+
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 				
@@ -287,7 +290,9 @@ namespace TestProject.Libraries
 				}
 				
 				repo.ProfileConsys1.btn_Delete.Click();
-				repo.ProfileConsys1.PanelInvetoryGrid.Inventory_LabelCell.DoubleClick();
+				//repo.FormMe.SiteNode1.Click(); 
+				repo.FormMe.tab_Panel_Network.Click();
+				//repo.ProfileConsys1.PanelInvetoryGrid.Inventory_LabelCell.DoubleClick();
 				if(repo.ProfileConsys1.PanelInvetoryGrid.LabelNameInfo.Exists())
 				{
 					Report.Log(ReportLevel.Failure, "Panel with label name: "+sLabelName+" is not deleted successfully");
@@ -617,6 +622,8 @@ namespace TestProject.Libraries
 			}
 			
 		}
+		
+			
 	}
 }
 

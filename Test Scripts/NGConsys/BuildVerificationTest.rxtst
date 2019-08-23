@@ -23,9 +23,23 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="04ecd12f-8d65-40ec-a466-acc797148695"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="166c830b-3101-40fa-ab82-5b974a98eac0"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="0a36b563-06bd-410b-8812-dadacd54e00c"
-			name="BuildVerificationTest-TC11">
+			name="BuildVerificationTest-TC11&amp;12">
 				<parameters>
 					<param
 					name="sListIndex"
@@ -33,6 +47,16 @@ rxversion="8.3">
 					</param>
 					<param
 					name="ProjectName"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="12409c6d-aecc-412d-a521-089393cc2aca"
+			name="BuildVerificationTest-TC14">
+				<parameters>
+					<param
+					name="sListIndex"
 					value="">
 					</param>
 				</parameters>
@@ -52,13 +76,23 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
+			id="166c830b-3101-40fa-ab82-5b974a98eac0"
+			name="BuildVerificationTest-TC10">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="187daa63-7f01-41f8-8ea7-329d42f303ec"
 			name="BuildVerificationTest"
 			reportlevel="Info;20">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.0.82">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.23">
 					</param>
 					<param
 					name="Mode"
@@ -121,6 +155,12 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="344ee90a-448a-4fb0-bd28-f65c2d09f53c"
+			name="Verify_Project_Name"
+			ref="85662f0c-3bf3-4d05-9dd0-9a2bd578086a"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="35bf1e9c-7315-4b1b-8eb2-8059c4085c7c"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -155,6 +195,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="40f1c09d-01ee-4716-a3b5-c13d2d9a89e5"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="43c22c53-3a9f-4ddd-baf6-1a42596580ec"
 			name="AddDevices_BVT"
 			ref="66e02c6b-556b-491b-9403-1fa8f0f691ef"
@@ -185,6 +231,44 @@ rxversion="8.3">
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="500b97e9-1cb8-42e5-acc1-fd4a9eaf20aa"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="187daa63-7f01-41f8-8ea7-329d42f303ec"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="187daa63-7f01-41f8-8ea7-329d42f303ec"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5329201a-e622-4c7d-9bbd-6f7b89d5f6cf"
+			name="Add_Panels"
+			ref="7209e041-3cdd-48b9-9bd9-2f5c2a245e78"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="5f777329-fb27-451d-8362-20b6cc1cee81"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="60af00a6-5327-467b-bac3-90bfdd0b2943"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="6173c3ad-0e0f-4915-bffa-f82b550c1ba6"
@@ -242,11 +326,58 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="7bc37423-53e0-4228-81f8-7c1b8f44f7bc"
+			name="BuildVerificationTest-TC15">
+				<description>
+					<![CDATA[Fails due to NGC-1816]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testmodule
+			id="812ea7a7-4ee8-447b-ab28-660b09afce2b"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="187daa63-7f01-41f8-8ea7-329d42f303ec"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="187daa63-7f01-41f8-8ea7-329d42f303ec"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="834ca684-ccee-49fc-b8d8-d0df2a190535"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="886785d5-46df-494e-907e-60da58deabec"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="12409c6d-aecc-412d-a521-089393cc2aca"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="90500ac8-2539-4de5-b1d8-f67a52f196e9"
@@ -347,6 +478,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="af72e828-4e2f-48c5-994f-3fdc97b6fd18"
+			name="verify_save_Confirmation_Of_An_Already_Saved_Project"
+			ref="18eb6648-4cab-41d9-aa7b-c0175484aeca"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="b5206c46-bf2a-43e3-843d-ddd1ae0530be"
 			name="Add_Panels"
 			ref="7209e041-3cdd-48b9-9bd9-2f5c2a245e78"
@@ -419,6 +556,38 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="cbc3fd0a-08f7-4fcb-a06e-fa6ab303c5b2"
+			name="Verify_Physical_Layout"
+			ref="f0a549d9-d7cd-4c79-956e-7f55e4900786"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ce6114e8-d0f8-48b1-8ec4-d13e63853011"
+			name="Verify_Copy_Paste_Functionality"
+			ref="89db9bb9-3cb8-4e40-8420-d10d24fe946f"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d9b97dd5-29a5-4863-a435-ba724a382bee"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="187daa63-7f01-41f8-8ea7-329d42f303ec"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="187daa63-7f01-41f8-8ea7-329d42f303ec"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="db1fbce8-af7e-4663-87a7-1667eeddd6c3"
 			name="Verify_Reopen_Project"
 			ref="95cffcea-c77a-4bd1-a5a3-f0c1b3a5f60e"
@@ -431,11 +600,35 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="de783967-1602-4e9d-a7f3-bde3ab0eb8ac"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="7bc37423-53e0-4228-81f8-7c1b8f44f7bc"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="defb7dc0-16f1-41e2-8c9a-c9f318df85c9"
 			name="Delete_Panel"
 			ref="8be0600b-c1ac-42b1-a20d-f61faad8c119"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="df036250-7652-4a64-ad40-22140e7d7700"
+			name="BuildVerificationTest-TC13">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="e63a7b2d-c0c7-414e-b491-25e35839b82d"
 			name="Close_Application"
@@ -457,7 +650,41 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="f14e583d-5f5f-4369-8eb7-6547de066e98"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="df036250-7652-4a64-ad40-22140e7d7700"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="f74b1706-ad8e-43cc-ad2f-a6976216aca0"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="187daa63-7f01-41f8-8ea7-329d42f303ec"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="187daa63-7f01-41f8-8ea7-329d42f303ec"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f8a63f9d-30a2-4979-8bf0-11ea8bb2aca9"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
 			type="UserCode">
@@ -489,6 +716,12 @@ rxversion="8.3">
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="fee076a1-8861-4e4b-aefb-c76a5207f449"
+			name="Add_Max_No_Of_Devices_Verify_Error_message"
+			ref="6d7f4ef1-864a-47b2-95ba-78c69db4a003"
+			type="Recording">
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -548,6 +781,10 @@ rxversion="8.3">
 						<testmodule
 						id="dd7a4f8b-1db3-455f-a2a1-cd9d52fd3b49"
 						name="Add_Panels">
+						</testmodule>
+						<testmodule
+						id="fee076a1-8861-4e4b-aefb-c76a5207f449"
+						name="Add_Max_No_Of_Devices_Verify_Error_message">
 						</testmodule>
 						<testmodule
 						id="e63a7b2d-c0c7-414e-b491-25e35839b82d"
@@ -623,8 +860,28 @@ rxversion="8.3">
 						</testmodule>
 					</testcase>
 					<testcase
+					id="166c830b-3101-40fa-ab82-5b974a98eac0"
+					name="BuildVerificationTest-TC10">
+						<testmodule
+						id="500b97e9-1cb8-42e5-acc1-fd4a9eaf20aa"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="04ecd12f-8d65-40ec-a466-acc797148695"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="cbc3fd0a-08f7-4fcb-a06e-fa6ab303c5b2"
+						name="Verify_Physical_Layout">
+						</testmodule>
+						<testmodule
+						id="5f777329-fb27-451d-8362-20b6cc1cee81"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="0a36b563-06bd-410b-8812-dadacd54e00c"
-					name="BuildVerificationTest-TC11">
+					name="BuildVerificationTest-TC11&amp;12">
 						<testmodule
 						id="9b0ec1ff-eda3-4cbe-ae2f-60caef7af95c"
 						name="Application_Open">
@@ -654,6 +911,66 @@ rxversion="8.3">
 						name="Verify_Reopen_Project">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="12409c6d-aecc-412d-a521-089393cc2aca"
+					name="BuildVerificationTest-TC14">
+						<testmodule
+						id="812ea7a7-4ee8-447b-ab28-660b09afce2b"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="886785d5-46df-494e-907e-60da58deabec"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="ce6114e8-d0f8-48b1-8ec4-d13e63853011"
+						name="Verify_Copy_Paste_Functionality">
+						</testmodule>
+						<testmodule
+						id="40f1c09d-01ee-4716-a3b5-c13d2d9a89e5"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="7bc37423-53e0-4228-81f8-7c1b8f44f7bc"
+					name="BuildVerificationTest-TC15">
+						<testmodule
+						id="d9b97dd5-29a5-4863-a435-ba724a382bee"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="de783967-1602-4e9d-a7f3-bde3ab0eb8ac"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="344ee90a-448a-4fb0-bd28-f65c2d09f53c"
+						name="Verify_Project_Name">
+						</testmodule>
+						<testmodule
+						id="60af00a6-5327-467b-bac3-90bfdd0b2943"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="df036250-7652-4a64-ad40-22140e7d7700"
+					name="BuildVerificationTest-TC13">
+						<testmodule
+						id="f8a63f9d-30a2-4979-8bf0-11ea8bb2aca9"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="f14e583d-5f5f-4369-8eb7-6547de066e98"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="5329201a-e622-4c7d-9bbd-6f7b89d5f6cf"
+						name="Add_Panels">
+						</testmodule>
+						<testmodule
+						id="af72e828-4e2f-48c5-994f-3fdc97b6fd18"
+						name="verify_save_Confirmation_Of_An_Already_Saved_Project">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -664,6 +981,15 @@ rxversion="8.3">
 	default="Default">
 		<testconfiguration
 		name="Default">
+			<testcontainer
+			id="187daa63-7f01-41f8-8ea7-329d42f303ec">
+			</testcontainer>
+			<testcontainer
+			id="6173c3ad-0e0f-4915-bffa-f82b550c1ba6">
+			</testcontainer>
+			<testcontainer
+			id="6dd0510d-7ecc-404a-acb7-b7156f43053f">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

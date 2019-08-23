@@ -2123,6 +2123,16 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
+			id="20c2e5a6-a39c-4ba9-8e4d-a35087a8bd76"
+			name="Verify_A-CON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="20d08d34-9da0-47dd-96a5-2a7032d81c67"
 			name="Verify_If_Selecting_An_EXI800_In_Points_Grid_Will_Enable_IS_Devices">
 				<description>
@@ -2360,6 +2370,12 @@ rxversion="8.3">
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="254cd920-52f7-4652-9fe0-e6cacb95d31e"
+			name="Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices"
+			ref="ac389839-6ec7-48db-af66-62d712b90539"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="259ee7aa-a276-4a2d-9c67-7478f4e98610"
@@ -3829,6 +3845,12 @@ rxversion="8.3">
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="3e2db16e-62b0-4839-8e0e-031ba9b2b356"
+			name="Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices"
+			ref="0703a718-43c1-4e8b-8125-6bd336fac5aa"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="3e4897b6-df59-4463-bc67-7ba68f7c676f"
@@ -7301,6 +7323,12 @@ loops.</SPAN>]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="73f0235c-8056-4a29-85d6-79cafca5544c"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="7425613e-0c41-4d79-a3b2-43629b20c10e"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -7836,6 +7864,26 @@ loops.</SPAN>]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="7d81dac0-2f9b-4820-a550-9f6eb1629c8a"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="7df9ecaa-d2e3-4806-ab78-b17344ac57c8"
 			name="Application_Open"
@@ -9596,6 +9644,20 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="97bd7a3a-ae09-4407-afaf-e730e3c856f8"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="f14c8b61-0ef9-470f-bb93-dd6781b0b6b7"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="980ef039-ce0b-4ee0-8f38-071ff586a883"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -10685,6 +10747,26 @@ div.WordSection1
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="acb7a14c-2019-4698-a433-b2f79bbb9113"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="accae1ad-059a-41d5-8bf1-5b967a460a3d"
 			name="Verify_Persistance_of_Region_Name_Property_On_CopyPaste"
 			ref="edb6e3e4-3a6c-40d0-869f-aedf5d4e47df"
@@ -11184,6 +11266,20 @@ persisted in panel properties&nbsp;]]>
 					<var
 					dataname="sListIndex"
 					datasourceid="96340868-31b8-492e-add5-18a3eedde248"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b6a94cc3-3c99-4d7e-beaa-8424ec77063b"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="20c2e5a6-a39c-4ba9-8e4d-a35087a8bd76"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -13518,6 +13614,12 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="e0d8a5bf-85ca-4fdb-9d9c-08623564b2d2"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e0e6f382-c08f-4170-86c9-67bb7531a18a"
 			name="CreateProject_German"
 			ref="19660af1-4e58-4290-badb-20687f7b3401"
@@ -14462,6 +14564,16 @@ persisted in panel properties&nbsp;]]>
 			ref="c15f0ff9-7516-432b-9443-aa603d60145c"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="f14c8b61-0ef9-470f-bb93-dd6781b0b6b7"
+			name="Verify_A-Box_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testcase
 			id="f1520a3b-ed41-4183-af81-060a94933147"
 			name="Verify_If_IS_Devices_Are_Disabled_On_Selecting_Non_EXI_device">
@@ -20052,6 +20164,46 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="20c2e5a6-a39c-4ba9-8e4d-a35087a8bd76"
+					name="Verify_A-CON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices">
+						<testmodule
+						id="7d81dac0-2f9b-4820-a550-9f6eb1629c8a"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="b6a94cc3-3c99-4d7e-beaa-8424ec77063b"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="254cd920-52f7-4652-9fe0-e6cacb95d31e"
+						name="Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices">
+						</testmodule>
+						<testmodule
+						id="e0d8a5bf-85ca-4fdb-9d9c-08623564b2d2"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="f14c8b61-0ef9-470f-bb93-dd6781b0b6b7"
+					name="Verify_A-Box_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices">
+						<testmodule
+						id="acb7a14c-2019-4698-a433-b2f79bbb9113"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="97bd7a3a-ae09-4407-afaf-e730e3c856f8"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="3e2db16e-62b0-4839-8e0e-031ba9b2b356"
+						name="Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices">
+						</testmodule>
+						<testmodule
+						id="73f0235c-8056-4a29-85d6-79cafca5544c"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -20256,9 +20408,13 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="20c2e5a6-a39c-4ba9-8e4d-a35087a8bd76">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="f14c8b61-0ef9-470f-bb93-dd6781b0b6b7">
 			id="c5b3a580-078e-4de9-885d-e8b076238efd">
 			</testcontainer>
 		</testconfiguration>

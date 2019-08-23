@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The DeleteDevices_BVT recording.
+    ///The Verify_Physical_Layout recording.
     /// </summary>
-    [TestModule("213b72c1-bb6c-45c9-8508-d9ebd7e004e2", ModuleType.Recording, 1)]
-    public partial class DeleteDevices_BVT : ITestModule
+    [TestModule("f0a549d9-d7cd-4c79-956e-7f55e4900786", ModuleType.Recording, 1)]
+    public partial class Verify_Physical_Layout : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static DeleteDevices_BVT instance = new DeleteDevices_BVT();
+        static Verify_Physical_Layout instance = new Verify_Physical_Layout();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public DeleteDevices_BVT()
+        public Verify_Physical_Layout()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static DeleteDevices_BVT Instance
+        public static Verify_Physical_Layout Instance
         {
             get { return instance; }
         }
@@ -79,13 +79,38 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Devices_Functions.DeleteDevices("Build_Verification_Test", "TC06");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "12"));
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteAllDevices();
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesForBVT("Build_Verification_Test", "TC07_A", "");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(5));
+            repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            Delay.Milliseconds(200);
+            
+            // Physical Layout refresh issue
+            Report.Log(ReportLevel.Info, "Mouse", "Physical Layout refresh issue\r\nMouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(6));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(7));
+            repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.VerifyDeviceDisplayedInPhysicalLayout("1", "A:1", "801 PH");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceDisplayedInPhysicalLayout("2", "A:2", "801 CH");
             Delay.Milliseconds(0);
             
         }

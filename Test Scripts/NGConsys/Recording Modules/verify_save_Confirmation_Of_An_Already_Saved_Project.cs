@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The DeleteDevices_BVT recording.
+    ///The verify_save_Confirmation_Of_An_Already_Saved_Project recording.
     /// </summary>
-    [TestModule("213b72c1-bb6c-45c9-8508-d9ebd7e004e2", ModuleType.Recording, 1)]
-    public partial class DeleteDevices_BVT : ITestModule
+    [TestModule("18eb6648-4cab-41d9-aa7b-c0175484aeca", ModuleType.Recording, 1)]
+    public partial class verify_save_Confirmation_Of_An_Already_Saved_Project : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static DeleteDevices_BVT instance = new DeleteDevices_BVT();
+        static verify_save_Confirmation_Of_An_Already_Saved_Project instance = new verify_save_Confirmation_Of_An_Already_Saved_Project();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public DeleteDevices_BVT()
+        public verify_save_Confirmation_Of_An_Already_Saved_Project()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static DeleteDevices_BVT Instance
+        public static verify_save_Confirmation_Of_An_Already_Saved_Project Instance
         {
             get { return instance; }
         }
@@ -79,13 +79,10 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Devices_Functions.DeleteDevices("Build_Verification_Test", "TC06");
+            Libraries.Common_Functions.SaveProject("TestBVT_13");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "12"));
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.DeleteAllDevices();
+            Libraries.Common_Functions.ApplicationCloseUsingCloseInFile(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
             
         }

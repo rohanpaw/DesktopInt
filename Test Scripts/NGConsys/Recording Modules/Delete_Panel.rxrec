@@ -50,7 +50,7 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						2
+						3
 					</argvalue>
 				</argument>
 				<argument
@@ -60,7 +60,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro32xD,P405D
+						Pro32xD,P405D,MX1000
 					</argvalue>
 				</argument>
 				<argument
@@ -70,6 +70,114 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyElementVisibilityInNavigationTree"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="84382f8d-44fc-49db-a898-c03d8fa414d7">
+				<argument
+				argname="sExists"
+				id="ebce52a7-4cff-483f-a487-8fe6976634a2">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+				<argument
+				argname="TreeItemName"
+				id="b2932b8c-64a8-429e-bd10-9e437994b54a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyElementVisibilityInNavigationTree"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="84382f8d-44fc-49db-a898-c03d8fa414d7">
+				<argument
+				argname="sExists"
+				id="ebce52a7-4cff-483f-a487-8fe6976634a2">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+				<argument
+				argname="TreeItemName"
+				id="b2932b8c-64a8-429e-bd10-9e437994b54a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyElementVisibilityInNavigationTree"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="84382f8d-44fc-49db-a898-c03d8fa414d7">
+				<argument
+				argname="sExists"
+				id="ebce52a7-4cff-483f-a487-8fe6976634a2">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+				<argument
+				argname="TreeItemName"
+				id="b2932b8c-64a8-429e-bd10-9e437994b54a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -116,6 +224,206 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="DeletePanel"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="79b4c5f3-caab-423f-89c2-c486184bd5d4">
+				<argument
+				argname="NumberofPanels"
+				id="f1cd5aa0-81e0-417c-b06c-18043339add4">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNode"
+				id="e7a75680-592c-4c63-a6a8-8d7554a8bc6f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node2
+					</argvalue>
+				</argument>
+				<argument
+				argname="rowNumber"
+				id="06679831-62a3-4af0-a15a-e2bcd43eddbd">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="DeletePanel"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="79b4c5f3-caab-423f-89c2-c486184bd5d4">
+				<argument
+				argname="NumberofPanels"
+				id="f1cd5aa0-81e0-417c-b06c-18043339add4">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNode"
+				id="e7a75680-592c-4c63-a6a8-8d7554a8bc6f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node3
+					</argvalue>
+				</argument>
+				<argument
+				argname="rowNumber"
+				id="06679831-62a3-4af0-a15a-e2bcd43eddbd">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyElementVisibilityInNavigationTree"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="84382f8d-44fc-49db-a898-c03d8fa414d7">
+				<argument
+				argname="sExists"
+				id="ebce52a7-4cff-483f-a487-8fe6976634a2">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="TreeItemName"
+				id="b2932b8c-64a8-429e-bd10-9e437994b54a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyElementVisibilityInNavigationTree"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="84382f8d-44fc-49db-a898-c03d8fa414d7">
+				<argument
+				argname="sExists"
+				id="ebce52a7-4cff-483f-a487-8fe6976634a2">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="TreeItemName"
+				id="b2932b8c-64a8-429e-bd10-9e437994b54a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyElementVisibilityInNavigationTree"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="84382f8d-44fc-49db-a898-c03d8fa414d7">
+				<argument
+				argname="sExists"
+				id="ebce52a7-4cff-483f-a487-8fe6976634a2">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="TreeItemName"
+				id="b2932b8c-64a8-429e-bd10-9e437994b54a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -170,7 +478,7 @@ rxversion="8.3">
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
 	name="NGConsysRepository"
 	relativepath="..\NGConsysRepository.rxrep"
-	rxversion="8.1">
+	rxversion="8.3">
 		<codegen
 		classname="NGConsysRepository"
 		namespace="TestProject">

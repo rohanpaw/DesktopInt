@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="387d5123-db0f-45db-a452-e3fc164c89db"
+id="6d7f4ef1-864a-47b2-95ba-78c69db4a003"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_Properties_BVT
+		Add_Max_No_Of_Devices_Verify_Error_message
 	</name>
 	<repeatcount>
 		1
@@ -23,57 +23,12 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Properties_BVT"
+	classname="Add_Max_No_Of_Devices_Verify_Error_message"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="Panel_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddPanels"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="fa54605a-4174-45ed-bcde-f4c4bc83dc3c">
-				<argument
-				argname="NumberofPanels"
-				id="a23cf5b8-fa95-4a42-be47-e21598d4e6b7">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelNames"
-				id="77570a40-3a58-4280-830b-2a6bee846e83">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Pro32xD
-					</argvalue>
-				</argument>
-				<argument
-				argname="sPanelCPU"
-				id="82101809-3c13-48c1-9e61-854a0b36fb76">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
@@ -156,7 +111,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesForBVT"
+		methodname="VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -165,59 +120,70 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="c2b9239f-ded1-4623-915f-0fd0b98658c1">
+			id="81adf96c-894f-4152-ac3b-3b793e746f2e">
 				<argument
-				argname="sFileName"
-				id="964c122a-599e-44b6-b541-386059adfe09">
+				argname="sDeviceName"
+				id="301e0ad2-a1e6-46ce-8b2b-634f21704bba">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Build_Verification_Test
+						801 CH
 					</argvalue>
 				</argument>
 				<argument
-				argname="singleDevice"
-				id="3942877c-68cc-4e59-ad1c-c8f2724aa476">
+				argname="DeviceQty"
+				id="661d9d44-fdbc-4c66-83bc-32d8ad760002">
 					<argvaluetype>
-						System.String
+						System.Int32
 					</argvaluetype>
 					<argvalue>
-						TC07_A
+						126
 					</argvalue>
 				</argument>
 				<argument
-				argname="multipleDevices"
-				id="ac982b79-9812-43c5-af5f-8ed708c1d834">
+				argname="MaxLimit"
+				id="35740415-ab14-461e-af8b-4c6d79c5249b">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						125
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						Built-in Loop-B
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="VerifyProperties_BVT"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="7bf17a36-2c0c-4a0d-95e3-0d5554b70175">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
+		methodname="VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -226,51 +192,35 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			id="81adf96c-894f-4152-ac3b-3b793e746f2e">
 				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
+				argname="sDeviceName"
+				id="301e0ad2-a1e6-46ce-8b2b-634f21704bba">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryDeviceProperty"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="072b9ce8-9980-4d33-b046-5042712a142a">
-				<argument
-				argname="sPropertyLabel"
-				id="e26fdf90-8640-43b0-aba5-ac6cfcc6da70">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Panel Name
+						801 CH
 					</argvalue>
 				</argument>
 				<argument
-				argname="sExpectedValue"
-				id="fa08ff38-6b68-44a1-bd2c-0158899d124b">
+				argname="DeviceQty"
+				id="661d9d44-fdbc-4c66-83bc-32d8ad760002">
 					<argvaluetype>
-						System.String
+						System.Int32
 					</argvaluetype>
 					<argvalue>
-						Node1
+						126
+					</argvalue>
+				</argument>
+				<argument
+				argname="MaxLimit"
+				id="35740415-ab14-461e-af8b-4c6d79c5249b">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -296,16 +246,16 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor
+						Built-in Loop-C
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="InventoryGrid_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryDeviceProperty"
+		methodname="VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -314,87 +264,35 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="072b9ce8-9980-4d33-b046-5042712a142a">
+			id="81adf96c-894f-4152-ac3b-3b793e746f2e">
 				<argument
-				argname="sPropertyLabel"
-				id="e26fdf90-8640-43b0-aba5-ac6cfcc6da70">
+				argname="sDeviceName"
+				id="301e0ad2-a1e6-46ce-8b2b-634f21704bba">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Model
+						801 CH
 					</argvalue>
 				</argument>
 				<argument
-				argname="sExpectedValue"
-				id="fa08ff38-6b68-44a1-bd2c-0158899d124b">
+				argname="DeviceQty"
+				id="661d9d44-fdbc-4c66-83bc-32d8ad760002">
 					<argvaluetype>
-						System.String
+						System.Int32
 					</argvaluetype>
 					<argvalue>
-						Profile 800 Main Processor board
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryDeviceProperty"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="072b9ce8-9980-4d33-b046-5042712a142a">
-				<argument
-				argname="sPropertyLabel"
-				id="e26fdf90-8640-43b0-aba5-ac6cfcc6da70">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Model
+						126
 					</argvalue>
 				</argument>
 				<argument
-				argname="sExpectedValue"
-				id="fa08ff38-6b68-44a1-bd2c-0158899d124b">
+				argname="MaxLimit"
+				id="35740415-ab14-461e-af8b-4c6d79c5249b">
 					<argvaluetype>
-						System.String
+						System.Int32
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop
+						125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -420,16 +318,16 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Backplane
+						Built-in Loop-D
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="InventoryGrid_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryDeviceProperty"
+		methodname="VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -438,25 +336,35 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="072b9ce8-9980-4d33-b046-5042712a142a">
+			id="81adf96c-894f-4152-ac3b-3b793e746f2e">
 				<argument
-				argname="sPropertyLabel"
-				id="e26fdf90-8640-43b0-aba5-ac6cfcc6da70">
+				argname="sDeviceName"
+				id="301e0ad2-a1e6-46ce-8b2b-634f21704bba">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Model
+						801 CH
 					</argvalue>
 				</argument>
 				<argument
-				argname="sExpectedValue"
-				id="fa08ff38-6b68-44a1-bd2c-0158899d124b">
+				argname="DeviceQty"
+				id="661d9d44-fdbc-4c66-83bc-32d8ad760002">
 					<argvaluetype>
-						System.String
+						System.Int32
 					</argvaluetype>
 					<argvalue>
-						PSC800
+						126
+					</argvalue>
+				</argument>
+				<argument
+				argname="MaxLimit"
+				id="35740415-ab14-461e-af8b-4c6d79c5249b">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -478,7 +386,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Properties_BVT.UserCode.cs
+		Add_Max_No_Of_Devices_Verify_Error_message.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

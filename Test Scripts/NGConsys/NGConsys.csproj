@@ -231,6 +231,18 @@
       <id>6bfd0917-ba77-4e8e-a9ed-47fb47c10680</id>
       <BoundTo>1171560b-6ec4-4156-b774-6de01cb6b803</BoundTo>
     </Compile>
+    <Compile Include="Recording Modules\Add_Max_No_Of_Devices_Verify_Error_message.cs">
+      <BoundTo>4b4d41e2-e904-49df-b31e-9d711710b1e2</BoundTo>
+      <DependentUpon>Add_Max_No_Of_Devices_Verify_Error_message.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>85a9d5a2-a50e-4873-8f8b-da6496b5514e</id>
+    </Compile>
+    <Compile Include="Recording Modules\Add_Max_No_Of_Devices_Verify_Error_message.UserCode.cs">
+      <BoundTo>4b4d41e2-e904-49df-b31e-9d711710b1e2</BoundTo>
+      <DependentUpon>Add_Max_No_Of_Devices_Verify_Error_message.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e81cc030-4389-496a-9d53-1a86e8973db8</id>
+    </Compile>
     <Compile Include="Recording Modules\Add_Multiple_Devices_MP_Wizard.cs">
       <BoundTo>eead7c56-8585-4de1-941a-542b4ddeb041</BoundTo>
       <DependentUpon>Add_Multiple_Devices_MP_Wizard.rxrec</DependentUpon>
@@ -846,6 +858,18 @@
       <UserCode>true</UserCode>
       <id>21c53011-99e9-499f-9b7f-d6d99ce8351c</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.cs">
+      <BoundTo>ce8c1d44-36c6-4818-abb7-e5b2355ed94f</BoundTo>
+      <DependentUpon>Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9e9103a0-03e5-43f6-9e42-f1c80173c53e</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.UserCode.cs">
+      <BoundTo>ce8c1d44-36c6-4818-abb7-e5b2355ed94f</BoundTo>
+      <DependentUpon>Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>120d4233-b48a-442c-8b9a-6f9557c72d3e</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached.cs">
       <BoundTo>5b55022e-2cff-4700-a3e1-b0ba1d189d05</BoundTo>
       <DependentUpon>Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached.rxrec</DependentUpon>
@@ -869,6 +893,18 @@
       <DependentUpon>Verify_Accessories_Gallery_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>37d20a30-11a5-4f79-a8d8-d65bce4c0487</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices.cs">
+      <BoundTo>b572cd9b-4163-4b00-b77f-0a5bb01dcd18</BoundTo>
+      <DependentUpon>Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2e189d3f-28d1-4935-8261-a847ffe5421e</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices.UserCode.cs">
+      <BoundTo>b572cd9b-4163-4b00-b77f-0a5bb01dcd18</BoundTo>
+      <DependentUpon>Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c2ad95cc-6c58-47a3-b7ce-4ca516500b79</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_AC_Calc_for_FIM.cs">
       <BoundTo>e1649588-b030-4b91-a71e-5bf4fd0db3d5</BoundTo>
@@ -1301,6 +1337,18 @@
       <DependentUpon>Verify_Copy_option_isdisabled_for_single_sounders.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c33eaf6d-8759-4934-8f5c-d8ed6b53c8ff</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Copy_Paste_Functionality.cs">
+      <BoundTo>9f943d55-2703-4e3e-aa7c-268c9854f196</BoundTo>
+      <DependentUpon>Verify_Copy_Paste_Functionality.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>182a0763-da60-4f35-ba57-31e33796e939</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Copy_Paste_Functionality.UserCode.cs">
+      <BoundTo>9f943d55-2703-4e3e-aa7c-268c9854f196</BoundTo>
+      <DependentUpon>Verify_Copy_Paste_Functionality.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>83303dab-bf43-4416-9ce6-b24b6fe95211</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_copy_paste_functionality_for_LPS800.cs">
       <BoundTo>6aace62e-ce3f-47a2-86ab-7ef5edca61fb</BoundTo>
@@ -2550,6 +2598,18 @@
       <UserCode>true</UserCode>
       <id>50ea0316-3b85-477b-b4a0-c48d095a4bf1</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Physical_Layout.cs">
+      <BoundTo>11ae248a-8b54-4154-8bbd-6cb8ac2d0d6d</BoundTo>
+      <DependentUpon>Verify_Physical_Layout.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1be61f4b-f910-423d-afc9-9a09ba8a2852</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Physical_Layout.UserCode.cs">
+      <BoundTo>11ae248a-8b54-4154-8bbd-6cb8ac2d0d6d</BoundTo>
+      <DependentUpon>Verify_Physical_Layout.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0c1e3d6d-c6b4-440b-91d0-53cc81512337</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_PNI800_Card_Details.cs">
       <BoundTo>ff94b46c-d344-4667-8dc8-39a284382bdf</BoundTo>
       <DependentUpon>Verify_PNI800_Card_Details.rxrec</DependentUpon>
@@ -2693,6 +2753,18 @@
       <DependentUpon>Verify_Progress_Bar_Indicator_For_IS_Units.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>e5f9fce7-7bda-4532-855b-481bd9979ccb</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Project_Name.cs">
+      <BoundTo>903f64b1-9504-4118-a597-33f2a5cf765a</BoundTo>
+      <DependentUpon>Verify_Project_Name.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7973946a-951a-4104-b3dc-a92e12d3a575</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Project_Name.UserCode.cs">
+      <BoundTo>903f64b1-9504-4118-a597-33f2a5cf765a</BoundTo>
+      <DependentUpon>Verify_Project_Name.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9cb60f31-b554-4a31-9cdf-28788bba60c5</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Properties_BVT.cs">
       <BoundTo>e3c24116-042a-4cb7-be1d-458e2c71e5c3</BoundTo>
@@ -2933,6 +3005,18 @@
       <DependentUpon>Verify_Repeaters_Gallery_Items.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d09d2ecf-8bd9-496f-8571-5b6b7c4da67f</id>
+    </Compile>
+    <Compile Include="Recording Modules\verify_save_Confirmation_Of_An_Already_Saved_Project.cs">
+      <BoundTo>6d349d14-ac8e-44a9-91f1-35a19d87f06b</BoundTo>
+      <DependentUpon>verify_save_Confirmation_Of_An_Already_Saved_Project.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b3bd483a-56c4-4e17-9347-128b8720dbf1</id>
+    </Compile>
+    <Compile Include="Recording Modules\verify_save_Confirmation_Of_An_Already_Saved_Project.UserCode.cs">
+      <BoundTo>6d349d14-ac8e-44a9-91f1-35a19d87f06b</BoundTo>
+      <DependentUpon>verify_save_Confirmation_Of_An_Already_Saved_Project.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>02c383e4-a996-44a1-a10a-3c11eed010d9</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Sensitivity_Column_In_Points_Grid.cs">
       <BoundTo>20938c4e-5bfd-41eb-ab63-f481e3dac042</BoundTo>
@@ -3493,9 +3577,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\AddDevices_BVT.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>759e06ef-676e-418f-8bca-3bad17165f87</id>
       <recordtableid>66e02c6b-556b-491b-9403-1fa8f0f691ef</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Add_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -3506,6 +3590,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>1171560b-6ec4-4156-b774-6de01cb6b803</id>
       <recordtableid>ad448b9e-89f1-4573-82b9-b9db6be607e8</recordtableid>
+    </None>
+    <None Include="Recording Modules\Add_Max_No_Of_Devices_Verify_Error_message.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>4b4d41e2-e904-49df-b31e-9d711710b1e2</id>
+      <recordtableid>6d7f4ef1-864a-47b2-95ba-78c69db4a003</recordtableid>
     </None>
     <None Include="Recording Modules\Add_Multiple_Devices_MP_Wizard.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -3639,9 +3728,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\VerifyShoppingList_BVT.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>4139250d-b63e-404a-912b-6e35a76890a5</id>
       <recordtableid>7a8f261c-154c-48ac-afa9-57bc58adf125</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -3768,6 +3857,11 @@
       <recordtableid>87203d2e-5867-4942-9f7d-9ba9a5680bba</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>ce8c1d44-36c6-4818-abb7-e5b2355ed94f</id>
+      <recordtableid>0703a718-43c1-4e8b-8125-6bd336fac5aa</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached.rxrec">
       <id>5b55022e-2cff-4700-a3e1-b0ba1d189d05</id>
       <recordtableid>c57f3a20-042a-4304-b545-608f5a8c1659</recordtableid>
@@ -3776,6 +3870,11 @@
     <None Include="Recording Modules\Verify_Accessories_Gallery_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.rxrec">
       <id>feefa27e-df8f-4a66-b052-b671fced746e</id>
       <recordtableid>d76d388a-2e43-493c-8052-8b3211eb6205</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices.rxrec">
+      <id>b572cd9b-4163-4b00-b77f-0a5bb01dcd18</id>
+      <recordtableid>ac389839-6ec7-48db-af66-62d712b90539</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_AC_Calc_for_FIM.rxrec">
@@ -3958,6 +4057,11 @@
       <id>706dafb3-c3c4-4435-a95d-7b58a8b9039c</id>
       <recordtableid>892d7928-92e5-4459-895a-abe7ce120a77</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Copy_Paste_Functionality.rxrec">
+      <id>9f943d55-2703-4e3e-aa7c-268c9854f196</id>
+      <recordtableid>89db9bb9-3cb8-4e40-8420-d10d24fe946f</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_copy_paste_functionality_for_LPS800.rxrec">
       <id>6aace62e-ce3f-47a2-86ab-7ef5edca61fb</id>
       <recordtableid>acf51b0f-337b-4b84-b78e-ab5199df5662</recordtableid>
@@ -4039,9 +4143,9 @@
       <recordtableid>8d96ec4c-823d-433c-b189-1446cab232e4</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_DC_Unit_For_Built_In_Isolator_Devices_With_Non_Integral_LED_On_PFI_Loop_Considering_Trip_Curr.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>9ab1546e-07fc-4270-958f-0bbf689f7ac9</id>
       <recordtableid>28e13f5c-8c30-426c-a46a-4b31266a36ff</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_DC_Unit_For_Multiple_Built_In_Non_Built_In_Isolator_Devices_Integral_Non_Integral_LED_of_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4478,6 +4582,11 @@
       <recordtableid>d77c9b28-e21b-4f69-b248-b21217a9522c</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_Physical_Layout.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>11ae248a-8b54-4154-8bbd-6cb8ac2d0d6d</id>
+      <recordtableid>f0a549d9-d7cd-4c79-956e-7f55e4900786</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_PNI800_Card_Details.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>ff94b46c-d344-4667-8dc8-39a284382bdf</id>
@@ -4537,6 +4646,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>6235fbd1-eaa2-4927-a2e6-fe1ca3f21140</id>
       <recordtableid>9ef5cc97-c1dd-4687-8d27-6d2dde20b252</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Project_Name.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>903f64b1-9504-4118-a597-33f2a5cf765a</id>
+      <recordtableid>85662f0c-3bf3-4d05-9dd0-9a2bd578086a</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Properties_BVT.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4637,6 +4751,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>01b67a79-e8e4-4a5c-836a-f913ff0dc7e6</id>
       <recordtableid>577aff4e-ad54-4fd8-9190-329c28c8968b</recordtableid>
+    </None>
+    <None Include="Recording Modules\verify_save_Confirmation_Of_An_Already_Saved_Project.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>6d349d14-ac8e-44a9-91f1-35a19d87f06b</id>
+      <recordtableid>18eb6648-4cab-41d9-aa7b-c0175484aeca</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Sensitivity_Column_In_Points_Grid.rxrec">
       <id>20938c4e-5bfd-41eb-ab63-f481e3dac042</id>
