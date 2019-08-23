@@ -7167,11 +7167,11 @@ repo.AddDevices.txt_ModelNumber.Click();
 			//As per actual state and expected state values
 			if(actualState.Equals(ExpectedState))
 			{
-				Report.Log(ReportLevel.Success, "Isolator device is displayed as expected ");
+				Report.Log(ReportLevel.Success, "Device is displayed as expected ");
 			}
 			else
 			{
-				Report.Log(ReportLevel.Failure, "Isolator device is not displayed as expected ");
+				Report.Log(ReportLevel.Failure, "Device is not displayed as expected ");
 			}
 			
 			//Click on Points tab
@@ -7279,11 +7279,44 @@ repo.AddDevices.txt_ModelNumber.Click();
 
 		}
 		
+		
+		/********************************************************************
+		 * Function Name:ChangeParameterInSearchProperties
+		 * Function Details:
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 23/08/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void ChangeParameterInSearchProperties(string sProperty, string sParameterValue)
+		{
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Day Matches night text in Search Properties fields to view day matches night related text;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sProperty +"{ENTER}" );
+			
+			// Click on Isolator  cell
+			repo.ProfileConsys1.PARTItemsPresenter.cell_DayMatchesNight.Click();
+			
+			//Enter the required option
+			Keyboard.Press(sParameterValue+"{Enter}");
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 
 		
 	}
 	
 	
+}
 }
 
 

@@ -94,26 +94,11 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("55052");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelName("P80AI - R/W  - 1");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.verifyCheckboxInSearchProperties("A-Box Flush Adapt In Wall Sdr", ValueConverter.ArgumentFromString<bool>("ExpectedState", "True"));
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(5));
             repo.FormMe.SiteNode1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(6));
             repo.FormMe.tab_ShoppingList.Click();
             Delay.Milliseconds(200);
             

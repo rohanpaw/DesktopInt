@@ -144,7 +144,7 @@ namespace TestProject.Libraries
 				
 				bool DefaultStatus = Convert.ToBoolean(sDefaultStatus);
 				bool Status = Convert.ToBoolean(sStatus);
-				bool SecondChannelCheckbox = Convert.ToBoolean(sSecondChannelCheckbox);
+				
 				
 				//Expand Panel Node
 				Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -194,15 +194,20 @@ namespace TestProject.Libraries
 				Devices_Functions.VerifyDeviceUsingLabelName(NewLabelName);
 				
 				//Verify checkbox
-				Devices_Functions.verifyCheckboxInSearchProperties(CheckboxName,Status);
+				Devices_Functions.verifyCheckboxInSearchProperties(CheckboxName,DefaultStatus);
 				
 				
 				string SecondChannelLabelName = DeviceName+" - 127";
 				
 				//Slect 2nd channel 
-				Devices_Functions.SelectRowUsingLabelName(SecondChannelLabelName);
+				if(!sSecondChannelCheckbox.IsEmpty())
+				{
+					bool SecondChannelCheckbox = Convert.ToBoolean(sSecondChannelCheckbox);
+					Devices_Functions.SelectRowUsingLabelName(SecondChannelLabelName);
 				
-				Devices_Functions.VerifyCheckboxExists(CheckboxName,SecondChannelCheckbox);
+					Devices_Functions.VerifyCheckboxExists(CheckboxName,SecondChannelCheckbox);
+				}
+				
 				
 				//Click on Site Node and Shopping List
 				repo.FormMe.SiteNode1.Click();
@@ -212,5 +217,66 @@ namespace TestProject.Libraries
 				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SKUNo,true);
 			}
     }
+		
+	/********************************************************************
+		 * Function Name: VerifySurfaceBoxParameters
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 23/08/2019 
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifySurfaceBoxParameters(string sFileName,string sSheetName)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sSheetName);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string DeviceName,sType,LabelName,sPropertyName,sParameter,SKUNo;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=8; i++)
+			{
+				DeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				LabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				sPropertyName = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sParameter = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				SKUNo = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				
+				//Expand Panel Node
+				Common_Functions.ClickOnNavigationTreeExpander("Node");
+				
+				//Expand FIM/PFI Loop card
+				Common_Functions.ClickOnNavigationTreeExpander("PFI");
+				
+				//Click on Loop A
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				//Add Devices
+				Devices_Functions.AddDevicesfromGallery(DeviceName,sType);
+				
+				//Click on Points Tab
+				repo.ProfileConsys1.tab_Points.Click();
+				
+				//Click on device in grid
+				Devices_Functions.SelectRowUsingLabelName(LabelName);
+				
+				//Select parameter
+				Devices_Functions.ChangeParameterInSearchProperties(sPropertyName,sParameter);
+				
+				//Click on Site Node and Shopping List
+				repo.FormMe.SiteNode1.Click();
+				repo.FormMe.ShoppingList.Click();
+				
+				//Verify in shopping list
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SKUNo,true);
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sParameter,true);
+			}
+    }	
 }
 }

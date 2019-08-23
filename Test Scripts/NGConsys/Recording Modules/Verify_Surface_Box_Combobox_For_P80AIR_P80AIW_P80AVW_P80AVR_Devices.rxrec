@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="674e8a71-46ac-455d-8c1b-aa251c477155"
+id="893fef41-5d10-4cac-8a3f-cea287c70a18"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_Deletion_Of_PCS_POS_IOB_And_FB_From_Backplane
+		Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Deletion_Of_PCS_POS_IOB_And_FB_From_Backplane"
+	classname="Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -42,10 +42,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="90340d02-d5ae-4de2-9d6d-c3de8f26b0c8">
+			id="ebc4926b-32b9-4606-abb7-f4b7c8becc3c">
 				<argument
 				argname="NumberofPanels"
-				id="88c2f2dd-3e1f-4e61-8061-27d459ae05b5">
+				id="7eefdf78-b814-476c-876e-e5270d81a090">
 					<argvaluetype>
 						System.Int32
 					</argvaluetype>
@@ -55,7 +55,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="PanelNames"
-				id="3b1e74fe-1884-497c-bd91-aa4dba8cd66f">
+				id="c7467ce2-d2ea-4fb6-964f-6ff39c338c06">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -65,7 +65,114 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="sPanelCPU"
-				id="dc0ea196-3015-4526-a6a0-3d370ffb508a">
+				id="e15faea3-a4a4-41ec-ae21-6ab17736ca2d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="LinkedHardware_Fuctions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifySurfaceBoxParameters"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="26acec3f-667d-4d64-a4f2-d4ba14a9d2bb">
+				<argument
+				argname="sFileName"
+				id="cc4d5b9e-0c02-4000-b1f9-81419771d34a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_55046_55052_55056_Verify_Combobox_And_Shopping_List
+					</argvalue>
+				</argument>
+				<argument
+				argname="sSheetName"
+				id="a145df9b-3590-47e1-a1a4-e95d7722c38c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_55056
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SaveProject"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="97b3081b-342c-4029-a2cb-ee4c190121fb">
+				<argument
+				argname="sProjectName"
+				id="e40928a7-ee66-4475-9277-ebd2a58ccfb9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						55056
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="Application_Close"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="3f4ec46e-6917-4b7c-8d09-7718e78191d6">
+				<argument
+				argname="Save"
+				id="a3fa10c3-d426-4f93-aeb2-4414b46b39bc">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="SaveConfirmation"
+				id="f5c7526e-fc83-48e6-ae7d-569a512150ce">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="sProjectName"
+				id="e9c871df-f5fb-41f8-849f-aedd178f56ba">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -78,7 +185,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
+		methodname="ReopenProject"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -87,87 +194,15 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			id="4a9e4f8f-660e-46a9-971e-0a1cc25a8daf">
 				<argument
-				argname="ExpanderName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
+				argname="sProjectName"
+				id="86b30bdc-9159-449d-8096-89253a3f84e4">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="SlotCards_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyAdditionOfDevicesInBackplaneWithOnePanel"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="c77d8da2-db8f-41e4-bdd4-8367233c354a">
-				<argument
-				argname="sFileName"
-				id="80bcec5f-9bcf-4537-a6cd-99f4b748a3fa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						TC_60_Verify_Deletion_Of_PCS_POS_IOB_And_FB_From_Backplane
-					</argvalue>
-				</argument>
-				<argument
-				argname="sAddDevicesSheet"
-				id="b09507c6-911c-4d7d-9843-1afa5bdac9d8">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Add Devices
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="SlotCards_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyDeletionOfDevicesInBackplane"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="c77d8da2-db8f-41e4-bdd4-8367233c354a">
-				<argument
-				argname="sFileName"
-				id="80bcec5f-9bcf-4537-a6cd-99f4b748a3fa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						TC_60_Verify_Deletion_Of_PCS_POS_IOB_And_FB_From_Backplane
-					</argvalue>
-				</argument>
-				<argument
-				argname="sAddDevicesSheet"
-				id="b09507c6-911c-4d7d-9843-1afa5bdac9d8">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Delete Devices
+						55056
 					</argvalue>
 				</argument>
 			</arguments>
@@ -180,7 +215,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="753747d3-6cba-4d13-b78d-f82b9b255423"
+		searchpropertyid="55e82a5f-05ca-479c-9c7b-957c51ae135e"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -189,18 +224,42 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="807335c2-6d69-4d81-90fb-2bda276e0630"
-			sourcename="RepositoryEditor">
+			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
+			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Panel Network']
+					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8f8912ea-7185-437d-9954-7cc89875720b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="21ef54bb-73d2-4c29-8719-e70db3e328ab"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/picture[2]/text[@text='Shopping List']
 				</path>
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="Panel_Functions"
+		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="DeletePanel"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -209,35 +268,25 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="90340d02-d5ae-4de2-9d6d-c3de8f26b0c8">
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
 				<argument
-				argname="NumberofPanels"
-				id="88c2f2dd-3e1f-4e61-8061-27d459ae05b5">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelNode"
-				id="3b1e74fe-1884-497c-bd91-aa4dba8cd66f">
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1
+						S-BOXR Shallow box wallsdr Red
 					</argvalue>
 				</argument>
 				<argument
-				argname="rowNumber"
-				id="dc0ea196-3015-4526-a6a0-3d370ffb508a">
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
 					<argvaluetype>
-						System.Int32
+						System.Boolean
 					</argvaluetype>
 					<argvalue>
-						1
+						True
 					</argvalue>
 				</argument>
 			</arguments>
@@ -259,7 +308,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Deletion_Of_PCS_POS_IOB_And_FB_From_Backplane.UserCode.cs
+		Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

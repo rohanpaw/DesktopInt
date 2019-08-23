@@ -3066,6 +3066,18 @@
       <UserCode>true</UserCode>
       <id>73f65616-8d2e-4795-b882-6d59663ef746</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.cs">
+      <BoundTo>2f6d4607-f220-4c33-b91d-0cf4b926aba0</BoundTo>
+      <DependentUpon>Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>193dd8f4-3bc5-48e5-a7a9-9418ae8f7cb5</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.UserCode.cs">
+      <BoundTo>2f6d4607-f220-4c33-b91d-0cf4b926aba0</BoundTo>
+      <DependentUpon>Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>343063f1-c9cd-4763-9427-b3d1a31b63fc</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M.cs">
       <BoundTo>f8b52d33-e145-4fcb-b146-09aa4197918a</BoundTo>
       <DependentUpon>Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M.rxrec</DependentUpon>
@@ -3858,9 +3870,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>ce8c1d44-36c6-4818-abb7-e5b2355ed94f</id>
       <recordtableid>0703a718-43c1-4e8b-8125-6bd336fac5aa</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached.rxrec">
       <id>5b55022e-2cff-4700-a3e1-b0ba1d189d05</id>
@@ -4776,6 +4788,11 @@
       <id>2676f9ee-e77d-473b-860c-62feea329cf0</id>
       <recordtableid>5e03fc6d-462d-44a1-b7f7-949806efd4c2</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>2f6d4607-f220-4c33-b91d-0cf4b926aba0</id>
+      <recordtableid>893fef41-5d10-4cac-8a3f-cea287c70a18</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

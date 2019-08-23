@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices recording.
+    ///The Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices recording.
     /// </summary>
-    [TestModule("ac389839-6ec7-48db-af66-62d712b90539", ModuleType.Recording, 1)]
-    public partial class Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices : ITestModule
+    [TestModule("893fef41-5d10-4cac-8a3f-cea287c70a18", ModuleType.Recording, 1)]
+    public partial class Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices instance = new Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices();
+        static Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices instance = new Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices()
+        public Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices Instance
+        public static Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices Instance
         {
             get { return instance; }
         }
@@ -82,16 +82,16 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Libraries.LinkedHardware_Fuctions.VerifyCheckboxOfProperties("TC_55046_55052_55056_Verify_Combobox_And_Shopping_List", "TC_55046");
+            Libraries.LinkedHardware_Fuctions.VerifySurfaceBoxParameters("TC_55046_55052_55056_Verify_Combobox_And_Shopping_List", "TC_55056");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.SaveProject("55046");
+            Libraries.Common_Functions.SaveProject("55056");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ReopenProject("55046");
+            Libraries.Common_Functions.ReopenProject("55056");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(5));
@@ -102,7 +102,7 @@ namespace TestProject.Recording_Modules
             repo.FormMe.tab_ShoppingList.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("576.080.014", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("S-BOXR Shallow box wallsdr Red", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
         }
