@@ -3504,7 +3504,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			name="txt_CableLength"
 			refimgid="45e70d03-35c1-4931-82cb-d6ae66cd81d8"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='1']//text[@automationid='PART_Editor']
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/?//text[@automationid='PART_Editor']
 			</item>
 			<item
 			capname="cell"

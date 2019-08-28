@@ -33,5 +33,18 @@ namespace TestProject.Recording_Modules
             // Your recording specific initialization code goes here.
         }
 
+        public void VerifyOverwriteConfirmationForExcel()
+        {
+			if(repo.FormMe2.Export_OK_OverwriteInfo.Exists())
+			{
+				repo.FormMe2.Export_OK_Overwrite.Click();
+			}
+			else
+			{
+				//Delay.Milliseconds(100);
+				validateAndClickOKButtonOnExportDocument();
+			}
+        }
+
     }
 }

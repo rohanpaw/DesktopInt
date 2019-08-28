@@ -211,7 +211,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -231,6 +231,32 @@ rxversion="8.3">
 				</path>
 			</info>
 		</mouseitem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a3d05efa-3cf5-40be-bf93-529035c6898a">
+				<argument
+				argname="TreeItemName"
+				id="f7917c3c-ad3c-4b5a-8a32-074b4f95af98">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Site
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -257,7 +283,7 @@ rxversion="8.3">
 		</mouseitem>
 		<userrecorditem
 		classname="Export_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SearchDeviceInExportUsingSKUOrDescription"
 		namespace="TestProject.Libraries"
@@ -277,6 +303,150 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						S-BOXR Shallow box wallsdr Red
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
+				<argument
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						557.080.007
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
+				<argument
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						557.080.011
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
+				<argument
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						557.080.008
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
+				<argument
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						557.080.012
 					</argvalue>
 				</argument>
 				<argument

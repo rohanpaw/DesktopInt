@@ -94,15 +94,30 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("55056");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(5));
-            repo.FormMe.SiteNode1.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(5));
+            //repo.FormMe.SiteNode1.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(6));
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(7));
             repo.FormMe.tab_ShoppingList.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("S-BOXR Shallow box wallsdr Red", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            //Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("S-BOXR Shallow box wallsdr Red", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            //Delay.Milliseconds(0);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.007", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.011", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.008", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.012", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
         }

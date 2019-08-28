@@ -392,6 +392,27 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info,"Overwrite message is not displayed");
 			}
 		}
+			
+		/***********************************************************************************************************
+		 * Function Name: VerifyOverwriteConfirmationForExcel
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 28/08/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyOverwriteConfirmationForExcel()
+		{
+			if(repo.FormMe2.Export_OK_OverwriteInfo.Exists())
+			{
+				repo.FormMe2.Export_OK_Overwrite.Click();
+			}
+			else
+			{
+				//Delay.Milliseconds(100);
+				validateAndClickOKButtonOnExportDocument();
+			}
 		
 		}
 }

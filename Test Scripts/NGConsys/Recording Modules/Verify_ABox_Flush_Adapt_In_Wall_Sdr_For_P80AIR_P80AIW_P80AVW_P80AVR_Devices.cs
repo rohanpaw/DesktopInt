@@ -94,16 +94,67 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("55052");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(5));
-            repo.FormMe.SiteNode1.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(5));
+            //repo.FormMe.SiteNode1.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(6));
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(7));
             repo.FormMe.tab_ShoppingList.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("576.080.011", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            //Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("576.080.014", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            //Delay.Milliseconds(0);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("576.080.002", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
+            
+            //Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("576.080.006", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("576.080.010", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(12));
+            repo.FormMe.Export2ndTime.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.ExportDropdown' at Center.", repo.PrintPreview.ExportDropdownInfo, new RecordItemIndex(13));
+            repo.PrintPreview.ExportDropdown.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExportDocument.ExcelFormat' at Center.", repo.ExportDocument.ExcelFormatInfo, new RecordItemIndex(14));
+            repo.ExportDocument.ExcelFormat.Click();
+            Delay.Milliseconds(200);
+            
+            VerifyOverwriteConfirmationForExcel();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(16));
+            Delay.Duration(5000, false);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'csv{Return}'.", new RecordItemIndex(17));
+            Keyboard.Press("csv{Return}");
+            Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(18));
+            //Delay.Duration(5000, false);
+            
+            //Libraries.Export_Functions.validateAndClickOKButtonOnExportDocument();
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyExcelCellValue("5", "H5", "4");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ShoppingListCompatibilityModeE.btn_CloseExcel' at Center.", repo.ShoppingListCompatibilityModeE.btn_CloseExcelInfo, new RecordItemIndex(21));
+            repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_Close' at Center.", repo.PrintPreview.btn_CloseInfo, new RecordItemIndex(22));
+            repo.PrintPreview.btn_Close.Click();
+            Delay.Milliseconds(200);
             
         }
 
