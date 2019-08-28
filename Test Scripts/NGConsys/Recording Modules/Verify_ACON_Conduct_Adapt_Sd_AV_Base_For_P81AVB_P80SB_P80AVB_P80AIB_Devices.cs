@@ -120,7 +120,7 @@ namespace TestProject.Recording_Modules
             repo.ExportDocument.ExcelFormat.Click();
             Delay.Milliseconds(200);
             
-            VerifyOverwriteConfirmationForExcel();
+            Libraries.Export_Functions.VerifyOverwriteConfirmationForExcel();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(13));

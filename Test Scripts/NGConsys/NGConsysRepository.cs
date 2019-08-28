@@ -15222,6 +15222,7 @@ namespace TestProject
             RepoItemInfo _chkbox_licenseagreementInfo;
             RepoItemInfo _btn_installcloseInfo;
             RepoItemInfo _partexpandbuttonInfo;
+            RepoItemInfo _export_ok_overwriteInfo;
 
             /// <summary>
             /// Creates a new FormMe2  folder.
@@ -15254,6 +15255,7 @@ namespace TestProject
                 _chkbox_licenseagreementInfo = new RepoItemInfo(this, "chkBox_LicenseAgreement", "checkbox[@automationid='CheckBox_1']", 30000, null, "33de9895-c1c2-46e8-9356-805449f11a53");
                 _btn_installcloseInfo = new RepoItemInfo(this, "btn_InstallClose", "?/?/button[@automationid='Button_1']/text[@text='Close']", 30000, null, "ae6fff5f-18ca-42de-b5c4-43828287d1e9");
                 _partexpandbuttonInfo = new RepoItemInfo(this, "PARTExpandButton", "progressbar/picture[6]/tree/container[8]/container[2]/indicator[9]/button[@automationid='PART_ExpandButton']", 30000, null, "3755d918-d162-470f-aee9-137c34d5e7ad");
+                _export_ok_overwriteInfo = new RepoItemInfo(this, "Export_OK_Overwrite", "button[@name='OK']", 30000, null, "41277ae1-e48f-4b06-bc29-a082affbef88");
             }
 
             /// <summary>
@@ -15853,6 +15855,30 @@ namespace TestProject
                 get
                 {
                     return _partexpandbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Export_OK_Overwrite item.
+            /// </summary>
+            [RepositoryItem("41277ae1-e48f-4b06-bc29-a082affbef88")]
+            public virtual Ranorex.Button Export_OK_Overwrite
+            {
+                get
+                {
+                    return _export_ok_overwriteInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Export_OK_Overwrite item info.
+            /// </summary>
+            [RepositoryItemInfo("41277ae1-e48f-4b06-bc29-a082affbef88")]
+            public virtual RepoItemInfo Export_OK_OverwriteInfo
+            {
+                get
+                {
+                    return _export_ok_overwriteInfo;
                 }
             }
 

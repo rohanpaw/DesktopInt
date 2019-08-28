@@ -149,17 +149,17 @@ namespace TestProject.Libraries
 			Delay.Duration(5000, false);
 			
 			//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
-				// Click on OK Button of export document
-				Export_Functions.validateAndClickOKButtonOnExportDocument();
-				
+			// Click on OK Button of export document
+			Export_Functions.validateAndClickOKButtonOnExportDocument();
+			
 //				// Click on OK button of export document
 //				repo.ExportDocument.ButtonOK.Click();
 //				Delay.Milliseconds(200);
-//				
+//
 //				// Click on OK button of export document again
 //				repo.ExportDocument.ButtonOK.Click();
-				
-				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
+			
+			//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
 		}
 		
 		
@@ -278,12 +278,12 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Model name" +sExpectedText+ " is not displayed correctly instead " +actualText+  "is displayed " );
 			}
 		}
-	
+		
 
-/***********************************************************************************************************
+		/***********************************************************************************************************
 		 * Function Name: validateAndClickOKButtonOnExportDocument
 		 * Function Details: To validate export document window and then click on Ok after verification
-		 * Parameter/Arguments: 
+		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update :  17/07/2019
@@ -292,21 +292,21 @@ namespace TestProject.Libraries
 		public static void validateAndClickOKButtonOnExportDocument()
 		{
 //			//repo.ExportDocument.PARTDragWidget.Click();
-//			
+//
 //			if(repo.FormMe2.ButtonOKInfo.Exists())
 //			{
 //				repo.FormMe2.ButtonOK.Click();
 //				Delay.Milliseconds(200);
-//				
+//
 //				//repo.FormMe2.ButtonOK.Click(); updated Purvi-23/08/2019
 //			}
 //			else
 //			{
-//				
-				repo.ExportDocument.ButtonOK.Click();
-				Delay.Milliseconds(200);
-				
-				repo.ExportDocument.ButtonOK.Click();		
+//
+			repo.ExportDocument.ButtonOK.Click();
+			Delay.Milliseconds(200);
+			
+			repo.ExportDocument.ButtonOK.Click();
 			//}
 		}
 		
@@ -321,7 +321,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void SearchDeviceInExportUsingSKUOrDescription(string sValue,bool sExist)
 		{
-			 
+			
 			// Click on Export button
 			repo.FormMe.Export2ndTime.Click();
 			Delay.Milliseconds(200);
@@ -364,10 +364,10 @@ namespace TestProject.Libraries
 			}
 			repo.PrintPreview.btn_CloseB.Click();
 			Delay.Milliseconds(200);
-	}
+		}
 		
 		/***********************************************************************************************************
-		 * Function Name: 
+		 * Function Name:
 		 * Function Details:
 		 * Parameter/Arguments: The output file already exists. Click OK to overwrite.
 		 * Output:
@@ -380,19 +380,20 @@ namespace TestProject.Libraries
 			if(repo.Export.Msg_OverwriteInfo.Exists())
 			{
 				
-			string actualText = repo.Export.Msg_Overwrite.TextValue;
-			
-			if(actualText.Equals(sExpectedText))
-			{
-				Report.Log(ReportLevel.Info,"Overwrite message " +actualText+ " is displayed");
-				repo.Export.ButtonOK.Click();
-			}
-			else
-			{
-				Report.Log(ReportLevel.Info,"Overwrite message is not displayed");
+				string actualText = repo.Export.Msg_Overwrite.TextValue;
+				
+				if(actualText.Equals(sExpectedText))
+				{
+					Report.Log(ReportLevel.Info,"Overwrite message " +actualText+ " is displayed");
+					repo.Export.ButtonOK.Click();
+				}
+				else
+				{
+					Report.Log(ReportLevel.Info,"Overwrite message is not displayed");
+				}
 			}
 		}
-			
+		
 		/***********************************************************************************************************
 		 * Function Name: VerifyOverwriteConfirmationForExcel
 		 * Function Details:
@@ -413,8 +414,8 @@ namespace TestProject.Libraries
 				//Delay.Milliseconds(100);
 				validateAndClickOKButtonOnExportDocument();
 			}
-		
+			
 		}
-}
+	}
 }
 

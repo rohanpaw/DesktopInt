@@ -3173,7 +3173,6 @@ h1Cb2V0L
 			</bindings>
 		</keysequenceitem>
 		<userrecorditem
-		autogenmethod="True"
 		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -3186,7 +3185,7 @@ h1Cb2V0L
 			<bindings>
 			</bindings>
 			<arguments
-			id="90372633-cc11-40b9-a25e-32ffcbdc6eac">
+			id="66b7ab75-ca6c-4bfd-be26-b523a67d49bb">
 			</arguments>
 		</userrecorditem>
 		<explicitdelayitem

@@ -17174,6 +17174,13 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form/progressbar/picture[6]/tree/container[8]/container[2]/indicator[9]/button[@automationid='PART_ExpandButton']
 			</item>
+			<item
+			capname="button"
+			id="41277ae1-e48f-4b06-bc29-a082affbef88"
+			name="Export_OK_Overwrite"
+			searchtimeout="30000ms">
+				/form/button[@name='OK']
+			</item>
 			<basepath>
 				/form
 			</basepath>
