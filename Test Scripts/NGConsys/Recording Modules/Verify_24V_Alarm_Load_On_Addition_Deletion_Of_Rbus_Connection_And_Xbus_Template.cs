@@ -91,7 +91,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.365", "FIM");
+            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.365", "FIM1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
@@ -106,7 +106,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.384", "FIM");
+            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.384", "FIM1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
@@ -118,7 +118,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.384", "FIM");
+            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.384", "FIM1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
@@ -130,7 +130,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.365", "FIM");
+            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.365", "FIM1");
             Delay.Milliseconds(0);
             
         }

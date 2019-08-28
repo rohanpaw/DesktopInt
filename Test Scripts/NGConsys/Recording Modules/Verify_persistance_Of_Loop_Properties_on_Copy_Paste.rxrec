@@ -701,7 +701,7 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						1000
+						500
 					</argvalue>
 				</argument>
 			</arguments>

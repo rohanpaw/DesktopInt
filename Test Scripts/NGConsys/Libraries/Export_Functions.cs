@@ -291,23 +291,23 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void validateAndClickOKButtonOnExportDocument()
 		{
-			//repo.ExportDocument.PARTDragWidget.Click();
-			
-			if(repo.FormMe2.ButtonOKInfo.Exists())
-			{
-				repo.FormMe2.ButtonOK.Click();
-				Delay.Milliseconds(200);
-				
-				//repo.FormMe2.ButtonOK.Click(); updated Purvi-23/08/2019
-			}
-			else
-			{
-				
+//			//repo.ExportDocument.PARTDragWidget.Click();
+//			
+//			if(repo.FormMe2.ButtonOKInfo.Exists())
+//			{
+//				repo.FormMe2.ButtonOK.Click();
+//				Delay.Milliseconds(200);
+//				
+//				//repo.FormMe2.ButtonOK.Click(); updated Purvi-23/08/2019
+//			}
+//			else
+//			{
+//				
 				repo.ExportDocument.ButtonOK.Click();
 				Delay.Milliseconds(200);
 				
 				repo.ExportDocument.ButtonOK.Click();		
-			}
+			//}
 		}
 		
 		/***********************************************************************************************************
@@ -365,6 +365,35 @@ namespace TestProject.Libraries
 			repo.PrintPreview.btn_CloseB.Click();
 			Delay.Milliseconds(200);
 	}
+		
+		/***********************************************************************************************************
+		 * Function Name: 
+		 * Function Details:
+		 * Parameter/Arguments: The output file already exists. Click OK to overwrite.
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 26/08/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyOverwriteMessageAndClickButton(string sExpectedText)
+		{
+			if(repo.Export.Msg_OverwriteInfo.Exists())
+			{
+				
+			string actualText = repo.Export.Msg_Overwrite.TextValue;
+			
+			if(actualText.Equals(sExpectedText))
+			{
+				Report.Log(ReportLevel.Info,"Overwrite message " +actualText+ " is displayed");
+				repo.Export.ButtonOK.Click();
+			}
+			else
+			{
+				Report.Log(ReportLevel.Info,"Overwrite message is not displayed");
+			}
+		}
+		
+		}
 }
 }
 

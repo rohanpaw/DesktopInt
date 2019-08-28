@@ -650,7 +650,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -676,7 +676,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -695,7 +695,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Backplane  3
+						Backplane  2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -5386,6 +5386,32 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 			id="e986e9f8-fc6b-4aff-b76f-0bb704c65728">
 			</arguments>
 		</userrecorditem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyOverwriteMessageAndClickButton"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e986e9f8-fc6b-4aff-b76f-0bb704c65728">
+				<argument
+				argname="sExpectedText"
+				id="4da6adbd-6ec9-4df5-9db7-4fc542b24487">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						The output file already exists. Click OK to overwrite.
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -5537,7 +5563,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="051ac891-ae1d-4fbe-b050-311d7b3f58e2"
+		searchpropertyid="d7bebf56-9f06-4e4a-9a6b-c44337c5956f"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -5546,10 +5572,10 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 			<bindings>
 			</bindings>
 			<info
-			id="da5d2408-f0f2-47f7-8850-f47457d51ea8"
+			id="143c5434-4ee7-4582-9b76-f7136459f644"
 			sourcename="RepositoryEditor">
 				<path>
-					/form[@title='Print Preview']//list[@automationid='PART_HeaderButtons']/button[@automationid='PART_CloseButton']
+					/form[@title='Print Preview']/?/?/container[@automationid='PART_HeaderBorder']/button[@automationid='PART_CloseButton']
 				</path>
 			</info>
 		</mouseitem>

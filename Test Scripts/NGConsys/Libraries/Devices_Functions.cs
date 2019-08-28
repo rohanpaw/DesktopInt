@@ -1224,7 +1224,7 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				Report.Log(ReportLevel.Failure,"Device Sensitivity is not displayed correctly");
+				Report.Log(ReportLevel.Failure,"Device Sensitivity " +DeviceSensitivity+ " is not displayed correctly");
 			}
 			
 			//Click on Points tab
@@ -5972,14 +5972,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/**************************************************************************************************
+		/************************************************************************************************************************
 		 * Function Name: AddDevicesfromMultiplePointWizardWithRegion
 		 * Function Details: To add multiple devices using multiple point wizard with different loop
 		 * Parameter/Arguments: Device name, Region and its quantity
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 23/05/19 Alpesh Dhakad - 19/08/2019 - Updated script for model number selection
-		 **************************************************************************************************/
+		 * Last Update : 23/05/19 Alpesh Dhakad - 19/08/2019 & 27/08/2019 - Updated script for model number selection
+		 ************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddDevicesfromMultiplePointWizardWithRegion(string sDeviceName,int DeviceQty, string sRegion )
 		{
@@ -5990,10 +5990,11 @@ namespace TestProject.Libraries
 			repo.AddDevices.txt_SearchDevices.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+sDeviceName);
 			ModelNumber = sDeviceName;
-repo.AddDevices.txt_ModelNumber.Click();
+			//repo.AddDevices.txt_ModelNumber.Click();
 			repo.AddDevices.txt_ModelNumber1.Click();
 			
-			//repo.AddDevices.txt_ModelNumber.Click();			repo.AddDevices.txt_Quantity.Click();
+			//repo.AddDevices.txt_ModelNumber.Click();			
+			repo.AddDevices.txt_Quantity.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+DeviceQty.ToString());
 			repo.AddDevices.MPWRegionBox.Click();
 			repo.AddDevices.MultiPointWizardRegionDropDownBtn.Click();
@@ -6151,24 +6152,24 @@ repo.AddDevices.txt_ModelNumber.Click();
 		}
 		
 		
-		/********************************************************************
+		/***********************************************************************************************************
 		 * Function Name: ChangeDeviceSensitivityInPointsGrid
 		 * Function Details: To change device sensitivity in points grid
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 27/08/2019 - Updated GridSensitivityCombo1 for change device sensitivity
+		 ***********************************************************************************************************/
 		// To change device sensitivity value as per the argument
 		[UserCodeMethod]
 		public static void ChangeDeviceSensitivityInPointsGrid(string changeDeviceSensitivity)
 		{
 			
 			// Click on Device Sensitivity cell
-			repo.FormMe2.GridSensitivityCombo1.Click();
+			repo.FormMe.GridSensitivityCombo1.Click();
 			
 			// Enter the value to change device sensitivity
-			repo.FormMe2.GridSensitivityCombo.PressKeys((changeDeviceSensitivity) +"{ENTER}" + "{ENTER}");
+			repo.FormMe.GridSensitivityCombo1.PressKeys((changeDeviceSensitivity) +"{ENTER}" + "{ENTER}");
 			Report.Log(ReportLevel.Info," Device sensitivity changed successfully ");
 			
 		}
@@ -7097,11 +7098,11 @@ repo.AddDevices.txt_ModelNumber.Click();
 
 			sGalleryIndex = SelectGalleryType(sType);
 			
-			//repo.FormMe.btn_AllGalleryDropdown.Click();
-			//repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
-			repo.FormMe.btn_DevicesGalleryDropDown1.Click();
+			repo.FormMe.btn_AllGalleryDropdown.Click();
+			repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
+			//repo.FormMe.btn_DevicesGalleryDropDown1.Click();
 			
-			repo.FormMe.btn_DevicesGalleryDropDown1.EnsureVisible();
+			//repo.FormMe.btn_DevicesGalleryDropDown1.EnsureVisible();
 			
 			repo.ContextMenu.txt_SelectDevice.Click();
 			

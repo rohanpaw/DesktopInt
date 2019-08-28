@@ -1384,15 +1384,15 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 		
-		/*********************************************************************************************************
+		/***************************************************************************************************************************
 		 * Function Name: VerifyAdditionOfDevicesInBackplaneWithOnePanel
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 06/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
-		 * Alpesh Dhakad - 16/08/2019 and 19/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
-		 **********************************************************************************************************/
+		 * Alpesh Dhakad - 16/08/2019,19/08/2019 & 28/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 ***************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfDevicesInBackplaneWithOnePanel(string sFileName,string sAddDevicesSheet)
 		{
@@ -1438,7 +1438,7 @@ namespace TestProject.Libraries
 						if (sType.Equals("Accessories"))
 						{
 							// Click on Panel node
-							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+							Common_Functions.ClickOnNavigationTreeItem("Node");
 							
 							//repo.ProfileConsys1.NavigationTree.Expander.Click();
 							repo.FormMe.tab_PanelAccessories.Click();
@@ -1451,7 +1451,7 @@ namespace TestProject.Libraries
 						else
 						{
 							// Click on Panel node
-							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+							Common_Functions.ClickOnNavigationTreeItem("Node");
 							
 							repo.FormMe.tab_Inventory.Click();
 							
@@ -1469,14 +1469,14 @@ namespace TestProject.Libraries
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
 					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
 				else
 				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane",ExpectedBackplane1);
+					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3",ExpectedBackplane1);
 					
 				}
 				
@@ -1719,8 +1719,9 @@ namespace TestProject.Libraries
 						if (sType.Equals("Accessories"))
 						{
 							// Click on Panel node
-							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+							Common_Functions.ClickOnNavigationTreeItem("Node");
 							
+						
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -1730,7 +1731,7 @@ namespace TestProject.Libraries
 						else
 						{
 							// Click on Panel node
-							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+							Common_Functions.ClickOnNavigationTreeItem("Node");
 							
 							repo.FormMe.tab_Inventory.Click();
 							
@@ -1747,10 +1748,10 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
 				else
@@ -2005,7 +2006,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/06/2019 Alpesh Dhakad- 29/07/2019 & 20/08/2019 - Updated script as per new build xpath updates
+		 * Last Update : 13/06/2019 Alpesh Dhakad- 29/07/2019 & 20-21/08/2019- Updated script as per new build xpath updates
 		 ***********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfDevicesFromOtherSlotCards(string sFileName,string sAddDevicesSheet)
@@ -2071,6 +2072,9 @@ namespace TestProject.Libraries
 				
 							// Click on Other slot cards tree item
 							Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
+							
+							// Click on Expander node
+							Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 				
 							repo.FormMe.tab_Inventory.Click();
 							

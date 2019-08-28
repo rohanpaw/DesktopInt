@@ -2313,7 +2313,7 @@ W/AAAAAASUVORK5CYII=
 			name="txt_AllDevices"
 			refimgid="595f753f-223a-4b71-80e4-8e43f7d1e440"
 			searchtimeout="30000ms">
-				/form[@title='Add Devices']//button[@automationid='PART_PanelNewButton']/container/button[@automationid='PART_CloseButton']/text[@caption='All Devices']
+				/form[@title='Add Devices']//button[@automationid='PART_PanelNewButton']//button[@automationid='PART_CloseButton']/text[@caption='All Devices']
 			</item>
 			<item
 			addcaps="text,wpfelement,wpfgroupelement"
@@ -3312,6 +3312,14 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="7694f0f2-ba3c-4ec4-b564-1476565f3b68"
 			name="btn_MultiplePointWizard"
 			refimgid="6a018d65-2cf0-4b18-b480-99a13ab5d487"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Multiple Point Wizard']
+			</item>
+			<item
+			capname="button"
+			id="9596b65c-1e9e-4711-9abe-5d76f8ec38e7"
+			name="Copy_of_btn_MultiplePointWizard"
+			refimgid="6a018d65-2cf0-4b18-b480-99a13ab5d487"
 			searchtimeout="60ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/button[@text='Multiple Point Wizard']
 			</item>
@@ -3797,9 +3805,8 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="ee004f0a-91ee-4da7-9760-91cf72af4717"
 			name="ModelColumn"
 			refimgid="414bf333-31a9-463b-b408-5d8a3edacb41"
-			refpath="/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='PART_HeadersPanel']/button[2]/list[@automationid='headerItemsControl']/button[2]"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_HeadersPanel']/?/?/list[@automationid='headerItemsControl']/button[2]
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table//list[@automationid='headerItemsControl']/button[2]
 			</item>
 			<item
 			addcaps="picture,wpfelement,wpfgroupelement"
@@ -16384,6 +16391,13 @@ AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[10]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//button[@automationid='PART_Editor']
 			</item>
+			<item
+			capname="text"
+			id="f237acfd-8daf-4caf-a2d8-cb5d430045ce"
+			name="GridSensitivityCombo1"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[5]/text
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -16717,7 +16731,7 @@ hM8MsgM0m802GX90Oh38BvNsx7yLsF6zAAAAAElFTkSuQmCC
 			name="ButtonOK"
 			refimgid="fe957215-8fff-49b2-8959-f56ca13a5f80"
 			searchtimeout="30000ms">
-				/form[@title='Export Document...']/list[1]/button[@caption='OK']
+				/form[@title='Export Document...']/list[1]//button[@caption='OK']
 			</item>
 			<basepath>
 				/form[@title='Export Document...']
@@ -16877,6 +16891,7 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 		id="ee1e2d60-cfa5-4cc5-bd2f-c99233037569"
 		isrooted="True"
 		name="FormMe2"
+		refimgid="9060a424-0567-41dd-b318-adc57c17aeed"
 		refpath="/form"
 		searchtimeout="30000ms"
 		usecache="True">
@@ -17176,6 +17191,46 @@ akJdT6kHUuqOpLrCd5dMl0OizZwApC8HJG9cg6g4d2Cp+nRKvc8t0eOU6LDF+ND7G0Dsoi6oh4S6
 P3nrKiMJdc+i+ld7jE/WKO96vKxPAO4tMRDlSOKfh2IIAEzMgcsXZ8ij0T+q8W1YpcOu8HFQTgLW
 pm0Rb6H+Ibn788kxmsgWyRLJFMnINbEvx8Te7Dz2iOzOymNXZio7M1LJyS9i4U3+6xgMvwD+1+a2
 GORSxAAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="947cd759-3aec-4fc1-8e14-e76b1de0c7d6"
+		isrooted="True"
+		name="Export"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="7e41021f-bf0b-44f6-a349-7e65badb4b0e"
+			name="Msg_Overwrite"
+			refimgid="7e74160f-b7a8-491f-a9c1-b1cd08ec555d"
+			searchtimeout="30000ms">
+				/form[@title='Export']/?/?/text[@automationid='PART_MessageBoxText']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="9c02ef2d-371a-47df-a2f9-7f3146e6d942"
+			name="ButtonOK"
+			refimgid="fe957215-8fff-49b2-8959-f56ca13a5f80"
+			searchtimeout="30000ms">
+				/form[@title='Export']/?/?/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@title='Export']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAF9SURBVDhPrZIxS4JRFIbvH/BPuPsP3JwdrMWh
+IcFNUEQUjdzE1TEQXBUEQQTBQQoXRdEwQ1BDSFGCCEILNcXzdP1sjAa/DjzDvZfzct73XCUi7Pf7
+k1FOpxMzqGaziRkUJsu8wHg8Jh6Pk81micVi9Pt9NpMJcn2NnJ8fOTvjpVQiGo3SaDRYLpcMBgP8
+fj/KbreTTqcJBoNkMhkcDgeDbhceHpC7O0TfycUF69tbWq0WoVCIfD5PKpWiWCyidFHS6l6vl0ql
+gsViod1uw26HPD8jLhdSLsPnp7G20WiEz+cjl8uxWq3+EHh6Ojbf3yObzY/jY3k8HsoHUV2/C+iz
+XF0hNzfIcAizGbuPDyY6m0AgYFhOJpPU63WU1WqlWq0aAdVqNWw2G49aXS4vEbcb0cISifCq3xKJ
+BIVCgfl8bjSHw2FUVwe2WCyYTqdGur1ej9X7u2GBQ5gH9Ga+3t4M/+v12hh9u90y1NP9w0fS/syg
+dHpHnyei6HQ4nQ7fKeJJm+Bzy4oAAAAASUVORK5CYII=
 			</icon>
 		</appfolder>
 		<basepath>

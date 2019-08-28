@@ -180,13 +180,13 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated scripts as per new build and xpaths
+		 * Last Update : Alpesh Dhakad - 30/07/2019 & 21/08/2019 & 26/08/2019 - Updated scripts as per new build and xpaths
 		 ******************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCPUType(string sExpectedCPU,int PanelNode, bool AfterImport)
 		{
 			string sActualText;
-			Panel_Functions.SelectPanelNode(PanelNode);
+		
 			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -262,7 +262,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Shweta Bhosale
 
 		 * Purvi Bhasin - 22/08/2019 commented Inventory_LabelCell.DoubleClick() as it causes an error
-
+		 * Alpesh Dhakad - 28/08/2019 - Added site node script 
 		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void DeletePanel(int NumberofPanels,string PanelNode,int rowNumber )
@@ -291,6 +291,11 @@ namespace TestProject.Libraries
 				
 				repo.ProfileConsys1.btn_Delete.Click();
 				//repo.FormMe.SiteNode1.Click(); 
+				
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+				
+				
 				repo.FormMe.tab_Panel_Network.Click();
 				//repo.ProfileConsys1.PanelInvetoryGrid.Inventory_LabelCell.DoubleClick();
 				if(repo.ProfileConsys1.PanelInvetoryGrid.LabelNameInfo.Exists())

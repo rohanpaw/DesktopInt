@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -92,7 +92,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.23">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.28">
 					</param>
 					<param
 					name="Mode"
@@ -912,6 +912,26 @@ rxversion="8.3">
 						</testmodule>
 					</testcase>
 					<testcase
+					id="df036250-7652-4a64-ad40-22140e7d7700"
+					name="BuildVerificationTest-TC13">
+						<testmodule
+						id="f8a63f9d-30a2-4979-8bf0-11ea8bb2aca9"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="f14e583d-5f5f-4369-8eb7-6547de066e98"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="5329201a-e622-4c7d-9bbd-6f7b89d5f6cf"
+						name="Add_Panels">
+						</testmodule>
+						<testmodule
+						id="af72e828-4e2f-48c5-994f-3fdc97b6fd18"
+						name="verify_save_Confirmation_Of_An_Already_Saved_Project">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="12409c6d-aecc-412d-a521-089393cc2aca"
 					name="BuildVerificationTest-TC14">
 						<testmodule
@@ -949,26 +969,6 @@ rxversion="8.3">
 						<testmodule
 						id="60af00a6-5327-467b-bac3-90bfdd0b2943"
 						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="df036250-7652-4a64-ad40-22140e7d7700"
-					name="BuildVerificationTest-TC13">
-						<testmodule
-						id="f8a63f9d-30a2-4979-8bf0-11ea8bb2aca9"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="f14e583d-5f5f-4369-8eb7-6547de066e98"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="5329201a-e622-4c7d-9bbd-6f7b89d5f6cf"
-						name="Add_Panels">
-						</testmodule>
-						<testmodule
-						id="af72e828-4e2f-48c5-994f-3fdc97b6fd18"
-						name="verify_save_Confirmation_Of_An_Already_Saved_Project">
 						</testmodule>
 					</testcase>
 				</testcase>
