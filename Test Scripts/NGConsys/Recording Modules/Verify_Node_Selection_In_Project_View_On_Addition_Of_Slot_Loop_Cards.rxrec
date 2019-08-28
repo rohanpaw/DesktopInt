@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="f2f4c419-b7c6-4511-a86c-2ea1f1151191"
+id="ba6dd588-d09e-4129-90d8-3e957f51a889"
 mode="Global"
 rxversion="8.3">
 	<name>
@@ -275,20 +275,6 @@ rxversion="8.3">
 			</comment>
 			<bindings>
 			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Node
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
 			<arguments
 			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument

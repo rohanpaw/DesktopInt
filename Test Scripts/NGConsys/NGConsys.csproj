@@ -2407,16 +2407,16 @@
       <id>bfb0e0aa-2e65-4a88-861c-f8efedd89c10</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards.cs">
-      <BoundTo>dab6ce7d-1cf5-4574-a1a1-65367e36a849</BoundTo>
+      <BoundTo>ae971108-ec40-4ab0-a33d-cddde14293fe</BoundTo>
       <DependentUpon>Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>1ec7e1c7-4086-40ed-b27b-63dc34cbaf90</id>
+      <id>85f3edb0-a19c-4daf-b45d-53969c99a5b8</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards.UserCode.cs">
-      <BoundTo>dab6ce7d-1cf5-4574-a1a1-65367e36a849</BoundTo>
+      <BoundTo>ae971108-ec40-4ab0-a33d-cddde14293fe</BoundTo>
       <DependentUpon>Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>cf98ba98-c861-455f-909d-28c0f9ce37d4</id>
+      <id>3af17d1e-a61d-47c9-896f-22cc115b6e86</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Non_IS_Devices_Drag_And_Drop_On_Non_Addressable_Devices.cs">
       <BoundTo>3dc21ff1-3d2e-4571-8522-27b9a5b8c6c5</BoundTo>
@@ -4515,9 +4515,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards.rxrec">
-      <id>dab6ce7d-1cf5-4574-a1a1-65367e36a849</id>
-      <recordtableid>f2f4c419-b7c6-4511-a86c-2ea1f1151191</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>ae971108-ec40-4ab0-a33d-cddde14293fe</id>
+      <recordtableid>ba6dd588-d09e-4129-90d8-3e957f51a889</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Non_IS_Devices_Drag_And_Drop_On_Non_Addressable_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

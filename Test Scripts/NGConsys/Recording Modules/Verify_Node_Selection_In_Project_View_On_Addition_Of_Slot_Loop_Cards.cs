@@ -26,7 +26,7 @@ namespace TestProject.Recording_Modules
     /// <summary>
     ///The Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards recording.
     /// </summary>
-    [TestModule("f2f4c419-b7c6-4511-a86c-2ea1f1151191", ModuleType.Recording, 1)]
+    [TestModule("ba6dd588-d09e-4129-90d8-3e957f51a889", ModuleType.Recording, 1)]
     public partial class Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards : ITestModule
     {
         /// <summary>
