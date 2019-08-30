@@ -3140,9 +3140,8 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="1b9b85f6-e3e4-4e5a-9786-fe1ee83c9865"
 			name="AlarmCurrent"
 			refimgid="61eb0c60-3e43-43f9-b1d0-ff0db79a0f35"
-			refpath="/form[@automationid='me']/progressbar/picture[2]/container[2]/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='9']/cell[@isheader='False']"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[2]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='9']/cell[@isheader='False']
+				/form[@automationid='me']/progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='9']/cell[@isheader='False']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"

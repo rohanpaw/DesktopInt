@@ -1767,6 +1767,9 @@ rxversion="8.3">
 			<testcase
 			id="1b02544a-4a62-4f03-b345-0fcea739089d"
 			name="Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices">
+				<description>
+					<![CDATA[<p>NGC-1345/TC-55056</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -2155,6 +2158,9 @@ rxversion="8.3">
 			<testcase
 			id="20c2e5a6-a39c-4ba9-8e4d-a35087a8bd76"
 			name="Verify_A-CON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices">
+				<description>
+					<![CDATA[NGC-1345/TC-55046]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -14623,6 +14629,9 @@ persisted in panel properties&nbsp;]]>
 			<testcase
 			id="f14c8b61-0ef9-470f-bb93-dd6781b0b6b7"
 			name="Verify_A-Box_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices">
+				<description>
+					<![CDATA[<p>NGC-1345/TC-55052</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -20514,10 +20523,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

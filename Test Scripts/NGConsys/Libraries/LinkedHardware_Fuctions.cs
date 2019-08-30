@@ -125,13 +125,21 @@ namespace TestProject.Libraries
 			Excel_Utilities.OpenExcelFile(sFileName,sSheetName);
 			
 			// Count number of rows in excel and store it in rows variable
-			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			int rows= Excel_Utilities.ExcelRange.Rows.Count,LabelNo;
 			
 			// Declared string type
-			string DeviceName,sType,LabelName,CheckboxName,sDefaultStatus,SKUNo,sStatus,sSecondChannelCheckbox;
+			string DeviceName,sType,LabelName,CheckboxName,sDefaultStatus,SKUNo,sStatus,sSecondChannelCheckbox,sStatusInLoopB;
+			
+			LabelNo = 126; //For Loop B
+			
+			//Expand Panel Node
+			Common_Functions.ClickOnNavigationTreeExpander("Node");
+				
+			//Expand FIM/PFI Loop card
+			Common_Functions.ClickOnNavigationTreeExpander("PFI");
 			
 			// For loop to iterate on data present in excel
-			for(int i=8; i<=8; i++)
+			for(int i=8; i<=rows; i++)
 			{
 				DeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
@@ -141,16 +149,12 @@ namespace TestProject.Libraries
 				SKUNo = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				sStatus = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sSecondChannelCheckbox = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sStatusInLoopB = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				
 				bool DefaultStatus = Convert.ToBoolean(sDefaultStatus);
 				bool Status = Convert.ToBoolean(sStatus);
-				
-				
-				//Expand Panel Node
-				Common_Functions.ClickOnNavigationTreeExpander("Node");
-				
-				//Expand FIM/PFI Loop card
-				Common_Functions.ClickOnNavigationTreeExpander("PFI");
+				bool StatusInLoopB = Convert.ToBoolean(sStatusInLoopB);
+				string sLabelNo = LabelNo.ToString();
 				
 				//Click on Loop A
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -167,8 +171,7 @@ namespace TestProject.Libraries
 				//Verify checkbox
 				Devices_Functions.verifyCheckboxInSearchProperties(CheckboxName,DefaultStatus);
 				
-				//Click on checkbox
-				Devices_Functions.ClickCheckboxInSearchProperties(CheckboxName);
+				
 				
 				//Click on Points Tab
 				repo.ProfileConsys1.tab_Points.Click();
@@ -188,20 +191,30 @@ namespace TestProject.Libraries
 				//Click on Paste
 				repo.FormMe.Paste.Click();
 				
-				string NewLabelName = DeviceName+" - 126";
+				string NewLabelName = DeviceName+" - "+sLabelNo;
 				
 				//Verify device is pasted
 				Devices_Functions.VerifyDeviceUsingLabelName(NewLabelName);
 				
 				//Verify checkbox
-				Devices_Functions.verifyCheckboxInSearchProperties(CheckboxName,DefaultStatus);
+				//Devices_Functions.VerifyCheckboxExists(CheckboxName,DefaultStatus);
 				
 				
-				string SecondChannelLabelName = DeviceName+" - 127";
+				Devices_Functions.verifyCheckboxInSearchProperties(CheckboxName,StatusInLoopB);
+				
+				//Click on checkbox
+				Devices_Functions.ClickCheckboxInSearchProperties(CheckboxName);
+				
+				
 				
 				//Slect 2nd channel 
 				if(!sSecondChannelCheckbox.IsEmpty())
 				{
+					LabelNo = LabelNo+1;
+				
+					sLabelNo = LabelNo.ToString();
+
+					string SecondChannelLabelName = DeviceName+" - "+sLabelNo;
 					bool SecondChannelCheckbox = Convert.ToBoolean(sSecondChannelCheckbox);
 					Devices_Functions.SelectRowUsingLabelName(SecondChannelLabelName);
 				
@@ -215,6 +228,7 @@ namespace TestProject.Libraries
 				
 				//Verify in shopping list
 				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SKUNo,true);
+				LabelNo = LabelNo+1;
 			}
     }
 		

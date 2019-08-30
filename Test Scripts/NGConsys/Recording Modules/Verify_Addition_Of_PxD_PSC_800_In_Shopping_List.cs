@@ -164,38 +164,38 @@ namespace TestProject.Recording_Modules
             repo.FormMe.ShoppingList.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "6"));
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "6"));
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(28));
-            repo.FormMe.Export2ndTime.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(28));
+            //repo.FormMe.Export2ndTime.Click();
+            //Delay.Milliseconds(200);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export' at Center.", repo.FormMe.ExportInfo, new RecordItemIndex(29));
             //repo.FormMe.Export.Click();
             //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.PARTMaximize' at Center.", repo.PrintPreview.PARTMaximizeInfo, new RecordItemIndex(30));
-            repo.PrintPreview.PARTMaximize.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.PARTMaximize' at Center.", repo.PrintPreview.PARTMaximizeInfo, new RecordItemIndex(30));
+            //repo.PrintPreview.PARTMaximize.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.ExportDropdown' at Center.", repo.PrintPreview.ExportDropdownInfo, new RecordItemIndex(31));
-            repo.PrintPreview.ExportDropdown.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.ExportDropdown' at Center.", repo.PrintPreview.ExportDropdownInfo, new RecordItemIndex(31));
+            //repo.PrintPreview.ExportDropdown.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExportDocument.ExcelFormat' at Center.", repo.ExportDocument.ExcelFormatInfo, new RecordItemIndex(32));
-            repo.ExportDocument.ExcelFormat.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExportDocument.ExcelFormat' at Center.", repo.ExportDocument.ExcelFormatInfo, new RecordItemIndex(32));
+            //repo.ExportDocument.ExcelFormat.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(33));
-            Delay.Duration(5000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(33));
+            //Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'Xls' on item 'ExportDocument.ExcelFormat'.", repo.ExportDocument.ExcelFormatInfo, new RecordItemIndex(34));
-            repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Set value", "Setting attribute Text to 'Xls' on item 'ExportDocument.ExcelFormat'.", repo.ExportDocument.ExcelFormatInfo, new RecordItemIndex(34));
+            //repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(35));
-            Delay.Duration(5000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(35));
+            //Delay.Duration(5000, false);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExportDocument.ButtonOK' at Center.", repo.ExportDocument.ButtonOKInfo, new RecordItemIndex(36));
             //repo.ExportDocument.ButtonOK.Click();
@@ -205,38 +205,44 @@ namespace TestProject.Recording_Modules
             //repo.ExportDocument.ButtonOK.Click();
             //Delay.Milliseconds(200);
             
-            Libraries.Export_Functions.validateAndClickOKButtonOnExportDocument();
-            Delay.Milliseconds(0);
+            //Libraries.Export_Functions.validateAndClickOKButtonOnExportDocument();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExportDocument.ButtonOK' at Center.", repo.ExportDocument.ButtonOKInfo, new RecordItemIndex(39));
-            repo.ExportDocument.ButtonOK.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ExportDocument.ButtonOK' at Center.", repo.ExportDocument.ButtonOKInfo, new RecordItemIndex(39));
+            //repo.ExportDocument.ButtonOK.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ShoppingListCompatibilityModeE.Cell18' at Center.", repo.ShoppingListCompatibilityModeE.Cell18Info, new RecordItemIndex(40));
-            repo.ShoppingListCompatibilityModeE.Cell18.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ShoppingListCompatibilityModeE.Cell18' at Center.", repo.ShoppingListCompatibilityModeE.Cell18Info, new RecordItemIndex(40));
+            //repo.ShoppingListCompatibilityModeE.Cell18.Click();
+            //Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.verifyShoppingListDevicesTextForPxD("PxD");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyShoppingListDevicesTextForPxD("PxD");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ShoppingListCompatibilityModeE.CellF22' at Center.", repo.ShoppingListCompatibilityModeE.CellF22Info, new RecordItemIndex(42));
-            repo.ShoppingListCompatibilityModeE.CellF22.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ShoppingListCompatibilityModeE.CellF22' at Center.", repo.ShoppingListCompatibilityModeE.CellF22Info, new RecordItemIndex(42));
+            //repo.ShoppingListCompatibilityModeE.CellF22.Click();
+            //Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.verifyShoppingListDevicesTextForPSC("PSC800");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyShoppingListDevicesTextForPSC("PSC800");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ShoppingListCompatibilityModeE.btn_CloseExcel' at Center.", repo.ShoppingListCompatibilityModeE.btn_CloseExcelInfo, new RecordItemIndex(44));
-            repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ShoppingListCompatibilityModeE.btn_CloseExcel' at Center.", repo.ShoppingListCompatibilityModeE.btn_CloseExcelInfo, new RecordItemIndex(44));
+            //repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(45));
-            repo.PrintPreview.btn_CloseB.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(45));
+            //repo.PrintPreview.btn_CloseB.Click();
+            //Delay.Milliseconds(200);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Header_ProfileConsys' at Center.", repo.FormMe.Header_ProfileConsysInfo, new RecordItemIndex(46));
             //repo.FormMe.Header_ProfileConsys.Click();
             //Delay.Milliseconds(200);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("PSC800", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("PxD", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Delay.Milliseconds(0);
             
         }
 

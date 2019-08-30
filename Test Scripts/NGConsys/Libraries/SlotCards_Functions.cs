@@ -1558,7 +1558,7 @@ namespace TestProject.Libraries
 			repo.FormMe.tab_ShoppingList.Click();
 			
 			// Verify shopping list count
-			Devices_Functions.verifyShoppingList(shoppingListCount);
+			/*Devices_Functions.verifyShoppingList(shoppingListCount);
 			Delay.Milliseconds(500);
 			
 			Export_Functions.ExportAndGenerateShoppingListInExcelFormat();
@@ -1573,7 +1573,19 @@ namespace TestProject.Libraries
 			Export_Functions.CloseShoppingListExcel();
 			
 			// Close Excel
-			Excel_Utilities.CloseExcel();
+			Excel_Utilities.CloseExcel();*/
+			
+			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(FirstDevice,true);
+			Delay.Milliseconds(100);
+			
+			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SecondDevice,true);
+			Delay.Milliseconds(100);
+			
+			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(ThirdDevice,true);
+			Delay.Milliseconds(100);
+			
+			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(FourthDevice,true);
+			Delay.Milliseconds(100);
 			
 		}
 		

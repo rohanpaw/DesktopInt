@@ -804,7 +804,7 @@ rxversion="8.3">
 		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyShoppingList"
 		namespace="TestProject.Libraries"
@@ -832,7 +832,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1724,7 +1724,7 @@ pUs7TZd6Xph8KeEfCw==
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -2362,7 +2362,7 @@ Ggs=
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -3392,7 +3392,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -4310,7 +4310,7 @@ h1Cb2V0L
 		</mouseitem>
 		<explicitdelayitem
 		duration="5000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -4319,7 +4319,7 @@ h1Cb2V0L
 		</explicitdelayitem>
 		<setvaluerecorditem
 		attrname="Text"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="efbfcada-0615-458e-b344-69a4db541b19">
 			<comment>
@@ -5235,7 +5235,7 @@ h1Cb2V0L
 		</setvaluerecorditem>
 		<explicitdelayitem
 		duration="5000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -6190,7 +6190,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		</mouseitem>
 		<userrecorditem
 		classname="Export_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="validateAndClickOKButtonOnExportDocument"
 		namespace="TestProject.Libraries"
@@ -6208,7 +6208,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -6681,7 +6681,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -6703,7 +6703,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyShoppingListDevicesTextForPxD"
 		namespace="TestProject.Libraries"
@@ -6731,7 +6731,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -6753,7 +6753,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyShoppingListDevicesTextForPSC"
 		namespace="TestProject.Libraries"
@@ -6781,7 +6781,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -6874,7 +6874,7 @@ AgICAgICt3zQTcONvUSuGgn7BVM8dAH9/////v///4828P5X94pNtLyz/3V6u9EL
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -7563,6 +7563,78 @@ rVKL9TwMTsQB+f////7///9hE4W3wPI3Qo7H9R3h0tBLCw==
 				</path>
 			</info>
 		</mouseitem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
+				<argument
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PSC800
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
+				<argument
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PxD
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
