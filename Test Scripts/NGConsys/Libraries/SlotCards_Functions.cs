@@ -1618,27 +1618,24 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.btn_Delete.Click();
 			
 			// Verify expected backplane1
-			if(ExpectedBackplane1.Equals("Yes"))
-			{
-				if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
+				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-					Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
-					
-					VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
-					VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
 				else
 				{
-					Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
+					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3",ExpectedBackplane1);
+					
 				}
-				
-			}
 			
-			// Click on site node
-			repo.FormMe.SiteNode1.Click();
-			//repo.ProfileConsys1.SiteNode.Click();
+			
+			// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 			
 			// Click on shopping list tab
 			repo.FormMe.tab_ShoppingList.Click();
@@ -2143,7 +2140,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/06/2019
+		 * Last Update : 13/06/2019 Alpesh Dhakad- 30/08/2019- Updated script as per new build xpath updates
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDeletionOfDevicesFromOtherSlotCards(string sFileName,string sAddDevicesSheet)
@@ -2177,138 +2174,60 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
-
-						repo.FormMe.Backplane1_OtherSlotCards.Click();
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 						
 						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						repo.ProfileConsys1.btn_Delete.Click();
 						
 						Report.Log(ReportLevel.Success, "Device with " +sLabelName+ " deleted successfully");
-
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
-					}
 					
-				}
-				else if(ExpectedBackplane1.Equals("No"))
-				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Success, "Backplane1 is available and displayed correctly");
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 is not displayed as expected");
-					}
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 				}
 				else
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 is available and should not be displayed");
-					}
-					else
-					{
-						Report.Log(ReportLevel.Success, "Backplane1 is not displayed as expected");
-					}
+					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3", ExpectedBackplane1);
+					
 				}
 				
 				// Verify expected backplane2
 				if(ExpectedBackplane2.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane2_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane2 is available and displaying correctly");
-						
-						repo.FormMe.Backplane2_OtherSlotCards.Click();
-						
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
 						
 						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						repo.ProfileConsys1.btn_Delete.Click();
+						
 						Report.Log(ReportLevel.Success, "Device with " +sLabelName+ " deleted successfully");
-
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 is not displayed");
-					}
-					
-				}
-				else if(ExpectedBackplane2.Equals("No"))
-				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Success, "Backplane2 is available and displayed correctly");
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 is not displayed as expected");
-					}
-				}
 				
+						Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+				}
 				else
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 is available and should not be displayed");
-					}
-					else
-					{
-						Report.Log(ReportLevel.Success, "Backplane2 is not displayed as expected");
-					}
+					Common_Functions.VerifyNavigationTreeItem("Backplane  2/3", ExpectedBackplane2);
 					
-				}
+				}				
 				
 				// Verify expected backplane3
 				if(ExpectedBackplane3.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane3_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane3 is available and displaying correctly");
-						
-						repo.FormMe.Backplane3_OtherSlotCards.Click();
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
 						
 						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						repo.ProfileConsys1.btn_Delete.Click();
+						
 						Report.Log(ReportLevel.Success, "Device with " +sLabelName+ " deleted successfully");
-
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 is not displayed");
-					}
-					
+						
+						Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
 				}
-				else if(ExpectedBackplane3.Equals("No"))
-				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Success, "Backplane3 is available and displayed correctly");
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 is not displayed as expected");
-					}
-				}
-				
 				else
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 is available and should not be displayed");
-					}
-					else
-					{
-						Report.Log(ReportLevel.Success, "Backplane3 is not displayed as expected");
-					}
+					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
 					
 				}
 				
@@ -2320,14 +2239,14 @@ namespace TestProject.Libraries
 
 		}
 
-		/**********************************************************************************************************
+		/*************************************************************************************************************************************
 		 * Function Name: VerifyOtherSlotCardGrid
 		 * Function Details: To verify other slot cards grid
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : : 14/06/2019 Alpesh Dhakad- 30/07/2019 - Updated script as per new build xpath updates
-		 *********************************************************************************************************/
+		 * Last Update : : 14/06/2019 Alpesh Dhakad- 30/07/2019 & 30/08/2019 - Updated script as per new build xpath updates
+		 ************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyOtherSlotCardGrid(string sFileName,string sAddDevicesSheet)
 		{
@@ -2373,8 +2292,9 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							repo.FormMe.PanelNode1.Click();
-							//repo.ProfileConsys1.NavigationTree.Expander.Click();
+							// Click on Expander node
+							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+					
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -2383,8 +2303,9 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							repo.FormMe.PanelNode1.Click();
-							//repo.ProfileConsys1.NavigationTree.Expander.Click();
+							// Click on Expander node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+					
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
@@ -2396,84 +2317,50 @@ namespace TestProject.Libraries
 					
 				}
 				
-				// Verify expected backplane1
+					// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
-						
-						VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
-						VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
-						VerifyPLXLoopCardTextForBackplane1(sPLXLoopCardBackplane1);
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
-					}
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sPLXLoopCardBackplane1);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
 				else
 				{
-					if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane1 should not be displayed");
-					}
-					
+					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3", ExpectedBackplane1);
 				}
 				
 				// Verify expected backplane2
 				if(ExpectedBackplane2.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane2_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane2 is available and displaying correctly");
-						
-						VerifyandClickOtherSlotCardsForBackplane2(sBackplane2SlotCardName);
-						VerifySlotCardsTextForBackplane2(sBackplane2SlotCardName);
-						
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 is not displayed");
-					}
-					
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
 				}
 				else
 				{
-					if(repo.FormMe.Backplane2_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane2 should not be displayed");
-					}
+					Common_Functions.VerifyNavigationTreeItem("Backplane  2/3", ExpectedBackplane2);
+					
 					
 				}
 				
 				// Verify expected backplane3
 				if(ExpectedBackplane3.Equals("Yes"))
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						repo.FormMe.Backplane3_Expander.Click();
-						Report.Log(ReportLevel.Success, "Backplane3 is available and displaying correctly");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
 						
-						VerifyandClickOtherSlotCardsForBackplane3(sBackplane3SlotCardName);
-						VerifySlotCardsTextForBackplane3(sBackplane3SlotCardName);
-					}
-					else
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 is not displayed");
-					}
 				}
 				else
 				{
-					if(repo.FormMe.Backplane3_ExpanderInfo.Exists())
-					{
-						Report.Log(ReportLevel.Failure, "Backplane3 should not be displayed");
-					}
+					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
+					
 				}
-				
 			}
 			
 			// Close Excel
@@ -2747,71 +2634,66 @@ namespace TestProject.Libraries
 							{
 								//Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
 								Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
+								
 								// Verify expected backplane1
 								if(ExpectedBackplane1.Equals("Yes"))
 								{
-									if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-									{
-										repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-										Report.Log(ReportLevel.Success, "Backplane1 is available and displaying correctly");
+									// Click on Expander node
+									Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+							
+									// Click on Backplane Node
+									Common_Functions.ClickOnNavigationTreeItem("Backplane");
+				
 										
 										if(sType.Equals("Loops"))
 										{
 											int NoofPLXTree = k+1;
 											string sNoofPLXTree = NoofPLXTree.ToString();
 											
-											VerifyPLXTreeListForBackplane1(sNoofPLXTree);
+											string sPLXTreeName = "PLX/External Loop Card "+sNoofPLXTree+"";
+											
+											Common_Functions.VerifyAndClickNavigationTreeItemText(sPLXTreeName);
 											
 											//Conversion from string to int then again string
 											int.TryParse(sMaxInOtherSlotCard, out MaxInOtherSlotCard);
-											MaxInOtherSlotCard = MaxInOtherSlotCard-1;
+											MaxInOtherSlotCard = MaxInOtherSlotCard-k;
 											sMaxInOtherSlotCard = MaxInOtherSlotCard.ToString();
 											
 											string sBackplane1SlotCardName = "Other Slot Cards  (0 of "+sMaxInOtherSlotCard+")";
-											
-											VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
-											VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
-
-											//Go back to Panel Node in order to add device
-											repo.FormMe.PanelNode1.Click();
-											//repo.ProfileConsys1.NavigationTree.Expander.Click();
+							
+											Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					
+											// Click on Panel node
+											Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
 										}
 										else
 										{
 											string sCount = k.ToString();
 											string sBackplane1SlotCardName = "Other Slot Cards  ("+sCount+" of "+sMaxInOtherSlotCard+")";
 											
-											repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+											Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 											
-											VerifyandClickOtherSlotCardsForBackplane1(sBackplane1SlotCardName);
-											VerifySlotCardsTextForBackplane1(sBackplane1SlotCardName);
 											
-											//Go back to Panel Node in order to add device
-											repo.FormMe.PanelNode1.Click();
-											//repo.ProfileConsys1.NavigationTree.Expander.Click();
+											// Click on Panel node
+											Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
 										}
-										
-										
+																		
 									}
 									else
 									{
-										Report.Log(ReportLevel.Failure, "Backplane1 is not displayed");
+										Common_Functions.VerifyNavigationTreeItem("Backplane", ExpectedBackplane1);
 									}
 									
 								}
-								else
-								{
-									if(repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo.Exists())
-									{
-										Report.Log(ReportLevel.Failure, "Backplane1 should not be displayed");
-									}
+								
 									
 								}
 								
 								
 							}
-						}
-					}
+
 					
 				}
 

@@ -79,9 +79,6 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Devices_Functions.DeleteDeviceUsingLabel("Squashni Sounder");
-            Delay.Milliseconds(0);
-            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
@@ -109,7 +106,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ShoppingList' at Center.", repo.FormMe.ShoppingListInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ShoppingList' at Center.", repo.FormMe.ShoppingListInfo, new RecordItemIndex(9));
             repo.FormMe.ShoppingList.Click();
             Delay.Milliseconds(200);
             
@@ -123,6 +120,9 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DeleteDeviceUsingLabel("Flashni Sounder");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.DeleteDeviceUsingLabel("Squashni Sounder");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");

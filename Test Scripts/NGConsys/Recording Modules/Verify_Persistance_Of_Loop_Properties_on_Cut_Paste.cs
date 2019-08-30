@@ -133,6 +133,9 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("500");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
+            Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-E");
             Delay.Milliseconds(0);
             

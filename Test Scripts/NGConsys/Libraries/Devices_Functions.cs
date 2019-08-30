@@ -6101,14 +6101,14 @@ namespace TestProject.Libraries
 			}
 		}
 		
-		/********************************************************************
+		/*****************************************************************************************************************
 		 * Function Name: ChangeCableLengthFromInventory
 		 * Function Details: To change cable length from inventory properties section
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update :07/Jun/19 Alpesh Dhakad - 20/08/2019 - Updated xpath for cell_cableLength
-		 ********************************************************************/
+		 * Last Update :07/Jun/19 Alpesh Dhakad - 20/08/2019 &  30/08/2019- Updated xpath for cell_cableLength
+		 *****************************************************************************************************************/
 		// Change cable length method
 		[UserCodeMethod]
 		public static void ChangeCableLengthFromInventory(int fchangeCableLength)
@@ -6126,6 +6126,8 @@ namespace TestProject.Libraries
 			//Change the value of cable length
 			repo.FormMe.txt_CableLength.PressKeys(fchangeCableLength + "{ENTER}");
 			//repo.FormMe.txt_InventoryProperty.PressKeys(fchangeCableLength + "{ENTER}");
+			Report.Log(ReportLevel.Info, "Cable length chnaged to "+fchangeCableLength+"  successfully");
+			
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}{ENTER}");
 		}

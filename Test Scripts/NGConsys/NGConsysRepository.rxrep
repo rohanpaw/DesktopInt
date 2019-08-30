@@ -3113,7 +3113,7 @@ VZB4/J8BADyZI3kwAy98AAAAAElFTkSuQmCC
 			id="62a08ae0-880e-4c7b-8ec5-e48390963a80"
 			name="PointsGridHeaderColumn1"
 			refimgid="5dd1e4f2-4e69-47c5-a462-78edff0c7a9c"
-			searchtimeout="60000ms">
+			searchtimeout="120000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table//list[@automationid='headerItemsControl']/button[$sColumn]/text[@automationid='PART_Content']
 			</item>
 			<item
@@ -16057,8 +16057,15 @@ AAAAAElFTkSuQmCC
 			capname="container"
 			id="ce5451cf-a238-43f0-b78a-5a358cf5162c"
 			name="btn_AllGalleryDropdown"
-			searchtimeout="60000ms">
+			searchtimeout="90000ms">
 				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption=$ModelNumber]/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']
+			</item>
+			<item
+			capname="container"
+			id="17371b14-4d7b-4150-8d43-ff8b8abe8200"
+			name="Copy_of_btn_AllGalleryDropdown"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption='LPS 800']/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']
 			</item>
 			<item
 			capname="text"

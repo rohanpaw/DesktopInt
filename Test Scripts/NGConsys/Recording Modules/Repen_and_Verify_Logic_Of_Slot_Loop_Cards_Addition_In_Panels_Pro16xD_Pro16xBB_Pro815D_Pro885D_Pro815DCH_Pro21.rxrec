@@ -55,59 +55,11 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="1885f854-830e-4479-bd09-42b3ea959c88"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="ab73090f-216e-42f1-9093-a740c5cfe418"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[3]/tree/treeitem[2]/button[@automationid='Expander']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="d8f28fd3-0493-4e52-8efb-f65200cc3a72"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="cda370d1-fa71-42b9-aeca-911184a0b55a"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[3]/tree/treeitem[2]/container[@automationid='ItemsHost']/treeitem[3]/button[@automationid='Expander']
-				</path>
-			</info>
-		</mouseitem>
 		<userrecorditem
-		classname="SlotCards_Functions"
+		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyLoopCardDistributionInBackplaneOnReopen"
+		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -116,24 +68,24 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="e8a89778-e4f1-4611-b5c5-d901dc29e86e">
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="MaxLimitOfDevice"
-				id="19f25514-3648-4f4f-9dff-b32e53812a1c">
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
-						System.Int32
+						System.String
 					</argvaluetype>
 					<argvalue>
-						3
+						Node
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="SlotCards_Functions"
+		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyandClickOtherSlotCardsForBackplane1OnReopen"
+		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -142,10 +94,88 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="e8a89778-e4f1-4611-b5c5-d901dc29e86e">
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="slotCardName"
-				id="19f25514-3648-4f4f-9dff-b32e53812a1c">
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Backplane
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyAndClickNavigationTreeItemText"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PLX/External Loop Card 2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyAndClickNavigationTreeItemText"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PLX/External Loop Card 3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyAndClickNavigationTreeItemText"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

@@ -290,7 +290,6 @@ namespace TestProject.Libraries
 				}
 				
 				repo.ProfileConsys1.btn_Delete.Click();
-				//repo.FormMe.SiteNode1.Click(); 
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");

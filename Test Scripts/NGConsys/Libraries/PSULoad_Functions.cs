@@ -3705,14 +3705,14 @@ namespace TestProject.Libraries
 		}
 
 
-		/*****************************************************************************************************************
+		/***********************************************************************************************************************************
 		 * Function Name: verifyBatteryStandbyAndAlarmLoadOnZetfastLoopAddDelete
 		 * Function Details: To Verify 40V load on addition/deletion of Zetfast loop with devices
 		 * Parameter/Arguments:   expected Maximum value, panel type (FIM or PFI)  and row number is 13 by default for FIM
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 23/01/2019 Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 *****************************************************************************************************************/
+		 * Last Update : 23/01/2019 Alpesh Dhakad - 30/07/2019,21/08/2019 & 30/08/2019- Updated test scripts as per new build and xpaths
+		 ***********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnZetfastLoopAddDelete(string sFileName,string sAddPanelSheet)
 		{
@@ -3763,15 +3763,15 @@ namespace TestProject.Libraries
 					
 					else
 					{
-						//                        // Click on XLM Loop Card Expander
-						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+						// Click on XLM Loop CardExpander node
+					Common_Functions.ClickOnNavigationTreeExpander("XLM/External");
+					
 						
 						// Click on XLM Loop C Node to add device
-						repo.FormMe.XLMExternalLoopCardDevices_C.Click();
+						Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
 						
 
 						Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
-						Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
 						
 					}
 					
@@ -3779,11 +3779,9 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 					
-					// Click on XLM Loop Card Expander
-					repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-					
 					// Click on XLM Loop C Node to add device
-					repo.FormMe.XLMExternalLoopCardDevices_C.Click();
+					Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
+						
 					
 					float.TryParse(sBatteryStandby, out ZetfastBatteryStandby);
 					float.TryParse(sAlarmLoad, out ZetfastAlarmLoad);
@@ -3811,7 +3809,7 @@ namespace TestProject.Libraries
 					verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
 					
 					// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
+					Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 					
 				}
@@ -3869,11 +3867,9 @@ namespace TestProject.Libraries
 					
 					else
 					{
-						// Click on XLM Loop Card Expander
-						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-						
 						// Click on XLM Loop C Node to add device
-						repo.FormMe.XLMExternalLoopCardDevices_C.Click();
+					Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
+					
 
 						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 						

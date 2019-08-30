@@ -30,32 +30,6 @@ rxversion="8.3">
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="DeleteDeviceUsingLabel"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="bdcfe362-9093-4f89-82c4-c5ca04a14d35">
-				<argument
-				argname="LabelName"
-				id="4030631c-0759-479b-9ecd-4b700a7cc167">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Squashni Sounder
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -472,6 +446,32 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						Flashni Sounder
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="DeleteDeviceUsingLabel"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="bdcfe362-9093-4f89-82c4-c5ca04a14d35">
+				<argument
+				argname="LabelName"
+				id="4030631c-0759-479b-9ecd-4b700a7cc167">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Squashni Sounder
 					</argvalue>
 				</argument>
 			</arguments>

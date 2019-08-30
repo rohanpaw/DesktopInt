@@ -82,16 +82,17 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(1));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromPanelNodeGallery("PLX800", "Loops", "");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.BackplaneOrXLMExternalLoopCard_Expander' at Center.", repo.FormMe.BackplaneOrXLMExternalLoopCard_ExpanderInfo, new RecordItemIndex(3));
-            repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane");
+            Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.verifyDescription("Backplane Assembly with 6 slots for use with PxD");
             //Delay.Milliseconds(0);
@@ -99,11 +100,11 @@ namespace TestProject.Recording_Modules
             //Libraries.Devices_Functions.verifyPicture();
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.cell_Properties_backplane' at Center.", repo.FormMe.cell_Properties_backplaneInfo, new RecordItemIndex(6));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.cell_Properties_backplane' at Center.", repo.FormMe.cell_Properties_backplaneInfo, new RecordItemIndex(7));
             //repo.FormMe.cell_Properties_backplane.Click();
             //Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=313,Height=735}) on item 'FormMe.BackplaneImage'.", repo.FormMe.BackplaneImageInfo, new RecordItemIndex(7));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=313,Height=735}) on item 'FormMe.BackplaneImage'.", repo.FormMe.BackplaneImageInfo, new RecordItemIndex(8));
             //Validate.ContainsImage(repo.FormMe.BackplaneImageInfo, BackplaneImage_Screenshot1, BackplaneImage_Screenshot1_Options);
             //Delay.Milliseconds(0);
             
@@ -114,7 +115,7 @@ namespace TestProject.Recording_Modules
             //VerifyProductCodeInSearchProperties("123");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Inventory_Tab_Backplane' at Center.", repo.FormMe.Inventory_Tab_BackplaneInfo, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Inventory_Tab_Backplane' at Center.", repo.FormMe.Inventory_Tab_BackplaneInfo, new RecordItemIndex(11));
             //repo.FormMe.Inventory_Tab_Backplane.Click();
             //Delay.Milliseconds(200);
             
@@ -149,17 +150,17 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Label", "PLX800-E");
             Delay.Milliseconds(0);
             
-            VerifyProductCodeInSearchProperties("123.456.789");
+            VerifyProductCodeInSearchProperties("557.202.842");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=380,Height=380}) on item 'FormMe.PLX_Image'.", repo.FormMe.PLX_ImageInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=380,Height=380}) on item 'FormMe.PLX_Image'.", repo.FormMe.PLX_ImageInfo, new RecordItemIndex(23));
             Validate.ContainsImage(repo.FormMe.PLX_ImageInfo, PLX_Image_Screenshot1, PLX_Image_Screenshot1_Options);
             Delay.Milliseconds(0);
             
             try {
                 //Libraries.Devices_Functions.verifyDescription("(Slot card) Provides MX Loop interfaces for connection fire detectors and ancillaries. Card is connected to panel using Internal N-Bus interface");
                 //Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(23)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(24)); }
             
             VerifyRegionNameInSearchProperties("PLX800-E");
             Delay.Milliseconds(0);
