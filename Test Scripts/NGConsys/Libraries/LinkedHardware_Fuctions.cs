@@ -223,7 +223,9 @@ namespace TestProject.Libraries
 				
 				
 				//Click on Site Node and Shopping List
-				repo.FormMe.SiteNode1.Click();
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				repo.FormMe.ShoppingList.Click();
 				
 				//Verify in shopping list
@@ -284,7 +286,9 @@ namespace TestProject.Libraries
 				Devices_Functions.ChangeParameterInSearchProperties(sPropertyName,sParameter);
 				
 				//Click on Site Node and Shopping List
-				repo.FormMe.SiteNode1.Click();
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				repo.FormMe.ShoppingList.Click();
 				
 				//Verify in shopping list

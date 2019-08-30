@@ -79,8 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormMe.SiteNode1'.", repo.FormMe.SiteNode1Info, new RecordItemIndex(0));
-            Validate.Exists(repo.FormMe.SiteNode1Info);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Panels') on item 'FormMe2.PanelsGallery'.", repo.FormMe2.PanelsGalleryInfo, new RecordItemIndex(1));
@@ -95,9 +94,9 @@ namespace TestProject.Recording_Modules
             Validate.Exists(repo.FormMe2.tab_SiteAccessoriesInfo);
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe2.btn_Close' at Center.", repo.FormMe2.btn_CloseInfo, new RecordItemIndex(4));
-            //repo.FormMe2.btn_Close.Click();
-            //Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe2.btn_Close' at Center.", repo.FormMe2.btn_CloseInfo, new RecordItemIndex(4));
+            repo.FormMe2.btn_Close.Click();
+            Delay.Milliseconds(200);
             
         }
 

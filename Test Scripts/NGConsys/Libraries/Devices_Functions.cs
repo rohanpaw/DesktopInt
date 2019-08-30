@@ -1021,14 +1021,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/**************************************************************************************************************
 		 * Function Name: VerifyDCCalculationforPFI
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 01/08/2019 & 30/08/2019- Updated test scripts as per new build and xpaths
+		 ***************************************************************************************************************/
 		[UserCodeMethod]
 		public void VerifyDCCalculationforPFI(string sFileName, string sAddDevicesLoopA, string sAddDevicesLoopB,string sPanelLED, string sDeleteDevicesLoopA, string sDeleteDevicesLoopB)
 		{
@@ -1052,7 +1052,9 @@ namespace TestProject.Libraries
 					AssignDeviceBase(sLabelName,sBase,sRowIndex);
 				}
 				
-				repo.FormMe.Loop_A1.Click();
+				// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				Delay.Milliseconds(500);
 			}
 			
@@ -1063,7 +1065,9 @@ namespace TestProject.Libraries
 			
 			//Verify DC Units of Loop B
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on addition of devices in Loop A");
-			repo.FormMe.Loop_B1.Click();
+			// Click on Loop B node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+					
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[3,2]).Value.ToString();
 			verifyDCUnitsValue(expectedDCUnits);
 			
@@ -1090,7 +1094,9 @@ namespace TestProject.Libraries
 					AssignDeviceBase(sLabelName,sBase,sRowIndex);
 				}
 				
-				repo.FormMe.Loop_B1.Click();
+				// Click on Loop B node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+			
 				Delay.Milliseconds(500);
 			}
 			
@@ -1100,7 +1106,9 @@ namespace TestProject.Libraries
 			verifyDCUnitsValue(expectedDCUnits);
 			
 			//Verify DC Units of Loop A
-			repo.FormMe.Loop_A1.Click();
+			// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on addition of devices in Loop B");
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[3,2]).Value.ToString();
 			verifyDCUnitsValue(expectedDCUnits);
@@ -1112,7 +1120,9 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			//Delete Devices from loop A
-			repo.FormMe.Loop_A1.Click();
+			// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sDeleteDevicesLoopA);
@@ -1131,13 +1141,17 @@ namespace TestProject.Libraries
 			
 			//Verify DC Units of Loop B
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on deletion of devices from Loop A");
-			repo.FormMe.Loop_B1.Click();
+			// Click on Loop B node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+			
 			verifyDCUnitsValue(expectedDCUnits);
 			
 			Excel_Utilities.CloseExcel();
 			
 			//Delete Devices from loop B
-			repo.FormMe.Loop_B1.Click();
+			// Click on Loop B node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+			
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sDeleteDevicesLoopB);
@@ -1156,7 +1170,9 @@ namespace TestProject.Libraries
 			
 			//Verify DC Units of Loop A
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on deletion of devices from Loop B");
-			repo.FormMe.Loop_A1.Click();
+			// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 			verifyDCUnitsValue(expectedDCUnits);
 		}
 
@@ -4720,7 +4736,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasim
-		 * Last Update : 08/01/2019  Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpaths
+		 * Last Update : 08/01/2019  Alpesh Dhakad - 30/07/2019 & 30/08/2019 - Updated scripts as per new build and xpaths
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCurrentDCUnitscalculation(string sFileName,string sAddPanelSheet)
@@ -4756,13 +4772,14 @@ namespace TestProject.Libraries
 				int.TryParse(sPanelLEDCount,out PanelLED);
 				
 				// Click on Expander node
-				repo.FormMe.NodeExpander1.Click();
-				
-				// Click on Loop Card node
-				repo.FormMe.LoopExpander1.Click();
-				
-				// Click on Loop A node
-				repo.FormMe.Loop_A1.Click();
+					Common_Functions.ClickOnNavigationTreeExpander("Node");
+					
+					// Click on Loop Card node
+					Common_Functions.ClickOnNavigationTreeExpander("PFI");
+					
+					// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
@@ -4773,12 +4790,14 @@ namespace TestProject.Libraries
 				//Verify Default DC Units
 				verifyDCUnitsValue(expectedDCUnits);
 				
-				repo.FormMe.SiteNode1.Click();
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				
 			}
-			//Go to Loop A
-			repo.FormMe.Loop_A1.Click();
-			
+			// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 			//go to points grid
 			repo.ProfileConsys1.tab_Points.Click();
 			
@@ -4787,20 +4806,22 @@ namespace TestProject.Libraries
 			//Copy Devices
 			repo.FormMe.btn_Copy1.Click();
 			
-			//Go to Loop C
-			repo.FormMe.Loop_C1.Click();
-			
+			// Click on Loop C node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
+				
 			//Paste the devices
 			repo.FormMe.Paste.Click();
 			
 			//Verify DC Units
 			verifyDCUnitsValue(expectedDCUnits);
 			
-			repo.FormMe.SiteNode1.Click();
+			// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
 			
-			//Go to Loop C
-			repo.FormMe.Loop_C1.Click();
 			
+			// Click on Loop C node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
+				
 			//go to points grid
 			repo.ProfileConsys1.tab_Points.Click();
 			
@@ -4812,19 +4833,20 @@ namespace TestProject.Libraries
 			//Verify Default DC Units
 			verifyDCUnitsValue(DefaultDCUnits);
 			
-			repo.FormMe.SiteNode1.Click();
+			// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
 			
-			// Click on Expander node
-			repo.FormMe.PanelNode1.Click();
+			
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
+			
 			
 			Panel_Functions.changePanelLED(PanelLED);
 			
-			// Click on Loop Card node
-			repo.FormMe.LoopExpander1.Click();
-			
+						
 			// Click on Loop A node
-			repo.FormMe.Loop_A1.Click();
-			
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
 			//Verify Default DC Units
 			verifyDCUnitsValue(ChangedDCUnit);
 
@@ -5181,20 +5203,30 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void VerifyPanelType(string sFileName,string sAddDevicesSheet, string sPanelName)
 		{
-			//Click on Panel Node
-			repo.FormMe.PanelNode1.Click();
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
-			repo.FormMe.SiteNode1.Click();
+			// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");	
+				
+				
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
-			repo.FormMe.PanelNode1.Click();
+			// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");	
+				
+				
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
-			repo.FormMe.SiteNode1.Click();
 			
-			repo.FormMe.PanelNode1.Click();
 			
 			repo.FormMe.tab_PanelAccessories.Click();
 			
-			repo.FormMe.PanelNode1.Click();
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
+			
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();

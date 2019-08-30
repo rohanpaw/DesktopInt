@@ -1241,7 +1241,9 @@ namespace TestProject.Libraries
 				// Verify gallery item state
 				Devices_Functions.VerifyGalleryItem(sType,sDeviceName,state);
 				
-				repo.FormMe.Loop_A1.Click();
+				// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 				Delay.Milliseconds(200);
 				
 				// Click on Physical Layout tab

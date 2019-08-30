@@ -124,9 +124,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (1 of 6)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.PanelNode1' at Center.", repo.FormMe.PanelNode1Info, new RecordItemIndex(14));
-            repo.FormMe.PanelNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PNI800", "Slot Cards", "PFI");
             Delay.Milliseconds(0);

@@ -476,30 +476,32 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
 		optional="False"
-		searchpropertyid="fee1f7bc-8984-48ad-9ca8-5233594fcf30"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="4523fa13-b9bd-488b-9721-22473fa94fbd"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'Node']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"

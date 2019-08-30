@@ -29,29 +29,32 @@ rxversion="8.3">
 	<variables>
 	</variables>
 	<recorditems>
-		<validationitem
-		action="Exists"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
 		optional="False"
-		searchpropertyid="ae30f36e-6781-438b-b68c-265fadc5663f">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[@automationid='PART_Image']/tree//text
-				</path>
-			</info>
-			<matchname>
-				(Choose)
-			</matchname>
-			<matchvalue>
-				yourValue
-			</matchvalue>
-		</validationitem>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Site
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<validationitem
 		action="AttributeContains"
 		enabled="True"
@@ -125,7 +128,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="False"
+		enabled="True"
 		loc="Center"
 		movetime="300ms"
 		optional="False"

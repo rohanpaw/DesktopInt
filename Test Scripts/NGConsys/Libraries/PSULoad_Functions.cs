@@ -3157,7 +3157,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasim
 		 * Last Update : 08/01/2019 Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
-		 * Alpesh Dhakad - 21/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 * Alpesh Dhakad - 21/08/2019 & 30/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnEthernetAddDelete(string sFileName,string sAddPanelSheet)
@@ -3226,7 +3226,9 @@ namespace TestProject.Libraries
 					sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
 					sBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,11]).Value.ToString();
 					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,12]).Value.ToString();
-					repo.FormMe.Ethernet1.Click();
+					// Click on Ethernet node
+			Common_Functions.ClickOnNavigationTreeItem("Ethernet");
+			
 					float.TryParse(sBatteryStandby, out BatteryStandby);
 					float.TryParse(sAlarmLoad, out AlarmLoad);
 					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);

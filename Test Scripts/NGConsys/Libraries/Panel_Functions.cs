@@ -111,7 +111,9 @@ namespace TestProject.Libraries
 		public static void SelectPanelNode(Int32 iNodeNumber)
 		{
 			sNode=iNodeNumber.ToString();
-			repo.FormMe.PanelNode1.Click();
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
+			
 			
 		}
 		
@@ -213,24 +215,30 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/***********************************************************************************************************************************
 		 * Function Name: changePanelLED
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 01/08/2019 & 30/08/2019- Updated test scripts as per new build and xpaths
+		 ***********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void changePanelLED(int PanelLED)
 		{
 			
-			repo.FormMe.NodeExpander1.Click();
+				
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
+			
 			
 			repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+PanelLED +"{ENTER}");
 			
-			repo.FormMe.NodeExpander1.Click();
+				
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node");
+			
 			
 		}
 		
@@ -449,7 +457,9 @@ namespace TestProject.Libraries
 			
 			//string[] splitPanelNames = PanelNames.Split(',');
 			
-			repo.FormMe.SiteNode1.Click();
+			// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 			
 			string PanelNameWithSpace=PanelNames;
 			PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
@@ -502,7 +512,9 @@ namespace TestProject.Libraries
 				
 				
 				
-				repo.FormMe.SiteNode1.Click();
+				// Click on Site node
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
 				
 				string PanelNameWithSpace=splitPanelNames[i];
 				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);

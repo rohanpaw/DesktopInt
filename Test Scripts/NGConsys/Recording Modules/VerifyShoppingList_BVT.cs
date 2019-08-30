@@ -128,9 +128,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizardWithRegion("LPBS 3000", ValueConverter.ArgumentFromString<int>("DeviceQty", "10"), "0");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SiteNode1' at Center.", repo.FormMe.SiteNode1Info, new RecordItemIndex(16));
-            repo.FormMe.SiteNode1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ShoppingList' at Center.", repo.FormMe.ShoppingListInfo, new RecordItemIndex(17));
             repo.FormMe.ShoppingList.Click();
