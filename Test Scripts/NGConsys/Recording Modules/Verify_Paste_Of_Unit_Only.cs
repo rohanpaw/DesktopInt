@@ -121,6 +121,9 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
             Delay.Milliseconds(0);
             
+            Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
             Delay.Milliseconds(0);
             
@@ -136,10 +139,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-9");
             Delay.Milliseconds(0);
             
-            try {
-                Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(19)); }
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 3");
             Delay.Milliseconds(0);
@@ -151,6 +152,9 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyPasteButtonEnabled();
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
@@ -165,10 +169,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-5");
             Delay.Milliseconds(0);
             
-            try {
-                Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(28)); }
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
+            Delay.Milliseconds(0);
             
         }
 

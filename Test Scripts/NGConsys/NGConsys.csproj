@@ -5020,10 +5020,4 @@
   </Import>
   <Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)">
   </Import>
-  <PropertyGroup>
-    <PreBuildEvent>if not exist "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data" mkdir "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data"
-xcopy "C:\work\consys-uiauto\Test Data" "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data"/E /Y
-if not exist "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects" mkdir "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects"
-xcopy "C:\work\consys-uiauto\NGDesigner Saved Projects" "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects"/E /Y</PreBuildEvent>
-  </PropertyGroup>
 </Project>

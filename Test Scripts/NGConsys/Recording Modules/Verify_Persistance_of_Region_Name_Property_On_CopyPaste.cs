@@ -205,10 +205,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
             Delay.Milliseconds(0);
             
-            try {
-                Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("18", "Label", "TEXT-17");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(42)); }
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("18", "Label", "TEXT-17");
+            Delay.Milliseconds(0);
             
         }
 

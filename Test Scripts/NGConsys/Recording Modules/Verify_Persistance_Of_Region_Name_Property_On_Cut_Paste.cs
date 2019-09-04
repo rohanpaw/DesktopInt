@@ -145,7 +145,7 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "TEXT-E");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "TEXT-E");
+            Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "TEXT-5");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");

@@ -137,6 +137,67 @@ namespace TestProject.Recording_Modules
             repo.PrintPreview.btn_CloseB.Click();
             Delay.Milliseconds(200);
             
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-E");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyExportButtonInGalleryEnabledOrDisabled();
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyExportButtonInGalleryEnabledOrDisabled();
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyExportButtonInGalleryEnabledOrDisabled();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyExportButtonInGalleryEnabledOrDisabled();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(33));
+            repo.FormMe.Export2ndTime.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'PrintPreview'.", repo.PrintPreview.SelfInfo, new RecordItemIndex(34));
+            Validate.Exists(repo.PrintPreview.SelfInfo);
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.PARTMaximize' at Center.", repo.PrintPreview.PARTMaximizeInfo, new RecordItemIndex(35));
+            repo.PrintPreview.PARTMaximize.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(36));
+            repo.PrintPreview.btn_CloseB.Click();
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data
