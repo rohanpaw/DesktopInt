@@ -6017,6 +6017,7 @@ namespace TestProject
             RepoItemInfo _close_in_fileInfo;
             RepoItemInfo _chkbox_in_searchpropertiesInfo;
             RepoItemInfo _gridsensitivitycombo1Info;
+            RepoItemInfo _copybuttonInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6168,6 +6169,7 @@ namespace TestProject
                 _close_in_fileInfo = new RepoItemInfo(this, "Close_In_File", "progressbar/container[18]", 30000, null, "d56f426b-49c5-4d6e-b248-8a552fa83c49");
                 _chkbox_in_searchpropertiesInfo = new RepoItemInfo(this, "Chkbox_In_SearchProperties", "progressbar/picture[10]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//button[@automationid='PART_Editor']", 30000, null, "4792b971-0597-4b95-b9e2-4cc87a5f4171");
                 _gridsensitivitycombo1Info = new RepoItemInfo(this, "GridSensitivityCombo1", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[5]/text", 30000, null, "f237acfd-8daf-4caf-a2d8-cb5d430045ce");
+                _copybuttonInfo = new RepoItemInfo(this, "CopyButton", "?/?/container[@automationid='PART_AutoHideControl']/list/list[2]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Copy']", 30000, null, "60100a5a-fabb-4057-82b0-f377a9c49cfc");
             }
 
             /// <summary>
@@ -9728,6 +9730,30 @@ namespace TestProject
                 get
                 {
                     return _gridsensitivitycombo1Info;
+                }
+            }
+
+            /// <summary>
+            /// The CopyButton item.
+            /// </summary>
+            [RepositoryItem("60100a5a-fabb-4057-82b0-f377a9c49cfc")]
+            public virtual Ranorex.Text CopyButton
+            {
+                get
+                {
+                    return _copybuttonInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CopyButton item info.
+            /// </summary>
+            [RepositoryItemInfo("60100a5a-fabb-4057-82b0-f377a9c49cfc")]
+            public virtual RepoItemInfo CopyButtonInfo
+            {
+                get
+                {
+                    return _copybuttonInfo;
                 }
             }
 

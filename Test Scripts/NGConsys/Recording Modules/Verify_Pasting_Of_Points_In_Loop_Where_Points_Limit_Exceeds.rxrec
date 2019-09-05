@@ -512,22 +512,6 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyPasteButtonEnabled"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="32178cfc-a443-41ca-85a8-df1fff4213c9">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
 		optional="False"
@@ -546,6 +530,32 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyContextMenuOptionOnRightClickEnabledOrDisabled"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="32178cfc-a443-41ca-85a8-df1fff4213c9">
+				<argument
+				argname="sContextMenuOption"
+				id="03b4e82d-9f19-4aac-ad86-c9ebe8e07b1a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Paste
 					</argvalue>
 				</argument>
 			</arguments>
@@ -583,7 +593,7 @@ rxversion="8.3">
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="True"
+		optional="False"
 		searchpropertyid="4b97c4f0-97fd-45eb-9794-fa17674b3d5b"
 		sx="0"
 		sy="0"
@@ -607,7 +617,7 @@ rxversion="8.3">
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="True"
+		optional="False"
 		searchpropertyid="4b97c4f0-97fd-45eb-9794-fa17674b3d5b"
 		sx="0"
 		sy="0"
@@ -807,22 +817,6 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyPasteButtonEnabled"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="32178cfc-a443-41ca-85a8-df1fff4213c9">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
 		optional="False"
@@ -841,6 +835,32 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyContextMenuOptionOnRightClickEnabledOrDisabled"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="32178cfc-a443-41ca-85a8-df1fff4213c9">
+				<argument
+				argname="sContextMenuOption"
+				id="8e2adca4-5e7d-47d7-9e4d-7b924ba19d2e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Paste
 					</argvalue>
 				</argument>
 			</arguments>
@@ -878,7 +898,7 @@ rxversion="8.3">
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="True"
+		optional="False"
 		searchpropertyid="4b97c4f0-97fd-45eb-9794-fa17674b3d5b"
 		sx="0"
 		sy="0"
@@ -902,7 +922,7 @@ rxversion="8.3">
 		enabled="True"
 		loc="Center"
 		movetime="300ms"
-		optional="True"
+		optional="False"
 		searchpropertyid="4b97c4f0-97fd-45eb-9794-fa17674b3d5b"
 		sx="0"
 		sy="0"

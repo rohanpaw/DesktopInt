@@ -139,9 +139,6 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-9");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
-            Delay.Milliseconds(0);
-            
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 3");
             Delay.Milliseconds(0);
             
@@ -169,7 +166,94 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-5");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-E");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-E");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX/External Loop Card 3");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 3");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-9");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 3");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-5");
             Delay.Milliseconds(0);
             
         }

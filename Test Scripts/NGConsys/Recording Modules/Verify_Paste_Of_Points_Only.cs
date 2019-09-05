@@ -165,6 +165,95 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 3");
             Delay.Milliseconds(0);
             
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-E");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-E");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(47));
+            repo.FormMe.Paste.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(54));
+            repo.FormMe.Paste.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.SelectPointsGridRow("1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 3");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

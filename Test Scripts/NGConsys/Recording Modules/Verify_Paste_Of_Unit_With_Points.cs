@@ -118,10 +118,13 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(14));
+            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(15));
             repo.FormMe.Paste.Click();
             Delay.Milliseconds(200);
             
@@ -146,10 +149,108 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(23));
+            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(25));
+            repo.FormMe.Paste.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-5");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-6");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Label", "PLX800-7");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Label", "PLX800-8");
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-E");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyPasteButtonDisabled();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(46));
+            repo.FormMe.Paste.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("11", "Address", "10");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("12", "Address", "11");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "Address", "12");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "SKU", "557.202.842");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(56));
             repo.FormMe.Paste.Click();
             Delay.Milliseconds(200);
             

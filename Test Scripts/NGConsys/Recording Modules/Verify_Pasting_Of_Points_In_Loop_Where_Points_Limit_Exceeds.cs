@@ -124,26 +124,22 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
+            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
             Delay.Milliseconds(0);
             
-            try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(18));
-                repo.FormMe.Paste.Click();
-                Delay.Milliseconds(200);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(18)); }
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(18));
+            repo.FormMe.Paste.Click();
+            Delay.Milliseconds(200);
             
-            try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(19));
-                repo.FormMe.Paste.Click();
-                Delay.Milliseconds(200);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(19)); }
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(19));
+            repo.FormMe.Paste.Click();
+            Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.MoveScrollBarDownInPointsGrid();
             Delay.Milliseconds(0);
@@ -167,26 +163,22 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
+            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
             Delay.Milliseconds(0);
             
-            try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(30));
-                repo.FormMe.Paste.Click();
-                Delay.Milliseconds(200);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(30)); }
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(30));
+            repo.FormMe.Paste.Click();
+            Delay.Milliseconds(200);
             
-            try {
-                Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(31));
-                repo.FormMe.Paste.Click();
-                Delay.Milliseconds(200);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(31)); }
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(31));
+            repo.FormMe.Paste.Click();
+            Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.MoveScrollBarDownInPointsGrid();
             Delay.Milliseconds(0);

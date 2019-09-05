@@ -444,6 +444,76 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="2244fa52-56bf-49b1-9ec8-4d5389503624"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="IS_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyIsolatorUnitsAndIndicator"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0f93ccd2-1f73-4466-9d7e-560176ea7a6a">
+				<argument
+				argname="expectedIsolatorUnits"
+				id="d105e730-b7c7-4db9-b473-2cddf56ad956">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExpectedColourCode"
+				id="64f82751-c370-4dad-b1a8-0edcecc64e19">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						GREEN
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="09f64873-779d-433e-b1b8-669fa1805694">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PFI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
@@ -521,6 +591,76 @@ rxversion="8.3">
 				<argument
 				argname="PanelType"
 				id="caeaf102-e014-49ee-8824-37c755b404dc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PFI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="2244fa52-56bf-49b1-9ec8-4d5389503624"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="IS_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyIsolatorUnitsAndIndicator"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0f93ccd2-1f73-4466-9d7e-560176ea7a6a">
+				<argument
+				argname="expectedIsolatorUnits"
+				id="d105e730-b7c7-4db9-b473-2cddf56ad956">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						2
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExpectedColourCode"
+				id="64f82751-c370-4dad-b1a8-0edcecc64e19">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						GREEN
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="09f64873-779d-433e-b1b8-669fa1805694">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

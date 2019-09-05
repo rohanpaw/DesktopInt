@@ -2182,7 +2182,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			capname="button"
 			id="f4f72640-8721-416a-b01c-0018a4546ff3"
 			name="Paste"
-			refimgid="ccfa5778-f825-4f0d-9c0b-fa44faf66600"
+			refimgid="ec27e581-b98b-4d4a-8cad-d964a1134cae"
 			searchtimeout="60000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Paste']
 			</item>
@@ -13415,6 +13415,16 @@ AAAAAElFTkSuQmCC
 			name="GridSensitivityCombo1"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[5]/text
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="60100a5a-fabb-4057-82b0-f377a9c49cfc"
+			name="CopyButton"
+			refimgid="45764e42-f849-4f5a-ac3d-fea4423f0aeb"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[2]/container[@automationid='PART_ItemsPresenter']/button[@text='Copy']/text[@caption='Copy']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[2]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Copy']
 			</item>
 			<basepath>
 				/form[@automationid='me']
