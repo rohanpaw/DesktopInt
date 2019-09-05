@@ -82,21 +82,20 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeContains (Text>'Panels') on item 'FormMe2.PanelsGallery'.", repo.FormMe2.PanelsGalleryInfo, new RecordItemIndex(1));
-            Validate.AttributeContains(repo.FormMe2.PanelsGalleryInfo, "Text", "Panels");
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormMe.PanelsGallery'.", repo.FormMe.PanelsGalleryInfo, new RecordItemIndex(1));
+            Validate.Exists(repo.FormMe.PanelsGalleryInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormMe2.OtherNodesGallery'.", repo.FormMe2.OtherNodesGalleryInfo, new RecordItemIndex(2));
-            Validate.Exists(repo.FormMe2.OtherNodesGalleryInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormMe.OtherNodesGallery'.", repo.FormMe.OtherNodesGalleryInfo, new RecordItemIndex(2));
+            Validate.Exists(repo.FormMe.OtherNodesGalleryInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormMe2.tab_SiteAccessories'.", repo.FormMe2.tab_SiteAccessoriesInfo, new RecordItemIndex(3));
-            Validate.Exists(repo.FormMe2.tab_SiteAccessoriesInfo);
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'FormMe.tab_SiteAccessories'.", repo.FormMe.tab_SiteAccessoriesInfo, new RecordItemIndex(3));
+            Validate.Exists(repo.FormMe.tab_SiteAccessoriesInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe2.btn_Close' at Center.", repo.FormMe2.btn_CloseInfo, new RecordItemIndex(4));
-            repo.FormMe2.btn_Close.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "");
+            Delay.Milliseconds(0);
             
         }
 

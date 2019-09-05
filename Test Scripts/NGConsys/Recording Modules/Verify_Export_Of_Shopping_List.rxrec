@@ -373,10 +373,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="SlotCards_Functions"
+		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifySlotCardsTextForBackplane2"
+		methodname="VerifyAndClickNavigationTreeItemText"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -387,7 +387,7 @@ rxversion="8.3">
 			<arguments
 			id="29d51a9d-f4fe-4a07-8fe9-47fd416cd479">
 				<argument
-				argname="expectedText"
+				argname="TreeItemName"
 				id="a89fca63-8727-4790-b22b-3c570e7db229">
 					<argvaluetype>
 						System.String

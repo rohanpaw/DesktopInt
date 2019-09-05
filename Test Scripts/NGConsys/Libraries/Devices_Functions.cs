@@ -3277,14 +3277,15 @@ namespace TestProject.Libraries
 			}
 			
 		}
-		/***********************************************************************************************************
+		/***************************************************************************************************************
 		 * Function Name: verifyDescription
 		 * Function Details: To verify description from properties
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 13/03/2019  24/05/2019 - Updated script, added if statement for tab_Points and cell_properties
-		 ************************************************************************************************************/
+		 * Alpesh Dhakad - 05/09/2019 - Updated xpath for cell_properties and txt_PropertiesTextValue
+		 ***************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyDescription(string sDescription)
 		{
@@ -3311,7 +3312,7 @@ namespace TestProject.Libraries
 			else
 			{
 				// Click on Properties cell
-				repo.FormMe.cell_Properties.Click();
+				repo.FormMe.cell_Properties_backplane1.Click();
 				
 			}
 
@@ -3333,7 +3334,7 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				string actualDescription =	repo.FormMe.txt_PropertiesTextValue.TextValue;
+				string actualDescription =	repo.FormMe.txt_PropertiesTextValue1.TextValue;
 				
 				// Comparing DayMode and sDayMode values
 				if(actualDescription.Equals(sDescription))
@@ -6601,14 +6602,14 @@ namespace TestProject.Libraries
 			}
 		}
 		
-		/********************************************************************
+		/***********************************************************************************************************************************
 		 * Function Name: VerifyProductCodeInSearchProperties
 		 * Function Details: To verify SKU in search properties
 		 * Parameter/Arguments:expected Label text
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 24/05/2019
-		 ********************************************************************/
+		 * Last Update : 24/05/2019 Alpesh Dhakad - 05/09/2019 - Updated xpath for cell_properties and txt_PropertiesTextValue
+		 ***********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyProductCodeInSearchProperties(string sProductLabel)
 		{
@@ -6620,10 +6621,10 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Product code" +"{ENTER}" );
 			
 			// Click on label cell
-			repo.FormMe.cell_Properties_backplane.Click();
+			repo.FormMe.cell_Properties_backplane1.Click();
 			
 			// Retrieve value of label
-			string actualProductLabel = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			string actualProductLabel = repo.FormMe.txt_PropertiesTextValue1.TextValue;
 			
 			// Comparing actualLabel and sLabel values
 			if(actualProductLabel.Equals(sProductLabel))
@@ -6662,10 +6663,10 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Product" +"{ENTER}" );
 			
 			// Click on label cell
-			repo.FormMe.cell_Properties_backplane.Click();
+			repo.FormMe.cell_Product.Click();
 			
 			// Retrieve value of label
-			string actualSKUValue = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			string actualSKUValue = repo.FormMe.txt_Product.Text;
 			
 			// Comparing actualLabel and sLabel values
 			if(actualSKUValue.Equals(sProductName))
@@ -6684,14 +6685,14 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
 		
-		/********************************************************************
+		/*************************************************************************************************************************************
 		 * Function Name: VerifyRegionNameInSearchProperties
 		 * Function Details: To verify Product Name in search properties
 		 * Parameter/Arguments:expected Label text
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 24/05/2019
-		 ********************************************************************/
+		 * Last Update : 24/05/2019  Alpesh Dhakad - 05/09/2019 - Updated xpath for cell_properties and txt_PropertiesTextValue
+		 *************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyRegionNameInSearchProperties(string sRegionName)
 		{
@@ -6703,10 +6704,10 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Region Name" +"{ENTER}" );
 			
 			// Click on label cell
-			repo.FormMe.cell_Properties_backplane.Click();
+			repo.FormMe.cell_Properties_backplane1.Click();
 			
 			// Retrieve value of label
-			string actualRegionName = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			string actualRegionName = repo.FormMe.txt_PropertiesTextValue1.TextValue;
 			
 			// Comparing actualLabel and sLabel values
 			if(actualRegionName.Equals(sRegionName))
@@ -6746,11 +6747,11 @@ namespace TestProject.Libraries
 			
 			
 			// Click on label cell
-			repo.FormMe.cell_Properties_backplane.Click();
+			repo.FormMe.cell_Properties_backplane1.Click();
 			
 			//Modifying the label
-			repo.FormMe.cell_Properties_backplane.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
-			repo.FormMe.cell_Properties_backplane.PressKeys(sNewLabel +"{ENTER}" );
+			repo.FormMe.cell_Properties_backplane1.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			repo.FormMe.cell_Properties_backplane1.PressKeys(sNewLabel +"{ENTER}" );
 			Report.Log(ReportLevel.Success,"Label is edited to " +sNewLabel);
 			
 			

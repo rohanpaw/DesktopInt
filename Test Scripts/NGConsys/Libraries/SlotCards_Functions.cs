@@ -113,63 +113,8 @@ namespace TestProject.Libraries
 			set { repo.sOtherSlotCardName = value; }
 		}
 		
-		/***********************************************************************************************************
-		 * Function Name: VerifyandClickOtherSlotCardsForBackplane1
-		 * Function Details:
-		 * Parameter/Arguments:
-		 * Output:
-		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/05/2019
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifyandClickOtherSlotCardsForBackplane1(string slotCardName)
-		{
-			sOtherSlotCardName = slotCardName;
-			repo.FormMe.Backplane1_OtherSlotCards.Click();
-			Report.Log(ReportLevel.Info," Slot card name " +slotCardName + " is displayed  ");
-		}
 		
-		/***********************************************************************************************************
-		 * Function Name: VerifySlotCardsTextForBackplane2
-		 * Function Details:
-		 * Parameter/Arguments:
-		 * Output:
-		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 02/05/2019  14/05/2019 - Alpesh Dhakad - Updated code 17/07/2019 - Alpesh Dhakad - Updated code
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifySlotCardsTextForBackplane2(string expectedText)
-		{
-			sOtherSlotCardName = expectedText;
-			if(repo.FormMe.MainProcessorList.Backplane2_OtherSlotCardsWithPLXInfo.Exists())
-			{
-				string ActualText = repo.FormMe.MainProcessorList.Backplane2_OtherSlotCardsWithPLX.TextValue;
-				
-				if(ActualText.Equals(expectedText))
-				{
-					Report.Log(ReportLevel.Success,"Other slot cards text is as expected");
-				}
-				else
-				{
-					Report.Log(ReportLevel.Failure,"Other slot cards text is displayed as " +ActualText+ "instead of " +expectedText);
-				}
-			}
-			else
-			{
-				string ActualText = repo.FormMe.Backplane2_OtherSlotCards.TextValue;
-				
-				if(ActualText.Equals(expectedText))
-				{
-					Report.Log(ReportLevel.Success,"Other slot cards text is as expected");
-				}
-				else
-				{
-					Report.Log(ReportLevel.Failure,"Other slot cards text is displayed as " +ActualText+ "instead of " +expectedText);
-				}
-			}
-			
-		}
-
+		
 		/********************************************************************************************************
 		 * Function Name: VerifySlotCardsAndBackplanesDistribution
 		 * Function Details: To verify slot cards and backplane distribution
@@ -445,121 +390,6 @@ namespace TestProject.Libraries
 			
 			// Close Excel
 			Excel_Utilities.CloseExcel();
-		}
-		
-		
-		/***********************************************************************************************************
-		 * Function Name: VerifySlotCardsTextForBackplane1
-		 * Function Details: To Verify other SlotCards Text from Backplane1
-		 * Parameter/Arguments: expectedText
-		 * Output:
-		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/05/2019
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifySlotCardsTextForBackplane1(string expectedText)
-		{
-			string ActualText = repo.FormMe.Backplane1_OtherSlotCards.TextValue;
-			
-			if(ActualText.Equals(expectedText))
-			{
-				Report.Log(ReportLevel.Success,"Other slot cards text is as expected");
-			}
-			else
-			{
-				Report.Log(ReportLevel.Failure,"Other slot cards text is displayed as " +ActualText+ "instead of " +expectedText);
-			}
-			
-		}
-		
-		/***********************************************************************************************************
-		 * Function Name: VerifyandClickOtherSlotCardsForBackplane2
-		 * Function Details: To verify and click on backplane 2
-		 * Parameter/Arguments: slotCardName
-		 * Output:
-		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/05/2019
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifyandClickOtherSlotCardsForBackplane2(string slotCardName)
-		{
-			sOtherSlotCardName = slotCardName;
-			
-			if(repo.FormMe.MainProcessorList.Backplane2_OtherSlotCardsWithPLXInfo.Exists())
-			{
-				repo.FormMe.MainProcessorList.Backplane2_OtherSlotCardsWithPLX.Click();
-			}
-			else
-			{
-				repo.FormMe.Backplane2_OtherSlotCards.Click();
-			}
-			
-			Report.Log(ReportLevel.Info," Slot card name " +slotCardName + " is displayed  ");
-		}
-		
-		
-		/***********************************************************************************************************
-		 * Function Name: VerifyandClickOtherSlotCardsForBackplane3
-		 * Function Details: To verify and click on backplane 3
-		 * Parameter/Arguments: slotCardName
-		 * Output:
-		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/05/2019
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifyandClickOtherSlotCardsForBackplane3(string slotCardName)
-		{
-			sOtherSlotCardName = slotCardName;
-			repo.FormMe.Backplane3_OtherSlotCards.Click();
-			Report.Log(ReportLevel.Info," Slot card name " +slotCardName + " is displayed  ");
-		}
-		
-		/***********************************************************************************************************
-		 * Function Name: VerifySlotCardsTextForBackplane3
-		 * Function Details: To Verify other SlotCards Text from Backplane3
-		 * Parameter/Arguments: expectedText
-		 * Output:
-		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/05/2019
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifySlotCardsTextForBackplane3(string expectedText)
-		{
-			string ActualText = repo.FormMe.Backplane3_OtherSlotCards.TextValue;
-			
-			if(ActualText.Equals(expectedText))
-			{
-				Report.Log(ReportLevel.Success,"Other slot cards text is as expected");
-			}
-			else
-			{
-				Report.Log(ReportLevel.Failure,"Other slot cards text is displayed as " +ActualText+ "instead of " +expectedText);
-			}
-			
-		}
-
-		/***********************************************************************************************************
-		 * Function Name: VerifySlotCardsTextForBackplane3OnReopen
-		 * Function Details: To Verify other SlotCards Text from Backplane3
-		 * Parameter/Arguments: expectedText
-		 * Output:
-		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/05/2019
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifySlotCardsTextForBackplane3OnReopen(string expectedText)
-		{
-			string ActualText = repo.FormMe.Backplane3_OtherSlotCards_Reopen.TextValue;
-			
-			if(ActualText.Equals(expectedText))
-			{
-				Report.Log(ReportLevel.Success,"Other slot cards text is as expected");
-			}
-			else
-			{
-				Report.Log(ReportLevel.Failure,"Other slot cards text is displayed as " +ActualText+ "instead of " +expectedText);
-			}
-			
 		}
 		
 		/***********************************************************************************************************
@@ -923,63 +753,6 @@ namespace TestProject.Libraries
 				
 				// Click on Shopping list tab
 				repo.FormMe.ShoppingList.Click();
-				
-				/*// Verify shopping list count
-				Devices_Functions.verifyShoppingList(shoppingListCount);
-				Delay.Milliseconds(200);
-				
-				// Click on Export button
-				repo.FormMe.Export2ndTime.Click();
-				Delay.Milliseconds(200);
-				
-				// Click on Maximize button
-				repo.PrintPreview.PARTMaximize.Click();
-				
-				// Click on export drop down button
-				repo.PrintPreview.ExportDropdown.Click();
-				
-				// Click on excel format document
-				repo.ExportDocument.ExcelFormat.Click();
-				Delay.Duration(5000, false);
-				
-				// Set the attribute value to xls
-				repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
-				Delay.Duration(5000, false);
-				
-				
-				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
-				// Click on OK Button of export document
-				Export_Functions.validateAndClickOKButtonOnExportDocument();
-				
-//				// Click on OK button of export document
-//				repo.ExportDocument.ButtonOK.Click();
-//				Delay.Milliseconds(200);
-//
-//				// Click on OK button of export document again
-//				repo.ExportDocument.ButtonOK.Click();
-				
-				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
-				
-				
-				// Click on shopping list Cell 18 of excel sheet
-				repo.ShoppingListCompatibilityModeE.Cell18.Click();
-				Delay.Milliseconds(200);
-				
-				// Verify Cell 18 text of excel sheet
-				Libraries.Devices_Functions.verifyShoppingListDevicesTextForPxD(sFOMExpectedText);
-				Delay.Milliseconds(0);
-				
-				// Verify Cell 22 text of excel sheet
-				Devices_Functions.verifyShoppingListDevicesTextForPSC(sMPMExpectedText);
-				
-				// Verify Cell 26 text of excel sheet
-				Devices_Functions.verifyShoppingListDevicesTextForThirdDevice(sANNExpectedText);
-				
-				// Click on button to close excel
-				repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
-				
-				// Click on button to close print preview window
-				repo.PrintPreview.btn_CloseB.Click(); */
 					
 				/******************************************************************************* 
                     Updated code - Purvi Bhasin (3/09/2019) Added the method for shopping list
@@ -1010,63 +783,7 @@ namespace TestProject.Libraries
 				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sMPMExpectedText,false);
 				
 				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sANNExpectedText,false);
-				
-				/*// Verify shopping list count
-				Devices_Functions.verifyShoppingList(shoppingListCountAfterUncheck);
-				Delay.Milliseconds(500);
-				
-				// Click on Export button
-				repo.FormMe.Export2ndTime.Click();
-				Delay.Milliseconds(200);
-				
-				// Click on maximize button
-				repo.PrintPreview.PARTMaximize.Click();
-				
-				// Click on export drop down button
-				repo.PrintPreview.ExportDropdown.Click();
-				
-				// Click on Export document to select excel format
-				repo.ExportDocument.ExcelFormat.Click();
-				Delay.Duration(5000, false);
-				
-				// Set the attribute value to xls
-				repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
-				Delay.Duration(5000, false);
-				
-				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
-				// Click on OK Button of export document
-				Export_Functions.validateAndClickOKButtonOnExportDocument();
-				
-//				// Click on OK button of export document
-//				repo.ExportDocument.ButtonOK.Click();
-//				Delay.Milliseconds(200);
-//
-//				// Click on OK button of export document again
-//				repo.ExportDocument.ButtonOK.Click();
-				
-				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
-				
-				
-				// Click Cell 18 text of excel sheet
-				repo.ShoppingListCompatibilityModeE.Cell18.Click();
-				Delay.Milliseconds(200);
-				
-				// Verify Cell 18 text of excel sheet
-				Libraries.Devices_Functions.verifyShoppingListDevicesTextForPxD(sFOMExpectedText);
-				Delay.Milliseconds(0);
-				
-				// Verify Cell 22 text of excel sheet
-				Devices_Functions.verifyShoppingListDevicesTextForPSC(sMPMExpectedTextAfterUncheck);
-				
-				// Verify Cell 26 text of excel sheet
-				Devices_Functions.verifyShoppingListDevicesTextForThirdDevice(sANNExpectedTextAfterUncheck);
-				
-				// Click to close excel sheet
-				repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
-				
-				// Click on close button
-				repo.PrintPreview.btn_CloseB.Click(); */
-				
+								
 				// Click on Panel Node
 				Common_Functions.ClickOnNavigationTreeItem("Node");
 				// Click on Site node
@@ -1157,9 +874,6 @@ namespace TestProject.Libraries
 				// Click on shopping list tab
 				repo.FormMe.ShoppingList.Click();
 				
-				// Verify shopping list count
-				//Devices_Functions.verifyShoppingList(shoppingListCount);
-				
 				// Click on panel accessories tab
 				repo.FormMe.tab_Panel_Network.Click();
 				
@@ -1208,53 +922,6 @@ namespace TestProject.Libraries
 				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(secondPanelName,true);
 				
 				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sSecondDeviceName,true);
-				
-				/*// Verify shopping list count
-				Devices_Functions.verifyShoppingList(secondShoppingListCount);
-				Delay.Milliseconds(500);
-				
-				// Click on Export button
-				repo.FormMe.Export2ndTime.Click();
-				Delay.Milliseconds(200);
-				
-				// Click on maximize button
-				repo.PrintPreview.PARTMaximize.Click();
-				
-				// Click on export drop down button
-				repo.PrintPreview.ExportDropdown.Click();
-				
-				// Click on Export document to select excel format
-				repo.ExportDocument.ExcelFormat.Click();
-				Delay.Duration(5000, false);
-				
-				// Set the attribute value to xls
-				repo.ExportDocument.ExcelFormat.Element.SetAttributeValue("Text", "Xls");
-				Delay.Duration(5000, false);
-				
-				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
-				// Click on OK Button of export document
-				Export_Functions.validateAndClickOKButtonOnExportDocument();
-				
-//				// Click on OK button of export document
-//				repo.ExportDocument.ButtonOK.Click();
-//				Delay.Milliseconds(200);
-//
-//				// Click on OK button of export document again
-//				repo.ExportDocument.ButtonOK.Click();
-				
-				//*****************17/07/2019 - Alpesh Dhakad - Updated code ***********************************
-				
-				// Verify shopping list excel text for first device and panel
-				Devices_Functions.verifyShoppingListDevicesTextForCell3And14(PanelName,sDeviceName);
-				
-				// Verify shopping list excel text for second device and panel
-				Devices_Functions.verifyShoppingListDevicesTextForCell17And21(secondPanelName,sSecondDeviceName);
-				
-				// Click to close excel sheet
-				repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
-				
-				// Click on close button
-				repo.PrintPreview.btn_CloseB.Click(); */
 					
 				// Click on Panel Node
 				Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -1591,24 +1258,6 @@ namespace TestProject.Libraries
 			
 			// Click on shopping list tab
 			repo.FormMe.tab_ShoppingList.Click();
-			
-			// Verify shopping list count
-			/*Devices_Functions.verifyShoppingList(shoppingListCount);
-			Delay.Milliseconds(500);
-			
-			Export_Functions.ExportAndGenerateShoppingListInExcelFormat();
-			Export_Functions.verifyShoppingListDevicesTextForCell14(FirstDevice);
-			
-			Export_Functions.verifyShoppingListDevicesTextForCell17(SecondDevice);
-			
-			Export_Functions.verifyShoppingListDevicesTextForCell21(ThirdDevice);
-			
-			Export_Functions.verifyShoppingListDevicesTextForCell24(FourthDevice);
-			
-			Export_Functions.CloseShoppingListExcel();
-			
-			// Close Excel
-			Excel_Utilities.CloseExcel();*/
 			
 			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(FirstDevice,true);
 			Delay.Milliseconds(100);
@@ -2415,40 +2064,15 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/***********************************************************************************************************
-		 * Function Name: VerifyPLXLoopCardTextForBackplane1
-		 * Function Details: To Verify other PLXLoopCard Text from Backplane1
-		 * Parameter/Arguments: expectedText
-		 * Output:
-		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 14/06/2019
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifyPLXLoopCardTextForBackplane1(string expectedText)
-		{
-			string ActualText = repo.FormMe2.PLXExternalLoopCard2.TextValue;
-			
-			if(ActualText.Equals(expectedText))
-			{
-				Report.Log(ReportLevel.Success,"PLXLoopCard is available and text is as expected");
-			}
-			else
-			{
-				Report.Log(ReportLevel.Failure,"PLXLoopCard is not available and is displayed as " +ActualText+ "instead of " +expectedText);
-			}
-			
-		}
-		
-		
-		/**************************************************************************************************
+		/************************************************************************************************************************
 		 * Function Name: VerifyAddUnitDetails
 		 * Function Details: Verify Add Unit Details and its status
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 25/06/2019 Alpesh Dhakad - 29/07/2019 - Updated scripts as per new build xpaths
-		 * Alpesh Dhakad - 16/08/2019 & 19/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
-		 **************************************************************************************************/
+		 * Alpesh Dhakad - 16/08/2019,19/08/2019 & 05/09/2019  - Updated with new navigation tree method, xpath and devices gallery 
+		 ************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAddUnitDetails(string sFileName,string sAddDevicesSheet)
 		{
@@ -2542,15 +2166,15 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
 				else
 				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3", ExpectedBackplane1);
+					Common_Functions.VerifyNavigationTreeItem("Backplane", ExpectedBackplane1);
 				}
 				
 				// Verify expected backplane2
@@ -2596,15 +2220,15 @@ namespace TestProject.Libraries
 		}
 		
 
-		/************************************************************************************************************
+		/********************************************************************************************************************
 		 * Function Name: VerifySlotCardsAndLoopCardsDistribution
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 26/06/2019  Alpesh Dhakad - 29/07/2019 - Updated script as per new build xpaths
-		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
-		 ************************************************************************************************************/
+		 * Alpesh Dhakad - 16/08/2019 & 05/09/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 ********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifySlotCardsAndLoopCardsDistribution(string sFileName,string sAddDevicesSheet)
 		{
@@ -2712,6 +2336,9 @@ namespace TestProject.Libraries
 					
 											// Click on Panel node
 											Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+											
+											// Click on Expander node
+											Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 				
 										}
 										else
@@ -2750,82 +2377,7 @@ namespace TestProject.Libraries
 			// Close Excel
 			Excel_Utilities.CloseExcel();
 		}
-
-		
-
-
-		/***********************************************************************************************************
-		 * Function Name: VerifyPLXTreeListForBackplane1
-		 * Function Details:
-		 * Parameter/Arguments:
-		 * Output:
-		 * Function Owner: Purvi Bhasin
-		 * Last Update : 26/06/2019
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifyPLXTreeListForBackplane1(string NoofPLXTree)
-		{
-			sDeviceIndex = NoofPLXTree;
-			repo.FormMe.PLXTreeList.Click();
-			Report.Log(ReportLevel.Info,"PLX tree is displayed correctly");
-		}
-
-		/********************************************************************
-		 * Function Name: VerifyLoopCardDistributionInBackplaneOnReopen
-		 * Function Details: To verify slot cards and backplane distribution
-		 * Parameter/Arguments: sFileName, sAddDevicesSheet
-		 * Output:
-		 * Function Owner: Purvi Bhasin
-		 * Last Update : 27/06/2019
-		 ********************************************************************/
-		[UserCodeMethod]
-		public static void VerifyLoopCardDistributionInBackplaneOnReopen(int MaxLimitOfDevice)
-		{
-			for(int j=1;j<=MaxLimitOfDevice;j++)
-			{
-				int NoofPLXTree = j+1;
-				string sNoofPLXTree = NoofPLXTree.ToString();
-				
-				VerifyPLXTreeListForBackplane1AfterReopen(sNoofPLXTree);
-			}
-			
-		}
-
-		/***********************************************************************************************************
-		 * Function Name: VerifyPLXTreeListForBackplane1AfterReopen
-		 * Function Details:
-		 * Parameter/Arguments:
-		 * Output:
-		 * Function Owner: Purvi Bhasin
-		 * Last Update : 26/06/2019
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifyPLXTreeListForBackplane1AfterReopen(string NoofPLXTree)
-		{
-			sDeviceIndex = NoofPLXTree;
-			repo.FormMe.PLXTreeList_Reopen.Click();
-			Report.Log(ReportLevel.Info,"PLX tree is displayed correctly on Reopening");
-		}
-
-		/***********************************************************************************************************
-		 * Function Name: VerifyandClickOtherSlotCardsForBackplane1OnReopen
-		 * Function Details:
-		 * Parameter/Arguments:
-		 * Output:
-		 * Function Owner: Purvi Bhasin
-		 * Last Update : 27/06/2019
-		 ************************************************************************************************************/
-		[UserCodeMethod]
-		public static void VerifyandClickOtherSlotCardsForBackplane1OnReopen(string slotCardName)
-		{
-			sOtherSlotCardName = slotCardName;
-			repo.FormMe.Backplane1Expander_AfterReopen.Click();
-			repo.FormMe.Backplane1_OtherSlotCards1_Reopen.Click();
-			Report.Log(ReportLevel.Info," Slot card name " +slotCardName + " is displayed  ");
-		}
-
-		
-		
+	
 	}
 }
 

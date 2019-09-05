@@ -826,6 +826,52 @@ rxversion="8.3">
 		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
+		methodname="DeletePanel"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="90340d02-d5ae-4de2-9d6d-c3de8f26b0c8">
+				<argument
+				argname="NumberofPanels"
+				id="88c2f2dd-3e1f-4e61-8061-27d459ae05b5">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNode"
+				id="3b1e74fe-1884-497c-bd91-aa4dba8cd66f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PanelNode
+					</argvalue>
+				</argument>
+				<argument
+				argname="rowNumber"
+				id="dc0ea196-3015-4526-a6a0-3d370ffb508a">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
 		optional="False"

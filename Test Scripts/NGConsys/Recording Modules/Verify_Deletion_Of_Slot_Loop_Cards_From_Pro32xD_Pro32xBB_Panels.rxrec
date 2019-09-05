@@ -447,10 +447,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromMainProcessorGallery"
+		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -459,35 +459,15 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="29d51a9d-f4fe-4a07-8fe9-47fd416cd479">
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="sDeviceName"
-				id="a89fca63-8727-4790-b22b-3c570e7db229">
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PCH800
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="868c2b21-2171-4ca9-9fcc-21b2b31d0307">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Slot Cards
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="5afc8900-6e0d-417c-8a45-563979f47c35">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
+						Backplane  3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -600,7 +580,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
+		methodname="VerifyNavigationTreeItemText"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -611,7 +591,7 @@ rxversion="8.3">
 			<arguments
 			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="ExpanderName"
+				argname="TreeItemName"
 				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
 						System.String
@@ -650,7 +630,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -676,7 +656,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -695,7 +675,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Backplane  2
+						Backplane  3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -854,7 +834,7 @@ rxversion="8.3">
 		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
 		methodname="verifyShoppingList"
 		namespace="TestProject.Libraries"
@@ -873,7 +853,7 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						5
+						4
 					</argvalue>
 				</argument>
 			</arguments>

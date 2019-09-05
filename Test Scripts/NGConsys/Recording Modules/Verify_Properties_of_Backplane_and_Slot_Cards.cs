@@ -94,79 +94,24 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane");
             Delay.Milliseconds(0);
             
-            //Libraries.Devices_Functions.verifyDescription("Backplane Assembly with 6 slots for use with PxD");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.verifyPicture();
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.cell_Properties_backplane' at Center.", repo.FormMe.cell_Properties_backplaneInfo, new RecordItemIndex(7));
-            //repo.FormMe.cell_Properties_backplane.Click();
-            //Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=313,Height=735}) on item 'FormMe.BackplaneImage'.", repo.FormMe.BackplaneImageInfo, new RecordItemIndex(8));
-            //Validate.ContainsImage(repo.FormMe.BackplaneImageInfo, BackplaneImage_Screenshot1, BackplaneImage_Screenshot1_Options);
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.ErasePictureFromProperties();
-            //Delay.Milliseconds(0);
-            
-            // Have to verify the value for backplane SKU
-            //VerifyProductCodeInSearchProperties("123");
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Inventory_Tab_Backplane' at Center.", repo.FormMe.Inventory_Tab_BackplaneInfo, new RecordItemIndex(11));
-            //repo.FormMe.Inventory_Tab_Backplane.Click();
-            //Delay.Milliseconds(200);
-            
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "SKU", "123.456.789");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Model", "PLX800");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Label", "PLX800-E");
-            //Delay.Milliseconds(0);
-            
-            // Slot address wont be displayed in grid as told
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Address", "E");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Connection", "PLX/External Loop Card 2");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.InventoryGrid_Functions.EditDevicePropertyWhichAreReadOnly("1", "SKU", "123");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.InventoryGrid_Functions.EditDevicePropertyWhichAreReadOnly("1", "Address", "12");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.InventoryGrid_Functions.EditDevicePropertyWhichAreReadOnly("1", "Connection", "abc");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.InventoryGrid_Functions.EditDevicePropertyWhichAreReadOnly("1", "Model", "pqr");
-            //Delay.Milliseconds(0);
-            
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Label", "PLX800-E");
             Delay.Milliseconds(0);
             
-            VerifyProductCodeInSearchProperties("557.202.842");
+            Libraries.Devices_Functions.VerifyProductCodeInSearchProperties("557.202.842");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=380,Height=380}) on item 'FormMe.PLX_Image'.", repo.FormMe.PLX_ImageInfo, new RecordItemIndex(23));
-            Validate.ContainsImage(repo.FormMe.PLX_ImageInfo, PLX_Image_Screenshot1, PLX_Image_Screenshot1_Options);
-            Delay.Milliseconds(0);
-            
-            try {
-                //Libraries.Devices_Functions.verifyDescription("(Slot card) Provides MX Loop interfaces for connection fire detectors and ancillaries. Card is connected to panel using Internal N-Bus interface");
-                //Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(24)); }
-            
-            VerifyRegionNameInSearchProperties("PLX800-E");
-            Delay.Milliseconds(0);
-            
-            //VerifyProductInSearchProperties("PLX800");
+            //Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot1' with region {X=0,Y=0,Width=380,Height=380}) on item 'FormMe.PLX_Image'.", repo.FormMe.PLX_ImageInfo, new RecordItemIndex(7));
+            //Validate.ContainsImage(repo.FormMe.PLX_ImageInfo, PLX_Image_Screenshot1, PLX_Image_Screenshot1_Options);
             //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyDescription("(Slot card) Provides MX Loop interfaces for connection fire detectors and ancillaries. Card is connected to panel using Internal N-Bus interface");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyRegionNameInSearchProperties("PLX800-E");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyProductInSearchProperties("PLX800");
+            Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.editDeviceLabel("1", "Label", "PLX800");
             Delay.Milliseconds(0);
@@ -174,7 +119,7 @@ namespace TestProject.Recording_Modules
             VerifyRegionNameInSearchProperties("PLX800");
             Delay.Milliseconds(0);
             
-            editRegionName("PLX");
+            Libraries.Devices_Functions.editRegionName("PLX");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Label", "PLX");
@@ -183,12 +128,6 @@ namespace TestProject.Recording_Modules
         }
 
 #region Image Feature Data
-        CompressedImage BackplaneImage_Screenshot1
-        { get { return repo.FormMe.BackplaneImageInfo.GetScreenshot1(new Rectangle(0, 0, 313, 735)); } }
-
-        Imaging.FindOptions BackplaneImage_Screenshot1_Options
-        { get { return Imaging.FindOptions.Default; } }
-
         CompressedImage PLX_Image_Screenshot1
         { get { return repo.FormMe.PLX_ImageInfo.GetScreenshot1(new Rectangle(0, 0, 380, 380)); } }
 

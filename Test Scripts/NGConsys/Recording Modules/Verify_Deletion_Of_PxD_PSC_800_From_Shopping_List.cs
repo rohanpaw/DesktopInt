@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -155,8 +155,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.ShoppingList.Click();
             Delay.Milliseconds(200);
             
-            //Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "6"));
-            //Delay.Milliseconds(0);
+            Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "5"));
+            Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export' at Center.", repo.FormMe.ExportInfo, new RecordItemIndex(25));
             //repo.FormMe.Export.Click();
@@ -271,8 +271,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.ShoppingList.Click();
             Delay.Milliseconds(200);
             
-            //Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "4"));
-            //Delay.Milliseconds(0);
+            Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "4"));
+            Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export' at Center.", repo.FormMe.ExportInfo, new RecordItemIndex(58));
             //repo.FormMe.Export.Click();

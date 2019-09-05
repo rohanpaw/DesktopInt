@@ -118,7 +118,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  3");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  2");
@@ -133,17 +133,17 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  2");
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Backplane  2");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
             Delay.Milliseconds(0);
             
-            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  2");
-            //Delay.Milliseconds(0);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  2");
+            Delay.Milliseconds(0);
             
-            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  2");
-            //Delay.Milliseconds(0);
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  3");
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
             Delay.Milliseconds(0);
@@ -165,8 +165,8 @@ namespace TestProject.Recording_Modules
             repo.FormMe.ShoppingList.Click();
             Delay.Milliseconds(200);
             
-            //Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "5"));
-            //Delay.Milliseconds(0);
+            Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "4"));
+            Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(29));
             //repo.FormMe.Export2ndTime.Click();
