@@ -2506,7 +2506,6 @@ namespace TestProject.Libraries
 		}
 		
 		
-		
 		/*****************************************************************************************************************************
 		 * Function Name: verify40VCalculationforXLMLoopWithDevices
 		 * Function Details: To Verify 40V load on addition/deletion of XLM loop card with devices
@@ -2556,14 +2555,14 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
-					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
-					
-					// Click on Loop Card node
-					Common_Functions.ClickOnNavigationTreeExpander(PanelType);
-					
-					// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				// Click on Loop Card node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
 				
 				
 				// Verify 40V PSU load value of Built in XLM loop card
@@ -2576,8 +2575,8 @@ namespace TestProject.Libraries
 					{
 						
 						// Click on Panel node
-					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
-					
+						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+						
 						//Fetch XLM card details
 						ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[j,9]).Value.ToString();
 						sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
@@ -2588,17 +2587,20 @@ namespace TestProject.Libraries
 						Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 						
 						// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
-			
+						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+						
+						//Expand Backplane node
+						Common_Functions.ClickOnNavigationTreeExpander("XLM/External");
+						
 						// Expand Backplane node
-						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+						//repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
 						
 						// Expand external loop card node
-						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+						//repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
 						
 						// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+						
 						//Generate expected 40V load
 						float.TryParse(sDefault40V, out Default40V);
 						float.TryParse(sExpected40VPSU, out Expected40VPSU);
@@ -2608,8 +2610,11 @@ namespace TestProject.Libraries
 						// Verify 40V PSU load value of loop card
 						verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
 						
+						
 						// Click on Loop C
-						repo.FormMe.XLMExternalLoopCardDevices_C.Click();
+						Common_Functions.ClickOnNavigationTreeItem("XLM800-C");
+						
+						//repo.FormMe.XLMExternalLoopCardDevices_C.Click();
 						
 						// Verify 40V PSU load value of loop card
 						verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
@@ -2625,7 +2630,9 @@ namespace TestProject.Libraries
 						sCalcExpected40VPSU= CalcExpected40VPSU.ToString("0.000");
 						
 						// Click on Loop C and add devices
-						repo.FormMe.XLMExternalLoopCardDevices_C.Click();
+						Common_Functions.ClickOnNavigationTreeItem("XLM800-C");
+						
+						//repo.FormMe.XLMExternalLoopCardDevices_C.Click();
 						
 						for(k=8;k<=9;k++)
 						{
@@ -2639,8 +2646,8 @@ namespace TestProject.Libraries
 						verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
 						
 						// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+						
 						//Generate expected 40V load
 						float.TryParse(sDefault40V, out Default40V);
 						float.TryParse(sExpected40VPSU, out Expected40VPSU);
@@ -2696,6 +2703,7 @@ namespace TestProject.Libraries
 			//Close opened excel sheet
 			Excel_Utilities.CloseExcel();
 		}
+		
 		
 		
 		/*****************************************************************************************************************************
@@ -4361,7 +4369,7 @@ namespace TestProject.Libraries
 					
 					
 					
-					for(int k=8; j<=9; j++)
+					for(int k=8; j<9; j++)
 					{
 						
 						ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[k,18]).Value.ToString();

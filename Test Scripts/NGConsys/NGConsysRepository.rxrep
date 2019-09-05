@@ -1987,7 +1987,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="7da5c35f-9a6a-4920-8f66-f18e4aac81ec"
 			name="Cell_PSU"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@isheader='False']
+				/form[@automationid='me']/progressbar/picture[2]//container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@isheader='False']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
