@@ -643,6 +643,9 @@ namespace TestProject.Libraries
 					
 				}
 				
+				//Expand Node
+				Common_Functions.ClickOnNavigationTreeExpander("Node");
+				
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
@@ -899,7 +902,7 @@ namespace TestProject.Libraries
 				
 				
 				// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 				
 				// Click on panel accessories tab
@@ -915,13 +918,13 @@ namespace TestProject.Libraries
 				Devices_Functions.CheckUncheckMPMCheckboxInSearchProperties(changeCheckboxStateTo);
 				
 				// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
+				Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 				
 				// Click on Shopping list tab
 				repo.FormMe.ShoppingList.Click();
 				
-				// Verify shopping list count
+				/*// Verify shopping list count
 				Devices_Functions.verifyShoppingList(shoppingListCount);
 				Delay.Milliseconds(200);
 				
@@ -976,10 +979,19 @@ namespace TestProject.Libraries
 				repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
 				
 				// Click on button to close print preview window
-				repo.PrintPreview.btn_CloseB.Click();
+				repo.PrintPreview.btn_CloseB.Click(); */
+					
+				/******************************************************************************* 
+                    Updated code - Purvi Bhasin (3/09/2019) Added the method for shopping list
+			    ********************************************************************************/
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sFOMExpectedText,true);
+				
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sMPMExpectedText,true);
+				
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sANNExpectedText,true);
 				
 				// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
@@ -988,12 +1000,18 @@ namespace TestProject.Libraries
 				Devices_Functions.CheckUncheckMPMCheckboxInSearchProperties(changeCheckboxStateToAgain);
 				
 				// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
+				Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 				// Click on shopping list tab
 				repo.FormMe.ShoppingList.Click();
 				
-				// Verify shopping list count
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sFOMExpectedText,true);
+				
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sMPMExpectedText,false);
+				
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sANNExpectedText,false);
+				
+				/*// Verify shopping list count
 				Devices_Functions.verifyShoppingList(shoppingListCountAfterUncheck);
 				Delay.Milliseconds(500);
 				
@@ -1047,10 +1065,12 @@ namespace TestProject.Libraries
 				repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
 				
 				// Click on close button
-				repo.PrintPreview.btn_CloseB.Click();
+				repo.PrintPreview.btn_CloseB.Click(); */
 				
+				// Click on Panel Node
+				Common_Functions.ClickOnNavigationTreeItem("Node");
 				// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
+				Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 				// Verify if row count is more than 8 then delete the panel
 				if(rows!=8)
@@ -1117,7 +1137,7 @@ namespace TestProject.Libraries
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
 				// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
@@ -1132,25 +1152,25 @@ namespace TestProject.Libraries
 				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,initialState);
 				
 				// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
+				Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 				// Click on shopping list tab
 				repo.FormMe.ShoppingList.Click();
 				
 				// Verify shopping list count
-				Devices_Functions.verifyShoppingList(shoppingListCount);
+				//Devices_Functions.verifyShoppingList(shoppingListCount);
 				
 				// Click on panel accessories tab
 				repo.FormMe.tab_Panel_Network.Click();
 				
 				// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
+				Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 				// Add one panel after adding 1 one panel
 				Panel_Functions.AddOnePanel(2,secondPanelName,sSecondCPUType);
 				
 				// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
@@ -1171,12 +1191,25 @@ namespace TestProject.Libraries
 				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,secondDeviceState);
 				
 				// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
+				Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 				// Click on shopping list tab
 				repo.FormMe.ShoppingList.Click();
 				
-				// Verify shopping list count
+				/*********************************************************************
+				 Updated - Purvi Bhasin (3/09/2019) - Shopping list method is added
+				 *********************************************************************/
+				
+				//Verify device is present in shopping list 
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(PanelName,true);
+				
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sDeviceName,true);
+				
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(secondPanelName,true);
+				
+				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sSecondDeviceName,true);
+				
+				/*// Verify shopping list count
 				Devices_Functions.verifyShoppingList(secondShoppingListCount);
 				Delay.Milliseconds(500);
 				
@@ -1221,10 +1254,12 @@ namespace TestProject.Libraries
 				repo.ShoppingListCompatibilityModeE.btn_CloseExcel.Click();
 				
 				// Click on close button
-				repo.PrintPreview.btn_CloseB.Click();
-				
+				repo.PrintPreview.btn_CloseB.Click(); */
+					
+				// Click on Panel Node
+				Common_Functions.ClickOnNavigationTreeItem("Node");
 				// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
+				Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 				// Verify if row count is more than 8 then delete the panel
 				if(rows!=8)

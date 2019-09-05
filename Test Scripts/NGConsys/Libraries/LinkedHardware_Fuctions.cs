@@ -24,19 +24,19 @@ using Ranorex.Core.Testing;
 
 namespace TestProject.Libraries
 {
-    /// <summary>
-    /// Ranorex user code collection. A collection is used to publish user code methods to the user code library.
-    /// </summary>
-    [UserCodeCollection]
-    public class LinkedHardware_Fuctions
-    {
-        // You can use the "Insert New User Code Method" functionality from the context menu,
-        // to add a new method with the attribute [UserCodeMethod].
-        
-        //Create instance of repository to access repository items
+	/// <summary>
+	/// Ranorex user code collection. A collection is used to publish user code methods to the user code library.
+	/// </summary>
+	[UserCodeCollection]
+	public class LinkedHardware_Fuctions
+	{
+		// You can use the "Insert New User Code Method" functionality from the context menu,
+		// to add a new method with the attribute [UserCodeMethod].
+		
+		//Create instance of repository to access repository items
 		static NGConsysRepository repo = NGConsysRepository.Instance;
-        
-        /**************************************************************************************************************************************
+		
+		/**************************************************************************************************************************************
 		 * Function Name: VerifyLinkedDevicesGetAddedInLoop
 		 * Function Details: Add a device and its child till Max Limit and check if linked devices get added in the Loop
 		 * Parameter/Arguments:
@@ -66,16 +66,15 @@ namespace TestProject.Libraries
 				ChildDeviceType = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				
-				 //Click on Loop Card node
-					Common_Functions.ClickOnNavigationTreeExpander(PanelType);
-				
-			// Click on Loop Card node
-					Common_Functions.ClickOnNavigationTreeExpander(PanelType);
-
+				//Click on  node Expander
+				Common_Functions.ClickOnNavigationTreeExpander("Node");
+			
+				// Click on Loop Card node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
 				// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem("Node");
-					
+				Common_Functions.ClickOnNavigationTreeItem("Node");
+				
 				//Add parent Device
 				Devices_Functions.AddDevicesfromPanelNodeGallery(ParentDeviceName,ParentDeviceType,PanelType);
 				
@@ -92,10 +91,9 @@ namespace TestProject.Libraries
 			}
 			//Verify Linked Devices are added in Loop A
 			
-					
-					// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+			// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
 			
 			//Click Points Tab
 			
@@ -107,7 +105,7 @@ namespace TestProject.Libraries
 				Devices_Functions.VerifyDeviceUsingLabelName(expectedLabel1);
 				Devices_Functions.VerifyDeviceUsingLabelName(expectedLabel1);
 			}
-				
+			
 		}
 		
 		/********************************************************************
@@ -116,7 +114,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 22/08/2019 
+		 * Last Update : 22/08/2019
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCheckboxOfProperties(string sFileName,string sSheetName)
@@ -134,7 +132,7 @@ namespace TestProject.Libraries
 			
 			//Expand Panel Node
 			Common_Functions.ClickOnNavigationTreeExpander("Node");
-				
+			
 			//Expand FIM/PFI Loop card
 			Common_Functions.ClickOnNavigationTreeExpander("PFI");
 			
@@ -207,17 +205,17 @@ namespace TestProject.Libraries
 				
 				
 				
-				//Slect 2nd channel 
+				//Slect 2nd channel
 				if(!sSecondChannelCheckbox.IsEmpty())
 				{
 					LabelNo = LabelNo+1;
-				
+					
 					sLabelNo = LabelNo.ToString();
 
 					string SecondChannelLabelName = DeviceName+" - "+sLabelNo;
 					bool SecondChannelCheckbox = Convert.ToBoolean(sSecondChannelCheckbox);
 					Devices_Functions.SelectRowUsingLabelName(SecondChannelLabelName);
-				
+					
 					Devices_Functions.VerifyCheckboxExists(CheckboxName,SecondChannelCheckbox);
 				}
 				
@@ -232,15 +230,15 @@ namespace TestProject.Libraries
 				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SKUNo,true);
 				LabelNo = LabelNo+1;
 			}
-    }
+		}
 		
-	/********************************************************************
+		/********************************************************************
 		 * Function Name: VerifySurfaceBoxParameters
-		 * Function Details: 
+		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 23/08/2019 
+		 * Last Update : 23/08/2019
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifySurfaceBoxParameters(string sFileName,string sSheetName)
@@ -295,6 +293,6 @@ namespace TestProject.Libraries
 				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SKUNo,true);
 				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sParameter,true);
 			}
-    }	
-}
+		}
+	}
 }
