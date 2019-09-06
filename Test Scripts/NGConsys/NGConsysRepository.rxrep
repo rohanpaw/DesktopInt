@@ -2413,6 +2413,14 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='1']//text[@automationid='PART_Editor']
 			</item>
 			<item
+			capname="row"
+			id="87fb5976-2f92-43b1-831e-644b14505b17"
+			name="txt_PropertiesDescriptionRow"
+			refimgid="c9320085-6cc8-42a5-82a1-c7999f17a426"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='1']
+			</item>
+			<item
 			capname="text"
 			id="103460ce-0b97-441a-ab01-bb36fd02783e"
 			name="txt_InventoryGridDeviceProperty"

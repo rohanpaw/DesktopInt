@@ -1941,7 +1941,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : : 14/06/2019 Alpesh Dhakad- 30/07/2019 & 30/08/2019 - Updated script as per new build xpath updates
+		 * Last Update : : 14/06/2019 Alpesh Dhakad- 30/07/2019,30/08/2019 & 06/09/2019 - Updated script as per new build xpath updates
 		 ************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyOtherSlotCardGrid(string sFileName,string sAddDevicesSheet)
@@ -1988,8 +1988,8 @@ namespace TestProject.Libraries
 					{
 						if (sType.Equals("Accessories"))
 						{
-							// Click on Expander node
-							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+							// Click on Panel Node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
 							repo.FormMe.tab_PanelAccessories.Click();
 							for(int k=1; k<=deviceCount;k++)
@@ -1999,8 +1999,8 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							// Click on Expander node
-					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+							// Click on Panel Node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
 							repo.FormMe.tab_Inventory.Click();
 							
@@ -2064,15 +2064,15 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/************************************************************************************************************************
+		/***********************************************************************************************************************************************
 		 * Function Name: VerifyAddUnitDetails
 		 * Function Details: Verify Add Unit Details and its status
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 25/06/2019 Alpesh Dhakad - 29/07/2019 - Updated scripts as per new build xpaths
-		 * Alpesh Dhakad - 16/08/2019,19/08/2019 & 05/09/2019  - Updated with new navigation tree method, xpath and devices gallery 
-		 ************************************************************************************************************************/
+		 * Alpesh Dhakad - 16/08/2019,19/08/2019,05/09/2019 & 06/09/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 ***********************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAddUnitDetails(string sFileName,string sAddDevicesSheet)
 		{
@@ -2166,10 +2166,10 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
 				else
@@ -2271,17 +2271,19 @@ namespace TestProject.Libraries
 					
 					int.TryParse(sDeviceCount, out deviceCount);
 					
+					// Click on Loop A node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+							// Click on Expander node
+							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+							
+					
 					
 					// Verify device count and then add devices from panel accessories gallery or panel node gallery
 					if(deviceCount>0)
 					{
 						if (sType.Equals("Accessories"))
 						{
-							// Click on Expander node
-							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
-							
-							// Click on Loop A node
-							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 							
 							repo.FormMe.tab_PanelAccessories.Click();
 							
@@ -2293,11 +2295,6 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							// Click on Loop A node
-							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
-				
-							// Click on Expander node
-							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 							
 							repo.FormMe.tab_Inventory.Click();
 							
@@ -2327,7 +2324,7 @@ namespace TestProject.Libraries
 											
 											//Conversion from string to int then again string
 											int.TryParse(sMaxInOtherSlotCard, out MaxInOtherSlotCard);
-											MaxInOtherSlotCard = MaxInOtherSlotCard-k;
+											MaxInOtherSlotCard = MaxInOtherSlotCard-1;
 											sMaxInOtherSlotCard = MaxInOtherSlotCard.ToString();
 											
 											string sBackplane1SlotCardName = "Other Slot Cards  (0 of "+sMaxInOtherSlotCard+")";
@@ -2345,7 +2342,7 @@ namespace TestProject.Libraries
 										{
 											string sCount = k.ToString();
 											string sBackplane1SlotCardName = "Other Slot Cards  ("+sCount+" of "+sMaxInOtherSlotCard+")";
-											
+																					
 											Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 											
 											
@@ -2367,7 +2364,9 @@ namespace TestProject.Libraries
 								
 								
 							}
-
+							// Click on Expander node
+							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+							
 					
 				}
 

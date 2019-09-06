@@ -244,11 +244,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
 		enabled="True"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="VerifyProductCodeInSearchProperties"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False"
 		varname="">
 			<comment>
@@ -323,11 +323,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
 		enabled="True"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="VerifyRegionNameInSearchProperties"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False"
 		varname="">
 			<comment>
@@ -349,11 +349,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
 		enabled="True"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="VerifyProductInSearchProperties"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False"
 		varname="">
 			<comment>
@@ -447,11 +447,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
 		enabled="True"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="editRegionName"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False"
 		varname="">
 			<comment>

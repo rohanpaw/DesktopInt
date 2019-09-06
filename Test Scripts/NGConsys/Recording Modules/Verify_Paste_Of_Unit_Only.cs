@@ -181,7 +181,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-E");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-5");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
@@ -190,7 +190,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-E");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-5");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");

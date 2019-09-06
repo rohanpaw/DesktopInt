@@ -133,16 +133,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("Backplane  2");
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  2");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  3");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");

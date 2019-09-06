@@ -5950,6 +5950,7 @@ namespace TestProject
             RepoItemInfo _txt_inventorypropertyInfo;
             RepoItemInfo _txt_propertiestextvalueInfo;
             RepoItemInfo _txt_propertiestextvalue1Info;
+            RepoItemInfo _txt_propertiesdescriptionrowInfo;
             RepoItemInfo _txt_inventorygriddevicepropertyInfo;
             RepoItemInfo _isolatorunitsprogressbarInfo;
             RepoItemInfo _devicemodeafterreopenInfo;
@@ -6100,6 +6101,7 @@ namespace TestProject
                 _txt_inventorypropertyInfo = new RepoItemInfo(this, "txt_InventoryProperty", "progressbar/picture[7]/picture/list/row[@index='1']//text[@automationid='PART_Editor']", 30000, null, "7eb8ad20-55fa-4493-87ac-4ee648507e5a");
                 _txt_propertiestextvalueInfo = new RepoItemInfo(this, "txt_PropertiesTextValue", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//text", 30000, null, "5229b4f7-5565-4f6e-ac0b-a3146dd61fdc");
                 _txt_propertiestextvalue1Info = new RepoItemInfo(this, "txt_PropertiesTextValue1", "progressbar/picture[7]/picture/list/row[@index='1']//text[@automationid='PART_Editor']", 30000, null, "4037f82c-6c15-46c3-973c-1b71009b924a");
+                _txt_propertiesdescriptionrowInfo = new RepoItemInfo(this, "txt_PropertiesDescriptionRow", "progressbar/picture[7]/picture/list/row[@index='1']", 30000, null, "87fb5976-2f92-43b1-831e-644b14505b17");
                 _txt_inventorygriddevicepropertyInfo = new RepoItemInfo(this, "txt_InventoryGridDeviceProperty", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row[$sRowIndex]/row/cell[$sColumnIndex]/text", 30000, null, "103460ce-0b97-441a-ab01-bb36fd02783e");
                 _isolatorunitsprogressbarInfo = new RepoItemInfo(this, "IsolatorUnitsProgressBar", "progressbar/picture[2]//container[@automationid='PART_ItemsPresenter']/row[@index=$sRowIndex]/?/?/progressbar", 30000, null, "4ce737ec-47a9-43b5-ba8f-9384addc2ca4");
                 _devicemodeafterreopenInfo = new RepoItemInfo(this, "DeviceModeAfterReopen", "progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']", 30000, null, "af798fdb-5ace-4417-b439-3b1a020626f3");
@@ -8142,6 +8144,30 @@ namespace TestProject
                 get
                 {
                     return _txt_propertiestextvalue1Info;
+                }
+            }
+
+            /// <summary>
+            /// The txt_PropertiesDescriptionRow item.
+            /// </summary>
+            [RepositoryItem("87fb5976-2f92-43b1-831e-644b14505b17")]
+            public virtual Ranorex.Row txt_PropertiesDescriptionRow
+            {
+                get
+                {
+                    return _txt_propertiesdescriptionrowInfo.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_PropertiesDescriptionRow item info.
+            /// </summary>
+            [RepositoryItemInfo("87fb5976-2f92-43b1-831e-644b14505b17")]
+            public virtual RepoItemInfo txt_PropertiesDescriptionRowInfo
+            {
+                get
+                {
+                    return _txt_propertiesdescriptionrowInfo;
                 }
             }
 

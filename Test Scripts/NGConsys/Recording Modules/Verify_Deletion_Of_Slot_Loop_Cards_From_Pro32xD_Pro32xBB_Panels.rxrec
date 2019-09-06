@@ -597,7 +597,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Backplane  2
+						Backplane  2/3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -649,7 +649,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Backplane  2
+						Backplane  2/3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -675,7 +675,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Backplane  3
+						Backplane  3/3
 					</argvalue>
 				</argument>
 			</arguments>

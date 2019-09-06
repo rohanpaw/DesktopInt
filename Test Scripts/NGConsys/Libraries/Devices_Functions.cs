@@ -3284,7 +3284,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 13/03/2019  24/05/2019 - Updated script, added if statement for tab_Points and cell_properties
-		 * Alpesh Dhakad - 05/09/2019 - Updated xpath for cell_properties and txt_PropertiesTextValue
+		 * Alpesh Dhakad - 05/09/2019& 06/09/2019 - Updated xpath for cell_properties,txt_PropertiesTextValue & code
 		 ***************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyDescription(string sDescription)
@@ -3334,7 +3334,9 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				string actualDescription =	repo.FormMe.txt_PropertiesTextValue1.TextValue;
+				
+				
+				string actualDescription =	repo.FormMe.cell_Properties_backplane1.Text;
 				
 				// Comparing DayMode and sDayMode values
 				if(actualDescription.Equals(sDescription))
