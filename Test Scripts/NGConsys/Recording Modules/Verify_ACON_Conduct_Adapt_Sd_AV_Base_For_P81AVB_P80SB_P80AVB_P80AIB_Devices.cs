@@ -123,8 +123,8 @@ namespace TestProject.Recording_Modules
             Libraries.Export_Functions.VerifyOverwriteConfirmationForExcel();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(13));
-            Delay.Duration(5000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 100ms.", new RecordItemIndex(13));
+            Delay.Duration(100, false);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'csv{Return}'.", new RecordItemIndex(14));
             Keyboard.Press("csv{Return}");

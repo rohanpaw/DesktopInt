@@ -1412,7 +1412,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 			</arguments>
 		</userrecorditem>
 		<explicitdelayitem
-		duration="5000ms"
+		duration="100ms"
 		enabled="True"
 		optional="False">
 			<comment>

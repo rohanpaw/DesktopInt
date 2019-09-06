@@ -1986,8 +1986,8 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			capname="cell"
 			id="7da5c35f-9a6a-4920-8f66-f18e4aac81ec"
 			name="Cell_PSU"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[2]//container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@isheader='False']
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/picture[7]/?/row[@index='6']/cell[@isheader='False']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -2163,8 +2163,8 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="57f9fc13-5b4b-44c8-bd91-35515c8dfa12"
 			name="btn_Copy1"
 			refimgid="fdde1895-2efe-4134-9236-e6b8ebf7c2fd"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Copy']
+			searchtimeout="60000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Copy']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -2188,8 +2188,8 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="305392e1-5720-4231-9ec9-884f7f208742"
 			name="Cell_SecondPSU"
 			refimgid="981e440b-f3d3-4c6f-8501-2621d2435688"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='7']/cell[@isheader='False']
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/picture[7]/?/row[@index='7']/cell[@isheader='False']
 			</item>
 			<item
 			addcaps="cell,wpfelement,wpfgroupelement"

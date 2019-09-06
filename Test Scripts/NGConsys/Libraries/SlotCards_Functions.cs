@@ -875,7 +875,7 @@ namespace TestProject.Libraries
 				repo.FormMe.ShoppingList.Click();
 				
 				// Click on panel accessories tab
-				repo.FormMe.tab_Panel_Network.Click();
+				//repo.FormMe.tab_Panel_Network.Click();
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");

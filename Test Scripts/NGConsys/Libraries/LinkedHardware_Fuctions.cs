@@ -68,7 +68,7 @@ namespace TestProject.Libraries
 				
 				//Click on  node Expander
 				Common_Functions.ClickOnNavigationTreeExpander("Node");
-			
+				
 				// Click on Loop Card node
 				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
@@ -222,8 +222,8 @@ namespace TestProject.Libraries
 				
 				//Click on Site Node and Shopping List
 				// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
-			
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+				
 				repo.FormMe.ShoppingList.Click();
 				
 				//Verify in shopping list
@@ -253,7 +253,7 @@ namespace TestProject.Libraries
 			string DeviceName,sType,LabelName,sPropertyName,sParameter,SKUNo;
 			
 			// For loop to iterate on data present in excel
-			for(int i=8; i<=8; i++)
+			for(int i=8; i<=rows; i++)
 			{
 				DeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
@@ -285,8 +285,8 @@ namespace TestProject.Libraries
 				
 				//Click on Site Node and Shopping List
 				// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
-			
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+				
 				repo.FormMe.ShoppingList.Click();
 				
 				//Verify in shopping list

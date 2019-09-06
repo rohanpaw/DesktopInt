@@ -91,8 +91,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("LPS 800", "Sounders/Beacons");
             Delay.Milliseconds(0);
@@ -123,8 +123,8 @@ namespace TestProject.Recording_Modules
             repo.ContextMenu.Custom_In_Context_Menu.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
+            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(15));
             repo.ProfileConsys1.tab_Points.Click();
