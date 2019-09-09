@@ -872,7 +872,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 				// Click on shopping list tab
-				repo.FormMe.ShoppingList.Click();
+				//repo.FormMe.ShoppingList.Click();
 				
 				// Click on panel accessories tab
 				//repo.FormMe.tab_Panel_Network.Click();
