@@ -136,6 +136,9 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangeCableLength(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "4500"));
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("450");
             Delay.Milliseconds(0);
             

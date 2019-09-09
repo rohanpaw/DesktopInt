@@ -208,7 +208,7 @@ AAAASUVORK5CYII=
 			name="File"
 			refimgid="2e225932-9b9a-4fa5-8d3a-4eba24c85b93"
 			refpath="/form[@title='Profile Consys']/progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/button/picture/text[@caption='File']"
-			searchtimeout="30000ms">
+			searchtimeout="120000ms">
 				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']/?/?/text[@caption='File']
 			</item>
 			<item
@@ -1851,6 +1851,24 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			<item
 			addcaps="text,wpfelement"
 			capname="text"
+			id="e5533a5f-9272-4ec7-906f-2a9cedeea985"
+			name="cell_Label"
+			refimgid="3452e01c-b122-4b3e-a59e-f180e5ea94d9"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/?/text[@text=$sLabelName]
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="20ca0b01-df11-4b82-ba46-3b98239baa76"
+			name="Copy_of_cell_Label"
+			refimgid="3452e01c-b122-4b3e-a59e-f180e5ea94d9"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[3]/text[@text='IOB800-1']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
 			id="46a7bf92-16f7-44c1-a661-76c0dad49f28"
 			name="Psu5VLoad"
 			refimgid="b5a38dc6-2200-496d-8852-00ebeada5fa5"
@@ -1987,7 +2005,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="7da5c35f-9a6a-4920-8f66-f18e4aac81ec"
 			name="Cell_PSU"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar/picture[7]/?/row[@index='6']/cell[@isheader='False']
+				/form[@automationid='me']/progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@isheader='False']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -13297,6 +13315,14 @@ AAAAAElFTkSuQmCC
 			refimgid="e2b57e76-42be-4b4c-a037-17b248a76e84"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[2]/row[$sRowIndex]/row/cell[1]/text[@caption=$sSKU]
+			</item>
+			<item
+			capname="cell"
+			id="d2a32fd4-d1fb-4952-a5c1-d6bfe93c5949"
+			name="cell_SKU"
+			refimgid="e2b57e76-42be-4b4c-a037-17b248a76e84"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[2]/row[$sRowIndex]/row/cell[1]
 			</item>
 			<item
 			addcaps="text,wpfelement,wpfgroupelement"

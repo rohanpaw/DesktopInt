@@ -1213,6 +1213,32 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
+						Node
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeExpander"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 						Backplane
 					</argvalue>
 				</argument>
@@ -1343,14 +1369,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-9 (0 of 125)
+						TEXT-5 (0 of 125)
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<validationitem
 		action="AttributeEqual"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="16c9affb-3138-415f-90e2-3885f003e57a">
 			<comment>

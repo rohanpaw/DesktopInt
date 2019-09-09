@@ -68,7 +68,7 @@ rxversion="8.3">
 		<validationitem
 		action="ContainsImage"
 		codegenpropertyname="Image_IOB800_Screenshot2"
-		enabled="True"
+		enabled="False"
 		imageoptions="1;None;0,0,313,225;True;10000000;0ms"
 		imagerect="0,0,313,224"
 		optional="False"
@@ -114,7 +114,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						58
+						TC_58
 					</argvalue>
 				</argument>
 			</arguments>

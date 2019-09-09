@@ -79,16 +79,20 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Common_Functions.ReopenProject("58");
+            Libraries.Common_Functions.ReopenProject("TC_58");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyLabelInPanelAccessories("IOB800-Edited\r\n");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(3));
+            repo.FormMe.tab_PanelAccessories.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.VerifyLabelInPanelAccessories("IOB800-Edited");
             Delay.Milliseconds(0);
             
         }

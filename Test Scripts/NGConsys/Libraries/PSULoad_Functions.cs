@@ -3715,14 +3715,14 @@ namespace TestProject.Libraries
 		}
 
 
-		/***********************************************************************************************************************************
+		/***********************************************************************************************************************************************
 		 * Function Name: verifyBatteryStandbyAndAlarmLoadOnZetfastLoopAddDelete
 		 * Function Details: To Verify 40V load on addition/deletion of Zetfast loop with devices
 		 * Parameter/Arguments:   expected Maximum value, panel type (FIM or PFI)  and row number is 13 by default for FIM
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 23/01/2019 Alpesh Dhakad - 30/07/2019,21/08/2019 & 30/08/2019- Updated test scripts as per new build and xpaths
-		 ***********************************************************************************************************************************/
+		 * Last Update : 23/01/2019 Alpesh Dhakad - 30/07/2019,21/08/2019,30/08/2019,08/09/2019- Updated test scripts as per new build and xpaths
+		 ***********************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnZetfastLoopAddDelete(string sFileName,string sAddPanelSheet)
 		{
@@ -3753,11 +3753,15 @@ namespace TestProject.Libraries
 				// Add panels using test data in excel sheet
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
+				// Click on Expander node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+					
+				
 				// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 				//Add zetfast loop and devices and verify Battery Standby and Alarm Load
-				for(int j=7; j<=9; j++)
+				for(int j=6; j<=8; j++)
 				{
 					ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[j,8]).Value.ToString();
 					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,9]).Value.ToString();
@@ -3765,17 +3769,20 @@ namespace TestProject.Libraries
 					sBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,11]).Value.ToString();
 					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,12]).Value.ToString();
 					
-					if(j==7)
+					if(j==6)
 					{
 						Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 						Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
+						
+						// Click on XLM Loop CardExpander node
+					Common_Functions.ClickOnNavigationTreeExpander("XLM");
+					
+					
 					}
 					
 					else
 					{
-						// Click on XLM Loop CardExpander node
-					Common_Functions.ClickOnNavigationTreeExpander("XLM/External");
-					
+						
 						
 						// Click on XLM Loop C Node to add device
 						Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
@@ -3818,13 +3825,15 @@ namespace TestProject.Libraries
 					// Verify 40V PSU load value on addition of zetfast loop with devices
 					verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
 					
+					
+					
 					// Click on Site node
 					Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 					
 				}
 				
-				for(int k=9; k<=7; k--)
+				for(int k=8; k<=6; k--)
 				{
 					ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[k,8]).Value.ToString();
 					sType = ((Range)Excel_Utilities.ExcelRange.Cells[k,9]).Value.ToString();
@@ -3877,6 +3886,8 @@ namespace TestProject.Libraries
 					
 					else
 					{
+						
+						
 						// Click on XLM Loop C Node to add device
 					Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
 					
@@ -3923,14 +3934,14 @@ namespace TestProject.Libraries
 		}
 
 		
-		/*************************************************************************************************************************
+		/***********************************************************************************************************************************************
 		 * Function Name: verifyBatteryStandbyAndAlarmLoadOnSlotCardAddDelete
 		 * Function Details: To Verify Battery Standby and Alarm load on addition/deletion of Slot Cards
 		 * Parameter/Arguments:   expected value, panel type (FIM or PFI)  and row number is 14 by default for PFI
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 22/01/2019  Alpesh Dhakad - 30/07/2019 & 21/08/2019- Updated test scripts as per new build and xpaths
-		 *************************************************************************************************************************/
+		 * Last Update : 22/01/2019  Alpesh Dhakad - 30/07/2019,21/08/2019,08/09/2019- Updated test scripts as per new build and xpaths
+		 ***********************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnSlotCardAddDelete(string sFileName,string sAddPanelSheet)
 		{
@@ -4137,12 +4148,13 @@ namespace TestProject.Libraries
 					//click on panel accessories tab
 					repo.FormMe.tab_PanelAccessories.Click();
 					
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					repo.FormMe.cell_Label.Click();
+					//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 					
-					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+					if(repo.FormMe.cell_LabelInfo.Exists())
 					{
 						repo.ProfileConsys1.btn_Delete.Click();
-						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+						Validate.AttributeEqual(repo.FormMe.cell_LabelInfo, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
@@ -5204,6 +5216,7 @@ namespace TestProject.Libraries
 		 * Last Update :4/2/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 08/08/2019 - Updated script
 		 * Alpesh Dhakad - 21/08/2019 - Updated with new navigation tree method, xpath and devices gallery
+		 * Alpesh Dhakad - 08/09/2019 - Updated scripts - removed last line after delete panel
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyNormalLoadandAlarmLoadPropertyOnAdditionDeletionOfDevicesInPLXOrXLMLoop(string sFileName,string sAddPanelSheet, string sAddDeviceSheet)
@@ -5301,9 +5314,6 @@ namespace TestProject.Libraries
 				
 				// Delete added Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);
-				
-				//Open excel sheet and read it values,
-				Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
 				
 			}
 			Excel_Utilities.CloseExcel();

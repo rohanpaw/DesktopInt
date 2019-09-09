@@ -82,11 +82,11 @@ namespace TestProject.Recording_Modules
             Libraries.SlotCards_Functions.VerifyIOBProperties("TC_58_Verify_IOB_Properties", "Add Devices");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot2' with region {X=0,Y=0,Width=313,Height=224}) on item 'FormMe.Image_IOB800'.", repo.FormMe.Image_IOB800Info, new RecordItemIndex(1));
-            Validate.ContainsImage(repo.FormMe.Image_IOB800Info, Image_IOB800_Screenshot2, Image_IOB800_Screenshot2_Options);
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating ContainsImage (Screenshot: 'Screenshot2' with region {X=0,Y=0,Width=313,Height=224}) on item 'FormMe.Image_IOB800'.", repo.FormMe.Image_IOB800Info, new RecordItemIndex(1));
+            //Validate.ContainsImage(repo.FormMe.Image_IOB800Info, Image_IOB800_Screenshot2, Image_IOB800_Screenshot2_Options);
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.SaveProject("58");
+            Libraries.Common_Functions.SaveProject("TC_58");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

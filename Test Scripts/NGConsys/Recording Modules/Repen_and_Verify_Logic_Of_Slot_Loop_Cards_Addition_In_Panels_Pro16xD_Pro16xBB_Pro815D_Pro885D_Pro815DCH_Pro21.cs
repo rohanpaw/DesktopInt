@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Common_Functions.ReopenProject("TC_216_TC_02_03");
+            Libraries.Common_Functions.ReopenProject("TC_358_TC_02_03");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");

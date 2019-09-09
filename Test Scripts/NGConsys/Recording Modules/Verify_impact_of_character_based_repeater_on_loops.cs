@@ -111,7 +111,7 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.DeleteItemfromInventory(ValueConverter.ArgumentFromString<int>("iRowNumber", "7"), "PLX800", "557.202.842");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "7"), "PLX800", "557.202.842");
+            Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "10"), "PLX800", "557.202.842");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyGalleryItem("Repeaters", "MX2 Repeater", "Enabled");

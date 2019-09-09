@@ -50,7 +50,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						58
+						TC_58
 					</argvalue>
 				</argument>
 			</arguments>
@@ -85,7 +85,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
+		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -96,17 +96,41 @@ rxversion="8.3">
 			<arguments
 			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="ExpanderName"
+				argname="TreeItemName"
 				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Backplane
+						Node
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="649ee328-60e3-4a07-a980-c1e9ac14f4e9"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="90caf0d9-c2af-4c79-a4d1-bdb372ee3fa1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Panel Accessories']
+				</path>
+			</info>
+		</mouseitem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
@@ -128,7 +152,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						IOB800-Edited&#10;
+						IOB800-Edited
 					</argvalue>
 				</argument>
 			</arguments>

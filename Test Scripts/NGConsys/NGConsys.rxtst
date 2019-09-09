@@ -992,6 +992,7 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="0ff286ca-5890-4463-8e73-4a8133c1673b"
 			name="LogResult"
 			ref="ceb1bba3-253d-4729-a317-9e2ef51370bf"
@@ -4351,10 +4352,7 @@ rxversion="8.3">
 			id="46d24ebf-efc4-459d-a132-0b9dc55e0ba1"
 			name="Verify_impact_of_character_based_repeater_on_loops">
 				<description>
-					<![CDATA[<SPAN 
-style='FONT-SIZE: 14px; FONT-FAMILY: Calibri, Calibri, "Segoe UI", Calibri, Thonburi, Arial, Verdana, sans-serif, "Mongolian Baiti", "Microsoft Yi Baiti", "Javanese Text"; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(191,191,191); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial'>NGC-473 
-Verify repeaters and loops gallery on deletion of character based display and 
-loops.</SPAN>]]>
+					<![CDATA[<span style='text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Calibri, Calibri, "Segoe UI", Calibri, Thonburi, Arial, Verdana, sans-serif, "Mongolian Baiti", "Microsoft Yi Baiti", "Javanese Text"; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(191, 191, 191); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;'>NGC-473&nbsp; Verify repeaters and loops gallery on deletion of character based display and loops.</span>]]>
 				</description>
 				<parameters>
 					<param
@@ -9740,6 +9738,7 @@ MxDesigner]]>
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="9864a36b-ae6f-461e-b088-99301d83c7e8"
 			name="LogResult"
 			ref="ceb1bba3-253d-4729-a317-9e2ef51370bf"
@@ -11448,7 +11447,7 @@ persisted in panel properties&nbsp;]]>
 			id="b956701a-9337-4bc1-ba4f-68915628131f"
 			name="Verify_IOB_Properties">
 				<description>
-					<![CDATA[<p>NGC-390/TC-58</p>]]>
+					<![CDATA[<p>NGC-390/TC-58 Image not verified</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -20493,10 +20492,22 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="1f366e1b-8d91-423c-880a-a84229356f67">
+			id="0ad228c5-f2bf-48fe-a7e2-80a3b969107f">
 			</testcontainer>
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="31bdc4a3-6299-44fa-ab6a-9c4402b42cf0">
+			</testcontainer>
+			<testcontainer
+			id="827af031-2c95-45c3-a3be-07380b7f07a2">
+			</testcontainer>
+			<testcontainer
+			id="c2ad215c-10b4-4b99-8fa6-63da244837a0">
+			</testcontainer>
+			<testcontainer
+			id="d29a6c80-d886-4c37-ac9c-50f9c0ba75bf">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -20526,10 +20537,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

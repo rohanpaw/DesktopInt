@@ -58,14 +58,14 @@ namespace TestProject.Libraries
 		/// </summary>
 		/// 
 		
-		/****************************************************************************************
+		/****************************************************************************************************************
 		 * Function Name: VerifyInventoryGrid
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : Alpesh Dhakad - 07/08/2019 - Updated code and added Xpath for txt_SKU
-		 ****************************************************************************************/
+		 * Last Update : Alpesh Dhakad - 07/08/2019 &  07/09/2019  - Updated code and added Xpath for txt_SKU
+		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyInventoryGrid(int iStartRowIndex, int iEndRowIndex, string sSKUofItem)
 		{
@@ -76,6 +76,9 @@ namespace TestProject.Libraries
 				sSKU=sSKUofItem;
 				//Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_SKUInfo, "Text", sSKU);
 				//Validate.AttributeEqual(repo.FormMe.txt_SKUInfo, "Text", sSKU);
+				
+				repo.FormMe.cell_SKU.Click();
+				
 				
 				if(repo.FormMe.txt_SKUInfo.Exists())
 				{
@@ -111,7 +114,8 @@ namespace TestProject.Libraries
 			sRowIndex=iRowNumber.ToString();
 			
 			sSKU=sSKUofItem;
-			repo.FormMe.txt_SKU.Click();
+			repo.FormMe.cell_SKU.Click();
+			//repo.FormMe.txt_SKU.Click();
 			//repo.ProfileConsys1.PanelInvetoryGrid.txt_SKU.Click();
 		}
 

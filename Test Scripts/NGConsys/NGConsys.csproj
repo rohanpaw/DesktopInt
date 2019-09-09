@@ -4235,9 +4235,9 @@
       <recordtableid>973b545f-daf4-47a9-b82e-d0a7b6dbfca9</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Export_Of_Region_Data.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>80b32744-0f3a-40c9-be30-c0a1736f9e26</id>
       <recordtableid>560b4584-e27b-4c2f-88ad-c4ea33c42460</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Export_Of_Shopping_List.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

@@ -181,6 +181,9 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("5", "Label", "TEXT-5");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
             Delay.Milliseconds(0);
             
@@ -196,12 +199,12 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-8 (0 of 125)");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-9 (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("TEXT-5 (0 of 125)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='TEXT-5 (0 of 125)') on item 'FormMe2.ItemsHost.TEXT50Of125'.", repo.FormMe2.ItemsHost.TEXT50Of125Info, new RecordItemIndex(40));
-            Validate.AttributeEqual(repo.FormMe2.ItemsHost.TEXT50Of125Info, "Text", "TEXT-5 (0 of 125)");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='TEXT-5 (0 of 125)') on item 'FormMe2.ItemsHost.TEXT50Of125'.", repo.FormMe2.ItemsHost.TEXT50Of125Info, new RecordItemIndex(41));
+            //Validate.AttributeEqual(repo.FormMe2.ItemsHost.TEXT50Of125Info, "Text", "TEXT-5 (0 of 125)");
+            //Delay.Milliseconds(0);
             
         }
 

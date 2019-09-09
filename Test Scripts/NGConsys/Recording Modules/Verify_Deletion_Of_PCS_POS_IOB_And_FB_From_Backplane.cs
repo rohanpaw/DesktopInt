@@ -95,6 +95,9 @@ namespace TestProject.Recording_Modules
             repo.FormMe.tab_Panel_Network.Click();
             Delay.Milliseconds(200);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            Delay.Milliseconds(0);
+            
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             

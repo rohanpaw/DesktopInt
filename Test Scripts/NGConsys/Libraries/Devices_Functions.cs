@@ -4467,14 +4467,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/************************************************************************************************************************************
+		/*****************************************************************************************************************************************
 		 * Function Name: ChangeCableCapacitance
 		 * Function Details: To change cable capacitance
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 19/04/2019 Alpesh Dhakad - 21/08/2019 - Updated with new navigation tree method, xpath and devices gallery
-		 ************************************************************************************************************************************/
+		 * Last Update : 19/04/2019 Alpesh Dhakad - 21/08/2019,08/09/2019 - Updated with new navigation tree method, xpath and devices gallery
+		 *****************************************************************************************************************************************/
 		// Change cable capacitance method
 		[UserCodeMethod]
 		public static void ChangeCableCapacitance(int fchangeCableCapacitance, string sLabelName)
@@ -4482,9 +4482,7 @@ namespace TestProject.Libraries
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
 			
-			// Click on Panel node
-				Common_Functions.ClickOnNavigationTreeExpander("Node");
-				
+			
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				

@@ -191,7 +191,7 @@ namespace TestProject.Libraries
 		
 			
 			// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem("Node");
+			Common_Functions.ClickOnNavigationTreeItem("MZX");
 			
 			if(AfterImport)
 			{
@@ -336,14 +336,14 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success, "Panel Node "+sPanelName+" selected");
 		}
 		
-		/********************************************************************
+		/************************************************************************************************
 		 * Function Name: ChangePSUType
 		 * Function Details:Used to change 1st PSU of panel
 		 * Parameter/Arguments:PSU to be selected
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : 09/01/2019
-		 ********************************************************************/
+		 * Last Update : 09/01/2019 Alpesh Dhakad - 08/09/2019 Updated report log and cell_PSU xpath
+		 ************************************************************************************************/
 		[UserCodeMethod]
 		public static void ChangePSUType(string sPSUType)
 		{
@@ -353,6 +353,7 @@ namespace TestProject.Libraries
 			//sPSU=sPSUType;
 			
 			//repo.ContextMenu.lstPSU.Click();
+			Report.Log(ReportLevel.Info," PSU Type changed to " +sPSUType + " successfully  ");
 		}
 		
 		/********************************************************************

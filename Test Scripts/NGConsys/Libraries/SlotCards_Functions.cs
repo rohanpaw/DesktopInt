@@ -1086,15 +1086,15 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 		
-		/***************************************************************************************************************************
+		/****************************************************************************************************************************************
 		 * Function Name: VerifyAdditionOfDevicesInBackplaneWithOnePanel
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 06/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
-		 * Alpesh Dhakad - 16/08/2019,19/08/2019 & 28/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
-		 ***************************************************************************************************************************/
+		 * Alpesh Dhakad - 16/08/2019,19/08/2019,28/08/2019 & 07/09/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfDevicesInBackplaneWithOnePanel(string sFileName,string sAddDevicesSheet)
 		{
@@ -1171,7 +1171,7 @@ namespace TestProject.Libraries
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
 					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					//Common_Functions.VerifyNavigationTreeItemText("Backplane");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
@@ -1274,14 +1274,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/***********************************************************************************************************
+		/*************************************************************************************************************************
 		 * Function Name: VerifyDeletionOfDevicesInBackplane
 		 * Function Details: To Verify
 		 * Parameter/Arguments: string sFileName,string sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 06/06/2019  Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
-		 ***********************************************************************************************************/
+		 * Last Update : 06/06/2019  Alpesh Dhakad - 30/07/2019, 07/09/2019 - Updated script as per new build updated xpath
+		 *************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDeletionOfDevicesInBackplane(string sFileName,string sAddDevicesSheet)
 		{
@@ -1317,14 +1317,13 @@ namespace TestProject.Libraries
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
 					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
 				else
 				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3",ExpectedBackplane1);
+					Common_Functions.VerifyNavigationTreeItem("Backplane",ExpectedBackplane1);
 					
 				}
 			
@@ -1340,16 +1339,12 @@ namespace TestProject.Libraries
 			Devices_Functions.verifyShoppingList(shoppingListCount);
 			Delay.Milliseconds(500);
 			
-			Export_Functions.ExportAndGenerateShoppingListInExcelFormat();
-			Export_Functions.verifyShoppingListDevicesTextForCell14(FirstDevice);
+			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(FirstDevice,true);
 			
-			Export_Functions.verifyShoppingListDevicesTextForCell17(SecondDevice);
+			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SecondDevice,true);
 			
-			Export_Functions.verifyShoppingListDevicesTextForCell21(FourthDevice);
+			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(FourthDevice,true);
 			
-			
-			
-			Export_Functions.CloseShoppingListExcel();
 			
 			// Close Excel
 			Excel_Utilities.CloseExcel();
@@ -1357,14 +1352,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/***********************************************************************************************************************
+		/****************************************************************************************************************************************
 		 * Function Name: VerifyAccessoriesGalleryUpdateOnMaxLimitSupportedByPanel
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 07/06/2019 Alpesh Dhakad - 30/07/2019 & 20/08/2019 - Updated script as per new build updated xpath
-		 ***********************************************************************************************************************/
+		 * Last Update : 07/06/2019 Alpesh Dhakad - 30/07/2019,20/08/2019 & 07/09/2019 - Updated script as per new build updated xpath
+		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAccessoriesGalleryUpdateOnMaxLimitSupportedByPanel(string sFileName,string sAddDevicesSheet)
 		{
@@ -1436,13 +1431,14 @@ namespace TestProject.Libraries
 					}
 					Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType,sDeviceName,sDeviceState);
 					
+					//Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				}
 				
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
 					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane");
+					//Common_Functions.VerifyNavigationTreeItemText("Backplane");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
@@ -1935,14 +1931,14 @@ namespace TestProject.Libraries
 
 		}
 
-		/*************************************************************************************************************************************
+		/********************************************************************************************************************************************
 		 * Function Name: VerifyOtherSlotCardGrid
 		 * Function Details: To verify other slot cards grid
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : : 14/06/2019 Alpesh Dhakad- 30/07/2019,30/08/2019 & 06/09/2019 - Updated script as per new build xpath updates
-		 ************************************************************************************************************************************/
+		 * Last Update : : 14/06/2019 Alpesh Dhakad- 30/07/2019,30/08/2019,06/09/2019 & 10/09/2019 - Updated script as per new build xpath updates
+		 ********************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyOtherSlotCardGrid(string sFileName,string sAddDevicesSheet)
 		{
@@ -2002,6 +1998,10 @@ namespace TestProject.Libraries
 							// Click on Panel Node
 							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
+							// Click on Panel Node
+							Common_Functions.ClickOnNavigationTreeItem("Node");
+					
+							
 							repo.FormMe.tab_Inventory.Click();
 							
 							for(int k=1; k<=deviceCount;k++)
@@ -2016,11 +2016,11 @@ namespace TestProject.Libraries
 					// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sPLXLoopCardBackplane1);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
 				else

@@ -82,7 +82,7 @@ namespace TestProject.Recording_Modules
             Libraries.SlotCards_Functions.VerifySlotCardsAndLoopCardsDistribution("TC_02_03_Verify_Logic_Of_Slot_Loop_Cards_Addition_in_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815D-CH_Pro215D_Pro215S", "Add Slot Cards");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.SaveProject("TC_216_TC_02_03");
+            Libraries.Common_Functions.SaveProject("TC_358_TC_02_03");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
