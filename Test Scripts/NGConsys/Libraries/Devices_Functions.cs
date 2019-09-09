@@ -762,14 +762,14 @@ namespace TestProject.Libraries
 		
 		
 		
-		/********************************************************************
+		/****************************************************************************************************************
 		 * Function Name: AssignDeviceBase
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad -09/09/2019 - Updated Base selection and added xpath for the same 
+		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AssignDeviceBase(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex)
 		{
@@ -796,7 +796,7 @@ namespace TestProject.Libraries
 				sRowIndex = iRowIndex.ToString();
 				repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
 				repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
-				repo.ContextMenu.btn_BaseSelection.Click();
+				repo.ContextMenu.btn_BaseSelection1.Click();
 			}
 		}
 

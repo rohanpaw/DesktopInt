@@ -1001,7 +1001,7 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeExpander("XLM");
 					
 					// Click on Zetfas C node
-					Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
+					Common_Functions.ClickOnNavigationTreeItem("XLM800-C");
 					
 				// Split Device name and then add devices as per the device name and number of devices from main gallery
 				ModelNumber = ModelNumber1;
@@ -1021,7 +1021,7 @@ namespace TestProject.Libraries
 				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
 				
 					// Click on Zetfas C node
-					Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
+					Common_Functions.ClickOnNavigationTreeItem("XLM800-C");
 					
 				// Split Device name and then delete devices using label name
 				string[] splitLabelName  = sLabelName1.Split(',');

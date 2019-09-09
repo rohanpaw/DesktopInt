@@ -20492,22 +20492,7 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0ad228c5-f2bf-48fe-a7e2-80a3b969107f">
-			</testcontainer>
-			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="31bdc4a3-6299-44fa-ab6a-9c4402b42cf0">
-			</testcontainer>
-			<testcontainer
-			id="827af031-2c95-45c3-a3be-07380b7f07a2">
-			</testcontainer>
-			<testcontainer
-			id="c2ad215c-10b4-4b99-8fa6-63da244837a0">
-			</testcontainer>
-			<testcontainer
-			id="d29a6c80-d886-4c37-ac9c-50f9c0ba75bf">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

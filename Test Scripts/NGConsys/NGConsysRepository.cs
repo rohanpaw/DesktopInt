@@ -4620,6 +4620,7 @@ namespace TestProject
             RepoItemInfo _device_nameInfo;
             RepoItemInfo _txt_devicewithoutimage_expandedInfo;
             RepoItemInfo _secondpsu_valueInfo;
+            RepoItemInfo _btn_baseselection1Info;
 
             /// <summary>
             /// Creates a new ContextMenu  folder.
@@ -4652,6 +4653,7 @@ namespace TestProject
                 _device_nameInfo = new RepoItemInfo(this, "Device_Name", ".//listitem[@index=$sDeviceIndex]/text[@caption=$sDeviceName]", 30000, null, "13bbcbbd-fc22-482d-bb6c-e04f87f244b9");
                 _txt_devicewithoutimage_expandedInfo = new RepoItemInfo(this, "Txt_DeviceWithoutImage_Expanded", "list//text[@caption=$sDeviceName]", 30000, null, "baf639a3-2912-47ed-8af2-8bf7fe9a980d");
                 _secondpsu_valueInfo = new RepoItemInfo(this, "SecondPSU_Value", "list/?/?/text", 30000, null, "4e950e0d-7a39-46ba-8766-1c764f45171b");
+                _btn_baseselection1Info = new RepoItemInfo(this, "btn_BaseSelection1", "?/?/container/?/?/text[@text=$sBase]", 30000, null, "8dbbdb07-0630-4d89-a330-dd864f569ae9");
             }
 
             /// <summary>
@@ -5275,6 +5277,30 @@ namespace TestProject
                 get
                 {
                     return _secondpsu_valueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btn_BaseSelection1 item.
+            /// </summary>
+            [RepositoryItem("8dbbdb07-0630-4d89-a330-dd864f569ae9")]
+            public virtual Ranorex.Text btn_BaseSelection1
+            {
+                get
+                {
+                    return _btn_baseselection1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btn_BaseSelection1 item info.
+            /// </summary>
+            [RepositoryItemInfo("8dbbdb07-0630-4d89-a330-dd864f569ae9")]
+            public virtual RepoItemInfo btn_BaseSelection1Info
+            {
+                get
+                {
+                    return _btn_baseselection1Info;
                 }
             }
         }

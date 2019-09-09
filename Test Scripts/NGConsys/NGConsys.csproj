@@ -330,6 +330,18 @@
       <id>d16fad46-c53b-41c1-a630-cbe89b7adb50</id>
       <BoundTo>025b95a2-e0a5-4f85-bed7-8f9ab0822c71</BoundTo>
     </Compile>
+    <Compile Include="Recording Modules\Create_Project_FC.cs">
+      <BoundTo>b9406e72-6860-4507-907d-3841c09e6f2f</BoundTo>
+      <DependentUpon>Create_Project_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6787f9df-b945-4e42-a964-f0e082fb77e5</id>
+    </Compile>
+    <Compile Include="Recording Modules\Create_Project_FC.UserCode.cs">
+      <BoundTo>b9406e72-6860-4507-907d-3841c09e6f2f</BoundTo>
+      <DependentUpon>Create_Project_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>111d59da-3262-4262-94d5-2d5144c9a20a</id>
+    </Compile>
     <Compile Include="Recording Modules\DeleteDevices_BVT.cs">
       <BoundTo>7b077e53-23f5-48e4-a9b2-b1fb245a9111</BoundTo>
       <DependentUpon>DeleteDevices_BVT.rxrec</DependentUpon>
@@ -3648,6 +3660,11 @@
       <id>025b95a2-e0a5-4f85-bed7-8f9ab0822c71</id>
       <recordtableid>28850e8e-b478-423e-9533-d1c1ec13c838</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Create_Project_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>b9406e72-6860-4507-907d-3841c09e6f2f</id>
+      <recordtableid>b9bd7701-2ec0-4465-87ed-21e9241d9eb2</recordtableid>
     </None>
     <None Include="Recording Modules\DeleteDevices_BVT.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

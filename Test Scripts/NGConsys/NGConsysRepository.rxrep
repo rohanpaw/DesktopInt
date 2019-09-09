@@ -1460,6 +1460,14 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/contextmenu/list/?/?/text
 			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="8dbbdb07-0630-4d89-a330-dd864f569ae9"
+			name="btn_BaseSelection1"
+			searchtimeout="30000ms">
+				/contextmenu/?/?/container/?/?/text[@text=$sBase]
+			</item>
 			<basepath>
 				/contextmenu
 			</basepath>
