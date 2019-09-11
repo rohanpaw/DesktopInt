@@ -4598,6 +4598,7 @@ namespace TestProject
             RepoItemInfo _lstpaneladdressInfo;
             RepoItemInfo _lstpanelcpuInfo;
             RepoItemInfo _txt_selectpanelInfo;
+            RepoItemInfo _txt_selectpanelfcInfo;
             RepoItemInfo _txt_selectdeviceInfo;
             RepoItemInfo _btn_baseselectionInfo;
             RepoItemInfo _paneltypelistInfo;
@@ -4631,6 +4632,7 @@ namespace TestProject
                 _lstpaneladdressInfo = new RepoItemInfo(this, "lstPanelAddress", "list/?/?/listitem[$Address]", 30000, null, "f9c3f15f-3104-48fc-a6ab-c308783d7d15");
                 _lstpanelcpuInfo = new RepoItemInfo(this, "lstPanelCPU", "?/?/listitem[@text=$sCPU]", 30000, null, "632cab6d-eb82-42ec-a235-ca096726b4dd");
                 _txt_selectpanelInfo = new RepoItemInfo(this, "txt_SelectPanel", ".//listitem/text[@caption=$PanelName]", 30000, null, "492b2e42-6b92-4dbf-93f0-87456a170bb0");
+                _txt_selectpanelfcInfo = new RepoItemInfo(this, "txt_SelectPanelFC", "list//text[@caption=$PanelName]", 60000, null, "6a3d9371-ad60-456d-a422-d09593328853");
                 _txt_selectdeviceInfo = new RepoItemInfo(this, "txt_SelectDevice", ".//?//text[@caption=$ModelNumber]", 30000, null, "dda50043-1c98-4316-852e-cb5dd36bf6bb");
                 _btn_baseselectionInfo = new RepoItemInfo(this, "btn_BaseSelection", "list/button/text[@text=$sBase]", 30000, null, "3862dd18-b089-44cf-891d-4d5f7c68e104");
                 _paneltypelistInfo = new RepoItemInfo(this, "PanelTypeList", "list", 30000, null, "7e4237ad-7dc9-41c4-a7f8-b4765b697390");
@@ -4749,6 +4751,30 @@ namespace TestProject
                 get
                 {
                     return _txt_selectpanelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_SelectPanelFC item.
+            /// </summary>
+            [RepositoryItem("6a3d9371-ad60-456d-a422-d09593328853")]
+            public virtual Ranorex.Text txt_SelectPanelFC
+            {
+                get
+                {
+                    return _txt_selectpanelfcInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_SelectPanelFC item info.
+            /// </summary>
+            [RepositoryItemInfo("6a3d9371-ad60-456d-a422-d09593328853")]
+            public virtual RepoItemInfo txt_SelectPanelFCInfo
+            {
+                get
+                {
+                    return _txt_selectpanelfcInfo;
                 }
             }
 

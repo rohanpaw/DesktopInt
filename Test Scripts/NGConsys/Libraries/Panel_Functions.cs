@@ -640,6 +640,61 @@ namespace TestProject.Libraries
 			
 		}
 		
+		/**********************************************************************************************************************************
+		 * Function Name: AddPanelsFC
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 10/09/2019
+		 **********************************************************************************************************************************/
+		[UserCodeMethod]
+		public static void AddPanelsFC(int NumberofPanels,string PanelNames,string sPanelCPU)
+		{
+			for (int i=0; i<NumberofPanels;i++)
+			{
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+			
+				PanelName = PanelNames;
+//				string PanelNameWithSpace=splitPanelNames[i];
+//				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
+				if(PanelName.StartsWith("P"))				{
+					sPanelLabelIndex ="5";
+				}
+				else
+				{
+					sPanelLabelIndex ="7";
+				}
+				repo.ProfileConsys1.btnDropDownPanelsGallery.Click();
+				
+				repo.ContextMenu.txt_SelectPanelFC.Click();
+				
+				
+				
+				//repo.ContextMenu.txt_SelectPanel.Click();
+				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
+				iAddress=i+1;
+				Address =iAddress.ToString();
+				repo.ContextMenu.lstPanelAddress.Click();
+				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				Label="Node"+iAddress;
+				Keyboard.Press(Label);
+				if (!sPanelCPU.IsEmpty())
+				{
+					repo.AddANewPanel.AddNewPanelContainer.cmb_CPU.Click();
+					sCPU=sPanelCPU;
+					repo.ContextMenu.lstPanelCPU.Click();
+				}
+				repo.AddANewPanel.ButtonOK.Click();
+				
+				
+				//Commenting below line as for Panel name with Space and hi-fen it is not displaying as it is displaying while adding panel
+				//Validate.AttributeEqual(repo.ProfileConsys1.NavigationTree.VerifyPanelNodeInfo, "Text", PanelNode);
+				Report.Log(ReportLevel.Success, "Panel "+PanelNames+" Added Successfully");
+			}
+		}
+		
 			
 	}
 }

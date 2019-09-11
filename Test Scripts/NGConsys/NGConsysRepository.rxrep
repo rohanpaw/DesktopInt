@@ -1292,6 +1292,14 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			<item
 			addcaps="text,wpfelement,wpfgroupelement"
 			capname="text"
+			id="6a3d9371-ad60-456d-a422-d09593328853"
+			name="txt_SelectPanelFC"
+			searchtimeout="60000ms">
+				/contextmenu/list//text[@caption=$PanelName]
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
 			id="dda50043-1c98-4316-852e-cb5dd36bf6bb"
 			name="txt_SelectDevice"
 			searchtimeout="30000ms">

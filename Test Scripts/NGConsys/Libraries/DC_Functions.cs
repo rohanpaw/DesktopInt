@@ -543,7 +543,6 @@ namespace TestProject.Libraries
 			
 			// Add devices from the gallery as per test data from the excel sheet
 			Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
-			Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added to Panel");
 			
 			//Assign Base to devices
 			if(sBase!=null && sBase !="NA")
@@ -1099,6 +1098,77 @@ namespace TestProject.Libraries
 			verifyDCUnitsValue(ChangedDCUnit);
 
 		}
+		
+		/********************************************************************
+		 * Function Name: verifyTripCurrentCalculationForFIMLoopFC
+		 * Function Details: Verify Trip current with changing base of devices
+		 * Parameter/Arguments: fileName, sheetName
+		 * Output:
+		 * Function Owner: Devendra Kulkarni
+		 * Last Update : 30/11/2018
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void verifyTripCurrentCalculationForFIMLoopFC(string fileName, string sheetName)
+		{
+			// Declared various fields as String type
+			string sLabelName, expectedDCUnits, sType;
+			
+			Excel_Utilities.OpenExcelFile(fileName,sheetName);
+			
+			// Count the number of rows in excel
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			Report.Log(ReportLevel.Info, "No of rows: "+rows);
+			
+			for (int i=8; i<=rows; i++)
+			{
+				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				
+				// Add devices from the gallery as per test data from the excel sheet
+				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
+				Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added to Panel");
+			}
+			
+			//Fetch value from excel sheet and store it
+			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
+			verifyDCUnitsValue(expectedDCUnits);
+			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			Report.Log(ReportLevel.Info, "Verified default DC units.");
+			
+			//Select Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[9,3]).Value.ToString();
+			sBase = ((Range)Excel_Utilities.ExcelRange.Cells[9,9]).Value.ToString();
+			sRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[9,10]).Value.ToString();
+			Devices_Functions.AssignDeviceBaseForMultipleDevices(sLabelName,sBase,sRowIndex);
+			Report.Log(ReportLevel.Info, "Base " + sBase + " assigned to "+ sLabelName);
+			
+			//Fetch value from excel sheet and store it
+			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[5,7]).Value.ToString();
+			verifyDCUnitsValue(expectedDCUnits);
+			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			Report.Log(ReportLevel.Info, "Verified DC units changing base.");
+			
+			//Select Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[10,3]).Value.ToString();
+			sRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[10,10]).Value.ToString();
+			Devices_Functions.RemoveBase(sLabelName, sRowIndex);
+
+			//Fetch value from excel sheet and store it
+			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
+			verifyDCUnitsValue(expectedDCUnits);
+			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Report.Log(ReportLevel.Info, "Verified DC units after deleting base.");
+			
+			//Close excel
+			Excel_Utilities.CloseExcel();
+
+		}
+		
 		
 	}
 

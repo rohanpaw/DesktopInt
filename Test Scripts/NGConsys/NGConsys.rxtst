@@ -1176,6 +1176,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="125a77d3-0d47-4c06-9cf5-ea18be0a0cb2"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="125cabe0-004d-4dcb-a9df-487294ef890d"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -2227,6 +2247,20 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="214f645a-b291-4e9a-8af5-4e9d4b1e5fbc"
+			name="Create_Project_FC"
+			ref="b9bd7701-2ec0-4465-87ed-21e9241d9eb2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="9d6386a6-b467-495d-a85c-8b930afe704b"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="216c28d2-739e-4d64-982e-328c07caa7ea"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -2382,6 +2416,19 @@ rxversion="8.3">
 			ref="d7004e74-b6ad-48ca-9651-bdd5f6064efd"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="23dae6d1-eca4-4c9e-9a44-ef6a28bdfa47"
+			name="Verify_Trip_Current_Used_For_DC_Calculation_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63797 Tested with wrong test data but now corrected.</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="24890442-e3e4-490b-b7ad-3c4dbbcbf212"
 			name="Close_Application"
@@ -7269,6 +7316,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="727e46de-068e-4254-ab9d-0720e65337bd"
+			name="Create_Project_FC"
+			ref="b9bd7701-2ec0-4465-87ed-21e9241d9eb2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="23dae6d1-eca4-4c9e-9a44-ef6a28bdfa47"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="72851cbf-5fc7-4c78-aaf6-3a439b4b09b4"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -8038,6 +8099,26 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="803e5408-fc6d-4678-b477-1cfd7a9f0001"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="804c6219-82f6-463d-95e4-c38489733a88"
 			name="Verify_the_Isolator_units_Intrinsically_safe_units_have_separate_property_section_to_displayed"
 			ref="30adcbb5-53f1-4fc3-8805-eb77505595e2"
@@ -8365,6 +8446,12 @@ MxDesigner]]>
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="837ae0e9-d041-490a-8c47-00ec31f8a6ff"
+			name="Verify_Trip_Current_Used_For_DC_Calculation_FC"
+			ref="306ed1f5-d724-48b8-867d-684be11a09ae"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="8395e183-6f6b-46bf-afac-63fba084c416"
@@ -8795,20 +8882,6 @@ MxDesigner]]>
 					<var
 					dataname="sListIndex"
 					datasourceid="f0823aa5-fc64-4087-b843-00c59abdebf5"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
-			id="886dde58-2aa0-4e21-9e08-aea07488c13d"
-			name="Create_Project"
-			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="ea06a259-e3fd-4eaf-a97d-826434f8a2ec"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -10031,6 +10104,16 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="9d6386a6-b467-495d-a85c-8b930afe704b"
+			name="Verify_Trip_Current_Calculation_For_FIM_Loop_FC">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="9dd34233-fd74-4dba-807e-9a2d5faa1a3e"
 			name="Application_Open"
@@ -10916,6 +10999,12 @@ project]]>
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="affcbc1a-c1af-4f97-aeb4-2c052fd74f91"
+			name="Verify_Trip_Current_Calculation_For_FIM_Loop_FC"
+			ref="0eda8a5c-5bdb-40e9-99a6-168c06659176"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="b01c5bf4-e8f7-4e88-b7ef-5db3d6b954da"
@@ -12643,6 +12732,12 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="cf8f99d5-953f-48fe-86d1-b6641cae9b62"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="cfc2904e-0c36-4b34-8ba3-3ae5a3fe0611"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -13197,6 +13292,20 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="d7d8d0f4-ac1e-4ef8-8366-3e504d1b51ee"
+			name="Create_Project_FC"
+			ref="b9bd7701-2ec0-4465-87ed-21e9241d9eb2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="ea06a259-e3fd-4eaf-a97d-826434f8a2ec"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -20020,8 +20129,8 @@ persisted in panel properties&nbsp;]]>
 						name="Application_Open">
 						</testmodule>
 						<testmodule
-						id="886dde58-2aa0-4e21-9e08-aea07488c13d"
-						name="Create_Project">
+						id="d7d8d0f4-ac1e-4ef8-8366-3e504d1b51ee"
+						name="Create_Project_FC">
 						</testmodule>
 						<testmodule
 						id="c153d80d-34f2-4db4-ac2d-273f0547ed46"
@@ -20288,6 +20397,42 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="23dae6d1-eca4-4c9e-9a44-ef6a28bdfa47"
+					name="Verify_Trip_Current_Used_For_DC_Calculation_FC">
+						<testmodule
+						id="803e5408-fc6d-4678-b477-1cfd7a9f0001"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="727e46de-068e-4254-ab9d-0720e65337bd"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="837ae0e9-d041-490a-8c47-00ec31f8a6ff"
+						name="Verify_Trip_Current_Used_For_DC_Calculation_FC">
+						</testmodule>
+						<testmodule
+						id="cf8f99d5-953f-48fe-86d1-b6641cae9b62"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="9d6386a6-b467-495d-a85c-8b930afe704b"
+					name="Verify_Trip_Current_Calculation_For_FIM_Loop_FC">
+						<testmodule
+						id="125a77d3-0d47-4c06-9cf5-ea18be0a0cb2"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="214f645a-b291-4e9a-8af5-4e9d4b1e5fbc"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="affcbc1a-c1af-4f97-aeb4-2c052fd74f91"
+						name="Verify_Trip_Current_Calculation_For_FIM_Loop_FC">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -20493,6 +20638,9 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="9d6386a6-b467-495d-a85c-8b930afe704b">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

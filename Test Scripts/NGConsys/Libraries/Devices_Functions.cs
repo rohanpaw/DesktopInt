@@ -796,7 +796,7 @@ namespace TestProject.Libraries
 				sRowIndex = iRowIndex.ToString();
 				repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
 				repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
-				repo.ContextMenu.btn_BaseSelection1.Click();
+				repo.ContextMenu.btn_BaseSelection.Click();
 			}
 		}
 
