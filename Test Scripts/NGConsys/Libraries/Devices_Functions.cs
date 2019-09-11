@@ -570,7 +570,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : Alpesh Dhakad - 21/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 * Last Update : Alpesh Dhakad - 21/08/2019 - Updated with new navigation tree method, xpath and devices gallery
 		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyGalleryItem(string sType,string deviceName, string state)
@@ -630,7 +630,7 @@ namespace TestProject.Libraries
 			
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-				 
+			
 			
 			
 			repo.FormMe.cell_CableLength1.Click();
@@ -642,13 +642,13 @@ namespace TestProject.Libraries
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem("Node");
-			
+				
 				
 				Delay.Duration(1000, false);
 				
 				// Click on Loop A node
-			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
-			
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+				
 				
 				Delay.Duration(1000, false);
 				
@@ -768,7 +768,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : Alpesh Dhakad -09/09/2019 - Updated Base selection and added xpath for the same 
+		 * Last Update : Alpesh Dhakad -09/09/2019 - Updated Base selection and added xpath for the same
 		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AssignDeviceBase(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex)
@@ -1053,8 +1053,8 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
 				Delay.Milliseconds(500);
 			}
 			
@@ -1066,8 +1066,8 @@ namespace TestProject.Libraries
 			//Verify DC Units of Loop B
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on addition of devices in Loop A");
 			// Click on Loop B node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
-					
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+			
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[3,2]).Value.ToString();
 			verifyDCUnitsValue(expectedDCUnits);
 			
@@ -1095,8 +1095,8 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Loop B node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
-			
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+				
 				Delay.Milliseconds(500);
 			}
 			
@@ -1107,8 +1107,8 @@ namespace TestProject.Libraries
 			
 			//Verify DC Units of Loop A
 			// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on addition of devices in Loop B");
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[3,2]).Value.ToString();
 			verifyDCUnitsValue(expectedDCUnits);
@@ -1121,8 +1121,8 @@ namespace TestProject.Libraries
 			
 			//Delete Devices from loop A
 			// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sDeleteDevicesLoopA);
@@ -1142,7 +1142,7 @@ namespace TestProject.Libraries
 			//Verify DC Units of Loop B
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on deletion of devices from Loop A");
 			// Click on Loop B node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 			
 			verifyDCUnitsValue(expectedDCUnits);
 			
@@ -1150,7 +1150,7 @@ namespace TestProject.Libraries
 			
 			//Delete Devices from loop B
 			// Click on Loop B node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 			
 			repo.ProfileConsys1.tab_Points.Click();
 			
@@ -1171,8 +1171,8 @@ namespace TestProject.Libraries
 			//Verify DC Units of Loop A
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on deletion of devices from Loop B");
 			// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
 			verifyDCUnitsValue(expectedDCUnits);
 		}
 
@@ -2124,7 +2124,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpath
 		 * Alpesh Dhakad - 07/08/2019 - Updated scripts for cable length
-		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath 
+		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath
 		 *****************************************************************************************/
 		// Change cable length method
 		[UserCodeMethod]
@@ -2138,7 +2138,7 @@ namespace TestProject.Libraries
 			
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
@@ -2152,7 +2152,7 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableLength + "{Enter}");
 			
 			Report.Log(ReportLevel.Info,"Cable Length changed to " +fchangeCableLength+ " successfully");
-	
+			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
@@ -2173,7 +2173,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated script as per new build and xpath
 		 * Alpesh Dhakad - 08/08/2019 - Updated code for cable resistance
-		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath 
+		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath
 		 ***************************************************************************************************/
 		// Change cable resistance method
 		[UserCodeMethod]
@@ -2187,7 +2187,7 @@ namespace TestProject.Libraries
 			
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
@@ -4483,9 +4483,9 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			
-				// Click on Loop A node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-				
+			// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
 			
 			SelectRowUsingLabelName(sLabelName);
 			
@@ -4496,7 +4496,7 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableCapacitance + "{Enter}");
 			
 			// Click on Panel node
-				Common_Functions.ClickOnNavigationTreeExpander("Node");
+			Common_Functions.ClickOnNavigationTreeExpander("Node");
 			
 			Delay.Duration(1000, false);
 		}
@@ -4509,7 +4509,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 24/04/2019 Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 06/08/2019 Updated cable length code
-		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath 
+		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath
 		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCableLength(string sCableLength)
@@ -4522,7 +4522,7 @@ namespace TestProject.Libraries
 			
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+			
 			//Click on cable length cell
 			//repo.FormMe.cell_CableLength1.Click();
 			//repo.ProfileConsys1.cell_CableLength.Click();
@@ -4773,14 +4773,14 @@ namespace TestProject.Libraries
 				int.TryParse(sPanelLEDCount,out PanelLED);
 				
 				// Click on Expander node
-					Common_Functions.ClickOnNavigationTreeExpander("Node");
-					
-					// Click on Loop Card node
-					Common_Functions.ClickOnNavigationTreeExpander("PFI");
-					
-					// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+				Common_Functions.ClickOnNavigationTreeExpander("Node");
+				
+				// Click on Loop Card node
+				Common_Functions.ClickOnNavigationTreeExpander("PFI");
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
 				
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
@@ -4792,13 +4792,13 @@ namespace TestProject.Libraries
 				verifyDCUnitsValue(expectedDCUnits);
 				
 				// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
-			
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+				
 				
 			}
 			// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-					
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
 			//go to points grid
 			repo.ProfileConsys1.tab_Points.Click();
 			
@@ -4808,8 +4808,8 @@ namespace TestProject.Libraries
 			repo.FormMe.btn_Copy1.Click();
 			
 			// Click on Loop C node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
-				
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
+			
 			//Paste the devices
 			repo.FormMe.Paste.Click();
 			
@@ -4821,8 +4821,8 @@ namespace TestProject.Libraries
 			
 			
 			// Click on Loop C node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
-				
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
+			
 			//go to points grid
 			repo.ProfileConsys1.tab_Points.Click();
 			
@@ -4844,10 +4844,10 @@ namespace TestProject.Libraries
 			
 			Panel_Functions.changePanelLED(PanelLED);
 			
-						
+			
 			// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-				
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
 			//Verify Default DC Units
 			verifyDCUnitsValue(ChangedDCUnit);
 
@@ -5208,16 +5208,16 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
 			// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");	
-				
-				
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
+			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
 			// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");	
-				
-				
+			Common_Functions.ClickOnNavigationTreeItem("Site");
+			
+			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
@@ -5405,17 +5405,17 @@ namespace TestProject.Libraries
 		public static void VerifyPanelTypeInDropdown(string PanelName, string PanelTypeNameList,string PanelTypeNameListNotAvailable)
 		{
 			
-				// Click on Panel node
+			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
-				// Click on Site node
+			// Click on Site node
 			Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 			
-				// Click on Panel node
+			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
-				// Click on Site node
+			// Click on Site node
 			Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 			// Click on Panel node
@@ -6026,7 +6026,7 @@ namespace TestProject.Libraries
 			//repo.AddDevices.txt_ModelNumber.Click();
 			repo.AddDevices.txt_ModelNumber1.Click();
 			
-			//repo.AddDevices.txt_ModelNumber.Click();			
+			//repo.AddDevices.txt_ModelNumber.Click();
 			repo.AddDevices.txt_Quantity.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+DeviceQty.ToString());
 			repo.AddDevices.MPWRegionBox.Click();
@@ -7219,8 +7219,8 @@ namespace TestProject.Libraries
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
-			
-			/* bool DefaultChecked,  //Click on Points tab
+		
+		/* bool DefaultChecked,  //Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			// Click on SearchProperties text field
@@ -7319,7 +7319,7 @@ namespace TestProject.Libraries
 		/********************************************************************
 		 * Function Name:ChangeParameterInSearchProperties
 		 * Function Details:
-		 * Parameter/Arguments: 
+		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 23/08/2019
@@ -7348,11 +7348,80 @@ namespace TestProject.Libraries
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 
+			
+		}
+		
+		/********************************************************************
+		 * Function Name:VerifyProgressBarColour
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 09/09/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyProgressBarColour(string Row, string ExpectedColour)
+		{
+			sRowIndex = Row;
+			string ActualColour = getProgressBarColorForISUnits();
+			Devices_Functions.VerifyPercentage(ExpectedColour, ActualColour);
+			
+		}
+		
+		/****************************************************************************************************************
+		 * Function Name: AssignDeviceBaseIfBlank
+		 * Function Details: assign a base to device if base is blank by default
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 10/09/2019
+		 ****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void AssignDeviceBaseIfBlank(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex)
+		{
+			//int iRowIndex;
+			sBase = sBaseofDevice;
+			sRowIndex = sBasePropertyRowIndex;
+			sLabelName = DeviceLabel;
+			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+			//repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+			//repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+			//int.TryParse(sRowIndex, out iRowIndex);
+			//iRowIndex = iRowIndex-1;
+			//sRowIndex = iRowIndex.ToString();
+			repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+			repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+			repo.ContextMenu.btn_BaseSelection.Click();
+			
+		}
+		
+		/****************************************************************************************************************
+		 * Function Name: VerifyValueOfParameterInPhysicalLayoutOnReopen
+		 * Function Details: Verify value of AC/DC/Battery/Alarm etc in Physical layout On Reopen
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 10/09/2019
+		 ****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyValueOfParameterInPhysicalLayoutOnReopen(string Row, string expectedValue)
+		{
+			sRow=Row;
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			string ActualValue = repo.ProfileConsys1.PhysicalLayout_ParameterValue_reopen.TextValue;
+			
+			
+			if(ActualValue.Equals(expectedValue))
+			{
+				Report.Log(ReportLevel.Success,"AC Units " + ActualValue + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"AC Units are not displayed correctly " + ", Expected AC Units:  " + expectedValue  + " Actual AC Units: "+ ActualValue);
+			}
+		}
 		
 	}
-	
-	
-}
 }
 
 

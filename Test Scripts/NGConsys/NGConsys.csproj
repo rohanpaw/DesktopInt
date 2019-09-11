@@ -331,16 +331,16 @@
       <BoundTo>025b95a2-e0a5-4f85-bed7-8f9ab0822c71</BoundTo>
     </Compile>
     <Compile Include="Recording Modules\Create_Project_FC.cs">
-      <BoundTo>b9406e72-6860-4507-907d-3841c09e6f2f</BoundTo>
+      <BoundTo>78c9d55e-6385-4177-8910-97305be53fd0</BoundTo>
       <DependentUpon>Create_Project_FC.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
-      <id>6787f9df-b945-4e42-a964-f0e082fb77e5</id>
+      <id>dcb828db-479c-461f-b423-a83bb998f19a</id>
     </Compile>
     <Compile Include="Recording Modules\Create_Project_FC.UserCode.cs">
-      <BoundTo>b9406e72-6860-4507-907d-3841c09e6f2f</BoundTo>
+      <BoundTo>78c9d55e-6385-4177-8910-97305be53fd0</BoundTo>
       <DependentUpon>Create_Project_FC.rxrec</DependentUpon>
       <UserCode>true</UserCode>
-      <id>111d59da-3262-4262-94d5-2d5144c9a20a</id>
+      <id>b4d1fd31-4c32-448f-8590-0185af9094ed</id>
     </Compile>
     <Compile Include="Recording Modules\DeleteDevices_BVT.cs">
       <BoundTo>7b077e53-23f5-48e4-a9b2-b1fb245a9111</BoundTo>
@@ -954,6 +954,18 @@
       <UserCode>true</UserCode>
       <id>6c4f7cd6-5203-4b26-9d08-c536cb2bb43b</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_AC_Units_Calculation_For_Base_FC.cs">
+      <BoundTo>0d1d0c05-cf14-4dce-a91e-028786978fe4</BoundTo>
+      <DependentUpon>Verify_AC_Units_Calculation_For_Base_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>410e5ead-8cf0-45c1-a345-a2abab6ec94b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_AC_Units_Calculation_For_Base_FC.UserCode.cs">
+      <BoundTo>0d1d0c05-cf14-4dce-a91e-028786978fe4</BoundTo>
+      <DependentUpon>Verify_AC_Units_Calculation_For_Base_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e50e7dd9-24ca-4da3-8065-ad7042f06f6e</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_AC_Units_Calculation_For_Loops_With_IS_Devices.cs">
       <BoundTo>dd2910d3-bf03-4aae-8726-b743cb0802d9</BoundTo>
       <DependentUpon>Verify_AC_Units_Calculation_For_Loops_With_IS_Devices.rxrec</DependentUpon>
@@ -977,6 +989,18 @@
       <DependentUpon>Verify_AC_Units_Calculation_For_Loops_With_IS_Devices_For_FIM.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>3b9cba22-f5ff-427e-9c68-ac030bd87458</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_AC_Units_Calculation_For_Non_Split_Loops_FIM_loops.cs">
+      <BoundTo>9a00a871-f023-481b-9000-5019ea56f11c</BoundTo>
+      <DependentUpon>Verify_AC_Units_Calculation_For_Non_Split_Loops_FIM_loops.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>25b8e8ed-9c30-461a-a7dd-d622a297e0e2</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_AC_Units_Calculation_For_Non_Split_Loops_FIM_loops.UserCode.cs">
+      <BoundTo>9a00a871-f023-481b-9000-5019ea56f11c</BoundTo>
+      <DependentUpon>Verify_AC_Units_Calculation_For_Non_Split_Loops_FIM_loops.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>08cf4afd-e8d2-44cf-b4bd-990bea4b048b</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.cs">
       <BoundTo>7f6b2f26-92d4-41e1-9988-23635ece29cf</BoundTo>
@@ -1841,6 +1865,18 @@
       <DependentUpon>Verify_IB_Units_On_Assigning_Base_And_Additional_Base.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a701d68b-6593-4471-9008-e7a26fd16ca4</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator.cs">
+      <BoundTo>62a70a96-0538-4982-83c3-0e87d572c92a</BoundTo>
+      <DependentUpon>Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bcaaf4a0-0736-481f-9506-20d61aaf5418</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator.UserCode.cs">
+      <BoundTo>62a70a96-0538-4982-83c3-0e87d572c92a</BoundTo>
+      <DependentUpon>Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eec62a72-9d4a-4bda-bbb6-d160ca73e3a9</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_if_adding_EXI800_from_multipoint_wizard_should_check_the_existing_rules_of_adding_EXI800.cs">
       <BoundTo>00819d25-2f8e-4137-8baa-05284c51c1fa</BoundTo>
@@ -3687,8 +3723,8 @@
     </None>
     <None Include="Recording Modules\Create_Project_FC.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
-      <id>b9406e72-6860-4507-907d-3841c09e6f2f</id>
-      <recordtableid>b9bd7701-2ec0-4465-87ed-21e9241d9eb2</recordtableid>
+      <id>78c9d55e-6385-4177-8910-97305be53fd0</id>
+      <recordtableid>94f4aa26-aedb-431a-ba8d-ca56a934d765</recordtableid>
     </None>
     <None Include="Recording Modules\DeleteDevices_BVT.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -3945,6 +3981,11 @@
       <recordtableid>7e18e2f7-e0da-42dc-8d17-d5c59120acf2</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_AC_Units_Calculation_For_Base_FC.rxrec">
+      <id>0d1d0c05-cf14-4dce-a91e-028786978fe4</id>
+      <recordtableid>d2ca2421-11fa-4801-8b8c-7de2f1b1f92f</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_AC_Units_Calculation_For_Loops_With_IS_Devices.rxrec">
       <id>dd2910d3-bf03-4aae-8726-b743cb0802d9</id>
       <recordtableid>55ec67c7-3815-4ead-bddd-dedeba62e4cd</recordtableid>
@@ -3954,6 +3995,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>1be20993-588e-4680-b890-9157b41bb5df</id>
       <recordtableid>455cd66b-5450-4487-b677-84049b89d7ef</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_AC_Units_Calculation_For_Non_Split_Loops_FIM_loops.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>9a00a871-f023-481b-9000-5019ea56f11c</id>
+      <recordtableid>4c985571-7520-45e9-9552-d3a102ed5234</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4314,6 +4360,11 @@
       <id>4b489a0e-e800-42b9-becc-6fcb22cbf814</id>
       <recordtableid>372a24a2-d89a-426c-a1a7-fecc90209eab</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>62a70a96-0538-4982-83c3-0e87d572c92a</id>
+      <recordtableid>ed95de78-c489-4cd5-af64-ccb8d4aadac0</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_if_adding_EXI800_from_multipoint_wizard_should_check_the_existing_rules_of_adding_EXI800.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

@@ -48,6 +48,13 @@ namespace TestProject.Libraries
 			get { return repo.sProjectName; }
 			set { repo.sProjectName = value; }
 		}
+		
+		static string sRow
+		{
+			get { return repo.sRow; }
+			set { repo.sRow = value; }
+		}
+		
 		/********************************************************************
 		 * Function Name: GetDirPath
 		 * Function Details:
@@ -732,6 +739,55 @@ namespace TestProject.Libraries
 			}
 			
 		}
+		
+		/********************************************************************
+		 * Function Name: CreateProjectFCParameters
+		 * Function Details: Enter Project Name, Client Name etc. 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 10/09/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void CreateProjectFCParameters(string RowParameter, string sValue)
+		{
+			sRow = RowParameter;//starts with 8 for verify then 9,10 and so on
+			repo.CreateNewProject.CreateNewProjectContainer.CreateProject_FC_Parameter.Click();
+			repo.CreateNewProject.CreateNewProjectContainer.CreateProject_FC_Parameter.PressKeys(sValue);
+				
+		}
+		
+		/********************************************************************
+		 * Function Name: ReopenProjectForDifferentProjectType
+		 * Function Details: To reopen project for different project typ eg jpl
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update :10	/09/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void ReopenProjectForDifferentProjectType(string ProjectName,string sProjectType)
+		{
+			sProjectName = sProjectType; 
+			repo.ProfileConsys1.File.Click();
+			Delay.Duration(1000);
+			Keyboard.Press("{LControlKey down}{Okey}{LControlKey up}");
+			Delay.Duration(1000);
+			//repo.ProfileConsys1.txt_Open.Click();
+//			string actualDirPath= Common_Functions.GetDirPath();
+//			string sSaveProjectDirPath = actualDirPath+ "NGDesigner Saved Projects";
+//			repo.Open.PreviousLocations.Click();
+//
+//			repo.Open.txt_EnterPath.PressKeys(sSaveProjectDirPath);
+//			repo.Open.txt_EnterPath.PressKeys("{Return}");
+			
+			repo.Open.txt_EnterProjectName.Click();
+			repo.Open.txt_EnterProjectName.PressKeys(ProjectName);
+			repo.Open.FileType_Expander.Click();
+			repo.List1000.ProjectType.Click();
+			repo.Open.btn_Open.Click();
+		}
+		
 	}
 }
 

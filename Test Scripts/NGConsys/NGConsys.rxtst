@@ -3,6 +3,26 @@
 rxversion="8.3">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="000779b0-1319-4db1-aa8a-407bcddf7a77"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="0039cc0c-9f5f-447f-8a9e-43c23d62bdb2"
 			name="Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card">
@@ -1551,6 +1571,12 @@ rxversion="8.3">
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="1854e260-1b26-46f2-89aa-7aa9cc1183ba"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="186ac82b-0970-45a4-b0b0-fef369ef5d06"
 			name="Verify_Non_IS_Devices_Drag_And_Drop_On_Non_Addressable_Devices">
@@ -2310,7 +2336,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.28">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.34">
 					</param>
 					<param
 					name="Mode"
@@ -2890,6 +2916,20 @@ rxversion="8.3">
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
 					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2b9be127-d1f6-48f7-9f73-188af2a6d4ea"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="47cd95ce-0b25-47af-a48c-b0b551307643"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3740,6 +3780,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="3a738215-3830-4647-977b-7a076d8ed2c0"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="4a1a38e5-42f5-4da0-8b75-39f40543a385"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="3a8a6292-f2cf-4fe6-96d6-1a2ff8bee560"
 			name="Verify_Copy_option_isdisabled_for_single_sounders"
 			ref="892d7928-92e5-4459-895a-abe7ce120a77"
@@ -3826,6 +3880,12 @@ rxversion="8.3">
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="3be43a03-8f76-4089-9620-24fe9dffe2f0"
+			name="Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator"
+			ref="ed95de78-c489-4cd5-af64-ccb8d4aadac0"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="3bfcb696-22d5-45f1-8fc6-83d219ce38a9"
@@ -4208,6 +4268,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="437f0e15-7b29-42f0-8fd3-82cb9ad4fe47"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="43af21a6-e675-41f0-ac80-2e8fbebf72a1"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -4514,6 +4580,19 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="47cd95ce-0b25-47af-a48c-b0b551307643"
+			name="Verify_IB_Units_Without_Addition_Of_Line_isolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isola">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63806 (FC)</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="48097a07-4469-4416-8253-3ba0f2118497"
 			name="Close_Application"
@@ -4644,6 +4723,19 @@ rxversion="8.3">
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="4a1a38e5-42f5-4da0-8b75-39f40543a385"
+			name="Verify_AC_Units_Calculation_For_Non_Split_Loops_(FIM_loops)">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63354 (FC)</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="4a4df15d-3989-4ee2-bbf8-51a8564c9e9a"
 			name="Create_Project"
@@ -5813,6 +5905,19 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="5987d1b6-057d-455d-85ac-167253a6cc46"
+			name="Verify_AC_Units_Calculation_For_Base">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63355 (FC)</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="59dcf71b-1012-4623-a591-6f44775fb577"
 			name="Close_Application"
@@ -5824,6 +5929,26 @@ rxversion="8.3">
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="5a5cb255-6f0d-466f-8968-176a7b0c24c0"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="5a9b6b04-6700-4b5e-b91b-3b2ee9be09a2"
@@ -8067,6 +8192,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7f24f506-f552-4b7b-b09e-71cbf14553f8"
+			name="Verify_AC_Units_Calculation_For_Base_FC"
+			ref="d2ca2421-11fa-4801-8b8c-7de2f1b1f92f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="7fa973a1-e9c6-46dc-80c6-35e50982b2c3"
 			name="Verify_Max_allowed_Alarm_Sounder_current_value_for_LPS800"
 			ref="095ce9a1-26ad-4131-9415-472d5f4917ae"
@@ -8767,6 +8898,12 @@ MxDesigner]]>
 			</testmodule>
 			<testmodule
 			id="8785f073-c895-4212-b49d-d8bc9ad3ba54"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="87af729c-9f64-406b-aca2-d546d725ebe9"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -9721,6 +9858,20 @@ MxDesigner]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
 					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9679abf0-82e3-49c2-a462-cb13cd7e8dc0"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="5987d1b6-057d-455d-85ac-167253a6cc46"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -12482,6 +12633,26 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="cae6e316-3dac-4a78-9f91-9daef1e87f58"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="cae6fbe1-26a6-4ce7-8172-2df4087cd3ff"
 			name="Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800"
 			ref="d06aa5da-a769-490f-ac17-1b54645a0b7b"
@@ -13690,6 +13861,12 @@ persisted in panel properties&nbsp;]]>
 			id="dfa33584-a0c6-4c65-8e24-5f7e7400ec6b"
 			name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied"
 			ref="7903f6ef-8da9-46ba-8a5a-2fa09296eb62"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="dfa8dc94-e161-49cf-be1c-70d92b6eda89"
+			name="Verify_AC_Units_Calculation_For_Non_Split_Loops_FIM_loops"
+			ref="4c985571-7520-45e9-9552-d3a102ed5234"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -20398,6 +20575,66 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="4a1a38e5-42f5-4da0-8b75-39f40543a385"
+					name="Verify_AC_Units_Calculation_For_Non_Split_Loops_(FIM_loops)">
+						<testmodule
+						id="cae6e316-3dac-4a78-9f91-9daef1e87f58"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="3a738215-3830-4647-977b-7a076d8ed2c0"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="dfa8dc94-e161-49cf-be1c-70d92b6eda89"
+						name="Verify_AC_Units_Calculation_For_Non_Split_Loops_FIM_loops">
+						</testmodule>
+						<testmodule
+						id="437f0e15-7b29-42f0-8fd3-82cb9ad4fe47"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="5987d1b6-057d-455d-85ac-167253a6cc46"
+					name="Verify_AC_Units_Calculation_For_Base">
+						<testmodule
+						id="000779b0-1319-4db1-aa8a-407bcddf7a77"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="9679abf0-82e3-49c2-a462-cb13cd7e8dc0"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="7f24f506-f552-4b7b-b09e-71cbf14553f8"
+						name="Verify_AC_Units_Calculation_For_Base_FC">
+						</testmodule>
+						<testmodule
+						id="1854e260-1b26-46f2-89aa-7aa9cc1183ba"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="47cd95ce-0b25-47af-a48c-b0b551307643"
+					name="Verify_IB_Units_Without_Addition_Of_Line_isolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isola">
+						<testmodule
+						id="5a5cb255-6f0d-466f-8968-176a7b0c24c0"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="2b9be127-d1f6-48f7-9f73-188af2a6d4ea"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="3be43a03-8f76-4089-9620-24fe9dffe2f0"
+						name="Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator">
+						</testmodule>
+						<testmodule
+						id="87af729c-9f64-406b-aca2-d546d725ebe9"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="23dae6d1-eca4-4c9e-9a44-ef6a28bdfa47"
 					name="Verify_Trip_Current_Used_For_DC_Calculation_FC">
 						<testmodule
@@ -20640,6 +20877,9 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="47cd95ce-0b25-47af-a48c-b0b551307643">
+			</testcontainer>
+			<testcontainer
 			id="9d6386a6-b467-495d-a85c-8b930afe704b">
 			</testcontainer>
 		</testconfiguration>
@@ -20670,10 +20910,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

@@ -494,5 +494,31 @@ namespace TestProject.Libraries
 		}
 		
 		
-		
-	}}
+		/******************************************************************************************************************************************************
+		 * Function Name: EditDevicePropertyValue
+		 * Function Details: Edit device property from Inventory properties section
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 05/04/2019 Alpesh Dhakad - 06/08/2019 & 22/08/2019 - Updated code with cell_InventoryProperty and added/updated xpath for txt_InventoryProperty
+		 ******************************************************************************************************************************************************/
+		[UserCodeMethod]
+		public static void EditDevicePropertyValue(string sPropertyLabel, string sNewValue)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search for the Label property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sPropertyLabel +"{ENTER}" );
+			
+			// Click on Label property cell
+			repo.FormMe.cell_CableLength.Click();
+			
+			repo.FormMe.cell_CableLength.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			repo.FormMe.txt_InventoryGridDeviceProperty.PressKeys(sNewValue+"{ENTER}" );
+			Report.Log(ReportLevel.Info,"Parameter is editied to " +sNewValue);
+
+		}
+	}
+}
