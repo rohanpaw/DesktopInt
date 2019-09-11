@@ -1491,13 +1491,6 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/contextmenu/?/?/container/?/?/text[@text=$sBase]
 			</item>
-			<item
-			capname="text"
-			id="7a1711f7-44f9-4d65-8042-6b71241a48b6"
-			name="txt_SelectPanelFC"
-			searchtimeout="30000ms">
-				/contextmenu/list//text[@caption=$PanelName]
-			</item>
 			<basepath>
 				/contextmenu
 			</basepath>

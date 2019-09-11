@@ -4685,7 +4685,6 @@ namespace TestProject
             RepoItemInfo _txt_devicewithoutimage_expandedInfo;
             RepoItemInfo _secondpsu_valueInfo;
             RepoItemInfo _btn_baseselection1Info;
-            RepoItemInfo _txt_selectpanelfcInfo;
 
             /// <summary>
             /// Creates a new ContextMenu  folder.
@@ -4720,7 +4719,6 @@ namespace TestProject
                 _txt_devicewithoutimage_expandedInfo = new RepoItemInfo(this, "Txt_DeviceWithoutImage_Expanded", "list//text[@caption=$sDeviceName]", 30000, null, "baf639a3-2912-47ed-8af2-8bf7fe9a980d");
                 _secondpsu_valueInfo = new RepoItemInfo(this, "SecondPSU_Value", "list/?/?/text", 30000, null, "4e950e0d-7a39-46ba-8766-1c764f45171b");
                 _btn_baseselection1Info = new RepoItemInfo(this, "btn_BaseSelection1", "?/?/container/?/?/text[@text=$sBase]", 30000, null, "8dbbdb07-0630-4d89-a330-dd864f569ae9");
-                _txt_selectpanelfcInfo = new RepoItemInfo(this, "txt_SelectPanelFC", "list//text[@caption=$PanelName]", 30000, null, "7a1711f7-44f9-4d65-8042-6b71241a48b6");
             }
 
             /// <summary>
@@ -5392,30 +5390,6 @@ namespace TestProject
                 get
                 {
                     return _btn_baseselection1Info;
-                }
-            }
-
-            /// <summary>
-            /// The txt_SelectPanelFC item.
-            /// </summary>
-            [RepositoryItem("7a1711f7-44f9-4d65-8042-6b71241a48b6")]
-            public virtual Ranorex.Text txt_SelectPanelFC
-            {
-                get
-                {
-                    return _txt_selectpanelfcInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The txt_SelectPanelFC item info.
-            /// </summary>
-            [RepositoryItemInfo("7a1711f7-44f9-4d65-8042-6b71241a48b6")]
-            public virtual RepoItemInfo txt_SelectPanelFCInfo
-            {
-                get
-                {
-                    return _txt_selectpanelfcInfo;
                 }
             }
         }

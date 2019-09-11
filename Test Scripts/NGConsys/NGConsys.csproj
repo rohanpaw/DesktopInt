@@ -3402,18 +3402,6 @@
       <UserCode>true</UserCode>
       <id>ce3aef09-e605-4198-9ea7-074e66520202</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Trip_Current_Calculation_For_FIM_Loop_FC.cs">
-      <BoundTo>09bb0183-f0a5-497e-a053-a128f8de697d</BoundTo>
-      <DependentUpon>Verify_Trip_Current_Calculation_For_FIM_Loop_FC.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>7c7e3503-f4e3-4f64-9ac6-2f3726226080</id>
-    </Compile>
-    <Compile Include="Recording Modules\Verify_Trip_Current_Calculation_For_FIM_Loop_FC.UserCode.cs">
-      <BoundTo>09bb0183-f0a5-497e-a053-a128f8de697d</BoundTo>
-      <DependentUpon>Verify_Trip_Current_Calculation_For_FIM_Loop_FC.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>036ae7da-25ec-4f46-afe3-7983322b7218</id>
-    </Compile>
     <Compile Include="Recording Modules\Verify_Trip_Current_FIM.cs">
       <BoundTo>a868fa65-69ae-43bc-93dd-52d3138c4335</BoundTo>
       <DependentUpon>Verify_Trip_Current_FIM.rxrec</DependentUpon>
@@ -3461,18 +3449,6 @@
       <DependentUpon>Verify_Trip_Current_Used_For_DC_Calculation.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>196f2297-4969-400c-8d5b-3a3aa2ca0ed8</id>
-    </Compile>
-    <Compile Include="Recording Modules\Verify_Trip_Current_Used_For_DC_Calculation_FC.cs">
-      <BoundTo>d7542cf9-7d53-4eeb-97bd-c275580db034</BoundTo>
-      <DependentUpon>Verify_Trip_Current_Used_For_DC_Calculation_FC.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>420977a3-19fb-4a54-ae5d-6c33ad51001e</id>
-    </Compile>
-    <Compile Include="Recording Modules\Verify_Trip_Current_Used_For_DC_Calculation_FC.UserCode.cs">
-      <BoundTo>d7542cf9-7d53-4eeb-97bd-c275580db034</BoundTo>
-      <DependentUpon>Verify_Trip_Current_Used_For_DC_Calculation_FC.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>213f9a72-6af5-4f9f-ad99-c263f995536e</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_UI_Design_For_Additional_PSUs.cs">
       <BoundTo>5fe3275b-63d8-43e9-8f1e-e82d7d29cd13</BoundTo>
@@ -5001,11 +4977,6 @@
       <id>4f7d13f4-88ad-499f-ab64-0f417866e4d4</id>
       <recordtableid>0f2d1c58-c784-4ecf-b4fb-63832373a86d</recordtableid>
     </None>
-    <None Include="Recording Modules\Verify_Trip_Current_Calculation_For_FIM_Loop_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
-      <id>09bb0183-f0a5-497e-a053-a128f8de697d</id>
-      <recordtableid>0eda8a5c-5bdb-40e9-99a6-168c06659176</recordtableid>
-    </None>
     <None Include="Recording Modules\Verify_Trip_Current_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>a868fa65-69ae-43bc-93dd-52d3138c4335</id>
@@ -5025,11 +4996,6 @@
       <id>99de0e2a-24b2-4f9f-98f1-526d979dc1a5</id>
       <recordtableid>296c62fd-f4b1-44a3-9e22-3020b5444ea8</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
-    </None>
-    <None Include="Recording Modules\Verify_Trip_Current_Used_For_DC_Calculation_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
-      <id>d7542cf9-7d53-4eeb-97bd-c275580db034</id>
-      <recordtableid>306ed1f5-d724-48b8-867d-684be11a09ae</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_UI_Design_For_Additional_PSUs.rxrec">
       <id>5fe3275b-63d8-43e9-8f1e-e82d7d29cd13</id>

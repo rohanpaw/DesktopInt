@@ -2277,14 +2277,6 @@ rxversion="8.3">
 			name="Create_Project_FC"
 			ref="b9bd7701-2ec0-4465-87ed-21e9241d9eb2"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="9d6386a6-b467-495d-a85c-8b930afe704b"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="216c28d2-739e-4d64-982e-328c07caa7ea"
@@ -7445,14 +7437,6 @@ rxversion="8.3">
 			name="Create_Project_FC"
 			ref="b9bd7701-2ec0-4465-87ed-21e9241d9eb2"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="23dae6d1-eca4-4c9e-9a44-ef6a28bdfa47"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="72851cbf-5fc7-4c78-aaf6-3a439b4b09b4"
@@ -8577,12 +8561,6 @@ MxDesigner]]>
 					variablename="App_Mode">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="837ae0e9-d041-490a-8c47-00ec31f8a6ff"
-			name="Verify_Trip_Current_Used_For_DC_Calculation_FC"
-			ref="306ed1f5-d724-48b8-867d-684be11a09ae"
-			type="Recording">
 			</testmodule>
 			<testmodule
 			id="8395e183-6f6b-46bf-afac-63fba084c416"
@@ -11152,12 +11130,6 @@ project]]>
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="affcbc1a-c1af-4f97-aeb4-2c052fd74f91"
-			name="Verify_Trip_Current_Calculation_For_FIM_Loop_FC"
-			ref="0eda8a5c-5bdb-40e9-99a6-168c06659176"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="b01c5bf4-e8f7-4e88-b7ef-5db3d6b954da"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -13471,14 +13443,6 @@ persisted in panel properties&nbsp;]]>
 			name="Create_Project_FC"
 			ref="b9bd7701-2ec0-4465-87ed-21e9241d9eb2"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="ea06a259-e3fd-4eaf-a97d-826434f8a2ec"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="d7e82aeb-bdb5-43a9-aeaa-d36cb1c80632"
@@ -20646,10 +20610,6 @@ persisted in panel properties&nbsp;]]>
 						name="Create_Project_FC">
 						</testmodule>
 						<testmodule
-						id="837ae0e9-d041-490a-8c47-00ec31f8a6ff"
-						name="Verify_Trip_Current_Used_For_DC_Calculation_FC">
-						</testmodule>
-						<testmodule
 						id="cf8f99d5-953f-48fe-86d1-b6641cae9b62"
 						name="Close_Application">
 						</testmodule>
@@ -20664,10 +20624,6 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="214f645a-b291-4e9a-8af5-4e9d4b1e5fbc"
 						name="Create_Project_FC">
-						</testmodule>
-						<testmodule
-						id="affcbc1a-c1af-4f97-aeb4-2c052fd74f91"
-						name="Verify_Trip_Current_Calculation_For_FIM_Loop_FC">
 						</testmodule>
 					</testcase>
 					<teardown
