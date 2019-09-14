@@ -7420,6 +7420,47 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"AC Units are not displayed correctly " + ", Expected AC Units:  " + expectedValue  + " Actual AC Units: "+ ActualValue);
 			}
 		}
+	
+		/************************************************************************************************************
+		 * Function Name: VerifyDeviceSensitivityListValues
+		 * Function Details: To verify device sensitivity value
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/09/2019 - Not used as text value is not retrieved (properties) in dropdown
+		 ************************************************************************************************************/
+		// To verify device sensitivity value as per the argument
+		[UserCodeMethod]
+		public static void VerifyDeviceSensitivityListValues(string DeviceSensitivityList)
+		{
+			// Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Device text in Search Properties fields to view device related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Device" +"{ENTER}");
+			
+			// Click on Device Sensitivity cell
+			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceSensitivity.Click();
+			
+			VerifyPanelTypeNames(DeviceSensitivityList);
+			
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			
+		}
+		
+	
 		
 	}
 }

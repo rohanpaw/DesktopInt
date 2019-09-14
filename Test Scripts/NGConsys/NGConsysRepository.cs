@@ -6161,6 +6161,8 @@ namespace TestProject
             RepoItemInfo _copybuttonInfo;
             RepoItemInfo _panelsgalleryInfo;
             RepoItemInfo _othernodesgalleryInfo;
+            RepoItemInfo _dcunits_afterreopenInfo;
+            RepoItemInfo _dcunitsworstcase_afterreopenInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6315,6 +6317,8 @@ namespace TestProject
                 _copybuttonInfo = new RepoItemInfo(this, "CopyButton", "?/?/container[@automationid='PART_AutoHideControl']/list/list[2]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Copy']", 30000, null, "60100a5a-fabb-4057-82b0-f377a9c49cfc");
                 _panelsgalleryInfo = new RepoItemInfo(this, "PanelsGallery", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]//container[@automationid='PART_Caption']/text[@caption='Panels']", 30000, null, "4b6a4e95-f830-412c-8b01-70e709cab993");
                 _othernodesgalleryInfo = new RepoItemInfo(this, "OtherNodesGallery", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]//container[@automationid='PART_Caption']/text[@caption='Other Nodes']", 30000, null, "fa94263b-6afd-4cd2-94ee-6bfd7906fced");
+                _dcunits_afterreopenInfo = new RepoItemInfo(this, "DCUnits_AfterReopen", "progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='2']/cell[@text='[1]']/?/text[1]", 30000, null, "dc6f0fa9-5986-49ea-a6cc-dd83a1850ed9");
+                _dcunitsworstcase_afterreopenInfo = new RepoItemInfo(this, "DCUnitsWorstCase_AfterReopen", "progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='3']/cell[@text='[2]']/?/text[1]", 30000, null, "8a1232f5-78e2-4cb9-a37e-cc092cabed55");
             }
 
             /// <summary>
@@ -9971,6 +9975,54 @@ namespace TestProject
                 get
                 {
                     return _othernodesgalleryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DCUnits_AfterReopen item.
+            /// </summary>
+            [RepositoryItem("dc6f0fa9-5986-49ea-a6cc-dd83a1850ed9")]
+            public virtual Ranorex.Text DCUnits_AfterReopen
+            {
+                get
+                {
+                    return _dcunits_afterreopenInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DCUnits_AfterReopen item info.
+            /// </summary>
+            [RepositoryItemInfo("dc6f0fa9-5986-49ea-a6cc-dd83a1850ed9")]
+            public virtual RepoItemInfo DCUnits_AfterReopenInfo
+            {
+                get
+                {
+                    return _dcunits_afterreopenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DCUnitsWorstCase_AfterReopen item.
+            /// </summary>
+            [RepositoryItem("8a1232f5-78e2-4cb9-a37e-cc092cabed55")]
+            public virtual Ranorex.Text DCUnitsWorstCase_AfterReopen
+            {
+                get
+                {
+                    return _dcunitsworstcase_afterreopenInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DCUnitsWorstCase_AfterReopen item info.
+            /// </summary>
+            [RepositoryItemInfo("8a1232f5-78e2-4cb9-a37e-cc092cabed55")]
+            public virtual RepoItemInfo DCUnitsWorstCase_AfterReopenInfo
+            {
+                get
+                {
+                    return _dcunitsworstcase_afterreopenInfo;
                 }
             }
         }

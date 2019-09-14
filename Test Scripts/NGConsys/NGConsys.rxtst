@@ -1308,6 +1308,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="13a25ba9-f9bc-4d20-803f-5f381b2f1987"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="13a771c8-b417-481a-85c9-f682736aff49"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -2270,12 +2276,6 @@ rxversion="8.3">
 			id="214048c9-fe3d-4ae1-aaca-d60fd058abf7"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="214f645a-b291-4e9a-8af5-4e9d4b1e5fbc"
-			name="Create_Project_FC"
-			ref="b9bd7701-2ec0-4465-87ed-21e9241d9eb2"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -3714,6 +3714,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="396a9773-d3cf-4bf1-a045-2b75407ccc33"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="9d6386a6-b467-495d-a85c-8b930afe704b"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="3987bc33-7310-416e-bfb0-31f8a670f9da"
 			name="Verify_Deletion_Of_PxD_PSC_800_From_Shopping_List"
 			ref="d67b5e7a-b58a-4f13-b496-83226254abae"
@@ -4084,6 +4098,20 @@ rxversion="8.3">
 			name="Verify_DC_WorstCase_Units_Indicators"
 			ref="49c80c44-138a-4a18-9703-a29d01302e56"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="412b2dba-757c-4f0d-a187-914fdeeb71e7"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="23dae6d1-eca4-4c9e-9a44-ef6a28bdfa47"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="412ea863-0c9a-4e73-8742-3f292120897d"
@@ -4615,6 +4643,12 @@ rxversion="8.3">
 			id="485e4c3e-41f6-4eab-bbaf-3abf2e790701"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4862c063-3063-4f89-95e9-792daa203008"
+			name="Verify_Trip_Current_Calculation_For_FIM_Loops_FC"
+			ref="416978eb-4f68-4959-8558-375083dda8bb"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -7431,12 +7465,6 @@ rxversion="8.3">
 					variablename="App_Mode">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="727e46de-068e-4254-ab9d-0720e65337bd"
-			name="Create_Project_FC"
-			ref="b9bd7701-2ec0-4465-87ed-21e9241d9eb2"
-			type="Recording">
 			</testmodule>
 			<testmodule
 			id="72851cbf-5fc7-4c78-aaf6-3a439b4b09b4"
@@ -11655,6 +11683,12 @@ persisted in panel properties&nbsp;]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="b94055e5-1821-45bd-9e8d-c2eff7dce615"
+			name="Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC"
+			ref="2008467f-862d-4fb7-828d-90fafd571e08"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="b956701a-9337-4bc1-ba4f-68915628131f"
 			name="Verify_IOB_Properties">
@@ -12875,12 +12909,6 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="cf8f99d5-953f-48fe-86d1-b6641cae9b62"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="cfc2904e-0c36-4b34-8ba3-3ae5a3fe0611"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -12994,6 +13022,26 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="d14d77f3-eed1-4a37-ad60-01a2c3507428"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="d16cdf52-31e5-4025-a4b7-4a204538bbb0"
 			name="Create_Project"
@@ -13313,6 +13361,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="d59ba8f7-d4bf-40f8-ab60-2a37e4a72b56"
+			name="Verif_Trip_Current_For_DC_Calculation_FC"
+			ref="0679320e-7fb5-4680-acc5-285d1fc0caeb"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="d600789f-44ee-4896-a3d1-a08d1c4f8ff8"
@@ -20606,11 +20660,15 @@ persisted in panel properties&nbsp;]]>
 						name="Application_Open">
 						</testmodule>
 						<testmodule
-						id="727e46de-068e-4254-ab9d-0720e65337bd"
+						id="412b2dba-757c-4f0d-a187-914fdeeb71e7"
 						name="Create_Project_FC">
 						</testmodule>
 						<testmodule
-						id="cf8f99d5-953f-48fe-86d1-b6641cae9b62"
+						id="d59ba8f7-d4bf-40f8-ab60-2a37e4a72b56"
+						name="Verif_Trip_Current_For_DC_Calculation_FC">
+						</testmodule>
+						<testmodule
+						id="13a25ba9-f9bc-4d20-803f-5f381b2f1987"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
@@ -20622,8 +20680,20 @@ persisted in panel properties&nbsp;]]>
 						name="Application_Open">
 						</testmodule>
 						<testmodule
-						id="214f645a-b291-4e9a-8af5-4e9d4b1e5fbc"
+						id="396a9773-d3cf-4bf1-a045-2b75407ccc33"
 						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="4862c063-3063-4f89-95e9-792daa203008"
+						name="Verify_Trip_Current_Calculation_For_FIM_Loops_FC">
+						</testmodule>
+						<testmodule
+						id="d14d77f3-eed1-4a37-ad60-01a2c3507428"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="b94055e5-1821-45bd-9e8d-c2eff7dce615"
+						name="Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC">
 						</testmodule>
 					</testcase>
 					<teardown
@@ -20833,9 +20903,6 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="47cd95ce-0b25-47af-a48c-b0b551307643">
-			</testcontainer>
-			<testcontainer
 			id="9d6386a6-b467-495d-a85c-8b930afe704b">
 			</testcontainer>
 		</testconfiguration>
@@ -20866,10 +20933,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

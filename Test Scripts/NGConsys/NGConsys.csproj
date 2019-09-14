@@ -3018,6 +3018,18 @@
       <UserCode>true</UserCode>
       <id>1fa6fc4d-0f3f-4f82-a185-e6cdaeb06163</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC.cs">
+      <BoundTo>4a69362c-b6b1-47f6-ba6b-8d7b7a8e59a6</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5bcc10c6-7e95-409d-b2c6-d65cf7120477</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC.UserCode.cs">
+      <BoundTo>4a69362c-b6b1-47f6-ba6b-8d7b7a8e59a6</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5085fd00-dfea-4cd3-b49d-ef048db1ba0b</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_To_Verify_Device_Order.cs">
       <BoundTo>d2577c0e-9952-445f-9be2-70df0ca02c46</BoundTo>
       <DependentUpon>Verify_Reopen_Project_To_Verify_Device_Order.rxrec</DependentUpon>
@@ -3402,6 +3414,18 @@
       <UserCode>true</UserCode>
       <id>ce3aef09-e605-4198-9ea7-074e66520202</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Trip_Current_Calculation_For_FIM_Loops_FC.cs">
+      <BoundTo>c4ef9ea9-cb8c-4c1d-8779-5a74be83b8c2</BoundTo>
+      <DependentUpon>Verify_Trip_Current_Calculation_For_FIM_Loops_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3d548569-ff25-4a70-8374-d66494077eae</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Trip_Current_Calculation_For_FIM_Loops_FC.UserCode.cs">
+      <BoundTo>c4ef9ea9-cb8c-4c1d-8779-5a74be83b8c2</BoundTo>
+      <DependentUpon>Verify_Trip_Current_Calculation_For_FIM_Loops_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6f635b40-71f0-43a4-97ea-743d85de09c8</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Trip_Current_FIM.cs">
       <BoundTo>a868fa65-69ae-43bc-93dd-52d3138c4335</BoundTo>
       <DependentUpon>Verify_Trip_Current_FIM.rxrec</DependentUpon>
@@ -3617,6 +3641,18 @@
       <DependentUpon>Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>fa580dc6-46a9-4628-9be9-f69df00bc612</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verif_Trip_Current_For_DC_Calculation_FC.cs">
+      <BoundTo>36a67c14-6987-4846-b132-4b1db459a5b1</BoundTo>
+      <DependentUpon>Verif_Trip_Current_For_DC_Calculation_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>82cdd909-71e1-4dfb-9a04-a65a9506e70b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verif_Trip_Current_For_DC_Calculation_FC.UserCode.cs">
+      <BoundTo>36a67c14-6987-4846-b132-4b1db459a5b1</BoundTo>
+      <DependentUpon>Verif_Trip_Current_For_DC_Calculation_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ac8fa8fa-ec5f-44b0-8562-6593b6dd2153</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -4338,9 +4374,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>62a70a96-0538-4982-83c3-0e87d572c92a</id>
       <recordtableid>ed95de78-c489-4cd5-af64-ccb8d4aadac0</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_if_adding_EXI800_from_multipoint_wizard_should_check_the_existing_rules_of_adding_EXI800.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4817,6 +4853,11 @@
       <id>5f6341b1-fa55-4217-a856-bea0137a1174</id>
       <recordtableid>4b9bb920-ae67-4a89-bb9d-f1878c2aed67</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>4a69362c-b6b1-47f6-ba6b-8d7b7a8e59a6</id>
+      <recordtableid>2008467f-862d-4fb7-828d-90fafd571e08</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Reopen_Project_To_Verify_Device_Order.rxrec">
       <id>d2577c0e-9952-445f-9be2-70df0ca02c46</id>
       <recordtableid>1aa3c0f7-435f-44c7-9c86-52b8440ff9c4</recordtableid>
@@ -4977,6 +5018,11 @@
       <id>4f7d13f4-88ad-499f-ab64-0f417866e4d4</id>
       <recordtableid>0f2d1c58-c784-4ecf-b4fb-63832373a86d</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Trip_Current_Calculation_For_FIM_Loops_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>c4ef9ea9-cb8c-4c1d-8779-5a74be83b8c2</id>
+      <recordtableid>416978eb-4f68-4959-8558-375083dda8bb</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Trip_Current_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>a868fa65-69ae-43bc-93dd-52d3138c4335</id>
@@ -5066,6 +5112,11 @@
       <id>1741d9a7-7b8d-427c-86f8-82ceed6322e5</id>
       <recordtableid>4be5cc3d-6d55-49f9-8ff9-387dce87cc8a</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verif_Trip_Current_For_DC_Calculation_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>36a67c14-6987-4846-b132-4b1db459a5b1</id>
+      <recordtableid>0679320e-7fb5-4680-acc5-285d1fc0caeb</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>
