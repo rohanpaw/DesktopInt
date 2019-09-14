@@ -1482,6 +1482,18 @@
       <UserCode>true</UserCode>
       <id>4118a7d5-95eb-4a11-b40c-e2e1ec4f74ff</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_CurrentDC_Units_Calculation_FC.cs">
+      <BoundTo>4a61a323-e791-4b56-acb1-eed657dae12f</BoundTo>
+      <DependentUpon>Verify_CurrentDC_Units_Calculation_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ec2382f5-2d66-486a-ba7c-6405e3250825</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_CurrentDC_Units_Calculation_FC.UserCode.cs">
+      <BoundTo>4a61a323-e791-4b56-acb1-eed657dae12f</BoundTo>
+      <DependentUpon>Verify_CurrentDC_Units_Calculation_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6eb718f3-ebfa-4dcf-97e3-2a639dc14cd2</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.cs">
       <BoundTo>db24c100-87f4-4d4e-93cf-ac0104c47b85</BoundTo>
       <DependentUpon>Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec</DependentUpon>
@@ -1529,6 +1541,18 @@
       <DependentUpon>Verify_DC_Units_Calculation_for_PFI.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c26bdeb1-3bb5-43c8-aeda-63847b610c21</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.cs">
+      <BoundTo>b7013f2c-2ac0-4bbe-b6eb-f6f341ee5536</BoundTo>
+      <DependentUpon>Verify_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a36b9712-a5d7-4540-91a4-ff66f02a0e48</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.UserCode.cs">
+      <BoundTo>b7013f2c-2ac0-4bbe-b6eb-f6f341ee5536</BoundTo>
+      <DependentUpon>Verify_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7bde51de-1d19-4f55-aa7f-06e8b6d46546</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_DC_Units_Indicators.cs">
       <BoundTo>3c4783b7-578d-46f7-ad5f-677ae318ba8d</BoundTo>
@@ -2970,6 +2994,30 @@
       <UserCode>true</UserCode>
       <id>b39ff580-be43-4081-80eb-fde094ceae84</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_For_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.cs">
+      <BoundTo>6016d74e-fd72-459c-aa91-14e0acc6d9f9</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_For_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c033f0fd-07a0-44c7-922d-b2508e36c770</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_For_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.UserCode.cs">
+      <BoundTo>6016d74e-fd72-459c-aa91-14e0acc6d9f9</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_For_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>187f788a-6e53-4461-af11-d6776e279b6f</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.cs">
+      <BoundTo>99f09b4e-16fd-4c8a-91e1-2a09eeb4a2ce</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d0e71393-b025-4889-9b81-aeca7ddc91fb</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.UserCode.cs">
+      <BoundTo>99f09b4e-16fd-4c8a-91e1-2a09eeb4a2ce</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>553d7c6a-70d5-4d69-9e35-5f5fdd7fcf63</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.cs">
       <BoundTo>8ae08a22-7e86-463a-a398-6af7d6f52b4b</BoundTo>
       <DependentUpon>Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec</DependentUpon>
@@ -3017,6 +3065,18 @@
       <DependentUpon>Verify_Reopen_Project_IOB_Properties.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>1fa6fc4d-0f3f-4f82-a185-e6cdaeb06163</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC.cs">
+      <BoundTo>1ffb1ceb-f509-4f8f-a178-a82ec14e53a6</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>43d823c2-3f5d-4b06-96bd-acb6e5da8e59</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC.UserCode.cs">
+      <BoundTo>1ffb1ceb-f509-4f8f-a178-a82ec14e53a6</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>746d0175-e323-4fc2-88b2-949c8d9a784d</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC.cs">
       <BoundTo>4a69362c-b6b1-47f6-ba6b-8d7b7a8e59a6</BoundTo>
@@ -3425,6 +3485,18 @@
       <DependentUpon>Verify_Trip_Current_Calculation_For_FIM_Loops_FC.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>6f635b40-71f0-43a4-97ea-743d85de09c8</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.cs">
+      <BoundTo>1969a389-1e55-467d-904c-0498b7a94000</BoundTo>
+      <DependentUpon>Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2401a11-5162-4491-868e-4fb56e80e52c</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.UserCode.cs">
+      <BoundTo>1969a389-1e55-467d-904c-0498b7a94000</BoundTo>
+      <DependentUpon>Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b7499a7a-32be-40c5-b0ac-a525b0f54d4c</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Trip_Current_FIM.cs">
       <BoundTo>a868fa65-69ae-43bc-93dd-52d3138c4335</BoundTo>
@@ -4213,6 +4285,11 @@
       <id>1a41f936-d6db-47a3-9442-6740cab21da7</id>
       <recordtableid>8e8b55a1-3f6c-47cd-9e5a-c941d2f00530</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_CurrentDC_Units_Calculation_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>4a61a323-e791-4b56-acb1-eed657dae12f</id>
+      <recordtableid>bb3b7cb4-7a4d-41b6-8671-549f409bc922</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>db24c100-87f4-4d4e-93cf-ac0104c47b85</id>
@@ -4232,6 +4309,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>3dfa8a07-4c43-4f5c-9a8c-5342767c68a2</id>
       <recordtableid>5b22616f-83a2-4b3c-8701-001a91a91e30</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.rxrec">
+      <id>b7013f2c-2ac0-4bbe-b6eb-f6f341ee5536</id>
+      <recordtableid>72a71f0a-0c60-4adc-9939-7a35ae70d424</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_DC_Units_Indicators.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4833,6 +4915,16 @@
       <recordtableid>79643dcd-8cd5-4d6a-a36d-de046882de58</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_For_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.rxrec">
+      <id>6016d74e-fd72-459c-aa91-14e0acc6d9f9</id>
+      <recordtableid>65109265-f544-4955-9fa9-c4c3ff319001</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec">
+      <id>99f09b4e-16fd-4c8a-91e1-2a09eeb4a2ce</id>
+      <recordtableid>b04bd053-b3ae-4ec2-aa73-e2a7a86b9ebe</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>8ae08a22-7e86-463a-a398-6af7d6f52b4b</id>
@@ -4853,10 +4945,15 @@
       <id>5f6341b1-fa55-4217-a856-bea0137a1174</id>
       <recordtableid>4b9bb920-ae67-4a89-bb9d-f1878c2aed67</recordtableid>
     </None>
-    <None Include="Recording Modules\Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC.rxrec">
+    <None Include="Recording Modules\Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>1ffb1ceb-f509-4f8f-a178-a82ec14e53a6</id>
+      <recordtableid>2424d6d2-0209-408b-ad8d-87ef425aaa3b</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC.rxrec">
       <id>4a69362c-b6b1-47f6-ba6b-8d7b7a8e59a6</id>
       <recordtableid>2008467f-862d-4fb7-828d-90fafd571e08</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_To_Verify_Device_Order.rxrec">
       <id>d2577c0e-9952-445f-9be2-70df0ca02c46</id>
@@ -5019,9 +5116,14 @@
       <recordtableid>0f2d1c58-c784-4ecf-b4fb-63832373a86d</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Trip_Current_Calculation_For_FIM_Loops_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>c4ef9ea9-cb8c-4c1d-8779-5a74be83b8c2</id>
       <recordtableid>416978eb-4f68-4959-8558-375083dda8bb</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec">
+      <id>1969a389-1e55-467d-904c-0498b7a94000</id>
+      <recordtableid>d0ccf4d9-36d2-436b-b3b1-2056b9ca8b62</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Trip_Current_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

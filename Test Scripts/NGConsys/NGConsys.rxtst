@@ -141,6 +141,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="01e593bc-d7f1-4f8a-b2c4-f259337de9fc"
+			name="Verify_CurrentDC_Units_Calculation_FC"
+			ref="bb3b7cb4-7a4d-41b6-8671-549f409bc922"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="02253b92-4aa2-4a44-be36-09b8ea0d1d21"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -916,6 +922,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="0db59d96-ce8b-4175-a7c0-8a7b9ec5d11f"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="0dbd1ba9-89ff-4082-9048-8db31e0610dc"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -965,6 +991,33 @@ rxversion="8.3">
 			name="Verify_Backplane_Logic_For_Pro32xD_Pro32xBB"
 			ref="a5d8435d-ba8b-4a7d-a1b3-6339a0fe27a8"
 			type="Recording">
+			</testmodule>
+			<testcase
+			id="0efb3a92-1c04-4856-87a0-513537af1f19"
+			name="Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63799</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testmodule
+			id="0f02d99f-1235-4b09-be55-b45ff618d379"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="81c82b82-fecf-4d89-8ad1-13d1b0f34b63"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="0f1bb88f-b902-4b73-b6d0-aaa82535dc20"
@@ -2984,6 +3037,26 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="2c14c2d5-bb43-48b9-92a1-9381e3c9b1ea"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="2c315ac7-ffad-4e21-abab-0872d77c399b"
 			name="Verification_for_device_Label">
@@ -3328,6 +3401,26 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="33206f0b-407b-43bb-af42-0f94be3c9d9f"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="33207f34-dba8-4774-80a3-c6a4f8a24f44"
 			name="Close_Application"
@@ -5353,6 +5446,20 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="517e9dba-2c7a-4057-b5ef-a04b02891b7e"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="c6fea478-206c-499e-b417-b71a8cc84e09"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="518a26c1-d79f-4c8a-88bf-3301da933f85"
 			name="Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List">
@@ -5890,6 +5997,12 @@ rxversion="8.3">
 			id="58984747-5f45-4126-a461-1ffd11e1e78c"
 			name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values"
 			ref="32074e17-16ec-4b54-87c0-29ce24977e24"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="58d85869-8f7d-47dc-a67b-95b130187583"
+			name="Verify_Reopen_Project_For_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC"
+			ref="65109265-f544-4955-9fa9-c4c3ff319001"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -8009,6 +8122,20 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="7b58cf85-ab2b-49be-ada1-2c8866669f9a"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="0efb3a92-1c04-4856-87a0-513537af1f19"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="7b86cfd1-1315-4547-91be-def472c47c24"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -8430,6 +8557,19 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testcase
+			id="81c82b82-fecf-4d89-8ad1-13d1b0f34b63"
+			name="Verify_Current(DC_Units)_Calculation_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63775</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="8229ec8d-24b2-4223-b623-61911af6a44e"
 			name="Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base">
 				<description>
@@ -8826,6 +8966,26 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="866d21c9-c633-464a-8e7f-775e85f0bc42"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="866e5f3a-6344-4627-8eed-c0784bb38c45"
 			name="Create_Project"
@@ -10264,6 +10424,9 @@ MxDesigner]]>
 			<testcase
 			id="9d6386a6-b467-495d-a85c-8b930afe704b"
 			name="Verify_Trip_Current_Calculation_For_FIM_Loop_FC">
+				<description>
+					<![CDATA[NGC-1826/TC-65166]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -10738,6 +10901,12 @@ div.WordSection1
 			id="a4525d94-b68c-447d-9c96-d8c817c61b8c"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a5c27710-44eb-48df-9bac-94f092190235"
+			name="Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC"
+			ref="d0ccf4d9-36d2-436b-b3b1-2056b9ca8b62"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -11567,6 +11736,12 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="b68aafad-d5da-4cb5-ae2b-84c90e979101"
+			name="Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC"
+			ref="2424d6d2-0209-408b-ad8d-87ef425aaa3b"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="b6a94cc3-3c99-4d7e-beaa-8424ec77063b"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -11786,6 +11961,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="bb584740-1ccc-494a-966d-d34a233a762c"
+			name="Verify_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC"
+			ref="72a71f0a-0c60-4adc-9939-7a35ae70d424"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="bb812c4d-012f-47fb-90eb-66d7c8a04008"
@@ -12387,6 +12568,19 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_Devices_Order_In_Dropped_Gallery">
 				<description>
 					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"><p>NGC-216/TC-52</p></font></font></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="c6fea478-206c-499e-b417-b71a8cc84e09"
+			name="Verify_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63643</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -13022,6 +13216,26 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="d103ec83-e144-4d01-b513-07101343af85"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="d14d77f3-eed1-4a37-ad60-01a2c3507428"
 			name="Application_Open"
@@ -13876,6 +14090,26 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="df7301a6-6180-4ac8-a7b9-c2c362a37325"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="dfa33584-a0c6-4c65-8e24-5f7e7400ec6b"
 			name="Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied"
 			ref="7903f6ef-8da9-46ba-8a5a-2fa09296eb62"
@@ -14405,6 +14639,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="e7cf88b6-21e6-4a8d-bccc-a63baf72b5b3"
+			name="Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC"
+			ref="b04bd053-b3ae-4ec2-aa73-e2a7a86b9ebe"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="e83a1f81-0024-490c-bfdb-af0bb1323cf5"
 			name="Close_Application"
@@ -20696,6 +20936,78 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="0efb3a92-1c04-4856-87a0-513537af1f19"
+					name="Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC">
+						<testmodule
+						id="df7301a6-6180-4ac8-a7b9-c2c362a37325"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="7b58cf85-ab2b-49be-ada1-2c8866669f9a"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="a5c27710-44eb-48df-9bac-94f092190235"
+						name="Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC">
+						</testmodule>
+						<testmodule
+						id="2c14c2d5-bb43-48b9-92a1-9381e3c9b1ea"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="e7cf88b6-21e6-4a8d-bccc-a63baf72b5b3"
+						name="Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="c6fea478-206c-499e-b417-b71a8cc84e09"
+					name="Verify_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC">
+						<testmodule
+						id="866d21c9-c633-464a-8e7f-775e85f0bc42"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="517e9dba-2c7a-4057-b5ef-a04b02891b7e"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="bb584740-1ccc-494a-966d-d34a233a762c"
+						name="Verify_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC">
+						</testmodule>
+						<testmodule
+						id="0db59d96-ce8b-4175-a7c0-8a7b9ec5d11f"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="58d85869-8f7d-47dc-a67b-95b130187583"
+						name="Verify_Reopen_Project_For_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="81c82b82-fecf-4d89-8ad1-13d1b0f34b63"
+					name="Verify_Current(DC_Units)_Calculation_FC">
+						<testmodule
+						id="33206f0b-407b-43bb-af42-0f94be3c9d9f"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="0f02d99f-1235-4b09-be55-b45ff618d379"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="01e593bc-d7f1-4f8a-b2c4-f259337de9fc"
+						name="Verify_CurrentDC_Units_Calculation_FC">
+						</testmodule>
+						<testmodule
+						id="d103ec83-e144-4d01-b513-07101343af85"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="b68aafad-d5da-4cb5-ae2b-84c90e979101"
+						name="Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -20900,10 +21212,19 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="0efb3a92-1c04-4856-87a0-513537af1f19">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="81c82b82-fecf-4d89-8ad1-13d1b0f34b63">
+			</testcontainer>
+			<testcontainer
 			id="9d6386a6-b467-495d-a85c-8b930afe704b">
+			</testcontainer>
+			<testcontainer
+			id="c6fea478-206c-499e-b417-b71a8cc84e09">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
