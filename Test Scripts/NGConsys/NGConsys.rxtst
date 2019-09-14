@@ -876,10 +876,36 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="0cef430e-3bf0-4b34-b299-4bb4ba6c2df3"
+			name="Verify_Current_DC_Units_And_Worst_Case_Indicator_FC"
+			ref="c04f6e17-c585-49b0-ac3c-427cd9432808"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="0cf9d215-a385-4871-ac60-472cd0e5feac"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="0d027808-d8be-469b-9773-c9fc8a36e2e9"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="0d0f09ca-f27d-495e-a89f-8d23fd904b2a"
@@ -1579,6 +1605,12 @@ rxversion="8.3">
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="16f66f93-f2c8-4f26-9b93-751581302cd4"
+			name="Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC"
+			ref="438473fb-5235-49a8-84d9-d4c43abfbf8a"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="16fd3eeb-2d95-458b-bdd0-b971719ea486"
@@ -3655,6 +3687,19 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="36b7ddba-8c37-4327-884b-087255c64529"
+			name="Verify_DC_Units_Displayed_For_Non_Split_Loops_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63775</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="370d965f-5dcf-4601-85be-23c4512f1d0d"
 			name="Create_Project"
@@ -3757,6 +3802,12 @@ rxversion="8.3">
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="38609da4-52f6-4df0-9a9e-60b365ae1c71"
+			name="Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC"
+			ref="a6a70508-bfa5-49c7-8d19-a69e09a61eda"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="39144249-d324-4202-a49f-583fb59373c0"
@@ -4448,6 +4499,19 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="442798fe-9147-4901-9059-da1a829fd6d1"
+			name="Verify_Current_DC_Units_And_Worst_Case_Indicator_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63777</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="44b69852-9f4d-4004-a89a-c45899135fde"
 			name="Application_Open"
@@ -5532,6 +5596,12 @@ rxversion="8.3">
 			id="5282429a-c909-4e16-b067-94b22325a475"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="52ceae61-7f4c-4a8f-a572-98b9817ac6f5"
+			name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC"
+			ref="8201c29b-2d49-4b3c-b375-34e6842b4241"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -6665,6 +6735,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="62601efe-04ab-48d3-bcc1-8c8a758dc39f"
+			name="Verify_DC_Units_Displayed_For_Non_Split_Loops_FC"
+			ref="e7f4dc08-0c70-4798-9fed-799d38e6262d"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="631df1fe-40c8-4651-ae54-28bdf895abdb"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -6720,6 +6796,20 @@ rxversion="8.3">
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="64350933-0410-401e-bf39-df522f99639e"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="36b7ddba-8c37-4327-884b-087255c64529"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="6445dc99-16ae-4071-9d6e-11d242b87dd0"
@@ -7729,6 +7819,46 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="74adec52-1050-4ecd-9895-140d9ee7ae0b"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="74da5bc5-3915-4724-bc14-adfd14ad6173"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="74f674cb-308c-449b-a625-b2600fe0ffd7"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -8560,7 +8690,7 @@ rxversion="8.3">
 			id="81c82b82-fecf-4d89-8ad1-13d1b0f34b63"
 			name="Verify_Current(DC_Units)_Calculation_FC">
 				<description>
-					<![CDATA[<p>NGC-1826/TC-63775</p>]]>
+					<![CDATA[<p>NGC-1826/TC-63769</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -8966,6 +9096,26 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="85e2e3ca-69e7-4271-8440-bb49d4e80a61"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="866d21c9-c633-464a-8e7f-775e85f0bc42"
 			name="Application_Open"
@@ -9984,6 +10134,19 @@ MxDesigner]]>
 			ref="5c8ca288-c740-4161-90bc-203732c6f586"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="9606b844-34eb-4256-81db-1e127a501947"
+			name="Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_'Basic'_Section_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63365&nbsp; In this test case, None value is not verified.All drop down values are also not verified as text value is not retrieved.<br></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="961a0830-1345-4f09-964b-39cc9a537440"
 			name="Verify_If_IS_Devices_Are_Disabled_From_The_Gallery_When_Max_IS_Units_Is_Reached"
@@ -10298,6 +10461,12 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="9b823004-4c41-4f1f-b166-e96c8a30b635"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="9b90e873-f253-46ce-b27c-a6fce8418e7c"
 			name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste"
@@ -10904,6 +11073,26 @@ div.WordSection1
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="a5be14c5-b3de-45c6-9e0e-9799e45057d4"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a5c27710-44eb-48df-9bac-94f092190235"
 			name="Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC"
 			ref="d0ccf4d9-36d2-436b-b3b1-2056b9ca8b62"
@@ -11323,6 +11512,20 @@ project]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
 					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="af64ef85-b016-4d29-802f-0e2e17edbbe7"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="442798fe-9147-4901-9059-da1a829fd6d1"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -13583,6 +13786,19 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testcase
+			id="d5e52e51-d6da-41a1-acd1-150dc20f5648"
+			name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63380 In this test case, None value is not verified.All drop down values are also not verified as text value is not retrieved.</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="d600789f-44ee-4896-a3d1-a08d1c4f8ff8"
 			name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste">
 				<description>
@@ -14428,6 +14644,20 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="e44da576-77cb-47a7-8171-b9b02a8fcb76"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="d5e52e51-d6da-41a1-acd1-150dc20f5648"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="e4736fe1-2040-4c5b-829e-bf182d1ee6e4"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -14640,6 +14870,12 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="e75f29ab-4465-4ed5-94d3-f4edfe8ce3e0"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e7cf88b6-21e6-4a8d-bccc-a63baf72b5b3"
 			name="Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC"
 			ref="b04bd053-b3ae-4ec2-aa73-e2a7a86b9ebe"
@@ -14767,6 +15003,26 @@ persisted in panel properties&nbsp;]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ea46dd21-df14-45e8-88d9-4e20347d1c6b"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ea799fc5-416c-45ab-9a72-399962282ddd"
@@ -15701,6 +15957,12 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="fb2a5b0e-2aaa-4091-a916-860a598ac3e9"
+			name="Verify_Reopen_Project_For_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC"
+			ref="53d3d5cf-70f2-450b-94e0-e3e14d69ab8f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="fb577faf-c6d1-496b-ab4f-d44c6cef42e0"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -15882,6 +16144,20 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_addition_of_devices_in_panel"
 			ref="091bf9f1-95c8-46e7-8e37-94bc512ccf59"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fe9d5a21-ba06-4741-86a1-7b9afe1659ab"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="9606b844-34eb-4256-81db-1e127a501947"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="feca742d-b8c2-4086-8710-f6a00abf473e"
@@ -21008,6 +21284,94 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="36b7ddba-8c37-4327-884b-087255c64529"
+					name="Verify_DC_Units_Displayed_For_Non_Split_Loops_FC">
+						<testmodule
+						id="ea46dd21-df14-45e8-88d9-4e20347d1c6b"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="64350933-0410-401e-bf39-df522f99639e"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="62601efe-04ab-48d3-bcc1-8c8a758dc39f"
+						name="Verify_DC_Units_Displayed_For_Non_Split_Loops_FC">
+						</testmodule>
+						<testmodule
+						id="e75f29ab-4465-4ed5-94d3-f4edfe8ce3e0"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="442798fe-9147-4901-9059-da1a829fd6d1"
+					name="Verify_Current_DC_Units_And_Worst_Case_Indicator_FC">
+						<testmodule
+						id="74da5bc5-3915-4724-bc14-adfd14ad6173"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="af64ef85-b016-4d29-802f-0e2e17edbbe7"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="0cef430e-3bf0-4b34-b299-4bb4ba6c2df3"
+						name="Verify_Current_DC_Units_And_Worst_Case_Indicator_FC">
+						</testmodule>
+						<testmodule
+						id="9b823004-4c41-4f1f-b166-e96c8a30b635"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="9606b844-34eb-4256-81db-1e127a501947"
+					name="Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_'Basic'_Section_FC">
+						<testmodule
+						id="0d027808-d8be-469b-9773-c9fc8a36e2e9"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="fe9d5a21-ba06-4741-86a1-7b9afe1659ab"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="16f66f93-f2c8-4f26-9b93-751581302cd4"
+						name="Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC">
+						</testmodule>
+						<testmodule
+						id="85e2e3ca-69e7-4271-8440-bb49d4e80a61"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="38609da4-52f6-4df0-9a9e-60b365ae1c71"
+						name="Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="d5e52e51-d6da-41a1-acd1-150dc20f5648"
+					name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
+						<testmodule
+						id="a5be14c5-b3de-45c6-9e0e-9799e45057d4"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="e44da576-77cb-47a7-8171-b9b02a8fcb76"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="52ceae61-7f4c-4a8f-a572-98b9817ac6f5"
+						name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
+						</testmodule>
+						<testmodule
+						id="74adec52-1050-4ecd-9895-140d9ee7ae0b"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="fb2a5b0e-2aaa-4091-a916-860a598ac3e9"
+						name="Verify_Reopen_Project_For_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -21218,13 +21582,22 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="36b7ddba-8c37-4327-884b-087255c64529">
+			</testcontainer>
+			<testcontainer
+			id="442798fe-9147-4901-9059-da1a829fd6d1">
+			</testcontainer>
+			<testcontainer
 			id="81c82b82-fecf-4d89-8ad1-13d1b0f34b63">
 			</testcontainer>
 			<testcontainer
-			id="9d6386a6-b467-495d-a85c-8b930afe704b">
+			id="9606b844-34eb-4256-81db-1e127a501947">
 			</testcontainer>
 			<testcontainer
 			id="c6fea478-206c-499e-b417-b71a8cc84e09">
+			</testcontainer>
+			<testcontainer
+			id="d5e52e51-d6da-41a1-acd1-150dc20f5648">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

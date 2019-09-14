@@ -1494,6 +1494,18 @@
       <UserCode>true</UserCode>
       <id>6eb718f3-ebfa-4dcf-97e3-2a639dc14cd2</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Current_DC_Units_And_Worst_Case_Indicator_FC.cs">
+      <BoundTo>21ca44c7-adc9-435c-8522-594c81ae475e</BoundTo>
+      <DependentUpon>Verify_Current_DC_Units_And_Worst_Case_Indicator_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d2fa8fef-5c5b-44a9-b15e-ea03dd3714ff</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Current_DC_Units_And_Worst_Case_Indicator_FC.UserCode.cs">
+      <BoundTo>21ca44c7-adc9-435c-8522-594c81ae475e</BoundTo>
+      <DependentUpon>Verify_Current_DC_Units_And_Worst_Case_Indicator_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6c36e5a9-bca2-49dc-a42d-a5a20784b864</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.cs">
       <BoundTo>db24c100-87f4-4d4e-93cf-ac0104c47b85</BoundTo>
       <DependentUpon>Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec</DependentUpon>
@@ -1553,6 +1565,18 @@
       <DependentUpon>Verify_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>7bde51de-1d19-4f55-aa7f-06e8b6d46546</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_DC_Units_Displayed_For_Non_Split_Loops_FC.cs">
+      <BoundTo>13b33609-ae71-4ce6-bb6e-c55e41109aa2</BoundTo>
+      <DependentUpon>Verify_DC_Units_Displayed_For_Non_Split_Loops_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>326917c7-3acd-4c26-8749-784fad14f997</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_DC_Units_Displayed_For_Non_Split_Loops_FC.UserCode.cs">
+      <BoundTo>13b33609-ae71-4ce6-bb6e-c55e41109aa2</BoundTo>
+      <DependentUpon>Verify_DC_Units_Displayed_For_Non_Split_Loops_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>703dc9d2-4a01-4673-bf60-cf6a3af3a405</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_DC_Units_Indicators.cs">
       <BoundTo>3c4783b7-578d-46f7-ad5f-677ae318ba8d</BoundTo>
@@ -3006,6 +3030,18 @@
       <UserCode>true</UserCode>
       <id>187f788a-6e53-4461-af11-d6776e279b6f</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_For_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.cs">
+      <BoundTo>aa71dec7-11a0-446e-857e-116f557d5fad</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_For_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ae5af7f2-a50f-4d94-a026-712307e45b10</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_For_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.UserCode.cs">
+      <BoundTo>aa71dec7-11a0-446e-857e-116f557d5fad</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_For_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>29de780d-03e8-4525-a660-e62b49bd0fec</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.cs">
       <BoundTo>99f09b4e-16fd-4c8a-91e1-2a09eeb4a2ce</BoundTo>
       <DependentUpon>Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec</DependentUpon>
@@ -3077,6 +3113,18 @@
       <DependentUpon>Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>746d0175-e323-4fc2-88b2-949c8d9a784d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.cs">
+      <BoundTo>edf167dd-bcd2-4ac0-8598-7edfe57049f9</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8f757ee1-c3a3-42f0-a8c8-657724dc75bd</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.UserCode.cs">
+      <BoundTo>edf167dd-bcd2-4ac0-8598-7edfe57049f9</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>342845f7-b572-4390-8196-5efb63cc8d58</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC.cs">
       <BoundTo>4a69362c-b6b1-47f6-ba6b-8d7b7a8e59a6</BoundTo>
@@ -3282,6 +3330,18 @@
       <UserCode>true</UserCode>
       <id>a47a95fe-8766-41c5-9736-a28a5f67c324</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.cs">
+      <BoundTo>26ae55be-172a-4fab-866e-8e2c8aef3040</BoundTo>
+      <DependentUpon>Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6b7ac72d-4562-42d4-a15f-b27d7e22f841</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.UserCode.cs">
+      <BoundTo>26ae55be-172a-4fab-866e-8e2c8aef3040</BoundTo>
+      <DependentUpon>Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f841486d-7cdf-4c5e-a12b-615be4d86b68</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.cs">
       <BoundTo>f9c93b2c-03cc-4dd2-83b8-7c0d941f54ef</BoundTo>
       <DependentUpon>Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec</DependentUpon>
@@ -3293,6 +3353,18 @@
       <DependentUpon>Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>102094e1-cc94-40cf-8439-8578434a087d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.cs">
+      <BoundTo>c81f6035-9c30-448d-878d-3c58b0839493</BoundTo>
+      <DependentUpon>Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1446213b-c3fd-4f48-8ee2-6c292468d189</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.UserCode.cs">
+      <BoundTo>c81f6035-9c30-448d-878d-3c58b0839493</BoundTo>
+      <DependentUpon>Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bec1c3ff-6ca3-410c-8704-7864b4371581</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.cs">
       <BoundTo>f8707724-938c-48d2-a2ec-3d7d777b68f5</BoundTo>
@@ -4286,9 +4358,14 @@
       <recordtableid>8e8b55a1-3f6c-47cd-9e5a-c941d2f00530</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_CurrentDC_Units_Calculation_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>4a61a323-e791-4b56-acb1-eed657dae12f</id>
       <recordtableid>bb3b7cb4-7a4d-41b6-8671-549f409bc922</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Current_DC_Units_And_Worst_Case_Indicator_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>21ca44c7-adc9-435c-8522-594c81ae475e</id>
+      <recordtableid>c04f6e17-c585-49b0-ac3c-427cd9432808</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4314,6 +4391,11 @@
       <id>b7013f2c-2ac0-4bbe-b6eb-f6f341ee5536</id>
       <recordtableid>72a71f0a-0c60-4adc-9939-7a35ae70d424</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_DC_Units_Displayed_For_Non_Split_Loops_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>13b33609-ae71-4ce6-bb6e-c55e41109aa2</id>
+      <recordtableid>e7f4dc08-0c70-4798-9fed-799d38e6262d</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_DC_Units_Indicators.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4920,6 +5002,11 @@
       <recordtableid>65109265-f544-4955-9fa9-c4c3ff319001</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_For_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>aa71dec7-11a0-446e-857e-116f557d5fad</id>
+      <recordtableid>53d3d5cf-70f2-450b-94e0-e3e14d69ab8f</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec">
       <id>99f09b4e-16fd-4c8a-91e1-2a09eeb4a2ce</id>
       <recordtableid>b04bd053-b3ae-4ec2-aa73-e2a7a86b9ebe</recordtableid>
@@ -4946,9 +5033,14 @@
       <recordtableid>4b9bb920-ae67-4a89-bb9d-f1878c2aed67</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>1ffb1ceb-f509-4f8f-a178-a82ec14e53a6</id>
       <recordtableid>2424d6d2-0209-408b-ad8d-87ef425aaa3b</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.rxrec">
+      <id>edf167dd-bcd2-4ac0-8598-7edfe57049f9</id>
+      <recordtableid>a6a70508-bfa5-49c7-8d19-a69e09a61eda</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC.rxrec">
       <id>4a69362c-b6b1-47f6-ba6b-8d7b7a8e59a6</id>
@@ -5035,10 +5127,20 @@
       <recordtableid>4ec672da-99ea-4948-8228-a93a772b2f47</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.rxrec">
+      <id>26ae55be-172a-4fab-866e-8e2c8aef3040</id>
+      <recordtableid>438473fb-5235-49a8-84d9-d4c43abfbf8a</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f9c93b2c-03cc-4dd2-83b8-7c0d941f54ef</id>
       <recordtableid>32074e17-16ec-4b54-87c0-29ce24977e24</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>c81f6035-9c30-448d-878d-3c58b0839493</id>
+      <recordtableid>8201c29b-2d49-4b3c-b375-34e6842b4241</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
