@@ -1869,8 +1869,8 @@ namespace TestProject
                 _maxbatterystandbyInfo = new RepoItemInfo(this, "MaxBatteryStandby", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[3]", 30000, null, "01a2d87b-f4ba-4482-ad37-f4b1843eeca7");
                 _maxalarmloadInfo = new RepoItemInfo(this, "MaxAlarmLoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[3]", 30000, null, "ccb5f7b9-5694-4c6f-b684-c89fe07795b2");
                 _galleryInfo = new RepoItemInfo(this, "Gallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[11]/container[@automationid='PART_Caption']/text[@caption=$sGalleryName]", 30000, null, "b35aad23-6e80-428d-b6c9-a593870fbe9f");
-                _devicesensitivityInfo = new RepoItemInfo(this, "DeviceSensitivity", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']", 30000, null, "e78b1807-bb5b-430d-a250-35031012d3a0");
-                _devicemodeInfo = new RepoItemInfo(this, "DeviceMode", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']", 30000, null, "213f33e1-fdb3-4f58-93ab-20bf473c924d");
+                _devicesensitivityInfo = new RepoItemInfo(this, "DeviceSensitivity", "progressbar/picture/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']", 30000, null, "e78b1807-bb5b-430d-a250-35031012d3a0");
+                _devicemodeInfo = new RepoItemInfo(this, "DeviceMode", "progressbar/picture/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']", 30000, null, "213f33e1-fdb3-4f58-93ab-20bf473c924d");
                 _cell_labelnameInfo = new RepoItemInfo(this, "cell_LabelName", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/?/?/cell[@isheader='False']", 30000, null, "5b8b26f9-0dd9-4092-b5a0-d7910ab2cbb3");
                 _cell_baseofdevice_reopenInfo = new RepoItemInfo(this, "Cell_BaseofDevice_Reopen", "progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='14']/cell[@isheader='False']", 30000, null, "1748332e-094f-447b-a573-25f521376e45");
                 _sometext_reopenInfo = new RepoItemInfo(this, "SomeText_Reopen", "progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='14']/?/?/text", 30000, null, "5fefcb42-4a92-4739-aa13-430a1bf8cfac");
@@ -6163,6 +6163,7 @@ namespace TestProject
             RepoItemInfo _othernodesgalleryInfo;
             RepoItemInfo _dcunits_afterreopenInfo;
             RepoItemInfo _dcunitsworstcase_afterreopenInfo;
+            RepoItemInfo _btn_saveInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6317,8 +6318,9 @@ namespace TestProject
                 _copybuttonInfo = new RepoItemInfo(this, "CopyButton", "?/?/container[@automationid='PART_AutoHideControl']/list/list[2]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Copy']", 30000, null, "60100a5a-fabb-4057-82b0-f377a9c49cfc");
                 _panelsgalleryInfo = new RepoItemInfo(this, "PanelsGallery", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]//container[@automationid='PART_Caption']/text[@caption='Panels']", 30000, null, "4b6a4e95-f830-412c-8b01-70e709cab993");
                 _othernodesgalleryInfo = new RepoItemInfo(this, "OtherNodesGallery", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]//container[@automationid='PART_Caption']/text[@caption='Other Nodes']", 30000, null, "fa94263b-6afd-4cd2-94ee-6bfd7906fced");
-                _dcunits_afterreopenInfo = new RepoItemInfo(this, "DCUnits_AfterReopen", "progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='2']/cell[@text='[1]']/?/text[1]", 30000, null, "dc6f0fa9-5986-49ea-a6cc-dd83a1850ed9");
-                _dcunitsworstcase_afterreopenInfo = new RepoItemInfo(this, "DCUnitsWorstCase_AfterReopen", "progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='3']/cell[@text='[2]']/?/text[1]", 30000, null, "8a1232f5-78e2-4cb9-a37e-cc092cabed55");
+                _dcunits_afterreopenInfo = new RepoItemInfo(this, "DCUnits_AfterReopen", "progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='2']/cell[@text='[1]']/?/text[1]", 60000, null, "dc6f0fa9-5986-49ea-a6cc-dd83a1850ed9");
+                _dcunitsworstcase_afterreopenInfo = new RepoItemInfo(this, "DCUnitsWorstCase_AfterReopen", "progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='3']/cell[@text='[2]']/?/text[1]", 60000, null, "8a1232f5-78e2-4cb9-a37e-cc092cabed55");
+                _btn_saveInfo = new RepoItemInfo(this, "btn_Save", "progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/list[2]//button[@text='Save']", 30000, null, "699d7ed5-3738-422d-852b-3fa489ebcb75");
             }
 
             /// <summary>
@@ -10023,6 +10025,30 @@ namespace TestProject
                 get
                 {
                     return _dcunitsworstcase_afterreopenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btn_Save item.
+            /// </summary>
+            [RepositoryItem("699d7ed5-3738-422d-852b-3fa489ebcb75")]
+            public virtual Ranorex.Button btn_Save
+            {
+                get
+                {
+                    return _btn_saveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btn_Save item info.
+            /// </summary>
+            [RepositoryItemInfo("699d7ed5-3738-422d-852b-3fa489ebcb75")]
+            public virtual RepoItemInfo btn_SaveInfo
+            {
+                get
+                {
+                    return _btn_saveInfo;
                 }
             }
         }

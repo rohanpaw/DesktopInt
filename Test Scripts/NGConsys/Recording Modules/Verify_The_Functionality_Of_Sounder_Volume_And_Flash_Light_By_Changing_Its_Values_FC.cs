@@ -136,7 +136,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("430LPASB - 5");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceSensitivity("High (103dB)");
+            Libraries.Devices_Functions.VerifyDeviceSensitivity("High (90dB)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.ChangeDeviceSensitivity("Mid Range Low (70dB)");

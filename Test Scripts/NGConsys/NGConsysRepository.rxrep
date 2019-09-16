@@ -1112,14 +1112,14 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			name="DeviceSensitivity"
 			refimgid="062864ef-2400-496e-975d-375526a1ff8b"
 			searchtimeout="30000ms">
-				/form[@win32ownerwindowlevel='0']/progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']
+				/form[@win32ownerwindowlevel='0']/progressbar/picture/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']
 			</item>
 			<item
 			capname="text"
 			id="213f33e1-fdb3-4f58-93ab-20bf473c924d"
 			name="DeviceMode"
 			searchtimeout="30000ms">
-				/form[@win32ownerwindowlevel='0']/progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']
+				/form[@win32ownerwindowlevel='0']/progressbar/picture/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']
 			</item>
 			<item
 			capname="cell"
@@ -13477,15 +13477,22 @@ AAAAAElFTkSuQmCC
 			capname="text"
 			id="dc6f0fa9-5986-49ea-a6cc-dd83a1850ed9"
 			name="DCUnits_AfterReopen"
-			searchtimeout="30000ms">
+			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='2']/cell[@text='[1]']/?/text[1]
 			</item>
 			<item
 			capname="text"
 			id="8a1232f5-78e2-4cb9-a37e-cc092cabed55"
 			name="DCUnitsWorstCase_AfterReopen"
-			searchtimeout="30000ms">
+			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='3']/cell[@text='[2]']/?/text[1]
+			</item>
+			<item
+			capname="button"
+			id="699d7ed5-3738-422d-852b-3fa489ebcb75"
+			name="btn_Save"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/list[2]//button[@text='Save']
 			</item>
 			<basepath>
 				/form[@automationid='me']

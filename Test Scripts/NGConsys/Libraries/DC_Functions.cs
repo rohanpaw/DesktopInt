@@ -953,6 +953,7 @@ namespace TestProject.Libraries
 				
 			}
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[10,3]).Value.ToString();
+			sBase = ((Range)Excel_Utilities.ExcelRange.Cells[10,9]).Value.ToString();
 			sRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[10,10]).Value.ToString();
 			Devices_Functions.AssignDeviceBase(sLabelName,sBase,sRowIndex);
 			

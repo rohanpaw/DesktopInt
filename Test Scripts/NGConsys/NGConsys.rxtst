@@ -8690,7 +8690,7 @@ rxversion="8.3">
 			id="81c82b82-fecf-4d89-8ad1-13d1b0f34b63"
 			name="Verify_Current(DC_Units)_Calculation_FC">
 				<description>
-					<![CDATA[<p>NGC-1826/TC-63769</p>]]>
+					<![CDATA[<p>NGC-1826/TC-63769 failed ...need to check</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -21169,71 +21169,27 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
-					id="23dae6d1-eca4-4c9e-9a44-ef6a28bdfa47"
-					name="Verify_Trip_Current_Used_For_DC_Calculation_FC">
+					id="9606b844-34eb-4256-81db-1e127a501947"
+					name="Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_'Basic'_Section_FC">
 						<testmodule
-						id="803e5408-fc6d-4678-b477-1cfd7a9f0001"
+						id="0d027808-d8be-469b-9773-c9fc8a36e2e9"
 						name="Application_Open">
 						</testmodule>
 						<testmodule
-						id="412b2dba-757c-4f0d-a187-914fdeeb71e7"
+						id="fe9d5a21-ba06-4741-86a1-7b9afe1659ab"
 						name="Create_Project_FC">
 						</testmodule>
 						<testmodule
-						id="d59ba8f7-d4bf-40f8-ab60-2a37e4a72b56"
-						name="Verif_Trip_Current_For_DC_Calculation_FC">
+						id="16f66f93-f2c8-4f26-9b93-751581302cd4"
+						name="Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC">
 						</testmodule>
 						<testmodule
-						id="13a25ba9-f9bc-4d20-803f-5f381b2f1987"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="9d6386a6-b467-495d-a85c-8b930afe704b"
-					name="Verify_Trip_Current_Calculation_For_FIM_Loop_FC">
-						<testmodule
-						id="125a77d3-0d47-4c06-9cf5-ea18be0a0cb2"
+						id="85e2e3ca-69e7-4271-8440-bb49d4e80a61"
 						name="Application_Open">
 						</testmodule>
 						<testmodule
-						id="396a9773-d3cf-4bf1-a045-2b75407ccc33"
-						name="Create_Project_FC">
-						</testmodule>
-						<testmodule
-						id="4862c063-3063-4f89-95e9-792daa203008"
-						name="Verify_Trip_Current_Calculation_For_FIM_Loops_FC">
-						</testmodule>
-						<testmodule
-						id="d14d77f3-eed1-4a37-ad60-01a2c3507428"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="b94055e5-1821-45bd-9e8d-c2eff7dce615"
-						name="Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="0efb3a92-1c04-4856-87a0-513537af1f19"
-					name="Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC">
-						<testmodule
-						id="df7301a6-6180-4ac8-a7b9-c2c362a37325"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="7b58cf85-ab2b-49be-ada1-2c8866669f9a"
-						name="Create_Project_FC">
-						</testmodule>
-						<testmodule
-						id="a5c27710-44eb-48df-9bac-94f092190235"
-						name="Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC">
-						</testmodule>
-						<testmodule
-						id="2c14c2d5-bb43-48b9-92a1-9381e3c9b1ea"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="e7cf88b6-21e6-4a8d-bccc-a63baf72b5b3"
-						name="Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC">
+						id="38609da4-52f6-4df0-9a9e-60b365ae1c71"
+						name="Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -21325,27 +21281,71 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
-					id="9606b844-34eb-4256-81db-1e127a501947"
-					name="Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_'Basic'_Section_FC">
+					id="23dae6d1-eca4-4c9e-9a44-ef6a28bdfa47"
+					name="Verify_Trip_Current_Used_For_DC_Calculation_FC">
 						<testmodule
-						id="0d027808-d8be-469b-9773-c9fc8a36e2e9"
+						id="803e5408-fc6d-4678-b477-1cfd7a9f0001"
 						name="Application_Open">
 						</testmodule>
 						<testmodule
-						id="fe9d5a21-ba06-4741-86a1-7b9afe1659ab"
+						id="412b2dba-757c-4f0d-a187-914fdeeb71e7"
 						name="Create_Project_FC">
 						</testmodule>
 						<testmodule
-						id="16f66f93-f2c8-4f26-9b93-751581302cd4"
-						name="Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC">
+						id="d59ba8f7-d4bf-40f8-ab60-2a37e4a72b56"
+						name="Verif_Trip_Current_For_DC_Calculation_FC">
 						</testmodule>
 						<testmodule
-						id="85e2e3ca-69e7-4271-8440-bb49d4e80a61"
+						id="13a25ba9-f9bc-4d20-803f-5f381b2f1987"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="0efb3a92-1c04-4856-87a0-513537af1f19"
+					name="Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC">
+						<testmodule
+						id="df7301a6-6180-4ac8-a7b9-c2c362a37325"
 						name="Application_Open">
 						</testmodule>
 						<testmodule
-						id="38609da4-52f6-4df0-9a9e-60b365ae1c71"
-						name="Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC">
+						id="7b58cf85-ab2b-49be-ada1-2c8866669f9a"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="a5c27710-44eb-48df-9bac-94f092190235"
+						name="Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC">
+						</testmodule>
+						<testmodule
+						id="2c14c2d5-bb43-48b9-92a1-9381e3c9b1ea"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="e7cf88b6-21e6-4a8d-bccc-a63baf72b5b3"
+						name="Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="9d6386a6-b467-495d-a85c-8b930afe704b"
+					name="Verify_Trip_Current_Calculation_For_FIM_Loop_FC">
+						<testmodule
+						id="125a77d3-0d47-4c06-9cf5-ea18be0a0cb2"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="396a9773-d3cf-4bf1-a045-2b75407ccc33"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="4862c063-3063-4f89-95e9-792daa203008"
+						name="Verify_Trip_Current_Calculation_For_FIM_Loops_FC">
+						</testmodule>
+						<testmodule
+						id="d14d77f3-eed1-4a37-ad60-01a2c3507428"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="b94055e5-1821-45bd-9e8d-c2eff7dce615"
+						name="Verify_Reopen_Project_Of_Trip_Current_Calculation_For_FIM_Loop_FC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -21576,28 +21576,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0efb3a92-1c04-4856-87a0-513537af1f19">
-			</testcontainer>
-			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="36b7ddba-8c37-4327-884b-087255c64529">
-			</testcontainer>
-			<testcontainer
-			id="442798fe-9147-4901-9059-da1a829fd6d1">
-			</testcontainer>
-			<testcontainer
-			id="81c82b82-fecf-4d89-8ad1-13d1b0f34b63">
-			</testcontainer>
-			<testcontainer
-			id="9606b844-34eb-4256-81db-1e127a501947">
-			</testcontainer>
-			<testcontainer
 			id="c6fea478-206c-499e-b417-b71a8cc84e09">
-			</testcontainer>
-			<testcontainer
-			id="d5e52e51-d6da-41a1-acd1-150dc20f5648">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
