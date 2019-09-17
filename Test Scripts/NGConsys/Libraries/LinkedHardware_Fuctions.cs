@@ -290,8 +290,8 @@ namespace TestProject.Libraries
 				repo.FormMe.ShoppingList.Click();
 				
 				//Verify in shopping list
-				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SKUNo,true);
-				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sParameter,true);
+				//Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SKUNo,true);
+				//Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sParameter,true);
 			}
 		}
 	}

@@ -499,7 +499,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						420CPI
+						420CP
 					</argvalue>
 				</argument>
 				<argument
@@ -1267,6 +1267,32 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="5afe7536-da04-42f3-b879-1f71c74c1b1b">
+				<argument
+				argname="TreeItemName"
+				id="1e5b6297-43df-4868-8a5e-74eb87b94faa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-B
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -1297,14 +1323,14 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						202
+						88
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMultiplePointWizard"
 		namespace="TestProject.Libraries"
@@ -1423,6 +1449,32 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="5afe7536-da04-42f3-b879-1f71c74c1b1b">
+				<argument
+				argname="TreeItemName"
+				id="1e5b6297-43df-4868-8a5e-74eb87b94faa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-B
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -1453,7 +1505,7 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						1
+						143
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1543,6 +1595,32 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="5afe7536-da04-42f3-b879-1f71c74c1b1b">
+				<argument
+				argname="TreeItemName"
+				id="1e5b6297-43df-4868-8a5e-74eb87b94faa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-B
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -1573,7 +1651,7 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						15
+						12
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1638,6 +1716,30 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="438ea839-f3e3-450e-b1c8-117a98ba96c2"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"

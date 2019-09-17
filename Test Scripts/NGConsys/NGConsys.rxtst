@@ -23,6 +23,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="002576db-48ca-4033-8414-7f3d859cf671"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="a614a5d0-90cb-4f9e-902e-857385228b81"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="0039cc0c-9f5f-447f-8a9e-43c23d62bdb2"
 			name="Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card">
@@ -338,6 +352,26 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="04cc8a2c-b6cb-42fd-9257-0eaf7d2796b9"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="04df4769-a4d4-46cb-96f1-674223684952"
 			name="Add_Panels"
@@ -1343,6 +1377,19 @@ rxversion="8.3">
 			ref="f63be1c8-2f64-41a4-a329-467aa23a3924"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="13350d38-fe1a-4fd2-b418-689d8794e7cb"
+			name="Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63814 (FC)</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="1359e51a-189d-4f00-89de-e891285f4779"
 			name="Application_Open"
@@ -1545,6 +1592,12 @@ rxversion="8.3">
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="1607a37b-fa15-4fa7-b55d-9a0b910439f6"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="166154e7-2bf1-4f3a-9411-27abf49f82f8"
@@ -2324,6 +2377,12 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="20eaaa90-8ac7-43f4-91de-00d847939640"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="2117e09e-3752-4998-ba26-bc80c22d1661"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -2663,6 +2722,26 @@ rxversion="8.3">
 			name="Verify_DC_Unit_For_Built_In_Isolator_Devices_With_Non_Integral_LED_On_FIM_Loop_Considering_Trip_Curr"
 			ref="8d96ec4c-823d-433c-b189-1446cab232e4"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="26a16acf-eeb0-4ffe-916c-8f54d567cc4e"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="26bb2109-624f-4954-900d-23be8c135f7d"
@@ -3193,6 +3272,25 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="2e5ec0f0-fd9f-41a4-b34c-de6bb638c6b0"
+			name="Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI"
+			ref="04702f08-4169-4800-aca6-c487e5891f8b"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="2e668885-e9b0-44ba-b0fb-4a92ede9c516"
+			name="Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63976 (FC)</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testmodule
 			id="2f0533f6-e89f-4803-9e51-bf08353af1fd"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -3458,6 +3556,26 @@ rxversion="8.3">
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3331384b-86cb-4d39-bef6-7313549ab907"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="335c144e-0e9b-4af2-8a74-3ab2e6dfa2d1"
@@ -4513,6 +4631,12 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="444e304f-908f-43c9-8019-4c8acd4d294b"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="44506360-f248-4ab5-ba62-8441689771a6"
 			name="Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC"
 			ref="7b775950-248e-4db7-ba7c-74d02ca8cad8"
@@ -4783,6 +4907,26 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="482e048d-bef0-4bf4-b9c2-f068c8688d33"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4840920d-3211-4560-a8a2-010f336074f5"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -4916,7 +5060,7 @@ rxversion="8.3">
 			id="4a1a38e5-42f5-4da0-8b75-39f40543a385"
 			name="Verify_AC_Units_Calculation_For_Non_Split_Loops_(FIM_loops)">
 				<description>
-					<![CDATA[<p>NGC-1826/TC-63354 (FC)</p>]]>
+					<![CDATA[<p>NGC-1826/TC-63354 (FC) Ranorex Exception App not responding</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -5612,6 +5756,26 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="525456af-55e7-45f4-b511-54da93c7e27b"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="5282429a-c909-4e16-b067-94b22325a475"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -6086,6 +6250,12 @@ rxversion="8.3">
 			id="58984747-5f45-4126-a461-1ffd11e1e78c"
 			name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values"
 			ref="32074e17-16ec-4b54-87c0-29ce24977e24"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="592b4d1b-369a-4b8d-8876-f87dfd4a5bbc"
+			name="Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC"
+			ref="662031fa-a3f5-42aa-9752-e52ac68fa817"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -6773,6 +6943,19 @@ rxversion="8.3">
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="62e5e792-2d5c-41ad-a257-b6450888d9ad"
+			name="Verify_Error_Warning_Indication_For_Isolator_Units">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63807 (FC)</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="62601efe-04ab-48d3-bcc1-8c8a758dc39f"
 			name="Verify_DC_Units_Displayed_For_Non_Split_Loops_FC"
@@ -7056,6 +7239,20 @@ rxversion="8.3">
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="679e7d7c-d4fa-4788-b155-5805d99e42eb"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="2e668885-e9b0-44ba-b0fb-4a92ede9c516"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -7493,6 +7690,19 @@ rxversion="8.3">
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="6f4239a9-517b-4b49-955a-5034a4b500b6"
+			name="Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-64002 (FC)</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="6f52d318-20ce-4043-9986-3b624a77f690"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_PLX_Loop"
@@ -7857,6 +8067,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="74c5457c-f2e9-49cc-9533-16032616bc62"
+			name="Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices_FC"
+			ref="5dfa8b39-1149-4806-aa49-30f39f6765a2"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="74adec52-1050-4ecd-9895-140d9ee7ae0b"
 			name="Application_Open"
@@ -8361,6 +8577,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="7cbabaf5-c393-47ae-a037-e3093085f20a"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="7cf202dc-5e94-4134-afae-388722e3d26a"
 			name="Create_Project"
@@ -9526,6 +9748,20 @@ MxDesigner]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="8ae08771-ccf2-424d-b84c-ece58d26fd0b"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="6f4239a9-517b-4b49-955a-5034a4b500b6"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="8b24f119-1ca6-4cfc-a37a-84506abc17d4"
 			name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template">
@@ -9884,6 +10120,20 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="90419fa7-c824-4d5e-b0aa-23a1418a1043"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="e5766baf-27ca-4a7e-839d-042f19842b82"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="90776d39-8e4f-4ed1-a7b2-c7688e766137"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -9976,6 +10226,20 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="9226d209-b822-4c6f-9ef4-112d2713f00f"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="13350d38-fe1a-4fd2-b418-689d8794e7cb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="9246f057-ab80-4e9f-ac33-18176c738c4b"
 			name="Application_Open"
@@ -10244,6 +10508,12 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="96c5a683-782b-41f7-8fdd-69e1ff31b8fd"
+			name="Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC"
+			ref="9542f4a4-2466-436d-98a9-9d9ce9009bac"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="971a2d74-56b8-45b4-b7c1-9837ec982ab4"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -10328,6 +10598,38 @@ MxDesigner]]>
 			name="ReportToPDFModule"
 			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
 			type="UserCode">
+				<databinding>
+					<var
+					dataname="PdfName"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
+					variablename="PdfName">
+					</var>
+					<var
+					dataname="PdfDirectoryPath"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="536f8a69-f246-4f2b-ae9e-1f62babb2ba9"
+					variablename="PdfDirectoryPath">
+					</var>
+					<var
+					dataname="Xml"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
+					variablename="Xml">
+					</var>
+					<var
+					dataname="Details"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
+					variablename="Details">
+					</var>
+					<var
+					dataname="DeleteRanorexReport"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
+					variablename="DeleteRanorexReport">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			enabled="False"
@@ -10445,6 +10747,20 @@ MxDesigner]]>
 			name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop_FIM"
 			ref="a14895cd-ab9f-4425-82e4-f2824325eadc"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="99a986e0-137b-4ca5-af14-9eeb4b23b568"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dba84f75-87a0-4a5d-8292-e5b2c2014095"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="99f2ef92-02c4-4fca-9563-77ae5bce5696"
@@ -10838,6 +11154,12 @@ div.WordSection1
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="9fef0a2d-da4d-41a4-ab65-5d74213ac406"
+			name="Verify_Error_Warning_Indication_For_Isolator_Units"
+			ref="c4df891b-279a-4098-9434-89cacda6aceb"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="a010fc11-154f-47aa-8e6e-57426d0157b1"
 			name="SaveConfiguration"
 			ref="62fe3f99-3017-4bbe-bcc2-58667da321fa"
@@ -11112,6 +11434,12 @@ div.WordSection1
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="a563d6ff-b87c-4fc8-8464-d0864b3a6f7b"
+			name="Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC"
+			ref="9544df86-5f59-4978-8aac-1422cd7cfdf5"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="a5be14c5-b3de-45c6-9e0e-9799e45057d4"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -11142,6 +11470,19 @@ div.WordSection1
 			name="Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM">
 				<description>
 					<![CDATA[<p>NGC-1282/TC-53633&nbsp; Region is not tested as field is not available in properties section</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="a614a5d0-90cb-4f9e-902e-857385228b81"
+			name="Verify_Isolator_Units_Calculation_For_Devices_Having_Isolator_Property">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-64036 (FC)</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -11189,6 +11530,20 @@ div.WordSection1
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="a6b58d26-f8a3-4158-a7ec-3fbee06fac93"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="d412d59a-22b0-48f6-b4a0-55eb92676398"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a6e4b703-3ae3-476d-9922-6b45915091e2"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -11221,6 +11576,12 @@ div.WordSection1
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="a7a9dbe5-6503-4b08-a97a-f7ece060b7a3"
+			name="Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property"
+			ref="60b8c625-7bcb-478e-9783-4cd588a93e47"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="a7b3d6aa-9868-417c-8996-438d9fe21820"
 			name="Verify_40V_Load_On_Changing_CPU_Of_Panel"
@@ -11678,6 +12039,19 @@ project]]>
 			ref="f438bcb8-c6c3-4ea3-8fcf-a1c0f1277e62"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="b214f90d-5f51-44ad-b102-c7a24816eb5e"
+			name="Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63981 (FC)</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="b21fb447-652c-4477-84aa-afa8745df38f"
 			name="Verify_Voltage_Drop_Calculation_For_PFI"
@@ -11811,6 +12185,12 @@ project]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="b51a71df-8fef-4e2c-b942-52d4fa182e77"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="b5249bef-3359-41ba-9e62-6609ae688cc2"
@@ -12322,6 +12702,26 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="518a26c1-d79f-4c8a-88bf-3301da933f85"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="bd512e7b-9496-40b8-a38c-e5c1aabc3951"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
 					</var>
 				</databinding>
 			</testmodule>
@@ -13075,6 +13475,26 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="ca893de4-b6cc-4ff2-a51e-9063761e1b7e"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="62e5e792-2d5c-41ad-a257-b6450888d9ad"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="cace904b-94ba-42bb-b143-aaff6f4acf42"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="cae6e316-3dac-4a78-9f91-9daef1e87f58"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -13160,6 +13580,26 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="cc2da7a8-bb1b-46e2-87ae-4a4b52675a50"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="cc479489-bf58-4f57-a031-e15162d7b25c"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -13235,6 +13675,26 @@ persisted in panel properties&nbsp;]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="cd2c1a14-a96d-496c-8036-b297ead74643"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="cd789e01-d58d-42ba-9d17-c6d83b2bbff3"
@@ -13781,6 +14241,19 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="d412d59a-22b0-48f6-b4a0-55eb92676398"
+			name="Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-64005 (FC)</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="d4d99461-33a5-4553-a83d-8f153dd3e48d"
 			name="Create_Project"
@@ -14013,6 +14486,26 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="d80fc7e0-9349-42bf-b8cd-8e10c8a8ea73"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="d84b912a-c07c-4109-9cb4-789ebfd8d98a"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -14078,6 +14571,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="d8b098dd-855f-45ee-91eb-50089bd398b2"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed"
@@ -14229,6 +14728,19 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="dba84f75-87a0-4a5d-8292-e5b2c2014095"
+			name="Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63812 (FC)</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testcase
 			id="dbd6d028-c646-4cba-86a1-4e69da22a4df"
 			name="Verify_If_Custom_Gallery_Can_Be_Updated_For_LPS800_Sounders">
@@ -14671,6 +15183,12 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="e3733c3d-3006-4c83-914c-4c60f0ec1722"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e3edcbf8-09f1-480d-8f43-5fb27d159d7b"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -14764,6 +15282,19 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically">
 				<description>
 					<![CDATA[<p>NGC-60/TC-55131,55132 &amp; 55136</p><p><br></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="e5766baf-27ca-4a7e-839d-042f19842b82"
+			name="Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">64095 (FC)</font></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -14928,6 +15459,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="e812bbeb-d579-48ca-9cd9-772389066f1d"
+			name="Verify_Isolator_Units_Calculation_For_Devices_Having_Isolator_Property"
+			ref="55ad203b-6630-4ebe-83c7-36c794f1e740"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="e75f29ab-4465-4ed5-94d3-f4edfe8ce3e0"
 			name="Close_Application"
@@ -15788,6 +16325,20 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="f59b08e1-fd01-4f22-8af2-fdb894e0123a"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="b214f90d-5f51-44ad-b102-c7a24816eb5e"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="f5decabf-ef15-412e-b678-e3ef3f22abdc"
 			name="Verify_Devices_Order_In_Dropped_Gallery"
 			ref="7a8b3990-0e5a-4fa0-a297-9821e1d09343"
@@ -16045,6 +16596,12 @@ persisted in panel properties&nbsp;]]>
 			id="fb6dd65d-eb26-4a67-8b33-22988e7d637b"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fb8515ff-194e-43c5-b4d6-4676ab7573dc"
+			name="Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC"
+			ref="92213869-7c7a-45fc-b90e-f226fd0f903b"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -21428,6 +21985,182 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="62e5e792-2d5c-41ad-a257-b6450888d9ad"
+					name="Verify_Error_Warning_Indication_For_Isolator_Units">
+						<testmodule
+						id="cc2da7a8-bb1b-46e2-87ae-4a4b52675a50"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="ca893de4-b6cc-4ff2-a51e-9063761e1b7e"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="9fef0a2d-da4d-41a4-ab65-5d74213ac406"
+						name="Verify_Error_Warning_Indication_For_Isolator_Units">
+						</testmodule>
+						<testmodule
+						id="d8b098dd-855f-45ee-91eb-50089bd398b2"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="dba84f75-87a0-4a5d-8292-e5b2c2014095"
+					name="Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC">
+						<testmodule
+						id="cd2c1a14-a96d-496c-8036-b297ead74643"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="99a986e0-137b-4ca5-af14-9eeb4b23b568"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="fb8515ff-194e-43c5-b4d6-4676ab7573dc"
+						name="Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC">
+						</testmodule>
+						<testmodule
+						id="cace904b-94ba-42bb-b143-aaff6f4acf42"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="13350d38-fe1a-4fd2-b418-689d8794e7cb"
+					name="Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI">
+						<testmodule
+						id="04cc8a2c-b6cb-42fd-9257-0eaf7d2796b9"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="9226d209-b822-4c6f-9ef4-112d2713f00f"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="2e5ec0f0-fd9f-41a4-b34c-de6bb638c6b0"
+						name="Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI">
+						</testmodule>
+						<testmodule
+						id="e3733c3d-3006-4c83-914c-4c60f0ec1722"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="2e668885-e9b0-44ba-b0fb-4a92ede9c516"
+					name="Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices_FC">
+						<testmodule
+						id="26a16acf-eeb0-4ffe-916c-8f54d567cc4e"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="679e7d7c-d4fa-4788-b155-5805d99e42eb"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="74c5457c-f2e9-49cc-9533-16032616bc62"
+						name="Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices_FC">
+						</testmodule>
+						<testmodule
+						id="b51a71df-8fef-4e2c-b942-52d4fa182e77"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="6f4239a9-517b-4b49-955a-5034a4b500b6"
+					name="Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC">
+						<testmodule
+						id="3331384b-86cb-4d39-bef6-7313549ab907"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="8ae08771-ccf2-424d-b84c-ece58d26fd0b"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="a563d6ff-b87c-4fc8-8464-d0864b3a6f7b"
+						name="Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC">
+						</testmodule>
+						<testmodule
+						id="444e304f-908f-43c9-8019-4c8acd4d294b"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="d412d59a-22b0-48f6-b4a0-55eb92676398"
+					name="Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC">
+						<testmodule
+						id="bd512e7b-9496-40b8-a38c-e5c1aabc3951"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="a6b58d26-f8a3-4158-a7ec-3fbee06fac93"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="592b4d1b-369a-4b8d-8876-f87dfd4a5bbc"
+						name="Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC">
+						</testmodule>
+						<testmodule
+						id="20eaaa90-8ac7-43f4-91de-00d847939640"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="a614a5d0-90cb-4f9e-902e-857385228b81"
+					name="Verify_Isolator_Units_Calculation_For_Devices_Having_Isolator_Property">
+						<testmodule
+						id="525456af-55e7-45f4-b511-54da93c7e27b"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="002576db-48ca-4033-8414-7f3d859cf671"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="e812bbeb-d579-48ca-9cd9-772389066f1d"
+						name="Verify_Isolator_Units_Calculation_For_Devices_Having_Isolator_Property">
+						</testmodule>
+						<testmodule
+						id="1607a37b-fa15-4fa7-b55d-9a0b910439f6"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="b214f90d-5f51-44ad-b102-c7a24816eb5e"
+					name="Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC">
+						<testmodule
+						id="d80fc7e0-9349-42bf-b8cd-8e10c8a8ea73"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="f59b08e1-fd01-4f22-8af2-fdb894e0123a"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="96c5a683-782b-41f7-8fdd-69e1ff31b8fd"
+						name="Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC">
+						</testmodule>
+						<testmodule
+						id="7cbabaf5-c393-47ae-a037-e3093085f20a"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="e5766baf-27ca-4a7e-839d-042f19842b82"
+					name="Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property">
+						<testmodule
+						id="482e048d-bef0-4bf4-b9c2-f068c8688d33"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="90419fa7-c824-4d5e-b0aa-23a1418a1043"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="a7a9dbe5-6503-4b08-a97a-f7ece060b7a3"
+						name="Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="d5e52e51-d6da-41a1-acd1-150dc20f5648"
 					name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
 						<testmodule
@@ -21682,6 +22415,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="2e668885-e9b0-44ba-b0fb-4a92ede9c516">
 			id="34abeb3f-69b9-420f-9c5b-a3b1852b887d">
 			</testcontainer>
 		</testconfiguration>

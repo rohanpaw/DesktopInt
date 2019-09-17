@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="d2ca2421-11fa-4801-8b8c-7de2f1b1f92f"
+id="9544df86-5f59-4978-8aac-1422cd7cfdf5"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_AC_Units_Calculation_For_Base_FC
+		Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_AC_Units_Calculation_For_Base_FC"
+	classname="Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -153,10 +153,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="AC_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyMaxACUnitsValue"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -165,24 +165,34 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="6ca77525-4fa5-433e-8c52-d7bbd2f445dd">
+			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
 				<argument
-				argname="expectedMaxACUnits"
-				id="48796d6f-8223-498b-b680-68d23f72b066">
+				argname="sDeviceName"
+				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						250
+						400CH
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Detectors
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -191,24 +201,34 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="5afe7536-da04-42f3-b879-1f71c74c1b1b">
+			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
 				<argument
-				argname="TreeItemName"
-				id="1e5b6297-43df-4868-8a5e-74eb87b94faa">
+				argname="sDeviceName"
+				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
+						460H
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Call Points
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
+		methodname="AssignDeviceBase"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -217,15 +237,261 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="5afe7536-da04-42f3-b879-1f71c74c1b1b">
+			id="9d8f7adc-2b1e-4015-b23c-333151acdb47">
 				<argument
-				argname="TreeItemName"
-				id="1e5b6297-43df-4868-8a5e-74eb87b94faa">
+				argname="DeviceLabel"
+				id="d999e6c6-d70f-46db-867e-ec241f123fc9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop-A
+						460H - 2
+					</argvalue>
+				</argument>
+				<argument
+				argname="sBaseofDevice"
+				id="80241752-4483-4403-9782-cdd5e56d004b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4BI 4&quot; [517.050.043]
+					</argvalue>
+				</argument>
+				<argument
+				argname="sBasePropertyRowIndex"
+				id="12a9e1ed-1c26-4eea-a28a-ee6fbf871b5e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						13
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
+				<argument
+				argname="sDeviceName"
+				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						410RIM
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Ancillary
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
+				<argument
+				argname="sDeviceName"
+				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						445SR
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Detectors
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
+				<argument
+				argname="sDeviceName"
+				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						410SNM
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Ancillary
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
+				<argument
+				argname="sDeviceName"
+				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						460P
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Ancillary
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AssignDeviceBase"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="416f6873-f739-48f4-b38d-9e6c0850d80b">
+				<argument
+				argname="DeviceLabel"
+				id="37b23a13-b07f-4fe2-b452-6c66c8dae4bc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						460P - 6
+					</argvalue>
+				</argument>
+				<argument
+				argname="sBaseofDevice"
+				id="a02bf41d-fc01-4190-8d62-62acb6cf4f6b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4BI 4&quot; [517.050.043]
+					</argvalue>
+				</argument>
+				<argument
+				argname="sBasePropertyRowIndex"
+				id="478059a6-ce14-4eb0-b051-9acca0b25b66">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						13
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
+				<argument
+				argname="sDeviceName"
+				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						410CIM
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Ancillary
 					</argvalue>
 				</argument>
 			</arguments>
@@ -261,7 +527,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Detectors
+						Ancillary
 					</argvalue>
 				</argument>
 			</arguments>
@@ -279,20 +545,20 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="1ae32951-7a32-494d-92fb-42b40e77231d">
+			id="732d58a4-2a6b-4b30-8f9f-04d7a5e768e7">
 				<argument
 				argname="DeviceLabel"
-				id="3e40ab15-bea6-48b8-a4ea-5d8f1c99afc8">
+				id="32e551e2-c814-4624-a22a-a039d9b4a8e7">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400P - 1
+						400P - 8
 					</argvalue>
 				</argument>
 				<argument
 				argname="sBaseofDevice"
-				id="a0a2f35a-358e-4d6c-a894-e8689dabfeca">
+				id="c0b8baa5-7da0-4cac-a695-2f3d89ddfad8">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -302,7 +568,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="sBasePropertyRowIndex"
-				id="d556db73-80c6-488d-9de4-c50cbddb9262">
+				id="29b0acfe-073b-4ef2-9040-d56306b97130">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -316,7 +582,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
+		methodname="DragAndDropDevicesInPhysicalLayout"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -325,25 +591,25 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
+			id="1a4270a0-3392-4df8-9833-06797c14733a">
 				<argument
-				argname="sDeviceName"
-				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
+				argname="SourceDeviceIndex"
+				id="6c013826-458c-4742-b1dc-fb89b2636cc9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400PH
+						A:5
 					</argvalue>
 				</argument>
 				<argument
-				argname="sType"
-				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
+				argname="DestinationDeviceIndex"
+				id="8a3f1ddf-e22f-4015-af03-e65a33f94ca8">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Detectors
+						A:4
 					</argvalue>
 				</argument>
 			</arguments>
@@ -352,7 +618,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AssignDeviceBaseIfBlank"
+		methodname="DragAndDropDevicesInPhysicalLayout"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -361,44 +627,34 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="1ae32951-7a32-494d-92fb-42b40e77231d">
+			id="1a4270a0-3392-4df8-9833-06797c14733a">
 				<argument
-				argname="DeviceLabel"
-				id="3e40ab15-bea6-48b8-a4ea-5d8f1c99afc8">
+				argname="SourceDeviceIndex"
+				id="6c013826-458c-4742-b1dc-fb89b2636cc9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400PH - 2
+						A:6
 					</argvalue>
 				</argument>
 				<argument
-				argname="sBaseofDevice"
-				id="a0a2f35a-358e-4d6c-a894-e8689dabfeca">
+				argname="DestinationDeviceIndex"
+				id="8a3f1ddf-e22f-4015-af03-e65a33f94ca8">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						430SB [516.800.710] @ 75dB
-					</argvalue>
-				</argument>
-				<argument
-				argname="sBasePropertyRowIndex"
-				id="d556db73-80c6-488d-9de4-c50cbddb9262">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						13
+						A:4
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
+		methodname="DragAndDropDevicesInPhysicalLayout"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -407,34 +663,34 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
+			id="1a4270a0-3392-4df8-9833-06797c14733a">
 				<argument
-				argname="sDeviceName"
-				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
+				argname="SourceDeviceIndex"
+				id="6c013826-458c-4742-b1dc-fb89b2636cc9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400H
+						22
 					</argvalue>
 				</argument>
 				<argument
-				argname="sType"
-				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
+				argname="DestinationDeviceIndex"
+				id="8a3f1ddf-e22f-4015-af03-e65a33f94ca8">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Detectors
+						11
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
-		methodname="AssignDeviceBaseIfBlank"
+		methodname="DragAndDropDevicesInPhysicalLayout"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -443,299 +699,25 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="1ae32951-7a32-494d-92fb-42b40e77231d">
+			id="1a4270a0-3392-4df8-9833-06797c14733a">
 				<argument
-				argname="DeviceLabel"
-				id="3e40ab15-bea6-48b8-a4ea-5d8f1c99afc8">
+				argname="SourceDeviceIndex"
+				id="6c013826-458c-4742-b1dc-fb89b2636cc9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400H - 3
+						29
 					</argvalue>
 				</argument>
 				<argument
-				argname="sBaseofDevice"
-				id="a0a2f35a-358e-4d6c-a894-e8689dabfeca">
+				argname="DestinationDeviceIndex"
+				id="8a3f1ddf-e22f-4015-af03-e65a33f94ca8">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						440DSB [576.440.001] @ 90dB
-					</argvalue>
-				</argument>
-				<argument
-				argname="sBasePropertyRowIndex"
-				id="d556db73-80c6-488d-9de4-c50cbddb9262">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						13
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="AC_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyACUnitsValue"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="bb6db3b3-2e30-40b6-982f-3cd5b87951b2">
-				<argument
-				argname="expectedACUnits"
-				id="36adab82-31a7-4286-beff-567514b9c6c1">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						4.22
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="RemoveBase"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="bb6db3b3-2e30-40b6-982f-3cd5b87951b2">
-				<argument
-				argname="DeviceLabel"
-				id="36adab82-31a7-4286-beff-567514b9c6c1">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						400P - 1
-					</argvalue>
-				</argument>
-				<argument
-				argname="sBasePropertyRowIndex"
-				id="859773f9-b11a-42e7-a3c4-5913908db6a1">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						13
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="AC_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyACUnitsValue"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="bb6db3b3-2e30-40b6-982f-3cd5b87951b2">
-				<argument
-				argname="expectedACUnits"
-				id="36adab82-31a7-4286-beff-567514b9c6c1">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						4
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="SaveProject"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="163c93f0-693b-4979-86d2-6b551dda546f">
-				<argument
-				argname="sProjectName"
-				id="04882fb0-72d2-4a10-bf29-50ac0e90e609">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						63355
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ReopenProjectForDifferentProjectType"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="38aaf23f-8b57-46c2-9efa-0625dbde1f99">
-				<argument
-				argname="ProjectName"
-				id="40172355-5f70-49e6-8c7a-1bc1e2723cf0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						63355
-					</argvalue>
-				</argument>
-				<argument
-				argname="sProjectType"
-				id="ed7e9d50-4b67-4708-bd5e-ab35c0c1dc99">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Express Projects (*.pjl)
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="ExpanderName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Node
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="ExpanderName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						FIM
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Built-in Loop-A
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyValueOfParameterInPhysicalLayoutOnReopen"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="235c2c56-ba5b-4425-b401-629b5fef3906">
-				<argument
-				argname="Row"
-				id="317f8079-36a9-4448-980e-5b9e83869729">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="expectedValue"
-				id="aa89bff7-0acc-4db3-94b2-47968a2166a3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						4/250
+						15
 					</argvalue>
 				</argument>
 			</arguments>
@@ -748,7 +730,7 @@ rxversion="8.3">
 		loc="Center"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="438ea839-f3e3-450e-b1c8-117a98ba96c2"
+		searchpropertyid="b76fe534-4a04-4daa-a924-3d5a1091a8d2"
 		sx="0"
 		sy="0"
 		warnoutofbounds="False">
@@ -764,6 +746,258 @@ rxversion="8.3">
 				</path>
 			</info>
 		</mouseitem>
+		<userrecorditem
+		classname="IS_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="VerifyIsolatorUnits"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c6eb7ef0-3626-46f9-afc4-01d7f7ed1da4">
+				<argument
+				argname="expectedIsolatorUnits"
+				id="6c72fd3e-76eb-4dbe-aa2a-4ade2205f26f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3.5
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="5d7ef990-048d-49ee-bd6d-24abc1b5be57">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FIM
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyValueOfParameterInPhysicalLayout"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2feea707-fb88-45ae-a631-71525fecf80b">
+				<argument
+				argname="Row"
+				id="12f4d126-daef-4f9c-a494-05c05bc581e5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						7
+					</argvalue>
+				</argument>
+				<argument
+				argname="expectedValue"
+				id="98c7492c-0ad3-430b-a231-eb5177532bff">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyValueOfParameterInPhysicalLayout"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2feea707-fb88-45ae-a631-71525fecf80b">
+				<argument
+				argname="Row"
+				id="12f4d126-daef-4f9c-a494-05c05bc581e5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						8
+					</argvalue>
+				</argument>
+				<argument
+				argname="expectedValue"
+				id="98c7492c-0ad3-430b-a231-eb5177532bff">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						5
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyValueOfParameterInPhysicalLayout"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2feea707-fb88-45ae-a631-71525fecf80b">
+				<argument
+				argname="Row"
+				id="12f4d126-daef-4f9c-a494-05c05bc581e5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						9
+					</argvalue>
+				</argument>
+				<argument
+				argname="expectedValue"
+				id="98c7492c-0ad3-430b-a231-eb5177532bff">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						5
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyValueOfParameterInPhysicalLayout"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2feea707-fb88-45ae-a631-71525fecf80b">
+				<argument
+				argname="Row"
+				id="12f4d126-daef-4f9c-a494-05c05bc581e5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						10
+					</argvalue>
+				</argument>
+				<argument
+				argname="expectedValue"
+				id="98c7492c-0ad3-430b-a231-eb5177532bff">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyValueOfParameterInPhysicalLayout"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2feea707-fb88-45ae-a631-71525fecf80b">
+				<argument
+				argname="Row"
+				id="12f4d126-daef-4f9c-a494-05c05bc581e5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						11
+					</argvalue>
+				</argument>
+				<argument
+				argname="expectedValue"
+				id="98c7492c-0ad3-430b-a231-eb5177532bff">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyValueOfParameterInPhysicalLayout"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2feea707-fb88-45ae-a631-71525fecf80b">
+				<argument
+				argname="Row"
+				id="12f4d126-daef-4f9c-a494-05c05bc581e5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						12
+					</argvalue>
+				</argument>
+				<argument
+				argname="expectedValue"
+				id="98c7492c-0ad3-430b-a231-eb5177532bff">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
@@ -781,7 +1015,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_AC_Units_Calculation_For_Base_FC.UserCode.cs
+		Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

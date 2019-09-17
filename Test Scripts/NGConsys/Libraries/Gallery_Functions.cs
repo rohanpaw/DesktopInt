@@ -697,9 +697,9 @@ namespace TestProject.Libraries
 					string ExpectedGalleryName = repo.ContextMenu.Device_Name.TextValue;
 					
 					// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+					//Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
-					if(Status.Equals("Enabled"))
+					if(Status.Equals("True"))
 					{
 						if(repo.ContextMenu.Device_Name.Enabled)
 						{

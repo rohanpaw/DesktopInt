@@ -6161,6 +6161,10 @@ namespace TestProject
             RepoItemInfo _copybuttonInfo;
             RepoItemInfo _panelsgalleryInfo;
             RepoItemInfo _othernodesgalleryInfo;
+            RepoItemInfo _physicallayoutdevice_dragInfo;
+            RepoItemInfo _txt_parameterInfo;
+            RepoItemInfo _listitem4Info;
+            RepoItemInfo _physicallayout_deviceaddressInfo;
             RepoItemInfo _dcunits_afterreopenInfo;
             RepoItemInfo _dcunitsworstcase_afterreopenInfo;
             RepoItemInfo _btn_saveInfo;
@@ -6183,7 +6187,7 @@ namespace TestProject
                 _cell_labelInfo = new RepoItemInfo(this, "cell_Label", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/?/text[@text=$sLabelName]", 30000, null, "e5533a5f-9272-4ec7-906f-2a9cedeea985");
                 _copy_of_cell_labelInfo = new RepoItemInfo(this, "Copy_of_cell_Label", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']//row/cell[3]/text[@text='IOB800-1']", 60000, null, "20ca0b01-df11-4b82-ba46-3b98239baa76");
                 _psu5vloadInfo = new RepoItemInfo(this, "Psu5VLoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/cell[@text=$sCell]/text/text[1]", 30000, null, "46a7bf92-16f7-44c1-a661-76c0dad49f28");
-                _isolatorunitsInfo = new RepoItemInfo(this, "IsolatorUnits", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/cell[@text='[0]']/text/text[1]", 30000, null, "d5436158-f098-48d4-99e0-7b7438d079b7");
+                _isolatorunitsInfo = new RepoItemInfo(this, "IsolatorUnits", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/cell[@text='[0]']/text/text[1]", 60000, null, "d5436158-f098-48d4-99e0-7b7438d079b7");
                 _selectedisolatorunitsInfo = new RepoItemInfo(this, "SelectedIsolatorUnits", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/cell[@text='Isolator Units']/text/text[1]", 30000, null, "80cc1924-ac3f-4499-8087-47a6d661ba41");
                 _psu24vloadInfo = new RepoItemInfo(this, "Psu24VLoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/cell[@text=$sCell]/text/text[1]", 30000, null, "7aba421b-6a7a-4c08-9046-fea8a5f4befa");
                 _extraisunitsreqInfo = new RepoItemInfo(this, "ExtraISUnitsReq", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/cell[@text=$sCell]/container[2]/text/text[1]", 30000, null, "25f3d449-7ec2-439a-bf2d-4cec2d9cec86");
@@ -6318,6 +6322,10 @@ namespace TestProject
                 _copybuttonInfo = new RepoItemInfo(this, "CopyButton", "?/?/container[@automationid='PART_AutoHideControl']/list/list[2]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Copy']", 30000, null, "60100a5a-fabb-4057-82b0-f377a9c49cfc");
                 _panelsgalleryInfo = new RepoItemInfo(this, "PanelsGallery", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]//container[@automationid='PART_Caption']/text[@caption='Panels']", 30000, null, "4b6a4e95-f830-412c-8b01-70e709cab993");
                 _othernodesgalleryInfo = new RepoItemInfo(this, "OtherNodesGallery", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]//container[@automationid='PART_Caption']/text[@caption='Other Nodes']", 30000, null, "fa94263b-6afd-4cd2-94ee-6bfd7906fced");
+                _physicallayoutdevice_dragInfo = new RepoItemInfo(this, "PhysicalLayoutDevice_Drag", "progressbar/?/listitem[@index=$sPhysicalLayoutDeviceIndex]", 60000, null, "f3126aae-5284-4b18-96ed-ed77b02b165d");
+                _txt_parameterInfo = new RepoItemInfo(this, "txt_Parameter", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/text/text[1]", 30000, null, "43fe33cb-5d54-41c5-b864-379e9b0d0aa7");
+                _listitem4Info = new RepoItemInfo(this, "ListItem4", "container[@automationid='BarManager']/container[@automationid='dockLayoutManager']//container[@automationid='PointsPhysical']/?/?/listitem[@name='5']", 30000, null, "489f6814-feb0-4db0-9d54-9d109a6b9e3e");
+                _physicallayout_deviceaddressInfo = new RepoItemInfo(this, "PhysicalLayout_DeviceAddress", "progressbar/list[8]/?/?/?/text[@caption=$sPhysicalLayoutDeviceIndex]", 30000, null, "ab3b113e-5155-46d6-9ac1-8150942ef828");
                 _dcunits_afterreopenInfo = new RepoItemInfo(this, "DCUnits_AfterReopen", "progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='2']/cell[@text='[1]']/?/text[1]", 60000, null, "dc6f0fa9-5986-49ea-a6cc-dd83a1850ed9");
                 _dcunitsworstcase_afterreopenInfo = new RepoItemInfo(this, "DCUnitsWorstCase_AfterReopen", "progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='3']/cell[@text='[2]']/?/text[1]", 60000, null, "8a1232f5-78e2-4cb9-a37e-cc092cabed55");
                 _btn_saveInfo = new RepoItemInfo(this, "btn_Save", "progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/list[2]//button[@text='Save']", 30000, null, "699d7ed5-3738-422d-852b-3fa489ebcb75");
@@ -9977,6 +9985,102 @@ namespace TestProject
                 get
                 {
                     return _othernodesgalleryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PhysicalLayoutDevice_Drag item.
+            /// </summary>
+            [RepositoryItem("f3126aae-5284-4b18-96ed-ed77b02b165d")]
+            public virtual Ranorex.ListItem PhysicalLayoutDevice_Drag
+            {
+                get
+                {
+                    return _physicallayoutdevice_dragInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PhysicalLayoutDevice_Drag item info.
+            /// </summary>
+            [RepositoryItemInfo("f3126aae-5284-4b18-96ed-ed77b02b165d")]
+            public virtual RepoItemInfo PhysicalLayoutDevice_DragInfo
+            {
+                get
+                {
+                    return _physicallayoutdevice_dragInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_Parameter item.
+            /// </summary>
+            [RepositoryItem("43fe33cb-5d54-41c5-b864-379e9b0d0aa7")]
+            public virtual Ranorex.Text txt_Parameter
+            {
+                get
+                {
+                    return _txt_parameterInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_Parameter item info.
+            /// </summary>
+            [RepositoryItemInfo("43fe33cb-5d54-41c5-b864-379e9b0d0aa7")]
+            public virtual RepoItemInfo txt_ParameterInfo
+            {
+                get
+                {
+                    return _txt_parameterInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListItem4 item.
+            /// </summary>
+            [RepositoryItem("489f6814-feb0-4db0-9d54-9d109a6b9e3e")]
+            public virtual Ranorex.ListItem ListItem4
+            {
+                get
+                {
+                    return _listitem4Info.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItem4 item info.
+            /// </summary>
+            [RepositoryItemInfo("489f6814-feb0-4db0-9d54-9d109a6b9e3e")]
+            public virtual RepoItemInfo ListItem4Info
+            {
+                get
+                {
+                    return _listitem4Info;
+                }
+            }
+
+            /// <summary>
+            /// The PhysicalLayout_DeviceAddress item.
+            /// </summary>
+            [RepositoryItem("ab3b113e-5155-46d6-9ac1-8150942ef828")]
+            public virtual Ranorex.Text PhysicalLayout_DeviceAddress
+            {
+                get
+                {
+                    return _physicallayout_deviceaddressInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PhysicalLayout_DeviceAddress item info.
+            /// </summary>
+            [RepositoryItemInfo("ab3b113e-5155-46d6-9ac1-8150942ef828")]
+            public virtual RepoItemInfo PhysicalLayout_DeviceAddressInfo
+            {
+                get
+                {
+                    return _physicallayout_deviceaddressInfo;
                 }
             }
 

@@ -516,7 +516,7 @@ namespace TestProject.Libraries
 			repo.FormMe.cell_CableLength.Click();
 			
 			repo.FormMe.cell_CableLength.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
-			repo.FormMe.txt_InventoryGridDeviceProperty.PressKeys(sNewValue+"{ENTER}" );
+			repo.FormMe.cell_CableLength.PressKeys(sNewValue+"{ENTER}" );
 			Report.Log(ReportLevel.Info,"Parameter is editied to " +sNewValue);
 
 		}

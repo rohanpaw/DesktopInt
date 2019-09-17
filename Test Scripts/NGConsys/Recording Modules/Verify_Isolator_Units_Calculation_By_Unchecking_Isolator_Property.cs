@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator recording.
+    ///The Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property recording.
     /// </summary>
-    [TestModule("ed95de78-c489-4cd5-af64-ccb8d4aadac0", ModuleType.Recording, 1)]
-    public partial class Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator : ITestModule
+    [TestModule("60b8c625-7bcb-478e-9783-4cd588a93e47", ModuleType.Recording, 1)]
+    public partial class Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator instance = new Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator();
+        static Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property instance = new Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator()
+        public Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator Instance
+        public static Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property Instance
         {
             get { return instance; }
         }
@@ -94,32 +94,28 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("400PH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("410BDM", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("410QMO", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.IS_Functions.VerifyIsolatorUnits("3", "FIM");
+            Libraries.Devices_Functions.AddDevicesfromGallery("445SR", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Devices_Functions.AddDevicesfromGallery("410QIO", "Call Points");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Libraries.Devices_Functions.AddDevicesfromGallery("410MIM", "Detectors");
             Delay.Milliseconds(0);
             
-            //Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400PH", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
-            //Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("410RIM", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
+            Libraries.Devices_Functions.AddDevicesfromGallery("410QRM", "Call Points");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("410BDM - 2");
+            Libraries.Devices_Functions.RemoveBase("410QMO (2 po... - 2", "13");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ButtonCut1' at Center.", repo.FormMe.ButtonCut1Info, new RecordItemIndex(12));
-            repo.FormMe.ButtonCut1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Devices_Functions.RemoveBase("410QIO (8 po... - 5", "13");
+            Delay.Milliseconds(0);
             
-            Libraries.IS_Functions.VerifyIsolatorUnits("26", "FIM");
+            Libraries.Devices_Functions.RemoveBase("410QRM (2 p... - 14", "13");
             Delay.Milliseconds(0);
             
         }

@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_AC_Units_Calculation_For_Base_FC recording.
+    ///The Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC recording.
     /// </summary>
-    [TestModule("d2ca2421-11fa-4801-8b8c-7de2f1b1f92f", ModuleType.Recording, 1)]
-    public partial class Verify_AC_Units_Calculation_For_Base_FC : ITestModule
+    [TestModule("9544df86-5f59-4978-8aac-1422cd7cfdf5", ModuleType.Recording, 1)]
+    public partial class Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_AC_Units_Calculation_For_Base_FC instance = new Verify_AC_Units_Calculation_For_Base_FC();
+        static Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC instance = new Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_AC_Units_Calculation_For_Base_FC()
+        public Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_AC_Units_Calculation_For_Base_FC Instance
+        public static Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC Instance
         {
             get { return instance; }
         }
@@ -91,63 +91,75 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyMaxACUnitsValue("250");
+            Libraries.Devices_Functions.AddDevicesfromGallery("400CH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Call Points");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Libraries.Devices_Functions.AssignDeviceBase("460H - 2", "4BI 4\" [517.050.043]", "13");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400P", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("410RIM", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400P - 1", "4BI 4\" [517.050.043]", "13");
+            Libraries.Devices_Functions.AddDevicesfromGallery("445SR", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400PH", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("410SNM", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400PH - 2", "430SB [516.800.710] @ 75dB", "13");
+            Libraries.Devices_Functions.AddDevicesfromGallery("460P", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400H", "Detectors");
+            Libraries.Devices_Functions.AssignDeviceBase("460P - 6", "4BI 4\" [517.050.043]", "13");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400H - 3", "440DSB [576.440.001] @ 90dB", "13");
+            Libraries.Devices_Functions.AddDevicesfromGallery("410CIM", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyACUnitsValue("4.22");
+            Libraries.Devices_Functions.AddDevicesfromGallery("400P", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RemoveBase("400P - 1", "13");
+            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400P - 8", "4BI 4\" [517.050.043]", "13");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyACUnitsValue("4");
+            Libraries.Devices_Functions.DragAndDropDevicesInPhysicalLayout("A:5", "A:4");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.SaveProject("63355");
+            Libraries.Devices_Functions.DragAndDropDevicesInPhysicalLayout("A:6", "A:4");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ReopenProjectForDifferentProjectType("63355", "Express Projects (*.pjl)");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.DragAndDropDevicesInPhysicalLayout("22", "11");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.DragAndDropDevicesInPhysicalLayout("29", "15");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayoutOnReopen("1", "4/250");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(19));
             repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
+            
+            //Libraries.IS_Functions.VerifyIsolatorUnits("3.5", "FIM");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("7", "1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("8", "5");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("9", "5");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("10", "1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("11", "0");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("12", "0");
+            Delay.Milliseconds(0);
             
         }
 

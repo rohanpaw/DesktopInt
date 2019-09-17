@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator recording.
+    ///The Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI recording.
     /// </summary>
-    [TestModule("ed95de78-c489-4cd5-af64-ccb8d4aadac0", ModuleType.Recording, 1)]
-    public partial class Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator : ITestModule
+    [TestModule("04702f08-4169-4800-aca6-c487e5891f8b", ModuleType.Recording, 1)]
+    public partial class Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator instance = new Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator();
+        static Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI instance = new Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator()
+        public Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator Instance
+        public static Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI Instance
         {
             get { return instance; }
         }
@@ -91,35 +91,31 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400PH", "Detectors");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("410BDM", "Detectors");
-            Delay.Milliseconds(0);
-            
-            Libraries.IS_Functions.VerifyIsolatorUnits("3", "FIM");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400PH", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
+            //Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Detectors");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("410RIM", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
+            Libraries.Devices_Functions.AddDevicesfromGallery("460P", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("410BDM - 2");
+            Libraries.Devices_Functions.AddDevicesfromGallery("460PC", "Detectors");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ButtonCut1' at Center.", repo.FormMe.ButtonCut1Info, new RecordItemIndex(12));
-            repo.FormMe.ButtonCut1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Devices_Functions.AddDevicesfromGallery("421CP-I", "Call Points");
+            Delay.Milliseconds(0);
             
-            Libraries.IS_Functions.VerifyIsolatorUnits("26", "FIM");
+            //Libraries.Devices_Functions.AddDevicesfromGallery("410MIM", "Ancillary");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("410CIM", "Ancillary");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("400H", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("7", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("8", "2");
             Delay.Milliseconds(0);
             
         }

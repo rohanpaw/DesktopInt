@@ -130,7 +130,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "1"));
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("420CPI", ValueConverter.ArgumentFromString<int>("DeviceQty", "2"));
+            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("420CP", ValueConverter.ArgumentFromString<int>("DeviceQty", "2"));
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("445SR", ValueConverter.ArgumentFromString<int>("DeviceQty", "3"));
@@ -224,46 +224,59 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "202"));
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("410TSM", ValueConverter.ArgumentFromString<int>("DeviceQty", "23"));
+            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "88"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(46));
+            //Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("410TSM", ValueConverter.ArgumentFromString<int>("DeviceQty", "23"));
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(47));
             repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.VerifyProgressBarColour("1", "GREEN");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(48));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(49));
             repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "1"));
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(50));
+            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "143"));
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(52));
             repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.VerifyProgressBarColour("1", "YELLOW");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(52));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(54));
             repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "15"));
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(54));
+            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "12"));
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(57));
             repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.VerifyProgressBarColour("1", "PINK");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(59));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
             
         }
 

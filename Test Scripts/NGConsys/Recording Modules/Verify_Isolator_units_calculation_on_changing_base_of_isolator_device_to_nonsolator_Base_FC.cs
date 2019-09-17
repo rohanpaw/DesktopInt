@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator recording.
+    ///The Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC recording.
     /// </summary>
-    [TestModule("ed95de78-c489-4cd5-af64-ccb8d4aadac0", ModuleType.Recording, 1)]
-    public partial class Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator : ITestModule
+    [TestModule("662031fa-a3f5-42aa-9752-e52ac68fa817", ModuleType.Recording, 1)]
+    public partial class Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator instance = new Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator();
+        static Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC instance = new Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator()
+        public Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator Instance
+        public static Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC Instance
         {
             get { return instance; }
         }
@@ -91,35 +91,59 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400PH", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("460PH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("410BDM", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("460PH", "Call Points");
             Delay.Milliseconds(0);
             
-            Libraries.IS_Functions.VerifyIsolatorUnits("3", "FIM");
+            Libraries.Devices_Functions.AssignDeviceBase("460PH - 1", "430SB [516.800.710] @ 90dB & 801RIL", "13");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Devices_Functions.AddDevicesfromGallery("410BDM", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Libraries.Devices_Functions.AddDevicesfromGallery("445SR", "Detectors");
             Delay.Milliseconds(0);
             
-            //Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400PH", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
-            //Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("410RIM", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
+            Libraries.Devices_Functions.AddDevicesfromGallery("460P", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("410BDM - 2");
+            Libraries.Devices_Functions.AssignDeviceBase("460P - 4", "440DSB [576.440.001] @ 90dB & 801RIL", "13");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ButtonCut1' at Center.", repo.FormMe.ButtonCut1Info, new RecordItemIndex(12));
-            repo.FormMe.ButtonCut1.Click();
+            Libraries.Devices_Functions.AddDevicesfromGallery("410MIM", "Call Points");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("420CP-I", "Ancillary");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("460PC", "Ancillary");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AssignDeviceBase("460PC - 7", "440DSB [576.440.001] @ 90dB & 801HL", "13");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.DragAndDropDevicesInPhysicalLayout("A:5", "A:4");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.DragAndDropDevicesInPhysicalLayout("A:6", "A:4");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(17));
+            repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
             
-            Libraries.IS_Functions.VerifyIsolatorUnits("26", "FIM");
+            //Libraries.IS_Functions.VerifyIsolatorUnits("3.5", "FIM");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("7", "6.5");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("8", "6.5");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("9", "3.5");
             Delay.Milliseconds(0);
             
         }

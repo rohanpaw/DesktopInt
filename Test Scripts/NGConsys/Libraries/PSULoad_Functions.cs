@@ -1819,7 +1819,9 @@ namespace TestProject.Libraries
 //						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
 						
 						// Click on XLM Loop C Node to add device
-						repo.FormMe.XLMExternalLoopCardDevices_C.Click();
+						//repo.FormMe.XLMExternalLoopCardDevices_C.Click();
+						
+						Common_Functions.ClickOnNavigationTreeItem("XLM/External");
 
 						Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 						Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
@@ -1831,10 +1833,12 @@ namespace TestProject.Libraries
 					
 					
 					// Click on XLM Loop Card Expander
-					repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+					//repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+					Common_Functions.ClickOnNavigationTreeItem("XLM/External");
 					
 					// Click on XLM Loop C Node to add device
-					repo.FormMe.XLMExternalLoopCardDevices_C.Click();
+					//repo.FormMe.XLMExternalLoopCardDevices_C.Click();
+					Common_Functions.ClickOnNavigationTreeExpander("XLM/External");
 					
 					float.TryParse(s40VLoad, out ZetfastFourtyVLoad);
 					
@@ -1892,10 +1896,12 @@ namespace TestProject.Libraries
 					else
 					{
 						// Click on XLM Loop Card Expander
-						repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
-						
+						//repo.FormMe.BackplaneOrXLMExternalLoopCard_Expander.Click();
+						Common_Functions.ClickOnNavigationTreeExpander("XLM/External");
 						// Click on XLM Loop C Node to add device
-						repo.FormMe.XLMExternalLoopCardDevices_C.Click();
+						//repo.FormMe.XLMExternalLoopCardDevices_C.Click();
+						
+						Common_Functions.ClickOnNavigationTreeItem("XLM/External");
 
 						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 						

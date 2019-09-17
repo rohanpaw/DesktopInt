@@ -1818,6 +1818,18 @@
       <UserCode>true</UserCode>
       <id>aa83737f-c05a-48e5-83f4-dbcce5ad8012</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Error_Warning_Indication_For_Isolator_Units.cs">
+      <BoundTo>f837b6f0-48c3-46a4-a969-c0ecd4a9ce3a</BoundTo>
+      <DependentUpon>Verify_Error_Warning_Indication_For_Isolator_Units.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>96e0d42c-96cf-4b01-8b28-31d546d597fc</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Error_Warning_Indication_For_Isolator_Units.UserCode.cs">
+      <BoundTo>f837b6f0-48c3-46a4-a969-c0ecd4a9ce3a</BoundTo>
+      <DependentUpon>Verify_Error_Warning_Indication_For_Isolator_Units.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f2dc9272-34d5-40a1-93a8-6e8832e5f9dd</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Export_Of_Region_Data.cs">
       <BoundTo>80b32744-0f3a-40c9-be30-c0a1736f9e26</BoundTo>
       <DependentUpon>Verify_Export_Of_Region_Data.rxrec</DependentUpon>
@@ -1913,6 +1925,18 @@
       <DependentUpon>Verify_IB_Units_On_Assigning_Base_And_Additional_Base.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a701d68b-6593-4471-9008-e7a26fd16ca4</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC.cs">
+      <BoundTo>9c421224-8c47-43d3-9483-bb74e7cb38a5</BoundTo>
+      <DependentUpon>Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>72b3b689-b78b-4178-9260-34297b227b9a</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC.UserCode.cs">
+      <BoundTo>9c421224-8c47-43d3-9483-bb74e7cb38a5</BoundTo>
+      <DependentUpon>Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d791c864-2272-4432-8b00-0506bd0d2461</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator.cs">
       <BoundTo>62a70a96-0538-4982-83c3-0e87d572c92a</BoundTo>
@@ -2226,6 +2250,18 @@
       <UserCode>true</UserCode>
       <id>6555f0a1-4f9f-4922-b091-8e9fab870562</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property.cs">
+      <BoundTo>97de50d9-a63a-4e0f-84f0-e98e2c5b6b90</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3ee5ac00-a302-4cfd-ae4a-9cfca9d4fe6b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property.UserCode.cs">
+      <BoundTo>97de50d9-a63a-4e0f-84f0-e98e2c5b6b90</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>484d0ad4-e960-408e-b58b-179254d2031e</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices.cs">
       <BoundTo>48a4076e-72c2-42c5-8593-508291d0330d</BoundTo>
       <DependentUpon>Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices.rxrec</DependentUpon>
@@ -2237,6 +2273,18 @@
       <DependentUpon>Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>a622234d-5bdc-4cc1-867f-96d2a3f849db</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices_FC.cs">
+      <BoundTo>ae6a82cc-c2f5-4e7e-9014-b36b0b6932aa</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>949b39f6-46d6-40ce-b294-a83b3c814954</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices_FC.UserCode.cs">
+      <BoundTo>ae6a82cc-c2f5-4e7e-9014-b36b0b6932aa</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c635a519-5184-4c78-807b-7e4a86173696</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator.cs">
       <BoundTo>ad2a6a80-a17d-4911-93b2-d571b49d0550</BoundTo>
@@ -2250,6 +2298,54 @@
       <UserCode>true</UserCode>
       <id>5df77918-7201-42dc-82e1-213cb6cafca0</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC.cs">
+      <BoundTo>ee7de2a9-e9e8-445c-aa45-d0fb5d108d07</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3c0c663c-174e-4c90-b4d9-93eab53efdc1</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC.UserCode.cs">
+      <BoundTo>ee7de2a9-e9e8-445c-aa45-d0fb5d108d07</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0cc760f5-33ed-4c3d-aac8-9b6852f99737</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Having_Isolator_Property.cs">
+      <BoundTo>edd46492-c28f-4139-88ba-954c40ab01eb</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_For_Devices_Having_Isolator_Property.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>86e4dce9-3e69-4c39-b5b7-8237fde329b5</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Having_Isolator_Property.UserCode.cs">
+      <BoundTo>edd46492-c28f-4139-88ba-954c40ab01eb</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_For_Devices_Having_Isolator_Property.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7bfa2c69-9c56-4a35-ab30-7c48275a3e9a</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC.cs">
+      <BoundTo>02820b72-7fb2-47be-b6e5-2e60a1960131</BoundTo>
+      <DependentUpon>Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3bef81fc-45c4-4668-a6a3-e6682222a75a</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC.UserCode.cs">
+      <BoundTo>02820b72-7fb2-47be-b6e5-2e60a1960131</BoundTo>
+      <DependentUpon>Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>67045b96-b6be-4114-af43-34c2bcfbc5ee</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC.cs">
+      <BoundTo>7ea11067-0e47-4f45-b091-b9e9200aa8b2</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>49fa88f4-fff4-4b98-bee1-d88e39a0a799</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC.UserCode.cs">
+      <BoundTo>7ea11067-0e47-4f45-b091-b9e9200aa8b2</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>92bb38c2-8c52-4ca5-94cd-14918374f9cd</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices.cs">
       <BoundTo>6bc80170-d405-4161-a3b5-44f98f15dd5e</BoundTo>
       <DependentUpon>Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices.rxrec</DependentUpon>
@@ -2261,6 +2357,18 @@
       <DependentUpon>Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d8a228e5-f31e-4956-b4dd-d2edbaac9df7</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI.cs">
+      <BoundTo>69ae3f45-590b-4905-b476-e6226bd11e5d</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8b003c63-ec28-4565-8976-0716d7438dcf</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI.UserCode.cs">
+      <BoundTo>69ae3f45-590b-4905-b476-e6226bd11e5d</BoundTo>
+      <DependentUpon>Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>66b50c8a-dbd2-43ab-be3f-a12e7b95c2a2</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_IS_Devices_Drag_And_Drop_On_Non_Addressable_Devices.cs">
       <BoundTo>f421e509-ccba-4bb1-b8fd-60784fa777fa</BoundTo>
@@ -3902,9 +4010,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Create_Project_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>78c9d55e-6385-4177-8910-97305be53fd0</id>
       <recordtableid>94f4aa26-aedb-431a-ba8d-ca56a934d765</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\DeleteDevices_BVT.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4521,6 +4629,11 @@
       <id>4e08f8c3-2152-45ab-9e45-eeb28f0b1281</id>
       <recordtableid>973b545f-daf4-47a9-b82e-d0a7b6dbfca9</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Error_Warning_Indication_For_Isolator_Units.rxrec">
+      <id>f837b6f0-48c3-46a4-a969-c0ecd4a9ce3a</id>
+      <recordtableid>c4df891b-279a-4098-9434-89cacda6aceb</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_Export_Of_Region_Data.rxrec">
       <id>80b32744-0f3a-40c9-be30-c0a1736f9e26</id>
       <recordtableid>560b4584-e27b-4c2f-88ad-c4ea33c42460</recordtableid>
@@ -4560,6 +4673,11 @@
       <id>4b489a0e-e800-42b9-becc-6fcb22cbf814</id>
       <recordtableid>372a24a2-d89a-426c-a1a7-fecc90209eab</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>9c421224-8c47-43d3-9483-bb74e7cb38a5</id>
+      <recordtableid>92213869-7c7a-45fc-b90e-f226fd0f903b</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator.rxrec">
       <id>62a70a96-0538-4982-83c3-0e87d572c92a</id>
@@ -4691,9 +4809,19 @@
       <id>ac4c81c0-d921-45d9-874a-b4fe4b6dc503</id>
       <recordtableid>a14895cd-ab9f-4425-82e4-f2824325eadc</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>97de50d9-a63a-4e0f-84f0-e98e2c5b6b90</id>
+      <recordtableid>60b8c625-7bcb-478e-9783-4cd588a93e47</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices.rxrec">
       <id>48a4076e-72c2-42c5-8593-508291d0330d</id>
       <recordtableid>4fa5fd75-9943-4ef9-9772-692c89781b88</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices_FC.rxrec">
+      <id>ae6a82cc-c2f5-4e7e-9014-b36b0b6932aa</id>
+      <recordtableid>5dfa8b39-1149-4806-aa49-30f39f6765a2</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator.rxrec">
@@ -4701,10 +4829,35 @@
       <recordtableid>edc14e26-4de3-45df-b860-57611632957d</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>ee7de2a9-e9e8-445c-aa45-d0fb5d108d07</id>
+      <recordtableid>9542f4a4-2466-436d-98a9-9d9ce9009bac</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Isolator_Units_Calculation_For_Devices_Having_Isolator_Property.rxrec">
+      <id>edd46492-c28f-4139-88ba-954c40ab01eb</id>
+      <recordtableid>55ad203b-6630-4ebe-83c7-36c794f1e740</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Isolator_units_calculation_on_changing_base_of_isolator_device_to_nonsolator_Base_FC.rxrec">
+      <id>02820b72-7fb2-47be-b6e5-2e60a1960131</id>
+      <recordtableid>662031fa-a3f5-42aa-9752-e52ac68fa817</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC.rxrec">
+      <id>7ea11067-0e47-4f45-b091-b9e9200aa8b2</id>
+      <recordtableid>9544df86-5f59-4978-8aac-1422cd7cfdf5</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>6bc80170-d405-4161-a3b5-44f98f15dd5e</id>
       <recordtableid>54037372-2321-44a3-b95a-7f5f8a74cbaa</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Isolator_Units_Calculation_With_Loop_Having_Line_Isolator_Devices_421CPI.rxrec">
+      <id>69ae3f45-590b-4905-b476-e6226bd11e5d</id>
+      <recordtableid>04702f08-4169-4800-aca6-c487e5891f8b</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_IS_Devices_Drag_And_Drop_On_Non_Addressable_Devices.rxrec">
       <id>f421e509-ccba-4bb1-b8fd-60784fa777fa</id>

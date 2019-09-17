@@ -1922,7 +1922,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="d5436158-f098-48d4-99e0-7b7438d079b7"
 			name="IsolatorUnits"
 			refimgid="fab05084-f094-44ba-80d0-ee2e4ca1a2b4"
-			searchtimeout="30000ms">
+			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/cell[@text='[0]']/text/text[1]
 			</item>
 			<item
@@ -13472,6 +13472,40 @@ AAAAAElFTkSuQmCC
 			refimgid="43fb6ae6-8121-4185-a2dc-b9477d9064fb"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]//container[@automationid='PART_Caption']/text[@caption='Other Nodes']
+			</item>
+			<item
+			addcaps="listitem,uiautomation"
+			capname="listitem"
+			id="f3126aae-5284-4b18-96ed-ed77b02b165d"
+			name="PhysicalLayoutDevice_Drag"
+			refimgid="c780bb62-a445-4707-80d5-a0a66f3a9490"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/?/listitem[@index=$sPhysicalLayoutDeviceIndex]
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="43fe33cb-5d54-41c5-b864-379e9b0d0aa7"
+			name="txt_Parameter"
+			refimgid="2044b17a-0cf0-4f4a-8244-be349581e55e"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/text/text[1]
+			</item>
+			<item
+			addcaps="listitem,uiautomation"
+			capname="listitem"
+			id="489f6814-feb0-4db0-9d54-9d109a6b9e3e"
+			name="ListItem4"
+			refimgid="de905fcf-fc91-464c-b76e-77dd4784cf5a"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/container[@automationid='BarManager']/container[@automationid='dockLayoutManager']//container[@automationid='PointsPhysical']/?/?/listitem[@name='5']
+			</item>
+			<item
+			capname="text"
+			id="ab3b113e-5155-46d6-9ac1-8150942ef828"
+			name="PhysicalLayout_DeviceAddress"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[8]/?/?/?/text[@caption=$sPhysicalLayoutDeviceIndex]
 			</item>
 			<item
 			capname="text"

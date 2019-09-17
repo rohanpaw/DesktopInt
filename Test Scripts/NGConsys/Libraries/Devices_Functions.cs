@@ -7419,6 +7419,34 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"AC Units are not displayed correctly " + ", Expected AC Units:  " + expectedValue  + " Actual AC Units: "+ ActualValue);
 			}
+			repo.ProfileConsys1.tab_Points.Click();
+		}
+		
+		/**************************************************************************************************************
+		 * Function Name: VerifyValueOfParameterInPhysicalLayout
+		 * Function Details: Verify value of AC/DC/Battery/Alarm etc in Physical layout
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 11/09/2019
+		 ****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyValueOfParameterInPhysicalLayout(string Row, string expectedValue)
+		{
+			sRow=Row;
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			string ActualValue = repo.FormMe.txt_Parameter.TextValue;
+			
+			
+			if(ActualValue.Equals(expectedValue))
+			{
+				Report.Log(ReportLevel.Success,"AC Units " + ActualValue + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"AC Units are not displayed correctly " + ", Expected AC Units:  " + expectedValue  + " Actual AC Units: "+ ActualValue);
+			}
+			repo.ProfileConsys1.tab_Points.Click();
 		}
 	
 		/************************************************************************************************************
@@ -7462,6 +7490,68 @@ namespace TestProject.Libraries
 		
 	
 		
+		/**************************************************************************************************************
+		 * Function Name: DragAndDropDevicesInPhysicalLayout
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 11/09/2019
+		 ****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void DragAndDropDevicesInPhysicalLayout(string SourceDeviceIndex, string DestinationDeviceIndex)
+		{
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			repo.ProfileConsys1.tab_Points.Click();
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			sPhysicalLayoutDeviceIndex = SourceDeviceIndex;
+			
+			// Create a adapter and stored in source adapter element
+			Adapter sourceElement = repo.FormMe.PhysicalLayout_DeviceAddress;
+			
+			sPhysicalLayoutDeviceIndex = DestinationDeviceIndex;
+			
+			// Create a adapter and stored in targer adapter element
+			Adapter targetElement = repo.FormMe.PhysicalLayout_DeviceAddress;
+
+			// Drag and drop IS device from Second EXI to First EXI
+			Ranorex.AutomationHelpers.UserCodeCollections.DragNDropLibrary.DragAndDrop(sourceElement,targetElement);
+		}
+		
+		/********************************************************************
+		 * Function Name:AddMultipleDevicesInMultipoint
+		 * Function Details:
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Purvi Bhasin
+		 * Last Update : 13/09/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void AddMultipleDevicesInMultipoint(string sFileName,string sSheetName)
+		{
+			
+			Excel_Utilities.OpenExcelFile(sFileName,sSheetName);
+			//Excel_Utilities.OpenSheet(sSheetName);
+			int rows = Excel_Utilities.ExcelRange.Rows.Count;
+				
+				
+				for(int i=2;i<=rows;i++)
+			{
+				string sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				string DeviceQty = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				
+				repo.AddDevices.txt_SearchDevices.Click();
+				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+sDeviceName);
+				ModelNumber = sDeviceName;
+				repo.AddDevices.txt_ModelNumber1.Click();
+//			repo.AddDevices.txt_ModelNumber.Click();
+				repo.AddDevices.txt_Quantity.Click();
+				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+DeviceQty.ToString());
+				
+			}
+			
+			repo.AddDevices.btn_AddDevices.Click();
+		}
 	}
 }
 

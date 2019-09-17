@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="ed95de78-c489-4cd5-af64-ccb8d4aadac0"
+id="c4df891b-279a-4098-9434-89cacda6aceb"
 mode="Global"
 rxversion="8.3">
 	<name>
-		Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator
+		Verify_Error_Warning_Indication_For_Isolator_Units
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator"
+	classname="Verify_Error_Warning_Indication_For_Isolator_Units"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -153,78 +153,6 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
-				<argument
-				argname="sDeviceName"
-				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						400PH
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Detectors
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
-				<argument
-				argname="sDeviceName"
-				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						410BDM
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Detectors
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="IS_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -245,7 +173,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						3
+						0
 					</argvalue>
 				</argument>
 				<argument
@@ -281,16 +209,16 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
+						Built-in Loop-A
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -299,22 +227,32 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			id="e0a076b3-b6d0-4702-8223-e5fad4e8a2ed">
 				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
+				argname="sDeviceName"
+				id="dd4aab56-2bf6-497b-bb90-e2e6f4804bdc">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop-A
+						400PH
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="830acc92-1839-448a-ab6b-fd9c3c5e3941">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Detectors
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMultiplePointWizard"
 		namespace="TestProject.Libraries"
@@ -333,7 +271,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400PH
+						410BDM
 					</argvalue>
 				</argument>
 				<argument
@@ -343,7 +281,7 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						5
+						2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -379,7 +317,53 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						5
+						18
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="IS_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyIsolatorUnitsAndIndicator"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c7896c4e-5fad-4625-90e4-a321bf3dc629">
+				<argument
+				argname="expectedIsolatorUnits"
+				id="80bc8367-bbcf-49ae-b5e9-98c5df98a551">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						95
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExpectedColourCode"
+				id="7679d2d0-75f4-400f-83f0-6c93a924a878">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						GREEN
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="2c1215be-65bb-41c3-9953-434b2b3e7e8b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FIM
 					</argvalue>
 				</argument>
 			</arguments>
@@ -388,7 +372,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelName"
+		methodname="AddDevicesfromMultiplePointWizard"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -397,48 +381,34 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="968916ac-f569-4a05-b0fb-4406eda82fad">
+			id="cae5511d-b352-46d1-9bb9-77193c968b60">
 				<argument
-				argname="sLabel"
-				id="3380a424-43fa-4723-b62e-04195b686f6e">
+				argname="sDeviceName"
+				id="5cc28d97-c400-4632-942b-bbcd5e34843f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						410BDM - 2
+						400PH
+					</argvalue>
+				</argument>
+				<argument
+				argname="DeviceQty"
+				id="b0749a57-44b5-4aed-ac91-9c908e2bbd58">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						5
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="af44ace6-d64a-4e18-bb9b-2fa3e28d54f4"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="16cb24d0-a99f-4ddd-b807-b4a9aec72cf6"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Cut']
-				</path>
-			</info>
-		</mouseitem>
 		<userrecorditem
 		classname="IS_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyIsolatorUnits"
+		methodname="VerifyIsolatorUnitsAndIndicator"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -447,20 +417,30 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="c6eb7ef0-3626-46f9-afc4-01d7f7ed1da4">
+			id="c7896c4e-5fad-4625-90e4-a321bf3dc629">
 				<argument
 				argname="expectedIsolatorUnits"
-				id="6c72fd3e-76eb-4dbe-aa2a-4ade2205f26f">
+				id="80bc8367-bbcf-49ae-b5e9-98c5df98a551">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						26
+						100
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExpectedColourCode"
+				id="7679d2d0-75f4-400f-83f0-6c93a924a878">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PINK
 					</argvalue>
 				</argument>
 				<argument
 				argname="PanelType"
-				id="5d7ef990-048d-49ee-bd6d-24abc1b5be57">
+				id="2c1215be-65bb-41c3-9953-434b2b3e7e8b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -487,7 +467,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_IB_Units_Without_Addition_Of_Lineisolator_Isolator_Based_Devices_Device_Having_Inbuilt_Isolator.UserCode.cs
+		Verify_Error_Warning_Indication_For_Isolator_Units.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
