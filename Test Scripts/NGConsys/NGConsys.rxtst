@@ -2413,7 +2413,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.34">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.38">
 					</param>
 					<param
 					name="Mode"
@@ -3542,7 +3542,7 @@ rxversion="8.3">
 			id="34abeb3f-69b9-420f-9c5b-a3b1852b887d"
 			name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_RBus_Connection">
 				<description>
-					<![CDATA[<p>NGC-488/TC-147 Test data needs to be updated because expected values not known</p>]]>
+					<![CDATA[<p>NGC-488/TC-147</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -4512,6 +4512,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="44506360-f248-4ab5-ba62-8441689771a6"
+			name="Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC"
+			ref="7b775950-248e-4db7-ba7c-74d02ca8cad8"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="44b69852-9f4d-4004-a89a-c45899135fde"
 			name="Application_Open"
@@ -5485,6 +5491,19 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testcase
+			id="509d084a-8644-42ab-8bf9-6afdb2b657b4"
+			name="Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63532 In this test case, None value is not verified.All drop down values are also not verified as text value is not retrieved.</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
 			id="50b1a41b-403b-4791-bd00-072ad87bae0e"
 			name="Verify_Slot_Cards_Gallery">
 				<description>
@@ -6330,6 +6349,26 @@ rxversion="8.3">
 					datasourceid="0d0f09ca-f27d-495e-a89f-8d23fd904b2a"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5c89d342-4d44-4196-82cf-a81be896b288"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
 					</var>
 				</databinding>
 			</testmodule>
@@ -8690,7 +8729,7 @@ rxversion="8.3">
 			id="81c82b82-fecf-4d89-8ad1-13d1b0f34b63"
 			name="Verify_Current(DC_Units)_Calculation_FC">
 				<description>
-					<![CDATA[<p>NGC-1826/TC-63769 failed ...need to check</p>]]>
+					<![CDATA[<p>NGC-1826/TC-63769 Tested with wrong test data. Now, test data is updated (As Expected)</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -13082,6 +13121,26 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="cb0eb3da-dbdd-4ee7-bbc2-a2f0dc6dde06"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="cb7862dc-f9a6-47d1-926f-4cdecebe50c0"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -14882,6 +14941,20 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="e7db4c1f-eba5-4c4f-8e22-7e0bf8459e1b"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="509d084a-8644-42ab-8bf9-6afdb2b657b4"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="e83a1f81-0024-490c-bfdb-af0bb1323cf5"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -16071,6 +16144,12 @@ persisted in panel properties&nbsp;]]>
 			id="fcf8094f-7ca5-4905-a9a3-6568584a7fde"
 			name="Verify_If_IS_Devices_Are_Invisible_In_Multipoint_Wizard"
 			ref="e10c907b-2b10-4934-b21b-fe87d60f16fe"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fd66fc60-2b6e-47bc-8d62-6326394d08e8"
+			name="Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC"
+			ref="f9e2d895-763d-4ae2-b802-8e7e842ea8af"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -21372,6 +21451,30 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Reopen_Project_For_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="509d084a-8644-42ab-8bf9-6afdb2b657b4"
+					name="Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC">
+						<testmodule
+						id="cb0eb3da-dbdd-4ee7-bbc2-a2f0dc6dde06"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="e7db4c1f-eba5-4c4f-8e22-7e0bf8459e1b"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="44506360-f248-4ab5-ba62-8441689771a6"
+						name="Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC">
+						</testmodule>
+						<testmodule
+						id="5c89d342-4d44-4196-82cf-a81be896b288"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="fd66fc60-2b6e-47bc-8d62-6326394d08e8"
+						name="Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -21579,7 +21682,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="c6fea478-206c-499e-b417-b71a8cc84e09">
+			id="34abeb3f-69b9-420f-9c5b-a3b1852b887d">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

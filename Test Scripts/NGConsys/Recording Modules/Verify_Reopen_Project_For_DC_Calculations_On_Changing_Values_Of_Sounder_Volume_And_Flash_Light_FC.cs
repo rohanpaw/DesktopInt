@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_CurrentDC_Units_Calculation_FC recording.
+    ///The Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC recording.
     /// </summary>
-    [TestModule("bb3b7cb4-7a4d-41b6-8671-549f409bc922", ModuleType.Recording, 1)]
-    public partial class Verify_CurrentDC_Units_Calculation_FC : ITestModule
+    [TestModule("f9e2d895-763d-4ae2-b802-8e7e842ea8af", ModuleType.Recording, 1)]
+    public partial class Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_CurrentDC_Units_Calculation_FC instance = new Verify_CurrentDC_Units_Calculation_FC();
+        static Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC instance = new Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_CurrentDC_Units_Calculation_FC()
+        public Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_CurrentDC_Units_Calculation_FC Instance
+        public static Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,14 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 64-2", "");
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
+            Delay.Duration(5000, false);
+            
+            Libraries.Common_Functions.ReopenProject("TC_63532.pjl");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
+            Delay.Duration(5000, false);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
@@ -91,16 +97,34 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("220");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("410LPAV 65 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyMaxDCUnits("2200");
+            Libraries.Devices_Functions.VerifyDeviceSensitivity("Low (90dB)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.VerifyCurrentDCCalculation("TC_63769_Verify_Current(DC_Units)_Calculation_FC", "Add Devices Loop A", "Update Devices");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("410LPAV 65 - 2");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.SaveProject("TC_63769");
+            Libraries.Devices_Functions.VerifyDeviceMode("1 Hz");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelName("410LPBS- R/W - 3");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceSensitivity("High (103dB)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelName("410LPBS- R/W - 4");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceMode("1 Hz");
+            Delay.Milliseconds(0);
+            
+            Libraries.DC_Functions.verifyDCUnitsValueAfterReopen("311.4");
+            Delay.Milliseconds(0);
+            
+            Libraries.DC_Functions.verifyDCUnitsWorstCaseValueAfterReopen("311.4");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

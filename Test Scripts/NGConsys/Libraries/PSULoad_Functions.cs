@@ -3322,6 +3322,7 @@ namespace TestProject.Libraries
 		 * Last Update : 22/01/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 07/09/2019 - Updated test scripts 
 		 * Alpesh Dhakad - 21/08/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 * Alpesh Dhakad - 17/09/2019 - Updated code with for battery stand by and alarm, also Updated test data
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnRbusAddDelete(string sFileName,string sAddPanelSheet)
@@ -3391,7 +3392,9 @@ namespace TestProject.Libraries
 					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,13]).Value.ToString();
 					
 					//Add RBus connection
-					repo.FormMe.RBus1.Click();
+					// Click on RBus node
+					Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+				
 					
 					float.TryParse(sBatteryStandby, out RBusBatteryStandby);
 					float.TryParse(sAlarmLoad, out RBusAlarmLoad);
@@ -3425,12 +3428,17 @@ namespace TestProject.Libraries
 					//Generate expected Battery Standby load
 					float.TryParse(sDefaultBatteryStandby, out DefaultBatteryStandby);
 					float ExpectedBatteryStandby = DefaultBatteryStandby+RBusBatteryStandby+XBusBatteryStandby;
-					sExpectedBatteryStandby= ExpectedBatteryStandby.ToString("0.000");
+					sExpectedBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,19]).Value.ToString();
+					
+					//sExpectedBatteryStandby= ExpectedBatteryStandby.ToString("0.000");
 					
 					//Generate expected Alarm load
 					float.TryParse(sDefaultAlarmLoad, out DefaultAlarmLoad);
 					float ExpectedAlarmLoad = DefaultAlarmLoad+RBusAlarmLoad+XBusAlarmLoad;
-					sExpectedAlarmLoad= ExpectedAlarmLoad.ToString("0.000");
+					sExpectedAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,20]).Value.ToString();
+					
+					
+					//sExpectedAlarmLoad= ExpectedAlarmLoad.ToString("0.000");
 					
 					// Verify Battery Standby value on addition of R-Bus & X-Bus template
 					verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
@@ -3447,12 +3455,18 @@ namespace TestProject.Libraries
 					//Generate expected Battery Standby load on Deletion
 					float.TryParse(sDefaultBatteryStandby, out DefaultBatteryStandby);
 					ExpectedBatteryStandby = DefaultBatteryStandby-RBusBatteryStandby-XBusBatteryStandby;
-					sExpectedBatteryStandby = ExpectedBatteryStandby.ToString("0.000");
+					sExpectedBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,21]).Value.ToString();
+					
+					
+					//sExpectedBatteryStandby = ExpectedBatteryStandby.ToString("0.000");
 					
 					//Generate expected Alarm load on Deletion
 					float.TryParse(sDefaultAlarmLoad, out DefaultAlarmLoad);
 					ExpectedAlarmLoad = DefaultAlarmLoad-RBusAlarmLoad-XBusAlarmLoad;
-					sExpectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
+					sExpectedAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,22]).Value.ToString();
+					
+					
+					//sExpectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
 					
 					// Click on RBus node
 				Common_Functions.ClickOnNavigationTreeItem("R-BUS");

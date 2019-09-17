@@ -3018,6 +3018,18 @@
       <UserCode>true</UserCode>
       <id>b39ff580-be43-4081-80eb-fde094ceae84</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.cs">
+      <BoundTo>9ac4253e-bfb7-4198-8cba-399ee4904934</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6498e6f9-2178-44bc-bd9b-3f160a2ac5b4</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.UserCode.cs">
+      <BoundTo>9ac4253e-bfb7-4198-8cba-399ee4904934</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e49bbe85-e7fe-48ec-b051-654965fe60f0</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_For_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.cs">
       <BoundTo>6016d74e-fd72-459c-aa91-14e0acc6d9f9</BoundTo>
       <DependentUpon>Verify_Reopen_Project_For_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.rxrec</DependentUpon>
@@ -3305,6 +3317,18 @@
       <DependentUpon>Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>015a5bdd-ac9b-42db-91c8-d19394226b4d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.cs">
+      <BoundTo>ea2b2c89-0482-4d85-938e-77726aa21176</BoundTo>
+      <DependentUpon>Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6e4602fb-b9e9-438e-a1f6-6ea2ff20a4eb</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.UserCode.cs">
+      <BoundTo>ea2b2c89-0482-4d85-938e-77726aa21176</BoundTo>
+      <DependentUpon>Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>346b5af6-bde2-4167-8ab3-cfa7a46ff986</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_The_DC_Calculation_When_Total_Output_Load_is_Less_Than_12_mA.cs">
       <BoundTo>35e0b782-1280-491f-a070-542672c57b9e</BoundTo>
@@ -4997,15 +5021,20 @@
       <recordtableid>79643dcd-8cd5-4d6a-a36d-de046882de58</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>9ac4253e-bfb7-4198-8cba-399ee4904934</id>
+      <recordtableid>f9e2d895-763d-4ae2-b802-8e7e842ea8af</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Reopen_Project_For_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.rxrec">
       <id>6016d74e-fd72-459c-aa91-14e0acc6d9f9</id>
       <recordtableid>65109265-f544-4955-9fa9-c4c3ff319001</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_For_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>aa71dec7-11a0-446e-857e-116f557d5fad</id>
       <recordtableid>53d3d5cf-70f2-450b-94e0-e3e14d69ab8f</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec">
       <id>99f09b4e-16fd-4c8a-91e1-2a09eeb4a2ce</id>
@@ -5117,6 +5146,11 @@
       <recordtableid>5bd96ef8-bd6f-436f-b45f-bf57de82c162</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.rxrec">
+      <id>ea2b2c89-0482-4d85-938e-77726aa21176</id>
+      <recordtableid>7b775950-248e-4db7-ba7c-74d02ca8cad8</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_The_DC_Calculation_When_Total_Output_Load_is_Less_Than_12_mA.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>35e0b782-1280-491f-a070-542672c57b9e</id>
@@ -5138,9 +5172,9 @@
       <recordtableid>32074e17-16ec-4b54-87c0-29ce24977e24</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>c81f6035-9c30-448d-878d-3c58b0839493</id>
       <recordtableid>8201c29b-2d49-4b3c-b375-34e6842b4241</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

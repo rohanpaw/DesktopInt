@@ -108,17 +108,28 @@ namespace TestProject.Recording_Modules
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.PARTRight.btn_CreateNewProject' at Center.", repo.ProfileConsys1.PARTRight.btn_CreateNewProjectInfo, new RecordItemIndex(6));
             repo.ProfileConsys1.PARTRight.btn_CreateNewProject.Click();
             
-            Select_ProjectName("Verify");
+            //Select_ProjectName("Verify");
             
-            Select_ClientName("JCI");
+            //Select_ClientName("JCI");
             
-            Select_ClientAddress("JCI");
+            //Select_ClientAddress("JCI");
             
-            Select_InstallerName("JCI");
+            //Select_InstallerName("JCI");
             
-            Select_InstallerAddress("JCI");
+            //Select_InstallerAddress("JCI");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CreateNewProject.CreateNewProjectContainer.btn_OK' at Center.", repo.CreateNewProject.CreateNewProjectContainer.btn_OKInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(12));
+            Delay.Duration(5000, false);
+            
+            Libraries.Common_Functions.CreateProjectFCParameters("9", "JCI");
+            
+            Libraries.Common_Functions.CreateProjectFCParameters("10", "JCI");
+            
+            Libraries.Common_Functions.CreateProjectFCParameters("11", "JCI");
+            
+            Libraries.Common_Functions.CreateProjectFCParameters("12", "JCI");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CreateNewProject.CreateNewProjectContainer.btn_OK' at Center.", repo.CreateNewProject.CreateNewProjectContainer.btn_OKInfo, new RecordItemIndex(17));
             repo.CreateNewProject.CreateNewProjectContainer.btn_OK.Click();
             
         }
