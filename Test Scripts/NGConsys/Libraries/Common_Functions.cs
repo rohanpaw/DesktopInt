@@ -544,7 +544,7 @@ namespace TestProject.Libraries
 			
 			// Declared string type
 			string PanelName,PanelNode,CPUType,PanelType,sExpectedProjectNameBefore,sSaveName,sExpectedProjectNameAfter,sModelName,sType;
-			int rowNumber;
+			
 			
 			// For loop to iterate on data present in excel
 			for(int i=8; i<=rows; i++)

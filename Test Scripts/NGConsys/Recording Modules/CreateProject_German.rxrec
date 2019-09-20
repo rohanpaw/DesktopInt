@@ -1616,7 +1616,7 @@ oA//2Q==
 		<userrecorditem
 		autogenmethod="True"
 		classname="Create_Project"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="Select_ProjectName"
 		namespace="TestProject.Recording_Modules"
@@ -1643,7 +1643,7 @@ oA//2Q==
 		<userrecorditem
 		autogenmethod="True"
 		classname="Create_Project"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="Select_ClientName"
 		namespace="TestProject.Recording_Modules"
@@ -1670,7 +1670,7 @@ oA//2Q==
 		<userrecorditem
 		autogenmethod="True"
 		classname="Create_Project"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="Select_ClientAddress"
 		namespace="TestProject.Recording_Modules"
@@ -1697,7 +1697,7 @@ oA//2Q==
 		<userrecorditem
 		autogenmethod="True"
 		classname="Create_Project"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="Select_InstallerName"
 		namespace="TestProject.Recording_Modules"
@@ -1724,7 +1724,7 @@ oA//2Q==
 		<userrecorditem
 		autogenmethod="True"
 		classname="Create_Project"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="False"
 		methodname="Select_InstallerAddress"
 		namespace="TestProject.Recording_Modules"
@@ -1739,6 +1739,159 @@ oA//2Q==
 				<argument
 				argname="sInstallerAddress"
 				id="2041712f-4cdf-4451-8e40-8551e7b72529">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						JCI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="CreateProjectFCParameters"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="8793c29f-d2bb-4a8f-9e88-9e9b2827756d">
+				<argument
+				argname="RowParameter"
+				id="1d06de93-de10-4635-b39a-8797c2617f05">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						9
+					</argvalue>
+				</argument>
+				<argument
+				argname="sValue"
+				id="583e52ad-267a-4dc0-8c1c-5bb2b9b58a9f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						JCI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="CreateProjectFCParameters"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="8793c29f-d2bb-4a8f-9e88-9e9b2827756d">
+				<argument
+				argname="RowParameter"
+				id="1d06de93-de10-4635-b39a-8797c2617f05">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						10
+					</argvalue>
+				</argument>
+				<argument
+				argname="sValue"
+				id="583e52ad-267a-4dc0-8c1c-5bb2b9b58a9f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						JCI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="CreateProjectFCParameters"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="8793c29f-d2bb-4a8f-9e88-9e9b2827756d">
+				<argument
+				argname="RowParameter"
+				id="1d06de93-de10-4635-b39a-8797c2617f05">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						11
+					</argvalue>
+				</argument>
+				<argument
+				argname="sValue"
+				id="583e52ad-267a-4dc0-8c1c-5bb2b9b58a9f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						JCI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="CreateProjectFCParameters"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="8793c29f-d2bb-4a8f-9e88-9e9b2827756d">
+				<argument
+				argname="RowParameter"
+				id="1d06de93-de10-4635-b39a-8797c2617f05">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						12
+					</argvalue>
+				</argument>
+				<argument
+				argname="sValue"
+				id="583e52ad-267a-4dc0-8c1c-5bb2b9b58a9f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

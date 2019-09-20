@@ -30,42 +30,6 @@ rxversion="8.3">
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyValueOfParameterInPhysicalLayout"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="2feea707-fb88-45ae-a631-71525fecf80b">
-				<argument
-				argname="Row"
-				id="12f4d126-daef-4f9c-a494-05c05bc581e5">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						11
-					</argvalue>
-				</argument>
-				<argument
-				argname="expectedValue"
-				id="98c7492c-0ad3-430b-a231-eb5177532bff">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						2.5
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -446,7 +410,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						12
+						11
 					</argvalue>
 				</argument>
 				<argument
@@ -456,7 +420,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0
+						2.5
 					</argvalue>
 				</argument>
 			</arguments>

@@ -1508,7 +1508,7 @@ namespace TestProject.Libraries
 		public static void verifyDCUnitCalculationForNonSplitLoops(string fileName, string loopAdevices, string loopBdevices)
 		{
 			// Declared various fields as String type
-			string sLabelName, expectedDCUnits, sType;
+			string expectedDCUnits, sType;
 			
 			Excel_Utilities.OpenExcelFile(fileName,loopAdevices);
 			

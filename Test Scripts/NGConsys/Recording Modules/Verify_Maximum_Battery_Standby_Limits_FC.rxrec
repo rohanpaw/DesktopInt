@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c4062305-bbc4-4a7b-b450-fd0f42714a73"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_Maximum_Battery_Standby_Limits_FC
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_Maximum_Battery_Standby_Limits_FC"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyMaxBatteryStandbyAndAlarmLoadFC"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="sFileName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_71659_Verify_Maximum_Battery_Standby_Limits_FC
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelSheet"
+				id="1e1a7c63-f8b1-4ab2-af9c-050b1cf9d73b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_Maximum_Battery_Standby_Limits_FC.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

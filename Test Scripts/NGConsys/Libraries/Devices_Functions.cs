@@ -6624,7 +6624,7 @@ namespace TestProject.Libraries
 			repo.FormMe.cell_Properties_backplane1.Click();
 			
 			// Retrieve value of label
-			string actualProductLabel = repo.FormMe.txt_PropertiesTextValue1.TextValue;
+			string actualProductLabel = repo.FormMe.txt_SearchPropertiesCellTextValue.TextValue;
 			
 			// Comparing actualLabel and sLabel values
 			if(actualProductLabel.Equals(sProductLabel))
@@ -6707,7 +6707,7 @@ namespace TestProject.Libraries
 			repo.FormMe.cell_Properties_backplane1.Click();
 			
 			// Retrieve value of label
-			string actualRegionName = repo.FormMe.txt_PropertiesTextValue1.TextValue;
+			string actualRegionName = repo.FormMe.txt_SearchPropertiesCellTextValue.TextValue;
 			
 			// Comparing actualLabel and sLabel values
 			if(actualRegionName.Equals(sRegionName))

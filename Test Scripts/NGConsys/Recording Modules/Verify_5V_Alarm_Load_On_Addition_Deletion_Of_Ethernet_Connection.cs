@@ -91,7 +91,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM1");
+            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.423", "FIM1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
@@ -106,7 +106,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM1");
+            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.423", "FIM1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
@@ -118,7 +118,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM1");
+            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.423", "FIM1");
             Delay.Milliseconds(0);
             
         }

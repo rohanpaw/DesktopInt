@@ -1125,6 +1125,7 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			capname="cell"
 			id="5b8b26f9-0dd9-4092-b5a0-d7910ab2cbb3"
 			name="cell_LabelName"
+			refimgid="136e55e8-2ecd-400d-95fb-4f27aea7b822"
 			searchtimeout="30000ms">
 				/form[@win32ownerwindowlevel='0']/progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/?/?/cell[@isheader='False']
 			</item>
@@ -2114,14 +2115,28 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="63b8e912-eec4-4d76-bc20-4cc5463e0654"
 			name="BatteryStandBy"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='16']/?/?/text[1]
+				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/?/text[1]
+			</item>
+			<item
+			capname="text"
+			id="7840445c-f306-46fb-af43-87704a6edb1e"
+			name="BatteryStandByOnReopen"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/?/text[1]
 			</item>
 			<item
 			capname="text"
 			id="d6b79699-26f6-4563-9147-43b695b7281f"
 			name="AlarmLoad"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='17']/?/?/text[1]
+				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/?/text[1]
+			</item>
+			<item
+			capname="text"
+			id="9e58e381-df28-4f72-8b6d-66b0d915b5d3"
+			name="AlarmLoadOnReopen"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/?/text[1]
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -2466,10 +2481,18 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			<item
 			capname="text"
 			id="4037f82c-6c15-46c3-973c-1b71009b924a"
-			name="txt_PropertiesTextValue1"
+			name="txt_SearchPropertiesCellTextValue"
 			refimgid="92ec22f6-9db4-4446-9b03-04990446b580"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='1']//text[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="text"
+			id="eb4a6433-aa70-4067-8300-e31af3a0c358"
+			name="txt_SearchPropertiesDeviceCellTextValue"
+			refimgid="0bf95236-60f9-4ee6-acae-1e4e569911e0"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progreassbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//text
 			</item>
 			<item
 			capname="row"
@@ -4238,6 +4261,22 @@ kyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWID
 			refimgid="41946615-9cb6-40cf-8fad-c647fa8252b6"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/?/?/cell[@isheader='False']
+			</item>
+			<item
+			capname="cell"
+			id="9240b61b-384c-4916-b4da-e11f13421265"
+			name="cell_SearchPropertiesFirstRow"
+			refimgid="50c61aef-2998-4cd6-9a88-7803365a5034"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/?/?/cell[@isheader='False']
+			</item>
+			<item
+			capname="cell"
+			id="f922cb85-504f-4355-a4fc-f3c659e88963"
+			name="cell_SearchPropertiesDevicesFirstRow"
+			refimgid="f56867e0-face-4e09-b26f-5385e2dc837d"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/?/?/cell[@isheader='False']
 			</item>
 			<item
 			capname="cell"

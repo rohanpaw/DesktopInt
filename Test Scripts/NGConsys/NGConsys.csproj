@@ -1290,6 +1290,42 @@
       <UserCode>true</UserCode>
       <id>42694ac5-ff2d-46a4-ab6a-0ddd7e77f3e5</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Battery_Standby_On_Addition_Deletion_Of_Accessories_FC.cs">
+      <BoundTo>45ca29c0-2522-40d9-bf66-351be50d8e7d</BoundTo>
+      <DependentUpon>Verify_Battery_Standby_On_Addition_Deletion_Of_Accessories_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5a6f6b61-dfe4-413c-b85d-2a7a20a823e1</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Battery_Standby_On_Addition_Deletion_Of_Accessories_FC.UserCode.cs">
+      <BoundTo>45ca29c0-2522-40d9-bf66-351be50d8e7d</BoundTo>
+      <DependentUpon>Verify_Battery_Standby_On_Addition_Deletion_Of_Accessories_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fc141d1c-f1c3-49a8-bd3e-9bbdba00d973</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Battery_Standby_On_Addition_Deletion_Of_RBus_Connections_And_XBus_Template_FC.cs">
+      <BoundTo>96c67d53-7bef-4a74-9385-8e621ebedc99</BoundTo>
+      <DependentUpon>Verify_Battery_Standby_On_Addition_Deletion_Of_RBus_Connections_And_XBus_Template_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2f800cee-e3a9-4c19-bf51-80494a2ca8b2</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Battery_Standby_On_Addition_Deletion_Of_RBus_Connections_And_XBus_Template_FC.UserCode.cs">
+      <BoundTo>96c67d53-7bef-4a74-9385-8e621ebedc99</BoundTo>
+      <DependentUpon>Verify_Battery_Standby_On_Addition_Deletion_Of_RBus_Connections_And_XBus_Template_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0bcd9edc-1bfd-4dd9-92b3-13986ca368ba</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Battery_Standby_On_Changing_CPU_FC.cs">
+      <BoundTo>c681b32c-f69c-4fbf-b97d-7f20e8b89c56</BoundTo>
+      <DependentUpon>Verify_Battery_Standby_On_Changing_CPU_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1ee67734-3df0-46b0-946d-45cced935a44</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Battery_Standby_On_Changing_CPU_FC.UserCode.cs">
+      <BoundTo>c681b32c-f69c-4fbf-b97d-7f20e8b89c56</BoundTo>
+      <DependentUpon>Verify_Battery_Standby_On_Changing_CPU_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>66065a00-55a9-4ed1-be65-c224c399a2c3</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_cable_capacitance.cs">
       <BoundTo>dbf7fae4-992e-42fd-a6ec-fbb9ea2b38f5</BoundTo>
       <DependentUpon>Verify_cable_capacitance.rxrec</DependentUpon>
@@ -1673,6 +1709,18 @@
       <DependentUpon>Verify_DC_WorstCase_Units_Indicators.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>4aac77ce-7625-4668-9084-ed949749f93e</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Default_Battery_Standby_Load_FC.cs">
+      <BoundTo>1c039f2d-1062-47bc-97f8-27a30a2b02aa</BoundTo>
+      <DependentUpon>Verify_Default_Battery_Standby_Load_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9dc97151-0729-40de-bbe4-0af5eb569aaf</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Default_Battery_Standby_Load_FC.UserCode.cs">
+      <BoundTo>1c039f2d-1062-47bc-97f8-27a30a2b02aa</BoundTo>
+      <DependentUpon>Verify_Default_Battery_Standby_Load_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4b939301-cd25-40b2-aa58-5599202582a1</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_deletion_of_devices_in_panel.cs">
       <DependentUpon>Verify_deletion_of_devices_in_panel.rxrec</DependentUpon>
@@ -2502,6 +2550,18 @@
       <UserCode>true</UserCode>
       <id>80f5a123-9fff-4934-ba24-592061f967a5</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Maximum_Battery_Standby_Limits_FC.cs">
+      <BoundTo>85fb579c-9904-4efc-bbf2-fb4c831c9f26</BoundTo>
+      <DependentUpon>Verify_Maximum_Battery_Standby_Limits_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ece29338-b78e-4627-879a-75f229fd9892</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Maximum_Battery_Standby_Limits_FC.UserCode.cs">
+      <BoundTo>85fb579c-9904-4efc-bbf2-fb4c831c9f26</BoundTo>
+      <DependentUpon>Verify_Maximum_Battery_Standby_Limits_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>684556d0-5b32-4be1-9b85-93c9fd1bfef1</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_maximum_limit_for_Overall_System_Load.cs">
       <BoundTo>4c531063-be10-402a-b55b-0cb272619b64</BoundTo>
       <DependentUpon>Verify_maximum_limit_for_Overall_System_Load.rxrec</DependentUpon>
@@ -2645,6 +2705,30 @@
       <DependentUpon>Verify_Normal_Load_And_Alarm_Load_Property_On_Changing_Power_Source.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c1234d67-c075-48fc-8e9c-c32399286907</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.cs">
+      <BoundTo>498f1f7a-fe66-41bb-811f-de8abf7a7efc</BoundTo>
+      <DependentUpon>Verify_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9ad5926e-1008-49b9-a131-8d1ab2d9f560</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.UserCode.cs">
+      <BoundTo>498f1f7a-fe66-41bb-811f-de8abf7a7efc</BoundTo>
+      <DependentUpon>Verify_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fcb8d49a-a3df-4f5a-a9ed-6abaeaa9124d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Normal_Load_On_Changing_Of_Power_Supply_Of_MPM_FC.cs">
+      <BoundTo>34b8d194-96ad-4e23-92b0-4dce2c14d05b</BoundTo>
+      <DependentUpon>Verify_Normal_Load_On_Changing_Of_Power_Supply_Of_MPM_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1365bfe3-99cf-466d-a3de-c2d6addb2d0a</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Normal_Load_On_Changing_Of_Power_Supply_Of_MPM_FC.UserCode.cs">
+      <BoundTo>34b8d194-96ad-4e23-92b0-4dce2c14d05b</BoundTo>
+      <DependentUpon>Verify_Normal_Load_On_Changing_Of_Power_Supply_Of_MPM_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c6ebe80e-8ab4-4ecc-931d-91ee0a168231</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Other_Slot_Cards_Grid.cs">
       <BoundTo>f90421d1-dd71-4d6d-9743-ac74e8110e8b</BoundTo>
@@ -3162,6 +3246,18 @@
       <UserCode>true</UserCode>
       <id>29de780d-03e8-4525-a660-e62b49bd0fec</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.cs">
+      <BoundTo>15879bd5-ba94-4c42-9e7b-4de1ca45102b</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>09a03d1f-4511-471b-987f-cb7095da2cc8</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.UserCode.cs">
+      <BoundTo>15879bd5-ba94-4c42-9e7b-4de1ca45102b</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aeb955dd-b948-4665-9301-0bd2cfad5d83</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.cs">
       <BoundTo>99f09b4e-16fd-4c8a-91e1-2a09eeb4a2ce</BoundTo>
       <DependentUpon>Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec</DependentUpon>
@@ -3221,6 +3317,18 @@
       <DependentUpon>Verify_Reopen_Project_IOB_Properties.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>1fa6fc4d-0f3f-4f82-a185-e6cdaeb06163</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Of_Battery_Standby_On_Changing_CPU_FC.cs">
+      <BoundTo>029d3d95-b926-4723-b0c5-8ceb40efc2ee</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Of_Battery_Standby_On_Changing_CPU_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c909a961-c5b6-47ba-918e-2995326ce0ce</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Of_Battery_Standby_On_Changing_CPU_FC.UserCode.cs">
+      <BoundTo>029d3d95-b926-4723-b0c5-8ceb40efc2ee</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Of_Battery_Standby_On_Changing_CPU_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0df8be57-9a8d-41c6-9196-41e109259522</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC.cs">
       <BoundTo>1ffb1ceb-f509-4f8f-a178-a82ec14e53a6</BoundTo>
@@ -4375,9 +4483,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>0da60123-f3f3-4e92-8b7d-37c612019baf</id>
       <recordtableid>90ca7bba-d172-4271-86c4-6b96aba2ee03</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4385,9 +4493,9 @@
       <recordtableid>611c8925-4b15-4358-ab2b-475a284b2aee</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_RBus_Connection.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>40751285-7b9f-4d4d-bcf5-d0713a7d63ec</id>
       <recordtableid>9cde6b86-e2a0-41cd-aa8e-e262ef1d774c</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Slot_Cards.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4400,14 +4508,29 @@
       <recordtableid>47e0c49e-5bf3-42fa-a403-9c3f9d9642ab</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Changing_CPU_And_PSU.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>cca74faa-2182-47b5-93db-2f00d188b5c3</id>
       <recordtableid>1ce07a05-a87a-431c-8de2-857e3832d7cb</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.rxrec">
       <id>b3d19b24-3a32-4ed8-a8cd-a1519abe4fbc</id>
       <recordtableid>a157ba0d-2782-4f48-a857-2986df13cc29</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Battery_Standby_On_Addition_Deletion_Of_Accessories_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>45ca29c0-2522-40d9-bf66-351be50d8e7d</id>
+      <recordtableid>17b67b1f-6be6-4c00-a69e-ee89b7e189eb</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Battery_Standby_On_Addition_Deletion_Of_RBus_Connections_And_XBus_Template_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>96c67d53-7bef-4a74-9385-8e621ebedc99</id>
+      <recordtableid>80c2510e-a074-4f85-9498-87e735dbca79</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Battery_Standby_On_Changing_CPU_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>c681b32c-f69c-4fbf-b97d-7f20e8b89c56</id>
+      <recordtableid>07c9b8e1-2757-4354-a29a-664eb39a9041</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_cable_capacitance.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4525,9 +4648,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_DC_Units_Displayed_For_Non_Split_Loops_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>13b33609-ae71-4ce6-bb6e-c55e41109aa2</id>
       <recordtableid>e7f4dc08-0c70-4798-9fed-799d38e6262d</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_DC_Units_Indicators.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4568,6 +4691,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>73d28b72-8919-4f4a-b96f-1909f8f21329</id>
       <recordtableid>49c80c44-138a-4a18-9703-a29d01302e56</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Default_Battery_Standby_Load_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>1c039f2d-1062-47bc-97f8-27a30a2b02aa</id>
+      <recordtableid>974d06f2-b493-4ced-b7d8-8a767e189fa1</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_deletion_of_devices_in_panel.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4914,6 +5042,11 @@
       <id>07c74a11-7cfd-437d-946f-2b8f9b16a8be</id>
       <recordtableid>d9e1673d-2d0a-46cc-a155-c0af9545c027</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Maximum_Battery_Standby_Limits_FC.rxrec">
+      <id>85fb579c-9904-4efc-bbf2-fb4c831c9f26</id>
+      <recordtableid>c4062305-bbc4-4a7b-b450-fd0f42714a73</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_maximum_limit_for_Overall_System_Load.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>4c531063-be10-402a-b55b-0cb272619b64</id>
@@ -4973,6 +5106,16 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>ff865f22-a39b-424e-bd53-251e3b675c81</id>
       <recordtableid>8029acf8-7514-4ca0-8a40-5433fd251ee9</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>498f1f7a-fe66-41bb-811f-de8abf7a7efc</id>
+      <recordtableid>aee1129a-f536-482f-98b8-29f7e2ea5a12</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Normal_Load_On_Changing_Of_Power_Supply_Of_MPM_FC.rxrec">
+      <id>34b8d194-96ad-4e23-92b0-4dce2c14d05b</id>
+      <recordtableid>7ffc0ab8-9d3c-4bf0-9b03-697dd2b65d97</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Other_Slot_Cards_Grid.rxrec">
       <id>f90421d1-dd71-4d6d-9743-ac74e8110e8b</id>
@@ -5175,9 +5318,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>9ac4253e-bfb7-4198-8cba-399ee4904934</id>
       <recordtableid>f9e2d895-763d-4ae2-b802-8e7e842ea8af</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_For_DC_Units_Calculation_On_Changing_Base_Of_Device_To_Sounder_Base_FC.rxrec">
       <id>6016d74e-fd72-459c-aa91-14e0acc6d9f9</id>
@@ -5188,6 +5331,11 @@
       <id>aa71dec7-11a0-446e-857e-116f557d5fad</id>
       <recordtableid>53d3d5cf-70f2-450b-94e0-e3e14d69ab8f</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>15879bd5-ba94-4c42-9e7b-4de1ca45102b</id>
+      <recordtableid>98d6155f-13cd-47f6-89ee-4d1fca67f57c</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec">
       <id>99f09b4e-16fd-4c8a-91e1-2a09eeb4a2ce</id>
@@ -5213,6 +5361,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>5f6341b1-fa55-4217-a856-bea0137a1174</id>
       <recordtableid>4b9bb920-ae67-4a89-bb9d-f1878c2aed67</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_Of_Battery_Standby_On_Changing_CPU_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>029d3d95-b926-4723-b0c5-8ceb40efc2ee</id>
+      <recordtableid>ad1bad46-0c34-469a-af3f-ac3658c7f5ae</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC.rxrec">
       <id>1ffb1ceb-f509-4f8f-a178-a82ec14e53a6</id>
@@ -5530,4 +5683,10 @@
   </Import>
   <Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)">
   </Import>
+  <PropertyGroup>
+    <PreBuildEvent>if not exist "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data" mkdir "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data"
+xcopy "C:\work\consys-uiauto\Test Data" "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data"/E /Y
+if not exist "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects" mkdir "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects"
+xcopy "C:\work\consys-uiauto\NGDesigner Saved Projects" "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects"/E /Y</PreBuildEvent>
+  </PropertyGroup>
 </Project>
