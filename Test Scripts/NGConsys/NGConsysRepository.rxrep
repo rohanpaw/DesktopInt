@@ -636,12 +636,12 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			</item>
 			<item
 			addcaps="container,wpfelement,wpfgroupelement"
-			capname="button"
+			capname="container"
 			id="0e500efe-5709-4928-99ac-7ac1f1523afa"
 			name="btnDropDownPanelsGallery"
 			refimgid="eddc6395-d25a-4650-b4c2-fa8a9336743b"
 			searchtimeout="30000ms">
-				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/button[@automationid='PART_Down']
+				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
 			</item>
 			<item
 			addcaps="combobox,wpfelement,wpfgroupelement"
@@ -2530,7 +2530,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			name="IsolatorUnitsProgressBar"
 			refimgid="aa21fdc6-0937-472c-aedc-45b1c3e220e2"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[2]//container[@automationid='PART_ItemsPresenter']/row[@index=$sRowIndex]/?/?/progressbar
+				/form[@automationid='me']/progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index=$sRowIndex]/?/?/progressbar
 			</item>
 			<item
 			capname="text"

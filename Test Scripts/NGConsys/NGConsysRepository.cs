@@ -1830,7 +1830,7 @@ namespace TestProject
                 _txt_importInfo = new RepoItemInfo(this, "txt_Import", ".//container[@name='PART_Content' and @caption='Import']/text[@caption='Import']", 30000, null, "c169fe96-ac6a-486f-ba3b-8f0c9bf3ad4a");
                 _txt_designerdatafileInfo = new RepoItemInfo(this, "txt_DesignerDataFile", "?/?/container/?/?/text/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem/text[@caption='Designer data file']", 30000, null, "308a7aec-4732-487e-b2a3-6a7dd80d170b");
                 _txt_closeInfo = new RepoItemInfo(this, "txt_Close", "progressbar/container[18]/text[@caption='Close']", 30000, null, "26ee653d-9e9a-4eb0-9f5a-52e6e145b5c2");
-                _btndropdownpanelsgalleryInfo = new RepoItemInfo(this, "btnDropDownPanelsGallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/button[@automationid='PART_Down']", 30000, null, "0e500efe-5709-4928-99ac-7ac1f1523afa");
+                _btndropdownpanelsgalleryInfo = new RepoItemInfo(this, "btnDropDownPanelsGallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 30000, null, "0e500efe-5709-4928-99ac-7ac1f1523afa");
                 _cell_cablecapacitanceInfo = new RepoItemInfo(this, "cell_CableCapacitance", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']/cell[@isheader='False']/text", 30000, null, "3a0ab37c-54ad-4d6c-bca8-88615cd59e4a");
                 _txt_cablecapacitanceInfo = new RepoItemInfo(this, "txt_CableCapacitance", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']//text[@automationid='PART_Editor']", 30000, null, "84a20bb3-07c9-4d5c-88ae-badac325e617");
                 _btn_devicesgallerydropdownInfo = new RepoItemInfo(this, "btn_DevicesGalleryDropDown", "?/?/container[@automationid='PART_AutoHideControl']/list/?/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 60000, null, "9372dae3-e537-45b9-8c95-f4661ffdb4c0");
@@ -2289,11 +2289,11 @@ namespace TestProject
             /// The btnDropDownPanelsGallery item.
             /// </summary>
             [RepositoryItem("0e500efe-5709-4928-99ac-7ac1f1523afa")]
-            public virtual Ranorex.Button btnDropDownPanelsGallery
+            public virtual Ranorex.Container btnDropDownPanelsGallery
             {
                 get
                 {
-                    return _btndropdownpanelsgalleryInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _btndropdownpanelsgalleryInfo.CreateAdapter<Ranorex.Container>(true);
                 }
             }
 
@@ -6317,7 +6317,7 @@ namespace TestProject
                 _txt_searchpropertiesdevicecelltextvalueInfo = new RepoItemInfo(this, "txt_SearchPropertiesDeviceCellTextValue", "progreassbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//text", 30000, null, "eb4a6433-aa70-4067-8300-e31af3a0c358");
                 _txt_propertiesdescriptionrowInfo = new RepoItemInfo(this, "txt_PropertiesDescriptionRow", "progressbar/picture[7]/picture/list/row[@index='1']", 30000, null, "87fb5976-2f92-43b1-831e-644b14505b17");
                 _txt_inventorygriddevicepropertyInfo = new RepoItemInfo(this, "txt_InventoryGridDeviceProperty", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row[$sRowIndex]/row/cell[$sColumnIndex]/text", 30000, null, "103460ce-0b97-441a-ab01-bb36fd02783e");
-                _isolatorunitsprogressbarInfo = new RepoItemInfo(this, "IsolatorUnitsProgressBar", "progressbar/picture[2]//container[@automationid='PART_ItemsPresenter']/row[@index=$sRowIndex]/?/?/progressbar", 30000, null, "4ce737ec-47a9-43b5-ba8f-9384addc2ca4");
+                _isolatorunitsprogressbarInfo = new RepoItemInfo(this, "IsolatorUnitsProgressBar", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index=$sRowIndex]/?/?/progressbar", 30000, null, "4ce737ec-47a9-43b5-ba8f-9384addc2ca4");
                 _devicemodeafterreopenInfo = new RepoItemInfo(this, "DeviceModeAfterReopen", "progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']", 30000, null, "af798fdb-5ace-4417-b439-3b1a020626f3");
                 _devicesensitivityafterreopenInfo = new RepoItemInfo(this, "DeviceSensitivityAfterReopen", "progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']", 30000, null, "f6ee292f-0629-4fa8-a56f-f620834b1045");
                 _cell_cablelengthInfo = new RepoItemInfo(this, "cell_CableLength", "progressbar/picture[7]/picture/list/?/?/cell[@isheader='False']", 30000, null, "103cbd47-0037-40a6-b35b-62cfbcaeb884");
