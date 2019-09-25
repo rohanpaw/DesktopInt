@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="07dceaca-42c8-40cf-82fe-5daef4872f39"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_644_And_FC_2404_Panels
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_644_And_FC_2404_Panels"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddPanelsFCAndVerifyPSUs"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c9ac91e1-1e76-4c0d-bece-ca1fe6487827">
+				<argument
+				argname="sFileName"
+				id="cb536902-d67e-4efe-a6df-24dc0d73d208">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_68746_Verify_econd_PSU_Mentioned_In_Add a_New_Panel_Dialog_For_FC 64-4_And_FC 240-4_Panels
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddDevicesSheet"
+				id="0f9981dc-e73b-4949-b2de-283692f81ba1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_644_And_FC_2404_Panels.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
