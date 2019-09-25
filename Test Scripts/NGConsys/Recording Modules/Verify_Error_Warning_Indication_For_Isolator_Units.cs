@@ -91,28 +91,62 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.IS_Functions.VerifyIsolatorUnits("0", "FIM");
+            //Libraries.IS_Functions.VerifyIsolatorUnits("0", "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.AddDevicesfromGallery("400PH", "Detectors");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("410BDM", ValueConverter.ArgumentFromString<int>("DeviceQty", "2"));
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("410RIM", ValueConverter.ArgumentFromString<int>("DeviceQty", "20"));
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("400PH", "Detectors");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("410BDM", ValueConverter.ArgumentFromString<int>("DeviceQty", "2"));
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("410RIM", ValueConverter.ArgumentFromString<int>("DeviceQty", "18"));
-            Delay.Milliseconds(0);
-            
-            Libraries.IS_Functions.VerifyIsolatorUnitsAndIndicator("95", "GREEN", "FIM");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400PH", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(9));
+            repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            Delay.Milliseconds(200);
             
             Libraries.IS_Functions.VerifyIsolatorUnitsAndIndicator("100", "PINK", "FIM");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(11));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelName("410RIM - 1");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(13));
+            repo.ProfileConsys1.btn_Delete.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(14));
+            repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.IS_Functions.VerifyIsolatorUnitsAndIndicator("95", "YELLOW", "FIM");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(16));
+            repo.ProfileConsys1.tab_Points.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelName("410RIM - 2");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(18));
+            repo.ProfileConsys1.btn_Delete.Click();
+            Delay.Milliseconds(200);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(19));
+            repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.IS_Functions.VerifyIsolatorUnitsAndIndicator("90", "GREEN", "FIM");
             Delay.Milliseconds(0);
             
         }

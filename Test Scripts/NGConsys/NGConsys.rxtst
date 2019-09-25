@@ -220,6 +220,19 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="02d7ef88-3528-4627-81b5-923647555c10"
+			name="Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_64-4_And_FC_240-4_Panels">
+				<description>
+					<![CDATA[<p>NGC-1920/TC-<span style='color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Segoe UI VSS (Regular)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Ubuntu, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 18px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;'>68746</span></p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="02e98c4c-8867-4d9c-bce3-e17c0201e5d3"
 			name="Create_Project"
@@ -3560,6 +3573,26 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="31e1887f-e6b7-48a0-add0-f100e634d47b"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="31e248c2-f7ec-499f-87fb-9f0b85c8092f"
 			name="Observe_Devices_Order_Displayed_In_Context_Menu">
@@ -4424,6 +4457,19 @@ rxversion="8.3">
 			ref="3ea57d32-4b1e-40ec-ac5d-d9e07a9a30b5"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="3fa57ef6-f4e5-478b-9cba-ec462c559bb4"
+			name="Verify_Default_Second_PSU_In_Panel_Properties_Section_For_FC_64-4_And_FC_240_Panels">
+				<description>
+					<![CDATA[<p>NGC-1920</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="3fe96fcf-3424-41e8-b84a-2a6433279c9f"
 			name="Verify_Voltage_Drop_on_Other_Loops_for_FIM"
@@ -6492,6 +6538,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="59f2afba-c094-4a51-9120-b941c4c7589e"
+			name="Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_644_And_FC_2404_Panels"
+			ref="07dceaca-42c8-40cf-82fe-5daef4872f39"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="5a310b6f-625f-4037-b166-b0b8e2030e44"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -6534,6 +6586,20 @@ rxversion="8.3">
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
 					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5af097e1-1142-4d1c-856a-d36ea5b8d57f"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="3fa57ef6-f4e5-478b-9cba-ec462c559bb4"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -9134,6 +9200,12 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="80b5da85-a811-4860-9829-873bba61566a"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="80f6ddd0-8ddb-4dd7-8648-ffba21fcad99"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -9907,6 +9979,26 @@ MxDesigner]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8984b46e-40b1-4805-b23c-30d1e044f9b4"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="899247e0-cc68-477d-9853-2c6d810ea13c"
@@ -12354,6 +12446,12 @@ project]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="b1be5be9-7620-4354-b88f-3f3d89b429af"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="b1cde428-fe9d-4957-8674-e8a845956b6d"
 			name="Verify_40V_Load_On_Addition_Deletion_Of_Accessory"
 			ref="e8f033d3-8d70-4337-a56f-851982517708"
@@ -13218,6 +13316,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="bee9182d-2163-435f-a172-0b45b53006fc"
+			name="Verify_Default_Second_PSU_In_Panel_Properties_Section_For_FC_644_And_FC_240_Panels"
+			ref="b80d07db-8d2b-4313-8182-f26871c09436"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="bef0397a-bec7-42d9-b764-28920fff6340"
@@ -16614,6 +16718,20 @@ persisted in panel properties&nbsp;]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f275c7f3-cc39-45e5-9311-bc323a46b0a0"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="02d7ef88-3528-4627-81b5-923647555c10"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="f29c0cd8-1f57-4620-832f-19352d364fec"
@@ -22813,6 +22931,46 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="02d7ef88-3528-4627-81b5-923647555c10"
+					name="Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_64-4_And_FC_240-4_Panels">
+						<testmodule
+						id="31e1887f-e6b7-48a0-add0-f100e634d47b"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="f275c7f3-cc39-45e5-9311-bc323a46b0a0"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="59f2afba-c094-4a51-9120-b941c4c7589e"
+						name="Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_644_And_FC_2404_Panels">
+						</testmodule>
+						<testmodule
+						id="80b5da85-a811-4860-9829-873bba61566a"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="3fa57ef6-f4e5-478b-9cba-ec462c559bb4"
+					name="Verify_Default_Second_PSU_In_Panel_Properties_Section_For_FC_64-4_And_FC_240_Panels">
+						<testmodule
+						id="8984b46e-40b1-4805-b23c-30d1e044f9b4"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="5af097e1-1142-4d1c-856a-d36ea5b8d57f"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="bee9182d-2163-435f-a172-0b45b53006fc"
+						name="Verify_Default_Second_PSU_In_Panel_Properties_Section_For_FC_644_And_FC_240_Panels">
+						</testmodule>
+						<testmodule
+						id="b1be5be9-7620-4354-b88f-3f3d89b429af"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -23017,10 +23175,13 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="02d7ef88-3528-4627-81b5-923647555c10">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="5627997c-99f0-4047-b553-6f083e959de1">
+			id="3fa57ef6-f4e5-478b-9cba-ec462c559bb4">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -23050,10 +23211,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

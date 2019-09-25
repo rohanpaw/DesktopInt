@@ -1830,7 +1830,7 @@ namespace TestProject
                 _txt_importInfo = new RepoItemInfo(this, "txt_Import", ".//container[@name='PART_Content' and @caption='Import']/text[@caption='Import']", 30000, null, "c169fe96-ac6a-486f-ba3b-8f0c9bf3ad4a");
                 _txt_designerdatafileInfo = new RepoItemInfo(this, "txt_DesignerDataFile", "?/?/container/?/?/text/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem/text[@caption='Designer data file']", 30000, null, "308a7aec-4732-487e-b2a3-6a7dd80d170b");
                 _txt_closeInfo = new RepoItemInfo(this, "txt_Close", "progressbar/container[18]/text[@caption='Close']", 30000, null, "26ee653d-9e9a-4eb0-9f5a-52e6e145b5c2");
-                _btndropdownpanelsgalleryInfo = new RepoItemInfo(this, "btnDropDownPanelsGallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 30000, null, "0e500efe-5709-4928-99ac-7ac1f1523afa");
+                _btndropdownpanelsgalleryInfo = new RepoItemInfo(this, "btnDropDownPanelsGallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/button[@automationid='PART_Down']", 30000, null, "0e500efe-5709-4928-99ac-7ac1f1523afa");
                 _cell_cablecapacitanceInfo = new RepoItemInfo(this, "cell_CableCapacitance", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']/cell[@isheader='False']/text", 30000, null, "3a0ab37c-54ad-4d6c-bca8-88615cd59e4a");
                 _txt_cablecapacitanceInfo = new RepoItemInfo(this, "txt_CableCapacitance", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']//text[@automationid='PART_Editor']", 30000, null, "84a20bb3-07c9-4d5c-88ae-badac325e617");
                 _btn_devicesgallerydropdownInfo = new RepoItemInfo(this, "btn_DevicesGalleryDropDown", "?/?/container[@automationid='PART_AutoHideControl']/list/?/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 60000, null, "9372dae3-e537-45b9-8c95-f4661ffdb4c0");
@@ -2289,11 +2289,11 @@ namespace TestProject
             /// The btnDropDownPanelsGallery item.
             /// </summary>
             [RepositoryItem("0e500efe-5709-4928-99ac-7ac1f1523afa")]
-            public virtual Ranorex.Container btnDropDownPanelsGallery
+            public virtual Ranorex.Button btnDropDownPanelsGallery
             {
                 get
                 {
-                    return _btndropdownpanelsgalleryInfo.CreateAdapter<Ranorex.Container>(true);
+                    return _btndropdownpanelsgalleryInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
@@ -4390,6 +4390,8 @@ namespace TestProject
             RepoItemInfo _secondpsu_txt1Info;
             RepoItemInfo _firstpsu_cnt1Info;
             RepoItemInfo _cmb_powersupply1Info;
+            RepoItemInfo _secondpsuvalueInfo;
+            RepoItemInfo _firstpsuvalueInfo;
 
             /// <summary>
             /// Creates a new AddANewPanel  folder.
@@ -4402,6 +4404,8 @@ namespace TestProject
                 _secondpsu_txt1Info = new RepoItemInfo(this, "SecondPSU_txt1", ".//combobox/text[4]/text[@caption='']", 30000, null, "18798452-572d-4463-b930-fde2e251c405");
                 _firstpsu_cnt1Info = new RepoItemInfo(this, "FirstPSU_cnt1", "container[1]/?/?/combobox", 30000, null, "584267d5-7fb2-41f5-8b05-1bd38f9c661d");
                 _cmb_powersupply1Info = new RepoItemInfo(this, "cmb_PowerSupply1", ".//combobox/button[@automationid='MinimizeElement']", 30000, null, "e0359135-6677-43ff-8515-f87f2d867442");
+                _secondpsuvalueInfo = new RepoItemInfo(this, "SecondPSUValue", ".//combobox/text[4]", 30000, null, "d4160ea2-4429-46c9-8612-543e2f05d84f");
+                _firstpsuvalueInfo = new RepoItemInfo(this, "FirstPSUValue", ".//combobox/text[2]", 30000, null, "30427679-55a7-4f42-b2bb-6f7a4a667ee3");
             }
 
             /// <summary>
@@ -4521,6 +4525,54 @@ namespace TestProject
                 get
                 {
                     return _cmb_powersupply1Info;
+                }
+            }
+
+            /// <summary>
+            /// The SecondPSUValue item.
+            /// </summary>
+            [RepositoryItem("d4160ea2-4429-46c9-8612-543e2f05d84f")]
+            public virtual Ranorex.Text SecondPSUValue
+            {
+                get
+                {
+                    return _secondpsuvalueInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SecondPSUValue item info.
+            /// </summary>
+            [RepositoryItemInfo("d4160ea2-4429-46c9-8612-543e2f05d84f")]
+            public virtual RepoItemInfo SecondPSUValueInfo
+            {
+                get
+                {
+                    return _secondpsuvalueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FirstPSUValue item.
+            /// </summary>
+            [RepositoryItem("30427679-55a7-4f42-b2bb-6f7a4a667ee3")]
+            public virtual Ranorex.Text FirstPSUValue
+            {
+                get
+                {
+                    return _firstpsuvalueInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FirstPSUValue item info.
+            /// </summary>
+            [RepositoryItemInfo("30427679-55a7-4f42-b2bb-6f7a4a667ee3")]
+            public virtual RepoItemInfo FirstPSUValueInfo
+            {
+                get
+                {
+                    return _firstpsuvalueInfo;
                 }
             }
 
@@ -6173,6 +6225,7 @@ namespace TestProject
             RepoItemInfo _dcunits_afterreopenInfo;
             RepoItemInfo _dcunitsworstcase_afterreopenInfo;
             RepoItemInfo _btn_saveInfo;
+            RepoItemInfo _txt_firstpsuInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6234,7 +6287,7 @@ namespace TestProject
                 _btn_copy1Info = new RepoItemInfo(this, "btn_Copy1", "?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Copy']", 60000, null, "57f9fc13-5b4b-44c8-bd91-35515c8dfa12");
                 _pasteInfo = new RepoItemInfo(this, "Paste", "?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Paste']", 60000, null, "f4f72640-8721-416a-b01c-0018a4546ff3");
                 _cell_additionalpsuInfo = new RepoItemInfo(this, "Cell_AdditionalPSU", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@text='Additional PSU']", 30000, null, "d0bd45a3-38ff-46e3-a900-554281125c55");
-                _cell_secondpsuInfo = new RepoItemInfo(this, "Cell_SecondPSU", "progressbar/picture[7]/?/row[@index='7']/cell[@isheader='False']", 60000, null, "305392e1-5720-4231-9ec9-884f7f208742");
+                _cell_secondpsuInfo = new RepoItemInfo(this, "Cell_SecondPSU", "progressbar/?//container[@automationid='PART_ItemsPresenter']/row[@index='7']/cell[@isheader='False']", 60000, null, "305392e1-5720-4231-9ec9-884f7f208742");
                 _poweredfromInfo = new RepoItemInfo(this, "PoweredFrom", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='2']/cell[@text='Powered from']", 30000, null, "3dff0b2f-766c-4a27-972f-19141247a443");
                 _deviceorder_txtInfo = new RepoItemInfo(this, "DeviceOrder_txt", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/container[$sDeviceOrderRow]/row/cell[5]/text", 30000, null, "6f54687f-cb09-44f1-b713-1a74f83a08b1");
                 _pointsgridcontainerInfo = new RepoItemInfo(this, "PointsGridContainer", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']", 30000, null, "329b1c63-3379-4a19-8eb1-ecc0b8114bd8");
@@ -6339,6 +6392,7 @@ namespace TestProject
                 _dcunits_afterreopenInfo = new RepoItemInfo(this, "DCUnits_AfterReopen", "progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='2']/cell[@text='[1]']/?/text[1]", 60000, null, "dc6f0fa9-5986-49ea-a6cc-dd83a1850ed9");
                 _dcunitsworstcase_afterreopenInfo = new RepoItemInfo(this, "DCUnitsWorstCase_AfterReopen", "progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='3']/cell[@text='[2]']/?/text[1]", 60000, null, "8a1232f5-78e2-4cb9-a37e-cc092cabed55");
                 _btn_saveInfo = new RepoItemInfo(this, "btn_Save", "progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/list[2]//button[@text='Save']", 30000, null, "699d7ed5-3738-422d-852b-3fa489ebcb75");
+                _txt_firstpsuInfo = new RepoItemInfo(this, "txt_FirstPSU", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='6']//text[@automationid='PART_Editor']", 30000, null, "0c0d150e-2745-4ba4-9689-811c254330e9");
             }
 
             /// <summary>
@@ -10283,6 +10337,30 @@ namespace TestProject
                 get
                 {
                     return _btn_saveInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_FirstPSU item.
+            /// </summary>
+            [RepositoryItem("0c0d150e-2745-4ba4-9689-811c254330e9")]
+            public virtual Ranorex.Text txt_FirstPSU
+            {
+                get
+                {
+                    return _txt_firstpsuInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_FirstPSU item info.
+            /// </summary>
+            [RepositoryItemInfo("0c0d150e-2745-4ba4-9689-811c254330e9")]
+            public virtual RepoItemInfo txt_FirstPSUInfo
+            {
+                get
+                {
+                    return _txt_firstpsuInfo;
                 }
             }
         }

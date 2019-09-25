@@ -1722,6 +1722,18 @@
       <UserCode>true</UserCode>
       <id>4b939301-cd25-40b2-aa58-5599202582a1</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Default_Second_PSU_In_Panel_Properties_Section_For_FC_644_And_FC_240_Panels.cs">
+      <BoundTo>d08b407c-7698-412f-9e39-89434182a0d3</BoundTo>
+      <DependentUpon>Verify_Default_Second_PSU_In_Panel_Properties_Section_For_FC_644_And_FC_240_Panels.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b360d9e1-9d15-4a3e-a9e0-6af6daed2b21</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Default_Second_PSU_In_Panel_Properties_Section_For_FC_644_And_FC_240_Panels.UserCode.cs">
+      <BoundTo>d08b407c-7698-412f-9e39-89434182a0d3</BoundTo>
+      <DependentUpon>Verify_Default_Second_PSU_In_Panel_Properties_Section_For_FC_644_And_FC_240_Panels.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>51380018-c86f-4063-8b4e-7cfdcfb4b9fb</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_deletion_of_devices_in_panel.cs">
       <DependentUpon>Verify_deletion_of_devices_in_panel.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1853,6 +1865,18 @@
       <DependentUpon>Verify_Device_Order_Of_Sounders_Added_In_LPS800.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>518ee61d-15b8-4ac8-9838-0139a01a5685</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_644_And_FC_2404_Panels.cs">
+      <BoundTo>adaff50d-84c0-4a93-8336-d6c9dfc78912</BoundTo>
+      <DependentUpon>Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_644_And_FC_2404_Panels.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1e1c09ef-5d87-472f-b1aa-134bae0304ea</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_644_And_FC_2404_Panels.UserCode.cs">
+      <BoundTo>adaff50d-84c0-4a93-8336-d6c9dfc78912</BoundTo>
+      <DependentUpon>Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_644_And_FC_2404_Panels.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>45018509-b461-405f-af43-b32a745a6f17</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix.cs">
       <BoundTo>4e08f8c3-2152-45ab-9e45-eeb28f0b1281</BoundTo>
@@ -4697,6 +4721,11 @@
       <id>1c039f2d-1062-47bc-97f8-27a30a2b02aa</id>
       <recordtableid>974d06f2-b493-4ced-b7d8-8a767e189fa1</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Default_Second_PSU_In_Panel_Properties_Section_For_FC_644_And_FC_240_Panels.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>d08b407c-7698-412f-9e39-89434182a0d3</id>
+      <recordtableid>b80d07db-8d2b-4313-8182-f26871c09436</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_deletion_of_devices_in_panel.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>4d74e1ed-37a7-4596-ab0f-bb67c25e4f7b</id>
@@ -4751,6 +4780,11 @@
       <id>2145b00e-558c-467c-9b39-c89a5720490f</id>
       <recordtableid>31c8e708-c6a7-4e5f-9e6d-b2800ff527c8</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_644_And_FC_2404_Panels.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>adaff50d-84c0-4a93-8336-d6c9dfc78912</id>
+      <recordtableid>07dceaca-42c8-40cf-82fe-5daef4872f39</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

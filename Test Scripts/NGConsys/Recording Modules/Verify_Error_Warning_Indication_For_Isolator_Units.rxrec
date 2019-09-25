@@ -154,7 +154,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="IS_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyIsolatorUnits"
 		namespace="TestProject.Libraries"
@@ -190,7 +190,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -216,7 +216,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
@@ -252,7 +252,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMultiplePointWizard"
 		namespace="TestProject.Libraries"
@@ -317,93 +317,35 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						18
+						20
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<userrecorditem
-		classname="IS_Functions"
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
 		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyIsolatorUnitsAndIndicator"
-		namespace="TestProject.Libraries"
+		loc="Center"
+		movetime="300ms"
 		optional="False"
-		varname="">
+		searchpropertyid="7a6d674f-3da7-4673-b0bd-791e13a81d77"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<arguments
-			id="c7896c4e-5fad-4625-90e4-a321bf3dc629">
-				<argument
-				argname="expectedIsolatorUnits"
-				id="80bc8367-bbcf-49ae-b5e9-98c5df98a551">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						95
-					</argvalue>
-				</argument>
-				<argument
-				argname="sExpectedColourCode"
-				id="7679d2d0-75f4-400f-83f0-6c93a924a878">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						GREEN
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="2c1215be-65bb-41c3-9953-434b2b3e7e8b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						FIM
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromMultiplePointWizard"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="cae5511d-b352-46d1-9bb9-77193c968b60">
-				<argument
-				argname="sDeviceName"
-				id="5cc28d97-c400-4632-942b-bbcd5e34843f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						400PH
-					</argvalue>
-				</argument>
-				<argument
-				argname="DeviceQty"
-				id="b0749a57-44b5-4aed-ac91-9c908e2bbd58">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						5
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
+			<info
+			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
+				</path>
+			</info>
+		</mouseitem>
 		<userrecorditem
 		classname="IS_Functions"
 		enabled="True"
@@ -436,6 +378,294 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						PINK
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="2c1215be-65bb-41c3-9953-434b2b3e7e8b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FIM
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="83bae974-f155-4a1d-9e01-55706192f3a1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelName"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="20cf71ec-b7ed-40ef-b6d4-4ce91de4b92f">
+				<argument
+				argname="sLabel"
+				id="a30e2ab1-26f9-419b-8df9-015d2d65d414">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						410RIM - 1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="4f8494d5-2ce0-40ab-8f2d-8e77e9cae2f3"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8e8210c0-314f-4c7d-97b4-86fb85d69656"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Delete']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7a6d674f-3da7-4673-b0bd-791e13a81d77"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="IS_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyIsolatorUnitsAndIndicator"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c7896c4e-5fad-4625-90e4-a321bf3dc629">
+				<argument
+				argname="expectedIsolatorUnits"
+				id="80bc8367-bbcf-49ae-b5e9-98c5df98a551">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						95
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExpectedColourCode"
+				id="7679d2d0-75f4-400f-83f0-6c93a924a878">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						YELLOW
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="2c1215be-65bb-41c3-9953-434b2b3e7e8b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FIM
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="83bae974-f155-4a1d-9e01-55706192f3a1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelName"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="20cf71ec-b7ed-40ef-b6d4-4ce91de4b92f">
+				<argument
+				argname="sLabel"
+				id="a30e2ab1-26f9-419b-8df9-015d2d65d414">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						410RIM - 2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="4f8494d5-2ce0-40ab-8f2d-8e77e9cae2f3"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8e8210c0-314f-4c7d-97b4-86fb85d69656"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Delete']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7a6d674f-3da7-4673-b0bd-791e13a81d77"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="IS_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyIsolatorUnitsAndIndicator"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c7896c4e-5fad-4625-90e4-a321bf3dc629">
+				<argument
+				argname="expectedIsolatorUnits"
+				id="80bc8367-bbcf-49ae-b5e9-98c5df98a551">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						90
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExpectedColourCode"
+				id="7679d2d0-75f4-400f-83f0-6c93a924a878">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						GREEN
 					</argvalue>
 				</argument>
 				<argument

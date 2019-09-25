@@ -94,10 +94,13 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.VerifyValueOf2ndPSU("PMM840");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(7));
             repo.FormMe.tab_ShoppingList.Click();
             Delay.Milliseconds(200);
             
