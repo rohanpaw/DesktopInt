@@ -365,10 +365,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="60100a5a-fabb-4057-82b0-f377a9c49cfc"
+			id="57f9fc13-5b4b-44c8-bd91-35515c8dfa12"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[2]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Copy']
+					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Copy']
 				</path>
 			</info>
 		</mouseitem>
@@ -1486,10 +1486,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<info
-			id="60100a5a-fabb-4057-82b0-f377a9c49cfc"
+			id="57f9fc13-5b4b-44c8-bd91-35515c8dfa12"
 			sourcename="ItemRecorderEditor">
 				<path>
-					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[2]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Copy']
+					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Copy']
 				</path>
 			</info>
 		</mouseitem>

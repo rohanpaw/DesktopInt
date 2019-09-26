@@ -2389,8 +2389,8 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="3514cb22-3904-4f43-acc3-89c2c94c6a02"
 			name="txt_PowerSupply"
 			refimgid="444c1b9e-ed9d-4f55-a49b-f8a6c72cfdaa"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture/picture/list/container[@automationid='PART_ItemsPresenter']//combobox[@automationid='PART_Editor']
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar/?/picture/list/row[@index='1']/?/?/combobox[@automationid='PART_Editor']
 			</item>
 			<item
 			addcaps="cell,wpfelement,wpfgroupelement"
@@ -2398,8 +2398,8 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="39383960-ec6d-47c6-85f9-083f716f01d0"
 			name="cell_PowerSupply"
 			refimgid="d3a65f54-db6e-4081-8ce4-2f2ecafdf4c9"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture/picture/list/container[@automationid='PART_ItemsPresenter']/?/?/cell[@text='Power Supply']
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar/?/picture/list/?/?/cell[@text='Power Supply']
 			</item>
 			<item
 			capname="text"

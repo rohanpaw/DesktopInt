@@ -107,8 +107,8 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "IOB800-1");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Slot Address", "1");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Slot Address", "1");
+            //Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Other Slot Cards 1");
             Delay.Milliseconds(0);
