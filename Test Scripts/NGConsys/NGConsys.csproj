@@ -510,6 +510,18 @@
       <UserCode>true</UserCode>
       <id>7297f217-6730-4bf4-a6d3-e80e5d1a997b</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Maximum_Limit_For_5V__24V__40V.cs">
+      <BoundTo>35d90bdb-9e85-41e1-bdfa-9b8eedbc5d1e</BoundTo>
+      <DependentUpon>Verify_Maximum_Limit_For_5V__24V__40V.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>53250cee-8dad-4aa5-92b1-e1329a10b8cc</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Maximum_Limit_For_5V__24V__40V.UserCode.cs">
+      <BoundTo>35d90bdb-9e85-41e1-bdfa-9b8eedbc5d1e</BoundTo>
+      <DependentUpon>Verify_Maximum_Limit_For_5V__24V__40V.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cf68fafe-c8bc-47b2-9453-9b7c5fb556c7</id>
+    </Compile>
     <Compile Include="Recording Modules\Verification_for_device_Label.cs">
       <BoundTo>4cd3cdf6-d271-40c4-b883-d3fd135c5f0a</BoundTo>
       <DependentUpon>Verification_for_device_Label.rxrec</DependentUpon>
@@ -4216,6 +4228,11 @@
       <id>9e038d6c-6339-4f11-873a-b513f341be3d</id>
       <recordtableid>773e468a-067e-4503-a291-e3f9eeebaeba</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Maximum_Limit_For_5V__24V__40V.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>35d90bdb-9e85-41e1-bdfa-9b8eedbc5d1e</id>
+      <recordtableid>633c49ae-ec4c-4372-8be3-644045367dab</recordtableid>
+    </None>
     <None Include="Recording Modules\Verification_for_device_Label.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>4cd3cdf6-d271-40c4-b883-d3fd135c5f0a</id>
@@ -4722,9 +4739,9 @@
       <recordtableid>974d06f2-b493-4ced-b7d8-8a767e189fa1</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Default_Second_PSU_In_Panel_Properties_Section_For_FC_644_And_FC_240_Panels.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>d08b407c-7698-412f-9e39-89434182a0d3</id>
       <recordtableid>b80d07db-8d2b-4313-8182-f26871c09436</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_deletion_of_devices_in_panel.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -5717,10 +5734,4 @@
   </Import>
   <Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)">
   </Import>
-  <PropertyGroup>
-    <PreBuildEvent>if not exist "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data" mkdir "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data"
-xcopy "C:\work\consys-uiauto\Test Data" "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data"/E /Y
-if not exist "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects" mkdir "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects"
-xcopy "C:\work\consys-uiauto\NGDesigner Saved Projects" "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects"/E /Y</PreBuildEvent>
-  </PropertyGroup>
 </Project>

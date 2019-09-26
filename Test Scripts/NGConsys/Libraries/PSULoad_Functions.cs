@@ -5719,7 +5719,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,sIsSecondPSU,CPUType,sRowNumber,changeCPUType,PanelType,expectedBatteryStandby,expectedDefaultBatteryStandby,expectedAlarmLoad,expectedDefaultAlarmLoad,changePSUType;
+			string PanelName,PanelNode,sIsSecondPSU,CPUType,sRowNumber,changeCPUType,PanelType,expectedBatteryStandby,expectedDefaultBatteryStandby;//,expectedAlarmLoad,expectedDefaultAlarmLoad,changePSUType;
 			int rowNumber;
 			bool IsSecondPSU;
 			
@@ -5808,7 +5808,7 @@ namespace TestProject.Libraries
 			
 			string changePowerSupply,sBatteryStandbyOnChangingPowerSupply,sAlarmLoadOnChangingPowerSupply;
 			int rowNumber;
-			float RBusBatteryStandby,RBusAlarmLoad,DefaultBatteryStandby,DefaultAlarmLoad,XBusBatteryStandby,XBusAlarmLoad;
+			float RBusBatteryStandby,RBusAlarmLoad;//,DefaultBatteryStandby,DefaultAlarmLoad,XBusBatteryStandby,XBusAlarmLoad;
 			
 			// For loop to iterate on data present in excel
 			for(int i=8; i<=rows; i++)
@@ -6173,6 +6173,40 @@ namespace TestProject.Libraries
 			}
 		}
 		
+		/*****************************************************************************************************************
+		 * Function Name: verifyMax40VPSULoadForFCPanel
+		 * Function Details: To Verify maximum 40V PSU load value for FC panel
+		 * Parameter/Arguments:   expected Maximum value, panel type (FIM or PFI)  and row number is 13 by default for FIM
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 25/09/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyMax40VPSULoadForFCPanel(string expectedMax40VPSU, string rowNumber)
+		{
+			//  assign sRow value
+			
+				sRow = rowNumber;
+			
+			// Click on Physical layout tab
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			
+			// Fetch 40V PSU Load maximum limit value
+			string max40VPsu = repo.FormMe.Max40VPsu.TextValue;
+			
+			// Compare max40VPSU value with expected value
+			if(max40VPsu.Equals(expectedMax40VPSU))
+			{
+				Report.Log(ReportLevel.Success,"Max 40V PSU value " + max40VPsu + " is displayed correctly " );
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Max 40V PSU value is not displayed correctly, it is displayed as: " + max40VPsu + " instead of : " +expectedMax40VPSU);
+			}
+			
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+		}
 	}
 }
 
