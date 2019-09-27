@@ -510,6 +510,18 @@
       <UserCode>true</UserCode>
       <id>7297f217-6730-4bf4-a6d3-e80e5d1a997b</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel.cs">
+      <BoundTo>966cd594-f837-42fd-890b-ea7e43f1852a</BoundTo>
+      <DependentUpon>Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6afb1404-3663-4166-8547-396ad34ad0cc</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel.UserCode.cs">
+      <BoundTo>966cd594-f837-42fd-890b-ea7e43f1852a</BoundTo>
+      <DependentUpon>Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fadb3ca7-a729-4f91-b168-66d154db3bc0</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Maximum_Limit_For_5V__24V__40V.cs">
       <BoundTo>35d90bdb-9e85-41e1-bdfa-9b8eedbc5d1e</BoundTo>
       <DependentUpon>Verify_Maximum_Limit_For_5V__24V__40V.rxrec</DependentUpon>
@@ -3918,6 +3930,18 @@
       <UserCode>true</UserCode>
       <id>15a8e570-9f2f-49f7-8183-b9d65ba199a7</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_voltage_drop_calculation.cs">
+      <BoundTo>9fd15678-975a-4f1a-8ceb-352763a516cf</BoundTo>
+      <DependentUpon>Verify_voltage_drop_calculation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9a438641-f1a5-4bf7-b6fc-5236a13b5527</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_voltage_drop_calculation.UserCode.cs">
+      <BoundTo>9fd15678-975a-4f1a-8ceb-352763a516cf</BoundTo>
+      <DependentUpon>Verify_voltage_drop_calculation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bc6107dc-a162-4c6c-8f96-1188a2513f22</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Voltage_Drop_Calculation_For_FIM.cs">
       <DependentUpon>Verify_Voltage_Drop_Calculation_For_FIM.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -4228,10 +4252,15 @@
       <id>9e038d6c-6339-4f11-873a-b513f341be3d</id>
       <recordtableid>773e468a-067e-4503-a291-e3f9eeebaeba</recordtableid>
     </None>
-    <None Include="Recording Modules\Verify_Maximum_Limit_For_5V__24V__40V.rxrec">
+    <None Include="Recording Modules\Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>966cd594-f837-42fd-890b-ea7e43f1852a</id>
+      <recordtableid>082dffce-d287-401e-a4f1-76d4a095c6c2</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Maximum_Limit_For_5V__24V__40V.rxrec">
       <id>35d90bdb-9e85-41e1-bdfa-9b8eedbc5d1e</id>
       <recordtableid>633c49ae-ec4c-4372-8be3-644045367dab</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verification_for_device_Label.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -5647,6 +5676,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>a3033805-2631-48db-8b27-5bd28ef3e649</id>
       <recordtableid>54b73774-45c1-4423-b4ea-e013fc09555d</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_voltage_drop_calculation.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>9fd15678-975a-4f1a-8ceb-352763a516cf</id>
+      <recordtableid>5da1e640-b101-444f-8501-f5f761aeb59e</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Voltage_Drop_Calculation_For_FIM.rxrec">
       <id>94ddb14c-2f98-4be6-b4ca-b2b6031c6162</id>

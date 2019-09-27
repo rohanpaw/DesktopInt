@@ -6226,6 +6226,7 @@ namespace TestProject
             RepoItemInfo _dcunitsworstcase_afterreopenInfo;
             RepoItemInfo _btn_saveInfo;
             RepoItemInfo _txt_firstpsuInfo;
+            RepoItemInfo _btn_deletefcInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6393,6 +6394,7 @@ namespace TestProject
                 _dcunitsworstcase_afterreopenInfo = new RepoItemInfo(this, "DCUnitsWorstCase_AfterReopen", "progressbar/?/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='3']/cell[@text='[2]']/?/text[1]", 60000, null, "8a1232f5-78e2-4cb9-a37e-cc092cabed55");
                 _btn_saveInfo = new RepoItemInfo(this, "btn_Save", "progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/list[2]//button[@text='Save']", 30000, null, "699d7ed5-3738-422d-852b-3fa489ebcb75");
                 _txt_firstpsuInfo = new RepoItemInfo(this, "txt_FirstPSU", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='6']//text[@automationid='PART_Editor']", 30000, null, "0c0d150e-2745-4ba4-9689-811c254330e9");
+                _btn_deletefcInfo = new RepoItemInfo(this, "btn_DeleteFC", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Delete']", 30000, null, "c9e14fb1-7f0e-4328-98a5-20e8d815a7b5");
             }
 
             /// <summary>
@@ -10363,6 +10365,30 @@ namespace TestProject
                     return _txt_firstpsuInfo;
                 }
             }
+
+            /// <summary>
+            /// The btn_DeleteFC item.
+            /// </summary>
+            [RepositoryItem("c9e14fb1-7f0e-4328-98a5-20e8d815a7b5")]
+            public virtual Ranorex.Text btn_DeleteFC
+            {
+                get
+                {
+                    return _btn_deletefcInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btn_DeleteFC item info.
+            /// </summary>
+            [RepositoryItemInfo("c9e14fb1-7f0e-4328-98a5-20e8d815a7b5")]
+            public virtual RepoItemInfo btn_DeleteFCInfo
+            {
+                get
+                {
+                    return _btn_deletefcInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -11332,6 +11358,7 @@ namespace TestProject
             RepoItemInfo _btn_closeInfo;
             RepoItemInfo _export_ok_overwriteInfo;
             RepoItemInfo _panelsInfo;
+            RepoItemInfo _fcpsuloadInfo;
 
             /// <summary>
             /// Creates a new FormMe2  folder.
@@ -11346,6 +11373,7 @@ namespace TestProject
                 _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "container[@automationid='Root_Grid']//button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_CloseButton']", 30000, null, "c513d0ed-62ca-4535-8465-97cd5b14bc98");
                 _export_ok_overwriteInfo = new RepoItemInfo(this, "Export_OK_Overwrite", "button[@name='OK']", 30000, null, "41277ae1-e48f-4b06-bc29-a082affbef88");
                 _panelsInfo = new RepoItemInfo(this, "Panels", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_Caption']/text[@caption='Panels']", 30000, null, "a5a3d9d9-6288-4a3b-907f-3071ddbcbcc7");
+                _fcpsuloadInfo = new RepoItemInfo(this, "FCPSULoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[@caption=$sPsuV]", 30000, null, "09ea8da4-2559-4b69-9a6d-3ca8ba3df423");
             }
 
             /// <summary>
@@ -11513,6 +11541,30 @@ namespace TestProject
                 get
                 {
                     return _panelsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FCPSULoad item.
+            /// </summary>
+            [RepositoryItem("09ea8da4-2559-4b69-9a6d-3ca8ba3df423")]
+            public virtual Ranorex.Text FCPSULoad
+            {
+                get
+                {
+                    return _fcpsuloadInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FCPSULoad item info.
+            /// </summary>
+            [RepositoryItemInfo("09ea8da4-2559-4b69-9a6d-3ca8ba3df423")]
+            public virtual RepoItemInfo FCPSULoadInfo
+            {
+                get
+                {
+                    return _fcpsuloadInfo;
                 }
             }
 

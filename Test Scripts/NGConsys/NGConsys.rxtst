@@ -2394,6 +2394,12 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="20839d90-100b-4731-ba86-9b1037cc93c0"
+			name="Verify_voltage_drop_calculation"
+			ref="5da1e640-b101-444f-8501-f5f761aeb59e"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="20855ba4-3f79-4167-94a4-73de9f41c4f0"
 			name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template"
 			ref="87e23d30-e029-4ef0-822b-ca9138a251bf"
@@ -3864,6 +3870,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="360f016e-3f11-4ccf-b1b9-465e4b56e965"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="36197411-3bd3-42ea-8b44-259da54c100d"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -4180,6 +4192,12 @@ rxversion="8.3">
 			id="3a3b8532-71ea-41c1-aa2c-2b4a8c0cfc73"
 			name="Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section"
 			ref="24aaa9ba-5aac-4310-b303-d4087b7c09a9"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3a401967-5bf8-4bed-882d-1e108c67c781"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -6831,6 +6849,19 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="5cbd8e33-3e6f-4903-8955-cf92b8bb6bc6"
+			name="Verify_voltage_drop_calculation">
+				<description>
+					<![CDATA[NGC-1854/TC-65365]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="5ce3a6b8-dca3-4a8c-85d9-d368c2b468d6"
 			name="Verify_Impact_of_2nd_PSU_on_Battery_Loading"
@@ -8179,6 +8210,26 @@ rxversion="8.3">
 			name="Verify_APM800_Will_Get_Added_To_Available_Loop_Address_When_Second_PUSPSB800K_Is_Selected"
 			ref="f59dd44e-6c73-4aad-b523-0efdb5c6cb37"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="713578d4-1c19-435f-a510-442fb49d64dd"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="71633c23-a054-4ac9-b6b3-cd9d6443ca61"
@@ -9634,6 +9685,20 @@ MxDesigner]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="848d5942-24b2-43a9-9ec5-4de63f21aff1"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="9a83cacb-767c-4c29-8f54-3ecd09a20c89"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="8495309c-171c-4d6e-84de-790cf6c44945"
@@ -11233,6 +11298,19 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="9a83cacb-767c-4c29-8f54-3ecd09a20c89"
+			name="Verify_5V/24V/40V_Load_on_changing_CPU_of_panel">
+				<description>
+					<![CDATA[NGC-1854/64716- Need to update the correct test data]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="9a8d55cf-7cab-4d65-84af-ab7d7e02b027"
 			name="Create_Project"
@@ -12502,6 +12580,26 @@ project]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b1c6d556-b82d-4884-92b4-6004f9498afd"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="b1cde428-fe9d-4957-8674-e8a845956b6d"
@@ -15500,6 +15598,20 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="dffd455f-abb9-4793-ae31-2dd80fd1dcc2"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="5cbd8e33-3e6f-4903-8955-cf92b8bb6bc6"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="e00cdfd2-31f7-47f6-882d-402771f9c7ba"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -15592,6 +15704,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="e11f835c-37e5-45c4-9a21-31785793accb"
+			name="Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel"
+			ref="082dffce-d287-401e-a4f1-76d4a095c6c2"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="e123e7f4-aa9a-4884-98aa-b72c106c143a"
@@ -16839,6 +16957,9 @@ persisted in panel properties&nbsp;]]>
 			<testcase
 			id="f37d6bae-dea8-455a-a9c9-2418b489d530"
 			name="Verify_Maximum_Limit_For_5V,_24V,_40V">
+				<description>
+					<![CDATA[NGC-1854/64715- Need to verify the test data]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -23048,6 +23169,46 @@ persisted in panel properties&nbsp;]]>
 						id="60592917-da56-4ca6-9e31-32974d2a2c8a"
 						name="Verify_Maximum_Limit_For_5V__24V__40V">
 						</testmodule>
+						<testmodule
+						id="3a401967-5bf8-4bed-882d-1e108c67c781"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="9a83cacb-767c-4c29-8f54-3ecd09a20c89"
+					name="Verify_5V/24V/40V_Load_on_changing_CPU_of_panel">
+						<testmodule
+						id="b1c6d556-b82d-4884-92b4-6004f9498afd"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="848d5942-24b2-43a9-9ec5-4de63f21aff1"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="e11f835c-37e5-45c4-9a21-31785793accb"
+						name="Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel">
+						</testmodule>
+						<testmodule
+						id="360f016e-3f11-4ccf-b1b9-465e4b56e965"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="5cbd8e33-3e6f-4903-8955-cf92b8bb6bc6"
+					name="Verify_voltage_drop_calculation">
+						<testmodule
+						id="713578d4-1c19-435f-a510-442fb49d64dd"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="dffd455f-abb9-4793-ae31-2dd80fd1dcc2"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="20839d90-100b-4731-ba86-9b1037cc93c0"
+						name="Verify_voltage_drop_calculation">
+						</testmodule>
 					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
@@ -23253,12 +23414,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="13350d38-fe1a-4fd2-b418-689d8794e7cb">
-			</testcontainer>
-			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="5cbd8e33-3e6f-4903-8955-cf92b8bb6bc6">
 			id="f538a592-8dd0-4cd8-ae5b-0ca3cd5f795c">
 			id="f37d6bae-dea8-455a-a9c9-2418b489d530">
 			id="2e668885-e9b0-44ba-b0fb-4a92ede9c516">

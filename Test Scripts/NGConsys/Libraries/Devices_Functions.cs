@@ -1193,7 +1193,12 @@ namespace TestProject.Libraries
 			
 			if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 			{
+				if(repo.ProfileConsys1.btn_Delete.Visible){
 				repo.ProfileConsys1.btn_Delete.Click();
+				}
+				else{
+					repo.FormMe.btn_DeleteFC.Click();
+				}
 				Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 				Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 			}

@@ -13276,6 +13276,7 @@ AAAAAElFTkSuQmCC
 			capname="text"
 			id="e28129b7-fa8f-4ebe-992a-3931a1c7e24c"
 			name="SystemLoad"
+			refimgid="dcf4799b-0dcc-43a2-92ac-69629d52df4c"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='15']//text[1]
 			</item>
@@ -13587,6 +13588,16 @@ AAAAAElFTkSuQmCC
 			name="txt_FirstPSU"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='6']//text[@automationid='PART_Editor']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="c9e14fb1-7f0e-4328-98a5-20e8d815a7b5"
+			name="btn_DeleteFC"
+			refimgid="24ac446a-1f6b-4ffa-8cb9-53917709a056"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Delete']/text[@caption='Delete']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Delete']
 			</item>
 			<basepath>
 				/form[@automationid='me']
@@ -14080,6 +14091,15 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			refimgid="2c16901d-3444-4496-a299-2642e6a28360"
 			searchtimeout="30000ms">
 				/form/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_Caption']/text[@caption='Panels']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="09ea8da4-2559-4b69-9a6d-3ca8ba3df423"
+			name="FCPSULoad"
+			refimgid="78e6b1d6-1cd0-498a-976b-77c6bc872973"
+			searchtimeout="30000ms">
+				/form/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[@caption=$sPsuV]
 			</item>
 			<basepath>
 				/form
