@@ -6174,6 +6174,213 @@ namespace TestProject.Libraries
 		}
 		
 		/*****************************************************************************************************************
+		 * Function Name: verifyNormalAndAlarmLoadOnChangingHousingPropertyOfDIM
+		 * Function Details: To Verify Battery Standby and Alarm Load on changing power supply
+		 * Parameter/Arguments:   
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 20/09/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyStandyByAlarmHourAndBatteryFactor(string sFileName,string sAddPanelSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared variables
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,minimumBatteryValue,changeStandByHoursValue,changeBatteryFactorValue;
+			string changedMinimumBatteryValue,sIsSecondPSU;
+			int rowNumber;
+			bool IsSecondPSU;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				minimumBatteryValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sIsSecondPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				changeStandByHoursValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				changeBatteryFactorValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				changedMinimumBatteryValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				
+				
+				bool.TryParse(sIsSecondPSU, out IsSecondPSU);
+				
+				int.TryParse(sRowNumber, out rowNumber);
+				
+				if(PanelName.StartsWith("FIRE"))
+				{
+					// Add panels using test data in excel sheet
+				Panel_Functions.AddPanelsFC(1,PanelName,CPUType);
+				
+				}
+				else
+				{
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				}
+				
+				// Click on Expander node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				// Click on Loop Card node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				// Click on Phyical Layout tab
+				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				
+				// Verify minimum battery
+				verifyMinimumBattery(minimumBatteryValue,IsSecondPSU,PanelType);
+				
+				// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				changeStandByHours(changeStandByHoursValue);
+				
+				changeBatteryFactor(changeBatteryFactorValue);
+				
+			// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				// Click on Phyical Layout tab
+				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				
+				// Verify minimum battery
+				verifyMinimumBattery(changedMinimumBatteryValue,IsSecondPSU,PanelType);		
+			
+				
+				}
+				
+				//Close opened excel sheet
+			Excel_Utilities.CloseExcel();
+				
+			
+		}
+	
+		/*****************************************************************************************************************
+		 * Function Name: verifyMinimumBattery
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 23/9/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyMinimumBattery(string expectedMinBatteryValue, bool isSecondPSU, string PanelType)
+		{
+			
+			if(PanelType.Equals("FIM"))
+			{
+				sCell= "[6]";
+				if(isSecondPSU)
+				{
+					sRow=(19).ToString();
+				}
+				else
+				{
+					sRow=(18).ToString();
+				}
+			}
+			
+			else
+			{
+				sCell= "[6]";
+				sRow=(18).ToString();
+			}
+			// Click on Physical layout tab
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			
+			// Fetch Default Alarm Load limit value
+			string ActualMinimumBattery = repo.FormMe.MinimumBattery.TextValue;
+			
+			// Compare Default Alarm Load value with expected value
+			if(ActualMinimumBattery.Equals(expectedMinBatteryValue))
+			{
+				Report.Log(ReportLevel.Success,"Minimum Battery " + ActualMinimumBattery + " is displayed correctly " );
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Minimum Battery value is not displayed correctly, it is displayed as: " + ActualMinimumBattery + " instead of : " +expectedMinBatteryValue);
+			}
+		}
+
+		
+		/*****************************************************************************************************************
+		 * Function Name: changeStandByHours
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 23/9/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void changeStandByHours(string changeStandByHoursValue)
+		{
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Housing text in Search Properties fields to view housing related text;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("StandBy" +"{ENTER}" );
+			
+			// Click on cell Search properties device first row
+			repo.FormMe.cell_SearchPropertiesFirstRow.Click();
+			
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+changeStandByHoursValue + "{Enter}");
+			
+			
+			//repo.FormMe.cableLengthSpinUpButton.DoubleClick();
+				
+			//repo.FormMe.cableLengthSpinUpButton.DoubleClick();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		/*****************************************************************************************************************
+		 * Function Name: changeStandByHours
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 23/9/2019
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void changeBatteryFactor(string changeBatteryFactorValue)
+		{
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Housing text in Search Properties fields to view housing related text;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Battery" +"{ENTER}" );
+			
+			// Click on cell Search properties device first row
+			repo.FormMe.cell_SearchPropertiesFirstRow.Click();
+			
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+changeBatteryFactorValue + "{Enter}");
+			
+			
+			//repo.FormMe.cableLengthSpinUpButton.DoubleClick();
+				
+			//repo.FormMe.cableLengthSpinUpButton.DoubleClick();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		/*****************************************************************************************************************
 		 * Function Name: verifyMax40VPSULoadForFCPanel
 		 * Function Details: To Verify maximum 40V PSU load value for FC panel
 		 * Parameter/Arguments:   expected Maximum value, panel type (FIM or PFI)  and row number is 13 by default for FIM

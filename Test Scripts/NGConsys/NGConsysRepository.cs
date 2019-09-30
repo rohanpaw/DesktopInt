@@ -6105,6 +6105,7 @@ namespace TestProject
             RepoItemInfo _batterystandbyInfo;
             RepoItemInfo _batterystandbyonreopenInfo;
             RepoItemInfo _alarmloadInfo;
+            RepoItemInfo _minimumbatteryInfo;
             RepoItemInfo _alarmloadonreopenInfo;
             RepoItemInfo _alarmloadspinupbuttonInfo;
             RepoItemInfo _alarmloadspindownbuttonInfo;
@@ -6273,6 +6274,7 @@ namespace TestProject
                 _batterystandbyInfo = new RepoItemInfo(this, "BatteryStandBy", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/?/text[1]", 30000, null, "63b8e912-eec4-4d76-bc20-4cc5463e0654");
                 _batterystandbyonreopenInfo = new RepoItemInfo(this, "BatteryStandByOnReopen", "progressbar/picture/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/?/text[1]", 30000, null, "7840445c-f306-46fb-af43-87704a6edb1e");
                 _alarmloadInfo = new RepoItemInfo(this, "AlarmLoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/?/text[1]", 30000, null, "d6b79699-26f6-4563-9147-43b695b7281f");
+                _minimumbatteryInfo = new RepoItemInfo(this, "MinimumBattery", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/?/text[1]", 30000, null, "239ab0a6-a7c4-4267-a862-eb4a0b807f1c");
                 _alarmloadonreopenInfo = new RepoItemInfo(this, "AlarmLoadOnReopen", "progressbar/picture/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/?/text[1]", 30000, null, "9e58e381-df28-4f72-8b6d-66b0d915b5d3");
                 _alarmloadspinupbuttonInfo = new RepoItemInfo(this, "AlarmLoadSpinUpButton", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//text/list[2]/button[@automationid='PART_SpinUpButton']", 30000, null, "cee259ec-efa7-4e09-8f76-793c7d355094");
                 _alarmloadspindownbuttonInfo = new RepoItemInfo(this, "AlarmLoadSpinDownButton", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//text/list[2]/button[@automationid='PART_SpinDownButton']", 30000, null, "e6820acd-2d2a-49aa-b6fc-5b14fe67b925");
@@ -6315,7 +6317,7 @@ namespace TestProject
                 _txt_inventorypropertyInfo = new RepoItemInfo(this, "txt_InventoryProperty", "progressbar/picture[7]/picture/list/row[@index='1']//text[@automationid='PART_Editor']", 30000, null, "7eb8ad20-55fa-4493-87ac-4ee648507e5a");
                 _txt_propertiestextvalueInfo = new RepoItemInfo(this, "txt_PropertiesTextValue", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//text", 30000, null, "5229b4f7-5565-4f6e-ac0b-a3146dd61fdc");
                 _txt_searchpropertiescelltextvalueInfo = new RepoItemInfo(this, "txt_SearchPropertiesCellTextValue", "progressbar/picture[7]/picture/list/row[@index='1']//text[@automationid='PART_Editor']", 30000, null, "4037f82c-6c15-46c3-973c-1b71009b924a");
-                _txt_searchpropertiesdevicecelltextvalueInfo = new RepoItemInfo(this, "txt_SearchPropertiesDeviceCellTextValue", "progreassbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//text", 30000, null, "eb4a6433-aa70-4067-8300-e31af3a0c358");
+                _txt_searchpropertiesdevicecelltextvalueInfo = new RepoItemInfo(this, "txt_SearchPropertiesDeviceCellTextValue", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']", 30000, null, "eb4a6433-aa70-4067-8300-e31af3a0c358");
                 _txt_propertiesdescriptionrowInfo = new RepoItemInfo(this, "txt_PropertiesDescriptionRow", "progressbar/picture[7]/picture/list/row[@index='1']", 30000, null, "87fb5976-2f92-43b1-831e-644b14505b17");
                 _txt_inventorygriddevicepropertyInfo = new RepoItemInfo(this, "txt_InventoryGridDeviceProperty", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row[$sRowIndex]/row/cell[$sColumnIndex]/text", 30000, null, "103460ce-0b97-441a-ab01-bb36fd02783e");
                 _isolatorunitsprogressbarInfo = new RepoItemInfo(this, "IsolatorUnitsProgressBar", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index=$sRowIndex]/?/?/progressbar", 30000, null, "4ce737ec-47a9-43b5-ba8f-9384addc2ca4");
@@ -7459,6 +7461,30 @@ namespace TestProject
                 get
                 {
                     return _alarmloadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MinimumBattery item.
+            /// </summary>
+            [RepositoryItem("239ab0a6-a7c4-4267-a862-eb4a0b807f1c")]
+            public virtual Ranorex.Text MinimumBattery
+            {
+                get
+                {
+                    return _minimumbatteryInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MinimumBattery item info.
+            /// </summary>
+            [RepositoryItemInfo("239ab0a6-a7c4-4267-a862-eb4a0b807f1c")]
+            public virtual RepoItemInfo MinimumBatteryInfo
+            {
+                get
+                {
+                    return _minimumbatteryInfo;
                 }
             }
 

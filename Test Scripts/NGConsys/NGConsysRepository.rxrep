@@ -1,4 +1,5 @@
-﻿<repository
+<?xml version="1.0" encoding="utf-8"?>
+<repository
 id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
 name="NGConsysRepository"
 rxversion="8.3">
@@ -2147,6 +2148,13 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="text"
+			id="239ab0a6-a7c4-4267-a862-eb4a0b807f1c"
+			name="MinimumBattery"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/?/text[1]
+			</item>
+			<item
+			capname="text"
 			id="9e58e381-df28-4f72-8b6d-66b0d915b5d3"
 			name="AlarmLoadOnReopen"
 			searchtimeout="30000ms">
@@ -2506,7 +2514,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			name="txt_SearchPropertiesDeviceCellTextValue"
 			refimgid="0bf95236-60f9-4ee6-acae-1e4e569911e0"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progreassbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//text
+				/form[@automationid='me']/progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']
 			</item>
 			<item
 			capname="row"
@@ -2729,6 +2737,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			refimgid="815d0df0-009a-4631-a72e-4de52bcef7be"
 			refpath="/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[8]/cell[@isheader='False']/picture"
 			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 				<image
 				guid="405478cc-2b97-4039-b186-496665a06906"
 				name="Screenshot2">
@@ -4244,7 +4253,6 @@ apMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1q
 kyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWID
 /idv0HEloKLk6QAAAABJRU5ErkJggg==
 				</image>
-				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 			</item>
 			<item
 			capname="text"
@@ -4316,6 +4324,7 @@ kyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWID
 			refimgid="c6d81439-ae99-4975-be0a-4be079370d45"
 			refpath="/form[@automationid='me']/progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='1']/cell[@isheader='False']/picture"
 			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 				<image
 				guid="b25e233e-6fe9-465d-8940-92a8372a6960"
 				name="Screenshot1">
@@ -10537,7 +10546,6 @@ OU+ePNU1eZDz5MlTXZMHOU+ePNU1eZDz5MlTXZMHOU+ePNU1eZDz5MlTXdMbHnroIfPs2bPneuU3
 PPPMM+bZs2fP9cpvePrpp82zZ8+e65X9mpwnT57qmjzIefLkqa7Jg5wnT57qmjzIefLkqa7Jg5wn
 T57qmjzIefLkqa7Jg5wnT57qmjzIefLkqa7Jg5wnT57qmMz+J8iMGPgWmh5TAAAAAElFTkSuQmCC
 				</image>
-				/form[@automationid='me']/progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 			</item>
 			<item
 			capname="text"
@@ -10551,6 +10559,7 @@ T57qmjzIefLkqa7Jg5wnT57qmjzIefLkqa7Jg5wnT57qmMz+J8iMGPgWmh5TAAAAAElFTkSuQmCC
 			id="3205a377-b082-47fb-9610-d937281d4b42"
 			name="PLX_Image"
 			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 				<image
 				guid="77f984db-87eb-439d-b70a-f6f07ad3700a"
 				name="Screenshot1">
@@ -13263,7 +13272,6 @@ KX6JRCJZYEjxSyQSyQJDil8ikUgWGFL8EolEssCQ4pdIJJIFhhS/RCKRLDCk+CUSiWSBIcUvkUgk
 CwwpfolEIllgSPFLJBLJAkOKXyKRSBYYUvwSiUSywJDil0gkkgWGFL9EIpEsKOD/B/dsUzsrVswK
 AAAAAElFTkSuQmCC
 				</image>
-				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 			</item>
 			<item
 			capname="text"

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -4072,6 +4072,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="381bfeb7-2520-4325-9d68-7d4678c76e55"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="ea0d1762-6658-460e-ab2a-05a05e7f437a"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="38282a99-c644-4125-83b3-b955b7ebe8a4"
 			name="Verify_DC_Unit_For_Multiple_Built_In_Non_Built_In_Isolator_Devices_Integral_Non_Integral_LED_of_PFI"
 			ref="7a0400bc-3467-4088-9be0-bbb90fd71110"
@@ -6256,6 +6270,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5567979b-62c9-4e87-b373-1661605927d4"
+			name="Verify_Reopen_Project_For_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC"
+			ref="c5a250e6-1102-4e0c-b170-8ff5698f15ba"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="556ae579-c626-467a-8096-8338d435a84e"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -6289,7 +6309,7 @@ rxversion="8.3">
 			id="5627997c-99f0-4047-b553-6f083e959de1"
 			name="Verify_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC">
 				<description>
-					<![CDATA[<p>NGC-1928/TC-71808</p>]]>
+					<![CDATA[<p>NGC-1928/TC-71808 Application Open in not working after saved project. All other features are tested.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10359,7 +10379,7 @@ MxDesigner]]>
 			id="8bbb5da9-5fe5-4881-ac70-76ee90cb1e82"
 			name="Verify_Battery_Standby_On_Addition_Deletion_Of_Accessories_FC">
 				<description>
-					<![CDATA[<p>NGC-1928/TC-71696 Need to execute as PRN800 is not available in Fireclass so unable to perform the action.</p>]]>
+					<![CDATA[<p>NGC-1928/TC-71696&nbsp; Defect 2495 Need to execute as PRN800 is not available in Fireclass so unable to perform the action.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -12189,6 +12209,26 @@ div.WordSection1
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="a859f4fd-1303-48b3-9316-23e72e0d1e3f"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a8af013d-fa14-45d2-ace1-b8f7843b3cb1"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -12397,6 +12437,12 @@ div.WordSection1
 			id="accae1ad-059a-41d5-8bf1-5b967a460a3d"
 			name="Verify_Persistance_of_Region_Name_Property_On_CopyPaste"
 			ref="edb6e3e4-3a6c-40d0-869f-aedf5d4e47df"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ad1da366-fafc-46b7-bf7d-a81ed5c47f2c"
+			name="Verify_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC"
+			ref="ef0bfe30-a9fa-4bf3-bed1-51ccf2ac3298"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -16332,6 +16378,19 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="ea0d1762-6658-460e-ab2a-05a05e7f437a"
+			name="Verify_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC">
+				<description>
+					<![CDATA[<p>NGC-1928/TC-71697 Need&nbsp;to execute again.&nbsp;Tested with wrong test data. Application Open in not working after saved project. All other features are tested</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="ea293737-868a-4a6e-b73f-59c967f1a350"
 			name="Close_Application"
@@ -17089,6 +17148,26 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="f5411296-f61f-4c3c-9714-f9c0cffcbf7c"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="f54e42d3-3349-44ae-8ace-424bf7907900"
 			name="Verify_Max_DC_Units_for_PFI"
@@ -23262,6 +23341,30 @@ persisted in panel properties&nbsp;]]>
 						name="Create_Project_FC">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="ea0d1762-6658-460e-ab2a-05a05e7f437a"
+					name="Verify_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC">
+						<testmodule
+						id="f5411296-f61f-4c3c-9714-f9c0cffcbf7c"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="381bfeb7-2520-4325-9d68-7d4678c76e55"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="ad1da366-fafc-46b7-bf7d-a81ed5c47f2c"
+						name="Verify_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC">
+						</testmodule>
+						<testmodule
+						id="a859f4fd-1303-48b3-9316-23e72e0d1e3f"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="5567979b-62c9-4e87-b373-1661605927d4"
+						name="Verify_Reopen_Project_For_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -23470,6 +23573,9 @@ persisted in panel properties&nbsp;]]>
 			</testcontainer>
 			<testcontainer
 			id="f039533c-f3a2-4115-8ae4-12223084e3ff">
+			</testcontainer>
+			<testcontainer
+			id="ea0d1762-6658-460e-ab2a-05a05e7f437a">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
