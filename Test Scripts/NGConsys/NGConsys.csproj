@@ -510,6 +510,18 @@
       <UserCode>true</UserCode>
       <id>7297f217-6730-4bf4-a6d3-e80e5d1a997b</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template.cs">
+      <BoundTo>3e2ecc07-ee68-4773-bc0d-53c0a22640a1</BoundTo>
+      <DependentUpon>Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bdcb354a-0804-4328-b224-9098e64fb299</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template.UserCode.cs">
+      <BoundTo>3e2ecc07-ee68-4773-bc0d-53c0a22640a1</BoundTo>
+      <DependentUpon>Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3052ad70-bec9-4b74-bddf-42f23abdc6af</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel.cs">
       <BoundTo>966cd594-f837-42fd-890b-ea7e43f1852a</BoundTo>
       <DependentUpon>Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel.rxrec</DependentUpon>
@@ -4251,6 +4263,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>9e038d6c-6339-4f11-873a-b513f341be3d</id>
       <recordtableid>773e468a-067e-4503-a291-e3f9eeebaeba</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>3e2ecc07-ee68-4773-bc0d-53c0a22640a1</id>
+      <recordtableid>8bb0cd77-dd31-4022-94c4-0646ec21eb7f</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

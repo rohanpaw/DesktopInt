@@ -3824,6 +3824,26 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="35326b8f-6c13-44f6-8368-7c062d226f4b"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="35594cee-ff92-4846-a3d7-08d966ff782d"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -5383,6 +5403,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4b0b72a2-fc09-4f8e-84fa-894141f5ceeb"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4b1aa10e-2c52-42fc-a51d-8a7cb809cbfc"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -6503,6 +6529,12 @@ rxversion="8.3">
 			id="58984747-5f45-4126-a461-1ffd11e1e78c"
 			name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values"
 			ref="32074e17-16ec-4b54-87c0-29ce24977e24"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="58ac7a77-826d-40e3-86de-4dd1cbadfd1b"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -16658,6 +16690,10 @@ persisted in panel properties&nbsp;]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="f039533c-f3a2-4115-8ae4-12223084e3ff"
+			name="Verify_5V/24V/40V_load_on_addition/deletion_of_Rbus_connection_and_Xbus_template">
+			</testcase>
 			<testmodule
 			id="f04191f3-5021-46a9-b458-bb1a6165ca9b"
 			name="Create_Project"
@@ -23209,6 +23245,22 @@ persisted in panel properties&nbsp;]]>
 						id="20839d90-100b-4731-ba86-9b1037cc93c0"
 						name="Verify_voltage_drop_calculation">
 						</testmodule>
+						<testmodule
+						id="4b0b72a2-fc09-4f8e-84fa-894141f5ceeb"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="f039533c-f3a2-4115-8ae4-12223084e3ff"
+					name="Verify_5V/24V/40V_load_on_addition/deletion_of_Rbus_connection_and_Xbus_template">
+						<testmodule
+						id="35326b8f-6c13-44f6-8368-7c062d226f4b"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="58ac7a77-826d-40e3-86de-4dd1cbadfd1b"
+						name="Create_Project_FC">
+						</testmodule>
 					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
@@ -23417,10 +23469,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="5cbd8e33-3e6f-4903-8955-cf92b8bb6bc6">
-			id="f538a592-8dd0-4cd8-ae5b-0ca3cd5f795c">
-			id="f37d6bae-dea8-455a-a9c9-2418b489d530">
-			id="2e668885-e9b0-44ba-b0fb-4a92ede9c516">
+			id="f039533c-f3a2-4115-8ae4-12223084e3ff">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

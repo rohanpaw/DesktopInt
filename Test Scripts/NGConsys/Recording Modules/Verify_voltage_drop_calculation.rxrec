@@ -414,7 +414,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="DeleteDeviceUsingLabel"
+		methodname="RightClickOnSelectedRow"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -423,15 +423,41 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="f5822ad8-41f4-402d-9c6b-b2ed12ed7b23">
+			id="571d643d-0655-43c6-9f60-6671c35aa810">
 				<argument
-				argname="LabelName"
-				id="47de66a7-5cf5-48ae-a950-bc9bacf5b551">
+				argname="RowNumber"
+				id="07271b9b-4b2d-4e6e-aa09-b7fabb123a8d">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						410LPSY - R/W - 2
+						2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickContextMenuOptionOnRightClick"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9edbda2e-4de1-4cd7-8744-abf4866d846c">
+				<argument
+				argname="sContextMenuOption"
+				id="fa835537-88f9-4a25-82d8-30345533feb2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Delete
 					</argvalue>
 				</argument>
 			</arguments>
