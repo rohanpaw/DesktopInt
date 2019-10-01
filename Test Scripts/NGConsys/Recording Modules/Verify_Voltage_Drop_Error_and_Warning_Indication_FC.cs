@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_voltage_drop_calculation recording.
+    ///The Verify_Voltage_Drop_Error_and_Warning_Indication_FC recording.
     /// </summary>
-    [TestModule("5da1e640-b101-444f-8501-f5f761aeb59e", ModuleType.Recording, 1)]
-    public partial class Verify_voltage_drop_calculation : ITestModule
+    [TestModule("ae8db6e9-78f0-4ab7-8c84-ccb80a6ae0e4", ModuleType.Recording, 1)]
+    public partial class Verify_Voltage_Drop_Error_and_Warning_Indication_FC : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_voltage_drop_calculation instance = new Verify_voltage_drop_calculation();
+        static Verify_Voltage_Drop_Error_and_Warning_Indication_FC instance = new Verify_Voltage_Drop_Error_and_Warning_Indication_FC();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_voltage_drop_calculation()
+        public Verify_Voltage_Drop_Error_and_Warning_Indication_FC()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_voltage_drop_calculation Instance
+        public static Verify_Voltage_Drop_Error_and_Warning_Indication_FC Instance
         {
             get { return instance; }
         }
@@ -79,10 +79,10 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 64-4", "");
+            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 64-2", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1 - FireClass 64-4 ZL");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
@@ -91,42 +91,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400P", "Detectors");
-            Delay.Milliseconds(0);
-            
-            try {
-                Libraries.Devices_Functions.AssignDeviceBase("400P", "4BI 4\" [517.050.043]", "4");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("410LPSY - R/W", "Sounders/Beacons");
-            Delay.Milliseconds(0);
-            
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
-            Delay.Milliseconds(0);
-            
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Detectors");
-            Delay.Milliseconds(0);
-            
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
-            Delay.Milliseconds(0);
-            
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.RightClickOnSelectedRow("2");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
-            Delay.Milliseconds(0);
-            
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.16");
-            Delay.Milliseconds(0);
-            
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.31");
+            Libraries.VoltageDrop_Functions.verifyVoltageDropPercentage("TC_65368_Verify_Voltage_Drop_Error_and_Warning_Indication_FC", "0.00");
             Delay.Milliseconds(0);
             
         }

@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_voltage_drop_calculation recording.
+    ///The Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC recording.
     /// </summary>
-    [TestModule("5da1e640-b101-444f-8501-f5f761aeb59e", ModuleType.Recording, 1)]
-    public partial class Verify_voltage_drop_calculation : ITestModule
+    [TestModule("867c95aa-ec77-483a-8210-e0dbc264d0d4", ModuleType.Recording, 1)]
+    public partial class Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_voltage_drop_calculation instance = new Verify_voltage_drop_calculation();
+        static Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC instance = new Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_voltage_drop_calculation()
+        public Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_voltage_drop_calculation Instance
+        public static Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC Instance
         {
             get { return instance; }
         }
@@ -82,7 +82,7 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 64-4", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1 - FireClass 64-4 ZL");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
@@ -91,42 +91,31 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400P", "Detectors");
+            Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("TC_65367_Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC", "Add Devices Loop A");
             Delay.Milliseconds(0);
             
-            try {
-                Libraries.Devices_Functions.AssignDeviceBase("400P", "4BI 4\" [517.050.043]", "4");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("410LPSY - R/W", "Sounders/Beacons");
+            Libraries.Devices_Functions.ChangeCableLength(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "1000"));
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
-            Delay.Milliseconds(0);
-            
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Detectors");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
             Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
+            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.49");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedRow("2");
+            Libraries.Devices_Functions.ChangeCableResistance("15 Ohms (2.5 mm2)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.16");
+            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.19");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.31");
+            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.33");
             Delay.Milliseconds(0);
             
         }

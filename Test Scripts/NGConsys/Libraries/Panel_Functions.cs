@@ -129,6 +129,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 28/12/2018 Alpesh Dhakad - Line 162 Commented
 		 * Alpesh Dhakad - 19/08/2019 - Updated with new navigation tree method, xpath and devices gallery
+		 * Alpesh Dhakad - 01/10/2019 - Added step as per new Panel Node in Build 43
 		 **********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddPanels(int NumberofPanels,string PanelNames,string sPanelCPU)
@@ -160,6 +161,11 @@ namespace TestProject.Libraries
 				repo.ContextMenu.lstPanelAddress.Click();
 				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
 				Label="Node"+iAddress;
+				
+				//Added this step after 43 build update
+				Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				
+				
 				Keyboard.Press(Label);
 				if (!sPanelCPU.IsEmpty())
 				{
@@ -392,14 +398,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/**************************************************************************************************************
 		 * Function Name: AddPanelsInBetween
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 30/05/2019
-		 ********************************************************************/
+		 * Last Update : 30/05/2019 Alpesh Dhakad - 01/10/2019 - Added step as per new Panel Node in Build 43
+		 **************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddPanelOnAddingOnePanel(int NumberofPanels,string PanelNames,string sPanelCPU)
 		{
@@ -427,6 +433,11 @@ namespace TestProject.Libraries
 				repo.ContextMenu.lstPanelAddress.Click();
 				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
 				Label="Node"+iAddress;
+				
+				//Added this step after 43 build update
+				Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				
+				
 				Keyboard.Press(Label);
 				if (!sPanelCPU.IsEmpty())
 				{
@@ -449,14 +460,15 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/*****************************************************************************************************************
 		 * Function Name: AddMorePanels
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 30/05/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
-		 ********************************************************************/
+		 * Alpesh Dhakad - 01/10/2019 - Added step as per new Panel Node in Build 43
+		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddOnePanel(int NodeNumber,string PanelNames,string sPanelCPU)
 		{
@@ -490,6 +502,11 @@ namespace TestProject.Libraries
 			repo.ContextMenu.lstPanelAddress.Click();
 			repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
 			Label="Node"+iAddress;
+			
+			//Added this step after 43 build update
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				
+			
 			Keyboard.Press(Label);
 			if (!sPanelCPU.IsEmpty())
 			{
@@ -501,14 +518,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/**************************************************************************************************************
 		 * Function Name: AddPanelAndAddCPUAndPSU
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 8/8/2019
-		 ********************************************************************/
+		 * Last Update : 8/8/2019 * Alpesh Dhakad - 01/10/2019 - Added step as per new Panel Node in Build 43
+		 **************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddPanelAndAddCPUAndPSU(int NumberofPanels,string PanelNames,string sPanelCPU)
 		{
@@ -540,6 +557,11 @@ namespace TestProject.Libraries
 				repo.ContextMenu.lstPanelAddress.Click();
 				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
 				Label="Node"+iAddress;
+				
+				//Added this step after 43 build update
+				Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				
+				
 				Keyboard.Press(Label);
 				if (!sPanelCPU.IsEmpty())
 				{
@@ -651,7 +673,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update :
+		 * Last Update : Alpesh Dhakad - 01/10/2019 - Added step as per new Panel Node in Build 43
 		 **********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddPanelsFC(int NumberofPanels,string PanelNames,string sPanelCPU)
@@ -684,6 +706,10 @@ namespace TestProject.Libraries
 				repo.ContextMenu.lstPanelAddress.Click();
 				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
 				Label="Node"+iAddress;
+				
+				//Added this step after 43 build update
+				Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				
 				Keyboard.Press(Label);
 				if (!sPanelCPU.IsEmpty())
 				{
@@ -706,7 +732,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 18/09/2019
+		 * Last Update : 18/09/2019 Alpesh Dhakad - 01/10/2019 - Added step as per new Panel Node in Build 43
 		 **********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddPanelsFCAndVerifyPSUs(string sFileName,string sAddDevicesSheet)
@@ -755,6 +781,11 @@ namespace TestProject.Libraries
 				repo.ContextMenu.lstPanelAddress.Click();
 				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
 				Label="Node"+iAddress;
+				
+				//Added this step after 43 build update
+				Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				
+				
 				Keyboard.Press(Label);
 				if (!sPanelCPU.IsEmpty())
 				{

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -1789,6 +1789,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="183f184e-f514-4c63-9f7e-9e50913778bb"
+			name="Verify_Volt_Drop_And_Volt_Drop_Worst_Case_For_Other_Loops_FC"
+			ref="6e68d4a6-8c7e-4e60-8bf3-add9b97a3e5f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="1854e260-1b26-46f2-89aa-7aa9cc1183ba"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -2551,7 +2557,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.41">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.43">
 					</param>
 					<param
 					name="Mode"
@@ -4417,6 +4423,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="3cd638ce-ac2a-42f1-893c-233c05c9568f"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="3cff4dc1-a0bb-4ab0-b234-a33a4fd674d1"
 			name="Verify_Max_DC_Units_for_FIM"
 			ref="d04aaa5c-fb85-4e2c-9af5-ad8d7a8fd3d5"
@@ -4715,6 +4727,19 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="4219c785-e3f2-478b-b829-f0d0c00f3e9d"
+			name="Verify_Voltage_Drop_Error_and_Warning_Indication_FC">
+				<description>
+					<![CDATA[<p>NGC-1854/TC-65368&nbsp; Failing due to Ranorex exception</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="4225d121-2537-4c6b-b5d0-1b829719f281"
 			name="Application_Open"
@@ -4919,6 +4944,20 @@ rxversion="8.3">
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
 					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="44ded54e-eece-4a58-8d9f-80755e02d263"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="76ba6df1-3e4f-4be8-8219-173519817cc6"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5570,6 +5609,12 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="4ccfa15c-20c0-43fc-ab50-776d50a8a72b"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4d10bf7f-ea1e-4705-8460-6e4188fc5184"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -6323,6 +6368,26 @@ rxversion="8.3">
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="567f1aad-4e77-4b12-bfdc-8728c268f272"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="568c68d0-9d64-4a67-a6b7-1919b19cf4e1"
@@ -8479,6 +8544,20 @@ rxversion="8.3">
 			ref="3479175c-f484-4c51-abb9-c1a7be68490a"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="73ab1eff-3994-45e3-9c32-7c91d3dc152b"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="90abe55a-1136-4bfe-afa8-681783a52cc0"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="73d7c99a-226f-47de-9936-4e53f0764e35"
 			name="Verify_devices_order_for_Sounders_in_dropped_gallery">
@@ -8682,6 +8761,19 @@ rxversion="8.3">
 			name="Verify_FB_IOB_Slot_Allocation_In_Backplane">
 				<description>
 					<![CDATA[<p>NGC-376/TC-51388</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="76ba6df1-3e4f-4be8-8219-173519817cc6"
+			name="Verify_Volt_Drop_And_Volt_Drop_Worst_Case_For_Other_Loops_FC">
+				<description>
+					<![CDATA[<p>NGC-1854/TC-65369 Color code and percentage not verified as it is verified in other test cases</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10722,6 +10814,16 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="90abe55a-1136-4bfe-afa8-681783a52cc0"
+			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop_FC">
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="9106af98-06c0-45ba-af8c-c8a45675ab3d"
 			name="Application_Open"
@@ -11785,6 +11887,26 @@ div.WordSection1
 			ref="f6bffd3d-cac0-433b-82a2-2c50388c30ed"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="a0dde553-c65f-4616-b7d5-fc55b41c9823"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="a0f00c7a-352a-4ea6-8590-7d09ca6a596f"
 			name="Verify_Paste_Options_Displayed_For_Loop">
@@ -11974,6 +12096,12 @@ div.WordSection1
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a3cee084-82d8-481e-89a2-0001ee828f99"
+			name="Verify_Voltage_Drop_Error_and_Warning_Indication_FC"
+			ref="ae8db6e9-78f0-4ab7-8c84-ccb80a6ae0e4"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="a3fe94c8-8363-461b-8870-7452762d291f"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -12152,6 +12280,12 @@ div.WordSection1
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a7665c45-76f3-4377-9194-c3f379a6bd22"
+			name="Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC"
+			ref="867c95aa-ec77-483a-8210-e0dbc264d0d4"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="a76e5d55-6d49-4ccc-9557-edbe826a494a"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -12294,6 +12428,12 @@ div.WordSection1
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="aa60a462-a4ad-4323-a192-163ce4427579"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="aa9514e6-4ae6-4aa7-9d4c-b02d5f3fe6e9"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -12312,6 +12452,20 @@ div.WordSection1
 			name="Verify_40V_Load_On_Addition_Deletion_Of_SlotCards"
 			ref="9e4f9edd-93be-4952-bab6-2689d6fa55cb"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="aab6ba26-5950-4aeb-837d-732bd8d9d10e"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="c8037632-f6b6-44e6-9e01-a01e8a33e742"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="aac530fe-f99c-4d85-851e-2579267c57f4"
@@ -12747,6 +12901,26 @@ project]]>
 					datasourceid="f1882667-2468-4c2b-9339-872f34962c44"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b38fc8e9-e0c8-43ee-84fe-af5cce7fd8d4"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
 					</var>
 				</databinding>
 			</testmodule>
@@ -14008,6 +14182,33 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="c7897bc0-3a2a-4d74-bf94-99706d708170"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="4219c785-e3f2-478b-b829-f0d0c00f3e9d"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="c8037632-f6b6-44e6-9e01-a01e8a33e742"
+			name="Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC">
+				<description>
+					<![CDATA[<p>NGC-1854/TC-65367 Tested with 2 devices as 410LI not available and defect raised for the same. Test data is created and need to test once defect get fixed.</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="c80bcccc-3b45-4b57-96f1-c1c0dd548c83"
 			name="Create_Project"
@@ -15880,6 +16081,12 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="e297da54-c3da-4343-829c-c7e0ff343a68"
+			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop_FC"
+			ref="1e16cf9c-5281-4e46-b9f7-512fe0387b50"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e2aaf346-d0ac-4ab6-b31b-a599b027df73"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -16089,6 +16296,26 @@ persisted in panel properties&nbsp;]]>
 			</testmodule>
 			<testmodule
 			id="e5a0c4ac-f5ff-40f6-8da5-6ab9c056462f"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e5e9ace8-9eb2-4e10-92d2-9e8fd5f3ed10"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
 			type="UserCode">
@@ -23365,6 +23592,82 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Reopen_Project_For_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="c8037632-f6b6-44e6-9e01-a01e8a33e742"
+					name="Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC">
+						<testmodule
+						id="567f1aad-4e77-4b12-bfdc-8728c268f272"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="aab6ba26-5950-4aeb-837d-732bd8d9d10e"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="a7665c45-76f3-4377-9194-c3f379a6bd22"
+						name="Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC">
+						</testmodule>
+						<testmodule
+						id="4d10bf7f-ea1e-4705-8460-6e4188fc5184"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="4219c785-e3f2-478b-b829-f0d0c00f3e9d"
+					name="Verify_Voltage_Drop_Error_and_Warning_Indication_FC">
+						<testmodule
+						id="a0dde553-c65f-4616-b7d5-fc55b41c9823"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="c7897bc0-3a2a-4d74-bf94-99706d708170"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="a3cee084-82d8-481e-89a2-0001ee828f99"
+						name="Verify_Voltage_Drop_Error_and_Warning_Indication_FC">
+						</testmodule>
+						<testmodule
+						id="aa60a462-a4ad-4323-a192-163ce4427579"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="76ba6df1-3e4f-4be8-8219-173519817cc6"
+					name="Verify_Volt_Drop_And_Volt_Drop_Worst_Case_For_Other_Loops_FC">
+						<testmodule
+						id="b38fc8e9-e0c8-43ee-84fe-af5cce7fd8d4"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="44ded54e-eece-4a58-8d9f-80755e02d263"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="183f184e-f514-4c63-9f7e-9e50913778bb"
+						name="Verify_Volt_Drop_And_Volt_Drop_Worst_Case_For_Other_Loops_FC">
+						</testmodule>
+						<testmodule
+						id="3cd638ce-ac2a-42f1-893c-233c05c9568f"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="90abe55a-1136-4bfe-afa8-681783a52cc0"
+					name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop_FC">
+						<testmodule
+						id="e5e9ace8-9eb2-4e10-92d2-9e8fd5f3ed10"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="73ab1eff-3994-45e3-9c32-7c91d3dc152b"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="e297da54-c3da-4343-829c-c7e0ff343a68"
+						name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop_FC">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -23571,12 +23874,6 @@ persisted in panel properties&nbsp;]]>
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
-			<testcontainer
-			id="f039533c-f3a2-4115-8ae4-12223084e3ff">
-			</testcontainer>
-			<testcontainer
-			id="ea0d1762-6658-460e-ab2a-05a05e7f437a">
-			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="Voltage_Calculation">
@@ -23605,10 +23902,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

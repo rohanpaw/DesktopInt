@@ -415,7 +415,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:
-		 * Last Update :
+		 * Last Update : 
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void verifyVoltageDropPercentage(string sFileName, string noLoadVoltDrop)
@@ -453,6 +453,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verifying Volt drop progress bar color is LightGreen.");
 			verifyVoltageDropColor();
 			
+			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop (worst case) progress bar color is Yellow.");
 			verifyVoltageDropWorstCaseColor();
@@ -462,10 +463,13 @@ namespace TestProject.Libraries
 
 			// Add devices such that voltage drop will show Yellow color
 			Devices_Functions.AddMultipleDevices(sFileName, "VtgDropYellowColorPercentage");
+		
 			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop progress bar color is Yellow.");
 			verifyVoltageDropColor();
+			
+	
 			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop (worst case) progress bar color is Pink.");
@@ -476,6 +480,8 @@ namespace TestProject.Libraries
 
 			// Add devices such that voltage drop will show Yellow color
 			Devices_Functions.AddMultipleDevices(sFileName, "RedColorPercentage");
+			
+	
 			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop progress bar color is Pink.");
