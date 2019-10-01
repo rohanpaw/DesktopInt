@@ -83,6 +83,7 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1 - FireClass 64-4 ZL");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
@@ -94,10 +95,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("400P", "Detectors");
             Delay.Milliseconds(0);
             
-            try {
-                Libraries.Devices_Functions.AssignDeviceBase("400P", "4BI 4\" [517.050.043]", "4");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
+            Libraries.Devices_Functions.AssignDeviceBase("400P", "4BI 4\" [517.050.043]", "4");
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("410LPSY - R/W", "Sounders/Beacons");
             Delay.Milliseconds(0);
@@ -106,6 +105,57 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
+            Delay.Milliseconds(0);
+            
+            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedRow("2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
+            Delay.Milliseconds(0);
+            
+            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.16");
+            Delay.Milliseconds(0);
+            
+            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.31");
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 240-4", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("400P", "Detectors");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AssignDeviceBase("400P", "4BI 4\" [517.050.043]", "4");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("410LPSY - R/W", "Sounders/Beacons");
+            Delay.Milliseconds(0);
+            
+            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.51");
+            Delay.Milliseconds(0);
+            
+            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("1.03");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Detectors");

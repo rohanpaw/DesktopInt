@@ -4654,6 +4654,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="4196dcef-12de-4738-b3e3-a3f6f6fbfd15"
+			name="Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template"
+			ref="8bb0cd77-dd31-4022-94c4-0646ec21eb7f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="41bf905a-16e8-43c1-a543-822881d216b9"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -6621,6 +6627,14 @@ rxversion="8.3">
 			name="Create_Project_FC"
 			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="f039533c-f3a2-4115-8ae4-12223084e3ff"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="58d85869-8f7d-47dc-a67b-95b130187583"
@@ -6845,6 +6859,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5c14cee0-1f8d-4116-be7c-dba0d4931bd0"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="5c3b0691-4307-4626-a13d-c062f67d0230"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -6968,9 +6988,9 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="5cbd8e33-3e6f-4903-8955-cf92b8bb6bc6"
-			name="Verify_voltage_drop_calculation">
+			name="Verify_voltage_drop_calculation_FC">
 				<description>
-					<![CDATA[NGC-1854/TC-65365]]>
+					<![CDATA[NGC-1854/TC-65365. Need test data]]>
 				</description>
 				<parameters>
 					<param
@@ -11454,7 +11474,7 @@ MxDesigner]]>
 			</testmodule>
 			<testcase
 			id="9a83cacb-767c-4c29-8f54-3ecd09a20c89"
-			name="Verify_5V/24V/40V_Load_on_changing_CPU_of_panel">
+			name="Verify_5V/24V/40V_Load_on_changing_CPU_of_panel_FC">
 				<description>
 					<![CDATA[NGC-1854/64716- Need to update the correct test data]]>
 				</description>
@@ -16978,7 +16998,16 @@ persisted in panel properties&nbsp;]]>
 			</testmodule>
 			<testcase
 			id="f039533c-f3a2-4115-8ae4-12223084e3ff"
-			name="Verify_5V/24V/40V_load_on_addition/deletion_of_Rbus_connection_and_Xbus_template">
+			name="Verify_5V/24V/40V_load_on_addition/deletion_of_Rbus_connection_and_Xbus_template_FC">
+				<description>
+					<![CDATA[NGC-1854/64864. Need correct test data]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testmodule
 			id="f04191f3-5021-46a9-b458-bb1a6165ca9b"
@@ -17278,7 +17307,7 @@ persisted in panel properties&nbsp;]]>
 			</testmodule>
 			<testcase
 			id="f37d6bae-dea8-455a-a9c9-2418b489d530"
-			name="Verify_Maximum_Limit_For_5V,_24V,_40V">
+			name="Verify_Maximum_Limit_For_5V,_24V,_40V_FC">
 				<description>
 					<![CDATA[NGC-1854/64715- Need to verify the test data]]>
 				</description>
@@ -23498,7 +23527,7 @@ persisted in panel properties&nbsp;]]>
 					</testcase>
 					<testcase
 					id="f37d6bae-dea8-455a-a9c9-2418b489d530"
-					name="Verify_Maximum_Limit_For_5V,_24V,_40V">
+					name="Verify_Maximum_Limit_For_5V,_24V,_40V_FC">
 						<testmodule
 						id="3d0c7284-60cd-4afb-b85a-1c153c6bd208"
 						name="Application_Open">
@@ -23518,7 +23547,7 @@ persisted in panel properties&nbsp;]]>
 					</testcase>
 					<testcase
 					id="9a83cacb-767c-4c29-8f54-3ecd09a20c89"
-					name="Verify_5V/24V/40V_Load_on_changing_CPU_of_panel">
+					name="Verify_5V/24V/40V_Load_on_changing_CPU_of_panel_FC">
 						<testmodule
 						id="b1c6d556-b82d-4884-92b4-6004f9498afd"
 						name="Application_Open">
@@ -23538,7 +23567,7 @@ persisted in panel properties&nbsp;]]>
 					</testcase>
 					<testcase
 					id="5cbd8e33-3e6f-4903-8955-cf92b8bb6bc6"
-					name="Verify_voltage_drop_calculation">
+					name="Verify_voltage_drop_calculation_FC">
 						<testmodule
 						id="713578d4-1c19-435f-a510-442fb49d64dd"
 						name="Application_Open">
@@ -23558,7 +23587,7 @@ persisted in panel properties&nbsp;]]>
 					</testcase>
 					<testcase
 					id="f039533c-f3a2-4115-8ae4-12223084e3ff"
-					name="Verify_5V/24V/40V_load_on_addition/deletion_of_Rbus_connection_and_Xbus_template">
+					name="Verify_5V/24V/40V_load_on_addition/deletion_of_Rbus_connection_and_Xbus_template_FC">
 						<testmodule
 						id="35326b8f-6c13-44f6-8368-7c062d226f4b"
 						name="Application_Open">
@@ -23566,6 +23595,14 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="58ac7a77-826d-40e3-86de-4dd1cbadfd1b"
 						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="4196dcef-12de-4738-b3e3-a3f6f6fbfd15"
+						name="Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template">
+						</testmodule>
+						<testmodule
+						id="5c14cee0-1f8d-4116-be7c-dba0d4931bd0"
+						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<testcase

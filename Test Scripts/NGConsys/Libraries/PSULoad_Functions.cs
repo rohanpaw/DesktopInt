@@ -6391,6 +6391,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyMax40VPSULoadForFCPanel(string expectedMax40VPSU, string rowNumber)
 		{
+			try{
 			//  assign sRow value
 			
 			sRow = rowNumber;
@@ -6413,6 +6414,9 @@ namespace TestProject.Libraries
 			
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
+			}catch(Exception ex){
+			Report.Log(ReportLevel.Failure,"Exception"+ex+" was thown");
+			}
 		}
 		
 		
@@ -6427,38 +6431,42 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verify_5_24_40PSULoadValueFC(string expectedPSULoad, string PSULoadType)
 		{
-			// assign sRow value
-			if(PSULoadType=="5V")
-			{
-				sRow=(14).ToString();
-			} else if(PSULoadType=="24V")
-			{
-				sRow=(15).ToString();
-			}else{
-				sRow=(16).ToString();
+			try{
+				// assign sRow value
+				if(PSULoadType=="5V")
+				{
+					sRow=(14).ToString();
+				} else if(PSULoadType=="24V")
+				{
+					sRow=(15).ToString();
+				}else{
+					sRow=(16).ToString();
+				}
+				
+				// Assign sPsuV value from sPSU5VLoad parameter
+				sPsuV=expectedPSULoad;
+				
+				// Click on Physical layout tab
+				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				
+				// Fetch PSU5V value and store in Actual 5VPSU value
+				string ActualPSUValue = repo.FormMe2.FCPSULoad.TextValue;
+				
+				// Compare Actual and Expected 5V PSU load value
+				if(ActualPSUValue.Equals(expectedPSULoad))
+				{
+					Report.Log(ReportLevel.Success,"5/24/40V PSU value " + ActualPSUValue + " is displayed correctly " );
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"5/24/40V PSU value is not displayed correctly, it is displayed as: " + ActualPSUValue + " instead of : " +expectedPSULoad);
+				}
+				
+				// CLick on Points tab
+				repo.ProfileConsys1.tab_Points.Click();
+			}catch(Exception ex){
+				Report.Log(ReportLevel.Failure,"Exception"+ex.Message+" was thrown due to incorrect value");
 			}
-			
-			// Assign sPsuV value from sPSU5VLoad parameter
-			sPsuV=expectedPSULoad;
-			
-			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
-			
-			// Fetch PSU5V value and store in Actual 5VPSU value
-			string ActualPSUValue = repo.FormMe2.FCPSULoad.TextValue;
-			
-			// Compare Actual and Expected 5V PSU load value
-			if(ActualPSUValue.Equals(expectedPSULoad))
-			{
-				Report.Log(ReportLevel.Success,"5/24/40V PSU value " + ActualPSUValue + " is displayed correctly " );
-			}
-			else
-			{
-				Report.Log(ReportLevel.Failure,"5/24/40V PSU value is not displayed correctly, it is displayed as: " + ActualPSUValue + " instead of : " +expectedPSULoad);
-			}
-			
-			// CLick on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
 		}
 
 	}

@@ -17,8 +17,6 @@ using WinForms = System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Microsoft.Office.Interop.Excel;
 using System.Windows;
-using System.Collections.Generic;
-
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;

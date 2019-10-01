@@ -106,7 +106,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("FireClass 240RA", "Repeaters", "FIM");
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("MPM800", "Miscellaneous", "FIM");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -115,13 +115,16 @@ namespace TestProject.Recording_Modules
             Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.297", "24V");
             Delay.Milliseconds(0);
             
             Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("2");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Zonal Alarm Display 64", "Attached Functionality", "");
@@ -133,7 +136,7 @@ namespace TestProject.Recording_Modules
             Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.120", "24V");
             Delay.Milliseconds(0);
             
             Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
@@ -142,7 +145,97 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabel("FireClass 240RA-1");
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 240-2", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.160", "40V");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("MPM800", "Miscellaneous", "FIM");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.110", "24V");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.160", "40V");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Zonal Alarm Display 64", "Attached Functionality", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.110", "24V");
+            Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.160", "40V");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
