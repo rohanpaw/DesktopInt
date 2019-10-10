@@ -1089,6 +1089,18 @@ namespace TestProject
             set { _sTreeItem = value; }
         }
 
+        string _sDev = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable sDev.
+        /// </summary>
+        [TestVariable("820bd86c-5349-46a4-96bf-31b557d8f851")]
+        public string sDev
+        {
+            get { return _sDev; }
+            set { _sDev = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -11385,6 +11397,7 @@ namespace TestProject
             RepoItemInfo _export_ok_overwriteInfo;
             RepoItemInfo _panelsInfo;
             RepoItemInfo _fcpsuloadInfo;
+            RepoItemInfo _nondroppedgallerydevicenameInfo;
 
             /// <summary>
             /// Creates a new FormMe2  folder.
@@ -11400,6 +11413,7 @@ namespace TestProject
                 _export_ok_overwriteInfo = new RepoItemInfo(this, "Export_OK_Overwrite", "button[@name='OK']", 30000, null, "41277ae1-e48f-4b06-bc29-a082affbef88");
                 _panelsInfo = new RepoItemInfo(this, "Panels", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_Caption']/text[@caption='Panels']", 30000, null, "a5a3d9d9-6288-4a3b-907f-3071ddbcbcc7");
                 _fcpsuloadInfo = new RepoItemInfo(this, "FCPSULoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[@caption=$sPsuV]", 30000, null, "09ea8da4-2559-4b69-9a6d-3ca8ba3df423");
+                _nondroppedgallerydevicenameInfo = new RepoItemInfo(this, "NonDroppedGalleryDeviceName", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text[@caption=$sDeviceName]", 90000, null, "d8fb937d-27d5-41bc-ab71-93fa3ca4900d");
             }
 
             /// <summary>
@@ -11591,6 +11605,30 @@ namespace TestProject
                 get
                 {
                     return _fcpsuloadInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NonDroppedGalleryDeviceName item.
+            /// </summary>
+            [RepositoryItem("d8fb937d-27d5-41bc-ab71-93fa3ca4900d")]
+            public virtual Ranorex.Text NonDroppedGalleryDeviceName
+            {
+                get
+                {
+                    return _nondroppedgallerydevicenameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NonDroppedGalleryDeviceName item info.
+            /// </summary>
+            [RepositoryItemInfo("d8fb937d-27d5-41bc-ab71-93fa3ca4900d")]
+            public virtual RepoItemInfo NonDroppedGalleryDeviceNameInfo
+            {
+                get
+                {
+                    return _nondroppedgallerydevicenameInfo;
                 }
             }
 

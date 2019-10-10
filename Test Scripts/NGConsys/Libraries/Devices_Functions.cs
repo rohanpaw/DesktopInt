@@ -6284,7 +6284,7 @@ namespace TestProject.Libraries
 					Report.Log(ReportLevel.Success, "Gallery Item: " + sDeviceName+ " disabled in gallery");
 				}
 			}
-			SelectInventoryGridRow("2");
+			repo.ProfileConsys1.txt_SearchProperties.Click();
 		}
 		
 		/********************************************************************************************************************
@@ -6303,7 +6303,7 @@ namespace TestProject.Libraries
 			//string firstGalleryItemText = repo.FormMe.GalleryList.Text;
 			Devices_Functions.AddDevicesfromGallery(Device1,GalleryType);
 			sDeviceName = Device1;
-			firstGalleryItemText = repo.FormMe.txt_NonDroppedGalleryItemTextForItemsWithImage.TextValue;
+			firstGalleryItemText = repo.FormMe2.NonDroppedGalleryDeviceName.TextValue;
 			if(firstGalleryItemText.Equals(Device1))
 			{
 				Report.Log(ReportLevel.Success, "Gallery: " + Device1+ " displayed as favourite device");
@@ -6316,7 +6316,7 @@ namespace TestProject.Libraries
 			
 			Devices_Functions.AddDevicesfromGallery(Device2,GalleryType);
 			sDeviceName = Device2;
-			firstGalleryItemText = repo.FormMe.txt_NonDroppedGalleryItemTextForItemsWithImage.TextValue;
+			firstGalleryItemText = repo.FormMe2.NonDroppedGalleryDeviceName.TextValue;
 			if(firstGalleryItemText.Equals(Device2))
 			{
 				Report.Log(ReportLevel.Success, "Gallery: " + Device2+ " displayed as favourite device");
@@ -6328,10 +6328,10 @@ namespace TestProject.Libraries
 			}
 			
 			
-			repo.FormMe.GalleryPARTDown.Click();
-			sDeviceName = Device1;
+			//repo.FormMe.GalleryPARTDown.Click();
+			sDeviceName = Device2;
 			
-			if(repo.FormMe2.SomeListItem.EnsureVisible())
+			if(repo.FormMe2.NonDroppedGalleryDeviceName.EnsureVisible())
 			{
 				Report.Log(ReportLevel.Success, "Gallery: " + Device1+ " remains as 2nd favourite device");
 			}

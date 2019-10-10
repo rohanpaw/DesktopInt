@@ -100,7 +100,7 @@ namespace TestProject.Recording_Modules
             Libraries.PSULoad_Functions.verifyMax5VPSULoad("3.000", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("1.400", "FIM");
+            Libraries.PSULoad_Functions.verify5VPSULoadValue("1.296", "FIM");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -119,7 +119,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("1.265", "FIM");
+            Libraries.PSULoad_Functions.verify5VPSULoadValue("1.161", "FIM");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
@@ -146,7 +146,7 @@ namespace TestProject.Recording_Modules
             Libraries.PSULoad_Functions.verifyMax5VPSULoad("3.000", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.239", "FIM");
+            Libraries.PSULoad_Functions.verify5VPSULoadValue("1.211", "FIM");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -168,7 +168,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.104", "FIM");
+            Libraries.PSULoad_Functions.verify5VPSULoadValue("1.076", "FIM");
             Delay.Milliseconds(0);
             
         }
