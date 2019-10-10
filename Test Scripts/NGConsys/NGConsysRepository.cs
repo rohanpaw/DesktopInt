@@ -4615,7 +4615,7 @@ namespace TestProject
                     base("AddNewPanelContainer", ".//container[@caption='Identification']/container[1]", parentFolder, 30000, null, false, "4b9d86d4-feb1-489b-9aab-a175d750b20f", "")
             {
                 _cmb_addressesInfo = new RepoItemInfo(this, "cmb_Addresses", "combobox/text[2]/list[@automationid='PART_RightButtons']/button[@automationid='PART_Item']", 30000, null, "c6022cb9-7d49-4c0e-a0f5-e271bc9b2fa4");
-                _txt_labelInfo = new RepoItemInfo(this, "txt_Label", "combobox/text[$sPanelLabelIndex]/text[@caption='']", 30000, null, "e59d4cf3-c276-4da0-8c77-7c5f7a6fffa3");
+                _txt_labelInfo = new RepoItemInfo(this, "txt_Label", "combobox/text[$sPanelLabelIndex]", 30000, null, "e59d4cf3-c276-4da0-8c77-7c5f7a6fffa3");
                 _cmb_cpuInfo = new RepoItemInfo(this, "cmb_CPU", "combobox/text[6]/list[@automationid='PART_RightButtons']/button[@automationid='PART_Item']", 30000, null, "ab71cda1-edc4-40dd-8ad6-f0cd10ca6164");
             }
 
@@ -6160,6 +6160,7 @@ namespace TestProject
             RepoItemInfo _txt_inventorypropertyInfo;
             RepoItemInfo _txt_propertiestextvalueInfo;
             RepoItemInfo _txt_searchpropertiescelltextvalueInfo;
+            RepoItemInfo _txt_searchpropertiescelltextvalue1Info;
             RepoItemInfo _txt_searchpropertiesdevicecelltextvalueInfo;
             RepoItemInfo _txt_propertiesdescriptionrowInfo;
             RepoItemInfo _txt_inventorygriddevicepropertyInfo;
@@ -6329,6 +6330,7 @@ namespace TestProject
                 _txt_inventorypropertyInfo = new RepoItemInfo(this, "txt_InventoryProperty", "progressbar/picture[7]/picture/list/row[@index='1']//text[@automationid='PART_Editor']", 30000, null, "7eb8ad20-55fa-4493-87ac-4ee648507e5a");
                 _txt_propertiestextvalueInfo = new RepoItemInfo(this, "txt_PropertiesTextValue", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//text", 30000, null, "5229b4f7-5565-4f6e-ac0b-a3146dd61fdc");
                 _txt_searchpropertiescelltextvalueInfo = new RepoItemInfo(this, "txt_SearchPropertiesCellTextValue", "progressbar/picture[7]/picture/list/row[@index='1']//text[@automationid='PART_Editor']", 30000, null, "4037f82c-6c15-46c3-973c-1b71009b924a");
+                _txt_searchpropertiescelltextvalue1Info = new RepoItemInfo(this, "txt_SearchPropertiesCellTextValue1", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='1']//text[@automationid='PART_Editor']", 30000, null, "cc58754c-ce69-415d-a42d-10eb5cbaa5dd");
                 _txt_searchpropertiesdevicecelltextvalueInfo = new RepoItemInfo(this, "txt_SearchPropertiesDeviceCellTextValue", "progressbar/picture[7]/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']", 30000, null, "eb4a6433-aa70-4067-8300-e31af3a0c358");
                 _txt_propertiesdescriptionrowInfo = new RepoItemInfo(this, "txt_PropertiesDescriptionRow", "progressbar/picture[7]/picture/list/row[@index='1']", 30000, null, "87fb5976-2f92-43b1-831e-644b14505b17");
                 _txt_inventorygriddevicepropertyInfo = new RepoItemInfo(this, "txt_InventoryGridDeviceProperty", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row[$sRowIndex]/row/cell[$sColumnIndex]/text", 30000, null, "103460ce-0b97-441a-ab01-bb36fd02783e");
@@ -8505,6 +8507,30 @@ namespace TestProject
                 get
                 {
                     return _txt_searchpropertiescelltextvalueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_SearchPropertiesCellTextValue1 item.
+            /// </summary>
+            [RepositoryItem("cc58754c-ce69-415d-a42d-10eb5cbaa5dd")]
+            public virtual Ranorex.Text txt_SearchPropertiesCellTextValue1
+            {
+                get
+                {
+                    return _txt_searchpropertiescelltextvalue1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_SearchPropertiesCellTextValue1 item info.
+            /// </summary>
+            [RepositoryItemInfo("cc58754c-ce69-415d-a42d-10eb5cbaa5dd")]
+            public virtual RepoItemInfo txt_SearchPropertiesCellTextValue1Info
+            {
+                get
+                {
+                    return _txt_searchpropertiescelltextvalue1Info;
                 }
             }
 

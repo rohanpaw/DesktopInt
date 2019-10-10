@@ -6613,6 +6613,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 24/05/2019 Alpesh Dhakad - 05/09/2019 - Updated xpath for cell_properties and txt_PropertiesTextValue
+		 * Alpesh Dhakad - 10/10/2019 - Updated xpath for txt_SearchPropertiesCellTextValue1
 		 ***********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyProductCodeInSearchProperties(string sProductLabel)
@@ -6628,7 +6629,7 @@ namespace TestProject.Libraries
 			repo.FormMe.cell_Properties_backplane1.Click();
 			
 			// Retrieve value of label
-			string actualProductLabel = repo.FormMe.txt_SearchPropertiesCellTextValue.TextValue;
+			string actualProductLabel = repo.FormMe.txt_SearchPropertiesCellTextValue1.TextValue;
 			
 			// Comparing actualLabel and sLabel values
 			if(actualProductLabel.Equals(sProductLabel))
@@ -6773,7 +6774,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 09/07/2019
+		 * Last Update : 09/07/2019  10/10/2019 - Alpesh Dhakad - Added code to click on label cell 
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyFunctionality(string sDescription)
@@ -6790,6 +6791,9 @@ namespace TestProject.Libraries
 			
 			// Search Alarm Load property
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Functionality" +"{ENTER}" );
+			
+			// Click on label cell
+			repo.FormMe.cell_Properties_backplane1.Click();
 			
 			string actualDescription =	repo.FormMe.txt_PropertiesTextValue.TextValue;
 			

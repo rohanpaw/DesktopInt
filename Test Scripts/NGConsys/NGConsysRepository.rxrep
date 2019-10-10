@@ -1205,7 +1205,7 @@ W/AAAAAASUVORK5CYII=
 				name="txt_Label"
 				refimgid="c957112b-6769-4888-9c64-3666a64d2b40"
 				searchtimeout="30000ms">
-					/form[@title='Add a New Panel']//container[@caption='Identification']/container[1]/combobox/text[$sPanelLabelIndex]/text[@caption='']
+					/form[@title='Add a New Panel']//container[@caption='Identification']/container[1]/combobox/text[$sPanelLabelIndex]
 				</item>
 				<item
 				addcaps="button,wpfelement,wpfgroupelement"
@@ -2506,6 +2506,14 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			refimgid="92ec22f6-9db4-4446-9b03-04990446b580"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='1']//text[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="text"
+			id="cc58754c-ce69-415d-a42d-10eb5cbaa5dd"
+			name="txt_SearchPropertiesCellTextValue1"
+			refimgid="92ec22f6-9db4-4446-9b03-04990446b580"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='1']//text[@automationid='PART_Editor']
 			</item>
 			<item
 			capname="text"
