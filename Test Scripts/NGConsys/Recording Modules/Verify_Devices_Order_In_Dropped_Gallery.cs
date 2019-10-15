@@ -103,6 +103,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyDeviceOrderForContextMenu("TC_52_Verify_Devices_Order_in_Dropped_Gallery", "Device Order Context Menu");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe2.SaveablePanel' at 258;2.", repo.FormMe2.SaveablePanelInfo, new RecordItemIndex(8));
+            repo.FormMe2.SaveablePanel.Click("258;2");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data

@@ -13614,6 +13614,16 @@ AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Delete']
 			</item>
+			<item
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="container"
+			id="45823c14-413a-4423-b491-c92c042ac71c"
+			name="DetectorGalleryDropDown"
+			refimgid="47920074-a58a-4eb3-b92c-1c6a8a604ede"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -14124,6 +14134,16 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			refimgid="fdb89567-a61e-4e72-9237-9157f85970f9"
 			searchtimeout="90000ms">
 				/form/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text[@caption=$sDeviceName]
+			</item>
+			<item
+			addcaps="list,wpfelement,wpfgroupelement"
+			capname="list"
+			id="51d55fcd-daad-4e90-9b4f-6bf073d07e66"
+			name="SaveablePanel"
+			refimgid="2310a952-b4fc-444b-8ee6-91366843d31d"
+			refpath="/form[@automationid='MainWindow.RootOfWindow']/text/container[@automationid='MainWindow.LayoutRoot']/container[@automationid='MainWindow.ContentGrid']/container[@automationid='MainWindow.ActivityPresenter']/list[@automationid='SaveablePanel']"
+			searchtimeout="30000ms">
+				/form/?/?/container[@automationid='MainWindow.LayoutRoot']/container[@automationid='MainWindow.ContentGrid']/?/?/list[@automationid='SaveablePanel']
 			</item>
 			<basepath>
 				/form

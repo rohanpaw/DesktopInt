@@ -6241,6 +6241,7 @@ namespace TestProject
             RepoItemInfo _btn_saveInfo;
             RepoItemInfo _txt_firstpsuInfo;
             RepoItemInfo _btn_deletefcInfo;
+            RepoItemInfo _detectorgallerydropdownInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6411,6 +6412,7 @@ namespace TestProject
                 _btn_saveInfo = new RepoItemInfo(this, "btn_Save", "progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/list[2]//button[@text='Save']", 30000, null, "699d7ed5-3738-422d-852b-3fa489ebcb75");
                 _txt_firstpsuInfo = new RepoItemInfo(this, "txt_FirstPSU", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='6']//text[@automationid='PART_Editor']", 30000, null, "0c0d150e-2745-4ba4-9689-811c254330e9");
                 _btn_deletefcInfo = new RepoItemInfo(this, "btn_DeleteFC", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Delete']", 30000, null, "c9e14fb1-7f0e-4328-98a5-20e8d815a7b5");
+                _detectorgallerydropdownInfo = new RepoItemInfo(this, "DetectorGalleryDropDown", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 30000, null, "45823c14-413a-4423-b491-c92c042ac71c");
             }
 
             /// <summary>
@@ -10453,6 +10455,30 @@ namespace TestProject
                     return _btn_deletefcInfo;
                 }
             }
+
+            /// <summary>
+            /// The DetectorGalleryDropDown item.
+            /// </summary>
+            [RepositoryItem("45823c14-413a-4423-b491-c92c042ac71c")]
+            public virtual Ranorex.Container DetectorGalleryDropDown
+            {
+                get
+                {
+                    return _detectorgallerydropdownInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DetectorGalleryDropDown item info.
+            /// </summary>
+            [RepositoryItemInfo("45823c14-413a-4423-b491-c92c042ac71c")]
+            public virtual RepoItemInfo DetectorGalleryDropDownInfo
+            {
+                get
+                {
+                    return _detectorgallerydropdownInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -11424,6 +11450,7 @@ namespace TestProject
             RepoItemInfo _panelsInfo;
             RepoItemInfo _fcpsuloadInfo;
             RepoItemInfo _nondroppedgallerydevicenameInfo;
+            RepoItemInfo _saveablepanelInfo;
 
             /// <summary>
             /// Creates a new FormMe2  folder.
@@ -11440,6 +11467,7 @@ namespace TestProject
                 _panelsInfo = new RepoItemInfo(this, "Panels", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_Caption']/text[@caption='Panels']", 30000, null, "a5a3d9d9-6288-4a3b-907f-3071ddbcbcc7");
                 _fcpsuloadInfo = new RepoItemInfo(this, "FCPSULoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[@caption=$sPsuV]", 30000, null, "09ea8da4-2559-4b69-9a6d-3ca8ba3df423");
                 _nondroppedgallerydevicenameInfo = new RepoItemInfo(this, "NonDroppedGalleryDeviceName", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text[@caption=$sDeviceName]", 90000, null, "d8fb937d-27d5-41bc-ab71-93fa3ca4900d");
+                _saveablepanelInfo = new RepoItemInfo(this, "SaveablePanel", "?/?/container[@automationid='MainWindow.LayoutRoot']/container[@automationid='MainWindow.ContentGrid']/?/?/list[@automationid='SaveablePanel']", 30000, null, "51d55fcd-daad-4e90-9b4f-6bf073d07e66");
             }
 
             /// <summary>
@@ -11655,6 +11683,30 @@ namespace TestProject
                 get
                 {
                     return _nondroppedgallerydevicenameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SaveablePanel item.
+            /// </summary>
+            [RepositoryItem("51d55fcd-daad-4e90-9b4f-6bf073d07e66")]
+            public virtual Ranorex.List SaveablePanel
+            {
+                get
+                {
+                    return _saveablepanelInfo.CreateAdapter<Ranorex.List>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveablePanel item info.
+            /// </summary>
+            [RepositoryItemInfo("51d55fcd-daad-4e90-9b4f-6bf073d07e66")]
+            public virtual RepoItemInfo SaveablePanelInfo
+            {
+                get
+                {
+                    return _saveablepanelInfo;
                 }
             }
 
