@@ -1268,8 +1268,8 @@ namespace TestProject.Libraries
 			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(ThirdDevice,true);
 			Delay.Milliseconds(100);
 			
-			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(FourthDevice,true);
-			Delay.Milliseconds(100);
+			//Export_Functions.SearchDeviceInExportUsingSKUOrDescription(FourthDevice,true);
+			//Delay.Milliseconds(100);
 			
 		}
 		
@@ -1343,7 +1343,7 @@ namespace TestProject.Libraries
 			
 			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SecondDevice,true);
 			
-			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(FourthDevice,true);
+			//Export_Functions.SearchDeviceInExportUsingSKUOrDescription(FourthDevice,true);
 			
 			
 			// Close Excel
@@ -1788,7 +1788,7 @@ namespace TestProject.Libraries
 				}
 				else
 				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3", ExpectedBackplane1);
+					Common_Functions.VerifyNavigationTreeItem("Backplane", ExpectedBackplane1);
 				}
 				
 				// Verify expected backplane2
@@ -1879,7 +1879,7 @@ namespace TestProject.Libraries
 				}
 				else
 				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3", ExpectedBackplane1);
+					Common_Functions.VerifyNavigationTreeItem("Backplane", ExpectedBackplane1);
 					
 				}
 				
@@ -2016,16 +2016,16 @@ namespace TestProject.Libraries
 					// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/1");
+					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/1");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sPLXLoopCardBackplane1);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/1");
 					
 				}
 				else
 				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  1/3", ExpectedBackplane1);
+					Common_Functions.VerifyNavigationTreeItem("Backplane  1/1", ExpectedBackplane1);
 				}
 				
 				// Verify expected backplane2
@@ -2166,10 +2166,10 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					//Common_Functions.VerifyNavigationTreeItemText("Backplane");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
 				else

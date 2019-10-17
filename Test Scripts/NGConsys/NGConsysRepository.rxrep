@@ -1,4 +1,5 @@
-﻿<repository
+<?xml version="1.0" encoding="utf-8"?>
+<repository
 id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
 name="NGConsysRepository"
 rxversion="8.3">
@@ -2744,6 +2745,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			refimgid="815d0df0-009a-4631-a72e-4de52bcef7be"
 			refpath="/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[8]/cell[@isheader='False']/picture"
 			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 				<image
 				guid="405478cc-2b97-4039-b186-496665a06906"
 				name="Screenshot2">
@@ -4259,7 +4261,6 @@ apMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1q
 kyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWID
 /idv0HEloKLk6QAAAABJRU5ErkJggg==
 				</image>
-				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 			</item>
 			<item
 			capname="text"
@@ -4316,12 +4317,12 @@ kyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWID
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='3']/cell[@isheader='False']
 			</item>
 			<item
-			capname="cell"
+			capname="text"
 			id="170af9ba-2590-4d86-8d26-6db03b129fc1"
 			name="txt_Product"
 			refimgid="a2d2048b-ff13-4aad-a35d-8a3733b824b6"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='3']/cell[@isheader='False']
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='3']//combobox/text[@automationid='PART_Editor']
 			</item>
 			<item
 			addcaps="picture,wpfelement,wpfgroupelement"
@@ -4331,6 +4332,7 @@ kyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWID
 			refimgid="c6d81439-ae99-4975-be0a-4be079370d45"
 			refpath="/form[@automationid='me']/progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='1']/cell[@isheader='False']/picture"
 			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 				<image
 				guid="b25e233e-6fe9-465d-8940-92a8372a6960"
 				name="Screenshot1">
@@ -10552,7 +10554,6 @@ OU+ePNU1eZDz5MlTXZMHOU+ePNU1eZDz5MlTXZMHOU+ePNU1eZDz5MlTXdMbHnroIfPs2bPneuU3
 PPPMM+bZs2fP9cpvePrpp82zZ8+e65X9mpwnT57qmjzIefLkqa7Jg5wnT57qmjzIefLkqa7Jg5wn
 T57qmjzIefLkqa7Jg5wnT57qmjzIefLkqa7Jg5wnT57qmMz+J8iMGPgWmh5TAAAAAElFTkSuQmCC
 				</image>
-				/form[@automationid='me']/progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 			</item>
 			<item
 			capname="text"
@@ -10566,6 +10567,7 @@ T57qmjzIefLkqa7Jg5wnT57qmjzIefLkqa7Jg5wnT57qmMz+J8iMGPgWmh5TAAAAAElFTkSuQmCC
 			id="3205a377-b082-47fb-9610-d937281d4b42"
 			name="PLX_Image"
 			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 				<image
 				guid="77f984db-87eb-439d-b70a-f6f07ad3700a"
 				name="Screenshot1">
@@ -13278,7 +13280,6 @@ KX6JRCJZYEjxSyQSyQJDil8ikUgWGFL8EolEssCQ4pdIJJIFhhS/RCKRLDCk+CUSiWSBIcUvkUgk
 CwwpfolEIllgSPFLJBLJAkOKXyKRSBYYUvwSiUSywJDil0gkkgWGFL9EIpEsKOD/B/dsUzsrVswK
 AAAAAElFTkSuQmCC
 				</image>
-				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 			</item>
 			<item
 			capname="text"
@@ -13472,8 +13473,16 @@ AAAAAElFTkSuQmCC
 			id="183a21aa-aa3c-434c-a096-aa0f055e77de"
 			name="txt_NavigationTreeItem"
 			refimgid="39db4e49-5b71-4bb6-83cd-12592227ccd4"
-			searchtimeout="30000ms">
+			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/picture/tree//text[@text=$sTreeItem]
+			</item>
+			<item
+			capname="text"
+			id="ccebc373-2ebc-4b82-bc20-b2f656ef6a54"
+			name="Copy_of_txt_NavigationTreeItem"
+			refimgid="39db4e49-5b71-4bb6-83cd-12592227ccd4"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/picture/tree//text[@text='Backplane']
 			</item>
 			<item
 			capname="button"
@@ -13688,7 +13697,7 @@ W/AAAAAASUVORK5CYII=
 			name="SearchExport1"
 			refimgid="2d2d279b-412f-411d-a89d-c227357a1677"
 			refpath="/form[@title='Print Preview']/list[2]/button[@text='Search']"
-			searchtimeout="30000ms">
+			searchtimeout="60000ms">
 				/form[@title='Print Preview']/?/?/button[@text='Search']
 			</item>
 			<item

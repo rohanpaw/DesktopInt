@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -2557,7 +2557,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.43">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.45">
 					</param>
 					<param
 					name="Mode"
@@ -23913,6 +23913,9 @@ persisted in panel properties&nbsp;]]>
 			</testcontainer>
 			<testcontainer
 			id="4315861a-9467-4079-b0b6-186628cddf6d">
+			</testcontainer>
+			<testcontainer
+			id="595fd481-b6cf-43cf-92a7-40db4df3f9b3">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

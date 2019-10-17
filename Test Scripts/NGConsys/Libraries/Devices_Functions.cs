@@ -6630,7 +6630,7 @@ namespace TestProject.Libraries
 			repo.FormMe.cell_Properties_backplane1.Click();
 			
 			// Retrieve value of label
-			string actualProductLabel = repo.FormMe.txt_SearchPropertiesCellTextValue1.TextValue;
+			string actualProductLabel = repo.FormMe.txt_SearchPropertiesCellTextValue.TextValue;
 			
 			// Comparing actualLabel and sLabel values
 			if(actualProductLabel.Equals(sProductLabel))
@@ -6672,7 +6672,7 @@ namespace TestProject.Libraries
 			repo.FormMe.cell_Product.Click();
 			
 			// Retrieve value of label
-			string actualSKUValue = repo.FormMe.txt_Product.Text;
+			string actualSKUValue = repo.FormMe.txt_Product.TextValue;
 			
 			// Comparing actualLabel and sLabel values
 			if(actualSKUValue.Equals(sProductName))

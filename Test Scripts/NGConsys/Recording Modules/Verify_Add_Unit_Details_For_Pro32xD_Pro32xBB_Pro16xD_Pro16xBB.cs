@@ -101,10 +101,8 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
-            try {
-                Libraries.Devices_Functions.VerifyNodeGallery("PCH800", "Slot Cards", "Disabled", "");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
+            Libraries.Devices_Functions.VerifyNodeGallery("PCH800", "Slot Cards", "Disabled", "");
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
@@ -124,7 +122,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of 6)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (3 of 18)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("IOB800-1");
@@ -180,9 +178,6 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("FB800", "Accessories", "Disabled");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("PCS800", "Accessories", "Disabled");
             Delay.Milliseconds(0);
             
         }

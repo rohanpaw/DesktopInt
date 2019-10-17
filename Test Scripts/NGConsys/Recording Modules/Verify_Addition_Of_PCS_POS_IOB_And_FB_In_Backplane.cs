@@ -98,6 +98,25 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro215S", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.SlotCards_Functions.VerifyAdditionOfDevicesInBackplaneWithOnePanel("TC_59_Verify_Addition_Of_PCS_POS_IOB_And_FB_In_Backplane", "Add Devices2");
+            Delay.Milliseconds(0);
+            
+            Libraries.SlotCards_Functions.VerifyShoppingListDevicesAfterAdditionOfDevices("TC_59_Verify_Addition_Of_PCS_POS_IOB_And_FB_In_Backplane", "Add Devices2");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Panel_Network' at Center.", repo.FormMe.tab_Panel_NetworkInfo, new RecordItemIndex(10));
+            repo.FormMe.tab_Panel_Network.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

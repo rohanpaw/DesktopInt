@@ -254,7 +254,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGallery"
 		namespace="TestProject.Libraries"
-		optional="True"
+		optional="False"
 		varname="">
 			<comment>
 			</comment>
@@ -529,7 +529,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other Slot Cards  (2 of 6)
+						Other Slot Cards  (3 of 18)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1093,52 +1093,6 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						FB800
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="65932289-c92f-467d-969c-7ba5d2bd0588">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Accessories
-					</argvalue>
-				</argument>
-				<argument
-				argname="state"
-				id="8b151842-2650-4176-9a50-cfa5c8f8a18e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Disabled
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyPanelNodePanelAccessoriesGallery"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="c77d8da2-db8f-41e4-bdd4-8367233c354a">
-				<argument
-				argname="sDeviceName"
-				id="80bcec5f-9bcf-4537-a6cd-99f4b748a3fa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PCS800
 					</argvalue>
 				</argument>
 				<argument
