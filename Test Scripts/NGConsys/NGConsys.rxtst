@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -206,6 +206,19 @@ rxversion="8.3">
 			ref="f8a2b366-d4b9-4e50-86a0-bd13dedb9621"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="028f3d71-0373-43d9-9b34-c0bc16df72b1"
+			name="Verify_Multiple_PCH_Can_Be_Added_On_Same_Backplane">
+				<description>
+					<![CDATA[<p>NGC-2299/TC-76704</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="02a66786-2baf-4101-b1b8-d4de917998b9"
 			name="Create_Project"
@@ -1047,6 +1060,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="0dfc4d6a-35d5-492c-944e-03490a7c39f8"
+			name="Verify_PCS800_Is_Displayed_Only_For_Pro215S_Panel"
+			ref="a0907639-5534-4952-a6c8-39af9cde9674"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="0dffd1c5-2848-46b3-a9a0-4e2ce2812298"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -1232,6 +1251,26 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="11241c44-8bf7-40ac-b8fb-e25bda086e4a"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="113ec089-e079-4001-8772-4360ac725617"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
 			type="UserCode">
@@ -1783,6 +1822,12 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="17db724c-10a9-4e73-b55f-df88bc939fd2"
+			name="Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner"
+			ref="0735a449-8dab-4e04-b9b6-88a103cc9d01"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="181b6087-be84-41fe-b148-539de689e8a5"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -1836,6 +1881,12 @@ rxversion="8.3">
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="1879dd3e-3215-4575-8d7f-a1e84d17725d"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="18956378-cd65-47c2-8e8f-c5a8d6bb0c2f"
@@ -1912,6 +1963,12 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="195a3e82-ae36-4099-b281-c6c5d3bebf83"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1964ab30-90ce-4773-a85e-f5787ef20241"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -2557,7 +2614,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.45">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.46">
 					</param>
 					<param
 					name="Mode"
@@ -2927,6 +2984,26 @@ rxversion="8.3">
 			name="Verify_Trip_Current_Reopen"
 			ref="4893aa69-0b94-4c25-8062-1425a4df4c59"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="289905b6-2298-4711-8ee5-71134dd19946"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="28bdae5d-0920-452e-881c-df538fd41191"
@@ -4934,6 +5011,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="44a75836-5034-4512-b020-ea5c8e9a2595"
+			name="Verify_Reopen_Project_for_Other_Slot_Card_Node_Count"
+			ref="34dc76aa-3829-4573-9588-c287d29ca9bd"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="44b69852-9f4d-4004-a89a-c45899135fde"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -5015,6 +5098,26 @@ rxversion="8.3">
 					datasourceid="1fdcb6e9-9984-46fd-939a-7c89434db1b9"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="45f0a2fc-4df2-41e1-a7cd-17deac72319d"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5359,6 +5462,12 @@ rxversion="8.3">
 			id="4a06299f-2ab3-4c96-afe4-c4bd9c0de0ef"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4a0c3fb2-c13c-408b-b117-94bb2ffeb17e"
+			name="Verify_Multiple_PCH_Can_Be_Added_On_Same_Backplane"
+			ref="570e3bf8-e9f9-4539-8d50-5a61909473be"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -5757,6 +5866,26 @@ rxversion="8.3">
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4e89b69b-cf80-41fc-b6f1-b758348fd7ee"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="4e89edce-2718-4f2d-9d2f-03e50a522ec2"
@@ -6347,6 +6476,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="557e007d-3545-48bb-86bf-f8a4889f6992"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="55c0774e-0382-484a-8bed-2bec2741d688"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -6408,6 +6557,12 @@ rxversion="8.3">
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="56b9918d-1cb3-457a-b198-891d90e6988b"
+			name="Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner_German_Template"
+			ref="4e7e8708-c6d1-44ee-ab37-a59fc44176e7"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="5714a87f-0e87-4121-ac6d-a52eaee9920c"
@@ -6622,6 +6777,19 @@ rxversion="8.3">
 			ref="32074e17-16ec-4b54-87c0-29ce24977e24"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="589f8693-8e78-40df-88da-50aebdf8c087"
+			name="Verify_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane">
+				<description>
+					<![CDATA[<p>NGC-2299/TC-76701</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="58ac7a77-826d-40e3-86de-4dd1cbadfd1b"
 			name="Create_Project_FC"
@@ -7150,6 +7318,19 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testcase
+			id="5ea2aa81-9623-4312-b26b-e26b4e482512"
+			name="Verify_PCS800_Is_Displayed_Only_For_Pro215S_Panel">
+				<description>
+					<![CDATA[<p>NGC-2299/TC-76713</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="5ef2ae79-c57f-43b8-9486-2c366e1cda5a"
 			name="Create_Project"
@@ -7290,6 +7471,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="61a7b247-07db-4387-889a-984235c6c29a"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="5ea2aa81-9623-4312-b26b-e26b4e482512"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="61bd2aee-5ac1-4b52-a1c6-fdb67574b6cf"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -7407,6 +7602,20 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="6251e44f-fc3e-423e-8b4a-252eeed83a67"
+			name="CreateProject_German"
+			ref="19660af1-4e58-4290-badb-20687f7b3401"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="589f8693-8e78-40df-88da-50aebdf8c087"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="62601efe-04ab-48d3-bcc1-8c8a758dc39f"
 			name="Verify_DC_Units_Displayed_For_Non_Split_Loops_FC"
 			ref="e7f4dc08-0c70-4798-9fed-799d38e6262d"
@@ -7507,6 +7716,26 @@ rxversion="8.3">
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="6468bd6b-3804-4c03-9ec3-665ff5c9460b"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="647a1a60-a596-4fb2-a633-cab35a1427d9"
@@ -7895,6 +8124,20 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="69d48299-b3da-4486-bc57-ffcefafe9782"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="028f3d71-0373-43d9-9b34-c0bc16df72b1"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6a1e26e1-5727-4edd-b18e-44613bc06f1d"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -8069,6 +8312,12 @@ rxversion="8.3">
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="6c6ce934-fe6a-43b0-9c2e-91245a837bcf"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="6cdd96ff-9d27-484d-bfb6-e9214381620b"
 			name="Verify_IB_Units_On_Assigning_Base_And_Additional_Base">
@@ -8118,6 +8367,19 @@ rxversion="8.3">
 			ref="965192b9-de05-4c55-a3b1-2c2e7424a4ae"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="6d5d82b9-20db-4977-8bfb-43d9c590ea06"
+			name="Verify_Other_Slot_Card_Node_Count">
+				<description>
+					<![CDATA[<p>NGC-2299/TC-76728</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="6d986767-f370-455a-a620-3c1a24958d70"
 			name="Create_Project"
@@ -8180,6 +8442,20 @@ rxversion="8.3">
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6e7fe2a7-35a0-44c6-af37-ab05a81aab2a"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="c09b1b47-52fc-439e-8c21-cef3acd226f9"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -8994,6 +9270,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="7a476773-6926-48ed-a056-bf38fd78a89c"
+			name="Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card"
+			ref="c50ab89c-4eb0-4091-b334-b478fae15e4a"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="7a65aab4-436e-4e78-8d8f-fdb397483d16"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -9237,6 +9519,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7db4851f-0a7b-46b1-b29e-3cef65c40742"
+			name="Verify_Other_Slot_Card_Node_Count"
+			ref="bd04b2d0-6dd0-45f9-bdcf-c495a840bc64"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="7df9ecaa-d2e3-4806-ab78-b17344ac57c8"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -9308,6 +9596,20 @@ rxversion="8.3">
 			name="Verify_AC_Units_Calculation_For_Base_FC"
 			ref="d2ca2421-11fa-4801-8b8c-7de2f1b1f92f"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7f2dde42-70ec-4e10-8411-d8afedf4b380"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="8b6e3cd6-d840-4924-b339-e24fa0f318a1"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="7fa973a1-e9c6-46dc-80c6-35e50982b2c3"
@@ -10262,6 +10564,12 @@ MxDesigner]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="8973f979-261a-4196-9d6c-9e793c73f0a0"
+			name="Verify_Reopen_Project_for_Multiple_PCH_Can_Be_Added_On_Same_Backplane"
+			ref="a168200e-38f3-4af2-9dc2-bd4f3cebb9eb"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="8984b46e-40b1-4805-b23c-30d1e044f9b4"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -10473,6 +10781,19 @@ MxDesigner]]>
 			ref="54037372-2321-44a3-b95a-7f5f8a74cbaa"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="8b6e3cd6-d840-4924-b339-e24fa0f318a1"
+			name="Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card">
+				<description>
+					<![CDATA[<p>NGC-2299/TC-76689</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="8b944f3c-fd02-4113-9758-52e27aefc3a6"
 			name="Create_Project"
@@ -11768,6 +12089,20 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="9ea720cc-e970-4e8e-b2a1-631c49d75544"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="6d5d82b9-20db-4977-8bfb-43d9c590ea06"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="9ef1c41a-5bec-4bc1-87c2-d695c52f1e1e"
 			name="Verify_Addition_Deletion_Of_Sounders_In_LPS800_Reflects_In_Shopping_List">
@@ -11951,6 +12286,12 @@ div.WordSection1
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="a1ac5777-af1e-4474-9a46-3c5e4997a049"
+			name="Verify_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane"
+			ref="584fbd79-34de-4d9f-ae92-4448f8b96035"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="a1c71a6e-fa16-4694-bcb6-98109312f17f"
 			name="Verify_Power_Calculation_Is_Populated_Warning_Error_Messages_For_40V_AC_And_DC_Units"
 			ref="fe08a76d-e2a7-4c98-89bf-808e00406233"
@@ -12100,6 +12441,26 @@ div.WordSection1
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop"
 			ref="e9f99955-2d3e-4f64-b42a-637d5a81be9b"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a3247886-bf6b-4a52-acfb-cc7943ce9ed6"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="a394bad0-e091-4db6-801f-9e4c95b44d48"
@@ -13321,6 +13682,26 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="b8b946e2-319f-407e-a2cd-3bc24b17deac"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="b9083536-9697-4c94-9f31-76d43ce0069e"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -13870,6 +14251,19 @@ persisted in panel properties&nbsp;]]>
 					</param>
 					<param
 					name="ProjectName"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="c09b1b47-52fc-439e-8c21-cef3acd226f9"
+			name="Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner">
+				<description>
+					<![CDATA[<p>NGC-2299/TC-76691</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
 					value="">
 					</param>
 				</parameters>
@@ -14429,6 +14823,20 @@ persisted in panel properties&nbsp;]]>
 					<var
 					dataname="sListIndex"
 					datasourceid="62e5e792-2d5c-41ad-a257-b6450888d9ad"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="caa28ae7-4edc-41f5-ada1-6522f23fe2c9"
+			name="CreateProject_German"
+			ref="19660af1-4e58-4290-badb-20687f7b3401"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="e082dbeb-d56b-4872-ad07-8ae2149b880c"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -15588,6 +15996,12 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="d9034493-1237-49fc-9f08-008b84cb7d16"
+			name="Verify_Reopen_Project_for_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane"
+			ref="28d7a789-3e2d-4e63-ba62-379cb7e3a850"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="d9b1dd20-faa5-443f-84bf-a23f9f1ff22c"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -15964,6 +16378,19 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="e082dbeb-d56b-4872-ad07-8ae2149b880c"
+			name="Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner_German_Template">
+				<description>
+					<![CDATA[<p>NGC-2299/TC-76691</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="e089c3d0-1af3-4e27-bcdc-39a182917150"
 			name="Create_Project"
@@ -16060,6 +16487,26 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="e123e7f4-aa9a-4884-98aa-b72c106c143a"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e221cc60-43dd-411a-9b57-b99f374a3944"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -17229,6 +17676,26 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="f1e73551-1121-4cb5-abc2-b2dd9286a8fd"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="f20f7bf9-5d9a-450e-9e93-75990b974811"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -17253,6 +17720,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="f293e8da-77f0-4b10-bc46-bd9b529dfa86"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="f29c0cd8-1f57-4620-832f-19352d364fec"
@@ -23705,6 +24178,158 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop_FC">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="8b6e3cd6-d840-4924-b339-e24fa0f318a1"
+					name="Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card">
+						<testmodule
+						id="b8b946e2-319f-407e-a2cd-3bc24b17deac"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="7f2dde42-70ec-4e10-8411-d8afedf4b380"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="7a476773-6926-48ed-a056-bf38fd78a89c"
+						name="Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card">
+						</testmodule>
+						<testmodule
+						id="6c6ce934-fe6a-43b0-9c2e-91245a837bcf"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="589f8693-8e78-40df-88da-50aebdf8c087"
+					name="Verify_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane">
+						<testmodule
+						id="289905b6-2298-4711-8ee5-71134dd19946"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="6251e44f-fc3e-423e-8b4a-252eeed83a67"
+						name="CreateProject_German">
+						</testmodule>
+						<testmodule
+						id="a1ac5777-af1e-4474-9a46-3c5e4997a049"
+						name="Verify_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane">
+						</testmodule>
+						<testmodule
+						id="4e89b69b-cf80-41fc-b6f1-b758348fd7ee"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="d9034493-1237-49fc-9f08-008b84cb7d16"
+						name="Verify_Reopen_Project_for_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="028f3d71-0373-43d9-9b34-c0bc16df72b1"
+					name="Verify_Multiple_PCH_Can_Be_Added_On_Same_Backplane">
+						<testmodule
+						id="e221cc60-43dd-411a-9b57-b99f374a3944"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="69d48299-b3da-4486-bc57-ffcefafe9782"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="4a0c3fb2-c13c-408b-b117-94bb2ffeb17e"
+						name="Verify_Multiple_PCH_Can_Be_Added_On_Same_Backplane">
+						</testmodule>
+						<testmodule
+						id="f1e73551-1121-4cb5-abc2-b2dd9286a8fd"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="8973f979-261a-4196-9d6c-9e793c73f0a0"
+						name="Verify_Reopen_Project_for_Multiple_PCH_Can_Be_Added_On_Same_Backplane">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="5ea2aa81-9623-4312-b26b-e26b4e482512"
+					name="Verify_PCS800_Is_Displayed_Only_For_Pro215S_Panel">
+						<testmodule
+						id="a3247886-bf6b-4a52-acfb-cc7943ce9ed6"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="61a7b247-07db-4387-889a-984235c6c29a"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="0dfc4d6a-35d5-492c-944e-03490a7c39f8"
+						name="Verify_PCS800_Is_Displayed_Only_For_Pro215S_Panel">
+						</testmodule>
+						<testmodule
+						id="f293e8da-77f0-4b10-bc46-bd9b529dfa86"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="6d5d82b9-20db-4977-8bfb-43d9c590ea06"
+					name="Verify_Other_Slot_Card_Node_Count">
+						<testmodule
+						id="6468bd6b-3804-4c03-9ec3-665ff5c9460b"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="9ea720cc-e970-4e8e-b2a1-631c49d75544"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="7db4851f-0a7b-46b1-b29e-3cef65c40742"
+						name="Verify_Other_Slot_Card_Node_Count">
+						</testmodule>
+						<testmodule
+						id="45f0a2fc-4df2-41e1-a7cd-17deac72319d"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="44a75836-5034-4512-b020-ea5c8e9a2595"
+						name="Verify_Reopen_Project_for_Other_Slot_Card_Node_Count">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="e082dbeb-d56b-4872-ad07-8ae2149b880c"
+					name="Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner_German_Template">
+						<testmodule
+						id="557e007d-3545-48bb-86bf-f8a4889f6992"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="caa28ae7-4edc-41f5-ada1-6522f23fe2c9"
+						name="CreateProject_German">
+						</testmodule>
+						<testmodule
+						id="56b9918d-1cb3-457a-b198-891d90e6988b"
+						name="Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner_German_Template">
+						</testmodule>
+						<testmodule
+						id="1879dd3e-3215-4575-8d7f-a1e84d17725d"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="c09b1b47-52fc-439e-8c21-cef3acd226f9"
+					name="Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner">
+						<testmodule
+						id="113ec089-e079-4001-8772-4360ac725617"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="6e7fe2a7-35a0-44c6-af37-ab05a81aab2a"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="17db724c-10a9-4e73-b55f-df88bc939fd2"
+						name="Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner">
+						</testmodule>
+						<testmodule
+						id="1964ab30-90ce-4773-a85e-f5787ef20241"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -23912,10 +24537,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="4315861a-9467-4079-b0b6-186628cddf6d">
-			</testcontainer>
-			<testcontainer
-			id="595fd481-b6cf-43cf-92a7-40db4df3f9b3">
+			id="e920721a-3dae-4973-96f4-2f314ac9cef1">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -23945,10 +24567,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

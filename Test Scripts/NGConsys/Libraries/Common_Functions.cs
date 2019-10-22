@@ -450,7 +450,7 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				Report.Log(ReportLevel.Failure,"Tree Item text is displayed as " +ActualText+ "instead of " +TreeItemName);
+				Report.Log(ReportLevel.Failure,"Tree Item text is displayed as " +ActualText+ " instead of " +TreeItemName);
 			}
 			repo.FormMe.txt_NavigationTreeItem.Click();
 		}

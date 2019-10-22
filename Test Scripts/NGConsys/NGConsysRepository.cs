@@ -6243,6 +6243,7 @@ namespace TestProject
             RepoItemInfo _txt_firstpsuInfo;
             RepoItemInfo _btn_deletefcInfo;
             RepoItemInfo _detectorgallerydropdownInfo;
+            RepoItemInfo _cell_dipswitchesInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6415,6 +6416,7 @@ namespace TestProject
                 _txt_firstpsuInfo = new RepoItemInfo(this, "txt_FirstPSU", "progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='6']//text[@automationid='PART_Editor']", 30000, null, "0c0d150e-2745-4ba4-9689-811c254330e9");
                 _btn_deletefcInfo = new RepoItemInfo(this, "btn_DeleteFC", "progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/?/?/text[@caption='Delete']", 30000, null, "c9e14fb1-7f0e-4328-98a5-20e8d815a7b5");
                 _detectorgallerydropdownInfo = new RepoItemInfo(this, "DetectorGalleryDropDown", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 30000, null, "45823c14-413a-4423-b491-c92c042ac71c");
+                _cell_dipswitchesInfo = new RepoItemInfo(this, "cell_DIPSwitches", "progressbar//picture/list/?/?/cell[@text='DIP Switches']", 30000, null, "3d150589-dd8b-4eab-84b3-9bdc419d8622");
             }
 
             /// <summary>
@@ -10505,6 +10507,30 @@ namespace TestProject
                     return _detectorgallerydropdownInfo;
                 }
             }
+
+            /// <summary>
+            /// The cell_DIPSwitches item.
+            /// </summary>
+            [RepositoryItem("3d150589-dd8b-4eab-84b3-9bdc419d8622")]
+            public virtual Ranorex.Cell cell_DIPSwitches
+            {
+                get
+                {
+                    return _cell_dipswitchesInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The cell_DIPSwitches item info.
+            /// </summary>
+            [RepositoryItemInfo("3d150589-dd8b-4eab-84b3-9bdc419d8622")]
+            public virtual RepoItemInfo cell_DIPSwitchesInfo
+            {
+                get
+                {
+                    return _cell_dipswitchesInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -10537,7 +10563,7 @@ namespace TestProject
                 _searchexport1Info = new RepoItemInfo(this, "SearchExport1", "?/?/button[@text='Search']", 60000, null, "572233f7-0117-4a2a-8fe7-1840685d3cf9");
                 _nomatches_inexportInfo = new RepoItemInfo(this, "NoMatches_InExport", "?/?/picture[@automationid='PART_Image']/container[@caption='']/?/?/text[@caption='No matches']", 30000, null, "e0653c37-bd77-406c-ad9d-ef2fc77ba3a4");
                 _txt_exportresultInfo = new RepoItemInfo(this, "txt_ExportResult", "?/?/picture[@automationid='PART_Image']/container[@caption='']/list/?/?/list[@automationid='PART_Editor']/?/?/text", 30000, null, "fc3896b2-f80d-4fe5-8197-e7b5c99f2fb0");
-                _searchbox_export1Info = new RepoItemInfo(this, "SearchBox_Export1", "?/?/picture[@automationid='PART_Image']/?/?/text[@automationid='PART_SearchBox']", 30000, null, "5de73a16-f525-47d9-ac6b-0a9b616ac3fe");
+                _searchbox_export1Info = new RepoItemInfo(this, "SearchBox_Export1", "?/?/picture[@automationid='PART_Image']/?/?/text[@automationid='PART_SearchBox']", 60000, null, "5de73a16-f525-47d9-ac6b-0a9b616ac3fe");
                 _mail_exportInfo = new RepoItemInfo(this, "Mail_Export", "?/?/button[@text='Send...']", 30000, null, "98c5f48a-e6d1-4354-9912-b196ef43a0fc");
                 _print1Info = new RepoItemInfo(this, "Print1", "?/?/button[@text='Print...']", 30000, null, "04aa1e56-7676-4f7e-b697-8eeea5ff2ff1");
             }

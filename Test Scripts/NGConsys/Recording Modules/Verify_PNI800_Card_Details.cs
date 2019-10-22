@@ -111,10 +111,7 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "PNI800");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Address", "1");
-            Delay.Milliseconds(0);
-            
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Other Slot Cards 1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "PNI800-3");
@@ -147,10 +144,7 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "PNI800");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Address", "1");
-            Delay.Milliseconds(0);
-            
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Other Slot Cards 1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
@@ -177,10 +171,7 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "PNI800");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Address", "1");
-            Delay.Milliseconds(0);
-            
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Other Slot Cards 1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "PNI800-3");
@@ -213,10 +204,7 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "PNI800");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Address", "1");
-            Delay.Milliseconds(0);
-            
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Other Slot Cards 1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
         }

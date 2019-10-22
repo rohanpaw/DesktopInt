@@ -7561,6 +7561,81 @@ namespace TestProject.Libraries
 			
 			repo.AddDevices.btn_AddDevices.Click();
 		}
+		
+		/********************************************************************
+		 * Function Name: VerifyDeviceVisibility
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :17/10/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyDeviceVisibility(string sDeviceName,bool IsVisible)
+		{
+			ModelNumber=sDeviceName;
+			
+			if(IsVisible)
+			{
+				if(repo.FormMe.btn_AllGalleryDropdownInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success,"Device "+ sDeviceName +" exist in device gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device "+ sDeviceName +" doesn't in device gallery");
+				}
+			}
+			else
+			{
+				if(repo.FormMe.btn_AllGalleryDropdownInfo.Exists())
+				{
+					Report.Log(ReportLevel.Failure,"Device "+ sDeviceName +" exist in device gallery");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success,"Device "+ sDeviceName +" doesn't exist in device gallery");
+				}
+			}
+		}
+
+		/***************************************************************************************************************
+		 * Function Name: verifyDIPSwitches
+		 * Function Details: To verify DIP Switches from Search properties
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 18/10/2019
+		 ***************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyDIPSwitches()
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Alarm Load property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Dip" +"{ENTER}" );
+			
+			if(repo.FormMe.txt_PropertiesDescriptionRowInfo.Exists())
+			{
+			Report.Log(ReportLevel.Failure,"DIP Switches  is displayed which is not expected");
+			}
+			else
+			{
+			Report.Log(ReportLevel.Success,"Description is not displayed which is as expected");
+			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		
+		
+		
 	}
 }
 

@@ -558,6 +558,18 @@
       <UserCode>true</UserCode>
       <id>42a72b97-c4a4-46ff-85ae-b59868fe5335</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card.cs">
+      <BoundTo>2d3c0a11-0db7-498d-93fa-21e530cfb3e1</BoundTo>
+      <DependentUpon>Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ee649c66-8ba9-4a3b-869c-f17c8df64c6f</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card.UserCode.cs">
+      <BoundTo>2d3c0a11-0db7-498d-93fa-21e530cfb3e1</BoundTo>
+      <DependentUpon>Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f96412c7-07d0-4def-94fc-0c1b0d6bf80d</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Maximum_Limit_For_5V__24V__40V.cs">
       <BoundTo>35d90bdb-9e85-41e1-bdfa-9b8eedbc5d1e</BoundTo>
       <DependentUpon>Verify_Maximum_Limit_For_5V__24V__40V.rxrec</DependentUpon>
@@ -2754,6 +2766,18 @@
       <UserCode>true</UserCode>
       <id>b1b5f253-d445-4036-be0e-a387dd5885c4</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Multiple_PCH_Can_Be_Added_On_Same_Backplane.cs">
+      <BoundTo>c06cedd8-2753-42e9-bf4d-5596954f454e</BoundTo>
+      <DependentUpon>Verify_Multiple_PCH_Can_Be_Added_On_Same_Backplane.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6ad29b60-6ef1-49b8-83bc-e21da917f187</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Multiple_PCH_Can_Be_Added_On_Same_Backplane.UserCode.cs">
+      <BoundTo>c06cedd8-2753-42e9-bf4d-5596954f454e</BoundTo>
+      <DependentUpon>Verify_Multiple_PCH_Can_Be_Added_On_Same_Backplane.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0519cbed-a511-42d1-8b66-18dc87a5712c</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_new_gallery_displayed_after_selection_of_LPS800.cs">
       <BoundTo>e9228dab-0095-42ca-9ade-64e646557c22</BoundTo>
       <DependentUpon>Verify_new_gallery_displayed_after_selection_of_LPS800.rxrec</DependentUpon>
@@ -2837,6 +2861,18 @@
       <DependentUpon>Verify_Other_Slot_Cards_Grid.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>52075814-524e-42b2-a02e-04fc1dff1dd5</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Other_Slot_Card_Node_Count.cs">
+      <BoundTo>404b5ca7-3462-426f-986e-a7fbf14e84ae</BoundTo>
+      <DependentUpon>Verify_Other_Slot_Card_Node_Count.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e4507ad4-a61b-49eb-ac78-fd1b256c50a9</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Other_Slot_Card_Node_Count.UserCode.cs">
+      <BoundTo>404b5ca7-3462-426f-986e-a7fbf14e84ae</BoundTo>
+      <DependentUpon>Verify_Other_Slot_Card_Node_Count.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>192fa96a-48f9-4c2a-ac5b-e123f6697552</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Panel_LED.cs">
       <BoundTo>ff438fb9-26a2-45cd-91d3-d8b79db591d0</BoundTo>
@@ -2922,6 +2958,18 @@
       <UserCode>true</UserCode>
       <id>e5f30713-d39e-4f47-a851-ba6f630db1db</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane.cs">
+      <BoundTo>67f7eb05-5b3e-4bdd-b48f-896a67f2e184</BoundTo>
+      <DependentUpon>Verify_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>838f9ef9-e754-4b35-bc4b-b6e0084f04e0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane.UserCode.cs">
+      <BoundTo>67f7eb05-5b3e-4bdd-b48f-896a67f2e184</BoundTo>
+      <DependentUpon>Verify_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>90cb21cd-c587-4d5a-bc81-834c24814536</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.cs">
       <BoundTo>d352bb85-43b4-4bff-8149-aaa1b40ca5b4</BoundTo>
       <DependentUpon>Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
@@ -2933,6 +2981,18 @@
       <DependentUpon>Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>db9d2ed4-dd78-41c3-bfbc-69c7154dc84e</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_PCS800_Is_Displayed_Only_For_Pro215S_Panel.cs">
+      <BoundTo>52fc5ede-df60-49d6-ab41-ff4501f60979</BoundTo>
+      <DependentUpon>Verify_PCS800_Is_Displayed_Only_For_Pro215S_Panel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2aeac6c-8265-477a-b9f0-a96ffe70f603</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_PCS800_Is_Displayed_Only_For_Pro215S_Panel.UserCode.cs">
+      <BoundTo>52fc5ede-df60-49d6-ab41-ff4501f60979</BoundTo>
+      <DependentUpon>Verify_PCS800_Is_Displayed_Only_For_Pro215S_Panel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dfc90da0-96d8-4b4e-8505-a7afa6080c2b</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_persistance_Of_Loop_Properties_on_Copy_Paste.cs">
       <BoundTo>caad22e2-73a9-4304-849b-49e5881ed310</BoundTo>
@@ -3354,6 +3414,18 @@
       <UserCode>true</UserCode>
       <id>29de780d-03e8-4525-a660-e62b49bd0fec</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_for_Multiple_PCH_Can_Be_Added_On_Same_Backplane.cs">
+      <BoundTo>cec2d740-afd2-4dec-850b-6d430fa201f0</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_for_Multiple_PCH_Can_Be_Added_On_Same_Backplane.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>44f78015-7cfb-4535-9fe5-2bef2b8df514</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_for_Multiple_PCH_Can_Be_Added_On_Same_Backplane.UserCode.cs">
+      <BoundTo>cec2d740-afd2-4dec-850b-6d430fa201f0</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_for_Multiple_PCH_Can_Be_Added_On_Same_Backplane.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c1cc1104-adbf-445a-a40d-9af56c15c86b</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.cs">
       <BoundTo>15879bd5-ba94-4c42-9e7b-4de1ca45102b</BoundTo>
       <DependentUpon>Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.rxrec</DependentUpon>
@@ -3365,6 +3437,18 @@
       <DependentUpon>Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>aeb955dd-b948-4665-9301-0bd2cfad5d83</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_for_Other_Slot_Card_Node_Count.cs">
+      <BoundTo>491f129d-2b71-4b7e-bf83-0afb37e7b6ba</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_for_Other_Slot_Card_Node_Count.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>529361d3-348d-4913-a193-bd32ff3b9a1f</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_for_Other_Slot_Card_Node_Count.UserCode.cs">
+      <BoundTo>491f129d-2b71-4b7e-bf83-0afb37e7b6ba</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_for_Other_Slot_Card_Node_Count.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>130a5aa1-d213-4ada-a560-b733b57a41ea</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.cs">
       <BoundTo>99f09b4e-16fd-4c8a-91e1-2a09eeb4a2ce</BoundTo>
@@ -3486,6 +3570,18 @@
       <UserCode>true</UserCode>
       <id>a40a0f38-d22d-4f90-8d03-e3c0dfe51897</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_for_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane.cs">
+      <BoundTo>e3d0ea15-27ef-4727-b1cc-84014df7c671</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_for_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>455d9e5d-387f-4979-95a7-c73b2bcdbb8d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_for_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane.UserCode.cs">
+      <BoundTo>e3d0ea15-27ef-4727-b1cc-84014df7c671</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_for_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b4ffa003-87eb-425d-aa6a-dd1e9ea60d3d</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.cs">
       <BoundTo>60711ecb-1170-4b17-af59-08c71e7e3525</BoundTo>
       <DependentUpon>Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec</DependentUpon>
@@ -3545,6 +3641,30 @@
       <DependentUpon>Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>773a57a3-6d13-486f-8d85-5cb553afbfc9</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner.cs">
+      <BoundTo>1fc71ac7-a568-4371-8ad0-b18f211621cf</BoundTo>
+      <DependentUpon>Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>afb3af00-ec4e-400c-8b21-8925a9ea4c5b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner.UserCode.cs">
+      <BoundTo>1fc71ac7-a568-4371-8ad0-b18f211621cf</BoundTo>
+      <DependentUpon>Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b064aaf4-8ad1-4802-839c-dcc5311e2136</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner_German_Template.cs">
+      <BoundTo>11cd3f7a-cf8b-4975-9b44-dcf1877138b7</BoundTo>
+      <DependentUpon>Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner_German_Template.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>83d069f5-5500-4277-8f2c-1055950255da</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner_German_Template.UserCode.cs">
+      <BoundTo>11cd3f7a-cf8b-4975-9b44-dcf1877138b7</BoundTo>
+      <DependentUpon>Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner_German_Template.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>84e373e6-6c7c-436e-982f-502c7b080f12</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Slot_Cards_Gallery.cs">
       <BoundTo>2aa44e6e-2beb-4096-a936-8fb861f88aeb</BoundTo>
@@ -4356,6 +4476,11 @@
       <recordtableid>867c95aa-ec77-483a-8210-e0dbc264d0d4</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>2d3c0a11-0db7-498d-93fa-21e530cfb3e1</id>
+      <recordtableid>c50ab89c-4eb0-4091-b334-b478fae15e4a</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Maximum_Limit_For_5V__24V__40V.rxrec">
       <id>35d90bdb-9e85-41e1-bdfa-9b8eedbc5d1e</id>
       <recordtableid>633c49ae-ec4c-4372-8be3-644045367dab</recordtableid>
@@ -4937,9 +5062,9 @@
       <recordtableid>07dceaca-42c8-40cf-82fe-5daef4872f39</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>4e08f8c3-2152-45ab-9e45-eeb28f0b1281</id>
       <recordtableid>973b545f-daf4-47a9-b82e-d0a7b6dbfca9</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Error_Warning_Indication_For_Isolator_Units.rxrec">
       <id>f837b6f0-48c3-46a4-a969-c0ecd4a9ce3a</id>
@@ -5271,6 +5396,11 @@
       <id>c8a4022f-23b1-44db-843e-e31507d6cd62</id>
       <recordtableid>78cbd3fc-a9ce-4714-b932-aaa1a9ecab06</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Multiple_PCH_Can_Be_Added_On_Same_Backplane.rxrec">
+      <id>c06cedd8-2753-42e9-bf4d-5596954f454e</id>
+      <recordtableid>570e3bf8-e9f9-4539-8d50-5a61909473be</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_new_gallery_displayed_after_selection_of_LPS800.rxrec">
       <id>e9228dab-0095-42ca-9ade-64e646557c22</id>
       <recordtableid>87342b96-60b1-40f3-b9ab-d88432b7c17a</recordtableid>
@@ -5304,6 +5434,11 @@
     <None Include="Recording Modules\Verify_Other_Slot_Cards_Grid.rxrec">
       <id>f90421d1-dd71-4d6d-9743-ac74e8110e8b</id>
       <recordtableid>0dff0108-fa36-4b28-a13c-b77f3cff3ec4</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Other_Slot_Card_Node_Count.rxrec">
+      <id>404b5ca7-3462-426f-986e-a7fbf14e84ae</id>
+      <recordtableid>bd04b2d0-6dd0-45f9-bdcf-c495a840bc64</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Panel_LED.rxrec">
@@ -5341,10 +5476,20 @@
       <recordtableid>50b02cdd-3f07-45d7-8b50-359e1f9bb80b</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>67f7eb05-5b3e-4bdd-b48f-896a67f2e184</id>
+      <recordtableid>584fbd79-34de-4d9f-ae92-4448f8b96035</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>d352bb85-43b4-4bff-8149-aaa1b40ca5b4</id>
       <recordtableid>dcb002d8-81ef-4a04-8ea5-46f5d33091b7</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_PCS800_Is_Displayed_Only_For_Pro215S_Panel.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>52fc5ede-df60-49d6-ab41-ff4501f60979</id>
+      <recordtableid>a0907639-5534-4952-a6c8-39af9cde9674</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_persistance_Of_Loop_Properties_on_Copy_Paste.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -5521,10 +5666,20 @@
       <recordtableid>53d3d5cf-70f2-450b-94e0-e3e14d69ab8f</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_for_Multiple_PCH_Can_Be_Added_On_Same_Backplane.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>cec2d740-afd2-4dec-850b-6d430fa201f0</id>
+      <recordtableid>a168200e-38f3-4af2-9dc2-bd4f3cebb9eb</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC.rxrec">
       <id>15879bd5-ba94-4c42-9e7b-4de1ca45102b</id>
       <recordtableid>98d6155f-13cd-47f6-89ee-4d1fca67f57c</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_for_Other_Slot_Card_Node_Count.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>491f129d-2b71-4b7e-bf83-0afb37e7b6ba</id>
+      <recordtableid>34dc76aa-3829-4573-9588-c287d29ca9bd</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC.rxrec">
       <id>99f09b4e-16fd-4c8a-91e1-2a09eeb4a2ce</id>
@@ -5576,6 +5731,11 @@
       <recordtableid>1aa3c0f7-435f-44c7-9c86-52b8440ff9c4</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_for_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane.rxrec">
+      <id>e3d0ea15-27ef-4727-b1cc-84014df7c671</id>
+      <recordtableid>28d7a789-3e2d-4e63-ba62-379cb7e3a850</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec">
       <id>60711ecb-1170-4b17-af59-08c71e7e3525</id>
       <recordtableid>24aaa9ba-5aac-4310-b303-d4087b7c09a9</recordtableid>
@@ -5600,6 +5760,16 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>c3de33ac-ad37-4a9d-9c22-e10c699a4862</id>
       <recordtableid>da57bb22-d09f-4579-bef0-4365a462e6e4</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>1fc71ac7-a568-4371-8ad0-b18f211621cf</id>
+      <recordtableid>0735a449-8dab-4e04-b9b6-88a103cc9d01</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner_German_Template.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>11cd3f7a-cf8b-4975-9b44-dcf1877138b7</id>
+      <recordtableid>4e7e8708-c6d1-44ee-ab37-a59fc44176e7</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Slot_Cards_Gallery.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -5887,4 +6057,10 @@
   </Import>
   <Import Condition="Exists('$(RanorexTargetsPath)')" Project="$(RanorexTargetsPath)">
   </Import>
+  <PropertyGroup>
+    <PreBuildEvent>if not exist "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data" mkdir "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data"
+xcopy "C:\work\consys-uiauto\Test Data" "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\Test Data"/E /Y
+if not exist "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects" mkdir "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects"
+xcopy "C:\work\consys-uiauto\NGDesigner Saved Projects" "C:\work\consys-uiauto\Test Scripts\NGConsys\bin\Debug\NGDesigner Saved Projects"/E /Y</PreBuildEvent>
+  </PropertyGroup>
 </Project>

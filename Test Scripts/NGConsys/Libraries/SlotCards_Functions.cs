@@ -1086,15 +1086,15 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 		
-		/****************************************************************************************************************************************
+		/**************************************************************************************************************************************************
 		 * Function Name: VerifyAdditionOfDevicesInBackplaneWithOnePanel
 		 * Function Details: To verify slot cards and backplane distribution
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 06/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
-		 * Alpesh Dhakad - 16/08/2019,19/08/2019,28/08/2019 & 07/09/2019 - Updated with new navigation tree method, xpath and devices gallery 
-		 ****************************************************************************************************************************************/
+		 * Alpesh Dhakad - 16/08/2019,19/08/2019,28/08/2019,07/09/2019 & 16/10/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 **************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfDevicesInBackplaneWithOnePanel(string sFileName,string sAddDevicesSheet)
 		{

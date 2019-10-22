@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
 name="NGConsysRepository"
 rxversion="8.3">
@@ -2745,7 +2744,6 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			refimgid="815d0df0-009a-4631-a72e-4de52bcef7be"
 			refpath="/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[8]/cell[@isheader='False']/picture"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 				<image
 				guid="405478cc-2b97-4039-b186-496665a06906"
 				name="Screenshot2">
@@ -4261,6 +4259,7 @@ apMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1q
 kyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWID
 /idv0HEloKLk6QAAAABJRU5ErkJggg==
 				</image>
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 			</item>
 			<item
 			capname="text"
@@ -4332,7 +4331,6 @@ kyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWqTICeZZJItapMgJ5lkki1qkyAnmWSSLWID
 			refimgid="c6d81439-ae99-4975-be0a-4be079370d45"
 			refpath="/form[@automationid='me']/progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='1']/cell[@isheader='False']/picture"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 				<image
 				guid="b25e233e-6fe9-465d-8940-92a8372a6960"
 				name="Screenshot1">
@@ -10554,6 +10552,7 @@ OU+ePNU1eZDz5MlTXZMHOU+ePNU1eZDz5MlTXZMHOU+ePNU1eZDz5MlTXdMbHnroIfPs2bPneuU3
 PPPMM+bZs2fP9cpvePrpp82zZ8+e65X9mpwnT57qmjzIefLkqa7Jg5wnT57qmjzIefLkqa7Jg5wn
 T57qmjzIefLkqa7Jg5wnT57qmjzIefLkqa7Jg5wnT57qmMz+J8iMGPgWmh5TAAAAAElFTkSuQmCC
 				</image>
+				/form[@automationid='me']/progressbar/picture[2]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 			</item>
 			<item
 			capname="text"
@@ -10567,7 +10566,6 @@ T57qmjzIefLkqa7Jg5wnT57qmjzIefLkqa7Jg5wnT57qmMz+J8iMGPgWmh5TAAAAAElFTkSuQmCC
 			id="3205a377-b082-47fb-9610-d937281d4b42"
 			name="PLX_Image"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 				<image
 				guid="77f984db-87eb-439d-b70a-f6f07ad3700a"
 				name="Screenshot1">
@@ -13280,6 +13278,7 @@ KX6JRCJZYEjxSyQSyQJDil8ikUgWGFL8EolEssCQ4pdIJJIFhhS/RCKRLDCk+CUSiWSBIcUvkUgk
 CwwpfolEIllgSPFLJBLJAkOKXyKRSBYYUvwSiUSywJDil0gkkgWGFL9EIpEsKOD/B/dsUzsrVswK
 AAAAAElFTkSuQmCC
 				</image>
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//picture
 			</item>
 			<item
 			capname="text"
@@ -13633,6 +13632,13 @@ AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
 			</item>
+			<item
+			capname="cell"
+			id="3d150589-dd8b-4eab-84b3-9bdc419d8622"
+			name="cell_DIPSwitches"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar//picture/list/?/?/cell[@text='DIP Switches']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -13726,7 +13732,7 @@ W/AAAAAASUVORK5CYII=
 			name="SearchBox_Export1"
 			refimgid="c4a128c8-e4b1-4851-bc34-64e756292da7"
 			refpath="/form[@title='Print Preview']/text[@caption='The document does not contain any pages.']/picture[@automationid='PART_Image']/container[@caption='']/text[@automationid='PART_SearchBox']"
-			searchtimeout="30000ms">
+			searchtimeout="60000ms">
 				/form[@title='Print Preview']/?/?/picture[@automationid='PART_Image']/?/?/text[@automationid='PART_SearchBox']
 			</item>
 			<item
