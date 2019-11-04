@@ -108,7 +108,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of 6)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of 18)");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Label", "FBI800-1");
@@ -121,7 +121,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (1 of 6)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (1 of 18)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -133,7 +133,7 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PNI800-1");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of 6)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of 18)");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Label", "PNI800-1");
@@ -146,7 +146,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (1 of 6)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (1 of 18)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.SaveProjectFromFileOption("389_5");
@@ -196,7 +196,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of 6)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of 18)");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Label", "FBI800-1");
@@ -209,7 +209,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (1 of 6)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (1 of 18)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -221,7 +221,7 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PNI800-1");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of 6)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of 18)");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Label", "PNI800-1");
@@ -234,7 +234,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (1 of 6)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (1 of 18)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.SaveProjectFromFileOption("389_5");

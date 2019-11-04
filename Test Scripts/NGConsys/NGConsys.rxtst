@@ -4884,7 +4884,7 @@ rxversion="8.3">
 			id="4315861a-9467-4079-b0b6-186628cddf6d"
 			name="Verify_Paste_Of_Unit_With_Points">
 				<description>
-					<![CDATA[<p>NGC-372/TC-36</p>]]>
+					<![CDATA[<p>NGC-372/TC-36 Failed due to PLX-800 loop label count, bug-NGC-2581</p>]]>
 				</description>
 				<parameters>
 					<param

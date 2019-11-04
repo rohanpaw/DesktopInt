@@ -124,7 +124,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste with Points");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectInventoryGridRow("6");
@@ -133,13 +133,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("1,000");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-5");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 3");
             Delay.Milliseconds(0);
             
-            try {
-                Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(19)); }
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-9");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
@@ -147,7 +148,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("6");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.ChangeCableLengthFromInventory(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "500"));
+            Libraries.Devices_Functions.ChangeCableLengthFromInventory(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "1000"));
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
@@ -159,7 +160,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste with Points");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectInventoryGridRow("6");
@@ -168,13 +169,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("500");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-5");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 4");
             Delay.Milliseconds(0);
             
-            try {
-                Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(30)); }
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-13");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
+            Delay.Milliseconds(0);
             
         }
 

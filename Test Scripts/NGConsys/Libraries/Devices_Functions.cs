@@ -4898,43 +4898,44 @@ namespace TestProject.Libraries
 				VerifyDeviceIsDisabledOrEnabled(ModelNumber,sType,EnabledStatus);
 				
 				//Verify slot cards
-				if(MaxNumber>6)
-				{
-					int remainingSlots = MaxNumber-6;
-					string sremainingSlots = remainingSlots.ToString();
-					string expectedText = "Other Slot Cards ("+MaxNumber+" of 6)";
-					
-					//Verify Other slot cards 1
-					string actualSlotText = repo.FormMe.OtherSlotCards_Text.TextValue;
-					if(actualSlotText.Equals(expectedText))
-					{
-						Report.Log(ReportLevel.Success,"Other slot cards are dispayed correctly ");
-					}
-					else
-					{
-						Report.Log(ReportLevel.Success,"Other slot cards are not dispayed correctly ");
-					}
-					
-					string expectedText2 = "Other Slot Cards ("+remainingSlots+" of 6)";
-					repo.FormMe.Backplane2_Expander.Click();
-					
-					//Verify Other slot cards 2
-					string actualSlotText2 = repo.FormMe.OtherSlotCards2_Text.TextValue;
-					
-					if(actualSlotText2.Equals(expectedText2))
-					{
-						Report.Log(ReportLevel.Success,"Other slot cards are dispayed correctly ");
-					}
-					else
-					{
-						Report.Log(ReportLevel.Success,"Other slot cards are not dispayed correctly ");
-					}
-				}
-				else
-				{
-					//Verify other slot cards 1
-					string expectedText = "Other Slot Cards ("+MaxNumber+" of 6)";
-				}
+//				if(MaxNumber>6)
+//				{
+//					int remainingSlots = MaxNumber-6;
+//					string sremainingSlots = remainingSlots.ToString();
+//					string expectedText = "Other Slot Cards ("+MaxNumber+" of 18)";
+//					
+//					Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
+//					//Verify Other slot cards 1
+//					string actualSlotText = repo.FormMe.OtherSlotCards_Text.TextValue;
+//					if(actualSlotText.Equals(expectedText))
+//					{
+//						Report.Log(ReportLevel.Success,"Other slot cards are dispayed correctly ");
+//					}
+//					else
+//					{
+//						Report.Log(ReportLevel.Success,"Other slot cards are not dispayed correctly ");
+//					}
+//					
+//					string expectedText2 = "Other Slot Cards ("+remainingSlots+" of 18)";
+//					repo.FormMe.Backplane2_Expander.Click();
+//					
+//					//Verify Other slot cards 2
+//					string actualSlotText2 = repo.FormMe.OtherSlotCards2_Text.TextValue;
+//					
+//					if(actualSlotText2.Equals(expectedText2))
+//					{
+//						Report.Log(ReportLevel.Success,"Other slot cards are dispayed correctly ");
+//					}
+//					else
+//					{
+//						Report.Log(ReportLevel.Success,"Other slot cards are not dispayed correctly ");
+//					}
+//				}
+//				else
+//				{
+//					//Verify other slot cards 1
+//					string expectedText = "Other Slot Cards ("+MaxNumber+" of 18)";
+//				}
 				
 				//Delete slot cards from Panel Accessories
 				for(int j=1; j<=MaxNumber; j++)

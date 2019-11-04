@@ -304,21 +304,15 @@ namespace TestProject.Libraries
 					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
 					break;
 					
-				case "Slot Address":
-					columnNumber="NA";
-					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
-					break;
+//				case "Slot Address":
+//					columnNumber="5";
+//					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
+//					break;
 					
 				case "Connection":
-					columnNumber="4";
-					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
-					break;
-					
-				case "Quantity":
 					columnNumber="5";
 					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
 					break;
-					
 					
 			}
 			return columnNumber;

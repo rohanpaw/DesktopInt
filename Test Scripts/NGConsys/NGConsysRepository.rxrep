@@ -2631,7 +2631,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="89c635fb-7454-4d1a-b18b-9f084f3ea95f"
 			name="OtherSlotCards_Text"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@caption~'^Other\ Slot\ Cards\ \ \(2\ of\ 6']
+				/form[@automationid='me']/progressbar/picture[7]/tree/treeitem[2]/container[@automationid='ItemsHost']//text[@caption~'^Other\ Slot\ Cards\ \ \(2\ of\ 18']
 			</item>
 			<item
 			capname="text"
