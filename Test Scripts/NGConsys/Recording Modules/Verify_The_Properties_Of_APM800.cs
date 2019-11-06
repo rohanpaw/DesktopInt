@@ -122,9 +122,6 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Address", "2");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Address", "2");
-            Delay.Milliseconds(0);
-            
         }
 
 #region Image Feature Data

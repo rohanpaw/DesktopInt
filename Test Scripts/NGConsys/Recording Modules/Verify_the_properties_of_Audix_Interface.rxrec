@@ -388,7 +388,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyProductCodeInSearchProperties"
+		methodname="VerifyProductCodeTextRowInSearchProperties"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -398,16 +398,6 @@ rxversion="8.3">
 			</bindings>
 			<arguments
 			id="bce02a46-cfc7-4280-9fb2-bd45ff8d427d">
-				<argument
-				argname="sProductLabel"
-				id="8a8d958f-2036-4bad-aa49-2fa80f6579be">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						557.180.016
-					</argvalue>
-				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem

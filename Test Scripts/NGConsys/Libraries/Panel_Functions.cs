@@ -356,8 +356,29 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void ChangePSUType(string sPSUType)
 		{
-			repo.FormMe.Cell_PSU.DoubleClick();
-			repo.FormMe.Cell_PSU.PressKeys(sPSUType+"{ENTER}");
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Device text in Search Properties fields to view Power supply related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("PSU" +"{ENTER}" );
+			
+			// Click on PSU cell
+			repo.FormMe.Cell_PSU.Click();
+			
+			// Enter the value to change PSU value
+			repo.FormMe.Cell_PSU.PressKeys((sPSUType) +"{ENTER}" + "{ENTER}");
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+
+			
+			//repo.FormMe.Cell_PSU.DoubleClick();
+			//repo.FormMe.Cell_PSU.PressKeys(sPSUType+"{ENTER}");
+			
+			
 			//repo.FormMe.cmb_PSU.Click();
 			//sPSU=sPSUType;
 			
@@ -376,8 +397,28 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void ChangeSecondPSUType(string SecondPSU)
 		{
-			repo.FormMe.Cell_SecondPSU.DoubleClick();
-			repo.FormMe.Cell_SecondPSU.PressKeys(SecondPSU+"{ENTER}");
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Device text in Search Properties fields to view Power supply related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("PSU" +"{ENTER}" );
+			
+			// Click on PSU cell
+			repo.FormMe.Cell_SecondPSU.Click();
+			
+			// Enter the value to change PSU value
+			repo.FormMe.Cell_SecondPSU.PressKeys((SecondPSU) +"{ENTER}" + "{ENTER}");
+			
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+
+			
+			//repo.FormMe.Cell_SecondPSU.Click();
+			//repo.FormMe.Cell_SecondPSU.PressKeys(SecondPSU+"{ENTER}");
 			
 		}
 		

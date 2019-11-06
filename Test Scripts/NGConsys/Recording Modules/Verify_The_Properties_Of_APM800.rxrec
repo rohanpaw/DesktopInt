@@ -450,52 +450,6 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="07d473fc-732a-4b73-aede-e9d8cf4e8a5e">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="c6da30d1-f8f6-41c3-bb1b-bc909951d067">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="fbdf189e-5c68-43c5-8c3a-74aa079f63d8">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Address
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="9d51cb5f-e7fd-4380-a42d-3b387089d063">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						2
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
 	</recorditems>
 	<repository
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"

@@ -133,11 +133,11 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "Label", "RIM 800 - 2");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "Address", "2");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "Address", "2");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Address", "1");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "Address", "1");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);

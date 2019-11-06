@@ -111,7 +111,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyModelInSearchProperties("XIOM");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyProductCodeInSearchProperties("557.180.016");
+            Libraries.Devices_Functions.VerifyProductCodeTextRowInSearchProperties();
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyFunctionality("XIOM configured to communicate with an 8 zone Audix Voice Alarm System");

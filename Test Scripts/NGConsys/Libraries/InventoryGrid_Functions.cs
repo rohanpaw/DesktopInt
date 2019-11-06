@@ -363,11 +363,11 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sPropertyLabel +"{ENTER}" );
 			
 			// Click on Label property cell
-			repo.FormMe.cell_CableLength.Click();
+			repo.FormMe.cell_SearchPropertiesFirstRowDrpDwn.Click();
 			
 			// Get the text value of property
 			//repo.FormMe.txt_InventoryProperty.Click();
-			string actualValue = repo.FormMe.txt_CableLength.TextValue;
+			string actualValue = repo.FormMe.txt_SearchPropertiesFirstRowDrpDwn.TextValue;
 			
 			Report.Log(ReportLevel.Success,"Actual: "+actualValue+" Expected"+sExpectedValue);
 			//Comparing expected and actual Device Sensitivity value
@@ -379,7 +379,10 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"Property value of " +sPropertyLabel+ " is not displayed correctly");
 			}
+			
 			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
 			// Select the text in SearchProperties text field and delete it

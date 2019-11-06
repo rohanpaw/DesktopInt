@@ -114,9 +114,6 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
-            Delay.Milliseconds(0);
-            
             Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "PNI800-3");
             Delay.Milliseconds(0);
             
@@ -145,9 +142,6 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "PNI800");
-            Delay.Milliseconds(0);
-            
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
@@ -180,9 +174,6 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
-            Delay.Milliseconds(0);
-            
             Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "PNI800-3");
             Delay.Milliseconds(0);
             
@@ -211,9 +202,6 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "PNI800");
-            Delay.Milliseconds(0);
-            
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");

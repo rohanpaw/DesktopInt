@@ -2061,6 +2061,13 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="7da5c35f-9a6a-4920-8f66-f18e4aac81ec"
 			name="Cell_PSU"
 			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/?/?/cell[@isheader='False']
+			</item>
+			<item
+			capname="cell"
+			id="f0c21f23-6583-469d-b7dd-753d4337703c"
+			name="Copy_of_Cell_PSU"
+			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@isheader='False']
 			</item>
 			<item
@@ -2282,6 +2289,14 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			capname="cell"
 			id="305392e1-5720-4231-9ec9-884f7f208742"
 			name="Cell_SecondPSU"
+			refimgid="981e440b-f3d3-4c6f-8501-2621d2435688"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='2']/cell[@isheader='False']
+			</item>
+			<item
+			capname="cell"
+			id="d9ef67f2-cb8e-412a-9f74-4927277f7cf9"
+			name="Copy_of_Cell_SecondPSU"
 			refimgid="981e440b-f3d3-4c6f-8501-2621d2435688"
 			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/?//container[@automationid='PART_ItemsPresenter']/row[@index='7']/cell[@isheader='False']
@@ -2570,12 +2585,28 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/?/?/cell[@isheader='False']
 			</item>
 			<item
+			capname="cell"
+			id="e48bc0f8-76d6-40ce-bdc4-81e169fefcb7"
+			name="cell_SearchPropertiesFirstRowDrpDwn"
+			refimgid="0335acb7-911b-4612-b714-92dbebfe95fd"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/picture[7]//?/?/cell[@isheader='False']
+			</item>
+			<item
 			capname="text"
 			id="79474107-59d9-4876-9e8f-e63d379f1a5b"
 			name="txt_CableLength"
 			refimgid="45e70d03-35c1-4931-82cb-d6ae66cd81d8"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/?//text[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="text"
+			id="117f4c31-5969-49f7-8ad5-fa4d845d31ae"
+			name="txt_SearchPropertiesFirstRowDrpDwn"
+			refimgid="45e70d03-35c1-4931-82cb-d6ae66cd81d8"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/?/?/?/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']
 			</item>
 			<item
 			capname="cell"
@@ -13639,6 +13670,13 @@ AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar//picture/list/?/?/cell[@text='DIP Switches']
 			</item>
+			<item
+			capname="text"
+			id="98bd9f08-d732-4622-9dd7-08e2e14c4772"
+			name="Notifications"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/text[@caption~'^The\ device\ cannot\ be\ dele']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -14159,6 +14197,16 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			refpath="/form[@automationid='MainWindow.RootOfWindow']/text/container[@automationid='MainWindow.LayoutRoot']/container[@automationid='MainWindow.ContentGrid']/container[@automationid='MainWindow.ActivityPresenter']/list[@automationid='SaveablePanel']"
 			searchtimeout="30000ms">
 				/form/?/?/container[@automationid='MainWindow.LayoutRoot']/container[@automationid='MainWindow.ContentGrid']/?/?/list[@automationid='SaveablePanel']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="a9bd633d-086b-494a-aa10-998e2350e8e5"
+			name="TheDeviceCannotBeDeletedPleaseDel"
+			refimgid="bf0ce8ab-7dfc-4f55-968e-8af0fb4a2e9e"
+			refpath="/form[@automationid='me']/progressbar/text[@caption='The device cannot be deleted. Please delete Audix 8 at remote bus 1 to delete the device.']"
+			searchtimeout="30000ms">
+				/form/?/?/text[@caption~'^The\ device\ cannot\ be\ dele']
 			</item>
 			<basepath>
 				/form

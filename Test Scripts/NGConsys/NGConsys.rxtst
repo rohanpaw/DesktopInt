@@ -261,6 +261,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="0324d795-ae4a-4522-8650-95ea4e370d04"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -9960,7 +9961,7 @@ MxDesigner]]>
 			id="82fac0cc-8149-49ea-9128-3bd476ad4daa"
 			name="Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix">
 				<description>
-					<![CDATA[NGC-1113/TC-52775]]>
+					<![CDATA[NGC-1113/TC-52775,52681]]>
 				</description>
 				<parameters>
 					<param
@@ -24445,6 +24446,60 @@ persisted in panel properties&nbsp;]]>
 		name="IS_Units">
 		</testconfiguration>
 		<testconfiguration
+		name="Linked_Hardware">
+			<testcontainer
+			id="065a1a7d-5034-4dce-9553-d8f7c622aa75">
+			</testcontainer>
+			<testcontainer
+			id="1b02544a-4a62-4f03-b345-0fcea739089d">
+			</testcontainer>
+			<testcontainer
+			id="20836adb-a235-4806-8cc8-bcbe7485be64">
+			</testcontainer>
+			<testcontainer
+			id="20c2e5a6-a39c-4ba9-8e4d-a35087a8bd76">
+			</testcontainer>
+			<testcontainer
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="474c6892-03ee-434f-bf30-3507cfa123ee">
+			</testcontainer>
+			<testcontainer
+			id="5d6cf3a6-3f2f-48aa-a965-c29bfdffc1fd">
+			</testcontainer>
+			<testcontainer
+			id="6358d864-fae6-4b0b-b9c2-d56543c3a4c2">
+			</testcontainer>
+			<testcontainer
+			id="7ab8afa3-08a9-4ecf-9046-2381eaf929fa">
+			</testcontainer>
+			<testcontainer
+			id="7e6db6e0-723e-447c-93c6-b8931f63de09">
+			</testcontainer>
+			<testcontainer
+			id="82fac0cc-8149-49ea-9128-3bd476ad4daa">
+			</testcontainer>
+			<testcontainer
+			id="844ee248-c88e-4ee8-a935-354096568590">
+			</testcontainer>
+			<testcontainer
+			id="9211a256-9176-4fce-87c6-e7858dd0b460">
+			</testcontainer>
+			<testcontainer
+			id="cb92c02c-e1f9-422d-b78c-1f95b097a4b4">
+			</testcontainer>
+			<testcontainer
+			id="d4e2f572-a291-43ae-9769-cf8bd8686a40">
+			</testcontainer>
+			<testcontainer
+			id="e572ebf8-e8ca-45a2-b26d-4f148b229189">
+			</testcontainer>
+			<testcontainer
+			id="f14c8b61-0ef9-470f-bb93-dd6781b0b6b7">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
 		name="TC_5V_24V_and_40V">
 			<testcontainer
 			id="200b6f24-2d41-43ee-baff-a642c2702da4">
@@ -24534,10 +24589,13 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="20c2e5a6-a39c-4ba9-8e4d-a35087a8bd76">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="e920721a-3dae-4973-96f4-2f314ac9cef1">
+			id="f14c8b61-0ef9-470f-bb93-dd6781b0b6b7">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

@@ -7634,7 +7634,44 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
 		
-		
+		/********************************************************************
+		 * Function Name: 
+		 * Function Details: To verify Verify Description Text Row in Search Properties
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 04/11/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyProductCodeTextRowInSearchProperties()
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Label properties
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Product code" +"{ENTER}" );
+			
+			// Click on
+			repo.FormMe.txt_PropertiesTextRow.Click();
+			
+			if(repo.FormMe.txt_PropertiesTextRowInfo.Exists())
+			{
+				Report.Log(ReportLevel.Success,"ProductCode text row available");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"ProductCode text row is not available");
+			}
+			
+			
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
 		
 		
 	}
