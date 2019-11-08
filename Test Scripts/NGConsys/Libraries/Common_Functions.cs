@@ -90,6 +90,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void SaveProject(string sProjectName)
 		{
+			try{
 			if (repo.FormMe.btn_Save.Enabled)
 			{
 				repo.FormMe.btn_Save.Click();
@@ -120,6 +121,9 @@ namespace TestProject.Libraries
 			else
 			{
 				Report.Log(ReportLevel.Failure, "Save button is not enabled");
+			}
+			}catch(Exception e){
+				Report.Log(ReportLevel.Info, "Exception occured");
 			}
 		}
 		

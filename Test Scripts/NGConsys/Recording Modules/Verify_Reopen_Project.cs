@@ -101,13 +101,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 3");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LI800");
-            Delay.Milliseconds(0);
-            
             Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 PH - 4");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LPBS 3000 - 14");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.MoveScrollBarDownInPointsGrid();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LI800");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("CP 830", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));

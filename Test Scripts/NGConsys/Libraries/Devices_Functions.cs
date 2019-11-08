@@ -6047,7 +6047,7 @@ namespace TestProject.Libraries
 		
 		
 		/********************************************************************
-		 * Function Name: MoveScrollBarDownInPointsGrid
+		 * Function Name: VerifySelectedNode
 		 * Function Details: To move scroll bar down vertically in points grid
 		 * Parameter/Arguments:
 		 * Output:
@@ -7077,7 +7077,9 @@ namespace TestProject.Libraries
 			
 			if(DeviceQty > MaxLimit)
 			{
-				if(repo.AddDevices.Error_Symbol_MultiplePointWizardInfo.Exists())
+				repo.AddDevices.btn_AddDevices.Click();
+				
+				if(repo.AddDevices.MultiplePointWizardWarningSign.Visible)
 				{
 					Report.Log(ReportLevel.Success,"Error Symbol appears as expected");
 					repo.AddDevices.Cancel_Multiple_Point_Wizard.Click();

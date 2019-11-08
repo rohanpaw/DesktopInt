@@ -230,32 +230,6 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						LI800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyDeviceUsingLabelName"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="bbafc54f-95d5-42a0-821e-52f8809ea394">
-				<argument
-				argname="sLabel"
-				id="ded5e4f7-2129-4288-a650-5a4d223aaebe">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
 						801 PH - 4
 					</argvalue>
 				</argument>
@@ -283,6 +257,48 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						LPBS 3000 - 14
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="MoveScrollBarDownInPointsGrid"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ae6df16b-4cc1-4e12-8813-898af5bdb36e">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyDeviceUsingLabelName"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="bbafc54f-95d5-42a0-821e-52f8809ea394">
+				<argument
+				argname="sLabel"
+				id="ded5e4f7-2129-4288-a650-5a4d223aaebe">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						LI800
 					</argvalue>
 				</argument>
 			</arguments>

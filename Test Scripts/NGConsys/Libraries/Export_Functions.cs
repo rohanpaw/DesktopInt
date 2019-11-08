@@ -291,6 +291,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void validateAndClickOKButtonOnExportDocument()
 		{
+			try{
 //			//repo.ExportDocument.PARTDragWidget.Click();
 //
 //			if(repo.FormMe2.ButtonOKInfo.Exists())
@@ -308,6 +309,10 @@ namespace TestProject.Libraries
 			
 			repo.ExportDocument.ButtonOK.Click();
 			//}
+			}catch(Exception e)
+			{
+				Report.Log(ReportLevel.Info,"Exception occured. Ok button is not displayed"+e.Message);
+			}
 		}
 		
 		/***********************************************************************************************************
