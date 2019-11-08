@@ -7010,14 +7010,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/*********************************************************************************************************
 		 * Function Name: VerifyPropertyInSearchPropertiesInSecondLine
 		 * Function Details: To verify Product Name in search properties when product code is present
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 09/08/2019
-		 ********************************************************************/
+		 * Last Update : 09/08/2019 Alpesh Dhakad - 08/11/2019 Updated Xpath for txt_PropertiesTextValue_2ndLine
+		 *********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyPropertyInSearchPropertiesInSecondLine(string sPropertyName,string sProductName)
 		{

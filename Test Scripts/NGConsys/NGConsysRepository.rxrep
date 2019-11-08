@@ -13472,7 +13472,7 @@ AAAAAElFTkSuQmCC
 			name="txt_PropertiesTextValue_2ndLine"
 			refimgid="11c79cfe-a71c-44c3-b7a8-7a8d33abf34f"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture/picture/list/row[@index='3']/?/?/text
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='3']//text[@automationid='PART_Editor']
 			</item>
 			<item
 			addcaps="text,wpfelement,wpfgroupelement"
