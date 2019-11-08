@@ -386,14 +386,14 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info," PSU Type changed to " +sPSUType + " successfully  ");
 		}
 		
-		/********************************************************************
+		/******************************************************************************************************
 		 * Function Name: ChangeSecondPSUType
 		 * Function Details:Used to change 2nd PSU of panel
 		 * Parameter/Arguments:PSU to be selected
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 09/01/2019
-		 ********************************************************************/
+		 * Last Update : 09/01/2019 Alpesh Dhakad - 06/11/2019 Updated code to change PSU
+		 ******************************************************************************************************/
 		[UserCodeMethod]
 		public static void ChangeSecondPSUType(string SecondPSU)
 		{
@@ -655,18 +655,26 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/******************************************************************************************
 		 * Function Name: VerifyValueOf2ndPSU
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 09/09/2019
-		 ********************************************************************/
+		 * Last Update : 09/09/2019  Alpesh Dhakad - 07/11/2019 Updated code to verify PSU
+		 ******************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyValueOf2ndPSU(string SecondPSU)
 		{
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Device text in Search Properties fields to view Power supply related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("PSU" +"{ENTER}" );
+			
+		// Click on PSU cell
 			repo.FormMe.Cell_SecondPSU.Click();
+			
 			string ActualPSU = repo.ContextMenu.SecondPSU_Value.TextValue;
 			
 			if(ActualPSU.Equals(SecondPSU))

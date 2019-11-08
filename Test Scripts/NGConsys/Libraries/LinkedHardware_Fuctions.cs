@@ -252,6 +252,13 @@ namespace TestProject.Libraries
 			// Declared string type
 			string DeviceName,sType,LabelName,sPropertyName,sParameter,SKUNo;
 			
+			//Expand Panel Node
+				Common_Functions.ClickOnNavigationTreeExpander("Node");
+				
+				//Expand FIM/PFI Loop card
+				Common_Functions.ClickOnNavigationTreeExpander("PFI");
+				
+			
 			// For loop to iterate on data present in excel
 			for(int i=8; i<=rows; i++)
 			{
@@ -262,11 +269,6 @@ namespace TestProject.Libraries
 				sParameter = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				SKUNo = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				
-				//Expand Panel Node
-				Common_Functions.ClickOnNavigationTreeExpander("Node");
-				
-				//Expand FIM/PFI Loop card
-				Common_Functions.ClickOnNavigationTreeExpander("PFI");
 				
 				//Click on Loop A
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -288,6 +290,8 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 				
 				repo.FormMe.ShoppingList.Click();
+				
+				
 				
 				//Verify in shopping list
 				//Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SKUNo,true);

@@ -321,7 +321,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -345,7 +345,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1375,7 +1375,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1397,7 +1397,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		</mouseitem>
 		<userrecorditem
 		classname="Export_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyOverwriteConfirmationForExcel"
 		namespace="TestProject.Libraries"
@@ -1413,7 +1413,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		</userrecorditem>
 		<explicitdelayitem
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -1423,7 +1423,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		<keysequenceitem
 		KeySequence="csv{Return}"
 		duration="100ms"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		presstime="100ms"
 		searchpropertyid="5b6fb1d8-d90d-4f12-87e8-29e0bcd89b92">
@@ -1459,7 +1459,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyExcelCellValue"
 		namespace="TestProject.Libraries"
@@ -1507,7 +1507,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1600,7 +1600,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"

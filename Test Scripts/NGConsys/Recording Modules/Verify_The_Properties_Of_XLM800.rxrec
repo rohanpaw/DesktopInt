@@ -311,10 +311,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
+		classname="Devices_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryDeviceProperty"
+		methodname="VerifyProductCodeTextRowInSearchProperties"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -324,26 +324,6 @@ rxversion="8.3">
 			</bindings>
 			<arguments
 			id="41351882-333c-4dad-bff6-a5a78e91c887">
-				<argument
-				argname="sPropertyLabel"
-				id="077b397e-aeec-4594-9222-8ae8e39f1211">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Product Code
-					</argvalue>
-				</argument>
-				<argument
-				argname="sExpectedValue"
-				id="854beb50-6a8b-4107-9e86-3fee4bf13b11">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						557.202.007
-					</argvalue>
-				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem

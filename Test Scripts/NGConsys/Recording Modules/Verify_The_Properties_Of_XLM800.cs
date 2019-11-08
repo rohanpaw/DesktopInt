@@ -107,8 +107,8 @@ namespace TestProject.Recording_Modules
             //Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Description", "Loop Expansion Module controls the communications between the detectors (and other ancillaries) connected on the 2-wire loop circuits and the controller");
             //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Product Code", "557.202.007");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyProductCodeTextRowInSearchProperties();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyPropertyInSearchPropertiesInSecondLine("Product", "XLM800");
             Delay.Milliseconds(0);
