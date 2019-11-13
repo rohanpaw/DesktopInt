@@ -105,10 +105,10 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verifyBatteryStandby("0.305", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
+            Libraries.PSULoad_Functions.verifyBatteryStandby("0.513", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyAlarmLoad("0.634", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
+            Libraries.PSULoad_Functions.verifyAlarmLoad("0.842", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -131,10 +131,10 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verifyBatteryStandby("0.334", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
+            Libraries.PSULoad_Functions.verifyBatteryStandby("0.75", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyAlarmLoad("0.842", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
+            Libraries.PSULoad_Functions.verifyAlarmLoad("1.258", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -153,10 +153,10 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verifyBatteryStandby("0.305", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
+            Libraries.PSULoad_Functions.verifyBatteryStandby("0.513", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyAlarmLoad("0.634", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
+            Libraries.PSULoad_Functions.verifyAlarmLoad("0.842", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");

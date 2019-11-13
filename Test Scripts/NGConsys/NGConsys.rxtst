@@ -2881,6 +2881,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="261ba791-3167-4650-8675-e34dc9f42006"
+			name="Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels"
+			ref="71128d79-3047-4663-b47f-188ba3d6f72b"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="26a16acf-eeb0-4ffe-916c-8f54d567cc4e"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -5309,6 +5315,26 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="47f3ed02-ec28-4cab-b192-e585fd5bc187"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="48097a07-4469-4416-8253-3ba0f2118497"
 			name="Close_Application"
@@ -11935,6 +11961,12 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="9d2d805b-1677-48a2-a657-f0e868fcb7f4"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="9d3c19ca-6732-451c-82bf-133ea5d738c3"
 			name="Verify_40V_Load_On_Addition_Deletion_Of_SlotCards">
@@ -15495,6 +15527,10 @@ persisted in panel properties&nbsp;]]>
 					value="">
 					</param>
 				</parameters>
+			</testcase>
+			<testcase
+			id="d2d5104f-4cfa-402d-be47-71686c42786e"
+			name="FC_Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels">
 			</testcase>
 			<testcase
 			id="d2ebb42b-d2ea-48f9-a1ae-976bfa404bca"
@@ -24303,6 +24339,22 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="d2d5104f-4cfa-402d-be47-71686c42786e"
+					name="FC_Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels">
+						<testmodule
+						id="47f3ed02-ec28-4cab-b192-e585fd5bc187"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="9d2d805b-1677-48a2-a657-f0e868fcb7f4"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="261ba791-3167-4650-8675-e34dc9f42006"
+						name="Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="90abe55a-1136-4bfe-afa8-681783a52cc0"
 					name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop_FC">
 						<testmodule
@@ -24598,6 +24650,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="61f2f4b6-d528-4a97-9cb8-56f65a20b21b">
 			id="81be8bf4-897f-4cb4-966f-7e48fbbb98ce">
 			</testcontainer>
 			<testcontainer

@@ -3971,7 +3971,7 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				Report.Log(ReportLevel.Failure,"Power supply value " +PowerSupply+ " is not displayed correctly");
+				Report.Log(ReportLevel.Failure,"Power supply value " +PowerSupply+ " is not displayed correctly as"+sPowerSupply);
 			}
 
 			// Click on SearchProperties text field
@@ -4054,10 +4054,11 @@ namespace TestProject.Libraries
 			// Click on Power Supply cell
 			repo.FormMe.cell_PowerSupply.Click();
 			
-			// Get the text value of Device Sensitivity field
+			// Get the text value of Power supply field
 			string PowerSupply = repo.FormMe.txt_PowerSupply.Text;
 			
-			//Comparing expected and actual Device Sensitivity value
+			Report.Log(ReportLevel.Info,"Power supply value changed to " +PowerSupply+"  "+sChangePowerSupply);
+			//Comparing expected and actual power supply value
 			if(PowerSupply.Equals(sChangePowerSupply))
 			{
 				Report.Log(ReportLevel.Success,"Power supply value  changed successfully to " +PowerSupply + " is displayed correctly");

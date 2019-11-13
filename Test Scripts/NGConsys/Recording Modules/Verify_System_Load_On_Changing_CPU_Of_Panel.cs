@@ -107,7 +107,7 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(200);
             
             // Data isnt present
-            Libraries.PSULoad_Functions.verifySystemLoadValue("0.224");
+            Libraries.PSULoad_Functions.verifySystemLoadValue("0.810");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -128,7 +128,7 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(200);
             
             // Data isnt present
-            Libraries.PSULoad_Functions.verifySystemLoadValue("0.256");
+            Libraries.PSULoad_Functions.verifySystemLoadValue("0.841");
             Delay.Milliseconds(0);
             
         }

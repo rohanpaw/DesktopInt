@@ -546,6 +546,18 @@
       <UserCode>true</UserCode>
       <id>fadb3ca7-a729-4f91-b168-66d154db3bc0</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels.cs">
+      <BoundTo>4bdea097-97f0-45be-a86b-c1963f4f3db9</BoundTo>
+      <DependentUpon>Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2621c404-8472-4fa0-b1af-88a2b295f900</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels.UserCode.cs">
+      <BoundTo>4bdea097-97f0-45be-a86b-c1963f4f3db9</BoundTo>
+      <DependentUpon>Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c6e5a336-773b-45d5-8cad-78bbd933b394</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC.cs">
       <BoundTo>2cb9044a-a9d8-466e-820d-588869694e70</BoundTo>
       <DependentUpon>Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC.rxrec</DependentUpon>
@@ -4471,6 +4483,11 @@
       <id>966cd594-f837-42fd-890b-ea7e43f1852a</id>
       <recordtableid>082dffce-d287-401e-a4f1-76d4a095c6c2</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>4bdea097-97f0-45be-a86b-c1963f4f3db9</id>
+      <recordtableid>71128d79-3047-4663-b47f-188ba3d6f72b</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC.rxrec">
       <id>2cb9044a-a9d8-466e-820d-588869694e70</id>
       <recordtableid>867c95aa-ec77-483a-8210-e0dbc264d0d4</recordtableid>
@@ -5342,9 +5359,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Main_Processor_loading_after_adding_1_2_IOB800_device.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>e3fe99b0-292d-47cd-acd3-450e7ba5a5e0</id>
       <recordtableid>644334e8-adea-46d0-8f75-8fa2a6fd39d5</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Maximum_Battery_Standby_And_Battery_Alarm_Limits.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

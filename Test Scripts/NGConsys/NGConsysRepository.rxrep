@@ -2201,6 +2201,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			capname="text"
 			id="a4100f04-076a-4a7b-a448-1fdc2bc5d5da"
 			name="maxSystemLoad"
+			refimgid="afa5b5ae-bec6-49a4-8114-af6de1f72dc0"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='15']//text[3]
 			</item>
@@ -13324,7 +13325,7 @@ AAAAAElFTkSuQmCC
 			name="SystemLoad"
 			refimgid="dcf4799b-0dcc-43a2-92ac-69629d52df4c"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='15']//text[1]
+				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='15']//text[@caption=$sPsuV]
 			</item>
 			<item
 			capname="text"
