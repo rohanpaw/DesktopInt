@@ -2129,7 +2129,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="2451948a-a94b-4ae1-b519-4742d380fddf"
 			name="lst_PhysicalLayoutDevice"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/list[8]/?/?/listitem[@index=$sPhysicalLayoutDeviceIndex]/?/?/text
+				/form[@automationid='me']/progressbar/list[8]/?/?/listitem[@index=$sPhysicalLayoutDeviceIndex]/?/?/text[2]
 			</item>
 			<item
 			capname="text"
@@ -2511,7 +2511,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			capname="text"
 			id="5229b4f7-5565-4f6e-ac0b-a3146dd61fdc"
 			name="txt_PropertiesTextValue"
-			refimgid="b47c2a43-cc67-4060-9ad3-4149a7338362"
+			refimgid="3d19cecd-8edc-4efd-bfd1-06f54201dfe4"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']//text
 			</item>
@@ -2519,7 +2519,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			capname="text"
 			id="4037f82c-6c15-46c3-973c-1b71009b924a"
 			name="txt_SearchPropertiesCellTextValue"
-			refimgid="92ec22f6-9db4-4446-9b03-04990446b580"
+			refimgid="722db697-3f97-4262-84b5-cb31e6ef9fab"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='1']//text[@automationid='PART_Editor']
 			</item>

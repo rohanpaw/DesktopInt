@@ -100,8 +100,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Panel Name", "Node1");
-            Delay.Milliseconds(0);
+            try {
+                Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Name", "Node1");
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main Processor");
             Delay.Milliseconds(0);

@@ -356,6 +356,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyInventoryDeviceProperty(string sPropertyLabel, string sExpectedValue)
 		{
+			try{
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -368,8 +369,9 @@ namespace TestProject.Libraries
 			
 			// Get the text value of property
 			//repo.FormMe.txt_InventoryProperty.Click();
+			string actualValue = repo.FormMe.txt_InventoryProperty.TextValue;
 				
-			string actualValue = repo.FormMe.txt_SearchPropertiesFirstRowText.TextValue;
+			//string actualValue = repo.FormMe.txt_SearchPropertiesFirstRowText.TextValue;
 			
 			Report.Log(ReportLevel.Success,"Actual: "+actualValue+" Expected "+sExpectedValue);
 			//Comparing expected and actual Device Sensitivity value
@@ -389,6 +391,8 @@ namespace TestProject.Libraries
 			
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			}catch(Exception e){
+				Report.Log(ReportLevel.Info,"Exception occurred");}
 		}
 		
 		

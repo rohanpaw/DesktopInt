@@ -245,7 +245,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryDeviceProperty"
 		namespace="TestProject.Libraries"
-		optional="False"
+		optional="True"
 		varname="">
 			<comment>
 			</comment>
@@ -260,7 +260,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Panel Name
+						Name
 					</argvalue>
 				</argument>
 				<argument

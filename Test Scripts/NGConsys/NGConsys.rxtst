@@ -11966,6 +11966,14 @@ MxDesigner]]>
 			name="Create_Project_FC"
 			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="d2d5104f-4cfa-402d-be47-71686c42786e"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="9d3c19ca-6732-451c-82bf-133ea5d738c3"
@@ -15531,6 +15539,15 @@ persisted in panel properties&nbsp;]]>
 			<testcase
 			id="d2d5104f-4cfa-402d-be47-71686c42786e"
 			name="FC_Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels">
+				<description>
+					<![CDATA[NGC-1946/70743]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testcase
 			id="d2ebb42b-d2ea-48f9-a1ae-976bfa404bca"
@@ -24680,10 +24697,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

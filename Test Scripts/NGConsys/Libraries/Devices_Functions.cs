@@ -4460,6 +4460,8 @@ namespace TestProject.Libraries
 			string ActualDeviceName = repo.FormMe.lst_PhysicalLayoutDevice.TextValue;
 			string ActualDeviceAddress=repo.FormMe.txt_PhysicalLayoutDeviceAddress.TextValue;
 			Report.Log(ReportLevel.Success,"Expected "+ActualDeviceName + ActualDeviceAddress);
+			Report.Log(ReportLevel.Success,"Expected "+ExpectedDeviceName + ExpectedDeviceAddress);
+			
 			// Compare actualIndex and sPhysicalLayoutDeviceIndex values and then displaying result
 			if(ActualDeviceName.Equals(ExpectedDeviceName)&&(ActualDeviceAddress.Equals(ExpectedDeviceAddress)))
 			{
