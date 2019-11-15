@@ -6249,6 +6249,7 @@ namespace TestProject
             RepoItemInfo _detectorgallerydropdownInfo;
             RepoItemInfo _cell_dipswitchesInfo;
             RepoItemInfo _notificationsInfo;
+            RepoItemInfo _txt_searchpropertiesfirstrowtextInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6427,6 +6428,7 @@ namespace TestProject
                 _detectorgallerydropdownInfo = new RepoItemInfo(this, "DetectorGalleryDropDown", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 30000, null, "45823c14-413a-4423-b491-c92c042ac71c");
                 _cell_dipswitchesInfo = new RepoItemInfo(this, "cell_DIPSwitches", "progressbar//picture/list/?/?/cell[@text='DIP Switches']", 30000, null, "3d150589-dd8b-4eab-84b3-9bdc419d8622");
                 _notificationsInfo = new RepoItemInfo(this, "Notifications", "?/?/text[@caption~'^The\\ device\\ cannot\\ be\\ dele']", 30000, null, "98bd9f08-d732-4622-9dd7-08e2e14c4772");
+                _txt_searchpropertiesfirstrowtextInfo = new RepoItemInfo(this, "txt_SearchPropertiesFirstRowText", "progressbar/picture[7]/picture/list/row[@index='1']/cell/text", 30000, null, "a82b22d7-90a0-43de-a457-6dd1c9f9e49e");
             }
 
             /// <summary>
@@ -10659,6 +10661,30 @@ namespace TestProject
                 get
                 {
                     return _notificationsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_SearchPropertiesFirstRowText item.
+            /// </summary>
+            [RepositoryItem("a82b22d7-90a0-43de-a457-6dd1c9f9e49e")]
+            public virtual Ranorex.Text txt_SearchPropertiesFirstRowText
+            {
+                get
+                {
+                    return _txt_searchpropertiesfirstrowtextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_SearchPropertiesFirstRowText item info.
+            /// </summary>
+            [RepositoryItemInfo("a82b22d7-90a0-43de-a457-6dd1c9f9e49e")]
+            public virtual RepoItemInfo txt_SearchPropertiesFirstRowTextInfo
+            {
+                get
+                {
+                    return _txt_searchpropertiesfirstrowtextInfo;
                 }
             }
         }

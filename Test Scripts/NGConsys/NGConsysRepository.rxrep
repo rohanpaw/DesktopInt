@@ -13678,6 +13678,14 @@ AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/?/?/text[@caption~'^The\ device\ cannot\ be\ dele']
 			</item>
+			<item
+			capname="text"
+			id="a82b22d7-90a0-43de-a457-6dd1c9f9e49e"
+			name="txt_SearchPropertiesFirstRowText"
+			refimgid="aa0a65e1-150a-48c6-8c3a-8f9135eae056"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='1']/cell/text
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>

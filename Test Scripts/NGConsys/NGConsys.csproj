@@ -4384,9 +4384,9 @@
       <recordtableid>997a25f3-ef51-44fa-ab39-638170c1f61c</recordtableid>
     </None>
     <None Include="Recording Modules\CreateProject_German.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>71b9de17-f957-4cac-9c8c-d6a4902a2e60</id>
       <recordtableid>19660af1-4e58-4290-badb-20687f7b3401</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Create_Project.rxrec">
       <id>025b95a2-e0a5-4f85-bed7-8f9ab0822c71</id>

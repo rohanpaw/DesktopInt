@@ -276,7 +276,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 05/04/2019  Updated on 02/07/2019 by Alpesh Dhakad : Updated log reports as readable format
-		 * Alpesh Dhakad - 22/10/2019 - Updated column number as per new updated build
+		 * Alpesh Dhakad - 22/10/2019 & 14/11/2019 - Updated column number as per new updated build
 		 **************************************************************************************************************/
 		[UserCodeMethod]
 		public static string getColumnNumberForInventoryGrid(string columnName)
@@ -310,7 +310,7 @@ namespace TestProject.Libraries
 //					break;
 					
 				case "Connection":
-					columnNumber="5";
+					columnNumber="4";
 					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
 					break;
 					
@@ -351,7 +351,8 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 05/04/2019 Alpesh Dhakad - 06/08/2019 & 22/08/2019 - Updated code with cell_InventoryProperty and added/updated xpath for txt_InventoryProperty
-		 ******************************************************************************************************************************************************/
+		 * Last Update : 14/11/2019 Alpesh Dhakad - Added Xpath for txt_SearchPropertiesFirstRowText
+		 * *****************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyInventoryDeviceProperty(string sPropertyLabel, string sExpectedValue)
 		{
@@ -367,9 +368,10 @@ namespace TestProject.Libraries
 			
 			// Get the text value of property
 			//repo.FormMe.txt_InventoryProperty.Click();
-			string actualValue = repo.FormMe.txt_SearchPropertiesFirstRowDrpDwn.TextValue;
+				
+			string actualValue = repo.FormMe.txt_SearchPropertiesFirstRowText.TextValue;
 			
-			Report.Log(ReportLevel.Success,"Actual: "+actualValue+" Expected"+sExpectedValue);
+			Report.Log(ReportLevel.Success,"Actual: "+actualValue+" Expected "+sExpectedValue);
 			//Comparing expected and actual Device Sensitivity value
 			if(actualValue.Equals(sExpectedValue))
 			{

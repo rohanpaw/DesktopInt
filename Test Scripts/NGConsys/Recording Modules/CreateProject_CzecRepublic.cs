@@ -114,22 +114,37 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.PARTRight.btn_CreateNewProject.Click();
             Delay.Milliseconds(200);
             
-            Select_ProjectName("Verify");
+            //Select_ProjectName("Verify");
+            //Delay.Milliseconds(0);
+            
+            //Select_ClientName("JCI");
+            //Delay.Milliseconds(0);
+            
+            //Select_ClientAddress("JCI");
+            //Delay.Milliseconds(0);
+            
+            //Select_InstallerName("JCI");
+            //Delay.Milliseconds(0);
+            
+            //Select_InstallerAddress("JCI");
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(12));
+            Delay.Duration(5000, false);
+            
+            Libraries.Common_Functions.CreateProjectFCParameters("9", "JCI");
             Delay.Milliseconds(0);
             
-            Select_ClientName("JCI");
+            Libraries.Common_Functions.CreateProjectFCParameters("10", "JCI");
             Delay.Milliseconds(0);
             
-            Select_ClientAddress("JCI");
+            Libraries.Common_Functions.CreateProjectFCParameters("11", "JCI");
             Delay.Milliseconds(0);
             
-            Select_InstallerName("JCI");
+            Libraries.Common_Functions.CreateProjectFCParameters("12", "JCI");
             Delay.Milliseconds(0);
             
-            Select_InstallerAddress("JCI");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CreateNewProject.CreateNewProjectContainer.btn_OK' at Center.", repo.CreateNewProject.CreateNewProjectContainer.btn_OKInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CreateNewProject.CreateNewProjectContainer.btn_OK' at Center.", repo.CreateNewProject.CreateNewProjectContainer.btn_OKInfo, new RecordItemIndex(17));
             repo.CreateNewProject.CreateNewProjectContainer.btn_OK.Click();
             Delay.Milliseconds(200);
             

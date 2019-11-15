@@ -73,33 +73,26 @@ namespace TestProject.Recording_Modules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 150;
-            Keyboard.DefaultKeyPressTime = 100;
-            Delay.SpeedFactor = 2.00;
+            Mouse.DefaultMoveTime = 0;
+            Keyboard.DefaultKeyPressTime = 20;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
-            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.CableCapacitance("TC_114_Verify_Cable_capacitance", "Devices");
-            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.ChangeCableLength("PFI", ValueConverter.ArgumentFromString<int>("fCableLength1", "500"), ValueConverter.ArgumentFromString<int>("fCableLength2", "500"));
-            Delay.Milliseconds(0);
             
             // Do update max AC Units on changing values in excel
             Libraries.AC_Functions.verifyMaxACUnitsValue("128");
-            Delay.Milliseconds(0);
             
         }
 
