@@ -778,7 +778,7 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_Points.Click();
 			
 			// Click on Loop B node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 					
 			AddDevicesFromExcel(fileName, sheetNameB);
 			

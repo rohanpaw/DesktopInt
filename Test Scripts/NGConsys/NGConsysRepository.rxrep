@@ -1341,7 +1341,7 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			id="3862dd18-b089-44cf-891d-4d5f7c68e104"
 			name="btn_BaseSelection"
 			searchtimeout="30000ms">
-				/contextmenu/list/button/text[@text=$sBase]
+				/contextmenu/list/?/button/text[@text=$sBase]
 			</item>
 			<item
 			addcaps="list,wpfelement,wpfgroupelement"
