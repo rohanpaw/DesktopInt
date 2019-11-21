@@ -1193,7 +1193,7 @@ namespace TestProject.Libraries
 			if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 			{
 				if(repo.ProfileConsys1.btn_Delete.Visible){
-				repo.ProfileConsys1.btn_Delete.Click();
+					repo.ProfileConsys1.btn_Delete.Click();
 				}
 				else{
 					repo.FormMe.btn_DeleteFC.Click();
@@ -3637,7 +3637,8 @@ namespace TestProject.Libraries
 			
 			for(int i=8; i<=rows; i++)
 			{
-				sDeviceOrderRow= (i-3).ToString();
+				//sDeviceOrderRow= (i-3).ToString();
+				sDeviceOrderRow= ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				string sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
@@ -3648,7 +3649,7 @@ namespace TestProject.Libraries
 				
 				// Retrieve Device order value
 				string actualDeviceOrderValue = repo.FormMe.txt_DeviceOrderLabel.TextValue;
-				
+				Report.Log(ReportLevel.Info,"Actual"+actualDeviceOrderValue+"expected"+changedDeviceOrder);
 				// Compare actualDeviceOrderValue and sDeviceOrderName values and then displaying result
 				if(actualDeviceOrderValue.Equals(changedDeviceOrder))
 				{
@@ -4264,6 +4265,12 @@ namespace TestProject.Libraries
 					columnNumber="5";
 					Report.Log(ReportLevel.Success,"Column number is set as "+columnNumber);
 					break;
+					
+				case "Device Order":
+					columnNumber="3";
+					Report.Log(ReportLevel.Success,"Column number is set as "+columnNumber);
+					break;
+						
 					
 			}
 			return columnNumber;
@@ -4906,7 +4913,7 @@ namespace TestProject.Libraries
 //					int remainingSlots = MaxNumber-6;
 //					string sremainingSlots = remainingSlots.ToString();
 //					string expectedText = "Other Slot Cards ("+MaxNumber+" of 18)";
-//					
+//
 //					Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
 //					//Verify Other slot cards 1
 //					string actualSlotText = repo.FormMe.OtherSlotCards_Text.TextValue;
@@ -4918,13 +4925,13 @@ namespace TestProject.Libraries
 //					{
 //						Report.Log(ReportLevel.Success,"Other slot cards are not dispayed correctly ");
 //					}
-//					
+//
 //					string expectedText2 = "Other Slot Cards ("+remainingSlots+" of 18)";
 //					repo.FormMe.Backplane2_Expander.Click();
-//					
+//
 //					//Verify Other slot cards 2
 //					string actualSlotText2 = repo.FormMe.OtherSlotCards2_Text.TextValue;
-//					
+//
 //					if(actualSlotText2.Equals(expectedText2))
 //					{
 //						Report.Log(ReportLevel.Success,"Other slot cards are dispayed correctly ");
@@ -6779,7 +6786,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 09/07/2019  10/10/2019 - Alpesh Dhakad - Added code to click on label cell 
+		 * Last Update : 09/07/2019  10/10/2019 - Alpesh Dhakad - Added code to click on label cell
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyFunctionality(string sDescription)
@@ -7463,7 +7470,7 @@ namespace TestProject.Libraries
 			}
 			repo.ProfileConsys1.tab_Points.Click();
 		}
-	
+		
 		/************************************************************************************************************
 		 * Function Name: VerifyDeviceSensitivityListValues
 		 * Function Details: To verify device sensitivity value
@@ -7503,7 +7510,7 @@ namespace TestProject.Libraries
 			
 		}
 		
-	
+		
 		
 		/**************************************************************************************************************
 		 * Function Name: DragAndDropDevicesInPhysicalLayout
@@ -7536,7 +7543,7 @@ namespace TestProject.Libraries
 		/********************************************************************
 		 * Function Name:AddMultipleDevicesInMultipoint
 		 * Function Details:
-		 * Parameter/Arguments: 
+		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 13/09/2019
@@ -7548,9 +7555,9 @@ namespace TestProject.Libraries
 			Excel_Utilities.OpenExcelFile(sFileName,sSheetName);
 			//Excel_Utilities.OpenSheet(sSheetName);
 			int rows = Excel_Utilities.ExcelRange.Rows.Count;
-				
-				
-				for(int i=2;i<=rows;i++)
+			
+			
+			for(int i=2;i<=rows;i++)
 			{
 				string sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
 				string DeviceQty = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
@@ -7625,11 +7632,11 @@ namespace TestProject.Libraries
 			
 			if(repo.FormMe.txt_PropertiesDescriptionRowInfo.Exists())
 			{
-			Report.Log(ReportLevel.Failure,"DIP Switches  is displayed which is not expected");
+				Report.Log(ReportLevel.Failure,"DIP Switches  is displayed which is not expected");
 			}
 			else
 			{
-			Report.Log(ReportLevel.Success,"Description is not displayed which is as expected");
+				Report.Log(ReportLevel.Success,"Description is not displayed which is as expected");
 			}
 			
 			// Click on SearchProperties text field
@@ -7640,7 +7647,7 @@ namespace TestProject.Libraries
 		}
 		
 		/********************************************************************
-		 * Function Name: 
+		 * Function Name:
 		 * Function Details: To verify Verify Description Text Row in Search Properties
 		 * Parameter/Arguments:
 		 * Output:

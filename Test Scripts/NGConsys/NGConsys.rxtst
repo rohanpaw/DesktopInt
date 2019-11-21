@@ -3361,7 +3361,7 @@ rxversion="8.3">
 			id="2c315ac7-ffad-4e21-abab-0872d77c399b"
 			name="Verification_for_device_Label">
 				<description>
-					<![CDATA[NGC-606/TC-55850]]>
+					<![CDATA[NGC-606/TC-55850. Failing due to NGC-2632.]]>
 				</description>
 				<parameters>
 					<param
@@ -14508,7 +14508,7 @@ persisted in panel properties&nbsp;]]>
 			id="c5b3a580-078e-4de9-885d-e8b076238efd"
 			name="Verify_Device_Order_Of_Sounders_Added_In_LPS800">
 				<description>
-					<![CDATA[<p>NGC-600/TC-51844</p>]]>
+					<![CDATA[<p>NGC-600/TC-51844. Sounder device order column and row count is not stable.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -15877,12 +15877,6 @@ persisted in panel properties&nbsp;]]>
 					variablename="App_Path">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="d7d8d0f4-ac1e-4ef8-8366-3e504d1b51ee"
-			name="Create_Project_FC"
-			ref="b9bd7701-2ec0-4465-87ed-21e9241d9eb2"
-			type="Recording">
 			</testmodule>
 			<testcase
 			id="d7e82aeb-bdb5-43a9-aeaa-d36cb1c80632"
@@ -17383,7 +17377,7 @@ persisted in panel properties&nbsp;]]>
 			id="ecfd79ea-8275-4f6e-89a6-09b478da25ec"
 			name="Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Changing_CPU_And_PSU">
 				<description>
-					<![CDATA[NGC-488/TC-144 &amp; 145]]>
+					<![CDATA[NGC-488/TC-144 &amp; 145. Failing due to NGC-1689.]]>
 				</description>
 				<parameters>
 					<param
@@ -24395,10 +24389,6 @@ persisted in panel properties&nbsp;]]>
 						name="Application_Open">
 						</testmodule>
 						<testmodule
-						id="d7d8d0f4-ac1e-4ef8-8366-3e504d1b51ee"
-						name="Create_Project_FC">
-						</testmodule>
-						<testmodule
 						id="c153d80d-34f2-4db4-ac2d-273f0547ed46"
 						name="Testing">
 						</testmodule>
@@ -24661,13 +24651,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="1ce3b10a-935f-4a35-aa2c-91499474b3b3">
-			</testcontainer>
-			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="4a4f5a83-0057-438d-b732-2449cb0a585d">
+			id="53bcf631-ac84-43d9-9864-983288d4ab13">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

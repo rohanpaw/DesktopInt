@@ -11660,6 +11660,7 @@ namespace TestProject
             RepoItemInfo _nondroppedgallerydevicenameInfo;
             RepoItemInfo _saveablepanelInfo;
             RepoItemInfo _thedevicecannotbedeletedpleasedelInfo;
+            RepoItemInfo _deviceordertextInfo;
 
             /// <summary>
             /// Creates a new FormMe2  folder.
@@ -11678,6 +11679,7 @@ namespace TestProject
                 _nondroppedgallerydevicenameInfo = new RepoItemInfo(this, "NonDroppedGalleryDeviceName", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[4]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text[@caption=$sDeviceName]", 90000, null, "d8fb937d-27d5-41bc-ab71-93fa3ca4900d");
                 _saveablepanelInfo = new RepoItemInfo(this, "SaveablePanel", "?/?/container[@automationid='MainWindow.LayoutRoot']/container[@automationid='MainWindow.ContentGrid']/?/?/list[@automationid='SaveablePanel']", 30000, null, "51d55fcd-daad-4e90-9b4f-6bf073d07e66");
                 _thedevicecannotbedeletedpleasedelInfo = new RepoItemInfo(this, "TheDeviceCannotBeDeletedPleaseDel", "?/?/text[@caption~'^The\\ device\\ cannot\\ be\\ dele']", 30000, null, "a9bd633d-086b-494a-aa10-998e2350e8e5");
+                _deviceordertextInfo = new RepoItemInfo(this, "DeviceOrderText", "progressbar/list[@automationid='PART_BarContainerControl']/table[@automationid='PointTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[2]/container[$sDeviceOrderRow]/row/cell[4]/text", 30000, null, "1045d999-7ea9-47b6-8ab7-7c5ad3033962");
             }
 
             /// <summary>
@@ -11941,6 +11943,30 @@ namespace TestProject
                 get
                 {
                     return _thedevicecannotbedeletedpleasedelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DeviceOrderText item.
+            /// </summary>
+            [RepositoryItem("1045d999-7ea9-47b6-8ab7-7c5ad3033962")]
+            public virtual Ranorex.Text DeviceOrderText
+            {
+                get
+                {
+                    return _deviceordertextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DeviceOrderText item info.
+            /// </summary>
+            [RepositoryItemInfo("1045d999-7ea9-47b6-8ab7-7c5ad3033962")]
+            public virtual RepoItemInfo DeviceOrderTextInfo
+            {
+                get
+                {
+                    return _deviceordertextInfo;
                 }
             }
 

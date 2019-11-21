@@ -103,9 +103,6 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Squashni Sounder", "Conventional Sounders");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Generic Sounder", "Conventional Sounders");
-            Delay.Milliseconds(0);
-            
             Libraries.Devices_Functions.AddDeviceOrderColumn();
             Delay.Milliseconds(0);
             
@@ -119,6 +116,9 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DeleteDeviceUsingLabel("Squashni Sounder");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyPointGridProperties("2", "Device Order", "1/1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifySoundersDeviceOrderInLPS800("TC_51844_Verify_Device_Order_Of_Sounders_Added_In_LPS800", "Devices");

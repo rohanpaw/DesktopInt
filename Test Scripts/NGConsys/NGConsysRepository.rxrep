@@ -14217,6 +14217,15 @@ MDAAAD4kA7jccYiOAAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form/?/?/text[@caption~'^The\ device\ cannot\ be\ dele']
 			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="1045d999-7ea9-47b6-8ab7-7c5ad3033962"
+			name="DeviceOrderText"
+			refimgid="91c2e04f-c468-49c2-8e07-1a73556bc388"
+			searchtimeout="30000ms">
+				/form/progressbar/list[@automationid='PART_BarContainerControl']/table[@automationid='PointTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[2]/container[$sDeviceOrderRow]/row/cell[4]/text
+			</item>
 			<basepath>
 				/form
 			</basepath>

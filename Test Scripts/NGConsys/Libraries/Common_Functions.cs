@@ -123,7 +123,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure, "Save button is not enabled");
 			}
 			}catch(Exception e){
-				Report.Log(ReportLevel.Info, "Exception occured");
+				Report.Log(ReportLevel.Info, "Exception occured"+e.Message);
 			}
 		}
 		

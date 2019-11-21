@@ -3661,10 +3661,8 @@ namespace TestProject.Libraries
 					// Click on Loop Card node
 					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 					
-					float.TryParse(sBatteryStandby, out PrinterBatteryStandby);
-					float.TryParse(sAlarmLoad, out PrinterAlarmLoad);
-					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
-					Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
+					// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 					
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -3674,6 +3672,13 @@ namespace TestProject.Libraries
 					
 					//Get Alarm Load from UI
 					sDefaultAlarmLoad = GetAlarmLoadValue(PanelType);
+					
+					repo.ProfileConsys1.tab_Points.Click();
+					
+					float.TryParse(sBatteryStandby, out PrinterBatteryStandby);
+					float.TryParse(sAlarmLoad, out PrinterAlarmLoad);
+					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+					Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
 					
 					//Generate expected Battery Standby load
 					float.TryParse(sDefaultBatteryStandby, out DefaultBatteryStandby);
@@ -4087,6 +4092,7 @@ namespace TestProject.Libraries
 					ExpectedAlarmLoad = DefaultAlarmLoad-SCAlarmLoad;
 					sExpectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
 					
+					repo.ProfileConsys1.tab_Points.Click();
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
@@ -5139,7 +5145,7 @@ namespace TestProject.Libraries
 			
 			// Declared string type
 			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,ModelNumber,sType,sLabel,sPowerSupply,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,sChangePowerSupply,expectedBatteryStandby,expectedAlarmLoad, expectedBatteryStandbyAfterMPM, expectedAlarmLoadAfterMPM;
-			int rowNumber,MPMAlarm,MPMStandby;
+			int rowNumber;
 			
 			// For loop to iterate on data present in excel
 			for(int i=8; i<=rows; i++)

@@ -352,52 +352,6 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="0460ada9-c302-4112-be8f-914545b0c992">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						6
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Slot Address
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="050b1474-f19d-49ef-b52e-088ec419a783">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
@@ -437,7 +391,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other Slot Cards 1
+						Backplane
 					</argvalue>
 				</argument>
 			</arguments>

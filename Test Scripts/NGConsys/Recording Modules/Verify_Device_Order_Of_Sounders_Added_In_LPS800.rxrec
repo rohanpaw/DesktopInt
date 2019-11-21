@@ -290,42 +290,6 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromGalleryNotHavingImages"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="aaa6fc3c-a167-42d1-8955-e8c7cff29500">
-				<argument
-				argname="sDeviceName"
-				id="ff3d8f44-de33-4d12-9384-d016fc639892">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Generic Sounder
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="14e5f7d2-ed82-4757-a840-9427d1440907">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Conventional Sounders
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
 		methodname="AddDeviceOrderColumn"
 		namespace="TestProject.Libraries"
 		optional="False"
@@ -468,6 +432,52 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						Squashni Sounder
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyPointGridProperties"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="8c942a61-2f39-4f7f-955e-8ad83fd46f09">
+				<argument
+				argname="ExpectedPointGridRowCount"
+				id="0cdbb074-6248-4ab3-a42f-43b5cae7eb3f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						2
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedPointGridColumn"
+				id="05cc3775-66a9-47a2-94ec-048b77047979">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Device Order
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedDeviceProperty"
+				id="85981a43-212e-40d5-b4c5-9788b893d359">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1/1
 					</argvalue>
 				</argument>
 			</arguments>
