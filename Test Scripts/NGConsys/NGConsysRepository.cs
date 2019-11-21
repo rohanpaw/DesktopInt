@@ -4761,7 +4761,7 @@ namespace TestProject
                 _txt_selectpanelInfo = new RepoItemInfo(this, "txt_SelectPanel", ".//listitem/text[@caption=$PanelName]", 30000, null, "492b2e42-6b92-4dbf-93f0-87456a170bb0");
                 _txt_selectpanelfcInfo = new RepoItemInfo(this, "txt_SelectPanelFC", "list//text[@caption=$PanelName]", 60000, null, "6a3d9371-ad60-456d-a422-d09593328853");
                 _txt_selectdeviceInfo = new RepoItemInfo(this, "txt_SelectDevice", ".//?//text[@caption=$ModelNumber]", 30000, null, "dda50043-1c98-4316-852e-cb5dd36bf6bb");
-                _btn_baseselectionInfo = new RepoItemInfo(this, "btn_BaseSelection", "list/button/text[@text=$sBase]", 30000, null, "3862dd18-b089-44cf-891d-4d5f7c68e104");
+                _btn_baseselectionInfo = new RepoItemInfo(this, "btn_BaseSelection", "list/?/button/text[@text=$sBase]", 30000, null, "3862dd18-b089-44cf-891d-4d5f7c68e104");
                 _paneltypelistInfo = new RepoItemInfo(this, "PanelTypeList", "list", 30000, null, "7e4237ad-7dc9-41c4-a7f8-b4765b697390");
                 _btn_base_selection_multipleInfo = new RepoItemInfo(this, "btn_Base_Selection_Multiple", "?/?/container/?/?/text[@text=$sBase]", 30000, null, "6955f955-fbea-4787-9ab9-d7c951360ac9");
                 _showcolumnchooserInfo = new RepoItemInfo(this, "ShowColumnChooser", "list/button[@text='Show Column Chooser']", 30000, null, "aef5c381-df4b-4920-8463-88a5f410389d");

@@ -6460,7 +6460,11 @@ namespace TestProject.Libraries
 				//repo.FormMe.btn_DevicesGalleryDropDown1.Click();
 				//repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
 				
-				repo.FormMe.DetectorGalleryDropDown.Click();
+				ModelNumber=sDeviceName;
+
+			repo.FormMe.btn_AllGalleryDropdown.Click();
+				
+				//repo.FormMe.DetectorGalleryDropDown.Click();
 				
 				string ActualDeviceName = repo.ContextMenu.DeviceOrder_GalleryExpanded.TextValue;
 				

@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsAfterReopen("Verify Trip Current Calculation for Multiple Base", "Add Devices Loop A", "449.5");
+            Libraries.DC_Functions.verifyDCUnitsAfterReopen("Verify Trip Current Calculation for Multiple Base", "Add Devices Loop A", "427.2");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
