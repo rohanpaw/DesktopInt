@@ -147,58 +147,6 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyCopyButton"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="fffdb768-f26a-47c6-82ac-4dde6c2a273f">
-				<argument
-				argname="isEnabled"
-				id="4abb4d89-91c4-4c7b-b5d4-3a69db7845a2">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyCutButton"
-		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="1b123b36-5b3d-485a-bd3f-b33871a3eca7">
-				<argument
-				argname="isEnabled"
-				id="6b75625b-c9b2-49fc-b470-d516253b6d88">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"

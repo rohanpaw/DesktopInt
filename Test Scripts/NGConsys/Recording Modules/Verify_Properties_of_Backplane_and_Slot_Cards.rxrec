@@ -244,11 +244,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
+		classname="Devices_Functions"
 		enabled="True"
-		isexternaltestmethod="False"
+		isexternaltestmethod="True"
 		methodname="VerifyProductCodeInSearchProperties"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>
@@ -323,11 +323,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
+		classname="Devices_Functions"
 		enabled="True"
-		isexternaltestmethod="False"
+		isexternaltestmethod="True"
 		methodname="VerifyRegionNameInSearchProperties"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>
@@ -349,11 +349,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
+		classname="Devices_Functions"
 		enabled="True"
-		isexternaltestmethod="False"
+		isexternaltestmethod="True"
 		methodname="VerifyProductInSearchProperties"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>
@@ -421,11 +421,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
+		classname="Devices_Functions"
 		enabled="True"
-		isexternaltestmethod="False"
+		isexternaltestmethod="True"
 		methodname="VerifyRegionNameInSearchProperties"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>
@@ -447,11 +447,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Properties_of_Backplane_and_Slot_Cards"
+		classname="Devices_Functions"
 		enabled="True"
-		isexternaltestmethod="False"
+		isexternaltestmethod="True"
 		methodname="editRegionName"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>

@@ -205,6 +205,9 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PR1DS", "Repeaters", "PFI");
             Delay.Milliseconds(0);
             
@@ -244,7 +247,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PZ4DS", "Attached Functionality", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PFI");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MXR", "Repeaters", "Disabled");
@@ -283,6 +286,9 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromPanelNodeGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
             
@@ -319,17 +325,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectInventoryGridRow("6");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(82));
-            repo.ProfileConsys1.btn_Delete.Click();
-            Delay.Milliseconds(200);
-            
-            Libraries.Devices_Functions.SelectInventoryGridRow("7");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(84));
@@ -340,6 +339,13 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(86));
+            repo.ProfileConsys1.btn_Delete.Click();
+            Delay.Milliseconds(200);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("7");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(88));
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
