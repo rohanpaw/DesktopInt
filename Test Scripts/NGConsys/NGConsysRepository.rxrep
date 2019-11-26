@@ -13686,6 +13686,22 @@ AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[7]/picture/list/row[@index='1']/cell/text
 			</item>
+			<item
+			capname="text"
+			id="260b2e94-5ce1-4568-8507-b8ccb5e14714"
+			name="txt_ActualLoadingDetailsValue"
+			refimgid="2ae6330a-9a2b-4359-8517-db83a5899695"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]
+			</item>
+			<item
+			capname="text"
+			id="c3f40fca-afc0-4654-a151-4012e61d599b"
+			name="txt_MaxLoadingDetailsValue"
+			refimgid="eba2df63-f1e5-4576-a579-6870d163961d"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>
@@ -14710,6 +14726,10 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 		<var
 		id="820bd86c-5349-46a4-96bf-31b557d8f851"
 		name="sDev">
+		</var>
+		<var
+		id="b15d531e-da11-4af6-8cc5-3626ddedc7b8"
+		name="sLoadingDetail">
 		</var>
 	</variables>
 </repository>

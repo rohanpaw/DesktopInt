@@ -30,6 +30,42 @@ rxversion="8.3">
 	</variables>
 	<recorditems>
 		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="88052a86-1ea6-4d54-a228-46252054f59f">
+				<argument
+				argname="expectedUnits"
+				id="ad600ed5-a6e7-4bcf-a933-3013cd4b08df">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.329
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="893ab68b-b05e-431c-9891-afab9d1b5ed7">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Main Processor 24V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"

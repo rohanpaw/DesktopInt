@@ -1101,6 +1101,18 @@ namespace TestProject
             set { _sDev = value; }
         }
 
+        string _sLoadingDetail = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable sLoadingDetail.
+        /// </summary>
+        [TestVariable("b15d531e-da11-4af6-8cc5-3626ddedc7b8")]
+        public string sLoadingDetail
+        {
+            get { return _sLoadingDetail; }
+            set { _sLoadingDetail = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -6250,6 +6262,8 @@ namespace TestProject
             RepoItemInfo _cell_dipswitchesInfo;
             RepoItemInfo _notificationsInfo;
             RepoItemInfo _txt_searchpropertiesfirstrowtextInfo;
+            RepoItemInfo _txt_actualloadingdetailsvalueInfo;
+            RepoItemInfo _txt_maxloadingdetailsvalueInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6429,6 +6443,8 @@ namespace TestProject
                 _cell_dipswitchesInfo = new RepoItemInfo(this, "cell_DIPSwitches", "progressbar//picture/list/?/?/cell[@text='DIP Switches']", 30000, null, "3d150589-dd8b-4eab-84b3-9bdc419d8622");
                 _notificationsInfo = new RepoItemInfo(this, "Notifications", "?/?/text[@caption~'^The\\ device\\ cannot\\ be\\ dele']", 30000, null, "98bd9f08-d732-4622-9dd7-08e2e14c4772");
                 _txt_searchpropertiesfirstrowtextInfo = new RepoItemInfo(this, "txt_SearchPropertiesFirstRowText", "progressbar/picture[7]/picture/list/row[@index='1']/cell/text", 30000, null, "a82b22d7-90a0-43de-a457-6dd1c9f9e49e");
+                _txt_actualloadingdetailsvalueInfo = new RepoItemInfo(this, "txt_ActualLoadingDetailsValue", "progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]", 60000, null, "260b2e94-5ce1-4568-8507-b8ccb5e14714");
+                _txt_maxloadingdetailsvalueInfo = new RepoItemInfo(this, "txt_MaxLoadingDetailsValue", "progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]", 60000, null, "c3f40fca-afc0-4654-a151-4012e61d599b");
             }
 
             /// <summary>
@@ -10685,6 +10701,54 @@ namespace TestProject
                 get
                 {
                     return _txt_searchpropertiesfirstrowtextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_ActualLoadingDetailsValue item.
+            /// </summary>
+            [RepositoryItem("260b2e94-5ce1-4568-8507-b8ccb5e14714")]
+            public virtual Ranorex.Text txt_ActualLoadingDetailsValue
+            {
+                get
+                {
+                    return _txt_actualloadingdetailsvalueInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_ActualLoadingDetailsValue item info.
+            /// </summary>
+            [RepositoryItemInfo("260b2e94-5ce1-4568-8507-b8ccb5e14714")]
+            public virtual RepoItemInfo txt_ActualLoadingDetailsValueInfo
+            {
+                get
+                {
+                    return _txt_actualloadingdetailsvalueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_MaxLoadingDetailsValue item.
+            /// </summary>
+            [RepositoryItem("c3f40fca-afc0-4654-a151-4012e61d599b")]
+            public virtual Ranorex.Text txt_MaxLoadingDetailsValue
+            {
+                get
+                {
+                    return _txt_maxloadingdetailsvalueInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_MaxLoadingDetailsValue item info.
+            /// </summary>
+            [RepositoryItemInfo("c3f40fca-afc0-4654-a151-4012e61d599b")]
+            public virtual RepoItemInfo txt_MaxLoadingDetailsValueInfo
+            {
+                get
+                {
+                    return _txt_maxloadingdetailsvalueInfo;
                 }
             }
         }

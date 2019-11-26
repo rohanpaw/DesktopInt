@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -237,7 +237,7 @@ rxversion="8.3">
 			id="02d7ef88-3528-4627-81b5-923647555c10"
 			name="Verify_econd_PSU_Mentioned_In_Add_a_New_Panel_Dialog_For_FC_64-4_And_FC_240-4_Panels">
 				<description>
-					<![CDATA[<p>NGC-1920/TC-<span style='color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Segoe UI VSS (Regular)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Ubuntu, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 18px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;'>68746</span></p>]]>
+					<![CDATA[<p>NGC-1920/TC-68746</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -2615,7 +2615,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.55">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.61">
 					</param>
 					<param
 					name="Mode"
@@ -11827,7 +11827,7 @@ MxDesigner]]>
 			id="9a83cacb-767c-4c29-8f54-3ecd09a20c89"
 			name="Verify_5V/24V/40V_Load_on_changing_CPU_of_panel_FC">
 				<description>
-					<![CDATA[NGC-1854/64716- Need to update the correct test data]]>
+					<![CDATA[NGC-1854/TC-64716 - Need to update the correct test data]]>
 				</description>
 				<parameters>
 					<param
@@ -15540,7 +15540,7 @@ persisted in panel properties&nbsp;]]>
 			id="d2d5104f-4cfa-402d-be47-71686c42786e"
 			name="FC_Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels">
 				<description>
-					<![CDATA[NGC-1946/70743]]>
+					<![CDATA[NGC-1946/TC-70743]]>
 				</description>
 				<parameters>
 					<param
@@ -17498,7 +17498,7 @@ persisted in panel properties&nbsp;]]>
 			id="f039533c-f3a2-4115-8ae4-12223084e3ff"
 			name="Verify_5V/24V/40V_load_on_addition/deletion_of_Rbus_connection_and_Xbus_template_FC">
 				<description>
-					<![CDATA[NGC-1854/64864. Need correct test data]]>
+					<![CDATA[NGC-1854/TC-64864 Need correct test data]]>
 				</description>
 				<parameters>
 					<param
@@ -17833,7 +17833,7 @@ persisted in panel properties&nbsp;]]>
 			id="f37d6bae-dea8-455a-a9c9-2418b489d530"
 			name="Verify_Maximum_Limit_For_5V,_24V,_40V_FC">
 				<description>
-					<![CDATA[NGC-1854/64715- Need to verify the test data]]>
+					<![CDATA[NGC-1854/TC-64715- Need to verify the test data]]>
 				</description>
 				<parameters>
 					<param
@@ -23382,6 +23382,30 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="509d084a-8644-42ab-8bf9-6afdb2b657b4"
+					name="Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC">
+						<testmodule
+						id="cb0eb3da-dbdd-4ee7-bbc2-a2f0dc6dde06"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="e7db4c1f-eba5-4c4f-8e22-7e0bf8459e1b"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="44506360-f248-4ab5-ba62-8441689771a6"
+						name="Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC">
+						</testmodule>
+						<testmodule
+						id="5c89d342-4d44-4196-82cf-a81be896b288"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="fd66fc60-2b6e-47bc-8d62-6326394d08e8"
+						name="Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="4a1a38e5-42f5-4da0-8b75-39f40543a385"
 					name="Verify_AC_Units_Calculation_For_Non_Split_Loops_(FIM_loops)">
 						<testmodule
@@ -23419,6 +23443,30 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="1854e260-1b26-46f2-89aa-7aa9cc1183ba"
 						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="d5e52e51-d6da-41a1-acd1-150dc20f5648"
+					name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
+						<testmodule
+						id="a5be14c5-b3de-45c6-9e0e-9799e45057d4"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="e44da576-77cb-47a7-8171-b9b02a8fcb76"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="52ceae61-7f4c-4a8f-a572-98b9817ac6f5"
+						name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
+						</testmodule>
+						<testmodule
+						id="74adec52-1050-4ecd-9895-140d9ee7ae0b"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="fb2a5b0e-2aaa-4091-a916-860a598ac3e9"
+						name="Verify_Reopen_Project_For_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -23702,6 +23750,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="b214f90d-5f51-44ad-b102-c7a24816eb5e"
+					name="Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC">
+						<testmodule
+						id="d80fc7e0-9349-42bf-b8cd-8e10c8a8ea73"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="f59b08e1-fd01-4f22-8af2-fdb894e0123a"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="96c5a683-782b-41f7-8fdd-69e1ff31b8fd"
+						name="Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC">
+						</testmodule>
+						<testmodule
+						id="7cbabaf5-c393-47ae-a037-e3093085f20a"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="6f4239a9-517b-4b49-955a-5034a4b500b6"
 					name="Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC">
 						<testmodule
@@ -23762,26 +23830,6 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
-					id="b214f90d-5f51-44ad-b102-c7a24816eb5e"
-					name="Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC">
-						<testmodule
-						id="d80fc7e0-9349-42bf-b8cd-8e10c8a8ea73"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="f59b08e1-fd01-4f22-8af2-fdb894e0123a"
-						name="Create_Project_FC">
-						</testmodule>
-						<testmodule
-						id="96c5a683-782b-41f7-8fdd-69e1ff31b8fd"
-						name="Verify_Isolator_Units_Calculation_For_Devices_Having_Built_In_Isolator_FC">
-						</testmodule>
-						<testmodule
-						id="7cbabaf5-c393-47ae-a037-e3093085f20a"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="e5766baf-27ca-4a7e-839d-042f19842b82"
 					name="Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property">
 						<testmodule
@@ -23795,54 +23843,6 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="a7a9dbe5-6503-4b08-a97a-f7ece060b7a3"
 						name="Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="d5e52e51-d6da-41a1-acd1-150dc20f5648"
-					name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
-						<testmodule
-						id="a5be14c5-b3de-45c6-9e0e-9799e45057d4"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="e44da576-77cb-47a7-8171-b9b02a8fcb76"
-						name="Create_Project_FC">
-						</testmodule>
-						<testmodule
-						id="52ceae61-7f4c-4a8f-a572-98b9817ac6f5"
-						name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
-						</testmodule>
-						<testmodule
-						id="74adec52-1050-4ecd-9895-140d9ee7ae0b"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="fb2a5b0e-2aaa-4091-a916-860a598ac3e9"
-						name="Verify_Reopen_Project_For_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_FC">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="509d084a-8644-42ab-8bf9-6afdb2b657b4"
-					name="Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC">
-						<testmodule
-						id="cb0eb3da-dbdd-4ee7-bbc2-a2f0dc6dde06"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="e7db4c1f-eba5-4c4f-8e22-7e0bf8459e1b"
-						name="Create_Project_FC">
-						</testmodule>
-						<testmodule
-						id="44506360-f248-4ab5-ba62-8441689771a6"
-						name="Verify_The_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC">
-						</testmodule>
-						<testmodule
-						id="5c89d342-4d44-4196-82cf-a81be896b288"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="fd66fc60-2b6e-47bc-8d62-6326394d08e8"
-						name="Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -23886,26 +23886,6 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
-					id="5cbd8e33-3e6f-4903-8955-cf92b8bb6bc6"
-					name="Verify_voltage_drop_calculation_FC">
-						<testmodule
-						id="713578d4-1c19-435f-a510-442fb49d64dd"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="dffd455f-abb9-4793-ae31-2dd80fd1dcc2"
-						name="Create_Project_FC">
-						</testmodule>
-						<testmodule
-						id="20839d90-100b-4731-ba86-9b1037cc93c0"
-						name="Verify_voltage_drop_calculation">
-						</testmodule>
-						<testmodule
-						id="4b0b72a2-fc09-4f8e-84fa-894141f5ceeb"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="f039533c-f3a2-4115-8ae4-12223084e3ff"
 					name="Verify_5V/24V/40V_load_on_addition/deletion_of_Rbus_connection_and_Xbus_template_FC">
 						<testmodule
@@ -23922,6 +23902,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="5c14cee0-1f8d-4116-be7c-dba0d4931bd0"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="5cbd8e33-3e6f-4903-8955-cf92b8bb6bc6"
+					name="Verify_voltage_drop_calculation_FC">
+						<testmodule
+						id="713578d4-1c19-435f-a510-442fb49d64dd"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="dffd455f-abb9-4793-ae31-2dd80fd1dcc2"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="20839d90-100b-4731-ba86-9b1037cc93c0"
+						name="Verify_voltage_drop_calculation">
+						</testmodule>
+						<testmodule
+						id="4b0b72a2-fc09-4f8e-84fa-894141f5ceeb"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
@@ -24198,6 +24198,22 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="d2d5104f-4cfa-402d-be47-71686c42786e"
+					name="FC_Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels">
+						<testmodule
+						id="47f3ed02-ec28-4cab-b192-e585fd5bc187"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="9d2d805b-1677-48a2-a657-f0e868fcb7f4"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="261ba791-3167-4650-8675-e34dc9f42006"
+						name="Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="8b6e3cd6-d840-4924-b339-e24fa0f318a1"
 					name="Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card">
 						<testmodule
@@ -24347,22 +24363,6 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="1964ab30-90ce-4773-a85e-f5787ef20241"
 						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="d2d5104f-4cfa-402d-be47-71686c42786e"
-					name="FC_Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels">
-						<testmodule
-						id="47f3ed02-ec28-4cab-b192-e585fd5bc187"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="9d2d805b-1677-48a2-a657-f0e868fcb7f4"
-						name="Create_Project_FC">
-						</testmodule>
-						<testmodule
-						id="261ba791-3167-4650-8675-e34dc9f42006"
-						name="Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24654,9 +24654,6 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="53bcf631-ac84-43d9-9864-983288d4ab13">
-			</testcontainer>
-			<testcontainer
 			id="81be8bf4-897f-4cb4-966f-7e48fbbb98ce">
 			</testcontainer>
 		</testconfiguration>
@@ -24687,10 +24684,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

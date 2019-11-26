@@ -194,6 +194,13 @@ namespace TestProject.Libraries
 			set { repo.sTreeItem = value; }
 		}
 		
+		static string sLoadingDetail
+		{
+			get { return repo.sLoadingDetail; }
+			set { repo.sLoadingDetail = value; }
+		}
+		
+		
 		/********************************************************************
 		 * Function Name: AddDevices
 		 * Function Details:
@@ -7689,6 +7696,59 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
 		
+		/**************************************************************************************
+		 * Function Name: verifLoadingDetailsValue
+		 * Function Details: To verify actual loading details value of searched detail unit
+		 * Parameter/Arguments: expectedUnits and loading detail name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 25/11/2019
+		 **************************************************************************************/
+		[UserCodeMethod]
+		public static void verifLoadingDetailsValue(string expectedUnits, string LoadingDetail)
+		{
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			sLoadingDetail = LoadingDetail;
+			
+			string LoadingUnits = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
+			
+			if(LoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoadingUnits);
+			}
+			
+		}
+		
+		/**************************************************************************************
+		 * Function Name: verifMaxLoadingDetailsValue
+		 * Function Details: To verify max loading details value of searched detail unit
+		 * Parameter/Arguments: expectedMaxUnits and loading detail name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 25/11/2019
+		 **************************************************************************************/
+		[UserCodeMethod]
+		public static void verifMaxLoadingDetailsValue(string expectedMaxUnits, string LoadingDetail)
+		{
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			sLoadingDetail = LoadingDetail;
+			
+			string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValue.TextValue;
+			
+			if(MaxLoadingUnits.Equals(expectedMaxUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " value  "+ expectedMaxUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedMaxUnits  + " Actual Units: "+ MaxLoadingUnits);
+			}
+			
+		}
 		
 	}
 }
