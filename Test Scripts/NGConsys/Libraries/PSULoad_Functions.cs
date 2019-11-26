@@ -3253,8 +3253,8 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 					
 					//Get Battery Standby from UI
-					sDefaultBatteryStandyby = GetBatteryStandbyValue(PanelType);
-					sDefaultAlarmLoad = GetAlarmLoadValue(PanelType);
+					sDefaultBatteryStandyby = expectedDefaultBatteryStandby;
+					sDefaultAlarmLoad = expectedDefaultAlarmLoad;
 					
 					//Generate expected Battery Standby and alarm load
 					float.TryParse(sDefaultBatteryStandyby, out DefaultBatteryStandby);

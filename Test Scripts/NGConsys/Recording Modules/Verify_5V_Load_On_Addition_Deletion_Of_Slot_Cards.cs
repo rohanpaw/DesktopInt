@@ -91,7 +91,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.020", "PFI");
+            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.000", "PFI");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(5));
@@ -136,7 +136,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.050", "PFI");
+            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.030", "PFI");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(18));
