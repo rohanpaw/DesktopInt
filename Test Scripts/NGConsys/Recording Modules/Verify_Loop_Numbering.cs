@@ -112,17 +112,17 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Address", "E");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Address", "E");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Address", "F");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Address", "F");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Address", "G");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Address", "G");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Address", "H");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Address", "H");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane");
             Delay.Milliseconds(0);
@@ -154,17 +154,17 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Address", "5");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Address", "5");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Address", "6");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Address", "6");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Address", "7");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Address", "7");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Address", "8");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Address", "8");
+            //Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "TEXT-5");
             Delay.Milliseconds(0);

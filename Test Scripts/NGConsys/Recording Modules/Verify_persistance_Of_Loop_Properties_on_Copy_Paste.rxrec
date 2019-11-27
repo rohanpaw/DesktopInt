@@ -727,7 +727,7 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						1000
+						500
 					</argvalue>
 				</argument>
 			</arguments>
@@ -857,7 +857,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						14
 					</argvalue>
 				</argument>
 			</arguments>

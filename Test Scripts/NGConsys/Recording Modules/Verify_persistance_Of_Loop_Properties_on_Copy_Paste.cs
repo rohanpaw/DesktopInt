@@ -148,7 +148,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("6");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.ChangeCableLengthFromInventory(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "1000"));
+            Libraries.Devices_Functions.ChangeCableLengthFromInventory(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "500"));
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
@@ -163,7 +163,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste with Points");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectInventoryGridRow("6");
+            Libraries.Devices_Functions.SelectInventoryGridRow("14");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("500");

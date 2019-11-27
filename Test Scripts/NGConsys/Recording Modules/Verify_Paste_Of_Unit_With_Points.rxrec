@@ -514,7 +514,7 @@ rxversion="8.3">
 		</mouseitem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -560,7 +560,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -606,7 +606,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -652,7 +652,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -1585,7 +1585,7 @@ rxversion="8.3">
 		</mouseitem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -1631,7 +1631,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -1677,7 +1677,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -1723,7 +1723,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"

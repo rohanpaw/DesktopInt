@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -1334,7 +1334,7 @@ rxversion="8.3">
 			id="11cb5c8d-38a9-4f65-9fa2-4dc0bbc3e5f5"
 			name="Verify_persistance_Of_Loop_Properties_on_Copy_Paste">
 				<description>
-					<![CDATA[<p>NGC-373/TC-53- Failing on build 84 since points are not pasted with PLX loop</p>]]>
+					<![CDATA[<p>NGC-373/TC-53 Address inventory row is disabled as this feature is removed. Address column removed from points grid</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -4891,7 +4891,7 @@ rxversion="8.3">
 			id="4315861a-9467-4079-b0b6-186628cddf6d"
 			name="Verify_Paste_Of_Unit_With_Points">
 				<description>
-					<![CDATA[<p>NGC-372/TC-36 Failed due to PLX-800 loop label count, bug-NGC-2581</p>]]>
+					<![CDATA[<p>NGC-372/TC-36 Failed due to PLX-800 loop label count, bug-NGC-2581 Address inventory row is disabled as this feature is removed. Address column removed from points grid</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -9083,7 +9083,7 @@ rxversion="8.3">
 			id="76ad7198-b7e5-4810-9894-591cc807d9ce"
 			name="Verify_FB_IOB_Slot_Allocation_In_Backplane">
 				<description>
-					<![CDATA[<p>NGC-376/TC-51388</p>]]>
+					<![CDATA[<p>NGC-376/TC-51388 Not valid test case after new feature implementation</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10164,7 +10164,7 @@ MxDesigner]]>
 			id="8479bd43-158f-4492-b7b8-1e5cc3a64b9b"
 			name="Verify_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane">
 				<description>
-					<![CDATA[<p>NGC-376/TC-51410</p>]]>
+					<![CDATA[<p>NGC-376/TC-51410 Not valid test case after new feature implementation</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10620,7 +10620,7 @@ MxDesigner]]>
 			id="899247e0-cc68-477d-9853-2c6d810ea13c"
 			name="Verify_Persistance_Of_Region_Name_Property_On_Copy_Paste">
 				<description>
-					<![CDATA[<p>NGC-373/TC-55</p>]]>
+					<![CDATA[<p>NGC-373/TC-55 Address inventory row is disabled as this feature is removed. Address column removed from points grid</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -11570,7 +11570,7 @@ MxDesigner]]>
 			id="97583be1-8d6e-4fee-8f1f-9313dafd3742"
 			name="Verify_Backplane_Logic_For_Pro32xD_Pro32xBB">
 				<description>
-					<![CDATA[<p>NGC-376/TC-51390</p>]]>
+					<![CDATA[<p>NGC-376/TC-51390 Not valid test case after new feature implementation</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -14336,7 +14336,7 @@ persisted in panel properties&nbsp;]]>
 			id="c0e9a555-b7ea-494e-97e0-551ab587c47c"
 			name="Verify_PCH_And_PLX_Device_Slot_Allocation_In_Backplane">
 				<description>
-					<![CDATA[<p>NGC-376/TC-51409</p>]]>
+					<![CDATA[<p>NGC-376/TC-51409 Not valid test case after new feature implementation</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -15408,7 +15408,7 @@ persisted in panel properties&nbsp;]]>
 			id="d1da618b-b2cb-48f3-b850-bfaa48518970"
 			name="Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste">
 				<description>
-					<![CDATA[<p>NGC-373/TC-56</p>]]>
+					<![CDATA[<p>NGC-373/TC-56 Address inventory row is disabled as this feature is removed. Address column removed from points grid</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -15758,7 +15758,7 @@ persisted in panel properties&nbsp;]]>
 			id="d600789f-44ee-4896-a3d1-a08d1c4f8ff8"
 			name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste">
 				<description>
-					<![CDATA[NGC-373/TC-54- Failing on build 84 since points are not pasted with PLX loop]]>
+					<![CDATA[NGC-373/TC-54]]>
 				</description>
 				<parameters>
 					<param
@@ -24654,7 +24654,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="81be8bf4-897f-4cb4-966f-7e48fbbb98ce">
+			id="595fd481-b6cf-43cf-92a7-40db4df3f9b3">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

@@ -128,17 +128,17 @@ namespace TestProject.Recording_Modules
             repo.FormMe.Paste.Click();
             Delay.Milliseconds(200);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("11", "Address", "10");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("11", "Address", "10");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("12", "Address", "11");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("12", "Address", "11");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "Address", "12");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "Address", "12");
+            //Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "SKU", "557.202.842");
             Delay.Milliseconds(0);
@@ -223,17 +223,17 @@ namespace TestProject.Recording_Modules
             repo.FormMe.Paste.Click();
             Delay.Milliseconds(200);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("11", "Address", "10");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("11", "Address", "10");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("12", "Address", "11");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("12", "Address", "11");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "Address", "12");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "Address", "12");
+            //Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "SKU", "557.202.842");
             Delay.Milliseconds(0);

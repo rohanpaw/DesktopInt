@@ -6163,6 +6163,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update :07/Jun/19 Alpesh Dhakad - 20/08/2019 &  30/08/2019- Updated xpath for cell_cableLength
+		 * Alpesh Dhakad - 26/11/2019 Added a step to select cable length text
 		 *****************************************************************************************************************/
 		// Change cable length method
 		[UserCodeMethod]
@@ -6178,10 +6179,12 @@ namespace TestProject.Libraries
 			repo.FormMe.cell_CableLength.Click();
 			//repo.FormMe.txt_InventoryProperty.Click();
 			
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
+			
 			//Change the value of cable length
 			repo.FormMe.txt_CableLength.PressKeys(fchangeCableLength + "{ENTER}");
 			//repo.FormMe.txt_InventoryProperty.PressKeys(fchangeCableLength + "{ENTER}");
-			Report.Log(ReportLevel.Info, "Cable length chnaged to "+fchangeCableLength+"  successfully");
+			Report.Log(ReportLevel.Info, "Cable length changed to "+fchangeCableLength+"  successfully");
 			
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}{ENTER}");
@@ -7748,6 +7751,26 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedMaxUnits  + " Actual Units: "+ MaxLoadingUnits);
 			}
 			
+		}
+		
+		/********************************************************************
+		 * Function Name: getProgressBarColorForISUnits
+		 * Function Details: Method to verify progress bar color for IS units
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Poonam Kadam
+		 * Last Update : 31/12/2018
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static string getProgressBarColors(string LoadingDetail)
+		{
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			sLoadingDetail = LoadingDetail;
+			
+			string actualColour;
+			return actualColour = repo.FormMe.LoadingDetailsProgressbarColor.GetAttributeValue<string>("foreground");
+			
+			Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " color  "+ actualColour + " displayed ");
 		}
 		
 	}

@@ -13702,6 +13702,14 @@ AAAAAElFTkSuQmCC
 			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]
 			</item>
+			<item
+			capname="progressbar"
+			id="99d9a410-5c33-4ff5-a73e-52776010ac39"
+			name="LoadingDetailsProgressbarColor"
+			refimgid="eba2df63-f1e5-4576-a579-6870d163961d"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//progressbar
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>

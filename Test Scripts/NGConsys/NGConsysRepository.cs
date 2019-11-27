@@ -6264,6 +6264,7 @@ namespace TestProject
             RepoItemInfo _txt_searchpropertiesfirstrowtextInfo;
             RepoItemInfo _txt_actualloadingdetailsvalueInfo;
             RepoItemInfo _txt_maxloadingdetailsvalueInfo;
+            RepoItemInfo _loadingdetailsprogressbarcolorInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6445,6 +6446,7 @@ namespace TestProject
                 _txt_searchpropertiesfirstrowtextInfo = new RepoItemInfo(this, "txt_SearchPropertiesFirstRowText", "progressbar/picture[7]/picture/list/row[@index='1']/cell/text", 30000, null, "a82b22d7-90a0-43de-a457-6dd1c9f9e49e");
                 _txt_actualloadingdetailsvalueInfo = new RepoItemInfo(this, "txt_ActualLoadingDetailsValue", "progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]", 60000, null, "260b2e94-5ce1-4568-8507-b8ccb5e14714");
                 _txt_maxloadingdetailsvalueInfo = new RepoItemInfo(this, "txt_MaxLoadingDetailsValue", "progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]", 60000, null, "c3f40fca-afc0-4654-a151-4012e61d599b");
+                _loadingdetailsprogressbarcolorInfo = new RepoItemInfo(this, "LoadingDetailsProgressbarColor", "progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//progressbar", 60000, null, "99d9a410-5c33-4ff5-a73e-52776010ac39");
             }
 
             /// <summary>
@@ -10749,6 +10751,30 @@ namespace TestProject
                 get
                 {
                     return _txt_maxloadingdetailsvalueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LoadingDetailsProgressbarColor item.
+            /// </summary>
+            [RepositoryItem("99d9a410-5c33-4ff5-a73e-52776010ac39")]
+            public virtual Ranorex.ProgressBar LoadingDetailsProgressbarColor
+            {
+                get
+                {
+                    return _loadingdetailsprogressbarcolorInfo.CreateAdapter<Ranorex.ProgressBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LoadingDetailsProgressbarColor item info.
+            /// </summary>
+            [RepositoryItemInfo("99d9a410-5c33-4ff5-a73e-52776010ac39")]
+            public virtual RepoItemInfo LoadingDetailsProgressbarColorInfo
+            {
+                get
+                {
+                    return _loadingdetailsprogressbarcolorInfo;
                 }
             }
         }

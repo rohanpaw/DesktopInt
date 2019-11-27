@@ -133,17 +133,17 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("11", "Address", "10");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("11", "Address", "10");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("12", "Address", "11");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("12", "Address", "11");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "Address", "12");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "Address", "12");
+            //Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Label", "TEXT-9");
             Delay.Milliseconds(0);
@@ -169,17 +169,17 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("14", "Address", "13");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("14", "Address", "13");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("15", "Address", "14");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("15", "Address", "14");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("16", "Address", "15");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("16", "Address", "15");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("17", "Address", "16");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("17", "Address", "16");
+            //Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("14", "Label", "TEXT-13");
             Delay.Milliseconds(0);
