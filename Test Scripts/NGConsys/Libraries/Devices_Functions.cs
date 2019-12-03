@@ -7700,7 +7700,7 @@ namespace TestProject.Libraries
 		}
 		
 		/**************************************************************************************
-		 * Function Name: verifLoadingDetailsValue
+		 * Function Name: verifyLoadingDetailsValue
 		 * Function Details: To verify actual loading details value of searched detail unit
 		 * Parameter/Arguments: expectedUnits and loading detail name
 		 * Output:
@@ -7708,7 +7708,7 @@ namespace TestProject.Libraries
 		 * Last Update : 25/11/2019
 		 **************************************************************************************/
 		[UserCodeMethod]
-		public static void verifLoadingDetailsValue(string expectedUnits, string LoadingDetail)
+		public static void verifyLoadingDetailsValue(string expectedUnits, string LoadingDetail)
 		{
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			sLoadingDetail = LoadingDetail;
@@ -7727,7 +7727,7 @@ namespace TestProject.Libraries
 		}
 		
 		/**************************************************************************************
-		 * Function Name: verifMaxLoadingDetailsValue
+		 * Function Name: verifyMaxLoadingDetailsValue
 		 * Function Details: To verify max loading details value of searched detail unit
 		 * Parameter/Arguments: expectedMaxUnits and loading detail name
 		 * Output:
@@ -7735,7 +7735,7 @@ namespace TestProject.Libraries
 		 * Last Update : 25/11/2019
 		 **************************************************************************************/
 		[UserCodeMethod]
-		public static void verifMaxLoadingDetailsValue(string expectedMaxUnits, string LoadingDetail)
+		public static void verifyMaxLoadingDetailsValue(string expectedMaxUnits, string LoadingDetail)
 		{
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			sLoadingDetail = LoadingDetail;
@@ -7758,8 +7758,8 @@ namespace TestProject.Libraries
 		 * Function Details: Method to verify progress bar color for IS units
 		 * Parameter/Arguments:
 		 * Output:
-		 * Function Owner: Poonam Kadam
-		 * Last Update : 31/12/2018
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 29/11/2019
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static string getProgressBarColors(string LoadingDetail)

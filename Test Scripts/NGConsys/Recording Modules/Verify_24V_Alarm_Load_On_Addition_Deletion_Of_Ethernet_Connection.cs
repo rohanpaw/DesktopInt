@@ -91,7 +91,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.301", "FIM1");
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.301", "FIM1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.301", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
@@ -106,7 +109,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.493", "FIM1");
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.493", "FIM1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.493", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
@@ -118,7 +124,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.301", "FIM1");
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.301", "FIM1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.301", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
         }

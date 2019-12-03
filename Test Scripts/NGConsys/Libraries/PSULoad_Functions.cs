@@ -366,7 +366,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,expectedMax24VPSU,PanelType;
+			string PanelName,PanelNode,CPUType,sRowNumber,expectedMax24VPSU,PanelType,LoadingDetailsName;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -378,6 +378,7 @@ namespace TestProject.Libraries
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedMax24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -396,7 +397,9 @@ namespace TestProject.Libraries
 				
 				
 				// Verify max 24V PSU load value
-				verifyMax24VPSULoad(expectedMax24VPSU,PanelType,rowNumber);
+				//verifyMax24VPSULoad(expectedMax24VPSU,PanelType,rowNumber);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMax24VPSU,LoadingDetailsName);
+				
 				
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -415,6 +418,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 08/01/2019  Alpesh Dhakad - 30/07/2019 & 21/08/2019- Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VLoadOnChangingCPU(string sFileName,string sAddPanelSheet)
@@ -426,7 +430,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,changeCPUType,PanelType,expectedMax24VPSU,expected24VPSU,change2CPUType,expected2nd24VPSU;
+			string PanelName,PanelNode,CPUType,sRowNumber,changeCPUType,PanelType,expectedMax24VPSU,expected24VPSU,change2CPUType,expected2nd24VPSU,LoadingDetailsName;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -442,6 +446,7 @@ namespace TestProject.Libraries
 				expected24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				change2CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expected2nd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -466,10 +471,13 @@ namespace TestProject.Libraries
 				
 				
 				// Verify max 24V PSU load value
-				verifyMax24VPSULoad(expectedMax24VPSU,PanelType,rowNumber);
+				//verifyMax24VPSULoad(expectedMax24VPSU,PanelType,rowNumber);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMax24VPSU,LoadingDetailsName);
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected24VPSU,PanelType);
+				//verify24VPSULoadValue(expected24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -487,7 +495,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected2nd24VPSU,LoadingDetailsName);
+				
 
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -506,6 +516,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 16/01/2019  Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopCards(string sFileName,string sAddPanelandDevicesSheet)
@@ -517,7 +528,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,sType;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,sType,LoadingDetailsName;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -534,6 +545,7 @@ namespace TestProject.Libraries
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expected2nd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				expected3rd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -549,7 +561,8 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected24VPSU,PanelType);
+				//verify24VPSULoadValue(expected24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected24VPSU,LoadingDetailsName);
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -561,7 +574,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected2nd24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -575,7 +590,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected3rd24VPSU,LoadingDetailsName);
+				
 				
 				// Delete added Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -594,6 +611,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 18/01/2019   Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
+		 *  Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfSlotCards(string sFileName,string sAddPanelandDevicesSheet)
@@ -605,7 +623,8 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU,sType,ModelNumber1,sLabelName1,sType1;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU,sType;
+			string ModelNumber1,sLabelName1,sType1,LoadingDetailsName;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -626,7 +645,7 @@ namespace TestProject.Libraries
 				sType1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
 				expected3rd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				expected4th24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
-				
+				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -642,7 +661,11 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected24VPSU,PanelType);
+				
+				/*************************************************** 02/11/2019*****Updated with new method to verify loading details
+ * *********************************************************************************************************************************/
+				//verify24VPSULoadValue(expected24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected24VPSU,LoadingDetailsName);
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -661,7 +684,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected2nd24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -686,7 +711,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected3rd24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -705,7 +732,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected4th24VPSU,PanelType);
+				//verify24VPSULoadValue(expected4th24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected4th24VPSU,LoadingDetailsName);
+				
 				
 				// Delete added Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -724,6 +753,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 21/01/2019  Alpesh Dhakad - 30/07/2019 & 21/08/2019- Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfAccessories(string sFileName,string sAddPanelandDevicesSheet)
@@ -735,7 +765,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,sType;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,sType,LoadingDetailsName;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -752,6 +782,7 @@ namespace TestProject.Libraries
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expected2nd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				expected3rd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -769,7 +800,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected24VPSU,PanelType);
+				//verify24VPSULoadValue(expected24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -781,7 +814,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected2nd24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -793,7 +828,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected3rd24VPSU,LoadingDetailsName);
+				
 				
 				// Delete added Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -811,6 +848,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 22/01/2019  Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInZetfastLoop(string sFileName,string sAddPanelandDevicesSheet)
@@ -822,7 +860,8 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU,sType,ModelNumber1,sLabelName1,sType1;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU,sType;
+			string ModelNumber1,sLabelName1,sType1,LoadingDetailsName;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -843,6 +882,8 @@ namespace TestProject.Libraries
 				sType1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
 				expected3rd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				expected4th24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -860,7 +901,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected24VPSU,PanelType);
+				//verify24VPSULoadValue(expected24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -872,7 +915,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected2nd24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Backplane expander
 				Common_Functions.ClickOnNavigationTreeExpander("XLM");
@@ -896,7 +941,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected3rd24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Zetfas C node
 				Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
@@ -915,7 +962,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected4th24VPSU,PanelType);
+				//verify24VPSULoadValue(expected4th24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected4th24VPSU,LoadingDetailsName);
+				
 				
 				// Delete added Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -934,6 +983,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 22/01/2019   Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInXLMLoop(string sFileName,string sAddPanelandDevicesSheet)
@@ -945,7 +995,8 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU,sType,ModelNumber1,sLabelName1,sType1;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU;
+			string sType,ModelNumber1,sLabelName1,sType1,LoadingDetailsName;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -966,6 +1017,7 @@ namespace TestProject.Libraries
 				sType1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
 				expected3rd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				expected4th24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -983,7 +1035,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected24VPSU,PanelType);
+				//verify24VPSULoadValue(expected24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -995,7 +1049,8 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected2nd24VPSU,LoadingDetailsName);
 				
 				// Click on Backplane expander
 				Common_Functions.ClickOnNavigationTreeExpander("XLM");
@@ -1018,7 +1073,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected3rd24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Zetfas C node
 				Common_Functions.ClickOnNavigationTreeItem("XLM800-C");
@@ -1037,7 +1094,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected4th24VPSU,PanelType);
+				//verify24VPSULoadValue(expected4th24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected4th24VPSU,LoadingDetailsName);
+				
 				
 				// Delete added Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -1056,6 +1115,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 23/01/2019  Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details 
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInPLXLoop(string sFileName,string sAddPanelandDevicesSheet)
@@ -1067,7 +1127,8 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU,sType,ModelNumber1,sLabelName1,sType1;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU,sType;
+			string ModelNumber1,sLabelName1,sType1,LoadingDetailsName;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -1088,6 +1149,8 @@ namespace TestProject.Libraries
 				sType1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
 				expected3rd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				expected4th24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -1105,7 +1168,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected24VPSU,PanelType);
+				//verify24VPSULoadValue(expected24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -1117,8 +1182,10 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected2nd24VPSU,PanelType);
-
+				//verify24VPSULoadValue(expected2nd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected2nd24VPSU,LoadingDetailsName);
+				
+				
 				// Click on Backplane expander
 				Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 				
@@ -1143,7 +1210,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				//verify24VPSULoadValue(expected3rd24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected3rd24VPSU,LoadingDetailsName);
+				
 				
 				// Click on PLX node to add device
 				Common_Functions.ClickOnNavigationTreeItem("PLX800-E");
@@ -1162,7 +1231,10 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify24VPSULoadValue(expected4th24VPSU,PanelType);
+				//verify24VPSULoadValue(expected4th24VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected4th24VPSU,LoadingDetailsName);
+				
+				
 				
 				// Delete added Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);
