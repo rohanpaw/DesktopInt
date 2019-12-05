@@ -103,12 +103,13 @@ namespace TestProject.Libraries
 		
 		
 		/*****************************************************************************************************************
-		 * Function Name:
+		 * Function Name: verifyVoltageDropOnAddingAndRemovingDevices
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:
 		 * Last Update : Alpesh Dhakad - 30/07/2019 and 21/08/2019 - Updated script as per new build and xpath
+		 * Alpesh Dhakad - 04/12/2019 - Updated test scripts with new method for loading details
 		 *****************************************************************************************************************/
 		// To verify voltage drop value on adding and removing devices
 		[UserCodeMethod]
@@ -122,6 +123,7 @@ namespace TestProject.Libraries
 			
 			// Declared various fields as String type
 			string Multichannel,sLabelName,expectedDCUnits,expectedVoltDrop,expectedVoltDropWorstcase,expectedMaxVoltDrop,expectedMaxVoltDropWorstcase,sType;
+			string LoadingDetailsNameForVoltDrop,LoadingDetailsNameForVoltDropWorstCase,LoadingDetailsNameForMaxVoltDrop,LoadingDetailsNameForMaxVoltDropWorstCase;
 			
 			// For loop to fetch values from the excel sheet and then add devices
 			for(int i=6; i<=rows; i++)
@@ -133,6 +135,9 @@ namespace TestProject.Libraries
 				expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedVoltDrop = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedVoltDropWorstcase = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				LoadingDetailsNameForVoltDrop = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				LoadingDetailsNameForVoltDropWorstCase = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				
 				
 				// Add devices from the gallery as per test data from the excel sheet
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
@@ -142,13 +147,17 @@ namespace TestProject.Libraries
 				Delay.Duration(500, false);
 				
 				// Call verifyDCUnitValue method and Verify DC units value
-				DC_Functions.verifyDCUnitsValue(expectedDCUnits);
+				//DC_Functions.verifyDCUnitsValue(expectedDCUnits);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,"Current (DC Units)");
 				
 				// Call verifyVoltDropValue method and Verify VoltDrop value value
-				verifyVoltDropValue(expectedVoltDrop);
+				//verifyVoltDropValue(expectedVoltDrop);
+				Devices_Functions.verifyLoadingDetailsValue(expectedVoltDrop,LoadingDetailsNameForVoltDrop);
+				
 				
 				// Call verifyVoltDropWorstCaseValue method and Verify VoltDrop Worst case value value
-				verifyVoltDropWorstCaseValue(expectedVoltDropWorstcase);
+				//verifyVoltDropWorstCaseValue(expectedVoltDropWorstcase);
+				Devices_Functions.verifyLoadingDetailsValue(expectedVoltDropWorstcase,LoadingDetailsNameForVoltDropWorstCase);
 				
 				//Click on Points tab
 				repo.ProfileConsys1.tab_Points.Click();
@@ -157,13 +166,19 @@ namespace TestProject.Libraries
 			// Fetch value from excel sheet and store it
 			expectedMaxVoltDrop = ((Range)Excel_Utilities.ExcelRange.Cells[3,4]).Value.ToString();
 			expectedMaxVoltDropWorstcase = ((Range)Excel_Utilities.ExcelRange.Cells[4,4]).Value.ToString();
+			LoadingDetailsNameForMaxVoltDrop = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
+			LoadingDetailsNameForMaxVoltDropWorstCase = ((Range)Excel_Utilities.ExcelRange.Cells[4,5]).Value.ToString();
+				
 			
 			
 			// Call verifyMaxVoltDrop method and Verify Max volt drop value
-			verifyMaxVoltDrop(expectedMaxVoltDrop);
+			//verifyMaxVoltDrop(expectedMaxVoltDrop);
+			Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxVoltDrop,LoadingDetailsNameForMaxVoltDrop);
+				
 			
 			// Call verifyMaxVoltDropWorstCaseValue method and Verify Max volt drop worst case value
-			verifyMaxVoltDropWorstCaseValue(expectedMaxVoltDropWorstcase);
+			//verifyMaxVoltDropWorstCaseValue(expectedMaxVoltDropWorstcase);
+			Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxVoltDropWorstcase,LoadingDetailsNameForMaxVoltDropWorstCase);
 			
 			// Close the currently opened excel sheet
 			Excel_Utilities.CloseExcel();
@@ -193,15 +208,22 @@ namespace TestProject.Libraries
 			// Fetch value from excel sheet and store it
 			expectedVoltDrop = ((Range)Excel_Utilities.ExcelRange.Cells[7,2]).Value.ToString();
 			expectedVoltDropWorstcase = ((Range)Excel_Utilities.ExcelRange.Cells[7,4]).Value.ToString();
+			LoadingDetailsNameForVoltDrop = ((Range)Excel_Utilities.ExcelRange.Cells[7,1]).Value.ToString();
+			LoadingDetailsNameForVoltDropWorstCase = ((Range)Excel_Utilities.ExcelRange.Cells[7,3]).Value.ToString();
+				
 			
 			//Click on Physical Layout tab
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			
 			// Call verifyVoltDropValue method and Verify volt drop value
-			verifyVoltDropValue(expectedVoltDrop);
+			//verifyVoltDropValue(expectedVoltDrop);
+			Devices_Functions.verifyLoadingDetailsValue(expectedVoltDrop,LoadingDetailsNameForVoltDrop);
+			
 			
 			// Call verifyVoltDropWorstCaseValue method and Verify volt drop worst case value
-			verifyVoltDropWorstCaseValue(expectedVoltDropWorstcase);
+			//verifyVoltDropWorstCaseValue(expectedVoltDropWorstcase);
+			Devices_Functions.verifyLoadingDetailsValue(expectedVoltDropWorstcase,LoadingDetailsNameForVoltDropWorstCase);
+				
 		}
 		
 		/********************************************************************
@@ -338,14 +360,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/********************************************************************************************************************
 		 * Function Name:
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 05/12/2019 - Updated test scripts with new method for loading details
+		 ********************************************************************************************************************/
 		// Verify Voltage Drop Calculation on Adding devices in loops
 		[UserCodeMethod]
 		public static void verifyVoltageDropCalculation(string sFileName,string sAddDevicesLoop)
@@ -358,7 +380,8 @@ namespace TestProject.Libraries
 			
 			// Declared various fields as String type
 			string Multichannel,sLabelName,expectedDCUnits,expectedVoltDrop,expectedVoltDropWorstcase,expectedMaxVoltDrop,expectedMaxVoltDropWorstcase;
-			
+			string LoadingDetailsNameForVoltDrop,LoadingDetailsNameForVoltDropWorstCase,LoadingDetailsNameForMaxVoltDrop,LoadingDetailsNameForMaxVoltDropWorstCase;
+				
 			// For loop to fetch values from the excel sheet and then add devices
 			for(int i=6; i<=rows; i++)
 			{
@@ -369,6 +392,9 @@ namespace TestProject.Libraries
 				expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedVoltDrop = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedVoltDropWorstcase = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				LoadingDetailsNameForVoltDrop = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				LoadingDetailsNameForVoltDropWorstCase = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				
 				
 				// Add devices from the gallery as per test data from the excel sheet
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
@@ -378,16 +404,25 @@ namespace TestProject.Libraries
 				Delay.Duration(500, false);
 				
 				// Call verifyDCUnitValue method and Verify DC units value
-				DC_Functions.verifyDCUnitsValue(expectedDCUnits);
+				//DC_Functions.verifyDCUnitsValue(expectedDCUnits);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,"Current (DC Units)");
+				
 				
 				// Call verifyVoltDropValue method and Verify VoltDrop value value
-				verifyVoltDropValue(expectedVoltDrop);
+				//verifyVoltDropValue(expectedVoltDrop);
+				Devices_Functions.verifyLoadingDetailsValue(expectedVoltDrop,LoadingDetailsNameForVoltDrop);
+				
 				
 				// Call verifyVoltDropWorstCaseValue method and Verify VoltDrop Worst case value value
-				verifyVoltDropWorstCaseValue(expectedVoltDropWorstcase);
+				//verifyVoltDropWorstCaseValue(expectedVoltDropWorstcase);
+				Devices_Functions.verifyLoadingDetailsValue(expectedVoltDropWorstcase,LoadingDetailsNameForVoltDropWorstCase);
 				
-				verifyVoltageDropColor();
-				verifyVoltageDropWorstCaseColor();
+				
+				//verifyVoltageDropColor();
+				Devices_Functions.verifyLoadingDetailColor(LoadingDetailsNameForVoltDrop);
+				
+				//verifyVoltageDropWorstCaseColor();
+				Devices_Functions.verifyLoadingDetailColor(LoadingDetailsNameForVoltDropWorstCase);
 				
 				//Click on Points tab
 				repo.ProfileConsys1.tab_Points.Click();
@@ -396,27 +431,32 @@ namespace TestProject.Libraries
 			// Fetch value from excel sheet and store it
 			expectedMaxVoltDrop = ((Range)Excel_Utilities.ExcelRange.Cells[3,4]).Value.ToString();
 			expectedMaxVoltDropWorstcase = ((Range)Excel_Utilities.ExcelRange.Cells[4,4]).Value.ToString();
+			LoadingDetailsNameForMaxVoltDrop = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
+			LoadingDetailsNameForMaxVoltDropWorstCase = ((Range)Excel_Utilities.ExcelRange.Cells[4,5]).Value.ToString();
 			
 			
 			// Call verifyMaxVoltDrop method and Verify Max volt drop value
-			verifyMaxVoltDrop(expectedMaxVoltDrop);
+			//verifyMaxVoltDrop(expectedMaxVoltDrop);
+			Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxVoltDrop,LoadingDetailsNameForMaxVoltDrop);
+			
 			
 			// Call verifyMaxVoltDropWorstCaseValue method and Verify Max volt drop worst case value
-			verifyMaxVoltDropWorstCaseValue(expectedMaxVoltDropWorstcase);
-			
+			//verifyMaxVoltDropWorstCaseValue(expectedMaxVoltDropWorstcase);
+			Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxVoltDropWorstcase,LoadingDetailsNameForMaxVoltDropWorstCase);
+				
 			// Close the currently opened excel sheet
 			Excel_Utilities.CloseExcel();
 			
 		}
 		
-		/********************************************************************
+		/************************************************************************************************************************
 		 * Function Name:
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:
-		 * Last Update : 
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 05/12/2019 - Updated test scripts with new methods for loading details
+		 ************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyVoltageDropPercentage(string sFileName, string noLoadVoltDrop)
 		{
@@ -425,8 +465,12 @@ namespace TestProject.Libraries
 			Delay.Duration(500, false);
 
 			// Check Voltage drop is set to 0.00 when no devices are added
-			verifyVoltDropValue(noLoadVoltDrop);
-			verifyVoltDropWorstCaseValue(noLoadVoltDrop);
+			//verifyVoltDropValue(noLoadVoltDrop);
+			//verifyVoltDropWorstCaseValue(noLoadVoltDrop);
+			
+			Devices_Functions.verifyLoadingDetailsValue(noLoadVoltDrop,"Volt Drop (V)");
+			Devices_Functions.verifyLoadingDetailsValue(noLoadVoltDrop,"Volt Drop (worst case)");
+
 			
 			// Navigate to Points tab
 			repo.ProfileConsys1.tab_Points.Click();
@@ -437,11 +481,13 @@ namespace TestProject.Libraries
 			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop progress bar color is LightGreen.");
-			verifyVoltageDropColor();
+			//verifyVoltageDropColor();
+			Devices_Functions.verifyLoadingDetailColor("Volt Drop (V)");
 			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop (worst case) progress bar color is LightGreen.");
-			verifyVoltageDropWorstCaseColor();
+			//verifyVoltageDropWorstCaseColor();
+			Devices_Functions.verifyLoadingDetailColor("Volt Drop (worst case)");
 			
 			// Delete All devices
 			Devices_Functions.DeleteAllDevices();
@@ -451,12 +497,15 @@ namespace TestProject.Libraries
 			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop progress bar color is LightGreen.");
-			verifyVoltageDropColor();
+			//verifyVoltageDropColor();
+			Devices_Functions.verifyLoadingDetailColor("Volt Drop (V)");
 			
 			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop (worst case) progress bar color is Yellow.");
-			verifyVoltageDropWorstCaseColor();
+			//verifyVoltageDropWorstCaseColor();
+			Devices_Functions.verifyLoadingDetailColor("Volt Drop (worst case)");
+			
 			
 			// Delete All devices
 			Devices_Functions.DeleteAllDevices();
@@ -467,13 +516,15 @@ namespace TestProject.Libraries
 			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop progress bar color is Yellow.");
-			verifyVoltageDropColor();
+			//verifyVoltageDropColor();
+			Devices_Functions.verifyLoadingDetailColor("Volt Drop (V)");
 			
 	
 			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop (worst case) progress bar color is Pink.");
-			verifyVoltageDropWorstCaseColor();
+			//verifyVoltageDropWorstCaseColor();
+			Devices_Functions.verifyLoadingDetailColor("Volt Drop (worst case)");
 			
 			// Delete All devices
 			Devices_Functions.DeleteAllDevices();
@@ -485,12 +536,15 @@ namespace TestProject.Libraries
 			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop progress bar color is Pink.");
-			verifyVoltageDropColor();
+			//verifyVoltageDropColor();
+			Devices_Functions.verifyLoadingDetailColor("Volt Drop (V)");
+			
 			
 			// Verify progress bar color as per percentage
 			Report.Log(ReportLevel.Info, "Verifying Volt drop (worst case) progress bar color is Pink.");
-			verifyVoltageDropWorstCaseColor();
-
+			//verifyVoltageDropWorstCaseColor();
+			Devices_Functions.verifyLoadingDetailColor("Volt Drop (worst case)");
+			
 			// Navigate to Points tab
 			repo.ProfileConsys1.tab_Points.Click();
 			Delay.Duration(500, false);

@@ -174,6 +174,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 28/01/2019  Alpesh Dhakad- 29/07/2019 - Updated script as per new build xpath updates
 		 * Alpesh Dhakad - 16/08/2019 - Updated with new navigation tree method, xpath and devices gallery
+		 * Alpesh Dhakad - 03/12/2019 - Updated test scripts with new method for loading details
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify5VPsuLoadOnAdditionDeletionOfAccessories(string sFileName,string sAddPanelandDevicesSheet)
@@ -185,7 +186,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected5VPSU,expected2nd5VPSU,expected3rd5VPSU,sType;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected5VPSU,expected2nd5VPSU,expected3rd5VPSU,sType,LoadingDetailsName;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -202,6 +203,8 @@ namespace TestProject.Libraries
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expected2nd5VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				expected3rd5VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -219,7 +222,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify5VPSULoadValue(expected5VPSU,PanelType);
+				//verify5VPSULoadValue(expected5VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected5VPSU,LoadingDetailsName);
+
 				
 				// Click on Expander node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -233,7 +238,9 @@ namespace TestProject.Libraries
 				
 				
 				// Verify 24V PSU load value
-				verify5VPSULoadValue(expected2nd5VPSU,PanelType);
+				//verify5VPSULoadValue(expected2nd5VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected2nd5VPSU,LoadingDetailsName);
+
 				
 				// Click on Expander node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -245,7 +252,9 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify 24V PSU load value
-				verify5VPSULoadValue(expected3rd5VPSU,PanelType);
+				//verify5VPSULoadValue(expected3rd5VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected3rd5VPSU,LoadingDetailsName);
+
 				
 				// Delete added Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -1252,6 +1261,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 08/01/2019 Alpesh Dhakad - 31/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 03/12/2019 - Updated test scripts with new method for loading details 
 		 *************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VLoadOnChangingCPU(string sFileName,string sAddPanelSheet)
@@ -1263,7 +1273,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,changeCPUType,PanelType,expectedMax40VPSU,expected40VPSU,changePSUType;
+			string PanelName,PanelNode,CPUType,sRowNumber,changeCPUType,PanelType,expectedMax40VPSU,expected40VPSU,changePSUType,LoadingDetailsName;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -1279,6 +1289,8 @@ namespace TestProject.Libraries
 				expectedMax40VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				expected40VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				// sPSUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -1310,10 +1322,13 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify max 40V PSU load value
-				verifyMax40VPSULoad(expectedMax40VPSU,PanelType);
+				//verifyMax40VPSULoad(expectedMax40VPSU,PanelType);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMax40VPSU,LoadingDetailsName);
 				
 				// Verify 40V PSU load value
-				verify40VPSULoadValue(expected40VPSU,PanelType);
+				//verify40VPSULoadValue(expected40VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expected40VPSU,LoadingDetailsName);
+				
 				
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);

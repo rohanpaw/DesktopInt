@@ -4529,9 +4529,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>7c7a8973-1dbb-4186-965d-0ae7e2206f2f</id>
       <recordtableid>09d7393b-951e-4f27-bd45-2fa454bb16b3</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4639,14 +4639,14 @@
       <recordtableid>33c8bdf0-b06e-49cb-8e8d-1de09c7996e3</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_5V_Load_On_Addition_Deletion_Of_Loop_Cards.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>2c147bde-4114-42b6-8326-1f9994226f78</id>
       <recordtableid>a9339177-ff7a-4b4f-bb8a-ee6d9c0f7f58</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_5V_Load_On_Addition_Deletion_Of_Slot_Cards.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>2d91c2bc-77f4-4742-9313-4ea23a302a1b</id>
       <recordtableid>2858bbbe-c907-4cf4-b03d-09a82823a099</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_5V_Load_On_Changing_CPU_Of_Panel.rxrec">
       <id>0cdc3d3e-97ec-40b6-a50a-6dbd255d513c</id>

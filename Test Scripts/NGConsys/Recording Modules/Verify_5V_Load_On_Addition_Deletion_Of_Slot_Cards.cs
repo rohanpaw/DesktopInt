@@ -91,17 +91,20 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.000", "PFI");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(5));
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.000", "PFI");
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(6));
             repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(8));
             repo.FormMe.tab_PanelAccessories.Click();
             Delay.Milliseconds(200);
             
@@ -113,8 +116,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("PCS800", "Accessories");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("PCS800", "Accessories");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("POS800-S", "Accessories");
             Delay.Milliseconds(0);
@@ -122,7 +125,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("POS800-M", "Accessories");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(14));
             repo.FormMe.tab_Inventory.Click();
             Delay.Milliseconds(200);
             
@@ -136,10 +139,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.030", "PFI");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.030", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(18));
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.030", "PFI");
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(20));
             repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
             
@@ -164,14 +170,17 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.DeleteDeviceUsingLabel("POS800-M-1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabel("PCS800-1");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.DeleteDeviceUsingLabel("PCS800-1");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.020", "PFI");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.020", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.020", "PFI");
+            //Delay.Milliseconds(0);
             
         }
 

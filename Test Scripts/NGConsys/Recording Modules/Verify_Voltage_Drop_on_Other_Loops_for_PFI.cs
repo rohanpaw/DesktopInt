@@ -97,10 +97,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.07");
+            //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.07");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.15");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.07", "Volt Drop (V)");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.15");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.15", "Volt Drop (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
@@ -112,10 +118,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.00");
+            //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.00");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.00");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (V)");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.00");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");

@@ -7724,6 +7724,8 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoadingUnits);
 			}
 			
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
 		}
 		
 		/**************************************************************************************
@@ -7751,11 +7753,13 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedMaxUnits  + " Actual Units: "+ MaxLoadingUnits);
 			}
 			
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
 		}
 		
 		/********************************************************************
-		 * Function Name: getProgressBarColorForISUnits
-		 * Function Details: Method to verify progress bar color for IS units
+		 * Function Name: getProgressBarColors
+		 * Function Details: Method to verify progress bar color 
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
@@ -7772,6 +7776,40 @@ namespace TestProject.Libraries
 			
 			Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " color  "+ actualColour + " displayed ");
 		}
+		
+		
+		/********************************************************************
+		 * Function Name: verifyLoadingDetailColor
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 05/12/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void verifyLoadingDetailColor(string LoadingDetail)
+		{
+			string expectedColor;
+			sLoadingDetail = LoadingDetail;
+			
+			//Go to Physical layout
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Delay.Duration(500, false);
+			
+			
+			float ActualLoadingUnits = float.Parse(repo.FormMe.txt_ActualLoadingDetailsValue.TextValue);
+			
+			string actualColour = repo.FormMe.LoadingDetailsProgressbarColor.GetAttributeValue<string>("foreground");
+			
+			//Fetch max volt drop text value and storing it in string
+			float MaxLoadingUnits = float.Parse(repo.FormMe.txt_MaxLoadingDetailsValue.TextValue);
+			
+			
+			expectedColor = Devices_Functions.calculatePercentage(ActualLoadingUnits, MaxLoadingUnits);
+			
+			Devices_Functions.VerifyPercentage(expectedColor, actualColour);
+		}
+		
 		
 	}
 }
