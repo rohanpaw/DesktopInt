@@ -5384,9 +5384,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Max_DC_Units_for_FIM.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>0d556a13-42fe-4343-b4b5-649914dfd7df</id>
       <recordtableid>d04aaa5c-fb85-4e2c-9af5-ad8d7a8fd3d5</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Max_DC_Units_for_PFI.rxrec">
       <id>9801431a-9b9f-4bbd-acf4-bb0630a1b089</id>

@@ -255,7 +255,7 @@ namespace TestProject.Libraries
 		{
 			Excel_Utilities.OpenExcelFile(sFileName,sPanelLED);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
-			string expectedDCUnits;
+			string expectedDCUnits,DCUnitLoadingDetailName,DCUnitWorstCaseLoadingDetailName;
 			for (int i=8; i<=rows;i++)
 			{
 				int PanelLED;
@@ -272,8 +272,16 @@ namespace TestProject.Libraries
 				
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
-				verifyDCUnitsValue(expectedDCUnits);
-				verifyDCUnitsWorstCaseValue(expectedDCUnits);
+				DCUnitLoadingDetailName = ((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
+				DCUnitWorstCaseLoadingDetailName = ((Range)Excel_Utilities.ExcelRange.Cells[3,6]).Value.ToString();
+
+				
+				//verifyDCUnitsValue(expectedDCUnits);
+				//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
 			}
 			Excel_Utilities.CloseExcel();
 		}
@@ -457,20 +465,25 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/********************************************************************************************************************
 		 * Function Name: VerifyDCUnitsAndWorstCaseIndicators
 		 * Function Details: To verify DC unit,  worst cases indicators and its color
 		 * Parameter/Arguments: fileName, sheetName of add device
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update :
-		 ********************************************************************/
+		 ********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDCUnitsAndWorstCaseIndicators(string sFileName,string sAddDevicesSheet)
 		{
-			string expectedColorCodeDC, expectedColorCodeWorstCase, sType,sDeviceName;
+			string expectedColorCodeDC, expectedColorCodeWorstCase, sType,sDeviceName,DCUnitLoadingDetailName,DCUnitWorstCaseLoadingDetailName;
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
+			DCUnitWorstCaseLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[3,6]).Value.ToString();
+			
+			
 			for(int j=8;j<=rows;j++)
 			{
 				sDeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[j,1]).Value.ToString();
@@ -485,13 +498,19 @@ namespace TestProject.Libraries
 				float maxDCUnits = float.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,5]).Value.ToString());
 				float expectedWorstCaseUnits = float.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,6]).Value.ToString());
 				float maxWorstCaseUnits = float.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,7]).Value.ToString());
-				verifyDCUnitsValue(expectedDCUnits.ToString());
+				
+				//verifyDCUnitsValue(expectedDCUnits.ToString());
+				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits.ToString(),DCUnitLoadingDetailName);
+
+				
+				
+				
 				//verifyWorstCaseValue
 				expectedColorCodeDC = Devices_Functions.calculatePercentage(expectedDCUnits, maxDCUnits);
 				expectedColorCodeWorstCase = Devices_Functions.calculatePercentage(expectedWorstCaseUnits, maxWorstCaseUnits);
 				//repo.ProfileConsys1.cell_ACUnits.Click();
-				string actualColourDC = Devices_Functions.getProgressBarColor("Current (DC Units)");
-				string actualColourWorstCase = Devices_Functions.getProgressBarColor("Current (worst case)");
+				string actualColourDC = Devices_Functions.getProgressBarColors("Current (DC Units)");
+				string actualColourWorstCase = Devices_Functions.getProgressBarColors("Current (worst case)");
 				Devices_Functions.VerifyPercentage(expectedColorCodeDC,actualColourDC);
 				Devices_Functions.VerifyPercentage(expectedColorCodeWorstCase,actualColourWorstCase);
 				repo.ProfileConsys1.tab_Points.Click();
@@ -839,21 +858,22 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 		}
 
-		/******************************************************************************************************
+		/****************************************************************************************************************
 		 * Function Name: VerifyDCCalculationOnAddingDevices()
 		 * Function Details: To verify DC calculation on adding devices on Loop A and Loop B
 		 * Parameter/Arguments: sFileName, sAddDevicesLoopA, sAddDevicesLoopB
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 *******************************************************************************************************/
+		 * Alpesh Dhakad - 06/12/2019 - Updated test scripts with new method for loading details
+		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDCCalculationOnAddingDevices(string sFileName, string sAddDevicesLoopA, string sAddDevicesLoopB)
 		{
 			//Add devies in loop A,
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesLoopA);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
-			string expectedDCUnits, sType, sLabelName;
+			string expectedDCUnits, sType, sLabelName,DCUnitLoadingDetailName,DCUnitWorstCaseLoadingDetailName;
 			for(int i=8; i<=rows; i++)
 			{
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
@@ -869,8 +889,15 @@ namespace TestProject.Libraries
 			//Verify DC Units of Loop A
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop A on addition of devices in Loop A");
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[2,2]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
-			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,3]).Value.ToString();
+			DCUnitWorstCaseLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[3,3]).Value.ToString();
+			
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
 			
 			//Verify DC Units of Loop B
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on addition of devices in Loop A");
@@ -880,8 +907,12 @@ namespace TestProject.Libraries
 				 
 			
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[3,2]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
-			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
 			
 			Excel_Utilities.CloseExcel();
 			
@@ -908,8 +939,19 @@ namespace TestProject.Libraries
 			//Verify DC Units of Loop B
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop B on addition of devices in Loop B");
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[3,2]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
-			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,3]).Value.ToString();
+			DCUnitWorstCaseLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[3,3]).Value.ToString();
+			
+			
+			
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
+			
+			
 			
 			//Verify DC Units of Loop A
 			// Click on Loop A node
@@ -919,8 +961,13 @@ namespace TestProject.Libraries
 			
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop A on addition of devices in Loop B");
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[2,2]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
-			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
+			
 			
 			Excel_Utilities.CloseExcel();
 
@@ -985,6 +1032,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasim
 		 * Last Update : 08/01/2019 Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated scripts as per new build and xpaths
+		 * Alpesh Dhakad - 06/12/2019 - Updated test scripts with new method for loading details
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCurrentDCUnitscalculation(string sFileName,string sAddPanelSheet)
@@ -996,7 +1044,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string ModelNumber,sType,sLabelName,sAssignedBase,expectedDCUnits,DefaultDCUnits,ChangedDCUnit,sPanelLEDCount;
+			string ModelNumber,sType,sLabelName,sAssignedBase,expectedDCUnits,DefaultDCUnits,ChangedDCUnit,sPanelLEDCount,LoadingDetailsName;
 			int PanelLED;
 			
 			PanelLED=0;
@@ -1016,6 +1064,8 @@ namespace TestProject.Libraries
 				DefaultDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sPanelLEDCount = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				ChangedDCUnit = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+
 				
 				int.TryParse(sPanelLEDCount,out PanelLED);
 				
@@ -1036,8 +1086,9 @@ namespace TestProject.Libraries
 				
 
 				//Verify Default DC Units
-				verifyDCUnitsValue(expectedDCUnits);
-				
+				//verifyDCUnitsValue(expectedDCUnits);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,LoadingDetailsName);
+
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeExpander("Site");
 				
@@ -1060,7 +1111,9 @@ namespace TestProject.Libraries
 			repo.FormMe.Paste.Click();
 			
 			//Verify DC Units
-			verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsValue(expectedDCUnits);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,"Current (DC Units)");
+
 			
 			// Click on Site node
 			Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -1079,7 +1132,9 @@ namespace TestProject.Libraries
 			repo.FormMe.ButtonCut1.Click();
 			
 			//Verify Default DC Units
-			verifyDCUnitsValue(DefaultDCUnits);
+			//verifyDCUnitsValue(DefaultDCUnits);
+			Devices_Functions.verifyLoadingDetailsValue(DefaultDCUnits,"Current (DC Units)");
+
 			
 			// Click on Site node
 				Common_Functions.ClickOnNavigationTreeExpander("Site");
@@ -1096,7 +1151,8 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 			//Verify Default DC Units
-			verifyDCUnitsValue(ChangedDCUnit);
+			//verifyDCUnitsValue(ChangedDCUnit);
+			Devices_Functions.verifyLoadingDetailsValue(ChangedDCUnit,"Current (DC Units)");
 
 		}
 		

@@ -91,19 +91,31 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("220");
+            //Libraries.DC_Functions.verifyDCUnitsValue("220");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyMaxDCUnits("2200");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyMaxDCUnits("2200");
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.DC_Functions.VerifyDCCalculationOnChangingBase("Verify DC Units Calculation on changing base of device to sounder base", "Add Devices Loop A", "Add Sounder Base Device");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("384.9");
+            //Libraries.DC_Functions.verifyDCUnitsValue("384.9");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyDCUnitsWorstCaseValue("384.9");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("384.9", "Current (DC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsWorstCaseValue("384.9");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("384.9", "Current (worst case)");
             Delay.Milliseconds(0);
             
         }

@@ -87,7 +87,9 @@ namespace TestProject.Recording_Modules
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             
-            Libraries.DC_Functions.verifyMaxDCUnits("2200");
+            //Libraries.DC_Functions.verifyMaxDCUnits("2200");
+            
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
             
         }
 

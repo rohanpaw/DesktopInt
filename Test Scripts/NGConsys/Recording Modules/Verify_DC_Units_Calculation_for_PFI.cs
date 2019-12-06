@@ -100,13 +100,19 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("220");
+            //Libraries.DC_Functions.verifyDCUnitsValue("220");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-D");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("220");
+            //Libraries.DC_Functions.verifyDCUnitsValue("220");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -115,25 +121,37 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.DeleteDevices("Verify DC Units Calculation for PFI", "Delete Devices Loop A");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("366");
+            //Libraries.DC_Functions.verifyDCUnitsValue("366");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("366", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("366");
+            //Libraries.DC_Functions.verifyDCUnitsValue("366");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("366", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DeleteDevices("Verify DC Units Calculation for PFI", "Delete Devices Loop B");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("339.5");
+            //Libraries.DC_Functions.verifyDCUnitsValue("339.5");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("339.5", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("339.5");
+            //Libraries.DC_Functions.verifyDCUnitsValue("339.5");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("339.5", "Current (DC Units)");
             Delay.Milliseconds(0);
             
         }
