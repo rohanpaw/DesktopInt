@@ -7774,7 +7774,6 @@ namespace TestProject.Libraries
 			string actualColour;
 			return actualColour = repo.FormMe.LoadingDetailsProgressbarColor.GetAttributeValue<string>("foreground");
 			
-			Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " color  "+ actualColour + " displayed ");
 		}
 		
 		

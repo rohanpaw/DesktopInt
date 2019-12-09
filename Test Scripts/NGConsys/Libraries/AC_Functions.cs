@@ -109,6 +109,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated scripts as per new build and xpaths
+		 * Last Update:Poonam Kadam-12/9/19- updated loading details method
 		 ********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyACCalculation(string sFileName,string sAddDevicesSheet, string sDeleteDevicesSheet)
@@ -117,14 +118,14 @@ namespace TestProject.Libraries
 			//Excel_Utilities.OpenSheet(sAddDevicesSheet);
 			float fAcUnits,fMaxACUnits;
 			int calculatedAcUnits=0,calculatedAcUnitsofLoopB,calculatedAcUnitsofLoopA;
-			string actualColour;
+			string actualColour,ACUnitsLoadingDetails;
 			
 			//Get Max AC Units and AC Units for loop A using input excel sheet
 			calculatedAcUnitsofLoopA = calculateACUnits(sFileName,sAddDevicesSheet);
 			
 			sACUnits = calculatedAcUnitsofLoopA.ToString();
 			sMaxACUnits =  ((Range)Excel_Utilities.ExcelRange.Cells[8,4]).Value.ToString();
-			
+			ACUnitsLoadingDetails=((Range)Excel_Utilities.ExcelRange.Cells[8,5]).Value.ToString();
 			//Convert to float and calculate AC Units percentage to identify Color of progress bar
 			float.TryParse(sACUnits,out fAcUnits);
 			float.TryParse(sMaxACUnits,out fMaxACUnits);
@@ -135,8 +136,10 @@ namespace TestProject.Libraries
 			Delay.Duration(500, false);
 			
 			//Verify Max AC Units and AC Units
-			verifyMaxACUnits();
-			verifyACUnits();
+			verifyMaxLoadingDetailsValue(sMaxACUnits,ACUnitsLoadingDetails);
+			//verifyMaxACUnits();
+			verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			//verifyACUnits();
 			
 			//Get and verify progressbar color from UI
 			repo.ProfileConsys1.cell_ACUnits.Click();
@@ -152,8 +155,10 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			
 			//verify Max AC units and AC Units
-			verifyMaxACUnits();
-			verifyACUnits();
+			verifyMaxLoadingDetailsValue(sMaxACUnits,ACUnitsLoadingDetails);
+			//verifyMaxACUnits();
+			verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			//verifyACUnits();
 			
 			//Get and verify progressbar color from UI
 			repo.ProfileConsys1.cell_ACUnits.Click();
@@ -187,7 +192,8 @@ namespace TestProject.Libraries
 				
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
-			verifyACUnits();
+			verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			//verifyACUnits();
 			
 			//Get and verify progressbar color from UI
 			repo.ProfileConsys1.cell_ACUnits.Click();
@@ -224,7 +230,8 @@ namespace TestProject.Libraries
 				
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
-			verifyACUnits();
+			verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			//verifyACUnits();
 			
 			//Verify AC units displayed for loop B
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B");
@@ -234,7 +241,8 @@ namespace TestProject.Libraries
 				
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
-			verifyACUnits();
+		verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			//verifyACUnits();
 			
 			
 			Excel_Utilities.ExcelWB.Close(false, null, null);

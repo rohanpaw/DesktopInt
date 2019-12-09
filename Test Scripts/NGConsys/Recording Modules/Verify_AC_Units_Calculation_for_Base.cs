@@ -103,13 +103,19 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AssignAdditionalBase("801 CH - 1", "801SB [516.800.907] @ 90dB", "13");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyACUnitsValue("3.6");
+            //Libraries.AC_Functions.verifyACUnitsValue("3.6");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("3.6", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RemoveBase("801 CH - 1", "13");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyACUnitsValue("1");
+            //Libraries.AC_Functions.verifyACUnitsValue("1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
         }
