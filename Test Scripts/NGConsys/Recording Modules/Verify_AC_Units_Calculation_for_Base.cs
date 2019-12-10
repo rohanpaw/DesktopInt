@@ -97,7 +97,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AssignDeviceBase("801 CH - 1", "5BI 5\" [517.050.018]", "13");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyACUnitsValue("1.2");
+            //Libraries.AC_Functions.verifyACUnitsValue("1.2");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AssignAdditionalBase("801 CH - 1", "801SB [516.800.907] @ 90dB", "13");

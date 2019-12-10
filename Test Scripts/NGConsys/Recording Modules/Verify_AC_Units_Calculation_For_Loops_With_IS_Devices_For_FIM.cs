@@ -94,7 +94,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("Exi800", "Other");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyMaxACUnitsValue("20.39999");
+            //Libraries.AC_Functions.verifyMaxACUnitsValue("20.39999");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("20.39999", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CHEx IS", "Detectors");
@@ -106,7 +109,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 HEx IS", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyMaxACUnitsValue("3.6");
+            //Libraries.AC_Functions.verifyMaxACUnitsValue("3.6");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.6", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.ChangeCableLength(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "1000"));
@@ -115,7 +121,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyMaxACUnitsValue("103.6");
+            //Libraries.AC_Functions.verifyMaxACUnitsValue("103.6");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("103.6", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.ChangeCableCapacitance(ValueConverter.ArgumentFromString<int>("fchangeCableCapacitance", "90"), "Exi800");
@@ -127,7 +136,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyMaxACUnitsValue("154");
+            //Libraries.AC_Functions.verifyMaxACUnitsValue("154");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("154", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.AC_Functions.VerifyACUnitIndicationWithISDevices();

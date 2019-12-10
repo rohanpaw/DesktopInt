@@ -127,44 +127,45 @@ namespace TestProject.Libraries
 			sMaxACUnits =  ((Range)Excel_Utilities.ExcelRange.Cells[8,4]).Value.ToString();
 			ACUnitsLoadingDetails=((Range)Excel_Utilities.ExcelRange.Cells[8,5]).Value.ToString();
 			//Convert to float and calculate AC Units percentage to identify Color of progress bar
-			float.TryParse(sACUnits,out fAcUnits);
-			float.TryParse(sMaxACUnits,out fMaxACUnits);
-			string expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
+//			float.TryParse(sACUnits,out fAcUnits);
+//			float.TryParse(sMaxACUnits,out fMaxACUnits);
+//			string expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
 			
 			//Go to Physical layout
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
 			
 			//Verify Max AC Units and AC Units
-			verifyMaxLoadingDetailsValue(sMaxACUnits,ACUnitsLoadingDetails);
+			Devices_Functions.verifyMaxLoadingDetailsValue(sMaxACUnits,ACUnitsLoadingDetails);
 			//verifyMaxACUnits();
-			verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
 			//verifyACUnits();
 			
-			//Get and verify progressbar color from UI
-			repo.ProfileConsys1.cell_ACUnits.Click();
-			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
-			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
-			
+//			//Get and verify progressbar color from UI
+//			repo.ProfileConsys1.cell_ACUnits.Click();
+//			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
+//			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
+//			
+			Devices_Functions.verifyLoadingDetailColor(ACUnitsLoadingDetails);
 			//Verify AC units displayed for loop B
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B");
 			
 			// Click on Loop B node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
-				
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+			
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			
 			//verify Max AC units and AC Units
-			verifyMaxLoadingDetailsValue(sMaxACUnits,ACUnitsLoadingDetails);
+			Devices_Functions.verifyMaxLoadingDetailsValue(sMaxACUnits,ACUnitsLoadingDetails);
 			//verifyMaxACUnits();
-			verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
 			//verifyACUnits();
 			
 			//Get and verify progressbar color from UI
-			repo.ProfileConsys1.cell_ACUnits.Click();
-			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
-			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
-			
+//			repo.ProfileConsys1.cell_ACUnits.Click();
+//			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
+//			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
+//			
 			//Add devices in loop B and calculate AC Units percentage
 			repo.ProfileConsys1.tab_Points.Click();
 			calculatedAcUnitsofLoopB = calculateACUnits(sFileName,sAddDevicesSheet);
@@ -172,34 +173,35 @@ namespace TestProject.Libraries
 			calculatedAcUnits= calculatedAcUnitsofLoopB + calculatedAcUnitsofLoopA;
 			sACUnits = calculatedAcUnits.ToString();
 			float.TryParse(sACUnits,out fAcUnits);
-			expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
+			Devices_Functions.verifyLoadingDetailColor(ACUnitsLoadingDetails);
+			//expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
 			
 			//verify Actual AC Units displayed for loop B after addition of devices
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B after addition of devices");
-			verifyACUnits();
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
 			
 			//Get and verify progressbar color from UI
-			repo.ProfileConsys1.cell_ACUnits.Click();
-			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
-			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
+//			repo.ProfileConsys1.cell_ACUnits.Click();
+//			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
+//			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
 			
 			//Verify AC units displayed for loop A
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop A");
 			// Click on Loop A node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-				
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
-			verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
 			//verifyACUnits();
 			
-			//Get and verify progressbar color from UI
-			repo.ProfileConsys1.cell_ACUnits.Click();
-			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
-			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
-			
+//			//Get and verify progressbar color from UI
+//			repo.ProfileConsys1.cell_ACUnits.Click();
+//			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
+//			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
+			Devices_Functions.verifyLoadingDetailColor(ACUnitsLoadingDetails);
 			//Close Excel
 			Excel_Utilities.ExcelWB.Close(false, null, null);
 			Excel_Utilities.ExcelAppl.Quit();
@@ -226,22 +228,22 @@ namespace TestProject.Libraries
 			//Verify AC units displayed for loop A
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop A");
 			// Click on Loop A node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-				
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
-			verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
 			//verifyACUnits();
 			
 			//Verify AC units displayed for loop B
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B");
 			
 			// Click on Loop B node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
-				
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+			
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
-		verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
 			//verifyACUnits();
 			
 			
@@ -324,6 +326,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated scripts as per new build and xpaths
+		 * Last update : Poonam kadam - 12/9/19 - Updated loading details methods
 		 **************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyACCalculationforFIM(string sFileName,string sAddDevicesSheet, string sDeleteDevicesSheet)
@@ -332,17 +335,18 @@ namespace TestProject.Libraries
 			//Excel_Utilities.OpenSheet(sAddDevicesSheet);
 			float fAcUnits,fMaxACUnits;
 			int calculatedAcUnitsofLoopB,calculatedAcUnitsofLoopA;
-			string actualColour;
+			string actualColour,ACUnitsLoadingDetails;
 			
 			//Get Max AC Units and AC Units for loop A using input excel sheet
 			calculatedAcUnitsofLoopA = calculateACUnits(sFileName,sAddDevicesSheet);
 			sACUnits = calculatedAcUnitsofLoopA.ToString();
 			sMaxACUnits =  ((Range)Excel_Utilities.ExcelRange.Cells[8,4]).Value.ToString();
+			ACUnitsLoadingDetails=((Range)Excel_Utilities.ExcelRange.Cells[8,5]).Value.ToString();
 			
 			//Convert to float and calculate AC Units percentage to identify Color of progress bar
 			float.TryParse(sACUnits,out fAcUnits);
 			float.TryParse(sMaxACUnits,out fMaxACUnits);
-			string expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
+//			string expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
 			
 			//Go to Physical layout
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
@@ -350,26 +354,33 @@ namespace TestProject.Libraries
 			
 			//Verify Max AC Units and AC Units of Loop A
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop A");
-			verifyMaxACUnits();
-			verifyACUnits();
+			//Verify Max AC Units and AC Units
+			Devices_Functions.verifyMaxLoadingDetailsValue(sMaxACUnits,ACUnitsLoadingDetails);
+			//verifyMaxACUnits();
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			//verifyACUnits();
 			
 			//Get and verify progressbar color from UI
-			repo.ProfileConsys1.cell_ACUnits.Click();
-			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
-			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
-			
+//			repo.ProfileConsys1.cell_ACUnits.Click();
+//			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
+//			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
+//			
+			Devices_Functions.verifyLoadingDetailColor(ACUnitsLoadingDetails);
 			//Verify AC units displayed for loop B : AC units of Loop A should not be reflected in Loop B
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B");
 			
 			// Click on Loop B node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
-				
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 			
-			//verify Max AC units and AC Units
-			verifyMaxACUnits();
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			
+			//Verify Max AC Units and AC Units
+			Devices_Functions.verifyMaxLoadingDetailsValue(sMaxACUnits,ACUnitsLoadingDetails);
+			//verifyMaxACUnits();
 			sACUnits="0";
-			verifyACUnits();
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			//verifyACUnits();
+			
 			
 			//Get and verify progressbar color from UI
 //			float.TryParse(sACUnits,out fAcUnits);
@@ -385,35 +396,39 @@ namespace TestProject.Libraries
 			//calculatedAcUnits= calculatedAcUnitsofLoopB;
 			sACUnits = calculatedAcUnitsofLoopB.ToString();
 			float.TryParse(sACUnits,out fAcUnits);
-			expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
+//			expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
 			
 			//verify Actual AC Units displayed for loop B after addition of devices
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B after addition of devices");
-			verifyACUnits();
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			//verifyACUnits();
 			
 			//Get and verify progressbar color from UI
-			repo.ProfileConsys1.cell_ACUnits.Click();
-			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
-			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
+//			repo.ProfileConsys1.cell_ACUnits.Click();
+//			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
+//			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
+			Devices_Functions.verifyLoadingDetailColor(ACUnitsLoadingDetails);
 			
 			//Verify AC units displayed for loop A
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop A");
 			// Click on Loop A node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 			
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
 			sACUnits = calculatedAcUnitsofLoopA.ToString();
 			float.TryParse(sACUnits,out fAcUnits);
-			expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
-			verifyACUnits();
+//			expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			//verifyACUnits();
 			
 			//Get and verify progressbar color from UI
-			repo.ProfileConsys1.cell_ACUnits.Click();
-			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
-			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
+//			repo.ProfileConsys1.cell_ACUnits.Click();
+//			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
+//			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
+			Devices_Functions.verifyLoadingDetailColor(ACUnitsLoadingDetails);
 			
 			//Close Excel
 			Excel_Utilities.ExcelWB.Close(false, null, null);
@@ -441,23 +456,25 @@ namespace TestProject.Libraries
 			//Verify AC units displayed for loop A
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop A");
 			// Click on Loop A node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-				
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
-			verifyACUnits();
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			//verifyACUnits();
 			
 			//Verify AC units displayed for loop B
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B");
 			
 			// Click on Loop B node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 			
 			
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Delay.Duration(500, false);
 			sACUnits = calculatedAcUnitsofLoopB.ToString();
-			verifyACUnits();
+			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
+			//verifyACUnits();
 			
 			
 			Excel_Utilities.ExcelWB.Close(false, null, null);

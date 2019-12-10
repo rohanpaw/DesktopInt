@@ -91,7 +91,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyMaxACUnitsValue("250");
+            //Libraries.AC_Functions.verifyMaxACUnitsValue("250");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("250", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -118,13 +121,19 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400H - 3", "440DSB [576.440.001] @ 90dB", "13");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyACUnitsValue("4.22");
+            //Libraries.AC_Functions.verifyACUnitsValue("4.22");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("4.22", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RemoveBase("400P - 1", "13");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyACUnitsValue("4");
+            //Libraries.AC_Functions.verifyACUnitsValue("4");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("22.2", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.SaveProject("63355");
@@ -145,7 +154,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayoutOnReopen("1", "4/250");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(25));
             repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
             

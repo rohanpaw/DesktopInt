@@ -97,7 +97,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangeCableLength("FIM", ValueConverter.ArgumentFromString<int>("fCableLength1", "500"), ValueConverter.ArgumentFromString<int>("fCableLength2", "0"));
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.verifyMaxACUnitsValue("400");
+            //Libraries.AC_Functions.verifyMaxACUnitsValue("400");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("400", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
         }
