@@ -91,22 +91,40 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "14"));
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.500", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax24VPSULoad("3.100", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "15"));
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.100", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax40VPSULoadForFCPanel("1.250", "16");
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.250", "40V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
+            //Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "14"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax24VPSULoad("3.100", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "15"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax40VPSULoadForFCPanel("1.250", "16");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V (A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -115,7 +133,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node1 - FireClass 64-4 ZL");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(18));
             repo.ProfileConsys1.txt_SearchProperties.Click();
             Delay.Milliseconds(200);
             
@@ -128,14 +146,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.433", "5V");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.433", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.433", "5V");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
+            //Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
@@ -152,22 +179,40 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "14"));
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.500", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax24VPSULoad("3.100", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "15"));
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.100", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax40VPSULoadForFCPanel("1.250", "16");
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.250", "40V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
+            //Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "14"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax24VPSULoad("3.100", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "15"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax40VPSULoadForFCPanel("1.250", "16");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V (A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -176,7 +221,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node1 - FireClass 64-4 ZL");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(47));
             repo.ProfileConsys1.txt_SearchProperties.Click();
             Delay.Milliseconds(200);
             
@@ -189,14 +234,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.433", "5V");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.433", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.433", "5V");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.250", "24V");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
+            //Delay.Milliseconds(0);
             
         }
 

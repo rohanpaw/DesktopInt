@@ -6743,7 +6743,7 @@ rxversion="8.3">
 			id="57ed1357-6ad0-4f24-8b21-de92b7d2a98b"
 			name="Verify_AC_Units_Calculation_for_PFI_Loop">
 				<description>
-					<![CDATA[<p>NGC-493/TC-122 OR NGC-989</p>]]>
+					<![CDATA[<p>NGC-493/TC-122 OR NGC-989- Ranorex exception occurs</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -24654,19 +24654,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="31bdc4a3-6299-44fa-ab6a-9c4402b42cf0">
-			</testcontainer>
-			<testcontainer
-			id="4a1a38e5-42f5-4da0-8b75-39f40543a385">
-			</testcontainer>
-			<testcontainer
-			id="5987d1b6-057d-455d-85ac-167253a6cc46">
-			</testcontainer>
-			<testcontainer
-			id="6b229399-99c5-41f8-a854-d083b93798f0">
-			</testcontainer>
-			<testcontainer
-			id="d29a6c80-d886-4c37-ac9c-50f9c0ba75bf">
+			id="405fcb6b-fb0a-45a5-b360-e8602f537671">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -24696,10 +24684,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

@@ -177,8 +177,116 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.349
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Main Processor 5V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.174
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Main Processor 24V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.160
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						40V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify5VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -214,7 +322,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify24VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -250,7 +358,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify40VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -487,8 +595,116 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.349
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Main Processor 5V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.193
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Main Processor 24V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.160
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						40V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify5VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -524,7 +740,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify24VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -560,7 +776,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify40VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -785,8 +1001,116 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.461
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Main Processor 5V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.174
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Main Processor 24V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.160
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						40V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify5VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -822,7 +1146,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify24VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -858,7 +1182,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify40VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -1047,8 +1371,116 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.461
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Main Processor 5V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.174
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Main Processor 24V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.160
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						40V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify5VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -1084,7 +1516,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify24VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -1120,7 +1552,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify40VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -1345,8 +1777,116 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.349
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Main Processor 5V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.174
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						24V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
+				<argument
+				argname="expectedUnits"
+				id="dbb85ab7-b07b-4efd-aca2-3921591660e3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.160
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="3274e903-d75f-449f-9e9a-b05dc520e329">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						40V (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify5VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -1382,7 +1922,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify24VPSULoadValue"
 		namespace="TestProject.Libraries"
@@ -1418,7 +1958,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verify40VPSULoadValue"
 		namespace="TestProject.Libraries"

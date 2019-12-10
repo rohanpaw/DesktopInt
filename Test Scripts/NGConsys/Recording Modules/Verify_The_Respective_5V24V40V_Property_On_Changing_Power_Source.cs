@@ -95,14 +95,23 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.349", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.174", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.174", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.174", "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
@@ -125,14 +134,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.349", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.193", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.193", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.193", "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
@@ -140,7 +158,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(26));
             repo.FormMe.tab_Inventory.Click();
             Delay.Milliseconds(200);
             
@@ -156,14 +174,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.461", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.461", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.174", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.174", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.461", "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.174", "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
@@ -171,7 +198,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(39));
             repo.FormMe.tab_Inventory.Click();
             Delay.Milliseconds(200);
             
@@ -184,14 +211,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.461", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.461", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.174", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.174", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.461", "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.174", "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
@@ -199,7 +235,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(39));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(51));
             repo.FormMe.tab_Inventory.Click();
             Delay.Milliseconds(200);
             
@@ -215,14 +251,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.349", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.174", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.174", "24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.349", "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.174", "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify40VPSULoadValue("0.160", "FIM");
+            //Delay.Milliseconds(0);
             
         }
 

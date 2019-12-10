@@ -91,14 +91,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "14"));
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.500", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax24VPSULoad("3.100", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "15"));
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.100", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax40VPSULoadForFCPanel("1.250", "16");
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.250", "40V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "14"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax24VPSULoad("3.100", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "15"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax40VPSULoadForFCPanel("1.250", "16");
+            //Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
@@ -115,14 +124,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.500", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax24VPSULoad("1.900", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "13"));
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.900", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax40VPSULoadForFCPanel("1.250", "14");
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.250", "40V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax24VPSULoad("1.900", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "13"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax40VPSULoadForFCPanel("1.250", "14");
+            //Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
@@ -139,14 +157,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.500", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax24VPSULoad("3.100", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "13"));
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.100", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyMax40VPSULoadForFCPanel("1.250", "14");
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.250", "40V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax24VPSULoad("3.100", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "13"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyMax40VPSULoadForFCPanel("1.250", "14");
+            //Delay.Milliseconds(0);
             
         }
 

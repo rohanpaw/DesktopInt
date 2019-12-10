@@ -672,7 +672,7 @@ namespace TestProject.Libraries
 				// Verify 24V PSU load value
 				
 				/*************************************************** 02/11/2019*****Updated with new method to verify loading details
- * *********************************************************************************************************************************/
+				 * *********************************************************************************************************************************/
 				//verify24VPSULoadValue(expected24VPSU,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(expected24VPSU,LoadingDetailsName);
 				
@@ -1124,7 +1124,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 23/01/2019  Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details 
+		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInPLXLoop(string sFileName,string sAddPanelandDevicesSheet)
@@ -1261,7 +1261,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 08/01/2019 Alpesh Dhakad - 31/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 * Alpesh Dhakad - 03/12/2019 - Updated test scripts with new method for loading details 
+		 * Alpesh Dhakad - 03/12/2019 - Updated test scripts with new method for loading details
 		 *************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VLoadOnChangingCPU(string sFileName,string sAddPanelSheet)
@@ -1442,7 +1442,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU;
+			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,s40VLoadingDetails;
 			int rowNumber;
 			float FourtyVLoad,Default40V;
 			
@@ -1454,6 +1454,7 @@ namespace TestProject.Libraries
 				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				s40VLoadingDetails= ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				
 				
 				int.TryParse(sRowNumber, out rowNumber);
@@ -1504,7 +1505,8 @@ namespace TestProject.Libraries
 					sExpected40VPSU= Expected40VPSU.ToString("0.000");
 					
 					// Verify 40V PSU load value on addition of Ethernet
-					verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetails);
 					
 					//Get 40V load from UI
 					sDefault40V = Get40VPSULoadValue(PanelType);
@@ -1529,7 +1531,8 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
 						// Verify 40V PSU load value on addition of Ethernet
-						verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetails);
 					}
 					
 					else
@@ -1569,7 +1572,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,sXBus40VLoad;
+			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,sXBus40VLoad,s40VLoadingDetail;
 			int rowNumber;
 			float RBusFourtyVLoad,Default40V,XBusFourtyVLoad;
 			
@@ -1581,7 +1584,7 @@ namespace TestProject.Libraries
 				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
-				
+				s40VLoadingDetail= ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -1641,7 +1644,8 @@ namespace TestProject.Libraries
 					sExpected40VPSU= Expected40VPSU.ToString("0.000");
 					
 					// Verify 40V PSU load value on addition of R-Bus & X-Bus template
-					verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					
 					//Get 40V load from UI
 					sDefault40V = Get40VPSULoadValue(PanelType);
@@ -1666,7 +1670,8 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
 						// Verify 40V PSU load value on addition of Ethernet
-						verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					}
 					
 					else
@@ -1739,7 +1744,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU;
+			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,s40VLoadingDetail;
 			int rowNumber;
 			float RBusFourtyVLoad,Default40V;
 			
@@ -1751,7 +1756,7 @@ namespace TestProject.Libraries
 				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
-				
+				s40VLoadingDetail = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -1799,7 +1804,8 @@ namespace TestProject.Libraries
 					sExpected40VPSU= Expected40VPSU.ToString("0.000");
 					
 					// Verify 40V PSU load value on addition printer
-					verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					
 					//Get 40V load from UI
 					sDefault40V = Get40VPSULoadValue(PanelType);
@@ -1823,8 +1829,9 @@ namespace TestProject.Libraries
 						// Click on Loop A node
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
-						// Verify 40V PSU load value on addition of Ethernet
-						verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						// Verify 40V PSU load value on addition of Rbus
+						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					}
 					
 					else
@@ -1865,7 +1872,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU;
+			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,s40VLoadingDetail;
 			int rowNumber;
 			float ZetfastFourtyVLoad,Default40V,Expected40VPSU;
 			
@@ -1877,7 +1884,7 @@ namespace TestProject.Libraries
 				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
-				
+				s40VLoadingDetail = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				// Add panels using test data in excel sheet
@@ -1938,8 +1945,8 @@ namespace TestProject.Libraries
 					sExpected40VPSU= Expected40VPSU.ToString("0.000");
 					
 					// Verify 40V PSU load value on addition of zetfast loop with devices
-					verify40VPSULoadValue(sExpected40VPSU,PanelType);
-					
+					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 				}
 				
 				for(int k=9; k<=7; k--)
@@ -1975,7 +1982,8 @@ namespace TestProject.Libraries
 							Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 							
 							// Verify 40V PSU load value on deletion of Zetfast loop
-							verify40VPSULoadValue(sExpected40VPSU,PanelType);
+							//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+							Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 						}
 					}
 					
@@ -2002,7 +2010,8 @@ namespace TestProject.Libraries
 							Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 							
 							// Verify 40V PSU load value on deletion of Zetfast loop
-							verify40VPSULoadValue(sExpected40VPSU,PanelType);
+							//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+							Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 							
 						}
 						else
@@ -2013,10 +2022,7 @@ namespace TestProject.Libraries
 						
 					}
 				}
-				
-				
-				
-				
+
 				
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -2047,7 +2053,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU;
+			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,s40VLoadingDetail;
 			int rowNumber;
 			float AccessoryFourtyVLoad,Default40V;
 			
@@ -2059,7 +2065,7 @@ namespace TestProject.Libraries
 				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
-				
+				s40VLoadingDetail = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -2110,7 +2116,8 @@ namespace TestProject.Libraries
 					sExpected40VPSU= Expected40VPSU.ToString("0.000");
 					
 					// Verify 40V PSU load value on addition printer
-					verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					
 					//Get 40V load from UI
 					sDefault40V = Get40VPSULoadValue(PanelType);
@@ -2140,7 +2147,8 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
 						// Verify 40V PSU load value on deletion of Accessory
-						verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					}
 					
 					else
@@ -2180,7 +2188,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,sIsPLXSupported;
+			string PanelName,PanelNode,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,sIsPLXSupported,s40VLoadingDetail;
 			int rowNumber;
 			bool isPLXSupported;
 			
@@ -2194,6 +2202,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				sExpected40VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				sIsPLXSupported = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				s40VLoadingDetail = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				
 				if (sIsPLXSupported.Equals("YES"))
 				{
 					isPLXSupported = true;
@@ -2218,7 +2228,8 @@ namespace TestProject.Libraries
 				;
 				
 				// Verify 40V PSU load value of Built in PLX loop card
-				verify40VPSULoadValue(sExpected40VPSU,PanelType);
+				//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 				
 				if(isPLXSupported)
 				{
@@ -2254,7 +2265,8 @@ namespace TestProject.Libraries
 						repo.FormMe.PLX800LoopCard_E.Click();
 						
 						// Verify 40V PSU load value of Built in PLX loop card
-						verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 						
 						//Delete External PLX loop card
 						
@@ -2299,7 +2311,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,CPUType,sRowNumber,sType,PanelType,sXLMFortyVLoad,sIsXLMSupported,sDefault40V,sExpected40VPSU;
+			string PanelName,PanelNode,CPUType,sRowNumber,sType,PanelType,sXLMFortyVLoad,sIsXLMSupported,sDefault40V,sExpected40VPSU,s40VLoadingDetail;
 			int rowNumber;
 			float Default40V,XLMFortyVLoad;
 			bool isXLMSupported;
@@ -2314,6 +2326,7 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				sDefault40V = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				sIsXLMSupported = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				s40VLoadingDetail = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				if (sIsXLMSupported.Equals("YES"))
 				{
 					isXLMSupported = true;
@@ -2338,7 +2351,8 @@ namespace TestProject.Libraries
 				
 				
 				// Verify 40V PSU load value of Built in PLX loop card
-				verify40VPSULoadValue(sDefault40V,PanelType);
+				//verify40VPSULoadValue(sDefault40V,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetail);
 				
 				if( isXLMSupported)
 				{
@@ -2378,7 +2392,8 @@ namespace TestProject.Libraries
 						sExpected40VPSU= Expected40VPSU.ToString("0.000");
 						
 						// Verify 40V PSU load value of after addition of XLM loop card
-						verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 						
 						//Generate expected 40V load on deletion
 						float.TryParse(sDefault40V, out Default40V);
@@ -2405,7 +2420,8 @@ namespace TestProject.Libraries
 						
 						
 						// Verify 40V PSU load value
-						verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 						
 					}
 				}
@@ -2436,7 +2452,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,sIsPLXSupported,sLoopsSupported,sDefault40V,sExpected40VLoadofDevices;
+			string PanelName,PanelNode,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,sIsPLXSupported,sLoopsSupported,sDefault40V,sExpected40VLoadofDevices,s40VLoadingDetail;
 			int rowNumber,iLoopsSupported,k;
 			bool isPLXSupported;
 			float Default40V,Expected40VLoadofDevices;
@@ -2452,6 +2468,7 @@ namespace TestProject.Libraries
 				sDefault40V = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				sIsPLXSupported = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sLoopsSupported = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				s40VLoadingDetail = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				int.TryParse(sLoopsSupported,out iLoopsSupported);
 				if (sIsPLXSupported.Equals("YES"))
 				{
@@ -2477,7 +2494,8 @@ namespace TestProject.Libraries
 				
 				
 				// Verify 40V PSU load value of Built in PLX loop card
-				verify40VPSULoadValue(sDefault40V,PanelType);
+				//verify40VPSULoadValue(sDefault40V,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetail);
 				
 				if(isPLXSupported)
 				{
@@ -2510,7 +2528,8 @@ namespace TestProject.Libraries
 						repo.FormMe.PLX800LoopCard_E.Click();
 						
 						// Verify 40V PSU load value of loop card
-						verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					}
 					// 40 V load on Addition of devices
 					sExpected40VLoadofDevices = ((Range)Excel_Utilities.ExcelRange.Cells[6,16]).Value.ToString();
@@ -2533,7 +2552,8 @@ namespace TestProject.Libraries
 					}
 					
 					// Verify 40V PSU load value of loop after addition of devices
-					verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -2547,7 +2567,8 @@ namespace TestProject.Libraries
 					}
 					
 					// Verify 40V PSU load value of loop after addition of devices
-					verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 				}
 				
 				else
@@ -2573,7 +2594,8 @@ namespace TestProject.Libraries
 					}
 					
 					// Verify 40V PSU load value of loop after addition of devices
-					verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					
 				}
 				// Click on Panel node
@@ -2606,6 +2628,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 13/02/2019  Alpesh Dhakad - 31/07/2019 & 21/08/2019- Updated test scripts as per new build and xpaths
+		 * Last update: 10/12/19-Poonam Kadam - Updated 40V methods
 		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VCalculationforXLMLoopWithDevices(string sFileName,string sAddPanelSheet)
@@ -2617,7 +2640,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,sIsXLMSupported,sCalcExpected40VPSU,sDefault40V,sExpected40VLoadofDevices;
+			string PanelName,PanelNode,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,sIsXLMSupported,sCalcExpected40VPSU,sDefault40V,sExpected40VLoadofDevices,s40VLoadingDetails;
 			int rowNumber,k;
 			bool isXLMSupported;
 			float Default40V,Expected40VLoadofDevices,Expected40VPSU,CalcExpected40VPSU;
@@ -2632,6 +2655,7 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				sDefault40V = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				sIsXLMSupported = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				s40VLoadingDetails = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				
 				if (sIsXLMSupported.Equals("YES"))
 				{
@@ -2659,7 +2683,8 @@ namespace TestProject.Libraries
 				
 				
 				// Verify 40V PSU load value of Built in XLM loop card
-				verify40VPSULoadValue(sDefault40V,PanelType);
+				//verify40VPSULoadValue(sDefault40V,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
 				
 				if(isXLMSupported)
 				{
@@ -2701,7 +2726,8 @@ namespace TestProject.Libraries
 						sCalcExpected40VPSU= CalcExpected40VPSU.ToString("0.000");
 						
 						// Verify 40V PSU load value of loop card
-						verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
+						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
 						
 						
 						// Click on Loop C
@@ -2710,7 +2736,8 @@ namespace TestProject.Libraries
 						//repo.FormMe.XLMExternalLoopCardDevices_C.Click();
 						
 						// Verify 40V PSU load value of loop card
-						verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
+						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
 						
 						// 40 V load on Addition of devices
 						sExpected40VLoadofDevices = ((Range)Excel_Utilities.ExcelRange.Cells[6,15]).Value.ToString();
@@ -2736,7 +2763,8 @@ namespace TestProject.Libraries
 						}
 						
 						// Verify 40V PSU load value of loop after addition of devices
-						verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
+						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
 						
 						// Click on Loop A node
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -2757,7 +2785,8 @@ namespace TestProject.Libraries
 						}
 						
 						// Verify 40V PSU load value of loop after addition of devices
-						verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
+						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
 						
 					}
 				}
@@ -2785,7 +2814,8 @@ namespace TestProject.Libraries
 					}
 					
 					// Verify 40V PSU load value of loop after addition of devices
-					verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
+					//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
 					
 				}
 				
@@ -5248,8 +5278,8 @@ namespace TestProject.Libraries
 				sPowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
-                //MPMStandby=Int32.Parse(expectedDefaultBatteryStandby);
-                //MPMStandby=MPMStandby+22;
+				//MPMStandby=Int32.Parse(expectedDefaultBatteryStandby);
+				//MPMStandby=MPMStandby+22;
 				//MPMAlarm=Int32.Parse(expectedDefaultAlarmLoad);
 				//MPMAlarm=MPMAlarm+30;
 				//expectedBatteryStandbyAfterMPM = MPMStandby.ToString();
@@ -5470,20 +5500,20 @@ namespace TestProject.Libraries
 		public static void verifySystemLoadValue(string sSystemLoadValue)
 		{
 			try{
-			sPsuV = sSystemLoadValue;
-			repo.FormMe.SystemLoad.Click();
-			string sActualLoadValue = repo.FormMe.SystemLoad.TextValue;
-			
-			Report.Log(ReportLevel.Info,"System Load value is"+sActualLoadValue);
-			
-			if(sSystemLoadValue.Equals(sActualLoadValue))
-			{
-				Report.Log(ReportLevel.Success,"System Load value is displayed "+sActualLoadValue+" correctly");
-			}
-			else
-			{
-				Report.Log(ReportLevel.Failure,"System Load value is displayed "+sActualLoadValue+" instead of "+sSystemLoadValue);
-			}
+				sPsuV = sSystemLoadValue;
+				repo.FormMe.SystemLoad.Click();
+				string sActualLoadValue = repo.FormMe.SystemLoad.TextValue;
+				
+				Report.Log(ReportLevel.Info,"System Load value is"+sActualLoadValue);
+				
+				if(sSystemLoadValue.Equals(sActualLoadValue))
+				{
+					Report.Log(ReportLevel.Success,"System Load value is displayed "+sActualLoadValue+" correctly");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"System Load value is displayed "+sActualLoadValue+" instead of "+sSystemLoadValue);
+				}
 			}catch(Exception e){
 				Report.Log(ReportLevel.Info,"Exception occurred"+e.Message);
 			}
@@ -6280,7 +6310,7 @@ namespace TestProject.Libraries
 		/*****************************************************************************************************************
 		 * Function Name: verifyNormalAndAlarmLoadOnChangingHousingPropertyOfDIM
 		 * Function Details: To Verify Battery Standby and Alarm Load on changing power supply
-		 * Parameter/Arguments:   
+		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 20/09/2019
@@ -6322,14 +6352,14 @@ namespace TestProject.Libraries
 				if(PanelName.StartsWith("FIRE"))
 				{
 					// Add panels using test data in excel sheet
-				Panel_Functions.AddPanelsFC(1,PanelName,CPUType);
-				
+					Panel_Functions.AddPanelsFC(1,PanelName,CPUType);
+					
 				}
 				else
 				{
-				
-				// Add panels using test data in excel sheet
-				Panel_Functions.AddPanels(1,PanelName,CPUType);
+					
+					// Add panels using test data in excel sheet
+					Panel_Functions.AddPanels(1,PanelName,CPUType);
 				}
 				
 				// Click on Expander node
@@ -6354,24 +6384,24 @@ namespace TestProject.Libraries
 				
 				changeBatteryFactor(changeBatteryFactorValue);
 				
-			// Click on Loop A node
+				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Click on Phyical Layout tab
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				
 				// Verify minimum battery
-				verifyMinimumBattery(changedMinimumBatteryValue,IsSecondPSU,PanelType);		
+				verifyMinimumBattery(changedMinimumBatteryValue,IsSecondPSU,PanelType);
+				
+				
+			}
 			
-				
-				}
-				
-				//Close opened excel sheet
+			//Close opened excel sheet
 			Excel_Utilities.CloseExcel();
-				
+			
 			
 		}
-	
+		
 		/*****************************************************************************************************************
 		 * Function Name: verifyMinimumBattery
 		 * Function Details:
@@ -6442,7 +6472,7 @@ namespace TestProject.Libraries
 			
 			
 			//repo.FormMe.cableLengthSpinUpButton.DoubleClick();
-				
+			
 			//repo.FormMe.cableLengthSpinUpButton.DoubleClick();
 			
 			// Click on SearchProperties text field
@@ -6475,7 +6505,7 @@ namespace TestProject.Libraries
 			
 			
 			//repo.FormMe.cableLengthSpinUpButton.DoubleClick();
-				
+			
 			//repo.FormMe.cableLengthSpinUpButton.DoubleClick();
 			
 			// Click on SearchProperties text field
@@ -6496,30 +6526,30 @@ namespace TestProject.Libraries
 		public static void verifyMax40VPSULoadForFCPanel(string expectedMax40VPSU, string rowNumber)
 		{
 			try{
-			//  assign sRow value
-			
-			sRow = rowNumber;
-			
-			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
-			
-			// Fetch 40V PSU Load maximum limit value
-			string max40VPsu = repo.FormMe.Max40VPsu.TextValue;
-			
-			// Compare max40VPSU value with expected value
-			if(max40VPsu.Equals(expectedMax40VPSU))
-			{
-				Report.Log(ReportLevel.Success,"Max 40V PSU value " + max40VPsu + " is displayed correctly " );
-			}
-			else
-			{
-				Report.Log(ReportLevel.Failure,"Max 40V PSU value is not displayed correctly, it is displayed as: " + max40VPsu + " instead of : " +expectedMax40VPSU);
-			}
-			
-			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+				//  assign sRow value
+				
+				sRow = rowNumber;
+				
+				// Click on Physical layout tab
+				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				
+				// Fetch 40V PSU Load maximum limit value
+				string max40VPsu = repo.FormMe.Max40VPsu.TextValue;
+				
+				// Compare max40VPSU value with expected value
+				if(max40VPsu.Equals(expectedMax40VPSU))
+				{
+					Report.Log(ReportLevel.Success,"Max 40V PSU value " + max40VPsu + " is displayed correctly " );
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Max 40V PSU value is not displayed correctly, it is displayed as: " + max40VPsu + " instead of : " +expectedMax40VPSU);
+				}
+				
+				//Click on Points tab
+				repo.ProfileConsys1.tab_Points.Click();
 			}catch(Exception ex){
-			Report.Log(ReportLevel.Failure,"Exception"+ex+" was thown");
+				Report.Log(ReportLevel.Failure,"Exception"+ex+" was thown");
 			}
 		}
 		
