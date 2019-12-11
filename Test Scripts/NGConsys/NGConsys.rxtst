@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -24650,6 +24650,9 @@ persisted in panel properties&nbsp;]]>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="21af50ab-cce7-44c4-95b8-d1786b3cef5d">
+			</testcontainer>
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>

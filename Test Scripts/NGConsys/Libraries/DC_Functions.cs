@@ -526,12 +526,13 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 30/11/2018  Updated on 22/01/2018 - Alpesh Dhakad Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 ***************************************************************************************************************************************************************/
+		 *  Alpesh Dhakad - 10/12/2019 - Updated test scripts with new method for loading details
+ 		 **************************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyTripCurrentForDCCalculation(string sFileName, string sAddDevicesLoopA, string sAddOtherDevices)
 		{
 			// Declared various fields as String type
-			string sLabelName,expectedDCUnits;
+			string sLabelName,expectedDCUnits,DCUnitLoadingDetailName;
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesLoopA);
 			
@@ -543,7 +544,11 @@ namespace TestProject.Libraries
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
+			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+			
+			//verifyDCUnitsValue(expectedDCUnits);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+
 			Report.Log(ReportLevel.Info, "Verified Default DC units");
 			
 			//Select Points tab
@@ -599,7 +604,9 @@ namespace TestProject.Libraries
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsValue(expectedDCUnits);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+
 			Report.Log(ReportLevel.Info, "Verified DC units after adding Devices and Base");
 			
 			//Select Points tab
@@ -640,7 +647,11 @@ namespace TestProject.Libraries
 			
 			//Fetch value from excel sheet and store it
 			String expectedDCUnits1 = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits1);
+			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+			
+			//verifyDCUnitsValue(expectedDCUnits1);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits1,DCUnitLoadingDetailName);
+
 			Report.Log(ReportLevel.Info, "Verified DC units after adding other Devices");
 			
 			//Select Points tab
@@ -655,7 +666,10 @@ namespace TestProject.Libraries
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
+			
+			//verifyDCUnitsValue(expectedDCUnits);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+
 			Report.Log(ReportLevel.Info, "Verified DC units after adding other Devices");
 			
 			//Close excel
@@ -664,19 +678,20 @@ namespace TestProject.Libraries
 		}
 
 		
-		/********************************************************************
+		/**********************************************************************************************************
 		 * Function Name: verifyTripCurrentWithMultipleBase()
 		 * Function Details: Verify Trip current with changing base of devices
 		 * Parameter/Arguments: fileName, sheetName
 		 * Output:
 		 * Function Owner: Devendra Kulkarni
 		 * Last Update : 30/11/2018
-		 ********************************************************************/
+		 * Alpesh Dhakad - 10/12/2019 - Updated test scripts with new method for loading details
+		 **********************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyTripCurrentWithMultipleBase(string fileName, string sheetName)
 		{
 			// Declared various fields as String type
-			string sLabelName, expectedDCUnits, sType;
+			string sLabelName, expectedDCUnits, sType,DCUnitLoadingDetailName,DCUnitWorstCaseLoadingDetailName;
 			
 			Excel_Utilities.OpenExcelFile(fileName,sheetName);
 			
@@ -696,8 +711,16 @@ namespace TestProject.Libraries
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
-			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+			DCUnitWorstCaseLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[3,9]).Value.ToString();
+			
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
+			
 			Report.Log(ReportLevel.Info, "Verified default DC units.");
 			
 			//Select Points tab
@@ -711,8 +734,13 @@ namespace TestProject.Libraries
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[5,7]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
-			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
+			
 			Report.Log(ReportLevel.Info, "Verified DC units changing base.");
 			
 			//Select Points tab
@@ -724,8 +752,12 @@ namespace TestProject.Libraries
 
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
-			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
 			
 			Report.Log(ReportLevel.Info, "Verified DC units after deleting base.");
 			
@@ -777,17 +809,28 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Devendra Kulkarni
 		 * Last Update : 30/11/2018   Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 10/12/2019 - Updated test scripts with new method for loading details
 		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyTripCurrentWithMultipleLoop(string fileName, string sheetNameA, string sheetNameB)
 		{
-			string expectedDCUnits;
+			string expectedDCUnits,DCUnitLoadingDetailName,DCUnitWorstCaseLoadingDetailName;
 			AddDevicesFromExcel(fileName, sheetNameA);
 			Excel_Utilities.OpenExcelFile(fileName,sheetNameA);
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
-			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+			DCUnitWorstCaseLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[3,9]).Value.ToString();
+			
+			
+			
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
+			
 			Report.Log(ReportLevel.Info, "Verified default DC units.");
 			
 			//Close excel
@@ -805,8 +848,16 @@ namespace TestProject.Libraries
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
-			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+			DCUnitWorstCaseLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[3,9]).Value.ToString();
+			
+			
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
+			
 			Report.Log(ReportLevel.Info, "Verified DC units after adding devices in Loop B.");
 			
 			//Select Points tab
@@ -819,8 +870,13 @@ namespace TestProject.Libraries
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[3,7]).Value.ToString();
-			verifyDCUnitsValue(expectedDCUnits);
-			verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
+			
 			Report.Log(ReportLevel.Info, "Verified DC units after removing base in Loop B.");
 
 			//Close excel

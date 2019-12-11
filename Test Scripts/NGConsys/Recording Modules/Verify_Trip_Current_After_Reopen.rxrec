@@ -152,11 +152,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Trip_Current_After_Reopen"
-		enabled="True"
-		isexternaltestmethod="False"
+		classname="DC_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
 		methodname="verifyDCUnitsAfterReopen"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>
@@ -193,6 +193,78 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						338.9
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="16d2be7c-b6ab-4db0-b55c-2ba2f202746c">
+				<argument
+				argname="expectedUnits"
+				id="357a6bde-a1e0-4e88-9eed-7ca0a0dd2680">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						338.9
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="91121775-4a5f-4a0b-ab3b-e65c94448da1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Current (DC Units)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="16d2be7c-b6ab-4db0-b55c-2ba2f202746c">
+				<argument
+				argname="expectedUnits"
+				id="357a6bde-a1e0-4e88-9eed-7ca0a0dd2680">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						338.9
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="91121775-4a5f-4a0b-ab3b-e65c94448da1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Current (worst case)
 					</argvalue>
 				</argument>
 			</arguments>

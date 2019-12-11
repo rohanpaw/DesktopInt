@@ -7809,6 +7809,63 @@ namespace TestProject.Libraries
 			Devices_Functions.VerifyPercentage(expectedColor, actualColour);
 		}
 		
+		/**************************************************************************************
+		 * Function Name: verifyLoadingDetailsValueAfterReopen
+		 * Function Details: To verify actual loading details value of searched detail unit
+		 * Parameter/Arguments: expectedUnits and loading detail name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 11/12/2019
+		 **************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyLoadingDetailsValueAfterReopen(string expectedUnits, string LoadingDetail)
+		{
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			sLoadingDetail = LoadingDetail;
+			
+			string LoadingUnits = repo.FormMe.txt_ActualLoadingDetailsValueAfterReopen.TextValue;
+			
+			if(LoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoadingUnits);
+			}
+			
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+		}
+		
+		/**************************************************************************************
+		 * Function Name: verifyMaxLoadingDetailsValueAfterReopen
+		 * Function Details: To verify max loading details value of searched detail unit
+		 * Parameter/Arguments: expectedMaxUnits and loading detail name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 11/12/2019
+		 **************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyMaxLoadingDetailsValueAfterReopen(string expectedMaxUnits, string LoadingDetail)
+		{
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			sLoadingDetail = LoadingDetail;
+			
+			string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValueAfterReopen.TextValue;
+			
+			if(MaxLoadingUnits.Equals(expectedMaxUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " value  "+ expectedMaxUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedMaxUnits  + " Actual Units: "+ MaxLoadingUnits);
+			}
+			
+			//Click on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+		}
 		
 	}
 }

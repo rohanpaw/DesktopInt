@@ -6265,6 +6265,9 @@ namespace TestProject
             RepoItemInfo _txt_actualloadingdetailsvalueInfo;
             RepoItemInfo _txt_maxloadingdetailsvalueInfo;
             RepoItemInfo _loadingdetailsprogressbarcolorInfo;
+            RepoItemInfo _txt_actualloadingdetailsvalueafterreopenInfo;
+            RepoItemInfo _txt_maxloadingdetailsvalueafterreopenInfo;
+            RepoItemInfo _loadingdetailsprogressbarcolorafterreopenInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6447,6 +6450,9 @@ namespace TestProject
                 _txt_actualloadingdetailsvalueInfo = new RepoItemInfo(this, "txt_ActualLoadingDetailsValue", "progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]", 60000, null, "260b2e94-5ce1-4568-8507-b8ccb5e14714");
                 _txt_maxloadingdetailsvalueInfo = new RepoItemInfo(this, "txt_MaxLoadingDetailsValue", "progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]", 60000, null, "c3f40fca-afc0-4654-a151-4012e61d599b");
                 _loadingdetailsprogressbarcolorInfo = new RepoItemInfo(this, "LoadingDetailsProgressbarColor", "progressbar/picture[7]/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//progressbar", 60000, null, "99d9a410-5c33-4ff5-a73e-52776010ac39");
+                _txt_actualloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "txt_ActualLoadingDetailsValueAfterReopen", "progressbar/picture/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]", 60000, null, "43c10983-3a80-4c6b-b6c2-bc03dd453f58");
+                _txt_maxloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "txt_MaxLoadingDetailsValueAfterReopen", "progressbar/picture/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]", 60000, null, "f96ead01-b71d-42ad-ae18-248ab1a57744");
+                _loadingdetailsprogressbarcolorafterreopenInfo = new RepoItemInfo(this, "LoadingDetailsProgressbarColorAfterReopen", "progressbar/picture/descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//progressbar", 60000, null, "4ad38f73-010d-4bfb-b90c-056ff046f043");
             }
 
             /// <summary>
@@ -10775,6 +10781,78 @@ namespace TestProject
                 get
                 {
                     return _loadingdetailsprogressbarcolorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_ActualLoadingDetailsValueAfterReopen item.
+            /// </summary>
+            [RepositoryItem("43c10983-3a80-4c6b-b6c2-bc03dd453f58")]
+            public virtual Ranorex.Text txt_ActualLoadingDetailsValueAfterReopen
+            {
+                get
+                {
+                    return _txt_actualloadingdetailsvalueafterreopenInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_ActualLoadingDetailsValueAfterReopen item info.
+            /// </summary>
+            [RepositoryItemInfo("43c10983-3a80-4c6b-b6c2-bc03dd453f58")]
+            public virtual RepoItemInfo txt_ActualLoadingDetailsValueAfterReopenInfo
+            {
+                get
+                {
+                    return _txt_actualloadingdetailsvalueafterreopenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The txt_MaxLoadingDetailsValueAfterReopen item.
+            /// </summary>
+            [RepositoryItem("f96ead01-b71d-42ad-ae18-248ab1a57744")]
+            public virtual Ranorex.Text txt_MaxLoadingDetailsValueAfterReopen
+            {
+                get
+                {
+                    return _txt_maxloadingdetailsvalueafterreopenInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txt_MaxLoadingDetailsValueAfterReopen item info.
+            /// </summary>
+            [RepositoryItemInfo("f96ead01-b71d-42ad-ae18-248ab1a57744")]
+            public virtual RepoItemInfo txt_MaxLoadingDetailsValueAfterReopenInfo
+            {
+                get
+                {
+                    return _txt_maxloadingdetailsvalueafterreopenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LoadingDetailsProgressbarColorAfterReopen item.
+            /// </summary>
+            [RepositoryItem("4ad38f73-010d-4bfb-b90c-056ff046f043")]
+            public virtual Ranorex.ProgressBar LoadingDetailsProgressbarColorAfterReopen
+            {
+                get
+                {
+                    return _loadingdetailsprogressbarcolorafterreopenInfo.CreateAdapter<Ranorex.ProgressBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LoadingDetailsProgressbarColorAfterReopen item info.
+            /// </summary>
+            [RepositoryItemInfo("4ad38f73-010d-4bfb-b90c-056ff046f043")]
+            public virtual RepoItemInfo LoadingDetailsProgressbarColorAfterReopenInfo
+            {
+                get
+                {
+                    return _loadingdetailsprogressbarcolorafterreopenInfo;
                 }
             }
         }
