@@ -360,10 +360,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="DC_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyDCUnitsValueAfterReopen"
+		methodname="verifyLoadingDetailsValueAfterReopen"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -374,7 +374,7 @@ rxversion="8.3">
 			<arguments
 			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="expectedDCUnits"
+				argname="expectedUnits"
 				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
 						System.String
@@ -383,13 +383,23 @@ rxversion="8.3">
 						311.4
 					</argvalue>
 				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="51b60eb6-0f53-420e-9b90-3ee9fb610a17">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Current (DC Units)
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="DC_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyDCUnitsWorstCaseValueAfterReopen"
+		methodname="verifyLoadingDetailsValueAfterReopen"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -400,13 +410,23 @@ rxversion="8.3">
 			<arguments
 			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="expectedWorstCaseDCUnits"
+				argname="expectedUnits"
 				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
 						311.4
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="4b53b9e0-c12f-4be4-8023-397d8433993b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Current (worst case)
 					</argvalue>
 				</argument>
 			</arguments>

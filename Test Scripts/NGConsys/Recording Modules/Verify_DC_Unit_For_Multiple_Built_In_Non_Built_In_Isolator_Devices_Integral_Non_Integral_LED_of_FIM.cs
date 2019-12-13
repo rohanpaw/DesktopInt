@@ -91,10 +91,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("220");
+            //Libraries.DC_Functions.verifyDCUnitsValue("220");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyMaxDCUnits("2200");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyMaxDCUnits("2200");
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("277", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyTripCurrentOnBaseChange("TC_53557_Verify_DC_Unit_For_Multiple_Built_In_Non_Built_In_Isolator_Devices_Integral_Non_Integral_LED_of_FIM", "Devices");

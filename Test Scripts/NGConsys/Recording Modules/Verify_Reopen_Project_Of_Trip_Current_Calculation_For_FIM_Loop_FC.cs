@@ -97,19 +97,31 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValueAfterReopen("339.72");
+            //Libraries.DC_Functions.verifyDCUnitsValueAfterReopen("339.72");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyDCUnitsWorstCaseValueAfterReopen("339.72");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("339.72", "Current (DC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsWorstCaseValueAfterReopen("339.72");
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("339.72", "Current (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValueAfterReopen("318.6");
+            //Libraries.DC_Functions.verifyDCUnitsValueAfterReopen("318.6");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyDCUnitsWorstCaseValueAfterReopen("318.6");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("318.6", "Current (DC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsWorstCaseValueAfterReopen("318.6");
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("318.6", "Current (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

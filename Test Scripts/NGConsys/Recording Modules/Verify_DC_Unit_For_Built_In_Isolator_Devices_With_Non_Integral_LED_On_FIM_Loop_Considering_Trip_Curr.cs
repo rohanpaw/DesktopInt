@@ -97,7 +97,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyIsolatorCheckbox(ValueConverter.ArgumentFromString<bool>("ExpectedState", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("287");
+            //Libraries.DC_Functions.verifyDCUnitsValue("287");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("287", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("P80SB", "Sounders/Beacons");
@@ -106,7 +109,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyIsolatorCheckbox(ValueConverter.ArgumentFromString<bool>("ExpectedState", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("311");
+            //Libraries.DC_Functions.verifyDCUnitsValue("311");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("311", "Current (DC Units)");
             Delay.Milliseconds(0);
             
         }

@@ -97,7 +97,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyIsolatorCheckbox(ValueConverter.ArgumentFromString<bool>("ExpectedState", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("277");
+            //Libraries.DC_Functions.verifyDCUnitsValue("277");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("277", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -112,7 +115,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyIsolatorCheckbox(ValueConverter.ArgumentFromString<bool>("ExpectedState", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("301");
+            //Libraries.DC_Functions.verifyDCUnitsValue("301");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("301", "Current (DC Units)");
             Delay.Milliseconds(0);
             
         }

@@ -424,7 +424,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="DC_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyDCUnitsValue"
 		namespace="TestProject.Libraries"
@@ -435,15 +435,51 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="4107726b-3530-4eef-8d8b-3b9431f103d0">
+			id="162d847f-c7c2-4f8e-8117-ad5a9217ebc8">
 				<argument
 				argname="expectedDCUnits"
+				id="65a0d2e0-b261-4a0a-8690-9a27ce59f23f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						280
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4107726b-3530-4eef-8d8b-3b9431f103d0">
+				<argument
+				argname="expectedUnits"
 				id="f6fde9dd-171e-430e-b54d-545c9a448148">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
 						280
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="24baaca2-5655-4ccd-8082-7952114df410">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Current (DC Units)
 					</argvalue>
 				</argument>
 			</arguments>

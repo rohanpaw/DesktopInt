@@ -91,7 +91,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyMaxDCUnits("2200");
+            //Libraries.DC_Functions.verifyMaxDCUnits("2200");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.DC_Functions.verifyTripCurrentOnAdditionDeletionOfIsolatorBase("TC_63799_Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base", "Add Devices Loop A", "Other Devices Loop A");

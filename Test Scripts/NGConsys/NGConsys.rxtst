@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -24651,13 +24651,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="21af50ab-cce7-44c4-95b8-d1786b3cef5d">
-			</testcontainer>
-			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="405fcb6b-fb0a-45a5-b360-e8602f537671">
+			id="faca3ac1-8096-4f76-b05b-6be029b8b019">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -24687,10 +24684,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
+			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
-			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
+			Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

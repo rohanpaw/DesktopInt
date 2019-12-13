@@ -272,7 +272,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropValue"
 		namespace="TestProject.Libraries"
@@ -298,7 +298,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropWorstCaseValue"
 		namespace="TestProject.Libraries"
@@ -318,6 +318,78 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						0.54
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.27
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (V)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.54
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (worst case)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -360,7 +432,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropValue"
 		namespace="TestProject.Libraries"
@@ -386,7 +458,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropWorstCaseValue"
 		namespace="TestProject.Libraries"
@@ -406,6 +478,78 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						0.54
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.27
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (V)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.54
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (worst case)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -464,7 +608,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropValue"
 		namespace="TestProject.Libraries"
@@ -490,7 +634,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropWorstCaseValue"
 		namespace="TestProject.Libraries"
@@ -510,6 +654,78 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						0.31
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.16
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (V)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.31
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (worst case)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -803,7 +1019,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropValue"
 		namespace="TestProject.Libraries"
@@ -829,7 +1045,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropWorstCaseValue"
 		namespace="TestProject.Libraries"
@@ -849,6 +1065,78 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						1.03
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.51
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (V)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1.03
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (worst case)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -891,7 +1179,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropValue"
 		namespace="TestProject.Libraries"
@@ -917,7 +1205,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropWorstCaseValue"
 		namespace="TestProject.Libraries"
@@ -937,6 +1225,78 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						0.54
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.27
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (V)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.54
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (worst case)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -995,7 +1355,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropValue"
 		namespace="TestProject.Libraries"
@@ -1021,7 +1381,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="VoltageDrop_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropWorstCaseValue"
 		namespace="TestProject.Libraries"
@@ -1041,6 +1401,78 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						0.31
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.16
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (V)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.31
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Volt Drop (worst case)
 					</argvalue>
 				</argument>
 			</arguments>

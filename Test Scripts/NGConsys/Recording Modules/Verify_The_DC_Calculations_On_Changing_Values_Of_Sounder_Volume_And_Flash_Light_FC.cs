@@ -106,10 +106,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyDeviceMode("0.5 Hz");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("264.4");
+            //Libraries.DC_Functions.verifyDCUnitsValue("264.4");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyDCUnitsWorstCaseValue("264.4");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("264.4", "Current (DC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsWorstCaseValue("264.4");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("264.4", "Current (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("410LPAV 65 - 1");
@@ -118,10 +124,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangeDeviceSensitivity("Low (90dB)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("246");
+            //Libraries.DC_Functions.verifyDCUnitsValue("246");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyDCUnitsWorstCaseValue("246");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("246", "Current (DC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsWorstCaseValue("246");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("246", "Current (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("410LPAV 65 - 2");
@@ -130,10 +142,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangeDeviceMode("1 Hz");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("250.4");
+            //Libraries.DC_Functions.verifyDCUnitsValue("250.4");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyDCUnitsWorstCaseValue("250.4");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("250.4", "Current (DC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsWorstCaseValue("250.4");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("250.4", "Current (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -157,10 +175,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangeDeviceMode("1 Hz");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("311.4");
+            //Libraries.DC_Functions.verifyDCUnitsValue("311.4");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.DC_Functions.verifyDCUnitsWorstCaseValue("311.4");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("311.4", "Current (DC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsWorstCaseValue("311.4");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("311.4", "Current (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.SaveProject("TC_63532");

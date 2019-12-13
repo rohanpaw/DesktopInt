@@ -121,7 +121,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangeDeviceMode("0.5 Hz");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("280");
+            //Libraries.DC_Functions.verifyDCUnitsValue("280");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("280", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.SaveProject("NGC-603");

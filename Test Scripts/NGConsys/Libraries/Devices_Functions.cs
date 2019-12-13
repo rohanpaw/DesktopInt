@@ -3812,14 +3812,14 @@ namespace TestProject.Libraries
 		}
 		
 
-		/********************************************************************
+		/****************************************************************************************************************
 		 * Function Name: verifyTripCurrentOnBaseChange
 		 * Function Details: To verify trip current details on base change and isolator properties check
 		 * Parameter/Arguments: sfilename and sheetname
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 12/12/2019 - Updated test scripts with new method for loading details
+		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyTripCurrentOnBaseChange(string sFileName, string sDeviceSheet)
 		{
@@ -3829,7 +3829,7 @@ namespace TestProject.Libraries
 			// Count the number of rows in excel
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
-			string sType,expectedDCUnits,expectedDCUnitsAfterBaseChange,expectedIsolatorState;
+			string sType,expectedDCUnits,expectedDCUnitsAfterBaseChange,expectedIsolatorState,DCUnitLoadingDetailName;
 			bool expectedIsolatorCheckboxState;
 			
 			for (int i=8; i<=rows; i++)
@@ -3841,11 +3841,15 @@ namespace TestProject.Libraries
 				expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				expectedDCUnitsAfterBaseChange = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				
+				DCUnitLoadingDetailName = ((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
+				
+				
 				expectedIsolatorState = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				
 				
 				sBase = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				sRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				
 				
 				bool.TryParse(expectedIsolatorState, out expectedIsolatorCheckboxState);
 				
@@ -3853,7 +3857,8 @@ namespace TestProject.Libraries
 				Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
 				verifyIsolatorCheckbox(expectedIsolatorCheckboxState);
 				
-				DC_Functions.verifyDCUnitsValue(expectedDCUnits);
+				//DC_Functions.verifyDCUnitsValue(expectedDCUnits);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
 				
 				//AssignDeviceBase(sLabelName,sBase,sRowIndex);
 				
@@ -3861,7 +3866,9 @@ namespace TestProject.Libraries
 				
 				Report.Log(ReportLevel.Info, "Base " + sBase + " assigned to "+ sLabelName);
 				
-				DC_Functions.verifyDCUnitsValue(expectedDCUnitsAfterBaseChange);
+				//DC_Functions.verifyDCUnitsValue(expectedDCUnitsAfterBaseChange);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnitsAfterBaseChange,DCUnitLoadingDetailName);
+				
 			}
 			//Close Excel sheet
 			Excel_Utilities.CloseExcel();

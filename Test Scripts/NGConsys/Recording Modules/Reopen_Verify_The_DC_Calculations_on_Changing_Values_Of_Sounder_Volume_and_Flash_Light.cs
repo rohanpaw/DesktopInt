@@ -91,7 +91,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("36");
+            //Libraries.DC_Functions.verifyDCUnitsValue("36");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("36", "Current (DC Units)");
             Delay.Milliseconds(0);
             
         }

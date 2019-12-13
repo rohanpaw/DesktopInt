@@ -100,19 +100,31 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("410LPSY - R/W", "Sounders/Beacons");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
+            //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.27", "Volt Drop (V)");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.54", "Volt Drop (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
+            //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.27", "Volt Drop (V)");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.54", "Volt Drop (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedRow("2");
@@ -121,10 +133,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.16");
+            //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.16");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.31");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.16", "Volt Drop (V)");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.31");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.31", "Volt Drop (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
@@ -151,19 +169,31 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("410LPSY - R/W", "Sounders/Beacons");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.51");
+            //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.51");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("1.03");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.51", "Volt Drop (V)");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("1.03");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.03", "Volt Drop (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
+            //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.27", "Volt Drop (V)");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.54", "Volt Drop (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedRow("2");
@@ -172,10 +202,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.16");
+            //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.16");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.31");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.16", "Volt Drop (V)");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.31");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.31", "Volt Drop (worst case)");
             Delay.Milliseconds(0);
             
         }

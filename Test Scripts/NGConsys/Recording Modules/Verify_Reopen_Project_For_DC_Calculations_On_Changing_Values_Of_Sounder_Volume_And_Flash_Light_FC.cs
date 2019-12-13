@@ -121,10 +121,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyDeviceMode("1 Hz");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValueAfterReopen("311.4");
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("311.4", "Current (DC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsWorstCaseValueAfterReopen("311.4");
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("311.4", "Current (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
