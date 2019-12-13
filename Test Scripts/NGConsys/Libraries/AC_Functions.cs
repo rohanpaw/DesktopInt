@@ -116,9 +116,9 @@ namespace TestProject.Libraries
 		{
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
 			//Excel_Utilities.OpenSheet(sAddDevicesSheet);
-			float fAcUnits,fMaxACUnits;
+			float fAcUnits;
 			int calculatedAcUnits=0,calculatedAcUnitsofLoopB,calculatedAcUnitsofLoopA;
-			string actualColour,ACUnitsLoadingDetails;
+			string ACUnitsLoadingDetails;
 			
 			//Get Max AC Units and AC Units for loop A using input excel sheet
 			calculatedAcUnitsofLoopA = calculateACUnits(sFileName,sAddDevicesSheet);
@@ -335,7 +335,7 @@ namespace TestProject.Libraries
 			//Excel_Utilities.OpenSheet(sAddDevicesSheet);
 			float fAcUnits,fMaxACUnits;
 			int calculatedAcUnitsofLoopB,calculatedAcUnitsofLoopA;
-			string actualColour,ACUnitsLoadingDetails;
+			string ACUnitsLoadingDetails;
 			
 			//Get Max AC Units and AC Units for loop A using input excel sheet
 			calculatedAcUnitsofLoopA = calculateACUnits(sFileName,sAddDevicesSheet);

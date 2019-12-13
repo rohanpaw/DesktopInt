@@ -2468,7 +2468,7 @@ namespace TestProject.Libraries
 		{
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDeviceSheet);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
-			string PanelType,expectedIsolatorUnits,sDeviceName,sType,sLabelName,IBUnitUntilLI,IBUnitBelowLI;
+			string PanelType,expectedIsolatorUnits,sDeviceName,sType,sLabelName,IBUnitUntilLI,IBUnitBelowLI,IBUnitLoadingDetail;
 			int DeviceQty;
 			for(int i=8; i<=rows; i++)
 			{
@@ -2477,11 +2477,13 @@ namespace TestProject.Libraries
 				DeviceQty=  int.Parse(((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString());
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				expectedIsolatorUnits= ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				IBUnitLoadingDetail = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString(); 
 				PanelType= ((Range)Excel_Utilities.ExcelRange.Cells[5,5]).Value.ToString();
 				
 				Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,DeviceQty);
 				
-				VerifyIsolatorUnits(expectedIsolatorUnits,PanelType);
+				//VerifyIsolatorUnits(expectedIsolatorUnits,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedIsolatorUnits,IBUnitLoadingDetail);
 			}
 			
 			Excel_Utilities.CloseExcel();

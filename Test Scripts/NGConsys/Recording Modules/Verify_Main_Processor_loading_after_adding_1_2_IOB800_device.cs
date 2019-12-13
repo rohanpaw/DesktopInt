@@ -101,15 +101,21 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(7));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(7));
+            //repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            //Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.050", "PFI");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.050", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.601", "PFI");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.601", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.050", "PFI");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.601", "PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
@@ -117,7 +123,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(14));
             repo.FormMe.tab_PanelAccessories.Click();
             Delay.Milliseconds(200);
             
@@ -127,15 +133,21 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(15));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(17));
+            //repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            //Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.080", "PFI");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.080", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.809", "PFI");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.809", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.080", "PFI");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.809", "PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
@@ -149,15 +161,21 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(22));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(26));
+            //repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            //Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.050", "PFI");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.050", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.601", "PFI");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.601", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.050", "PFI");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.601", "PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
@@ -171,17 +189,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(29));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(35));
+            //repo.ProfileConsys1.tab_PhysicalLayout.Click();
+            //Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verify5VPSULoadValue("0.020", "PFI");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.020", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verify24VPSULoadValue("0.393", "PFI");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.393", "Main Processor 24V (A)");
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(32));
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.020", "PFI");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.393", "PFI");
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(40));
             //repo.ProfileConsys1.SiteNode.Click();
             //Delay.Milliseconds(200);
             

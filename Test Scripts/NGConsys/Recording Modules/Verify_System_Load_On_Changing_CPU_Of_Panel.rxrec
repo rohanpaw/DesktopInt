@@ -161,7 +161,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -182,8 +182,44 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="aed5e769-2c50-4d99-bebb-845e33e888a6">
+				<argument
+				argname="expectedUnits"
+				id="53792bfb-89a9-4128-a6e6-e992dd5382c9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.718
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="2c96db24-d2e7-435a-a1d7-ed62dbfdb854">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						System (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifySystemLoadValue"
 		namespace="TestProject.Libraries"
@@ -317,7 +353,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -338,8 +374,44 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="aed5e769-2c50-4d99-bebb-845e33e888a6">
+				<argument
+				argname="expectedUnits"
+				id="53792bfb-89a9-4128-a6e6-e992dd5382c9">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.750
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="2c96db24-d2e7-435a-a1d7-ed62dbfdb854">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						System (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifySystemLoadValue"
 		namespace="TestProject.Libraries"

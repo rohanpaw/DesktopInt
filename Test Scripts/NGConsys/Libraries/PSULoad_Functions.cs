@@ -4364,7 +4364,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expectedMaxSystemLoad;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expectedMaxSystemLoad,SystemLoadingDetail;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -4377,7 +4377,7 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				
 				expectedMaxSystemLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
-				
+				SystemLoadingDetail = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				// sPSUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
@@ -4396,7 +4396,8 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify max System Load load value
-				verifyMaxSystemLoad(expectedMaxSystemLoad);
+				//verifyMaxSystemLoad(expectedMaxSystemLoad);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxSystemLoad,SystemLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -5536,7 +5537,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,PSUType,expectedSystemLoad,DefaultSystemLoad;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,PSUType,expectedSystemLoad,DefaultSystemLoad,SystemLoadingDetail;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -5550,7 +5551,7 @@ namespace TestProject.Libraries
 				PSUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedSystemLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				DefaultSystemLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
-				
+				SystemLoadingDetail= ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				// Add panels using test data in excel sheet
@@ -5569,7 +5570,8 @@ namespace TestProject.Libraries
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				
 				// Verify max System Load load value
-				verifySystemLoadValue(DefaultSystemLoad);
+				//verifySystemLoadValue(DefaultSystemLoad);
+				Devices_Functions.verifyLoadingDetailsValue(DefaultSystemLoad,SystemLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -5589,7 +5591,8 @@ namespace TestProject.Libraries
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				
 				// Verify max System Load load value
-				verifySystemLoadValue(expectedSystemLoad);
+				//verifySystemLoadValue(expectedSystemLoad);
+				Devices_Functions.verifyLoadingDetailsValue(DefaultSystemLoad,SystemLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
