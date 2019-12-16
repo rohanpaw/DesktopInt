@@ -94,7 +94,7 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsValue("36");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("36", "Current (DC Units)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("280", "Current (DC Units)");
             Delay.Milliseconds(0);
             
         }

@@ -11744,6 +11744,7 @@ MxDesigner]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="9951f760-28f0-4e04-b1fe-2b19720ee182"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -24654,7 +24655,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="faca3ac1-8096-4f76-b05b-6be029b8b019">
+			id="509d084a-8644-42ab-8bf9-6afdb2b657b4">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

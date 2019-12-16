@@ -1200,7 +1200,7 @@ namespace TestProject.Libraries
 				
 			
 			// Click on Panel node
-				Common_Functions.ClickOnNavigationTreeExpander("Node");
+				//Common_Functions.ClickOnNavigationTreeExpander("Node");
 				
 			
 			Panel_Functions.changePanelLED(PanelLED);

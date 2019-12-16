@@ -1231,7 +1231,6 @@ namespace TestProject.Libraries
 			// Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
 			
-			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
