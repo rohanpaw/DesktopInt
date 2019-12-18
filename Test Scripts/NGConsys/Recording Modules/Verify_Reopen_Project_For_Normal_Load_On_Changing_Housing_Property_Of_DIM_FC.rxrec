@@ -178,8 +178,80 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="459774c4-3198-442c-8137-d5d077bb0d42">
+				<argument
+				argname="expectedUnits"
+				id="72cdb418-5055-4ddd-ac90-c8ae938fab44">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.25
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="ba2198bd-2e3d-4cad-9894-3eb8ddebb228">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Battery Standby (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="459774c4-3198-442c-8137-d5d077bb0d42">
+				<argument
+				argname="expectedUnits"
+				id="72cdb418-5055-4ddd-ac90-c8ae938fab44">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.443
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="ba2198bd-2e3d-4cad-9894-3eb8ddebb228">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Battery Alarm (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandbyFCOnReopen"
 		namespace="TestProject.Libraries"
@@ -225,7 +297,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyAlarmLoadFCOnReopen"
 		namespace="TestProject.Libraries"

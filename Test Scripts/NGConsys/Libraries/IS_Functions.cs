@@ -121,7 +121,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string sType, sLabelName,ExpectedMaxISUnits,ChangedValue,PanelType;
+			string sType, sLabelName,ExpectedMaxISUnits,ChangedValue,PanelType,sISUnitsLoadingDetail;
 			int noOfDevices = 0;
 			PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
 			// For loop to iterate on data present in excel
@@ -134,6 +134,7 @@ namespace TestProject.Libraries
 				ExpectedMaxISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				ChangedValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				sISUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				
 				// Verify panel type and then accordingly assign sRow value
 				if(PanelType.Equals("FIM"))
@@ -154,8 +155,8 @@ namespace TestProject.Libraries
 				
 				//To call verifyMaxISUnits method and verify max IS units value
 				Report.Log(ReportLevel.Info,"Verification of Maximum IS Units on addition of devices");
-				verifyMaxISUnitsMultipleDevices(ExpectedMaxISUnits, noOfDevices, PanelType);
-				
+				//verifyMaxISUnitsMultipleDevices(ExpectedMaxISUnits, noOfDevices, PanelType);
+				Devices_Functions.verifyMaxLoadingDetailsValue(ExpectedMaxISUnits,sISUnitsLoadingDetail);
 				Report.Log(ReportLevel.Info, "Verified Maximum IS Units.");
 				
 				//Click on Points tab
@@ -288,10 +289,11 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string sType, sLabelName,ExpectedMaxISUnits,ChangedValue,PanelType;
+			string sType, sLabelName,ExpectedMaxISUnits,ChangedValue,PanelType,sISUnitsLoadingDetail;
 			
 			ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[8,1]).Value.ToString();
 			sType = ((Range)Excel_Utilities.ExcelRange.Cells[8,2]).Value.ToString();
+			sISUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[8,9]).Value.ToString();
 			
 			// Add devices from the gallery as per test data from the excel sheet
 			Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
@@ -326,8 +328,8 @@ namespace TestProject.Libraries
 				
 				//To call verifyISUnits method and verify IS units value
 				Report.Log(ReportLevel.Info,"Verification of IS Units on addition of devices");
-				verifyISUnits(sISUnits,sRow);
-				
+				//verifyISUnits(sISUnits,sRow);
+				Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
 				//Click on Points tab
 				repo.ProfileConsys1.tab_Points.Click();
 				
@@ -356,7 +358,7 @@ namespace TestProject.Libraries
 			//Add devies in loop A,
 			Excel_Utilities.OpenExcelFile(sFileName,sAddEXIDevicesSheet);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
-			string sType,sExpectedMaxISUnits,PanelType;
+			string sType,sExpectedMaxISUnits,PanelType,sISUnitsLoadingDetail;
 			for(int i=8; i<=rows; i++)
 			{
 				
@@ -365,6 +367,7 @@ namespace TestProject.Libraries
 				sExpectedMaxISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
+				sISUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				
 				if(PanelType.Equals("FIM"))
 				{
@@ -379,10 +382,12 @@ namespace TestProject.Libraries
 				
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				//Verify IS units in physical layout
-				verifyISUnits(sISUnits,sRow);
+				//verifyISUnits(sISUnits,sRow);
 				
 				//Verify Max IS units in physical layout
-				verifyMaxISUnits(sExpectedMaxISUnits,sRow);
+				//verifyMaxISUnits(sExpectedMaxISUnits,sRow);
+				Devices_Functions.verifyMaxLoadingDetailsValue(sExpectedMaxISUnits,sISUnitsLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
 				
 				repo.ProfileConsys1.tab_Points.Click();
 				
@@ -429,13 +434,16 @@ namespace TestProject.Libraries
 			
 			
 			sISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[9,8]).Value.ToString();
+			
+			sISUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[k,9]).Value.ToString();
 			//Verify IS Units
-			verifyISUnits(sISUnits,sRow);
+			//verifyISUnits(sISUnits,sRow);
+			Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
 			sExpectedMaxISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[k,7]).Value.ToString();
 			
 			//Verify MAX IS units
-			verifyMaxISUnits(sExpectedMaxISUnits,sRow);
-			
+			//verifyMaxISUnits(sExpectedMaxISUnits,sRow);
+			Devices_Functions.verifyMaxLoadingDetailsValue(sExpectedMaxISUnits,sISUnitsLoadingDetail);
 			// Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
 			
@@ -455,10 +463,12 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			
 			//Verify IS Units
-			verifyISUnits(sISUnits,sRow);
+			//verifyISUnits(sISUnits,sRow);
 			
 			//Verify MaxIS Units
-			verifyMaxISUnits(sExpectedMaxISUnits,sRow);
+			//verifyMaxISUnits(sExpectedMaxISUnits,sRow);
+			Devices_Functions.verifyMaxLoadingDetailsValue(sExpectedMaxISUnits,sISUnitsLoadingDetail);
+            Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
 		}
 		
 		
@@ -744,7 +754,7 @@ namespace TestProject.Libraries
 				
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
-				sExpectedColorCode= ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				//sExpectedColorCode= ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
 				
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
 				Report.Log(ReportLevel.Info,"All data imported from excel sheet");
@@ -767,10 +777,11 @@ namespace TestProject.Libraries
 				sRowIndex=(i+1).ToString();
 				
 				//Verify Progress bar color code for extra IS units
-				sActualColorCode= getProgressBarColorForISUnits();
-				Devices_Functions.VerifyPercentage(sExpectedColorCode, sActualColorCode);
-				Report.Log(ReportLevel.Info,"Progress bar color code for EXI row " + (i-7) + " verified as: "+sExpectedColorCode);
-				
+//				sActualColorCode= getProgressBarColorForISUnits();
+//				Devices_Functions.VerifyPercentage(sExpectedColorCode, sActualColorCode);
+//				Report.Log(ReportLevel.Info,"Progress bar color code for EXI row " + (i-7) + " verified as: "+sExpectedColorCode);
+//				
+				Devices_Functions.verifyLoadingDetailColor("Intrinsically Safe Units");
 				//Click physical layout tab
 				repo.ProfileConsys1.tab_Points.Click();
 			}
@@ -789,9 +800,10 @@ namespace TestProject.Libraries
 			sRowIndex=(m+1).ToString();
 			
 			//Verify Progress bar color code for extra IS units
-			sActualColorCode= getProgressBarColorForISUnits();
-			Devices_Functions.VerifyPercentage(sExpectedColorCode, sActualColorCode);
-			Report.Log(ReportLevel.Info,"Progress bar color code for EXI row " + (m-7) + " verified as: "+sExpectedColorCode);
+//			sActualColorCode= getProgressBarColorForISUnits();
+//			Devices_Functions.VerifyPercentage(sExpectedColorCode, sActualColorCode);
+//			Report.Log(ReportLevel.Info,"Progress bar color code for EXI row " + (m-7) + " verified as: "+sExpectedColorCode);
+				Devices_Functions.verifyLoadingDetailColor("Intrinsically Safe Units");
 			
 		}
 		

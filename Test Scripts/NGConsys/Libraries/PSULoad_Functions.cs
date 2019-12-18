@@ -2847,7 +2847,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string typ
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expectedMaxBatteryStandby,expectedMaxAlarmLoad;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expectedMaxBatteryStandby,expectedMaxAlarmLoad, sAlarmLoadingDetail, sStandbyLoadingDetail;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -2860,7 +2860,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedMaxBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedMaxAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				// Add panels using test data in excel sheet
@@ -2878,10 +2879,12 @@ namespace TestProject.Libraries
 				
 				
 				// Verify max Battery Standby load value
-				verifyMaxBatteryStandby(expectedMaxBatteryStandby,false);
+				//verifyMaxBatteryStandby(expectedMaxBatteryStandby,false);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxBatteryStandby,sStandbyLoadingDetail);
 				
 				// Verify max Alarm load value
-				verifyMaxAlarmLoad(expectedMaxAlarmLoad,false);
+				//verifyMaxAlarmLoad(expectedMaxAlarmLoad,false);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxAlarmLoad,sAlarmLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -3202,7 +3205,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,changeCPUType,PanelType,expectedBatteryStandby,expectedDefaultBatteryStandby,expectedAlarmLoad,expectedDefaultAlarmLoad,changePSUType;
+			string PanelName,PanelNode,CPUType,sRowNumber,changeCPUType,PanelType,expectedBatteryStandby,expectedDefaultBatteryStandby,expectedAlarmLoad,expectedDefaultAlarmLoad,changePSUType,sAlarmLoadingDetail,sStandbyLoadingDetail;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -3219,6 +3222,8 @@ namespace TestProject.Libraries
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expectedBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				expectedAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				sAlarmLoadingDetail = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				sStandbyLoadingDetail = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
 				// sPSUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
@@ -3238,10 +3243,12 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Default Battery Standby load value
-				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
+				//verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
 				
 				// Verify Default Alarm load value
-				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				//verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sAlarmLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -3265,10 +3272,12 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Battery Standby on changing CPU load value
-				verifyBatteryStandbyOnChangingCPU(expectedBatteryStandby);
+				//verifyBatteryStandbyOnChangingCPU(expectedBatteryStandby);
+				Devices_Functions.verifyLoadingDetailsValue(expectedBatteryStandby,sStandbyLoadingDetail);
 				
 				// Verify Alarm Load on changing CPU load value
-				verifyAlarmLoadOnChangingCPU(expectedAlarmLoad);
+				//verifyAlarmLoadOnChangingCPU(expectedAlarmLoad);
+				Devices_Functions.verifyLoadingDetailsValue(expectedAlarmLoad,sAlarmLoadingDetail);
 
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -3301,7 +3310,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,CPUType,sRowNumber,sType,PanelType,expectedBatteryStandyby,expectedAlarmLoad,sDefaultBatteryStandyby,sDefaultAlarmLoad;
+			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,CPUType,sRowNumber,sType,PanelType,expectedBatteryStandyby,expectedAlarmLoad,sDefaultBatteryStandyby,sDefaultAlarmLoad,sAlarmLoadingDetail,sStandbyLoadingDetail;
 			int rowNumber;
 			float BatteryStandby,AlarmLoad,DefaultBatteryStandby,DefaultAlarmLoad;
 			
@@ -3315,12 +3324,12 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby=((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad=((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				// Add panels using test data in excel sheet
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
-				
 				
 				// Click on Expander node
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
@@ -3333,10 +3342,12 @@ namespace TestProject.Libraries
 				
 				
 				// Verify Default Battery Standby load value
-				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
+				//verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
 				
 				// Verify Default Alarm load value
-				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				//verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -3383,8 +3394,10 @@ namespace TestProject.Libraries
 
 					
 					// Verify Battery Standby and alarm load value on addition of Ethernet
-					verifyBatteryStandby(expectedBatteryStandyby,false,PanelType);
-					verifyAlarmLoad(expectedAlarmLoad,false,PanelType);
+					//verifyBatteryStandby(expectedBatteryStandyby,false,PanelType);
+					//verifyAlarmLoad(expectedAlarmLoad,false,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(expectedBatteryStandyby,sStandbyLoadingDetail);
+					Devices_Functions.verifyLoadingDetailsValue(expectedAlarmLoad,sAlarmLoadingDetail);
 					
 					//Get Battery Standby and alarm load from UI
 					sDefaultBatteryStandyby = GetBatteryStandbyValue(PanelType);
@@ -3413,8 +3426,10 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
 						// Verify Battery Standby and alarm load PSU load value on addition of Ethernet
-						verifyBatteryStandby(expectedBatteryStandyby,false,PanelType);
-						verifyAlarmLoad(expectedAlarmLoad,false,PanelType);
+						//verifyBatteryStandby(expectedBatteryStandyby,false,PanelType);
+						//verifyAlarmLoad(expectedAlarmLoad,false,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(expectedBatteryStandyby,sStandbyLoadingDetail);
+						Devices_Functions.verifyLoadingDetailsValue(expectedAlarmLoad,sAlarmLoadingDetail);
 					}
 					
 					else
@@ -3458,7 +3473,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,sDefaultBatteryStandby,sDefaultAlarmLoad,CPUType,sRowNumber,sType,PanelType,sExpectedBatteryStandby,sExpectedAlarmLoad,sXBusBatteryStandby,sXBusAlarmLoad,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad;
+			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,sDefaultBatteryStandby,sDefaultAlarmLoad,CPUType,sRowNumber,sType,PanelType,sExpectedBatteryStandby,sExpectedAlarmLoad,sXBusBatteryStandby,sXBusAlarmLoad,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,sStandbyLoadingDetail,sAlarmLoadingDetail;
 			int rowNumber;
 			float RBusBatteryStandby,RBusAlarmLoad,DefaultBatteryStandby,DefaultAlarmLoad,XBusBatteryStandby,XBusAlarmLoad;
 			
@@ -3472,7 +3487,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				if(PanelName.StartsWith("FIRE"))
@@ -3498,10 +3514,12 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Default Battery Standby load value
-				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
+				//verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
 				
 				// Verify Default Alarm load value
-				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				//verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 				
 				
 				// Click on Panel node
@@ -3575,10 +3593,12 @@ namespace TestProject.Libraries
 					//sExpectedAlarmLoad= ExpectedAlarmLoad.ToString("0.000");
 					
 					// Verify Battery Standby value on addition of R-Bus & X-Bus template
-					verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+					//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
 					
 					// Verify Alarm load value on addition of R-Bus & X-Bus template
-					verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+					//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				    Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 					
 					//Get Battery Standby from UI
 					sDefaultBatteryStandby = GetBatteryStandbyValue(PanelType);
@@ -3617,8 +3637,10 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
 						// Verify Battery Standby and Alarm load value on addition of Ethernet
-						verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
-						verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+						//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+						//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+							Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				  	        Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 					}
 					
 					else
@@ -3726,7 +3748,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,sDefaultBatteryStandby,sDefaultAlarmLoad,CPUType,sRowNumber,sType,PanelType,sExpectedBatteryStandby,sExpectedAlarmLoad,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad;
+			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,sDefaultBatteryStandby,sDefaultAlarmLoad,CPUType,sRowNumber,sType,PanelType,sExpectedBatteryStandby,sExpectedAlarmLoad,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,sStandbyLoadingDetail,sAlarmLoadingDetail;
 			int rowNumber;
 			float PrinterBatteryStandby,PrinterAlarmLoad,DefaultBatteryStandby,DefaultAlarmLoad;
 			
@@ -3740,7 +3762,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				// Add panels using test data in excel sheet
@@ -3757,10 +3780,12 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Default Battery Standby load value
-				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
+				//verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
 				
 				// Verify Default Alarm load value
-				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				//verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 				
 				// Click on Loop Card node
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
@@ -3808,10 +3833,12 @@ namespace TestProject.Libraries
 					sExpectedAlarmLoad= ExpectedAlarmLoad.ToString("0.000");
 					
 					// Verify Battery Standby value on addition of Accessories
-					verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+					//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
 					
 					// Verify Alarm load value on addition of Accessories
-					verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+					//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				    Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 					
 					//Get Battery Standby from UI
 					sDefaultBatteryStandby = GetBatteryStandbyValue(PanelType);
@@ -3844,8 +3871,10 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
 						// Verify Battery Standby and Alarm load value on addition of Ethernet
-						verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
-						verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+						//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+						//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				        Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 					}
 					
 					else
@@ -3853,10 +3882,7 @@ namespace TestProject.Libraries
 						
 						Report.Log(ReportLevel.Failure, "Device "+sLabelName+" not found");
 					}
-
-					
 				}
-				
 				
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -3886,7 +3912,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,sDefaultBatteryStandby,sDefaultAlarmLoad,CPUType,sRowNumber,sType,PanelType,sExpectedBatteryStandby,sExpectedAlarmLoad,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad;
+			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,sDefaultBatteryStandby,sDefaultAlarmLoad,CPUType,sRowNumber,sType,PanelType,sExpectedBatteryStandby,sExpectedAlarmLoad,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,sStandbyLoadingDetail,sAlarmLoadingDetail;
 			int rowNumber;
 			float ZetfastBatteryStandby,ZetfastAlarmLoad,DefaultBatteryStandby,DefaultAlarmLoad,ExpectedBatteryStandby,ExpectedAlarmLoad;
 			
@@ -3900,6 +3926,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -3973,12 +4001,13 @@ namespace TestProject.Libraries
 					sExpectedAlarmLoad= ExpectedAlarmLoad.ToString("0.000");
 					
 					// Verify Battery Standby value on addition of zetfast loop with devices
-					verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+					//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
 					
 					// Verify 40V PSU load value on addition of zetfast loop with devices
-					verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+					//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
 					
-					
+					Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				    Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 					
 					// Click on Site node
 					Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -4029,10 +4058,13 @@ namespace TestProject.Libraries
 							Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 							
 							// Verify Battery Standby load value on deletion of Zetfast loop
-							verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+							//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
 							
 							// Verify Alarm load value on deletion of Zetfast loop
-							verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+							//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+								Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				                Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
+					
 						}
 					}
 					
@@ -4057,10 +4089,12 @@ namespace TestProject.Libraries
 							Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 							
 							// Verify Battery Standby load value on deletion of Zetfast loop
-							verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+							//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
 							
 							// Verify Alarm load value on deletion of Zetfast loop
-							verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+							//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+							Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				            Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 							
 						}
 						else
@@ -4106,7 +4140,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,CPUType,sBatteryStandby,sAlarmLoad,sDefaultBatteryStandby,sDefaultAlarmLoad,sRowNumber,sType,PanelType,sExpectedBatteryStandby,sExpectedAlarmLoad,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad;
+			string PanelName,PanelNode,CPUType,sBatteryStandby,sAlarmLoad,sDefaultBatteryStandby,sDefaultAlarmLoad,sRowNumber,sType,PanelType,sExpectedBatteryStandby,sExpectedAlarmLoad,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,sStandbyLoadingDetail,sAlarmLoadingDetail;
 			int rowNumber;
 			float SCBatteryStandby,SCAlarmLoad,PABatteryStandby,PAAlarmLoad,DefaultBatteryStandby,DefaultAlarmLoad;
 			
@@ -4120,6 +4154,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -4138,10 +4174,12 @@ namespace TestProject.Libraries
 				
 				
 				// Verify Default Battery Standby load value
-				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
+				//verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
 				
 				// Verify Default Alarm load value
-				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				//verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 				
 				// Click on Loop Card node
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
@@ -4154,6 +4192,7 @@ namespace TestProject.Libraries
 					sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[j,11]).Value.ToString();
 					sBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,12]).Value.ToString();
 					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,13]).Value.ToString();
+				
 					
 					//Add Slot Card
 					// Click on Loop Card node
@@ -4186,10 +4225,12 @@ namespace TestProject.Libraries
 					sExpectedAlarmLoad= ExpectedAlarmLoad.ToString("0.000");
 					
 					// Verify Battery Standby value on addition of Accessories
-					verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+					//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
 					
 					// Verify Alarm load value on addition of Accessories
-					verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+					//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				    Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 					
 					//Get Battery Standby from UI
 					//sDefaultBatteryStandby = GetBatteryStandbyValue(PanelType);
@@ -4225,8 +4266,10 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
 						// Verify Battery Standby and Alarm load value on addition of Ethernet
-						verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
-						verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+						//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+						//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				    	Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 					}
 					
 					else
@@ -4282,10 +4325,12 @@ namespace TestProject.Libraries
 					sExpectedAlarmLoad= ExpectedAlarmLoad.ToString("0.000");
 					
 					// Verify Battery Standby value on addition of Accessories
-					verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+					//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
 					
 					// Verify Alarm load value on addition of Accessories
-					verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+					//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				    Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 					
 					//Get Battery Standby from UI
 					//sDefaultBatteryStandby = GetBatteryStandbyValue(PanelType);
@@ -4324,8 +4369,10 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
 						// Verify Battery Standby and Alarm load value on addition of Ethernet
-						verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
-						verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+						//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+						//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+						Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				        Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 					}
 					
 					else
@@ -5262,7 +5309,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,ModelNumber,sType,sLabel,sPowerSupply,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,sChangePowerSupply,expectedBatteryStandby,expectedAlarmLoad, expectedBatteryStandbyAfterMPM, expectedAlarmLoadAfterMPM;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,ModelNumber,sType,sLabel,sPowerSupply,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,sChangePowerSupply,expectedBatteryStandby,expectedAlarmLoad, expectedBatteryStandbyAfterMPM, expectedAlarmLoadAfterMPM,sStandbyLoadingDetail,sAlarmLoadingDetail;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -5279,6 +5326,8 @@ namespace TestProject.Libraries
 				sPowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,17]).Value.ToString();
 				//MPMStandby=Int32.Parse(expectedDefaultBatteryStandby);
 				//MPMStandby=MPMStandby+22;
 				//MPMAlarm=Int32.Parse(expectedDefaultAlarmLoad);
@@ -5305,10 +5354,12 @@ namespace TestProject.Libraries
 				
 				
 				// Verify Default Battery Standby load value
-				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
+				//verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
 				
 				// Verify Default Alarm load value
-				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				//verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -5335,10 +5386,12 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Default Battery Standby load value
-				verifyBatteryStandby(expectedBatteryStandbyAfterMPM,false,PanelType);
+				//verifyBatteryStandby(expectedBatteryStandbyAfterMPM,false,PanelType);
 				
 				// Verify Default Alarm load value
-				verifyAlarmLoad(expectedAlarmLoadAfterMPM,false,PanelType);
+				//verifyAlarmLoad(expectedAlarmLoadAfterMPM,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedBatteryStandbyAfterMPM,sStandbyLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(expectedAlarmLoadAfterMPM,sAlarmLoadingDetail);
 				
 				
 				
@@ -5366,10 +5419,12 @@ namespace TestProject.Libraries
 					
 					
 					// Verify Default Battery Standby load value
-					verifyBatteryStandby(expectedBatteryStandby,false,PanelType);
+					//verifyBatteryStandby(expectedBatteryStandby,false,PanelType);
 					
 					// Verify Default Alarm load value
-					verifyAlarmLoad(expectedAlarmLoad,false,PanelType);
+					//verifyAlarmLoad(expectedAlarmLoad,false,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(expectedBatteryStandby,sStandbyLoadingDetail);
+				    Devices_Functions.verifyLoadingDetailsValue(expectedAlarmLoad,sAlarmLoadingDetail);
 				}
 				
 				//Close opened excel sheet
@@ -5399,7 +5454,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 
 			// Declared string type
-			string PanelName, PanelNode,RowNumber,RowNumberForAlarm,CPUType,PanelType,BatterStandby,AlarmLoad,ChangePanelLED,LEDBatterStandby,LEDAlarmLoad,ModelNumber,sType;
+			string PanelName, PanelNode,RowNumber,RowNumberForAlarm,CPUType,PanelType,BatterStandby,AlarmLoad,ChangePanelLED,LEDBatterStandby,LEDAlarmLoad,ModelNumber,sType,sStandbyLoadingDetail,sAlarmLoadingDetail;
 			int PanelLED;
 			
 			// For loop to iterate on data present in excel
@@ -5416,6 +5471,8 @@ namespace TestProject.Libraries
 				LEDBatterStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				LEDAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+					sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
 				
 				int.TryParse(ChangePanelLED, out PanelLED);
 				
@@ -5456,10 +5513,12 @@ namespace TestProject.Libraries
 				Excel_Utilities.OpenExcelFile(sFileName,sAddPanelSheet);
 				
 				//Verify Battery Standby
-				verifyBatteryStandbyAccToRow(BatterStandby,RowNumber,PanelType);
+				//verifyBatteryStandbyAccToRow(BatterStandby,RowNumber,PanelType);
 				
 				//Verify Alarm Load
-				verifyAlarmLoadAccToRow(AlarmLoad,RowNumberForAlarm,PanelType);
+				//verifyAlarmLoadAccToRow(AlarmLoad,RowNumberForAlarm,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(BatterStandby,sStandbyLoadingDetail);
+				    Devices_Functions.verifyLoadingDetailsValue(AlarmLoad,sAlarmLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -5475,10 +5534,12 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Default Battery Standby load value
-				verifyBatteryStandbyAccToRow(LEDBatterStandby,RowNumber,PanelType);
+				//verifyBatteryStandbyAccToRow(LEDBatterStandby,RowNumber,PanelType);
 				
 				// Verify Default Alarm load value
-				verifyAlarmLoadAccToRow(LEDAlarmLoad,RowNumberForAlarm,PanelType);
+				//verifyAlarmLoadAccToRow(LEDAlarmLoad,RowNumberForAlarm,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(LEDBatterStandby,sStandbyLoadingDetail);
+				    Devices_Functions.verifyLoadingDetailsValue(LEDAlarmLoad,sAlarmLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -5626,7 +5687,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string typ
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expectedMaxBatteryStandby,expectedMaxAlarmLoad;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expectedMaxBatteryStandby,expectedMaxAlarmLoad,sStandbyLoadingDetail,sAlarmLoadingDetail;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -5639,6 +5700,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedMaxBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedMaxAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -5657,10 +5720,12 @@ namespace TestProject.Libraries
 				
 				
 				// Verify max Battery Standby load value
-				verifyMaxBatteryStandby(expectedMaxBatteryStandby,false);
+				//verifyMaxBatteryStandby(expectedMaxBatteryStandby,false);
 				
 				// Verify max Alarm load value
-				verifyMaxAlarmLoad(expectedMaxAlarmLoad,false);
+				//verifyMaxAlarmLoad(expectedMaxAlarmLoad,false);
+					Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxAlarmLoad,sAlarmLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -5693,7 +5758,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string typ
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,sExpectedBatteryStandby,sExpectedAlarmLoad,sIsSecondPSU;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,sExpectedBatteryStandby,sExpectedAlarmLoad,sIsSecondPSU,sStandbyLoadingDetail,sAlarmLoadingDetail;
 			int rowNumber;
 			bool IsSecondPSU;
 			
@@ -5708,6 +5773,8 @@ namespace TestProject.Libraries
 				sExpectedBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				sExpectedAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sIsSecondPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+					sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				
 				bool.TryParse(sIsSecondPSU, out IsSecondPSU);
 				
@@ -5728,10 +5795,12 @@ namespace TestProject.Libraries
 				
 				
 				// Verify Battery Standby load value
-				verifyBatteryStandbyFC(sExpectedBatteryStandby,IsSecondPSU,PanelType);
+				//verifyBatteryStandbyFC(sExpectedBatteryStandby,IsSecondPSU,PanelType);
 				
 				// Verify max Alarm load value
-				verifyAlarmLoadFC(sExpectedAlarmLoad,IsSecondPSU,PanelType);
+				//verifyAlarmLoadFC(sExpectedAlarmLoad,IsSecondPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -5856,7 +5925,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,sIsSecondPSU,CPUType,sRowNumber,changeCPUType,PanelType,expectedBatteryStandby,expectedDefaultBatteryStandby;//,expectedAlarmLoad,expectedDefaultAlarmLoad,changePSUType;
+			string PanelName,PanelNode,sIsSecondPSU,CPUType,sRowNumber,changeCPUType,PanelType,expectedBatteryStandby,expectedDefaultBatteryStandby,sStandbyLoadingDetail,sAlarmLoadingDetail;//,expectedAlarmLoad,expectedDefaultAlarmLoad,changePSUType;
 			int rowNumber;
 			bool IsSecondPSU;
 			
@@ -5872,6 +5941,8 @@ namespace TestProject.Libraries
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				expectedBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				sIsSecondPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
 				
 				bool.TryParse(sIsSecondPSU, out IsSecondPSU);
 				int.TryParse(sRowNumber, out rowNumber);
@@ -5891,7 +5962,8 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Default Battery Standby load value
-				verifyBatteryStandbyFC(expectedDefaultBatteryStandby,IsSecondPSU,PanelType);
+				//verifyBatteryStandbyFC(expectedDefaultBatteryStandby,IsSecondPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -5909,7 +5981,8 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Battery Standby on changing CPU load value
-				verifyBatteryStandbyOnChangingCPU(expectedBatteryStandby);
+				//verifyBatteryStandbyOnChangingCPU(expectedBatteryStandby);
+				Devices_Functions.verifyLoadingDetailsValue(expectedBatteryStandby,sStandbyLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -5941,7 +6014,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,CPUType,sRowNumber,sType,PanelType,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad;
+			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,CPUType,sRowNumber,sType,PanelType,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,sStandbyLoadingDetail,sAlarmLoadingDetail;
 			
 			string changePowerSupply,sBatteryStandbyOnChangingPowerSupply,sAlarmLoadOnChangingPowerSupply;
 			int rowNumber;
@@ -5957,6 +6030,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -5983,10 +6058,12 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Default Battery Standby load value
-				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
+				//verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
 				
 				// Verify Default Alarm load value
-				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				//verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 				
 				
 				// Click on Panel node
@@ -6022,10 +6099,12 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 					
 					// Verify Battery Standby value on addition of R-Bus & X-Bus template
-					verifyBatteryStandby(sBatteryStandby,false,PanelType);
+					//verifyBatteryStandby(sBatteryStandby,false,PanelType);
 					
 					// Verify Alarm load value on addition of R-Bus & X-Bus template
-					verifyAlarmLoad(sAlarmLoad,false,PanelType);
+					//verifyAlarmLoad(sAlarmLoad,false,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
+				    Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 					
 					// Click on Main node
 					Common_Functions.ClickOnNavigationTreeItem("Main");
@@ -6060,8 +6139,11 @@ namespace TestProject.Libraries
 					sAlarmLoadOnChangingPowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[j,18]).Value.ToString();
 					
 					// Verify Battery Standby and Alarm load value on addition of Ethernet
-					verifyBatteryStandby(sBatteryStandbyOnChangingPowerSupply,false,PanelType);
-					verifyAlarmLoad(sAlarmLoadOnChangingPowerSupply,false,PanelType);
+					//verifyBatteryStandby(sBatteryStandbyOnChangingPowerSupply,false,PanelType);
+					//verifyAlarmLoad(sAlarmLoadOnChangingPowerSupply,false,PanelType);
+					Devices_Functions.verifyLoadingDetailsValue(sBatteryStandbyOnChangingPowerSupply,sStandbyLoadingDetail);
+				    Devices_Functions.verifyLoadingDetailsValue(sAlarmLoadOnChangingPowerSupply,sAlarmLoadingDetail);
+					
 				}
 				
 				// Delete panel using PanelNode details from excel sheet
@@ -6095,7 +6177,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,CPUType,sRowNumber,sType,PanelType,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad;
+			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,CPUType,sRowNumber,sType,PanelType,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,sStandbyLoadingDetail,sAlarmLoadingDetail;
 			
 			string changeHousingProperty,sBatteryStandbyOnChangingHousingProperty,sAlarmLoadOnChangingHousingProperty;
 			int rowNumber;
@@ -6116,7 +6198,8 @@ namespace TestProject.Libraries
 				sBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
 				sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
 				changeHousingProperty = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
-
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,19]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,20]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -6143,10 +6226,12 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Default Battery Standby load value
-				verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
+				//verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
 				
 				// Verify Default Alarm load value
-				verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				//verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 				
 				repo.ProfileConsys1.tab_Points.Click();
 				
@@ -6162,11 +6247,12 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Verify Battery Standby value on addition of R-Bus & X-Bus template
-				verifyBatteryStandby(sBatteryStandby,false,PanelType);
+				//verifyBatteryStandby(sBatteryStandby,false,PanelType);
 				
 				// Verify Alarm load value on addition of R-Bus & X-Bus template
-				verifyAlarmLoad(sAlarmLoad,false,PanelType);
-				
+				//verifyAlarmLoad(sAlarmLoad,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(sBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(sAlarmLoad,sAlarmLoadingDetail);
 				repo.ProfileConsys1.tab_Points.Click();
 				
 				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
@@ -6200,9 +6286,10 @@ namespace TestProject.Libraries
 				sAlarmLoadOnChangingHousingProperty = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
 				
 				// Verify Battery Standby and Alarm load value on addition of Ethernet
-				verifyBatteryStandby(sBatteryStandbyOnChangingHousingProperty,false,PanelType);
-				verifyAlarmLoad(sAlarmLoadOnChangingHousingProperty,false,PanelType);
-				
+				//verifyBatteryStandby(sBatteryStandbyOnChangingHousingProperty,false,PanelType);
+				//verifyAlarmLoad(sAlarmLoadOnChangingHousingProperty,false,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(sBatteryStandbyOnChangingHousingProperty,sStandbyLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(sAlarmLoadOnChangingHousingProperty,sAlarmLoadingDetail);
 				
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -6328,7 +6415,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,minimumBatteryValue,changeStandByHoursValue,changeBatteryFactorValue;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,minimumBatteryValue,changeStandByHoursValue,changeBatteryFactorValue,sMinBatteryLoadingDetail;
 			string changedMinimumBatteryValue,sIsSecondPSU;
 			int rowNumber;
 			bool IsSecondPSU;
@@ -6346,7 +6433,7 @@ namespace TestProject.Libraries
 				changeStandByHoursValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				changeBatteryFactorValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				changedMinimumBatteryValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
-				
+				sMinBatteryLoadingDetail= ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
 				
 				bool.TryParse(sIsSecondPSU, out IsSecondPSU);
 				
@@ -6378,7 +6465,8 @@ namespace TestProject.Libraries
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				
 				// Verify minimum battery
-				verifyMinimumBattery(minimumBatteryValue,IsSecondPSU,PanelType);
+				//verifyMinimumBattery(minimumBatteryValue,IsSecondPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(minimumBatteryValue,sMinBatteryLoadingDetail);
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -6394,8 +6482,8 @@ namespace TestProject.Libraries
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				
 				// Verify minimum battery
-				verifyMinimumBattery(changedMinimumBatteryValue,IsSecondPSU,PanelType);
-				
+				//verifyMinimumBattery(changedMinimumBatteryValue,IsSecondPSU,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(changedMinimumBatteryValue,sMinBatteryLoadingDetail);
 				
 			}
 			

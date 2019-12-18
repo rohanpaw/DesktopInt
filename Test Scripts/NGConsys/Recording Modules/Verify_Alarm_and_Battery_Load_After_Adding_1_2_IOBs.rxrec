@@ -263,8 +263,80 @@ rxversion="8.3">
 			</info>
 		</mouseitem>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f78683df-0fcb-4c53-ab89-fdc068cba6a2">
+				<argument
+				argname="expectedUnits"
+				id="13cb0da9-63c4-4fb5-a0fa-93eee5a20671">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.513
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="1d57d6b6-8dd4-4ef2-8cfc-52b941018c17">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Battery Standby (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f78683df-0fcb-4c53-ab89-fdc068cba6a2">
+				<argument
+				argname="expectedUnits"
+				id="13cb0da9-63c4-4fb5-a0fa-93eee5a20671">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.842
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="1d57d6b6-8dd4-4ef2-8cfc-52b941018c17">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Battery Alarm (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandby"
 		namespace="TestProject.Libraries"
@@ -310,7 +382,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyAlarmLoad"
 		namespace="TestProject.Libraries"
@@ -518,7 +590,7 @@ rxversion="8.3">
 		</mouseitem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandby"
 		namespace="TestProject.Libraries"
@@ -564,7 +636,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyAlarmLoad"
 		namespace="TestProject.Libraries"
@@ -604,6 +676,78 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						PFI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f78683df-0fcb-4c53-ab89-fdc068cba6a2">
+				<argument
+				argname="expectedUnits"
+				id="13cb0da9-63c4-4fb5-a0fa-93eee5a20671">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.75
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="1d57d6b6-8dd4-4ef2-8cfc-52b941018c17">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Battery Standby (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f78683df-0fcb-4c53-ab89-fdc068cba6a2">
+				<argument
+				argname="expectedUnits"
+				id="13cb0da9-63c4-4fb5-a0fa-93eee5a20671">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1.258
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="1d57d6b6-8dd4-4ef2-8cfc-52b941018c17">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Battery Alarm (A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -738,7 +882,7 @@ rxversion="8.3">
 		</mouseitem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandby"
 		namespace="TestProject.Libraries"
@@ -784,7 +928,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyAlarmLoad"
 		namespace="TestProject.Libraries"
@@ -824,6 +968,78 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						PFI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f78683df-0fcb-4c53-ab89-fdc068cba6a2">
+				<argument
+				argname="expectedUnits"
+				id="13cb0da9-63c4-4fb5-a0fa-93eee5a20671">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.513
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="1d57d6b6-8dd4-4ef2-8cfc-52b941018c17">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Battery Standby (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f78683df-0fcb-4c53-ab89-fdc068cba6a2">
+				<argument
+				argname="expectedUnits"
+				id="13cb0da9-63c4-4fb5-a0fa-93eee5a20671">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.842
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="1d57d6b6-8dd4-4ef2-8cfc-52b941018c17">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Battery Alarm (A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -958,7 +1174,7 @@ rxversion="8.3">
 		</mouseitem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandby"
 		namespace="TestProject.Libraries"
@@ -1004,7 +1220,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="PSULoad_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyAlarmLoad"
 		namespace="TestProject.Libraries"
@@ -1044,6 +1260,78 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						PFI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f78683df-0fcb-4c53-ab89-fdc068cba6a2">
+				<argument
+				argname="expectedUnits"
+				id="13cb0da9-63c4-4fb5-a0fa-93eee5a20671">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.276
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="1d57d6b6-8dd4-4ef2-8cfc-52b941018c17">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Battery Standby (A)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f78683df-0fcb-4c53-ab89-fdc068cba6a2">
+				<argument
+				argname="expectedUnits"
+				id="13cb0da9-63c4-4fb5-a0fa-93eee5a20671">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.426
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="1d57d6b6-8dd4-4ef2-8cfc-52b941018c17">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Battery Alarm (A)
 					</argvalue>
 				</argument>
 			</arguments>

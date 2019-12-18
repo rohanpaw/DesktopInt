@@ -100,11 +100,17 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("410DIM - 1");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyBatteryStandbyFCOnReopen("0.25", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.25", "Battery Standby (A)");
             Delay.Milliseconds(0);
             
-            Libraries.PSULoad_Functions.verifyAlarmLoadFCOnReopen("0.443", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.443", "Battery Alarm (A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyBatteryStandbyFCOnReopen("0.25", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "FIM");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verifyAlarmLoadFCOnReopen("0.443", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);

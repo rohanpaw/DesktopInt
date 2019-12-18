@@ -44,6 +44,7 @@ namespace TestProject
         NGConsysRepositoryFolders.FormMe2AppFolder _formme2;
         NGConsysRepositoryFolders.ExportAppFolder _export;
         NGConsysRepositoryFolders.List1000AppFolder _list1000;
+        NGConsysRepositoryFolders.FireDetectionSecretSantaWishListXlAppFolder _firedetectionsecretsantawishlistxl;
 
         /// <summary>
         /// Gets the singleton class instance representing the NGConsysRepository element repository.
@@ -77,6 +78,7 @@ namespace TestProject
             _formme2 = new NGConsysRepositoryFolders.FormMe2AppFolder(this);
             _export = new NGConsysRepositoryFolders.ExportAppFolder(this);
             _list1000 = new NGConsysRepositoryFolders.List1000AppFolder(this);
+            _firedetectionsecretsantawishlistxl = new NGConsysRepositoryFolders.FireDetectionSecretSantaWishListXlAppFolder(this);
         }
 
 #region Variables
@@ -1278,6 +1280,15 @@ namespace TestProject
         public virtual NGConsysRepositoryFolders.List1000AppFolder List1000
         {
             get { return _list1000; }
+        }
+
+        /// <summary>
+        /// The FireDetectionSecretSantaWishListXl folder.
+        /// </summary>
+        [RepositoryFolder("a14e1528-ebcb-4a1c-9d39-5f424b2d5a20")]
+        public virtual NGConsysRepositoryFolders.FireDetectionSecretSantaWishListXlAppFolder FireDetectionSecretSantaWishListXl
+        {
+            get { return _firedetectionsecretsantawishlistxl; }
         }
     }
 
@@ -12368,6 +12379,72 @@ namespace TestProject
                 get
                 {
                     return _projecttypeInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FireDetectionSecretSantaWishListXlAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("a14e1528-ebcb-4a1c-9d39-5f424b2d5a20")]
+        public partial class FireDetectionSecretSantaWishListXlAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _ewrcaInfo;
+
+            /// <summary>
+            /// Creates a new FireDetectionSecretSantaWishListXl  folder.
+            /// </summary>
+            public FireDetectionSecretSantaWishListXlAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FireDetectionSecretSantaWishListXl", "/dom[@domain='mysite.jci.com']", parentFolder, 30000, null, false, "a14e1528-ebcb-4a1c-9d39-5f424b2d5a20", "")
+            {
+                _ewrcaInfo = new RepoItemInfo(this, "EwrCa", ".//iframe[#'WebApplicationFrame']//div[#'gridRows']/div[27]/div[6]", 30000, null, "ea56143a-ae65-40d0-bc65-12dfca4afc22");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("a14e1528-ebcb-4a1c-9d39-5f424b2d5a20")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("a14e1528-ebcb-4a1c-9d39-5f424b2d5a20")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EwrCa item.
+            /// </summary>
+            [RepositoryItem("ea56143a-ae65-40d0-bc65-12dfca4afc22")]
+            public virtual Ranorex.DivTag EwrCa
+            {
+                get
+                {
+                    return _ewrcaInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EwrCa item info.
+            /// </summary>
+            [RepositoryItemInfo("ea56143a-ae65-40d0-bc65-12dfca4afc22")]
+            public virtual RepoItemInfo EwrCaInfo
+            {
+                get
+                {
+                    return _ewrcaInfo;
                 }
             }
         }
