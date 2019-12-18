@@ -218,7 +218,7 @@ rxversion="8.3">
 		classname="DC_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyCurrentDCCalculation"
+		methodname="verifyTripCurrentForDCCalculation"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -249,7 +249,7 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="sOtherDevicesLoopA"
+				argname="sAddOtherDevices"
 				id="6459f711-2a84-43c4-9240-995570161a3d">
 					<argvaluetype>
 						System.String

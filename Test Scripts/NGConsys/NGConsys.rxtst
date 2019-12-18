@@ -1115,7 +1115,7 @@ rxversion="8.3">
 			id="0efb3a92-1c04-4856-87a0-513537af1f19"
 			name="Verify_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC">
 				<description>
-					<![CDATA[<p>NGC-1826/TC-63799</p>]]>
+					<![CDATA[<p>NGC-1826/TC-63799 In this test case, Isolator jumper On was not added or removed as by default QIO device doesn't have it.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -11855,7 +11855,7 @@ MxDesigner]]>
 			id="9b79d666-e220-4b5b-94b5-d9e5ed7ca047"
 			name="Observe_Units_Gallery_On_Navigation_Tree_Node_Selection">
 				<description>
-					<![CDATA[<p>NGC-180/TC-87</p>]]>
+					<![CDATA[<p>NGC-180/TC-87 Defect-2654</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -24469,37 +24469,10 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="2cef8ce4-9c3d-4839-8a70-58087c75dbe0">
-			</testcontainer>
-			<testcontainer
-			id="596feba0-7917-46f6-8198-bb3d116911f7">
-			</testcontainer>
-			<testcontainer
-			id="7757ecb5-b3ae-47d8-80f6-75815a12901e">
-			</testcontainer>
-			<testcontainer
 			id="7b56b642-aeb5-48cc-ac2d-3e685d881cb6">
 			</testcontainer>
 			<testcontainer
-			id="806a3da2-08f7-4a69-9405-d6ae07f52512">
-			</testcontainer>
-			<testcontainer
-			id="827af031-2c95-45c3-a3be-07380b7f07a2">
-			</testcontainer>
-			<testcontainer
-			id="83bc95e7-6f8d-4c5c-af5d-923ef3c19cdc">
-			</testcontainer>
-			<testcontainer
-			id="901b94ca-97d3-4c3c-9999-93bc83aad967">
-			</testcontainer>
-			<testcontainer
 			id="d84f3eb7-a76c-4b26-8b2e-8f6dd91a2713">
-			</testcontainer>
-			<testcontainer
-			id="f67dd6a6-3b67-40d1-99e1-090aa4e17bce">
-			</testcontainer>
-			<testcontainer
-			id="f70a6481-f782-4dfc-a575-6245d0033714">
 			</testcontainer>
 			<testcontainer
 			id="faca3ac1-8096-4f76-b05b-6be029b8b019">
@@ -24652,10 +24625,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			id="0efb3a92-1c04-4856-87a0-513537af1f19">
 			</testcontainer>
 			<testcontainer
-			id="509d084a-8644-42ab-8bf9-6afdb2b657b4">
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

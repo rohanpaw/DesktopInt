@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.VerifyCurrentDCCalculation("TC_63797_Verify Trip Current Calculation", "Add Devices Loop A", "Other Devices Loop A");
+            Libraries.DC_Functions.verifyTripCurrentForDCCalculation("TC_63797_Verify Trip Current Calculation", "Add Devices Loop A", "Other Devices Loop A");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.SaveProject("TC_63797");
