@@ -2337,7 +2337,7 @@ namespace TestProject.Libraries
 		{
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDeviceSheet);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
-			string sType, sLabelName,sBaseofDevice,sBasePropertyRowIndex,PanelType,expectedIsolatorUnits;
+			string sType, sLabelName,sBaseofDevice,sBasePropertyRowIndex,PanelType,expectedIsolatorUnits,sIBUnitsLoadingDetail;
 			for(int i=8; i<=rows; i++)
 			{
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
@@ -2349,6 +2349,7 @@ namespace TestProject.Libraries
 				sBasePropertyRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				expectedIsolatorUnits= ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				PanelType= ((Range)Excel_Utilities.ExcelRange.Cells[5,5]).Value.ToString();
+				sIBUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
@@ -2374,7 +2375,8 @@ namespace TestProject.Libraries
 					Report.Log(ReportLevel.Success, "Additional Base " +sBaseofDevice+ " added successfully");
 				}
 				
-				VerifyIsolatorUnits(expectedIsolatorUnits,PanelType);
+				//VerifyIsolatorUnits(expectedIsolatorUnits,PanelType);
+				Devices_Functions.verifyLoadingDetailsValue(expectedIsolatorUnits,sIBUnitsLoadingDetail);
 				
 			}
 			
