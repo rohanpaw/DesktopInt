@@ -107,7 +107,7 @@ namespace TestProject.Recording_Modules
             Select_Market("Germa");
             Delay.Milliseconds(0);
             
-            ListItem(ValueConverter.ArgumentFromString<int>("iListIndex", "2"));
+            ListItem(ValueConverter.ArgumentFromString<int>("iListIndex", "3"));
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.PARTRight.btn_CreateNewProject' at Center.", repo.ProfileConsys1.PARTRight.btn_CreateNewProjectInfo, new RecordItemIndex(6));

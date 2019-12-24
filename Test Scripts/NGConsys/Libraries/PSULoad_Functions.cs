@@ -3452,7 +3452,7 @@ namespace TestProject.Libraries
 		}
 
 		
-		/*****************************************************************************************************************
+		/************************************************************************************************************************
 		 * Function Name: verifyBatteryStandbyAndAlarmLoadOnRbusAddDelete
 		 * Function Details: To Verify Battery Standby and Alarm Load on addition/deletion of R-Bus connection
 		 * Parameter/Arguments:   expected Maximum value, panel type (FIM or PFI)  and row number is 16 and 17 by default
@@ -3462,7 +3462,8 @@ namespace TestProject.Libraries
 		 * Alpesh Dhakad - 07/09/2019 - Updated test scripts
 		 * Alpesh Dhakad - 21/08/2019 - Updated with new navigation tree method, xpath and devices gallery
 		 * Alpesh Dhakad - 17/09/2019 & 18/09/2019 - Updated code with for battery stand by and alarm, also Updated test data
-		 *****************************************************************************************************************/
+		 * Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
+		 ************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnRbusAddDelete(string sFileName,string sAddPanelSheet)
 		{
@@ -3487,8 +3488,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
-				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				if(PanelName.StartsWith("FIRE"))
@@ -3737,6 +3738,7 @@ namespace TestProject.Libraries
 		 * Last Update : 22/01/2019   Alpesh Dhakad - 30/07/2019 - Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 08/08/2019 - Updated test script
 		 * Alpesh Dhakad - 21/08/2019 - Updated with new navigation tree method, xpath and devices gallery
+		 * Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnAdditionAndDeletionOfAccessories(string sFileName,string sAddPanelSheet)
@@ -3762,8 +3764,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
-				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				// Add panels using test data in excel sheet
@@ -4734,7 +4736,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables type
-			string PanelType,sExpectedPowerCalculationText,sDeviceName,sLabelName;
+			string PanelType,sExpectedPowerCalculationText,sDeviceName,sLabelName,LoadingDetailsName;
 			int DeviceQty;
 			
 			// For loop to iterate on data present in excel
@@ -4747,11 +4749,14 @@ namespace TestProject.Libraries
 				sExpectedPowerCalculationText= ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				
 				PanelType= ((Range)Excel_Utilities.ExcelRange.Cells[5,5]).Value.ToString();
+				LoadingDetailsName= ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
 				
 				Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,DeviceQty);
 				
 				
-				verifyPowerCalculationsFor24V(PanelType);
+				//verifyPowerCalculationsFor24V(PanelType);
+				
+				Devices_Functions.verifyLoadingDetailColor(LoadingDetailsName);
 				
 				verifyPowerCalculationsText(sExpectedPowerCalculationText);
 
@@ -5675,7 +5680,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:Alpesh Dhakad
-		 * Last Update : 18/09/2019
+		 * Last Update : 18/09/2019 Alpesh Dhakad 23/12/2019 - Updated row number for sStandbyLoadingDetail and sAlarmLoadingDetail
 		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMaxBatteryStandbyAndAlarmLoadFC(string sFileName,string sAddPanelSheet)
@@ -5700,8 +5705,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedMaxBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedMaxAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
-				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -5746,7 +5751,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:Alpesh Dhakad
-		 * Last Update : 18/09/2019
+		 * Last Update : 18/09/2019 Alpesh Dhakad 23/12/2019 - Updated row number for sStandbyLoadingDetail and sAlarmLoadingDetail
 		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyDefaultBatteryStandbyAndAlarmLoadFC(string sFileName,string sAddPanelSheet)
@@ -5773,8 +5778,8 @@ namespace TestProject.Libraries
 				sExpectedBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				sExpectedAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sIsSecondPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
-					sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
-				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+					sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				
 				bool.TryParse(sIsSecondPSU, out IsSecondPSU);
 				
@@ -5907,14 +5912,14 @@ namespace TestProject.Libraries
 			}
 		}
 		
-		/*****************************************************************************************************************
+		/*********************************************************************************************************************************
 		 * Function Name:verifyBatteryStandbyOnChangingCPUInFCPanel
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 18/09/2019
-		 *****************************************************************************************************************/
+		 * Last Update : 18/09/2019 Alpesh Dhakad 23/12/2019 - Updated row number for sStandbyLoadingDetail and sAlarmLoadingDetail
+		 *********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyOnChangingCPUInFCPanel(string sFileName,string sAddPanelSheet)
 		{
@@ -5941,8 +5946,8 @@ namespace TestProject.Libraries
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				expectedBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				sIsSecondPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
-				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
-				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				
 				bool.TryParse(sIsSecondPSU, out IsSecondPSU);
 				int.TryParse(sRowNumber, out rowNumber);
@@ -5996,14 +6001,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/*****************************************************************************************************************
+		/***************************************************************************************************************************
 		 * Function Name: verifyBatteryStandbyAndAlarmLoadOnChangingPowerSupply
 		 * Function Details: To Verify Battery Standby and Alarm Load on changing power supply
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 20/09/2019
-		 *****************************************************************************************************************/
+		 * Last Update : 20/09/2019 Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
+		 ***************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnChangingPowerSupply(string sFileName,string sAddPanelSheet)
 		{
@@ -6030,8 +6035,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
-				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -6159,14 +6164,14 @@ namespace TestProject.Libraries
 		}
 
 		
-		/*****************************************************************************************************************
+		/*********************************************************************************************************************************
 		 * Function Name: verifyNormalAndAlarmLoadOnChangingHousingPropertyOfDIM
 		 * Function Details: To Verify Battery Standby and Alarm Load on changing power supply
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 20/09/2019
-		 *****************************************************************************************************************/
+		 * Last Update : 20/09/2019  Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
+		 *********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyNormalAndAlarmLoadOnChangingHousingPropertyOfDIM(string sFileName,string sAddPanelSheet)
 		{
@@ -6198,8 +6203,8 @@ namespace TestProject.Libraries
 				sBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
 				sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
 				changeHousingProperty = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
-				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,19]).Value.ToString();
-				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,20]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -6404,6 +6409,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 20/09/2019
+		 * 
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyStandyByAlarmHourAndBatteryFactor(string sFileName,string sAddPanelSheet)

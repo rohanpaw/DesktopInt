@@ -334,6 +334,9 @@ namespace TestProject.Libraries
 			//Click on Search button
 			repo.PrintPreview.SearchExport1.Click();
 			
+			//Click on Search button
+			repo.PrintPreview.SearchExport1.Click();
+			
 			//Click on Search bar
 			repo.PrintPreview.SearchBox_Export1.Click();
 			
@@ -367,6 +370,9 @@ namespace TestProject.Libraries
 					Report.Log(ReportLevel.Failure,"Device with SKU "+sValue+" is getting displayed");
 				}
 			}
+			
+			Delay.Milliseconds(300);
+			
 			repo.PrintPreview.btn_CloseB.Click();
 			Delay.Milliseconds(200);
 		}

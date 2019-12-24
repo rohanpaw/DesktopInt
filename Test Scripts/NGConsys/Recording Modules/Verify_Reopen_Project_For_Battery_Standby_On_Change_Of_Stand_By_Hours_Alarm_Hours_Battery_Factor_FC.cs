@@ -101,7 +101,7 @@ namespace TestProject.Recording_Modules
             repo.ProfileConsys1.tab_PhysicalLayout.Click();
             Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verifyMinimumBattery("0.024073\r\n", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "FIM");
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("0.024073\r\n", "False");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

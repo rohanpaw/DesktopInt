@@ -74,6 +74,15 @@ namespace TestProject
 			}
 			
 			
+			//check if app process is hanged and kill 
+			Process[] processes1 = null; 
+			processes1 = Process.GetProcessesByName("WerFault.exe");
+			foreach (Process proces in processes1) 
+			{ 
+				proces.Kill(); 
+			}
+			
+			
 			
 			Host.Local.RunApplication("C:\\Windows\\System32\\cmd.exe", "", "", false);
 			Delay.Milliseconds(500);

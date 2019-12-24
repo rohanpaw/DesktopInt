@@ -13788,7 +13788,7 @@ W/AAAAAASUVORK5CYII=
 			id="da5d2408-f0f2-47f7-8850-f47457d51ea8"
 			name="btn_CloseB"
 			refimgid="3bd1ddef-ae4e-4387-bad3-2e88557db09e"
-			searchtimeout="30000ms">
+			searchtimeout="60000ms">
 				/form[@title='Print Preview']/?/?/button[@automationid='PART_CloseButton']
 			</item>
 			<item
