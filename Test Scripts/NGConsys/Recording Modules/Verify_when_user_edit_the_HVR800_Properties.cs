@@ -106,14 +106,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("HVR800", "Other");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyDeviceProperties("Label", "HVR800 - 1");
+            Libraries.Devices_Functions.verifyDeviceProperties("Label", "HVR800 - 0");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyDeviceProperties("Model", "HVR800");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyBlankDeviceAddress("2", "Address");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyBlankDeviceAddress("2", "Address");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.editDeviceLabel("Label", "HVR800-Test");
             Delay.Milliseconds(0);

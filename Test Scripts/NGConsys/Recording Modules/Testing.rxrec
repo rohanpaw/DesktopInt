@@ -101,10 +101,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
+		methodname="EnableISDevices"
 		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
@@ -114,21 +114,11 @@ rxversion="8.3">
 			</bindings>
 			<arguments
 			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="ExpanderName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -154,7 +144,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -180,7 +170,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -206,7 +196,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -232,7 +222,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -258,7 +248,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -284,7 +274,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -310,7 +300,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -336,7 +326,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -362,7 +352,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -388,7 +378,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -414,7 +404,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyNavigationTreeItemText"
 		namespace="TestProject.Libraries"
@@ -440,7 +430,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -466,7 +456,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyNavigationTreeItemText"
 		namespace="TestProject.Libraries"
@@ -492,7 +482,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyNavigationTreeItemText"
 		namespace="TestProject.Libraries"

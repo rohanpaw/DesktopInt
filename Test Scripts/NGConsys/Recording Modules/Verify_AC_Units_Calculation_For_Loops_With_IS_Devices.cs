@@ -91,6 +91,12 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Devices_Functions.EnableISDevices();
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromGallery("Exi800", "Other");
             Delay.Milliseconds(0);
             

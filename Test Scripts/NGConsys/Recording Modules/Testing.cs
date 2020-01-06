@@ -85,53 +85,53 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            Libraries.Devices_Functions.EnableISDevices();
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane  1/3");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane  1/3");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("Other Slot Cards  (0 of 6)");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.VerifyNavigationTreeItemText("Other Slot Cards  (0 of 6)");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("Other Slot Cards  (1 of 6)");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.VerifyNavigationTreeItemText("Other Slot Cards  (1 of 6)");
+            //Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
             //Delay.Milliseconds(0);

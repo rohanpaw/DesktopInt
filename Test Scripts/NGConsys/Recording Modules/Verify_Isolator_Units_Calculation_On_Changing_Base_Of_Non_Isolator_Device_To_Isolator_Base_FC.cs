@@ -121,7 +121,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("400P", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400P - 8", "4BI 4\" [517.050.043]", "13");
+            //Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400P - 8", "4BI 4\" [517.050.043]", "13");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AssignDeviceBase("400P - 8", "4BI 4\" [517.050.043]", "13");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DragAndDropDevicesInPhysicalLayout("A:5", "A:4");
@@ -136,7 +139,7 @@ namespace TestProject.Recording_Modules
             //Libraries.Devices_Functions.DragAndDropDevicesInPhysicalLayout("29", "15");
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(20));
             repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
             

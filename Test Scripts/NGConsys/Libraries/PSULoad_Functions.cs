@@ -4773,6 +4773,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 25/03/2019
+		 * Alpesh Dhakad - 30/12/2019 - Added rows and column to implement new loop loading details methods
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyPowerCalculationsFor40VAndDCUnits(string sFileName,string sAddPanelandDevicesSheet)
@@ -4784,7 +4785,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables type
-			string PanelType,sExpectedPowerCalculationText,sDeviceName,sLabelName;
+			string PanelType,sExpectedPowerCalculationText,sDeviceName,sLabelName,LoadingDetailsNamefor40V,LoadingDetailsNameforDC;
 			int DeviceQty;
 			
 			// For loop to iterate on data present in excel
@@ -4798,12 +4799,19 @@ namespace TestProject.Libraries
 				
 				PanelType= ((Range)Excel_Utilities.ExcelRange.Cells[5,5]).Value.ToString();
 				
+				LoadingDetailsNamefor40V= ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
+				LoadingDetailsNameforDC= ((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
+				
 				Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,DeviceQty);
 				
-				verifyPowerCalculationsFor40V(PanelType);
+				//verifyPowerCalculationsFor40V(PanelType);
+				
+				Devices_Functions.verifyLoadingDetailColor(LoadingDetailsNamefor40V);
 				
 				// Verify
-				verifyPowerCalculationsForDCUnits(PanelType);
+				//verifyPowerCalculationsForDCUnits(PanelType);
+				Devices_Functions.verifyLoadingDetailColor(LoadingDetailsNameforDC);
+				
 				
 				verifyPowerCalculationsText(sExpectedPowerCalculationText);
 				
@@ -4819,6 +4827,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 25/03/2019
+		 * Alpesh Dhakad - 30/12/2019 - Added rows and column to implement new loop loading details methods
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyPowerCalculationsFor40VACAndDCUnits(string sFileName,string sAddPanelandDevicesSheet)
@@ -4830,7 +4839,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables type
-			string PanelType,sExpectedPowerCalculationText,sDeviceName,sLabelName;
+			string PanelType,sExpectedPowerCalculationText,sDeviceName,sLabelName,LoadingDetailsNameforAC;
 			int DeviceQty;
 			
 			// For loop to iterate on data present in excel
@@ -4843,11 +4852,13 @@ namespace TestProject.Libraries
 				sExpectedPowerCalculationText= ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				
 				PanelType= ((Range)Excel_Utilities.ExcelRange.Cells[5,5]).Value.ToString();
+				LoadingDetailsNameforAC= ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
 				
 				Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,DeviceQty);
 				
 				
-				verifyPowerCalculationsForACUnits(PanelType);
+				//verifyPowerCalculationsForACUnits(PanelType);
+				Devices_Functions.verifyLoadingDetailColor(LoadingDetailsNameforAC);
 				
 				verifyPowerCalculationsText(sExpectedPowerCalculationText);
 				

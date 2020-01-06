@@ -534,7 +534,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AssignDeviceBaseIfBlank"
 		namespace="TestProject.Libraries"
@@ -569,6 +569,52 @@ rxversion="8.3">
 				<argument
 				argname="sBasePropertyRowIndex"
 				id="29b0acfe-073b-4ef2-9040-d56306b97130">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						13
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AssignDeviceBase"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="416f6873-f739-48f4-b38d-9e6c0850d80b">
+				<argument
+				argname="DeviceLabel"
+				id="37b23a13-b07f-4fe2-b452-6c66c8dae4bc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						400P - 8
+					</argvalue>
+				</argument>
+				<argument
+				argname="sBaseofDevice"
+				id="a02bf41d-fc01-4190-8d62-62acb6cf4f6b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4BI 4&quot; [517.050.043]
+					</argvalue>
+				</argument>
+				<argument
+				argname="sBasePropertyRowIndex"
+				id="478059a6-ce14-4eb0-b051-9acca0b25b66">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

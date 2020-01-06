@@ -4464,9 +4464,9 @@
       <recordtableid>d173c66d-c7b7-47fb-ab2e-60be9cff88e6</recordtableid>
     </None>
     <None Include="Recording Modules\Trip_Current_With_MultipleBase.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>9e038d6c-6339-4f11-873a-b513f341be3d</id>
       <recordtableid>773e468a-067e-4503-a291-e3f9eeebaeba</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop_FC.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

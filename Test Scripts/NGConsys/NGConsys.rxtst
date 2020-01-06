@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.3">
 	<testsuiteentryhierarchy>
@@ -2382,7 +2382,7 @@ rxversion="8.3">
 			id="1fdcb6e9-9984-46fd-939a-7c89434db1b9"
 			name="Verify_devices_order_for_Sounders_in_Non_dropped_gallery">
 				<description>
-					<![CDATA[NGC-600/TC-52641/TC-52437]]>
+					<![CDATA[NGC-600/TC-52641/TC-52437&nbsp; Functionality got changed, now only Generic sounders are available so need to update test case scripts or test data]]>
 				</description>
 				<parameters>
 					<param
@@ -2620,7 +2620,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.66">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.80">
 					</param>
 					<param
 					name="Mode"
@@ -9307,6 +9307,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="7a1fd6db-8fde-4a33-9ca4-f9ced5ac34b6"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="7a476773-6926-48ed-a056-bf38fd78a89c"
 			name="Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card"
 			ref="c50ab89c-4eb0-4091-b334-b478fae15e4a"
@@ -10741,12 +10747,6 @@ MxDesigner]]>
 					variablename="sListIndex">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="8aa20ebc-44fc-48e4-a31b-af7e1590c1bc"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
 			</testmodule>
 			<testmodule
 			id="8ae08771-ccf2-424d-b84c-ece58d26fd0b"
@@ -20126,6 +20126,10 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_impact_of_character_based_repeater_on_loops">
 						</testmodule>
 						<testmodule
+						id="7a1fd6db-8fde-4a33-9ca4-f9ced5ac34b6"
+						name="Close_Application">
+						</testmodule>
+						<testmodule
 						id="0d6dacab-f003-4c59-b3cd-e1f6d5d3dfff"
 						name="LogResult">
 						</testmodule>
@@ -22715,6 +22719,34 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="1ce3b10a-935f-4a35-aa2c-91499474b3b3"
+					name="Verify_LPS800_And_Its_Sounders">
+						<testmodule
+						id="ca05dbba-9ad7-4b09-b170-1a8dc97430b1"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="95e75223-1d73-4040-a0ed-b2a788843815"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="6b094c39-8b9d-4bde-9e49-5159a4533dd1"
+						name="Verify_LPS800_And_Its_Sounders">
+						</testmodule>
+						<testmodule
+						id="93f2c88a-8d5b-48df-9ee5-b2d81aeb8f33"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="40e254cf-83f4-4343-990f-eec4d93ca429"
+						name="Reopen_Verify_LPS800_And_Its_Sounders">
+						</testmodule>
+						<testmodule
+						id="72e9c057-5b94-4cf6-9670-4c36c260d38d"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="2917074b-ac64-4f2a-b37c-0ede74181172"
 					name="Verify_Copy_option_is_disabled_for_single_sounders">
 						<testmodule
@@ -22751,34 +22783,6 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="b64ef03a-cda8-4683-99dd-440eff8c7f86"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="1ce3b10a-935f-4a35-aa2c-91499474b3b3"
-					name="Verify_LPS800_And_Its_Sounders">
-						<testmodule
-						id="ca05dbba-9ad7-4b09-b170-1a8dc97430b1"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="95e75223-1d73-4040-a0ed-b2a788843815"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="6b094c39-8b9d-4bde-9e49-5159a4533dd1"
-						name="Verify_LPS800_And_Its_Sounders">
-						</testmodule>
-						<testmodule
-						id="93f2c88a-8d5b-48df-9ee5-b2d81aeb8f33"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="40e254cf-83f4-4343-990f-eec4d93ca429"
-						name="Reopen_Verify_LPS800_And_Its_Sounders">
-						</testmodule>
-						<testmodule
-						id="72e9c057-5b94-4cf6-9670-4c36c260d38d"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
@@ -23003,26 +23007,6 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
-					id="0b79ab4e-f3cf-41ad-9eb5-77b299995bd6"
-					name="Verify_the_indication_should_be_shown_for_selected_loops">
-						<testmodule
-						id="e1823f8d-9c95-42e3-b9b6-95ebf03b8785"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="d40931b8-35a0-4528-851a-584f6ae2e241"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="6b586d58-6e71-4f3b-ac0d-96b739cc8dfc"
-						name="Verify_the_indication_should_be_shown_for_selected_loops">
-						</testmodule>
-						<testmodule
-						id="8e78bbf4-a35e-4e11-9c94-b31300c58259"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="53fb8455-16c7-4271-9d88-1201610516bc"
 					name="Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop">
 						<testmodule
@@ -23063,6 +23047,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="0b79ab4e-f3cf-41ad-9eb5-77b299995bd6"
+					name="Verify_the_indication_should_be_shown_for_selected_loops">
+						<testmodule
+						id="e1823f8d-9c95-42e3-b9b6-95ebf03b8785"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="d40931b8-35a0-4528-851a-584f6ae2e241"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="6b586d58-6e71-4f3b-ac0d-96b739cc8dfc"
+						name="Verify_the_indication_should_be_shown_for_selected_loops">
+						</testmodule>
+						<testmodule
+						id="8e78bbf4-a35e-4e11-9c94-b31300c58259"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="9f1a196c-841e-4d44-b4ae-4252e63d2bbe"
 					name="Verify_the_max/min_section_displayed_for_Isolator_units_Intrinsically_safe_units">
 						<testmodule
@@ -23096,10 +23100,6 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="cae6fbe1-26a6-4ce7-8172-2df4087cd3ff"
 						name="Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800">
-						</testmodule>
-						<testmodule
-						id="8aa20ebc-44fc-48e4-a31b-af7e1590c1bc"
-						name="Close_Application">
 						</testmodule>
 						<testmodule
 						id="d0b680a7-a4a8-451d-91e7-5879a09fcd53"
@@ -24648,16 +24648,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="6cdd96ff-9d27-484d-bfb6-e9214381620b">
-			</testcontainer>
-			<testcontainer
-			id="4e8e429d-5507-428e-b2ab-40c1df197167">
-			</testcontainer>
-			<testcontainer
-			id="5c6f9f0d-92d3-4f42-ab23-94479bb53443">
-			</testcontainer>
-			<testcontainer
-			id="f521de22-99d9-415f-93dc-e107663f9e8e">
+			id="c67c29b5-929e-4b9a-9e38-3101646bb95e">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

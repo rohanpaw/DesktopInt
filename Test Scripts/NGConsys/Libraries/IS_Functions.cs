@@ -103,14 +103,16 @@ namespace TestProject.Libraries
 			set { repo.sPhysicalLayoutDeviceIndex = value; }
 		}
 		
-		/********************************************************************
+		
+		/********************************************************************************************
 		 * Function Name: VerifyISCalculation
 		 * Function Details: To verify IS calculation of IS devices
 		 * Parameter/Arguments:  fileName, sheetName
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 13/12/2018
-		 ********************************************************************/
+		 * Alpesh Dhakad - 06/01/2020 - Updated column number value for sISUnitsLoadingDetail
+		 ********************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyISCalculation(string sFileName,string sAddDevicesSheet)
 		{
@@ -134,7 +136,7 @@ namespace TestProject.Libraries
 				ExpectedMaxISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				ChangedValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
-				sISUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sISUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				
 				// Verify panel type and then accordingly assign sRow value
 				if(PanelType.Equals("FIM"))
@@ -2331,6 +2333,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 22/02/2019
+		 * Alpesh Dhakad 28/12/2019 - Updated row number for LoadingDetail Isolator unit (Fixed as Label text)
 		 ********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIBUnits(string sFileName,string sAddDeviceSheet)
@@ -2349,7 +2352,8 @@ namespace TestProject.Libraries
 				sBasePropertyRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				expectedIsolatorUnits= ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				PanelType= ((Range)Excel_Utilities.ExcelRange.Cells[5,5]).Value.ToString();
-				sIBUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				
+				sIBUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[8,3]).Value.ToString();
 				
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
@@ -2476,6 +2480,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 28/02/2019
+		 * Alpesh Dhakad 28/12/2019 - Updated PhysicalLayoutDeviceAddress and LoadingDetail Isolator unit 		 * 
 		 ********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIsolatorUnitsCalculationWithLoopHavingLIDevices(string sFileName,string sAddDeviceSheet)
@@ -2515,26 +2520,26 @@ namespace TestProject.Libraries
 			////////////////////////Below portion of code needs to be removed later after Physical Layout device order issue gets corrected////////////
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			
-			
-			// Read Index value of first device index and drop device index
-			string sourceDeviceIndex = ((Range)Excel_Utilities.ExcelRange.Cells[3,11]).Value.ToString();
-			string targetDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[4,11]).Value.ToString();
-			
-			sPhysicalLayoutDeviceIndex =  sourceDeviceIndex;
-			
-			// Create a adapter and stored in source adapter element
-			Adapter sourceEle = repo.FormMe.PhysicalLayoutDeviceIndex;
-			
-			// Assigning first EXI index value to Physical Layout index
-			sPhysicalLayoutDeviceIndex =  targetDeviceIndex;
-			
-			// Create a adapter and stored in targer adapter element
-			Adapter targetEle = repo.FormMe.PhysicalLayoutDeviceIndex;
-
-
-			// Drag and drop EXI or LI device from First position to its defined position
-			Ranorex.AutomationHelpers.UserCodeCollections.DragNDropLibrary.DragAndDrop(sourceEle,targetEle);
-			
+//			
+//			// Read Index value of first device index and drop device index
+//			string sourceDeviceIndex = ((Range)Excel_Utilities.ExcelRange.Cells[3,11]).Value.ToString();
+//			string targetDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[4,11]).Value.ToString();
+//			
+//			sPhysicalLayoutDeviceIndex =  sourceDeviceIndex;
+//			
+//			// Create a adapter and stored in source adapter element
+//			Adapter sourceEle = repo.FormMe.PhysicalLayoutDeviceIndex;
+//			
+//			// Assigning first EXI index value to Physical Layout index
+//			sPhysicalLayoutDeviceIndex =  targetDeviceIndex;
+//			
+//			// Create a adapter and stored in targer adapter element
+//			Adapter targetEle = repo.FormMe.PhysicalLayoutDeviceIndex;
+//
+//
+//			// Drag and drop EXI or LI device from First position to its defined position
+//			Ranorex.AutomationHelpers.UserCodeCollections.DragNDropLibrary.DragAndDrop(sourceEle,targetEle);
+//			
 			
 			//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			////////////////////////Above portion of code needs to be removed later after Physical Layout device order issue gets corrected////////////
@@ -2543,18 +2548,22 @@ namespace TestProject.Libraries
 			//Summation of IB units until  Line Isolator
 			IBUnitUntilLI =  ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
-
-			repo.FormMe.PhysicalLayoutDeviceIndex.Click();
 			
-			VerifySelectedIsolatorUnits(IBUnitUntilLI,PanelType);
+			
+		//	repo.FormMe.PhysicalLayoutDeviceIndex.Click();
+				repo.FormMe.PhysicalLayoutDeviceAddress.Click();
+			
+		VerifySelectedIsolatorUnits(IBUnitUntilLI,PanelType);
+			
+		repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			
 			
 			//Summation of IB units below  Line Isolator
 			IBUnitBelowLI =  ((Range)Excel_Utilities.ExcelRange.Cells[5,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[5,8]).Value.ToString();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			
-			repo.FormMe.PhysicalLayoutDeviceIndex.Click();
+			repo.FormMe.PhysicalLayoutDeviceAddress.Click();
 			
 			VerifySelectedIsolatorUnits(IBUnitBelowLI,PanelType);
 			
@@ -3099,7 +3108,58 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info,"Progress bar color code for Isolator units verified as: "+sExpectedColourCode);
 			
 		}
+	
+		/********************************************************************
+		 * Function Name: VerifyIsolatorUnitssss
+		 * Function Details: Verify indicator for isolator units progress bar
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: 
+		 * Last Update : 
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyIsolatorUnitssss(string sFileName, string sAddDeviceSheet)
+		{
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDeviceSheet);
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			string PanelType,expectedIsolatorUnits,sDeviceName,sType,sLabelName,IBUnitUntilLI,IBUnitBelowLI,IBUnitLoadingDetail;
+			PanelType= ((Range)Excel_Utilities.ExcelRange.Cells[5,5]).Value.ToString();
+			
 		
+		
+		//Summation of IB units until  Line Isolator
+			IBUnitUntilLI =  ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
+			//sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			
+
+			
+		//	repo.FormMe.PhysicalLayoutDeviceIndex.Click();
+				repo.FormMe.PhysicalLayoutDeviceAddress.Click();
+			
+		VerifySelectedIsolatorUnits(IBUnitUntilLI,PanelType);
+			//Devices_Functions.verifyLoadingDetailsValue(IBUnitUntilLI, "Isolator Units");
+			
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			
+			//Summation of IB units below  Line Isolator
+			IBUnitBelowLI =  ((Range)Excel_Utilities.ExcelRange.Cells[5,7]).Value.ToString();
+			//sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[5,8]).Value.ToString();
+			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[5,8]).Value.ToString();
+			
+			
+			
+			repo.FormMe.PhysicalLayoutDeviceAddress.Click();
+			
+			VerifySelectedIsolatorUnits(IBUnitBelowLI,PanelType);
+			//Devices_Functions.verifyLoadingDetailsValue(IBUnitBelowLI, "Isolator Units");
+			
+			// CLick on Points tab
+			repo.ProfileConsys1.tab_Points.Click();
+			
+			Excel_Utilities.CloseExcel();
+
+		}
 	}
 }
 

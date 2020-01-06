@@ -112,8 +112,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyPointsGridColumn("Label", "4");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPointsGridColumn("Address", "6");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPointsGridColumn("Address", "6");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectPointsGridRow("1");
             Delay.Milliseconds(0);

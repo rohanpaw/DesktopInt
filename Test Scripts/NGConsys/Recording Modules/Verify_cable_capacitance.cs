@@ -87,6 +87,10 @@ namespace TestProject.Recording_Modules
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             
+            Libraries.Devices_Functions.EnableISDevices();
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            
             Libraries.Devices_Functions.CableCapacitance("TC_114_Verify_Cable_capacitance", "Devices");
             
             Libraries.Devices_Functions.ChangeCableLength("PFI", ValueConverter.ArgumentFromString<int>("fCableLength1", "500"), ValueConverter.ArgumentFromString<int>("fCableLength2", "500"));

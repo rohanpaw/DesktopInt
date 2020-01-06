@@ -192,6 +192,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : Alpesh Dhakad - 30/07/2019 & 21/08/2019 & 26/08/2019 - Updated scripts as per new build and xpaths
+		 * Alpesh Dhakad - 31/12/2019 - Updated Panel node name
 		 ******************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCPUType(string sExpectedCPU,int PanelNode, bool AfterImport)
@@ -200,7 +201,7 @@ namespace TestProject.Libraries
 			
 			
 			// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem("MZX");
+			Common_Functions.ClickOnNavigationTreeItem("Node1");
 			
 			if(AfterImport)
 			{
@@ -305,6 +306,8 @@ namespace TestProject.Libraries
 				{
 					repo.FormMe.SinglePanel.Click();
 				}
+				
+				Thread.Sleep(300);
 				
 				repo.ProfileConsys1.btn_Delete.Click();
 				

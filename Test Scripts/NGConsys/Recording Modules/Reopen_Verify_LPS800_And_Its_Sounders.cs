@@ -94,10 +94,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDeviceOrderColumn();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceOrder("1", "126", ValueConverter.ArgumentFromString<bool>("Present", "True"));
+            Libraries.Devices_Functions.VerifyDeviceOrder("1", "1", ValueConverter.ArgumentFromString<bool>("Present", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceOrder("2", "126/1", ValueConverter.ArgumentFromString<bool>("Present", "True"));
+            Libraries.Devices_Functions.VerifyDeviceOrder("2", "1/1", ValueConverter.ArgumentFromString<bool>("Present", "True"));
             Delay.Milliseconds(0);
             
         }

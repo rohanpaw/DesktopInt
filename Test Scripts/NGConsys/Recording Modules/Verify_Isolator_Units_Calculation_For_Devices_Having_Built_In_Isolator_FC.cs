@@ -91,13 +91,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_MultiplePointWizard' at Center.", repo.FormMe.btn_MultiplePointWizardInfo, new RecordItemIndex(4));
-            repo.FormMe.btn_MultiplePointWizard.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_MultiplePointWizard' at Center.", repo.FormMe.btn_MultiplePointWizardInfo, new RecordItemIndex(4));
+            //repo.FormMe.btn_MultiplePointWizard.Click();
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddDevices.txt_AllDevices' at Center.", repo.AddDevices.txt_AllDevicesInfo, new RecordItemIndex(5));
-            repo.AddDevices.txt_AllDevices.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddDevices.txt_AllDevices' at Center.", repo.AddDevices.txt_AllDevicesInfo, new RecordItemIndex(5));
+            //repo.AddDevices.txt_AllDevices.Click();
+            //Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.AddDevicesForBVT("NGC_1826_Add_Devices_In_Multiple_Point_Wizard", "TC_63981", "");
             Delay.Milliseconds(0);

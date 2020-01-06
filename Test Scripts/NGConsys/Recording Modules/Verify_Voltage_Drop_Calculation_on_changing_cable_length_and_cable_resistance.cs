@@ -127,7 +127,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.16", "Volt Drop (V)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.26", "Volt Drop (worst case)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.27", "Volt Drop (worst case)");
             Delay.Milliseconds(0);
             
         }

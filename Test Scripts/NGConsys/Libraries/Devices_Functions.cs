@@ -520,7 +520,10 @@ namespace TestProject.Libraries
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				
 				string maxACUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				verifyMaxACUnitsValue(maxACUnits);
+				string sACLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
+				
+			    //verifyMaxACUnitsValue(maxACUnits);
+				Devices_Functions.verifyMaxLoadingDetailsValue(maxACUnits,sACLoopLoadingName);
 				
 				repo.ProfileConsys1.tab_Points.Click();
 				
@@ -557,7 +560,10 @@ namespace TestProject.Libraries
 				repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				
 				string changedmaxACUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
-				verifyMaxACUnitsValue(changedmaxACUnits);
+				//verifyMaxACUnitsValue(changedmaxACUnits);
+				Devices_Functions.verifyMaxLoadingDetailsValue(changedmaxACUnits,sACLoopLoadingName);
+				
+				
 				
 				repo.ProfileConsys1.tab_Points.Click();
 				
@@ -1889,6 +1895,8 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void AddMultipleDevices(string sFileName, string sSheetName)
 		{
+			
+			repo.ProfileConsys1.tab_Points.Click();
 			Excel_Utilities.OpenExcelFile(sFileName,sSheetName);
 			//Excel_Utilities.OpenSheet(sSheetName);
 			int rows = Excel_Utilities.ExcelRange.Rows.Count;
@@ -2804,8 +2812,15 @@ namespace TestProject.Libraries
 		public static void RightClickOnSelectedRow(string RowNumber)
 		{
 			sRowIndex = RowNumber;
-			repo.FormMe.PointsGridRow.Click(System.Windows.Forms.MouseButtons.Right);
 			
+			if(sRowIndex.Equals("1"))
+			{
+				repo.FormMe.PointsGridRow_SingleRow.Click(System.Windows.Forms.MouseButtons.Right);
+			}
+			else
+			{
+			repo.FormMe.PointsGridRow.Click(System.Windows.Forms.MouseButtons.Right);
+			}
 		}
 		
 		/********************************************************************
@@ -6946,6 +6961,10 @@ namespace TestProject.Libraries
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		
+			
 			// Search for the address property
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sDeviceAddress +"{ENTER}" );
 			
@@ -7173,7 +7192,7 @@ namespace TestProject.Libraries
 		{
 			ModelNumber=sDeviceName;
 
-			sGalleryIndex = SelectGalleryType(sType);
+			//sGalleryIndex = SelectGalleryType(sType);
 			
 			repo.FormMe.btn_AllGalleryDropdown.Click();
 			repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
@@ -7873,8 +7892,30 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.tab_Points.Click();
 		}
 		
-		
-		
+		/**************************************************************************************
+		 * Function Name: EnableISDevices
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 27/12/2019
+		 **************************************************************************************/
+		[UserCodeMethod]
+		public static void EnableISDevices()
+		{
+			repo.FormMe.File.Click();
+			
+			repo.FormMe.Options.Click();
+			
+			repo.FormMe.chkBox_EnableISDevices.Click();
+			
+			repo.FormMe2.chkBox_EnableISDevices.Click();
+			
+			repo.FormMe2.btn_Ok_ISDevicesWarning.Click();
+			
+			repo.FormMe.btn_back.Click();
+			
+		}
 	}
 }
 

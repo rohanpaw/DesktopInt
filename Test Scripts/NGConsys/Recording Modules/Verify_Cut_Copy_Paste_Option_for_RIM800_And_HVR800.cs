@@ -114,13 +114,19 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("HVR800 - 2");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("HVR800 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.VerifyCopyButton(ValueConverter.ArgumentFromString<bool>("isEnabled", "False"));
+            //Libraries.Gallery_Functions.VerifyCopyButton(ValueConverter.ArgumentFromString<bool>("isEnabled", "False"));
+            //Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.VerifyCopyButtonState(ValueConverter.ArgumentFromString<bool>("isEnabled", "False"));
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.SaveProject("54241");
+            //Libraries.Common_Functions.SaveProject("54241");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "True"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "NGC-54241");
             Delay.Milliseconds(0);
             
         }

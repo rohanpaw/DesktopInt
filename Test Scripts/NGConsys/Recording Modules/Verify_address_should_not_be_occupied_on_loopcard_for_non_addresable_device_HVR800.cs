@@ -126,8 +126,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("HVR800", "Other");
             Delay.Milliseconds(0);
             
-            verifyBlankDeviceAddress("2", "Address");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyBlankDeviceAddress("2", "Address");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("RIM 800", ValueConverter.ArgumentFromString<int>("DeviceQty", "124"));
             Delay.Milliseconds(0);

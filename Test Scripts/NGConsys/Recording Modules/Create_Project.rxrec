@@ -42,7 +42,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -488,7 +488,7 @@ wwJPr14706iilGKjsOUnLcKKKKokKKKKACpZLaWMEsF4AJwwOAe/BpsP+vj/AN4fzrVv/wDkJj/r
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -512,7 +512,7 @@ wwJPr14706iilGKjsOUnLcKKKKokKKKKACpZLaWMEsF4AJwwOAe/BpsP+vj/AN4fzrVv/wDkJj/r
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -529,6 +529,78 @@ wwJPr14706iilGKjsOUnLcKKKKokKKKKACpZLaWMEsF4AJwwOAe/BpsP+vj/AN4fzrVv/wDkJj/r
 			sourcename="Recorder">
 				<path>
 					/form[@win32ownerwindowlevel='0']/progressbar/container[20]/container[@automationid='PART_Right']/container[5]/text[@caption='']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="13fd3365-2beb-499b-ace8-ebcfb90e4e24"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e5b15281-a87a-4eb9-8577-339826badfc4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']//text[@text='File']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="26ba267b-1ea3-41b2-9a6a-c7c70abb56ec"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2ac99ae1-11c3-43c7-a66c-3159d037b932"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']//text[@text='New']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="bfe8b3e7-e53d-4eb9-8995-604f5e49f061"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f64f951b-f31f-47e7-816d-53d828527cc1"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/progressbar//container[5]/text[@caption='']
 				</path>
 			</info>
 		</mouseitem>
@@ -588,7 +660,7 @@ wwJPr14706iilGKjsOUnLcKKKKokKKKKACpZLaWMEsF4AJwwOAe/BpsP+vj/AN4fzrVv/wDkJj/r
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1610,6 +1682,30 @@ FFFABRRRQAUUUUAFFFFACD75+g/rUc38NFFAEi/cH0paKKACiiigAooooAKKKKACiiigAooooAKK
 KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
 oA//2Q==
 			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="dc515306-f1f4-4009-992b-3a5a1c7da25b"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="83c8573f-50c3-43da-be48-e24ab04e54da"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/progressbar//container[4]/button
+				</path>
+			</info>
 		</mouseitem>
 		<userrecorditem
 		classname="Create_Project"

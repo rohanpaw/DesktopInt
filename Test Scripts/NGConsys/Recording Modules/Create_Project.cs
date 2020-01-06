@@ -92,21 +92,33 @@ namespace TestProject.Recording_Modules
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
             Delay.Duration(1000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.File' at Center.", repo.ProfileConsys1.FileInfo, new RecordItemIndex(1));
-            repo.ProfileConsys1.File.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.File' at Center.", repo.ProfileConsys1.FileInfo, new RecordItemIndex(1));
+            //repo.ProfileConsys1.File.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.TextNew' at Center.", repo.ProfileConsys1.TextNewInfo, new RecordItemIndex(2));
-            repo.ProfileConsys1.TextNew.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.TextNew' at Center.", repo.ProfileConsys1.TextNewInfo, new RecordItemIndex(2));
+            //repo.ProfileConsys1.TextNew.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.PARTRight.txt_MarketNew' at Center.", repo.ProfileConsys1.PARTRight.txt_MarketNewInfo, new RecordItemIndex(3));
-            repo.ProfileConsys1.PARTRight.txt_MarketNew.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.PARTRight.txt_MarketNew' at Center.", repo.ProfileConsys1.PARTRight.txt_MarketNewInfo, new RecordItemIndex(3));
+            //repo.ProfileConsys1.PARTRight.txt_MarketNew.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.File' at Center.", repo.FormMe.FileInfo, new RecordItemIndex(4));
+            repo.FormMe.File.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.New' at Center.", repo.FormMe.NewInfo, new RecordItemIndex(5));
+            repo.FormMe.New.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SearchMarket' at Center.", repo.FormMe.SearchMarketInfo, new RecordItemIndex(6));
+            repo.FormMe.SearchMarket.Click();
             
             Select_Market("United Kingdom");
             
             ListItem(ValueConverter.ArgumentFromString<int>("iListIndex", "2"));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.PARTRight.btn_CreateNewProject' at Center.", repo.ProfileConsys1.PARTRight.btn_CreateNewProjectInfo, new RecordItemIndex(6));
-            repo.ProfileConsys1.PARTRight.btn_CreateNewProject.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.PARTRight.btn_CreateNewProject' at Center.", repo.ProfileConsys1.PARTRight.btn_CreateNewProjectInfo, new RecordItemIndex(9));
+            //repo.ProfileConsys1.PARTRight.btn_CreateNewProject.Click();
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_CreateNewProject' at Center.", repo.FormMe.btn_CreateNewProjectInfo, new RecordItemIndex(10));
+            repo.FormMe.btn_CreateNewProject.Click();
             
             //Select_ProjectName("Verify");
             
@@ -118,7 +130,7 @@ namespace TestProject.Recording_Modules
             
             //Select_InstallerAddress("JCI");
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(16));
             Delay.Duration(5000, false);
             
             Libraries.Common_Functions.CreateProjectFCParameters("9", "JCI");
@@ -129,7 +141,7 @@ namespace TestProject.Recording_Modules
             
             Libraries.Common_Functions.CreateProjectFCParameters("12", "JCI");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CreateNewProject.CreateNewProjectContainer.btn_OK' at Center.", repo.CreateNewProject.CreateNewProjectContainer.btn_OKInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'CreateNewProject.CreateNewProjectContainer.btn_OK' at Center.", repo.CreateNewProject.CreateNewProjectContainer.btn_OKInfo, new RecordItemIndex(21));
             repo.CreateNewProject.CreateNewProjectContainer.btn_OK.Click();
             
         }

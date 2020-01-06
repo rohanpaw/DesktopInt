@@ -353,7 +353,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						HVR800 - 1
+						HVR800 - 0
 					</argvalue>
 				</argument>
 			</arguments>
@@ -396,7 +396,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyBlankDeviceAddress"
 		namespace="TestProject.Libraries"

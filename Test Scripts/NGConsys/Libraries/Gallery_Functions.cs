@@ -910,6 +910,45 @@ namespace TestProject.Libraries
 			
 		}
 
+		/***********************************************************************************************************
+		 * Function Name: VerifyCopyButtonState
+		 * Function Details: VerifyCopyButton state
+		 * Parameter/Arguments: isEnabled
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 26/12/2019
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyCopyButtonState(bool isEnabled)
+		{
+			if(isEnabled)
+			{
+				sEnabled="True";
+				
+				if(repo.FormMe.Copy.Enabled)
+				{
+					Report.Log(ReportLevel.Success,"Copy button state is as expected");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Copy button state is  not as expected " + isEnabled);
+				}
+			}
+			else
+			{
+				sEnabled="False";
+				if(repo.FormMe.Copy.Enabled)
+				{
+					Report.Log(ReportLevel.Failure,"Copy button state is not as expected");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success,"Copy button state is as expected ");
+				}
+			}
+			
+		}
+		
 		
 	}
 }

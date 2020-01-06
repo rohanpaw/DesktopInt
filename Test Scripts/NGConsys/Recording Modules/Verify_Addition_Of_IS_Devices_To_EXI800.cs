@@ -91,6 +91,12 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Devices_Functions.EnableISDevices();
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
             Libraries.IS_Functions.VerifyAdditionISDevicesOnEXI("TC_199_Verify_Addition_Of_IS_Devices_To_EXI800", "Add EXI Devices", "Add IS Devices");
             Delay.Milliseconds(0);
             

@@ -334,11 +334,20 @@ namespace TestProject.Libraries
 			//Click on Search button
 			repo.PrintPreview.SearchExport1.Click();
 			
+			
+			if(repo.PrintPreview.SearchBox_Export1Info.Exists())
+			{
+			//Click on Search bar
+			repo.PrintPreview.SearchBox_Export1.Click();
+			}
+			else
+			{
 			//Click on Search button
 			repo.PrintPreview.SearchExport1.Click();
 			
-			//Click on Search bar
 			repo.PrintPreview.SearchBox_Export1.Click();
+			
+			}
 			
 			//Enter the required Device's SKU no
 			Keyboard.Press(sValue +"{ENTER}");

@@ -823,7 +823,7 @@ namespace TestProject.Libraries
 			
 			// Declared string type
 			string sType,sDeviceName,PanelName,PanelNode,CPUType,initialState,sShoppingListCount,newDeviceName,secondPanelName;
-			string sSecondCPUType,sSecondDeviceName,sSecondDeviceType,sSecondShoppingListCount,secondDisableDevice,secondDeviceState;
+			string sSecondCPUType,sSecondDeviceName,sSecondDeviceType,sSecondShoppingListCount,secondDisableDevice,secondDeviceState,secondPanelNode;
 			
 			int shoppingListCount,secondShoppingListCount;
 			
@@ -844,6 +844,7 @@ namespace TestProject.Libraries
 				secondDeviceState =  ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
 				sSecondShoppingListCount =  ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				secondDisableDevice =  ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				secondPanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
 				
 				
 				int.TryParse(sShoppingListCount, out shoppingListCount);
@@ -884,7 +885,7 @@ namespace TestProject.Libraries
 				Panel_Functions.AddOnePanel(2,secondPanelName,sSecondCPUType);
 				
 				// Click on Panel node
-				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				Common_Functions.ClickOnNavigationTreeItem(secondPanelNode);
 			
 				// Click on panel accessories tab
 				repo.FormMe.tab_PanelAccessories.Click();
@@ -907,6 +908,11 @@ namespace TestProject.Libraries
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 			
+				
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+			
+				
 				// Click on shopping list tab
 				repo.FormMe.ShoppingList.Click();
 				

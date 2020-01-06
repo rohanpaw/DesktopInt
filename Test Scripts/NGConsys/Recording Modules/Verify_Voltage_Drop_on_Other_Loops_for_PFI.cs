@@ -103,10 +103,10 @@ namespace TestProject.Recording_Modules
             //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.15");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.07", "Volt Drop (V)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (V)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.15", "Volt Drop (worst case)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (worst case)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");

@@ -371,14 +371,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						HVR800 - 2
+						HVR800 - 1
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Gallery_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyCopyButton"
 		namespace="TestProject.Libraries"
@@ -403,8 +403,34 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Gallery_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyCopyButtonState"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="ffb4ae93-03fc-488f-8c57-2aa27e0fc9a7">
+				<argument
+				argname="isEnabled"
+				id="56fe851c-986f-4537-9883-e31e406dc227">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SaveProject"
 		namespace="TestProject.Libraries"
@@ -424,6 +450,52 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						54241
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Application_Close"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d4edb5e5-c72f-4eac-8282-5044449c2d0a">
+				<argument
+				argname="Save"
+				id="549276ea-0ac1-46f9-a25d-058f8355652c">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+				<argument
+				argname="SaveConfirmation"
+				id="fe241a2c-8b69-4786-947a-dc17dd929e80">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+				<argument
+				argname="sProjectName"
+				id="9b498eaf-5ec6-4dfc-b050-05efc48b6689">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						NGC-54241
 					</argvalue>
 				</argument>
 			</arguments>

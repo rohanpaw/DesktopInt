@@ -137,7 +137,7 @@ namespace TestProject.Recording_Modules
             repo.ContextMenu.Custom_In_Context_Menu.Click();
             Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.VerifyCustomDevicesInContextMenu(ValueConverter.ArgumentFromString<bool>("sExist", "False"), "Generic");
+            Libraries.Devices_Functions.VerifyCustomDevicesInContextMenu(ValueConverter.ArgumentFromString<bool>("sExist", "True"), "Generic");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(19));

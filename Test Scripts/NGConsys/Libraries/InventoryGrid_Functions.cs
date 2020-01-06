@@ -391,6 +391,7 @@ namespace TestProject.Libraries
 			
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
 			}catch(Exception e){
 				Report.Log(ReportLevel.Info,"Exception occurred"+e.Message);}
 		}

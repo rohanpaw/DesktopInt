@@ -323,11 +323,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800"
-		enabled="True"
-		isexternaltestmethod="False"
+		classname="Devices_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
 		methodname="verifyBlankDeviceAddress"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False"
 		varname="">
 			<comment>

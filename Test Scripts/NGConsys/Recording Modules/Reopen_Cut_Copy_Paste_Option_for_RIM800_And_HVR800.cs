@@ -94,13 +94,13 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("HVR800 - 1");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("HVR800 - 0");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("HVR800 - 2");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("HVR800 - 1");
             Delay.Milliseconds(0);
             
         }
