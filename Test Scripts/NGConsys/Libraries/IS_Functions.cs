@@ -2380,7 +2380,7 @@ namespace TestProject.Libraries
 				}
 				
 				//VerifyIsolatorUnits(expectedIsolatorUnits,PanelType);
-				Devices_Functions.verifyLoadingDetailsValue(expectedIsolatorUnits,"801 H - 1");
+				Devices_Functions.verifyLoadingDetailsValue(expectedIsolatorUnits,sIBUnitsLoadingDetail);
 				
 			}
 			

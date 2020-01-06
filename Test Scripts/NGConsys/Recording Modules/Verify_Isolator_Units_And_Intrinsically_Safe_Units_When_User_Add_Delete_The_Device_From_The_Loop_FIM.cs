@@ -142,31 +142,28 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyDeviceDisplayedInPhysicalLayout("19", "A:5", "801 PH");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("", "");
+            Libraries.IS_Functions.VerifyIsolatorUnits("1", "FIM");
             Delay.Milliseconds(0);
             
-            //Libraries.IS_Functions.VerifyIsolatorUnits("1", "FIM");
-            //Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(21));
             repo.ProfileConsys1.tab_Points.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.SelectPointsGridRow("2");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(23));
             repo.ProfileConsys1.btn_Delete.Click();
             Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.SelectPointsGridRow("6");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ButtonCut1' at Center.", repo.FormMe.ButtonCut1Info, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ButtonCut1' at Center.", repo.FormMe.ButtonCut1Info, new RecordItemIndex(25));
             repo.FormMe.ButtonCut1.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(26));
             repo.FormMe.Paste.Click();
             Delay.Milliseconds(200);
             
