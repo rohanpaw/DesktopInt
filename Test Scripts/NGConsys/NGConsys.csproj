@@ -183,15 +183,15 @@
     <Compile Include="Project_Creation_and_Closure\VoltageDrop_Functions.cs">
       <id>4db8548a-1485-4278-bb41-187d70c49611</id>
     </Compile>
-    <Compile Include="Recording Modules\Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.cs">
+    <Compile Include="Recording Modules\Acc_Gall_Update_On_Max_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.cs">
       <BoundTo>293cf98b-fbdf-43a7-90b6-cc14a117c092</BoundTo>
-      <DependentUpon>Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec</DependentUpon>
+      <DependentUpon>Acc_Gall_Update_On_Max_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>33a948db-42f0-4ff2-9c76-d08e0f6e5bf8</id>
     </Compile>
-    <Compile Include="Recording Modules\Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.UserCode.cs">
+    <Compile Include="Recording Modules\Acc_Gall_Update_On_Max_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.UserCode.cs">
       <BoundTo>293cf98b-fbdf-43a7-90b6-cc14a117c092</BoundTo>
-      <DependentUpon>Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec</DependentUpon>
+      <DependentUpon>Acc_Gall_Update_On_Max_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>e70c980d-7214-4902-9c4d-2ea1b7816ca1</id>
     </Compile>
@@ -414,15 +414,15 @@
       <UserCode>true</UserCode>
       <id>d7fda5bd-058b-4656-b7db-6db7a912a54e</id>
     </Compile>
-    <Compile Include="Recording Modules\Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.cs">
+    <Compile Include="Recording Modules\Reopen_If_User_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gall.cs">
       <BoundTo>2425b2fa-2792-4823-92ef-151467004074</BoundTo>
-      <DependentUpon>Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.rxrec</DependentUpon>
+      <DependentUpon>Reopen_If_User_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gall.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>39dd905a-27c2-498d-aafd-676e64f30412</id>
     </Compile>
-    <Compile Include="Recording Modules\Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.UserCode.cs">
+    <Compile Include="Recording Modules\Reopen_If_User_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gall.UserCode.cs">
       <BoundTo>2425b2fa-2792-4823-92ef-151467004074</BoundTo>
-      <DependentUpon>Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.rxrec</DependentUpon>
+      <DependentUpon>Reopen_If_User_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gall.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d919c980-a9de-4b69-adf1-cd1ddd6f2196</id>
     </Compile>
@@ -4327,7 +4327,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>38163132-2381-4d2c-90cf-3231723569af</id>
     </Content>
-    <None Include="Recording Modules\Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec">
+    <None Include="Recording Modules\Acc_Gall_Update_On_Max_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec">
       <id>293cf98b-fbdf-43a7-90b6-cc14a117c092</id>
       <recordtableid>d7004e74-b6ad-48ca-9651-bdd5f6064efd</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4428,7 +4428,7 @@
       <id>b9a62ef7-3829-4313-be10-b1c607364429</id>
       <recordtableid>e73f96f3-4666-4073-ac1f-47a0d436ba82</recordtableid>
     </None>
-    <None Include="Recording Modules\Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery.rxrec">
+    <None Include="Recording Modules\Reopen_If_User_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gall.rxrec">
       <id>2425b2fa-2792-4823-92ef-151467004074</id>
       <recordtableid>ff41e8ae-1e9f-4c7c-8bd6-e24148d6b192</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

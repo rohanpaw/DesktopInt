@@ -4791,6 +4791,7 @@ namespace TestProject
             RepoItemInfo _button_baseselectionInfo;
             RepoItemInfo _deviceorder_galleryexpandedInfo;
             RepoItemInfo _gallery_in_context_menuInfo;
+            RepoItemInfo _copy_of_gallery_in_context_menuInfo;
             RepoItemInfo _deviceorder_contextmenuInfo;
             RepoItemInfo _btn_deletedevice_customgalleryInfo;
             RepoItemInfo _btn_customdevice_contextmenuInfo;
@@ -4825,6 +4826,7 @@ namespace TestProject
                 _button_baseselectionInfo = new RepoItemInfo(this, "Button_BaseSelection", "list/button", 30000, null, "cf024b5a-a7c8-4e3c-8cde-a9e25d5ec386");
                 _deviceorder_galleryexpandedInfo = new RepoItemInfo(this, "DeviceOrder_GalleryExpanded", ".//listitem[@index=$sDeviceIndex]/text", 30000, null, "56a07697-2d7c-4e69-b2e0-33a49f842723");
                 _gallery_in_context_menuInfo = new RepoItemInfo(this, "Gallery_In_Context_Menu", "list/button[@text=$sGalleryName]", 30000, null, "b986475c-2b2f-41f6-b74b-39da567281c8");
+                _copy_of_gallery_in_context_menuInfo = new RepoItemInfo(this, "Copy_of_Gallery_In_Context_Menu", "list/button[@text='Detectors']", 30000, null, "57ebf61e-8034-447f-a184-500e3b39a9e9");
                 _deviceorder_contextmenuInfo = new RepoItemInfo(this, "DeviceOrder_ContextMenu", "list/button[@text=$sDeviceName]/text[@caption=$sDeviceName]", 30000, null, "e34cbfae-aa42-4972-9fb7-c4ca02843c91");
                 _btn_deletedevice_customgalleryInfo = new RepoItemInfo(this, "btn_DeleteDevice_CustomGallery", "menuitem[@text='Delete Device']", 30000, null, "a43466b3-5055-4b51-a4dc-475c96a27a8b");
                 _btn_customdevice_contextmenuInfo = new RepoItemInfo(this, "btn_CustomDevice_ContextMenu", "?/?/button[@text='Custom']", 30000, null, "680e9974-55e6-46e5-a7ff-0c3c34009c74");
@@ -5335,6 +5337,30 @@ namespace TestProject
                 get
                 {
                     return _gallery_in_context_menuInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_Gallery_In_Context_Menu item.
+            /// </summary>
+            [RepositoryItem("57ebf61e-8034-447f-a184-500e3b39a9e9")]
+            public virtual Ranorex.Button Copy_of_Gallery_In_Context_Menu
+            {
+                get
+                {
+                    return _copy_of_gallery_in_context_menuInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_Gallery_In_Context_Menu item info.
+            /// </summary>
+            [RepositoryItemInfo("57ebf61e-8034-447f-a184-500e3b39a9e9")]
+            public virtual RepoItemInfo Copy_of_Gallery_In_Context_MenuInfo
+            {
+                get
+                {
+                    return _copy_of_gallery_in_context_menuInfo;
                 }
             }
 

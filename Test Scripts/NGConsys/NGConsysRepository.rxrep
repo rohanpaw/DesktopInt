@@ -1461,6 +1461,13 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 				/contextmenu/list/button[@text=$sGalleryName]
 			</item>
 			<item
+			capname="button"
+			id="57ebf61e-8034-447f-a184-500e3b39a9e9"
+			name="Copy_of_Gallery_In_Context_Menu"
+			searchtimeout="30000ms">
+				/contextmenu/list/button[@text='Detectors']
+			</item>
+			<item
 			capname="text"
 			id="e34cbfae-aa42-4972-9fb7-c4ca02843c91"
 			name="DeviceOrder_ContextMenu"

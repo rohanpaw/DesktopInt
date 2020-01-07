@@ -2722,7 +2722,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="23c31a97-c96a-458b-b73c-a35a6d6b8644"
-			name="Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached"
+			name="Acc_Gall_Update_On_Max_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached"
 			ref="d7004e74-b6ad-48ca-9651-bdd5f6064efd"
 			type="Recording">
 			</testmodule>
@@ -10718,7 +10718,7 @@ MxDesigner]]>
 			</testmodule>
 			<testmodule
 			id="8a40db69-3636-4d85-a907-45d7cad1ca79"
-			name="Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery"
+			name="Reopen_If_User_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gall"
 			ref="ff41e8ae-1e9f-4c7c-8bd6-e24148d6b192"
 			type="Recording">
 			</testmodule>
@@ -20043,7 +20043,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="23c31a97-c96a-458b-b73c-a35a6d6b8644"
-						name="Accessories_Gallery_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached">
+						name="Acc_Gall_Update_On_Max_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached">
 						</testmodule>
 						<testmodule
 						id="631df1fe-40c8-4651-ae54-28bdf895abdb"
@@ -22711,7 +22711,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="8a40db69-3636-4d85-a907-45d7cad1ca79"
-						name="Reopen_Verify_If_User_Is_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gallery">
+						name="Reopen_If_User_Able_To_Add_Custom_Sounders_To_LPS800_From_Custom_Gall">
 						</testmodule>
 						<testmodule
 						id="2cefc93a-a2ff-4e22-8e1d-ae48095d5866"
@@ -24645,10 +24645,19 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="20836adb-a235-4806-8cc8-bcbe7485be64">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
+			id="844ee248-c88e-4ee8-a935-354096568590">
+			</testcontainer>
+			<testcontainer
 			id="c67c29b5-929e-4b9a-9e38-3101646bb95e">
+			</testcontainer>
+			<testcontainer
+			id="e572ebf8-e8ca-45a2-b26d-4f148b229189">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
