@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a157ba0d-2782-4f48-a857-2986df13cc29"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_Batt_Standby_and_Batt_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_Batt_Standby_and_Batt_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyNormalLoadandAlarmLoadPropertyOnAdditionDeletionOfDevicesInPLXOrXLMLoop"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="bcf88f68-bee4-4ed3-ae61-d406508ce87d">
+				<argument
+				argname="sFileName"
+				id="bf379dab-3876-4340-b792-b2c5a7d36790">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_150_Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelSheet"
+				id="c653bb0a-bd81-451d-b82e-b49512479ecb">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddDeviceSheet"
+				id="dddd4327-2bb3-4524-9fcc-967c128dbfc8">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Devices
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_Batt_Standby_and_Batt_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

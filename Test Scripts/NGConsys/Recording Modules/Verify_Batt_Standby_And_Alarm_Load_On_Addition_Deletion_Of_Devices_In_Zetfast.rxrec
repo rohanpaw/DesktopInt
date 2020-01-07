@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="611c8925-4b15-4358-ab2b-475a284b2aee"
+mode="Global"
+rxversion="8.3">
+	<name>
+		Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyBatteryStandbyAndAlarmLoadOnZetfastLoopAddDelete"
+		namespace="TestProject.Libraries"
+		optional="False"
+		varname="">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="fb694c32-8a9b-4e6b-b0ae-4e49a56d1182">
+				<argument
+				argname="sFileName"
+				id="281895cb-d545-4784-babf-94a90c697fdf">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_151_Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelSheet"
+				id="a38c56e1-abae-4a21-8b43-427c78d4541a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

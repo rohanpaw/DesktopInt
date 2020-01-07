@@ -438,27 +438,27 @@
       <UserCode>true</UserCode>
       <id>cee4e8ca-ad32-45f3-a17e-c3f7204a607a</id>
     </Compile>
-    <Compile Include="Recording Modules\Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light.cs">
+    <Compile Include="Recording Modules\Reopen_DC_Calc_on_Changing_Value_Of_Sounder_Volume_and_Flash_Light.cs">
       <BoundTo>ce0afa44-9e9c-4a88-b613-8609c59b57a4</BoundTo>
-      <DependentUpon>Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light.rxrec</DependentUpon>
+      <DependentUpon>Reopen_DC_Calc_on_Changing_Value_Of_Sounder_Volume_and_Flash_Light.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>951cb14e-8593-4b63-85a2-8bfdc7b7814a</id>
     </Compile>
-    <Compile Include="Recording Modules\Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light.UserCode.cs">
+    <Compile Include="Recording Modules\Reopen_DC_Calc_on_Changing_Value_Of_Sounder_Volume_and_Flash_Light.UserCode.cs">
       <BoundTo>ce0afa44-9e9c-4a88-b613-8609c59b57a4</BoundTo>
-      <DependentUpon>Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light.rxrec</DependentUpon>
+      <DependentUpon>Reopen_DC_Calc_on_Changing_Value_Of_Sounder_Volume_and_Flash_Light.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>03a7641f-9227-45de-8df8-953c523f12bc</id>
     </Compile>
-    <Compile Include="Recording Modules\Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.cs">
+    <Compile Include="Recording Modules\Repen_Logic_Of_Slot_Loop_Card_Addition_In_Panels_Pro16xD_types_panels.cs">
       <BoundTo>b32cfb97-e41b-495a-8789-22ba50a872d5</BoundTo>
-      <DependentUpon>Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.rxrec</DependentUpon>
+      <DependentUpon>Repen_Logic_Of_Slot_Loop_Card_Addition_In_Panels_Pro16xD_types_panels.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>308ba091-83fe-4cf2-ba8b-df408ff0d74e</id>
     </Compile>
-    <Compile Include="Recording Modules\Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.UserCode.cs">
+    <Compile Include="Recording Modules\Repen_Logic_Of_Slot_Loop_Card_Addition_In_Panels_Pro16xD_types_panels.UserCode.cs">
       <BoundTo>b32cfb97-e41b-495a-8789-22ba50a872d5</BoundTo>
-      <DependentUpon>Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.rxrec</DependentUpon>
+      <DependentUpon>Repen_Logic_Of_Slot_Loop_Card_Addition_In_Panels_Pro16xD_types_panels.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>c07859b7-4f81-44d0-8342-a63d46261c9b</id>
     </Compile>
@@ -522,15 +522,15 @@
       <UserCode>true</UserCode>
       <id>4d3582ec-8319-42e8-bb15-1e0415c35465</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template.cs">
+    <Compile Include="Recording Modules\Verify_5V24V40V_Load_On_AddDeletion_Of_Rbus_Conn__Xbus_Template.cs">
       <BoundTo>3e2ecc07-ee68-4773-bc0d-53c0a22640a1</BoundTo>
-      <DependentUpon>Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template.rxrec</DependentUpon>
+      <DependentUpon>Verify_5V24V40V_Load_On_AddDeletion_Of_Rbus_Conn__Xbus_Template.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>bdcb354a-0804-4328-b224-9098e64fb299</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_5V24V40V_Load_On_AddDeletion_Of_Rbus_Conn__Xbus_Template.UserCode.cs">
       <BoundTo>3e2ecc07-ee68-4773-bc0d-53c0a22640a1</BoundTo>
-      <DependentUpon>Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template.rxrec</DependentUpon>
+      <DependentUpon>Verify_5V24V40V_Load_On_AddDeletion_Of_Rbus_Conn__Xbus_Template.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>3052ad70-bec9-4b74-bddf-42f23abdc6af</id>
     </Compile>
@@ -606,15 +606,15 @@
       <UserCode>true</UserCode>
       <id>cdf40957-1d97-4f11-a9a0-f86a4e453555</id>
     </Compile>
-    <Compile Include="Recording Modules\Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories.cs">
+    <Compile Include="Recording Modules\Verify_for_Inventory_grid_after_deleting_IOBs_from_panel_network_acce.cs">
       <BoundTo>6e578a22-3b93-45e6-8694-153951b5c3bf</BoundTo>
-      <DependentUpon>Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories.rxrec</DependentUpon>
+      <DependentUpon>Verify_for_Inventory_grid_after_deleting_IOBs_from_panel_network_acce.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>5f6fecb9-a572-4192-98e0-10b655804df9</id>
     </Compile>
-    <Compile Include="Recording Modules\Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_for_Inventory_grid_after_deleting_IOBs_from_panel_network_acce.UserCode.cs">
       <BoundTo>6e578a22-3b93-45e6-8694-153951b5c3bf</BoundTo>
-      <DependentUpon>Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories.rxrec</DependentUpon>
+      <DependentUpon>Verify_for_Inventory_grid_after_deleting_IOBs_from_panel_network_acce.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>4c962f38-0574-4246-8a79-f986cab53287</id>
     </Compile>
@@ -666,15 +666,15 @@
       <UserCode>true</UserCode>
       <id>3d767ce4-0d4d-4fef-8416-4971b101592b</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template.cs">
+    <Compile Include="Recording Modules\Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template.cs">
       <BoundTo>8dd89780-4da7-4133-aae3-7171d90e88d8</BoundTo>
-      <DependentUpon>Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template.rxrec</DependentUpon>
+      <DependentUpon>Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>0c38f3b7-6c3b-4da3-ad55-9a8e93d1f393</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template.UserCode.cs">
       <BoundTo>8dd89780-4da7-4133-aae3-7171d90e88d8</BoundTo>
-      <DependentUpon>Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template.rxrec</DependentUpon>
+      <DependentUpon>Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>48e113c0-d344-4104-b807-8156233fa5c6</id>
     </Compile>
@@ -894,15 +894,15 @@
       <UserCode>true</UserCode>
       <id>d968dea5-de28-4dff-a246-98cb5cbde354</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template.cs">
+    <Compile Include="Recording Modules\Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template.cs">
       <BoundTo>ec0cb415-f7db-4e50-9837-424e393502d5</BoundTo>
-      <DependentUpon>Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template.rxrec</DependentUpon>
+      <DependentUpon>Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>08bbe3ca-4406-4afa-a675-860b4c0eabd4</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template.UserCode.cs">
       <BoundTo>ec0cb415-f7db-4e50-9837-424e393502d5</BoundTo>
-      <DependentUpon>Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template.rxrec</DependentUpon>
+      <DependentUpon>Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>326841d8-8773-4997-b22d-8ff11be4a39a</id>
     </Compile>
@@ -954,39 +954,39 @@
       <UserCode>true</UserCode>
       <id>21c53011-99e9-499f-9b7f-d6d99ce8351c</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.cs">
+    <Compile Include="Recording Modules\Verify_ABox_Flush_Adapt_Wall_Sdr_For_P80AIR_AIW_AVW_AVR_Device.cs">
       <BoundTo>ce8c1d44-36c6-4818-abb7-e5b2355ed94f</BoundTo>
-      <DependentUpon>Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.rxrec</DependentUpon>
+      <DependentUpon>Verify_ABox_Flush_Adapt_Wall_Sdr_For_P80AIR_AIW_AVW_AVR_Device.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>9e9103a0-03e5-43f6-9e42-f1c80173c53e</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_ABox_Flush_Adapt_Wall_Sdr_For_P80AIR_AIW_AVW_AVR_Device.UserCode.cs">
       <BoundTo>ce8c1d44-36c6-4818-abb7-e5b2355ed94f</BoundTo>
-      <DependentUpon>Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.rxrec</DependentUpon>
+      <DependentUpon>Verify_ABox_Flush_Adapt_Wall_Sdr_For_P80AIR_AIW_AVW_AVR_Device.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>120d4233-b48a-442c-8b9a-6f9557c72d3e</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached.cs">
+    <Compile Include="Recording Modules\Verify_Acc_Gall_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.cs">
       <BoundTo>5b55022e-2cff-4700-a3e1-b0ba1d189d05</BoundTo>
-      <DependentUpon>Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached.rxrec</DependentUpon>
+      <DependentUpon>Verify_Acc_Gall_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>9d0544bf-872c-4414-9bba-7252354aa902</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_Acc_Gall_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.UserCode.cs">
       <BoundTo>5b55022e-2cff-4700-a3e1-b0ba1d189d05</BoundTo>
-      <DependentUpon>Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached.rxrec</DependentUpon>
+      <DependentUpon>Verify_Acc_Gall_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>32fd2118-9321-40b4-9222-fd031047d3fe</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Accessories_Gallery_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.cs">
+    <Compile Include="Recording Modules\Verify_Acc_Gall_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.cs">
       <BoundTo>feefa27e-df8f-4a66-b052-b671fced746e</BoundTo>
-      <DependentUpon>Verify_Accessories_Gallery_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.rxrec</DependentUpon>
+      <DependentUpon>Verify_Acc_Gall_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>af2cfa27-96ea-40f6-acb0-0ddb9af63c8b</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Accessories_Gallery_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_Acc_Gall_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.UserCode.cs">
       <BoundTo>feefa27e-df8f-4a66-b052-b671fced746e</BoundTo>
-      <DependentUpon>Verify_Accessories_Gallery_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.rxrec</DependentUpon>
+      <DependentUpon>Verify_Acc_Gall_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>37d20a30-11a5-4f79-a8d8-d65bce4c0487</id>
     </Compile>
@@ -1086,15 +1086,15 @@
       <UserCode>true</UserCode>
       <id>08cf4afd-e8d2-44cf-b4bd-990bea4b048b</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.cs">
+    <Compile Include="Recording Modules\Verify_Add_And_Remove_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.cs">
       <BoundTo>7f6b2f26-92d4-41e1-9988-23635ece29cf</BoundTo>
-      <DependentUpon>Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.rxrec</DependentUpon>
+      <DependentUpon>Verify_Add_And_Remove_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>26ccaea3-66f0-469a-a940-fc62372cbd0e</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_Add_And_Remove_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.UserCode.cs">
       <BoundTo>7f6b2f26-92d4-41e1-9988-23635ece29cf</BoundTo>
-      <DependentUpon>Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.rxrec</DependentUpon>
+      <DependentUpon>Verify_Add_And_Remove_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ab2d22c7-e190-48c4-ba92-f9af4a130cb9</id>
     </Compile>
@@ -1290,27 +1290,27 @@
       <UserCode>true</UserCode>
       <id>4569dc33-abec-453c-88d4-097153cc1617</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories.cs">
+    <Compile Include="Recording Modules\Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Acce.cs">
       <BoundTo>0da60123-f3f3-4e92-8b7d-37c612019baf</BoundTo>
-      <DependentUpon>Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories.rxrec</DependentUpon>
+      <DependentUpon>Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Acce.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>8de09f08-dd57-4641-8e27-1966729f6588</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Acce.UserCode.cs">
       <BoundTo>0da60123-f3f3-4e92-8b7d-37c612019baf</BoundTo>
-      <DependentUpon>Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories.rxrec</DependentUpon>
+      <DependentUpon>Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Acce.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>39f623af-9cc6-4dc2-83b7-5dcbd0717a7b</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.cs">
+    <Compile Include="Recording Modules\Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.cs">
       <BoundTo>bcccd352-ace1-4e85-81bc-77691ec174a6</BoundTo>
-      <DependentUpon>Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.rxrec</DependentUpon>
+      <DependentUpon>Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>40526db7-21b5-4f20-ba88-da721aa24fac</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.UserCode.cs">
       <BoundTo>bcccd352-ace1-4e85-81bc-77691ec174a6</BoundTo>
-      <DependentUpon>Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.rxrec</DependentUpon>
+      <DependentUpon>Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>91e0e554-830a-4750-a807-7621deb2bac2</id>
     </Compile>
@@ -1362,15 +1362,15 @@
       <UserCode>true</UserCode>
       <id>bcf4d665-8791-4963-a1fe-ebb74eddb1a9</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.cs">
+    <Compile Include="Recording Modules\Verify_Batt_Standby_and_Batt_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.cs">
       <BoundTo>b3d19b24-3a32-4ed8-a8cd-a1519abe4fbc</BoundTo>
-      <DependentUpon>Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.rxrec</DependentUpon>
+      <DependentUpon>Verify_Batt_Standby_and_Batt_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>b5377857-521a-48c5-8796-d7a36b56e1b5</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_Batt_Standby_and_Batt_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.UserCode.cs">
       <BoundTo>b3d19b24-3a32-4ed8-a8cd-a1519abe4fbc</BoundTo>
-      <DependentUpon>Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.rxrec</DependentUpon>
+      <DependentUpon>Verify_Batt_Standby_and_Batt_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>42694ac5-ff2d-46a4-ab6a-0ddd7e77f3e5</id>
     </Compile>
@@ -4242,27 +4242,27 @@
       <UserCode>true</UserCode>
       <id>68562570-cd9b-4a50-bde0-9a7bd62ad1f7</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.cs">
+    <Compile Include="Recording Modules\Verify_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.cs">
       <BoundTo>e365b800-16c5-4276-8e8f-cad20ba01f25</BoundTo>
-      <DependentUpon>Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.rxrec</DependentUpon>
+      <DependentUpon>Verify_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>5633f0d2-90a9-4c3f-937d-09e8d132ec13</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.UserCode.cs">
       <BoundTo>e365b800-16c5-4276-8e8f-cad20ba01f25</BoundTo>
-      <DependentUpon>Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.rxrec</DependentUpon>
+      <DependentUpon>Verify_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>152384d5-aa10-4441-8842-d7f6c0e1f85f</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.cs">
+    <Compile Include="Recording Modules\Verify_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.cs">
       <BoundTo>d77bf6dc-7315-412d-8570-f66a513bb1b5</BoundTo>
-      <DependentUpon>Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.rxrec</DependentUpon>
+      <DependentUpon>Verify_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>63043637-e126-4a21-87b2-a130b29ad0f0</id>
     </Compile>
-    <Compile Include="Recording Modules\Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.UserCode.cs">
+    <Compile Include="Recording Modules\Verify_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.UserCode.cs">
       <BoundTo>d77bf6dc-7315-412d-8570-f66a513bb1b5</BoundTo>
-      <DependentUpon>Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.rxrec</DependentUpon>
+      <DependentUpon>Verify_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>edf27828-ba7e-43ca-88c6-2f4089702068</id>
     </Compile>
@@ -4438,12 +4438,12 @@
       <id>b6fcb03e-7112-4070-8ec9-932f3cc82b36</id>
       <recordtableid>62e3d6fa-fa93-46f9-a7b4-8288f82d1236</recordtableid>
     </None>
-    <None Include="Recording Modules\Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light.rxrec">
+    <None Include="Recording Modules\Reopen_DC_Calc_on_Changing_Value_Of_Sounder_Volume_and_Flash_Light.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>ce0afa44-9e9c-4a88-b613-8609c59b57a4</id>
       <recordtableid>a524d7f2-60bf-431d-a51e-67afbdc7ba1d</recordtableid>
     </None>
-    <None Include="Recording Modules\Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21.rxrec">
+    <None Include="Recording Modules\Repen_Logic_Of_Slot_Loop_Card_Addition_In_Panels_Pro16xD_types_panels.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>b32cfb97-e41b-495a-8789-22ba50a872d5</id>
       <recordtableid>0a83c020-8e5c-4235-a7c3-66d8bf0ee58c</recordtableid>
@@ -4473,7 +4473,7 @@
       <id>2957e9b0-0ca7-4a44-bfb8-2a84dc4f5da8</id>
       <recordtableid>1e16cf9c-5281-4e46-b9f7-512fe0387b50</recordtableid>
     </None>
-    <None Include="Recording Modules\Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template.rxrec">
+    <None Include="Recording Modules\Verify_5V24V40V_Load_On_AddDeletion_Of_Rbus_Conn__Xbus_Template.rxrec">
       <id>3e2ecc07-ee68-4773-bc0d-53c0a22640a1</id>
       <recordtableid>8bb0cd77-dd31-4022-94c4-0646ec21eb7f</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4508,7 +4508,7 @@
       <id>4cd3cdf6-d271-40c4-b883-d3fd135c5f0a</id>
       <recordtableid>5446ddf6-5984-44ac-9653-3a4ea504726a</recordtableid>
     </None>
-    <None Include="Recording Modules\Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories.rxrec">
+    <None Include="Recording Modules\Verify_for_Inventory_grid_after_deleting_IOBs_from_panel_network_acce.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>6e578a22-3b93-45e6-8694-153951b5c3bf</id>
       <recordtableid>bd0fa652-9ac0-4b53-8e39-f2af1ae93120</recordtableid>
@@ -4533,7 +4533,7 @@
       <recordtableid>09d7393b-951e-4f27-bd45-2fa454bb16b3</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="Recording Modules\Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template.rxrec">
+    <None Include="Recording Modules\Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>8dd89780-4da7-4133-aae3-7171d90e88d8</id>
       <recordtableid>db3b9404-a8e7-4335-9815-b8d8f363970c</recordtableid>
@@ -4628,7 +4628,7 @@
       <recordtableid>f8a2b366-d4b9-4e50-86a0-bd13dedb9621</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="Recording Modules\Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template.rxrec">
+    <None Include="Recording Modules\Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template.rxrec">
       <id>ec0cb415-f7db-4e50-9837-424e393502d5</id>
       <recordtableid>87e23d30-e029-4ef0-822b-ca9138a251bf</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4653,17 +4653,17 @@
       <recordtableid>87203d2e-5867-4942-9f7d-9ba9a5680bba</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="Recording Modules\Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices.rxrec">
+    <None Include="Recording Modules\Verify_ABox_Flush_Adapt_Wall_Sdr_For_P80AIR_AIW_AVW_AVR_Device.rxrec">
       <id>ce8c1d44-36c6-4818-abb7-e5b2355ed94f</id>
       <recordtableid>0703a718-43c1-4e8b-8125-6bd336fac5aa</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="Recording Modules\Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached.rxrec">
+    <None Include="Recording Modules\Verify_Acc_Gall_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec">
       <id>5b55022e-2cff-4700-a3e1-b0ba1d189d05</id>
       <recordtableid>c57f3a20-042a-4304-b545-608f5a8c1659</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="Recording Modules\Verify_Accessories_Gallery_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.rxrec">
+    <None Include="Recording Modules\Verify_Acc_Gall_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied.rxrec">
       <id>feefa27e-df8f-4a66-b052-b671fced746e</id>
       <recordtableid>d76d388a-2e43-493c-8052-8b3211eb6205</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4708,7 +4708,7 @@
       <id>9a00a871-f023-481b-9000-5019ea56f11c</id>
       <recordtableid>4c985571-7520-45e9-9552-d3a102ed5234</recordtableid>
     </None>
-    <None Include="Recording Modules\Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.rxrec">
+    <None Include="Recording Modules\Verify_Add_And_Remove_Of_TLI800_And_TLI800EN_From_Accessory_Gallery.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>7f6b2f26-92d4-41e1-9988-23635ece29cf</id>
       <recordtableid>3d91b06d-c532-467f-b253-14c0a67afb02</recordtableid>
@@ -4793,12 +4793,12 @@
       <recordtableid>a5d8435d-ba8b-4a7d-a1b3-6339a0fe27a8</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories.rxrec">
+    <None Include="Recording Modules\Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Acce.rxrec">
       <id>0da60123-f3f3-4e92-8b7d-37c612019baf</id>
       <recordtableid>90ca7bba-d172-4271-86c4-6b96aba2ee03</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="Recording Modules\Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.rxrec">
+    <None Include="Recording Modules\Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>bcccd352-ace1-4e85-81bc-77691ec174a6</id>
       <recordtableid>611c8925-4b15-4358-ab2b-475a284b2aee</recordtableid>
@@ -4823,7 +4823,7 @@
       <recordtableid>1ce07a05-a87a-431c-8de2-857e3832d7cb</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="Recording Modules\Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.rxrec">
+    <None Include="Recording Modules\Verify_Batt_Standby_and_Batt_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop.rxrec">
       <id>b3d19b24-3a32-4ed8-a8cd-a1519abe4fbc</id>
       <recordtableid>a157ba0d-2782-4f48-a857-2986df13cc29</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -6023,12 +6023,12 @@
       <id>bcb3495d-1757-461e-8b3d-28fd5c50aa50</id>
       <recordtableid>6e68d4a6-8c7e-4e60-8bf3-add9b97a3e5f</recordtableid>
     </None>
-    <None Include="Recording Modules\Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.rxrec">
+    <None Include="Recording Modules\Verify_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List.rxrec">
       <id>e365b800-16c5-4276-8e8f-cad20ba01f25</id>
       <recordtableid>7e6e02e8-987a-4514-8daa-5159ece3cb9c</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="Recording Modules\Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.rxrec">
+    <None Include="Recording Modules\Verify_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop.rxrec">
       <id>d77bf6dc-7315-412d-8570-f66a513bb1b5</id>
       <recordtableid>54485363-a8fb-4263-8ff8-4d85b9a71b19</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

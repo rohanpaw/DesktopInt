@@ -583,7 +583,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="07967b31-e7e4-4860-acff-00523ab1c1f6"
-			name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast"
+			name="Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast"
 			ref="611c8925-4b15-4358-ab2b-475a284b2aee"
 			type="Recording">
 			</testmodule>
@@ -2000,7 +2000,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="19bff4c9-ca3d-4c20-9dca-c616f03d7537"
-			name="Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21"
+			name="Repen_Logic_Of_Slot_Loop_Card_Addition_In_Panels_Pro16xD_types_panels"
 			ref="0a83c020-8e5c-4235-a7c3-66d8bf0ee58c"
 			type="Recording">
 			</testmodule>
@@ -2470,7 +2470,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="20855ba4-3f79-4167-94a4-73de9f41c4f0"
-			name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template"
+			name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template"
 			ref="87e23d30-e029-4ef0-822b-ca9138a251bf"
 			type="Recording">
 			</testmodule>
@@ -3147,7 +3147,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="2a433a01-f572-4674-8d09-b6fe66dd48ff"
-			name="Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached"
+			name="Verify_Acc_Gall_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached"
 			ref="c57f3a20-042a-4304-b545-608f5a8c1659"
 			type="Recording">
 			</testmodule>
@@ -4416,7 +4416,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="3b41e968-8e05-4d1c-9c11-f12ffa43c5b7"
-			name="Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery"
+			name="Verify_Add_And_Remove_Of_TLI800_And_TLI800EN_From_Accessory_Gallery"
 			ref="3d91b06d-c532-467f-b253-14c0a67afb02"
 			type="Recording">
 			</testmodule>
@@ -4610,13 +4610,13 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="3e2db16e-62b0-4839-8e0e-031ba9b2b356"
-			name="Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices"
+			name="Verify_ABox_Flush_Adapt_Wall_Sdr_For_P80AIR_AIW_AVW_AVR_Device"
 			ref="0703a718-43c1-4e8b-8125-6bd336fac5aa"
 			type="Recording">
 			</testmodule>
 			<testmodule
 			id="3e4897b6-df59-4463-bc67-7ba68f7c676f"
-			name="Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop"
+			name="Verify_Batt_Standby_and_Batt_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop"
 			ref="a157ba0d-2782-4f48-a857-2986df13cc29"
 			type="Recording">
 			</testmodule>
@@ -4746,7 +4746,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="4196dcef-12de-4738-b3e3-a3f6f6fbfd15"
-			name="Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template"
+			name="Verify_5V24V40V_Load_On_AddDeletion_Of_Rbus_Conn__Xbus_Template"
 			ref="8bb0cd77-dd31-4022-94c4-0646ec21eb7f"
 			type="Recording">
 			</testmodule>
@@ -7453,7 +7453,7 @@ rxversion="8.3">
 			</testcase>
 			<testmodule
 			id="5f5a8355-a273-4209-8fb7-e0c4b64f2a2b"
-			name="Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List"
+			name="Verify_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List"
 			ref="7e6e02e8-987a-4514-8daa-5159ece3cb9c"
 			type="Recording">
 				<databinding>
@@ -7805,7 +7805,7 @@ rxversion="8.3">
 			</testcase>
 			<testmodule
 			id="65291813-cb33-41cc-9ee8-6a0f3c8698a8"
-			name="Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template"
+			name="Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template"
 			ref="db3b9404-a8e7-4335-9815-b8d8f363970c"
 			type="Recording">
 			</testmodule>
@@ -8630,7 +8630,7 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="70ded217-523e-4e29-8eff-ef96e9bbd81a"
-			name="Verify_Accessories_Gallery_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied"
+			name="Verify_Acc_Gall_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied"
 			ref="d76d388a-2e43-493c-8052-8b3211eb6205"
 			type="Recording">
 			</testmodule>
@@ -8725,7 +8725,7 @@ rxversion="8.3">
 			</testcase>
 			<testmodule
 			id="71e7310f-e7f2-47f6-bba2-e67c8bde96b1"
-			name="Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop"
+			name="Verify_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop"
 			ref="54485363-a8fb-4263-8ff8-4d85b9a71b19"
 			type="Recording">
 			</testmodule>
@@ -11229,7 +11229,7 @@ MxDesigner]]>
 			</testmodule>
 			<testmodule
 			id="917ecc9c-9b09-4abb-a55a-31f4176cf6fc"
-			name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories"
+			name="Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Acce"
 			ref="90ca7bba-d172-4271-86c4-6b96aba2ee03"
 			type="Recording">
 			</testmodule>
@@ -13854,7 +13854,7 @@ persisted in panel properties&nbsp;]]>
 			</testmodule>
 			<testmodule
 			id="ba34f9f5-b2c9-408b-adb1-e681b34664a9"
-			name="Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light"
+			name="Reopen_DC_Calc_on_Changing_Value_Of_Sounder_Volume_and_Flash_Light"
 			ref="a524d7f2-60bf-431d-a51e-67afbdc7ba1d"
 			type="Recording">
 			</testmodule>
@@ -14456,7 +14456,7 @@ persisted in panel properties&nbsp;]]>
 			</testmodule>
 			<testmodule
 			id="c3b81143-dce7-4209-8a27-3ee28970e18b"
-			name="Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories"
+			name="Verify_for_Inventory_grid_after_deleting_IOBs_from_panel_network_acce"
 			ref="bd0fa652-9ac0-4b53-8e39-f2af1ae93120"
 			type="Recording">
 			</testmodule>
@@ -18787,7 +18787,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="20855ba4-3f79-4167-94a4-73de9f41c4f0"
-						name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template">
+						name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template">
 						</testmodule>
 						<testmodule
 						id="09dee1e5-45d0-4773-b3d7-0f6ea4ed5441"
@@ -19319,7 +19319,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="19bff4c9-ca3d-4c20-9dca-c616f03d7537"
-						name="Repen_and_Verify_Logic_Of_Slot_Loop_Cards_Addition_In_Panels_Pro16xD_Pro16xBB_Pro815D_Pro885D_Pro815DCH_Pro21">
+						name="Repen_Logic_Of_Slot_Loop_Card_Addition_In_Panels_Pro16xD_types_panels">
 						</testmodule>
 						<testmodule
 						id="1f5b7f61-4838-42de-82ca-7bb0788eab07"
@@ -20023,7 +20023,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="2a433a01-f572-4674-8d09-b6fe66dd48ff"
-						name="Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached">
+						name="Verify_Acc_Gall_Update_On_Max_Limit_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached">
 						</testmodule>
 						<testmodule
 						id="c1ed147f-45d4-4d75-8ae9-0191919ab695"
@@ -20063,7 +20063,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="70ded217-523e-4e29-8eff-ef96e9bbd81a"
-						name="Verify_Accessories_Gallery_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied">
+						name="Verify_Acc_Gall_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied">
 						</testmodule>
 						<testmodule
 						id="f27357f0-2ee9-435e-a7a7-e08664bca9cb"
@@ -20327,7 +20327,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="917ecc9c-9b09-4abb-a55a-31f4176cf6fc"
-						name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories">
+						name="Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Acce">
 						</testmodule>
 						<testmodule
 						id="f93f7b53-9ac6-46ee-a9f6-4b87b98da953"
@@ -20347,7 +20347,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="3e4897b6-df59-4463-bc67-7ba68f7c676f"
-						name="Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop">
+						name="Verify_Batt_Standby_and_Batt_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop">
 						</testmodule>
 						<testmodule
 						id="aac530fe-f99c-4d85-851e-2579267c57f4"
@@ -20367,7 +20367,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="07967b31-e7e4-4860-acff-00523ab1c1f6"
-						name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast">
+						name="Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast">
 						</testmodule>
 						<testmodule
 						id="971a2d74-56b8-45b4-b7c1-9837ec982ab4"
@@ -21187,7 +21187,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="65291813-cb33-41cc-9ee8-6a0f3c8698a8"
-						name="Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template">
+						name="Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template">
 						</testmodule>
 						<testmodule
 						id="ae423bb5-cd64-4149-b7e4-bbc3c041963d"
@@ -22163,7 +22163,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="ba34f9f5-b2c9-408b-adb1-e681b34664a9"
-						name="Reopen_Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light">
+						name="Reopen_DC_Calc_on_Changing_Value_Of_Sounder_Volume_and_Flash_Light">
 						</testmodule>
 						<testmodule
 						id="152f4ae5-cb26-447c-8fc2-6ff75f88149b"
@@ -22359,7 +22359,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="c3b81143-dce7-4209-8a27-3ee28970e18b"
-						name="Verification_for_Inventory_grid_after_deleting_a_IOBs_from_panel_network_accessories">
+						name="Verify_for_Inventory_grid_after_deleting_IOBs_from_panel_network_acce">
 						</testmodule>
 						<testmodule
 						id="b4f6be8d-8bd8-4ed9-b0cc-11f0080a0570"
@@ -22543,7 +22543,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="3b41e968-8e05-4d1c-9c11-f12ffa43c5b7"
-						name="Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery">
+						name="Verify_Add_And_Remove_Of_TLI800_And_TLI800EN_From_Accessory_Gallery">
 						</testmodule>
 						<testmodule
 						id="2a6b2f48-31dd-4c6f-b26e-05198b8e5798"
@@ -22859,7 +22859,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="71e7310f-e7f2-47f6-bba2-e67c8bde96b1"
-						name="Verify_When_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop">
+						name="Verify_User_Add_Audix_To_Remote_Bus_SIO800_And_RIM800_Will_Be_Added_To_Built_In_Card_Loop">
 						</testmodule>
 						<testmodule
 						id="3a9798a8-3290-423e-a49d-4d110e6a41e7"
@@ -23275,7 +23275,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="5f5a8355-a273-4209-8fb7-e0c4b64f2a2b"
-						name="Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List">
+						name="Verify_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List">
 						</testmodule>
 						<testmodule
 						id="a2f6cb99-e7ca-4125-8679-2f951441a028"
@@ -23375,7 +23375,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="3e2db16e-62b0-4839-8e0e-031ba9b2b356"
-						name="Verify_ABox_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices">
+						name="Verify_ABox_Flush_Adapt_Wall_Sdr_For_P80AIR_AIW_AVW_AVR_Device">
 						</testmodule>
 						<testmodule
 						id="73f0235c-8056-4a29-85d6-79cafca5544c"
@@ -23919,7 +23919,7 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="4196dcef-12de-4738-b3e3-a3f6f6fbfd15"
-						name="Verify_5V24V40V_Load_On_AdditionDeletion_Of_Rbus_Connection_And_Xbus_Template">
+						name="Verify_5V24V40V_Load_On_AddDeletion_Of_Rbus_Conn__Xbus_Template">
 						</testmodule>
 						<testmodule
 						id="5c14cee0-1f8d-4116-be7c-dba0d4931bd0"
