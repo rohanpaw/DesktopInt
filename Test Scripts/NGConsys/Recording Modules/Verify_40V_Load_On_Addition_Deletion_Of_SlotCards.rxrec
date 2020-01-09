@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="9e4f9edd-93be-4952-bab6-2689d6fa55cb"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_40V_Load_On_Addition_Deletion_Of_SlotCards
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify40VLoadOnSlotCardsAddDelete"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

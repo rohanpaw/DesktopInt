@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="1e16cf9c-5281-4e46-b9f7-512fe0387b50"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop_FC
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInXLMLoop"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

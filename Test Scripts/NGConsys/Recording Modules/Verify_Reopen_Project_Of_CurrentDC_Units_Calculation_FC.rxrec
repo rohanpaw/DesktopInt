@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="2424d6d2-0209-408b-ad8d-87ef425aaa3b"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -44,8 +41,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ReopenProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -79,8 +75,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -105,8 +100,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -131,8 +125,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -157,8 +150,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyDCUnitsValueAfterReopen"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -183,8 +175,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyDCUnitsWorstCaseValueAfterReopen"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -209,8 +200,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValueAfterReopen"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -245,8 +235,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValueAfterReopen"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -281,8 +270,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="Application_Close"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

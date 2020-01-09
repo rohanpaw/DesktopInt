@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="7209e041-3cdd-48b9-9bd9-2f5c2a245e78"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Add_Panels
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -79,7 +75,7 @@ rxversion="8.3">
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
 	name="NGConsysRepository"
 	relativepath="..\NGConsysRepository.rxrep"
-	rxversion="8.0">
+	rxversion="8.3">
 		<codegen
 		classname="NGConsysRepository"
 		namespace="TestProject">

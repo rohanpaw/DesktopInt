@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="2c038a78-fb33-46af-8f08-ff9ba781f1cc"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Power_Calculation_Is_Populated_Warning_Error_Messages_For_Extra_IS_Units
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -106,8 +101,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -132,8 +126,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -158,8 +151,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyPowerCalculationsForExtraISUnits"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

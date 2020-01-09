@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="d6bd24c8-5182-4f9d-bdcb-859457805967"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_The_Respective_5V24V40V_Property_On_Changing_Power_Source
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -106,8 +101,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -132,8 +126,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -182,8 +175,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -218,8 +210,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -254,8 +245,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -290,8 +280,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify5VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -326,8 +315,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify24VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -362,8 +350,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify40VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -398,8 +385,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -424,8 +410,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -450,8 +435,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -476,8 +460,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -522,8 +505,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelName"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -548,8 +530,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyPowerSupply"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -574,8 +555,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -600,8 +580,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -636,8 +615,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -672,8 +650,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -708,8 +685,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify5VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -744,8 +720,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify24VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -780,8 +755,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify40VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -816,8 +790,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -842,8 +815,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -892,8 +864,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelName"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -918,8 +889,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ChangePowerSupply"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -944,8 +914,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyErrorMessageFor5V"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -980,8 +949,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1006,8 +974,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1042,8 +1009,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1078,8 +1044,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1114,8 +1079,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify5VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1150,8 +1114,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify24VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1186,8 +1149,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify40VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1222,8 +1184,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1248,8 +1209,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1298,8 +1258,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelName"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1324,8 +1283,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ChangePowerSupply"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1350,8 +1308,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1376,8 +1333,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1412,8 +1368,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1448,8 +1403,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1484,8 +1438,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify5VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1520,8 +1473,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify24VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1556,8 +1508,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify40VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1592,8 +1543,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1618,8 +1568,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1668,8 +1617,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelName"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1694,8 +1642,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ChangePowerSupply"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1720,8 +1667,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyErrorMessageFor5V"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1756,8 +1702,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1782,8 +1727,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1818,8 +1762,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1854,8 +1797,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1890,8 +1832,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify5VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1926,8 +1867,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify24VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1962,8 +1902,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify40VPSULoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="5dfa8b39-1149-4806-aa49-30f39f6765a2"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Isolator_Units_Calculation_For_Devices_Added_Inside_Line_Isolator_Devices_FC
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanelsFC"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -106,8 +101,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -132,8 +126,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -158,8 +151,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -194,8 +186,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -230,8 +221,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -266,8 +256,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -302,8 +291,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -338,8 +326,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -374,8 +361,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -410,8 +396,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -446,8 +431,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -482,8 +466,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -518,8 +501,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -554,8 +536,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="DragAndDropDevicesInPhysicalLayout"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -614,8 +595,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyIsolatorUnits"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -650,8 +630,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyValueOfParameterInPhysicalLayout"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -686,8 +665,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyValueOfParameterInPhysicalLayout"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -722,8 +700,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyValueOfParameterInPhysicalLayout"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -758,8 +735,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyValueOfParameterInPhysicalLayout"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

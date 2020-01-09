@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="6d7f4ef1-864a-47b2-95ba-78c69db4a003"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Add_Max_No_Of_Devices_Verify_Error_message
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -61,8 +57,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -87,8 +82,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -113,8 +107,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -159,8 +152,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -185,8 +177,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -231,8 +222,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -257,8 +247,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -303,8 +292,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -329,8 +317,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="c2a7aacf-737f-400b-9f80-11f1019f7274"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Voltage_Drop_on_Other_Loops
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1899,8 +1895,7 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 		isexternaltestmethod="True"
 		methodname="verifyVoltageDropCalculation"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1959,8 +1954,7 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1985,8 +1979,7 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 		isexternaltestmethod="True"
 		methodname="verifyVoltDropWorstCaseValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2035,8 +2028,7 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 		isexternaltestmethod="True"
 		methodname="verifyVoltageDropCalculation"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2070,7 +2062,7 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
 	name="NGConsysRepository"
 	relativepath="..\NGConsysRepository.rxrep"
-	rxversion="8.1">
+	rxversion="8.3">
 		<codegen
 		classname="NGConsysRepository"
 		namespace="TestProject">

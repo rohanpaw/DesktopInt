@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="a157ba0d-2782-4f48-a857-2986df13cc29"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Batt_Standby_and_Batt_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNormalLoadandAlarmLoadPropertyOnAdditionDeletionOfDevicesInPLXOrXLMLoop"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

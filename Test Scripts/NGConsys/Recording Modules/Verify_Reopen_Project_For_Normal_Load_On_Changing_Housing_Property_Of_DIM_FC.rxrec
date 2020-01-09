@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="98d6155f-13cd-47f6-89ee-4d1fca67f57c"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -44,8 +41,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ReopenProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -79,8 +75,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -105,8 +100,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -131,8 +125,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -157,8 +150,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelName"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -183,8 +175,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValueAfterReopen"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -219,8 +210,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValueAfterReopen"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -255,8 +245,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandbyFCOnReopen"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -301,8 +290,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyAlarmLoadFCOnReopen"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -347,8 +335,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="Application_Close"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

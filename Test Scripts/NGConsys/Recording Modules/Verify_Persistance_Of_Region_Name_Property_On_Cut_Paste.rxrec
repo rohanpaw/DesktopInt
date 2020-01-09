@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="d77c9b28-e21b-4f69-b248-b21217a9522c"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -106,8 +101,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -132,8 +126,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -178,8 +171,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -224,8 +216,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -250,8 +241,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -276,8 +266,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -302,8 +291,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMultiplePointWizardWithRegion"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -348,8 +336,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -374,8 +361,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="editDeviceLabel"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -420,8 +406,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -446,8 +431,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -472,8 +456,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -498,8 +481,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonEnabled"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -514,8 +496,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -540,8 +521,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -566,8 +546,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -612,8 +591,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -658,8 +636,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -704,8 +681,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -750,8 +726,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -796,8 +771,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="editDeviceLabel"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -842,8 +816,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -868,8 +841,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -894,8 +866,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -920,8 +891,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonEnabled"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -936,8 +906,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -962,8 +931,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -988,8 +956,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1034,8 +1001,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1080,8 +1046,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1126,8 +1091,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1172,8 +1136,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

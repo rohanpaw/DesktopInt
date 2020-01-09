@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="68cd4554-5a36-401c-ac2f-01ae02bf3f18"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Main_Processor_24V_Maximum_Value
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyMax24VPSULoadOnAdditionOfPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

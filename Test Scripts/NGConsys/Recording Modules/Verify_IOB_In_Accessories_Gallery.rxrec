@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="2b70fbbb-8a5a-46b0-86ed-e2e77a259b1e"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_IOB_In_Accessories_Gallery
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyIOBInAccessoriesGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="18eb6648-4cab-41d9-aa7b-c0175484aeca"
 mode="Global"
 rxversion="8.3">
-	<name>
-		verify_save_Confirmation_Of_An_Already_Saved_Project
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SaveProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -61,8 +57,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ApplicationCloseUsingCloseInFile"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

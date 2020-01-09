@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="33c8bdf0-b06e-49cb-8e8d-1de09c7996e3"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_5V_Load_On_Addition_Deletion_Of_Accessories
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify5VPsuLoadOnAdditionDeletionOfAccessories"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

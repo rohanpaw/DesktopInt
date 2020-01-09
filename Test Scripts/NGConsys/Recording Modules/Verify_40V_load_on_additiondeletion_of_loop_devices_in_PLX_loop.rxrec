@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="cd509fa2-e1a6-419f-90b6-0bdd489ce8de"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_40V_load_on_additiondeletion_of_loop_devices_in_PLX_loop
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify40VCalculationforPLXLoopWithDevices"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

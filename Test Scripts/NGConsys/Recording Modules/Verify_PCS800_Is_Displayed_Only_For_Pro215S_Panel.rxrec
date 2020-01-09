@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="a0907639-5534-4952-a6c8-39af9cde9674"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_PCS800_Is_Displayed_Only_For_Pro215S_Panel
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -130,8 +125,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyDeviceVisibility"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -166,8 +160,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyDeviceVisibility"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

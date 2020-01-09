@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="3d91b06d-c532-467f-b253-14c0a67afb02"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Add_And_Remove_Of_TLI800_And_TLI800EN_From_Accessory_Gallery
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyAddingRemovingOfTLI800SlotCards"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

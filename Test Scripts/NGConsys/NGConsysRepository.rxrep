@@ -13849,6 +13849,13 @@ AAAAAElFTkSuQmCC
 			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar//container[4]/button
 			</item>
+			<item
+			capname="container"
+			id="8a4cfcb1-7f99-467e-84d2-2474d2a24195"
+			name="partItemPresenter"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>

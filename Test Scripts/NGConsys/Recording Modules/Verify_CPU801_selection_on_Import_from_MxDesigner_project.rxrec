@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="7e0cb459-f95f-43a5-849b-f8cd9888f17f"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_CPU801_selection_on_Import_from_MxDesigner_project
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="Import_MxDesignerProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -61,8 +57,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyCPUType"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -107,8 +102,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="Application_Close"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -151,7 +145,7 @@ rxversion="8.3">
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
 	name="NGConsysRepository"
 	relativepath="..\NGConsysRepository.rxrep"
-	rxversion="8.1">
+	rxversion="8.3">
 		<codegen
 		classname="NGConsysRepository"
 		namespace="TestProject">

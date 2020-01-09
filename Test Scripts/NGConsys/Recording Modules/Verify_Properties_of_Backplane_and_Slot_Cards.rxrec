@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="f8b16155-ecb9-47df-a1d6-27bca78454e5"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Properties_of_Backplane_and_Slot_Cards
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -106,8 +101,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -132,8 +126,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromPanelNodeGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -177,8 +170,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -203,8 +195,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -249,8 +240,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyProductCodeInSearchProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -302,8 +292,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyDescription"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -328,8 +317,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyRegionNameInSearchProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -354,8 +342,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyProductInSearchProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -380,8 +367,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="editDeviceLabel"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -426,8 +412,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyRegionNameInSearchProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -452,8 +437,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="editRegionName"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -478,8 +462,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

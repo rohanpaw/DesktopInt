@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="1ce07a05-a87a-431c-8de2-857e3832d7cb"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Changing_CPU_And_PSU
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandbyAndAlarmLoadOnChangingCPUAndPSU"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

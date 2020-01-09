@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="ef0bfe30-a9fa-4bf3-bed1-51ccf2ac3298"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyStandyByAlarmHourAndBatteryFactor"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -71,8 +67,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SaveProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -97,8 +92,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="Application_Close"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

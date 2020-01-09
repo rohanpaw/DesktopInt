@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="10117878-e5a0-4c26-a744-12970fd87940"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Panel_LED
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="changeAndVerifyNumberOfAlarmLED"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -126,8 +121,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="changeAndVerifyNumberOfAlarmLED"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -172,8 +166,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="changeAndVerifyNumberOfAlarmLED"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -218,8 +211,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyMinMaxThroughSpinControl"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

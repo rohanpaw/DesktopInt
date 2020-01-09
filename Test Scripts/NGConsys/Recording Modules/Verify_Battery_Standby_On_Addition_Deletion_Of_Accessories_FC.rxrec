@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="17b67b1f-6be6-4c00-a69e-ee89b7e189eb"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Battery_Standby_On_Addition_Deletion_Of_Accessories_FC
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandbyAndAlarmLoadOnAdditionAndDeletionOfAccessories"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

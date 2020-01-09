@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="0703a718-43c1-4e8b-8125-6bd336fac5aa"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_ABox_Flush_Adapt_Wall_Sdr_For_P80AIR_AIW_AVW_AVR_Device
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyCheckboxOfProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -116,8 +111,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SaveProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -142,8 +136,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="Application_Close"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -187,8 +180,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ReopenProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -237,8 +229,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -287,8 +278,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SearchDeviceInExportUsingSKUOrDescription"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -323,8 +313,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SearchDeviceInExportUsingSKUOrDescription"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -359,8 +348,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SearchDeviceInExportUsingSKUOrDescription"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -395,8 +383,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SearchDeviceInExportUsingSKUOrDescription"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1509,8 +1496,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		isexternaltestmethod="True"
 		methodname="VerifyOverwriteConfirmationForExcel"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1555,8 +1541,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		isexternaltestmethod="True"
 		methodname="validateAndClickOKButtonOnExportDocument"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1571,8 +1556,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		isexternaltestmethod="True"
 		methodname="verifyExcelCellValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

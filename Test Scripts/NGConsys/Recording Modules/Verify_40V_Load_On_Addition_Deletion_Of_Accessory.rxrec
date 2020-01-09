@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="e8f033d3-8d70-4337-a56f-851982517708"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_40V_Load_On_Addition_Deletion_Of_Accessory
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify40VLoadOnAccessoriesAddDelete"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

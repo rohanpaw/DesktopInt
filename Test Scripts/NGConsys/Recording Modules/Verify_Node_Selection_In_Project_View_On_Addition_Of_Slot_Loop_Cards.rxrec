@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="ba6dd588-d09e-4129-90d8-3e957f51a889"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -106,8 +101,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyAdditionOfDevicesFromOtherSlotCards"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -142,8 +136,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyDeletionOfDevicesFromOtherSlotCards"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -178,8 +171,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="DeletePanel"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -224,8 +216,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -269,8 +260,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -295,8 +285,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyAdditionOfDevicesFromOtherSlotCards"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -331,8 +320,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyDeletionOfDevicesFromOtherSlotCards"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

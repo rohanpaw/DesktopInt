@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="fb7a0d27-d5fa-4d39-ab8e-595db3a6d4d2"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Alarm_Load_Values_On_Save_Reopen
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ReopenProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -61,8 +57,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -87,8 +82,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -113,8 +107,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -139,8 +132,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectPointsGridRow"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -165,8 +157,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyAlarmLoad"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -191,8 +182,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectPointsGridRow"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -217,8 +207,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyAlarmLoad"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -243,8 +232,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectPointsGridRow"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -269,8 +257,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyAlarmLoad"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

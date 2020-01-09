@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="aee1129a-f536-482f-98b8-29f7e2ea5a12"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyNormalAndAlarmLoadOnChangingHousingPropertyOfDIM"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -71,8 +67,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SaveProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -97,8 +92,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="Application_Close"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

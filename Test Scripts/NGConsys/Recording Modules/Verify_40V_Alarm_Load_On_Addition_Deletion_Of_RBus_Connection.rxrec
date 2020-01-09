@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="ea6f3466-6496-4cb8-85d0-dfdd35705821"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_40V_Alarm_Load_On_Addition_Deletion_Of_RBus_Connection
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify40VLoadOnRbusAddDelete"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

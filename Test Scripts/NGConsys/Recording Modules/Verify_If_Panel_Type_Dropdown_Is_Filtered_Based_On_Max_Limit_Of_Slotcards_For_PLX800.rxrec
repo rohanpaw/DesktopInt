@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="4b4e92db-9afe-47c2-8fbb-08f8fd9300e2"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PLX800
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyPanelTypeDropdownOnSlotCardsPosition"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

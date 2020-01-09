@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="76f7efe8-a448-4c9b-8751-049cf3b351de"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_PLX_Loop
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInPLXLoop"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

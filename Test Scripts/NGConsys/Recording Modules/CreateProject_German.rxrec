@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="19660af1-4e58-4290-badb-20687f7b3401"
 mode="Global"
 rxversion="8.3">
-	<name>
-		CreateProject_German
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -539,8 +536,7 @@ wwJPr14706iilGKjsOUnLcKKKKokKKKKACpZLaWMEsF4AJwwOAe/BpsP+vj/AN4fzrVv/wDkJj/r
 		isexternaltestmethod="False"
 		methodname="Select_Market"
 		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -566,8 +562,7 @@ wwJPr14706iilGKjsOUnLcKKKKokKKKKACpZLaWMEsF4AJwwOAe/BpsP+vj/AN4fzrVv/wDkJj/r
 		isexternaltestmethod="False"
 		methodname="ListItem"
 		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1620,8 +1615,7 @@ oA//2Q==
 		isexternaltestmethod="False"
 		methodname="Select_ProjectName"
 		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1647,8 +1641,7 @@ oA//2Q==
 		isexternaltestmethod="False"
 		methodname="Select_ClientName"
 		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1674,8 +1667,7 @@ oA//2Q==
 		isexternaltestmethod="False"
 		methodname="Select_ClientAddress"
 		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1701,8 +1693,7 @@ oA//2Q==
 		isexternaltestmethod="False"
 		methodname="Select_InstallerName"
 		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1728,8 +1719,7 @@ oA//2Q==
 		isexternaltestmethod="False"
 		methodname="Select_InstallerAddress"
 		namespace="TestProject.Recording_Modules"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1763,8 +1753,7 @@ oA//2Q==
 		isexternaltestmethod="True"
 		methodname="CreateProjectFCParameters"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1799,8 +1788,7 @@ oA//2Q==
 		isexternaltestmethod="True"
 		methodname="CreateProjectFCParameters"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1835,8 +1823,7 @@ oA//2Q==
 		isexternaltestmethod="True"
 		methodname="CreateProjectFCParameters"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1871,8 +1858,7 @@ oA//2Q==
 		isexternaltestmethod="True"
 		methodname="CreateProjectFCParameters"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="508d59ad-2965-4c76-927e-7ce98d3ea7cc"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_maximum_limit_for_Overall_System_Load
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyMaxSystemLoadValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

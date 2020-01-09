@@ -22,7 +22,7 @@ namespace TestProject
     /// <summary>
     /// The class representing the NGConsysRepository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
     [RepositoryFolder("031894a4-4ddd-4c79-8ec3-4b201f74a5f3")]
     public partial class NGConsysRepository : RepoGenBaseFolder
     {
@@ -1295,7 +1295,7 @@ namespace TestProject
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
     public partial class NGConsysRepositoryFolders
     {
         /// <summary>
@@ -6344,6 +6344,7 @@ namespace TestProject
             RepoItemInfo _newInfo;
             RepoItemInfo _searchmarketInfo;
             RepoItemInfo _btn_createnewprojectInfo;
+            RepoItemInfo _partitempresenterInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6542,6 +6543,7 @@ namespace TestProject
                 _newInfo = new RepoItemInfo(this, "New", ".//text[@text='New']", 60000, null, "2ac99ae1-11c3-43c7-a66c-3159d037b932");
                 _searchmarketInfo = new RepoItemInfo(this, "SearchMarket", "progressbar//container[5]/text[@caption='']", 60000, null, "f64f951b-f31f-47e7-816d-53d828527cc1");
                 _btn_createnewprojectInfo = new RepoItemInfo(this, "btn_CreateNewProject", "progressbar//container[4]/button", 60000, null, "83c8573f-50c3-43da-be48-e24ab04e54da");
+                _partitempresenterInfo = new RepoItemInfo(this, "partItemPresenter", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']", 30000, null, "8a4cfcb1-7f99-467e-84d2-2474d2a24195");
             }
 
             /// <summary>
@@ -11254,6 +11256,30 @@ namespace TestProject
                 get
                 {
                     return _btn_createnewprojectInfo;
+                }
+            }
+
+            /// <summary>
+            /// The partItemPresenter item.
+            /// </summary>
+            [RepositoryItem("8a4cfcb1-7f99-467e-84d2-2474d2a24195")]
+            public virtual Ranorex.Container partItemPresenter
+            {
+                get
+                {
+                    return _partitempresenterInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The partItemPresenter item info.
+            /// </summary>
+            [RepositoryItemInfo("8a4cfcb1-7f99-467e-84d2-2474d2a24195")]
+            public virtual RepoItemInfo partItemPresenterInfo
+            {
+                get
+                {
+                    return _partitempresenterInfo;
                 }
             }
         }

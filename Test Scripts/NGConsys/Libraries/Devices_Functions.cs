@@ -7903,6 +7903,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void EnableISDevices()
 		{
+			
 			repo.FormMe.File.Click();
 			
 			repo.FormMe.Options.Click();
@@ -7916,6 +7917,9 @@ namespace TestProject.Libraries
 			repo.FormMe.btn_back.Click();
 			
 		}
+		
+		
+		
 	}
 }
 

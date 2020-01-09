@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="155e3ff8-bcca-4c1c-ab0a-c36d7a2b2d2b"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_The_Properties_Of_TLI800
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyTLI800Properties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

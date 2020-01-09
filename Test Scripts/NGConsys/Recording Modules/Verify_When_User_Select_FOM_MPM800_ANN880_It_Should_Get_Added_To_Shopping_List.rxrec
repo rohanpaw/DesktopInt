@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="d9f4115d-c340-4f6f-baa9-f332cc4e7c19"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_When_User_Select_FOM_MPM800_ANN880_It_Should_Get_Added_To_Shopping_List
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyShoppingListOnSelectingFOMandMPM"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

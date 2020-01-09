@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="14873f37-b9cd-45ee-9bbe-7ed985cda72d"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_40V_Load_On_Changing_CPU_Of_Panel
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify40VLoadOnChangingCPU"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

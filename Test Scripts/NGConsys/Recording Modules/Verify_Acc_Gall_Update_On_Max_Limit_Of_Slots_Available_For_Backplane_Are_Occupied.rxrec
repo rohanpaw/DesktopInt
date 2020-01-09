@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="d76d388a-2e43-493c-8052-8b3211eb6205"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Acc_Gall_Update_On_Max_Limit_Of_Slots_Available_For_Backplane_Are_Occupied
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -106,8 +101,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyAdditionOfDevicesInBackplaneWithOnePanel"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -142,8 +136,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -192,8 +185,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyEnableDisablePanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -238,8 +230,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicefromPanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -274,8 +265,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyEnableDisablePanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -320,8 +310,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyEnableDisablePanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -366,8 +355,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyEnableDisablePanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -412,8 +400,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -438,8 +425,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="DeletePanel"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -484,8 +470,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -529,8 +514,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -555,8 +539,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyAdditionOfDevicesInBackplaneWithOnePanel"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -591,8 +574,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -641,8 +623,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyEnableDisablePanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -687,8 +668,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicefromPanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -723,8 +703,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyEnableDisablePanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -769,8 +748,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyEnableDisablePanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -815,8 +793,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyEnableDisablePanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

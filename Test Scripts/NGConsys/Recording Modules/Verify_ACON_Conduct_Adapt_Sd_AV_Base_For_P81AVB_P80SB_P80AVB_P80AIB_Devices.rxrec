@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="ac389839-6ec7-48db-af66-62d712b90539"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_ACON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyCheckboxOfProperties"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -116,8 +111,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SaveProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -142,8 +136,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="Application_Close"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -187,8 +180,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ReopenProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -237,8 +229,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -287,8 +278,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SearchDeviceInExportUsingSKUOrDescription"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1401,8 +1391,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		isexternaltestmethod="True"
 		methodname="VerifyOverwriteConfirmationForExcel"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1447,8 +1436,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		isexternaltestmethod="True"
 		methodname="validateAndClickOKButtonOnExportDocument"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1463,8 +1451,7 @@ xgH3/////v///+nEryOb2f1BnZeRAq//vnQB9v////7///82xAsc7R5ZRbbBUvQvKEHkCw==
 		isexternaltestmethod="True"
 		methodname="verifyExcelCellValue"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

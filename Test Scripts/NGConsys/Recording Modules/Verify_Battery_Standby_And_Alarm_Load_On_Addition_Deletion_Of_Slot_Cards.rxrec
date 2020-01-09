@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="482a1462-e779-4a48-b5ff-323d2abde574"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Slot_Cards
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandbyAndAlarmLoadOnSlotCardAddDelete"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

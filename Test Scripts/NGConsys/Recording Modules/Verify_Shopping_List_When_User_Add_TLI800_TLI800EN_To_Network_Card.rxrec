@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="da57bb22-d09f-4579-bef0-4365a462e6e4"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyShoppingListOnAddingTLI800AndTLI800EN"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

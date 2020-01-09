@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="7ffc0ab8-9d3c-4bf0-9b03-697dd2b65d97"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Normal_Load_On_Changing_Of_Power_Supply_Of_MPM_FC
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandbyAndAlarmLoadOnChangingPowerSupply"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

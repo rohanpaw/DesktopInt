@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="5c8ca288-c740-4161-90bc-203732c6f586"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Slot_Cards_Gallery
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyGalleryItemsWithoutAddingAnyOtherEntity"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

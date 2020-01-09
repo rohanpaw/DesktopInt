@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="79643dcd-8cd5-4d6a-a36d-de046882de58"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Reopen_Project_And_ShoppingListDevices
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ReopenProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -85,8 +81,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyShoppingList"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

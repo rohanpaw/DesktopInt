@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="fe925e8f-2f7c-4103-9ef2-879d58f92b33"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyAddUnitDetails"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

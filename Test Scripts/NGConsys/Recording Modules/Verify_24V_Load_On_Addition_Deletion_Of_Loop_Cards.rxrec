@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="e51a88cd-f042-4763-ad6d-66f79029466b"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_24V_Load_On_Addition_Deletion_Of_Loop_Cards
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify24VPsuLoadOnAdditionDeletionOfLoopCards"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

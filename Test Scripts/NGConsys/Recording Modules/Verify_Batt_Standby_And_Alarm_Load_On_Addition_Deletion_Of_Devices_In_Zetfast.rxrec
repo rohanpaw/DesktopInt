@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="611c8925-4b15-4358-ab2b-475a284b2aee"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Batt_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandbyAndAlarmLoadOnZetfastLoopAddDelete"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

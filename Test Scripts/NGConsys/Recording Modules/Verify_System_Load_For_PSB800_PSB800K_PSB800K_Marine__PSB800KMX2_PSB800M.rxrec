@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="d94bab78-2f0e-4c8a-8998-48d36343be6c"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_System_Load_For_PSB800_PSB800K_PSB800K_Marine__PSB800KMX2_PSB800M
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifySystemLoadValueOnChangingPSU"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

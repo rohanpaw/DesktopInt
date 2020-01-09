@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="ac8bea27-1785-4975-b099-0d3b3238a1f9"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_40V_load_calculation_for_FIM
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verify40VCalculationforFIM"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

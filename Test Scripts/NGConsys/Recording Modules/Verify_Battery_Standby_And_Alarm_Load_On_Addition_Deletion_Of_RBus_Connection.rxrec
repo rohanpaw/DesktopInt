@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="9cde6b86-e2a0-41cd-aa8e-e262ef1d774c"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_RBus_Connection
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandbyAndAlarmLoadOnRbusAddDelete"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

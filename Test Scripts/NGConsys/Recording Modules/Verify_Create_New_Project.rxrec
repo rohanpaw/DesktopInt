@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="c65c37e7-54e2-4fe9-a1ab-af6120b0cb7b"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Create_New_Project
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1359,8 +1355,7 @@ JgUToafnSK+QWb5mcAsWCw==
 		isexternaltestmethod="True"
 		methodname="Application_Close"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

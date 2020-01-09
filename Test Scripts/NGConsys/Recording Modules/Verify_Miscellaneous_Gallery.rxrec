@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="f69d2f4f-43ff-4af5-8eb0-93ab363e0967"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Miscellaneous_Gallery
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyGalleryItemsWithoutAddingAnyOtherEntity"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

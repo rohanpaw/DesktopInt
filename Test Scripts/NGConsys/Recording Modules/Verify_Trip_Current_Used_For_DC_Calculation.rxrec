@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="296c62fd-f4b1-44a3-9e22-3020b5444ea8"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Trip_Current_Used_For_DC_Calculation
-	</name>
 	<description>
 		The Verify_Trip_Current_Used_For_DC_Calculation recording.
 	</description>
@@ -38,8 +35,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -83,8 +79,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -109,8 +104,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -135,8 +129,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -161,8 +154,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyTripCurrentForDCCalculation"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

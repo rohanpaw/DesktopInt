@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="7903f6ef-8da9-46ba-8a5a-2fa09296eb62"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_The_Slotcard_Positions_Occupied
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyPanelTypeDropdownOnSlotCardsPosition"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

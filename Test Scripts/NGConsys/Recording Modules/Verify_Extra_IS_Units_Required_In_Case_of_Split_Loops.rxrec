@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="03f1ad7a-7073-445b-b9d7-2352e9793931"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Extra_IS_Units_Required_In_Case_of_Split_Loops
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1899,8 +1895,7 @@ CAH3/////v///9rM0jmgQW5FsaZIOCLCtHkB9v////7///8UzXQWSkOjRa8p4HOBZ1MjCw==
 		isexternaltestmethod="True"
 		methodname="VerifyExtraISUnitsForPFI_FIMLoops"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

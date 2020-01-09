@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="6fc07ae4-a5ed-4ac5-99a7-063ba19ec5bc"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_CPU_selection
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -36,8 +33,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -83,8 +79,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyCPUType"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -129,8 +124,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="Application_Close"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

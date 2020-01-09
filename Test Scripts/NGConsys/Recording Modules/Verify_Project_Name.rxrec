@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="85662f0c-3bf3-4d05-9dd0-9a2bd578086a"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Project_Name
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyProjectNameForDifferentPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="d3423d07-20a8-4a25-92c4-70d42448937c"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_CPU_selection_on_reopening_project
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -36,8 +33,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -83,8 +79,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyCPUType"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -130,8 +125,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ChangeCPUType"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -156,8 +150,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SaveProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -182,8 +175,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ReopenProject"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -209,8 +201,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyCPUType"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -255,8 +246,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="Application_Close"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

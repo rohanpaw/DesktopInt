@@ -130,15 +130,20 @@ rxversion="8.3">
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
 			TracingScreenshotQuality="40"
+			VideoBitrate="2000"
+			VideoFps="15"
+			VideoRecordingMode="Off"
+			VideoSource="Auto"
 			enabletracingscreenshots="True"
 			id="29450796-03dd-43cb-aaf6-6b130ef7366e"
+			junitreport="False"
 			name="BuildVerificationTest"
-			placescreenshotsinfolder="True"
 			reportcompress="False"
+			reportdirectoryname=""
+			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms"
-			showinvisiblechars="True">
+			reportwriteinterval="30000ms">
 			</testsuite>
 			<testcase
 			id="2aad57d2-a38d-4f39-bf0d-124b07fdc0ba"
@@ -984,6 +989,9 @@ rxversion="8.3">
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			C:\Program Files (x86)\Ranorex\Studio\Bin\Ranorex.Plugin.Wpf.Core.dll
+		</reference>
 		<reference>
 			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>

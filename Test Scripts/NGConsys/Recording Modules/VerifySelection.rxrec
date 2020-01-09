@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="e317640f-cd77-4e4e-8ded-f5815c540794"
 mode="Global"
 rxversion="8.3">
-	<name>
-		VerifySelection
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -128,8 +124,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifySelectedNode"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

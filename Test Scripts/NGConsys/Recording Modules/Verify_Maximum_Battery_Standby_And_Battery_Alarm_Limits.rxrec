@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="d9e1673d-2d0a-46cc-a155-c0af9545c027"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Maximum_Battery_Standby_And_Battery_Alarm_Limits
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyMaxBatteryStandbyAndAlarmLoad"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

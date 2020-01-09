@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="47e0c49e-5bf3-42fa-a403-9c3f9d9642ab"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Addition_Deletion_Of_Ethernet
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyBatteryStandbyAndAlarmLoadOnEthernetAddDelete"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

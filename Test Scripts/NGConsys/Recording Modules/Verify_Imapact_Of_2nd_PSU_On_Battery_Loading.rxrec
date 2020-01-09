@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="dd555244-9323-49fb-a4fe-87da8b30f3e7"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Imapact_Of_2nd_PSU_On_Battery_Loading
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyImpactOfSecondPSUOnBatteryAndAlarm"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

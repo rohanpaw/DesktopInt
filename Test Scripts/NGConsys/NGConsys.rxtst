@@ -9765,16 +9765,20 @@ rxversion="8.3">
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
 			TracingScreenshotQuality="40"
+			VideoBitrate="2000"
+			VideoFps="15"
+			VideoRecordingMode="Off"
+			VideoSource="Auto"
 			enabletracingscreenshots="True"
 			id="80990948-2ed3-4400-9f4d-70f790024d07"
+			junitreport="False"
 			name="NGConsys"
-			placescreenshotsinfolder="True"
 			reportcompress="False"
 			reportdirectoryname="..\..\Reports"
+			reportenabled="True"
 			reportfilename="%S_%Y%M%D_%T.rxlog"
 			reporttemplatefolder=""
-			reportwriteinterval="30000ms"
-			showinvisiblechars="True">
+			reportwriteinterval="30000ms">
 			</testsuite>
 			<testcase
 			id="80ac5864-eb38-4d35-8b11-cbe35b534c17"
@@ -24645,19 +24649,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="20836adb-a235-4806-8cc8-bcbe7485be64">
-			</testcontainer>
-			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
 			id="844ee248-c88e-4ee8-a935-354096568590">
-			</testcontainer>
-			<testcontainer
-			id="c67c29b5-929e-4b9a-9e38-3101646bb95e">
-			</testcontainer>
-			<testcontainer
-			id="e572ebf8-e8ca-45a2-b26d-4f148b229189">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -24686,6 +24681,9 @@ persisted in panel properties&nbsp;]]>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			C:\Program Files (x86)\Ranorex\Studio\Bin\Ranorex.Plugin.Wpf.Core.dll
+		</reference>
 		<reference>
 			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
 		</reference>

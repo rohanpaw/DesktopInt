@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="ffcac337-4901-4f88-970a-dc4cc97128bb"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Observe_Units_Gallery_On_Navigation_Tree_Node_Selection
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -106,8 +101,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -152,8 +146,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -198,8 +191,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -244,8 +236,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -290,8 +281,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -336,8 +326,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -382,8 +371,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -428,8 +416,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -474,8 +461,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -520,8 +506,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -566,8 +551,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -612,8 +596,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -638,8 +621,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -664,8 +646,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -710,8 +691,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -756,8 +736,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -802,8 +781,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -848,8 +826,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -894,8 +871,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -940,8 +916,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -986,8 +961,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1032,8 +1006,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1078,8 +1051,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1124,8 +1096,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1170,8 +1141,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1196,8 +1166,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1222,8 +1191,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1268,8 +1236,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1314,8 +1281,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1360,8 +1326,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1406,8 +1371,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1452,8 +1416,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1498,8 +1461,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1544,8 +1506,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1590,8 +1551,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1636,8 +1596,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1682,8 +1641,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1728,8 +1686,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1774,8 +1731,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1820,8 +1776,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1846,8 +1801,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1872,8 +1826,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1918,8 +1871,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -1964,8 +1916,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2010,8 +1961,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2056,8 +2006,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2102,8 +2051,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2148,8 +2096,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2194,8 +2141,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2240,8 +2186,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2286,8 +2231,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2332,8 +2276,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2378,8 +2321,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2424,8 +2366,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2470,8 +2411,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2496,8 +2436,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2542,8 +2481,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2588,8 +2526,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2634,8 +2571,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2680,8 +2616,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2726,8 +2661,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2772,8 +2706,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2818,8 +2751,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2864,8 +2796,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2910,8 +2841,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -2956,8 +2886,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3002,8 +2931,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3028,8 +2956,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3054,8 +2981,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromPanelNodeGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3100,8 +3026,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3146,8 +3071,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3192,8 +3116,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3238,8 +3161,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3284,8 +3206,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3330,8 +3251,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3376,8 +3296,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3422,8 +3341,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3468,8 +3386,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3514,8 +3431,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3560,8 +3476,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3606,8 +3521,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3632,8 +3546,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectInventoryGridRow"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3682,8 +3595,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectInventoryGridRow"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3732,8 +3644,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="SelectInventoryGridRow"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3782,8 +3693,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3828,8 +3738,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3874,8 +3783,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3920,8 +3828,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -3966,8 +3873,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -4012,8 +3918,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -4058,8 +3963,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -4104,8 +4008,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -4150,8 +4053,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -4196,8 +4098,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -4242,8 +4143,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

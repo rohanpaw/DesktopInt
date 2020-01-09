@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="04f2c1bc-a14b-44db-b656-60d601f7de36"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Close_Application
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="Application_Close"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

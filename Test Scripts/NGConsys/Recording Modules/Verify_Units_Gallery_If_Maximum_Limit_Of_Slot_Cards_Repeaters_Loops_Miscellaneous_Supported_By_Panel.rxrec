@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="54b73774-45c1-4423-b4ea-e013fc09555d"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyMaxLimitForRepeatersSupportedByPanelOnEthernet"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -71,8 +67,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyMaxLimitForRepeatersSupportedByPanelOnRBus"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
