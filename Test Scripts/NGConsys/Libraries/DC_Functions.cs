@@ -1629,7 +1629,7 @@ namespace TestProject.Libraries
 			Devices_Functions.SelectRowUsingLabelName(sLabelName);
 			
 			repo.ProfileConsys1.btn_Delete.Click();
-			
+						
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
 			DCUnitLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();

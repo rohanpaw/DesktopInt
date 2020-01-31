@@ -216,9 +216,8 @@ AAAASUVORK5CYII=
 			id="c4c46ac8-cf81-452c-8874-53f6c8e0c3b0"
 			name="File"
 			refimgid="2e225932-9b9a-4fa5-8d3a-4eba24c85b93"
-			refpath="/form[@title='Profile Consys']/progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/button/picture/text[@caption='File']"
 			searchtimeout="120000ms">
-				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']/?/?/text[@caption='File']
+				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']/?/?/text[@text='File']
 			</item>
 			<item
 			addcaps="listitem,wpfelement,wpfgroupelement"
@@ -533,9 +532,18 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			</folder>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
-			capname="button"
+			capname="container"
 			id="8e8210c0-314f-4c7d-97b4-86fb85d69656"
 			name="btn_Delete"
+			refimgid="65ef7c44-f2fe-4776-b5d6-e59d096ab960"
+			searchtimeout="60000ms">
+				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/container[4]
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="cb37a3f1-a8bb-47e0-a2e3-60dd74289009"
+			name="Copy_of_btn_Delete"
 			refimgid="65ef7c44-f2fe-4776-b5d6-e59d096ab960"
 			refpath="/form[@automationid='me' and @name='me' and @title='Profile Consys *']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Delete']"
 			searchtimeout="60000ms">
@@ -796,16 +804,16 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			id="795e46c3-6a9c-4f1f-9873-8b220a40ea8e"
 			name="txt_NumberOfAlarmLeds"
 			refimgid="3fc90e5a-1b23-452c-861f-eda07e2c83c5"
-			searchtimeout="30000ms">
-				/form[@win32ownerwindowlevel='0']/progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='4']/cell/text
+			searchtimeout="60000ms">
+				/form[@win32ownerwindowlevel='0']/progressbar//container[@automationid='PART_ItemsPresenter']/row[@index='4']/cell/text
 			</item>
 			<item
 			capname="cell"
 			id="8f851048-c381-40b1-b05d-691d2fbb69cb"
 			name="cell_NumberOfAlarmLeds"
 			refimgid="e7debf93-7a33-48bd-a0fa-821101b838a5"
-			searchtimeout="30000ms">
-				/form[@win32ownerwindowlevel='0']/progressbar/picture[7]//row[@index='4']/cell[@isheader='False']
+			searchtimeout="60000ms">
+				/form[@win32ownerwindowlevel='0']/progressbar//row[@index='4']/cell[@isheader='False']
 			</item>
 			<item
 			capname="button"
@@ -1521,6 +1529,13 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			searchtimeout="30000ms">
 				/contextmenu/?/?/container/?/?/text[@text=$sBase]
 			</item>
+			<item
+			capname="contextmenu"
+			id="c808c16c-3944-4da4-b7b7-36bd552d3806"
+			name="ColumnChooserListsText"
+			searchtimeout="30000ms">
+				/contextmenu/contextmenu[@name=$sGalleryName]
+			</item>
 			<basepath>
 				/contextmenu
 			</basepath>
@@ -1873,6 +1888,15 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			name="Export2ndTime"
 			refimgid="d84aec78-e296-4b8e-89be-d30420ef0c1d"
 			searchtimeout="30000ms">
+				/form[@automationid='me']/container[@automationid='BarManager']/container[@automationid='mainRibbon']//button[@text='Export']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="4ec3a199-cc91-43d0-8411-132599f202a5"
+			name="Copy_of_Export2ndTime"
+			refimgid="d84aec78-e296-4b8e-89be-d30420ef0c1d"
+			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Export']
 			</item>
 			<item
@@ -1915,7 +1939,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="6b157506-2bba-4af3-82b3-0ae09f1fba3e"
 			name="SinglePanel"
 			refimgid="3452e01c-b122-4b3e-a59e-f180e5ea94d9"
-			searchtimeout="30000ms">
+			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar//container[@automationid='rowPresenterGrid']//row/cell[3]/text
 			</item>
 			<item
@@ -2443,9 +2467,17 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 				/form[@automationid='me']/progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']//text[@automationid='PART_Editor']
 			</item>
 			<item
-			capname="button"
+			capname="container"
 			id="7694f0f2-ba3c-4ec4-b564-1476565f3b68"
 			name="btn_MultiplePointWizard"
+			refimgid="6a018d65-2cf0-4b18-b480-99a13ab5d487"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/container[1]
+			</item>
+			<item
+			capname="button"
+			id="90dabea5-af13-4ba8-8ae7-8d5ac866daf3"
+			name="Copy_of_btn_MultiplePointWizard"
 			refimgid="6a018d65-2cf0-4b18-b480-99a13ab5d487"
 			searchtimeout="90000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Multiple Point Wizard']
@@ -2807,9 +2839,8 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="0b2c1138-fbad-4074-8a3a-bf22853d1c93"
 			name="Save"
 			refimgid="9dc8220b-7b21-4abc-aa17-0e797d9d5b1d"
-			refpath="/form[@automationid='me']/progressbar/container[15]/text[@caption='Save']"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/container[15]/text[@caption='Save']
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar//text[@caption='Save']
 			</item>
 			<item
 			addcaps="picture,wpfelement,wpfgroupelement"
@@ -13743,7 +13774,7 @@ AAAAAElFTkSuQmCC
 			id="260b2e94-5ce1-4568-8507-b8ccb5e14714"
 			name="txt_ActualLoadingDetailsValue"
 			refimgid="2ae6330a-9a2b-4359-8517-db83a5899695"
-			searchtimeout="60000ms">
+			searchtimeout="90000ms">
 				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]
 			</item>
 			<item
@@ -13751,7 +13782,7 @@ AAAAAElFTkSuQmCC
 			id="c3f40fca-afc0-4654-a151-4012e61d599b"
 			name="txt_MaxLoadingDetailsValue"
 			refimgid="eba2df63-f1e5-4576-a579-6870d163961d"
-			searchtimeout="60000ms">
+			searchtimeout="90000ms">
 				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]
 			</item>
 			<item
@@ -13855,6 +13886,40 @@ AAAAAElFTkSuQmCC
 			name="partItemPresenter"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']
+			</item>
+			<item
+			capname="button"
+			id="c1cace50-aa60-43af-9307-727c872299fc"
+			name="deleteButtonTest"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/container[@automationid='BarManager']/container[@automationid='mainRibbon']//button[@text='Delete']
+			</item>
+			<item
+			capname="button"
+			id="5299aab1-dc5a-40f0-bd93-6025cdb2103b"
+			name="Copy_of_deleteButtonTest"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/container[@automationid='BarManager']/container[@automationid='mainRibbon']//button[@text='Copy']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="11da52b0-fd7c-4586-8da3-975f16dd1351"
+			name="btn_Restore"
+			refimgid="8b7ac7ac-648c-4639-8c1d-6070994bdab4"
+			refpath="/form[@automationid='me']/container[@automationid='Root_Grid']/container[@automationid='PART_Buttons']/button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_Restore']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/container[@automationid='Root_Grid']//button[@automationid='PART_Restore']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="81e21849-b7cc-43c1-990a-f3f0468ffbe8"
+			name="btn_Maximize"
+			refimgid="97548d7e-ed3f-486e-8f5b-a5744f11b0cf"
+			refpath="/form[@automationid='me']/container[@automationid='PART_Buttons']/button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_Maximize']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/container[@automationid='PART_Buttons']/?/?/button[@automationid='PART_Maximize']
 			</item>
 			<basepath>
 				/form[@automationid='me']

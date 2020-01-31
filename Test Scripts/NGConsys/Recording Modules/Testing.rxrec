@@ -96,8 +96,33 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Common_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeExpander"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PFI
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="EnableISDevices"
 		namespace="TestProject.Libraries"
@@ -112,7 +137,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -136,10 +161,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
+		classname="Devices_Functions"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -149,13 +174,136 @@ rxversion="8.3">
 			<arguments
 			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="TreeItemName"
+				argname="sDeviceName"
 				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
+						801 CH
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="1766e23a-11ed-412a-92dc-248ebe0f034e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Detectors
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="changeConfiguratonToUIA"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0a65f0e9-6123-4625-a2e3-bcf926b7918c"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c1cace50-aa60-43af-9307-727c872299fc"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@automationid='me']/container[@automationid='BarManager']/container[@automationid='mainRibbon']//button[3]
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="False"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="ddb1c9ff-e094-49e6-aad7-7deddda2d425"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8e8210c0-314f-4c7d-97b4-86fb85d69656"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@win32ownerwindowlevel='0']/container[@automationid='BarManager']/container[@automationid='mainRibbon']//button[@text='Delete']
+				</path>
+			</info>
+		</mouseitem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="changeConfiguratonToWPF"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="sDeviceName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						801 CH
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="1766e23a-11ed-412a-92dc-248ebe0f034e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Detectors
 					</argvalue>
 				</argument>
 			</arguments>

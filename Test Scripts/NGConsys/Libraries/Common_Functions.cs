@@ -90,17 +90,27 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void SaveProject(string sProjectName)
 		{
-			try{
-			if (repo.FormMe.btn_Save.Enabled)
-			{
-				repo.FormMe.btn_Save.Click();
-				
-				if(repo.ProjectChangeDescription.btn_OK.Visible)
-				{
-					repo.ProjectChangeDescription.txt_Desc.Click();
+			repo.ProfileConsys1.File.Click();
+			
+			repo.FormMe.Save.Click();
+			
+			repo.ProjectChangeDescription.txt_Desc.Click();
 					Keyboard.Press("Automation....");
 					repo.ProjectChangeDescription.btn_OK.Click();
-				}
+			
+			
+			
+			
+//			if (repo.FormMe.btn_Save.Enabled)
+//			{
+//				repo.FormMe.btn_Save.Click();
+//				
+//				if(repo.ProjectChangeDescription.btn_OK.Visible)
+//				{
+//					repo.ProjectChangeDescription.txt_Desc.Click();
+//					Keyboard.Press("Automation....");
+//					repo.ProjectChangeDescription.btn_OK.Click();
+//				}
 				
 				if(repo.SaveConfirmationWindow.ButtonSave.Visible)
 				{
@@ -117,14 +127,14 @@ namespace TestProject.Libraries
 					repo.SaveConfirmationWindow.ButtonSave.Click();
 					
 				}
-			}
-			else
-			{
-				Report.Log(ReportLevel.Failure, "Save button is not enabled");
-			}
-			}catch(Exception e){
-				Report.Log(ReportLevel.Info, "Exception occured"+e.Message);
-			}
+//			}
+//			else
+//			{
+//				Report.Log(ReportLevel.Failure, "Save button is not enabled");
+//			}
+//			}catch(Exception e){
+//				Report.Log(ReportLevel.Info, "Exception occured"+e.Message);
+//			}
 		}
 		
 		
@@ -790,6 +800,60 @@ namespace TestProject.Libraries
 			repo.Open.FileType_Expander.Click();
 			repo.List1000.ProjectType.Click();
 			repo.Open.btn_Open.Click();
+		}
+		
+		/********************************************************************
+		 * Function Name: changeConfiguratonToUIA
+		 * Function Details: Change Configuration to UIA to detect objects
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :28/01/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void changeConfiguratonToUIA()
+		{
+			
+						
+			Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+
+			Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.UiaOnly;
+		}
+		
+		/********************************************************************
+		 * Function Name: ReopenProjectForDifferentProjectType
+		 * Function Details: Change Configuration to WpfImprovedOnly (Default)
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :28/01/2020
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void changeConfiguratonToWPF()
+		{
+			
+			Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.UiaOnly;
+
+			Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+		}
+		
+		/********************************************************************
+		 * Function Name: maximizeApplication
+		 * Function Details: To maximize application if it is not expanded
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :30/01/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void maximizeApplication()
+		{
+			if(repo.FormMe.btn_MaximizeInfo.Exists())
+			{
+				repo.FormMe.btn_Maximize.Click();
+			}
 		}
 		
 	}

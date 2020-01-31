@@ -1246,6 +1246,26 @@ rxversion="9.2">
 	</plugins.wpfnative.tree.skipanddescend>
 	<plugins.wpfnative.flags>
 	</plugins.wpfnative.flags>
+	<plugins.wpfcore.enablewpfdebug>
+		False
+	</plugins.wpfcore.enablewpfdebug>
+	<plugins.wpfcore.enablewpfcore>
+		True
+	</plugins.wpfcore.enablewpfcore>
+	<plugins.wpfcore.proc.ignorelist>
+	</plugins.wpfcore.proc.ignorelist>
+	<plugins.wpfcore.item.filter.attributes.prefixlist>
+		AreAnyTouches;IsKeyboard;IsMouse;IsStylus;IsFocused;IsVisible;IsEnabled;Ranorex;
+	</plugins.wpfcore.item.filter.attributes.prefixlist>
+	<plugins.wpfcore.attributes.allow>
+		System.Windows.Controls.TextBox|SelectionStart;System.Windows.Controls.TextBox|SelectionLength;
+	</plugins.wpfcore.attributes.allow>
+	<plugins.wpfcore.tree.showall>
+		False
+	</plugins.wpfcore.tree.showall>
+	<plugins.wpfcore.tree.realizedvirtualizeditems>
+		False
+	</plugins.wpfcore.tree.realizedvirtualizeditems>
 	<plugins.wpf.ExpensiveAttributesEnabled>
 		True
 	</plugins.wpf.ExpensiveAttributesEnabled>

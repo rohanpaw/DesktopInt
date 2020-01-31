@@ -121,6 +121,9 @@
     <Reference Include="Ranorex.Plugin.Wpf">
       <Private>False</Private>
     </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <HintPath>..\..\..\..\Program Files (x86)\Ranorex\Studio\Bin\Ranorex.Plugin.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="Ranorex.Plugin.Wpf.Core">
       <Private>False</Private>
     </Reference>
@@ -6073,7 +6076,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
-      <Project>{E98F00AE-9150-4FA6-88A2-DB11C910D8DF}</Project>
+      <Project>{92AFF745-9019-442E-A2C2-A13170004D93}</Project>
       <Name>Ranorex Automation Helpers</Name>
     </ProjectReference>
   </ItemGroup>

@@ -19,6 +19,7 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 
+
 namespace TestProject.Libraries
 {
 	[UserCodeCollection]
@@ -5007,7 +5008,9 @@ namespace TestProject.Libraries
 		{
 			string actualColour,expectedColor;
 			
-			
+//			Ranorex.Plugin.Wpf.DepoGroup<DevExpress.Xpf.Bars.BarItemLinkInfo> abc = new Ranorex.Plugin.Wpf.DepoGroup<DevExpress.Xpf.Bars.BarItemLinkInfo>();
+//		Ranorex.Plugin.WpfCorePlugin.
+//				
 			sPhysicalLayoutDeviceIndex =(1).ToString();
 			
 			//Go to Physical layout

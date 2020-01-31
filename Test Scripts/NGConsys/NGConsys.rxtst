@@ -2620,7 +2620,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.80">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.87">
 					</param>
 					<param
 					name="Mode"
@@ -11650,22 +11650,10 @@ MxDesigner]]>
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="DeleteRanorexReport"
+					dataname="PdfName"
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
-					variablename="DeleteRanorexReport">
-					</var>
-					<var
-					dataname="Details"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
-					variablename="Details">
-					</var>
-					<var
-					dataname="Xml"
-					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
-					variablename="Xml">
+					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
+					variablename="PdfName">
 					</var>
 					<var
 					dataname="PdfDirectoryPath"
@@ -11674,10 +11662,22 @@ MxDesigner]]>
 					variablename="PdfDirectoryPath">
 					</var>
 					<var
-					dataname="PdfName"
+					dataname="Xml"
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
-					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
-					variablename="PdfName">
+					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
+					variablename="Xml">
+					</var>
+					<var
+					dataname="Details"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
+					variablename="Details">
+					</var>
+					<var
+					dataname="DeleteRanorexReport"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
+					variablename="DeleteRanorexReport">
 					</var>
 				</databinding>
 			</testmodule>
@@ -16523,6 +16523,20 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="e1822f32-7910-46bb-a679-3abb33518352"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="ea06a259-e3fd-4eaf-a97d-826434f8a2ec"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="e1823f8d-9c95-42e3-b9b6-95ebf03b8785"
 			name="Application_Open"
@@ -24414,6 +24428,10 @@ persisted in panel properties&nbsp;]]>
 						name="Application_Open">
 						</testmodule>
 						<testmodule
+						id="e1822f32-7910-46bb-a679-3abb33518352"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
 						id="c153d80d-34f2-4db4-ac2d-273f0547ed46"
 						name="Testing">
 						</testmodule>
@@ -24649,10 +24667,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			id="20836adb-a235-4806-8cc8-bcbe7485be64">
 			</testcontainer>
 			<testcontainer
-			id="844ee248-c88e-4ee8-a935-354096568590">
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
@@ -24682,13 +24700,10 @@ persisted in panel properties&nbsp;]]>
 	</testconfigurations>
 	<references>
 		<reference>
-			C:\Program Files (x86)\Ranorex\Studio\Bin\Ranorex.Plugin.Wpf.Core.dll
+			C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll
 		</reference>
 		<reference>
-			C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\Microsoft.Office.Tools.Excel.dll
-		</reference>
-		<reference>
-			Microsoft.Office.Interop.Excel.dll
+			C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.Office.Tools.Excel\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.Office.Tools.Excel.dll
 		</reference>
 		<reference>
 			Ranorex Automation Helpers.dll

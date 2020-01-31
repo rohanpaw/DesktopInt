@@ -6211,25 +6211,39 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}{ENTER}");
 		}
 		
-		/********************************************************************
+		/**************************************************************************************************************************************
 		 * Function Name:verifyContextMenuOptionTextOnRightClickInPointsGrid
 		 * Function Details: To verify if context menu option text when we right click on points grid row
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam
-		 * Last Update : 14/6/2019
-		 ********************************************************************/
+		 * Last Update : 14/6/2019 Alpesh Dhakad 30/01/2020 Updated method and xpath for ColumnChooserListsText
+		 **************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyContextMenuOptionTextOnRightClickInPointsGrid(string sContextMenuOption)
 		{
-			sListIndex=sContextMenuOption;
-			if(repo.ContextMenu.ColumnChooserListText.Visible)
+			
+			Common_Functions.changeConfiguratonToUIA();
+			sGalleryName=sContextMenuOption;
+			
+			if(repo.ContextMenu.ColumnChooserListsText.Visible)
 			{
 				Report.Log(ReportLevel.Success, sContextMenuOption+" option is displayed");
 			}
 			else{
 				Report.Log(ReportLevel.Success, sContextMenuOption+" option is not displayed");
-			}
+			}	
+				
+			Common_Functions.changeConfiguratonToWPF();
+				
+//			sListIndex=sContextMenuOption;
+//			if(repo.ContextMenu.ColumnChooserListText.Visible)
+//			{
+//				Report.Log(ReportLevel.Success, sContextMenuOption+" option is displayed");
+//			}
+//			else{
+//				Report.Log(ReportLevel.Success, sContextMenuOption+" option is not displayed");
+//			}
 		}
 		
 		

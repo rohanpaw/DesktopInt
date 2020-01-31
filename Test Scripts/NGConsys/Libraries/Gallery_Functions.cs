@@ -800,6 +800,9 @@ namespace TestProject.Libraries
 					
 					ExpandUnitsGallery(sType);
 					
+					
+					
+					
 					int DeviceIndex = j-2;
 					sDeviceIndex = DeviceIndex.ToString();
 					sDeviceName = GalleryName;
