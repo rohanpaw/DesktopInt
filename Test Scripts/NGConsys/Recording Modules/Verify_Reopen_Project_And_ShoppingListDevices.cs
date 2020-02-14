@@ -82,9 +82,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ReopenProject("TestProject");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ShoppingList' at Center.", repo.FormMe.ShoppingListInfo, new RecordItemIndex(1));
-            repo.FormMe.ShoppingList.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnShoppingListTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "4"));
             Delay.Milliseconds(0);

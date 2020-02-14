@@ -161,7 +161,7 @@ namespace TestProject.Libraries
 				Devices_Functions.AddDevicesfromGallery(DeviceName,sType);
 				
 				//Click on Points Tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				//Click on device in grid
 				Devices_Functions.SelectRowUsingLabelName(LabelName);
@@ -172,7 +172,7 @@ namespace TestProject.Libraries
 				
 				
 				//Click on Points Tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				//Click on device in grid
 				Devices_Functions.SelectRowUsingLabelName(LabelName);
@@ -184,10 +184,10 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 				
 				//Click on Points Tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				//Click on Paste
-				repo.FormMe.Paste.Click();
+				Common_Functions.clickOnPasteButton();
 				
 				string NewLabelName = DeviceName+" - "+sLabelNo;
 				
@@ -224,7 +224,7 @@ namespace TestProject.Libraries
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 				
-				repo.FormMe.ShoppingList.Click();
+				Common_Functions.clickOnShoppingListTab();
 				
 				//Verify in shopping list
 				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(SKUNo,true);
@@ -277,7 +277,7 @@ namespace TestProject.Libraries
 				Devices_Functions.AddDevicesfromGallery(DeviceName,sType);
 				
 				//Click on Points Tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				//Click on device in grid
 				Devices_Functions.SelectRowUsingLabelName(LabelName);
@@ -289,7 +289,7 @@ namespace TestProject.Libraries
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 				
-				repo.FormMe.ShoppingList.Click();
+				Common_Functions.clickOnShoppingListTab();
 				
 				
 				

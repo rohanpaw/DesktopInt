@@ -127,9 +127,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.DragAndDropDevicesInPhysicalLayout("A:8+", "A:6+");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Right Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(16));
-            repo.ProfileConsys1.tab_Points.Click(System.Windows.Forms.MouseButtons.Right);
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
             
             //Libraries.IS_Functions.VerifyIsolatorUnits("3.5", "FIM");
             //Delay.Milliseconds(0);

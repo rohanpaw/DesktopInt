@@ -395,30 +395,21 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="af44ace6-d64a-4e18-bb9b-2fa3e28d54f4"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnCutButton"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="16cb24d0-a99f-4ddd-b807-b4a9aec72cf6"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Cut']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="968916ac-f569-4a05-b0fb-4406eda82fad">
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="IS_Functions"
 		enabled="True"

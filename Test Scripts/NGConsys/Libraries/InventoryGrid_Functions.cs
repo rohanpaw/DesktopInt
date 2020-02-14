@@ -140,7 +140,7 @@ namespace TestProject.Libraries
 		{
 			sSKU=sSKUofItem;
 			SelectRow(iRowNumber,sItemName,sSKU);
-			repo.ProfileConsys1.btn_Delete.Click();
+			Common_Functions.clickOnDeleteButton();
 			
 		}
 		
@@ -247,7 +247,7 @@ namespace TestProject.Libraries
 			
 			else
 			{
-				repo.FormMe.tab_Inventory.Click();
+				Common_Functions.clickOnInventoryTab();
 				
 				repo.FormMe.txt_InventoryGridDeviceProperty.Click();
 				string ActualInventoryGridProperty = repo.FormMe.txt_InventoryGridDeviceProperty.TextValue;

@@ -97,16 +97,14 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.000", "PFI");
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(6));
-            repo.ProfileConsys1.tab_Points.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(8));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
             
             // Added FB800
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("FB800", "Accessories");
@@ -125,9 +123,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("POS800-M", "Accessories");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(14));
-            repo.FormMe.tab_Inventory.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
             
             // PCH added
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");
@@ -145,9 +142,8 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.030", "PFI");
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(20));
-            repo.ProfileConsys1.tab_Points.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.SelectPanelNode("Node1 - Pro32xD");
             Delay.Milliseconds(0);

@@ -91,9 +91,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(4));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.349", "Main Processor 5V (A)");
             Delay.Milliseconds(0);
@@ -158,9 +157,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(26));
-            repo.FormMe.tab_Inventory.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("MPM800-1");
             Delay.Milliseconds(0);
@@ -198,9 +196,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(39));
-            repo.FormMe.tab_Inventory.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("MPM800-1");
             Delay.Milliseconds(0);
@@ -235,9 +232,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(51));
-            repo.FormMe.tab_Inventory.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("MPM800-1");
             Delay.Milliseconds(0);

@@ -91,9 +91,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("MPM800", "Miscellaneous", "PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(4));
-            repo.FormMe.tab_Inventory.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("2", "Label", "MPM800-1");
             Delay.Milliseconds(0);
@@ -101,9 +100,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Audix 8", "Attached Functionality", "PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(7));
-            repo.FormMe.tab_Inventory.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("3", "Label", "Audix 8");
             Delay.Milliseconds(0);

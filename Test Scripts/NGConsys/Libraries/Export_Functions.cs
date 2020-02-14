@@ -321,18 +321,25 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 09/08/2019
+		 * Last Update : 09/08/2019 Alpesh Dhakad - 31/01/2020 Called 2 new method and update xpath for Export
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void SearchDeviceInExportUsingSKUOrDescription(string sValue,bool sExist)
 		{
+			//Common_Functions.changeConfiguratonToUIA();
 			
 			// Click on Export button
-			repo.FormMe.Export2ndTime.Click();
+			//repo.FormMe.Export2ndTime.Click();
+			
+			
+			clickOnExportButton();
+			Delay.Milliseconds(200);
+			
+			clickOnSearchButton();
 			Delay.Milliseconds(200);
 			
 			//Click on Search button
-			repo.PrintPreview.SearchExport1.Click();
+			//repo.PrintPreview.SearchExport1.Click();
 			
 			
 			if(repo.PrintPreview.SearchBox_Export1Info.Exists())
@@ -342,8 +349,13 @@ namespace TestProject.Libraries
 			}
 			else
 			{
+				
+			clickOnSearchButton();
 			//Click on Search button
-			repo.PrintPreview.SearchExport1.Click();
+			//repo.PrintPreview.SearchExport1.Click();
+			
+		//	Common_Functions.changeConfiguratonToWPF();
+			
 			
 			repo.PrintPreview.SearchBox_Export1.Click();
 			
@@ -436,6 +448,38 @@ namespace TestProject.Libraries
 			}
 			
 		}
+		
+		/********************************************************************
+		 * Function Name: clickOnExportButton
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :11/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnExportButton()
+		{
+			repo.FormMe.Export2ndTime.Click();
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: clickOnSearchButton
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :11/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnSearchButton()
+		{
+			repo.PrintPreview.SearchExport1.Click();
+		}
+		
 	}
 }
 

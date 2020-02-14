@@ -91,9 +91,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(4));
-            repo.ProfileConsys1.tab_Points.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LPBS 3000 - 1");
             Delay.Milliseconds(0);

@@ -560,78 +560,51 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="08014146-8cac-4b63-a86d-9faf9893cc6f"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnPhysicalLayoutTab"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="e8a61ecc-5fae-4df7-982d-f9de9b922fda"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnPointsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="d9b926c1-e964-4f60-955d-7020f650920b"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnPhysicalLayoutTab"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"

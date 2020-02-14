@@ -280,7 +280,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Shweta Bhosale
 
 		 * Purvi Bhasin - 22/08/2019 commented Inventory_LabelCell.DoubleClick() as it causes an error
-		 * Alpesh Dhakad - 28/08/2019 - Added site node script
+		 * Alpesh Dhakad - 28/08/2019 - Added site node script 11/02/2020 - Added Ok button click line after new implementation
 		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void DeletePanel(int NumberofPanels,string PanelNode,int rowNumber )
@@ -309,13 +309,15 @@ namespace TestProject.Libraries
 				
 				Thread.Sleep(300);
 				
-				repo.ProfileConsys1.btn_Delete.Click();
+				Common_Functions.clickOnDeleteButton();
+				
+				repo.FormMe2.ButtonOK.Click();
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 				
 				
-				repo.FormMe.tab_Panel_Network.Click();
+				Common_Functions.clickOnPanelNetworkTab();
 				//repo.ProfileConsys1.PanelInvetoryGrid.Inventory_LabelCell.DoubleClick();
 				if(repo.ProfileConsys1.PanelInvetoryGrid.LabelNameInfo.Exists())
 				{
@@ -703,8 +705,17 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void VerifyValueOf2ndPSUOnReopen(string SecondPSU)
 		{
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Device text in Search Properties fields to view device related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("PSU" +"{ENTER}");
+			
+			
 			repo.FormMe.cell_SecondPSU_Reopen.Click();
-			string ActualPSU = repo.ContextMenu.SecondPSU_Value.TextValue;
+			//string ActualPSU = repo.ContextMenu.SecondPSU_Value.TextValue;
+			
+			string ActualPSU = repo.FormMe.txt_SecondPSU_Reopen.TextValue;
 			
 			if(ActualPSU.Equals(SecondPSU))
 			{

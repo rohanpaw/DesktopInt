@@ -91,9 +91,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("MPM800", "Miscellaneous", "PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(4));
-            repo.FormMe.tab_Inventory.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("2", "Label", "MPM800-1");
             Delay.Milliseconds(0);
@@ -107,9 +106,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(9));
-            repo.ProfileConsys1.tab_Points.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
             
             // Adding this step as object ref error occurs
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
@@ -142,16 +140,14 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(20));
-            repo.FormMe.tab_Inventory.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("Audix 8");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(22));
-            repo.ProfileConsys1.btn_Delete.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -165,9 +161,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(27));
-            repo.FormMe.tab_Inventory.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("2", "Label", "MPM800-1");
             Delay.Milliseconds(0);

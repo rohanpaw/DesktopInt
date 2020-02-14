@@ -475,78 +475,51 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="18752066-fa08-4310-812c-4aed23ed0c7d"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnPhysicalLayoutTab"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="ac9de3ae-4b35-4bcf-aeeb-2faf052bae1f"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnPointsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="18752066-fa08-4310-812c-4aed23ed0c7d"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnPhysicalLayoutTab"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="385e76e0-9a8e-4e7d-bfaa-018a0b078f48"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Physical Layout']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
@@ -717,30 +690,21 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="33d0464c-41ec-4749-8369-a9ddc3146744"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnPointsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
@@ -766,30 +730,21 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="37b07b4f-8fbe-4416-8833-8d8289103005"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnDeleteButton"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="8e8210c0-314f-4c7d-97b4-86fb85d69656"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Delete']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
@@ -815,54 +770,36 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="0c3de17e-25ac-4606-a8ee-cd2f42d2fb4d"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnCutButton"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="16cb24d0-a99f-4ddd-b807-b4a9aec72cf6"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Cut']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="be3aa024-73da-47f7-898b-431368d7e873"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnPasteButton"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="f4f72640-8721-416a-b01c-0018a4546ff3"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/button[@text='Paste']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
 	</recorditems>
 	<repository
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"

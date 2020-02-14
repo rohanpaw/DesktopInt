@@ -91,16 +91,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800 5.0A", "Slot Cards", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800 5.0A", "Slot Cards", "PFI");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800 5.0A", "Slot Cards", "PFI");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
@@ -109,8 +109,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
+            //Delay.Milliseconds(0);
+            
+            try {
+                Libraries.Common_Functions.verifyDeleteButtonState(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(11)); }
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
@@ -118,8 +123,13 @@ namespace TestProject.Recording_Modules
             //Libraries.Common_Functions.VerifyNavigationTreeItemText("Backplane");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
+            //Delay.Milliseconds(0);
+            
+            try {
+                Libraries.Common_Functions.verifyDeleteButtonState(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(15)); }
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
             Delay.Milliseconds(0);
@@ -130,22 +140,27 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("PCH800-3");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("PCH800 5.0A-3");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "True"));
+            Libraries.Common_Functions.verifyDeleteButtonState(ValueConverter.ArgumentFromString<bool>("isReadOnly", "True"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(19));
-            repo.ProfileConsys1.btn_Delete.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(21));
+            //repo.ProfileConsys1.btn_Delete.Click();
+            //Delay.Milliseconds(200);
+            
+            //Libraries.Common_Functions.verifyButtonState(ValueConverter.ArgumentFromString<bool>("isReadOnly", "True"), "Delete");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ShoppingList' at Center.", repo.FormMe.ShoppingListInfo, new RecordItemIndex(21));
-            repo.FormMe.ShoppingList.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnShoppingListTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "3"));
             Delay.Milliseconds(0);

@@ -91,9 +91,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("MPM800", "Miscellaneous", "PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(4));
-            repo.FormMe.tab_Inventory.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("2", "Label", "MPM800-1");
             Delay.Milliseconds(0);
@@ -119,13 +118,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("SIO 800 - 1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(13));
-            repo.FormMe.btn_Copy1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnCopyButton();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(14));
-            repo.FormMe.Paste.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPasteButton();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyDeviceExists(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "SIO 800 - 3");
             Delay.Milliseconds(0);
@@ -133,13 +130,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 2");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(17));
-            repo.FormMe.btn_Copy1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnCopyButton();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(18));
-            repo.FormMe.Paste.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPasteButton();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyDeviceExists(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "RIM 800 - 4");
             Delay.Milliseconds(0);

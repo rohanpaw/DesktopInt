@@ -109,9 +109,18 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectPointsGridRow("1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(10));
-            repo.FormMe.btn_Copy1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.changeConfiguratonToUIA();
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnButton("Copy");
+            Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(12));
+            //repo.FormMe.btn_Copy1.Click();
+            //Delay.Milliseconds(200);
+            
+            Libraries.Common_Functions.changeConfiguratonToWPF();
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
@@ -119,9 +128,18 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(13));
-            repo.FormMe.Paste.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.changeConfiguratonToUIA();
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnButton("Paste");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.changeConfiguratonToWPF();
+            Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(19));
+            //repo.FormMe.Paste.Click();
+            //Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("LPS 800 - 127");
             Delay.Milliseconds(0);

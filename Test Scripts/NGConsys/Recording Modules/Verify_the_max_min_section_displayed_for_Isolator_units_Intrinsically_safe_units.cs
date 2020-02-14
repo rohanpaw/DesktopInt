@@ -100,9 +100,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("801 PH", ValueConverter.ArgumentFromString<int>("DeviceQty", "123"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(7));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            Delay.Milliseconds(0);
             
             Libraries.IS_Functions.VerifyIsolatorUnits("155.8", "PINK");
             Delay.Milliseconds(0);

@@ -153,7 +153,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added to Panel");
 				
 				//Click on Physical layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				
 				//To call verifyMaxISUnits method and verify max IS units value
 				Report.Log(ReportLevel.Info,"Verification of Maximum IS Units on addition of devices");
@@ -162,7 +162,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Verified Maximum IS Units.");
 				
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				// Double click on cell capacitance cell
 				repo.ProfileConsys1.cell_CableCapacitance.DoubleClick();
@@ -195,7 +195,7 @@ namespace TestProject.Libraries
 			sRow=Row;
 			
 			//Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Store IS unit value in ActualMaxISUnit variable
 			string ActualISUnit = repo.FormMe.ISUnits.TextValue;
@@ -326,14 +326,14 @@ namespace TestProject.Libraries
 				ChangedValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				
 				//Click on Physical layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				
 				//To call verifyISUnits method and verify IS units value
 				Report.Log(ReportLevel.Info,"Verification of IS Units on addition of devices");
 				//verifyISUnits(sISUnits,sRow);
 				Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				// Double click on cell capacitance cell
 				repo.ProfileConsys1.cell_CableCapacitance.DoubleClick();
@@ -382,7 +382,7 @@ namespace TestProject.Libraries
 				
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				//Verify IS units in physical layout
 				//verifyISUnits(sISUnits,sRow);
 				
@@ -391,7 +391,7 @@ namespace TestProject.Libraries
 				Devices_Functions.verifyMaxLoadingDetailsValue(sExpectedMaxISUnits,sISUnitsLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
 				
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 			}
 			//Close excel
@@ -418,7 +418,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Go to physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Setting the row count k to 8 to set sRow value according to Panel type and k is used in expected MaxIS unit
 			int k=8;
@@ -447,7 +447,7 @@ namespace TestProject.Libraries
 			//verifyMaxISUnits(sExpectedMaxISUnits,sRow);
 			Devices_Functions.verifyMaxLoadingDetailsValue(sExpectedMaxISUnits,sISUnitsLoadingDetail);
 			// Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			//Setting the row count j to 8 to set sRow value and fetch values from excel
 			int j=8;
@@ -462,7 +462,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info,"Device "+sLabelName+" deleted");
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Verify IS Units
 			//verifyISUnits(sISUnits,sRow);
@@ -549,7 +549,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			//Import data from excel sheet
 			int j=8;
@@ -586,7 +586,7 @@ namespace TestProject.Libraries
 			int ISrows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			//Click points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			//Add IS devices to EXI800
 			for(int i=8; i<=ISrows; i++)
@@ -617,7 +617,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click points grid
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			//Add one IS device to EXI800
 			int k= 8;
@@ -634,7 +634,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success,"Label is "+ sLabelName);
 			
 			//Click physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Verify Extra IS units for each EXI800
 			for(int i=8; i<=rows; i++)
@@ -659,7 +659,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click points grid tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			//Setting the row count j to 8 to set sRow value and fetch values from excel
 			int l=8;
@@ -673,7 +673,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info,"Device "+sLabelName+" deleted");
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			sRow= (l+12).ToString();
 			Report.Log(ReportLevel.Info,"Extra IS Units required for EXI row " + sRow);
 			
@@ -691,7 +691,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info,"Progress bar color code for EXI row " + (l-2) + " verified as: "+sExpectedColorCode);
 			
 			//Click points grid tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			//Setting the row count l to 8 to set sRow value and fetch values from excel
 			int m=8;
@@ -706,7 +706,7 @@ namespace TestProject.Libraries
 			sRow= (m+17).ToString();
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			for(int n=8;n<=rows-1;n++)
 			{
@@ -775,7 +775,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info,"Device "+ModelNumber+" Added");
 				
 				//Click physical layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				sRowIndex=(i+1).ToString();
 				
 				//Verify Progress bar color code for extra IS units
@@ -785,7 +785,7 @@ namespace TestProject.Libraries
 //				
 				Devices_Functions.verifyLoadingDetailColor("Intrinsically Safe Units");
 				//Click physical layout tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			//Setting the row count l to 8 to set sRow value and fetch values from excel
@@ -798,7 +798,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info,"Device "+sLabelName+" deleted");
 			
 			//Click physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			sRowIndex=(m+1).ToString();
 			
 			//Verify Progress bar color code for extra IS units
@@ -837,7 +837,7 @@ namespace TestProject.Libraries
 		public static void verifyExtraISUnitsReq(string expectedExtraISUnitsReq)
 		{
 			//Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			sExtraISUnitsReq=expectedExtraISUnitsReq;
 			// Store IS unit value in ActualMaxISUnit variable
@@ -938,7 +938,7 @@ namespace TestProject.Libraries
 				Devices_Functions.VerifyGalleryItem(sType,sDeviceName,state);
 				
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			//Close excel
@@ -988,7 +988,7 @@ namespace TestProject.Libraries
 				Devices_Functions.VerifyGalleryItem(sType,sDeviceName,state);
 				
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			//Close excel
@@ -1081,13 +1081,13 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Open Another excel to verify IS devices state
 			Excel_Utilities.OpenExcelFile(sFileName,sISDevicesSheet);
@@ -1142,7 +1142,7 @@ namespace TestProject.Libraries
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
 				
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				
 				Devices_Functions.DeleteDevices(sFileName,sDeleteEXIDeviceSheet);
@@ -1151,7 +1151,7 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Open Another excel to verify IS devices state
 			Excel_Utilities.OpenExcelFile(sFileName,verifyISDevices);
@@ -1261,7 +1261,7 @@ namespace TestProject.Libraries
 				Delay.Milliseconds(200);
 				
 				// Click on Physical Layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				Delay.Milliseconds(500);
 				
 				// Click on Loop A node
@@ -1270,19 +1270,19 @@ namespace TestProject.Libraries
 				Delay.Milliseconds(200);
 				
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				Delay.Milliseconds(500);
 				
 				// Click on Physical Layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				Delay.Milliseconds(500);
 				
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				Delay.Milliseconds(500);
 				
 				// Click on Physical Layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				Delay.Milliseconds(500);
 				
 				// Split Device name and then add devices as per the device name and number of devices from main gallery
@@ -1306,14 +1306,14 @@ namespace TestProject.Libraries
 					
 				}
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				Delay.Milliseconds(500);
 				
 				// Click on first added EXI800
 				Devices_Functions.SelectPointsGridRow(sRowNumber);
 				
 				// Delete Exi800 devices
-				repo.ProfileConsys1.btn_Delete.Click();
+				Common_Functions.clickOnDeleteButton();
 				
 				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[4,5]).Value.ToString();
 				string sType1 = ((Range)Excel_Utilities.ExcelRange.Cells[4,6]).Value.ToString();
@@ -1406,7 +1406,7 @@ namespace TestProject.Libraries
 				Delay.Milliseconds(200);
 				
 				// Click on Physical Layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				Delay.Milliseconds(500);
 				
 				// Click on Loop A node
@@ -1415,19 +1415,19 @@ namespace TestProject.Libraries
 				Delay.Milliseconds(200);
 				
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				Delay.Milliseconds(500);
 				
 				// Click on Physical Layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				Delay.Milliseconds(500);
 				
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				Delay.Milliseconds(500);
 				
 				// Click on Physical Layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				Delay.Milliseconds(500);
 				
 				// Split Device name and then add devices as per the device name and number of devices from main gallery
@@ -1451,14 +1451,14 @@ namespace TestProject.Libraries
 					
 				}
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				Delay.Milliseconds(500);
 				
 				// Click on Device order label
 				repo.FormMe.txt_DeviceOrderLabel.Click();
 				
 				// Click on Delete button to delete one device
-				repo.ProfileConsys1.btn_Delete.Click();
+				Common_Functions.clickOnDeleteButton();
 				
 				// Click on first added EXI800
 				Devices_Functions.SelectPointsGridRow(sRowNumber);
@@ -1467,7 +1467,7 @@ namespace TestProject.Libraries
 				Devices_Functions.VerifyGalleryItem(sType,sDeviceName,changedState);
 				
 				// Delete Exi800 devices
-				repo.ProfileConsys1.btn_Delete.Click();
+				Common_Functions.clickOnDeleteButton();
 				
 				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[4,5]).Value.ToString();
 				string sType1 = ((Range)Excel_Utilities.ExcelRange.Cells[4,6]).Value.ToString();
@@ -1614,7 +1614,7 @@ namespace TestProject.Libraries
 			Devices_Functions.SelectPointsGridRow(sRowNumber);
 			
 			// Click on Delete button to delete first EXI
-			repo.ProfileConsys1.btn_Delete.Click();
+			Common_Functions.clickOnDeleteButton();
 			
 			// Open Another excel to verify IS devices
 			Excel_Utilities.OpenExcelFile(sFileName,sISDevicesSheet);
@@ -1743,7 +1743,7 @@ namespace TestProject.Libraries
 			repo.FormMe.txt_DeviceOrderLabel.Click();
 			
 			// Click on delete button
-			repo.ProfileConsys1.btn_Delete.Click();
+			Common_Functions.clickOnDeleteButton();
 			
 			//Close excel
 			Excel_Utilities.CloseExcel();
@@ -1944,7 +1944,7 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				// Click on first added EXI800
 				Devices_Functions.SelectPointsGridRow(sRowNumber);
@@ -1954,7 +1954,7 @@ namespace TestProject.Libraries
 				
 				
 				// Delete Exi800 devices
-				repo.ProfileConsys1.btn_Delete.Click();
+				Common_Functions.clickOnDeleteButton();
 				
 				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[4,5]).Value.ToString();
 				string sType1 = ((Range)Excel_Utilities.ExcelRange.Cells[4,6]).Value.ToString();
@@ -1998,7 +1998,7 @@ namespace TestProject.Libraries
 				Devices_Functions.VerifyGalleryItem(sType,ModelNumber,state);
 				
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			for(int i=8; i<=rows; i++)
@@ -2010,7 +2010,7 @@ namespace TestProject.Libraries
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
 				
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				// Click on added EXI800
 				Devices_Functions.SelectPointsGridRow(sRowNumber);
@@ -2046,7 +2046,7 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				// Verify gallery item state
 				Devices_Functions.VerifyGalleryItem(sType,ModelNumber,changedState);
@@ -2088,7 +2088,7 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				// Add devices from the gallery as per test data from the excel sheet
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
@@ -2096,7 +2096,7 @@ namespace TestProject.Libraries
 				
 				
 				//Click on Physical layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				
 				//To call verifyMaxISUnits method and verify max IS units value
 				Report.Log(ReportLevel.Info,"Verification of Maximum IS Units on addition of devices");
@@ -2105,7 +2105,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info, "Verified Maximum IS Units.");
 				
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				// Click on Cable capacitance cell
 				repo.ProfileConsys1.cell_CableCapacitance.Click();
@@ -2130,7 +2130,7 @@ namespace TestProject.Libraries
 				repo.ProfileConsys1.txt_CableCapacitance.PressKeys((ChangedValue) +"{ENTER}");
 				
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				// Verify gallery item state
 				Devices_Functions.VerifyGalleryItem(sType,ModelNumber,changedState);
@@ -2267,13 +2267,13 @@ namespace TestProject.Libraries
 			}
 
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Read Index value of first and second EXI
 			string firstEXIIndex = ((Range)Excel_Utilities.ExcelRange.Cells[4,6]).Value.ToString();
@@ -2295,7 +2295,7 @@ namespace TestProject.Libraries
 			Ranorex.AutomationHelpers.UserCodeCollections.DragNDropLibrary.DragAndDrop(sourceElement,targetElement);
 			
 			// Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Verify device order for IS Devices after Drag and drop action
 			for(int k=8; k<=rows; k++)
@@ -2411,7 +2411,7 @@ namespace TestProject.Libraries
 			
 
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch PSU5V value and store in Actual 5VPSU value
 			string ActualIsolatorUnitsValue = repo.FormMe.IsolatorUnits.TextValue;
@@ -2427,7 +2427,7 @@ namespace TestProject.Libraries
 			}
 			
 			// CLick on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		
@@ -2454,7 +2454,7 @@ namespace TestProject.Libraries
 			
 
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch PSU5V value and store in Actual 5VPSU value
 			string ActualSelectedIsolatorUnitsValue = repo.FormMe.SelectedIsolatorUnits.TextValue;
@@ -2470,7 +2470,7 @@ namespace TestProject.Libraries
 			}
 			
 			// CLick on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/********************************************************************************************************************************
@@ -2508,7 +2508,7 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDeviceSheet);
 			rows= Excel_Utilities.ExcelRange.Rows.Count;
@@ -2555,7 +2555,7 @@ namespace TestProject.Libraries
 			
 		VerifySelectedIsolatorUnits(IBUnitUntilLI,PanelType);
 			
-		repo.ProfileConsys1.tab_PhysicalLayout.Click();
+		Common_Functions.clickOnPhysicalLayoutTab();
 			
 			
 			//Summation of IB units below  Line Isolator
@@ -2568,7 +2568,7 @@ namespace TestProject.Libraries
 			VerifySelectedIsolatorUnits(IBUnitBelowLI,PanelType);
 			
 			// CLick on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Excel_Utilities.CloseExcel();
 			
@@ -2610,13 +2610,13 @@ namespace TestProject.Libraries
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDeviceSheet);
 			rows= Excel_Utilities.ExcelRange.Rows.Count;
@@ -2666,7 +2666,7 @@ namespace TestProject.Libraries
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sVerifyIBDeviceSheet);
 			rows= Excel_Utilities.ExcelRange.Rows.Count;
@@ -2698,9 +2698,9 @@ namespace TestProject.Libraries
 				
 			}
 			
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			
 			//Summation of IB units until  Line Isolator
@@ -2715,7 +2715,7 @@ namespace TestProject.Libraries
 			IBUnitUntilBuiltInLI = ((Range)Excel_Utilities.ExcelRange.Cells[3,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			repo.FormMe.PhysicalLayoutDevice.Click();
 			
@@ -2726,7 +2726,7 @@ namespace TestProject.Libraries
 			IBUnitInsideLI = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			repo.FormMe.PhysicalLayoutDevice.Click();
 			
@@ -2737,14 +2737,14 @@ namespace TestProject.Libraries
 			IBUnitBelowLI = ((Range)Excel_Utilities.ExcelRange.Cells[5,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[5,8]).Value.ToString();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			repo.FormMe.PhysicalLayoutDevice.Click();
 			
 			VerifySelectedIsolatorUnits(IBUnitBelowLI,PanelType);
 
 			// CLick on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Excel_Utilities.CloseExcel();
 			
@@ -2789,13 +2789,13 @@ namespace TestProject.Libraries
 			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDeviceSheet);
 			rows= Excel_Utilities.ExcelRange.Rows.Count;
@@ -2829,7 +2829,7 @@ namespace TestProject.Libraries
 
 
 			// Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sVerifyIBDeviceSheet);
 			rows= Excel_Utilities.ExcelRange.Rows.Count;
@@ -2861,9 +2861,9 @@ namespace TestProject.Libraries
 				
 			}
 			
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Summation of IB units until  Line Isolator
 			IBUnitUntilLI =  ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
@@ -2877,7 +2877,7 @@ namespace TestProject.Libraries
 			IBUnitUntilBuiltPtN = ((Range)Excel_Utilities.ExcelRange.Cells[3,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			repo.FormMe.PhysicalLayoutDevice.Click();
 			
@@ -2888,7 +2888,7 @@ namespace TestProject.Libraries
 			IBUnitUntilLIBelow = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			repo.FormMe.PhysicalLayoutDevice.Click();
 			
@@ -2899,7 +2899,7 @@ namespace TestProject.Libraries
 			IBUnitBetPtoNLI = ((Range)Excel_Utilities.ExcelRange.Cells[5,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[5,8]).Value.ToString();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			repo.FormMe.PhysicalLayoutDevice.Click();
 			
@@ -2909,7 +2909,7 @@ namespace TestProject.Libraries
 			IBUnitUntilLevelLI = ((Range)Excel_Utilities.ExcelRange.Cells[6,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[6,8]).Value.ToString();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			repo.FormMe.PhysicalLayoutDevice.Click();
 			
@@ -2919,7 +2919,7 @@ namespace TestProject.Libraries
 			IBUnitBetPtoNBuiltLI = ((Range)Excel_Utilities.ExcelRange.Cells[7,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[7,8]).Value.ToString();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			repo.FormMe.PhysicalLayoutDevice.Click();
 			
@@ -2929,14 +2929,14 @@ namespace TestProject.Libraries
 			IBUnitBetPtoNI = ((Range)Excel_Utilities.ExcelRange.Cells[8,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =  ((Range)Excel_Utilities.ExcelRange.Cells[8,8]).Value.ToString();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			repo.FormMe.PhysicalLayoutDevice.Click();
 			
 			VerifySelectedIsolatorUnits(IBUnitBetPtoNI,PanelType);
 			
 			// CLick on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Excel_Utilities.CloseExcel();
 			
@@ -2977,7 +2977,7 @@ namespace TestProject.Libraries
 				CableCapacitanceChangedValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				sRowNumber = (i-7).ToString();
 				
@@ -3140,7 +3140,7 @@ namespace TestProject.Libraries
 		VerifySelectedIsolatorUnits(IBUnitUntilLI,PanelType);
 			//Devices_Functions.verifyLoadingDetailsValue(IBUnitUntilLI, "Isolator Units");
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Summation of IB units below  Line Isolator
 			IBUnitBelowLI =  ((Range)Excel_Utilities.ExcelRange.Cells[5,7]).Value.ToString();
@@ -3155,7 +3155,7 @@ namespace TestProject.Libraries
 			//Devices_Functions.verifyLoadingDetailsValue(IBUnitBelowLI, "Isolator Units");
 			
 			// CLick on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Excel_Utilities.CloseExcel();
 

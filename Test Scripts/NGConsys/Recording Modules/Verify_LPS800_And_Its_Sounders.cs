@@ -112,13 +112,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Flashni Sounder", "Conventional Sounders");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(11));
-            repo.FormMe.btn_Copy1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnCopyButton();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(12));
-            repo.FormMe.Paste.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPasteButton();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDeviceOrderColumn();
             Delay.Milliseconds(0);
@@ -150,20 +148,17 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("LPS 800 - 1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ButtonCut1' at Center.", repo.FormMe.ButtonCut1Info, new RecordItemIndex(23));
-            repo.FormMe.ButtonCut1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnCutButton();
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(25));
-            repo.ProfileConsys1.tab_Points.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(26));
-            repo.FormMe.Paste.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPasteButton();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDeviceOrderColumn();
             Delay.Milliseconds(0);

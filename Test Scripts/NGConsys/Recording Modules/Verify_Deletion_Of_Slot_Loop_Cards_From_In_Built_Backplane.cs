@@ -91,7 +91,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800 5.0A", "Slot Cards", "PFI");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
@@ -109,15 +109,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("PCH800-1");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("PCH800 5.0A-1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "True"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(12));
-            repo.ProfileConsys1.btn_Delete.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
             
         }
 

@@ -131,13 +131,11 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ShoppingList' at Center.", repo.FormMe.ShoppingListInfo, new RecordItemIndex(17));
-            repo.FormMe.ShoppingList.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnShoppingListTab();
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(18));
-            repo.FormMe.Export2ndTime.Click();
-            Delay.Milliseconds(200);
+            Libraries.Export_Functions.clickOnExportButton();
+            Delay.Milliseconds(0);
             
             Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("LPBS 3000", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);

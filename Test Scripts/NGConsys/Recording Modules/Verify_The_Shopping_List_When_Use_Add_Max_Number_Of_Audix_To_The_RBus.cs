@@ -88,9 +88,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(3));
-            repo.FormMe.tab_ShoppingList.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnShoppingListTab();
+            Delay.Milliseconds(0);
             
             Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("568.800.033", ValueConverter.ArgumentFromString<bool>("sExist", "False"));
             Delay.Milliseconds(0);
@@ -101,9 +100,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(7));
-            repo.FormMe.tab_ShoppingList.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnShoppingListTab();
+            Delay.Milliseconds(0);
             
             Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("555.800.064", ValueConverter.ArgumentFromString<bool>("sExist", "False"));
             Delay.Milliseconds(0);

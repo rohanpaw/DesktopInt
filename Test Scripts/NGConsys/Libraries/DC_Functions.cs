@@ -112,7 +112,9 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyMaxDCUnits(string expectedMaxDCUnits)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 			string maxDCUnits = repo.ProfileConsys1.MaxDCUnits.TextValue;
 			
 			if(maxDCUnits.Equals(expectedMaxDCUnits))
@@ -124,7 +126,8 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Max DC Units is not displayed correctly, it is displayed as: " + maxDCUnits + " instead of : " +expectedMaxDCUnits);
 			}
 			
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
+			
 			
 		}
 		
@@ -139,7 +142,9 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyDCUnitsValue(string expectedDCUnits)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 			string ActualDcUnits = repo.ProfileConsys1.DCUnits.TextValue;
 			
 			if(ActualDcUnits.Equals(expectedDCUnits))
@@ -150,7 +155,7 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"DC Units is not displayed correctly, DC Units displayed as: " +ActualDcUnits + " instead of : "+expectedDCUnits);
 			}
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/********************************************************************
@@ -164,7 +169,9 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyDCUnitsWorstCaseValue(string expectedWorstCaseDCUnits)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 			string ActualDcUnitsWorstCase = repo.ProfileConsys1.DCUnitsWorstCase.TextValue;
 			
 			if(ActualDcUnitsWorstCase.Equals(expectedWorstCaseDCUnits))
@@ -175,7 +182,7 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"DC Units worst case value is not displayed correctly, DC Units displayed as: " +ActualDcUnitsWorstCase + " instead of : "+expectedWorstCaseDCUnits);
 			}
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/********************************************************************
@@ -189,7 +196,9 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyMaxDCUnitsWorstCaseValue(string expectedMaxDCUnitsWorstCase)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 			string maxDCUnitsWorstCase = repo.ProfileConsys1.MaxDCUnitsWorstCase.TextValue;
 			
 			if(maxDCUnitsWorstCase.Equals(expectedMaxDCUnitsWorstCase))
@@ -200,7 +209,7 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"Max DC Units worst case value is not displayed correctly, Max DC Unit is displayed as: " +maxDCUnitsWorstCase+ " instead of : " +expectedMaxDCUnitsWorstCase);
 			}
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/********************************************************************
@@ -235,7 +244,7 @@ namespace TestProject.Libraries
 				//repo.ProfileConsys1.cell_ACUnits.Click();
 				string actualColour = Devices_Functions.getProgressBarColor("Current (DC Units)");
 				Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				Devices_Functions.DeleteAllDevices();
 			}
 		}
@@ -270,7 +279,9 @@ namespace TestProject.Libraries
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//	repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
+			
 				expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
 				DCUnitLoadingDetailName = ((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
 				DCUnitWorstCaseLoadingDetailName = ((Range)Excel_Utilities.ExcelRange.Cells[3,6]).Value.ToString();
@@ -335,7 +346,7 @@ namespace TestProject.Libraries
 					Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 					
 					// Click on Points tab
-					repo.ProfileConsys1.tab_Points.Click();
+					Common_Functions.clickOnPointsTab();
 					sLabelName = splitLabelName[0];
 					
 					// Click on Label name for the device
@@ -372,7 +383,7 @@ namespace TestProject.Libraries
 					}
 					
 					// Click on Points tab
-					repo.ProfileConsys1.tab_Points.Click();
+					Common_Functions.clickOnPointsTab();
 					
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -385,7 +396,7 @@ namespace TestProject.Libraries
 					Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 					
 					// Click on Points tab
-					repo.ProfileConsys1.tab_Points.Click();
+					Common_Functions.clickOnPointsTab();
 					sLabelName = splitLabelName[0];
 					
 					// Click on Label name for the device
@@ -439,7 +450,7 @@ namespace TestProject.Libraries
 					Devices_Functions.VerifyDaySensitivityField(true);
 					
 					//Click on Points tab
-					repo.ProfileConsys1.tab_Points.Click();
+					Common_Functions.clickOnPointsTab();
 					
 					// Click on SearchProperties text field
 					repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -450,7 +461,7 @@ namespace TestProject.Libraries
 					
 					
 					// Click on Points tab
-					repo.ProfileConsys1.tab_Points.Click();
+					Common_Functions.clickOnPointsTab();
 					
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -516,7 +527,7 @@ namespace TestProject.Libraries
 				string actualColourWorstCase = Devices_Functions.getProgressBarColors("Current (worst case)");
 				Devices_Functions.VerifyPercentage(expectedColorCodeDC,actualColourDC);
 				Devices_Functions.VerifyPercentage(expectedColorCodeWorstCase,actualColourWorstCase);
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				Devices_Functions.DeleteAllDevices();
 			}
 		}
@@ -543,7 +554,9 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			//Select Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
@@ -555,7 +568,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified Default DC units");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -603,7 +616,7 @@ namespace TestProject.Libraries
 					
 			}
 			//Select Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
@@ -613,7 +626,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified DC units after adding Devices and Base");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -628,7 +641,7 @@ namespace TestProject.Libraries
 			rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// For loop to fetch values from the excel sheet and then add devices
 			for(int i=8; i<=rows; i++)
@@ -646,7 +659,9 @@ namespace TestProject.Libraries
 				
 			}
 			//Select Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 			
 			//Fetch value from excel sheet and store it
 			String expectedDCUnits1 = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
@@ -658,7 +673,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified DC units after adding other Devices");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			for(int i=8; i<=rows; i++)
 			{
@@ -727,7 +742,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified default DC units.");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[9,3]).Value.ToString();
 			sBase = ((Range)Excel_Utilities.ExcelRange.Cells[9,9]).Value.ToString();
@@ -747,7 +762,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified DC units changing base.");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[10,3]).Value.ToString();
 			sRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[10,10]).Value.ToString();
@@ -785,7 +800,9 @@ namespace TestProject.Libraries
 			Excel_Utilities.OpenExcelFile(fileName,sheetName);
 			
 			//Select Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 
 			string ActualDcUnits = repo.FormMe.Current_DC_Units.TextValue;
 			string ActualWorstCaseCurrent = repo.FormMe.CurrentWrstCase.TextValue;
@@ -840,7 +857,7 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop B node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
@@ -864,7 +881,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified DC units after adding devices in Loop B.");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Remove base from Loop B
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[9,3]).Value.ToString();
@@ -1156,7 +1173,7 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 			//go to points grid
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
 			
@@ -1167,7 +1184,8 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
 				
 			//Paste the devices
-			repo.FormMe.Paste.Click();
+			Common_Functions.clickOnPasteButton();
+			
 			
 			//Verify DC Units
 			//verifyDCUnitsValue(expectedDCUnits);
@@ -1183,12 +1201,13 @@ namespace TestProject.Libraries
 				
 			
 			//go to points grid
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
 			
 			//Copy Devices
-			repo.FormMe.ButtonCut1.Click();
+			Common_Functions.clickOnCutButton();
+			
 			
 			//Verify Default DC Units
 			//verifyDCUnitsValue(DefaultDCUnits);
@@ -1261,7 +1280,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified default DC units.");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[9,3]).Value.ToString();
 			sBase = ((Range)Excel_Utilities.ExcelRange.Cells[9,9]).Value.ToString();
@@ -1281,14 +1300,14 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified DC units changing base.");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			
 			//Close excel
 			Excel_Utilities.CloseExcel();
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop B node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
@@ -1312,7 +1331,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified DC units after adding devices in Loop B.");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[10,3]).Value.ToString();
 			sBase = ((Range)Excel_Utilities.ExcelRange.Cells[10,9]).Value.ToString();
@@ -1347,7 +1366,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified DC units after removing base in Loop B.");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -1393,7 +1412,9 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			//Select Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
@@ -1406,7 +1427,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified Default DC units");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -1454,7 +1475,9 @@ namespace TestProject.Libraries
 					
 			}
 			//Select Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
@@ -1467,7 +1490,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified DC units after adding Devices and Base");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -1478,7 +1501,7 @@ namespace TestProject.Libraries
 			Excel_Utilities.OpenExcelFile(sFileName,sOtherDevices);
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[8,3]).Value.ToString();
 			sRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[8,10]).Value.ToString();
@@ -1499,7 +1522,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified DC units after deleting base.");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[9,3]).Value.ToString();
 			sRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[9,10]).Value.ToString();
@@ -1534,7 +1557,9 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyDCUnitsValueAfterReopen(string expectedDCUnits)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 			string ActualDcUnits = repo.FormMe.DCUnits_AfterReopen.TextValue;
 			
 			if(ActualDcUnits.Equals(expectedDCUnits))
@@ -1545,7 +1570,7 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"DC Units is not displayed correctly, DC Units displayed as: " +ActualDcUnits + " instead of : "+expectedDCUnits);
 			}
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/********************************************************************
@@ -1559,7 +1584,9 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyDCUnitsWorstCaseValueAfterReopen(string expectedWorstCaseDCUnits)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 			string ActualDcUnitsWorstCase = repo.FormMe.DCUnitsWorstCase_AfterReopen.TextValue;
 			
 			if(ActualDcUnitsWorstCase.Equals(expectedWorstCaseDCUnits))
@@ -1570,7 +1597,7 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"DC Units worst case value is not displayed correctly, DC Units displayed as: " +ActualDcUnitsWorstCase + " instead of : "+expectedWorstCaseDCUnits);
 			}
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 	
 		/****************************************************************************************************************
@@ -1604,7 +1631,8 @@ namespace TestProject.Libraries
 			Devices_Functions.AssignDeviceBase(sLabelName,sBase,sRowIndex);
 			
 			//Select Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
@@ -1622,13 +1650,14 @@ namespace TestProject.Libraries
 			Excel_Utilities.OpenExcelFile(sFileName,sOtherDevicesLoopA);
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[8,3]).Value.ToString();
 			
 			Devices_Functions.SelectRowUsingLabelName(sLabelName);
 			
-			repo.ProfileConsys1.btn_Delete.Click();
+			Common_Functions.clickOnDeleteButton();
+			
 						
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
@@ -1672,13 +1701,13 @@ namespace TestProject.Libraries
 			Excel_Utilities.OpenExcelFile(sFileName,sOtherDevicesLoopA);
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[10,3]).Value.ToString();
 			
 			Devices_Functions.SelectRowUsingLabelName(sLabelName);
 			
-			repo.ProfileConsys1.btn_Delete.Click();
+			Common_Functions.clickOnDeleteButton();
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
@@ -1746,13 +1775,14 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified DC units for Loop A.");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop B node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 			
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
@@ -1772,7 +1802,7 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop B node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
@@ -1795,13 +1825,15 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Verified DC units after adding devices in Loop B.");
 			
 			//Select Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 			
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
@@ -1864,7 +1896,7 @@ namespace TestProject.Libraries
 				string actualColourWorstCase = Devices_Functions.getProgressBarColors(DCUnitWorstCaseLoopLoadingName);
 				Devices_Functions.VerifyPercentage(expectedColorCodeDC,actualColourDC);
 				Devices_Functions.VerifyPercentage(expectedColorCodeWorstCase,actualColourWorstCase);
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 			}
 		}

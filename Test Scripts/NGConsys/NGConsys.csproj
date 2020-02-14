@@ -5714,9 +5714,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>8ae08a22-7e86-463a-a398-6af7d6f52b4b</id>
       <recordtableid>cfdacfdd-ac10-49d9-b1a9-0274f0e3f249</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

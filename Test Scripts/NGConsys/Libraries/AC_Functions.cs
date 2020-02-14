@@ -132,7 +132,7 @@ namespace TestProject.Libraries
 //			string expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
 			
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			
 			//Verify Max AC Units and AC Units
@@ -153,7 +153,7 @@ namespace TestProject.Libraries
 			// Click on Loop B node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//verify Max AC units and AC Units
 			Devices_Functions.verifyMaxLoadingDetailsValue(sMaxACUnits,ACUnitsLoadingDetails);
@@ -167,7 +167,7 @@ namespace TestProject.Libraries
 //			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
 //			
 			//Add devices in loop B and calculate AC Units percentage
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			calculatedAcUnitsofLoopB = calculateACUnits(sFileName,sAddDevicesSheet);
 			
 			calculatedAcUnits= calculatedAcUnitsofLoopB + calculatedAcUnitsofLoopA;
@@ -177,7 +177,7 @@ namespace TestProject.Libraries
 			//expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
 			
 			//verify Actual AC Units displayed for loop B after addition of devices
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B after addition of devices");
 			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
@@ -192,7 +192,7 @@ namespace TestProject.Libraries
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
 			//verifyACUnits();
@@ -207,7 +207,7 @@ namespace TestProject.Libraries
 			Excel_Utilities.ExcelAppl.Quit();
 			
 			//Delete devices from loop
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			Devices_Functions.DeleteDevices(sFileName,sDeleteDevicesSheet);
 			float ACUnits;
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
@@ -230,7 +230,7 @@ namespace TestProject.Libraries
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
 			//verifyACUnits();
@@ -241,7 +241,7 @@ namespace TestProject.Libraries
 			// Click on Loop B node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
 			//verifyACUnits();
@@ -349,7 +349,7 @@ namespace TestProject.Libraries
 //			string expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
 			
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			
 			//Verify Max AC Units and AC Units of Loop A
@@ -372,7 +372,7 @@ namespace TestProject.Libraries
 			// Click on Loop B node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Verify Max AC Units and AC Units
 			Devices_Functions.verifyMaxLoadingDetailsValue(sMaxACUnits,ACUnitsLoadingDetails);
@@ -391,7 +391,7 @@ namespace TestProject.Libraries
 //			VerifyPercentage(expectedColorCode,actualColour);
 //
 			//Add devices in loop B and calculate AC Units percentage
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			calculatedAcUnitsofLoopB = calculateACUnits(sFileName,sAddDevicesSheet);
 			//calculatedAcUnits= calculatedAcUnitsofLoopB;
 			sACUnits = calculatedAcUnitsofLoopB.ToString();
@@ -399,7 +399,7 @@ namespace TestProject.Libraries
 //			expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
 			
 			//verify Actual AC Units displayed for loop B after addition of devices
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			Report.Log(ReportLevel.Info,"Verification of AC Units of Loop B after addition of devices");
 			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
@@ -416,7 +416,7 @@ namespace TestProject.Libraries
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			sACUnits = calculatedAcUnitsofLoopA.ToString();
 			float.TryParse(sACUnits,out fAcUnits);
@@ -435,7 +435,7 @@ namespace TestProject.Libraries
 			Excel_Utilities.ExcelAppl.Quit();
 			
 			//Delete devices from loop
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			Devices_Functions.DeleteDevices(sFileName,sDeleteDevicesSheet);
 			float ACUnits;
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
@@ -458,7 +458,7 @@ namespace TestProject.Libraries
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
 			//verifyACUnits();
@@ -470,7 +470,7 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 			
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			sACUnits = calculatedAcUnitsofLoopB.ToString();
 			Devices_Functions.verifyLoadingDetailsValue(sACUnits,ACUnitsLoadingDetails);
@@ -492,7 +492,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyMaxACUnitsValue(string expectedMaxACUnits)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			string maxACUnits = repo.ProfileConsys1.MaxACUnitsValue.TextValue;
 			
 			if(maxACUnits.Equals(expectedMaxACUnits))
@@ -503,7 +503,7 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"Max AC Units are not displayed correctly " +maxACUnits);
 			}
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/********************************************************************
@@ -517,7 +517,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyACUnitsValue(string expectedACUnits)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			string ActualAcUnits = repo.ProfileConsys1.ACUnits.TextValue;
 			
 			if(ActualAcUnits.Equals(expectedACUnits))
@@ -545,10 +545,10 @@ namespace TestProject.Libraries
 			string actualColour,expectedColor;
 			
 			//Go to Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 
 			float ActualACUnits = float.Parse(repo.ProfileConsys1.ACUnits.TextValue);
@@ -567,7 +567,7 @@ namespace TestProject.Libraries
 			Devices_Functions.VerifyPercentage(expectedColor, actualColour);
 			
 			//Go to Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		

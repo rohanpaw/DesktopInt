@@ -335,11 +335,51 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="changeConfiguratonToUIA"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="92d1d0aa-8b14-427c-a2ea-65c0f9c33136">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnButton"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="92d1d0aa-8b14-427c-a2ea-65c0f9c33136">
+				<argument
+				argname="ButtonName"
+				id="deae0d5c-8236-4492-baf1-722bac111b5d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Copy
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -359,6 +399,21 @@ rxversion="8.3">
 				</path>
 			</info>
 		</mouseitem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="changeConfiguratonToWPF"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="92d1d0aa-8b14-427c-a2ea-65c0f9c33136">
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
@@ -419,11 +474,66 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="changeConfiguratonToUIA"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="92d1d0aa-8b14-427c-a2ea-65c0f9c33136">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnButton"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="92d1d0aa-8b14-427c-a2ea-65c0f9c33136">
+				<argument
+				argname="ButtonName"
+				id="deae0d5c-8236-4492-baf1-722bac111b5d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Paste
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="changeConfiguratonToWPF"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="92d1d0aa-8b14-427c-a2ea-65c0f9c33136">
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"

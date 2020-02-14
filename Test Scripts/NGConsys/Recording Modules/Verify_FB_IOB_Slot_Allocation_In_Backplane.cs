@@ -88,9 +88,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(3));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("FB800", "Accessories");
             Delay.Milliseconds(0);
@@ -107,9 +106,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(9));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("FB800", "Accessories", "Disabled");
             Delay.Milliseconds(0);
@@ -126,9 +124,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(15));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
             Delay.Milliseconds(0);
@@ -142,9 +139,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(20));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectPanelNodePanelAccessoriesRow("1");
             Delay.Milliseconds(0);
@@ -155,9 +151,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectPanelNodePanelAccessoriesRow("1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(24));
-            repo.ProfileConsys1.btn_Delete.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("FB800", "Accessories", "Enabled");
             Delay.Milliseconds(0);
@@ -174,9 +169,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(30));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
             Delay.Milliseconds(0);
@@ -199,9 +193,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(38));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("FB800", "Accessories");
             Delay.Milliseconds(0);
@@ -215,9 +208,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(43));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("FB800", "Accessories", "Disabled");
             Delay.Milliseconds(0);
@@ -231,9 +223,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_PanelAccessories' at Center.", repo.FormMe.tab_PanelAccessoriesInfo, new RecordItemIndex(48));
-            repo.FormMe.tab_PanelAccessories.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("FB800", "Accessories", "Disabled");
             Delay.Milliseconds(0);
@@ -244,9 +235,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectPanelNodePanelAccessoriesRow("3");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(52));
-            repo.ProfileConsys1.btn_Delete.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("IOB800", "Accessories", "Enabled");
             Delay.Milliseconds(0);

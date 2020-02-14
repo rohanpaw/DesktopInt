@@ -112,16 +112,14 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(11));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            Delay.Milliseconds(0);
             
             Libraries.IS_Functions.VerifyIsolatorUnits("1", "PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(13));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            Delay.Milliseconds(0);
             
             Libraries.IS_Functions.VerifyIsolatorUnitsAndIndicator("1", "GREEN", "PFI");
             Delay.Milliseconds(0);
@@ -129,16 +127,14 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(16));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            Delay.Milliseconds(0);
             
             Libraries.IS_Functions.VerifyIsolatorUnits("2", "PFI");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(18));
-            repo.ProfileConsys1.tab_PhysicalLayout.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            Delay.Milliseconds(0);
             
             Libraries.IS_Functions.VerifyIsolatorUnitsAndIndicator("2", "GREEN", "PFI");
             Delay.Milliseconds(0);

@@ -127,11 +127,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		autogenmethod="True"
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDeviceSensitivityAfterReopen"
+		methodname="VerifyDeviceSensitivityAfterReopenProj"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -178,11 +177,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		autogenmethod="True"
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDeviceModeAfterReopen"
+		methodname="VerifyDeviceModeAfterReopenProj"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>

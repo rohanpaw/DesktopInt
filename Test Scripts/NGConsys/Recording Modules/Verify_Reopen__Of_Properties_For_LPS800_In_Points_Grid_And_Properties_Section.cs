@@ -94,7 +94,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectPointsGridRow("2");
             Delay.Milliseconds(0);
             
-            verifyLabelInPropertiesSection("Generic Sounder Test");
+            Libraries.Devices_Functions.verifyLabelInPropertiesSection("Generic Sounder Test");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyAlarmLoad("5");

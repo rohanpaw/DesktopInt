@@ -124,9 +124,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(15));
-            repo.FormMe.Paste.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPasteButton();
+            Delay.Milliseconds(0);
             
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
             //Delay.Milliseconds(0);
@@ -155,9 +154,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(25));
-            repo.FormMe.Paste.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPasteButton();
+            Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-5");
             Delay.Milliseconds(0);
@@ -219,9 +217,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(46));
-            repo.FormMe.Paste.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPasteButton();
+            Delay.Milliseconds(0);
             
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
             //Delay.Milliseconds(0);
@@ -250,9 +247,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(56));
-            repo.FormMe.Paste.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPasteButton();
+            Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-5");
             Delay.Milliseconds(0);

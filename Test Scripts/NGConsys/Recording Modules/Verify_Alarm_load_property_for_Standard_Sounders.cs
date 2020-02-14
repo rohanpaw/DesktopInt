@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            VerifyAlarmLoad("4");
+            Libraries.Devices_Functions.VerifyAlarmLoad("4");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyAlarmCurrentLoadProperty(ValueConverter.ArgumentFromString<bool>("isReadOnly", "True"));
@@ -106,7 +106,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.EditAlarmLoad("12");
             Delay.Milliseconds(0);
             
-            VerifyAlarmLoad("4");
+            Libraries.Devices_Functions.VerifyAlarmLoad("4");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Flashni Sounder", "Conventional Sounders");
@@ -115,7 +115,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("2");
             Delay.Milliseconds(0);
             
-            VerifyAlarmLoad("25");
+            Libraries.Devices_Functions.VerifyAlarmLoad("25");
             Delay.Milliseconds(0);
             
         }

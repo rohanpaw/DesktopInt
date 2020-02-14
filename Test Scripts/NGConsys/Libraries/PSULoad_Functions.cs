@@ -100,7 +100,7 @@ namespace TestProject.Libraries
 			}
 			
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch 5V PSU Load maximum limit value
 			string max5VPsu = repo.ProfileConsys1.Max5VPsu.TextValue;
@@ -116,7 +116,7 @@ namespace TestProject.Libraries
 			}
 			
 			// Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 		}
 		
@@ -148,7 +148,7 @@ namespace TestProject.Libraries
 			sPsuV=expected5VPSU;
 			
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch PSU5V value and store in Actual 5VPSU value
 			string Actual5VPSUValue = repo.FormMe.Psu5VLoad.TextValue;
@@ -164,7 +164,7 @@ namespace TestProject.Libraries
 			}
 			
 			// CLick on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/*****************************************************************************************************************
@@ -291,7 +291,7 @@ namespace TestProject.Libraries
 			}
 			
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch 24V PSU Load maximum limit value
 			string max24VPsu = repo.ProfileConsys1.Max24VPsu.TextValue;
@@ -307,7 +307,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		
@@ -338,7 +338,7 @@ namespace TestProject.Libraries
 			sPsuV=expected24VPSU;
 			
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch PSU24V value and store in Actual 24VPSU value
 			string Actual24VPSUValue = repo.FormMe.Psu24VLoad.TextValue;
@@ -354,7 +354,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		
@@ -593,7 +593,7 @@ namespace TestProject.Libraries
 				
 				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 				
-				repo.ProfileConsys1.btn_Delete.Click();
+				Common_Functions.clickOnDeleteButton();
 				Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 				
 				// Click on Loop A node
@@ -702,7 +702,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
 				// Click on Panel Accessories in Panel node
-				repo.FormMe.tab_PanelAccessories.Click();
+				Common_Functions.clickOnPanelAccessoriesTab();
 
 				// Split Device name and then add devices as per the device name and number of devices from Panel node gallery
 				ModelNumber = ModelNumber1;
@@ -1364,7 +1364,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch PSU40V value and store in Actual 40VPSU value
 			string Actual40VPSUValue = repo.FormMe.Psu40VLoad.TextValue;
@@ -1380,7 +1380,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		
@@ -1406,7 +1406,7 @@ namespace TestProject.Libraries
 			}
 			
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch 40V PSU Load maximum limit value
 			string max40VPsu = repo.FormMe.Max40VPsu.TextValue;
@@ -1422,7 +1422,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/*******************************************************************************************************************************
@@ -1524,7 +1524,7 @@ namespace TestProject.Libraries
 					
 					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 					{
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
@@ -1663,7 +1663,7 @@ namespace TestProject.Libraries
 					
 					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 					{
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
@@ -1718,7 +1718,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch PSU40V value and store in Actual 40VPSU value
 			string Actual40VPSUValue = repo.FormMe.Psu40VLoad.TextValue;
@@ -1823,7 +1823,7 @@ namespace TestProject.Libraries
 					
 					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 					{
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
@@ -1975,7 +1975,7 @@ namespace TestProject.Libraries
 						
 						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 						{
-							repo.ProfileConsys1.btn_Delete.Click();
+							Common_Functions.clickOnDeleteButton();
 							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
@@ -2003,7 +2003,7 @@ namespace TestProject.Libraries
 						
 						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 						{
-							repo.ProfileConsys1.btn_Delete.Click();
+							Common_Functions.clickOnDeleteButton();
 							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
@@ -2086,7 +2086,7 @@ namespace TestProject.Libraries
 				
 				
 				//Click on Panel Accessories tab
-				//repo.FormMe.tab_PanelAccessories.Click();
+				//Common_Functions.clickOnPanelAccessoriesTab();
 				
 				for(int j=8; j<=9; j++)
 				{
@@ -2100,7 +2100,7 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
 					//Click on Panel Accessories tab
-					repo.FormMe.tab_PanelAccessories.Click();
+					Common_Functions.clickOnPanelAccessoriesTab();
 					
 					float.TryParse(s40VLoad, out AccessoryFourtyVLoad);
 					Devices_Functions.AddDevicefromPanelAccessoriesGallery(ModelNumber,sType);
@@ -2132,7 +2132,7 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
 					//Click on Panel Accessories tab
-					repo.FormMe.tab_PanelAccessories.Click();
+					Common_Functions.clickOnPanelAccessoriesTab();
 					
 					//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 					
@@ -2140,7 +2140,7 @@ namespace TestProject.Libraries
 					
 					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 					{
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						//Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
@@ -2278,7 +2278,7 @@ namespace TestProject.Libraries
 						
 						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 						{
-							repo.ProfileConsys1.btn_Delete.Click();
+							Common_Functions.clickOnDeleteButton();
 							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
@@ -2410,7 +2410,7 @@ namespace TestProject.Libraries
 						
 						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 						{
-							repo.ProfileConsys1.btn_Delete.Click();
+							Common_Functions.clickOnDeleteButton();
 							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						}
@@ -2606,7 +2606,7 @@ namespace TestProject.Libraries
 				
 				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 				{
-					repo.ProfileConsys1.btn_Delete.Click();
+					Common_Functions.clickOnDeleteButton();
 					Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 					Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 					
@@ -2918,7 +2918,7 @@ namespace TestProject.Libraries
 			}
 			
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch Battery Standby maximum limit value
 			string maxBatteryStandby = repo.ProfileConsys1.MaxBatteryStandby.TextValue;
@@ -2964,7 +2964,7 @@ namespace TestProject.Libraries
 				sRow=(16).ToString();
 			}
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch Default Battery Standby limit value
 			string BatteryStandby = repo.FormMe.BatteryStandBy.TextValue;
@@ -3003,7 +3003,7 @@ namespace TestProject.Libraries
 			
 			
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch Default Battery Standby limit value
 			string BatteryStandby = repo.FormMe.BatteryStandBy.TextValue;
@@ -3030,7 +3030,7 @@ namespace TestProject.Libraries
 		public static void verifyBatteryStandbyOnChangingCPU(string expectedBatteryStandby)
 		{
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch Battery Standby limit value
 			string BatteryStandby = repo.FormMe.BatteryStandBy.TextValue;
@@ -3108,7 +3108,7 @@ namespace TestProject.Libraries
 				sRow=(17).ToString();
 			}
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch Default Alarm Load limit value
 			string AlarmLoad = repo.FormMe.AlarmLoad.TextValue;
@@ -3170,7 +3170,7 @@ namespace TestProject.Libraries
 			}
 			
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch Default Alarm Load limit value
 			string AlarmLoad = repo.FormMe.AlarmLoad.TextValue;
@@ -3419,7 +3419,7 @@ namespace TestProject.Libraries
 					
 					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 					{
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
@@ -3631,7 +3631,7 @@ namespace TestProject.Libraries
 					
 					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 					{
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						//Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
@@ -3688,7 +3688,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch BatteryStandby and store in Actual BatteryStandby value
 			string ActualBatteryStandbyValue = repo.FormMe.BatteryStandBy.TextValue;
@@ -3722,7 +3722,7 @@ namespace TestProject.Libraries
 				sCell= "[5]";
 			}
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch BatteryStandby and store in Actual 40VPSU value
 			string ActualAlarmLoadValue = repo.FormMe.AlarmLoad.TextValue;
@@ -3818,7 +3818,7 @@ namespace TestProject.Libraries
 					//Get Alarm Load from UI
 					sDefaultAlarmLoad = GetAlarmLoadValue(PanelType);
 					
-					repo.ProfileConsys1.tab_Points.Click();
+					Common_Functions.clickOnPointsTab();
 					
 					float.TryParse(sBatteryStandby, out PrinterBatteryStandby);
 					float.TryParse(sAlarmLoad, out PrinterAlarmLoad);
@@ -3866,7 +3866,7 @@ namespace TestProject.Libraries
 					
 					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 					{
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
@@ -4053,7 +4053,7 @@ namespace TestProject.Libraries
 						
 						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 						{
-							repo.ProfileConsys1.btn_Delete.Click();
+							Common_Functions.clickOnDeleteButton();
 							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
@@ -4084,7 +4084,7 @@ namespace TestProject.Libraries
 						
 						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 						{
-							repo.ProfileConsys1.btn_Delete.Click();
+							Common_Functions.clickOnDeleteButton();
 							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
@@ -4253,7 +4253,7 @@ namespace TestProject.Libraries
 					ExpectedAlarmLoad = DefaultAlarmLoad-SCAlarmLoad;
 					sExpectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
 					
-					repo.ProfileConsys1.tab_Points.Click();
+					Common_Functions.clickOnPointsTab();
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
@@ -4261,7 +4261,7 @@ namespace TestProject.Libraries
 					
 					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 					{
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
@@ -4299,7 +4299,7 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
 					//click panel Accessories tab
-					repo.FormMe.tab_PanelAccessories.Click();
+					Common_Functions.clickOnPanelAccessoriesTab();
 					
 					float.TryParse(sBatteryStandby, out PABatteryStandby);
 					float.TryParse(sAlarmLoad, out PAAlarmLoad);
@@ -4357,14 +4357,14 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
 					//click on panel accessories tab
-					repo.FormMe.tab_PanelAccessories.Click();
+					Common_Functions.clickOnPanelAccessoriesTab();
 					
 					repo.FormMe.cell_Label.Click();
 					//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 					
 					if(repo.FormMe.cell_LabelInfo.Exists())
 					{
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						Validate.AttributeEqual(repo.FormMe.cell_LabelInfo, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
@@ -4474,7 +4474,7 @@ namespace TestProject.Libraries
 		{
 			
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch System Load maximum limit value
 			string maxSystemLoad = repo.FormMe.maxSystemLoad.TextValue;
@@ -4564,7 +4564,7 @@ namespace TestProject.Libraries
 					sExpectedAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,16]).Value.ToString();
 					
 					//Click on points tab
-					repo.ProfileConsys1.tab_Points.Click();
+					Common_Functions.clickOnPointsTab();
 					
 					
 					// Click on Site node
@@ -4652,7 +4652,7 @@ namespace TestProject.Libraries
 						
 						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 						{
-							repo.ProfileConsys1.btn_Delete.Click();
+							Common_Functions.clickOnDeleteButton();
 							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
@@ -4965,10 +4965,10 @@ namespace TestProject.Libraries
 			sExpectedPowerCalculationText =  ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
 			sPhysicalLayoutDeviceIndex =(1).ToString();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			Common_Functions.clickOnPointsTab();
 			
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			repo.FormMe.PhysicalLayoutDeviceIndex.Click();
 			
@@ -5014,14 +5014,14 @@ namespace TestProject.Libraries
 			sPhysicalLayoutDeviceIndex =(1).ToString();
 			
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			
 			//Go to Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			
 			// Click to select First EXI800 device
@@ -5061,7 +5061,7 @@ namespace TestProject.Libraries
 			
 			
 			//Go to Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		
@@ -5082,7 +5082,7 @@ namespace TestProject.Libraries
 			sRow = (1).ToString();
 			
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			
 			float ActualACUnits = float.Parse(repo.ProfileConsys1.ACUnits.TextValue);
@@ -5117,7 +5117,7 @@ namespace TestProject.Libraries
 			sRow = (2).ToString();
 			
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			
 			float ActualDCUnits = float.Parse(repo.ProfileConsys1.DCUnits.TextValue);
@@ -5152,7 +5152,7 @@ namespace TestProject.Libraries
 			string actualColour,expectedColor;
 			
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			if(PanelType.Equals("FIM"))
 			{
@@ -5197,7 +5197,7 @@ namespace TestProject.Libraries
 			string actualColour,expectedColor;
 			
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			if(PanelType.Equals("FIM"))
 			{
@@ -5301,7 +5301,7 @@ namespace TestProject.Libraries
 				
 			}
 			//Go to Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -5647,7 +5647,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				//Click on Physical Layout Tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				
 				// Verify max System Load load value
 				//verifySystemLoadValue(DefaultSystemLoad);
@@ -5668,7 +5668,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				//Click on Physical Layout Tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				
 				// Verify max System Load load value
 				//verifySystemLoadValue(expectedSystemLoad);
@@ -5863,7 +5863,7 @@ namespace TestProject.Libraries
 				sRow=(16).ToString();
 			}
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch Default Battery Standby limit value
 			string BatteryStandby = repo.FormMe.BatteryStandBy.TextValue;
@@ -5910,7 +5910,7 @@ namespace TestProject.Libraries
 				sRow=(17).ToString();
 			}
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch Default Alarm Load limit value
 			string AlarmLoad = repo.FormMe.AlarmLoad.TextValue;
@@ -6252,7 +6252,7 @@ namespace TestProject.Libraries
 				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 				
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -6272,7 +6272,7 @@ namespace TestProject.Libraries
 				//verifyAlarmLoad(sAlarmLoad,false,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(sBatteryStandby,sStandbyLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(sAlarmLoad,sAlarmLoadingDetail);
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 				
@@ -6299,7 +6299,7 @@ namespace TestProject.Libraries
 				/// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				sBatteryStandbyOnChangingHousingProperty = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				sAlarmLoadOnChangingHousingProperty = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
@@ -6353,7 +6353,7 @@ namespace TestProject.Libraries
 				sRow=(16).ToString();
 			}
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch Default Battery Standby limit value
 			string BatteryStandby = repo.FormMe.BatteryStandBy.TextValue;
@@ -6400,7 +6400,7 @@ namespace TestProject.Libraries
 				sRow=(17).ToString();
 			}
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch Default Alarm Load limit value
 			string AlarmLoad = repo.FormMe.AlarmLoad.TextValue;
@@ -6482,7 +6482,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Click on Phyical Layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				
 				// Verify minimum battery
 				//verifyMinimumBattery(minimumBatteryValue,IsSecondPSU,PanelType);
@@ -6499,7 +6499,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Click on Phyical Layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				
 				// Verify minimum battery
 				//verifyMinimumBattery(changedMinimumBatteryValue,IsSecondPSU,PanelType);
@@ -6543,7 +6543,7 @@ namespace TestProject.Libraries
 				sRow=(18).ToString();
 			}
 			// Click on Physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Fetch Default Alarm Load limit value
 			string ActualMinimumBattery = repo.FormMe.MinimumBattery.TextValue;
@@ -6642,7 +6642,7 @@ namespace TestProject.Libraries
 				sRow = rowNumber;
 				
 				// Click on Physical layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				
 				// Fetch 40V PSU Load maximum limit value
 				string max40VPsu = repo.FormMe.Max40VPsu.TextValue;
@@ -6658,7 +6658,7 @@ namespace TestProject.Libraries
 				}
 				
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}catch(Exception ex){
 				Report.Log(ReportLevel.Failure,"Exception"+ex+" was thown");
 			}
@@ -6692,7 +6692,7 @@ namespace TestProject.Libraries
 				sPsuV=expectedPSULoad;
 				
 				// Click on Physical layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				
 				// Fetch PSU5V value and store in Actual 5VPSU value
 				string ActualPSUValue = repo.FormMe2.FCPSULoad.TextValue;
@@ -6708,7 +6708,7 @@ namespace TestProject.Libraries
 				}
 				
 				// CLick on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}catch(Exception ex){
 				Report.Log(ReportLevel.Failure,"Exception"+ex.Message+" was thrown due to incorrect value");
 			}

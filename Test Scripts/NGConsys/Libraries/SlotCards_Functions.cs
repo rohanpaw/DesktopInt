@@ -174,7 +174,7 @@ namespace TestProject.Libraries
 							// Click on Panel node
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
-							repo.FormMe.tab_PanelAccessories.Click();
+							Common_Functions.clickOnPanelAccessoriesTab();
 							for(int k=1; k<=deviceCount;k++)
 							{
 								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
@@ -185,7 +185,7 @@ namespace TestProject.Libraries
 							// Click on Panel node
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
-						repo.FormMe.tab_Inventory.Click();
+						Common_Functions.clickOnInventoryTab();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -318,7 +318,7 @@ namespace TestProject.Libraries
 							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 							//repo.FormMe.PanelNode1.Click();
 							//repo.ProfileConsys1.NavigationTree.Expander.Click();
-							repo.FormMe.tab_PanelAccessories.Click();
+							Common_Functions.clickOnPanelAccessoriesTab();
 							for(int k=1; k<=deviceCount;k++)
 							{
 								//Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
@@ -330,7 +330,7 @@ namespace TestProject.Libraries
 							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 							//repo.FormMe.PanelNode1.Click();
 							//repo.ProfileConsys1.NavigationTree.Expander.Click();
-							repo.FormMe.tab_Inventory.Click();
+							Common_Functions.clickOnInventoryTab();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -451,7 +451,7 @@ namespace TestProject.Libraries
 							// Click on Panel node
 							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
-							repo.FormMe.tab_PanelAccessories.Click();
+							Common_Functions.clickOnPanelAccessoriesTab();
 							for(int k=1; k<=deviceCount;k++)
 							{
 								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
@@ -462,7 +462,7 @@ namespace TestProject.Libraries
 							// Click on Panel node
 							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
-							repo.FormMe.tab_Inventory.Click();
+							Common_Functions.clickOnInventoryTab();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -577,7 +577,7 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 				
-				repo.FormMe.tab_PanelAccessories.Click();
+				Common_Functions.clickOnPanelAccessoriesTab();
 				
 				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
 				
@@ -645,7 +645,7 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 				// Click on panel accessories tab
-				repo.FormMe.tab_PanelAccessories.Click();
+				Common_Functions.clickOnPanelAccessoriesTab();
 				
 				// Add devices from panel accessories gallery
 				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
@@ -736,7 +736,7 @@ namespace TestProject.Libraries
 			
 				
 				// Click on panel accessories tab
-				repo.FormMe.tab_PanelAccessories.Click();
+				Common_Functions.clickOnPanelAccessoriesTab();
 				
 				// Add devices from panel accessories gallery
 				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
@@ -752,7 +752,7 @@ namespace TestProject.Libraries
 			
 				
 				// Click on Shopping list tab
-				repo.FormMe.ShoppingList.Click();
+				Common_Functions.clickOnShoppingListTab();
 					
 				/******************************************************************************* 
                     Updated code - Purvi Bhasin (3/09/2019) Added the method for shopping list
@@ -767,7 +767,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 				// Click on panel accessories tab
-				repo.FormMe.tab_PanelAccessories.Click();
+				Common_Functions.clickOnPanelAccessoriesTab();
 				
 				// Verify and perform check or uncheck MPM checkbox in search properties
 				Devices_Functions.CheckUncheckMPMCheckboxInSearchProperties(changeCheckboxStateToAgain);
@@ -776,7 +776,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 				// Click on shopping list tab
-				repo.FormMe.ShoppingList.Click();
+				Common_Functions.clickOnShoppingListTab();
 				
 				Export_Functions.SearchDeviceInExportUsingSKUOrDescription(sFOMExpectedText,true);
 				
@@ -858,7 +858,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 				// Click on panel accessories tab
-				repo.FormMe.tab_PanelAccessories.Click();
+				Common_Functions.clickOnPanelAccessoriesTab();
 				
 				// Add devices from panel accessories gallery
 				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
@@ -873,7 +873,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 				// Click on shopping list tab
-				//repo.FormMe.ShoppingList.Click();
+				//Common_Functions.clickOnShoppingListTab();
 				
 				// Click on panel accessories tab
 				//repo.FormMe.tab_Panel_Network.Click();
@@ -888,7 +888,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem(secondPanelNode);
 			
 				// Click on panel accessories tab
-				repo.FormMe.tab_PanelAccessories.Click();
+				Common_Functions.clickOnPanelAccessoriesTab();
 				
 				// Set newDevice name value in sDeviceName
 				sDeviceName = sSecondDeviceName;
@@ -914,7 +914,7 @@ namespace TestProject.Libraries
 			
 				
 				// Click on shopping list tab
-				repo.FormMe.ShoppingList.Click();
+				Common_Functions.clickOnShoppingListTab();
 				
 				/*********************************************************************
 				 Updated - Purvi Bhasin (3/09/2019) - Shopping list method is added
@@ -984,7 +984,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 
 				// Click on panel accessories tab
-				repo.FormMe.tab_PanelAccessories.Click();
+				Common_Functions.clickOnPanelAccessoriesTab();
 				
 				// Verify enable or disable state of devices in panel accessories gallery
 				Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery(sType, sDeviceName, InitialState);
@@ -1044,7 +1044,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 
 				// Click on panel accessories tab
-				repo.FormMe.tab_PanelAccessories.Click();
+				Common_Functions.clickOnPanelAccessoriesTab();
 				
 				// Add devices from panel accessories gallery
 				Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
@@ -1149,7 +1149,7 @@ namespace TestProject.Libraries
 							Common_Functions.ClickOnNavigationTreeItem("Node");
 							
 							//repo.ProfileConsys1.NavigationTree.Expander.Click();
-							repo.FormMe.tab_PanelAccessories.Click();
+							Common_Functions.clickOnPanelAccessoriesTab();
 							for(int k=1; k<=deviceCount;k++)
 							{
 								//Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
@@ -1161,7 +1161,7 @@ namespace TestProject.Libraries
 							// Click on Panel node
 							Common_Functions.ClickOnNavigationTreeItem("Node");
 							
-							repo.FormMe.tab_Inventory.Click();
+							Common_Functions.clickOnInventoryTab();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -1263,7 +1263,8 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 			// Click on shopping list tab
-			repo.FormMe.tab_ShoppingList.Click();
+			Common_Functions.clickOnShoppingListTab();
+			
 			
 			Export_Functions.SearchDeviceInExportUsingSKUOrDescription(FirstDevice,true);
 			Delay.Milliseconds(100);
@@ -1317,7 +1318,7 @@ namespace TestProject.Libraries
 			
 			Devices_Functions.SelectRowUsingLabelName(ThirdDeviceLabel);
 			
-			repo.ProfileConsys1.btn_Delete.Click();
+			Common_Functions.clickOnDeleteButton();
 			
 			// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
@@ -1339,7 +1340,7 @@ namespace TestProject.Libraries
 			
 			
 			// Click on shopping list tab
-			repo.FormMe.tab_ShoppingList.Click();
+			Common_Functions.clickOnShoppingListTab();
 			
 			// Verify shopping list count
 			Devices_Functions.verifyShoppingList(shoppingListCount);
@@ -1416,7 +1417,7 @@ namespace TestProject.Libraries
 							Common_Functions.ClickOnNavigationTreeItem("Node");
 							
 						
-							repo.FormMe.tab_PanelAccessories.Click();
+							Common_Functions.clickOnPanelAccessoriesTab();
 							for(int k=1; k<=deviceCount;k++)
 							{
 								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
@@ -1427,7 +1428,7 @@ namespace TestProject.Libraries
 							// Click on Panel node
 							Common_Functions.ClickOnNavigationTreeItem("Node");
 							
-							repo.FormMe.tab_Inventory.Click();
+							Common_Functions.clickOnInventoryTab();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -1562,7 +1563,7 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("Ethernet");
 						
 						// Click on Inventory tab
-						repo.FormMe.tab_Inventory.Click();
+						Common_Functions.clickOnInventoryTab();
 						
 						for(int k=1; k<=deviceCount;k++)
 						{
@@ -1663,7 +1664,7 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("R-BUS");
 				
 						// Click on Inventory tab
-						repo.FormMe.tab_Inventory.Click();
+						Common_Functions.clickOnInventoryTab();
 						
 						for(int k=1; k<=deviceCount;k++)
 						{
@@ -1751,7 +1752,7 @@ namespace TestProject.Libraries
 							// Click on Panel node
 							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
-							repo.FormMe.tab_PanelAccessories.Click();
+							Common_Functions.clickOnPanelAccessoriesTab();
 							for(int k=1; k<=deviceCount;k++)
 							{
 								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
@@ -1771,7 +1772,7 @@ namespace TestProject.Libraries
 							// Click on Expander node
 							Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 				
-							repo.FormMe.tab_Inventory.Click();
+							Common_Functions.clickOnInventoryTab();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -1877,7 +1878,7 @@ namespace TestProject.Libraries
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 						
 						Devices_Functions.SelectRowUsingLabelName(sLabelName);
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						
 						Report.Log(ReportLevel.Success, "Device with " +sLabelName+ " deleted successfully");
 					
@@ -1897,7 +1898,7 @@ namespace TestProject.Libraries
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
 						
 						Devices_Functions.SelectRowUsingLabelName(sLabelName);
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						
 						Report.Log(ReportLevel.Success, "Device with " +sLabelName+ " deleted successfully");
 				
@@ -1917,7 +1918,7 @@ namespace TestProject.Libraries
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
 						
 						Devices_Functions.SelectRowUsingLabelName(sLabelName);
-						repo.ProfileConsys1.btn_Delete.Click();
+						Common_Functions.clickOnDeleteButton();
 						
 						Report.Log(ReportLevel.Success, "Device with " +sLabelName+ " deleted successfully");
 						
@@ -1993,7 +1994,7 @@ namespace TestProject.Libraries
 							// Click on Panel Node
 							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
-							repo.FormMe.tab_PanelAccessories.Click();
+							Common_Functions.clickOnPanelAccessoriesTab();
 							for(int k=1; k<=deviceCount;k++)
 							{
 								Devices_Functions.AddDevicefromPanelAccessoriesGallery(sDeviceName,sType);
@@ -2008,7 +2009,7 @@ namespace TestProject.Libraries
 							Common_Functions.ClickOnNavigationTreeItem("Node");
 					
 							
-							repo.FormMe.tab_Inventory.Click();
+							Common_Functions.clickOnInventoryTab();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -2132,7 +2133,7 @@ namespace TestProject.Libraries
 							// Click on Panel node
 							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
-							repo.FormMe.tab_PanelAccessories.Click();
+							Common_Functions.clickOnPanelAccessoriesTab();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -2145,7 +2146,7 @@ namespace TestProject.Libraries
 							// Click on Panel node
 							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
-							repo.FormMe.tab_Inventory.Click();
+							Common_Functions.clickOnInventoryTab();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -2291,7 +2292,7 @@ namespace TestProject.Libraries
 						if (sType.Equals("Accessories"))
 						{
 							
-							repo.FormMe.tab_PanelAccessories.Click();
+							Common_Functions.clickOnPanelAccessoriesTab();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{
@@ -2302,7 +2303,7 @@ namespace TestProject.Libraries
 						else
 						{
 							
-							repo.FormMe.tab_Inventory.Click();
+							Common_Functions.clickOnInventoryTab();
 							
 							for(int k=1; k<=deviceCount;k++)
 							{

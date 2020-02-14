@@ -91,9 +91,8 @@ namespace TestProject.Recording_Modules
             Libraries.SlotCards_Functions.VerifyDeletionOfDevicesInBackplane("TC_60_Verify_Deletion_Of_PCS_POS_IOB_And_FB_From_Backplane", "Delete Devices");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Panel_Network' at Center.", repo.FormMe.tab_Panel_NetworkInfo, new RecordItemIndex(4));
-            repo.FormMe.tab_Panel_Network.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPanelNetworkTab();
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
@@ -113,9 +112,8 @@ namespace TestProject.Recording_Modules
             Libraries.SlotCards_Functions.VerifyDeletionOfDevicesInBackplane("TC_60_Verify_Deletion_Of_PCS_POS_IOB_And_FB_From_Backplane", "Delete Devices2");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Panel_Network' at Center.", repo.FormMe.tab_Panel_NetworkInfo, new RecordItemIndex(11));
-            repo.FormMe.tab_Panel_Network.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPanelNetworkTab();
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);

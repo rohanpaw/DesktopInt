@@ -154,9 +154,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayoutOnReopen("1", "4/250");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(25));
-            repo.ProfileConsys1.tab_Points.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
             
         }
 

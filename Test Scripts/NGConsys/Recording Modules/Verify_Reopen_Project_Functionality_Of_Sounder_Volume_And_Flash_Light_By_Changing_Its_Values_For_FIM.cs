@@ -91,13 +91,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            VerifyDeviceSensitivityAfterReopen("Low (90dB)");
+            Libraries.Devices_Functions.VerifyDeviceSensitivityAfterReopenProj("Low (90dB)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("LPAV 800 - R/W - 2");
             Delay.Milliseconds(0);
             
-            VerifyDeviceModeAfterReopen("0.5 Hz");
+            Libraries.Devices_Functions.VerifyDeviceModeAfterReopenProj("0.5 Hz");
             Delay.Milliseconds(0);
             
         }

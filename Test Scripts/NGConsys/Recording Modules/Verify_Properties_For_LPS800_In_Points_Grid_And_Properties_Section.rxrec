@@ -421,7 +421,6 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		autogenmethod="True"
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -472,7 +471,6 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		autogenmethod="True"
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"

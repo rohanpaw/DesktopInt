@@ -206,11 +206,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Alarm_load_property_for_Standard_Sounders"
+		classname="Devices_Functions"
 		enabled="True"
-		isexternaltestmethod="False"
+		isexternaltestmethod="True"
 		methodname="VerifyAlarmLoad"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
 			</comment>
@@ -281,11 +281,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Alarm_load_property_for_Standard_Sounders"
+		classname="Devices_Functions"
 		enabled="True"
-		isexternaltestmethod="False"
+		isexternaltestmethod="True"
 		methodname="VerifyAlarmLoad"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
 			</comment>
@@ -366,11 +366,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verify_Alarm_load_property_for_Standard_Sounders"
+		classname="Devices_Functions"
 		enabled="True"
-		isexternaltestmethod="False"
+		isexternaltestmethod="True"
 		methodname="VerifyAlarmLoad"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
 			</comment>

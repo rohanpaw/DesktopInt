@@ -118,13 +118,13 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectPointsGridRow("1");
             Delay.Milliseconds(0);
             
-            verifyZone(ValueConverter.ArgumentFromString<bool>("sZone", "True"));
+            Libraries.Devices_Functions.verifyZone(ValueConverter.ArgumentFromString<bool>("sZone", "True"));
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyDescription("Loop Powered Sounder Module");
             Delay.Milliseconds(0);
             
-            verifySKU(ValueConverter.ArgumentFromString<bool>("sSKU", "True"));
+            Libraries.Devices_Functions.verifySKU(ValueConverter.ArgumentFromString<bool>("sSKU", "True"));
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectPointsGridRow("2");

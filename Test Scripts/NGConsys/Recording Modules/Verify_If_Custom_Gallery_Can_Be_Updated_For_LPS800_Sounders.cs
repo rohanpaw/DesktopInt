@@ -126,9 +126,8 @@ namespace TestProject.Recording_Modules
             //Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
             //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(15));
-            repo.ProfileConsys1.tab_Points.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedRow("2");
             Delay.Milliseconds(0);
@@ -140,9 +139,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyCustomDevicesInContextMenu(ValueConverter.ArgumentFromString<bool>("sExist", "True"), "Generic");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_Points' at Center.", repo.ProfileConsys1.tab_PointsInfo, new RecordItemIndex(19));
-            repo.ProfileConsys1.tab_Points.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DeleteDevicesPresentInCustomGallery();
             Delay.Milliseconds(0);

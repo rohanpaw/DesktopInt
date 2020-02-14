@@ -449,7 +449,7 @@ namespace TestProject.Libraries
 				
 				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 				{
-					repo.ProfileConsys1.btn_Delete.Click();
+					Common_Functions.clickOnDeleteButton();
 					Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 					Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 				}
@@ -517,7 +517,7 @@ namespace TestProject.Libraries
 				}
 				
 				//=================================
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				
 				string maxACUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				string sACLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
@@ -525,7 +525,7 @@ namespace TestProject.Libraries
 			    //verifyMaxACUnitsValue(maxACUnits);
 				Devices_Functions.verifyMaxLoadingDetailsValue(maxACUnits,sACLoopLoadingName);
 				
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				//===================================
 				string ChangedValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
@@ -542,7 +542,7 @@ namespace TestProject.Libraries
 					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
 				}
 				
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				state =  ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				VerifyGalleryItem(sType,sDeviceName,state);
@@ -557,7 +557,7 @@ namespace TestProject.Libraries
 				}
 				
 				//=================================
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				
 				string changedmaxACUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				//verifyMaxACUnitsValue(changedmaxACUnits);
@@ -565,7 +565,7 @@ namespace TestProject.Libraries
 				
 				
 				
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 				//===================================
 			}
@@ -635,7 +635,7 @@ namespace TestProject.Libraries
 		public static void ChangeCableLength(String sLoopType,int fCableLength1,int fCableLength2)
 		{
 			float fMaxACUnits;
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -650,7 +650,7 @@ namespace TestProject.Libraries
 			if(sLoopType.Equals("PFI"))
 			{
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fCableLength1 + "{Enter}");
-				//repo.ProfileConsys1.tab_Points.Click();
+				//Common_Functions.clickOnPointsTab();
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -824,7 +824,7 @@ namespace TestProject.Libraries
 		public static void AssignAdditionalBase(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex)
 		{
 			sLabelName = DeviceLabel;
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
 			sBase = sBaseofDevice;
 			sRowIndex = sBasePropertyRowIndex;
@@ -846,7 +846,7 @@ namespace TestProject.Libraries
 		{
 			int iRowIndex;
 			sLabelName = DeviceLabel;
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
 			sRowIndex = sBasePropertyRowIndex;
 			repo.ProfileConsys1.BaseofDeviceRow.Click();
@@ -994,7 +994,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static string getProgressBarColor(string LoadingType)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			string actualColour;
 			switch (LoadingType)
 			{
@@ -1029,7 +1029,7 @@ namespace TestProject.Libraries
 		public static void DeleteAllDevices()
 		{
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
-			repo.ProfileConsys1.btn_Delete.Click();
+			Common_Functions.clickOnDeleteButton();
 		}
 		
 		
@@ -1135,7 +1135,7 @@ namespace TestProject.Libraries
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 			
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sDeleteDevicesLoopA);
 			rows = Excel_Utilities.ExcelRange.Rows.Count;
@@ -1164,7 +1164,7 @@ namespace TestProject.Libraries
 			// Click on Loop B node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 			
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sDeleteDevicesLoopB);
 			rows = Excel_Utilities.ExcelRange.Rows.Count;
@@ -1206,7 +1206,7 @@ namespace TestProject.Libraries
 			if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
 			{
 				if(repo.ProfileConsys1.btn_Delete.Visible){
-					repo.ProfileConsys1.btn_Delete.Click();
+					Common_Functions.clickOnDeleteButton();
 				}
 				else{
 					repo.FormMe.btn_DeleteFC.Click();
@@ -1235,7 +1235,7 @@ namespace TestProject.Libraries
 		public static void VerifyDeviceSensitivity(string sDeviceSensitivity)
 		{
 			// Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1260,7 +1260,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1284,7 +1284,7 @@ namespace TestProject.Libraries
 		public static void ChangeDeviceSensitivity(string changeDeviceSensitivity)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1316,7 +1316,7 @@ namespace TestProject.Libraries
 			
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1339,7 +1339,7 @@ namespace TestProject.Libraries
 		public static void VerifyDeviceMode(string sDeviceMode)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1364,7 +1364,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1387,7 +1387,7 @@ namespace TestProject.Libraries
 		public static void ChangeDeviceMode(string changeDeviceMode)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1418,7 +1418,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1442,7 +1442,7 @@ namespace TestProject.Libraries
 		public static void CheckUncheckDayMatchesNight(bool ExpectedState)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1504,7 +1504,7 @@ namespace TestProject.Libraries
 				}
 			}
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1579,7 +1579,7 @@ namespace TestProject.Libraries
 		public static void VerifyDayMode(string sDayMode)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1603,7 +1603,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Day mode is not displayed correctly");
 			}
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1627,7 +1627,7 @@ namespace TestProject.Libraries
 		public static void ChangeDayMode(string changeDayMode)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1657,7 +1657,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Day mode is not changed to " +changeDayMode+ " and displayed incorrectly");
 			}
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1679,7 +1679,7 @@ namespace TestProject.Libraries
 		public static void VerifyDaySensitivity(string sDaySensitivity)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1703,7 +1703,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Day Sensitivity is not displayed correctly");
 			}
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1725,7 +1725,7 @@ namespace TestProject.Libraries
 		public static void ChangeDaySensitivity(string changeDaySensitivity)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1755,7 +1755,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Day Sensitivity is not changed to " +changeDaySensitivity+ " and displayed incorrectly");
 			}
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1896,7 +1896,7 @@ namespace TestProject.Libraries
 		public static void AddMultipleDevices(string sFileName, string sSheetName)
 		{
 			
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			Excel_Utilities.OpenExcelFile(sFileName,sSheetName);
 			//Excel_Utilities.OpenSheet(sSheetName);
 			int rows = Excel_Utilities.ExcelRange.Rows.Count;
@@ -1942,7 +1942,7 @@ namespace TestProject.Libraries
 //			{
 //
 //				//Click on Points tab
-//			repo.ProfileConsys1.tab_Points.Click();
+//			Common_Functions.clickOnPointsTab();
 //
 //			// Click on SearchProperties text field
 //			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -1976,7 +1976,7 @@ namespace TestProject.Libraries
 //			7
 		
 //			//Click on Points tab
-//			repo.ProfileConsys1.tab_Points.Click();
+//			Common_Functions.clickOnPointsTab();
 //
 //			// Click on SearchProperties text field
 //			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -2149,7 +2149,7 @@ namespace TestProject.Libraries
 		public static void ChangeCableLength(int fchangeCableLength)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -2198,7 +2198,7 @@ namespace TestProject.Libraries
 		public static void ChangeCableResistance(string fchangeCableResistance)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -2533,7 +2533,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info,"Device "+ModelNumber+" Added");
 				
 				//Click physical layout tab
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				sRowIndex=(i+1).ToString();
 				
 				//Verify Progress bar color code for extra IS units
@@ -2542,7 +2542,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Info,"Progress bar color code for EXI row " + (i-7) + " verified as: "+sExpectedColorCode);
 				
 				//Click physical layout tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			//Setting the row count l to 8 to set sRow value and fetch values from excel
@@ -2555,7 +2555,7 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info,"Device "+sLabelName+" deleted");
 			
 			//Click physical layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			sRowIndex=(m+1).ToString();
 			
 			//Verify Progress bar color code for extra IS units
@@ -2750,7 +2750,7 @@ namespace TestProject.Libraries
 		public static void VerifyAlarmLoad(string sAlarmLoad)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -2774,7 +2774,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Alarm Load is not displayed as "+actualAlarmLoad+ " instead of "+ sAlarmLoad);
 			}
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -2783,20 +2783,22 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
 		
-		/********************************************************************
+		/**************************************************************************************************
 		 * Function Name: SelectRowUsingLabelName
 		 * Function Details: To select item from grid using label
 		 * Parameter/Arguments: sLabelName
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : 21/2/2019
-		 ********************************************************************/
+		 * Last Update : 21/2/2019 Alpesh Dhakad - 31/01/2020 Added xpath and updated below script
+		 **************************************************************************************************/
 		[UserCodeMethod]
 		public static void SelectRowUsingLabelName(string sLabel)
 		{
 			sLabelName = sLabel;
 			//repo.FormMe.LabelName_txt.Click();
-			repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_LabelName1.Click();
+				
 			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
 		}
 		
@@ -2892,7 +2894,7 @@ namespace TestProject.Libraries
 			int Value,actualValue,revertTo;
 			string actualAlarmLoad;
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -3231,7 +3233,7 @@ namespace TestProject.Libraries
 		{
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -3283,7 +3285,7 @@ namespace TestProject.Libraries
 		public static void verifyPointsGridColumn(string expectedColumnText, string ColumnNumber)
 		{
 			// Click on points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Set sColumn value
 			sColumn = ColumnNumber;
@@ -3317,7 +3319,7 @@ namespace TestProject.Libraries
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			
@@ -3381,7 +3383,7 @@ namespace TestProject.Libraries
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			// Click on SearchProperties text field
@@ -3404,7 +3406,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyAdditionOfSoundersInLPS800(string sFileName, string sDeviceSheet)
 		{
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sDeviceSheet);
 			
@@ -3430,13 +3432,13 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Retrieve value of sourceDeviceIndex & targetDeviceIndex from sheet
 			sourceDeviceIndex= ((Range)Excel_Utilities.ExcelRange.Cells[3,6]).Value.ToString();
@@ -3557,7 +3559,7 @@ namespace TestProject.Libraries
 		public static void verifyDeletionOfSoundersInLPS800(string sFileName, string sDeviceSheet, string sDeleteDeviceSheet)
 		{
 			// Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Open excel sheet
 			Excel_Utilities.OpenExcelFile(sFileName,sDeviceSheet);
@@ -3598,7 +3600,7 @@ namespace TestProject.Libraries
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				
 				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
-				repo.ProfileConsys1.btn_Delete.Click();
+				Common_Functions.clickOnDeleteButton();
 				
 				Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
 				Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
@@ -3753,7 +3755,7 @@ namespace TestProject.Libraries
 				{
 					
 					Report.Log(ReportLevel.Success,"IS Devices can be pasted in Exi800");
-					repo.FormMe.Paste.Click();
+					Common_Functions.clickOnPasteButton();
 				}
 				else
 				{
@@ -3773,7 +3775,7 @@ namespace TestProject.Libraries
 					
 				{
 					Report.Log(ReportLevel.Success,"IS Devices cannot be pasted in non-Ex devices");
-					repo.FormMe.Paste.Click();
+					Common_Functions.clickOnPasteButton();
 					
 				}
 			}
@@ -3791,7 +3793,7 @@ namespace TestProject.Libraries
 		public static void verifyIsolatorCheckbox(bool ExpectedState)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -3816,7 +3818,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -4165,7 +4167,7 @@ namespace TestProject.Libraries
 		public static void ChangeLabelName(string changeLabelName)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -4319,7 +4321,7 @@ namespace TestProject.Libraries
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			
@@ -4345,7 +4347,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Property value is displayed as "+actualPropertyValue+ " instead of "+ sPropertyValue);
 			}
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -4368,7 +4370,7 @@ namespace TestProject.Libraries
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			// Click on SearchProperties text field
@@ -4403,7 +4405,7 @@ namespace TestProject.Libraries
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -4426,7 +4428,7 @@ namespace TestProject.Libraries
 		{
 			repo.FormMe.PanelAccessoriesLabel.Click();
 			Report.Log(ReportLevel.Success, "Accessory is Selected");
-			repo.ProfileConsys1.btn_Delete.Click();
+			Common_Functions.clickOnDeleteButton();
 			Report.Log(ReportLevel.Success, "Accessory is deleted");
 		}
 		
@@ -4522,7 +4524,7 @@ namespace TestProject.Libraries
 		public static void ChangeCableCapacitance(int fchangeCableCapacitance, string sLabelName)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			
 			// Click on Loop A node
@@ -4557,7 +4559,7 @@ namespace TestProject.Libraries
 		public static void VerifyCableLength(string sCableLength)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -4759,8 +4761,9 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void VerifyDeleteButton(bool isReadOnly)
 		{
+			//Common_Functions.changeConfiguratonToUIA();
 			
-			bool result = repo.ProfileConsys1.btn_Delete.Enabled;
+			bool result = repo.FormMe.btn_Delete.Enabled;
 			if(result==isReadOnly)
 			{
 				Report.Log(ReportLevel.Success,"Delete button displaying is as expected");
@@ -4769,6 +4772,8 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"Delete button displaying is not as expected");
 			}
+			
+			//Common_Functions.changeConfiguratonToWPF();
 			
 		}
 		
@@ -4842,7 +4847,7 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 			
 			//go to points grid
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
 			
@@ -4853,7 +4858,7 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
 			
 			//Paste the devices
-			repo.FormMe.Paste.Click();
+			Common_Functions.clickOnPasteButton();
 			
 			//Verify DC Units
 			verifyDCUnitsValue(expectedDCUnits);
@@ -4866,12 +4871,12 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
 			
 			//go to points grid
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
 			
 			//Copy Devices
-			repo.FormMe.ButtonCut1.Click();
+			Common_Functions.clickOnCutButton();
 			
 			//Verify Default DC Units
 			verifyDCUnitsValue(DefaultDCUnits);
@@ -5266,7 +5271,7 @@ namespace TestProject.Libraries
 			
 			
 			
-			repo.FormMe.tab_PanelAccessories.Click();
+			Common_Functions.clickOnPanelAccessoriesTab();
 			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -5465,7 +5470,7 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
 			
-			repo.FormMe.tab_PanelAccessories.Click();
+			Common_Functions.clickOnPanelAccessoriesTab();
 			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -6523,7 +6528,7 @@ namespace TestProject.Libraries
 				}
 				
 				//Click on Points Tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 			}
 			
@@ -6559,9 +6564,12 @@ namespace TestProject.Libraries
 				string RowIndex = "1";
 				RightClickOnSelectedRow(RowIndex);
 				
+			//	Common_Functions.changeConfiguratonToUIA();
+				
 				sGalleryName = sType;
 				repo.ContextMenu.Gallery_In_Context_Menu.Click();
 
+				//Common_Functions.changeConfiguratonToWPF();
 				
 				for(int i=2; i<=rows; i++)
 				{
@@ -6843,7 +6851,7 @@ namespace TestProject.Libraries
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			
@@ -6888,7 +6896,7 @@ namespace TestProject.Libraries
 		{
 			repo.ContextMenu.btn_CustomDevice_ContextMenu.Click();
 			//Click Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			sLabelName = sExpectedLabelName;
 			if(sExist)
 			{
@@ -6969,7 +6977,7 @@ namespace TestProject.Libraries
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			// Click on SearchProperties text field
@@ -7008,7 +7016,7 @@ namespace TestProject.Libraries
 			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
 			{
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -7236,7 +7244,7 @@ namespace TestProject.Libraries
 		public static void ClickCheckboxInSearchProperties(string sCheckboxName)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -7286,7 +7294,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -7296,7 +7304,7 @@ namespace TestProject.Libraries
 		}
 		
 		/* bool DefaultChecked,  //Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -7336,7 +7344,7 @@ namespace TestProject.Libraries
 			
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -7357,7 +7365,7 @@ namespace TestProject.Libraries
 		public static void VerifyCheckboxExists(string sCheckboxName, bool isExists)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -7403,7 +7411,7 @@ namespace TestProject.Libraries
 		public static void ChangeParameterInSearchProperties(string sProperty, string sParameterValue)
 		{
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -7482,7 +7490,7 @@ namespace TestProject.Libraries
 		public static void VerifyValueOfParameterInPhysicalLayoutOnReopen(string Row, string expectedValue)
 		{
 			sRow=Row;
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			string ActualValue = repo.ProfileConsys1.PhysicalLayout_ParameterValue_reopen.TextValue;
 			
 			
@@ -7494,7 +7502,7 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"AC Units are not displayed correctly " + ", Expected AC Units:  " + expectedValue  + " Actual AC Units: "+ ActualValue);
 			}
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/**************************************************************************************************************
@@ -7509,7 +7517,7 @@ namespace TestProject.Libraries
 		public static void VerifyValueOfParameterInPhysicalLayout(string Row, string expectedValue)
 		{
 			sRow=Row;
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			string ActualValue = repo.FormMe.txt_Parameter.TextValue;
 			
 			
@@ -7521,7 +7529,7 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"AC Units are not displayed correctly " + ", Expected AC Units:  " + expectedValue  + " Actual AC Units: "+ ActualValue);
 			}
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/************************************************************************************************************
@@ -7537,7 +7545,7 @@ namespace TestProject.Libraries
 		public static void VerifyDeviceSensitivityListValues(string DeviceSensitivityList)
 		{
 			// Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			
 			// Click on SearchProperties text field
@@ -7552,7 +7560,7 @@ namespace TestProject.Libraries
 			VerifyPanelTypeNames(DeviceSensitivityList);
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -7576,9 +7584,9 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void DragAndDropDevicesInPhysicalLayout(string SourceDeviceIndex, string DestinationDeviceIndex)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
-			repo.ProfileConsys1.tab_Points.Click();
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			Common_Functions.clickOnPointsTab();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			sPhysicalLayoutDeviceIndex = SourceDeviceIndex;
 			
 			// Create a adapter and stored in source adapter element
@@ -7749,7 +7757,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyLoadingDetailsValue(string expectedUnits, string LoadingDetail)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			sLoadingDetail = LoadingDetail;
 			
 			string LoadingUnits = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
@@ -7764,7 +7772,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/**************************************************************************************
@@ -7778,7 +7786,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyMaxLoadingDetailsValue(string expectedMaxUnits, string LoadingDetail)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			sLoadingDetail = LoadingDetail;
 			
 			string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValue.TextValue;
@@ -7793,7 +7801,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/********************************************************************
@@ -7807,7 +7815,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static string getProgressBarColors(string LoadingDetail)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			sLoadingDetail = LoadingDetail;
 			
 			string actualColour;
@@ -7831,7 +7839,7 @@ namespace TestProject.Libraries
 			sLoadingDetail = LoadingDetail;
 			
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			
 			
@@ -7859,7 +7867,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyLoadingDetailsValueAfterReopen(string expectedUnits, string LoadingDetail)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			sLoadingDetail = LoadingDetail;
 			
 			string LoadingUnits = repo.FormMe.txt_ActualLoadingDetailsValueAfterReopen.TextValue;
@@ -7874,7 +7882,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/**************************************************************************************
@@ -7888,7 +7896,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyMaxLoadingDetailsValueAfterReopen(string expectedMaxUnits, string LoadingDetail)
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			sLoadingDetail = LoadingDetail;
 			
 			string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValueAfterReopen.TextValue;
@@ -7903,7 +7911,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 		}
 		
 		/**************************************************************************************
@@ -7932,8 +7940,254 @@ namespace TestProject.Libraries
 			
 		}
 		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelName
+		 * Function Details: To select item from grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 10/02/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameOnReopen(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_LabelName1Reopen.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
 		
+		/**************************************************************************************************
+		 * Function Name: VerifyDeviceModeAfterReopenProj
+		 * Function Details:
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/02/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyDeviceModeAfterReopenProj(string sDeviceMode)
+        {
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Device text in Search Properties fields to view device related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Device" +"{ENTER}" );
+			
+			// Click on Device Mode cell
+			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			
+			// Get the text value of changed Device Mode field
+			string DeviceMode = repo.FormMe.DeviceModeAfterReopen.TextValue;
+			
+			//Comparing expected and actual changed Device Mode value
+			if(DeviceMode.Equals(sDeviceMode))
+			{
+				Report.Log(ReportLevel.Success,"Device mode " +DeviceMode+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Device mode is not displayed correctly");
+			}
+			
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+        }
+
+		/**************************************************************************************************
+		 * Function Name: VerifyDeviceSensitivityAfterReopen
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/02/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+        public static void VerifyDeviceSensitivityAfterReopenProj(string sDeviceSensitivity)
+        {
+			// Click on Points tab
+			Common_Functions.clickOnPointsTab();
+				
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Device text in Search Properties fields to view device related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Device" +"{ENTER}");
+			
+			// Click on Device Sensitivity cell
+			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceSensitivity.Click();
+			
+			// Get the text value of Device Sensitivity field
+			string DeviceSensitivity = repo.FormMe.DeviceSensitivityAfterReopen.TextValue;
+			
+			//Comparing expected and actual Device Sensitivity value
+			if(DeviceSensitivity.Equals(sDeviceSensitivity))
+			{
+				Report.Log(ReportLevel.Success,"Device Sensitivity " +DeviceSensitivity + " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Device Sensitivity is not displayed correctly");
+			}
+			
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+        }
+
+		/**************************************************************************************************
+		 * Function Name: verifySKU
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/02/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifySKU(bool sSKU)
+        {
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search SKU property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("SKU" +"{ENTER}" );
+			
+			// Click on SKU cell
+			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			
+			// Retrieve SKU Visibility
+			bool actualSKU = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.EnsureVisible();
+			
+			if(actualSKU.Equals(sSKU))
+			{
+				Report.Log(ReportLevel.Success,"SKU is displayed correctly");
+			}
+		else
+			{
+				Report.Log(ReportLevel.Failure,"SKU is displayed incorrectly");
+			}
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+        }
 		
+		/**************************************************************************************************
+		 * Function Name: verifyZone
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/02/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		 public static void verifyZone(bool sZone)
+        {
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Zone property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Zone" +"{ENTER}" );
+			
+			// Click on Zone cell
+			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			
+			// Retrieve Zone Visibility
+			bool actualZoneDescription = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.EnsureVisible();
+			
+	
+			
+			if(actualZoneDescription.Equals(sZone))
+			{
+				Report.Log(ReportLevel.Success,"Zone is displayed correctly");
+			}
+		else
+			{
+				Report.Log(ReportLevel.Failure,"Zone is displayed incorrectly");
+			}
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+        }
+		
+		 /**************************************************************************************************
+		 * Function Name: verifyLabelInPropertiesSection
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/02/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		  public static void verifyLabelInPropertiesSection(string sLabel)
+        {
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Alarm Load property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Label" +"{ENTER}" );
+			
+			// Click on Alarm Load cell
+			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			
+			// Retrieve value alarm load
+			string actualLabelDescription = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+			
+			// Comparing DayMode and sDayMode values
+			if(actualLabelDescription.Equals(sLabel))
+			{
+				Report.Log(ReportLevel.Success,"Label " +sLabel+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Label is displayed as "+actualLabelDescription+ " instead of "+ sLabel);
+			}
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+        }
+	 
+		 
+		  
 	}
 }
 

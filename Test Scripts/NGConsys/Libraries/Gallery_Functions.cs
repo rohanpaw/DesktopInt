@@ -377,7 +377,7 @@ namespace TestProject.Libraries
 			firstGalleryItemText=repo.ContextMenu.txt_GalleryListItem.TextValue;
 			//firstGalleryItemText = repo.ContextMenu.DroppedGalleryList.GetAttributeValue<string>("Text");
 			
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			Devices_Functions.AddDevicesfromGalleryNotHavingImages(Device1, GalleryType);
 			
@@ -395,7 +395,7 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Success, "Devices in dropped gallery are dispayed in alphabetically sorted order evenif device is added in favourites");
 			}
 			
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			Devices_Functions.AddDevicesfromGalleryNotHavingImages(Device2,GalleryType);
 			repo.ProfileConsys1.btn_DevicesGalleryDropDown.Click();
 			firstGalleryItemText = repo.ContextMenu.txt_GalleryListItem.TextValue;
@@ -558,7 +558,7 @@ namespace TestProject.Libraries
 					Report.Log(ReportLevel.Success, "Gallery Item: " + ModelNumber+ " Disabled in gallery");
 				}
 				
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 				
 			}
 			
@@ -861,7 +861,8 @@ namespace TestProject.Libraries
 								Report.Log(ReportLevel.Failure, "Entity:" +sDeviceIndex+ "is disabled");
 							}
 						}
-						repo.FormMe.tab_Inventory.Click();
+						//repo.FormMe.tab_Inventory.Click();
+						Common_Functions.clickOnInventoryTab();
 						repo.FormMe.Gallery_PARTDown.Click();
 					}
 					NoOfItems = EnabledDevices - NoOfItems;

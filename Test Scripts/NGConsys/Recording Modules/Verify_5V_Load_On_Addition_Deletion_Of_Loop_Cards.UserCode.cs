@@ -33,5 +33,11 @@ namespace TestProject.Recording_Modules
             // Your recording specific initialization code goes here.
         }
 
+        public void Mouse_Click_tab_PhysicalLayout(RepoItemInfo textInfo)
+        {
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'textInfo' at Center.", textInfo);
+            textInfo.FindAdapter<Text>().Click();
+        }
+
     }
 }

@@ -55,6 +55,12 @@ namespace TestProject.Libraries
 			set { repo.sRow = value; }
 		}
 		
+		static string sButtonName
+		{
+			get { return repo.sButtonName; }
+			set { repo.sButtonName = value; }
+		}
+		
 		/********************************************************************
 		 * Function Name: GetDirPath
 		 * Function Details:
@@ -854,6 +860,262 @@ namespace TestProject.Libraries
 			{
 				repo.FormMe.btn_Maximize.Click();
 			}
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: clickOnButton
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :3/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnButton(string ButtonName)
+		{
+		//	changeConfiguratonToUIA();
+			
+			sButtonName = ButtonName; 
+			repo.FormMe.btnNameMainGallery.Click();
+			
+		//	changeConfiguratonToWPF();
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: verifyButtonState
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :3/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void verifyButtonState(bool isReadOnly,string ButtonName)
+		{
+			Common_Functions.changeConfiguratonToUIA();
+			
+			
+			
+			sButtonName = ButtonName; 
+			
+			repo.FormMe.btnNameMainGallery.Click();
+			bool result = repo.FormMe.btnNameMainGallery.Enabled;
+			
+			if(result==isReadOnly)
+			{
+				Report.Log(ReportLevel.Success,"Delete button displaying is as expected");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Delete button displaying is not as expected");
+			}
+			
+			Common_Functions.changeConfiguratonToWPF();
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: verifyButtonState
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :3/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void verifyDeleteButtonState(bool isReadOnly)
+		{
+			//Common_Functions.changeConfiguratonToUIA();
+			
+			
+			
+			//sButtonName = ButtonName; 
+			
+			
+			bool result = repo.FormMe.btn_Delete.Enabled;
+			
+			if(result==isReadOnly)
+			{
+				Report.Log(ReportLevel.Success,"Delete button displaying is as expected");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Delete button displaying is not as expected");
+			}
+			
+			//Common_Functions.changeConfiguratonToWPF();
+		}
+		
+		/********************************************************************
+		 * Function Name: clickOnInventoryTab
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :11/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnInventoryTab()
+		{
+			repo.FormMe.tab_Inventory.Click();
+		}
+		
+		/********************************************************************
+		 * Function Name: clickOnPanelAccessoriesTab
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :11/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnPanelAccessoriesTab()
+		{
+			repo.FormMe.tab_PanelAccessories.Click();
+		}
+		
+		/********************************************************************
+		 * Function Name: clickOnSiteAccessoriesTab
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :11/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnSiteAccessoriesTab()
+		{
+			repo.FormMe.tab_SiteAccessories.Click();
+		}
+	
+		/********************************************************************
+		 * Function Name: clickOnShoppingListTab
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :11/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnShoppingListTab()
+		{
+			repo.FormMe.tab_ShoppingList.Click();
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: clickOnPanelNetworkTab
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :11/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnPanelNetworkTab()
+		{
+			repo.FormMe.tab_Panel_Network.Click();
+		}
+		
+		/********************************************************************
+		 * Function Name: clickOnPointsTab
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :11/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnPointsTab()
+		{
+			repo.ProfileConsys1.tab_Points.Click();
+		}
+		
+		/********************************************************************
+		 * Function Name: clickOnPhysicalLayoutTab
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :11/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnPhysicalLayoutTab()
+		{
+			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+		}
+		
+		/********************************************************************
+		 * Function Name: clickOnDeleteButton
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :06/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnDeleteButton()
+		{
+			repo.FormMe.btn_Delete.Click();
+		}
+		
+		/********************************************************************
+		 * Function Name: clickOnCutButton
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :13/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnCutButton()
+		{
+			repo.FormMe.ButtonCut1.Click();
+		}
+		
+		/********************************************************************
+		 * Function Name: clickOnPasteButton
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :13/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnPasteButton()
+		{
+			repo.FormMe.Paste.Click();
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: clickOnCopyButton
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :13/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnCopyButton()
+		{
+			repo.FormMe.btn_Copy1.Click();
 		}
 		
 	}

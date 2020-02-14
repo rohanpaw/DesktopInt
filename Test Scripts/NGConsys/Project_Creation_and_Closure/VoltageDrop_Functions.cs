@@ -143,7 +143,7 @@ namespace TestProject.Libraries
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
 				//Go to Physical layout
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				Delay.Duration(500, false);
 				
 				// Call verifyDCUnitValue method and Verify DC units value
@@ -160,7 +160,7 @@ namespace TestProject.Libraries
 				Devices_Functions.verifyLoadingDetailsValue(expectedVoltDropWorstcase,LoadingDetailsNameForVoltDropWorstCase);
 				
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			// Fetch value from excel sheet and store it
@@ -189,7 +189,7 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			// Open the excel file with mentioned name in argument and sheet
 			Excel_Utilities.OpenExcelFile(sFileName,sDeleteDevicesLoopA);
@@ -213,7 +213,7 @@ namespace TestProject.Libraries
 				
 			
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Call verifyVoltDropValue method and Verify volt drop value
 			//verifyVoltDropValue(expectedVoltDrop);
@@ -239,7 +239,7 @@ namespace TestProject.Libraries
 		public static void verifyMaxVoltDrop(string expectedVoltDropMaxValue)
 		{
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Fetch max volt drop text value and storing it in string
 			string maxVoltDropValue = repo.ProfileConsys1.MaxVoltDropValue.TextValue;
@@ -255,7 +255,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			
 		}
@@ -273,7 +273,7 @@ namespace TestProject.Libraries
 		public static void verifyVoltDropValue(string expectedVoltDropValue)
 		{
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Fetch volt drop text value and storing it in string
 			string ActualVoltDropValue = repo.ProfileConsys1.VoltDropValue.TextValue;
@@ -289,7 +289,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 			
 		}
@@ -307,7 +307,7 @@ namespace TestProject.Libraries
 		public static void verifyMaxVoltDropWorstCaseValue(string expectedVoltDropWorstCaseMaxValue)
 		{
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Fetch max volt drop worst case text value and storing it in string
 			string maxVoltDropWorstCaseValue = repo.ProfileConsys1.MaxVoltDropWorstCaseValue.TextValue;
@@ -323,7 +323,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 		}
 		
@@ -340,7 +340,7 @@ namespace TestProject.Libraries
 		public static void verifyVoltDropWorstCaseValue(string expectedVoltDropWorstCaseValue)
 		{
 			//Click on Physical Layout tab
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Fetch volt drop worst case text value and storing it in string
 			string ActualVoltDropWorstCaseValue = repo.ProfileConsys1.VoltDropWorstCaseValue.TextValue;
@@ -356,7 +356,7 @@ namespace TestProject.Libraries
 			}
 			
 			//Click on Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			
 		}
 		
@@ -400,7 +400,7 @@ namespace TestProject.Libraries
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
 				//Go to Physical layout
-				repo.ProfileConsys1.tab_PhysicalLayout.Click();
+				Common_Functions.clickOnPhysicalLayoutTab();
 				Delay.Duration(500, false);
 				
 				// Call verifyDCUnitValue method and Verify DC units value
@@ -425,7 +425,7 @@ namespace TestProject.Libraries
 				Devices_Functions.verifyLoadingDetailColor(LoadingDetailsNameForVoltDropWorstCase);
 				
 				//Click on Points tab
-				repo.ProfileConsys1.tab_Points.Click();
+				Common_Functions.clickOnPointsTab();
 			}
 			
 			// Fetch value from excel sheet and store it
@@ -461,7 +461,7 @@ namespace TestProject.Libraries
 		public static void verifyVoltageDropPercentage(string sFileName, string noLoadVoltDrop)
 		{
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 
 			// Check Voltage drop is set to 0.00 when no devices are added
@@ -473,7 +473,7 @@ namespace TestProject.Libraries
 
 			
 			// Navigate to Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			Delay.Duration(500, false);
 			
 			// Add devices such that voltage drop will show green color
@@ -546,7 +546,7 @@ namespace TestProject.Libraries
 			Devices_Functions.verifyLoadingDetailColor("Volt Drop (worst case)");
 			
 			// Navigate to Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			Delay.Duration(500, false);
 			
 			// Delete All devices
@@ -567,7 +567,7 @@ namespace TestProject.Libraries
 			string expectedColor;
 			
 			//Go to Physical layout
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
 			Delay.Duration(500, false);
 			
 			float ActualVoltDropValue = float.Parse(repo.ProfileConsys1.VoltDropValue.TextValue);
@@ -608,7 +608,7 @@ namespace TestProject.Libraries
 			Devices_Functions.VerifyPercentage(expectedColor, actualColour);
 			
 			// Navigate to Points tab
-			repo.ProfileConsys1.tab_Points.Click();
+			Common_Functions.clickOnPointsTab();
 			Delay.Duration(500, false);
 		}
 

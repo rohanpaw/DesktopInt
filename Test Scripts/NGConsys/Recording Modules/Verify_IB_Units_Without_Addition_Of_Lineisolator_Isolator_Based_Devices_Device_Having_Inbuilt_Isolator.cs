@@ -115,9 +115,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("410BDM - 2");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ButtonCut1' at Center.", repo.FormMe.ButtonCut1Info, new RecordItemIndex(12));
-            repo.FormMe.ButtonCut1.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnCutButton();
+            Delay.Milliseconds(0);
             
             Libraries.IS_Functions.VerifyIsolatorUnits("26", "FIM");
             Delay.Milliseconds(0);

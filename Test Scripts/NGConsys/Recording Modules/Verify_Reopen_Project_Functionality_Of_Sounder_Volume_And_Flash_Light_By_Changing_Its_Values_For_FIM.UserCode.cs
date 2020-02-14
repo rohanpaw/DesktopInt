@@ -33,7 +33,7 @@ namespace TestProject.Recording_Modules
             // Your recording specific initialization code goes here.
         }
 
-        public void VerifyDeviceModeAfterReopen(string sDeviceMode)
+        public void VerifyDeviceModeAfterReopenProj(string sDeviceMode)
         {
 			//Click on Points tab
 			repo.ProfileConsys1.tab_Points.Click();
