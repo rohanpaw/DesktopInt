@@ -185,7 +185,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 				<argument
@@ -425,7 +425,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 			</arguments>
@@ -649,7 +649,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1012,7 +1012,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 				<argument
@@ -1252,7 +1252,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1476,7 +1476,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 			</arguments>

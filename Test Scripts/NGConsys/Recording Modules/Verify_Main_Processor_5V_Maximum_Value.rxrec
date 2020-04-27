@@ -90,7 +90,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
+						Panel
 					</argvalue>
 				</argument>
 			</arguments>
@@ -255,7 +255,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1
+						Panel 1
 					</argvalue>
 				</argument>
 				<argument
@@ -334,7 +334,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
+						Panel
 					</argvalue>
 				</argument>
 			</arguments>
@@ -499,7 +499,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1
+						Panel 1
 					</argvalue>
 				</argument>
 				<argument
@@ -578,7 +578,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
+						Panel
 					</argvalue>
 				</argument>
 			</arguments>
@@ -743,7 +743,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1
+						Panel 1
 					</argvalue>
 				</argument>
 				<argument
@@ -822,7 +822,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
+						Panel
 					</argvalue>
 				</argument>
 			</arguments>
@@ -987,7 +987,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1
+						Panel 1
 					</argvalue>
 				</argument>
 				<argument
@@ -1066,7 +1066,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
+						Panel
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1231,7 +1231,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1
+						Panel 1
 					</argvalue>
 				</argument>
 				<argument
@@ -1310,7 +1310,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node
+						Panel
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1475,7 +1475,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1
+						Panel 1
 					</argvalue>
 				</argument>
 				<argument

@@ -657,6 +657,15 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			id="0e500efe-5709-4928-99ac-7ac1f1523afa"
 			name="btnDropDownPanelsGallery"
 			refimgid="eddc6395-d25a-4650-b4c2-fa8a9336743b"
+			searchtimeout="90000ms">
+				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
+			</item>
+			<item
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="container"
+			id="7f0a2f7d-2fb2-4738-8a40-450ea8772870"
+			name="Copy_of_btnDropDownPanelsGallery"
+			refimgid="eddc6395-d25a-4650-b4c2-fa8a9336743b"
 			searchtimeout="60000ms">
 				/form[@win32ownerwindowlevel='0']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']
 			</item>
@@ -702,7 +711,7 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			id="1e0e0edb-7adc-4c7b-980e-10aa7a0d9045"
 			name="tab_Points"
 			refimgid="8ab6ad69-87a1-406e-811c-e7c51fbb1256"
-			searchtimeout="30000ms">
+			searchtimeout="60000ms">
 				/form[@win32ownerwindowlevel='0']/progressbar/list[2]/?/?/container[@automationid='PART_HeadersPanelPresenter']/?/?/text[@text='Points']
 			</item>
 			<item
@@ -1342,6 +1351,14 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			id="492b2e42-6b92-4dbf-93f0-87456a170bb0"
 			name="txt_SelectPanel"
 			searchtimeout="30000ms">
+				/contextmenu//text[@caption=$PanelName]
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="e6c05c52-c703-4965-bed4-bb7da531cf0d"
+			name="Copy_of_txt_SelectPanel"
+			searchtimeout="30000ms">
 				/contextmenu//listitem/text[@caption=$PanelName]
 			</item>
 			<item
@@ -1741,7 +1758,7 @@ W/AAAAAASUVORK5CYII=
 			id="02c7a3e7-7186-464a-b477-97ffbd03071a"
 			name="txt_AllDevices"
 			refimgid="595f753f-223a-4b71-80e4-8e43f7d1e440"
-			searchtimeout="30000ms">
+			searchtimeout="45000ms">
 				/form[@title='Add Devices']//button[@automationid='PART_PanelNewButton']//button[@automationid='PART_CloseButton']/text[@caption='All Devices']
 			</item>
 			<item
@@ -1803,6 +1820,15 @@ W/AAAAAASUVORK5CYII=
 			id="99503cd6-6c21-4192-90a6-62bf93516b9c"
 			name="MultiplePointWizardWarningSign"
 			refimgid="6d9d717b-0900-4c4e-9687-222e887b95f9"
+			searchtimeout="30000ms">
+				/form[@title='Add Devices']/?/?/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']//row/cell[2]/text/picture
+			</item>
+			<item
+			addcaps="picture,wpfelement"
+			capname="picture"
+			id="df745466-8907-4765-8066-0467d1ec0d92"
+			name="Copy_of_MultiplePointWizardWarningSign"
+			refimgid="6d9d717b-0900-4c4e-9687-222e887b95f9"
 			refpath="/form[@title='Add Devices']/container[1]/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row/cell[1]/picture[1]"
 			searchtimeout="30000ms">
 				/form[@title='Add Devices']/?/?/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']//row/cell[1]/picture[1]
@@ -1843,6 +1869,16 @@ W/AAAAAASUVORK5CYII=
 			refpath="/form[@title='Add Devices']/container[1]/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[2]/row/cell[2]/text/picture"
 			searchtimeout="30000ms">
 				/form[@title='Add Devices']/container[1]/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']//row/cell[2]/text/picture
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="f735127c-343f-48bd-a1b4-5f48b63b7e09"
+			name="Cancel_Multiple_Point_Wizard_DialogWindow"
+			refimgid="f7883732-f3cc-451b-b1c9-254874d7aee3"
+			refpath="/form[@title='Add Devices']/grip[@automationid='PART_DragWidget']/container[@caption='']/button[4]"
+			searchtimeout="30000ms">
+				/form[@title='Add Devices']/grip[@automationid='PART_DragWidget']/container/button[4]
 			</item>
 			<basepath>
 				/form[@title='Add Devices']
@@ -2109,6 +2145,13 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			capname="row"
 			id="985f429a-5974-42c7-929c-9bd192ba3d5e"
 			name="InventoryGridRow"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[9]/table[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']//row[$sRow]
+			</item>
+			<item
+			capname="row"
+			id="f2448761-cf98-4d8f-8cce-75027f41867c"
+			name="Copy_of_InventoryGridRow"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row[$sRow]
 			</item>
@@ -2346,18 +2389,36 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
-			capname="button"
+			capname="container"
 			id="57f9fc13-5b4b-44c8-bd91-35515c8dfa12"
 			name="btn_Copy1"
+			refimgid="fdde1895-2efe-4134-9236-e6b8ebf7c2fd"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/container[3]
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="d86a950c-8ba8-4c10-a74e-4ef97e3766fb"
+			name="Copy_of_btn_Copy1"
 			refimgid="fdde1895-2efe-4134-9236-e6b8ebf7c2fd"
 			searchtimeout="60000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Copy']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
-			capname="button"
+			capname="container"
 			id="f4f72640-8721-416a-b01c-0018a4546ff3"
-			name="Paste"
+			name="btn_Paste"
+			refimgid="ec27e581-b98b-4d4a-8cad-d964a1134cae"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/container[1]
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="5e1beba0-b919-4285-a1f7-2f3a83f94316"
+			name="Copy_of_Paste"
 			refimgid="ec27e581-b98b-4d4a-8cad-d964a1134cae"
 			searchtimeout="60000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Paste']
@@ -2659,6 +2720,13 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			capname="text"
 			id="103460ce-0b97-441a-ab01-bb36fd02783e"
 			name="txt_InventoryGridDeviceProperty"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[9]/table[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']//row[$sRowIndex]/row/cell[$sColumnIndex]/text
+			</item>
+			<item
+			capname="text"
+			id="cc7e9fe3-19a1-4dbb-b158-f8058008d475"
+			name="Copy_of_txt_InventoryGridDeviceProperty"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/row[$sRowIndex]/row/cell[$sColumnIndex]/text
 			</item>
@@ -13626,8 +13694,40 @@ AAAAAElFTkSuQmCC
 			id="436b8243-35ab-415b-9802-b1370f3aa0d5"
 			name="NavigationTreeItem"
 			refimgid="39db4e49-5b71-4bb6-83cd-12592227ccd4"
-			searchtimeout="30000ms">
+			searchtimeout="72000ms">
+				/form[@automationid='me']/progressbar/tree//text[@text~'(^'+$sTreeItem+')']
+			</item>
+			<item
+			capname="text"
+			id="06b6da91-1114-4683-950e-8e1d96825660"
+			name="Copy_of_NavigationTreeItem2"
+			refimgid="39db4e49-5b71-4bb6-83cd-12592227ccd4"
+			searchtimeout="72000ms">
+				/form[@automationid='me']/?/?/tree//text[@text~'(^'+$sTreeItem+')']
+			</item>
+			<item
+			capname="text"
+			id="ccddda1c-290e-4f51-ade2-9e5c59a50e2a"
+			name="Copy_of_NavigationTreeItem1"
+			refimgid="39db4e49-5b71-4bb6-83cd-12592227ccd4"
+			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/picture/tree//text[@text~'(^'+$sTreeItem+')']
+			</item>
+			<item
+			capname="text"
+			id="0ffa17ba-10bb-44ee-a1d7-92c50840d27e"
+			name="Copy_of_NavigationTreeItem"
+			refimgid="39db4e49-5b71-4bb6-83cd-12592227ccd4"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/tree//text[@text~'(^'+'Built-in Loop-B'+')']
+			</item>
+			<item
+			capname="text"
+			id="c20b999c-ba6f-41af-a828-697499ed631c"
+			name="Copy_of_Copy_of_NavigationTreeItem"
+			refimgid="39db4e49-5b71-4bb6-83cd-12592227ccd4"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/tree//text[@text~'(^'+'Serial'+')']
 			</item>
 			<item
 			capname="text"
@@ -13649,6 +13749,22 @@ AAAAAElFTkSuQmCC
 			capname="button"
 			id="c291fa7d-85b0-464c-b87c-2e3073e17e4c"
 			name="btn_NavigationTreeExpander"
+			refimgid="a2da22b4-e90e-47a2-81db-6b48424a949e"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/?/?/tree//text[@text~'(^'+$sExpanderName+')']/following-sibling::button
+			</item>
+			<item
+			capname="button"
+			id="f1693dbb-3b42-489a-bfd2-b9b232ad465f"
+			name="Copy_of_btn_NavigationTreeExpander1"
+			refimgid="a2da22b4-e90e-47a2-81db-6b48424a949e"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/?/?/tree//text[@text~'(^'+'PFI'+')']/following-sibling::button
+			</item>
+			<item
+			capname="button"
+			id="c9111a1b-c477-4790-be0d-06be650b1dbd"
+			name="Copy_of_btn_NavigationTreeExpander"
 			refimgid="a2da22b4-e90e-47a2-81db-6b48424a949e"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture/tree//text[@text~'(^'+$sExpanderName+')']/following-sibling::button
@@ -13821,15 +13937,23 @@ AAAAAElFTkSuQmCC
 			id="260b2e94-5ce1-4568-8507-b8ccb5e14714"
 			name="txt_ActualLoadingDetailsValue"
 			refimgid="2ae6330a-9a2b-4359-8517-db83a5899695"
-			searchtimeout="90000ms">
+			searchtimeout="120000ms">
 				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]
+			</item>
+			<item
+			capname="text"
+			id="4574e3f4-4b90-4cba-81ed-bcc905481055"
+			name="Copy_of_txt_ActualLoadingDetailsValue"
+			refimgid="2ae6330a-9a2b-4359-8517-db83a5899695"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Main Processor 24V (A)']/following-sibling::cell/?/text[1]
 			</item>
 			<item
 			capname="text"
 			id="c3f40fca-afc0-4654-a151-4012e61d599b"
 			name="txt_MaxLoadingDetailsValue"
 			refimgid="eba2df63-f1e5-4576-a579-6870d163961d"
-			searchtimeout="90000ms">
+			searchtimeout="120000ms">
 				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]
 			</item>
 			<item
@@ -13838,7 +13962,7 @@ AAAAAElFTkSuQmCC
 			name="Copy_of_txt_MaxLoadingDetailsValue"
 			refimgid="eba2df63-f1e5-4576-a579-6870d163961d"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Main Processor 5V (A)']/following-sibling::cell//text[3]
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Current (DC Units)']/following-sibling::cell//text[3]
 			</item>
 			<item
 			capname="progressbar"
@@ -13855,14 +13979,6 @@ AAAAAElFTkSuQmCC
 			refimgid="2ae6330a-9a2b-4359-8517-db83a5899695"
 			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]
-			</item>
-			<item
-			capname="text"
-			id="f96ead01-b71d-42ad-ae18-248ab1a57744"
-			name="txt_MaxLoadingDetailsValueAfterReopen"
-			refimgid="eba2df63-f1e5-4576-a579-6870d163961d"
-			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]
 			</item>
 			<item
 			capname="progressbar"
@@ -13887,6 +14003,14 @@ AAAAAElFTkSuQmCC
 				/form[@automationid='me']//container[@automationid='me']/button[@automationid='PART_Editor']/text[@caption='Enable IS Devices']
 			</item>
 			<item
+			capname="text"
+			id="f96ead01-b71d-42ad-ae18-248ab1a57744"
+			name="txt_MaxLoadingDetailsValueAfterReopen"
+			refimgid="eba2df63-f1e5-4576-a579-6870d163961d"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]
+			</item>
+			<item
 			addcaps="button,wpfelement,wpfgroupelement"
 			capname="button"
 			id="b3daf139-dd16-413d-b42d-705e8bb2f5be"
@@ -13901,7 +14025,7 @@ AAAAAElFTkSuQmCC
 			id="e5b15281-a87a-4eb9-8577-339826badfc4"
 			name="File"
 			refimgid="bbf3fcb1-347b-4b49-8c36-e42720c7c775"
-			searchtimeout="60000ms">
+			searchtimeout="30000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']/?/?/text[@text='File']
 			</item>
 			<item
@@ -13931,6 +14055,7 @@ AAAAAElFTkSuQmCC
 			capname="container"
 			id="8a4cfcb1-7f99-467e-84d2-2474d2a24195"
 			name="partItemPresenter"
+			refimgid="2162f322-2b91-4c88-80df-535ab16b54ef"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/?/?/container[@automationid='PART_ItemsPresenter']
 			</item>
@@ -13972,15 +14097,22 @@ AAAAAElFTkSuQmCC
 			capname="text"
 			id="e93ef5e7-f1ea-4b48-affa-7fa0bae38354"
 			name="txt_LabelName1"
+			searchtimeout="72000ms">
+				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text=$sLabelName]
+			</item>
+			<item
+			capname="text"
+			id="1c891274-eccb-4a25-acba-f7e48c5b4f81"
+			name="Copy_of_txt_LabelName1"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar/list[9]/table[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']//row/cell[3]/text[@text=$sLabelName]
+				/form[@automationid='me']/progressbar/list[9]/table[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']//row/cell[3]/text[@text='PCH800 5.0A-3']
 			</item>
 			<item
 			capname="text"
 			id="36452b86-e800-49ab-b8fe-b838f08f0455"
 			name="txt_LabelName1Reopen"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar/list[7]/table[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']//row/cell[3]/text[@text=$sLabelName]
+				/form[@automationid='me']/progressbar/list[7]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']//row/cell[3]/text[@text=$sLabelName]
 			</item>
 			<item
 			capname="button"
@@ -13995,6 +14127,35 @@ AAAAAElFTkSuQmCC
 			name="btn_Delete"
 			searchtimeout="60000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/container[4]
+			</item>
+			<item
+			capname="cell"
+			id="d46ee6b0-f695-452d-a314-6dc3debd832f"
+			name="cell_CPU_beforeimport"
+			refimgid="5e51aa05-fe5a-4152-8a14-8b6d0108dd63"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/row[@index='1']/cell[@isheader='False']
+			</item>
+			<item
+			capname="button"
+			id="241e9113-3e2b-4dfd-b93c-9bd474b42fa0"
+			name="cmb_PanelType"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/row[@index='1']//combobox/list[2]/button[@automationid='PART_Item']
+			</item>
+			<item
+			capname="text"
+			id="9286e094-a950-4d49-ac21-d89d823c5047"
+			name="txt_Label"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar//table[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/?/row/cell[3]/text[@text=$sLabelName]
+			</item>
+			<item
+			capname="container"
+			id="fafaa9ed-21dc-41e3-85bc-939b902c83a2"
+			name="test_AutomationID"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']
 			</item>
 			<basepath>
 				/form[@automationid='me']

@@ -82,8 +82,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);

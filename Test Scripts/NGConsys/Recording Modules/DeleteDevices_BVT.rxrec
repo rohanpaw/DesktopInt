@@ -100,6 +100,31 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelName"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e314dcef-4955-44d1-8a79-da858aaa609f">
+				<argument
+				argname="sLabel"
+				id="14f33296-18e3-4dfd-bb8d-ae40310b2992">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						801 CH - 3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
 		methodname="DeleteAllDevices"
 		namespace="TestProject.Libraries"
 		optional="False">

@@ -85,6 +85,9 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "12"));
             Delay.Milliseconds(0);
             
+            Libraries.Devices_Functions.SelectRowUsingLabelName("801 CH - 3");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.DeleteAllDevices();
             Delay.Milliseconds(0);
             

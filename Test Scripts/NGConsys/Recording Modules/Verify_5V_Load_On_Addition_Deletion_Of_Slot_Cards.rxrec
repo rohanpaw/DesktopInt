@@ -483,7 +483,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PCH800
+						PCH800 5.0A
 					</argvalue>
 				</argument>
 				<argument
@@ -708,7 +708,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PCH800-1
+						PCH800 5.0A-1
 					</argvalue>
 				</argument>
 			</arguments>

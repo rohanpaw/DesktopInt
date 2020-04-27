@@ -92,7 +92,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.1.80">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.13">
 					</param>
 					<param
 					name="Mode"
@@ -986,6 +986,12 @@ rxversion="8.3">
 	default="Default">
 		<testconfiguration
 		name="Default">
+			<testcontainer
+			id="187daa63-7f01-41f8-8ea7-329d42f303ec">
+			</testcontainer>
+			<testcontainer
+			id="6173c3ad-0e0f-4915-bffa-f82b550c1ba6">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

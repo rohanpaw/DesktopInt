@@ -159,6 +159,7 @@ namespace TestProject.Libraries
 			Delay.Duration(1000);
 			Keyboard.Press("{LControlKey down}{Okey}{LControlKey up}");
 			Delay.Duration(1000);
+			repo.Open.btn_Open.Click();
 			//repo.ProfileConsys1.txt_Open.Click();
 //			string actualDirPath= Common_Functions.GetDirPath();
 //			string sSaveProjectDirPath = actualDirPath+ "NGDesigner Saved Projects";
@@ -421,6 +422,9 @@ namespace TestProject.Libraries
 
 			repo.FormMe.NavigationTreeItem.Click();
 			Report.Log(ReportLevel.Info," Tree Item name " +TreeItemName + " is displayed and clicked successfully  ");
+			
+			
+			
 		}
 		
 		/****************************************************************************************************
@@ -1099,7 +1103,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void clickOnPasteButton()
 		{
-			repo.FormMe.Paste.Click();
+			repo.FormMe.btn_Paste.Click();
 		}
 		
 		
@@ -1117,6 +1121,29 @@ namespace TestProject.Libraries
 		{
 			repo.FormMe.btn_Copy1.Click();
 		}
+	
+
+/****************************************************************************************************
+		 * Function Name: ClickOnNavigationTreeItem
+		 * Function Details: To click on navigation tree item
+		 * Parameter/Arguments: Tree item name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/08/2019
+		 ****************************************************************************************************/
+		[UserCodeMethod]
+		public static void ClickOnTreeItem()
+		{
+//			sTreeItem = TreeItemName;
+//
+//			repo.FormMe.NavigationTreeItem.Click();
+//			Report.Log(ReportLevel.Info," Tree Item name " +TreeItemName + " is displayed and clicked successfully  ");
+//			
+			//IList<Ranorex.Unknown>
+			Ranorex.Container test = repo.FormMe.test_AutomationID;
+		}
+		
+
 		
 	}
 }

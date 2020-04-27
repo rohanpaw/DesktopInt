@@ -91,7 +91,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-E");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Label", "PLX800-F");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
@@ -100,7 +100,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-E");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-F");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizardWithRegion("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "1"), "4");
@@ -109,13 +109,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectInventoryGridRow("6");
+            Libraries.Devices_Functions.SelectInventoryGridRow("8");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.ChangeCableLengthFromInventory(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "1000"));
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("8");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
@@ -127,7 +127,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste with Points");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectInventoryGridRow("6");
+            Libraries.Devices_Functions.SelectInventoryGridRow("8");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("1,000");
@@ -145,13 +145,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectInventoryGridRow("6");
+            Libraries.Devices_Functions.SelectInventoryGridRow("8");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.ChangeCableLengthFromInventory(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "500"));
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("8");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");

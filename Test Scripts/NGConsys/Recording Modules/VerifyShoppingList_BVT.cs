@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -104,6 +104,9 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizardWithRegion("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "15"), "0");
             Delay.Milliseconds(0);
             
@@ -113,14 +116,14 @@ namespace TestProject.Recording_Modules
             //Libraries.Devices_Functions.AddDevicesForBVT("Build_Verification_Test", "", "TC07_B");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node2");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);

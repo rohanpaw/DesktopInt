@@ -2453,7 +2453,7 @@ rxversion="8.3">
 			id="20836adb-a235-4806-8cc8-bcbe7485be64"
 			name="Verify_The_Shopping_List_When_XML800_Is_Added/removed_From_Panel">
 				<description>
-					<![CDATA[NGC-60/TC-55138]]>
+					<![CDATA[NGC-60/TC-55138&nbsp; Defect-1449]]>
 				</description>
 				<parameters>
 					<param
@@ -2620,7 +2620,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Users\jdhakaa\Documents\Softwares\Manual Build 81.01.92\Manual Build 81.01.92">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.9">
 					</param>
 					<param
 					name="Mode"
@@ -3314,7 +3314,7 @@ rxversion="8.3">
 			id="2bb77d07-695c-4f1f-97c9-ad3d54e10be8"
 			name="Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB">
 				<description>
-					<![CDATA[<p>NGC-360/TC-27/TC-28/Defect-1559/Defect-1545 . </p><p>Note : Defect 1545 and 1565 was not completed automated so need to test it manually</p>]]>
+					<![CDATA[<p>NGC-360/TC-27/TC-28/Defect-1559/Defect-1545 . Defect 2654,2623</p><p>Note : Defect 1545 and 1565 was not completed automated so need to test it manually</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16601,7 +16601,7 @@ persisted in panel properties&nbsp;]]>
 			id="e2708cf8-0006-4cee-b114-108e2c344b48"
 			name="Verify_Paste_Of_Unit_Only">
 				<description>
-					<![CDATA[NGC-372/TC-32]]>
+					<![CDATA[NGC-372/TC-32 PLX800-E is displayed as Printer1 in text properties so test cases failing]]>
 				</description>
 				<parameters>
 					<param
@@ -18753,26 +18753,6 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
-					id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed"
-					name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
-						<testmodule
-						id="81a008d8-1090-4063-a8de-407d145100c5"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="54f863cd-7f1f-4e8f-9f97-274d50abab86"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="d263ab6b-d835-4ce4-bebb-f14e65e93145"
-						name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
-						</testmodule>
-						<testmodule
-						id="c32910a7-ec4d-4273-872b-c8c281f2645a"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="377591ae-1cd8-4791-ae2d-87f4de3a9304"
 					name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection">
 						<testmodule
@@ -18909,6 +18889,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="f368fc5f-fcd8-43bc-a96c-eb3fd8fe9dc4"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed"
+					name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
+						<testmodule
+						id="81a008d8-1090-4063-a8de-407d145100c5"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="54f863cd-7f1f-4e8f-9f97-274d50abab86"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="d263ab6b-d835-4ce4-bebb-f14e65e93145"
+						name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
+						</testmodule>
+						<testmodule
+						id="c32910a7-ec4d-4273-872b-c8c281f2645a"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
@@ -24666,12 +24666,6 @@ persisted in panel properties&nbsp;]]>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="d2cdb4f7-be4e-48bd-9b3c-2a8fb55099db">
-			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="Voltage_Calculation">

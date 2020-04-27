@@ -445,12 +445,14 @@ namespace TestProject.Libraries
 			for(int i=8;i<=rows;i++)
 			{
 				sLabelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
-				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+				//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
 				
-				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+				SelectRowUsingLabelName(sLabelName);
+				
+				if(repo.FormMe.txt_LabelName1Info.Exists())
 				{
 					Common_Functions.clickOnDeleteButton();
-					Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+					Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 					Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 				}
 				
@@ -1201,9 +1203,9 @@ namespace TestProject.Libraries
 		{
 			sLabelName = LabelName;
 			
-			repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			SelectRowUsingLabelName(sLabelName);
 			
-			if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+			if(repo.FormMe.txt_LabelName1Info.Exists())
 			{
 				if(repo.ProfileConsys1.btn_Delete.Visible){
 					Common_Functions.clickOnDeleteButton();
@@ -1211,7 +1213,7 @@ namespace TestProject.Libraries
 				else{
 					repo.FormMe.btn_DeleteFC.Click();
 				}
-				Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+				Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 				Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 			}
 			
@@ -2870,7 +2872,7 @@ namespace TestProject.Libraries
 		public static void VerifyDeviceUsingLabelName(string sLabel)
 		{
 			sLabelName = sLabel;
-			if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+			if(repo.FormMe.txt_LabelName1Info.Exists())
 			{
 				Report.Log(ReportLevel.Success,"Device with label name " +sLabel+ " is displayed correctly");
 			}
@@ -3423,7 +3425,7 @@ namespace TestProject.Libraries
 				expectedDescription = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				
-				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+				SelectRowUsingLabelName(sLabelName);
 				
 				verifyDescription(expectedDescription);
 				
@@ -3577,7 +3579,7 @@ namespace TestProject.Libraries
 				expectedDescription = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				
-				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+				SelectRowUsingLabelName(sLabelName);
 				
 				verifyDescription(expectedDescription);
 				
@@ -3599,10 +3601,10 @@ namespace TestProject.Libraries
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				
-				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+				SelectRowUsingLabelName(sLabelName);
 				Common_Functions.clickOnDeleteButton();
 				
-				Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+				Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 				Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 				
 				
@@ -3684,10 +3686,11 @@ namespace TestProject.Libraries
 				}
 				
 				// Click on Label name in points grid
-				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+				SelectRowUsingLabelName(sLabelName);
+				
 				
 				// Retrieve label name
-				string actualLabelName = repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.TextValue;
+				string actualLabelName = repo.FormMe.txt_LabelName1.TextValue;
 				
 				// Compare actualDeviceOrderValue and sDeviceOrderName values and then displaying result
 				if(actualLabelName.Equals(sLabelName))
@@ -3751,7 +3754,7 @@ namespace TestProject.Libraries
 		{
 			if(sExi800Selected)
 			{
-				if(repo.FormMe.PasteInfo.Exists())
+				if(repo.FormMe.btn_PasteInfo.Exists())
 				{
 					
 					Report.Log(ReportLevel.Success,"IS Devices can be pasted in Exi800");
@@ -3766,7 +3769,7 @@ namespace TestProject.Libraries
 			
 			else
 			{
-				if(repo.FormMe.PasteInfo.Exists())
+				if(repo.FormMe.btn_PasteInfo.Exists())
 				{
 					Report.Log(ReportLevel.Failure,"IS Devices can be pasted in Exi800");
 					
@@ -5366,7 +5369,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyPasteButtonEnabled()
 		{
-			if (repo.FormMe.Paste.Enabled)
+			if (repo.FormMe.btn_Paste.Enabled)
 			{
 				Report.Log(ReportLevel.Success, "Paste button is enabled");
 			}
@@ -5430,7 +5433,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyPasteButtonDisabled()
 		{
-			if (repo.FormMe.Paste.Enabled)
+			if (repo.FormMe.btn_Paste.Enabled)
 			{
 				Report.Log(ReportLevel.Failure, "Paste button is enabled");
 			}
@@ -6653,7 +6656,7 @@ namespace TestProject.Libraries
 			
 			if(sExists)
 			{
-				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+				if(repo.FormMe.txt_LabelName1Info.Exists())
 				{
 					Report.Log(ReportLevel.Success,"Device with label name " +sLabel+ " is displayed correctly");
 				}
@@ -6664,7 +6667,7 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+				if(repo.FormMe.txt_LabelName1Info.Exists())
 				{
 					Report.Log(ReportLevel.Failure,"Device with label name " +sLabel+ " is getting displayed");
 				}
@@ -6901,7 +6904,7 @@ namespace TestProject.Libraries
 			if(sExist)
 			{
 
-				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+				if(repo.FormMe.txt_LabelName1Info.Exists())
 				{
 					Report.Log(ReportLevel.Success, "Custom devices are present in gallery");
 				}
@@ -6912,7 +6915,7 @@ namespace TestProject.Libraries
 			}
 			else
 			{
-				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+				if(repo.FormMe.txt_LabelName1Info.Exists())
 				{
 					Report.Log(ReportLevel.Failure, "Custom devices are present in gallery");
 				}
@@ -7153,12 +7156,12 @@ namespace TestProject.Libraries
 				if(repo.AddDevices.MultiplePointWizardWarningSign.Visible)
 				{
 					Report.Log(ReportLevel.Success,"Error Symbol appears as expected");
-					repo.AddDevices.Cancel_Multiple_Point_Wizard.Click();
+					repo.AddDevices.Cancel_Multiple_Point_Wizard_DialogWindow.Click();
 				}
 				else
 				{
 					Report.Log(ReportLevel.Failure,"Error Symbol doesn't appear");
-					repo.AddDevices.Cancel_Multiple_Point_Wizard.Click();
+					repo.AddDevices.Cancel_Multiple_Point_Wizard_DialogWindow.Click();
 				}
 			}
 			else
@@ -7937,6 +7940,8 @@ namespace TestProject.Libraries
 			repo.FormMe2.btn_Ok_ISDevicesWarning.Click();
 			
 			repo.FormMe.btn_back.Click();
+			
+			Report.Log(ReportLevel.Info, "IS Devices Enabled successfully");
 			
 		}
 		

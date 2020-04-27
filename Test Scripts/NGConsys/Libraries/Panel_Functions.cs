@@ -258,18 +258,29 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
+		 * Last Update : Alpesh Dhakad - 20/02/2020 Updated method
 		 ********************************************************************/
 		[UserCodeMethod]
-		public static void ChangeCPUType(string sSelectCPU)
+		public static void ChangeCPUType(string SelectCPU)
 		{
-			repo.ProfileConsys1.Cell_CPU_beforeimport.DoubleClick();
-			repo.ProfileConsys1.cmb_PanelType.Click();
-			sCPU=sSelectCPU;
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
-			repo.ContextMenu.lstPanelCPU.Click();
+			// Enter the  text in Search Properties fields to view related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("CPU" +"{ENTER}");
 			
-			Report.Log(ReportLevel.Info," CPU Type changed to " +sSelectCPU + " successfully  ");
+			// Click on CPU Cell
+			repo.FormMe.cell_CPU_beforeimport.Click();
+			
+			repo.FormMe.cmb_PanelType.Click();
+			//sCPU=sSelectCPU;
+			
+			// Enter the CPU value and click Enter twice
+			repo.FormMe.cell_CPU_beforeimport.PressKeys((SelectCPU) +"{ENTER}" + "{ENTER}");
+			
+			
+			
+			Report.Log(ReportLevel.Info," CPU Type changed to " +SelectCPU + " successfully  ");
 		}
 		
 		/****************************************************************************************************************************************

@@ -137,8 +137,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.changeConfiguratonToWPF();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Paste' at Center.", repo.FormMe.PasteInfo, new RecordItemIndex(19));
-            //repo.FormMe.Paste.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Paste' at Center.", repo.FormMe.btn_PasteInfo, new RecordItemIndex(19));
+            //repo.FormMe.btn_Paste.Click();
             //Delay.Milliseconds(200);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("LPS 800 - 127");

@@ -591,7 +591,7 @@ namespace TestProject.Libraries
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
-				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+				Devices_Functions.SelectRowUsingLabelName(sLabelName);
 				
 				Common_Functions.clickOnDeleteButton();
 				Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
@@ -1520,12 +1520,12 @@ namespace TestProject.Libraries
 					// Click on Ethernet node
 					Common_Functions.ClickOnNavigationTreeItem("Ethernet");
 					
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
-					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+					if(repo.FormMe.txt_LabelName1Info.Exists())
 					{
 						Common_Functions.clickOnDeleteButton();
-						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+						Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
@@ -1628,7 +1628,7 @@ namespace TestProject.Libraries
 					sXBus40VLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,14]).Value.ToString();
 					
 					//Select R-Bus node
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					float.TryParse(sXBus40VLoad, out XBusFourtyVLoad);
 					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 					Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
@@ -1659,12 +1659,12 @@ namespace TestProject.Libraries
 					// Click on RBUS node
 					Common_Functions.ClickOnNavigationTreeItem("R-BUS");
 					
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
-					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+					if(repo.FormMe.txt_LabelName1Info.Exists())
 					{
 						Common_Functions.clickOnDeleteButton();
-						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+						Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
@@ -1819,12 +1819,12 @@ namespace TestProject.Libraries
 					// Click on RBUS node
 					Common_Functions.ClickOnNavigationTreeItem("R-BUS");
 					
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
-					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+					if(repo.FormMe.txt_LabelName1Info.Exists())
 					{
 						Common_Functions.clickOnDeleteButton();
-						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+						Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
@@ -1971,12 +1971,12 @@ namespace TestProject.Libraries
 						// Click on Panel node
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 						
-						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						
-						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+						if(repo.FormMe.txt_LabelName1Info.Exists())
 						{
 							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
 							// Click on Loop A node
@@ -1999,12 +1999,12 @@ namespace TestProject.Libraries
 						
 						Common_Functions.ClickOnNavigationTreeItem("XLM/External");
 
-						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						
-						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+						if(repo.FormMe.txt_LabelName1Info.Exists())
 						{
 							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
 							// Click on Loop A node
@@ -2134,14 +2134,14 @@ namespace TestProject.Libraries
 					//Click on Panel Accessories tab
 					Common_Functions.clickOnPanelAccessoriesTab();
 					
-					//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					//Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
 					repo.ProfileConsys1.PanelInvetoryGrid.txt_LabelNameofAccessory.Click();
 					
-					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+					if(repo.FormMe.txt_LabelName1Info.Exists())
 					{
 						Common_Functions.clickOnDeleteButton();
-						//Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+						//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
@@ -2274,12 +2274,12 @@ namespace TestProject.Libraries
 						// Click on Panel node
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 						
-						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						
-						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+						if(repo.FormMe.txt_LabelName1Info.Exists())
 						{
 							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
 						}
@@ -2406,12 +2406,12 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 						
 						
-						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						
-						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+						if(repo.FormMe.txt_LabelName1Info.Exists())
 						{
 							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						}
 						
@@ -2602,12 +2602,12 @@ namespace TestProject.Libraries
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
-				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+				Devices_Functions.SelectRowUsingLabelName(sLabelName);
 				
-				if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+				if(repo.FormMe.txt_LabelName1Info.Exists())
 				{
 					Common_Functions.clickOnDeleteButton();
-					Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+					Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 					Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 					
 				}
@@ -3415,12 +3415,12 @@ namespace TestProject.Libraries
 					// Click on Ethernet node
 					Common_Functions.ClickOnNavigationTreeItem("Ethernet");
 					
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
-					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+					if(repo.FormMe.txt_LabelName1Info.Exists())
 					{
 						Common_Functions.clickOnDeleteButton();
-						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+						Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						/// Click on Loop A node
@@ -3564,7 +3564,7 @@ namespace TestProject.Libraries
 					sXBusAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,18]).Value.ToString();
 					
 					//Select R-Bus node
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					float.TryParse(sXBusBatteryStandby, out XBusBatteryStandby);
 					float.TryParse(sXBusAlarmLoad, out XBusAlarmLoad);
 					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
@@ -3627,12 +3627,12 @@ namespace TestProject.Libraries
 					// Click on RBus node
 					Common_Functions.ClickOnNavigationTreeItem("R-BUS");
 					
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
-					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+					if(repo.FormMe.txt_LabelName1Info.Exists())
 					{
 						Common_Functions.clickOnDeleteButton();
-						//Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+						//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						/// Click on Loop A node
@@ -3862,12 +3862,12 @@ namespace TestProject.Libraries
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
-					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+					if(repo.FormMe.txt_LabelName1Info.Exists())
 					{
 						Common_Functions.clickOnDeleteButton();
-						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+						Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
@@ -4049,12 +4049,12 @@ namespace TestProject.Libraries
 						// Click on Panel node
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 						
-						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						
-						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+						if(repo.FormMe.txt_LabelName1Info.Exists())
 						{
 							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
 							// Click on Loop A node
@@ -4080,12 +4080,12 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
 						
 
-						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						
-						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+						if(repo.FormMe.txt_LabelName1Info.Exists())
 						{
 							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
 							// Click on Loop A node
@@ -4257,12 +4257,12 @@ namespace TestProject.Libraries
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
-					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+					if(repo.FormMe.txt_LabelName1Info.Exists())
 					{
 						Common_Functions.clickOnDeleteButton();
-						Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+						Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
@@ -4360,7 +4360,7 @@ namespace TestProject.Libraries
 					Common_Functions.clickOnPanelAccessoriesTab();
 					
 					repo.FormMe.cell_Label.Click();
-					//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					//Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
 					if(repo.FormMe.cell_LabelInfo.Exists())
 					{
@@ -4628,7 +4628,7 @@ namespace TestProject.Libraries
 						// Click on Panel node
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 						
-						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						Panel_Functions.DevicePoweredFrom(PoweredBy);
 						
 						sExpectedBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[k,24]).Value.ToString();
@@ -4648,12 +4648,12 @@ namespace TestProject.Libraries
 						// Click on Panel node
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 						
-						repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						
-						if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+						if(repo.FormMe.txt_LabelName1Info.Exists())
 						{
 							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info, "Text", sLabelName);
+							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
 							// Click on Loop A node
@@ -6129,7 +6129,7 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeItem("Main");
 					
 					
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
 					
 					// Click on SearchProperties text field
@@ -6274,7 +6274,7 @@ namespace TestProject.Libraries
 				Devices_Functions.verifyLoadingDetailsValue(sAlarmLoad,sAlarmLoadingDetail);
 				Common_Functions.clickOnPointsTab();
 				
-				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+				Devices_Functions.SelectRowUsingLabelName(sLabelName);
 				
 				
 				// Click on SearchProperties text field

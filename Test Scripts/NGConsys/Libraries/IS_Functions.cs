@@ -414,7 +414,7 @@ namespace TestProject.Libraries
 				
 				Report.Log(ReportLevel.Success,"Label is "+ sLabelName);
 				
-				repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+				Devices_Functions.SelectRowUsingLabelName(sLabelName);
 			}
 			
 			//Go to physical layout

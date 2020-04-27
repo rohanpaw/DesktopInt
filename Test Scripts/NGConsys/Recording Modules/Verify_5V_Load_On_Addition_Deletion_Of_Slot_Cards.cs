@@ -127,7 +127,7 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             // PCH added
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800", "Slot Cards", "PFI");
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800 5.0A", "Slot Cards", "PFI");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PNI800", "Slot Cards", "PFI");
@@ -148,7 +148,7 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.SelectPanelNode("Node1 - Pro32xD");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabel("PCH800-1");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabel("PCH800 5.0A-1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DeleteDeviceUsingLabel("PNI800-2");

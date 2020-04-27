@@ -277,7 +277,11 @@ namespace TestProject.Libraries
 				Panel_Functions.changePanelLED(PanelLED);
 				
 				// Click on Loop A node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A (");
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A (");
+				
 				
 			//	repo.ProfileConsys1.tab_PhysicalLayout.Click();
 				Common_Functions.clickOnPhysicalLayoutTab();
@@ -350,10 +354,11 @@ namespace TestProject.Libraries
 					sLabelName = splitLabelName[0];
 					
 					// Click on Label name for the device
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
-					// Verify the label name visibility
-					if(repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1Info.Exists())
+					// Verify the label name visibility   
+					
+					if(repo.FormMe.txt_LabelName1Info.Exists())
 					{
 						// Call VerifyDeviceSensitivity & VerifyDeviceMode method to verify its values
 						Devices_Functions.VerifyDeviceSensitivity(sDeviceSensitivity);
@@ -400,7 +405,7 @@ namespace TestProject.Libraries
 					sLabelName = splitLabelName[0];
 					
 					// Click on Label name for the device
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
 					Devices_Functions.VerifyDeviceSensitivity(sDeviceSensitivity);
 					Devices_Functions.ChangeDeviceSensitivity(changeDeviceSensitivity);
@@ -408,7 +413,7 @@ namespace TestProject.Libraries
 					
 					// Click on Label name for the device
 					sLabelName = splitLabelName[1];
-					repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+					Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					
 					Devices_Functions.VerifyDeviceMode(sDeviceMode);
 					Devices_Functions.ChangeDeviceMode(changeDeviceMode);
@@ -1033,7 +1038,7 @@ namespace TestProject.Libraries
 			// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				 
-			
+				 
 			
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop A on addition of devices in Loop B");
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[2,2]).Value.ToString();

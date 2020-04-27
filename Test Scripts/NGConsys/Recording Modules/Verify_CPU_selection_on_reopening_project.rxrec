@@ -133,7 +133,7 @@ rxversion="8.3">
 			<arguments
 			id="e3101dc9-6628-4c63-b800-d04b73abc9ff">
 				<argument
-				argname="sSelectCPU"
+				argname="SelectCPU"
 				id="fe1fd05f-c24c-4ba3-ad86-43ed22829e7b">
 					<argvaluetype>
 						System.String

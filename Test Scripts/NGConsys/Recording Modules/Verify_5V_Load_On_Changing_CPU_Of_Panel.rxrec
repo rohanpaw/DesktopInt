@@ -109,7 +109,7 @@ rxversion="8.3">
 			<arguments
 			id="52e6751a-652a-43a0-81a5-fb2615d19ece">
 				<argument
-				argname="sSelectCPU"
+				argname="SelectCPU"
 				id="5e5e8ddd-f87e-4445-b933-f1870cf98eff">
 					<argvaluetype>
 						System.String
@@ -433,7 +433,7 @@ rxversion="8.3">
 			<arguments
 			id="52e6751a-652a-43a0-81a5-fb2615d19ece">
 				<argument
-				argname="sSelectCPU"
+				argname="SelectCPU"
 				id="5e5e8ddd-f87e-4445-b933-f1870cf98eff">
 					<argvaluetype>
 						System.String
@@ -667,7 +667,7 @@ rxversion="8.3">
 			<arguments
 			id="52e6751a-652a-43a0-81a5-fb2615d19ece">
 				<argument
-				argname="sSelectCPU"
+				argname="SelectCPU"
 				id="5e5e8ddd-f87e-4445-b933-f1870cf98eff">
 					<argvaluetype>
 						System.String
@@ -1016,7 +1016,7 @@ rxversion="8.3">
 			<arguments
 			id="52e6751a-652a-43a0-81a5-fb2615d19ece">
 				<argument
-				argname="sSelectCPU"
+				argname="SelectCPU"
 				id="5e5e8ddd-f87e-4445-b933-f1870cf98eff">
 					<argvaluetype>
 						System.String
