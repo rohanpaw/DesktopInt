@@ -8191,8 +8191,33 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
         }
 	 
-		 
+		 /********************************************************************
+		 * Function Name: VerifyDeviceUsingLabelNameOnReopen
+		 * Function Details: To verify item with label name
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 27/04/2019
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyDeviceUsingLabelNameOnReopen(string sLabel)
+		{
+			sLabelName = sLabel;
+			
+			repo.FormMe.txt_LabelNameOnReopen.Click();
+				
+			if(repo.FormMe.txt_LabelNameOnReopenInfo.Exists())
+			{
+				Report.Log(ReportLevel.Success,"Device with label name " +sLabel+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Device with label name " +sLabel+ " not is displayed correctly");
+			}
+		}
 		  
+		
+		
 	}
 }
 

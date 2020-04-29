@@ -56,7 +56,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro32xD,P405D,MX1000
+						Pro32xD,P485D,MX1000
 					</argvalue>
 				</argument>
 				<argument
@@ -195,7 +195,7 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						1
+						3
 					</argvalue>
 				</argument>
 				<argument
@@ -210,7 +210,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="rowNumber"
-				id="06679831-62a3-4af0-a15a-e2bcd43eddbd">
+				id="8605a184-8fe3-4c8a-b547-a3f4227b010e">
 					<argvaluetype>
 						System.Int32
 					</argvaluetype>
@@ -222,7 +222,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Panel_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="DeletePanel"
 		namespace="TestProject.Libraries"
@@ -234,8 +234,18 @@ rxversion="8.3">
 			<arguments
 			id="79b4c5f3-caab-423f-89c2-c486184bd5d4">
 				<argument
-				argname="NumberofPanels"
+				argname="PanelNode"
 				id="f1cd5aa0-81e0-417c-b06c-18043339add4">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node1
+					</argvalue>
+				</argument>
+				<argument
+				argname="rowNumber"
+				id="e7a75680-592c-4c63-a6a8-8d7554a8bc6f">
 					<argvaluetype>
 						System.Int32
 					</argvaluetype>
@@ -243,9 +253,24 @@ rxversion="8.3">
 						1
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="DeletePanel"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="79b4c5f3-caab-423f-89c2-c486184bd5d4">
 				<argument
 				argname="PanelNode"
-				id="e7a75680-592c-4c63-a6a8-8d7554a8bc6f">
+				id="f1cd5aa0-81e0-417c-b06c-18043339add4">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -255,7 +280,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="rowNumber"
-				id="06679831-62a3-4af0-a15a-e2bcd43eddbd">
+				id="e7a75680-592c-4c63-a6a8-8d7554a8bc6f">
 					<argvaluetype>
 						System.Int32
 					</argvaluetype>
@@ -267,54 +292,9 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Panel_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
-		methodname="DeletePanel"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="79b4c5f3-caab-423f-89c2-c486184bd5d4">
-				<argument
-				argname="NumberofPanels"
-				id="f1cd5aa0-81e0-417c-b06c-18043339add4">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelNode"
-				id="e7a75680-592c-4c63-a6a8-8d7554a8bc6f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Node3
-					</argvalue>
-				</argument>
-				<argument
-				argname="rowNumber"
-				id="06679831-62a3-4af0-a15a-e2bcd43eddbd">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						3
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyElementVisibilityInNavigationTree"
+		methodname="DeleteSinglePanel"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -324,23 +304,23 @@ rxversion="8.3">
 			<arguments
 			id="84382f8d-44fc-49db-a898-c03d8fa414d7">
 				<argument
-				argname="sExists"
+				argname="PanelNode"
 				id="ebce52a7-4cff-483f-a487-8fe6976634a2">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="TreeItemName"
-				id="b2932b8c-64a8-429e-bd10-9e437994b54a">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1
+						Node3
+					</argvalue>
+				</argument>
+				<argument
+				argname="rowNumber"
+				id="b2932b8c-64a8-429e-bd10-9e437994b54a">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						3
 					</argvalue>
 				</argument>
 			</arguments>

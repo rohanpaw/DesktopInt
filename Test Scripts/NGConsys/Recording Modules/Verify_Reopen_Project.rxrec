@@ -78,7 +78,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -145,7 +145,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDeviceUsingLabelName"
+		methodname="VerifyDeviceUsingLabelNameOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -170,7 +170,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDeviceUsingLabelName"
+		methodname="VerifyDeviceUsingLabelNameOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -195,7 +195,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDeviceUsingLabelName"
+		methodname="VerifyDeviceUsingLabelNameOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -220,7 +220,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDeviceUsingLabelName"
+		methodname="VerifyDeviceUsingLabelNameOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -243,7 +243,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="MoveScrollBarDownInPointsGrid"
 		namespace="TestProject.Libraries"
@@ -258,9 +258,9 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
-		methodname="VerifyDeviceUsingLabelName"
+		methodname="VerifyDeviceUsingLabelNameOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>

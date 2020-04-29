@@ -96,7 +96,7 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void SaveProject(string sProjectName)
 		{
-			repo.ProfileConsys1.File.Click();
+			repo.FormMe.File.Click();
 			
 			repo.FormMe.Save.Click();
 			
@@ -540,11 +540,11 @@ namespace TestProject.Libraries
 			//ActualProjectName.Equals(ExpectedProjectName)
 			if(repo.FormMe.Project_NameInfo.Exists())
 			{
-				Report.Log(ReportLevel.Success, "Project Name " +ExpectedProjectName+ "is displayed correctly");
+				Report.Log(ReportLevel.Success, "Project Name " +ExpectedProjectName+ " is displayed correctly");
 			}
 			else
 			{
-				Report.Log(ReportLevel.Failure, "Project Name " +ExpectedProjectName+ "text is not displayed correctly");
+				Report.Log(ReportLevel.Failure, "Project Name " +ExpectedProjectName+ " text is not displayed correctly");
 			}
 		}
 		
@@ -585,7 +585,6 @@ namespace TestProject.Libraries
 				
 				// Add panels using test data in excel sheet
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
-				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				//Verify Project Name
 				VerifyProjectName(sExpectedProjectNameBefore);
@@ -615,7 +614,7 @@ namespace TestProject.Libraries
 					ClickOnNavigationTreeExpander("Node");
 					
 					//Expand PFI/FIM Loop card
-					ClickOnNavigationTreeExpander(PanelType);
+					//ClickOnNavigationTreeExpander(PanelType);
 					
 					//Click on Loop A
 					ClickOnNavigationTreeItem("Built-in Loop-A");

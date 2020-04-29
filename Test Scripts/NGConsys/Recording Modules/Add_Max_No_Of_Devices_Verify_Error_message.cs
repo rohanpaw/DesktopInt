@@ -97,17 +97,17 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "126"), ValueConverter.ArgumentFromString<int>("MaxLimit", "125"));
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "126"), ValueConverter.ArgumentFromString<int>("MaxLimit", "125"));
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "126"), ValueConverter.ArgumentFromString<int>("MaxLimit", "125"));
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-D");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-D");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "126"), ValueConverter.ArgumentFromString<int>("MaxLimit", "125"));
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyErrorMessageWhenAddingMaxDevicesInMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "126"), ValueConverter.ArgumentFromString<int>("MaxLimit", "125"));
+            //Delay.Milliseconds(0);
             
         }
 

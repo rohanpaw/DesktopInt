@@ -91,6 +91,9 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesForBVT("Build_Verification_Test", "TC05_A", "TC05_B");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 20s.", new RecordItemIndex(4));
+            Delay.Duration(20000, false);
+            
         }
 
 #region Image Feature Data

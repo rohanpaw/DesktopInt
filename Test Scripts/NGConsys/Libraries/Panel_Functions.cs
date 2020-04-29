@@ -292,6 +292,7 @@ namespace TestProject.Libraries
 
 		 * Purvi Bhasin - 22/08/2019 commented Inventory_LabelCell.DoubleClick() as it causes an error
 		 * Alpesh Dhakad - 28/08/2019 - Added site node script 11/02/2020 - Added Ok button click line after new implementation
+		 * Alpesh Dhakad - 28/04/2020 - Updated script and xpaths
 		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void DeletePanel(int NumberofPanels,string PanelNode,int rowNumber )
@@ -309,9 +310,13 @@ namespace TestProject.Libraries
 				/*  If else statement added as when we have added only 1 panel and then to delete the same Xpath is different
 				 * Date : 27/11/2018
 				 * */
-				if(repo.ProfileConsys1.PanelInvetoryGrid.Inventory_LabelCellInfo.Exists())
+//				if(repo.ProfileConsys1.PanelInvetoryGrid.Inventory_LabelCellInfo.Exists())
+//				{
+//					repo.ProfileConsys1.PanelInvetoryGrid.Inventory_LabelCell.Click();
+//				}
+				if(repo.FormMe.PanelNodeNameInfo.Exists())
 				{
-					repo.ProfileConsys1.PanelInvetoryGrid.Inventory_LabelCell.Click();
+					repo.FormMe.PanelNodeName.Click();
 				}
 				else
 				{
@@ -323,21 +328,22 @@ namespace TestProject.Libraries
 				Common_Functions.clickOnDeleteButton();
 				
 				repo.FormMe2.ButtonOK.Click();
+				Report.Log(ReportLevel.Info," Panel deleted " +PanelNode + " deleted successfully  ");
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 				
 				
-				Common_Functions.clickOnPanelNetworkTab();
-				//repo.ProfileConsys1.PanelInvetoryGrid.Inventory_LabelCell.DoubleClick();
-				if(repo.ProfileConsys1.PanelInvetoryGrid.LabelNameInfo.Exists())
-				{
-					Report.Log(ReportLevel.Failure, "Panel with label name: "+sLabelName+" is not deleted successfully");
-				}
-				else
-				{
-					Report.Log(ReportLevel.Success, "Panel with label name: "+sLabelName+" is deleted successfully");
-				}
+//				Common_Functions.clickOnPanelNetworkTab();
+//				//repo.ProfileConsys1.PanelInvetoryGrid.Inventory_LabelCell.DoubleClick();
+//				if(repo.ProfileConsys1.PanelInvetoryGrid.LabelNameInfo.Exists())
+//				{
+//					Report.Log(ReportLevel.Failure, "Panel with label name: "+sLabelName+" is not deleted successfully");
+//				}
+//				else
+//				{
+//					Report.Log(ReportLevel.Success, "Panel with label name: "+sLabelName+" is deleted successfully");
+//				}
 				
 			}
 		}
@@ -945,7 +951,65 @@ namespace TestProject.Libraries
 			}
 		}
 		
+		/****************************************************************************************************************************************
+		 * Function Name: DeletePanel
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update
+		 ****************************************************************************************************************************************/
+		[UserCodeMethod]
+		public static void DeletePanel(string PanelNode,int rowNumber )
+		{
+				sRow = rowNumber.ToString();
+				sLabelName=PanelNode;
+				
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+				
+				
+				repo.FormMe.PanelNodeName.Click();
+				
+				Thread.Sleep(300);
+				
+				Common_Functions.clickOnDeleteButton();
+				
+				repo.FormMe2.ButtonOK.Click();
+				
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+		}
 		
+		/****************************************************************************************************************************************
+		 * Function Name: DeletePanel
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update
+		 ****************************************************************************************************************************************/
+		[UserCodeMethod]
+		public static void DeleteSinglePanel(string PanelNode,int rowNumber )
+		{
+				sRow = rowNumber.ToString();
+				sLabelName=PanelNode;
+				
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+				
+				
+				repo.FormMe.SinglePanel.Click();
+				
+				Thread.Sleep(300);
+				
+				Common_Functions.clickOnDeleteButton();
+				
+				repo.FormMe2.ButtonOK.Click();
+				
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+		}
 	}
 }
 

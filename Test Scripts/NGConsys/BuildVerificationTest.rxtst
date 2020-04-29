@@ -40,6 +40,9 @@ rxversion="8.3">
 			<testcase
 			id="0a36b563-06bd-410b-8812-dadacd54e00c"
 			name="BuildVerificationTest-TC11&amp;12">
+				<description>
+					<![CDATA[<p>NGC-T44 and NGC-T45&nbsp;i.e. Verify save project and Verify opening of existing project</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -54,6 +57,9 @@ rxversion="8.3">
 			<testcase
 			id="12409c6d-aecc-412d-a521-089393cc2aca"
 			name="BuildVerificationTest-TC14">
+				<description>
+					<![CDATA[<p>NGC-T47&nbsp;Verify Copy Paste functionality</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -78,6 +84,9 @@ rxversion="8.3">
 			<testcase
 			id="166c830b-3101-40fa-ab82-5b974a98eac0"
 			name="BuildVerificationTest-TC10">
+				<description>
+					<![CDATA[<p>NGC-T43 Verify Physical layout of devices for devices present in loop</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -92,7 +101,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.13">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.14">
 					</param>
 					<param
 					name="Mode"
@@ -148,6 +157,9 @@ rxversion="8.3">
 			<testcase
 			id="2aad57d2-a38d-4f39-bf0d-124b07fdc0ba"
 			name="BuildVerificationTest-TC05">
+				<description>
+					<![CDATA[<p>NGC-T38&nbsp;Verify addition of devices to panel&nbsp; - Tested Max devices in multi point wizard for Loop A and Loop B</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -278,6 +290,9 @@ rxversion="8.3">
 			<testcase
 			id="6173c3ad-0e0f-4915-bffa-f82b550c1ba6"
 			name="BuildVerificationTest-TC09">
+				<description>
+					<![CDATA[<p>NGC-T42 Verify Properties of devices displayed in properties pane</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -306,6 +321,9 @@ rxversion="8.3">
 			<testcase
 			id="6dd0510d-7ecc-404a-acb7-b7156f43053f"
 			name="BuildVerificationTest-TC07_TC08">
+				<description>
+					<![CDATA[<p>NGC-T40 and NGC-T41&nbsp;i.e. Verify list of devices displayed in shopping list and Verify export of shopping list</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -335,7 +353,7 @@ rxversion="8.3">
 			id="7bc37423-53e0-4228-81f8-7c1b8f44f7bc"
 			name="BuildVerificationTest-TC15">
 				<description>
-					<![CDATA[Fails due to NGC-1816]]>
+					<![CDATA[<p>NGC-T48 Verify Save project functionality&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Fails due to NGC-1816</p>&nbsp;]]>
 				</description>
 				<parameters>
 					<param
@@ -393,6 +411,9 @@ rxversion="8.3">
 			<testcase
 			id="9507adf0-1595-4988-a179-03bfcecd8e18"
 			name="BuildVerificationTest-TC06">
+				<description>
+					<![CDATA[<p>NGC-T39 Verify deletion of devices from panel</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -407,6 +428,9 @@ rxversion="8.3">
 			<testcase
 			id="9af212f0-03f7-4bdb-9e0e-6f27caeb7fc7"
 			name="BuildVerificationTest-TC02_TC03">
+				<description>
+					<![CDATA[<p>NGC-T35 and NGC-T36&nbsp;i.e. Verify creation of project and Verify addition of Panels to project</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -531,6 +555,9 @@ rxversion="8.3">
 			<testcase
 			id="bf7e72f4-fac9-4d8a-985d-e553d59bc4ee"
 			name="BuildVerificationTest-TC04">
+				<description>
+					<![CDATA[<p>NGC-T37 Verify deletion of Panels from project</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -627,6 +654,9 @@ rxversion="8.3">
 			<testcase
 			id="df036250-7652-4a64-ad40-22140e7d7700"
 			name="BuildVerificationTest-TC13">
+				<description>
+					<![CDATA[<p>NGC-T46 Verify closing of project</p>]]>
+				</description>
 				<parameters>
 					<param
 					name="sListIndex"
@@ -990,7 +1020,7 @@ rxversion="8.3">
 			id="187daa63-7f01-41f8-8ea7-329d42f303ec">
 			</testcontainer>
 			<testcontainer
-			id="6173c3ad-0e0f-4915-bffa-f82b550c1ba6">
+			id="7bc37423-53e0-4228-81f8-7c1b8f44f7bc">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

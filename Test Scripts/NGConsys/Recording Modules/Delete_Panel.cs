@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "3"), "Pro32xD,P405D,MX1000", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "3"), "Pro32xD,P485D,MX1000", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node1");
@@ -91,17 +91,17 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node3");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "3"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node2", ValueConverter.ArgumentFromString<int>("rowNumber", "2"));
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.DeletePanel("Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            //Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node3", ValueConverter.ArgumentFromString<int>("rowNumber", "3"));
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.DeletePanel("Node2", ValueConverter.ArgumentFromString<int>("rowNumber", "2"));
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "Node1");
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.DeleteSinglePanel("Node3", ValueConverter.ArgumentFromString<int>("rowNumber", "3"));
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "Node2");
             Delay.Milliseconds(0);

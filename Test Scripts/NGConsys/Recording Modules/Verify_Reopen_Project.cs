@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -94,23 +94,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPointsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LPBS 3000 - 1");
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelNameOnReopen("LPBS 3000 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 3");
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelNameOnReopen("801 CH - 3");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 PH - 4");
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelNameOnReopen("801 PH - 4");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LPBS 3000 - 14");
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelNameOnReopen("LPBS 3000 - 14");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.MoveScrollBarDownInPointsGrid();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.MoveScrollBarDownInPointsGrid();
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("LI800");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyDeviceUsingLabelNameOnReopen("LI800");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("CP 830", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
             Delay.Milliseconds(0);

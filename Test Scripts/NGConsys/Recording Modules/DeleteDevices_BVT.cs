@@ -79,8 +79,14 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Devices_Functions.DeleteDevices("Build_Verification_Test", "TC06");
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(0));
+            Delay.Duration(10000, false);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelName("801 PH - 4");
             Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.DeleteDevices("Build_Verification_Test", "TC06");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "12"));
             Delay.Milliseconds(0);
