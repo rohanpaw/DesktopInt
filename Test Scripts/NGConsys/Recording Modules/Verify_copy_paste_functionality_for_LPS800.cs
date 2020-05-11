@@ -115,8 +115,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnButton("Copy");
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy1' at Center.", repo.FormMe.btn_Copy1Info, new RecordItemIndex(12));
-            //repo.FormMe.btn_Copy1.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_Copy' at Center.", repo.FormMe.btn_CopyInfo, new RecordItemIndex(12));
+            //repo.FormMe.btn_Copy.Click();
             //Delay.Milliseconds(200);
             
             Libraries.Common_Functions.changeConfiguratonToWPF();

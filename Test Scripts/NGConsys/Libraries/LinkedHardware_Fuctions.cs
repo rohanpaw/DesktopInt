@@ -178,7 +178,7 @@ namespace TestProject.Libraries
 				Devices_Functions.SelectRowUsingLabelName(LabelName);
 				
 				//Click on copy
-				repo.FormMe.btn_Copy1.Click();
+				repo.FormMe.btn_Copy.Click();
 				
 				//Click on Loop A
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");

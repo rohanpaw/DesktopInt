@@ -233,7 +233,7 @@ namespace TestProject.Libraries
 				string ActualInventoryGridProperty = repo.FormMe.txt_PointGridProperties.TextValue;
 				
 				// Compare Actual and Expected Point Grid Row count
-				Report.Log(ReportLevel.Success,"Actual " +ActualInventoryGridProperty+ "  Expected " +ExpectedDeviceProperty);
+				Report.Log(ReportLevel.Info,"Actual " +ActualInventoryGridProperty+ "  Expected " +ExpectedDeviceProperty);
 				
 				if(ActualInventoryGridProperty.Equals(ExpectedDeviceProperty))
 				{
@@ -356,8 +356,6 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyInventoryDeviceProperty(string sPropertyLabel, string sExpectedValue)
 		{
-			try{
-			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
@@ -392,8 +390,7 @@ namespace TestProject.Libraries
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 			
-			}catch(Exception e){
-				Report.Log(ReportLevel.Info,"Exception occurred"+e.Message);}
+			
 		}
 		
 		

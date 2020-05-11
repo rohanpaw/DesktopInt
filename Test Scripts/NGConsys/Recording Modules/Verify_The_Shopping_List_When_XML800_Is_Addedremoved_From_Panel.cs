@@ -116,13 +116,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("XLM800-C");
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("XLM800-C");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(14));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(15));
             //repo.ProfileConsys1.btn_Delete.Click();
             //Delay.Milliseconds(200);
             
@@ -138,7 +141,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnShoppingListTab();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(19));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_ShoppingList' at Center.", repo.FormMe.tab_ShoppingListInfo, new RecordItemIndex(20));
             //repo.FormMe.tab_ShoppingList.Click();
             //Delay.Milliseconds(200);
             

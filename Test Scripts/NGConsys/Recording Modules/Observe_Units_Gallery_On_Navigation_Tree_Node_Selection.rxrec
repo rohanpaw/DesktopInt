@@ -295,7 +295,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PCH800
+						PCH800 5.0A
 					</argvalue>
 				</argument>
 				<argument
@@ -475,7 +475,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PR1 D2
+						PR1D2
 					</argvalue>
 				</argument>
 				<argument
@@ -547,7 +547,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
@@ -840,7 +840,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PCH800
+						PCH800 5.0A
 					</argvalue>
 				</argument>
 				<argument
@@ -1020,7 +1020,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PR1 D2
+						PR1D2
 					</argvalue>
 				</argument>
 				<argument
@@ -1092,7 +1092,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
@@ -1137,7 +1137,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -1475,7 +1475,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PCH800
+						PCH800 5.0A
 					</argvalue>
 				</argument>
 				<argument
@@ -1655,7 +1655,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PR1 D2
+						PR1D2
 					</argvalue>
 				</argument>
 				<argument
@@ -1727,7 +1727,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
@@ -2065,7 +2065,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PCH800
+						PCH800 5.0A
 					</argvalue>
 				</argument>
 				<argument
@@ -2245,7 +2245,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PR1 D2
+						PR1D2
 					</argvalue>
 				</argument>
 				<argument
@@ -2317,7 +2317,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
@@ -2630,7 +2630,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PCH800
+						PCH800 5.0A
 					</argvalue>
 				</argument>
 				<argument
@@ -2810,7 +2810,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PR1 D2
+						PR1D2
 					</argvalue>
 				</argument>
 				<argument
@@ -2882,7 +2882,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
@@ -2927,7 +2927,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -3220,7 +3220,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PCH800
+						PCH800 5.0A
 					</argvalue>
 				</argument>
 				<argument
@@ -3400,7 +3400,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PR1 D2
+						PR1D2
 					</argvalue>
 				</argument>
 				<argument
@@ -3472,7 +3472,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"
@@ -3560,46 +3560,6 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="clickOnDeleteButton"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="SelectInventoryGridRow"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="0d2e0e0a-3f80-4cea-a8b0-8da33314be22">
-				<argument
-				argname="sRowNumber"
-				id="b9d36292-5458-48ee-be6e-03905ab9698e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
 						7
 					</argvalue>
 				</argument>
@@ -3640,7 +3600,47 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						7
+						8
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnDeleteButton"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectInventoryGridRow"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0d2e0e0a-3f80-4cea-a8b0-8da33314be22">
+				<argument
+				argname="sRowNumber"
+				id="b9d36292-5458-48ee-be6e-03905ab9698e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						8
 					</argvalue>
 				</argument>
 			</arguments>
@@ -3860,7 +3860,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PCH800
+						PCH800 5.0A
 					</argvalue>
 				</argument>
 				<argument
@@ -4040,7 +4040,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PR1 D2
+						PR1D2
 					</argvalue>
 				</argument>
 				<argument
@@ -4112,7 +4112,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyNodeGalleryForPFI"
 		namespace="TestProject.Libraries"

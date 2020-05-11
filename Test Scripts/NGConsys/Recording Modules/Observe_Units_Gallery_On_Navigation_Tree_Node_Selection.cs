@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PLX800", "Loops", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800", "Slot Cards", "Enabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800 5.0A", "Slot Cards", "Enabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PNI800", "Slot Cards", "Enabled");
@@ -109,14 +109,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MPM800", "Miscellaneous", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1 D2", "Miscellaneous", "Enabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1D2", "Miscellaneous", "Enabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("Generic 3rd Party Interface", "Printers", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
@@ -136,7 +136,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PLX800", "Loops", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800", "Slot Cards", "Disabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800 5.0A", "Slot Cards", "Disabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PNI800", "Slot Cards", "Disabled");
@@ -148,17 +148,17 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MPM800", "Miscellaneous", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1 D2", "Miscellaneous", "Enabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1D2", "Miscellaneous", "Enabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("Generic 3rd Party Interface", "Printers", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
@@ -181,7 +181,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PLX800", "Loops", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800", "Slot Cards", "Disabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800 5.0A", "Slot Cards", "Disabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PNI800", "Slot Cards", "Disabled");
@@ -193,14 +193,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MPM800", "Miscellaneous", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1 D2", "Miscellaneous", "Enabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1D2", "Miscellaneous", "Enabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("Generic 3rd Party Interface", "Printers", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
             Delay.Milliseconds(0);
@@ -223,7 +223,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PLX800", "Loops", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800", "Slot Cards", "Disabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800 5.0A", "Slot Cards", "Disabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PNI800", "Slot Cards", "Disabled");
@@ -235,14 +235,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MPM800", "Miscellaneous", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1 D2", "Miscellaneous", "Disabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1D2", "Miscellaneous", "Disabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("Generic 3rd Party Interface", "Printers", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PZ4DS", "Attached Functionality", "Enabled");
             Delay.Milliseconds(0);
@@ -262,7 +262,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PLX800", "Loops", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800", "Slot Cards", "Disabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800 5.0A", "Slot Cards", "Disabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PNI800", "Slot Cards", "Disabled");
@@ -274,17 +274,17 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MPM800", "Miscellaneous", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1 D2", "Miscellaneous", "Disabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1D2", "Miscellaneous", "Disabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("Generic 3rd Party Interface", "Printers", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane");
             Delay.Milliseconds(0);
@@ -304,7 +304,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PLX800", "Loops", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800", "Slot Cards", "Enabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800 5.0A", "Slot Cards", "Enabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PNI800", "Slot Cards", "Enabled");
@@ -316,31 +316,31 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MPM800", "Miscellaneous", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1 D2", "Miscellaneous", "Disabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1D2", "Miscellaneous", "Disabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("Generic 3rd Party Interface", "Printers", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Disabled");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectInventoryGridRow("6");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnDeleteButton();
-            Delay.Milliseconds(0);
-            
             Libraries.Devices_Functions.SelectInventoryGridRow("7");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectInventoryGridRow("7");
+            Libraries.Devices_Functions.SelectInventoryGridRow("8");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("8");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
@@ -358,7 +358,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PLX800", "Loops", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800", "Slot Cards", "Enabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PCH800 5.0A", "Slot Cards", "Enabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PNI800", "Slot Cards", "Enabled");
@@ -370,14 +370,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("MPM800", "Miscellaneous", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1 D2", "Miscellaneous", "Enabled");
+            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("PR1D2", "Miscellaneous", "Enabled");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyNodeGalleryForPFI("Generic 3rd Party Interface", "Printers", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyNodeGalleryForPFI("LCD800", "Printers", "Enabled");
+            //Delay.Milliseconds(0);
             
         }
 

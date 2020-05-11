@@ -88,8 +88,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -127,8 +127,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
             Delay.Milliseconds(0);
@@ -166,7 +166,7 @@ namespace TestProject.Recording_Modules
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Address", "8");
             //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "TEXT-5");
+            Libraries.InventoryGrid_Functions.editDeviceLabel("7", "Label", "TEXT-5");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.SaveProjectFromFileOption("418_81");
@@ -184,11 +184,11 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-6 (0 of 125)");
             Delay.Milliseconds(0);

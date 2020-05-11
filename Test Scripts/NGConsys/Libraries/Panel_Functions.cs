@@ -152,7 +152,10 @@ namespace TestProject.Libraries
 				}
 				repo.ProfileConsys1.btnDropDownPanelsGallery.Click();
 				
+				//repo.FormMe.btn_AllGalleryDropdown.Click();
+				
 				repo.ContextMenu.txt_SelectPanel.Click();
+				
 				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
 				iAddress=i+1;
 				Address =iAddress.ToString();
@@ -327,7 +330,9 @@ namespace TestProject.Libraries
 				
 				Common_Functions.clickOnDeleteButton();
 				
-				repo.FormMe2.ButtonOK.Click();
+				//repo.FormMe2.ButtonOK.Click();
+				
+				repo.FormDeletePanel.btn_Ok_DeletePanel.Click();
 				Report.Log(ReportLevel.Info," Panel deleted " +PanelNode + " deleted successfully  ");
 				
 				// Click on Site node

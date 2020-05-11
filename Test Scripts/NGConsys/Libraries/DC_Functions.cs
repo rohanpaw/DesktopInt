@@ -1183,7 +1183,7 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
 			
 			//Copy Devices
-			repo.FormMe.btn_Copy1.Click();
+			repo.FormMe.btn_Copy.Click();
 			
 			// Click on Loop C node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");

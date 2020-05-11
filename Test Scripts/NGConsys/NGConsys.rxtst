@@ -1177,7 +1177,7 @@ rxversion="8.3">
 			id="0fc53bd4-0bdf-43bf-98da-406f0d7c5914"
 			name="Accessories_Gallery_Update_On_Max_Limit_Of_IOB/FB/PCS/POS_Supported_By_Panel_Is_Reached">
 				<description>
-					<![CDATA[<p>NGC-390/TC-61</p>]]>
+					<![CDATA[<p>NGC-390/TC-61&nbsp; Excel sheet not available</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -1337,7 +1337,7 @@ rxversion="8.3">
 			id="11cb5c8d-38a9-4f65-9fa2-4dc0bbc3e5f5"
 			name="Verify_persistance_Of_Loop_Properties_on_Copy_Paste">
 				<description>
-					<![CDATA[<p>NGC-373/TC-53 Address inventory row is disabled as this feature is removed. Address column removed from points grid</p>]]>
+					<![CDATA[<p>NGC-373/TC-53 Address inventory row is disabled as this feature is removed. Address column removed from points grid</p><p>AddDevicesfromMultiplePointWizardWithRegion step replaced by AddDeviceGallery Method</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -1817,7 +1817,7 @@ rxversion="8.3">
 			id="17c9e370-efd0-4dec-ad11-5fbe9d5fa378"
 			name="Verify_Deletion_Of_Slot_Loop_Cards_From_In_Built_Backplane">
 				<description>
-					<![CDATA[<p>NGC-362/TC-14</p>]]>
+					<![CDATA[<p>NGC-362/TC-14 Delete button not having enabled properties so not verified those steps</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -2620,7 +2620,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.9">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.14">
 					</param>
 					<param
 					name="Mode"
@@ -3314,7 +3314,7 @@ rxversion="8.3">
 			id="2bb77d07-695c-4f1f-97c9-ad3d54e10be8"
 			name="Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB">
 				<description>
-					<![CDATA[<p>NGC-360/TC-27/TC-28/Defect-1559/Defect-1545 . Defect 2654,2623</p><p>Note : Defect 1545 and 1565 was not completed automated so need to test it manually</p>]]>
+					<![CDATA[<p>NGC-360/TC-27/TC-28/Defect-1545 . </p><p>Note : Defect 1545 was not completed automated so need to test it manually</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -5742,6 +5742,19 @@ rxversion="8.3">
 			ref="f69d2f4f-43ff-4af5-8eb0-93ab363e0967"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="4c8ece5d-1e6b-403f-a05d-cb2489eeb5d9"
+			name="Verify_Gallery_If_Max_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS">
+				<description>
+					<![CDATA[<p>NGC-158/TC-68 For RBUS related is automated in this and for&nbsp;Slotcards/Loops it is&nbsp;with TC-61</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="4cc1a4c2-3ba3-45eb-8d65-8ed3eff2891f"
 			name="Create_Project"
@@ -6868,7 +6881,7 @@ rxversion="8.3">
 			id="595fd481-b6cf-43cf-92a7-40db4df3f9b3"
 			name="Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached">
 				<description>
-					<![CDATA[<p>NGC-390/TC-61/TC-68 Executed with wrong test data to get executed, now updated test data as expected</p>]]>
+					<![CDATA[<p>NGC-390/TC-61/TC-68</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7500,6 +7513,20 @@ rxversion="8.3">
 					<var
 					dataname="sListIndex"
 					datasourceid="ca49c61e-e537-43f7-80ff-01d04df19cb5"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="61a12311-3365-4783-b107-d7034a4bf86a"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="4c8ece5d-1e6b-403f-a05d-cb2489eeb5d9"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
 					</var>
@@ -8493,6 +8520,12 @@ rxversion="8.3">
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="6ea908dc-8a9f-4a49-ba66-f8976b49c858"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			enabled="False"
@@ -9998,6 +10031,26 @@ MxDesigner]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="82d8e87b-9548-4ed6-a1be-f3ef93b6f731"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="82f3516b-1308-4b59-ab2b-4fd254191724"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -10641,7 +10694,7 @@ MxDesigner]]>
 			id="899247e0-cc68-477d-9853-2c6d810ea13c"
 			name="Verify_Persistance_Of_Region_Name_Property_On_Copy_Paste">
 				<description>
-					<![CDATA[<p>NGC-373/TC-55 Address inventory row is disabled as this feature is removed. Address column removed from points grid</p>]]>
+					<![CDATA[<p>NGC-373/TC-55 Address inventory row is disabled as this feature is removed. Address column removed from points grid</p><p>Also, paste button enabled step is disabled as its properties are not available in new internal structure of application.81.2.14</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -12328,7 +12381,7 @@ div.WordSection1
 			id="a0f00c7a-352a-4ea6-8590-7d09ca6a596f"
 			name="Verify_Paste_Options_Displayed_For_Loop">
 				<description>
-					<![CDATA[NGC-372/TC-31]]>
+					<![CDATA[NGC-372/TC-31 Defect-2654]]>
 				</description>
 				<parameters>
 					<param
@@ -15139,7 +15192,7 @@ persisted in panel properties&nbsp;]]>
 			id="cdbd11ed-c284-43f3-8080-7bc5dcad544a"
 			name="Verify_Adding_And_Removing_Of_TLI800_And_TLI800EN_From_Accessory_Gallery">
 				<description>
-					<![CDATA[<p>NGC-1031/TC-54167</p>]]>
+					<![CDATA[<p>NGC-1031/TC-54167 Test case obsolete</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -15429,7 +15482,7 @@ persisted in panel properties&nbsp;]]>
 			id="d1da618b-b2cb-48f3-b850-bfaa48518970"
 			name="Verify_Persistance_Of_Region_Name_Property_On_Cut_Paste">
 				<description>
-					<![CDATA[<p>NGC-373/TC-56 Address inventory row is disabled as this feature is removed. Address column removed from points grid</p>]]>
+					<![CDATA[<p>NGC-373/TC-56 Address inventory row is disabled as this feature is removed. Address column removed from points grid</p><p>Also, paste button enabled step is disabled as its properties are not available in new internal structure of application.81.2.14</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -15779,7 +15832,7 @@ persisted in panel properties&nbsp;]]>
 			id="d600789f-44ee-4896-a3d1-a08d1c4f8ff8"
 			name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste">
 				<description>
-					<![CDATA[NGC-373/TC-54]]>
+					<![CDATA[<p>NGC-373/TC-54 AddDevicesfromMultiplePointWizardWithRegion step replaced by AddDeviceGallery Method</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16236,6 +16289,12 @@ persisted in panel properties&nbsp;]]>
 			id="dd51e290-a235-4061-87b9-aa76192f7900"
 			name="Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List"
 			ref="1976ae21-1814-492b-875e-dde83f646d7c"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ddb540d5-c227-4e8d-8857-5caeae8e4f48"
+			name="Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS"
+			ref="07119e2b-7fde-4c16-857a-a2c792fb5dbd"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -18853,6 +18912,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed"
+					name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
+						<testmodule
+						id="81a008d8-1090-4063-a8de-407d145100c5"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="54f863cd-7f1f-4e8f-9f97-274d50abab86"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="d263ab6b-d835-4ce4-bebb-f14e65e93145"
+						name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
+						</testmodule>
+						<testmodule
+						id="c32910a7-ec4d-4273-872b-c8c281f2645a"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="c902363f-68fc-4135-ae09-f1a7b9746129"
 					name="Verify_Repeaters_Gallery_Items">
 						<testmodule
@@ -18893,26 +18972,6 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
-					id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed"
-					name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
-						<testmodule
-						id="81a008d8-1090-4063-a8de-407d145100c5"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="54f863cd-7f1f-4e8f-9f97-274d50abab86"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="d263ab6b-d835-4ce4-bebb-f14e65e93145"
-						name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
-						</testmodule>
-						<testmodule
-						id="c32910a7-ec4d-4273-872b-c8c281f2645a"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="259f8d52-f0c3-4774-abcb-474b5e48cdd3"
 					name="Verify_Miscellaneous_Gallery">
 						<testmodule
@@ -18949,6 +19008,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="373e0a84-b40d-4efe-adf1-8cbbf79700e1"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="4c8ece5d-1e6b-403f-a05d-cb2489eeb5d9"
+					name="Verify_Gallery_If_Max_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS">
+						<testmodule
+						id="82d8e87b-9548-4ed6-a1be-f3ef93b6f731"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="61a12311-3365-4783-b107-d7034a4bf86a"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="ddb540d5-c227-4e8d-8857-5caeae8e4f48"
+						name="Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS">
+						</testmodule>
+						<testmodule
+						id="6ea908dc-8a9f-4a49-ba66-f8976b49c858"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
@@ -24666,6 +24745,12 @@ persisted in panel properties&nbsp;]]>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="540564b6-2b87-4fc5-b5fb-2f193318262a">
+			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="Voltage_Calculation">

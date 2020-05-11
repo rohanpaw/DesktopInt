@@ -82,32 +82,32 @@ namespace TestProject.Recording_Modules
             Libraries.SlotCards_Functions.VerifyAddUnitDetails("TC_27_28_Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB", "Add Devices");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.SlotCards_Functions.VerifyAdditionOfDevicesInBackplaneWithOnePanel("TC_27_28_Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB", "Defect 1559");
-            Delay.Milliseconds(0);
+            //Libraries.SlotCards_Functions.VerifyAdditionOfDevicesInBackplaneWithOnePanel("TC_27_28_Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB", "Defect 1559");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("POS800-S-1");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.SelectRowUsingLabelName("POS800-S-1");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnDeleteButton();
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnDeleteButton();
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyNodeGallery("PCH800 5.0A\r\n", "Slot Cards", "Disabled", "");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyNodeGallery("PCH800 5.0A\r\n", "Slot Cards", "Disabled", "");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            //Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "PanelNode", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "PanelNode", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            //Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
@@ -118,19 +118,19 @@ namespace TestProject.Recording_Modules
             Libraries.SlotCards_Functions.VerifyAdditionOfDevicesInBackplaneWithOnePanel("TC_27_28_Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB", "Defect 1545");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (3 of 18)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("IOB800-1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("IOB800-1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("FB800-1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("FB800-1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
@@ -148,32 +148,35 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("FB800", "Accessories", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "PanelNode", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "PanelNode", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "PanelNode", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
+            //Delay.Milliseconds(0);
             
-            Libraries.SlotCards_Functions.VerifyAdditionOfDevicesInBackplaneWithOnePanel("TC_27_28_Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB", "Defect 1545(2)");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
+            //Libraries.SlotCards_Functions.VerifyAdditionOfDevicesInBackplaneWithOnePanel("TC_27_28_Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB", "Defect 1545(2)");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("IOB800", "Accessories", "Disabled");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("FB800", "Accessories", "Disabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("IOB800", "Accessories", "Disabled");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("FB800", "Accessories", "Disabled");
+            //Delay.Milliseconds(0);
             
         }
 

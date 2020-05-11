@@ -520,6 +520,18 @@
       <UserCode>true</UserCode>
       <id>7297f217-6730-4bf4-a6d3-e80e5d1a997b</id>
     </Compile>
+    <Compile Include="Recording Modules\Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS.cs">
+      <BoundTo>08ea4a07-3070-4ad9-af0f-8f1208d78036</BoundTo>
+      <DependentUpon>Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>90f97d1a-2312-4ce0-b864-5275698bd1c2</id>
+    </Compile>
+    <Compile Include="Recording Modules\Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS.UserCode.cs">
+      <BoundTo>08ea4a07-3070-4ad9-af0f-8f1208d78036</BoundTo>
+      <DependentUpon>Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e93fd2a9-b8b6-4733-8788-c629a2db0369</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop_FC.cs">
       <BoundTo>2957e9b0-0ca7-4a44-bfb8-2a84dc4f5da8</BoundTo>
       <DependentUpon>Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop_FC.rxrec</DependentUpon>
@@ -4478,6 +4490,11 @@
       <recordtableid>773e468a-067e-4503-a291-e3f9eeebaeba</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>08ea4a07-3070-4ad9-af0f-8f1208d78036</id>
+      <recordtableid>07119e2b-7fde-4c16-857a-a2c792fb5dbd</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop_FC.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>2957e9b0-0ca7-4a44-bfb8-2a84dc4f5da8</id>
@@ -5434,9 +5451,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Node_Selection_In_Project_View_On_Addition_Of_Slot_Loop_Cards.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>ae971108-ec40-4ab0-a33d-cddde14293fe</id>
       <recordtableid>ba6dd588-d09e-4129-90d8-3e957f51a889</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Non_IS_Devices_Drag_And_Drop_On_Non_Addressable_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -5519,9 +5536,9 @@
       <recordtableid>a0907639-5534-4952-a6c8-39af9cde9674</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_persistance_Of_Loop_Properties_on_Copy_Paste.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>caad22e2-73a9-4304-849b-49e5881ed310</id>
       <recordtableid>4a0775d8-a68f-48c8-b0fa-9133aa087947</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Persistance_Of_Loop_Properties_on_Cut_Paste.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

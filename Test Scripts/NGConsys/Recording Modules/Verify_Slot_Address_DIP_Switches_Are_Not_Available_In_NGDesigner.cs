@@ -85,7 +85,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyDIPSwitches();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("PNI800-2");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PNI800-2");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyDIPSwitches();

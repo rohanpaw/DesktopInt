@@ -97,7 +97,10 @@ namespace TestProject.Recording_Modules
             Libraries.SlotCards_Functions.VerifyAccessoriesGalleryUpdateOnMaxLimitSupportedByPanel("TC_61_Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached", "Add Devices");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("IOB800-1");
+            //Libraries.Devices_Functions.SelectRowUsingLabelName("IOB800-1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectFirstRowUsingLabelNameFromPanelAccessoriesTab("IOB800-1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
@@ -127,7 +130,16 @@ namespace TestProject.Recording_Modules
             Libraries.SlotCards_Functions.VerifyAccessoriesGalleryUpdateOnMaxLimitSupportedByPanel("TC_61_Verify_Accessories_Gallery_Update_On_Max_Limit_Of_IOB_FB_PCS_POS_Supported_By_Panel_Is_Reached", "Add POS Devices");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("POS800-M-7");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.SelectRowUsingLabelName("POS800-M-7");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectFirstRowUsingLabelNameFromPanelAccessoriesTab("POS800-M-1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();

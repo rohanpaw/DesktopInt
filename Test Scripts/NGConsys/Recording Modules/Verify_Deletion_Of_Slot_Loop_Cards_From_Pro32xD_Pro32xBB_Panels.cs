@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
             Delay.Milliseconds(0);
@@ -106,41 +106,39 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
             //Delay.Milliseconds(0);
             
             try {
-                Libraries.Common_Functions.verifyDeleteButtonState(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
-                Delay.Milliseconds(0);
+                //Libraries.Common_Functions.verifyDeleteButtonState(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
+                //Delay.Milliseconds(0);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(11)); }
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
             
-            //Libraries.Common_Functions.VerifyNavigationTreeItemText("Backplane");
+            //Libraries.Common_Functions.VerifyNavigationTreeItemText("Node1");
             //Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.VerifyDeleteButton(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
             //Delay.Milliseconds(0);
             
-            try {
-                Libraries.Common_Functions.verifyDeleteButtonState(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(15)); }
+            //Libraries.Common_Functions.verifyDeleteButtonState(ValueConverter.ArgumentFromString<bool>("isReadOnly", "False"));
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("PCH800 5.0A-3");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PCH800 5.0A-3");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.verifyDeleteButtonState(ValueConverter.ArgumentFromString<bool>("isReadOnly", "True"));

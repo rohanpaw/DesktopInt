@@ -82,8 +82,8 @@ namespace TestProject.Recording_Modules
             Libraries.SlotCards_Functions.VerifyMaxLimitForRepeatersSupportedByPanelOnEthernet("TC_68_Verify_Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel", "Add Devices On Ethernet");
             Delay.Milliseconds(0);
             
-            Libraries.SlotCards_Functions.VerifyMaxLimitForRepeatersSupportedByPanelOnRBus("TC_68_Verify_Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel", "Add Devices on RBus");
-            Delay.Milliseconds(0);
+            //Libraries.SlotCards_Functions.VerifyMaxLimitForRepeatersSupportedByPanelOnRBus("TC_68_Verify_Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel", "Add Devices on RBus");
+            //Delay.Milliseconds(0);
             
         }
 

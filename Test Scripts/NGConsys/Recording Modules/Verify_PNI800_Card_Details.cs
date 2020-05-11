@@ -98,15 +98,15 @@ namespace TestProject.Recording_Modules
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PNI800", "Slot Cards", "PFI");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PNI800-1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PNI800-1");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "SKU", "557.202.844");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "SKU", "557.202.844");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "PNI800");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Model", "PNI800");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Connection", "Backplane");
             
-            Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "PNI800-3");
+            Libraries.InventoryGrid_Functions.editDeviceLabel("7", "Label", "PNI800-3");
             
             Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Region name", "PNI800-3");
             
@@ -114,19 +114,19 @@ namespace TestProject.Recording_Modules
             
             Libraries.Common_Functions.ReopenProject("378_4");
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PNI800-3");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PNI800-3");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "SKU", "557.202.844");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "SKU", "557.202.844");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "PNI800");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Model", "PNI800");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Connection", "Backplane");
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             
@@ -138,15 +138,15 @@ namespace TestProject.Recording_Modules
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PNI800", "Slot Cards", "PFI");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PNI800-1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PNI800-1");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "SKU", "557.202.844");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "SKU", "557.202.844");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "PNI800");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Model", "PNI800");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Connection", "Backplane");
             
-            Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "PNI800-3");
+            Libraries.InventoryGrid_Functions.editDeviceLabel("7", "Label", "PNI800-3");
             
             Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Region name", "PNI800-3");
             
@@ -154,19 +154,19 @@ namespace TestProject.Recording_Modules
             
             Libraries.Common_Functions.ReopenProject("378_4");
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PNI800-3");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PNI800-3");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "SKU", "557.202.844");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "SKU", "557.202.844");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "PNI800");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Model", "PNI800");
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Connection", "Backplane");
             
         }
 

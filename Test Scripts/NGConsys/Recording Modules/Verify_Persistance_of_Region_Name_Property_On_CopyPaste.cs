@@ -91,11 +91,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-E");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-E");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
             Delay.Milliseconds(0);
@@ -103,35 +103,50 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-E");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizardWithRegion("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "1"), "4");
+            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.AddDevicesfromMultiplePointWizardWithRegion("801 CH", ValueConverter.ArgumentFromString<int>("DeviceQty", "1"), "4");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.InventoryGrid_Functions.editDeviceLabel("7", "Label", "TEXT-H");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("8");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "TEXT-H");
+            Libraries.Devices_Functions.SelectInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectInventoryGridRow("6");
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnCopyButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPasteButton();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(22));
+            Delay.Duration(45000, false);
             
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
             //Delay.Milliseconds(0);
@@ -145,29 +160,41 @@ namespace TestProject.Recording_Modules
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "Address", "12");
             //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Label", "TEXT-9");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("11", "Label", "TEXT-9");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.editDeviceLabel("10", "Label", "TEXT-H");
+            Libraries.InventoryGrid_Functions.editDeviceLabel("11", "Label", "TEXT-H");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectInventoryGridRow("12");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("10");
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("11");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnCopyButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPasteButton();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(38));
+            Delay.Duration(45000, false);
             
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("14", "Address", "13");
             //Delay.Milliseconds(0);
@@ -181,31 +208,43 @@ namespace TestProject.Recording_Modules
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("17", "Address", "16");
             //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("14", "Label", "TEXT-13");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("15", "Label", "TEXT-13");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.editDeviceLabel("14", "Label", "TEXT-13");
+            Libraries.InventoryGrid_Functions.editDeviceLabel("15", "Label", "TEXT-13");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("16");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("14");
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("15");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnCopyButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPasteButton();
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("18", "Label", "TEXT-17");
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(54));
+            Delay.Duration(45000, false);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("19", "Label", "TEXT-17");
             Delay.Milliseconds(0);
             
         }

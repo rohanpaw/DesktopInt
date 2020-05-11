@@ -88,7 +88,10 @@ namespace TestProject.Recording_Modules
             Libraries.SlotCards_Functions.VerifyOtherSlotCardGrid("TC_41_Verify_Other_Slot_Cards_Grid", "Add Devices");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("PNI800-2");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PNI800-2");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
@@ -103,8 +106,14 @@ namespace TestProject.Recording_Modules
             Libraries.SlotCards_Functions.VerifyOtherSlotCardGrid("TC_41_Verify_Other_Slot_Cards_Grid", "Add Devices");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("PNI800-2");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PNI800-2");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.SelectRowUsingLabelName("PNI800-2");
+            //Delay.Milliseconds(0);
             
         }
 

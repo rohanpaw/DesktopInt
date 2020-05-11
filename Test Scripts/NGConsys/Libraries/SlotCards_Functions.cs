@@ -203,10 +203,10 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					//Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
 				else
@@ -345,10 +345,10 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					//Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
 				else
@@ -360,9 +360,9 @@ namespace TestProject.Libraries
 				if(ExpectedBackplane2.Equals("Yes"))
 				{
 					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
+					//Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
 				}
 				else
 				{
@@ -374,10 +374,10 @@ namespace TestProject.Libraries
 				// Verify expected backplane3
 				if(ExpectedBackplane3.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+					//Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
 						
 				}
 				else
@@ -479,10 +479,10 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
 				else
@@ -1011,6 +1011,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 03/06/2019 Alpesh Dhakad - 30/07/2019 & 20/08/2019 - Updated script as per new build updated xpath
+		 * 05/05/2020 - Alpesh Dhakad - Updated script as per new implementation
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIOBProperties(string sFileName,string sAddDevicesSheet)
@@ -1065,7 +1066,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				// // Verify and click backplane1 expander
-				Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+				//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 				
 				// Click on Panel Accessories label
 				repo.FormMe.PanelAccessoriesLabel.Click();
@@ -1085,7 +1086,7 @@ namespace TestProject.Libraries
 				//  Verify label in Search properties
 				Devices_Functions.editDeviceLabel("Label",sNewLabel);
 				
-				Devices_Functions.VerifyLabelInPanelAccessories(sNewLabel);
+				//Devices_Functions.VerifyLabelInPanelAccessories(sNewLabel);
 
 			}
 			// Close open excel file
@@ -1100,6 +1101,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 06/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
 		 * Alpesh Dhakad - 16/08/2019,19/08/2019,28/08/2019,07/09/2019 & 16/10/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 * 05/05/2020 - Alpesh Dhakad - Updated script as per new implementation
 		 **************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfDevicesInBackplaneWithOnePanel(string sFileName,string sAddDevicesSheet)
@@ -1167,6 +1169,8 @@ namespace TestProject.Libraries
 							{
 								//Devices_Functions.AddDevicesfromPanelNodeGallery(sDeviceName,sType,PanelType);
 								Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
+								
+								Thread.Sleep(3000);
 							}
 						}
 					}
@@ -1176,10 +1180,10 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					//Common_Functions.VerifyNavigationTreeItemText("Backplane");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
 				else
@@ -1207,21 +1211,21 @@ namespace TestProject.Libraries
 					
 				}
 				
-				// Verify expected backplane3
-				if(ExpectedBackplane3.Equals("Yes"))
-				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-						
-				}
-				else
-				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
-					
-					
-				}
+//				// Verify expected backplane3
+//				if(ExpectedBackplane3.Equals("Yes"))
+//				{
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+//					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+//					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+//						
+//				}
+//				else
+//				{
+//					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
+//					
+//					
+//				}
 				
 			}
 			
@@ -1288,6 +1292,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 06/06/2019  Alpesh Dhakad - 30/07/2019, 07/09/2019 - Updated script as per new build updated xpath
+		 * 05/05/2020 - Alpesh Dhakad - Updated script as per new implementation
 		 *************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDeletionOfDevicesInBackplane(string sFileName,string sAddDevicesSheet)
@@ -1316,16 +1321,17 @@ namespace TestProject.Libraries
 			
 			int.TryParse(sShoppingListCount, out shoppingListCount);
 			
-			Devices_Functions.SelectRowUsingLabelName(ThirdDeviceLabel);
+			//Devices_Functions.SelectRowUsingLabelName(ThirdDeviceLabel);
+			Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(ThirdDeviceLabel);
 			
 			Common_Functions.clickOnDeleteButton();
 			
 			// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+				//	Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
 				else
@@ -1366,6 +1372,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 07/06/2019 Alpesh Dhakad - 30/07/2019,20/08/2019 & 07/09/2019 - Updated script as per new build updated xpath
+		 * 08/05/2020 - Alpesh Dhakad - Updated script as per new implementation
 		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAccessoriesGalleryUpdateOnMaxLimitSupportedByPanel(string sFileName,string sAddDevicesSheet)
@@ -1444,10 +1451,10 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					//Common_Functions.VerifyNavigationTreeItemText("Backplane");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
 				else
@@ -1460,9 +1467,9 @@ namespace TestProject.Libraries
 				if(ExpectedBackplane2.Equals("Yes"))
 				{
 					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
+					//Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
 						
 				
 					
@@ -1475,21 +1482,21 @@ namespace TestProject.Libraries
 					
 				}
 				
-				// Verify expected backplane3
-				if(ExpectedBackplane3.Equals("Yes"))
-				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-						
-				}
-				else
-				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
-					
-					
-				}
+//				// Verify expected backplane3
+//				if(ExpectedBackplane3.Equals("Yes"))
+//				{
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+//					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+//					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+//						
+//				}
+//				else
+//				{
+//					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
+//					
+//					
+//				}
 				
 			}
 
@@ -1541,7 +1548,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				// Click on Main processor expander
-				Common_Functions.ClickOnNavigationTreeExpander("Main");
+				//Common_Functions.ClickOnNavigationTreeExpander("Main");
 				
 				// Click on Ethernet node
 				Common_Functions.ClickOnNavigationTreeItem("Ethernet");
@@ -1642,7 +1649,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				// Click on Main processor expander
-				Common_Functions.ClickOnNavigationTreeExpander("Main");
+				//Common_Functions.ClickOnNavigationTreeExpander("Main");
 				
 				// Click on R-BUS node
 				Common_Functions.ClickOnNavigationTreeItem("R-BUS");
@@ -1703,6 +1710,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 13/06/2019 Alpesh Dhakad- 29/07/2019 & 20-21/08/2019- Updated script as per new build xpath updates
+		 * 04/05/2020 - Updated script as per new UI framework changes
 		 ***********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfDevicesFromOtherSlotCards(string sFileName,string sAddDevicesSheet)
@@ -1760,17 +1768,24 @@ namespace TestProject.Libraries
 						}
 						else
 						{
-							// Click on Expander node
-							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+							// Click on Panel node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
-							// Click on Expander node
-							Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+							// Click on Panel node
+							Common_Functions.ClickOnNavigationTreeItem("Node1");
 				
-							// Click on Other slot cards tree item
-							Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
 							
 							// Click on Expander node
-							Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+							//Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+							// Click on Expander node
+							//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+				
+							// Click on Other slot cards tree item
+							//Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
+							
+							// Click on Expander node
+							//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 				
 							Common_Functions.clickOnInventoryTab();
 							
@@ -1787,10 +1802,10 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					//Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
 				else
@@ -1798,35 +1813,35 @@ namespace TestProject.Libraries
 					Common_Functions.VerifyNavigationTreeItem("Backplane", ExpectedBackplane1);
 				}
 				
-				// Verify expected backplane2
-				if(ExpectedBackplane2.Equals("Yes"))
-				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
-				}
-				else
-				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  2/3", ExpectedBackplane2);
-					
-					
-				}
+//				// Verify expected backplane2
+//				if(ExpectedBackplane2.Equals("Yes"))
+//				{
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+//					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
+//					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+//				}
+//				else
+//				{
+//					Common_Functions.VerifyNavigationTreeItem("Backplane  2/3", ExpectedBackplane2);
+//					
+//					
+//				}
 				
-				// Verify expected backplane3
-				if(ExpectedBackplane3.Equals("Yes"))
-				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-						
-				}
-				else
-				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
-					
-				}
+//				// Verify expected backplane3
+//				if(ExpectedBackplane3.Equals("Yes"))
+//				{
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+//					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+//					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+//						
+//				}
+//				else
+//				{
+//					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
+//					
+//				}
 			}
 			
 			// Close Excel
@@ -1840,6 +1855,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 13/06/2019 Alpesh Dhakad- 30/08/2019- Updated script as per new build xpath updates
+		 * 04/05/2020 Alpesh Dhakad - Updated script as per new framework
 		 ***********************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDeletionOfDevicesFromOtherSlotCards(string sFileName,string sAddDevicesSheet)
@@ -1873,16 +1889,16 @@ namespace TestProject.Libraries
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					//Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 						
-						Devices_Functions.SelectRowUsingLabelName(sLabelName);
+						Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(sLabelName);
 						Common_Functions.clickOnDeleteButton();
 						
 						Report.Log(ReportLevel.Success, "Device with " +sLabelName+ " deleted successfully");
 					
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 				}
 				else
 				{
@@ -1890,46 +1906,46 @@ namespace TestProject.Libraries
 					
 				}
 				
-				// Verify expected backplane2
-				if(ExpectedBackplane2.Equals("Yes"))
-				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
-						
-						Devices_Functions.SelectRowUsingLabelName(sLabelName);
-						Common_Functions.clickOnDeleteButton();
-						
-						Report.Log(ReportLevel.Success, "Device with " +sLabelName+ " deleted successfully");
-				
-						Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
-				}
-				else
-				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  2/3", ExpectedBackplane2);
-					
-				}				
-				
-				// Verify expected backplane3
-				if(ExpectedBackplane3.Equals("Yes"))
-				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
-						
-						Devices_Functions.SelectRowUsingLabelName(sLabelName);
-						Common_Functions.clickOnDeleteButton();
-						
-						Report.Log(ReportLevel.Success, "Device with " +sLabelName+ " deleted successfully");
-						
-						Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-				}
-				else
-				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
-					
-				}
-				
+//				// Verify expected backplane2
+//				if(ExpectedBackplane2.Equals("Yes"))
+//				{
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+//					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
+//					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
+//						
+//						Devices_Functions.SelectRowUsingLabelName(sLabelName);
+//						Common_Functions.clickOnDeleteButton();
+//						
+//						Report.Log(ReportLevel.Success, "Device with " +sLabelName+ " deleted successfully");
+//				
+//						Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
+//				}
+//				else
+//				{
+//					Common_Functions.VerifyNavigationTreeItem("Backplane  2/3", ExpectedBackplane2);
+//					
+//				}				
+//				
+//				// Verify expected backplane3
+//				if(ExpectedBackplane3.Equals("Yes"))
+//				{
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+//					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+//					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
+//						
+//						Devices_Functions.SelectRowUsingLabelName(sLabelName);
+//						Common_Functions.clickOnDeleteButton();
+//						
+//						Report.Log(ReportLevel.Success, "Device with " +sLabelName+ " deleted successfully");
+//						
+//						Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+//				}
+//				else
+//				{
+//					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
+//					
+//				}
+//				
 				
 			}
 			
@@ -1945,6 +1961,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : : 14/06/2019 Alpesh Dhakad- 30/07/2019,30/08/2019,06/09/2019 & 10/09/2019 - Updated script as per new build xpath updates
+		 * 06/05/2020 - Alpesh Dhakad - Updated script as per new implemenation
 		 ********************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyOtherSlotCardGrid(string sFileName,string sAddDevicesSheet)
@@ -2023,11 +2040,11 @@ namespace TestProject.Libraries
 					// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/1");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/1");
 					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/1");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sPLXLoopCardBackplane1);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/1");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/1");
 					
 				}
 				else
@@ -2035,35 +2052,7 @@ namespace TestProject.Libraries
 					Common_Functions.VerifyNavigationTreeItem("Backplane  1/1", ExpectedBackplane1);
 				}
 				
-				// Verify expected backplane2
-				if(ExpectedBackplane2.Equals("Yes"))
-				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  2/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane2SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  2/3");
-				}
-				else
-				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  2/3", ExpectedBackplane2);
-					
-					
-				}
 				
-				// Verify expected backplane3
-				if(ExpectedBackplane3.Equals("Yes"))
-				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-						
-				}
-				else
-				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
-					
-				}
 			}
 			
 			// Close Excel
@@ -2079,6 +2068,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 25/06/2019 Alpesh Dhakad - 29/07/2019 - Updated scripts as per new build xpaths
 		 * Alpesh Dhakad - 16/08/2019,19/08/2019,05/09/2019 & 06/09/2019 - Updated with new navigation tree method, xpath and devices gallery 
+		 * Alpesh Dhakad - 09/05/2020 Updated as per new internal structure and implemenation changes
 		 ***********************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAddUnitDetails(string sFileName,string sAddDevicesSheet)
@@ -2110,6 +2100,10 @@ namespace TestProject.Libraries
 				
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
+				// Click on Expander node
+					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				
 				for(int j=4; j<=11; j++){
 					
 					
@@ -2123,7 +2117,7 @@ namespace TestProject.Libraries
 					int.TryParse(sDeviceCount, out deviceCount);
 					
 					// Click on Expander node
-					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+					//Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 					// Verify device count and then add devices from panel accessories gallery or panel node gallery
 					if(deviceCount>0)
@@ -2155,28 +2149,28 @@ namespace TestProject.Libraries
 							}
 						}
 						
-						if(sType.Equals("Accessories"))
-						{
-							//Devices_Functions.VerifyPanelNodePanelAccessoriesGallery(sDeviceName,sType,sDeviceState);
-							Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
-						}
-						else
-						{
-							Devices_Functions.VerifyNodeGallery(sDeviceName,sType,sDeviceState,PanelType);
-						}
+//						if(sType.Equals("Accessories"))
+//						{
+//							//Devices_Functions.VerifyPanelNodePanelAccessoriesGallery(sDeviceName,sType,sDeviceState);
+//							Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
+//						}
+//						else
+//						{
+//							Devices_Functions.VerifyNodeGallery(sDeviceName,sType,sDeviceState,PanelType);
+//						}
 					}
 				}
 				
 				// Click on Expander node
-					Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				//	Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 					
 				// Verify expected backplane1
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					//Common_Functions.VerifyNavigationTreeItemText("Backplane");
 					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
 				else
@@ -2200,19 +2194,19 @@ namespace TestProject.Libraries
 				}
 				
 				// Verify expected backplane3
-				if(ExpectedBackplane3.Equals("Yes"))
-				{
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
-					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
-						
-				}
-				else
-				{
-					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
-					
-				}
+//				if(ExpectedBackplane3.Equals("Yes"))
+//				{
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+//					Common_Functions.VerifyNavigationTreeItemText("Backplane  3/3");
+//					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane3SlotCardName);
+//					Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
+//						
+//				}
+//				else
+//				{
+//					Common_Functions.VerifyNavigationTreeItem("Backplane  3/3", ExpectedBackplane3);
+//					
+//				}
 				
 			
 				// Delete Panel
@@ -2266,7 +2260,16 @@ namespace TestProject.Libraries
 				// Add panels
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
 				
-				for(int j=4; j<=10; j++){
+				// Click on Loop A node
+							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+							// Click on Expander node
+							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+						
+						
+				
+				for(int j=4; j<=10; j++)
+				{
 					
 					
 					sDeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[8,j]).Value.ToString();
@@ -2282,7 +2285,7 @@ namespace TestProject.Libraries
 							Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
 							// Click on Expander node
-							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+							//Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 							
 					
 					
@@ -2314,7 +2317,7 @@ namespace TestProject.Libraries
 								if(ExpectedBackplane1.Equals("Yes"))
 								{
 									// Click on Expander node
-									Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+									//Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 							
 									// Click on Backplane Node
 									Common_Functions.ClickOnNavigationTreeItem("Backplane");
@@ -2342,7 +2345,7 @@ namespace TestProject.Libraries
 											Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 											
 											// Click on Expander node
-											Common_Functions.ClickOnNavigationTreeExpander("Backplane");
+											//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 				
 										}
 										else
@@ -2369,10 +2372,12 @@ namespace TestProject.Libraries
 									
 								}
 								
+							// Click on Expander node
+							//Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 								
 							}
 							// Click on Expander node
-							Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+							//Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 							
 					
 				}

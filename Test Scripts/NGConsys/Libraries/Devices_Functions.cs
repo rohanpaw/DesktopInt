@@ -2804,6 +2804,8 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
 		}
 		
+		
+		
 		/********************************************************************
 		 * Function Name: RightClickOnSelectedRow
 		 * Function Details: To open the context menu options using right click
@@ -4608,6 +4610,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 24/04/2019 Alpesh Dhakad - 07/08/2019 - Updated xpath for cell_cableLength
+		 * 05/05/2020 - Alpesh Dhakad - Updated script and xpath of cell_CableLength and txt_CableLength
 		 **********************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCableLengthInNodeGalleryItems(string sCableLength)
@@ -4620,7 +4623,8 @@ namespace TestProject.Libraries
 			
 			repo.FormMe.cell_CableLength.Click();
 			
-			string actualCableLength = repo.FormMe.txt_InventoryProperty.TextValue;
+			//string actualCableLength = repo.FormMe.txt_InventoryProperty.TextValue;
+			string actualCableLength = repo.FormMe.txt_CableLength.TextValue;
 			
 			// Comparing actual and expected value
 			if(actualCableLength.Equals(sCableLength))
@@ -4642,6 +4646,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 24/04/2019  Alpesh Dhakad - 07/08/2019 - Updated xpath for spin up down button
+		 * 05/05/2020 - Alpesh Dhakad - Updated script and xpath of cell_CableLength and txt_CableLength
 		 **********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMinMaxThroughSpinControlForCableLength(string minLimit,string maxLimit)
@@ -4656,7 +4661,8 @@ namespace TestProject.Libraries
 			
 			repo.FormMe.cableLengthSpinUpButton.Click();
 			
-			string actualCableLengthValue = repo.FormMe.txt_InventoryProperty.TextValue;
+			//string actualCableLengthValue = repo.FormMe.txt_InventoryProperty.TextValue;
+			string actualCableLengthValue = repo.FormMe.txt_CableLength.TextValue;
 			
 			if(actualCableLengthValue.Equals(maxLimit))
 			{
@@ -4675,7 +4681,8 @@ namespace TestProject.Libraries
 			
 			repo.FormMe.cableLengthSpinDownButton.Click();
 			
-			actualCableLengthValue =repo.FormMe.txt_InventoryProperty.TextValue;
+			//actualCableLengthValue =repo.FormMe.txt_InventoryProperty.TextValue;
+		    actualCableLengthValue = repo.FormMe.txt_CableLength.TextValue;
 			
 			if(actualCableLengthValue.Equals(minLimit))
 			{
@@ -4855,7 +4862,7 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
 			
 			//Copy Devices
-			repo.FormMe.btn_Copy1.Click();
+			repo.FormMe.btn_Copy.Click();
 			
 			// Click on Loop C node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
@@ -5467,10 +5474,10 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
 			// Click on Site node
-			Common_Functions.ClickOnNavigationTreeItem("Site");
+			//Common_Functions.ClickOnNavigationTreeItem("Site");
 			
 			// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem("Node");
+			//Common_Functions.ClickOnNavigationTreeItem("Node");
 			
 			
 			Common_Functions.clickOnPanelAccessoriesTab();
@@ -5877,16 +5884,16 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("FOM" +"{ENTER}" );
 			
 			// Click on label cell
-			repo.FormMe.cell_Properties.Click();
+			repo.FormMe.cell_PropertiesFOM.Click();
 			
 			// Enter the value to change FOM value
-			repo.FormMe.txt_PropertiesTextValue.PressKeys((changeFOMValue) +"{ENTER}" + "{ENTER}");
+			repo.FormMe.txt_PropertiesTextValueFOM.PressKeys((changeFOMValue) +"{ENTER}" + "{ENTER}");
 			
 			// Click on label cell
-			repo.FormMe.cell_Properties.Click();
+			repo.FormMe.cell_PropertiesFOM.Click();
 			
 			// Retrieve value of label
-			string actualFOM = repo.FormMe.txt_PropertiesTextValue.TextValue;
+			string actualFOM = repo.FormMe.txt_PropertiesTextValueFOM.TextValue;
 			
 			//Comparing expected and actual changed values for FOM
 			if(actualFOM.Equals(changeFOMValue))
@@ -5928,7 +5935,7 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("MPM" +"{ENTER}" );
 			
 			// Click on label cell
-			repo.FormMe.cell_Properties.Click();
+			repo.FormMe.cell_PropertiesMPM.Click();
 
 			// To retrieve the attribute value as boolean by its ischecked properties and store in actual state
 			bool actualState =  repo.FormMe.chkbox_MPM800.GetAttributeValue<bool>("ischecked");
@@ -6193,6 +6200,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Poonam Kadam
 		 * Last Update :07/Jun/19 Alpesh Dhakad - 20/08/2019 &  30/08/2019- Updated xpath for cell_cableLength
 		 * Alpesh Dhakad - 26/11/2019 Added a step to select cable length text
+		 * 05/05/2020 - Alpesh Dhakad - Updated script and xpath of cell_CableLength and txt_CableLength
 		 *****************************************************************************************************************/
 		// Change cable length method
 		[UserCodeMethod]
@@ -6773,6 +6781,8 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void VerifyRegionNameInSearchProperties(string sRegionName)
 		{
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -8216,6 +8226,110 @@ namespace TestProject.Libraries
 			}
 		}
 		  
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelNameFromInventoryTab
+		 * Function Details: To select item from inventory grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 29/04/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameFromInventoryTab(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_LabelNameForInventory.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
+		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelNameFromInventoryTab
+		 * Function Details: To select item from inventory grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 29/04/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameFromInventoryTabOnReopen(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_LabelNameForInventoryOnReopen.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
+		
+			/********************************************************************
+		 * Function Name: VerifyLabelInPanelAccessories
+		 * Function Details: To verify label text  in Panel Accessories
+		 * Parameter/Arguments:expected Label text
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 07/05/2020
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyLabelInPanelAccessoriesOnReopen(string sLabel)
+		{
+			repo.FormMe.PanelAccessoriesLabelOnReopen.Click();
+			
+			// Retrieve value of label
+			string actualLabel = repo.FormMe.PanelAccessoriesLabelOnReopen.TextValue;
+			
+			// Comparing actualLabel and sLabel values
+			if(actualLabel.Equals(sLabel))
+			{
+				Report.Log(ReportLevel.Success,"Label text " +actualLabel+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Label text is displayed as "+actualLabel+ " instead of "+ sLabel);
+			}
+		}
+		
+		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelNameFromInventoryTab
+		 * Function Details: To select item from inventory grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 29/04/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectFirstRowUsingLabelNameFromPanelAccessoriesTab(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.PanelAccessoriesLabel.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
+		
+		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelName
+		 * Function Details: To select item from grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Shweta Bhosale
+		 * Last Update : 21/2/2019 Alpesh Dhakad - 31/01/2020 Added xpath and updated below script
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameOnPLXLoop(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_LabelNameOnPLXLoop.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
 		
 		
 	}

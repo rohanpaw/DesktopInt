@@ -610,7 +610,7 @@ namespace TestProject.Libraries
 				
 				
 				// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 				//Close excel sheet and read it values,
 				Excel_Utilities.CloseExcel();
@@ -635,7 +635,7 @@ namespace TestProject.Libraries
 					string ExpectedGalleryName = repo.ContextMenu.Device_Name.TextValue;
 					
 					// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 					if(GalleryName.Equals(ExpectedGalleryName))
 					{
@@ -780,7 +780,7 @@ namespace TestProject.Libraries
 				
 				
 				// Click on Panel node
-			Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 			
 				//Close excel sheet and read it values,
 				Excel_Utilities.CloseExcel();
@@ -890,7 +890,7 @@ namespace TestProject.Libraries
 		{
 			if(isEnabled)
 			{
-				if(repo.FormMe.ButtonCut1.Enabled)
+				if(repo.FormMe.btn_Cut.Enabled)
 				{
 					Report.Log(ReportLevel.Success,"Cut button state is as expected");
 				}
@@ -901,7 +901,7 @@ namespace TestProject.Libraries
 			}
 			else 
 			{
-				if(repo.FormMe.ButtonCut1.Enabled)
+				if(repo.FormMe.btn_Cut.Enabled)
 				{
 					Report.Log(ReportLevel.Failure,"Cut button state is not as expected");
 				}

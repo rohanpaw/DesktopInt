@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Reopen_Project_IOB_Properties recording.
+    ///The Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS recording.
     /// </summary>
-    [TestModule("4b9bb920-ae67-4a89-bb9d-f1878c2aed67", ModuleType.Recording, 1)]
-    public partial class Verify_Reopen_Project_IOB_Properties : ITestModule
+    [TestModule("07119e2b-7fde-4c16-857a-a2c792fb5dbd", ModuleType.Recording, 1)]
+    public partial class Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Reopen_Project_IOB_Properties instance = new Verify_Reopen_Project_IOB_Properties();
+        static Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS instance = new Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Reopen_Project_IOB_Properties()
+        public Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Reopen_Project_IOB_Properties Instance
+        public static Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS Instance
         {
             get { return instance; }
         }
@@ -79,22 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Common_Functions.ReopenProject("TC_58");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
-            Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.VerifyLabelInPanelAccessoriesOnReopen("IOB800-Edited");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.VerifyLabelInSearchProperties("IOB800-Edited");
+            Libraries.SlotCards_Functions.VerifyMaxLimitForRepeatersSupportedByPanelOnRBus("TC_68_Verify_Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel", "Add Devices on RBus");
             Delay.Milliseconds(0);
             
         }

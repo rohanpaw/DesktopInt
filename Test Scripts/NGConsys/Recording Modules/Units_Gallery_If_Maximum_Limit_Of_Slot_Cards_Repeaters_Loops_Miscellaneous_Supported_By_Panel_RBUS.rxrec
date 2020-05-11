@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="155e3ff8-bcca-4c1c-ab0a-c36d7a2b2d2b"
-mode="Global"
-rxversion="8.3">
+id="07119e2b-7fde-4c16-857a-a2c792fb5dbd"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -20,7 +19,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_The_Properties_Of_TLI800"
+	classname="Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -30,7 +29,7 @@ rxversion="8.3">
 		classname="SlotCards_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyTLI800Properties"
+		methodname="VerifyMaxLimitForRepeatersSupportedByPanelOnRBus"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -38,25 +37,25 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="4d587879-4235-4c73-a1b2-6e41be48406b">
+			id="90340d02-d5ae-4de2-9d6d-c3de8f26b0c8">
 				<argument
 				argname="sFileName"
-				id="e3088da4-e8a4-4712-9b04-939dfe03643a">
+				id="88c2f2dd-3e1f-4e61-8061-27d459ae05b5">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						TC_54231_Verify_The_Properties_Of_TLI800
+						TC_68_Verify_Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel
 					</argvalue>
 				</argument>
 				<argument
 				argname="sAddDevicesSheet"
-				id="a4653bf1-2572-45e9-a445-edf119b3e829">
+				id="3b1e74fe-1884-497c-bd91-aa4dba8cd66f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Add Devices
+						Add Devices on RBus
 					</argvalue>
 				</argument>
 			</arguments>
@@ -78,7 +77,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_The_Properties_Of_TLI800.UserCode.cs
+		Units_Gallery_If_Maximum_Limit_Of_Slot_Cards_Repeaters_Loops_Miscellaneous_Supported_By_Panel_RBUS.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

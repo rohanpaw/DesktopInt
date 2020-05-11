@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnInventoryTab();
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "IOB800-1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "IOB800-1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");

@@ -88,8 +88,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "TLI800", "Enabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "TLI800", "Enabled");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "TLI800EN", "Enabled");
             Delay.Milliseconds(0);
@@ -109,8 +109,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "TLI800", "Enabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "TLI800", "Enabled");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "TLI800EN", "Enabled");
             Delay.Milliseconds(0);

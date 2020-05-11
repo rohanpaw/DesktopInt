@@ -967,6 +967,7 @@ namespace TestProject.Libraries
 		public static void clickOnInventoryTab()
 		{
 			repo.FormMe.tab_Inventory.Click();
+			Report.Log(ReportLevel.Info," Inventory tab clicked successfully  ");
 		}
 		
 		/********************************************************************
@@ -982,6 +983,7 @@ namespace TestProject.Libraries
 		public static void clickOnPanelAccessoriesTab()
 		{
 			repo.FormMe.tab_PanelAccessories.Click();
+			Report.Log(ReportLevel.Info," Panel Accessories tab clicked successfully  ");
 		}
 		
 		/********************************************************************
@@ -997,6 +999,7 @@ namespace TestProject.Libraries
 		public static void clickOnSiteAccessoriesTab()
 		{
 			repo.FormMe.tab_SiteAccessories.Click();
+			Report.Log(ReportLevel.Info," Site Accessories tab clicked successfully  ");
 		}
 	
 		/********************************************************************
@@ -1012,6 +1015,7 @@ namespace TestProject.Libraries
 		public static void clickOnShoppingListTab()
 		{
 			repo.FormMe.tab_ShoppingList.Click();
+			Report.Log(ReportLevel.Info," Shopping list tab clicked successfully  ");
 		}
 		
 		
@@ -1028,6 +1032,7 @@ namespace TestProject.Libraries
 		public static void clickOnPanelNetworkTab()
 		{
 			repo.FormMe.tab_Panel_Network.Click();
+			Report.Log(ReportLevel.Info,"Panel Network tab clicked successfully  ");
 		}
 		
 		/********************************************************************
@@ -1043,6 +1048,7 @@ namespace TestProject.Libraries
 		public static void clickOnPointsTab()
 		{
 			repo.ProfileConsys1.tab_Points.Click();
+			Report.Log(ReportLevel.Info," Points tab clicked successfully  ");
 		}
 		
 		/********************************************************************
@@ -1058,6 +1064,7 @@ namespace TestProject.Libraries
 		public static void clickOnPhysicalLayoutTab()
 		{
 			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Report.Log(ReportLevel.Info," Physical Layout clicked successfully  ");
 		}
 		
 		/********************************************************************
@@ -1073,6 +1080,7 @@ namespace TestProject.Libraries
 		public static void clickOnDeleteButton()
 		{
 			repo.FormMe.btn_Delete.Click();
+			Report.Log(ReportLevel.Info," Delete button clicked successfully  ");
 		}
 		
 		/********************************************************************
@@ -1087,7 +1095,8 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void clickOnCutButton()
 		{
-			repo.FormMe.ButtonCut1.Click();
+			repo.FormMe.btn_Cut.Click();
+			Report.Log(ReportLevel.Info," Cut button clicked successfully  ");
 		}
 		
 		/********************************************************************
@@ -1103,6 +1112,7 @@ namespace TestProject.Libraries
 		public static void clickOnPasteButton()
 		{
 			repo.FormMe.btn_Paste.Click();
+			Report.Log(ReportLevel.Info," Paste button clicked successfully  ");
 		}
 		
 		
@@ -1118,7 +1128,8 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void clickOnCopyButton()
 		{
-			repo.FormMe.btn_Copy1.Click();
+			repo.FormMe.btn_Copy.Click();
+			Report.Log(ReportLevel.Info," Copy button clicked successfully  ");
 		}
 	
 
@@ -1142,7 +1153,37 @@ namespace TestProject.Libraries
 			Ranorex.Container test = repo.FormMe.test_AutomationID;
 		}
 		
-
+		/********************************************************************
+		 * Function Name: clickOnPanelCalculationsTab
+		 * Function Details: Click on panel calculations tab
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :30/04/2020
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void clickOnPanelCalculationsTab()
+		{
+			repo.FormMe.tab_PanelCalculations.Click();
+			Report.Log(ReportLevel.Info," PanelCalculations tab clicked successfully  ");
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: clickOnPasteWithPointsButton
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :11/05/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnPasteWithPointsButton()
+		{
+			repo.FormMe.btn_PasteWithPoints.Click();
+			Report.Log(ReportLevel.Info," Paste with points button clicked successfully  ");
+		}
 		
 	}
 }

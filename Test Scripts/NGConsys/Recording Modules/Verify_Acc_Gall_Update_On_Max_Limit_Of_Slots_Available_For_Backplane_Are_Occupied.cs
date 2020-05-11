@@ -103,8 +103,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "IOB800", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "FB800", "Disabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "FB800", "Disabled");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "IOB800", "Disabled");
             Delay.Milliseconds(0);
@@ -139,8 +139,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "IOB800", "Disabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "FB800", "Disabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "FB800", "Disabled");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyEnableDisablePanelAccessoriesGallery("Accessories", "POS800-M", "Disabled");
             Delay.Milliseconds(0);

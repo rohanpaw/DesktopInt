@@ -102,7 +102,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-E");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-E");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ModelColumn' at Center.", repo.FormMe.ModelColumnInfo, new RecordItemIndex(5));
@@ -115,16 +115,16 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.selectModelFilterListText("6");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-E");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-E");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-F");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Label", "PLX800-F");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Label", "PLX800-G");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Label", "PLX800-G");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Label", "PLX800-H");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Label", "PLX800-H");
             Delay.Milliseconds(0);
             
         }
