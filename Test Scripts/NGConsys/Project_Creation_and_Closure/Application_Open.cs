@@ -85,6 +85,7 @@ namespace TestProject
 			
 			
 			Host.Local.RunApplication("C:\\Windows\\System32\\cmd.exe", "", "", false);
+			
 			Delay.Milliseconds(500);
 			
 			Delay.Milliseconds(500);
