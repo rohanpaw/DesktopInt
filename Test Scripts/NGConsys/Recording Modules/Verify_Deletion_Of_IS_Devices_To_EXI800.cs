@@ -74,24 +74,24 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
+            Libraries.Devices_Functions.EnableISDevices();
+            Delay.Milliseconds(0);
+            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.EnableISDevices();
             Delay.Milliseconds(0);
             
             Libraries.IS_Functions.VerifyAdditionISDevicesOnEXI("TC_200_Verify_Deletion_Of_IS_Devices_To_EXI800", "Add EXI Devices", "Add IS Devices");
@@ -100,13 +100,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.IS_Functions.verifyISUnits("54", "11");
+            Libraries.IS_Functions.verifyISUnits("54", "18");
             Delay.Milliseconds(0);
             
             Libraries.IS_Functions.VerifyDeletionOfISDevicesOnEXI("TC_200_Verify_Deletion_Of_IS_Devices_To_EXI800", "Delete IS Devices", "Verify IS Devices");
             Delay.Milliseconds(0);
             
-            Libraries.IS_Functions.verifyISUnits("56", "11");
+            Libraries.IS_Functions.verifyISUnits("56", "18");
             Delay.Milliseconds(0);
             
         }

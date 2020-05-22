@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -94,43 +94,43 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("LPS 800", "Sounders/Beacons");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectInventoryGridRow("1");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.SelectInventoryGridRow("1");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Generic Sounder", "Conventional Sounders");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDeviceOrderColumn();
+            //Libraries.Devices_Functions.AddDeviceOrderColumn();
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyPointsGridColumn("SKU", "1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyPointsGridColumn("Model", "4");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPointsGridColumn("SKU", "1");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.verifyPointsGridColumn("Model", "3");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.verifyPointsGridColumn("Label", "4");
+            Libraries.Devices_Functions.verifyPointsGridColumn("Label", "5");
             Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.verifyPointsGridColumn("Address", "6");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectPointsGridRow("1");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("LPS 800 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyZone(ValueConverter.ArgumentFromString<bool>("sZone", "True"));
+            verifyZone(ValueConverter.ArgumentFromString<bool>("sZone", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyDescription("Loop Powered Sounder Module");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyDescription("Loop Powered Sounder Module");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifySKU(ValueConverter.ArgumentFromString<bool>("sSKU", "True"));
+            verifySKU(ValueConverter.ArgumentFromString<bool>("sSKU", "True"));
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectPointsGridRow("2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.editDeviceLabel("Label", "Generic Sounder Test");
+            Libraries.Devices_Functions.ChangeLabelName("Generic Sounder");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.EditAlarmLoad("5");

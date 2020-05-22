@@ -97,7 +97,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -241,7 +241,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SelectNodeInventoryLabel"
 		namespace="TestProject.Libraries"
@@ -259,7 +259,32 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectInventoryGridRow"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="aa003881-2058-4186-920b-4185327c7cae">
+				<argument
+				argname="sRowNumber"
+				id="f9b80355-e0aa-4209-ac81-fb632d654873">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						7
 					</argvalue>
 				</argument>
 			</arguments>

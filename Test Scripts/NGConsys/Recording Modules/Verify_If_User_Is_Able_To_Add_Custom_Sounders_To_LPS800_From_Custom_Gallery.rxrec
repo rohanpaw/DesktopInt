@@ -97,7 +97,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -340,30 +340,21 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="08555a34-d0b8-420a-8348-c2ce16d2baa9"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnSaveAsCustomButton"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="27ada95f-a2b2-4569-b272-1daf826563e7"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[2]/?/?/list[@automationid='PART_BarControl']/button[@text='Save as Custom']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="9e244060-b4d9-4230-b6eb-96759e8485a0">
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"

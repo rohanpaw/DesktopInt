@@ -78,7 +78,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -171,7 +171,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						HVR800 - 0
+						HVR800 - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -221,7 +221,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						HVR800 - 1
+						HVR800 - 2
 					</argvalue>
 				</argument>
 			</arguments>

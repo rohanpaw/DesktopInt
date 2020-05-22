@@ -74,19 +74,23 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SaveAsCustom' at Center.", repo.FormMe.SaveAsCustomInfo, new RecordItemIndex(0));
+            repo.FormMe.SaveAsCustom.Click();
+            Delay.Milliseconds(200);
+            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -106,20 +110,19 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Generic Sounder", "Conventional Sounders");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder - 1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.ChangeLabelName("Generic");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.SaveAsCustom' at Center.", repo.FormMe.SaveAsCustomInfo, new RecordItemIndex(11));
-            repo.FormMe.SaveAsCustom.Click();
-            Delay.Milliseconds(200);
+            Libraries.Common_Functions.clickOnSaveAsCustomButton();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedRow("1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(14));
             repo.ContextMenu.Custom_In_Context_Menu.Click();
             Delay.Milliseconds(200);
             
@@ -132,7 +135,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedRow("2");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ContextMenu.Custom_In_Context_Menu' at Center.", repo.ContextMenu.Custom_In_Context_MenuInfo, new RecordItemIndex(18));
             repo.ContextMenu.Custom_In_Context_Menu.Click();
             Delay.Milliseconds(200);
             

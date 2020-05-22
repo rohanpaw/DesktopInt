@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -135,7 +135,7 @@ namespace TestProject.Recording_Modules
             //Delay.Duration(5000, false);
             
             //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'csv{Return}'.", new RecordItemIndex(17));
-            //Keyboard.Press("csv{Return}");
+            //Keyboard.Press("csv{Return}", 100);
             //Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(18));

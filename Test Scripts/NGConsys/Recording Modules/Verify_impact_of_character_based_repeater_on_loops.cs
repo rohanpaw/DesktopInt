@@ -85,7 +85,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -102,16 +102,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("PLX800", "Loops");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.VerifyInventoryGrid(ValueConverter.ArgumentFromString<int>("iStartRowIndex", "6"), ValueConverter.ArgumentFromString<int>("iEndRowIndex", "13"), "557.202.842");
+            Libraries.InventoryGrid_Functions.VerifyInventoryGrid(ValueConverter.ArgumentFromString<int>("iStartRowIndex", "7"), ValueConverter.ArgumentFromString<int>("iEndRowIndex", "14"), "557.202.842");
             Delay.Milliseconds(100);
             
             Libraries.Devices_Functions.VerifyGalleryItem("Repeaters", "MX2 Repeater", "Disabled");
             Delay.Milliseconds(100);
             
-            Libraries.InventoryGrid_Functions.DeleteItemfromInventory(ValueConverter.ArgumentFromString<int>("iRowNumber", "7"), "PLX800", "557.202.842");
+            Libraries.InventoryGrid_Functions.DeleteItemfromInventory(ValueConverter.ArgumentFromString<int>("iRowNumber", "8"), "PLX800", "557.202.842");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "10"), "PLX800", "557.202.842");
+            Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "11"), "PLX800", "557.202.842");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyGalleryItem("Repeaters", "MX2 Repeater", "Enabled");
@@ -126,7 +126,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.VerifyRowExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "10"), "MX2 Repeater", "557.200.206");
+            Libraries.InventoryGrid_Functions.VerifyRowExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "11"), "MX2 Repeater", "557.200.206");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyGalleryItem("Repeaters", "MX2 Repeater", "Disabled");

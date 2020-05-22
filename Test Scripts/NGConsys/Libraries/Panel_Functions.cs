@@ -245,7 +245,7 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
 			
-			repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
+			repo.FormMe.cell_NumberOfAlarmLeds.Click();
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+PanelLED +"{ENTER}");
 			
 			
@@ -255,14 +255,15 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/***********************************************************************************
 		 * Function Name: ChangeCPUType
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : Alpesh Dhakad - 20/02/2020 Updated method
-		 ********************************************************************/
+		 * Alpesh Dhakad - 18/05/2020 Updated script and xpaths
+		 ***********************************************************************************/
 		[UserCodeMethod]
 		public static void ChangeCPUType(string SelectCPU)
 		{
@@ -273,17 +274,25 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("CPU" +"{ENTER}");
 			
 			// Click on CPU Cell
-			repo.FormMe.cell_CPU_beforeimport.Click();
+			//repo.FormMe.cell_CPU_beforeimport.Click();
+			repo.FormMe.cell_CPUType.Click();
 			
-			repo.FormMe.cmb_PanelType.Click();
+			//repo.FormMe.cmb_PanelType.Click();
+			
 			//sCPU=sSelectCPU;
 			
 			// Enter the CPU value and click Enter twice
-			repo.FormMe.cell_CPU_beforeimport.PressKeys((SelectCPU) +"{ENTER}" + "{ENTER}");
-			
-			
+			repo.FormMe.txt_CPUType.PressKeys((SelectCPU) +"{ENTER}" + "{ENTER}");
 			
 			Report.Log(ReportLevel.Info," CPU Type changed to " +SelectCPU + " successfully  ");
+			
+				// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+
+			
 		}
 		
 		/****************************************************************************************************************************************
@@ -443,6 +452,8 @@ namespace TestProject.Libraries
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 
+			//repo.ContextMenu.lstPSU.Click();
+			Report.Log(ReportLevel.Info," Second PSU Type changed to " +SecondPSU + " successfully  ");
 			
 			//repo.FormMe.Cell_SecondPSU.Click();
 			//repo.FormMe.Cell_SecondPSU.PressKeys(SecondPSU+"{ENTER}");

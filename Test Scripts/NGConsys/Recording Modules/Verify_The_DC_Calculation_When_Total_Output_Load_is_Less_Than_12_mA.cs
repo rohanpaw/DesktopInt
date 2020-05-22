@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -94,7 +94,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("LPS 800", "Sounders/Beacons");
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("280");
+            //Libraries.DC_Functions.verifyDCUnitsValue("280");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("280", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -106,13 +109,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Generic Sounder", "Conventional Sounders");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder - 1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.changeAndVerifyAlarmLoad(ValueConverter.ArgumentFromString<int>("AlarmLoad", "3"), "Valid", ValueConverter.ArgumentFromString<int>("expectedResult", "3"));
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("280");
+            //Libraries.DC_Functions.verifyDCUnitsValue("280");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("280", "Current (DC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -121,13 +127,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder - 1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.changeAndVerifyAlarmLoad(ValueConverter.ArgumentFromString<int>("AlarmLoad", "25"), "Valid", ValueConverter.ArgumentFromString<int>("expectedResult", "25"));
             Delay.Milliseconds(0);
             
-            Libraries.DC_Functions.verifyDCUnitsValue("348");
+            //Libraries.DC_Functions.verifyDCUnitsValue("348");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("348", "Current (DC Units)");
             Delay.Milliseconds(0);
             
         }

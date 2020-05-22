@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -94,7 +94,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBase("801 CH - 1", "5BI 5\" [517.050.018]", "13");
+            Libraries.Devices_Functions.AssignDeviceBase("801 CH - 1", "5BI 5\" [517.050.018]", "6");
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyACUnitsValue("1.2");
@@ -103,7 +103,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("1", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignAdditionalBase("801 CH - 1", "801SB [516.800.907] @ 90dB", "13");
+            Libraries.Devices_Functions.AssignAdditionalBase("801 CH - 1", "801SB [516.800.907] @ 90dB", "6");
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyACUnitsValue("3.6");
@@ -112,7 +112,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("3.6", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RemoveBase("801 CH - 1", "13");
+            Libraries.Devices_Functions.RemoveBase("801 CH - 1", "6");
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyACUnitsValue("1");

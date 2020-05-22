@@ -73,121 +73,96 @@ namespace TestProject.Recording_Modules
         [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
-            Delay.SpeedFactor = 1.00;
+            Mouse.DefaultMoveTime = 0;
+            Keyboard.DefaultKeyPressTime = 20;
+            Delay.SpeedFactor = 0.00;
 
             Init();
 
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX 4000", "");
-            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.ChangeCPUType("CPU 801");
-            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verifyMax5VPSULoad("3.000", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
-            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "Main Processor 5V (A)");
-            Delay.Milliseconds(0);
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.296", "Main Processor 5V (A)");
-            Delay.Milliseconds(0);
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "5V Rail(A)");
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.296", "5V Rail(A)");
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("1.296", "FIM");
-            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
-            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(12));
-            repo.ProfileConsys1.txt_SearchProperties.Click();
-            Delay.Milliseconds(200);
             
             Libraries.Panel_Functions.ChangeCPUType("CPU 800");
-            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("1.161", "FIM");
-            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.161", "Main Processor 5V (A)");
-            Delay.Milliseconds(0);
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.161", "5V Rail(A)");
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
-            Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX2-100", "");
-            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.ChangeCPUType("CPU 801");
-            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             
             //Libraries.PSULoad_Functions.verifyMax5VPSULoad("3.000", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
-            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "Main Processor 5V (A)");
-            Delay.Milliseconds(0);
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "5V Rail(A)");
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "Main Processor 5V (A)");
-            Delay.Milliseconds(0);
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
             
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("1.211", "FIM");
-            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(29));
-            repo.ProfileConsys1.txt_SearchProperties.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(34));
+            //repo.ProfileConsys1.txt_SearchProperties.Click();
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
-            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.ChangeCPUType("CPU 800");
-            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.076", "Main Processor 5V (A)");
-            Delay.Milliseconds(0);
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.076", "5V Rail(A)");
             
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("1.076", "FIM");
-            //Delay.Milliseconds(0);
             
         }
 

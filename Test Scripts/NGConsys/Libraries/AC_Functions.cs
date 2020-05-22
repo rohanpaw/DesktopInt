@@ -101,6 +101,11 @@ namespace TestProject.Libraries
 			set { repo.sDaySensitivity = value; }
 		}
 		
+		static string sLoadingDetail
+		{
+			get { return repo.sLoadingDetail; }
+			set { repo.sLoadingDetail = value; }
+		}
 		
 		/********************************************************************************************************************
 		 * Function Name: VerifyACCalculation
@@ -538,11 +543,14 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 19/04/2019
+		 * Alpesh Dhakad - 19/05/2020 Updated script as per new implementation changes
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyACUnitIndicationWithISDevices()
 		{
 			string actualColour,expectedColor;
+			
+			sLoadingDetail = "Signal (AC Units)";
 			
 			//Go to Points tab
 			Common_Functions.clickOnPointsTab();
@@ -550,15 +558,22 @@ namespace TestProject.Libraries
 			//Go to Physical layout
 			Common_Functions.clickOnPhysicalLayoutTab();
 			
-
-			float ActualACUnits = float.Parse(repo.ProfileConsys1.ACUnits.TextValue);
+			// Click on Panel Calculation tab
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			
+			
+			//float ActualACUnits = float.Parse(repo.ProfileConsys1.ACUnits.TextValue);
+			float ActualACUnits = float.Parse(repo.FormMe.txt_ActualLoadingDetailsValue.TextValue);
 			
 			//Retrieve foreground color
-			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
-			
+			//actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
+			actualColour = repo.FormMe.txt_ActualLoadingDetailsValue.GetAttributeValue<string>("foreground");
 			
 			//Fetch max AC value drop text value and storing it in string
-			float maxACUnitsValue = float.Parse(repo.ProfileConsys1.MaxACUnits.TextValue);
+			//float maxACUnitsValue = float.Parse(repo.ProfileConsys1.MaxACUnits.TextValue);
+			float maxACUnitsValue = float.Parse(repo.FormMe.txt_MaxLoadingDetailsValue.TextValue);
+			
 			
 			// To calculate and get the expected color value
 			expectedColor = Devices_Functions.calculatePercentage(ActualACUnits, maxACUnitsValue);

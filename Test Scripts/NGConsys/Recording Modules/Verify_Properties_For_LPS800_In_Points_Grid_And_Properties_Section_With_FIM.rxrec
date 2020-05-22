@@ -97,7 +97,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -184,7 +184,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectInventoryGridRow"
+		methodname="SelectRowUsingLabelNameForOneRow"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -194,13 +194,13 @@ rxversion="8.3">
 			<arguments
 			id="46b03e14-f816-416d-a28d-2f6e98939b72">
 				<argument
-				argname="sRowNumber"
+				argname="sLabel"
 				id="2a6ed0e4-c411-4498-8509-27a543cdb449">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1
+						LPS 800 - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -320,7 +320,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						3
+						4
 					</argvalue>
 				</argument>
 			</arguments>
@@ -355,7 +355,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						4
+						5
 					</argvalue>
 				</argument>
 			</arguments>
@@ -421,7 +421,6 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		autogenmethod="True"
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -448,11 +447,11 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyDescription"
 		namespace="TestProject.Libraries"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -472,7 +471,6 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		autogenmethod="True"
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -526,7 +524,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="editDeviceLabel"
+		methodname="ChangeLabelName"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -536,23 +534,13 @@ rxversion="8.3">
 			<arguments
 			id="6f10e938-4f82-4e20-adef-223b09020c8e">
 				<argument
-				argname="sPropertyLabel"
+				argname="changeLabelName"
 				id="27e26c92-be81-437c-95cf-42ddc982b89a">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Label
-					</argvalue>
-				</argument>
-				<argument
-				argname="sNewLabel"
-				id="54d895a8-9952-4907-a8d4-e84255a71c01">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Generic Sounder Test
+						Generic Sound
 					</argvalue>
 				</argument>
 			</arguments>

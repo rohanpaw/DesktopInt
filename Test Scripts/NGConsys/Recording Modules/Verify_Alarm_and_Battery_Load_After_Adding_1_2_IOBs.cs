@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -94,19 +94,19 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.513", "Battery Standby (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.276", "Standby Current(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.842", "Battery Alarm (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.426", "Alarm Current(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verifyBatteryStandby("0.513", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
@@ -130,7 +130,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verifyBatteryStandby("0.75", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
@@ -139,10 +139,10 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verifyAlarmLoad("1.258", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.75", "Battery Standby (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.276", "Standby Current(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.258", "Battery Alarm (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.426", "Alarm Current(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -151,13 +151,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabel("IOB800-2");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("IOB800-2");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verifyBatteryStandby("0.513", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
@@ -166,10 +166,10 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verifyAlarmLoad("0.842", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.513", "Battery Standby (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.276", "Standby Current(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.842", "Battery Alarm (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.426", "Alarm Current(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -184,7 +184,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verifyBatteryStandby("0.276", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
@@ -193,10 +193,10 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verifyAlarmLoad("0.426", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.276", "Battery Standby (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.276", "Standby Current(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.426", "Battery Alarm (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.426", "Alarm Current(A)");
             Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(40));

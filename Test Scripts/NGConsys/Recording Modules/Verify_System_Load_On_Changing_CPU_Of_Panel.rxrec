@@ -102,7 +102,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -148,6 +148,21 @@ rxversion="8.3">
 						Built-in Loop-A
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<mouseitem
@@ -204,7 +219,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						System (A)
+						Total System Load(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -233,6 +248,21 @@ rxversion="8.3">
 						0.810
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -336,6 +366,21 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -390,7 +435,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						System (A)
+						Total System Load(A)
 					</argvalue>
 				</argument>
 			</arguments>

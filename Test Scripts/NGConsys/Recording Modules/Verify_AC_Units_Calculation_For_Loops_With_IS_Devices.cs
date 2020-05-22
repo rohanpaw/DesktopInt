@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -98,6 +98,9 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("Exi800", "Other");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyMaxACUnitsValue("20.39999");
@@ -121,6 +124,9 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.6", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPropertiesTab();
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.ChangeCableLength(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "500"));
             Delay.Milliseconds(0);
             
@@ -130,20 +136,29 @@ namespace TestProject.Recording_Modules
             //Libraries.AC_Functions.verifyMaxACUnitsValue("53.6");
             //Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("53.6", "Signal (AC Units)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.ChangeCableCapacitance(ValueConverter.ArgumentFromString<int>("fchangeCableCapacitance", "90"), "Exi800");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyMaxACUnitsValue("104");
             //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("104", "Signal (AC Units)");
             Delay.Milliseconds(0);

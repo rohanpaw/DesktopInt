@@ -20,6 +20,11 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
+
+namespace TestProject.Recording_Modules
+{
+
+}
 namespace TestProject.Recording_Modules
 {
     public partial class Verify_Alarm_load_property_for_Non_Standard_Sounders

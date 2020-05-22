@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -94,11 +94,14 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.301", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.301", "Main Processor 24V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.301", "24V Rail(A)");
             Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
             Delay.Milliseconds(0);
@@ -112,22 +115,40 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.493", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.493", "Main Processor 24V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.511", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDevices("Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection", "Delete Devices");
+            //Libraries.Devices_Functions.DeleteDevices("Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection", "Delete Devices");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-102");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR8AS-103");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.301", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.301", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.301", "24V Rail(A)");
             Delay.Milliseconds(0);
             
         }

@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -94,7 +94,10 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.000", "PFI");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPointsTab();
@@ -115,7 +118,10 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.000", "PFI");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPointsTab();
@@ -136,7 +142,10 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.020", "PFI");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.020", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
         }

@@ -281,6 +281,33 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static string getColumnNumberForInventoryGrid(string columnName)
 		{
+			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
+			{
+			string columnNumber="";
+			switch (columnName)
+			{
+				case "SKU":
+					columnNumber="1";
+					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
+					break;
+					
+				case "Model":
+					columnNumber="4";
+					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
+					break;
+					
+				case "Label":
+					columnNumber="5";
+					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
+					break;
+					
+				
+			}
+			return columnNumber;
+			}
+			else{
+				
+			
 			string columnNumber="";
 			switch (columnName)
 			{
@@ -316,8 +343,9 @@ namespace TestProject.Libraries
 					
 			}
 			return columnNumber;
-			
-		}
+			}
+			}
+		
 		
 		/***********************************************************************************************************
 		 * Function Name: editDeviceLabel
@@ -348,7 +376,7 @@ namespace TestProject.Libraries
 		 * Function Name: verifyInventoryDeviceProperty
 		 * Function Details: Verify device property from Inventory properties section
 		 * Parameter/Arguments:
-		 * Output:
+		 * Output:verifyInventoryDeviceProperty
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 05/04/2019 Alpesh Dhakad - 06/08/2019 & 22/08/2019 - Updated code with cell_InventoryProperty and added/updated xpath for txt_InventoryProperty
 		 * Last Update : 14/11/2019 Alpesh Dhakad - Added Xpath for txt_SearchPropertiesFirstRowText
@@ -528,5 +556,8 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info,"Parameter is editied to " +sNewValue);
 
 		}
+		
+		
+		
 	}
 }

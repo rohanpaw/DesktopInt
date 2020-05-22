@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "IOB800-1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "IOB800-1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
@@ -106,13 +106,13 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.DeleteAccessoryFromPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
-            Delay.Milliseconds(0);
-            
-            Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "6"), "IOB800-1", "557.202.006");
+            Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "7"), "IOB800-1", "557.202.006");
             Delay.Milliseconds(0);
             
         }

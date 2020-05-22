@@ -97,7 +97,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -182,7 +182,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SelectInventoryGridRow"
 		namespace="TestProject.Libraries"
@@ -201,6 +201,31 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameForOneRow"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="46b03e14-f816-416d-a28d-2f6e98939b72">
+				<argument
+				argname="sLabel"
+				id="2a6ed0e4-c411-4498-8509-27a543cdb449">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						LPS 800 - 1
 					</argvalue>
 				</argument>
 			</arguments>

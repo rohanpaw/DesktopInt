@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -94,11 +94,17 @@ namespace TestProject.Recording_Modules
             Libraries.AC_Functions.VerifyACCalculationforFIM("Verify AC Calculation", "Add Devices", "Delete Devices");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPropertiesTab();
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.ChangeCableLength("FIM", ValueConverter.ArgumentFromString<int>("fCableLength1", "500"), ValueConverter.ArgumentFromString<int>("fCableLength2", "0"));
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyMaxACUnitsValue("400");
             //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("400", "Signal (AC Units)");
             Delay.Milliseconds(0);

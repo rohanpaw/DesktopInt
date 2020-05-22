@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -91,10 +91,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
             //Libraries.PSULoad_Functions.verifyMax5VPSULoad("3.000", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "Main Processor 5V (A)");
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Panel 1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
@@ -112,7 +115,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.000", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.000", "PFI", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
@@ -133,7 +139,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.500", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.500", "5V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
@@ -154,10 +163,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
             //Libraries.PSULoad_Functions.verifyMax5VPSULoad("3.000", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "Main Processor 5V (A)");
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Panel 1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
@@ -175,7 +187,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verifyMax5VPSULoad("3.000", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
@@ -196,10 +211,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
             //Libraries.PSULoad_Functions.verifyMax5VPSULoad("1.500", "FIM1", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.500", "Main Processor 5V (A)");
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.500", "5V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Panel 1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));

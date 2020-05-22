@@ -27,6 +27,21 @@ rxversion="8.3">
 	</variables>
 	<recorditems>
 		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="EnableISDevices"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -97,7 +112,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -143,21 +158,6 @@ rxversion="8.3">
 						Built-in Loop-A
 					</argvalue>
 				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="EnableISDevices"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -260,7 +260,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						11
+						18
 					</argvalue>
 				</argument>
 			</arguments>
@@ -340,7 +340,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						11
+						18
 					</argvalue>
 				</argument>
 			</arguments>

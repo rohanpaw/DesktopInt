@@ -43,6 +43,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 9/08/2019  Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath and panel type column number
+		 * Alpesh Dhakad - 14/05/2020 - Updated test script as per new implementation
 		 **************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyLinkedDevicesGetAddedInLoop(string sFileName,string sSheetName)
@@ -70,7 +71,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander("Node");
 				
 				// Click on Loop Card node
-				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+				//Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -79,7 +80,7 @@ namespace TestProject.Libraries
 				Devices_Functions.AddDevicesfromPanelNodeGallery(ParentDeviceName,ParentDeviceType,PanelType);
 				
 				//Select row of parent Device
-				Devices_Functions.SelectRowUsingLabelName(ParentLabel);
+				Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(ParentLabel);
 				
 				
 				if(!ChildDeviceName.IsEmpty())
@@ -115,6 +116,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 22/08/2019
+		 *  Alpesh Dhakad - 13/05/2020 - Updated test script as per new implementation
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCheckboxOfProperties(string sFileName,string sSheetName)
@@ -134,7 +136,7 @@ namespace TestProject.Libraries
 			Common_Functions.ClickOnNavigationTreeExpander("Node");
 			
 			//Expand FIM/PFI Loop card
-			Common_Functions.ClickOnNavigationTreeExpander("PFI");
+			//Common_Functions.ClickOnNavigationTreeExpander("PFI");
 			
 			// For loop to iterate on data present in excel
 			for(int i=8; i<=rows; i++)
@@ -239,6 +241,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 23/08/2019
+		 * Alpesh Dhakad - 14/05/2020 Updated script as per new structure
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifySurfaceBoxParameters(string sFileName,string sSheetName)
@@ -256,7 +259,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander("Node");
 				
 				//Expand FIM/PFI Loop card
-				Common_Functions.ClickOnNavigationTreeExpander("PFI");
+				//Common_Functions.ClickOnNavigationTreeExpander("PFI");
 				
 			
 			// For loop to iterate on data present in excel

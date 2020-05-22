@@ -262,7 +262,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="0324d795-ae4a-4522-8650-95ea4e370d04"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -518,7 +517,7 @@ rxversion="8.3">
 			id="072607cf-9dd5-46ef-b302-407f467fca4d"
 			name="Verify_DC_Unit_For_Built_In_Isolator_Devices_With_Non_Integral_LED_On_PFI_Loop_Considering_Trip_Curr">
 				<description>
-					<![CDATA[<p>NGC-1139/TC-53543</p>]]>
+					<![CDATA[<p>NGC-1139/TC-53543 <span style="color: rgb(151, 155, 133);">verifyIsolatorCheckbox is disabled as its isCheked&nbsp;properties not enabled and isolator checkbox is already checked and disabled</span></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -830,7 +829,7 @@ rxversion="8.3">
 			id="0ae3a1cf-bdae-4750-9a3d-dfd54127efb4"
 			name="Verify_UI_Design_For_Additional_PSUs">
 				<description>
-					<![CDATA[<p>NGC-245/TC-50941 &amp; 50942</p><p><br></p>]]>
+					<![CDATA[<p>NGC-245/TC-50941 &amp; 50942 Test cases need to be updated manually first as functionality got changed as a part of NGC-3119</p><p><br></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -2453,7 +2452,7 @@ rxversion="8.3">
 			id="20836adb-a235-4806-8cc8-bcbe7485be64"
 			name="Verify_The_Shopping_List_When_XML800_Is_Added/removed_From_Panel">
 				<description>
-					<![CDATA[NGC-60/TC-55138&nbsp; Defect-1449]]>
+					<![CDATA[NGC-60/TC-55138]]>
 				</description>
 				<parameters>
 					<param
@@ -2620,7 +2619,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.14">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.18">
 					</param>
 					<param
 					name="Mode"
@@ -3748,7 +3747,7 @@ rxversion="8.3">
 			id="32ef10b0-f04a-49a2-8169-31740fce6404"
 			name="Verify_5V_Load_On_Addition_Deletion_Of_Slot_Cards">
 				<description>
-					<![CDATA[<p>NGC-149/TC-157 OR NGC-1519/63081</p>]]>
+					<![CDATA[<p>NGC-149/TC-157 OR NGC-1519/63081&nbsp;&nbsp; Defect-2623</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -4134,7 +4133,7 @@ rxversion="8.3">
 			id="377591ae-1cd8-4791-ae2d-87f4de3a9304"
 			name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection">
 				<description>
-					<![CDATA[<p>NGC-149/TC-154 OR NGC-1517/63073&nbsp; Test data needs to be updated and for FIM panels Ethernet connection is not present so, manual test cases needs to be updated.&nbsp;</p><p>Note : To test with more panels we need to repeat this steps and edit test data only. Also, need to include delete panel step after each occurence.</p>]]>
+					<![CDATA[<p>NGC-149/TC-154 OR NGC-1517/63073&nbsp; Test data updated and for FIM panels Ethernet connection is not present so, manual test cases needs to be updated.&nbsp;</p><p>Note : To test with more panels we need to repeat this steps and edit test data only. Also, need to include delete panel step after each occurence.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -6298,7 +6297,7 @@ rxversion="8.3">
 			id="534c0419-c49f-48e5-b622-6c96911d2e38"
 			name="Verify_40V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection">
 				<description>
-					<![CDATA[<p>NGC-601/TC-208</p>]]>
+					<![CDATA[<p>NGC-601/TC-208&nbsp; Updated for only 2 panels and all other panels Ethernet is not available</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7141,7 +7140,7 @@ rxversion="8.3">
 			id="5c6f9f0d-92d3-4f42-ab23-94479bb53443"
 			name="Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800">
 				<description>
-					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"></font></font><p><font face="Calibri" size="3"><font face="Calibri" size="3">NGC-1277/TC-54241</font></font></p><p></p>]]>
+					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"></font></font><p><font face="Calibri" size="3"><font face="Calibri" size="3">NGC-1277/TC-54241&nbsp; Copy button enable/disable step is disabled as Copy button properties is not displayed</font></font></p><p></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10060,7 +10059,7 @@ MxDesigner]]>
 			id="82fac0cc-8149-49ea-9128-3bd476ad4daa"
 			name="Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix">
 				<description>
-					<![CDATA[NGC-1113/TC-52775,52681]]>
+					<![CDATA[NGC-1113/TC-52775,52681 Copy,Paste enabled and disabled option we are not able to verify as those properties are now not available.]]>
 				</description>
 				<parameters>
 					<param
@@ -10823,7 +10822,7 @@ MxDesigner]]>
 			id="8b24f119-1ca6-4cfc-a37a-84506abc17d4"
 			name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template">
 				<description>
-					<![CDATA[<p>NGC-149/TC-155 OR NGC-1521/63076&nbsp; Test Data needs to be updated.</p><p>Note : To test with more panels we need to repeat this steps and edit test data only. Also, need to include delete panel step after each occurence.</p>]]>
+					<![CDATA[<p>NGC-149/TC-155 OR NGC-1521/63076&nbsp; Test Data updated.</p><p>Note : To test with more panels we need to repeat this steps and edit test data only. Also, need to include delete panel step after each occurence.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -11563,7 +11562,7 @@ MxDesigner]]>
 			id="96340868-31b8-492e-add5-18a3eedde248"
 			name="Verify_5V_Load_On_Addition_Deletion_Of_Accessories">
 				<description>
-					<![CDATA[<p>NGC-149/TC-158/63084</p>]]>
+					<![CDATA[<p>NGC-149/TC-158/63084&nbsp;&nbsp; Printer 2 is not visible in label. Instead of it PLX800-E is visible.<br></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -12687,7 +12686,7 @@ div.WordSection1
 			id="a5ebb69f-e394-4d5f-9f2e-4b1e12ec63c4"
 			name="Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM">
 				<description>
-					<![CDATA[<p>NGC-1282/TC-53633&nbsp; Region is not tested as field is not available in properties section</p>]]>
+					<![CDATA[<p>NGC-1282/TC-53633&nbsp; Region is not tested as field is not available in properties section. Also, Description is not verified.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16008,7 +16007,7 @@ persisted in panel properties&nbsp;]]>
 			id="d84f3eb7-a76c-4b26-8b2e-8f6dd91a2713"
 			name="Verify_DC_Unit_For_Built_In_Isolator_Devices_With_Non_Integral_LED_On_FIM_Loop_Considering_Trip_Curr">
 				<description>
-					<![CDATA[<p>NGC-1139/TC-53545</p>]]>
+					<![CDATA[<p>NGC-1139/TC-53545 <span style="color: rgb(151, 155, 133);">verifyIsolatorCheckbox is disabled as its isCheked&nbsp;properties not enabled and isolator checkbox is already checked and disabled</span></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -17911,7 +17910,7 @@ persisted in panel properties&nbsp;]]>
 			id="f32e1dde-d28a-42c4-aae0-2f4a10a4d36e"
 			name="Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section">
 				<description>
-					<![CDATA[<p>NGC-1282/TC-53633&nbsp; Region is not tested as field is not available in properties section</p>]]>
+					<![CDATA[<p>NGC-1282/TC-53633&nbsp; Region is not tested as field is not available in properties section. Also, Description is not verified.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -18295,7 +18294,7 @@ persisted in panel properties&nbsp;]]>
 			id="faca3ac1-8096-4f76-b05b-6be029b8b019"
 			name="Verify_DC_Unit_For_Multiple_Built_In_Non_Built_In_Isolator_Devices_Integral_Non_Integral_LED_of_PFI">
 				<description>
-					<![CDATA[<p>NGC-1139/TC-53542/TC-53546/TC-53550</p>]]>
+					<![CDATA[<p>NGC-1139/TC-53542/TC-53546/TC-53550&nbsp; <span style="color: rgb(151, 155, 133);">verifyIsolatorCheckbox is disabled as its isCheked&nbsp;properties not enabled and isolator checkbox is already checked and disabled</span></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -18812,6 +18811,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed"
+					name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
+						<testmodule
+						id="81a008d8-1090-4063-a8de-407d145100c5"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="54f863cd-7f1f-4e8f-9f97-274d50abab86"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="d263ab6b-d835-4ce4-bebb-f14e65e93145"
+						name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
+						</testmodule>
+						<testmodule
+						id="c32910a7-ec4d-4273-872b-c8c281f2645a"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="377591ae-1cd8-4791-ae2d-87f4de3a9304"
 					name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection">
 						<testmodule
@@ -18908,26 +18927,6 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="8838da9b-65f9-48e6-8c63-36e1dbe2fdcb"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed"
-					name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
-						<testmodule
-						id="81a008d8-1090-4063-a8de-407d145100c5"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="54f863cd-7f1f-4e8f-9f97-274d50abab86"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="d263ab6b-d835-4ce4-bebb-f14e65e93145"
-						name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
-						</testmodule>
-						<testmodule
-						id="c32910a7-ec4d-4273-872b-c8c281f2645a"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
@@ -24745,6 +24744,15 @@ persisted in panel properties&nbsp;]]>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="e4178d2c-0d14-4ed5-aa10-3f07149df295">
+			</testcontainer>
+			<testcontainer
+			id="f538a592-8dd0-4cd8-ae5b-0ca3cd5f795c">
+			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="Voltage_Calculation">

@@ -200,7 +200,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						2
+						3
 					</argvalue>
 				</argument>
 				<argument
@@ -270,9 +270,18 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="7000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -775,7 +784,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelName"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -811,6 +820,15 @@ rxversion="8.3">
 			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="3000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
@@ -966,7 +984,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						2
+						3
 					</argvalue>
 				</argument>
 				<argument
@@ -1036,6 +1054,15 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="30000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"

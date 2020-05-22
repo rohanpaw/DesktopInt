@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -85,13 +85,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.000", "PFI");
@@ -136,7 +139,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.030", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.030", "5V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.030", "PFI");
@@ -148,22 +154,22 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.SelectPanelNode("Node1 - Pro32xD");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabel("PCH800 5.0A-1");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("PCH800 5.0A-1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabel("PNI800-2");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("PNI800-2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabel("FB800-1");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("FB800-1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabel("IOB800-1");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("IOB800-1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabel("POS800-S-1");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("POS800-S-1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabel("POS800-M-1");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("POS800-M-1");
             Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.DeleteDeviceUsingLabel("PCS800-1");
@@ -172,7 +178,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.020", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.020", "PFI");

@@ -97,7 +97,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -184,7 +184,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelName"
+		methodname="SelectRowUsingLabelNameForOneRow"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -254,7 +254,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelName"
+		methodname="SelectRowUsingLabelNameForOneRow"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -340,7 +340,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						HVR800 - 0
+						HVR800 - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -417,7 +417,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="editDeviceLabel"
 		namespace="TestProject.Libraries"
@@ -441,6 +441,31 @@ rxversion="8.3">
 				<argument
 				argname="sNewLabel"
 				id="235b7de2-581c-4e16-83e0-c688ef7c893b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						HVR800-Test
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ChangeLabelName"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="473f1827-f74d-4892-b771-12c3219fa3b7">
+				<argument
+				argname="changeLabelName"
+				id="115ade3a-7924-48ea-a967-b8e095b1e9ee">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -527,7 +552,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -578,6 +603,31 @@ rxversion="8.3">
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameOnReopen"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="01b82f96-739d-4cec-b8c2-136519490f90">
+				<argument
+				argname="sLabel"
+				id="6bdad1cc-771a-4fc9-950c-6eec8034344e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						HVR800-Test
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPointGridProperties"
 		namespace="TestProject.Libraries"

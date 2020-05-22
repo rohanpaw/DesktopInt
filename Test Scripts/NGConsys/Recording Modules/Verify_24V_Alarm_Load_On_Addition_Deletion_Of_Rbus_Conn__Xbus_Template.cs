@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -85,20 +85,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.301", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.301", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.301", "24V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
@@ -109,13 +112,19 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.348", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.348", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.348", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameForRBUSOneRow("MPM800-1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.additionOfDevicesForXBus("Verify_24V_Alarm_Load_On_Addition_Deletion_Of_RBus_And_XBus", "Add XBus Devices", "FIM");
@@ -124,25 +133,37 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.348", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.348", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.546", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDevices("Verify_24V_Alarm_Load_On_Addition_Deletion_Of_RBus_And_XBus", "Delete Devices");
+            //Libraries.Devices_Functions.DeleteDevices("Verify_24V_Alarm_Load_On_Addition_Deletion_Of_RBus_And_XBus", "Delete Devices");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameForRBUS("MPM800-1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.365", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.365", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.301", "24V Rail(A)");
             Delay.Milliseconds(0);
             
         }

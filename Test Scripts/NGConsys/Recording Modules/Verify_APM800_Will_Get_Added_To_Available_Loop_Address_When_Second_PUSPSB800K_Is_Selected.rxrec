@@ -172,7 +172,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -233,6 +233,31 @@ rxversion="8.3">
 			</bindings>
 			<arguments
 			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelName"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0ba0f7fb-5b3f-4058-8933-bc28d7ecb2d5">
+				<argument
+				argname="sLabel"
+				id="5d258eca-3d63-4760-91d9-ed959e0b34be">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						APM 800 - 1
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem

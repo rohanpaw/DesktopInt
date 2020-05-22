@@ -172,7 +172,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -224,7 +224,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnPhysicalLayoutTab"
+		methodname="clickOnPanelCalculationsTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -255,7 +255,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.513
+						0.276
 					</argvalue>
 				</argument>
 				<argument
@@ -265,7 +265,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Battery Standby (A)
+						Standby Current(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -290,7 +290,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.842
+						0.426
 					</argvalue>
 				</argument>
 				<argument
@@ -300,7 +300,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Battery Alarm (A)
+						Alarm Current(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -524,7 +524,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnPhysicalLayoutTab"
+		methodname="clickOnPanelCalculationsTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -645,7 +645,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.75
+						0.276
 					</argvalue>
 				</argument>
 				<argument
@@ -655,7 +655,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Battery Standby (A)
+						Standby Current(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -680,7 +680,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1.258
+						0.426
 					</argvalue>
 				</argument>
 				<argument
@@ -690,7 +690,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Battery Alarm (A)
+						Alarm Current(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -749,7 +749,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="DeleteDeviceUsingLabel"
+		methodname="DeleteDeviceUsingLabelInInventoryTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -799,7 +799,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnPhysicalLayoutTab"
+		methodname="clickOnPanelCalculationsTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -920,7 +920,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.513
+						0.276
 					</argvalue>
 				</argument>
 				<argument
@@ -930,7 +930,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Battery Standby (A)
+						Standby Current(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -955,7 +955,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.842
+						0.426
 					</argvalue>
 				</argument>
 				<argument
@@ -965,7 +965,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Battery Alarm (A)
+						Alarm Current(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1074,7 +1074,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnPhysicalLayoutTab"
+		methodname="clickOnPanelCalculationsTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1205,7 +1205,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Battery Standby (A)
+						Standby Current(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1240,7 +1240,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Battery Alarm (A)
+						Alarm Current(A)
 					</argvalue>
 				</argument>
 			</arguments>

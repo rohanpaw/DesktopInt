@@ -112,6 +112,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 13/12/2018
 		 * Alpesh Dhakad - 06/01/2020 - Updated column number value for sISUnitsLoadingDetail
+		 * Alpesh Dhakad - 20/05/2020 Updated script as per old IS Unit implementation
 		 ********************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyISCalculation(string sFileName,string sAddDevicesSheet)
@@ -136,16 +137,16 @@ namespace TestProject.Libraries
 				ExpectedMaxISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				ChangedValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
-				sISUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				//sISUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				
 				// Verify panel type and then accordingly assign sRow value
 				if(PanelType.Equals("FIM"))
 				{
-					sRow = (i+1).ToString();
+					sRow = (i+9).ToString();
 				}
 				else
 				{
-					sRow = (i+2).ToString();
+					sRow = (i+10).ToString();
 				}
 				
 				// Add devices from the gallery as per test data from the excel sheet
@@ -157,18 +158,18 @@ namespace TestProject.Libraries
 				
 				//To call verifyMaxISUnits method and verify max IS units value
 				Report.Log(ReportLevel.Info,"Verification of Maximum IS Units on addition of devices");
-				//verifyMaxISUnitsMultipleDevices(ExpectedMaxISUnits, noOfDevices, PanelType);
-				Devices_Functions.verifyMaxLoadingDetailsValue(ExpectedMaxISUnits,sISUnitsLoadingDetail);
+				verifyMaxISUnitsMultipleDevices(ExpectedMaxISUnits, noOfDevices, PanelType);
+				//Devices_Functions.verifyMaxLoadingDetailsValue(ExpectedMaxISUnits,sISUnitsLoadingDetail);
 				Report.Log(ReportLevel.Info, "Verified Maximum IS Units.");
 				
 				//Click on Points tab
 				Common_Functions.clickOnPointsTab();
 				
 				// Double click on cell capacitance cell
-				repo.ProfileConsys1.cell_CableCapacitance.DoubleClick();
+				repo.FormMe.cell_CableCapacitance.DoubleClick();
 				
 				// Change the cable capacitance value
-				repo.ProfileConsys1.txt_CableCapacitance.PressKeys((ChangedValue) +"{ENTER}");
+				repo.FormMe.txt_CableCapacitance.PressKeys((ChangedValue) +"{ENTER}");
 
 			}
 			//Close opened excel sheet
@@ -186,7 +187,6 @@ namespace TestProject.Libraries
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 17/12/2018  25/01/2019 Alpesh Dhakad  - Updated Xpath ISUnits
 		 * 				 04/02/2019 Alpesh Dhakad - Added Argument Row and updated wherever the function used. Also, added sRow=Row line
-		 *
 		 ****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyISUnits(string expectedISunit, string Row)
@@ -240,14 +240,14 @@ namespace TestProject.Libraries
 			}
 		}
 		
-		/********************************************************************
+		/**************************************************************************************************************************************
 		 * Function Name: verifyMaxISUnitsMultipleDevices
 		 * Function Details: To verify maximum IS units value for multiple devices.
 		 * Parameter/Arguments: expectedMax IS unit value, number of devices
 		 * Output:
 		 * Function Owner: Devendra Kulkarni
-		 * Last Update : 13/12/2018
-		 ********************************************************************/
+		 * Last Update : 13/12/2018  Alpesh Dhakad - 22/05/2020 Updated script as per old IS Unit implementation
+		 **************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMaxISUnitsMultipleDevices(string expectedMaxISUnit, int noOfDevices, string panelType)
 		{
@@ -256,11 +256,11 @@ namespace TestProject.Libraries
 			// Determine the row number of first panel
 			if(panelType.Equals("FIM"))
 			{
-				rowNo = noOfDevices + 8;
+				rowNo = noOfDevices + 16;
 			}
 			else
 			{
-				rowNo = noOfDevices + 9;
+				rowNo = noOfDevices + 17;
 			}
 			
 			Report.Log(ReportLevel.Info, "Verifying Max IS units for "+noOfDevices+ " devices.");
@@ -273,14 +273,15 @@ namespace TestProject.Libraries
 
 		}
 		
-		/********************************************************************
+		/**********************************************************************************************
 		 * Function Name: VerifyISCalculationForDifferentCableCapacitance
 		 * Function Details: To verify IS calculation on updating Cable capacitance
 		 * Parameter/Arguments:  fileName, sheetName
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 06/12/2018
-		 ********************************************************************/
+		 * Last Update : 06/12/2018  
+		 * Alpesh Dhakad - 20/05/2020 Updated script as per old IS Unit implementation
+		 **********************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyISCalculationForDifferentCableCapacitance(string sFileName,string sAddDevicesSheet)
 		{
@@ -310,11 +311,11 @@ namespace TestProject.Libraries
 			// Verify panel type and then accordingly assign sRow value
 			if(PanelType.Equals("FIM"))
 			{
-				sRow = (j+1).ToString();
+				sRow = (j+9).ToString();
 			}
 			else
 			{
-				sRow = (j+2).ToString();
+				sRow = (j+10).ToString();
 			}
 			
 			// For loop to iterate on data present in excel
@@ -330,30 +331,31 @@ namespace TestProject.Libraries
 				
 				//To call verifyISUnits method and verify IS units value
 				Report.Log(ReportLevel.Info,"Verification of IS Units on addition of devices");
-				//verifyISUnits(sISUnits,sRow);
-				Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
+				verifyISUnits(sISUnits,sRow);
+				//Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
 				//Click on Points tab
 				Common_Functions.clickOnPointsTab();
 				
 				// Double click on cell capacitance cell
-				repo.ProfileConsys1.cell_CableCapacitance.DoubleClick();
+				repo.FormMe.cell_CableCapacitance.DoubleClick();
 				
 				// Change the cable capacitance value
-				repo.ProfileConsys1.txt_CableCapacitance.PressKeys((ChangedValue) +"{ENTER}");
+				repo.FormMe.txt_CableCapacitance.PressKeys((ChangedValue) +"{ENTER}");
 				Report.Log(ReportLevel.Info, "Verified IS Units.");
 			}
 			//Close opened excel sheet
 			Excel_Utilities.CloseExcel();
 		}
 		
-		/********************************************************************
+		/***********************************************************************************
 		 * Function Name: VerifyISCalculationOnAddDeleteISDevice
 		 * Function Details: Verify the IS unit calculation when we add/delete IS devices from EXI800
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet, sAddIsDevicesSheet
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 7/12/2018
-		 ********************************************************************/
+		 * Alpesh Dhakad - 20/05/2020 Updated script as per old IS Unit implementation
+		 ***********************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyISCalculationOnAddDeleteISDevice(string sFileName,string sAddEXIDevicesSheet, string sAddIsDevicesSheet)
 		{
@@ -373,23 +375,23 @@ namespace TestProject.Libraries
 				
 				if(PanelType.Equals("FIM"))
 				{
-					sRow = (i+1).ToString();
+					sRow = (i+9).ToString();
 				}
 				else
 				{
-					sRow = (i+2).ToString();
+					sRow = (i+10).ToString();
 				}
 				
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
 				Common_Functions.clickOnPhysicalLayoutTab();
 				//Verify IS units in physical layout
-				//verifyISUnits(sISUnits,sRow);
+				verifyISUnits(sISUnits,sRow);
 				
 				//Verify Max IS units in physical layout
-				//verifyMaxISUnits(sExpectedMaxISUnits,sRow);
-				Devices_Functions.verifyMaxLoadingDetailsValue(sExpectedMaxISUnits,sISUnitsLoadingDetail);
-				Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
+				verifyMaxISUnits(sExpectedMaxISUnits,sRow);
+				//Devices_Functions.verifyMaxLoadingDetailsValue(sExpectedMaxISUnits,sISUnitsLoadingDetail);
+				//Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
 				
 				Common_Functions.clickOnPointsTab();
 				
@@ -427,11 +429,11 @@ namespace TestProject.Libraries
 			
 			if(PanelType.Equals("FIM"))
 			{
-				sRow = (k+2).ToString();
+				sRow = (k+10).ToString();
 			}
 			else
 			{
-				sRow = (k+3).ToString();
+				sRow = (k+11).ToString();
 			}
 			
 			
@@ -439,13 +441,13 @@ namespace TestProject.Libraries
 			
 			sISUnitsLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[k,9]).Value.ToString();
 			//Verify IS Units
-			//verifyISUnits(sISUnits,sRow);
-			Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
+			verifyISUnits(sISUnits,sRow);
+			//Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
 			sExpectedMaxISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[k,7]).Value.ToString();
 			
 			//Verify MAX IS units
-			//verifyMaxISUnits(sExpectedMaxISUnits,sRow);
-			Devices_Functions.verifyMaxLoadingDetailsValue(sExpectedMaxISUnits,sISUnitsLoadingDetail);
+			verifyMaxISUnits(sExpectedMaxISUnits,sRow);
+			//Devices_Functions.verifyMaxLoadingDetailsValue(sExpectedMaxISUnits,sISUnitsLoadingDetail);
 			// Click on Points tab
 			Common_Functions.clickOnPointsTab();
 			
@@ -465,23 +467,24 @@ namespace TestProject.Libraries
 			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			//Verify IS Units
-			//verifyISUnits(sISUnits,sRow);
+			verifyISUnits(sISUnits,sRow);
 			
 			//Verify MaxIS Units
-			//verifyMaxISUnits(sExpectedMaxISUnits,sRow);
-			Devices_Functions.verifyMaxLoadingDetailsValue(sExpectedMaxISUnits,sISUnitsLoadingDetail);
-            Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
+			verifyMaxISUnits(sExpectedMaxISUnits,sRow);
+			//Devices_Functions.verifyMaxLoadingDetailsValue(sExpectedMaxISUnits,sISUnitsLoadingDetail);
+            //Devices_Functions.verifyLoadingDetailsValue(sISUnits,sISUnitsLoadingDetail);
 		}
 		
 		
-		/*****************************************************************************************************
+		/*****************************************************************************************************************
 		 * Function Name: VerifyExtraISUnitsForPFI_FIMLoops
 		 * Function Details: Verify Extra IS Units Required in case of split loops/FIM loops
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet, sAddIsDevicesSheet
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 31/12/2018 Poonam Kadam - Updated Xpath for Extra IS Unit and added sCell
-		 *****************************************************************************************************/
+		 * Alpesh Dhakad - 21/05/2020 Updated script as per old IS Unit implementation - Still needs to be updated
+		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		 public static void VerifyExtraISUnitsForPFI_FIMLoops(string sFileName,string sAddEXIDevicesSheet, string sAddIsDevicesSheet)
 		{
@@ -518,10 +521,10 @@ namespace TestProject.Libraries
 				//Add EXI devices from gallery
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				Report.Log(ReportLevel.Info,"Device "+ModelNumber+" Added");
-				repo.ProfileConsys1.cell_CableCapacitance.DoubleClick();
+				repo.FormMe.cell_CableCapacitance.DoubleClick();
 				
 				// Change the cable capacitance value
-				repo.ProfileConsys1.txt_CableCapacitance.PressKeys((ChangedValue) +"{ENTER}");
+				repo.FormMe.txt_CableCapacitance.PressKeys((ChangedValue) +"{ENTER}");
 				Report.Log(ReportLevel.Info,"Cable capacitance changed to: "+ChangedValue);
 			}
 
@@ -532,7 +535,7 @@ namespace TestProject.Libraries
 				sExpectedColorCode= ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
 				CellNumber=(i-8).ToString();
 				sCell="["+CellNumber+"]";
-				sRow=(i+5).ToString();
+				sRow=(i+13).ToString();
 				//Verify Extra Is units required
 				verifyExtraISUnitsReq(sExtraISUnitsReq);
 				Report.Log(ReportLevel.Info,"Extra IS Units required for EXI row " + (i-7) + " verified as: "+sExtraISUnitsReq);
@@ -545,7 +548,7 @@ namespace TestProject.Libraries
 				sActualColorCode= getProgressBarColorForExtraISUnits();
 				Devices_Functions.VerifyPercentage(sExpectedColorCode, sActualColorCode);
 				Report.Log(ReportLevel.Info,"Progress bar color code for EXI row " + (i-7) + " verified as: "+sExpectedColorCode);
-				sRow= (i+6).ToString();
+				sRow= (i+14).ToString();
 			}
 			
 			//Click points tab
@@ -570,10 +573,10 @@ namespace TestProject.Libraries
 			
 			//Add one EXI800 devices from gallery
 			Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
-			repo.ProfileConsys1.cell_CableCapacitance.DoubleClick();
+			repo.FormMe.cell_CableCapacitance.DoubleClick();
 			
 			// Change the cable capacitance value
-			repo.ProfileConsys1.txt_CableCapacitance.PressKeys((ChangedValue) +"{ENTER}");
+			repo.FormMe.txt_CableCapacitance.PressKeys((ChangedValue) +"{ENTER}");
 			Report.Log(ReportLevel.Info,"Cable capacitance changed to: "+ChangedValue);
 			
 			//Close excel
@@ -588,12 +591,15 @@ namespace TestProject.Libraries
 			//Click points tab
 			Common_Functions.clickOnPointsTab();
 			
+			int RowNumber = 1;
+			
 			//Add IS devices to EXI800
 			for(int i=8; i<=ISrows; i++)
 			{
+				sRowNumber = (RowNumber).ToString();;
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
-				sRowNumber= (i-7).ToString();
+				//sRowNumber= (i-7).ToString();
 				Report.Log(ReportLevel.Info,"Row number is: "+sRowNumber);
 				Devices_Functions.SelectPointsGridRow(sRowNumber);
 				Report.Log(ReportLevel.Info,"EXI800 on Row number: "+sRowNumber+"is Selected");
@@ -603,6 +609,8 @@ namespace TestProject.Libraries
 				sLabelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				
 				Report.Log(ReportLevel.Success,"Label is "+ sLabelName);
+				
+				RowNumber = RowNumber+2;
 			}
 			
 			//Verify IS units for each EXI
@@ -610,7 +618,7 @@ namespace TestProject.Libraries
 			{
 				sISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				Report.Log(ReportLevel.Info,"Verify IS units as: "+sISUnits);
-				sRow= (i+12).ToString();
+				sRow= (i+18).ToString();
 				Report.Log(ReportLevel.Info,"EXI800 row set to: "+sRow);
 				verifyISUnits(sISUnits,sRow);
 				Report.Log(ReportLevel.Info,"IS units is verified for " +i+ " EXI800");
@@ -642,7 +650,7 @@ namespace TestProject.Libraries
 				sMaxExtraISUnits= ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
 				sExtraISUnitsReq= ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
 				sExpectedColorCode= ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
-				sRow= (i+12).ToString();
+				sRow= (i+18).ToString();
 				//Verify Extra Is units required
 				verifyExtraISUnitsReq(sExtraISUnitsReq);
 				Report.Log(ReportLevel.Info,"Extra IS Units required for EXI row " + (i-7) + " verified as: "+sExtraISUnitsReq);
@@ -674,7 +682,7 @@ namespace TestProject.Libraries
 			
 			// Click on Physical Layout tab
 			Common_Functions.clickOnPhysicalLayoutTab();
-			sRow= (l+12).ToString();
+			sRow= (l+18).ToString();
 			Report.Log(ReportLevel.Info,"Extra IS Units required for EXI row " + sRow);
 			
 			//Verify Extra Is units required
@@ -731,14 +739,14 @@ namespace TestProject.Libraries
 		}
 
 		
-		/********************************************************************
+		/******************************************************************************************************
 		 * Function Name: VerifyProgressBarIndicatorForISUnits
 		 * Function Details: Verify progress bar indicator for Intrinsically-safe Units
 		 * Parameter/Arguments: sFileName, sAddDevicesSheet, sAddIsDevicesSheet
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update : 31/12/2018
-		 ********************************************************************/
+		 * Last Update : 31/12/2018 Alpesh Dhakad - 21/05/2020 Updated script as per old IS Unit implementation
+		 ******************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyProgressBarIndicatorForISUnits(string sFileName,string sAddEXIDevicesSheet)
 		{
@@ -756,18 +764,18 @@ namespace TestProject.Libraries
 				
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
-				//sExpectedColorCode= ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				sExpectedColorCode= ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
 				
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
 				Report.Log(ReportLevel.Info,"All data imported from excel sheet");
 				
 				if(PanelType.Equals("FIM"))
 				{
-					sRow = (i+5).ToString();
+					sRow = (i+9).ToString();
 				}
 				else
 				{
-					sRow = (i+2).ToString();
+					sRow = (i+10).ToString();
 				}
 				
 				//Add EXI devices from gallery
@@ -776,14 +784,14 @@ namespace TestProject.Libraries
 				
 				//Click physical layout tab
 				Common_Functions.clickOnPhysicalLayoutTab();
-				sRowIndex=(i+1).ToString();
+				sRowIndex=(i+9).ToString();
 				
 				//Verify Progress bar color code for extra IS units
-//				sActualColorCode= getProgressBarColorForISUnits();
-//				Devices_Functions.VerifyPercentage(sExpectedColorCode, sActualColorCode);
-//				Report.Log(ReportLevel.Info,"Progress bar color code for EXI row " + (i-7) + " verified as: "+sExpectedColorCode);
+				sActualColorCode= getProgressBarColorForISUnits();
+				Devices_Functions.VerifyPercentage(sExpectedColorCode, sActualColorCode);
+				Report.Log(ReportLevel.Info,"Progress bar color code for EXI row " + (i-7) + " verified as: "+sExpectedColorCode);
 //				
-				Devices_Functions.verifyLoadingDetailColor("Intrinsically Safe Units");
+				//Devices_Functions.verifyLoadingDetailColor("Intrinsically Safe Units");
 				//Click physical layout tab
 				Common_Functions.clickOnPointsTab();
 			}
@@ -791,7 +799,7 @@ namespace TestProject.Libraries
 			//Setting the row count l to 8 to set sRow value and fetch values from excel
 			int m=8;
 			sExpectedColorCode= ((Range)Excel_Utilities.ExcelRange.Cells[m,11]).Value.ToString();
-			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[m,1]).Value.ToString();
+			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[m,12]).Value.ToString();
 			
 			//Delete IS device
 			Devices_Functions.DeleteDeviceUsingLabel(sLabelName);
@@ -799,13 +807,13 @@ namespace TestProject.Libraries
 			
 			//Click physical layout tab
 			Common_Functions.clickOnPhysicalLayoutTab();
-			sRowIndex=(m+1).ToString();
+			sRowIndex=(m+9).ToString();
 			
 			//Verify Progress bar color code for extra IS units
-//			sActualColorCode= getProgressBarColorForISUnits();
-//			Devices_Functions.VerifyPercentage(sExpectedColorCode, sActualColorCode);
-//			Report.Log(ReportLevel.Info,"Progress bar color code for EXI row " + (m-7) + " verified as: "+sExpectedColorCode);
-				Devices_Functions.verifyLoadingDetailColor("Intrinsically Safe Units");
+			sActualColorCode= getProgressBarColorForISUnits();
+			Devices_Functions.VerifyPercentage(sExpectedColorCode, sActualColorCode);
+			Report.Log(ReportLevel.Info,"Progress bar color code for EXI row " + (m-7) + " verified as: "+sExpectedColorCode);
+				//Devices_Functions.verifyLoadingDetailColor("Intrinsically Safe Units");
 			
 		}
 		
@@ -1002,6 +1010,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 01/02/2019 Updated on 07/02/2019 - Alpesh Dhakad - Updated device order verification steps
+		 * Alpesh Dhakad - 22/05/2020 Updated xpath for Device order label
 		 ***********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionISDevicesOnEXI(string sFileName,string sAddEXIDeviceSheet, string sISDevicesSheet)
@@ -1020,20 +1029,20 @@ namespace TestProject.Libraries
 			}
 			//Close excel
 			Excel_Utilities.CloseExcel();
-			
-			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
-			
-			// Click Show column chooser to select column
-			repo.ContextMenu.ShowColumnChooser.Click();
-			
-			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
-			Report.Log(ReportLevel.Info," Device order column added successfully ");
-			
-			// Close column choose window
-			repo.ProfileConsys.btn_CloseColumnChooser.Click();
-			
+//			
+//			// Select Point grid and right click on it
+//			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
+//			
+//			// Click Show column chooser to select column
+//			repo.ContextMenu.ShowColumnChooser.Click();
+//			
+//			// Click on Device order checkbox to add the column in points grid
+//			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
+//			Report.Log(ReportLevel.Info," Device order column added successfully ");
+//			
+//			// Close column choose window
+//			repo.ProfileConsys.btn_CloseColumnChooser.Click();
+//			
 			// Open Another excel to verify IS devices state
 			Excel_Utilities.OpenExcelFile(sFileName,sISDevicesSheet);
 			
@@ -1189,6 +1198,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 06/02/2019   Alpesh Dhakad - 01/08/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 22/05/2020 Updated script as per new implementation changes
 		 ******************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfMultipleISDevicesOnEXI(string sFileName,string sAddEXIDeviceSheet, string sISDevicesSheet)
@@ -1211,18 +1221,18 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
+			//Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
 			
-			// Click Show column chooser to select column
-			repo.ContextMenu.ShowColumnChooser.Click();
-			
-			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
-			Report.Log(ReportLevel.Info," Device order column added successfully ");
-			
-			// Close column choose window
-			repo.ProfileConsys.btn_CloseColumnChooser.Click();
-			
+//			// Click Show column chooser to select column
+//			repo.ContextMenu.ShowColumnChooser.Click();
+//			
+//			// Click on Device order checkbox to add the column in points grid
+//			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
+//			Report.Log(ReportLevel.Info," Device order column added successfully ");
+//			
+//			// Close column choose window
+//			repo.ProfileConsys.btn_CloseColumnChooser.Click();
+//			
 			// Open Another excel to verify IS devices state
 			Excel_Utilities.OpenExcelFile(sFileName,sISDevicesSheet);
 			
@@ -1333,6 +1343,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 06/02/2019  Alpesh Dhakad - 01/08/2019 & 21/08/2019- Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 22/05/2020 Updated script as per new implementation changes
 		 **************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyEnableDisableOfMultipleISDevicesOnEXI(string sFileName,string sAddEXIDeviceSheet, string sISDevicesSheet)
@@ -1355,18 +1366,18 @@ namespace TestProject.Libraries
 			Excel_Utilities.CloseExcel();
 			
 			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
-			
-			// Click Show column chooser to select column
-			repo.ContextMenu.ShowColumnChooser.Click();
-			
-			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
-			Report.Log(ReportLevel.Info," Device order column added successfully ");
-			
-			// Close column choose window
-			repo.ProfileConsys.btn_CloseColumnChooser.Click();
-			
+//			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
+//			
+//			// Click Show column chooser to select column
+//			repo.ContextMenu.ShowColumnChooser.Click();
+//			
+//			// Click on Device order checkbox to add the column in points grid
+//			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
+//			Report.Log(ReportLevel.Info," Device order column added successfully ");
+//			
+//			// Close column choose window
+//			repo.ProfileConsys.btn_CloseColumnChooser.Click();
+//			
 			// Open Another excel to verify IS devices state
 			Excel_Utilities.OpenExcelFile(sFileName,sISDevicesSheet);
 			
@@ -1482,14 +1493,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/**************************************************************************************************************************
 		 * Function Name:VerifyConnectedISDevicesOnEXI
 		 * Function Details: To verify connected IS devices on EXI
 		 * Parameter/Arguments: sFileName, sAddEXIDeviceSheet, sISDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 07/02/2019
-		 ********************************************************************/
+		 * Last Update : 07/02/2019 Alpesh Dhakad - 22/05/2020 Updated script as per new implementation changes
+		 **************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyConnectedISDevicesOnEXI(string sFileName,string sAddEXIDeviceSheet, string sISDevicesSheet)
 		{
@@ -1508,19 +1519,19 @@ namespace TestProject.Libraries
 			//Close excel
 			Excel_Utilities.CloseExcel();
 			
-			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
-			
-			// Click Show column chooser to select column
-			repo.ContextMenu.ShowColumnChooser.Click();
-			
-			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
-			Report.Log(ReportLevel.Info," Device order column added successfully ");
-			
-			// Close column choose window
-			repo.ProfileConsys.btn_CloseColumnChooser.Click();
-			
+//			// Select Point grid and right click on it
+//			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
+//			
+//			// Click Show column chooser to select column
+//			repo.ContextMenu.ShowColumnChooser.Click();
+//			
+//			// Click on Device order checkbox to add the column in points grid
+//			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
+//			Report.Log(ReportLevel.Info," Device order column added successfully ");
+//			
+//			// Close column choose window
+//			repo.ProfileConsys.btn_CloseColumnChooser.Click();
+//			
 			// Open Another excel to verify IS devices state
 			Excel_Utilities.OpenExcelFile(sFileName,sISDevicesSheet);
 			
@@ -1529,7 +1540,7 @@ namespace TestProject.Libraries
 
 			for(int i=8; i<=rows; i++)
 			{
-				sDeviceOrderRow= ((i+1)-6).ToString();
+				sDeviceOrderRow= (i-6).ToString();
 				string sDeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
@@ -1573,7 +1584,7 @@ namespace TestProject.Libraries
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,9]).Value.ToString();
 				string state =  ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
 				sDeviceOrderName = ((Range)Excel_Utilities.ExcelRange.Cells[j,11]).Value.ToString();
-				sRowNumber= (2).ToString();
+				sRowNumber= (5).ToString();
 				
 				// Click on first added EXI800
 				Devices_Functions.SelectPointsGridRow(sRowNumber);
@@ -1616,12 +1627,17 @@ namespace TestProject.Libraries
 			// Click on Delete button to delete first EXI
 			Common_Functions.clickOnDeleteButton();
 			
+			repo.FormDeleteSpur.btn_Ok_Warning.Click();
+			
 			// Open Another excel to verify IS devices
 			Excel_Utilities.OpenExcelFile(sFileName,sISDevicesSheet);
 			
 			// Count the number of rows in excel
 			rows = Excel_Utilities.ExcelRange.Rows.Count;
-
+			/*****************************************************************************************************************************/
+/**************************From here not implementing script further as Device order will get implemented and requirement are not finalised */
+/******************************************************************************************************************************************************/
+/**********************************************************************************************************************/
 			for(int i=8; i<=rows; i++)
 			{
 				sDeviceOrderRow= ((i+4)-6).ToString();
@@ -1679,19 +1695,19 @@ namespace TestProject.Libraries
 			//Close excel
 			Excel_Utilities.CloseExcel();
 			
-			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
-			
-			// Click Show column chooser to select column
-			repo.ContextMenu.ShowColumnChooser.Click();
-			
-			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
-			Report.Log(ReportLevel.Info," Device order column added successfully ");
-			
-			// Close column choose window
-			repo.ProfileConsys.btn_CloseColumnChooser.Click();
-			
+//			// Select Point grid and right click on it
+//			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
+//			
+//			// Click Show column chooser to select column
+//			repo.ContextMenu.ShowColumnChooser.Click();
+//			
+//			// Click on Device order checkbox to add the column in points grid
+//			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
+//			Report.Log(ReportLevel.Info," Device order column added successfully ");
+//			
+//			// Close column choose window
+//			repo.ProfileConsys.btn_CloseColumnChooser.Click();
+//			
 			// Open Another excel to verify IS devices state
 			Excel_Utilities.OpenExcelFile(sFileName,sISDevicesSheet);
 			
@@ -1786,7 +1802,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: sFileName, sAddEXIDeviceSheet, sISDevicesSheet
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 12/02/2019
+		 * Last Update : 12/02/2019 Alpesh Dhakad - 22/05/2020 Updated script as per new implementation changes
 		 ************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyEnableDisableISDevicesOnChangingCableCapacitance(string sFileName,string sAddEXIDeviceSheet, string sISDevicesSheet)
@@ -1809,19 +1825,19 @@ namespace TestProject.Libraries
 			//Close excel
 			Excel_Utilities.CloseExcel();
 			
-			// Select Point grid and right click on it
-			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
-			
-			// Click Show column chooser to select column
-			repo.ContextMenu.ShowColumnChooser.Click();
-			
-			// Click on Device order checkbox to add the column in points grid
-			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
-			Report.Log(ReportLevel.Info," Device order column added successfully ");
-			
-			// Close column choose window
-			repo.ProfileConsys.btn_CloseColumnChooser.Click();
-			
+//			// Select Point grid and right click on it
+//			Mouse.Click(repo.FormMe.HeadersPanel1, System.Windows.Forms.MouseButtons.Right);
+//			
+//			// Click Show column chooser to select column
+//			repo.ContextMenu.ShowColumnChooser.Click();
+//			
+//			// Click on Device order checkbox to add the column in points grid
+//			repo.ProfileConsys.chkBox_DeviceOrder1.Click();
+//			Report.Log(ReportLevel.Info," Device order column added successfully ");
+//			
+//			// Close column choose window
+//			repo.ProfileConsys.btn_CloseColumnChooser.Click();
+//			
 			// Open Another excel to verify IS devices state
 			Excel_Utilities.OpenExcelFile(sFileName,sISDevicesSheet);
 			
@@ -1956,6 +1972,8 @@ namespace TestProject.Libraries
 				// Delete Exi800 devices
 				Common_Functions.clickOnDeleteButton();
 				
+				repo.FormDeleteSpur.btn_Ok_Warning.Click();
+				
 				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[4,5]).Value.ToString();
 				string sType1 = ((Range)Excel_Utilities.ExcelRange.Cells[4,6]).Value.ToString();
 				
@@ -1974,7 +1992,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:  fileName, sheetName
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/02/2019
+		 * Last Update : 13/02/2019  Alpesh Dhakad - 22/05/2020 Updated script as per old IS Unit implementation
 		 ********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfExiDevices(string sFileName,string sAddEXIDeviceSheet, string sAddMaxEXIDeviceSheet)
@@ -2334,6 +2352,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 22/02/2019
 		 * Alpesh Dhakad 28/12/2019 - Updated row number for LoadingDetail Isolator unit (Fixed as Label text)
+		 * Alpesh Dhakad - 22/05/2020 Updated script as per old IS Unit implementation
 		 ********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIBUnits(string sFileName,string sAddDeviceSheet)
@@ -2379,8 +2398,8 @@ namespace TestProject.Libraries
 					Report.Log(ReportLevel.Success, "Additional Base " +sBaseofDevice+ " added successfully");
 				}
 				
-				//VerifyIsolatorUnits(expectedIsolatorUnits,PanelType);
-				Devices_Functions.verifyLoadingDetailsValue(expectedIsolatorUnits,sIBUnitsLoadingDetail);
+				VerifyIsolatorUnits(expectedIsolatorUnits,PanelType);
+				//Devices_Functions.verifyLoadingDetailsValue(expectedIsolatorUnits,sIBUnitsLoadingDetail);
 				
 			}
 			
@@ -2394,7 +2413,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:   expected value, panel type (FIM or PFI)
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 25/02/2019
+		 * Last Update : 25/02/2019 Alpesh Dhakad - 22/05/2020 Updated script as per old IS Unit implementation
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIsolatorUnits(string expectedIsolatorUnits, string PanelType)
@@ -2402,11 +2421,11 @@ namespace TestProject.Libraries
 			// Verify panel type and then accordingly assign sRow value
 			if(PanelType.Equals("FIM"))
 			{
-				sRow = (7).ToString();
+				sRow = (15).ToString();
 			}
 			else
 			{
-				sRow = (8).ToString();
+				sRow = (16).ToString();
 			}
 			
 
@@ -2445,11 +2464,11 @@ namespace TestProject.Libraries
 			// Verify panel type and then accordingly assign sRow value
 			if(PanelType.Equals("FIM"))
 			{
-				sRow = (6).ToString();
+				sRow = (14).ToString();
 			}
 			else
 			{
-				sRow = (7).ToString();
+				sRow = (15).ToString();
 			}
 			
 
@@ -2480,7 +2499,8 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 28/02/2019
-		 * Alpesh Dhakad 28/12/2019 - Updated PhysicalLayoutDeviceAddress and LoadingDetail Isolator unit 		 * 
+		 * Alpesh Dhakad 28/12/2019 - Updated PhysicalLayoutDeviceAddress and LoadingDetail Isolator unit
+		 * Alpesh Dhakad - 22/05/2020 Updated script as per old IS Unit implementation		 
 		 ********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIsolatorUnitsCalculationWithLoopHavingLIDevices(string sFileName,string sAddDeviceSheet)
@@ -2501,8 +2521,8 @@ namespace TestProject.Libraries
 				
 				Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,DeviceQty);
 				
-				//VerifyIsolatorUnits(expectedIsolatorUnits,PanelType);
-				Devices_Functions.verifyLoadingDetailsValue(expectedIsolatorUnits,IBUnitLoadingDetail);
+				VerifyIsolatorUnits(expectedIsolatorUnits,PanelType);
+				//Devices_Functions.verifyLoadingDetailsValue(expectedIsolatorUnits,IBUnitLoadingDetail);
 			}
 			
 			Excel_Utilities.CloseExcel();
@@ -2580,7 +2600,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:  fileName, sheetName
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 04/03/2019
+		 * Last Update : 04/03/2019 Alpesh Dhakad - 22/05/2020 Updated script as per old IS Unit implementation
 		 ********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIsolatorUnitsCalculationForDevicesInsideLI(string sFileName,string sAddDeviceSheet,string sVerifyIBDeviceSheet)
@@ -2598,9 +2618,9 @@ namespace TestProject.Libraries
 				expectedIsolatorUnits= ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				PanelType= ((Range)Excel_Utilities.ExcelRange.Cells[5,5]).Value.ToString();
 				
-				Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,DeviceQty);
+				//Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,DeviceQty);
 				
-				//VerifyIsolatorUnits(expectedIsolatorUnits,PanelType);
+				VerifyIsolatorUnits(expectedIsolatorUnits,PanelType);
 			}
 			
 			Excel_Utilities.CloseExcel();
@@ -2756,7 +2776,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:  fileName, sheetNames
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 05/03/2019
+		 * Last Update : 05/03/2019 
 		 ********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIsolatorUnitsCalculationForDevicesWithBuiltInIsolator(string sFileName,string sAddDeviceSheet,string sVerifyIBDeviceSheet)

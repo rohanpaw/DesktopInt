@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -94,19 +94,19 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("RIM 800", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameForOneRow("RIM 800 - 1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyGalleryItem("Other", "HVR800", "Enabled");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameForOneRow("RIM 800 - 1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("HVR800", "Other");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyDeviceProperties("Label", "HVR800 - 0");
+            Libraries.Devices_Functions.verifyDeviceProperties("Label", "HVR800 - 1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyDeviceProperties("Model", "HVR800");
@@ -115,7 +115,10 @@ namespace TestProject.Recording_Modules
             //Libraries.Devices_Functions.verifyBlankDeviceAddress("2", "Address");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.editDeviceLabel("Label", "HVR800-Test");
+            //Libraries.Devices_Functions.editDeviceLabel("Label", "HVR800-Test");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.ChangeLabelName("HVR800-Test");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.SaveProject("55208");
@@ -127,14 +130,17 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPointGridProperties("2", "Label", "HVR800-Test");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("HVR800-Test");
             Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyPointGridProperties("2", "Label", "HVR800-Test");
+            //Delay.Milliseconds(0);
             
         }
 

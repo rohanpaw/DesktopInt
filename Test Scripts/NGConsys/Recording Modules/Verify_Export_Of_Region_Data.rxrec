@@ -395,11 +395,50 @@ rxversion="8.3">
 			id="49d31a67-69d0-4a8b-93dd-f5c622516ae3">
 			</arguments>
 		</userrecorditem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnExportButton"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49d31a67-69d0-4a8b-93dd-f5c622516ae3">
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1da35052-134f-4427-9373-97af4fc2c199"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="da5d2408-f0f2-47f7-8850-f47457d51ea8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='Print Preview']/?/?/button[@automationid='PART_CloseButton']
+				</path>
+			</info>
+		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -421,7 +460,7 @@ rxversion="8.3">
 		</mouseitem>
 		<validationitem
 		action="Exists"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="410b276d-35b0-4298-948b-d05b1363668e">
 			<comment>
@@ -446,7 +485,7 @@ rxversion="8.3">
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1084,7 +1123,7 @@ Ggs=
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1518,11 +1557,50 @@ Ggs=
 			id="49d31a67-69d0-4a8b-93dd-f5c622516ae3">
 			</arguments>
 		</userrecorditem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnExportButton"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49d31a67-69d0-4a8b-93dd-f5c622516ae3">
+			</arguments>
+		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1da35052-134f-4427-9373-97af4fc2c199"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="da5d2408-f0f2-47f7-8850-f47457d51ea8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='Print Preview']/?/?/button[@automationid='PART_CloseButton']
+				</path>
+			</info>
+		</mouseitem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -1544,7 +1622,7 @@ Ggs=
 		</mouseitem>
 		<validationitem
 		action="Exists"
-		enabled="True"
+		enabled="False"
 		optional="False"
 		searchpropertyid="410b276d-35b0-4298-948b-d05b1363668e">
 			<comment>
@@ -1569,7 +1647,7 @@ Ggs=
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"
@@ -2207,7 +2285,7 @@ Ggs=
 		action="Click"
 		button="Left"
 		duration="500ms"
-		enabled="True"
+		enabled="False"
 		loc="Center"
 		movetime="300ms"
 		optional="False"

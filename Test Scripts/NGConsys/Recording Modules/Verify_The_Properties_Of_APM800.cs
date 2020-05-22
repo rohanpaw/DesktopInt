@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -88,14 +88,14 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.ChangePSUType("PSB800");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.ChangeSecondPSUType("PSB800-K");
+            Libraries.Panel_Functions.ChangeSecondPSUType("PSB800-KM");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -112,14 +112,14 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Zone", "1 (Zone 01)");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Address", "1");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Address", "1");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.editDeviceAddress("Address", "2");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.editDeviceAddress("Address", "2");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Address", "2");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Address", "2");
+            //Delay.Milliseconds(0);
             
         }
 

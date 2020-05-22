@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -121,21 +121,28 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyExportButtonInGalleryEnabledOrDisabled();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(14));
-            repo.FormMe.Export2ndTime.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'PrintPreview'.", repo.PrintPreview.SelfInfo, new RecordItemIndex(15));
-            Validate.Exists(repo.PrintPreview.SelfInfo);
+            Libraries.Export_Functions.clickOnExportButton();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.PARTMaximize' at Center.", repo.PrintPreview.PARTMaximizeInfo, new RecordItemIndex(16));
-            repo.PrintPreview.PARTMaximize.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(15));
             repo.PrintPreview.btn_CloseB.Click();
-            Delay.Milliseconds(200);
+            Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(16));
+            //repo.FormMe.Export2ndTime.Click();
+            //Delay.Milliseconds(200);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'PrintPreview'.", repo.PrintPreview.SelfInfo, new RecordItemIndex(17));
+            //Validate.Exists(repo.PrintPreview.SelfInfo);
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.PARTMaximize' at Center.", repo.PrintPreview.PARTMaximizeInfo, new RecordItemIndex(18));
+            //repo.PrintPreview.PARTMaximize.Click();
+            //Delay.Milliseconds(200);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(19));
+            //repo.PrintPreview.btn_CloseB.Click();
+            //Delay.Milliseconds(200);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
@@ -182,21 +189,28 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyExportButtonInGalleryEnabledOrDisabled();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(33));
-            repo.FormMe.Export2ndTime.Click();
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'PrintPreview'.", repo.PrintPreview.SelfInfo, new RecordItemIndex(34));
-            Validate.Exists(repo.PrintPreview.SelfInfo);
+            Libraries.Export_Functions.clickOnExportButton();
             Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.PARTMaximize' at Center.", repo.PrintPreview.PARTMaximizeInfo, new RecordItemIndex(35));
-            repo.PrintPreview.PARTMaximize.Click();
-            Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(36));
             repo.PrintPreview.btn_CloseB.Click();
-            Delay.Milliseconds(200);
+            Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(37));
+            //repo.FormMe.Export2ndTime.Click();
+            //Delay.Milliseconds(200);
+            
+            //Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'PrintPreview'.", repo.PrintPreview.SelfInfo, new RecordItemIndex(38));
+            //Validate.Exists(repo.PrintPreview.SelfInfo);
+            //Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.PARTMaximize' at Center.", repo.PrintPreview.PARTMaximizeInfo, new RecordItemIndex(39));
+            //repo.PrintPreview.PARTMaximize.Click();
+            //Delay.Milliseconds(200);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(40));
+            //repo.PrintPreview.btn_CloseB.Click();
+            //Delay.Milliseconds(200);
             
         }
 

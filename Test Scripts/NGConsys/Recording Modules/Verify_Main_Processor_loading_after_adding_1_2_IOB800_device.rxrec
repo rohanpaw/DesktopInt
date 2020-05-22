@@ -172,7 +172,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -220,6 +220,21 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -264,7 +279,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.050
+						0.030
 					</argvalue>
 				</argument>
 				<argument
@@ -274,7 +289,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -299,7 +314,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.601
+						0.537
 					</argvalue>
 				</argument>
 				<argument
@@ -309,7 +324,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -553,7 +568,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.080
+						0.060
 					</argvalue>
 				</argument>
 				<argument
@@ -563,7 +578,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -588,7 +603,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.809
+						0.537
 					</argvalue>
 				</argument>
 				<argument
@@ -598,7 +613,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -725,9 +740,34 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="DeleteDeviceUsingLabel"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="7a96e6f9-8d57-403f-ab46-4020a8c7d50f">
+				<argument
+				argname="LabelName"
+				id="3e4763f7-33dc-4f90-80f0-259130530f2f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						IOB800-2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="DeleteDeviceUsingLabelInInventoryTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -817,7 +857,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.050
+						0.030
 					</argvalue>
 				</argument>
 				<argument
@@ -827,7 +867,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -852,7 +892,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.601
+						0.537
 					</argvalue>
 				</argument>
 				<argument
@@ -862,7 +902,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -989,9 +1029,34 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="DeleteDeviceUsingLabel"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="7a96e6f9-8d57-403f-ab46-4020a8c7d50f">
+				<argument
+				argname="LabelName"
+				id="3e4763f7-33dc-4f90-80f0-259130530f2f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						IOB800-1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="DeleteDeviceUsingLabelInInventoryTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1081,7 +1146,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.020
+						0.000
 					</argvalue>
 				</argument>
 				<argument
@@ -1091,7 +1156,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1116,7 +1181,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.393
+						0.329
 					</argvalue>
 				</argument>
 				<argument
@@ -1126,7 +1191,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>

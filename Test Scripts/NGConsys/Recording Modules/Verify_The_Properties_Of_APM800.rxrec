@@ -140,7 +140,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PSB800-K
+						PSB800-KM
 					</argvalue>
 				</argument>
 			</arguments>
@@ -172,7 +172,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -322,7 +322,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryDeviceProperty"
 		namespace="TestProject.Libraries"
@@ -357,7 +357,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="editDeviceAddress"
 		namespace="TestProject.Libraries"
@@ -392,7 +392,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryDeviceProperty"
 		namespace="TestProject.Libraries"

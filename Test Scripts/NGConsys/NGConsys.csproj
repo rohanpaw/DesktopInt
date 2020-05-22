@@ -4561,9 +4561,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Conn__Xbus_Template.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>8dd89780-4da7-4133-aae3-7171d90e88d8</id>
       <recordtableid>db3b9404-a8e7-4335-9815-b8d8f363970c</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_24V_Load_On_Addition_Deletion_Of_Accessories.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -5251,9 +5251,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_If_We_Can_Add_More_IS_Devices_To_EXI800_When_We_Decrease_Increase_The_Cable_Capacitance_Value.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>2497892a-5d02-4ad5-9e8b-950f76daf43c</id>
       <recordtableid>f438bcb8-c6c3-4ea3-8fcf-a1c0f1277e62</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Imapact_Of_2nd_PSU_On_Battery_Loading.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -5976,9 +5976,9 @@
       <recordtableid>25f38091-80a0-4e7d-8b04-2bd59fe18892</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Trip_Current_LoopB.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f92a4edc-8da1-421c-96a6-32a2a0aa5f0f</id>
       <recordtableid>17f2c40d-46e5-42bf-addf-a73732f0bdef</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Trip_Current_Reopen.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

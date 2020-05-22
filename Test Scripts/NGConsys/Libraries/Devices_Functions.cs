@@ -647,7 +647,7 @@ namespace TestProject.Libraries
 			
 			
 			
-			repo.FormMe.cell_CableLength1.Click();
+			repo.FormMe.cell_CableLength.Click();
 			
 			if(sLoopType.Equals("PFI"))
 			{
@@ -666,7 +666,7 @@ namespace TestProject.Libraries
 				
 				Delay.Duration(1000, false);
 				
-				repo.FormMe.cell_CableLength1.Click();
+				repo.FormMe.cell_CableLength.Click();
 				//repo.ProfileConsys1.cell_CableLength.Click();
 				
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fCableLength2 + "{Enter}");
@@ -783,6 +783,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : Alpesh Dhakad -09/09/2019 - Updated Base selection and added xpath for the same
+		 * ALpesh DHakad - 14/05/2020 Updated xpath as per new build
 		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AssignDeviceBase(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex)
@@ -792,72 +793,117 @@ namespace TestProject.Libraries
 			sBase = sBaseofDevice;
 			sRowIndex = sBasePropertyRowIndex;
 			sLabelName = DeviceLabel;
-			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
-			repo.ProfileConsys1.BaseofDeviceRow.Click();
-			repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+			//repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+			//repo.ProfileConsys1.BaseofDeviceRow.Click();
+			//repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+			
+			if(repo.FormMe.txt_LabelNameForOneRowInfo.Exists())
+			{
+				repo.FormMe.txt_LabelNameForOneRow.Click();
+			}
+			else
+			{
+			repo.FormMe.txt_LabelName1.Click();
+			}
+			repo.FormMe.BaseofDeviceRow.Click();
+			repo.FormMe.BaseofDeviceRow.PressKeys("{Right}");
+			
 			int.TryParse(sRowIndex, out iRowIndex);
 			iRowIndex = iRowIndex+1;
 			sRowIndex = iRowIndex.ToString();
-			repo.ProfileConsys1.Cell_BaseofDevice.Click();
-			sExistingBase = repo.ProfileConsys1.SomeText.TextValue;
+			//repo.ProfileConsys1.Cell_BaseofDevice.Click();
+			repo.FormMe.Cell_BaseofDevice.Click();
+			
+			//sExistingBase = repo.ProfileConsys1.SomeText.TextValue;
+			sExistingBase = repo.FormMe.txt_cellBaseOfDevice.TextValue;
 			//sExistingBase = sExistingBase.Replace(@"\""",string.Empty);
 			if(!sExistingBase.Equals(sBase))
 			{
-				repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
-				repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+				repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
+				repo.FormMe.BaseofDeviceRow.Click("560;19");
 				int.TryParse(sRowIndex, out iRowIndex);
 				iRowIndex = iRowIndex-1;
 				sRowIndex = iRowIndex.ToString();
-				repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
-				repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+				repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
+				repo.FormMe.BaseofDeviceRow.Click("560;19");
+				
+				//Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.UiaOnly;
+				
 				repo.ContextMenu.btn_BaseSelection.Click();
+				
+				//Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+
 			}
 		}
 
-		/********************************************************************
+		/******************************************************************************************************
 		 * Function Name: AssignAdditionalBase
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : Alpesh Dhakad - 22/05/2020 Updated script as per new implementation changes
+		 ******************************************************************************************************/
 		[UserCodeMethod]
 		public static void AssignAdditionalBase(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex)
 		{
 			sLabelName = DeviceLabel;
 			Common_Functions.clickOnPointsTab();
-			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+			if(repo.FormMe.txt_LabelNameForOneRowInfo.Exists())
+			{
+				repo.FormMe.txt_LabelNameForOneRow.Click();
+			}
+			else
+			{
+			repo.FormMe.txt_LabelName1.Click();
+			}
+			
 			sBase = sBaseofDevice;
 			sRowIndex = sBasePropertyRowIndex;
-			repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
-			repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+			//repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+			//repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+			repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
+			repo.FormMe.BaseofDeviceRow.Click("560;19");
+				
+			
 			repo.ContextMenu.btn_BaseSelection.Click();
 		}
 		
-		/********************************************************************
+		/*****************************************************************************************************
 		 * Function Name: RemoveBase
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update :Alpesh Dhakad - 18/05/2020 Updated script and xpath as per new implementation changes
+		 *****************************************************************************************************/
 		[UserCodeMethod]
 		public static void RemoveBase(string DeviceLabel, string sBasePropertyRowIndex)
 		{
 			int iRowIndex;
 			sLabelName = DeviceLabel;
 			Common_Functions.clickOnPointsTab();
-			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+			repo.FormMe.txt_LabelName1.Click();
+			
 			sRowIndex = sBasePropertyRowIndex;
-			repo.ProfileConsys1.BaseofDeviceRow.Click();
-			repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+			//repo.ProfileConsys1.BaseofDeviceRow.Click();
+			//repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+			
+			repo.FormMe.BaseofDeviceRow.Click();
+			repo.FormMe.BaseofDeviceRow.PressKeys("{Right}");
+			
+			
 			int.TryParse(sRowIndex, out iRowIndex);
 			iRowIndex = iRowIndex+1;
 			sRowIndex = iRowIndex.ToString();
-			repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
-			repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+			//repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+			//repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+			repo.FormMe.BaseofDeviceRow.MoveTo("760;19");
+			repo.FormMe.BaseofDeviceRow.Click("760;19");
+			
+			
 		}
 
 		/*****************************************************************************************************************
@@ -887,7 +933,7 @@ namespace TestProject.Libraries
 			Delay.Duration(500);
 			// repo.ProfileConsys1.NavigationTree.Node1Pro32xD.Click();
 			
-			repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
+			repo.FormMe.cell_NumberOfAlarmLeds.Click();
 			
 			
 			if((rangeState.Equals("Valid")))
@@ -896,8 +942,8 @@ namespace TestProject.Libraries
 				
 				//Ranorex.Keyboard.Press(System.Windows.Forms.Keys.Return);
 				
-				repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
-				sActualValue = repo.ProfileConsys1.txt_NumberOfAlarmLeds.TextValue;
+				repo.FormMe.cell_NumberOfAlarmLeds.Click();
+				sActualValue = repo.FormMe.txt_NumberOfAlarmLeds.TextValue;
 				int.TryParse(sActualValue, out Value);
 				if(Value==LEDNumber)
 				{
@@ -910,11 +956,11 @@ namespace TestProject.Libraries
 			}
 			else if((rangeState.Equals("InvalidRange")))
 			{
-				string initialValue = repo.ProfileConsys1.txt_NumberOfAlarmLeds.TextValue;
+				string initialValue = repo.FormMe.txt_NumberOfAlarmLeds.TextValue;
 				int.TryParse(initialValue,out revertTo);
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+LEDNumber +"{ENTER}");
-				repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
-				string revertedValue = repo.ProfileConsys1.txt_NumberOfAlarmLeds.TextValue;
+				repo.FormMe.cell_NumberOfAlarmLeds.Click();
+				string revertedValue = repo.FormMe.txt_NumberOfAlarmLeds.TextValue;
 				int.TryParse(revertedValue, out actualValue);
 				if(actualValue==revertTo)
 				{
@@ -929,8 +975,8 @@ namespace TestProject.Libraries
 			{
 				
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+LEDNumber +"{ENTER}");
-				repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
-				string revertedValue = repo.ProfileConsys1.txt_NumberOfAlarmLeds.TextValue;
+				repo.FormMe.cell_NumberOfAlarmLeds.Click();
+				string revertedValue = repo.FormMe.txt_NumberOfAlarmLeds.TextValue;
 				int.TryParse(revertedValue,out actualValue);
 				if(actualValue==expectedResult)
 				{
@@ -957,9 +1003,9 @@ namespace TestProject.Libraries
 		public static void verifyMinMaxThroughSpinControl(string minLimit,string maxLimit)
 		{
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+ maxLimit +"{ENTER}");
-			repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
-			repo.ProfileConsys1.btn_NumberOfAlarmLedsSpinUpButton.Click();
-			string actualValue = repo.ProfileConsys1.txt_NumberOfAlarmLeds.TextValue;
+			repo.FormMe.cell_NumberOfAlarmLeds.Click();
+			repo.FormMe.btn_NumberOfAlarmLedsSpinUpButton.Click();
+			string actualValue = repo.FormMe.txt_NumberOfAlarmLeds.TextValue;
 			if(actualValue.Equals(maxLimit))
 			{
 				Report.Log(ReportLevel.Success,"Spin control accepts values within specified max limit");
@@ -971,9 +1017,9 @@ namespace TestProject.Libraries
 			Keyboard.Press("{ENTER}");
 			
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+ minLimit +"{ENTER}");
-			repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
-			repo.ProfileConsys1.btn_NumberOfAlarmLedsSpinDownButton.Click();
-			actualValue = repo.ProfileConsys1.txt_NumberOfAlarmLeds.TextValue;
+			repo.FormMe.cell_NumberOfAlarmLeds.Click();
+			repo.FormMe.btn_NumberOfAlarmLedsSpinDownButton.Click();
+			actualValue = repo.FormMe.txt_NumberOfAlarmLeds.TextValue;
 			if(actualValue.Equals(minLimit))
 			{
 				Report.Log(ReportLevel.Success,"Spin control accepts values within specified min limit");
@@ -1213,7 +1259,7 @@ namespace TestProject.Libraries
 				else{
 					repo.FormMe.btn_DeleteFC.Click();
 				}
-				Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
+				//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 				Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 			}
 			
@@ -2805,7 +2851,6 @@ namespace TestProject.Libraries
 		}
 		
 		
-		
 		/********************************************************************
 		 * Function Name: RightClickOnSelectedRow
 		 * Function Details: To open the context menu options using right click
@@ -2889,7 +2934,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
+		 * Last Update :Alpesh Dhakad - 21/05/2020 Updated script as per new implementation changes
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void changeAndVerifyAlarmLoad(int AlarmLoad, string rangeState, int expectedResult)
@@ -2907,18 +2952,22 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Alarm Load" +"{ENTER}" );
 			
 			// Click on Alarm Load cell
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
-			
+			//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			repo.FormMe.cell_Properties.Click();
 			
 			if((rangeState.Equals("Valid")))
 			{
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+AlarmLoad +"{ENTER}");
 				
 				// Click on Alarm Load cell
-				repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+				//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+				repo.FormMe.cell_Properties.Click();
 				
 				// Retrieve value alarm load
-				actualAlarmLoad = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+				//actualAlarmLoad = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+				actualAlarmLoad = repo.FormMe.txt_PropertiesTextValue.TextValue;
+
+				
 				int.TryParse(actualAlarmLoad, out Value);
 				if(Value==AlarmLoad)
 				{
@@ -2931,13 +2980,18 @@ namespace TestProject.Libraries
 			}
 			else if((rangeState.Equals("InvalidRange")))
 			{
-				string initialValue = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+				//string initialValue = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+				string initialValue = repo.FormMe.txt_PropertiesTextValue.TextValue;
+				
 				int.TryParse(initialValue,out revertTo);
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+AlarmLoad +"{ENTER}");
 				// Click on Alarm Load cell
-				repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+				//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+				repo.FormMe.cell_Properties.Click();
 				
-				string revertedValue = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+				//string revertedValue = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+				string revertedValue = repo.FormMe.txt_PropertiesTextValue.TextValue;
+				
 				int.TryParse(revertedValue, out actualValue);
 				if(actualValue==revertTo)
 				{
@@ -2953,9 +3007,11 @@ namespace TestProject.Libraries
 				
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+AlarmLoad +"{ENTER}");
 				// Click on Alarm Load cell
-				repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+				//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+				repo.FormMe.cell_Properties.Click();
 				
-				string revertedValue = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+				//string revertedValue = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+				string revertedValue = repo.FormMe.txt_PropertiesTextValue.TextValue;
 				int.TryParse(revertedValue,out actualValue);
 				if(actualValue==expectedResult)
 				{
@@ -3230,7 +3286,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: Alarm Load to be entered
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : 11/03/2019
+		 * Last Update : 11/03/2019 Alpesh Dhakad - 20/05/2020 Updated script as per new xpaths
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void EditAlarmLoad(string AlarmLoad)
@@ -3246,9 +3302,20 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Alarm Load" +"{ENTER}" );
 			
 			// Click on Alarm Load cell
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			repo.FormMe.txt_LabelNameProperties.Click();
 			
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.PressKeys(AlarmLoad);
+			//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.PressKeys(AlarmLoad);
+			
+			repo.FormMe.txt_LabelNameProperties.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}"+(AlarmLoad)+"{ENTER}" + "{ENTER}");
+			
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
 			
 		}
 		
@@ -3809,6 +3876,7 @@ namespace TestProject.Libraries
 			// Click on Isolator  cell
 			repo.ProfileConsys1.PARTItemsPresenter.cell_DayMatchesNight.Click();
 			
+			
 			// To retrieve the attribute value as boolean by its ischecked properties and store in actual state
 			bool actualState =  repo.ProfileConsys1.chkbox_Isolator.GetAttributeValue<bool>("ischecked");
 			
@@ -3876,7 +3944,7 @@ namespace TestProject.Libraries
 				
 				
 				Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
-				verifyIsolatorCheckbox(expectedIsolatorCheckboxState);
+				//verifyIsolatorCheckbox(expectedIsolatorCheckboxState);
 				
 				//DC_Functions.verifyDCUnitsValue(expectedDCUnits);
 				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
@@ -3962,7 +4030,9 @@ namespace TestProject.Libraries
 				
 				AddDevicesfromMainProcessorGallery(sDeviceName,sType,PanelType);
 				
-				SelectRowUsingLabelName(sLabel);
+				//SelectRowUsingLabelName(sLabel);
+				
+				SelectRowUsingLabelNameForRBUSOneRow(sLabel);
 				
 				// To verify power supply value
 				VerifyPowerSupply(sPowerSupply);
@@ -4160,14 +4230,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/********************************************************************************************************************
 		 * Function Name: ChangeLabelName
 		 * Function Details: To change Label Name
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update :Alpesh Dhakad - 20/05/2020 Updated script as per new xpath
+		 ********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void ChangeLabelName(string changeLabelName)
 		{
@@ -4181,10 +4251,13 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Label" +"{ENTER}" );
 			
 			// Click on Label Name cell
-			repo.ProfileConsys1.cell_LabelName.Click();
+			//repo.ProfileConsys1.cell_LabelName.Click();
+			repo.FormMe.cell_LabelNameProperties.Click();
 			
 			// Enter the value to change Label Name
-			repo.ProfileConsys1.PARTItemsPresenter.txt_changeDeviceSensitivity.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}"+(changeLabelName)+"{ENTER}" + "{ENTER}");
+			//repo.ProfileConsys1.PARTItemsPresenter.txt_changeDeviceSensitivity.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}"+(changeLabelName)+"{ENTER}" + "{ENTER}");
+			repo.FormMe.txt_LabelNameProperties.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}"+(changeLabelName)+"{ENTER}" + "{ENTER}");
+			
 			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -4319,6 +4392,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 05/04/2019
+		 * Alpesh Dhakad - 20/05/2020 Updated script as per new xpaths
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyDeviceProperties(string sPropertyLabel, string sPropertyValue)
@@ -4337,10 +4411,12 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sPropertyLabel +"{ENTER}" );
 			
 			// Click on property cell
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			repo.FormMe.cell_LabelNameProperties.Click();
 			
 			// Retrieve value for the property
-			string actualPropertyValue = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+			//string actualPropertyValue = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
+			string actualPropertyValue = repo.FormMe.txt_LabelNameProperties.TextValue;
 			
 			// Comparing actual and expected property value
 			if(actualPropertyValue.Equals(sPropertyValue))
@@ -5294,7 +5370,7 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Panel Type" +"{ENTER}" );
 			
 			// Click on Panel type cell
-			repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
+			repo.FormMe.cell_NumberOfAlarmLeds.Click();
 			
 			//Retrieve value of Panel type text and store in PanelType
 			string actualPanelName = repo.FormMe.PanelType.TextValue;
@@ -5493,7 +5569,7 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Panel Type" +"{ENTER}" );
 			
 			// Click on Panel type cell
-			repo.ProfileConsys1.cell_NumberOfAlarmLeds.Click();
+			repo.FormMe.cell_NumberOfAlarmLeds.Click();
 			
 			//Retrieve value of Panel type text and store in PanelType
 			string actualPanelName = repo.FormMe.PanelType.TextValue;
@@ -6467,13 +6543,30 @@ namespace TestProject.Libraries
 			string sExistingBase;
 			sRowIndex = sBasePropertyRowIndex;
 			sLabelName = DeviceLabel;
-			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
-			repo.ProfileConsys1.BaseofDeviceRow.Click();
-			repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+			//repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+			//repo.ProfileConsys1.BaseofDeviceRow.Click();
+			//repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+			
+			
+			if(repo.FormMe.txt_LabelNameForOneRowInfo.Exists())
+			{
+				repo.FormMe.txt_LabelNameForOneRow.Click();
+			}
+			else
+			{
+			repo.FormMe.txt_LabelName1.Click();
+			}
+			repo.FormMe.BaseofDeviceRow.Click();
+			repo.FormMe.BaseofDeviceRow.PressKeys("{Right}");
+			
+			
+			
 			int.TryParse(sRowIndex, out iRowIndex);
 			iRowIndex = iRowIndex+1;
 			sRowIndex = iRowIndex.ToString();
 			repo.ProfileConsys1.Cell_BaseofDevice_Reopen.Click();
+			
+			
 			sExistingBase = repo.ProfileConsys1.SomeText_Reopen.TextValue;
 			
 			if(sExistingBase.Equals(sBaseName))
@@ -6875,7 +6968,7 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Functionality" +"{ENTER}" );
 			
 			// Click on label cell
-			repo.FormMe.cell_Properties_backplane1.Click();
+			repo.FormMe.cell_Properties.Click();
 			
 			string actualDescription =	repo.FormMe.txt_PropertiesTextValue.TextValue;
 			
@@ -7277,6 +7370,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 22/08/2019
+		 * Alpesh Dhakad - 14/05/2020 Updated xpath as per new build
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void verifyCheckboxInSearchProperties(string sCheckboxName, bool ExpectedState)
@@ -7288,13 +7382,18 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sCheckboxName +"{ENTER}" );
 
 			// Click on Isolator  cell
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DayMatchesNight.Click();
 			
+			//repo.ProfileConsys1.PARTItemsPresenter.cell_DayMatchesNight.Click();
+			repo.FormMe.cell_SearchPropertiesFirstRowDrpDwn.Click();
+
 			//Click on row
 			//repo.ProfileConsys1.PARTItemsPresenter.row_SearchProperties.Click();
 			
 			// To retrieve the attribute value as boolean by its ischecked properties and store in actual state
-			bool actualState =  repo.ProfileConsys1.chkbox_Isolator.GetAttributeValue<bool>("ischecked");
+			//bool actualState =  repo.ProfileConsys1.chkbox_Isolator.GetAttributeValue<bool>("ischecked");
+			
+			bool actualState =  repo.FormMe.chkbox_Isolator.GetAttributeValue<bool>("ischecked");
+			
 			
 			//As per actual state and expected state values
 			if(actualState.Equals(ExpectedState))
@@ -7419,6 +7518,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 23/08/2019
+		 * Alpesh Dhakad - 14/05/2020  Updated xpath as per new implentation
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void ChangeParameterInSearchProperties(string sProperty, string sParameterValue)
@@ -7433,7 +7533,8 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys(sProperty +"{ENTER}" );
 			
 			// Click on Isolator  cell
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DayMatchesNight.Click();
+			//repo.ProfileConsys1.PARTItemsPresenter.cell_DayMatchesNight.Click();
+			repo.FormMe.cell_Properties.Click();
 			
 			//Enter the required option
 			Keyboard.Press(sParameterValue+"{Enter}");
@@ -7934,6 +8035,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 27/12/2019
+		 * Alpesh Dhakad - 14/05/2020 Updated as per new implementation
 		 **************************************************************************************/
 		[UserCodeMethod]
 		public static void EnableISDevices()
@@ -7945,9 +8047,9 @@ namespace TestProject.Libraries
 			
 			repo.FormMe.chkBox_EnableISDevices.Click();
 			
-			repo.FormMe2.chkBox_EnableISDevices.Click();
+			repo.FormEnableISDevices.chkBox_EnableChkbox.Click();
 			
-			repo.FormMe2.btn_Ok_ISDevicesWarning.Click();
+			repo.FormEnableISDevices.btn_Ok_Warning.Click();
 			
 			repo.FormMe.btn_back.Click();
 			
@@ -8072,7 +8174,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: 
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/02/2020
+		 * Last Update : 13/02/2020 Alpesh Dhakad - 20/05/2020 Updated script as per new xpaths
 		 **************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifySKU(bool sSKU)
@@ -8087,10 +8189,13 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("SKU" +"{ENTER}" );
 			
 			// Click on SKU cell
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			repo.FormMe.cell_LabelNameProperties.Click();
 			
 			// Retrieve SKU Visibility
-			bool actualSKU = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.EnsureVisible();
+			//bool actualSKU = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.EnsureVisible();
+			bool actualSKU = repo.FormMe.txt_LabelNameProperties.EnsureVisible();
+			
 			
 			if(actualSKU.Equals(sSKU))
 			{
@@ -8116,7 +8221,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: 
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 13/02/2020
+		 * Last Update : 13/02/2020  Alpesh Dhakad - 20/05/2020 Updated script as per new xpaths
 		 **************************************************************************************************/
 		[UserCodeMethod]
 		 public static void verifyZone(bool sZone)
@@ -8131,12 +8236,13 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Zone" +"{ENTER}" );
 			
 			// Click on Zone cell
-			repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			repo.FormMe.cell_LabelNameProperties.Click();
 			
 			// Retrieve Zone Visibility
-			bool actualZoneDescription = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.EnsureVisible();
+			//bool actualZoneDescription = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.EnsureVisible();
+			bool actualZoneDescription = repo.FormMe.txt_LabelNameProperties.EnsureVisible();
 			
-	
 			
 			if(actualZoneDescription.Equals(sZone))
 			{
@@ -8331,7 +8437,110 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
 		}
 		
+		/********************************************************************
+		 * Function Name: DeleteDeviceUsingLabelInInventoryTab
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh  Dhakad
+		 * Last Update : 15/05/2020
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void DeleteDeviceUsingLabelInInventoryTab(string LabelName)
+		{
+			sLabelName = LabelName;
+			
+			SelectRowUsingLabelNameFromInventoryTab(sLabelName);
+			
+			Common_Functions.clickOnDeleteButton();
+				
+			
+			Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
+			
+		}
 		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelNameFromInventoryTab
+		 * Function Details: To select item from inventory grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 16/05/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameForRBUS(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_LabelNameForRBusRow.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
+		
+		
+		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelNameFromInventoryTab
+		 * Function Details: To select item from inventory grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 16/05/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameForRBUSOneRow(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			
+				repo.FormMe.txt_LabelNameForRBusOneRow.Click();
+				
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
+		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelNameForPanelAccOneRow
+		 * Function Details: To select item from panel accessories grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 19/05/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameForPanelAccOneRow(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			
+				repo.FormMe.txt_LabelNameForPanelAccOneRow.Click();
+				
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
+		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelNameForOneRow
+		 * Function Details: To select item from grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad 
+		 * Last Update : 
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameForOneRow(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_LabelNameForOneRow.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
+				
 	}
 }
 

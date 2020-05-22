@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -97,22 +97,22 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "SKU", "557.202.006");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "SKU", "557.202.006");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "IOB800");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Model", "IOB800");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "IOB800-1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "IOB800-1");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "IOB-Test");
+            Libraries.InventoryGrid_Functions.editDeviceLabel("7", "Label", "IOB-Test");
             Delay.Milliseconds(0);
             
-            verifyInventoryDeviceProperty("Label", "IOB-Test");
+            Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Label", "IOB-Test");
             Delay.Milliseconds(0);
             
         }

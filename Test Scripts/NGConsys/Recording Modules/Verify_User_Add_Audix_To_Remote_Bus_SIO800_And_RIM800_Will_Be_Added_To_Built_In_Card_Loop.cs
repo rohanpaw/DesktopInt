@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -94,14 +94,17 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnInventoryTab();
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("2", "Label", "MPM800-1");
+            Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("3", "Label", "MPM800-1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Audix 8", "Attached Functionality", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(7));
+            Delay.Duration(7000, false);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -143,11 +146,14 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnInventoryTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("Audix 8");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Audix 8");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(24));
+            Delay.Duration(3000, false);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -164,11 +170,14 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnInventoryTab();
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("2", "Label", "MPM800-1");
+            Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("3", "Label", "MPM800-1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Audix 16", "Attached Functionality", "PFI");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(32));
+            Delay.Duration(30000, false);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);

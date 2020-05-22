@@ -562,7 +562,6 @@ namespace TestProject.Libraries
 			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Common_Functions.clickOnPhysicalLayoutTab();
 			
-			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
 			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
@@ -1114,6 +1113,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Purvi Bhasim
 		 * Last Update : 08/01/2019 Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated scripts as per new build and xpaths
 		 * Alpesh Dhakad - 06/12/2019 - Updated test scripts with new method for loading details
+		 * Alpesh Dhakad - 15/05/2020 Updated script as per new implementation changes
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCurrentDCUnitscalculation(string sFileName,string sAddPanelSheet)
@@ -1154,7 +1154,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander("Node");
 				
 				// Click on Loop Card node
-				Common_Functions.ClickOnNavigationTreeExpander("PFI");
+				//Common_Functions.ClickOnNavigationTreeExpander("PFI");
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -1171,13 +1171,13 @@ namespace TestProject.Libraries
 				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,LoadingDetailsName);
 
 				// Click on Site node
-				Common_Functions.ClickOnNavigationTreeExpander("Site");
+				Common_Functions.ClickOnNavigationTreeItem("Site");
 				
 			}
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
-			//go to points grid
+			//Click on  points tab
 			Common_Functions.clickOnPointsTab();
 			
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
@@ -1188,6 +1188,9 @@ namespace TestProject.Libraries
 			// Click on Loop C node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
 				
+				//Click on  points tab
+			Common_Functions.clickOnPointsTab();
+			
 			//Paste the devices
 			Common_Functions.clickOnPasteButton();
 			
@@ -1220,7 +1223,7 @@ namespace TestProject.Libraries
 
 			
 			// Click on Site node
-				Common_Functions.ClickOnNavigationTreeExpander("Site");
+				Common_Functions.ClickOnNavigationTreeItem("Site");
 				
 			
 			// Click on Panel node

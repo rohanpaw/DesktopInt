@@ -215,7 +215,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 				<argument
@@ -260,7 +260,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 				<argument
@@ -305,7 +305,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 				<argument
@@ -350,7 +350,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 				<argument
@@ -395,7 +395,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 				<argument
@@ -421,21 +421,21 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Verification_for_device_Label"
+		classname="InventoryGrid_Functions"
 		enabled="True"
-		isexternaltestmethod="False"
+		isexternaltestmethod="True"
 		methodname="verifyInventoryDeviceProperty"
-		namespace="TestProject.Recording_Modules"
+		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<arguments
-			id="e66aaec7-7bc5-4292-bb47-bb32f5fb9570">
+			id="9c5ae7a9-077d-46dd-af53-5a8ff551220d">
 				<argument
 				argname="sPropertyLabel"
-				id="af30f4af-e113-4f9a-94b3-83e1327c5a07">
+				id="a009f7c2-3de2-4633-88dd-f6247e335267">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -445,7 +445,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="sExpectedValue"
-				id="b71a2366-7784-4eaf-a4c5-39b0c58e41e5">
+				id="be25bcd1-6a75-421a-9299-b9da911a3c4a">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

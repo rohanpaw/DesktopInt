@@ -200,7 +200,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						2
+						3
 					</argvalue>
 				</argument>
 				<argument
@@ -270,6 +270,15 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="10000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
@@ -305,7 +314,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						3
+						4
 					</argvalue>
 				</argument>
 				<argument

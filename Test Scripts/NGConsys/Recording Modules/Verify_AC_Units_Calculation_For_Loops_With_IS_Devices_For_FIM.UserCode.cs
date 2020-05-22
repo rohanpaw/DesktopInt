@@ -20,6 +20,11 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
+
+namespace TestProject.Recording_Modules
+{
+
+}
 namespace TestProject.Recording_Modules
 {
     public partial class Verify_AC_Units_Calculation_For_Loops_With_IS_Devices_For_FIM

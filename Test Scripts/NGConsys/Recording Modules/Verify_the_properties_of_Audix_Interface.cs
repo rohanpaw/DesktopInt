@@ -74,7 +74,7 @@ namespace TestProject.Recording_Modules
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 20;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -94,16 +94,19 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnInventoryTab();
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("2", "Label", "MPM800-1");
+            Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("3", "Label", "MPM800-1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Audix 8", "Attached Functionality", "PFI");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(7));
+            Delay.Duration(10000, false);
+            
             Libraries.Common_Functions.clickOnInventoryTab();
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("3", "Label", "Audix 8");
+            Libraries.InventoryGrid_Functions.SelectRowUsingDevicePropertyForMainProcessorGallery("4", "Label", "Audix 8");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyModelInSearchProperties("XIOM");

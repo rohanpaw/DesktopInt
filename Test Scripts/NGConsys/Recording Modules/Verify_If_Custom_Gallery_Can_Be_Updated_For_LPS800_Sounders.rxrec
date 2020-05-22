@@ -26,6 +26,30 @@ rxversion="8.3">
 	<variables>
 	</variables>
 	<recorditems>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="08555a34-d0b8-420a-8348-c2ce16d2baa9"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="27ada95f-a2b2-4569-b272-1daf826563e7"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@automationid='me']/progressbar/picture[2]/?/?/list[@automationid='PART_BarControl']/button[@text='Save as Custom']
+				</path>
+			</info>
+		</mouseitem>
 		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"
@@ -97,7 +121,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -310,7 +334,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Generic Sounder
+						Generic Sounder - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -340,30 +364,21 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
+		<userrecorditem
+		classname="Common_Functions"
 		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="08555a34-d0b8-420a-8348-c2ce16d2baa9"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
+		isexternaltestmethod="True"
+		methodname="clickOnSaveAsCustomButton"
+		namespace="TestProject.Libraries"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="27ada95f-a2b2-4569-b272-1daf826563e7"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[2]/?/?/list[@automationid='PART_BarControl']/button[@text='Save as Custom']
-				</path>
-			</info>
-		</mouseitem>
+			<arguments
+			id="051c2e84-ecdf-464c-a0fa-1847be3c920c">
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"

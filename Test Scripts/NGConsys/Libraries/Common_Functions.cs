@@ -1185,6 +1185,39 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info," Paste with points button clicked successfully  ");
 		}
 		
+		
+		/********************************************************************
+		 * Function Name: clickOnPropertiesTab
+		 * Function Details: Click on Properties tab
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :15/05/2020
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void clickOnPropertiesTab()
+		{
+			repo.FormMe.tab_Properties.Click();
+			Report.Log(ReportLevel.Info," Properties tab clicked successfully  ");
+		}
+		
+		/********************************************************************
+		 * Function Name: clickOnPasteWithPointsButton
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :20/05/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnSaveAsCustomButton()
+		{
+			repo.FormMe.SaveAsCustom.Click();
+			Report.Log(ReportLevel.Info," Save as custom button clicked successfully  ");
+		}
+		
+		
 	}
 }
 

@@ -200,7 +200,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						2
+						3
 					</argvalue>
 				</argument>
 				<argument
@@ -270,6 +270,15 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="15000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
 		enabled="True"
@@ -290,7 +299,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						3
+						4
 					</argvalue>
 				</argument>
 				<argument
@@ -317,11 +326,11 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Gallery_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyCopyButton"
 		namespace="TestProject.Libraries"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -342,11 +351,11 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonDisabled"
 		namespace="TestProject.Libraries"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -357,7 +366,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
