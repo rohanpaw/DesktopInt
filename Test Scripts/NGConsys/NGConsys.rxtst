@@ -3366,7 +3366,7 @@ rxversion="8.3">
 			id="2c315ac7-ffad-4e21-abab-0872d77c399b"
 			name="Verification_for_device_Label">
 				<description>
-					<![CDATA[NGC-606/TC-55850. Failing due to NGC-2632.]]>
+					<![CDATA[NGC-606/TC-55850]]>
 				</description>
 				<parameters>
 					<param
@@ -4624,6 +4624,26 @@ rxversion="8.3">
 			name="Verify_IS_Devices_Drag_And_Drop_On_Non_Addressable_Devices"
 			ref="46f52e99-bd6b-4eb4-a95a-71bbb1520c9f"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3e783725-377c-402a-bd17-dbec47500f3e"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="3ebb0d0a-69e5-4c10-a3a4-c747b84cbd61"
@@ -9318,6 +9338,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="793459ba-7e34-4938-bef5-956567a4b092"
+			name="Verify_Reopen_when_user_edit_the_HVR800_Properties"
+			ref="1fad945a-189f-4b17-aa18-3c9400728f1e"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="795308cc-2aeb-40bc-80c7-120414b02731"
 			name="Create_Project"
@@ -18343,12 +18369,6 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="fb6dd65d-eb26-4a67-8b33-22988e7d637b"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="fb8515ff-194e-43c5-b4d6-4676ab7573dc"
 			name="Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC"
 			ref="92213869-7c7a-45fc-b90e-f226fd0f903b"
@@ -23246,8 +23266,12 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_when_user_edit_the_HVR800_Properties">
 						</testmodule>
 						<testmodule
-						id="fb6dd65d-eb26-4a67-8b33-22988e7d637b"
-						name="Close_Application">
+						id="3e783725-377c-402a-bd17-dbec47500f3e"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="793459ba-7e34-4938-bef5-956567a4b092"
+						name="Verify_Reopen_when_user_edit_the_HVR800_Properties">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24745,13 +24769,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="1f366e1b-8d91-423c-880a-a84229356f67">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="e4178d2c-0d14-4ed5-aa10-3f07149df295">
-			</testcontainer>
-			<testcontainer
-			id="f538a592-8dd0-4cd8-ae5b-0ca3cd5f795c">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section recording.
+    ///The Verify_Reopen_when_user_edit_the_HVR800_Properties recording.
     /// </summary>
-    [TestModule("ecc6fe71-acd3-4456-851f-05c423b0cadd", ModuleType.Recording, 1)]
-    public partial class Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section : ITestModule
+    [TestModule("1fad945a-189f-4b17-aa18-3c9400728f1e", ModuleType.Recording, 1)]
+    public partial class Verify_Reopen_when_user_edit_the_HVR800_Properties : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section instance = new Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section();
+        static Verify_Reopen_when_user_edit_the_HVR800_Properties instance = new Verify_Reopen_when_user_edit_the_HVR800_Properties();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section()
+        public Verify_Reopen_when_user_edit_the_HVR800_Properties()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Properties_For_LPS800_In_Points_Grid_And_Properties_Section Instance
+        public static Verify_Reopen_when_user_edit_the_HVR800_Properties Instance
         {
             get { return instance; }
         }
@@ -79,67 +79,16 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            Libraries.Common_Functions.ReopenProject("55208");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            //Delay.Milliseconds(0);
-            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("LPS 800", "Sounders/Beacons");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.SelectInventoryGridRow("1");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Generic Sounder", "Conventional Sounders");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.AddDeviceOrderColumn();
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.verifyPointsGridColumn("SKU", "1");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.verifyPointsGridColumn("Model", "5");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.verifyPointsGridColumn("Label", "6");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.verifyPointsGridColumn("Address", "6");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelName("LPS 800 - 1");
-            Delay.Milliseconds(0);
-            
-            verifyZone(ValueConverter.ArgumentFromString<bool>("sZone", "True"));
-            Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.verifyDescription("Loop Powered Sounder Module");
-            //Delay.Milliseconds(0);
-            
-            verifySKU(ValueConverter.ArgumentFromString<bool>("sSKU", "True"));
-            Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.SelectPointsGridRow("2");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder - 1");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.ChangeLabelName("Generic Sounder");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.EditAlarmLoad("5");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.SaveProject("53633");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("HVR800-Test");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

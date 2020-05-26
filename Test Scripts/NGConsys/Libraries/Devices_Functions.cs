@@ -4068,7 +4068,7 @@ namespace TestProject.Libraries
 			
 			
 			// Get the text value of Device Sensitivity field
-			string PowerSupply = repo.FormMe.txt_PowerSupply.Text;
+			string PowerSupply = repo.FormMe.txt_PowerSupply.TextValue;
 			
 			//Comparing expected and actual Device Sensitivity value
 			if(PowerSupply.Equals(sPowerSupply))
@@ -4113,7 +4113,7 @@ namespace TestProject.Libraries
 			
 			
 			// Get the text value of Device Sensitivity field
-			string PowerSupply = repo.FormMe.txt_PowerSupply.Text;
+			string PowerSupply = repo.FormMe.txt_PowerSupply.TextValue;
 			
 			//Comparing expected and actual Device Sensitivity value
 			if(PowerSupply.Equals(sPowerSupply))
@@ -4161,7 +4161,7 @@ namespace TestProject.Libraries
 			repo.FormMe.cell_PowerSupply.Click();
 			
 			// Get the text value of Power supply field
-			string PowerSupply = repo.FormMe.txt_PowerSupply.Text;
+			string PowerSupply = repo.FormMe.txt_PowerSupply.TextValue;
 			
 			Report.Log(ReportLevel.Info,"Power supply value changed to " +PowerSupply+"  "+sChangePowerSupply);
 			//Comparing expected and actual power supply value
@@ -8540,7 +8540,28 @@ namespace TestProject.Libraries
 				
 			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
 		}
+			
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelNameForRBUSOneRowOnReopen
+		 * Function Details: To select item from RBUS using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 23/05/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameForRBUSOneRowOnReopen(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			
+				repo.FormMe.txt_LabelNameForRBusOneRowOnReopen.Click();
 				
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
+		
 	}
 }
 

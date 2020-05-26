@@ -3616,6 +3616,18 @@
       <UserCode>true</UserCode>
       <id>b4ffa003-87eb-425d-aa6a-dd1e9ea60d3d</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_when_user_edit_the_HVR800_Properties.cs">
+      <BoundTo>fe17964e-d5b1-4fad-84c7-fe9afcfb93d5</BoundTo>
+      <DependentUpon>Verify_Reopen_when_user_edit_the_HVR800_Properties.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>08f10959-b703-40a9-97ac-f676e9896fc4</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_when_user_edit_the_HVR800_Properties.UserCode.cs">
+      <BoundTo>fe17964e-d5b1-4fad-84c7-fe9afcfb93d5</BoundTo>
+      <DependentUpon>Verify_Reopen_when_user_edit_the_HVR800_Properties.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>544726a7-56a2-42cc-befa-477038492446</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.cs">
       <BoundTo>60711ecb-1170-4b17-af59-08c71e7e3525</BoundTo>
       <DependentUpon>Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec</DependentUpon>
@@ -4441,9 +4453,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>a9f453dd-9eb6-4866-a12f-6744f3fa87ec</id>
       <recordtableid>d4029ebc-dfbd-43ba-9c84-b12192982322</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Reopen_Remote_LED_Indicator_Property_For_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4966,9 +4978,9 @@
       <recordtableid>c04f6e17-c585-49b0-ac3c-427cd9432808</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>db24c100-87f4-4d4e-93cf-ac0104c47b85</id>
       <recordtableid>d06aa5da-a769-490f-ac17-1b54645a0b7b</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_DCUnits_Calculation_On_Changing_Base_of_Device_To_SounderBase.rxrec">
       <id>5cb8f625-41f3-4b33-a10a-142b06e7d317</id>
@@ -5196,9 +5208,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_If_IS_Devices_Are_Invisible_In_Multipoint_Wizard.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f1a8898d-692e-4a7a-8986-e82fccadbded</id>
       <recordtableid>e10c907b-2b10-4934-b21b-fe87d60f16fe</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_If_Panel_Type_Dropdown_Is_Filtered_Based_On_Max_Limit_Of_Slotcards_For_PCH800.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -5779,6 +5791,11 @@
       <id>e3d0ea15-27ef-4727-b1cc-84014df7c671</id>
       <recordtableid>28d7a789-3e2d-4e63-ba62-379cb7e3a850</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen_when_user_edit_the_HVR800_Properties.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>fe17964e-d5b1-4fad-84c7-fe9afcfb93d5</id>
+      <recordtableid>1fad945a-189f-4b17-aa18-3c9400728f1e</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section.rxrec">
       <id>60711ecb-1170-4b17-af59-08c71e7e3525</id>

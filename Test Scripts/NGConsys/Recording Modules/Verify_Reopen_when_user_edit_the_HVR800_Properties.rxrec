@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="aa2f34c5-9f54-4d2c-b609-3ce739396e04"
-mode="Global"
-rxversion="8.3">
+id="1fad945a-189f-4b17-aa18-3c9400728f1e"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -20,7 +19,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Reopen_Project_If_User_Changed_And_Saved_Power_Source"
+	classname="Verify_Reopen_when_user_edit_the_HVR800_Properties"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -38,15 +37,15 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="4a9e4f8f-660e-46a9-971e-0a1cc25a8daf">
+			id="f5392b0b-afdd-44c5-b749-e065437380a2">
 				<argument
 				argname="sProjectName"
-				id="86b30bdc-9159-449d-8096-89253a3f84e4">
+				id="6e2d0a03-f60d-4f1d-be45-92be42328c96">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						218
+						55208
 					</argvalue>
 				</argument>
 			</arguments>
@@ -78,31 +77,6 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="ExpanderName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Main
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
@@ -121,7 +95,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						R-BUS
+						Built-in Loop-A
 					</argvalue>
 				</argument>
 			</arguments>
@@ -130,7 +104,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelNameForRBUSOneRowOnReopen"
+		methodname="SelectRowUsingLabelNameOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -138,40 +112,15 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="25a35bfd-36ee-4578-9424-b0dcb7d66160">
+			id="01b82f96-739d-4cec-b8c2-136519490f90">
 				<argument
 				argname="sLabel"
-				id="0c3171f3-096b-478f-80c5-5a25451e5502">
+				id="6bdad1cc-771a-4fc9-950c-6eec8034344e">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MPM800-1
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyPowerSupply"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="25a35bfd-36ee-4578-9424-b0dcb7d66160">
-				<argument
-				argname="sPowerSupply"
-				id="0c3171f3-096b-478f-80c5-5a25451e5502">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Dual (24V/5V)
+						HVR800-Test
 					</argvalue>
 				</argument>
 			</arguments>
@@ -188,10 +137,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="25a35bfd-36ee-4578-9424-b0dcb7d66160">
+			id="38489cd1-6e8c-41ed-a2e3-b376f61ba023">
 				<argument
 				argname="Save"
-				id="0c3171f3-096b-478f-80c5-5a25451e5502">
+				id="286c05c6-51fd-43fb-8eaf-abfb76f4e400">
 					<argvaluetype>
 						System.Boolean
 					</argvaluetype>
@@ -201,7 +150,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="SaveConfirmation"
-				id="a8262810-174e-423f-8c53-77728ae90174">
+				id="5b9e87b5-353d-436b-9422-b9f7ec720ab2">
 					<argvaluetype>
 						System.Boolean
 					</argvaluetype>
@@ -211,7 +160,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="sProjectName"
-				id="1c92cbdb-774b-4523-b4ef-35e9ea851f78">
+				id="24174a80-2663-44da-bdbb-da5c03cbf762">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -237,7 +186,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Reopen_Project_If_User_Changed_And_Saved_Power_Source.UserCode.cs
+		Verify_Reopen_when_user_edit_the_HVR800_Properties.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

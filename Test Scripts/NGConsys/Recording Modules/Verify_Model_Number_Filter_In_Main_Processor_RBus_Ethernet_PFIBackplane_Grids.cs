@@ -105,15 +105,15 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-E");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ModelColumn' at Center.", repo.FormMe.ModelColumnInfo, new RecordItemIndex(5));
-            repo.FormMe.ModelColumn.Click();
-            Delay.Milliseconds(200);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.ModelColumn' at Center.", repo.FormMe.ModelColumnInfo, new RecordItemIndex(5));
+            //repo.FormMe.ModelColumn.Click();
+            //Delay.Milliseconds(200);
             
-            Libraries.InventoryGrid_Functions.verifyModelFilterListText("6", "(Blanks),(Non blanks),Built-in Loop,Generic Printer,GUI DCM,PLX800");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyModelFilterListText("6", "(Blanks),(Non blanks),Built-in Loop,Generic Printer,GUI DCM,PLX800");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.selectModelFilterListText("6");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.selectModelFilterListText("6");
+            //Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-E");
             Delay.Milliseconds(0);

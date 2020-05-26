@@ -130,7 +130,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelName"
+		methodname="SelectRowUsingLabelNameOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -155,7 +155,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelName"
+		methodname="SelectRowUsingLabelNameOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -180,7 +180,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelName"
+		methodname="SelectRowUsingLabelNameOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -205,7 +205,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelName"
+		methodname="SelectRowUsingLabelNameOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>

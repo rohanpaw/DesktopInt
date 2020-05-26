@@ -132,6 +132,9 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("RIM 800", ValueConverter.ArgumentFromString<int>("DeviceQty", "124"));
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 25s.", new RecordItemIndex(11));
+            Delay.Duration(25000, false);
+            
             Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 2");
             Delay.Milliseconds(0);
             

@@ -79,14 +79,17 @@ namespace TestProject.Recording_Modules
 
             Init();
 
+            Libraries.Devices_Functions.EnableISDevices();
+            Delay.Milliseconds(0);
+            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -94,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("Exi800", ValueConverter.ArgumentFromString<int>("DeviceQty", "1"));
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("Exi800");
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("Exi800 - 1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("Exi800", ValueConverter.ArgumentFromString<int>("DeviceQty", "1"));
@@ -106,11 +109,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("Exi800", ValueConverter.ArgumentFromString<int>("DeviceQty", "1"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'AddDevices.MultiplePointWizardWarningSign'.", repo.AddDevices.MultiplePointWizardWarningSignInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'AddDevices.MultiplePointWizardWarningSign'.", repo.AddDevices.MultiplePointWizardWarningSignInfo, new RecordItemIndex(10));
             Validate.Exists(repo.AddDevices.MultiplePointWizardWarningSignInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddDevices.Cancel_Multiple_Point_Wizard' at Center.", repo.AddDevices.Cancel_Multiple_Point_WizardInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddDevices.Cancel_Multiple_Point_Wizard' at Center.", repo.AddDevices.Cancel_Multiple_Point_WizardInfo, new RecordItemIndex(11));
             repo.AddDevices.Cancel_Multiple_Point_Wizard.Click();
             Delay.Milliseconds(200);
             
@@ -138,11 +141,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("Exi800", ValueConverter.ArgumentFromString<int>("DeviceQty", "3"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'AddDevices.MultiplePointWizardWarningSign'.", repo.AddDevices.MultiplePointWizardWarningSignInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'AddDevices.MultiplePointWizardWarningSign'.", repo.AddDevices.MultiplePointWizardWarningSignInfo, new RecordItemIndex(20));
             Validate.Exists(repo.AddDevices.MultiplePointWizardWarningSignInfo);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddDevices.Cancel_Multiple_Point_Wizard' at Center.", repo.AddDevices.Cancel_Multiple_Point_WizardInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'AddDevices.Cancel_Multiple_Point_Wizard' at Center.", repo.AddDevices.Cancel_Multiple_Point_WizardInfo, new RecordItemIndex(21));
             repo.AddDevices.Cancel_Multiple_Point_Wizard.Click();
             Delay.Milliseconds(200);
             

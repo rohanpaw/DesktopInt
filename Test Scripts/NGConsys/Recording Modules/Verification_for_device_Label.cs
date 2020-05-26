@@ -112,7 +112,7 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.editDeviceLabel("7", "Label", "IOB-Test");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Label", "IOB-Test");
+            verifyInventoryDeviceProperty("Label", "IOB-Test");
             Delay.Milliseconds(0);
             
         }

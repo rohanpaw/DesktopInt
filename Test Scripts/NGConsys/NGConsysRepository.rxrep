@@ -2002,7 +2002,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="c29f24fc-252a-45a0-8ee3-d2c0379607e1"
 			name="MaxISUnits"
 			refimgid="4936a012-558b-472e-beb3-b287121863f5"
-			searchtimeout="30000ms">
+			searchtimeout="45000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[3]
 			</item>
 			<item
@@ -2012,7 +2012,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			name="Copy_of_MaxISUnits"
 			refimgid="4936a012-558b-472e-beb3-b287121863f5"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/container[@automationid='PART_ItemsPresenter']/row[@index='17']//text[3]
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/container[@automationid='PART_ItemsPresenter']/row[@index='18']//text[3]
 			</item>
 			<item
 			capname="text"
@@ -2183,7 +2183,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			name="Copy_of_PointsGridRow1"
 			refimgid="6c32ab2f-dae0-4a6c-9c70-8f1be92f753a"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[3]
+				/form[@automationid='me']/progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[2]
 			</item>
 			<item
 			capname="row"
@@ -2484,6 +2484,15 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			refimgid="5dd1e4f2-4e69-47c5-a462-78edff0c7a9c"
 			searchtimeout="120000ms">
 				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='TreeListView']//list[@automationid='headerItemsControl']/button[$sColumn]/text[@automationid='PART_Content']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="8857ac21-91ef-40b9-9db1-5bea06b0be9b"
+			name="Copy_of_PointsGridHeaderColumn1"
+			refimgid="5dd1e4f2-4e69-47c5-a462-78edff0c7a9c"
+			searchtimeout="120000ms">
+				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='TreeListView']//list[@automationid='headerItemsControl']/button[1]/text[@automationid='PART_Content']
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
@@ -2832,8 +2841,8 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="7eb8ad20-55fa-4493-87ac-4ee648507e5a"
 			name="txt_InventoryProperty"
 			refimgid="025648ba-baa2-46bc-9b54-cd6981a1c5a1"
-			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/list/container[@automationid='PART_ItemsPresenter']//text[@automationid='PART_Editor']
+			searchtimeout="45000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/container[@automationid='PART_ItemsPresenter']//text[@automationid='PART_Editor']
 			</item>
 			<item
 			capname="text"
@@ -2966,7 +2975,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			name="cell_SearchPropertiesFirstRowDrpDwn"
 			refimgid="0387ef6a-5e11-4e21-9807-4bc145d237dd"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='1']/cell[@isheader='False']
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_ItemsPresenter']/row[@index='1']/cell[@isheader='False']
 			</item>
 			<item
 			capname="cell"
@@ -14438,6 +14447,13 @@ AAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="text"
+			id="1e63460f-d4e4-4281-aa12-5eef2869c68e"
+			name="txt_LabelNameForRBusOneRowOnReopen"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row/cell[3]/text[@text=$sLabelName]
+			</item>
+			<item
+			capname="text"
 			id="248fd947-7a2c-4673-a394-1a3a656e412a"
 			name="txt_LabelNameForRBusRow"
 			searchtimeout="72000ms">
@@ -14512,7 +14528,7 @@ AAAAAElFTkSuQmCC
 			id="36452b86-e800-49ab-b8fe-b838f08f0455"
 			name="txt_LabelName1Reopen"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar/list[7]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']//row/cell[3]/text[@text=$sLabelName]
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text=$sLabelName]
 			</item>
 			<item
 			capname="button"

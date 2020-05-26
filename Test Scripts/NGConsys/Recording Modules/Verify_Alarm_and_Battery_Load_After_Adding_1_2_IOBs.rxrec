@@ -1024,7 +1024,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="DeleteDeviceUsingLabel"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1034,7 +1034,7 @@ rxversion="8.3">
 			<arguments
 			id="7a96e6f9-8d57-403f-ab46-4020a8c7d50f">
 				<argument
-				argname="LabelName"
+				argname="sLabel"
 				id="3e4763f7-33dc-4f90-80f0-259130530f2f">
 					<argvaluetype>
 						System.String
@@ -1043,6 +1043,21 @@ rxversion="8.3">
 						IOB800-1
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnDeleteButton"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem

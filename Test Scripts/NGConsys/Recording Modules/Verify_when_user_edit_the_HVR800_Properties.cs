@@ -124,20 +124,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.SaveProject("55208");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ReopenProject("55208");
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ReopenProject("55208");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("HVR800-Test");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("HVR800-Test");
+            //Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.verifyPointGridProperties("2", "Label", "HVR800-Test");
             //Delay.Milliseconds(0);

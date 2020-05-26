@@ -100,16 +100,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGalleryNotHavingImages("Generic Sounder", "Conventional Sounders");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDeviceOrderColumn();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDeviceOrderColumn();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyPointsGridColumn("SKU", "1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPointsGridColumn("Model", "4");
+            Libraries.Devices_Functions.verifyPointsGridColumn("Model", "5");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPointsGridColumn("Label", "5");
+            Libraries.Devices_Functions.verifyPointsGridColumn("Label", "6");
             Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.verifyPointsGridColumn("Address", "6");

@@ -5741,6 +5741,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner:Purvi Bhasin
 		 * Last Update :4/2/2019   Alpesh Dhakad - 01/08/2019 & 23/08/2019- Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 22/05/2020 Updated script as per new implementation changes
 		 *******************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyNormalLoadandAlarmLoadPropertyOnChangingPowerSource(string sFileName,string sAddPanelSheet)
@@ -5796,13 +5797,21 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				
+				
 				// Verify Default Battery Standby load value
 				//verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
 				
 				// Verify Default Alarm load value
 				//verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -5821,7 +5830,8 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
 				//Click on Device
-				Devices_Functions.SelectRowUsingLabelName(sLabel);
+				//Devices_Functions.SelectRowUsingLabelName(sLabel);
+				Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(sLabel);
 				
 				Devices_Functions.VerifyPowerSupply(sPowerSupply);
 				
@@ -5831,11 +5841,17 @@ namespace TestProject.Libraries
 				// Verify Default Battery Standby load value
 				//verifyBatteryStandby(expectedBatteryStandbyAfterMPM,false,PanelType);
 				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
 				// Verify Default Alarm load value
 				//verifyAlarmLoad(expectedAlarmLoadAfterMPM,false,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(expectedBatteryStandbyAfterMPM,sStandbyLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(expectedAlarmLoadAfterMPM,sAlarmLoadingDetail);
 				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
 				
 				
 				for(int j=5; j<=7; j++)
@@ -5852,7 +5868,9 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
 					//Click on Device
-					Devices_Functions.SelectRowUsingLabelName(sLabel);
+					//Devices_Functions.SelectRowUsingLabelName(sLabel);
+					Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(sLabel);
+				
 					
 					//Change Power Supply
 					Devices_Functions.ChangePowerSupply(sChangePowerSupply);
@@ -5863,11 +5881,17 @@ namespace TestProject.Libraries
 					
 					// Verify Default Battery Standby load value
 					//verifyBatteryStandby(expectedBatteryStandby,false,PanelType);
+					// Click on Panel Calculation tab
+					Common_Functions.clickOnPanelCalculationsTab();
 					
 					// Verify Default Alarm load value
 					//verifyAlarmLoad(expectedAlarmLoad,false,PanelType);
 					Devices_Functions.verifyLoadingDetailsValue(expectedBatteryStandby,sStandbyLoadingDetail);
 				    Devices_Functions.verifyLoadingDetailsValue(expectedAlarmLoad,sAlarmLoadingDetail);
+				    
+				    // Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
 				}
 				
 				//Close opened excel sheet

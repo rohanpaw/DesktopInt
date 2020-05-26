@@ -320,7 +320,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						4
+						5
 					</argvalue>
 				</argument>
 			</arguments>
@@ -355,7 +355,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						5
+						6
 					</argvalue>
 				</argument>
 			</arguments>
@@ -497,7 +497,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SelectPointsGridRow"
 		namespace="TestProject.Libraries"
@@ -516,6 +516,31 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelName"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="6f10e938-4f82-4e20-adef-223b09020c8e">
+				<argument
+				argname="sLabel"
+				id="27e26c92-be81-437c-95cf-42ddc982b89a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Generic Sounder - 1
 					</argvalue>
 				</argument>
 			</arguments>

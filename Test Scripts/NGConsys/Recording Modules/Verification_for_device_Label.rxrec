@@ -421,11 +421,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="InventoryGrid_Functions"
+		classname="Verification_for_device_Label"
 		enabled="True"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="verifyInventoryDeviceProperty"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False">
 			<comment>
 			</comment>
