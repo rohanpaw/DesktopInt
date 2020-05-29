@@ -85,19 +85,22 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.238", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.122", "24V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
@@ -109,8 +112,11 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
@@ -121,13 +127,19 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.297", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.238", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.141", "24V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
@@ -142,22 +154,25 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectInventoryGridRow("2");
+            Libraries.Devices_Functions.SelectInventoryGridRow("3");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Zonal Alarm Display 64", "Attached Functionality", "");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Zonal Alarm Display 64", "Attached Functionality", "");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.120", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.238", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.141", "24V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
@@ -169,25 +184,37 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
             //Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPropertiesTab();
+            Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("2");
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("3");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.238", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.122", "24V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
@@ -208,19 +235,25 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.186", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "24V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
@@ -244,13 +277,19 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "Main Processor 5V (A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.186", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.129", "24V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
@@ -274,13 +313,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "Main Processor 5V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "24V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");
@@ -304,13 +343,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "Main Processor 5V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "Main Processor 24V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "24V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");

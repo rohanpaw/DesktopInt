@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("460PH", "Call Points");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBase("460PH - 1", "430SB [516.800.710] @ 90dB & 801RIL", "13");
+            Libraries.Devices_Functions.AssignDeviceBase("460PH - 1", "430SB [516.800.710] @ 90dB & 801RIL", "6");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("410BDM", "Ancillary");
@@ -109,7 +109,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("460P", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBase("460P - 4", "440DSB [576.440.001] @ 90dB & 801RIL", "13");
+            Libraries.Devices_Functions.AssignDeviceBase("460P - 4", "440DSB [576.440.001] @ 90dB & 801RIL", "6");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("410MIM", "Call Points");
@@ -121,7 +121,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("460PC", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBase("460PC - 7", "440DSB [576.440.001] @ 90dB & 801HL", "13");
+            Libraries.Devices_Functions.AssignDeviceBase("460PC - 7", "440DSB [576.440.001] @ 90dB & 801HL", "6");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DragAndDropDevicesInPhysicalLayout("A:5", "A:4");

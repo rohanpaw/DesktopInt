@@ -678,7 +678,7 @@ namespace TestProject.Libraries
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fCableLength1 + "{Enter}");
 				fMaxACUnits = (450-(fCableLength1)/10);
 			}
-			
+			Report.Log(ReportLevel.Success,"Cable lengh changed successfully");
 		}
 		
 		
@@ -900,8 +900,8 @@ namespace TestProject.Libraries
 			sRowIndex = iRowIndex.ToString();
 			//repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
 			//repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
-			repo.FormMe.BaseofDeviceRow.MoveTo("760;19");
-			repo.FormMe.BaseofDeviceRow.Click("760;19");
+			repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
+			repo.FormMe.BaseofDeviceRow.Click("560;19");
 			
 			
 		}
@@ -2356,14 +2356,15 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/**************************************************************************************
 		 * Function Name: AssignDeviceBaseForMultipleDevices
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 22/03/2019 - Alpesh Dhakad - Updated code and also updated Xpath
-		 ********************************************************************/
+		 * Alpesh Dhakad - 26/05/2020 Updated script as per new implementation changes
+		 **************************************************************************************/
 		[UserCodeMethod]
 		public static void AssignDeviceBaseForMultipleDevices(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex)
 		{
@@ -2372,24 +2373,44 @@ namespace TestProject.Libraries
 			sBase = sBaseofDevice;
 			sRowIndex = sBasePropertyRowIndex;
 			sLabelName = DeviceLabel;
-			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
-			repo.ProfileConsys1.BaseofDeviceRow.Click();
-			repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+//			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+//			repo.ProfileConsys1.BaseofDeviceRow.Click();
+//			repo.ProfileConsys1.BaseofDeviceRow.PressKeys("{Right}");
+//			
+			if(repo.FormMe.txt_LabelNameForOneRowInfo.Exists())
+			{
+				repo.FormMe.txt_LabelNameForOneRow.Click();
+			}
+			else
+			{
+			repo.FormMe.txt_LabelName1.Click();
+			}
+			repo.FormMe.BaseofDeviceRow.Click();
+			repo.FormMe.BaseofDeviceRow.PressKeys("{Right}");
+			
+			
+			
 			int.TryParse(sRowIndex, out iRowIndex);
 			iRowIndex = iRowIndex+1;
 			sRowIndex = iRowIndex.ToString();
 			repo.ProfileConsys1.Cell_BaseofDevice.Click();
-			sExistingBase = repo.ProfileConsys1.SomeText.TextValue;
+			//sExistingBase = repo.ProfileConsys1.SomeText.TextValue;
+			sExistingBase = repo.FormMe.txt_cellBaseOfDevice.TextValue;
 			////sExistingBase = sExistingBase.Replace(@"\""",string.Empty);
 			if(!sExistingBase.Equals(sBase))
 			{
-				repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
-				repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+				//repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+				//repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+				repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
+				repo.FormMe.BaseofDeviceRow.Click("560;19");
+				
 				int.TryParse(sRowIndex, out iRowIndex);
 				iRowIndex = iRowIndex-1;
 				sRowIndex = iRowIndex.ToString();
-				repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
-				repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+				//repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+				//repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+				repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
+				repo.FormMe.BaseofDeviceRow.Click("560;19");
 				
 				if(repo.ContextMenu.btn_BaseSelectionInfo.Exists())
 				{
@@ -3286,7 +3307,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments: Alarm Load to be entered
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : 11/03/2019 Alpesh Dhakad - 20/05/2020 Updated script as per new xpaths
+		 * Last Update : 11/03/2019 Alpesh Dhakad - 28/05/2020 Updated script as per new xpaths
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void EditAlarmLoad(string AlarmLoad)
@@ -3303,7 +3324,7 @@ namespace TestProject.Libraries
 			
 			// Click on Alarm Load cell
 			//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
-			repo.FormMe.txt_LabelNameProperties.Click();
+			repo.FormMe.cell_LabelNameProperties.Click();
 			
 			//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.PressKeys(AlarmLoad);
 			

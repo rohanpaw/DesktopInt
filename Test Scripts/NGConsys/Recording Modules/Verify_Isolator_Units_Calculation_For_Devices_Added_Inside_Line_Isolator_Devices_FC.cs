@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -133,17 +133,17 @@ namespace TestProject.Recording_Modules
             //Libraries.IS_Functions.VerifyIsolatorUnits("3.5", "FIM");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("7", "3.5");
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("14", "9.5");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("8", "6");
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("15", "6.5");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("9", "5");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("9", "5");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("10", "1.5");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("10", "1.5");
+            //Delay.Milliseconds(0);
             
         }
 

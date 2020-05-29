@@ -97,7 +97,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -146,6 +146,21 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -165,7 +180,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.298
+						1.238
 					</argvalue>
 				</argument>
 				<argument
@@ -175,7 +190,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -200,7 +215,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.250
+						0.122
 					</argvalue>
 				</argument>
 				<argument
@@ -210,7 +225,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -235,7 +250,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.270
+						0.160
 					</argvalue>
 				</argument>
 				<argument
@@ -245,7 +260,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						40V (A)
+						40V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -358,6 +373,21 @@ rxversion="8.3">
 		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -476,6 +506,21 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -495,7 +540,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.298
+						1.238
 					</argvalue>
 				</argument>
 				<argument
@@ -505,7 +550,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -530,7 +575,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.297
+						0.141
 					</argvalue>
 				</argument>
 				<argument
@@ -540,7 +585,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -565,7 +610,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.270
+						0.160
 					</argvalue>
 				</argument>
 				<argument
@@ -575,9 +620,24 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						40V (A)
+						40V Rail(A)
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -730,14 +790,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						2
+						3
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
@@ -805,6 +865,21 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -824,7 +899,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.298
+						1.238
 					</argvalue>
 				</argument>
 				<argument
@@ -834,7 +909,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -859,7 +934,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.120
+						0.141
 					</argvalue>
 				</argument>
 				<argument
@@ -869,7 +944,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -894,7 +969,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.270
+						0.160
 					</argvalue>
 				</argument>
 				<argument
@@ -904,7 +979,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						40V (A)
+						40V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1018,6 +1093,21 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
 		optional="False">
@@ -1059,14 +1149,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						2
+						3
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
@@ -1087,6 +1177,21 @@ rxversion="8.3">
 						Delete
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnDeleteButton"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9edbda2e-4de1-4cd7-8744-abf4866d846c">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -1115,6 +1220,21 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9edbda2e-4de1-4cd7-8744-abf4866d846c">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -1134,7 +1254,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.298
+						1.238
 					</argvalue>
 				</argument>
 				<argument
@@ -1144,7 +1264,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1169,7 +1289,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.250
+						0.122
 					</argvalue>
 				</argument>
 				<argument
@@ -1179,7 +1299,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1204,7 +1324,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.270
+						0.160
 					</argvalue>
 				</argument>
 				<argument
@@ -1214,9 +1334,24 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						40V (A)
+						40V Rail(A)
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="70c6319b-9fe6-4ece-9816-7b78cd355cb5">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -1440,7 +1575,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -1489,6 +1624,21 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -1508,7 +1658,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.298
+						1.186
 					</argvalue>
 				</argument>
 				<argument
@@ -1518,7 +1668,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1543,7 +1693,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.250
+						0.110
 					</argvalue>
 				</argument>
 				<argument
@@ -1553,7 +1703,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1588,9 +1738,24 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						40V (A)
+						40V Rail(A)
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -1819,6 +1984,21 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -1838,7 +2018,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.298
+						1.186
 					</argvalue>
 				</argument>
 				<argument
@@ -1848,7 +2028,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1873,7 +2053,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.110
+						0.129
 					</argvalue>
 				</argument>
 				<argument
@@ -1883,7 +2063,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1918,9 +2098,24 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						40V (A)
+						40V Rail(A)
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -2177,7 +2372,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -2212,7 +2407,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -2247,7 +2442,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						40V (A)
+						40V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -2487,7 +2682,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 5V (A)
+						5V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -2522,7 +2717,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main Processor 24V (A)
+						24V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -2557,7 +2752,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						40V (A)
+						40V Rail(A)
 					</argvalue>
 				</argument>
 			</arguments>

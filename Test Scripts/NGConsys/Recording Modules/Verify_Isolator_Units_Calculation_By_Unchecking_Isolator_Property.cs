@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -109,13 +109,13 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("410QRM", "Call Points");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RemoveBase("410QMO (2 po... - 2", "13");
+            Libraries.Devices_Functions.RemoveBase("410QMO (2 po... - 2", "10");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RemoveBase("410QIO (8 po... - 5", "13");
+            Libraries.Devices_Functions.RemoveBase("410QIO (8 po... - 5", "10");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RemoveBase("410QRM (2 p... - 14", "13");
+            Libraries.Devices_Functions.RemoveBase("410QRM (2 p... - 14", "10");
             Delay.Milliseconds(0);
             
         }

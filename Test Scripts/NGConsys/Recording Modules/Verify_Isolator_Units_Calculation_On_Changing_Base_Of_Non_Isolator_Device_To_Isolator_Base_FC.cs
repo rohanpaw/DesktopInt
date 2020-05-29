@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Call Points");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBase("460H - 2", "4BI 4\" [517.050.043]", "13");
+            Libraries.Devices_Functions.AssignDeviceBase("460H - 2", "4BI 4\" [517.050.043]", "6");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("410RIM", "Ancillary");
@@ -112,7 +112,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("460P", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBase("460P - 6", "4BI 4\" [517.050.043]", "13");
+            Libraries.Devices_Functions.AssignDeviceBase("460P - 6", "4BI 4\" [517.050.043]", "6");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("410CIM", "Ancillary");
@@ -124,7 +124,7 @@ namespace TestProject.Recording_Modules
             //Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400P - 8", "4BI 4\" [517.050.043]", "13");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBase("400P - 8", "4BI 4\" [517.050.043]", "13");
+            Libraries.Devices_Functions.AssignDeviceBase("400P - 8", "4BI 4\" [517.050.043]", "6");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DragAndDropDevicesInPhysicalLayout("A:5", "A:4");

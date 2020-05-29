@@ -178,6 +178,7 @@ namespace TestProject.Libraries
 			calculatedAcUnits= calculatedAcUnitsofLoopB + calculatedAcUnitsofLoopA;
 			sACUnits = calculatedAcUnits.ToString();
 			float.TryParse(sACUnits,out fAcUnits);
+			
 			Devices_Functions.verifyLoadingDetailColor(ACUnitsLoadingDetails);
 			//expectedColorCode = Devices_Functions.calculatePercentage(fAcUnits,fMaxACUnits);
 			
@@ -207,6 +208,7 @@ namespace TestProject.Libraries
 //			actualColour = repo.ProfileConsys1.ACUnitProgressBar.GetAttributeValue<string>("foreground");
 //			Devices_Functions.VerifyPercentage(expectedColorCode,actualColour);
 			Devices_Functions.verifyLoadingDetailColor(ACUnitsLoadingDetails);
+			
 			//Close Excel
 			Excel_Utilities.ExcelWB.Close(false, null, null);
 			Excel_Utilities.ExcelAppl.Quit();

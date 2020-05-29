@@ -82,7 +82,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.Import_MxDesignerProject("CPUType_CPU800");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.VerifyCPUType("CPU 800", ValueConverter.ArgumentFromString<int>("PanelNode", "2"), ValueConverter.ArgumentFromString<bool>("AfterImport", "True"));
+            //Libraries.Panel_Functions.VerifyCPUType("CPU 800", ValueConverter.ArgumentFromString<int>("PanelNode", "2"), ValueConverter.ArgumentFromString<bool>("AfterImport", "True"));
+            //Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.VerifyCPUTypeOnImport("CPU 800", ValueConverter.ArgumentFromString<int>("PanelNode", "2"), ValueConverter.ArgumentFromString<bool>("AfterImport", "True"));
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "");

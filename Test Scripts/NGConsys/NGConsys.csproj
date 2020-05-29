@@ -5298,9 +5298,9 @@
       <recordtableid>ae755133-f0b0-4658-9395-d3ddd01d9905</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop_FIM.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>ac4c81c0-d921-45d9-874a-b4fe4b6dc503</id>
       <recordtableid>a14895cd-ab9f-4425-82e4-f2824325eadc</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -5913,9 +5913,9 @@
       <recordtableid>45b2ee79-ebb8-4ec4-ba40-f65ab565b812</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Isolator_Units_And_Intrinsically_Safe_Units_When_User_Add_Delete_The_Device_From_The_Loop.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>e9f8bfaa-0553-48a8-8967-efc245d34922</id>
       <recordtableid>05c101fd-c8ba-4950-ae56-dcb8faf7f9e9</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_the_Isolator_units_Intrinsically_safe_units_have_separate_property_section_to_displayed.rxrec">
       <id>109ed924-191a-4a24-9948-af96ddbc3268</id>

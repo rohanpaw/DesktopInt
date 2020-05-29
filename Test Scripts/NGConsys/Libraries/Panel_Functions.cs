@@ -201,20 +201,68 @@ namespace TestProject.Libraries
 		public static void VerifyCPUType(string sExpectedCPU,int PanelNode, bool AfterImport)
 		{
 			string sActualText;
+			if(AfterImport)
+			{
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Node1");
 			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the  text in Search Properties fields to view related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("CPU" +"{ENTER}");
+			
+				// Click on CPU Cell
+			repo.FormMe.cell_CPUType.Click();
+			
+				// Enter the CPU value and click Enter twice
+			sActualText = repo.FormMe.txt_CPUType.TextValue;
+			
+				// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				//repo.ProfileConsys1.Cell_CPU_afterimport.DoubleClick();
+				//sActualText = repo.ProfileConsys1.VerifyCPUTpye_afterimport.TextValue;
+				// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+				
+				// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+
+			}
+			else
+			{
 			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node1");
 			
-			if(AfterImport)
-			{
-				repo.ProfileConsys1.Cell_CPU_afterimport.DoubleClick();
-				sActualText = repo.ProfileConsys1.VerifyCPUTpye_afterimport.TextValue;
-			}
-			else
-			{
-				repo.ProfileConsys1.Cell_CPU_beforeimport.DoubleClick();
-				sActualText = repo.ProfileConsys1.VerifyCPUTpye_beforeimport.TextValue;
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the  text in Search Properties fields to view related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("CPU" +"{ENTER}");
+			
+			// Click on CPU Cell
+			repo.FormMe.cell_CPUType.Click();
+			
+			// Enter the CPU value and click Enter twice
+			sActualText = repo.FormMe.txt_CPUType.TextValue;
+			
+				// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 			}
 			
 			if (sExpectedCPU==sActualText)
@@ -1026,6 +1074,94 @@ namespace TestProject.Libraries
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 		}
+		
+		/******************************************************************************************************************
+		 * Function Name: VerifyCPUTypeOnImport
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 
+		 //******************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyCPUTypeOnImport(string sExpectedCPU,int PanelNode, bool AfterImport)
+		{
+			string sActualText;
+			if(AfterImport)
+			{
+				// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Panel 1");
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the  text in Search Properties fields to view related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("CPU" +"{ENTER}");
+			
+				// Click on CPU Cell
+			repo.FormMe.cell_CPUType.Click();
+			
+				// Enter the CPU value and click Enter twice
+			sActualText = repo.FormMe.txt_CPUType.TextValue;
+			
+				// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				//repo.ProfileConsys1.Cell_CPU_afterimport.DoubleClick();
+				//sActualText = repo.ProfileConsys1.VerifyCPUTpye_afterimport.TextValue;
+				// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+				
+				// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+
+			}
+			else
+			{
+			
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeItem("Panel 1");
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the  text in Search Properties fields to view related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("CPU" +"{ENTER}");
+			
+			// Click on CPU Cell
+			repo.FormMe.cell_CPUType.Click();
+			
+			// Enter the CPU value and click Enter twice
+			sActualText = repo.FormMe.txt_CPUType.TextValue;
+			
+				// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			}
+			
+			if (sExpectedCPU==sActualText)
+			{
+				Report.Log(ReportLevel.Success, "CPU Type: "+sExpectedCPU+" selection is persisted");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure, "CPU Type: "+sExpectedCPU+ " selection is not persisted");
+			}
+			
+		}
+		
 	}
 }
 

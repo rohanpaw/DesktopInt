@@ -105,7 +105,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPointsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("APM 800 - 1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameForOneRow("APM 800 - 1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -120,7 +120,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPointsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceExists(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "APM 800 - 1");
+            //Libraries.Devices_Functions.VerifyDeviceExists(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "APM 800 - 1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameForOneRow("False");
             Delay.Milliseconds(0);
             
         }

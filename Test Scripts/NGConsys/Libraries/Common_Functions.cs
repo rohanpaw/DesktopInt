@@ -263,9 +263,16 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void Import_MxDesignerProject(string sProjectName)
 		{
-			repo.ProfileConsys1.File.Click();
-			repo.ProfileConsys1.txt_Import.Click();
-			repo.ProfileConsys1.txt_DesignerDataFile.Click();
+//			repo.ProfileConsys1.File.Click();
+//			repo.ProfileConsys1.txt_Import.Click();
+//			repo.ProfileConsys1.txt_DesignerDataFile.Click();
+//			
+			repo.FormMe.File.Click();
+			repo.FormMe.Import.Click();
+			repo.FormMe.txt_DesignerDataFile.Click();
+			
+			
+			
 			string actualDirPath= Common_Functions.GetDirPath();
 			string sSaveProjectDirPath = actualDirPath+ "MxDesigner Saved Projects";
 			repo.Open.File_Open_Window.Click();
@@ -1215,6 +1222,22 @@ namespace TestProject.Libraries
 		{
 			repo.FormMe.SaveAsCustom.Click();
 			Report.Log(ReportLevel.Info," Save as custom button clicked successfully  ");
+		}
+		
+		/********************************************************************
+		 * Function Name: clickOnSearchProperties
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :27/05/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnSearchProperties()
+		{
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			Report.Log(ReportLevel.Info," Click on SearchProperties text box successfully  ");
 		}
 		
 		

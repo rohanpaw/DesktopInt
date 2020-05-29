@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.VerifyCPUType("CPU 801", ValueConverter.ArgumentFromString<int>("PanelNode", "2"), ValueConverter.ArgumentFromString<bool>("AfterImport", "True"));
             Delay.Milliseconds(100);
             
-            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "");
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
             
         }

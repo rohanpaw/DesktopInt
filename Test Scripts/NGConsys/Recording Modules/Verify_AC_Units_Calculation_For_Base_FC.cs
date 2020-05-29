@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -106,19 +106,19 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("400P", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400P - 1", "4BI 4\" [517.050.043]", "13");
+            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400P - 1", "4BI 4\" [517.050.043]", "6");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("400PH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400PH - 2", "430SB [516.800.710] @ 75dB", "13");
+            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400PH - 2", "430SB [516.800.710] @ 75dB", "6");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("400H", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400H - 3", "440DSB [576.440.001] @ 90dB", "13");
+            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400H - 3", "440DSB [576.440.001] @ 90dB", "6");
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyACUnitsValue("4.22");
@@ -145,8 +145,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);

@@ -103,7 +103,7 @@ namespace TestProject.Recording_Modules
             //Libraries.AC_Functions.verifyMaxACUnitsValue("400");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("400", "Signal (AC Units)");

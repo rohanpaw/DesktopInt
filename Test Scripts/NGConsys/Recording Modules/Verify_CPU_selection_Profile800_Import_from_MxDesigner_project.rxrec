@@ -55,6 +55,51 @@ rxversion="8.3">
 		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
+		methodname="VerifyCPUTypeOnImport"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="17256df6-78f6-4294-82e0-13bbefc30b27">
+				<argument
+				argname="sExpectedCPU"
+				id="80e490f5-d7ba-4424-8618-926d28814cf3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Profile 800
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNode"
+				id="8adc03d1-b1f5-47e5-99ba-90bdd303d3df">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						2
+					</argvalue>
+				</argument>
+				<argument
+				argname="AfterImport"
+				id="22679b9f-a3b3-49cf-9755-ceed7761fd1d">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
 		methodname="VerifyCPUType"
 		namespace="TestProject.Libraries"
 		optional="False">

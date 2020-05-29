@@ -241,7 +241,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDeviceUsingLabelName"
+		methodname="SelectRowUsingLabelNameForOneRow"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -354,7 +354,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyDeviceExists"
 		namespace="TestProject.Libraries"
@@ -383,6 +383,31 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						APM 800 - 1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameForOneRow"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="00f74c7a-6372-47ce-a468-eb12afe9e2da">
+				<argument
+				argname="sLabel"
+				id="07ddf96c-2227-4e58-87a2-74a324a04dcc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						False
 					</argvalue>
 				</argument>
 			</arguments>

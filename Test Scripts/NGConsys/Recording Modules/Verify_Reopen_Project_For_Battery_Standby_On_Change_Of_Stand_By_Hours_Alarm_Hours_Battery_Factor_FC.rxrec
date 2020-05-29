@@ -106,7 +106,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -158,7 +158,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnPhysicalLayoutTab"
+		methodname="clickOnPanelCalculationsTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -199,7 +199,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						False
+						Minimum Battery size(Ah)&#10;
 					</argvalue>
 				</argument>
 			</arguments>

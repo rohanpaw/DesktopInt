@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -99,6 +99,9 @@ namespace TestProject.Recording_Modules
             
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("801 PH", ValueConverter.ArgumentFromString<int>("DeviceQty", "123"));
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 30s.", new RecordItemIndex(7));
+            Delay.Duration(30000, false);
             
             Libraries.Common_Functions.clickOnPhysicalLayoutTab();
             Delay.Milliseconds(0);

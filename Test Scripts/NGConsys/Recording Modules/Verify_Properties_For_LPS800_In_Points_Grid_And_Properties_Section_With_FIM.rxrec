@@ -257,11 +257,11 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPointsGridColumn"
 		namespace="TestProject.Libraries"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -292,11 +292,11 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPointsGridColumn"
 		namespace="TestProject.Libraries"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>
@@ -327,11 +327,11 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPointsGridColumn"
 		namespace="TestProject.Libraries"
-		optional="False">
+		optional="True">
 			<comment>
 			</comment>
 			<bindings>

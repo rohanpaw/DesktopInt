@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -109,13 +109,13 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("410CIM", "Ancillary");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400H", "Detectors");
+            //Libraries.Devices_Functions.AddDevicesfromGallery("400H", "Detectors");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("15", "2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("7", "2");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("8", "2");
+            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayout("16", "1");
             Delay.Milliseconds(0);
             
         }

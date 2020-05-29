@@ -1454,6 +1454,8 @@ namespace TestProject.Libraries
 				//verify40VPSULoadValue(expected40VPSU,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(expected40VPSU,LoadingDetailsName);
 				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
 				
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -1568,7 +1570,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,s40VLoadingDetails;
+			string PanelName,PanelNode,s40VLoad,sDefault40V,CPUType,sRowNumber,sType,PanelType,sExpected40VPSU,s40VLoadingDetails,s40VLoadingDetailsName;
 			int rowNumber;
 			float FourtyVLoad,Default40V;
 			
@@ -1608,7 +1610,7 @@ namespace TestProject.Libraries
 					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,8]).Value.ToString();
 					sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[j,9]).Value.ToString();
 					s40VLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
-					
+					s40VLoadingDetailsName= ((Range)Excel_Utilities.ExcelRange.Cells[j,11]).Value.ToString();
 					
 					// Click on Ethernet node
 					Common_Functions.ClickOnNavigationTreeItem("Ethernet");
@@ -1636,7 +1638,7 @@ namespace TestProject.Libraries
 					
 					// Verify 40V PSU load value on addition of Ethernet
 					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
-					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetails);
+					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetailsName);
 					
 					//Get 40V load from UI
 					sDefault40V = Get40VPSULoadValue(PanelType);
@@ -1668,7 +1670,7 @@ namespace TestProject.Libraries
 						
 						// Verify 40V PSU load value on addition of Ethernet
 						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
-						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetails);
+						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetailsName);
 					}
 					
 					else
@@ -1697,7 +1699,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 22/01/2019 Alpesh Dhakad - 31/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 * Alpesh Dhakad - 18/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 18/05/2020 & 29/05/2020 Updated script as per new implementation changes
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VLoadOnRbusAddDelete(string sFileName,string sAddPanelSheet)
@@ -1793,6 +1795,9 @@ namespace TestProject.Libraries
 					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					
+					// Click on Properties tab
+					Common_Functions.clickOnPropertiesTab();
+					
 					//Get 40V load from UI
 					sDefault40V = Get40VPSULoadValue(PanelType);
 					
@@ -1808,10 +1813,10 @@ namespace TestProject.Libraries
 					Devices_Functions.SelectRowUsingLabelNameForRBUS(sLabelName);
 					
 					
-					if(repo.FormMe.txt_LabelNameForRBusRowInfo.Exists())
-					{
+//					if(repo.FormMe.txt_LabelNameForRBusRowInfo.Exists())
+//					{
 						Common_Functions.clickOnDeleteButton();
-						Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
+						//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
@@ -1823,13 +1828,16 @@ namespace TestProject.Libraries
 						// Verify 40V PSU load value on addition of Ethernet
 						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
-					}
-					
-					else
-					{
 						
-						Report.Log(ReportLevel.Failure, "Device "+sLabelName+" not found");
-					}
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
+//					}
+//					
+//					else
+//					{
+//						
+//						Report.Log(ReportLevel.Failure, "Device "+sLabelName+" not found");
+//					}
 
 					
 				}
@@ -1893,7 +1901,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 23/01/2019  Alpesh Dhakad - 31/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 * Alpesh Dhakad - 18/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 18/05/2020 and 29/05/2020 Updated script as per new implementation changes
 		 **********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VLoadOnAccessoriesAddDelete(string sFileName,string sAddPanelSheet)
@@ -1974,6 +1982,9 @@ namespace TestProject.Libraries
 					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					
+					// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
+					
 					//Get 40V load from UI
 					sDefault40V = Get40VPSULoadValue(PanelType);
 					
@@ -1988,10 +1999,10 @@ namespace TestProject.Libraries
 					//Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					Devices_Functions.SelectRowUsingLabelNameForRBUS(sLabelName);
 					
-					if(repo.FormMe.txt_LabelNameForRBusRowInfo.Exists())
-					{
+//					if(repo.FormMe.txt_LabelNameForRBusRowInfo.Exists())
+//					{
 						Common_Functions.clickOnDeleteButton();
-						Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
+						//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 						
 						// Click on Loop A node
@@ -2003,13 +2014,16 @@ namespace TestProject.Libraries
 						// Verify 40V PSU load value on addition of Rbus
 						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
-					}
-					
-					else
-					{
 						
-						Report.Log(ReportLevel.Failure, "Device "+sLabelName+" not found");
-					}
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
+//					}
+//					
+//					else
+//					{
+//						
+//						Report.Log(ReportLevel.Failure, "Device "+sLabelName+" not found");
+//					}
 
 					
 				}
@@ -2032,7 +2046,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 23/01/2019 Alpesh Dhakad - 01/08/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 * Alpesh Dhakad - 18/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 18/05/2020 & 29/05/2020 Updated script as per new implementation changes
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VLoadOnZetfastLoopAddDelete(string sFileName,string sAddPanelSheet)
@@ -2081,6 +2095,10 @@ namespace TestProject.Libraries
 					{
 						Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 						
+						// Click on Expander node
+						Common_Functions.ClickOnNavigationTreeExpander("XLM/External");
+				
+						
 					}
 					
 					else
@@ -2092,7 +2110,7 @@ namespace TestProject.Libraries
 						//repo.FormMe.XLMExternalLoopCardDevices_C.Click();
 						
 						// Click on Expander node
-						Common_Functions.ClickOnNavigationTreeExpander("XLM/External");
+						//Common_Functions.ClickOnNavigationTreeExpander("XLM/External");
 				
 						
 						Common_Functions.ClickOnNavigationTreeItem("XLM/External");
@@ -2116,6 +2134,11 @@ namespace TestProject.Libraries
 					// Click on XLM Loop C Node to add device
 					//repo.FormMe.XLMExternalLoopCardDevices_C.Click();
 					//Common_Functions.ClickOnNavigationTreeExpander("XLM/External");
+					
+					// Click on Expander node
+						
+						
+						
 					
 					Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
 						
@@ -2141,6 +2164,9 @@ namespace TestProject.Libraries
 					// Verify 40V PSU load value on addition of zetfast loop with devices
 					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
+					
+					// Click on Properties tab
+					Common_Functions.clickOnPropertiesTab();
 				}
 				
 				for(int k=9; k<=7; k--)
@@ -2171,11 +2197,11 @@ namespace TestProject.Libraries
 						//Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(sLabelName);
 						
-						//if(repo.FormMe.txt_LabelName1Info.Exists())
-						if(repo.FormMe.txt_LabelNameForInventoryInfo.Exists())
-						{
+//						//if(repo.FormMe.txt_LabelName1Info.Exists())
+//						if(repo.FormMe.txt_LabelNameForInventoryInfo.Exists())
+//						{
 							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
+							//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
 							// Click on Loop A node
@@ -2187,7 +2213,10 @@ namespace TestProject.Libraries
 							// Verify 40V PSU load value on deletion of Zetfast loop
 							//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 							Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
-						}
+							
+							// Click on Properties tab
+							Common_Functions.clickOnPropertiesTab();
+						
 					}
 					
 					
@@ -2205,10 +2234,10 @@ namespace TestProject.Libraries
 
 						Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						
-						if(repo.FormMe.txt_LabelName1Info.Exists())
-						{
+//						if(repo.FormMe.txt_LabelName1Info.Exists())
+//						{
 							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
+							//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
 							// Click on Loop A node
@@ -2221,12 +2250,16 @@ namespace TestProject.Libraries
 							//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 							Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 							
-						}
-						else
-						{
 							
-							Report.Log(ReportLevel.Failure, "Device "+sLabelName+" not found");
-						}
+							// Click on Properties tab
+							Common_Functions.clickOnPropertiesTab();
+									
+//						}
+//						else
+//						{
+//							
+//							Report.Log(ReportLevel.Failure, "Device "+sLabelName+" not found");
+//						}
 						
 					}
 				}
@@ -2250,7 +2283,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 3/02/2019  Alpesh Dhakad - 31/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 * Alpesh Dhakad - 18/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 18/05/2020 & 29/05/2020 Updated script as per new implementation changes
 		 ***********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VLoadOnSlotCardsAddDelete(string sFileName,string sAddPanelSheet)
@@ -2360,9 +2393,9 @@ namespace TestProject.Libraries
 					
 					repo.FormMe.txt_LabelNameForRBusOneRow.Click();
 					
-					//if(repo.FormMe.txt_LabelName1Info.Exists())
-					if(repo.FormMe.txt_LabelNameForRBusOneRowInfo.Exists())
-					{
+//					//if(repo.FormMe.txt_LabelName1Info.Exists())
+//					if(repo.FormMe.txt_LabelNameForRBusOneRowInfo.Exists())
+//					{
 						Common_Functions.clickOnDeleteButton();
 						//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
@@ -2377,13 +2410,17 @@ namespace TestProject.Libraries
 						// Verify 40V PSU load value on deletion of Accessory
 						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
-					}
-					
-					else
-					{
 						
-						Report.Log(ReportLevel.Failure, "Device "+sLabelName+" not found");
-					}
+						
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
+//					}
+//					
+//					else
+//					{
+//						
+//						Report.Log(ReportLevel.Failure, "Device "+sLabelName+" not found");
+//					}
 
 					
 				}
@@ -2405,7 +2442,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 8/02/2019  Alpesh Dhakad - 31/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 * Alpesh Dhakad - 18/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 18/05/2020 & 29/05/2020 Updated script as per new implementation changes
 		 *******************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VCalculationforPFI(string sFileName,string sAddPanelSheet)
@@ -2462,6 +2499,10 @@ namespace TestProject.Libraries
 				//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 				
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
 				if(isPLXSupported)
 				{
 					// Add PLX loop and devices and verify 40 V load
@@ -2503,6 +2544,10 @@ namespace TestProject.Libraries
 						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 						
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
+				
+						
 						//Delete External PLX loop card
 						
 						// Click on Panel node
@@ -2511,13 +2556,13 @@ namespace TestProject.Libraries
 						//Devices_Functions.SelectRowUsingLabelName(sLabelName);
 						Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(sLabelName);
 						
-						if(repo.FormMe.txt_LabelNameForInventoryInfo.Exists())
-						{
+//						if(repo.FormMe.txt_LabelNameForInventoryInfo.Exists())
+//						{
 							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
+							//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 							
-						}
+//						}
 					}
 				}
 				// Delete panel using PanelNode details from excel sheet
@@ -2536,7 +2581,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 11/02/2019  Alpesh Dhakad - 31/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 * Alpesh Dhakad - 18/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 18/05/2020 & 29/05/2020 Updated script as per new implementation changes
 		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VCalculationforFIM(string sFileName,string sAddPanelSheet)
@@ -2647,6 +2692,9 @@ namespace TestProject.Libraries
 						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 						
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
+						
 						//Generate expected 40V load on deletion
 						float.TryParse(sDefault40V, out Default40V);
 						float.TryParse(sXLMFortyVLoad, out XLMFortyVLoad);
@@ -2661,12 +2709,12 @@ namespace TestProject.Libraries
 						Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(sLabelName);
 						
 						//if(repo.FormMe.txt_LabelName1Info.Exists())
-						if(repo.FormMe.txt_LabelNameForInventoryInfo.Exists())
-						{
+//						if(repo.FormMe.txt_LabelNameForInventoryInfo.Exists())
+//						{
 							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
+						//	Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
-						}
+//						}
 						
 						
 						// Click on Loop A node
@@ -2679,6 +2727,9 @@ namespace TestProject.Libraries
 						// Verify 40V PSU load value
 						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
+						
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
 						
 					}
 				}
@@ -2698,7 +2749,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 13/02/2019   Alpesh Dhakad - 31/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
-		 * Alpesh Dhakad - 18/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 18/05/2020 & 29/05/2020 Updated script as per new implementation changes
 		 ***************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VCalculationforPLXLoopWithDevices(string sFileName,string sAddPanelSheet)
@@ -2758,6 +2809,9 @@ namespace TestProject.Libraries
 				//verify40VPSULoadValue(sDefault40V,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetail);
 				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
 				if(isPLXSupported)
 				{
 					// Add PLX loop verify 40 V load
@@ -2800,6 +2854,10 @@ namespace TestProject.Libraries
 						// Verify 40V PSU load value of loop card
 						//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 						Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
+						
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
+						
 					}
 					// 40 V load on Addition of devices
 					sExpected40VLoadofDevices = ((Range)Excel_Utilities.ExcelRange.Cells[6,16]).Value.ToString();
@@ -2831,6 +2889,9 @@ namespace TestProject.Libraries
 					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					
+					// Click on Properties tab
+					Common_Functions.clickOnPropertiesTab();
+					
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 					
@@ -2851,6 +2912,9 @@ namespace TestProject.Libraries
 					// Verify 40V PSU load value of loop after addition of devices
 					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
+					
+					// Click on Properties tab
+					Common_Functions.clickOnPropertiesTab();
 				}
 				
 				else
@@ -2885,6 +2949,9 @@ namespace TestProject.Libraries
 					//verify40VPSULoadValue(sExpected40VPSU,PanelType);
 					Devices_Functions.verifyLoadingDetailsValue(sExpected40VPSU,s40VLoadingDetail);
 					
+					// Click on Properties tab
+					Common_Functions.clickOnPropertiesTab();
+					
 				}
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -2894,13 +2961,13 @@ namespace TestProject.Libraries
 				
 				
 				//if(repo.FormMe.txt_LabelName1Info.Exists())
-				if(repo.FormMe.txt_LabelNameForInventoryInfo.Exists())
-				{
+//				if(repo.FormMe.txt_LabelNameForInventoryInfo.Exists())
+//				{
 					Common_Functions.clickOnDeleteButton();
-					Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
+					//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 					Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 					
-				}
+//				}
 				
 				
 				// Delete panel using PanelNode details from excel sheet
@@ -2920,7 +2987,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 13/02/2019  Alpesh Dhakad - 31/07/2019 & 21/08/2019- Updated test scripts as per new build and xpaths
 		 * Last update: 10/12/19-Poonam Kadam - Updated 40V methods
-		 * Alpesh Dhakad - 18/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 18/05/2020 & 29/05/2020 Updated script as per new implementation changes
 		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VCalculationforXLMLoopWithDevices(string sFileName,string sAddPanelSheet)
@@ -2979,6 +3046,9 @@ namespace TestProject.Libraries
 				//verify40VPSULoadValue(sDefault40V,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
 				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
 				if(isXLMSupported)
 				{
 					// Add XLM loop verify 40 V load
@@ -3026,8 +3096,8 @@ namespace TestProject.Libraries
 						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
 						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
 						
-						// Click on Panel Calculation tab
-						Common_Functions.clickOnPanelCalculationsTab();
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
 						
 						
 						// Click on Loop C
@@ -3041,6 +3111,9 @@ namespace TestProject.Libraries
 						// Verify 40V PSU load value of loop card
 						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
 						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
+						
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
 						
 						// 40 V load on Addition of devices
 						sExpected40VLoadofDevices = ((Range)Excel_Utilities.ExcelRange.Cells[6,15]).Value.ToString();
@@ -3072,6 +3145,9 @@ namespace TestProject.Libraries
 						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
 						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
 						
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
+						
 						// Click on Loop A node
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
@@ -3097,6 +3173,9 @@ namespace TestProject.Libraries
 						// Verify 40V PSU load value of loop after addition of devices
 						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
 						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
+						
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
 						
 					}
 				}
@@ -3129,6 +3208,9 @@ namespace TestProject.Libraries
 					// Verify 40V PSU load value of loop after addition of devices
 					//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
 					Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
+					
+					// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
 					
 				}
 				
@@ -3652,8 +3734,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby=((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad=((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
-				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				// Add panels using test data in excel sheet
@@ -4000,6 +4082,9 @@ namespace TestProject.Libraries
 						//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
 							Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 				  	        Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
+				  	        
+				  	    // Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
 					}
 					
 					else
@@ -4922,6 +5007,7 @@ namespace TestProject.Libraries
 		 * Last Update : 22/01/2019  Alpesh Dhakad - 01/08/2019 - Updated test scripts as per new build and xpaths
 		 *  Purvi Bhasin - 07/08/2019 - Commented Node Expander so that Loop A remains visible
 		 * Alpesh Dhakad - 23/08/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 27/05/2020 Updated script as per new implementation changes
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyImpactOfSecondPSUOnBatteryAndAlarm(string sFileName,string sAddPanelSheet)
@@ -4934,6 +5020,7 @@ namespace TestProject.Libraries
 			
 			// Declared variables
 			string PanelName,PanelNode,CPUType,PSUType,ChangedPSUType,sRowNumber,sType,PanelType,sExpectedBatteryStandby,sExpectedAlarmLoad,expectedMaxBatteryStandby,expectedMaxAlarmLoad,SecondPSU,PoweredBy;
+			string sStandbyLoadingDetail,sAlarmLoadingDetail;
 			int rowNumber;
 			
 			
@@ -4952,32 +5039,45 @@ namespace TestProject.Libraries
 				sExpectedBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				sExpectedAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
 				
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
+				
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				// Add panels using test data in excel sheet
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
-				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				// Click on Loop Card node
-				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+				//Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
-				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+	
 				//Verify max Battery Standby and max Alarm Load
-				verifyMaxBatteryStandby(expectedMaxBatteryStandby,false);
-				verifyMaxAlarmLoad(expectedMaxAlarmLoad,false);
+				//verifyMaxBatteryStandby(expectedMaxBatteryStandby,false);
+				//verifyMaxAlarmLoad(expectedMaxAlarmLoad,false);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxAlarmLoad,sAlarmLoadingDetail);
+				
 				
 				// Verify Battery Standby load value
-				verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
+				//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
 				
 				// Verify Alarm load value
-				verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
+				//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
 				
+				
+				Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
 				
 				for(int j=8; j<=9; j++)
 				{
@@ -5003,16 +5103,30 @@ namespace TestProject.Libraries
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 					
+					// Click on Panel Calculation tab
+					Common_Functions.clickOnPanelCalculationsTab();
+					
 					//Verify max Battery Standby and max Alarm Load
-					verifyMaxBatteryStandby(expectedMaxBatteryStandby,true);
-					verifyMaxAlarmLoad(expectedMaxAlarmLoad,true);
+					//verifyMaxBatteryStandby(expectedMaxBatteryStandby,true);
+					//verifyMaxAlarmLoad(expectedMaxAlarmLoad,true);
+					
+					Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxBatteryStandby,sStandbyLoadingDetail);
+					Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxAlarmLoad,sAlarmLoadingDetail);
+				
 					
 					// Verify Battery Standby load value
 					verifyBatteryStandby(sExpectedBatteryStandby,true,PanelType);
 					
 					// Verify Alarm load value
-					verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
+					//verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
 					
+					//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+					Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
+				
+					// Click on Properties tab
+					Common_Functions.clickOnPropertiesTab();
+					
+
 					// Click on Panel node
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
@@ -5037,11 +5151,20 @@ namespace TestProject.Libraries
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
 						
+						// Click on Panel Calculation tab
+						Common_Functions.clickOnPanelCalculationsTab();
+					
 						// Verify Battery Standby load value
 						verifyBatteryStandby(sExpectedBatteryStandby,true,PanelType);
 						
 						// Verify Alarm load value
-						verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
+						//verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
+						
+						//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+						Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
+				
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
 						
 						// Click on Site node
 						Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -5052,7 +5175,9 @@ namespace TestProject.Libraries
 						// Click on Panel node
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 						
-						Devices_Functions.SelectRowUsingLabelName(sLabelName);
+						//Devices_Functions.SelectRowUsingLabelName(sLabelName);
+						Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(sLabelName);
+						
 						Panel_Functions.DevicePoweredFrom(PoweredBy);
 						
 						sExpectedBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[k,24]).Value.ToString();
@@ -5062,34 +5187,48 @@ namespace TestProject.Libraries
 						// Click on Loop A node
 						Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 						
+						// Click on Panel Calculation tab
+						Common_Functions.clickOnPanelCalculationsTab();
+					
+						
 						// Verify Battery Standby load value
 						verifyBatteryStandby(sExpectedBatteryStandby,true,PanelType);
 						
 						// Verify Alarm load value
-						verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
+						//verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
+						
+						
+						//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+						Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
+						
+						// Click on Properties tab
+						Common_Functions.clickOnPropertiesTab();
 						
 						
 						// Click on Panel node
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 						
-						Devices_Functions.SelectRowUsingLabelName(sLabelName);
+						//Devices_Functions.SelectRowUsingLabelName(sLabelName);
+						Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(sLabelName);
 						
-						if(repo.FormMe.txt_LabelName1Info.Exists())
-						{
-							Common_Functions.clickOnDeleteButton();
-							Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
-							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
-							
-							// Click on Loop A node
-							Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-							
-						}
+						Common_Functions.clickOnDeleteButton();
 						
-						else
-						{
-							
-							Report.Log(ReportLevel.Failure, "Device "+sLabelName+" not found");
-						}
+//						if(repo.FormMe.txt_LabelName1Info.Exists())
+//						{
+//							Common_Functions.clickOnDeleteButton();
+//							//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
+//							Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
+//							
+//							// Click on Loop A node
+//							Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+//							
+//						}
+//						
+//						else
+//						{
+//							
+//							Report.Log(ReportLevel.Failure, "Device "+sLabelName+" not found");
+//						}
 
 						
 					}
@@ -6161,6 +6300,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner:Alpesh Dhakad
 		 * Last Update : 18/09/2019 Alpesh Dhakad 23/12/2019 - Updated row number for sStandbyLoadingDetail and sAlarmLoadingDetail
+		 * Alpesh Dhakad - 27/05/2020 Updated script as per new implementation changes
 		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMaxBatteryStandbyAndAlarmLoadFC(string sFileName,string sAddPanelSheet)
@@ -6198,7 +6338,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				// Click on Loop Card node
-				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+				//Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -6207,10 +6347,16 @@ namespace TestProject.Libraries
 				// Verify max Battery Standby load value
 				//verifyMaxBatteryStandby(expectedMaxBatteryStandby,false);
 				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
 				// Verify max Alarm load value
 				//verifyMaxAlarmLoad(expectedMaxAlarmLoad,false);
-					Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxBatteryStandby,sStandbyLoadingDetail);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxBatteryStandby,sStandbyLoadingDetail);
 				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxAlarmLoad,sAlarmLoadingDetail);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -6232,6 +6378,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner:Alpesh Dhakad
 		 * Last Update : 18/09/2019 Alpesh Dhakad 23/12/2019 - Updated row number for sStandbyLoadingDetail and sAlarmLoadingDetail
+		 * Alpesh Dhakad - 27/05/2020 Updated script as per new implementation changes
 		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyDefaultBatteryStandbyAndAlarmLoadFC(string sFileName,string sAddPanelSheet)
@@ -6273,12 +6420,14 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				// Click on Loop Card node
-				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+				//Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
-				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+
 				// Verify Battery Standby load value
 				//verifyBatteryStandbyFC(sExpectedBatteryStandby,IsSecondPSU,PanelType);
 				
@@ -6286,6 +6435,9 @@ namespace TestProject.Libraries
 				//verifyAlarmLoadFC(sExpectedAlarmLoad,IsSecondPSU,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -6399,6 +6551,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 18/09/2019 Alpesh Dhakad 23/12/2019 - Updated row number for sStandbyLoadingDetail and sAlarmLoadingDetail
+		 * Alpesh Dhakad - 27/05/2020 Updated script as per new implementation changes
 		 *********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyOnChangingCPUInFCPanel(string sFileName,string sAddPanelSheet)
@@ -6441,14 +6594,20 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				// Click on Loop Card node
-				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+				//Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
 				// Verify Default Battery Standby load value
 				//verifyBatteryStandbyFC(expectedDefaultBatteryStandby,IsSecondPSU,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -6465,9 +6624,15 @@ namespace TestProject.Libraries
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
 				// Verify Battery Standby on changing CPU load value
 				//verifyBatteryStandbyOnChangingCPU(expectedBatteryStandby);
 				Devices_Functions.verifyLoadingDetailsValue(expectedBatteryStandby,sStandbyLoadingDetail);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -6488,6 +6653,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 20/09/2019 Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
+		 * Alpesh Dhakad - 27/05/2020 Updated script as per new implementation changes
 		 ***************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnChangingPowerSupply(string sFileName,string sAddPanelSheet)
@@ -6537,10 +6703,13 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				// Click on Loop Card node
-				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+				//Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
 				
 				// Verify Default Battery Standby load value
 				//verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
@@ -6550,13 +6719,15 @@ namespace TestProject.Libraries
 				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();			
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
 				
 				// Click on Main processor expander node
-				Common_Functions.ClickOnNavigationTreeExpander("Main");
+				//Common_Functions.ClickOnNavigationTreeExpander("Main");
 				
 				
 				// Click on Panel node
@@ -6583,6 +6754,10 @@ namespace TestProject.Libraries
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 					
+					// Click on Panel Calculation tab
+					Common_Functions.clickOnPanelCalculationsTab();
+				
+					
 					// Verify Battery Standby value on addition of R-Bus & X-Bus template
 					//verifyBatteryStandby(sBatteryStandby,false,PanelType);
 					
@@ -6595,8 +6770,8 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeItem("Main");
 					
 					
-					Devices_Functions.SelectRowUsingLabelName(sLabelName);
-					
+					//Devices_Functions.SelectRowUsingLabelName(sLabelName);
+					Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(sLabelName);
 					
 					// Click on SearchProperties text field
 					repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -6620,6 +6795,10 @@ namespace TestProject.Libraries
 					/// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 					
+					// Click on Panel Calculation tab
+					Common_Functions.clickOnPanelCalculationsTab();
+				
+					
 					sBatteryStandbyOnChangingPowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[j,17]).Value.ToString();
 					sAlarmLoadOnChangingPowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[j,18]).Value.ToString();
 					
@@ -6628,6 +6807,9 @@ namespace TestProject.Libraries
 					//verifyAlarmLoad(sAlarmLoadOnChangingPowerSupply,false,PanelType);
 					Devices_Functions.verifyLoadingDetailsValue(sBatteryStandbyOnChangingPowerSupply,sStandbyLoadingDetail);
 				    Devices_Functions.verifyLoadingDetailsValue(sAlarmLoadOnChangingPowerSupply,sAlarmLoadingDetail);
+				    
+				    // Click on Properties tab
+					Common_Functions.clickOnPropertiesTab();
 					
 				}
 				
@@ -6651,6 +6833,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 20/09/2019  Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
+		 * Alpesh Dhakad - 27/05/2020 Updated script as per new implementation changes
 		 *********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyNormalAndAlarmLoadOnChangingHousingPropertyOfDIM(string sFileName,string sAddPanelSheet)
@@ -6705,10 +6888,13 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				// Click on Loop Card node
-				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+				//Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
 				
 				// Verify Default Battery Standby load value
 				//verifyBatteryStandby(expectedDefaultBatteryStandby,false,PanelType);
@@ -6718,7 +6904,10 @@ namespace TestProject.Libraries
 				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 				
-				Common_Functions.clickOnPointsTab();
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
+				//Common_Functions.clickOnPointsTab();
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -6730,7 +6919,9 @@ namespace TestProject.Libraries
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-				
+						
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
 				// Verify Battery Standby value on addition of R-Bus & X-Bus template
 				//verifyBatteryStandby(sBatteryStandby,false,PanelType);
 				
@@ -6738,7 +6929,11 @@ namespace TestProject.Libraries
 				//verifyAlarmLoad(sAlarmLoad,false,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(sBatteryStandby,sStandbyLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(sAlarmLoad,sAlarmLoadingDetail);
-				Common_Functions.clickOnPointsTab();
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();				
+				
+				//Common_Functions.clickOnPointsTab();
 				
 				Devices_Functions.SelectRowUsingLabelName(sLabelName);
 				
@@ -6767,6 +6962,10 @@ namespace TestProject.Libraries
 				
 				Common_Functions.clickOnPointsTab();
 				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
 				sBatteryStandbyOnChangingHousingProperty = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				sAlarmLoadOnChangingHousingProperty = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
 				
@@ -6775,6 +6974,10 @@ namespace TestProject.Libraries
 				//verifyAlarmLoad(sAlarmLoadOnChangingHousingProperty,false,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(sBatteryStandbyOnChangingHousingProperty,sStandbyLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(sAlarmLoadOnChangingHousingProperty,sAlarmLoadingDetail);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
 				
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -6889,7 +7092,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 20/09/2019
-		 * 
+		 * Alpesh Dhakad - 27/05/2020 Updated script as per new implementation changes
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyStandyByAlarmHourAndBatteryFactor(string sFileName,string sAddPanelSheet)
@@ -6942,7 +7145,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				// Click on Loop Card node
-				Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+				//Common_Functions.ClickOnNavigationTreeExpander(PanelType);
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -6950,9 +7153,15 @@ namespace TestProject.Libraries
 				// Click on Phyical Layout tab
 				Common_Functions.clickOnPhysicalLayoutTab();
 				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
 				// Verify minimum battery
 				//verifyMinimumBattery(minimumBatteryValue,IsSecondPSU,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(minimumBatteryValue,sMinBatteryLoadingDetail);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -6967,10 +7176,16 @@ namespace TestProject.Libraries
 				// Click on Phyical Layout tab
 				Common_Functions.clickOnPhysicalLayoutTab();
 				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
 				// Verify minimum battery
 				//verifyMinimumBattery(changedMinimumBatteryValue,IsSecondPSU,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(changedMinimumBatteryValue,sMinBatteryLoadingDetail);
 				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
 			}
 			
 			//Close opened excel sheet

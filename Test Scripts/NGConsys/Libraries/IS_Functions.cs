@@ -263,14 +263,16 @@ namespace TestProject.Libraries
 				rowNo = noOfDevices + 17;
 			}
 			
+			
 			Report.Log(ReportLevel.Info, "Verifying Max IS units for "+noOfDevices+ " devices.");
-			for(int j=rowNo; j<(rowNo+noOfDevices);j++)
-			{
-				sRow = j.ToString();
-				
-				verifyMaxISUnits(expectedMaxISUnit,sRow);
-			}
-
+//			for(int j=rowNo; j<(rowNo+noOfDevices);j++)
+//			{
+//				sRow = j.ToString();
+//				
+//				verifyMaxISUnits(expectedMaxISUnit,sRow);
+//			}
+			sRow = rowNo.ToString();
+verifyMaxISUnits(expectedMaxISUnit,sRow);
 		}
 		
 		/**********************************************************************************************
@@ -3087,25 +3089,25 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Cable capcitance value changed to"+cableCapacitanceValue);
 		}
 		
-		/********************************************************************
+		/**************************************************************************************************************************
 		 * Function Name: VerifyIsolatorUnitIndicator
 		 * Function Details: Verify indicator for isolator units progress bar
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam kadam
-		 * Last Update : 12/4/19
-		 ********************************************************************/
+		 * Last Update : 12/4/19  Alpesh Dhakad - 26/05/2020 Updated script as per old IS Unit implementation
+		 **************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyIsolatorUnitsAndIndicator(string expectedIsolatorUnits, string sExpectedColourCode, string PanelType)
 		{
 			// Verify panel type and then accordingly assign sRow value
 			if(PanelType.Equals("FIM"))
 			{
-				sRowIndex = (7).ToString();
+				sRowIndex = (15).ToString();
 			}
 			else
 			{
-				sRowIndex = (8).ToString();
+				sRowIndex = (16).ToString();
 			}
 //
 //			// Fetch Isolator units

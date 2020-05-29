@@ -79,14 +79,17 @@ namespace TestProject.Recording_Modules
 
             Init();
 
+            Libraries.Devices_Functions.EnableISDevices();
+            Delay.Milliseconds(0);
+            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX 4000", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -124,11 +127,11 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPhysicalLayoutTab();
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPointsTab();
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnPointsTab();
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyDeviceDisplayedInPhysicalLayout("9", "A:3", "801 CHEx IS");
             Delay.Milliseconds(0);

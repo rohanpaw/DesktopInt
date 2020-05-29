@@ -103,11 +103,11 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPointsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("APM 800 - 1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameForOneRow("APM 800 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("APM 800 - 1");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyDeviceUsingLabelName("APM 800 - 1");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
