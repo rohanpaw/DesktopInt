@@ -2187,6 +2187,22 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="row"
+			id="afa9aae5-455a-4aff-97c3-c373d4be651c"
+			name="PointsGridRowOnReopen"
+			refimgid="6c32ab2f-dae0-4a6c-9c70-8f1be92f753a"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[$sRowIndex]/row
+			</item>
+			<item
+			capname="row"
+			id="b4cfbe6e-25c6-404b-ad48-5b38e0e1b6fc"
+			name="Copy_of_PointsGridRowOnReopen"
+			refimgid="6c32ab2f-dae0-4a6c-9c70-8f1be92f753a"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[2]/row
+			</item>
+			<item
+			capname="row"
 			id="d8cfe9dc-bbbf-4f9e-870e-a2117f137b7a"
 			name="Copy_of_PointsGridRow1"
 			refimgid="6c32ab2f-dae0-4a6c-9c70-8f1be92f753a"
@@ -2256,6 +2272,14 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			refimgid="2532eb34-0dcb-4a63-baa8-9b93ce2ac452"
 			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[$sRow]
+			</item>
+			<item
+			capname="row"
+			id="c1bcacb1-2408-4e60-8266-4b297e256ff3"
+			name="InventoryGridRowForEXI"
+			refimgid="2532eb34-0dcb-4a63-baa8-9b93ce2ac452"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[$sRow]/row
 			</item>
 			<item
 			capname="row"
@@ -2863,6 +2887,14 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="text"
+			id="de95478a-59ab-4f96-b787-f65a2762d695"
+			name="Copy_of_txt_InventoryProperty1"
+			refimgid="025648ba-baa2-46bc-9b54-cd6981a1c5a1"
+			searchtimeout="45000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/container[@automationid='PART_ItemsPresenter']//text[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="text"
 			id="70854889-99b4-4fa6-b198-01e9e09461e0"
 			name="Copy_of_txt_InventoryProperty"
 			refimgid="025648ba-baa2-46bc-9b54-cd6981a1c5a1"
@@ -2939,6 +2971,14 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			name="txt_InventoryGridDeviceProperty"
 			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']//row[$sRowIndex]/row/cell[$sColumnIndex]/text
+			</item>
+			<item
+			capname="text"
+			id="6de36fe5-9e12-4017-9cad-e63017c2a7a7"
+			name="txt_InventoryGridDevicePropertyOnReopen"
+			refimgid="cd99b039-fc2e-4e91-b1ce-19ea1575cc60"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[7]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']//row[$sRowIndex]/row/cell[$sColumnIndex]/text
 			</item>
 			<item
 			capname="text"
@@ -13812,6 +13852,13 @@ AAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="text"
+			id="7a87970d-3148-4c6c-b84d-b9506b19d49d"
+			name="Copy_of_txt_PointGridProperties"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[1]/row/cell[1]/text
+			</item>
+			<item
+			capname="text"
 			id="e28129b7-fa8f-4ebe-992a-3931a1c7e24c"
 			name="SystemLoad"
 			refimgid="dcf4799b-0dcc-43a2-92ac-69629d52df4c"
@@ -13819,9 +13866,16 @@ AAAAAElFTkSuQmCC
 				/form[@automationid='me']/progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index='15']//text[@caption=$sPsuV]
 			</item>
 			<item
-			capname="text"
+			capname="row"
 			id="78c3cb5c-ed89-4929-ba32-2b396f70cb5a"
 			name="InventoryGridFirstRow"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row
+			</item>
+			<item
+			capname="text"
+			id="8cab36c5-56d0-418e-91c3-710836fe6ddf"
+			name="Copy_of_InventoryGridFirstRow"
 			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table[@automationid='PointTableView']/container[@automationid='rowPresenterGrid']//row/?/?/text[@automationid='PART_Editor']
 			</item>
@@ -14245,8 +14299,9 @@ AAAAAElFTkSuQmCC
 			capname="text"
 			id="0c0d150e-2745-4ba4-9689-811c254330e9"
 			name="txt_FirstPSU"
+			refimgid="61cdcb12-80c6-40de-8f35-3f9bf955172f"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[7]/picture/list/container[@automationid='PART_ItemsPresenter']/row[@index='6']//text[@automationid='PART_Editor']
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/row[@index='1']//text[@automationid='PART_Editor']
 			</item>
 			<item
 			addcaps="text,wpfelement,wpfgroupelement"
@@ -14743,7 +14798,7 @@ AAAAAElFTkSuQmCC
 			capname="cell"
 			id="4e87ae5c-b763-4833-983c-4ae663e80d3c"
 			name="cell_LabelNameProperties"
-			refimgid="dad96ca0-b8a5-4e89-b9c1-d29dc5de1b18"
+			refimgid="c958106f-14bf-4037-8240-517b3ae8d7a0"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='1']/cell[@isheader='False']
 			</item>
@@ -14770,6 +14825,30 @@ AAAAAElFTkSuQmCC
 			refimgid="9c3bbff3-80c6-46e4-8821-489213359553"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/list/container[@automationid='PART_ItemsPresenter']//text[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="cell"
+			id="a4eec5b3-869f-485d-920d-2cd7cf958313"
+			name="cell_StandByHours"
+			refimgid="7db6164c-0608-4487-bffa-ba7e227fd742"
+			searchtimeout="45000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/?/?/cell[@text='Standby Hours']
+			</item>
+			<item
+			capname="text"
+			id="aa061fcc-b293-4a78-85bb-e35aff8be5ab"
+			name="txt_StandByHours"
+			refimgid="31cb648b-b29f-4d6b-b2aa-c70edd1030a7"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list//text[@automationid='PART_Editor']/text[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="cell"
+			id="33738650-4cdc-45be-8ec6-319c348fc95d"
+			name="cell_BatteryFactor"
+			refimgid="9a4074e5-31dd-452f-bbf6-59915ebea1e5"
+			searchtimeout="45000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/?/?/cell[@text='Battery Factor']
 			</item>
 			<basepath>
 				/form[@automationid='me']

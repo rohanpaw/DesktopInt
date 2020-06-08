@@ -130,7 +130,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectPointsGridRow"
+		methodname="SelectPointsGridRowOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -155,7 +155,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyLabelInPropertiesSection"
+		methodname="verifyLabelInPropertiesSectionOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -180,7 +180,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyAlarmLoad"
+		methodname="VerifyAlarmLoadOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -197,6 +197,50 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						5
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Application_Close"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="Save"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="SaveConfirmation"
+				id="73d4ee71-e930-4860-9708-b1d40c995fcc">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="sProjectName"
+				id="5e4941cf-8302-4ade-ab09-0220fc10d358">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>

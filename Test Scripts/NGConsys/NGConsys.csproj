@@ -568,6 +568,18 @@
       <UserCode>true</UserCode>
       <id>fadb3ca7-a729-4f91-b168-66d154db3bc0</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Export_Of_Region_Data_With_Pro16xD_Panel.cs">
+      <BoundTo>6e902786-a15d-410c-a43e-4176dc98c116</BoundTo>
+      <DependentUpon>Verify_Export_Of_Region_Data_With_Pro16xD_Panel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5eaa69d0-05e5-4e59-9e58-c37d5dcc533d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Export_Of_Region_Data_With_Pro16xD_Panel.UserCode.cs">
+      <BoundTo>6e902786-a15d-410c-a43e-4176dc98c116</BoundTo>
+      <DependentUpon>Verify_Export_Of_Region_Data_With_Pro16xD_Panel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fe1cebd6-5577-4576-b00f-2aafba2c7939</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels.cs">
       <BoundTo>4bdea097-97f0-45be-a86b-c1963f4f3db9</BoundTo>
       <DependentUpon>Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels.rxrec</DependentUpon>
@@ -4522,6 +4534,11 @@
       <id>966cd594-f837-42fd-890b-ea7e43f1852a</id>
       <recordtableid>082dffce-d287-401e-a4f1-76d4a095c6c2</recordtableid>
     </None>
+    <None Include="Recording Modules\Verify_Export_Of_Region_Data_With_Pro16xD_Panel.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>6e902786-a15d-410c-a43e-4176dc98c116</id>
+      <recordtableid>5db8f58a-d772-480b-a7a0-32c5861b0327</recordtableid>
+    </None>
     <None Include="Recording Modules\Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>4bdea097-97f0-45be-a86b-c1963f4f3db9</id>
@@ -5673,9 +5690,9 @@
       <recordtableid>493cfefb-ce7d-4104-8993-d8d6be32815a</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>a8f86c08-32d1-4097-aa88-e21aa70361c7</id>
       <recordtableid>9f8925d2-cea3-47f3-995a-95dcba6d9e8c</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen_PCH800_PCS800_POS800_PNI800_FBI800_Slot_Allocation_In_Backplane.rxrec">
       <id>7e1886ad-0198-476a-ab1a-5b95ef681a43</id>
@@ -5703,9 +5720,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_For_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>fb02d740-da21-49f1-9376-a3988a6fe0d6</id>
       <recordtableid>c5a250e6-1102-4e0c-b170-8ff5698f15ba</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_For_DC_Calculations_On_Changing_Values_Of_Sounder_Volume_And_Flash_Light_FC.rxrec">
       <id>9ac4253e-bfb7-4198-8cba-399ee4904934</id>

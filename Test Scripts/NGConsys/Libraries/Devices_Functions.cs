@@ -501,7 +501,8 @@ namespace TestProject.Libraries
 				}
 				else
 				{
-					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
+					//repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
+					repo.FormMe.InventoryGridRowForEXI.Click();
 				}
 				
 				string CableCapacitanceValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
@@ -541,7 +542,8 @@ namespace TestProject.Libraries
 				}
 				else
 				{
-					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
+					//repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
+					repo.FormMe.InventoryGridRowForEXI.Click();
 				}
 				
 				Common_Functions.clickOnPointsTab();
@@ -555,7 +557,8 @@ namespace TestProject.Libraries
 				}
 				else
 				{
-					repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
+					//repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
+					repo.FormMe.InventoryGridRowForEXI.Click();
 				}
 				
 				//=================================
@@ -678,7 +681,7 @@ namespace TestProject.Libraries
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fCableLength1 + "{Enter}");
 				fMaxACUnits = (450-(fCableLength1)/10);
 			}
-			Report.Log(ReportLevel.Success,"Cable lengh changed successfully");
+			Report.Log(ReportLevel.Success,"Cable length changed successfully");
 		}
 		
 		
@@ -8581,6 +8584,196 @@ namespace TestProject.Libraries
 				
 				
 			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
+		
+		
+		/**************************************************************************************************
+		 * Function Name: verifyZoneDescription
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 30/05/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		 public static void verifyZoneDescription(string sPropertyLabel, string sExpectedValue)
+        {
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Zone property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Zone" +"{ENTER}" );
+			
+			// Click on Zone cell
+			//repo.ProfileConsys1.PARTItemsPresenter.cell_DeviceMode.Click();
+			repo.FormMe.cell_SearchPropertiesFirstRowDrpDwn.Click();
+			
+			// Retrieve Zone Visibility
+			string actualZoneDescription = repo.FormMe.txt_LabelNameProperties.TextValue;
+			
+			
+			if(actualZoneDescription.Equals(sExpectedValue))
+			{
+				Report.Log(ReportLevel.Success,"Property value of " +sPropertyLabel + " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Property value of " +sPropertyLabel+ " is not displayed correctly");
+			}
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+        }
+		 
+		 /********************************************************************
+		 * Function Name: VerifyDeviceExistsForOneRow
+		 * Function Details: To verify item with label name exists in Loop
+		 * Parameter/Arguments: sExists, sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 30/05/2020
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyDeviceExistsForOneRow(bool sExists, string sLabel)
+		{
+			sLabelName = sLabel;
+			
+			if(sExists)
+			{
+				if(repo.FormMe.txt_LabelNameForOneRowInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success,"Device with label name " +sLabel+ " is displayed correctly");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device with label name " +sLabel+ " not is displayed correctly");
+				}
+			}
+			else
+			{
+				if(repo.FormMe.txt_LabelNameForOneRowInfo.Exists())
+				{
+					Report.Log(ReportLevel.Failure,"Device with label name " +sLabel+ " is getting displayed");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success,"Device with label name " +sLabel+ " is correctly not displayed");
+				}
+			}
+		}
+		
+		/********************************************************************
+		 * Function Name: SelectPointsGridRowOnReopen
+		 * Function Details: To select points grid row
+		 * Parameter/Arguments: sRowNumber
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 31/05/2020
+		 ********************************************************************/
+		// Change cable resistance method
+		[UserCodeMethod]
+		public static void SelectPointsGridRowOnReopen(string sRowNumber)
+		{
+			sRowIndex=sRowNumber;
+			//Click on row from points grid
+			repo.FormMe.PointsGridRowOnReopen.Click();
+		}
+		
+		 /**************************************************************************************************
+		 * Function Name: verifyLabelInPropertiesSection
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 31/05/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		  public static void verifyLabelInPropertiesSectionOnReopen(string sLabel)
+        {
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Alarm Load property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Label" +"{ENTER}" );
+			
+			repo.FormMe.cell_LabelNameProperties.Click();
+			
+			// Retrieve value alarm load
+			string actualLabelDescription = repo.FormMe.txt_LabelNameProperties.TextValue;
+			
+			// Comparing DayMode and sDayMode values
+			if(actualLabelDescription.Equals(sLabel))
+			{
+				Report.Log(ReportLevel.Success,"Label " +sLabel+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Label is displayed as "+actualLabelDescription+ " instead of "+ sLabel);
+			}
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+        }
+		
+		/********************************************************************
+		 * Function Name: VerifyAlarmLoadOnReopen
+		 * Function Details: To verify alarm load of sounder
+		 * Parameter/Arguments:expected alarm load
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :31/05/2020
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void VerifyAlarmLoadOnReopen(string sAlarmLoad)
+		{
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Alarm Load property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Alarm Load" +"{ENTER}" );
+			
+			// Click on Alarm Load cell
+			repo.FormMe.cell_LabelNameProperties.Click();
+			
+			// Retrieve value alarm load
+			string actualAlarmLoad = repo.FormMe.txt_LabelNameProperties.TextValue;
+			
+			// Comparing DayMode and sDayMode values
+			if(actualAlarmLoad.Equals(sAlarmLoad))
+			{
+				Report.Log(ReportLevel.Success,"Alarm Load " +sAlarmLoad+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Alarm Load is not displayed as "+actualAlarmLoad+ " instead of "+ sAlarmLoad);
+			}
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
 		
 	}

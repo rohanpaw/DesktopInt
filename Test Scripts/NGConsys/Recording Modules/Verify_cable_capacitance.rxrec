@@ -27,6 +27,21 @@ rxversion="8.3">
 	</variables>
 	<recorditems>
 		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="EnableISDevices"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -146,21 +161,6 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="EnableISDevices"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -267,7 +267,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="AC_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyMaxACUnitsValue"
 		namespace="TestProject.Libraries"
@@ -287,6 +287,42 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						128
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyMaxLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Do update max AC Units on changing values in excel
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="bb6db3b3-2e30-40b6-982f-3cd5b87951b2">
+				<argument
+				argname="expectedMaxUnits"
+				id="36adab82-31a7-4286-beff-567514b9c6c1">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						128
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="fc448ca8-109d-4274-b868-959f76765987">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Signal (AC Units)
 					</argvalue>
 				</argument>
 			</arguments>

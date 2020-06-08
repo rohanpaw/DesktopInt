@@ -1240,7 +1240,26 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info," Click on SearchProperties text box successfully  ");
 		}
 		
-		
+		/********************************************************************
+		 * Function Name: SaveProjectOnReopen
+		 * Function Details: To save project
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 07/06/2020
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void SaveProjectOnReopen(string sProjectName)
+		{
+			repo.FormMe.File.Click();
+			
+			repo.FormMe.Save.Click();
+			
+			repo.ProjectChangeDescription.txt_Desc.Click();
+					Keyboard.Press("Automation on Reopen....");
+					repo.ProjectChangeDescription.btn_OK.Click();
+
+		}
 	}
 }
 

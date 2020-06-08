@@ -79,6 +79,9 @@ namespace TestProject.Recording_Modules
 
             Init();
 
+            Libraries.Devices_Functions.EnableISDevices();
+            Delay.Milliseconds(0);
+            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX 4000", "");
             Delay.Milliseconds(0);
             
@@ -91,16 +94,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.EnableISDevices();
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("Exi800", "Other");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyMaxACUnitsValue("20.39999");
@@ -112,7 +109,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CHEx IS", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("Exi800");
+            Libraries.Devices_Functions.SelectRowUsingLabelName("Exi800 - 1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("801 HEx IS", "Detectors");
@@ -136,16 +133,13 @@ namespace TestProject.Recording_Modules
             //Libraries.AC_Functions.verifyMaxACUnitsValue("53.6");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelCalculationsTab();
-            Delay.Milliseconds(0);
-            
             Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("53.6", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.ChangeCableCapacitance(ValueConverter.ArgumentFromString<int>("fchangeCableCapacitance", "90"), "Exi800");
+            Libraries.Devices_Functions.ChangeCableCapacitance(ValueConverter.ArgumentFromString<int>("fchangeCableCapacitance", "90"), "Exi800 - 1");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -156,9 +150,6 @@ namespace TestProject.Recording_Modules
             
             //Libraries.AC_Functions.verifyMaxACUnitsValue("104");
             //Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPanelCalculationsTab();
-            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("104", "Signal (AC Units)");
             Delay.Milliseconds(0);

@@ -300,6 +300,9 @@ namespace TestProject.Libraries
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
 			
+			Report.Log(ReportLevel.Info," Panel LED changed to " +PanelLED + "  successfully  ");
+				
+			
 			
 		}
 		
@@ -772,6 +775,13 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure, "PSU "+SecondPSU+" is not displayed");
 			}
 			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			
 		}
 		
 		
@@ -997,11 +1007,17 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 19/09/2019
+		 * Last Update : 19/09/2019 Alpesh Dhakad - 05/06/2020 Updated script as per new xpath 
 		 ************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyPSUType(string sExpectedPSU)
 		{
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Device text in Search Properties fields to view Power supply related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("PSU" +"{ENTER}" );
+			
 			repo.FormMe.Cell_PSU.Click();
 			string ActualPSUValue = repo.FormMe.txt_FirstPSU.TextValue;
 			Report.Log(ReportLevel.Info,ActualPSUValue);
@@ -1013,6 +1029,19 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"First PSU is not Displayed Correctly");
 			}
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
 		}
 		
 		/****************************************************************************************************************************************

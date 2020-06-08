@@ -133,7 +133,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("Generic Sounder - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.ChangeLabelName("Generic Sounder");
+            Libraries.Devices_Functions.ChangeLabelName("Generic Sound");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.EditAlarmLoad("5");

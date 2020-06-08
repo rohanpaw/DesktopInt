@@ -79,6 +79,8 @@ namespace TestProject.Recording_Modules
 
             Init();
 
+            Libraries.Devices_Functions.EnableISDevices();
+            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -87,8 +89,6 @@ namespace TestProject.Recording_Modules
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             
-            Libraries.Devices_Functions.EnableISDevices();
-            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             
             Libraries.Devices_Functions.CableCapacitance("TC_114_Verify_Cable_capacitance", "Devices");
@@ -96,7 +96,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangeCableLength("PFI", ValueConverter.ArgumentFromString<int>("fCableLength1", "500"), ValueConverter.ArgumentFromString<int>("fCableLength2", "500"));
             
             // Do update max AC Units on changing values in excel
-            Libraries.AC_Functions.verifyMaxACUnitsValue("128");
+            //Libraries.AC_Functions.verifyMaxACUnitsValue("128");
+            
+            // Do update max AC Units on changing values in excel
+            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("128", "Signal (AC Units)");
             
         }
 

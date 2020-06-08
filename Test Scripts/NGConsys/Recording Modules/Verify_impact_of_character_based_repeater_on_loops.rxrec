@@ -169,6 +169,15 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="10000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
 		duration="100ms"
@@ -306,6 +315,15 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="10000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
 		enabled="True"

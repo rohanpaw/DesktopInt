@@ -102,6 +102,9 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("PLX800", "Loops");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(4));
+            Delay.Duration(10000, false);
+            
             Libraries.InventoryGrid_Functions.VerifyInventoryGrid(ValueConverter.ArgumentFromString<int>("iStartRowIndex", "7"), ValueConverter.ArgumentFromString<int>("iEndRowIndex", "14"), "557.202.842");
             Delay.Milliseconds(100);
             
@@ -110,6 +113,9 @@ namespace TestProject.Recording_Modules
             
             Libraries.InventoryGrid_Functions.DeleteItemfromInventory(ValueConverter.ArgumentFromString<int>("iRowNumber", "8"), "PLX800", "557.202.842");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(8));
+            Delay.Duration(10000, false);
             
             Libraries.InventoryGrid_Functions.VerifyRowNotExist(ValueConverter.ArgumentFromString<int>("iRowNumber", "11"), "PLX800", "557.202.842");
             Delay.Milliseconds(0);

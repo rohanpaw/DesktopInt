@@ -565,7 +565,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Generic Sounder
+						Generic Sound
 					</argvalue>
 				</argument>
 			</arguments>

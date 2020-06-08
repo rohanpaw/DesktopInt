@@ -27,6 +27,21 @@ rxversion="8.3">
 	</variables>
 	<recorditems>
 		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="EnableISDevices"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="aaa6fc3c-a167-42d1-8955-e8c7cff29500">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -146,23 +161,8 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="EnableISDevices"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="aaa6fc3c-a167-42d1-8955-e8c7cff29500">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -218,21 +218,6 @@ rxversion="8.3">
 						Other
 					</argvalue>
 				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="clickOnPanelCalculationsTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -350,7 +335,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Exi800
+						Exi800 - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -541,21 +526,6 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="clickOnPanelCalculationsTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -635,7 +605,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Exi800
+						Exi800 - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -713,21 +683,6 @@ rxversion="8.3">
 						104
 					</argvalue>
 				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="clickOnPanelCalculationsTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem

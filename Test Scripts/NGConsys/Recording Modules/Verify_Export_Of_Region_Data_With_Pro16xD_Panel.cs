@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Export_Of_Region_Data recording.
+    ///The Verify_Export_Of_Region_Data_With_Pro16xD_Panel recording.
     /// </summary>
-    [TestModule("560b4584-e27b-4c2f-88ad-c4ea33c42460", ModuleType.Recording, 1)]
-    public partial class Verify_Export_Of_Region_Data : ITestModule
+    [TestModule("5db8f58a-d772-480b-a7a0-32c5861b0327", ModuleType.Recording, 1)]
+    public partial class Verify_Export_Of_Region_Data_With_Pro16xD_Panel : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Export_Of_Region_Data instance = new Verify_Export_Of_Region_Data();
+        static Verify_Export_Of_Region_Data_With_Pro16xD_Panel instance = new Verify_Export_Of_Region_Data_With_Pro16xD_Panel();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Export_Of_Region_Data()
+        public Verify_Export_Of_Region_Data_With_Pro16xD_Panel()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Export_Of_Region_Data Instance
+        public static Verify_Export_Of_Region_Data_With_Pro16xD_Panel Instance
         {
             get { return instance; }
         }
@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -126,25 +126,6 @@ namespace TestProject.Recording_Modules
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(15));
             repo.PrintPreview.btn_CloseB.Click();
-            Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Export2ndTime' at Center.", repo.FormMe.Export2ndTimeInfo, new RecordItemIndex(16));
-            //repo.FormMe.Export2ndTime.Click();
-            //Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'PrintPreview'.", repo.PrintPreview.SelfInfo, new RecordItemIndex(17));
-            //Validate.Exists(repo.PrintPreview.SelfInfo);
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.PARTMaximize' at Center.", repo.PrintPreview.PARTMaximizeInfo, new RecordItemIndex(18));
-            //repo.PrintPreview.PARTMaximize.Click();
-            //Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(19));
-            //repo.PrintPreview.btn_CloseB.Click();
-            //Delay.Milliseconds(200);
-            
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
         }

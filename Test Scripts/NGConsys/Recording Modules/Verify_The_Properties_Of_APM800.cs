@@ -109,7 +109,7 @@ namespace TestProject.Recording_Modules
             //Libraries.Devices_Functions.verifyDescription("APM800 part Of second PSU");
             //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Zone", "1 (Zone 01)");
+            Libraries.Devices_Functions.verifyZoneDescription("Zone", "1 (Zone 01)");
             Delay.Milliseconds(0);
             
             //Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Address", "1");

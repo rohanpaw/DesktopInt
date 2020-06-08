@@ -130,6 +130,9 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(17));
+            Delay.Duration(10000, false);
+            
             Libraries.Common_Functions.clickOnPhysicalLayoutTab();
             Delay.Milliseconds(0);
             

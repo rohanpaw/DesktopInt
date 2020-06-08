@@ -134,19 +134,22 @@ namespace TestProject.Libraries
 		/// </summary>
 		/// 
 		
-		/********************************************************************
+		/************************************************************************************************
 		 * Function Name: ExpandUnitsGallery
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update : 08/06/2020 Alpesh Dhakad - Update as per new gallery implementation
+		 ************************************************************************************************/
 		[UserCodeMethod]
-		public static void ExpandUnitsGallery(string sGalleryName)
+		public static void ExpandUnitsGallery(string sDeviceName)
 		{
-			SelectUnitsGalleryType(sGalleryName);
-			repo.ProfileConsys1.UnitsGalleryDropDown.Click();
+			ModelNumber=sDeviceName;
+			SelectUnitsGalleryType(sDeviceName);
+			//repo.ProfileConsys1.UnitsGalleryDropDown.Click();
+			
+			repo.FormMe.btn_AllGalleryDropdown.Click();
 		}
 		
 		/// <summary>
@@ -566,14 +569,14 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/*****************************************************************************************************************************
+		/********************************************************************************************************************************
 		 * Function Name:VerifyGalleryItems
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:Purvi Bhasin
-		 * Last Update :30/4/2019 Alpesh Dhakad - 01/08/2019 & 23/08/2019 - Updated test scripts as per new build and xpaths
-		 *****************************************************************************************************************************/
+		 * Last Update :30/4/2019 Alpesh Dhakad - 01/08/2019 & 23/08/2019, 08/06/2020 - Updated test scripts as per new build and xpaths
+		 ********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyGalleryItems(string sFileName,string sAddPanelSheet, string sAddDeviceSheet)
 		{
@@ -626,7 +629,7 @@ namespace TestProject.Libraries
 					GalleryName = ((Range)Excel_Utilities.ExcelRange.Cells[t,2]).Value.ToString();
 					sType = ((Range)Excel_Utilities.ExcelRange.Cells[t,3]).Value.ToString();
 					
-					ExpandUnitsGallery(sType);
+					ExpandUnitsGallery(GalleryName);
 					
 					int DeviceIndex = t-2;
 					sDeviceIndex = DeviceIndex.ToString();
@@ -649,7 +652,8 @@ namespace TestProject.Libraries
 				for(int n=1; n<=DownClicked; n++)
 				{
 					//No of items in the container
-					int NoOfItems = repo.FormMe.GalleryContainer.Children.Count;
+					//int NoOfItems = repo.FormMe.GalleryContainer.Children.Count;
+					int NoOfItems = repo.FormMe.btn_AllGalleryDropdown.Children.Count;
 					Report.Log(ReportLevel.Info,"NoOfItems: " +NoOfItems);
 					for(int j=0; j<(NoOfItems-1); j++)
 					{
@@ -666,12 +670,12 @@ namespace TestProject.Libraries
 						
 					}
 					
-					if(repo.FormMe.Gallery_PARTDown.Enabled)
+					if(repo.FormMe.btn_AllGalleryDropdown.Enabled)
 					{
-						repo.FormMe.Gallery_PARTDown.Click();
+						repo.FormMe.btn_AllGalleryDropdown.Click();
 					}
 					
-					NoOfItems = repo.FormMe.GalleryContainerInfo.Children.Count;
+					NoOfItems = repo.FormMe.btn_AllGalleryDropdownInfo.Children.Count;
 				}
 				
 				
@@ -688,7 +692,7 @@ namespace TestProject.Libraries
 					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,3]).Value.ToString();					
 					string Status = ((Range)Excel_Utilities.ExcelRange.Cells[j,4]).Value.ToString();
 					
-					ExpandUnitsGallery(sType);
+					ExpandUnitsGallery(GalleryName);
 					
 					int DeviceIndex = j-2;
 					sDeviceIndex = DeviceIndex.ToString();
@@ -737,14 +741,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/***********************************************************************************************************************
+		/**************************************************************************************************************************************
 		 * Function Name:VerifyGalleryItemsWithoutAddingAnyOtherEntity
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner:Purvi Bhasin
-		 * Last Update :30/4/2019   Alpesh Dhakad - 01/08/2019 & 23/08/2019 - Updated test scripts as per new build and xpaths
-		 ***********************************************************************************************************************/
+		 * Last Update :30/4/2019   Alpesh Dhakad - 01/08/2019 & 23/08/2019,08/06/2020  - Updated test scripts as per new build and xpaths
+		 **************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyGalleryItemsWithoutAddingAnyOtherEntity(string sFileName,string sAddPanelSheet, string sAddDeviceSheet)
 		{
@@ -798,7 +802,7 @@ namespace TestProject.Libraries
 					ImagePresence = ((Range)Excel_Utilities.ExcelRange.Cells[j,4]).Value.ToString();
 					
 					
-					ExpandUnitsGallery(sType);
+					ExpandUnitsGallery(GalleryName);
 					
 					
 					

@@ -286,10 +286,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="InventoryGrid_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryDeviceProperty"
+		methodname="verifyZoneDescription"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>

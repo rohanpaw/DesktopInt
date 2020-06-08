@@ -7246,7 +7246,7 @@ namespace TestProject.Libraries
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 23/9/2019
+		 * Last Update : 23/9/2019 Alpesh DHakad 31/05/2020 - Updated xpath for standby hours
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void changeStandByHours(string changeStandByHoursValue)
@@ -7258,7 +7258,7 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("StandBy" +"{ENTER}" );
 			
 			// Click on cell Search properties device first row
-			repo.FormMe.cell_SearchPropertiesFirstRow.Click();
+			repo.FormMe.cell_StandByHours.Click();
 			
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+changeStandByHoursValue + "{Enter}");
 			
@@ -7279,7 +7279,7 @@ namespace TestProject.Libraries
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 23/9/2019
+		 * Last Update : 23/9/2019 Alpesh DHakad 31/05/2020 - Updated xpath for battery factor
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void changeBatteryFactor(string changeBatteryFactorValue)
@@ -7291,7 +7291,8 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Battery" +"{ENTER}" );
 			
 			// Click on cell Search properties device first row
-			repo.FormMe.cell_SearchPropertiesFirstRow.Click();
+			//repo.FormMe.cell_SearchPropertiesFirstRow.Click();
+			repo.FormMe.cell_BatteryFactor.Click();
 			
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+changeBatteryFactorValue + "{Enter}");
 			

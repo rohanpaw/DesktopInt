@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="45b2ee79-ebb8-4ec4-ba40-f65ab565b812"
-mode="Global"
-rxversion="8.3">
+id="5db8f58a-d772-480b-a7a0-32c5861b0327"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -20,27 +19,12 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_the_indication_should_be_shown_for_selected_loops"
+	classname="Verify_Export_Of_Region_Data_With_Pro16xD_Panel"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="EnableISDevices"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="90340d02-d5ae-4de2-9d6d-c3de8f26b0c8">
-			</arguments>
-		</userrecorditem>
 		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"
@@ -71,7 +55,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro32xD
+						Pro16xD
 					</argvalue>
 				</argument>
 				<argument
@@ -112,9 +96,9 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
+		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -124,8 +108,53 @@ rxversion="8.3">
 			<arguments
 			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="ExpanderName"
+				argname="TreeItemName"
 				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromMainProcessorGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0b89e547-dd8b-493c-97cd-db565285f6c2">
+				<argument
+				argname="sDeviceName"
+				id="7dcaee08-4b97-4b4f-9547-e6345a69bf53">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PLX800
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="13a8aa6f-75df-40bf-835f-5e82361eeaa8">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Loops
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="37b475fe-3da4-4cdf-938f-6f029f0a722f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -136,10 +165,10 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
+		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -147,85 +176,35 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			id="a4213f10-ddf0-4c20-b4af-4661fe2034ac">
 				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
+				argname="ExpectedInventoryGridRowCount"
+				id="0460ada9-c302-4112-be8f-914545b0c992">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop-A
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="6f10e938-4f82-4e20-adef-223b09020c8e">
-				<argument
-				argname="sDeviceName"
-				id="27e26c92-be81-437c-95cf-42ddc982b89a">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						LI800
+						7
 					</argvalue>
 				</argument>
 				<argument
-				argname="sType"
-				id="78d6fbeb-dafd-408f-8633-2b270148a75f">
+				argname="ExpectedInventoryGridColumn"
+				id="8e7b13ae-5a94-4ec3-9bbc-85b3c0730fc9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="6f10e938-4f82-4e20-adef-223b09020c8e">
-				<argument
-				argname="sDeviceName"
-				id="27e26c92-be81-437c-95cf-42ddc982b89a">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						801 CH
+						Label
 					</argvalue>
 				</argument>
 				<argument
-				argname="sType"
-				id="78d6fbeb-dafd-408f-8633-2b270148a75f">
+				argname="ExpectedDeviceProperty"
+				id="050b1474-f19d-49ef-b52e-088ec419a783">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Detectors
+						PLX800-E
 					</argvalue>
 				</argument>
 			</arguments>
@@ -250,7 +229,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop-B
+						Node
 					</argvalue>
 				</argument>
 			</arguments>
@@ -259,7 +238,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
+		methodname="verifyExportButtonInGalleryEnabledOrDisabled"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -267,97 +246,7 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="6f10e938-4f82-4e20-adef-223b09020c8e">
-				<argument
-				argname="sDeviceName"
-				id="27e26c92-be81-437c-95cf-42ddc982b89a">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						LI800
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="78d6fbeb-dafd-408f-8633-2b270148a75f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Other
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="6f10e938-4f82-4e20-adef-223b09020c8e">
-				<argument
-				argname="sDeviceName"
-				id="27e26c92-be81-437c-95cf-42ddc982b89a">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						801 CH
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="78d6fbeb-dafd-408f-8633-2b270148a75f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Detectors
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="6f10e938-4f82-4e20-adef-223b09020c8e">
-				<argument
-				argname="sDeviceName"
-				id="27e26c92-be81-437c-95cf-42ddc982b89a">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						830 H
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="78d6fbeb-dafd-408f-8633-2b270148a75f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Detectors
-					</argvalue>
-				</argument>
+			id="49d31a67-69d0-4a8b-93dd-f5c622516ae3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -380,16 +269,16 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop-A
+						Node
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnPhysicalLayoutTab"
+		methodname="SelectInventoryGridRow"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -397,25 +286,10 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="IS_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyIsolatorUnits"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="da5e9f92-5171-4132-927f-6701ef3f9fe3">
+			id="7d143166-8ff5-4f62-a54c-a28f5310c3b1">
 				<argument
-				argname="expectedIsolatorUnits"
-				id="8a44b2b3-88c2-47ef-b1c5-96e2711e29a6">
+				argname="sRowNumber"
+				id="a890cf73-c892-44f3-b68c-ce21feef38a7">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -423,23 +297,13 @@ rxversion="8.3">
 						1
 					</argvalue>
 				</argument>
-				<argument
-				argname="PanelType"
-				id="caeaf102-e014-49ee-8824-37c755b404dc">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnPhysicalLayoutTab"
+		methodname="verifyExportButtonInGalleryEnabledOrDisabled"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -447,52 +311,7 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="IS_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyIsolatorUnitsAndIndicator"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="0f93ccd2-1f73-4466-9d7e-560176ea7a6a">
-				<argument
-				argname="expectedIsolatorUnits"
-				id="d105e730-b7c7-4db9-b473-2cddf56ad956">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="sExpectedColourCode"
-				id="64f82751-c370-4dad-b1a8-0edcecc64e19">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						GREEN
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="09f64873-779d-433e-b1b8-669fa1805694">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
+			id="49d31a67-69d0-4a8b-93dd-f5c622516ae3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -515,25 +334,16 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop-B
+						Node
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<explicitdelayitem
-		duration="10000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnPhysicalLayoutTab"
+		methodname="verifyExportButtonInGalleryEnabledOrDisabled"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -541,14 +351,14 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			id="49d31a67-69d0-4a8b-93dd-f5c622516ae3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="IS_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyIsolatorUnits"
+		methodname="SelectInventoryGridRow"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -556,34 +366,24 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="da5e9f92-5171-4132-927f-6701ef3f9fe3">
+			id="7d143166-8ff5-4f62-a54c-a28f5310c3b1">
 				<argument
-				argname="expectedIsolatorUnits"
-				id="8a44b2b3-88c2-47ef-b1c5-96e2711e29a6">
+				argname="sRowNumber"
+				id="a890cf73-c892-44f3-b68c-ce21feef38a7">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						2
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="caeaf102-e014-49ee-8824-37c755b404dc">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
+						1
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnPhysicalLayoutTab"
+		methodname="verifyExportButtonInGalleryEnabledOrDisabled"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -591,14 +391,14 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			id="49d31a67-69d0-4a8b-93dd-f5c622516ae3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="IS_Functions"
+		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyIsolatorUnitsAndIndicator"
+		methodname="clickOnExportButton"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -606,39 +406,33 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="0f93ccd2-1f73-4466-9d7e-560176ea7a6a">
-				<argument
-				argname="expectedIsolatorUnits"
-				id="d105e730-b7c7-4db9-b473-2cddf56ad956">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						2
-					</argvalue>
-				</argument>
-				<argument
-				argname="sExpectedColourCode"
-				id="64f82751-c370-4dad-b1a8-0edcecc64e19">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						GREEN
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelType"
-				id="09f64873-779d-433e-b1b8-669fa1805694">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
+			id="49d31a67-69d0-4a8b-93dd-f5c622516ae3">
 			</arguments>
 		</userrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1da35052-134f-4427-9373-97af4fc2c199"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="da5d2408-f0f2-47f7-8850-f47457d51ea8"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@title='Print Preview']/?/?/button[@automationid='PART_CloseButton']
+				</path>
+			</info>
+		</mouseitem>
 	</recorditems>
 	<repository
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
@@ -656,7 +450,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_the_indication_should_be_shown_for_selected_loops.UserCode.cs
+		Verify_Export_Of_Region_Data_With_Pro16xD_Panel.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

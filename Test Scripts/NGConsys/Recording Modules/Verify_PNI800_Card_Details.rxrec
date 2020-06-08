@@ -397,7 +397,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryDeviceProperty"
 		namespace="TestProject.Libraries"
@@ -421,6 +421,31 @@ rxversion="8.3">
 				<argument
 				argname="sExpectedValue"
 				id="9a3fd986-af05-4d6b-8b6f-5626fbf44c9e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PNI800-3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyRegionNameInSearchProperties"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="7e4edb5c-5db1-4d6b-b5d9-40ba96717db3">
+				<argument
+				argname="sRegionName"
+				id="8a83e791-1ea0-48df-8e34-77ba9bb3e0f3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -559,7 +584,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -604,7 +629,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -649,7 +674,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -694,7 +719,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -923,7 +948,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -968,7 +993,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1013,7 +1038,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1058,7 +1083,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1103,7 +1128,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="editDeviceLabel"
+		methodname="editDeviceLabelOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1146,7 +1171,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryDeviceProperty"
 		namespace="TestProject.Libraries"
@@ -1180,10 +1205,60 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="editRegionName"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="7e4edb5c-5db1-4d6b-b5d9-40ba96717db3">
+				<argument
+				argname="sNewLabel"
+				id="8a83e791-1ea0-48df-8e34-77ba9bb3e0f3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PNI800-3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="SaveProjectFromFileOption"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="8a1b5ef2-bc45-4624-83a5-f89b71edd953">
+				<argument
+				argname="sProjectName"
+				id="77fdcf66-23ad-4f6e-851b-830f494bd94d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						378_4
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SaveProjectFromFileOption"
+		methodname="SaveProjectOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1308,7 +1383,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1353,7 +1428,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1398,7 +1473,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1443,7 +1518,7 @@ rxversion="8.3">
 		classname="InventoryGrid_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
+		methodname="verifyInventoryGridPropertiesOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1480,6 +1555,50 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						Backplane
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Application_Close"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="Save"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="SaveConfirmation"
+				id="d729423f-a740-45f2-af2a-44c37d62b5f3">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="sProjectName"
+				id="ce675275-edc7-40c9-a260-4e79c289a793">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>

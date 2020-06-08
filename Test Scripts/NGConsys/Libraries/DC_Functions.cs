@@ -277,10 +277,10 @@ namespace TestProject.Libraries
 				Panel_Functions.changePanelLED(PanelLED);
 				
 				// Click on Loop A node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A (");
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				// Click on Loop A node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A (");
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
 				
 			//	repo.ProfileConsys1.tab_PhysicalLayout.Click();
@@ -1037,7 +1037,10 @@ namespace TestProject.Libraries
 			// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				 
-				 
+				
+			// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+							
 			
 			Report.Log(ReportLevel.Info,"Verification of DC Units of Loop A on addition of devices in Loop B");
 			expectedDCUnits= ((Range)Excel_Utilities.ExcelRange.Cells[2,2]).Value.ToString();

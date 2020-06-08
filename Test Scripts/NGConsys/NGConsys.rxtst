@@ -920,12 +920,6 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="0c7d3bb9-5df1-430b-8d92-16cafffc7a40"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="0c996d84-1678-4311-bc0a-d3f4a4507eb5"
 			name="Verify_Remote_LED_Indicator_Property_For_Devices">
@@ -2564,6 +2558,7 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="214048c9-fe3d-4ae1-aaca-d60fd058abf7"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -2985,6 +2980,23 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="278f0eea-0baa-49ec-b4ed-4c9aef896d58"
+			name="Verify_Export_Of_Region_Data_With_Pro16xD_Panel">
+				<description>
+					<![CDATA[<p>NGC-387/TC-43</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="PanelNode"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="27b01b2e-1b2b-4213-881f-722219ec09a4"
 			name="Close_Application"
@@ -3594,6 +3606,26 @@ rxversion="8.3">
 					datasourceid="534c0419-c49f-48e5-b622-6c96911d2e38"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="31724d05-298e-4c37-b76a-a657d9745f03"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5360,12 +5392,6 @@ rxversion="8.3">
 					variablename="App_Path">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="48097a07-4469-4416-8253-3ba0f2118497"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
 			</testmodule>
 			<testmodule
 			id="482e048d-bef0-4bf4-b9c2-f068c8688d33"
@@ -9719,6 +9745,7 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="7fdcf43e-5a1e-456a-a5da-bb507821b083"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -13947,6 +13974,7 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="ba82b717-ed80-446a-8d74-21780e2ca0c7"
 			name="Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section"
 			ref="24aaa9ba-5aac-4310-b303-d4087b7c09a9"
@@ -14780,6 +14808,20 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c813ded6-a4a2-43c8-9401-69b8f4701339"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="278f0eea-0baa-49ec-b4ed-4c9aef896d58"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="c819ddf9-e522-4d20-8f6a-1eecd2ca7185"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -14933,7 +14975,7 @@ persisted in panel properties&nbsp;]]>
 			id="ca49c61e-e537-43f7-80ff-01d04df19cb5"
 			name="Verify_Battery_Standby_On_Addition_Deletion_Of_RBus_Connections_And_XBus_Template_FC">
 				<description>
-					<![CDATA[<p>NGC-1928/TC-71695&nbsp; MPM800 label is not seen as text property contains some other text. But, tested via model name and test is passed</p>]]>
+					<![CDATA[<p>NGC-1928/TC-71695&nbsp;</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16252,6 +16294,12 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="db9c78af-f157-46a3-acb3-4bc0ea5b1ee1"
+			name="Verify_Export_Of_Region_Data_With_Pro16xD_Panel"
+			ref="5db8f58a-d772-480b-a7a0-32c5861b0327"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="dba84f75-87a0-4a5d-8292-e5b2c2014095"
 			name="Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC">
@@ -16771,6 +16819,12 @@ persisted in panel properties&nbsp;]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="e336ad99-a745-4e08-adf6-60bfc5d84586"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="e35ce91d-9194-40bc-af3f-23edcb9bab9f"
 			name="Close_Application"
@@ -17649,12 +17703,6 @@ persisted in panel properties&nbsp;]]>
 			</testmodule>
 			<testmodule
 			id="f07610ab-4c5f-4b6e-a8ef-335374f01d58"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="f07ef5a7-8b96-47af-9de2-621422564016"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -19979,6 +20027,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="278f0eea-0baa-49ec-b4ed-4c9aef896d58"
+					name="Verify_Export_Of_Region_Data_With_Pro16xD_Panel">
+						<testmodule
+						id="31724d05-298e-4c37-b76a-a657d9745f03"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="c813ded6-a4a2-43c8-9401-69b8f4701339"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="db9c78af-f157-46a3-acb3-4bc0ea5b1ee1"
+						name="Verify_Export_Of_Region_Data_With_Pro16xD_Panel">
+						</testmodule>
+						<testmodule
+						id="e336ad99-a745-4e08-adf6-60bfc5d84586"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
 					name="Verify_PNI800_Card_Details">
 						<testmodule
@@ -19992,10 +20060,6 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="77b48e46-8c4c-46d5-8b59-b2cfdb11311d"
 						name="Verify_PNI800_Card_Details">
-						</testmodule>
-						<testmodule
-						id="48097a07-4469-4416-8253-3ba0f2118497"
-						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -23309,10 +23373,6 @@ persisted in panel properties&nbsp;]]>
 						id="ba82b717-ed80-446a-8d74-21780e2ca0c7"
 						name="Verify_Reopen__Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section">
 						</testmodule>
-						<testmodule
-						id="f07ef5a7-8b96-47af-9de2-621422564016"
-						name="Close_Application">
-						</testmodule>
 					</testcase>
 					<testcase
 					id="a5ebb69f-e394-4d5f-9f2e-4b1e12ec63c4"
@@ -23336,10 +23396,6 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="ce666283-1c22-4202-b561-3b106ae9131b"
 						name="Verify_Reopen_Of_Properties_For_LPS800_In_Points_Grid_And_Properties_Section_With_FIM">
-						</testmodule>
-						<testmodule
-						id="0c7d3bb9-5df1-430b-8d92-16cafffc7a40"
-						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24770,12 +24826,6 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="22a03e84-3c2a-46a9-808c-fd2135a2a6fb">
-			</testcontainer>
-			<testcontainer
-			id="dfed6d71-0498-41ee-b9bf-f00ca2aff9b1">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

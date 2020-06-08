@@ -557,7 +557,86 @@ namespace TestProject.Libraries
 
 		}
 		
-		
-		
+		/***********************************************************************************************************
+		 * Function Name: verifyInventoryGridPropertiesOnReopen
+		 * Function Details: To verify inventory grid properties for a device
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 05/06/2020
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyInventoryGridPropertiesOnReopen(string ExpectedInventoryGridRowCount, string ExpectedInventoryGridColumn, string ExpectedDeviceProperty)
+		{
+			// Retrieve Point grid rows and column count
+			sColumnIndex = getColumnNumberForInventoryGrid(ExpectedInventoryGridColumn);
+			sRowIndex = ExpectedInventoryGridRowCount;
+			
+			Report.Log(ReportLevel.Success,"Column and row values are set as " +sColumnIndex+  " and " +sRowIndex+ " respectively ");
+			
+			if(repo.ProfileConsys1.tab_PointsInfo.Exists())
+			{
+				repo.FormMe.txt_PointGridProperties.Click();
+				string ActualInventoryGridProperty = repo.FormMe.txt_PointGridProperties.TextValue;
+				
+				// Compare Actual and Expected Point Grid Row count
+				Report.Log(ReportLevel.Info,"Actual " +ActualInventoryGridProperty+ "  Expected " +ExpectedDeviceProperty);
+				
+				if(ActualInventoryGridProperty.Equals(ExpectedDeviceProperty))
+				{
+					Report.Log(ReportLevel.Success,"Device property is verified in Inventory grid");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device property is not verified not in Inventory grid");
+				}
+			}
+			
+			else
+			{
+				Common_Functions.clickOnInventoryTab();
+				
+				//repo.FormMe.txt_InventoryGridDeviceProperty.Click();
+				repo.FormMe.txt_InventoryGridDevicePropertyOnReopen.Click();
+				string ActualInventoryGridProperty = repo.FormMe.txt_InventoryGridDevicePropertyOnReopen.TextValue;
+				
+				// Compare Actual and Expected Point Grid Row count
+				Report.Log(ReportLevel.Success,"Actual " +ActualInventoryGridProperty+ "  Expected " +ExpectedDeviceProperty);
+				
+				if(ActualInventoryGridProperty.Equals(ExpectedDeviceProperty))
+				{
+					Report.Log(ReportLevel.Success,"Device property is verified in Inventory grid");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device property is not verified not in Inventory grid");
+				}
+			}
+			
+		}
+			
+		/***********************************************************************************************************
+		 * Function Name: editDeviceLabelOnReopen
+		 * Function Details: To edit device label in inventory grid
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 07/06/2020
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void editDeviceLabelOnReopen(string ExpectedInventoryGridRowCount, string ExpectedInventoryGridColumn, string sNewLabel)
+		{
+			// Retrieve Point grid rows and column count
+			sColumnIndex = getColumnNumberForInventoryGrid(ExpectedInventoryGridColumn);
+			sRowIndex = ExpectedInventoryGridRowCount;
+			
+			Report.Log(ReportLevel.Success,"Column and row values are set as " +sColumnIndex+  " and " +sRowIndex+ " respectively");
+			
+			//Modifying the label			
+			repo.FormMe.txt_InventoryGridDevicePropertyOnReopen.Click();
+			repo.FormMe.txt_InventoryGridDevicePropertyOnReopen.PressKeys("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			repo.FormMe.txt_InventoryGridDevicePropertyOnReopen.PressKeys(sNewLabel +"{ENTER}" );
+			Report.Log(ReportLevel.Success,"Label is edited to " +sNewLabel);
+		}
 	}
 }

@@ -91,13 +91,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectPointsGridRow("2");
+            Libraries.Devices_Functions.SelectPointsGridRowOnReopen("2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLabelInPropertiesSection("Generic Sound");
+            Libraries.Devices_Functions.verifyLabelInPropertiesSectionOnReopen("Generic Sound");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyAlarmLoad("5");
+            Libraries.Devices_Functions.VerifyAlarmLoadOnReopen("5");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
             
         }
