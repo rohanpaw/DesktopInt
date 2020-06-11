@@ -614,8 +614,8 @@ namespace TestProject.Libraries
 				
 				for(int j=2;j<=rows2;j++)
 				{
-					sModelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-					sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+					sModelName = ((Range)Excel_Utilities.ExcelRange.Cells[j,7]).Value.ToString();
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,7]).Value.ToString();
 					
 					//Expand Panel Node
 					ClickOnNavigationTreeExpander("Node");

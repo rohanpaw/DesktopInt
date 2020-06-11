@@ -5245,7 +5245,7 @@ rxversion="8.3">
 			id="46d24ebf-efc4-459d-a132-0b9dc55e0ba1"
 			name="Verify_impact_of_character_based_repeater_on_loops">
 				<description>
-					<![CDATA[<span style='text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Calibri, Calibri, "Segoe UI", Calibri, Thonburi, Arial, Verdana, sans-serif, "Mongolian Baiti", "Microsoft Yi Baiti", "Javanese Text"; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(191, 191, 191); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;'>NGC-473&nbsp; Verify repeaters and loops gallery on deletion of character based display and loops.</span>]]>
+					<![CDATA[<span style='text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Calibri, Calibri, "Segoe UI", Calibri, Thonburi, Arial, Verdana, sans-serif, "Mongolian Baiti", "Microsoft Yi Baiti", "Javanese Text"; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(191, 191, 191); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;'>NGC-473 Defect-3257&nbsp; Verify repeaters and loops gallery on deletion of character based display and loops.</span>]]>
 				</description>
 				<parameters>
 					<param
@@ -24826,6 +24826,12 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="e4178d2c-0d14-4ed5-aa10-3f07149df295">
+			</testcontainer>
+			<testcontainer
+			id="f57ad780-8e6c-419f-8605-77de066ab808">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

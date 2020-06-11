@@ -13847,7 +13847,7 @@ AAAAAElFTkSuQmCC
 			capname="text"
 			id="60400636-80ed-4ba8-a9a1-609a88eced0f"
 			name="txt_PointGridProperties"
-			searchtimeout="30000ms">
+			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[$sRowIndex]/row/cell[$sColumnIndex]/text
 			</item>
 			<item

@@ -124,7 +124,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string sType, sLabelName,ExpectedMaxISUnits,ChangedValue,PanelType,sISUnitsLoadingDetail;
+			string sType, sLabelName,ExpectedMaxISUnits,ChangedValue,PanelType;
 			int noOfDevices = 0;
 			PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
 			// For loop to iterate on data present in excel
@@ -3144,7 +3144,7 @@ verifyMaxISUnits(expectedMaxISUnit,sRow);
 		{
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDeviceSheet);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
-			string PanelType,expectedIsolatorUnits,sDeviceName,sType,sLabelName,IBUnitUntilLI,IBUnitBelowLI,IBUnitLoadingDetail;
+			string PanelType,IBUnitUntilLI,IBUnitBelowLI;
 			PanelType= ((Range)Excel_Utilities.ExcelRange.Cells[5,5]).Value.ToString();
 			
 		

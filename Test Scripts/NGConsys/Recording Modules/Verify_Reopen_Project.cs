@@ -115,7 +115,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("CP 830", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.SaveProject("TestProject2");
+            Libraries.Common_Functions.SaveProjectOnReopen("TestProject2");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

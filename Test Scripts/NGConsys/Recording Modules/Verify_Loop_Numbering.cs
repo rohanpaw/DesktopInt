@@ -124,6 +124,9 @@ namespace TestProject.Recording_Modules
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Address", "H");
             //Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(15));
+            Delay.Duration(5000, false);
+            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane");
             Delay.Milliseconds(0);
             
@@ -151,8 +154,14 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
             
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(25));
+            Delay.Duration(8000, false);
+            
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 8s.", new RecordItemIndex(27));
+            Delay.Duration(8000, false);
             
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Address", "5");
             //Delay.Milliseconds(0);
@@ -202,7 +211,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("TEXT-5 (0 of 125)");
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='TEXT-5 (0 of 125)') on item 'FormMe2.ItemsHost.TEXT50Of125'.", repo.FormMe2.ItemsHost.TEXT50Of125Info, new RecordItemIndex(41));
+            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='TEXT-5 (0 of 125)') on item 'FormMe2.ItemsHost.TEXT50Of125'.", repo.FormMe2.ItemsHost.TEXT50Of125Info, new RecordItemIndex(44));
             //Validate.AttributeEqual(repo.FormMe2.ItemsHost.TEXT50Of125Info, "Text", "TEXT-5 (0 of 125)");
             //Delay.Milliseconds(0);
             
