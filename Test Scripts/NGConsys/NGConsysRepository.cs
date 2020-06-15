@@ -6578,6 +6578,7 @@ namespace TestProject
             RepoItemInfo _copy_of_pasteInfo;
             RepoItemInfo _btn_pastewithpointsInfo;
             RepoItemInfo _cell_additionalpsuInfo;
+            RepoItemInfo _cell_additionalpsudefaultvalueInfo;
             RepoItemInfo _copy_of_cell_additionalpsuInfo;
             RepoItemInfo _cell_secondpsuInfo;
             RepoItemInfo _copy_of_cell_secondpsuInfo;
@@ -6594,6 +6595,7 @@ namespace TestProject
             RepoItemInfo _powercalculationtext_singleInfo;
             RepoItemInfo _cell_cablecapacitanceafterreopenInfo;
             RepoItemInfo _txt_cablecapcitanceafterreopenInfo;
+            RepoItemInfo _copy_of_txt_cablecapcitanceafterreopenInfo;
             RepoItemInfo _btn_multiplepointwizardInfo;
             RepoItemInfo _copy_of_btn_multiplepointwizardInfo;
             RepoItemInfo _txt_powersupplyInfo;
@@ -6891,6 +6893,7 @@ namespace TestProject
                 _copy_of_pasteInfo = new RepoItemInfo(this, "Copy_of_Paste", "?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Paste']", 60000, null, "5e1beba0-b919-4285-a1f7-2f3a83f94316");
                 _btn_pastewithpointsInfo = new RepoItemInfo(this, "btn_PasteWithPoints", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']", 60000, null, "be6b6c45-7529-4226-bfb9-2cd772017145");
                 _cell_additionalpsuInfo = new RepoItemInfo(this, "Cell_AdditionalPSU", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@text='Additional PSU']", 30000, null, "d0bd45a3-38ff-46e3-a900-554281125c55");
+                _cell_additionalpsudefaultvalueInfo = new RepoItemInfo(this, "Cell_AdditionalPSUDefaultValue", "progressbar/list[@automationid='PART_BarContainerControl']/list/container[@automationid='PART_ItemsPresenter']/row[@index='6']//text[@caption='0.000']", 45000, null, "67951909-5e1d-4d48-bae1-24f98a191bf3");
                 _copy_of_cell_additionalpsuInfo = new RepoItemInfo(this, "Copy_of_Cell_AdditionalPSU", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@text='Additional PSU']", 30000, null, "839a6cef-a4c8-46f0-9b65-c3d3f515b322");
                 _cell_secondpsuInfo = new RepoItemInfo(this, "Cell_SecondPSU", "progressbar/list[@automationid='PART_BarContainerControl']/list/row[@index='3']/cell[@isheader='False']", 60000, null, "305392e1-5720-4231-9ec9-884f7f208742");
                 _copy_of_cell_secondpsuInfo = new RepoItemInfo(this, "Copy_of_Cell_SecondPSU", "progressbar/?//container[@automationid='PART_ItemsPresenter']/row[@index='7']/cell[@isheader='False']", 60000, null, "d9ef67f2-cb8e-412a-9f74-4927277f7cf9");
@@ -6905,8 +6908,9 @@ namespace TestProject
                 _powercalculationcontainerInfo = new RepoItemInfo(this, "PowerCalculationContainer", "progressbar/picture[8]/indicator[@automationid='PART_LoadingPanel']/table/container[8]/container[2]", 30000, null, "624b74c4-b964-464f-8ae4-72797ba13433");
                 _physicallayoutindex_isunitsInfo = new RepoItemInfo(this, "PhysicalLayoutIndex_ISUnits", "progressbar/list[5]/listitem[@index=$sPhysicalLayoutDeviceIndex]", 30000, null, "96f190cc-8b27-42ef-a726-e3cbf1ba68d2");
                 _powercalculationtext_singleInfo = new RepoItemInfo(this, "PowerCalculationText_Single", "progressbar/picture[8]/indicator[@automationid='PART_LoadingPanel']/table//row/?/?/text[1]", 30000, null, "aca27bc5-a62a-47e9-94c2-3d360f955b9d");
-                _cell_cablecapacitanceafterreopenInfo = new RepoItemInfo(this, "cell_CableCapacitanceAfterReopen", "progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']/cell[@isheader='False']/text", 30000, null, "025d9763-6d99-4930-86e5-9323b44c1665");
-                _txt_cablecapcitanceafterreopenInfo = new RepoItemInfo(this, "txt_CableCapcitanceAfterReopen", "progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']//text[@automationid='PART_Editor']", 30000, null, "62c74837-8a09-475d-bb58-afe9f4929fce");
+                _cell_cablecapacitanceafterreopenInfo = new RepoItemInfo(this, "cell_CableCapacitanceAfterReopen", "progressbar/list[@automationid='PART_BarContainerControl']/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']/cell[@isheader='False']", 30000, null, "025d9763-6d99-4930-86e5-9323b44c1665");
+                _txt_cablecapcitanceafterreopenInfo = new RepoItemInfo(this, "txt_CableCapcitanceAfterReopen", "progressbar/list[@automationid='PART_BarContainerControl']/table/list/container[@automationid='PART_ItemsPresenter']//text[@automationid='PART_Editor']", 30000, null, "62c74837-8a09-475d-bb58-afe9f4929fce");
+                _copy_of_txt_cablecapcitanceafterreopenInfo = new RepoItemInfo(this, "Copy_of_txt_CableCapcitanceAfterReopen", "progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']//text[@automationid='PART_Editor']", 30000, null, "43ccd628-1247-42f5-b661-2e510ba54804");
                 _btn_multiplepointwizardInfo = new RepoItemInfo(this, "btn_MultiplePointWizard", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/container[1]", 90000, null, "7694f0f2-ba3c-4ec4-b564-1476565f3b68");
                 _copy_of_btn_multiplepointwizardInfo = new RepoItemInfo(this, "Copy_of_btn_MultiplePointWizard", "?/?/container[@automationid='PART_AutoHideControl']/?/?/?/container[@automationid='PART_ItemsPresenter']/button[@text='Multiple Point Wizard']", 90000, null, "90dabea5-af13-4ba8-8ae7-8d5ac866daf3");
                 _txt_powersupplyInfo = new RepoItemInfo(this, "txt_PowerSupply", "progressbar/list[@automationid='PART_BarContainerControl']/list//combobox[@automationid='PART_Editor']/text[@automationid='PART_Editor']", 90000, null, "3514cb22-3904-4f43-acc3-89c2c94c6a02");
@@ -9215,6 +9219,30 @@ namespace TestProject
             }
 
             /// <summary>
+            /// The Cell_AdditionalPSUDefaultValue item.
+            /// </summary>
+            [RepositoryItem("67951909-5e1d-4d48-bae1-24f98a191bf3")]
+            public virtual Ranorex.Text Cell_AdditionalPSUDefaultValue
+            {
+                get
+                {
+                    return _cell_additionalpsudefaultvalueInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cell_AdditionalPSUDefaultValue item info.
+            /// </summary>
+            [RepositoryItemInfo("67951909-5e1d-4d48-bae1-24f98a191bf3")]
+            public virtual RepoItemInfo Cell_AdditionalPSUDefaultValueInfo
+            {
+                get
+                {
+                    return _cell_additionalpsudefaultvalueInfo;
+                }
+            }
+
+            /// <summary>
             /// The Copy_of_Cell_AdditionalPSU item.
             /// </summary>
             [RepositoryItem("839a6cef-a4c8-46f0-9b65-c3d3f515b322")]
@@ -9554,11 +9582,11 @@ namespace TestProject
             /// The cell_CableCapacitanceAfterReopen item.
             /// </summary>
             [RepositoryItem("025d9763-6d99-4930-86e5-9323b44c1665")]
-            public virtual Ranorex.Text cell_CableCapacitanceAfterReopen
+            public virtual Ranorex.Cell cell_CableCapacitanceAfterReopen
             {
                 get
                 {
-                    return _cell_cablecapacitanceafterreopenInfo.CreateAdapter<Ranorex.Text>(true);
+                    return _cell_cablecapacitanceafterreopenInfo.CreateAdapter<Ranorex.Cell>(true);
                 }
             }
 
@@ -9595,6 +9623,30 @@ namespace TestProject
                 get
                 {
                     return _txt_cablecapcitanceafterreopenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txt_CableCapcitanceAfterReopen item.
+            /// </summary>
+            [RepositoryItem("43ccd628-1247-42f5-b661-2e510ba54804")]
+            public virtual Ranorex.Text Copy_of_txt_CableCapcitanceAfterReopen
+            {
+                get
+                {
+                    return _copy_of_txt_cablecapcitanceafterreopenInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txt_CableCapcitanceAfterReopen item info.
+            /// </summary>
+            [RepositoryItemInfo("43ccd628-1247-42f5-b661-2e510ba54804")]
+            public virtual RepoItemInfo Copy_of_txt_CableCapcitanceAfterReopenInfo
+            {
+                get
+                {
+                    return _copy_of_txt_cablecapcitanceafterreopenInfo;
                 }
             }
 

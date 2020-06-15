@@ -7396,6 +7396,40 @@ namespace TestProject.Libraries
 			}
 		}
 
+		/***************************************************************************
+		 * Function Details: To Verify UI on adding Second PSU
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 14/06/2020
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyUIOnAddingSecondPSUDefaultValue(bool isSecondPSU)
+		{
+			if(isSecondPSU)
+			{
+				if(repo.FormMe.Cell_AdditionalPSUDefaultValueInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success,"Additional PSU is present" );
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Additional PSU properties are not displayed" );
+				}
+			}
+			else
+			{
+				if(repo.FormMe.Cell_AdditionalPSUDefaultValueInfo.Exists())
+				{
+					Report.Log(ReportLevel.Failure,"Additional PSU is present" );
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success,"Additional PSU properties are not displayed" );
+				}
+			}
+		}
+		
 	}
 }
 

@@ -2607,6 +2607,14 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_ItemsPresenter']/row[@index='6']/cell[@text='Additional PSU']
 			</item>
 			<item
+			capname="text"
+			id="67951909-5e1d-4d48-bae1-24f98a191bf3"
+			name="Cell_AdditionalPSUDefaultValue"
+			refimgid="f6885ef7-6ec5-47a5-839a-739ef17f199d"
+			searchtimeout="45000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/container[@automationid='PART_ItemsPresenter']/row[@index='6']//text[@caption='0.000']
+			</item>
+			<item
 			capname="cell"
 			id="839a6cef-a4c8-46f0-9b65-c3d3f515b322"
 			name="Copy_of_Cell_AdditionalPSU"
@@ -2730,16 +2738,24 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 				/form[@automationid='me']/progressbar/picture[8]/indicator[@automationid='PART_LoadingPanel']/table//row/?/?/text[1]
 			</item>
 			<item
-			capname="text"
+			capname="cell"
 			id="025d9763-6d99-4930-86e5-9323b44c1665"
 			name="cell_CableCapacitanceAfterReopen"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']/cell[@isheader='False']/text
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']/cell[@isheader='False']
 			</item>
 			<item
 			capname="text"
 			id="62c74837-8a09-475d-bb58-afe9f4929fce"
 			name="txt_CableCapcitanceAfterReopen"
+			refimgid="6cdf1864-c136-4262-a94b-63ef34983578"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/table/list/container[@automationid='PART_ItemsPresenter']//text[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="text"
+			id="43ccd628-1247-42f5-b661-2e510ba54804"
+			name="Copy_of_txt_CableCapcitanceAfterReopen"
 			refimgid="6cdf1864-c136-4262-a94b-63ef34983578"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']//text[@automationid='PART_Editor']

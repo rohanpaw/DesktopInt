@@ -452,7 +452,7 @@ namespace TestProject.Libraries
 				if(repo.FormMe.txt_LabelName1Info.Exists())
 				{
 					Common_Functions.clickOnDeleteButton();
-					Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
+					//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 					Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
 				}
 				
@@ -634,7 +634,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : Alpesh Dhakad - 30/07/2019 & 23/08/2019 - Updated test scripts as per new build and xpaths
+		 * Last Update : Alpesh Dhakad - 30/07/2019 & 23/08/2019,12/06/2020 - Updated test scripts as per new build and xpaths
 		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void ChangeCableLength(String sLoopType,int fCableLength1,int fCableLength2)
@@ -648,7 +648,11 @@ namespace TestProject.Libraries
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
+			// Enter the Day Matches night text in Search Properties fields to view cable length;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("{LControlKey down}{Akey}{LControlKey up}Length" +"{ENTER}" );
 			
 			repo.FormMe.cell_CableLength.Click();
 			
@@ -669,7 +673,14 @@ namespace TestProject.Libraries
 				
 				Delay.Duration(1000, false);
 				
-				repo.FormMe.cell_CableLength.Click();
+				repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Day Matches night text in Search Properties fields to view cable length;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("{LControlKey down}{Akey}{LControlKey up}Length" +"{ENTER}" );
+			
+			repo.FormMe.cell_CableLength.Click();
+				
+			
 				//repo.ProfileConsys1.cell_CableLength.Click();
 				
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fCableLength2 + "{Enter}");

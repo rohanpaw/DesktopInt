@@ -2971,7 +2971,7 @@ verifyMaxISUnits(expectedMaxISUnit,sRow);
 		 * Parameter/Arguments:  fileName, sheetName
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update :
+		 * Last Update : 13/06/2020
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCableCapacitanceOnReopen(string sFileName,string sAddDevicesSheet)
@@ -3003,8 +3003,8 @@ verifyMaxISUnits(expectedMaxISUnit,sRow);
 				
 				sRowNumber = (i-7).ToString();
 				
-				
-				Devices_Functions.SelectPointsGridRow(sRowNumber);
+				Devices_Functions.SelectPointsGridRowOnReopen(sRowNumber);
+				//Devices_Functions.SelectPointsGridRow(sRowNumber);
 				
 				repo.FormMe.cell_CableCapacitanceAfterReopen.Click();
 				
@@ -3012,7 +3012,7 @@ verifyMaxISUnits(expectedMaxISUnit,sRow);
 				
 				if(CableCapacitance.Equals(CableCapacitanceChangedValue))
 				{
-					Report.Log(ReportLevel.Success,"Cable capacitance displayed as "+CableCapacitance+ " and data is peristed after reopen");
+					Report.Log(ReportLevel.Success,"Cable capacitance displayed as "+CableCapacitance+ " and data is persisted after reopen");
 				}
 				
 				else

@@ -480,7 +480,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Panel_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyValueOf2ndPSU"
 		namespace="TestProject.Libraries"

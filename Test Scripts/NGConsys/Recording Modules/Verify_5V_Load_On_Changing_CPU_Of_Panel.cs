@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             
             Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "5V Rail(A)");
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.296", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
             
             Libraries.Common_Functions.clickOnPropertiesTab();
             
@@ -115,7 +115,7 @@ namespace TestProject.Recording_Modules
             
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("1.161", "FIM");
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.161", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.076", "5V Rail(A)");
             
             Libraries.Common_Functions.clickOnPropertiesTab();
             

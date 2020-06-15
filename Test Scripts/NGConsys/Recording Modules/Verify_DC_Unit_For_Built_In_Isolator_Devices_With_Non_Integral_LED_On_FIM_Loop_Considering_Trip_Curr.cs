@@ -112,7 +112,7 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsValue("311");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("311", "Current (DC Units)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("347", "Current (DC Units)");
             Delay.Milliseconds(0);
             
         }

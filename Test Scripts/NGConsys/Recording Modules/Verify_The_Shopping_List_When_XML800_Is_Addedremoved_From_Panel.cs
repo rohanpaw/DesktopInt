@@ -132,8 +132,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.VerifyValueOf2ndPSU("None");
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.VerifyValueOf2ndPSU("None");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);

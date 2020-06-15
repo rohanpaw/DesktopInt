@@ -100,11 +100,23 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPhysicalLayoutTab();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(7));
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(8));
             //repo.ProfileConsys1.tab_PhysicalLayout.Click();
             //Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verifyUIOnAddingSecondPSU(ValueConverter.ArgumentFromString<bool>("isSecondPSU", "True"));
+            //Libraries.PSULoad_Functions.verifyUIOnAddingSecondPSU(ValueConverter.ArgumentFromString<bool>("isSecondPSU", "True"));
+            //Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verifyUIOnAddingSecondPSUDefaultValue(ValueConverter.ArgumentFromString<bool>("isSecondPSU", "True"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -122,18 +134,24 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPhysicalLayoutTab();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(14));
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.tab_PhysicalLayout' at Center.", repo.ProfileConsys1.tab_PhysicalLayoutInfo, new RecordItemIndex(19));
             //repo.ProfileConsys1.tab_PhysicalLayout.Click();
             //Delay.Milliseconds(200);
             
-            Libraries.PSULoad_Functions.verifyUIOnAddingSecondPSU(ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"));
+            //Libraries.PSULoad_Functions.verifyUIOnAddingSecondPSU(ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"));
+            //Delay.Milliseconds(0);
+            
+            Libraries.PSULoad_Functions.verifyUIOnAddingSecondPSUDefaultValue(ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"));
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            //Delay.Milliseconds(0);
             
         }
 
