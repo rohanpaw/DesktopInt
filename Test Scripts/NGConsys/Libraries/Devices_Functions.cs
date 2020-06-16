@@ -796,7 +796,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update : Alpesh Dhakad -09/09/2019 - Updated Base selection and added xpath for the same
+		 * Last Update : Alpesh Dhakad - 09/09/2019 - Updated Base selection and added xpath for the same
 		 * ALpesh DHakad - 14/05/2020 Updated xpath as per new build
 		 ****************************************************************************************************************/
 		[UserCodeMethod]
@@ -841,11 +841,13 @@ namespace TestProject.Libraries
 				repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
 				repo.FormMe.BaseofDeviceRow.Click("560;19");
 				
-				//Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.UiaOnly;
+				Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfOnly;
 				
 				repo.ContextMenu.btn_BaseSelection.Click();
 				
-				//Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+				Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+				
+				Report.Log(ReportLevel.Info, "Base change was performed successfully.");
 
 			}
 		}

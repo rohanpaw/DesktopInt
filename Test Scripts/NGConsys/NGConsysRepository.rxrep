@@ -1405,9 +1405,17 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			</item>
 			<item
 			addcaps="button,wpfelement,wpfgroupelement"
-			capname="text"
+			capname="unknown"
 			id="3862dd18-b089-44cf-891d-4d5f7c68e104"
 			name="btn_BaseSelection"
+			searchtimeout="30000ms">
+				/contextmenu/?/?/list/element/container/container[2]/container[2]/container[2]/element[$sBase]
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="text"
+			id="996e8a25-81bf-4dfd-92b3-7425a05a88a5"
+			name="Copy_of_btn_BaseSelection"
 			searchtimeout="30000ms">
 				/contextmenu/list/?/button/text[@text=$sBase]
 			</item>
@@ -2825,7 +2833,7 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			id="16cb24d0-a99f-4ddd-b807-b4a9aec72cf6"
 			name="btn_Cut"
 			refimgid="03820354-6a6b-4032-b2a2-814a0fb39610"
-			searchtimeout="30000ms">
+			searchtimeout="45000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[1]/container[@automationid='PART_ItemsPresenter']/container[2]
 			</item>
 			<item
