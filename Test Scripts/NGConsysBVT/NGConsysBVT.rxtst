@@ -642,7 +642,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.27">
+					value="C:\SoftwareDevelopment\agent\_work\1\s\vsrc\bin">
 					</param>
 					<param
 					name="Mode"
