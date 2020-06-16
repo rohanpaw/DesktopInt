@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="NGConsysBVTRepository"
+id="ff05be53-4ddb-48a3-a607-d296621f6977">
+  <codegen
+  classname="NGConsysBVTRepository"
+  namespace="NGConsysBVT"/>
+  <rootfolder
+  name="Root"
+  id="c1aaa149-2430-4637-b49f-3ba0883560c5"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>

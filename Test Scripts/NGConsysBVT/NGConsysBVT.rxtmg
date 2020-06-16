@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="NGConsysBVT"
+      id="3d4250bf-2e05-43a1-9a68-e1acfe7d8544"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="NGConsysBVT"
+      id="3d4250bf-2e05-43a1-9a68-e1acfe7d8544"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

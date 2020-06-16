@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="afa36409-5afd-4e38-a512-3b9cbf72d0fe"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="NGConsysBVT">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="ff05be53-4ddb-48a3-a607-d296621f6977"
+	name="NGConsysBVTRepository"
+	relativepath="NGConsysBVTRepository.rxrep">
+		<codegen
+		classname="NGConsysBVTRepository"
+		namespace="NGConsysBVT">
+		</codegen>
+		<rootfolder
+		id="c1aaa149-2430-4637-b49f-3ba0883560c5"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

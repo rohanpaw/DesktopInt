@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGConsys", "NGConsys\NGCons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ranorex Automation Helpers", "RanorexAutomationHelpers\Ranorex Automation Helpers.csproj", "{92AFF745-9019-442E-A2C2-A13170004D93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGConsysBVT", "NGConsysBVT\NGConsysBVT.csproj", "{EDDBE95F-D86B-45B6-BCDD-236CCB31D21F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -27,5 +29,9 @@ Global
 		{92AFF745-9019-442E-A2C2-A13170004D93}.Debug|x86.ActiveCfg = Debug|x86
 		{92AFF745-9019-442E-A2C2-A13170004D93}.Release|x86.Build.0 = Release|x86
 		{92AFF745-9019-442E-A2C2-A13170004D93}.Release|x86.ActiveCfg = Release|x86
+		{EDDBE95F-D86B-45B6-BCDD-236CCB31D21F}.Debug|x86.Build.0 = Debug|x86
+		{EDDBE95F-D86B-45B6-BCDD-236CCB31D21F}.Debug|x86.ActiveCfg = Debug|x86
+		{EDDBE95F-D86B-45B6-BCDD-236CCB31D21F}.Release|x86.Build.0 = Release|x86
+		{EDDBE95F-D86B-45B6-BCDD-236CCB31D21F}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 EndGlobal
