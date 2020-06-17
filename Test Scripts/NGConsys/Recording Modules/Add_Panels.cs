@@ -79,6 +79,9 @@ namespace TestProject.Recording_Modules
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(0));
+            Delay.Duration(7000, false);
+            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             

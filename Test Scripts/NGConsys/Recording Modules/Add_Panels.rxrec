@@ -26,6 +26,15 @@ rxversion="8.3">
 	<variables>
 	</variables>
 	<recorditems>
+		<explicitdelayitem
+		duration="7000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"
