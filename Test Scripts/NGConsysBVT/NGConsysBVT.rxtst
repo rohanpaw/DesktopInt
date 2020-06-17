@@ -363,9 +363,24 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="80d6a79d-bfbf-47ca-b518-fe86801a3adc"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="bbb57211-6df9-4507-b0b3-1df27a033e51"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="81082098-dd86-4dfb-b2c8-569ac3943436"
+			name="CreateProject_Build"
+			ref="29754c2d-0eaa-4970-97a3-d47c329c758a"
 			type="Recording">
 				<databinding>
 					<var
@@ -771,6 +786,10 @@
 						<testmodule
 						id="23acfbdb-737d-467e-b316-46e9e5a6bbec"
 						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="81082098-dd86-4dfb-b2c8-569ac3943436"
+						name="CreateProject_Build">
 						</testmodule>
 						<testmodule
 						id="80d6a79d-bfbf-47ca-b518-fe86801a3adc"
