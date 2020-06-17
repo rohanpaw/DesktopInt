@@ -304,6 +304,18 @@
       <UserCode>true</UserCode>
       <id>49dd13dd-eed5-4e14-b155-d2afb3caad8b</id>
     </Compile>
+    <Compile Include="Recording Modules\CreateProject_Build.cs">
+      <BoundTo>2143541b-50c8-43ef-aa03-8f3c1f57d343</BoundTo>
+      <DependentUpon>CreateProject_Build.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d24729ee-5bf5-4587-b862-9800bf9d9538</id>
+    </Compile>
+    <Compile Include="Recording Modules\CreateProject_Build.UserCode.cs">
+      <BoundTo>2143541b-50c8-43ef-aa03-8f3c1f57d343</BoundTo>
+      <DependentUpon>CreateProject_Build.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9eac9079-5c33-4d95-9fef-bca29847ea65</id>
+    </Compile>
     <Compile Include="Recording Modules\CreateProject_CzecRepublic.cs">
       <BoundTo>3f8f2635-f8e1-494f-bdd1-b8ed261fc8fc</BoundTo>
       <DependentUpon>CreateProject_CzecRepublic.rxrec</DependentUpon>
@@ -4423,6 +4435,11 @@
       <id>50fb6901-9380-46a7-9d98-973968a89bcd</id>
       <recordtableid>04f2c1bc-a14b-44db-b656-60d601f7de36</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\CreateProject_Build.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>2143541b-50c8-43ef-aa03-8f3c1f57d343</id>
+      <recordtableid>29754c2d-0eaa-4970-97a3-d47c329c758a</recordtableid>
     </None>
     <None Include="Recording Modules\CreateProject_CzecRepublic.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

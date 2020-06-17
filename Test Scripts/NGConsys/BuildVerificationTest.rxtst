@@ -94,6 +94,20 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="178fa0e6-71d7-4b5d-8f32-822772b9aa24"
+			name="CreateProject_Build"
+			ref="29754c2d-0eaa-4970-97a3-d47c329c758a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="6f8a5741-4848-4184-83f1-cb00347780dd"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="187daa63-7f01-41f8-8ea7-329d42f303ec"
 			name="BuildVerificationTest"
@@ -331,6 +345,16 @@ rxversion="8.3">
 					</param>
 					<param
 					name="ProjectName"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="6f8a5741-4848-4184-83f1-cb00347780dd"
+			name="TestCase">
+				<parameters>
+					<param
+					name="sListIndex"
 					value="">
 					</param>
 				</parameters>
@@ -1004,6 +1028,14 @@ rxversion="8.3">
 						<testmodule
 						id="60af00a6-5327-467b-bac3-90bfdd0b2943"
 						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="6f8a5741-4848-4184-83f1-cb00347780dd"
+					name="TestCase">
+						<testmodule
+						id="178fa0e6-71d7-4b5d-8f32-822772b9aa24"
+						name="CreateProject_Build">
 						</testmodule>
 					</testcase>
 				</testcase>
