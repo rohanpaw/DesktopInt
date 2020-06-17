@@ -30,14 +30,6 @@
 			name="CreateProject_Build"
 			ref="bcced6e6-6d59-4b7c-98de-070ed49e904a"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="bbb57211-6df9-4507-b0b3-1df27a033e51"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testmodule
 			id="137675ca-6a0d-433c-9dbb-dd2bb551481a"
@@ -573,14 +565,6 @@
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
 			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="bbb57211-6df9-4507-b0b3-1df27a033e51"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="cb6bad1b-333a-4b3d-b178-8899bd16ca0b"
@@ -1035,10 +1019,40 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="07c09530-9468-4175-95ef-128e48455a81">
+			</testcontainer>
+			<testcontainer
+			id="2adaee81-6f28-40ed-9d1f-9353dc5a85bd">
+			</testcontainer>
+			<testcontainer
+			id="72617ec3-a79c-4c4c-a0b0-7848a12f8ad6">
+			</testcontainer>
+			<testcontainer
+			id="759557ec-9869-4ff5-8187-00dd1da24685">
+			</testcontainer>
+			<testcontainer
+			id="ac67ef66-0135-46d3-a640-5a6117774cfa">
+			</testcontainer>
+			<testcontainer
 			id="bbb57211-6df9-4507-b0b3-1df27a033e51">
 			</testcontainer>
 			<testcontainer
+			id="c1a094b8-2b1d-43ab-95d9-9f7bd34b3de0">
+			</testcontainer>
+			<testcontainer
+			id="cb6bad1b-333a-4b3d-b178-8899bd16ca0b">
+			</testcontainer>
+			<testcontainer
 			id="dc1de77b-f38a-4346-a02d-b228a9dcc945">
+			</testcontainer>
+			<testcontainer
+			id="e1da2661-a2b1-4b0b-a2e9-3d3d2e037316">
+			</testcontainer>
+			<testcontainer
+			id="f9507f91-82f5-4ce4-b68f-026a922f065f">
+			</testcontainer>
+			<testcontainer
+			id="ffc2c3e2-9960-4901-a043-8d2727e2462e">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
