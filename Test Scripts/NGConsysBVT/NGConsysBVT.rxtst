@@ -26,12 +26,6 @@
 				</parameters>
 			</testcase>
 			<testmodule
-			id="124dd699-b656-4b83-a91c-86ce95f903a8"
-			name="CreateProject_Build"
-			ref="bcced6e6-6d59-4b7c-98de-070ed49e904a"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="137675ca-6a0d-433c-9dbb-dd2bb551481a"
 			name="Verify_Project_Name"
 			ref="85662f0c-3bf3-4d05-9dd0-9a2bd578086a"
@@ -369,6 +363,20 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="80d6a79d-bfbf-47ca-b518-fe86801a3adc"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="bbb57211-6df9-4507-b0b3-1df27a033e51"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="81c4cd69-d143-4488-97fa-19c5b97113a4"
 			name="Delete_Panel"
 			ref="8be0600b-c1ac-42b1-a20d-f61faad8c119"
@@ -559,13 +567,6 @@
 					</param>
 				</parameters>
 			</testcase>
-			<testmodule
-			enabled="False"
-			id="c7e7a1b2-9519-49d4-a05c-25adf33bfd37"
-			name="Create_Project"
-			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="cb6bad1b-333a-4b3d-b178-8899bd16ca0b"
 			name="BuildVerificationTest-TC15">
@@ -772,11 +773,7 @@
 						name="Application_Open">
 						</testmodule>
 						<testmodule
-						id="124dd699-b656-4b83-a91c-86ce95f903a8"
-						name="CreateProject_Build">
-						</testmodule>
-						<testmodule
-						id="c7e7a1b2-9519-49d4-a05c-25adf33bfd37"
+						id="80d6a79d-bfbf-47ca-b518-fe86801a3adc"
 						name="Create_Project">
 						</testmodule>
 						<testmodule
