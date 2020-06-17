@@ -797,7 +797,8 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : Alpesh Dhakad - 09/09/2019 - Updated Base selection and added xpath for the same
-		 * ALpesh DHakad - 14/05/2020 Updated xpath as per new build
+		 * Alpesh DHakad - 14/05/2020 Updated xpath as per new build
+		 * Alpesh Dhakad - 16/06/2020 Updated script as per new method to add base
 		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AssignDeviceBase(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex)
@@ -2380,6 +2381,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 22/03/2019 - Alpesh Dhakad - Updated code and also updated Xpath
 		 * Alpesh Dhakad - 26/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 17/06/2020 Updated script as per new method to add base
 		 **************************************************************************************/
 		[UserCodeMethod]
 		public static void AssignDeviceBaseForMultipleDevices(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex)
@@ -2409,7 +2411,9 @@ namespace TestProject.Libraries
 			int.TryParse(sRowIndex, out iRowIndex);
 			iRowIndex = iRowIndex+1;
 			sRowIndex = iRowIndex.ToString();
-			repo.ProfileConsys1.Cell_BaseofDevice.Click();
+			
+			//repo.ProfileConsys1.Cell_BaseofDevice.Click();
+			repo.FormMe.Cell_BaseofDevice.Click();
 			//sExistingBase = repo.ProfileConsys1.SomeText.TextValue;
 			sExistingBase = repo.FormMe.txt_cellBaseOfDevice.TextValue;
 			////sExistingBase = sExistingBase.Replace(@"\""",string.Empty);
@@ -2428,6 +2432,11 @@ namespace TestProject.Libraries
 				repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
 				repo.FormMe.BaseofDeviceRow.Click("560;19");
 				
+				
+				Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfOnly;
+				
+
+				
 				if(repo.ContextMenu.btn_BaseSelectionInfo.Exists())
 				{
 					repo.ContextMenu.btn_BaseSelection.Click();
@@ -2436,6 +2445,10 @@ namespace TestProject.Libraries
 				{
 					repo.ContextMenu.btn_Base_Selection_Multiple.Click();
 				}
+				
+				Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+				
+				Report.Log(ReportLevel.Info, "Base change was performed successfully.");
 			}
 		}
 

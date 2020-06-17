@@ -30,6 +30,14 @@
 			name="CreateProject_Build"
 			ref="bcced6e6-6d59-4b7c-98de-070ed49e904a"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="bbb57211-6df9-4507-b0b3-1df27a033e51"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="137675ca-6a0d-433c-9dbb-dd2bb551481a"

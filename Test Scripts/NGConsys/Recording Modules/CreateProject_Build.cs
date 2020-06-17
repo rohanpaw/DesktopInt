@@ -53,6 +53,16 @@ namespace TestProject.Recording_Modules
 
 #region Variables
 
+        /// <summary>
+        /// Gets or sets the value of variable sListIndex.
+        /// </summary>
+        [TestVariable("ca40602d-7ca3-47bc-a519-7a0fe6a76634")]
+        public string sListIndex
+        {
+            get { return repo.sListIndex; }
+            set { repo.sListIndex = value; }
+        }
+
 #endregion
 
         /// <summary>
