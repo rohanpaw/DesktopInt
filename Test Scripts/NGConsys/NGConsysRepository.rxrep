@@ -1210,6 +1210,16 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@win32ownerwindowlevel='0']/progressbar/picture[8]//container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/cell[@text='[0]']/?/text[1]
 			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="b460b7cf-2eb3-4aee-ab20-83ed28ceb60e"
+			name="ButtonAccept"
+			refimgid="7dc8705e-af4d-4f22-a56e-cc8acf5dcdfe"
+			refpath="/form[@title='License']/container[1]/container[@caption='']/button[@text='_Accept']"
+			searchtimeout="45000ms">
+				/form[@win32ownerwindowlevel='0']/container[1]/?/?/button[@text='_Accept']
+			</item>
 			<basepath>
 				/form[@win32ownerwindowlevel='0']
 			</basepath>
@@ -14873,6 +14883,46 @@ AAAAAElFTkSuQmCC
 			refimgid="9a4074e5-31dd-452f-bbf6-59915ebea1e5"
 			searchtimeout="45000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/?/?/cell[@text='Battery Factor']
+			</item>
+			<item
+			capname="button"
+			id="0d04aa16-b25e-432f-980b-8d965013b1d2"
+			name="Install_BtnOK"
+			refimgid="153a064b-87c7-4388-91b1-0de82ab83029"
+			searchtimeout="45000ms">
+				/form[@automationid='me']/button[@name='OK']
+			</item>
+			<item
+			capname="text"
+			id="60fc5e71-f60f-4d1d-a0d6-8c5d59d18d01"
+			name="Install_AgreeTerms"
+			refimgid="3e5360a8-9c29-43af-b3ef-23fc0b0622e5"
+			searchtimeout="45000ms">
+				/form[@automationid='me']/?/?/text[@name&gt;'I agree to the license te']
+			</item>
+			<item
+			capname="text"
+			id="dd04891b-4b4c-4afa-8098-0529b9fac708"
+			name="Install_BtnInstall"
+			refimgid="6b836a47-1046-44f5-a873-f136029981eb"
+			searchtimeout="45000ms">
+				/form[@automationid='me']/?/?/text[@text='Install']
+			</item>
+			<item
+			capname="text"
+			id="f0bceb65-ea3e-4dbe-888f-880553f434ee"
+			name="Install_BtnClose"
+			refimgid="6a7208c5-16ee-4ff0-bac1-f808955ffc85"
+			searchtimeout="45000ms">
+				/form[@automationid='me']/?/?/?/text[@text='Close']
+			</item>
+			<item
+			capname="text"
+			id="ff411136-8256-4fa2-890e-ab95defd8ee9"
+			name="Install_InstallationComplete"
+			refimgid="6a372d2e-7424-44af-8da0-d8601bd7449e"
+			searchtimeout="45000ms">
+				/form[@automationid='me']/?/?/text[@text='Installation is complete.']
 			</item>
 			<basepath>
 				/form[@automationid='me']

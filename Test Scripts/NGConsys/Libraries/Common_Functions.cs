@@ -1260,6 +1260,55 @@ namespace TestProject.Libraries
 					repo.ProjectChangeDescription.btn_OK.Click();
 
 		}
+		
+		/********************************************************************
+		 * Function Name: 
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :17/06/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void InstallApplication()
+		{
+			if(repo.FormMe.Install_BtnOKInfo.Exists())
+			{
+				repo.FormMe.Install_BtnOK.Click();
+				
+				repo.FormMe.Install_AgreeTerms.Click();
+				
+				repo.FormMe.Install_BtnInstall.Click();
+				
+				Thread.Sleep(60000);
+				
+				if(repo.FormMe.Install_InstallationCompleteInfo.Exists())
+				{
+					repo.FormMe.Install_BtnClose.Click();
+				}
+			}
+		}
+	
+		/********************************************************************
+		 * Function Name: 
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :13/02/2020
+		 ********************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnAcceptButton()
+		{
+			if(repo.ProfileConsys1.ButtonAcceptInfo.Exists())
+			{
+				repo.ProfileConsys1.ButtonAccept.Click();
+				Report.Log(ReportLevel.Info," Accept Button clicked on Licensing window");
+			}
+		}
+	
 	}
 }
 

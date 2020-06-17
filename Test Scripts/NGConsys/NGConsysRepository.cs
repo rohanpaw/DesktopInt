@@ -1902,6 +1902,7 @@ namespace TestProject
             RepoItemInfo _cell_baseofdevice_reopenInfo;
             RepoItemInfo _sometext_reopenInfo;
             RepoItemInfo _physicallayout_parametervalue_reopenInfo;
+            RepoItemInfo _buttonacceptInfo;
 
             /// <summary>
             /// Creates a new ProfileConsys1  folder.
@@ -1981,6 +1982,7 @@ namespace TestProject
                 _cell_baseofdevice_reopenInfo = new RepoItemInfo(this, "Cell_BaseofDevice_Reopen", "progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='14']/cell[@isheader='False']", 30000, null, "1748332e-094f-447b-a573-25f521376e45");
                 _sometext_reopenInfo = new RepoItemInfo(this, "SomeText_Reopen", "progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='14']/?/?/text", 30000, null, "5fefcb42-4a92-4739-aa13-430a1bf8cfac");
                 _physicallayout_parametervalue_reopenInfo = new RepoItemInfo(this, "PhysicalLayout_ParameterValue_reopen", "progressbar/picture[8]//container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/cell[@text='[0]']/?/text[1]", 30000, null, "d4910e68-fc20-4399-804a-19e867e0a95e");
+                _buttonacceptInfo = new RepoItemInfo(this, "ButtonAccept", "container[1]/?/?/button[@text='_Accept']", 45000, null, "b460b7cf-2eb3-4aee-ab20-83ed28ceb60e");
             }
 
             /// <summary>
@@ -3636,6 +3638,30 @@ namespace TestProject
                 get
                 {
                     return _physicallayout_parametervalue_reopenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonAccept item.
+            /// </summary>
+            [RepositoryItem("b460b7cf-2eb3-4aee-ab20-83ed28ceb60e")]
+            public virtual Ranorex.Button ButtonAccept
+            {
+                get
+                {
+                    return _buttonacceptInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonAccept item info.
+            /// </summary>
+            [RepositoryItemInfo("b460b7cf-2eb3-4aee-ab20-83ed28ceb60e")]
+            public virtual RepoItemInfo ButtonAcceptInfo
+            {
+                get
+                {
+                    return _buttonacceptInfo;
                 }
             }
 
@@ -6830,6 +6856,11 @@ namespace TestProject
             RepoItemInfo _cell_standbyhoursInfo;
             RepoItemInfo _txt_standbyhoursInfo;
             RepoItemInfo _cell_batteryfactorInfo;
+            RepoItemInfo _install_btnokInfo;
+            RepoItemInfo _install_agreetermsInfo;
+            RepoItemInfo _install_btninstallInfo;
+            RepoItemInfo _install_btncloseInfo;
+            RepoItemInfo _install_installationcompleteInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7145,6 +7176,11 @@ namespace TestProject
                 _cell_standbyhoursInfo = new RepoItemInfo(this, "cell_StandByHours", "progressbar/list[@automationid='PART_BarContainerControl']/list/?/?/cell[@text='Standby Hours']", 45000, null, "a4eec5b3-869f-485d-920d-2cd7cf958313");
                 _txt_standbyhoursInfo = new RepoItemInfo(this, "txt_StandByHours", "progressbar/list[@automationid='PART_BarContainerControl']/list//text[@automationid='PART_Editor']/text[@automationid='PART_Editor']", 30000, null, "aa061fcc-b293-4a78-85bb-e35aff8be5ab");
                 _cell_batteryfactorInfo = new RepoItemInfo(this, "cell_BatteryFactor", "progressbar/list[@automationid='PART_BarContainerControl']/list/?/?/cell[@text='Battery Factor']", 45000, null, "33738650-4cdc-45be-8ec6-319c348fc95d");
+                _install_btnokInfo = new RepoItemInfo(this, "Install_BtnOK", "button[@name='OK']", 45000, null, "0d04aa16-b25e-432f-980b-8d965013b1d2");
+                _install_agreetermsInfo = new RepoItemInfo(this, "Install_AgreeTerms", "?/?/text[@name>'I agree to the license te']", 45000, null, "60fc5e71-f60f-4d1d-a0d6-8c5d59d18d01");
+                _install_btninstallInfo = new RepoItemInfo(this, "Install_BtnInstall", "?/?/text[@text='Install']", 45000, null, "dd04891b-4b4c-4afa-8098-0529b9fac708");
+                _install_btncloseInfo = new RepoItemInfo(this, "Install_BtnClose", "?/?/?/text[@text='Close']", 45000, null, "f0bceb65-ea3e-4dbe-888f-880553f434ee");
+                _install_installationcompleteInfo = new RepoItemInfo(this, "Install_InstallationComplete", "?/?/text[@text='Installation is complete.']", 45000, null, "ff411136-8256-4fa2-890e-ab95defd8ee9");
             }
 
             /// <summary>
@@ -14665,6 +14701,126 @@ namespace TestProject
                 get
                 {
                     return _cell_batteryfactorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Install_BtnOK item.
+            /// </summary>
+            [RepositoryItem("0d04aa16-b25e-432f-980b-8d965013b1d2")]
+            public virtual Ranorex.Button Install_BtnOK
+            {
+                get
+                {
+                    return _install_btnokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Install_BtnOK item info.
+            /// </summary>
+            [RepositoryItemInfo("0d04aa16-b25e-432f-980b-8d965013b1d2")]
+            public virtual RepoItemInfo Install_BtnOKInfo
+            {
+                get
+                {
+                    return _install_btnokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Install_AgreeTerms item.
+            /// </summary>
+            [RepositoryItem("60fc5e71-f60f-4d1d-a0d6-8c5d59d18d01")]
+            public virtual Ranorex.Text Install_AgreeTerms
+            {
+                get
+                {
+                    return _install_agreetermsInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Install_AgreeTerms item info.
+            /// </summary>
+            [RepositoryItemInfo("60fc5e71-f60f-4d1d-a0d6-8c5d59d18d01")]
+            public virtual RepoItemInfo Install_AgreeTermsInfo
+            {
+                get
+                {
+                    return _install_agreetermsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Install_BtnInstall item.
+            /// </summary>
+            [RepositoryItem("dd04891b-4b4c-4afa-8098-0529b9fac708")]
+            public virtual Ranorex.Text Install_BtnInstall
+            {
+                get
+                {
+                    return _install_btninstallInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Install_BtnInstall item info.
+            /// </summary>
+            [RepositoryItemInfo("dd04891b-4b4c-4afa-8098-0529b9fac708")]
+            public virtual RepoItemInfo Install_BtnInstallInfo
+            {
+                get
+                {
+                    return _install_btninstallInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Install_BtnClose item.
+            /// </summary>
+            [RepositoryItem("f0bceb65-ea3e-4dbe-888f-880553f434ee")]
+            public virtual Ranorex.Text Install_BtnClose
+            {
+                get
+                {
+                    return _install_btncloseInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Install_BtnClose item info.
+            /// </summary>
+            [RepositoryItemInfo("f0bceb65-ea3e-4dbe-888f-880553f434ee")]
+            public virtual RepoItemInfo Install_BtnCloseInfo
+            {
+                get
+                {
+                    return _install_btncloseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Install_InstallationComplete item.
+            /// </summary>
+            [RepositoryItem("ff411136-8256-4fa2-890e-ab95defd8ee9")]
+            public virtual Ranorex.Text Install_InstallationComplete
+            {
+                get
+                {
+                    return _install_installationcompleteInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Install_InstallationComplete item info.
+            /// </summary>
+            [RepositoryItemInfo("ff411136-8256-4fa2-890e-ab95defd8ee9")]
+            public virtual RepoItemInfo Install_InstallationCompleteInfo
+            {
+                get
+                {
+                    return _install_installationcompleteInfo;
                 }
             }
         }
