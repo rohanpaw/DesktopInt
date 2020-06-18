@@ -860,6 +860,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : Alpesh Dhakad - 22/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 18/06/2020 Updated script as per new method to add base
 		 ******************************************************************************************************/
 		[UserCodeMethod]
 		public static void AssignAdditionalBase(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex)
@@ -882,9 +883,16 @@ namespace TestProject.Libraries
 			//repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
 			repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
 			repo.FormMe.BaseofDeviceRow.Click("560;19");
-				
 			
-			repo.ContextMenu.btn_BaseSelection.Click();
+			
+			Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfOnly;
+				
+				repo.ContextMenu.btn_BaseSelection.Click();
+				
+				Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+				
+				Report.Log(ReportLevel.Info, "Base change was performed successfully.");
+
 		}
 		
 		/*****************************************************************************************************
@@ -920,7 +928,7 @@ namespace TestProject.Libraries
 			repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
 			repo.FormMe.BaseofDeviceRow.Click("560;19");
 			
-			
+			Report.Log(ReportLevel.Info, "Base removed was performed successfully.");
 		}
 
 		/*****************************************************************************************************************

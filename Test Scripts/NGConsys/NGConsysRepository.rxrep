@@ -14432,8 +14432,16 @@ AAAAAElFTkSuQmCC
 			id="43c10983-3a80-4c6b-b6c2-bc03dd453f58"
 			name="txt_ActualLoadingDetailsValueAfterReopen"
 			refimgid="2ae6330a-9a2b-4359-8517-db83a5899695"
-			searchtimeout="60000ms">
+			searchtimeout="90000ms">
 				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]
+			</item>
+			<item
+			capname="text"
+			id="dfc1020f-cc89-45ac-9984-9ee94cd70abb"
+			name="Copy_of_txt_ActualLoadingDetailsValueAfterReopen"
+			refimgid="2ae6330a-9a2b-4359-8517-db83a5899695"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Current (DC Units)']/following-sibling::cell/?/text[1]
 			</item>
 			<item
 			capname="progressbar"
@@ -14463,7 +14471,7 @@ AAAAAElFTkSuQmCC
 			id="f96ead01-b71d-42ad-ae18-248ab1a57744"
 			name="txt_MaxLoadingDetailsValueAfterReopen"
 			refimgid="eba2df63-f1e5-4576-a579-6870d163961d"
-			searchtimeout="60000ms">
+			searchtimeout="90000ms">
 				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]
 			</item>
 			<item

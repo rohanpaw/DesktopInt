@@ -55,7 +55,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						NGC-1398
+						TC_227
 					</argvalue>
 				</argument>
 			</arguments>
@@ -96,7 +96,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"

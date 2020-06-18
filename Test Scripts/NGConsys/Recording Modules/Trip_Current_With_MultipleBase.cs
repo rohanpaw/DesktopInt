@@ -94,7 +94,7 @@ namespace TestProject.Recording_Modules
             Libraries.DC_Functions.verifyTripCurrentWithMultipleBase("Verify Trip Current Calculation for Multiple Base", "Add Devices Loop A");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "True"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "NGC-1398");
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "True"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "TC_227");
             Delay.Milliseconds(0);
             
         }

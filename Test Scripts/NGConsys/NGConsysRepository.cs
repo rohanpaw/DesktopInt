@@ -6797,6 +6797,7 @@ namespace TestProject
             RepoItemInfo _loadingdetailsprogressbarcolorInfo;
             RepoItemInfo _copy_of_loadingdetailsprogressbarcolorInfo;
             RepoItemInfo _txt_actualloadingdetailsvalueafterreopenInfo;
+            RepoItemInfo _copy_of_txt_actualloadingdetailsvalueafterreopenInfo;
             RepoItemInfo _loadingdetailsprogressbarcolorafterreopenInfo;
             RepoItemInfo _optionsInfo;
             RepoItemInfo _chkbox_enableisdevicesInfo;
@@ -7116,11 +7117,12 @@ namespace TestProject
                 _copy_of_txt_maxloadingdetailsvalueInfo = new RepoItemInfo(this, "Copy_of_txt_MaxLoadingDetailsValue", "progressbar//descendant-or-self::*//text[@text='Current (DC Units)']/following-sibling::cell//text[3]", 60000, null, "60c95339-acb7-40bd-9c7e-8a54d7649e34");
                 _loadingdetailsprogressbarcolorInfo = new RepoItemInfo(this, "LoadingDetailsProgressbarColor", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//progressbar", 90000, null, "99d9a410-5c33-4ff5-a73e-52776010ac39");
                 _copy_of_loadingdetailsprogressbarcolorInfo = new RepoItemInfo(this, "Copy_of_LoadingDetailsProgressbarColor", "progressbar//descendant-or-self::*//text[@text='Signal (AC Units)']/following-sibling::cell//progressbar", 60000, null, "4a28a79b-608d-4826-948f-1d29eb2019f9");
-                _txt_actualloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "txt_ActualLoadingDetailsValueAfterReopen", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]", 60000, null, "43c10983-3a80-4c6b-b6c2-bc03dd453f58");
+                _txt_actualloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "txt_ActualLoadingDetailsValueAfterReopen", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]", 90000, null, "43c10983-3a80-4c6b-b6c2-bc03dd453f58");
+                _copy_of_txt_actualloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "Copy_of_txt_ActualLoadingDetailsValueAfterReopen", "progressbar//descendant-or-self::*//text[@text='Current (DC Units)']/following-sibling::cell/?/text[1]", 60000, null, "dfc1020f-cc89-45ac-9984-9ee94cd70abb");
                 _loadingdetailsprogressbarcolorafterreopenInfo = new RepoItemInfo(this, "LoadingDetailsProgressbarColorAfterReopen", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//progressbar", 60000, null, "4ad38f73-010d-4bfb-b90c-056ff046f043");
                 _optionsInfo = new RepoItemInfo(this, "Options", ".//container[@name='PART_Content' and @caption='Options']/text[@caption='Options']", 90000, null, "7b143d8b-666d-4e30-8cee-5c95a0e42acc");
                 _chkbox_enableisdevicesInfo = new RepoItemInfo(this, "chkBox_EnableISDevices", ".//container[@automationid='me']/button[@automationid='PART_Editor']/text[@caption='Enable IS Devices']", 60000, null, "3f7c8053-291e-4d27-96ed-f6cf85efa9e7");
-                _txt_maxloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "txt_MaxLoadingDetailsValueAfterReopen", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]", 60000, null, "f96ead01-b71d-42ad-ae18-248ab1a57744");
+                _txt_maxloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "txt_MaxLoadingDetailsValueAfterReopen", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]", 90000, null, "f96ead01-b71d-42ad-ae18-248ab1a57744");
                 _btn_backInfo = new RepoItemInfo(this, "btn_back", "?/?/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']", 60000, null, "b3daf139-dd16-413d-b42d-705e8bb2f5be");
                 _fileInfo = new RepoItemInfo(this, "File", "?/?/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']/?/?/text[@text='File']", 90000, null, "e5b15281-a87a-4eb9-8577-339826badfc4");
                 _newInfo = new RepoItemInfo(this, "New", ".//text[@text='New']", 60000, null, "2ac99ae1-11c3-43c7-a66c-3159d037b932");
@@ -13285,6 +13287,30 @@ namespace TestProject
                 get
                 {
                     return _txt_actualloadingdetailsvalueafterreopenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txt_ActualLoadingDetailsValueAfterReopen item.
+            /// </summary>
+            [RepositoryItem("dfc1020f-cc89-45ac-9984-9ee94cd70abb")]
+            public virtual Ranorex.Text Copy_of_txt_ActualLoadingDetailsValueAfterReopen
+            {
+                get
+                {
+                    return _copy_of_txt_actualloadingdetailsvalueafterreopenInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txt_ActualLoadingDetailsValueAfterReopen item info.
+            /// </summary>
+            [RepositoryItemInfo("dfc1020f-cc89-45ac-9984-9ee94cd70abb")]
+            public virtual RepoItemInfo Copy_of_txt_ActualLoadingDetailsValueAfterReopenInfo
+            {
+                get
+                {
+                    return _copy_of_txt_actualloadingdetailsvalueafterreopenInfo;
                 }
             }
 
