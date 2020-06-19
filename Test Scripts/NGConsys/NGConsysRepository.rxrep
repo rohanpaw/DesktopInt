@@ -14589,6 +14589,13 @@ AAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="text"
+			id="75b4c5b8-76c7-4b2e-aad2-4c470eb405f5"
+			name="Copy_of_txt_LabelName11"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text='801 CH - 1']
+			</item>
+			<item
+			capname="text"
 			id="ff318881-96d4-4b8c-a1b6-da59c70ae22a"
 			name="txt_LabelNameForOneRow"
 			searchtimeout="90000ms">

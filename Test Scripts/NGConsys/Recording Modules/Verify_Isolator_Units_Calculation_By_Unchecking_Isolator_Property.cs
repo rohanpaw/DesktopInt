@@ -91,31 +91,31 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400PH", "Detectors");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDevicesfromGallery("400PH", "Detectors");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("410QMO", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("410QMO (2 point)", "Detectors");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("445SR", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("410QIO", "Call Points");
+            Libraries.Devices_Functions.AddDevicesfromGallery("410QIO (8 point)", "Call Points");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("410MIM", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("410QRM", "Call Points");
+            Libraries.Devices_Functions.AddDevicesfromGallery("410QRM (2 point)", "Call Points");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RemoveBase("410QMO (2 po... - 2", "10");
+            Libraries.Devices_Functions.RemoveBase("410QMO (2 po... - 1", "8");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RemoveBase("410QIO (8 po... - 5", "10");
+            Libraries.Devices_Functions.RemoveBase("410QIO (8 po... - 4", "10");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RemoveBase("410QRM (2 p... - 14", "10");
+            Libraries.Devices_Functions.RemoveBase("410QRM (2 p... - 13", "10");
             Delay.Milliseconds(0);
             
         }

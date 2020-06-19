@@ -363,7 +363,6 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="80d6a79d-bfbf-47ca-b518-fe86801a3adc"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -378,6 +377,7 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="81082098-dd86-4dfb-b2c8-569ac3943436"
 			name="CreateProject_Build"
 			ref="29754c2d-0eaa-4970-97a3-d47c329c758a"
@@ -657,7 +657,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\SoftwareDevelopment\agent\_work\1\s\vsrc\bin">
+					value="C:\work\consys-uiauto\Release">
 					</param>
 					<param
 					name="Mode"
@@ -1035,7 +1035,7 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="2adaee81-6f28-40ed-9d1f-9353dc5a85bd">
+			id="bbb57211-6df9-4507-b0b3-1df27a033e51">
 			</testcontainer>
 			<testcontainer
 			id="dc1de77b-f38a-4346-a02d-b228a9dcc945">

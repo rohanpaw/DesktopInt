@@ -188,6 +188,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				5BI 5&quot; [517.050.018]
 			</comment>
 			<bindings>
 			</bindings>
@@ -210,7 +211,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						5BI 5&quot; [517.050.018]
+						10
 					</argvalue>
 				</argument>
 				<argument
@@ -270,7 +271,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1
+						1.2
 					</argvalue>
 				</argument>
 				<argument
@@ -293,6 +294,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				801SB [516.800.907] @ 90dB
 			</comment>
 			<bindings>
 			</bindings>
@@ -315,7 +317,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						801SB [516.800.907] @ 90dB
+						2
 					</argvalue>
 				</argument>
 				<argument

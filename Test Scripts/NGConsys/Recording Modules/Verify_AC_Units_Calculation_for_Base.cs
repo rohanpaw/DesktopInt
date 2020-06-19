@@ -94,16 +94,18 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBase("801 CH - 1", "5BI 5\" [517.050.018]", "6");
+            // 5BI 5" [517.050.018]
+            Libraries.Devices_Functions.AssignDeviceBase("801 CH - 1", "10", "6");
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyACUnitsValue("1.2");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1", "Signal (AC Units)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.2", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignAdditionalBase("801 CH - 1", "801SB [516.800.907] @ 90dB", "6");
+            // 801SB [516.800.907] @ 90dB
+            Libraries.Devices_Functions.AssignAdditionalBase("801 CH - 1", "2", "6");
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyACUnitsValue("3.6");

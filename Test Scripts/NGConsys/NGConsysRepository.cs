@@ -6816,6 +6816,7 @@ namespace TestProject
             RepoItemInfo _btn_restoreInfo;
             RepoItemInfo _btn_maximizeInfo;
             RepoItemInfo _txt_labelname1Info;
+            RepoItemInfo _copy_of_txt_labelname11Info;
             RepoItemInfo _txt_labelnameforonerowInfo;
             RepoItemInfo _txt_labelnameforrbusonerowInfo;
             RepoItemInfo _txt_labelnameforrbusonerowonreopenInfo;
@@ -7137,6 +7138,7 @@ namespace TestProject
                 _btn_restoreInfo = new RepoItemInfo(this, "btn_Restore", "container[@automationid='Root_Grid']//button[@automationid='PART_Restore']", 30000, null, "11da52b0-fd7c-4586-8da3-975f16dd1351");
                 _btn_maximizeInfo = new RepoItemInfo(this, "btn_Maximize", "container[@automationid='PART_Buttons']/?/?/button[@automationid='PART_Maximize']", 30000, null, "81e21849-b7cc-43c1-990a-f3f0468ffbe8");
                 _txt_labelname1Info = new RepoItemInfo(this, "txt_LabelName1", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text=$sLabelName]", 90000, null, "e93ef5e7-f1ea-4b48-affa-7fa0bae38354");
+                _copy_of_txt_labelname11Info = new RepoItemInfo(this, "Copy_of_txt_LabelName11", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text='801 CH - 1']", 90000, null, "75b4c5b8-76c7-4b2e-aad2-4c470eb405f5");
                 _txt_labelnameforonerowInfo = new RepoItemInfo(this, "txt_LabelNameForOneRow", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row/cell[5]/text[@text=$sLabelName]", 90000, null, "ff318881-96d4-4b8c-a1b6-da59c70ae22a");
                 _txt_labelnameforrbusonerowInfo = new RepoItemInfo(this, "txt_LabelNameForRBusOneRow", "progressbar/list[9]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row/cell[3]/text[@text=$sLabelName]", 90000, null, "e138aa72-5ed6-4547-b19c-c1a0ceef4ee1");
                 _txt_labelnameforrbusonerowonreopenInfo = new RepoItemInfo(this, "txt_LabelNameForRBusOneRowOnReopen", "progressbar/list[8]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row/cell[3]/text[@text=$sLabelName]", 90000, null, "1e63460f-d4e4-4281-aa12-5eef2869c68e");
@@ -13743,6 +13745,30 @@ namespace TestProject
                 get
                 {
                     return _txt_labelname1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txt_LabelName11 item.
+            /// </summary>
+            [RepositoryItem("75b4c5b8-76c7-4b2e-aad2-4c470eb405f5")]
+            public virtual Ranorex.Text Copy_of_txt_LabelName11
+            {
+                get
+                {
+                    return _copy_of_txt_labelname11Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_txt_LabelName11 item info.
+            /// </summary>
+            [RepositoryItemInfo("75b4c5b8-76c7-4b2e-aad2-4c470eb405f5")]
+            public virtual RepoItemInfo Copy_of_txt_LabelName11Info
+            {
+                get
+                {
+                    return _copy_of_txt_labelname11Info;
                 }
             }
 

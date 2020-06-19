@@ -910,7 +910,15 @@ namespace TestProject.Libraries
 			sLabelName = DeviceLabel;
 			Common_Functions.clickOnPointsTab();
 			//repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
-			repo.FormMe.txt_LabelName1.Click();
+			
+			if(repo.FormMe.txt_LabelNameForOneRowInfo.Exists())
+			{
+				repo.FormMe.txt_LabelNameForOneRow.Click();
+			}
+			else{
+				repo.FormMe.txt_LabelName1.Click();
+			}
+			
 			
 			sRowIndex = sBasePropertyRowIndex;
 			//repo.ProfileConsys1.BaseofDeviceRow.Click();
