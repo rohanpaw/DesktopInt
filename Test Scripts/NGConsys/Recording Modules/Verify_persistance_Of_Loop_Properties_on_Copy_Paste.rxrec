@@ -516,8 +516,34 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickContextMenuOptionOnRightClick"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Copy
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e5f920fa-8d4c-4ddb-8d8b-09ffd070083d">
+				<argument
+				argname="sContextMenuOption"
+				id="f7739765-9e6d-4175-989a-f6d437d045aa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnCopyButton"
 		namespace="TestProject.Libraries"
@@ -566,12 +592,13 @@ rxversion="8.3">
 		</explicitdelayitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Paste with Points
 			</comment>
 			<bindings>
 			</bindings>
@@ -584,14 +611,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Paste with Points
+						8
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPasteWithPointsButton"
 		namespace="TestProject.Libraries"
@@ -642,7 +669,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyCableLengthInNodeGalleryItems"
+		methodname="VerifyCableLengthOnNode"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -717,7 +744,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDeviceUsingLabelName"
+		methodname="VerifyDeviceExistsForOneRow"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -727,8 +754,18 @@ rxversion="8.3">
 			<arguments
 			id="0f33e3e4-4eac-4a84-95cf-5708cb49fa52">
 				<argument
-				argname="sLabel"
+				argname="sExists"
 				id="bdaef265-4707-4703-92fc-d81c99922db8">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+				<argument
+				argname="sLabel"
+				id="47ce6ce2-49c9-4dad-8de9-76fa338435aa">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -840,12 +877,13 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Copy
 			</comment>
 			<bindings>
 			</bindings>
@@ -858,14 +896,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Copy
+						3
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnCopyButton"
 		namespace="TestProject.Libraries"
@@ -905,12 +943,13 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Paste with Points
 			</comment>
 			<bindings>
 			</bindings>
@@ -923,14 +962,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Paste with Points
+						8
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPasteWithPointsButton"
 		namespace="TestProject.Libraries"
@@ -981,7 +1020,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyCableLengthInNodeGalleryItems"
+		methodname="VerifyCableLengthOnNode"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1054,7 +1093,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyDeviceUsingLabelName"
 		namespace="TestProject.Libraries"
@@ -1068,6 +1107,41 @@ rxversion="8.3">
 				<argument
 				argname="sLabel"
 				id="bdaef265-4707-4703-92fc-d81c99922db8">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						801 CH - 1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyDeviceExistsForOneRow"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="0f33e3e4-4eac-4a84-95cf-5708cb49fa52">
+				<argument
+				argname="sExists"
+				id="bdaef265-4707-4703-92fc-d81c99922db8">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+				<argument
+				argname="sLabel"
+				id="47ce6ce2-49c9-4dad-8de9-76fa338435aa">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

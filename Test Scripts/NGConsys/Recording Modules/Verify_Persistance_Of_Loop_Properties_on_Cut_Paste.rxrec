@@ -467,12 +467,13 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Cut
 			</comment>
 			<bindings>
 			</bindings>
@@ -485,14 +486,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Cut
+						2
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnCutButton"
 		namespace="TestProject.Libraries"
@@ -532,12 +533,13 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Paste with Points
 			</comment>
 			<bindings>
 			</bindings>
@@ -550,14 +552,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Paste with Points
+						8
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPasteWithPointsButton"
 		namespace="TestProject.Libraries"
@@ -608,7 +610,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyCableLengthInNodeGalleryItems"
+		methodname="VerifyCableLengthOnNode"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -681,9 +683,9 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDeviceUsingLabelName"
+		methodname="VerifyDeviceExistsForOneRow"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -693,8 +695,18 @@ rxversion="8.3">
 			<arguments
 			id="0f33e3e4-4eac-4a84-95cf-5708cb49fa52">
 				<argument
-				argname="sLabel"
+				argname="sExists"
 				id="bdaef265-4707-4703-92fc-d81c99922db8">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+				<argument
+				argname="sLabel"
+				id="7c6d5e36-b3b9-4bb1-9d33-c18522d18749">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -706,7 +718,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelNameOnPLXLoop"
 		namespace="TestProject.Libraries"

@@ -438,6 +438,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Copy
 			</comment>
 			<bindings>
 			</bindings>
@@ -450,14 +451,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Copy
+						3
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonEnabled"
 		namespace="TestProject.Libraries"
@@ -503,6 +504,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Paste
 			</comment>
 			<bindings>
 			</bindings>
@@ -515,7 +517,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Paste
+						1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -687,6 +689,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Cut
 			</comment>
 			<bindings>
 			</bindings>
@@ -699,14 +702,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Cut
+						2
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonEnabled"
 		namespace="TestProject.Libraries"
@@ -752,6 +755,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Paste
 			</comment>
 			<bindings>
 			</bindings>
@@ -764,7 +768,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Paste
+						1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -875,7 +879,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Panel_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
@@ -919,7 +923,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -944,7 +948,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -969,7 +973,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
@@ -1014,7 +1018,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -1084,7 +1088,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -1109,7 +1113,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -1134,7 +1138,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
@@ -1169,7 +1173,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
@@ -1229,7 +1233,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -1254,7 +1258,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
@@ -1279,7 +1283,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
@@ -1304,7 +1308,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonEnabled"
 		namespace="TestProject.Libraries"
@@ -1319,7 +1323,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
@@ -1344,7 +1348,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
@@ -1369,7 +1373,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<explicitdelayitem
 		duration="45000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -1378,7 +1382,7 @@ rxversion="8.3">
 		</explicitdelayitem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -1403,7 +1407,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -1428,7 +1432,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -1478,7 +1482,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -1503,7 +1507,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
@@ -1528,7 +1532,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
@@ -1553,7 +1557,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonEnabled"
 		namespace="TestProject.Libraries"
@@ -1568,7 +1572,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
@@ -1593,7 +1597,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
@@ -1618,7 +1622,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<explicitdelayitem
 		duration="45000ms"
-		enabled="True"
+		enabled="False"
 		optional="False">
 			<comment>
 			</comment>
@@ -1627,7 +1631,7 @@ rxversion="8.3">
 		</explicitdelayitem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -1652,7 +1656,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"

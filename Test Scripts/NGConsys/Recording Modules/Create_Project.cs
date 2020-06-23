@@ -92,10 +92,10 @@ namespace TestProject.Recording_Modules
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(0));
             Delay.Duration(1000, false);
             
-            Libraries.Common_Functions.clickOnAcceptButton();
+            //Libraries.Common_Functions.clickOnAcceptButton();
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
-            Delay.Duration(1000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 1s.", new RecordItemIndex(2));
+            //Delay.Duration(1000, false);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.File' at Center.", repo.ProfileConsys1.FileInfo, new RecordItemIndex(3));
             //repo.ProfileConsys1.File.Click();

@@ -100,8 +100,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonDisabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonDisabled();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
@@ -115,17 +115,25 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            // Copy
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("3");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            //Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnPasteButton();
+            //Delay.Milliseconds(0);
+            
+            // Paste
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("1");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPasteButton();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(17));
+            Delay.Duration(7000, false);
             
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
             //Delay.Milliseconds(0);
@@ -145,80 +153,93 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
+            // Cut
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("2");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            //Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnPasteButton();
+            //Delay.Milliseconds(0);
+            
+            // Paste
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("1");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPasteButton();
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(29));
+            Delay.Duration(7000, false);
+            
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-5");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-5");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Label", "PLX800-6");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-6");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Label", "PLX800-7");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Label", "PLX800-7");
-            Delay.Milliseconds(0);
-            
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Label", "PLX800-8");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Label", "PLX800-8");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-E");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-E");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonDisabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonDisabled();
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
-            Delay.Milliseconds(0);
+            // Copy
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("3");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPasteButton();
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnPasteButton();
+            //Delay.Milliseconds(0);
+            
+            // Paste
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("1");
+            //Delay.Milliseconds(0);
             
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Address", "9");
             //Delay.Milliseconds(0);
@@ -232,35 +253,40 @@ namespace TestProject.Recording_Modules
             //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "Address", "12");
             //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "SKU", "557.202.842");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("13", "SKU", "557.202.842");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
-            Delay.Milliseconds(0);
+            // Cut
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("2");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("6");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPasteButton();
-            Delay.Milliseconds(0);
+            // Paste
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("1");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "PLX800-5");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnPasteButton();
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-6");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-5");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Label", "PLX800-7");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Label", "PLX800-6");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Label", "PLX800-8");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("9", "Label", "PLX800-7");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("10", "Label", "PLX800-8");
+            //Delay.Milliseconds(0);
             
         }
 

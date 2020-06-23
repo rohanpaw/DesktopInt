@@ -1288,9 +1288,21 @@ namespace TestProject.Libraries
 			{
 				if(repo.ProfileConsys1.btn_Delete.Visible){
 					Common_Functions.clickOnDeleteButton();
+					
+					if(repo.FormDeleteSpur.btn_Ok_WarningInfo.Exists())
+					{
+						repo.FormDeleteSpur.btn_Ok_Warning.Click();
+						Report.Log(ReportLevel.Info, "Delete device warning displayed");
+					}
 				}
 				else{
 					repo.FormMe.btn_DeleteFC.Click();
+					
+					if(repo.FormDeleteSpur.btn_Ok_WarningInfo.Exists())
+					{
+						repo.FormDeleteSpur.btn_Ok_Warning.Click();
+						Report.Log(ReportLevel.Info, "Delete device warning displayed");
+					}
 				}
 				//Validate.AttributeEqual(repo.FormMe.txt_LabelName1Info, "Text", sLabelName);
 				Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");
@@ -4778,6 +4790,8 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Cable length value is displayed as "+actualCableLength+ " instead of "+ sCableLength);
 			}
 
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
 		
 		
@@ -5471,19 +5485,26 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 
 		}
-		/********************************************************************************************
+		/*****************************************************************************************************
 		 * Function Name: clickContextMenuOptionOnRightClick
 		 * Function Details: To verify if paste button is enabled
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Poonam
 		 * Last Update : 20/5/2019 Alpesh Dhakad - 29/07/2019 - Updated argument spelling
-		 *********************************************************************************************/
+		 * Alpesh Dhakad - 22/06/2020 Updated script and xpath as per new method of object identification
+		 ******************************************************************************************************/
 		[UserCodeMethod]
 		public static void clickContextMenuOptionOnRightClick(string sContextMenuOption)
 		{
 			sListIndex=sContextMenuOption;
+			
+			Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfOnly;
+				
 			repo.ContextMenu.ContextMenuOption.Click();
+				
+			Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+
 			Report.Log(ReportLevel.Success, sContextMenuOption+" button is clicked");
 		}
 		
@@ -6342,7 +6363,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Poonam Kadam
 		 * Last Update :07/Jun/19 Alpesh Dhakad - 20/08/2019 &  30/08/2019- Updated xpath for cell_cableLength
 		 * Alpesh Dhakad - 26/11/2019 Added a step to select cable length text
-		 * 05/05/2020 - Alpesh Dhakad - Updated script and xpath of cell_CableLength and txt_CableLength
+		 * 05/05/2020 and 22/06/2020 - Alpesh Dhakad - Updated script and xpath of cell_CableLength and txt_CableLength
 		 *****************************************************************************************************************/
 		// Change cable length method
 		[UserCodeMethod]
@@ -6366,7 +6387,9 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Info, "Cable length changed to "+fchangeCableLength+"  successfully");
 			
 			repo.ProfileConsys1.txt_SearchProperties.Click();
-			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}{ENTER}");
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
 		
 		/**************************************************************************************************************************************
@@ -7404,14 +7427,14 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success, "Device "+sDeviceName+" Added Successfully");
 		}
 		
-		/********************************************************************
+		/**************************************************************************************************
 		 * Function Name:ClickCheckboxInSearchProperties
 		 * Function Details:
 		 * Parameter/Arguments: boolean value
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 22/08/2019
-		 ********************************************************************/
+		 * Last Update : 22/08/2019 Alpesh Dhakad - 22/06/2020 - Updated last line of script
+		 **************************************************************************************************/
 		[UserCodeMethod]
 		public static void ClickCheckboxInSearchProperties(string sCheckboxName)
 		{
@@ -7427,6 +7450,11 @@ namespace TestProject.Libraries
 			// Click on cell
 			repo.ProfileConsys1.PARTItemsPresenter.cell_DayMatchesNight.Click();
 			//repo.FormMe.Chkbox_In_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			
 		}
 		
 		/********************************************************************
@@ -7479,6 +7507,11 @@ namespace TestProject.Libraries
 			
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			
 		}
 		
 		/* bool DefaultChecked,  //Click on Points tab
@@ -7637,7 +7670,7 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 10/09/2019
+		 * Last Update : 10/09/2019 Alpesh Dhakad - 19/06/2020 Updated new base change implementation
 		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AssignDeviceBaseIfBlank(string DeviceLabel, string sBaseofDevice, string sBasePropertyRowIndex)
@@ -7646,15 +7679,34 @@ namespace TestProject.Libraries
 			sBase = sBaseofDevice;
 			sRowIndex = sBasePropertyRowIndex;
 			sLabelName = DeviceLabel;
-			repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.LabelofDevice.Click();
 			//repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
 			//repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
 			//int.TryParse(sRowIndex, out iRowIndex);
 			//iRowIndex = iRowIndex-1;
 			//sRowIndex = iRowIndex.ToString();
-			repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
-			repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
-			repo.ContextMenu.btn_BaseSelection.Click();
+			//repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+			//repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
+			
+			if(repo.FormMe.txt_LabelNameForOneRowInfo.Exists())
+			{
+				repo.FormMe.txt_LabelNameForOneRow.Click();
+			}
+			else
+			{
+			repo.FormMe.txt_LabelName1.Click();
+			}
+			
+			repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
+				repo.FormMe.BaseofDeviceRow.Click("560;19");
+			
+			Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfOnly;
+				
+				repo.ContextMenu.btn_BaseSelection.Click();
+				
+				Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+				
+				Report.Log(ReportLevel.Info, "Base change was performed successfully.");
 			
 		}
 		
@@ -8817,6 +8869,88 @@ namespace TestProject.Libraries
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
+		
+		/********************************************************************
+		 * Function Name: EditPoweredValue
+		 * Function Details: To verify alarm load of sounder
+		 * Parameter/Arguments:expected alarm load
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :31/05/2020
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void EditPoweredValue(string sPowered, string sPoweredValue)
+		{
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Search Alarm Load property
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Powered" +"{ENTER}" );
+			
+			//Click on cable length cell
+			repo.FormMe.cell_LabelNameProperties.Click();
+			//repo.FormMe.txt_InventoryProperty.Click();
+			
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}");
+			
+			//Change the value of cable length
+			repo.FormMe.txt_LabelNameProperties.PressKeys(sPoweredValue + "{ENTER}");
+			
+			Report.Log(ReportLevel.Info, "Powered from changed to  "+sPoweredValue+"  successfully");
+			
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
+		
+		/****************************************************************************************************************
+		 * Function Name: VerifyCableLengthOnNode
+		 * Function Details: To verify cable length
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 22/06/2020
+		 ****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyCableLengthOnNode(string sCableLength)
+		{
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Enter the Day Matches night text in Search Properties fields to view cable length;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("{LControlKey down}{Akey}{LControlKey up}Length" +"{ENTER}" );
+			
+			//Click on cable length cell
+			repo.FormMe.cell_CableLength.Click();
+
+			string actualCableLength = repo.FormMe.txt_CableLength.TextValue;
+			//string actualCableLength = repo.ProfileConsys1.txt_CableLength.TextValue;
+			
+			
+			// Comparing actual and expected value
+			if(actualCableLength.Equals(sCableLength))
+			{
+				Report.Log(ReportLevel.Success,"Cable length value " +sCableLength+ " is displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Cable length value is displayed as "+actualCableLength+ " instead of "+ sCableLength);
+			}
+
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+			
+			
+		}
+		
 		
 	}
 }

@@ -97,7 +97,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBase("801 CH - 1", "5B 5\" [517.050.017] & 801RIL", "6");
+            // 5B 5" [517.050.017] & 801RIL
+            Libraries.Devices_Functions.AssignDeviceBase("801 CH - 1", "2", "6");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("Exi800", "Other");

@@ -438,6 +438,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Copy
 			</comment>
 			<bindings>
 			</bindings>
@@ -450,7 +451,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Copy
+						3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -551,7 +552,7 @@ rxversion="8.3">
 		</explicitdelayitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonEnabled"
 		namespace="TestProject.Libraries"
@@ -662,6 +663,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Cut
 			</comment>
 			<bindings>
 			</bindings>
@@ -674,7 +676,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Cut
+						2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -730,7 +732,7 @@ rxversion="8.3">
 		</explicitdelayitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonEnabled"
 		namespace="TestProject.Libraries"
@@ -741,21 +743,6 @@ rxversion="8.3">
 			</bindings>
 			<arguments
 			id="32178cfc-a443-41ca-85a8-df1fff4213c9">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="clickOnPasteButton"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="5a914827-7d0f-4092-b102-e263b7b609b7">
 			</arguments>
 		</userrecorditem>
 		<explicitdelayitem
@@ -1274,6 +1261,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Copy
 			</comment>
 			<bindings>
 			</bindings>
@@ -1286,7 +1274,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Copy
+						3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1387,7 +1375,7 @@ rxversion="8.3">
 		</explicitdelayitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonEnabled"
 		namespace="TestProject.Libraries"
@@ -1498,6 +1486,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Cut
 			</comment>
 			<bindings>
 			</bindings>
@@ -1510,7 +1499,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Cut
+						2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1566,7 +1555,7 @@ rxversion="8.3">
 		</explicitdelayitem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonEnabled"
 		namespace="TestProject.Libraries"

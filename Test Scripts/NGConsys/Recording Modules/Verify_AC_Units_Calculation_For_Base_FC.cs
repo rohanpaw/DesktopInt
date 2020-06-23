@@ -103,37 +103,40 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400P", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("460PC", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400P - 1", "4BI 4\" [517.050.043]", "6");
+            // 430SB [516.800.710] @ 90dB
+            Libraries.Devices_Functions.AssignDeviceBase("460PC - 1", "7", "6");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400PH", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("460PH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400PH - 2", "430SB [516.800.710] @ 75dB", "6");
+            // 430SB [516.800.710] @ 75dB
+            Libraries.Devices_Functions.AssignDeviceBase("460PH - 2", "13", "6");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400H", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBaseIfBlank("400H - 3", "440DSB [576.440.001] @ 90dB", "6");
+            // 440DSB [576.440.001] @ 90dB
+            Libraries.Devices_Functions.AssignDeviceBase("460H - 3", "19", "6");
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyACUnitsValue("4.22");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("4.22", "Signal (AC Units)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("4.5", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RemoveBase("400P - 1", "13");
+            Libraries.Devices_Functions.RemoveBase("460PC - 1", "6");
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyACUnitsValue("4");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("22.2", "Signal (AC Units)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("4", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.SaveProject("63355");
@@ -151,7 +154,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayoutOnReopen("1", "4/250");
+            //Libraries.Devices_Functions.VerifyValueOfParameterInPhysicalLayoutOnReopen("1", "4/250");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("4", "Signal (AC Units)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPointsTab();

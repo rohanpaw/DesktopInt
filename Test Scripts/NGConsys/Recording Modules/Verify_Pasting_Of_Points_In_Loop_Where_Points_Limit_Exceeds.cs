@@ -115,7 +115,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            // Copy
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("3");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
@@ -130,17 +131,18 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            //Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            //Delay.Milliseconds(0);
+            
+            // Paste
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnPasteButton();
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPasteButton();
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPasteButton();
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnPasteButton();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.MoveScrollBarDownInPointsGrid();
             Delay.Milliseconds(0);
@@ -155,7 +157,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
+            // Cut
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("2");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
@@ -167,17 +170,18 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            //Libraries.Devices_Functions.verifyContextMenuOptionOnRightClickEnabledOrDisabled("Paste");
+            //Delay.Milliseconds(0);
+            
+            // Paste
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnPasteButton();
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPasteButton();
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPasteButton();
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnPasteButton();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.MoveScrollBarDownInPointsGrid();
             Delay.Milliseconds(0);

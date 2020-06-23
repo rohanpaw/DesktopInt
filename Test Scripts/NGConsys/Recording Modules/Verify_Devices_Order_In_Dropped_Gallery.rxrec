@@ -4,9 +4,6 @@ embeddedrepository="False"
 id="7a8b3990-0e5a-4fa0-a297-9821e1d09343"
 mode="Global"
 rxversion="8.3">
-	<name>
-		Verify_Devices_Order_In_Dropped_Gallery
-	</name>
 	<repeatcount>
 		1
 	</repeatcount>
@@ -35,8 +32,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -80,8 +76,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -102,12 +97,11 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -132,8 +126,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -158,8 +151,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyDeviceOrderForGalleryExpansion"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -194,8 +186,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -230,8 +221,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -266,8 +256,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="VerifyDeviceOrderForContextMenu"
 		namespace="TestProject.Libraries"
-		optional="False"
-		varname="">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>

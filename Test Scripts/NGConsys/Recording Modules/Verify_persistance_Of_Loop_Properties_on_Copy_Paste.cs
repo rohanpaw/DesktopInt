@@ -127,28 +127,33 @@ namespace TestProject.Recording_Modules
             //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnCopyButton();
+            // Copy
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("3");
             Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnCopyButton();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(19));
             Delay.Duration(5000, false);
             
-            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste with Points");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPasteWithPointsButton();
+            // Paste with Points
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("8");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(21));
+            //Libraries.Common_Functions.clickOnPasteWithPointsButton();
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(22));
             Delay.Duration(45000, false);
             
             Libraries.Devices_Functions.SelectInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("1,000");
+            Libraries.Devices_Functions.VerifyCableLengthOnNode("1,000");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 3");
@@ -157,7 +162,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-9");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
+            Libraries.Devices_Functions.VerifyDeviceExistsForOneRow(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "801 CH - 1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -172,28 +177,30 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnCopyButton();
+            // Copy
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("3");
             Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnCopyButton();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste with Points");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPasteWithPointsButton();
+            // Paste with Points
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("8");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(36));
+            //Libraries.Common_Functions.clickOnPasteWithPointsButton();
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(37));
             Delay.Duration(45000, false);
             
             Libraries.Devices_Functions.SelectInventoryGridRow("15");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("500");
+            Libraries.Devices_Functions.VerifyCableLengthOnNode("500");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 4");
@@ -202,7 +209,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-13");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
+            //Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceExistsForOneRow(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "801 CH - 1");
             Delay.Milliseconds(0);
             
         }

@@ -5547,9 +5547,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Paste_Of_Unit_With_Points.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>580d812c-3520-4396-8418-706619709beb</id>
       <recordtableid>21df85d8-aea5-4759-a8a8-44db0ff18796</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Paste_Options_Displayed_For_Loop.rxrec">
       <id>f7c06438-90b7-4099-ab03-91badee966c9</id>

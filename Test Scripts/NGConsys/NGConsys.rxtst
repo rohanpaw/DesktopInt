@@ -1523,6 +1523,7 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="13a25ba9-f9bc-4d20-803f-5f381b2f1987"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -1838,6 +1839,7 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="1854e260-1b26-46f2-89aa-7aa9cc1183ba"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -2614,7 +2616,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.31">
+					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.33">
 					</param>
 					<param
 					name="Mode"
@@ -4949,7 +4951,7 @@ rxversion="8.3">
 			id="4315861a-9467-4079-b0b6-186628cddf6d"
 			name="Verify_Paste_Of_Unit_With_Points">
 				<description>
-					<![CDATA[<p>NGC-372/TC-36 Failed due to PLX-800 loop label count, bug-NGC-2581 Address inventory row is disabled as this feature is removed. Address column removed from points grid</p>]]>
+					<![CDATA[<p>NGC-372/TC-36 Failed due to PLX-800 loop label count, bug-NGC-2581 Address inventory row is disabled as this feature is removed. Address column removed from points grid.</p><p>Paste button enable/disabled is not verified as its properties are now available.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -6961,6 +6963,13 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			enabled="False"
+			id="59bdc7c0-412d-4274-909a-face461cdac5"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="59dcf71b-1012-4623-a591-6f44775fb577"
 			name="Close_Application"
@@ -9801,7 +9810,7 @@ rxversion="8.3">
 			id="806a3da2-08f7-4a69-9405-d6ae07f52512"
 			name="Verify_Current(DC_Units)_Calculation_for_PFI">
 				<description>
-					<![CDATA[<p>NGC-494/TC-160</p>]]>
+					<![CDATA[<p>NGC-494/TC-160 Defect-3281,3261</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -14679,7 +14688,7 @@ persisted in panel properties&nbsp;]]>
 			id="c67c29b5-929e-4b9a-9e38-3101646bb95e"
 			name="Verify_Devices_Order_In_Dropped_Gallery">
 				<description>
-					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"><p>NGC-216/TC-52</p></font></font></p>]]>
+					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"></font></font><p><font face="Calibri" size="3"><font face="Calibri" size="3">NGC-216/TC-52 Cannot be automated as it contains context menu text verification</font></font></p><p></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16733,7 +16742,7 @@ persisted in panel properties&nbsp;]]>
 			id="e2708cf8-0006-4cee-b114-108e2c344b48"
 			name="Verify_Paste_Of_Unit_Only">
 				<description>
-					<![CDATA[NGC-372/TC-32 PLX800-E is displayed as Printer1 in text properties so test cases failing]]>
+					<![CDATA[<p>NGC-372/TC-32 PLX800-E is displayed as Printer1 in text properties so test cases failing. Also, tested with only 1 panel.</p><p>Verify Paste enabled button method is disabled as its properties are now not visible.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16963,7 +16972,7 @@ persisted in panel properties&nbsp;]]>
 			id="e5766baf-27ca-4a7e-839d-042f19842b82"
 			name="Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property">
 				<description>
-					<![CDATA[<p>NGC-1826/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">64095 (FC)</font></p>]]>
+					<![CDATA[<p>NGC-1826/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">64095 (FC) Related to physical layout</font></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -24040,6 +24049,10 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="a7a9dbe5-6503-4b08-a97a-f7ece060b7a3"
 						name="Verify_Isolator_Units_Calculation_By_Unchecking_Isolator_Property">
+						</testmodule>
+						<testmodule
+						id="59bdc7c0-412d-4274-909a-face461cdac5"
+						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<testcase

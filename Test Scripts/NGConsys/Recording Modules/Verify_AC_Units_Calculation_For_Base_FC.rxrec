@@ -275,7 +275,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400P
+						460PC
 					</argvalue>
 				</argument>
 				<argument
@@ -294,10 +294,11 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AssignDeviceBaseIfBlank"
+		methodname="AssignDeviceBase"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				430SB [516.800.710] @ 90dB
 			</comment>
 			<bindings>
 			</bindings>
@@ -310,7 +311,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400P - 1
+						460PC - 1
 					</argvalue>
 				</argument>
 				<argument
@@ -320,7 +321,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						4BI 4&quot; [517.050.043]
+						7
 					</argvalue>
 				</argument>
 				<argument
@@ -355,7 +356,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400PH
+						460PH
 					</argvalue>
 				</argument>
 				<argument
@@ -374,10 +375,11 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AssignDeviceBaseIfBlank"
+		methodname="AssignDeviceBase"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				430SB [516.800.710] @ 75dB
 			</comment>
 			<bindings>
 			</bindings>
@@ -390,7 +392,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400PH - 2
+						460PH - 2
 					</argvalue>
 				</argument>
 				<argument
@@ -400,7 +402,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						430SB [516.800.710] @ 75dB
+						13
 					</argvalue>
 				</argument>
 				<argument
@@ -435,7 +437,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400H
+						460H
 					</argvalue>
 				</argument>
 				<argument
@@ -454,10 +456,11 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AssignDeviceBaseIfBlank"
+		methodname="AssignDeviceBase"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				440DSB [576.440.001] @ 90dB
 			</comment>
 			<bindings>
 			</bindings>
@@ -470,7 +473,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400H - 3
+						460H - 3
 					</argvalue>
 				</argument>
 				<argument
@@ -480,7 +483,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						440DSB [576.440.001] @ 90dB
+						19
 					</argvalue>
 				</argument>
 				<argument
@@ -540,7 +543,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						4.22
+						4.5
 					</argvalue>
 				</argument>
 				<argument
@@ -575,7 +578,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400P - 1
+						460PC - 1
 					</argvalue>
 				</argument>
 				<argument
@@ -585,7 +588,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						13
+						6
 					</argvalue>
 				</argument>
 			</arguments>
@@ -635,7 +638,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						22.2
+						4
 					</argvalue>
 				</argument>
 				<argument
@@ -787,7 +790,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyValueOfParameterInPhysicalLayoutOnReopen"
 		namespace="TestProject.Libraries"
@@ -816,6 +819,41 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						4/250
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValueAfterReopen"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Signal (AC Units)
 					</argvalue>
 				</argument>
 			</arguments>

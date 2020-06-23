@@ -121,20 +121,22 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnCutButton();
+            // Cut
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("2");
             Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnCutButton();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste with Points");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPasteWithPointsButton();
+            // Paste with Points
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("8");
             Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnPasteWithPointsButton();
+            //Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(19));
             Delay.Duration(45000, false);
@@ -142,7 +144,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyCableLengthInNodeGalleryItems("1,000");
+            Libraries.Devices_Functions.VerifyCableLengthOnNode("1,000");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
@@ -151,11 +153,11 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-E");
             Delay.Milliseconds(0);
             
-            //Libraries.Devices_Functions.VerifyDeviceUsingLabelName("801 CH - 1");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelNameOnPLXLoop("801 CH - 1");
+            Libraries.Devices_Functions.VerifyDeviceExistsForOneRow(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "801 CH - 1");
             Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.SelectRowUsingLabelNameOnPLXLoop("801 CH - 1");
+            //Delay.Milliseconds(0);
             
         }
 

@@ -118,7 +118,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            // Copy
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("3");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
@@ -133,8 +134,8 @@ namespace TestProject.Recording_Modules
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(17));
             Delay.Duration(5000, false);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPasteButton();
             Delay.Milliseconds(0);
@@ -148,7 +149,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
+            // Cut
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("2");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -160,13 +162,10 @@ namespace TestProject.Recording_Modules
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(26));
             Delay.Duration(5000, false);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPasteButton();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(28));
             Delay.Duration(45000, false);
             
             Libraries.Devices_Functions.SelectPointsGridRow("1");
@@ -217,7 +216,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            // Copy
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("3");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
@@ -229,11 +229,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(50));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(49));
             Delay.Duration(5000, false);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPasteButton();
             Delay.Milliseconds(0);
@@ -247,7 +247,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
+            // Cut
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("2");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -256,11 +257,11 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPointsTab();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(59));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(58));
             Delay.Duration(5000, false);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPasteButton();
             Delay.Milliseconds(0);

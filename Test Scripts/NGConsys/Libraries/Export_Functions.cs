@@ -322,6 +322,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 09/08/2019 Alpesh Dhakad - 31/01/2020 Called 2 new method and update xpath for Export
+		 * Alpesh Dhakad - 22/06/2020 Updated script and added xpath as new functionality has been developed
 		 ************************************************************************************************************/
 		[UserCodeMethod]
 		public static void SearchDeviceInExportUsingSKUOrDescription(string sValue,bool sExist)
@@ -342,25 +343,41 @@ namespace TestProject.Libraries
 			//repo.PrintPreview.SearchExport1.Click();
 			
 			
-			if(repo.PrintPreview.SearchBox_Export1Info.Exists())
-			{
-			//Click on Search bar
+//			if(repo.PrintPreview.SearchBox_Export1Info.Exists())
+//			{
+//			//Click on Search bar
+//			repo.PrintPreview.SearchBox_Export1.Click();
+//			}
+//			else
+//			{
+//				
+//			clickOnSearchButton();
+//			//Click on Search button
+//			//repo.PrintPreview.SearchExport1.Click();
+//			
+//		//	Common_Functions.changeConfiguratonToWPF();
+//			
+//			
+//			repo.PrintPreview.SearchBox_Export1.Click();
+//			
+//			}
+			
+			repo.PrintPreview.btn_Maximize.Click();
+			
+			repo.PrintPreview.PrintPreviewPage.DoubleClick();
+			
+			//Keyboard.Press("{ControlKey down}{FKey}{ControlKey up}");  
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Fkey}{LControlKey up}");
+			
+			repo.PrintPreview.btn_Cross.Click();
+			
 			repo.PrintPreview.SearchBox_Export1.Click();
-			}
-			else
-			{
-				
-			clickOnSearchButton();
-			//Click on Search button
-			//repo.PrintPreview.SearchExport1.Click();
 			
-		//	Common_Functions.changeConfiguratonToWPF();
-			
-			
-			repo.PrintPreview.SearchBox_Export1.Click();
-			
-			}
-			
+//			// Select the text in SearchProperties text field and delete it
+//			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+//			
 			//Enter the required Device's SKU no
 			Keyboard.Press(sValue +"{ENTER}");
 			

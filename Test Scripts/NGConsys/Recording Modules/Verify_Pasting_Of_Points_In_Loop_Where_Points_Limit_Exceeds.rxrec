@@ -397,6 +397,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Copy
 			</comment>
 			<bindings>
 			</bindings>
@@ -409,7 +410,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Copy
+						3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -526,7 +527,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyContextMenuOptionOnRightClickEnabledOrDisabled"
 		namespace="TestProject.Libraries"
@@ -557,6 +558,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Paste
 			</comment>
 			<bindings>
 			</bindings>
@@ -569,14 +571,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Paste
+						1
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPasteButton"
 		namespace="TestProject.Libraries"
@@ -591,7 +593,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPasteButton"
 		namespace="TestProject.Libraries"
@@ -700,6 +702,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Cut
 			</comment>
 			<bindings>
 			</bindings>
@@ -712,7 +715,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Cut
+						2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -804,7 +807,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyContextMenuOptionOnRightClickEnabledOrDisabled"
 		namespace="TestProject.Libraries"
@@ -835,6 +838,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Paste
 			</comment>
 			<bindings>
 			</bindings>
@@ -847,14 +851,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Paste
+						1
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPasteButton"
 		namespace="TestProject.Libraries"
@@ -869,7 +873,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPasteButton"
 		namespace="TestProject.Libraries"

@@ -262,7 +262,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonDisabled"
 		namespace="TestProject.Libraries"
@@ -403,6 +403,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Copy
 			</comment>
 			<bindings>
 			</bindings>
@@ -415,7 +416,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Copy
+						3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -447,7 +448,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyContextMenuOptionOnRightClickEnabledOrDisabled"
 		namespace="TestProject.Libraries"
@@ -472,7 +473,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPasteButton"
 		namespace="TestProject.Libraries"
@@ -485,6 +486,41 @@ rxversion="8.3">
 			id="5a914827-7d0f-4092-b102-e263b7b609b7">
 			</arguments>
 		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickContextMenuOptionOnRightClick"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Paste
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e5f920fa-8d4c-4ddb-8d8b-09ffd070083d">
+				<argument
+				argname="sContextMenuOption"
+				id="f7739765-9e6d-4175-989a-f6d437d045aa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<explicitdelayitem
+		duration="7000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
 		enabled="False"
@@ -743,6 +779,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Cut
 			</comment>
 			<bindings>
 			</bindings>
@@ -755,7 +792,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Cut
+						2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -787,7 +824,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyContextMenuOptionOnRightClickEnabledOrDisabled"
 		namespace="TestProject.Libraries"
@@ -812,7 +849,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPasteButton"
 		namespace="TestProject.Libraries"
@@ -825,6 +862,41 @@ rxversion="8.3">
 			id="5a914827-7d0f-4092-b102-e263b7b609b7">
 			</arguments>
 		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickContextMenuOptionOnRightClick"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Paste
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e5f920fa-8d4c-4ddb-8d8b-09ffd070083d">
+				<argument
+				argname="sContextMenuOption"
+				id="f7739765-9e6d-4175-989a-f6d437d045aa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<explicitdelayitem
+		duration="7000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
 		enabled="True"
@@ -845,7 +917,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 				<argument
@@ -890,7 +962,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						7
+						8
 					</argvalue>
 				</argument>
 				<argument
@@ -935,7 +1007,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						8
+						9
 					</argvalue>
 				</argument>
 				<argument
@@ -980,7 +1052,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						9
+						10
 					</argvalue>
 				</argument>
 				<argument
@@ -1052,7 +1124,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Panel_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddPanels"
 		namespace="TestProject.Libraries"
@@ -1096,7 +1168,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -1121,7 +1193,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -1146,7 +1218,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
@@ -1191,7 +1263,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -1209,7 +1281,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 				<argument
@@ -1236,7 +1308,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -1261,7 +1333,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -1286,7 +1358,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyPasteButtonDisabled"
 		namespace="TestProject.Libraries"
@@ -1301,7 +1373,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
@@ -1336,7 +1408,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
@@ -1371,7 +1443,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -1396,7 +1468,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
@@ -1414,19 +1486,20 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Copy
 			</comment>
 			<bindings>
 			</bindings>
@@ -1439,14 +1512,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Copy
+						3
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
@@ -1464,14 +1537,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyContextMenuOptionOnRightClickEnabledOrDisabled"
 		namespace="TestProject.Libraries"
@@ -1496,7 +1569,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPasteButton"
 		namespace="TestProject.Libraries"
@@ -1507,6 +1580,32 @@ rxversion="8.3">
 			</bindings>
 			<arguments
 			id="5a914827-7d0f-4092-b102-e263b7b609b7">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="clickContextMenuOptionOnRightClick"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Paste
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e5f920fa-8d4c-4ddb-8d8b-09ffd070083d">
+				<argument
+				argname="sContextMenuOption"
+				id="f7739765-9e6d-4175-989a-f6d437d045aa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -1691,7 +1790,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -1736,7 +1835,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
@@ -1754,19 +1853,20 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Cut
 			</comment>
 			<bindings>
 			</bindings>
@@ -1779,14 +1879,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Cut
+						2
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedInventoryGridRow"
 		namespace="TestProject.Libraries"
@@ -1804,14 +1904,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						6
+						7
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyContextMenuOptionOnRightClickEnabledOrDisabled"
 		namespace="TestProject.Libraries"
@@ -1835,8 +1935,34 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="clickContextMenuOptionOnRightClick"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Paste
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="e5f920fa-8d4c-4ddb-8d8b-09ffd070083d">
+				<argument
+				argname="sContextMenuOption"
+				id="f7739765-9e6d-4175-989a-f6d437d045aa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPasteButton"
 		namespace="TestProject.Libraries"
@@ -1851,52 +1977,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyInventoryGridProperties"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="6c044271-0258-4760-9521-580e7ba1d90c">
-				<argument
-				argname="ExpectedInventoryGridRowCount"
-				id="6ed107b1-e438-4122-b420-63f1b2ad44ff">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						6
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedInventoryGridColumn"
-				id="25025bfd-ef67-48f1-8134-a592d9565d62">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Label
-					</argvalue>
-				</argument>
-				<argument
-				argname="ExpectedDeviceProperty"
-				id="810a8504-9ca5-4a67-9b24-bde110504732">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800-5
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -1934,14 +2015,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-6
+						PLX800-5
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -1979,14 +2060,14 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-7
+						PLX800-6
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="InventoryGrid_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyInventoryGridProperties"
 		namespace="TestProject.Libraries"
@@ -2005,6 +2086,51 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						9
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedInventoryGridColumn"
+				id="25025bfd-ef67-48f1-8134-a592d9565d62">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Label
+					</argvalue>
+				</argument>
+				<argument
+				argname="ExpectedDeviceProperty"
+				id="810a8504-9ca5-4a67-9b24-bde110504732">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PLX800-7
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="InventoryGrid_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="verifyInventoryGridProperties"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="6c044271-0258-4760-9521-580e7ba1d90c">
+				<argument
+				argname="ExpectedInventoryGridRowCount"
+				id="6ed107b1-e438-4122-b420-63f1b2ad44ff">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						10
 					</argvalue>
 				</argument>
 				<argument

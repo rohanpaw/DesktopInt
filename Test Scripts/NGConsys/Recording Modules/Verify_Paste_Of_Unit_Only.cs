@@ -118,16 +118,18 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            // Copy
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("3");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            // Paste
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("1");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(17));
@@ -151,16 +153,18 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
+            // Cut
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            // Paste
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("1");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(28));
@@ -175,98 +179,98 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
+            //Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-5");
-            Delay.Milliseconds(0);
+            //Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-5");
+            //Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-5");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-5");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            //Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Copy");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(49));
-            Delay.Duration(45000, false);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(49));
+            //Delay.Duration(45000, false);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX/External Loop Card 3");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 3");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-9");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX/External Loop Card 3");
+            //Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 3");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-9");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 3");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyPasteButtonEnabled();
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Cut");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyPasteButtonEnabled();
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(60));
-            Delay.Duration(45000, false);
+            //Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("7");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 2");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Paste");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-5");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 45s.", new RecordItemIndex(60));
+            //Delay.Duration(45000, false);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX/External Loop Card 2");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-5");
+            //Delay.Milliseconds(0);
             
         }
 

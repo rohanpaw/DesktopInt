@@ -5027,6 +5027,7 @@ namespace TestProject
             RepoItemInfo _custom_in_context_menuInfo;
             RepoItemInfo _panelaccessories_deviceInfo;
             RepoItemInfo _contextmenuoptionInfo;
+            RepoItemInfo _copy_of_contextmenuoptionInfo;
             RepoItemInfo _multipointwizardregioncomboboxInfo;
             RepoItemInfo _modelfilterlistInfo;
             RepoItemInfo _button_baseselectionInfo;
@@ -5065,7 +5066,8 @@ namespace TestProject
                 _txt_gallerylistitemInfo = new RepoItemInfo(this, "txt_GalleryListItem", "list/?/?/listitem[@index=$listItem]/text", 30000, null, "d4f9cda7-2c2c-460c-8c47-9cc8f034e9bc");
                 _custom_in_context_menuInfo = new RepoItemInfo(this, "Custom_In_Context_Menu", "list/button[@text='Custom']", 30000, null, "e6baecb4-0da9-4e26-82d6-b6f66c654770");
                 _panelaccessories_deviceInfo = new RepoItemInfo(this, "PanelAccessories_Device", "list/?/?/listitem[@index=$sDeviceIndex]", 30000, null, "bd9007c8-c307-4845-904b-ca40813f66eb");
-                _contextmenuoptionInfo = new RepoItemInfo(this, "ContextMenuOption", "list/button[@text=$slistindex]", 30000, null, "97af81f2-4164-4836-8a5e-db7a60934f91");
+                _contextmenuoptionInfo = new RepoItemInfo(this, "ContextMenuOption", "?/?/list/element/container/container[2]/container[2]/container[2]/element[$slistindex]", 45000, null, "97af81f2-4164-4836-8a5e-db7a60934f91");
+                _copy_of_contextmenuoptionInfo = new RepoItemInfo(this, "Copy_of_ContextMenuOption", "list/button[@text=$slistindex]", 30000, null, "ee458ed2-9b37-4b20-b5d6-dfa66685be7e");
                 _multipointwizardregioncomboboxInfo = new RepoItemInfo(this, "MultiPointWizardRegionComboBox", "container/?/?/listitem[@index=$sRowIndex]", 30000, null, "387ea824-48ec-43bf-b4f4-9d3c07e4b935");
                 _modelfilterlistInfo = new RepoItemInfo(this, "ModelFilterList", ".//listitem[$sColumnIndex]/text", 30000, null, "8e00dc9e-ec28-4e3c-ad69-1d735a80549c");
                 _button_baseselectionInfo = new RepoItemInfo(this, "Button_BaseSelection", "list/button", 30000, null, "cf024b5a-a7c8-4e3c-8cde-a9e25d5ec386");
@@ -5495,11 +5497,11 @@ namespace TestProject
             /// The ContextMenuOption item.
             /// </summary>
             [RepositoryItem("97af81f2-4164-4836-8a5e-db7a60934f91")]
-            public virtual Ranorex.Button ContextMenuOption
+            public virtual Ranorex.Unknown ContextMenuOption
             {
                 get
                 {
-                    return _contextmenuoptionInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _contextmenuoptionInfo.CreateAdapter<Ranorex.Unknown>(true);
                 }
             }
 
@@ -5512,6 +5514,30 @@ namespace TestProject
                 get
                 {
                     return _contextmenuoptionInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_ContextMenuOption item.
+            /// </summary>
+            [RepositoryItem("ee458ed2-9b37-4b20-b5d6-dfa66685be7e")]
+            public virtual Ranorex.Button Copy_of_ContextMenuOption
+            {
+                get
+                {
+                    return _copy_of_contextmenuoptionInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_ContextMenuOption item info.
+            /// </summary>
+            [RepositoryItemInfo("ee458ed2-9b37-4b20-b5d6-dfa66685be7e")]
+            public virtual RepoItemInfo Copy_of_ContextMenuOptionInfo
+            {
+                get
+                {
+                    return _copy_of_contextmenuoptionInfo;
                 }
             }
 
@@ -6640,11 +6666,15 @@ namespace TestProject
             RepoItemInfo _copy_of_deviceorder_txtInfo;
             RepoItemInfo _pointsgridcontainerInfo;
             RepoItemInfo _tab_powercalculationsInfo;
+            RepoItemInfo _copy_of_tab_powercalculationsInfo;
             RepoItemInfo _loadingdetailsprogressbarInfo;
             RepoItemInfo _powercalculationtextInfo;
+            RepoItemInfo _copy_of_powercalculationtextInfo;
             RepoItemInfo _powercalculationcontainerInfo;
+            RepoItemInfo _copy_of_powercalculationcontainerInfo;
             RepoItemInfo _physicallayoutindex_isunitsInfo;
             RepoItemInfo _powercalculationtext_singleInfo;
+            RepoItemInfo _copy_of_powercalculationtext_singleInfo;
             RepoItemInfo _cell_cablecapacitanceafterreopenInfo;
             RepoItemInfo _txt_cablecapcitanceafterreopenInfo;
             RepoItemInfo _copy_of_txt_cablecapcitanceafterreopenInfo;
@@ -6818,6 +6848,7 @@ namespace TestProject
             RepoItemInfo _txt_labelname1Info;
             RepoItemInfo _copy_of_txt_labelname11Info;
             RepoItemInfo _txt_labelnameforonerowInfo;
+            RepoItemInfo _singlerowInfo;
             RepoItemInfo _txt_labelnameforrbusonerowInfo;
             RepoItemInfo _txt_labelnameforrbusonerowonreopenInfo;
             RepoItemInfo _txt_labelnameforrbusrowInfo;
@@ -6863,6 +6894,7 @@ namespace TestProject
             RepoItemInfo _install_btninstallInfo;
             RepoItemInfo _install_btncloseInfo;
             RepoItemInfo _install_installationcompleteInfo;
+            RepoItemInfo _somerowInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -6961,12 +6993,16 @@ namespace TestProject
                 _deviceorder_txtInfo = new RepoItemInfo(this, "DeviceOrder_txt", "progressbar/list[@automationid='PART_BarContainerControl']/table[@automationid='PointTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[2]/container[$sDeviceOrderRow]/row/cell[4]/text", 30000, null, "6f54687f-cb09-44f1-b713-1a74f83a08b1");
                 _copy_of_deviceorder_txtInfo = new RepoItemInfo(this, "Copy_of_DeviceOrder_txt", "progressbar/list[@automationid='PART_BarContainerControl']/table/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']/container[$sDeviceOrderRow]/row/cell[5]/text", 30000, null, "96323495-ebf3-4e4e-ab6e-0364af23be39");
                 _pointsgridcontainerInfo = new RepoItemInfo(this, "PointsGridContainer", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='rowPresenterGrid']/container[@caption='']/container[@caption='']", 30000, null, "329b1c63-3379-4a19-8eb1-ecc0b8114bd8");
-                _tab_powercalculationsInfo = new RepoItemInfo(this, "tab_PowerCalculations", "progressbar/list/picture[2]/text[@automationid='PART_Text']", 30000, null, "8f6f2399-743a-4a04-aa72-57076af76c49");
+                _tab_powercalculationsInfo = new RepoItemInfo(this, "tab_PowerCalculations", "progressbar/list[4]/text[@text='Power Calculations']", 30000, null, "8f6f2399-743a-4a04-aa72-57076af76c49");
+                _copy_of_tab_powercalculationsInfo = new RepoItemInfo(this, "Copy_of_tab_PowerCalculations", "progressbar/list/picture[2]/text[@automationid='PART_Text']", 30000, null, "6c0c5811-fdd0-40a7-b0fc-766833714dc8");
                 _loadingdetailsprogressbarInfo = new RepoItemInfo(this, "LoadingDetailsProgressbar", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/?/?/progressbar", 30000, null, "623372f6-b5b2-4acf-9362-caaf691ea8c8");
-                _powercalculationtextInfo = new RepoItemInfo(this, "PowerCalculationText", "progressbar/picture[8]/indicator[@automationid='PART_LoadingPanel']/table/container[8]/container[2]/container[$sRow]//text", 30000, null, "3b4a76ce-b2eb-484b-9f20-f84add53e946");
-                _powercalculationcontainerInfo = new RepoItemInfo(this, "PowerCalculationContainer", "progressbar/picture[8]/indicator[@automationid='PART_LoadingPanel']/table/container[8]/container[2]", 30000, null, "624b74c4-b964-464f-8ae4-72797ba13433");
+                _powercalculationtextInfo = new RepoItemInfo(this, "PowerCalculationText", "progressbar/picture[@automationid='PART_Image']/indicator[@automationid='PART_LoadingPanel']/table/container[7]/container[$sRow]//text", 30000, null, "3b4a76ce-b2eb-484b-9f20-f84add53e946");
+                _copy_of_powercalculationtextInfo = new RepoItemInfo(this, "Copy_of_PowerCalculationText", "progressbar/picture[8]/indicator[@automationid='PART_LoadingPanel']/table/container[8]/container[2]/container[$sRow]//text", 30000, null, "967b13d5-6c61-4f47-bcc1-643169fa11f3");
+                _powercalculationcontainerInfo = new RepoItemInfo(this, "PowerCalculationContainer", "progressbar/picture[@automationid='PART_Image']/indicator[@automationid='PART_LoadingPanel']/table/container[7]", 30000, null, "624b74c4-b964-464f-8ae4-72797ba13433");
+                _copy_of_powercalculationcontainerInfo = new RepoItemInfo(this, "Copy_of_PowerCalculationContainer", "progressbar/picture[8]/indicator[@automationid='PART_LoadingPanel']/table/container[8]/container[2]", 30000, null, "a2ae9e73-9e35-452c-aaee-61c1234b93d0");
                 _physicallayoutindex_isunitsInfo = new RepoItemInfo(this, "PhysicalLayoutIndex_ISUnits", "progressbar/list[5]/listitem[@index=$sPhysicalLayoutDeviceIndex]", 30000, null, "96f190cc-8b27-42ef-a726-e3cbf1ba68d2");
-                _powercalculationtext_singleInfo = new RepoItemInfo(this, "PowerCalculationText_Single", "progressbar/picture[8]/indicator[@automationid='PART_LoadingPanel']/table//row/?/?/text[1]", 30000, null, "aca27bc5-a62a-47e9-94c2-3d360f955b9d");
+                _powercalculationtext_singleInfo = new RepoItemInfo(this, "PowerCalculationText_Single", "progressbar/picture/indicator[@automationid='PART_LoadingPanel']/table/container[7]/?/?/row/?/?/text[1]", 30000, null, "aca27bc5-a62a-47e9-94c2-3d360f955b9d");
+                _copy_of_powercalculationtext_singleInfo = new RepoItemInfo(this, "Copy_of_PowerCalculationText_Single", "progressbar/picture[8]/indicator[@automationid='PART_LoadingPanel']/table//row/?/?/text[1]", 30000, null, "7b59f9be-c5af-40ca-8fd0-8b7440c14ea7");
                 _cell_cablecapacitanceafterreopenInfo = new RepoItemInfo(this, "cell_CableCapacitanceAfterReopen", "progressbar/list[@automationid='PART_BarContainerControl']/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']/cell[@isheader='False']", 30000, null, "025d9763-6d99-4930-86e5-9323b44c1665");
                 _txt_cablecapcitanceafterreopenInfo = new RepoItemInfo(this, "txt_CableCapcitanceAfterReopen", "progressbar/list[@automationid='PART_BarContainerControl']/table/list/container[@automationid='PART_ItemsPresenter']//text[@automationid='PART_Editor']", 30000, null, "62c74837-8a09-475d-bb58-afe9f4929fce");
                 _copy_of_txt_cablecapcitanceafterreopenInfo = new RepoItemInfo(this, "Copy_of_txt_CableCapcitanceAfterReopen", "progressbar/picture[4]/?/?/table/list/container[@automationid='PART_ItemsPresenter']/row[@index='7']//text[@automationid='PART_Editor']", 30000, null, "43ccd628-1247-42f5-b661-2e510ba54804");
@@ -7118,12 +7154,12 @@ namespace TestProject
                 _copy_of_txt_maxloadingdetailsvalueInfo = new RepoItemInfo(this, "Copy_of_txt_MaxLoadingDetailsValue", "progressbar//descendant-or-self::*//text[@text='Current (DC Units)']/following-sibling::cell//text[3]", 60000, null, "60c95339-acb7-40bd-9c7e-8a54d7649e34");
                 _loadingdetailsprogressbarcolorInfo = new RepoItemInfo(this, "LoadingDetailsProgressbarColor", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//progressbar", 90000, null, "99d9a410-5c33-4ff5-a73e-52776010ac39");
                 _copy_of_loadingdetailsprogressbarcolorInfo = new RepoItemInfo(this, "Copy_of_LoadingDetailsProgressbarColor", "progressbar//descendant-or-self::*//text[@text='Signal (AC Units)']/following-sibling::cell//progressbar", 60000, null, "4a28a79b-608d-4826-948f-1d29eb2019f9");
-                _txt_actualloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "txt_ActualLoadingDetailsValueAfterReopen", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]", 90000, null, "43c10983-3a80-4c6b-b6c2-bc03dd453f58");
+                _txt_actualloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "txt_ActualLoadingDetailsValueAfterReopen", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]", 150000, null, "43c10983-3a80-4c6b-b6c2-bc03dd453f58");
                 _copy_of_txt_actualloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "Copy_of_txt_ActualLoadingDetailsValueAfterReopen", "progressbar//descendant-or-self::*//text[@text='Current (DC Units)']/following-sibling::cell/?/text[1]", 60000, null, "dfc1020f-cc89-45ac-9984-9ee94cd70abb");
                 _loadingdetailsprogressbarcolorafterreopenInfo = new RepoItemInfo(this, "LoadingDetailsProgressbarColorAfterReopen", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//progressbar", 60000, null, "4ad38f73-010d-4bfb-b90c-056ff046f043");
                 _optionsInfo = new RepoItemInfo(this, "Options", ".//container[@name='PART_Content' and @caption='Options']/text[@caption='Options']", 90000, null, "7b143d8b-666d-4e30-8cee-5c95a0e42acc");
                 _chkbox_enableisdevicesInfo = new RepoItemInfo(this, "chkBox_EnableISDevices", ".//container[@automationid='me']/button[@automationid='PART_Editor']/text[@caption='Enable IS Devices']", 60000, null, "3f7c8053-291e-4d27-96ed-f6cf85efa9e7");
-                _txt_maxloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "txt_MaxLoadingDetailsValueAfterReopen", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]", 90000, null, "f96ead01-b71d-42ad-ae18-248ab1a57744");
+                _txt_maxloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "txt_MaxLoadingDetailsValueAfterReopen", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]", 150000, null, "f96ead01-b71d-42ad-ae18-248ab1a57744");
                 _btn_backInfo = new RepoItemInfo(this, "btn_back", "?/?/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']", 60000, null, "b3daf139-dd16-413d-b42d-705e8bb2f5be");
                 _fileInfo = new RepoItemInfo(this, "File", "?/?/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']/?/?/text[@text='File']", 90000, null, "e5b15281-a87a-4eb9-8577-339826badfc4");
                 _newInfo = new RepoItemInfo(this, "New", ".//text[@text='New']", 60000, null, "2ac99ae1-11c3-43c7-a66c-3159d037b932");
@@ -7140,6 +7176,7 @@ namespace TestProject
                 _txt_labelname1Info = new RepoItemInfo(this, "txt_LabelName1", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text=$sLabelName]", 90000, null, "e93ef5e7-f1ea-4b48-affa-7fa0bae38354");
                 _copy_of_txt_labelname11Info = new RepoItemInfo(this, "Copy_of_txt_LabelName11", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text='801 CH - 1']", 90000, null, "75b4c5b8-76c7-4b2e-aad2-4c470eb405f5");
                 _txt_labelnameforonerowInfo = new RepoItemInfo(this, "txt_LabelNameForOneRow", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row/cell[5]/text[@text=$sLabelName]", 90000, null, "ff318881-96d4-4b8c-a1b6-da59c70ae22a");
+                _singlerowInfo = new RepoItemInfo(this, "SingleRow", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row", 90000, null, "6734931c-c57d-4c8b-b7b2-cfc6cf7079da");
                 _txt_labelnameforrbusonerowInfo = new RepoItemInfo(this, "txt_LabelNameForRBusOneRow", "progressbar/list[9]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row/cell[3]/text[@text=$sLabelName]", 90000, null, "e138aa72-5ed6-4547-b19c-c1a0ceef4ee1");
                 _txt_labelnameforrbusonerowonreopenInfo = new RepoItemInfo(this, "txt_LabelNameForRBusOneRowOnReopen", "progressbar/list[8]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row/cell[3]/text[@text=$sLabelName]", 90000, null, "1e63460f-d4e4-4281-aa12-5eef2869c68e");
                 _txt_labelnameforrbusrowInfo = new RepoItemInfo(this, "txt_LabelNameForRBusRow", "progressbar/list[9]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[3]/text[@caption=$sLabelName]", 72000, null, "248fd947-7a2c-4673-a394-1a3a656e412a");
@@ -7185,6 +7222,7 @@ namespace TestProject
                 _install_btninstallInfo = new RepoItemInfo(this, "Install_BtnInstall", "?/?/text[@text='Install']", 45000, null, "dd04891b-4b4c-4afa-8098-0529b9fac708");
                 _install_btncloseInfo = new RepoItemInfo(this, "Install_BtnClose", "?/?/?/text[@text='Close']", 45000, null, "f0bceb65-ea3e-4dbe-888f-880553f434ee");
                 _install_installationcompleteInfo = new RepoItemInfo(this, "Install_InstallationComplete", "?/?/text[@text='Installation is complete.']", 45000, null, "ff411136-8256-4fa2-890e-ab95defd8ee9");
+                _somerowInfo = new RepoItemInfo(this, "somerow", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[1]/row", 30000, null, "6af4cb0b-b3bd-48e1-b826-ab29375a2be2");
             }
 
             /// <summary>
@@ -9525,6 +9563,30 @@ namespace TestProject
             }
 
             /// <summary>
+            /// The Copy_of_tab_PowerCalculations item.
+            /// </summary>
+            [RepositoryItem("6c0c5811-fdd0-40a7-b0fc-766833714dc8")]
+            public virtual Ranorex.Text Copy_of_tab_PowerCalculations
+            {
+                get
+                {
+                    return _copy_of_tab_powercalculationsInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_tab_PowerCalculations item info.
+            /// </summary>
+            [RepositoryItemInfo("6c0c5811-fdd0-40a7-b0fc-766833714dc8")]
+            public virtual RepoItemInfo Copy_of_tab_PowerCalculationsInfo
+            {
+                get
+                {
+                    return _copy_of_tab_powercalculationsInfo;
+                }
+            }
+
+            /// <summary>
             /// The LoadingDetailsProgressbar item.
             /// </summary>
             [RepositoryItem("623372f6-b5b2-4acf-9362-caaf691ea8c8")]
@@ -9573,6 +9635,30 @@ namespace TestProject
             }
 
             /// <summary>
+            /// The Copy_of_PowerCalculationText item.
+            /// </summary>
+            [RepositoryItem("967b13d5-6c61-4f47-bcc1-643169fa11f3")]
+            public virtual Ranorex.Text Copy_of_PowerCalculationText
+            {
+                get
+                {
+                    return _copy_of_powercalculationtextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_PowerCalculationText item info.
+            /// </summary>
+            [RepositoryItemInfo("967b13d5-6c61-4f47-bcc1-643169fa11f3")]
+            public virtual RepoItemInfo Copy_of_PowerCalculationTextInfo
+            {
+                get
+                {
+                    return _copy_of_powercalculationtextInfo;
+                }
+            }
+
+            /// <summary>
             /// The PowerCalculationContainer item.
             /// </summary>
             [RepositoryItem("624b74c4-b964-464f-8ae4-72797ba13433")]
@@ -9593,6 +9679,30 @@ namespace TestProject
                 get
                 {
                     return _powercalculationcontainerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_PowerCalculationContainer item.
+            /// </summary>
+            [RepositoryItem("a2ae9e73-9e35-452c-aaee-61c1234b93d0")]
+            public virtual Ranorex.Container Copy_of_PowerCalculationContainer
+            {
+                get
+                {
+                    return _copy_of_powercalculationcontainerInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_PowerCalculationContainer item info.
+            /// </summary>
+            [RepositoryItemInfo("a2ae9e73-9e35-452c-aaee-61c1234b93d0")]
+            public virtual RepoItemInfo Copy_of_PowerCalculationContainerInfo
+            {
+                get
+                {
+                    return _copy_of_powercalculationcontainerInfo;
                 }
             }
 
@@ -9641,6 +9751,30 @@ namespace TestProject
                 get
                 {
                     return _powercalculationtext_singleInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_PowerCalculationText_Single item.
+            /// </summary>
+            [RepositoryItem("7b59f9be-c5af-40ca-8fd0-8b7440c14ea7")]
+            public virtual Ranorex.Text Copy_of_PowerCalculationText_Single
+            {
+                get
+                {
+                    return _copy_of_powercalculationtext_singleInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_PowerCalculationText_Single item info.
+            /// </summary>
+            [RepositoryItemInfo("7b59f9be-c5af-40ca-8fd0-8b7440c14ea7")]
+            public virtual RepoItemInfo Copy_of_PowerCalculationText_SingleInfo
+            {
+                get
+                {
+                    return _copy_of_powercalculationtext_singleInfo;
                 }
             }
 
@@ -13797,6 +13931,30 @@ namespace TestProject
             }
 
             /// <summary>
+            /// The SingleRow item.
+            /// </summary>
+            [RepositoryItem("6734931c-c57d-4c8b-b7b2-cfc6cf7079da")]
+            public virtual Ranorex.Row SingleRow
+            {
+                get
+                {
+                    return _singlerowInfo.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SingleRow item info.
+            /// </summary>
+            [RepositoryItemInfo("6734931c-c57d-4c8b-b7b2-cfc6cf7079da")]
+            public virtual RepoItemInfo SingleRowInfo
+            {
+                get
+                {
+                    return _singlerowInfo;
+                }
+            }
+
+            /// <summary>
             /// The txt_LabelNameForRBusOneRow item.
             /// </summary>
             [RepositoryItem("e138aa72-5ed6-4547-b19c-c1a0ceef4ee1")]
@@ -14875,6 +15033,30 @@ namespace TestProject
                     return _install_installationcompleteInfo;
                 }
             }
+
+            /// <summary>
+            /// The somerow item.
+            /// </summary>
+            [RepositoryItem("6af4cb0b-b3bd-48e1-b826-ab29375a2be2")]
+            public virtual Ranorex.Row somerow
+            {
+                get
+                {
+                    return _somerowInfo.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The somerow item info.
+            /// </summary>
+            [RepositoryItemInfo("6af4cb0b-b3bd-48e1-b826-ab29375a2be2")]
+            public virtual RepoItemInfo somerowInfo
+            {
+                get
+                {
+                    return _somerowInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -14895,6 +15077,9 @@ namespace TestProject
             RepoItemInfo _copy_of_searchbox_export1Info;
             RepoItemInfo _mail_exportInfo;
             RepoItemInfo _print1Info;
+            RepoItemInfo _printpreviewpageInfo;
+            RepoItemInfo _btn_maximizeInfo;
+            RepoItemInfo _btn_crossInfo;
 
             /// <summary>
             /// Creates a new PrintPreview  folder.
@@ -14905,7 +15090,7 @@ namespace TestProject
                 _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "?/?/container[@automationid='PART_HeaderBorder']/button[@automationid='PART_CloseButton']", 30000, null, "143c5434-4ee7-4582-9b76-f7136459f644");
                 _partmaximizeInfo = new RepoItemInfo(this, "PARTMaximize", "?/?/button[@automationid='PART_Maximize']", 30000, null, "ba741b31-3c34-4b05-b54b-79946f6e6659");
                 _exportdropdownInfo = new RepoItemInfo(this, "ExportDropdown", "?/?/button[@text='Export...']", 30000, null, "132c808b-0d42-40b5-8781-939a5e68c753");
-                _btn_closebInfo = new RepoItemInfo(this, "btn_CloseB", "?/?/button[@automationid='PART_CloseButton']", 60000, null, "da5d2408-f0f2-47f7-8850-f47457d51ea8");
+                _btn_closebInfo = new RepoItemInfo(this, "btn_CloseB", "?/?/button[@accessiblename='Close']", 60000, null, "da5d2408-f0f2-47f7-8850-f47457d51ea8");
                 _searchexport1Info = new RepoItemInfo(this, "SearchExport1", "list[2]/button[@automationid='PART_Button']/container[8]", 60000, null, "572233f7-0117-4a2a-8fe7-1840685d3cf9");
                 _copy_of_searchexport1Info = new RepoItemInfo(this, "Copy_of_SearchExport1", "?/?/button[@text='Search']", 60000, null, "184afbda-c46f-40c6-8e51-812e0755a4a2");
                 _nomatches_inexportInfo = new RepoItemInfo(this, "NoMatches_InExport", "?/?/picture[@automationid='PART_Image']/container[@caption='']/?/?/text[@caption='No matches']", 30000, null, "e0653c37-bd77-406c-ad9d-ef2fc77ba3a4");
@@ -14914,6 +15099,9 @@ namespace TestProject
                 _copy_of_searchbox_export1Info = new RepoItemInfo(this, "Copy_of_SearchBox_Export1", "?/?/picture[@automationid='PART_Image']/?/?/text[@automationid='PART_SearchBox']", 60000, null, "2c136822-d32c-45e1-a4f9-5efc2c71821e");
                 _mail_exportInfo = new RepoItemInfo(this, "Mail_Export", "?/?/button[@text='Send...']", 30000, null, "98c5f48a-e6d1-4354-9912-b196ef43a0fc");
                 _print1Info = new RepoItemInfo(this, "Print1", "?/?/button[@text='Print...']", 30000, null, "04aa1e56-7676-4f7e-b697-8eeea5ff2ff1");
+                _printpreviewpageInfo = new RepoItemInfo(this, "PrintPreviewPage", "?/?/picture[@automationid='PART_NativeImage']", 30000, null, "6318681a-3699-4898-beff-100d4ec1a31b");
+                _btn_maximizeInfo = new RepoItemInfo(this, "btn_Maximize", "?/?/button[@accessiblename='Maximize']", 30000, null, "aca56da3-340c-4d1d-9e09-7fe697bda4c7");
+                _btn_crossInfo = new RepoItemInfo(this, "btn_Cross", "?/?/picture[@automationid='PART_Image']//list[@automationid='PART_RightButtons']/button[1]", 30000, null, "2e18880e-cb04-41af-b66c-aab75a627db4");
             }
 
             /// <summary>
@@ -15225,6 +15413,78 @@ namespace TestProject
                 get
                 {
                     return _print1Info;
+                }
+            }
+
+            /// <summary>
+            /// The PrintPreviewPage item.
+            /// </summary>
+            [RepositoryItem("6318681a-3699-4898-beff-100d4ec1a31b")]
+            public virtual Ranorex.Picture PrintPreviewPage
+            {
+                get
+                {
+                    return _printpreviewpageInfo.CreateAdapter<Ranorex.Picture>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PrintPreviewPage item info.
+            /// </summary>
+            [RepositoryItemInfo("6318681a-3699-4898-beff-100d4ec1a31b")]
+            public virtual RepoItemInfo PrintPreviewPageInfo
+            {
+                get
+                {
+                    return _printpreviewpageInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btn_Maximize item.
+            /// </summary>
+            [RepositoryItem("aca56da3-340c-4d1d-9e09-7fe697bda4c7")]
+            public virtual Ranorex.Button btn_Maximize
+            {
+                get
+                {
+                    return _btn_maximizeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btn_Maximize item info.
+            /// </summary>
+            [RepositoryItemInfo("aca56da3-340c-4d1d-9e09-7fe697bda4c7")]
+            public virtual RepoItemInfo btn_MaximizeInfo
+            {
+                get
+                {
+                    return _btn_maximizeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btn_Cross item.
+            /// </summary>
+            [RepositoryItem("2e18880e-cb04-41af-b66c-aab75a627db4")]
+            public virtual Ranorex.Button btn_Cross
+            {
+                get
+                {
+                    return _btn_crossInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btn_Cross item info.
+            /// </summary>
+            [RepositoryItemInfo("2e18880e-cb04-41af-b66c-aab75a627db4")]
+            public virtual RepoItemInfo btn_CrossInfo
+            {
+                get
+                {
+                    return _btn_crossInfo;
                 }
             }
         }
@@ -16786,7 +17046,7 @@ namespace TestProject
             public FormDeleteSpurAppFolder(RepoGenBaseFolder parentFolder) :
                     base("FormDeleteSpur", "/form[@title='Delete Spur']", parentFolder, 30000, null, true, "fba40bbd-4ab8-4c6e-8357-35ad6aef7f8b", "")
             {
-                _btn_ok_warningInfo = new RepoItemInfo(this, "btn_Ok_Warning", "?/?/button[@text='OK']", 30000, null, "7c66f402-72a7-48d9-8bf1-498254111c45");
+                _btn_ok_warningInfo = new RepoItemInfo(this, "btn_Ok_Warning", "?/?/button[@text='OK']", 45000, null, "7c66f402-72a7-48d9-8bf1-498254111c45");
             }
 
             /// <summary>

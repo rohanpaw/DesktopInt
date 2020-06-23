@@ -484,14 +484,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************************************************************
+		/*****************************************************************************************************************************
 		 * Function Name: VerifyDCUnitsAndWorstCaseIndicators
 		 * Function Details: To verify DC unit,  worst cases indicators and its color
 		 * Parameter/Arguments: fileName, sheetName of add device
 		 * Output:
 		 * Function Owner: Poonam Kadam
-		 * Last Update :
-		 ********************************************************************************************************************/
+		 * Last Update : Alpesh Dhakad - 23/06/2020 Added EditPoweredValue method with Loop Powered steps as per new implementation
+		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDCUnitsAndWorstCaseIndicators(string sFileName,string sAddDevicesSheet)
 		{
@@ -511,6 +511,8 @@ namespace TestProject.Libraries
 				for( int i=1;i<=Qty;i++)
 				{
 					Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
+					
+					Devices_Functions.EditPoweredValue("Powered","Loop Powered");
 				}
 				
 				float expectedDCUnits = float.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,4]).Value.ToString());
@@ -658,8 +660,11 @@ namespace TestProject.Libraries
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
 				// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
 					
+				// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
 				
 			}
 			//Select Physical Layout tab

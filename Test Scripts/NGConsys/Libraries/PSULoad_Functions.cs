@@ -5349,7 +5349,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables type
-			string PanelType,sExpectedPowerCalculationText,sDeviceName,sLabelName,LoadingDetailsNamefor40V,LoadingDetailsNameforDC;
+			string PanelType,sExpectedPowerCalculationText,sDeviceName,sLabelName,LoadingDetailsNamefor40V,LoadingDetailsNameforDC,sType,sPoweredValue;
 			int DeviceQty;
 			
 			// For loop to iterate on data present in excel
@@ -5360,17 +5360,56 @@ namespace TestProject.Libraries
 				DeviceQty=  int.Parse(((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString());
 				
 				sExpectedPowerCalculationText= ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sType=  ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				sPoweredValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				
 				PanelType= ((Range)Excel_Utilities.ExcelRange.Cells[5,5]).Value.ToString();
 				
 				LoadingDetailsNamefor40V= ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
 				LoadingDetailsNameforDC= ((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
 				
-				Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,DeviceQty);
+				
+				
+				
+				//Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,DeviceQty);
+				
+				Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
+				
+				Devices_Functions.EditPoweredValue("Powered", sPoweredValue);
+				
+				
+				
+				if(repo.FormMe.SingleRowInfo.Exists())
+				{
+					repo.FormMe.SingleRow.Click(System.Windows.Forms.MouseButtons.Right);
+				}
+				
+				//Devices_Functions.RightClickOnSelectedRow("1");
+					Devices_Functions.clickContextMenuOptionOnRightClick("3");
+					
+				for(int j=2; j<=DeviceQty; j++)
+				{
+					//repo.FormMe.txt_LabelName1.Click(System.Windows.Forms.MouseButtons.Right);;
+					if(repo.FormMe.SingleRowInfo.Exists())
+					{
+					repo.FormMe.SingleRow.Click(System.Windows.Forms.MouseButtons.Right);
+					}
+					else
+					{
+						sRowIndex="1";
+						//Devices_Functions.SelectPointsGridRow("1");
+						repo.FormMe.PointsGridRow.Click(System.Windows.Forms.MouseButtons.Right);
+					}
+					Devices_Functions.clickContextMenuOptionOnRightClick("1");
+				}
 				
 				//verifyPowerCalculationsFor40V(PanelType);
 				
+				Common_Functions.clickOnPanelCalculationsTab();
+				
 				Devices_Functions.verifyLoadingDetailColor(LoadingDetailsNamefor40V);
+				
+				Common_Functions.clickOnPropertiesTab();
 				
 				// Verify
 				//verifyPowerCalculationsForDCUnits(PanelType);

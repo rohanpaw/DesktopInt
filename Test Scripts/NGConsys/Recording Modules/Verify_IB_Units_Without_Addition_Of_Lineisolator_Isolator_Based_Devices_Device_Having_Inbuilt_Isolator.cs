@@ -91,7 +91,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400PH", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("460PH", "Detectors");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("410BDM", "Detectors");
@@ -109,14 +109,26 @@ namespace TestProject.Recording_Modules
             //Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("400PH", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
             //Delay.Milliseconds(0);
             
+            Libraries.Devices_Functions.RightClickOnSelectedRow("2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("8");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("410RIM", ValueConverter.ArgumentFromString<int>("DeviceQty", "5"));
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("410BDM - 2");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnCutButton();
+            Libraries.Devices_Functions.RightClickOnSelectedRow("2");
             Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("2");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnCutButton();
+            //Delay.Milliseconds(0);
             
             Libraries.IS_Functions.VerifyIsolatorUnits("26", "FIM");
             Delay.Milliseconds(0);
