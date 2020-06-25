@@ -5204,7 +5204,7 @@ rxversion="8.3">
 			id="4605b73e-00b5-4c8c-9986-ef5ce3021bfb"
 			name="Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template">
 				<description>
-					<![CDATA[<p>NGC-571/TC-181 OR NGC-1542&nbsp; Test Data needs to be updated.</p><p>Note : To test with more panels we need to update the panel name and test data</p>]]>
+					<![CDATA[<p>NGC-571/TC-181 OR NGC-1542&nbsp; Test Data updated.</p><p>Note : To test with more panels we need to update the panel name and test data</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10413,7 +10413,7 @@ MxDesigner]]>
 			id="858d9d76-4dae-4d43-b582-cfac67117bf3"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Slot_Cards">
 				<description>
-					<![CDATA[<p>NGC-571/TC-183 OR NGC-1608</p>]]>
+					<![CDATA[<p>NGC-571/TC-183 OR NGC-1608 Defect-3304</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -24837,6 +24837,9 @@ persisted in panel properties&nbsp;]]>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="Voltage_Calculation">

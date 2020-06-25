@@ -27,21 +27,6 @@ rxversion="8.3">
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="EnableISDevices"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="90340d02-d5ae-4de2-9d6d-c3de8f26b0c8">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -196,10 +181,35 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
+		methodname="AddDevicesfromMultiplePointWizard"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -219,13 +229,13 @@ rxversion="8.3">
 					</argvalue>
 				</argument>
 				<argument
-				argname="sType"
+				argname="DeviceQty"
 				id="78d6fbeb-dafd-408f-8633-2b270148a75f">
 					<argvaluetype>
-						System.String
+						System.Int32
 					</argvaluetype>
 					<argvalue>
-						Detectors
+						1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -286,6 +296,66 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						Other
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-B
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromMultiplePointWizard"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="6f10e938-4f82-4e20-adef-223b09020c8e">
+				<argument
+				argname="sDeviceName"
+				id="27e26c92-be81-437c-95cf-42ddc982b89a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						801 CH
+					</argvalue>
+				</argument>
+				<argument
+				argname="DeviceQty"
+				id="78d6fbeb-dafd-408f-8633-2b270148a75f">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
 					</argvalue>
 				</argument>
 			</arguments>

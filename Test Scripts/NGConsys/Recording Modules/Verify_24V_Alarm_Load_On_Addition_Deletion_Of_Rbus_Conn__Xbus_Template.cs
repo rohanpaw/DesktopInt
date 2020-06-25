@@ -118,7 +118,7 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.348", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.348", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.320", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
@@ -129,6 +129,9 @@ namespace TestProject.Recording_Modules
             
             Libraries.Devices_Functions.additionOfDevicesForXBus("Verify_24V_Alarm_Load_On_Addition_Deletion_Of_RBus_And_XBus", "Add XBus Devices", "FIM");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(17));
+            Delay.Duration(5000, false);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);

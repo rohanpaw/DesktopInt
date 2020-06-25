@@ -2857,6 +2857,8 @@ namespace TestProject.Libraries
 				
 				AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 				Report.Log(ReportLevel.Info, "Device "+ModelNumber+" added successfully");
+				
+				Thread.Sleep(4000);
 			}
 			
 			//Close opened excel sheet
@@ -8951,6 +8953,24 @@ namespace TestProject.Libraries
 			
 		}
 		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelNameForEXIDevice
+		 * Function Details: To select item from grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad 
+		 * Last Update : 24/06/2020
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameForEXIDevice(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_LabelNameForEXI.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
 		
 	}
 }

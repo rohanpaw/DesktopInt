@@ -336,9 +336,9 @@ namespace TestProject.Libraries
 			clickOnExportButton();
 			Delay.Milliseconds(200);
 			
-			clickOnSearchButton();
-			Delay.Milliseconds(200);
-			
+//			clickOnSearchButton();
+//			Delay.Milliseconds(200);
+//			
 			//Click on Search button
 			//repo.PrintPreview.SearchExport1.Click();
 			

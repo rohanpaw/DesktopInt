@@ -14632,9 +14632,16 @@ AAAAAElFTkSuQmCC
 			<item
 			capname="text"
 			id="75b4c5b8-76c7-4b2e-aad2-4c470eb405f5"
-			name="Copy_of_txt_LabelName11"
+			name="txt_LabelNameForEXI"
 			searchtimeout="90000ms">
-				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text='801 CH - 1']
+				/form[@automationid='me']/progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text=$sLabelName]
+			</item>
+			<item
+			capname="text"
+			id="b85d8c78-d42c-4fb9-a6c9-760c3739a998"
+			name="Copy_of_txt_LabelNameForEXI"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text='Exi800 - 1']
 			</item>
 			<item
 			capname="text"

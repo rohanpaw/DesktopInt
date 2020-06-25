@@ -370,6 +370,15 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
@@ -405,14 +414,65 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						410RIM - 1
+						410RIM - 2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="RightClickOnSelectedRow"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f2078e4e-88d0-491e-b440-9f07f5299223">
+				<argument
+				argname="RowNumber"
+				id="adc43614-5b9e-4340-ad13-b81c6708ec2d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickContextMenuOptionOnRightClick"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Delete
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f2078e4e-88d0-491e-b440-9f07f5299223">
+				<argument
+				argname="sContextMenuOption"
+				id="adc43614-5b9e-4340-ad13-b81c6708ec2d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnDeleteButton"
 		namespace="TestProject.Libraries"
@@ -485,6 +545,15 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<explicitdelayitem
+		duration="5000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
@@ -502,7 +571,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelName"
 		namespace="TestProject.Libraries"
@@ -520,14 +589,65 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						410RIM - 2
+						410RIM - 3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="RightClickOnSelectedRow"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f2078e4e-88d0-491e-b440-9f07f5299223">
+				<argument
+				argname="RowNumber"
+				id="adc43614-5b9e-4340-ad13-b81c6708ec2d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickContextMenuOptionOnRightClick"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Delete
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="f2078e4e-88d0-491e-b440-9f07f5299223">
+				<argument
+				argname="sContextMenuOption"
+				id="adc43614-5b9e-4340-ad13-b81c6708ec2d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnDeleteButton"
 		namespace="TestProject.Libraries"

@@ -112,20 +112,8 @@ namespace TestProject.Recording_Modules
             Libraries.IS_Functions.VerifyIsolatorUnitsAndIndicator("100", "PINK", "FIM");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPointsTab();
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelName("410RIM - 1");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnDeleteButton();
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
-            Delay.Milliseconds(0);
-            
-            Libraries.IS_Functions.VerifyIsolatorUnitsAndIndicator("95", "YELLOW", "FIM");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(11));
+            Delay.Duration(5000, false);
             
             Libraries.Common_Functions.clickOnPointsTab();
             Delay.Milliseconds(0);
@@ -133,8 +121,40 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelName("410RIM - 2");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnDeleteButton();
+            Libraries.Devices_Functions.RightClickOnSelectedRow("2");
             Delay.Milliseconds(0);
+            
+            // Delete
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("4");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnDeleteButton();
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPhysicalLayoutTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.IS_Functions.VerifyIsolatorUnitsAndIndicator("95", "YELLOW", "FIM");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(19));
+            Delay.Duration(5000, false);
+            
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.SelectRowUsingLabelName("410RIM - 3");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.RightClickOnSelectedRow("3");
+            Delay.Milliseconds(0);
+            
+            // Delete
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("4");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnDeleteButton();
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPhysicalLayoutTab();
             Delay.Milliseconds(0);

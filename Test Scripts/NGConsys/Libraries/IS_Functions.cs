@@ -418,7 +418,7 @@ verifyMaxISUnits(expectedMaxISUnit,sRow);
 				
 				Report.Log(ReportLevel.Success,"Label is "+ sLabelName);
 				
-				Devices_Functions.SelectRowUsingLabelName(sLabelName);
+				Devices_Functions.SelectRowUsingLabelNameForEXIDevice(sLabelName);
 			}
 			
 			//Go to physical layout
@@ -462,7 +462,10 @@ verifyMaxISUnits(expectedMaxISUnit,sRow);
 			sISUnits = ((Range)Excel_Utilities.ExcelRange.Cells[j+1,8]).Value.ToString();
 			
 			//Delete IS device
-			Devices_Functions.DeleteDeviceUsingLabel(sLabelName);
+			//Devices_Functions.DeleteDeviceUsingLabel(sLabelName);
+			
+			Devices_Functions.SelectRowUsingLabelNameForEXIDevice(sLabelName);
+			Common_Functions.clickOnDeleteButton();
 			Report.Log(ReportLevel.Info,"Device "+sLabelName+" deleted");
 			
 			// Click on Physical Layout tab
@@ -804,7 +807,10 @@ verifyMaxISUnits(expectedMaxISUnit,sRow);
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[m,12]).Value.ToString();
 			
 			//Delete IS device
-			Devices_Functions.DeleteDeviceUsingLabel(sLabelName);
+			//Devices_Functions.DeleteDeviceUsingLabel(sLabelName);
+			
+			Devices_Functions.SelectRowUsingLabelNameForEXIDevice(sLabelName);
+			Common_Functions.clickOnDeleteButton();
 			Report.Log(ReportLevel.Info,"Device "+sLabelName+" deleted");
 			
 			//Click physical layout tab
