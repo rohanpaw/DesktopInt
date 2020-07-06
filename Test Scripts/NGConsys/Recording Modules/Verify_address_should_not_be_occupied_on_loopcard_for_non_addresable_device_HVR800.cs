@@ -132,8 +132,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("RIM 800", ValueConverter.ArgumentFromString<int>("DeviceQty", "124"));
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 25s.", new RecordItemIndex(11));
-            Delay.Duration(25000, false);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(11));
+            Delay.Duration(5000, false);
+            
+            Libraries.Common_Functions.clickOnPointsTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelName("RIM 800 - 2");
             Delay.Milliseconds(0);
@@ -156,10 +159,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("RIM 800 - 1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("RIM 800 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelName("RIM 800 - 2");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("RIM 800 - 2");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.VerifyDeviceUsingLabelName("RIM 800 - 2");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
             
         }

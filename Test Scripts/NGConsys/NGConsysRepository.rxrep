@@ -1151,6 +1151,14 @@ QQNiTIL2yy+/nH777TdjjLnKaRv2ELTvv//eGGOuej5+/Hj6f8zrZ3K+FYv6AAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="text"
+			id="45f869df-f234-4e8d-b50d-0bcef50bab9b"
+			name="Copy_of_MaxBatteryStandby"
+			refimgid="d86bec8e-60c2-49c9-8709-b92497f094f5"
+			searchtimeout="30000ms">
+				/form[@win32ownerwindowlevel='0']/progressbar/list[@automationid='PART_BarContainerControl']/list/container[@automationid='PART_ItemsPresenter']//row[@index=$sRow]//text[1]
+			</item>
+			<item
+			capname="text"
 			id="ccb5f7b9-5694-4c6f-b684-c89fe07795b2"
 			name="MaxAlarmLoad"
 			refimgid="b445b766-817c-42d2-901f-8a1f8c15a410"
@@ -2210,6 +2218,14 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			refimgid="6c32ab2f-dae0-4a6c-9c70-8f1be92f753a"
 			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[$sRowIndex]
+			</item>
+			<item
+			capname="row"
+			id="e15e9570-6601-4547-9fd9-cc52e5abb103"
+			name="PointsGridRowForEXI"
+			refimgid="6c32ab2f-dae0-4a6c-9c70-8f1be92f753a"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[$sRowIndex]
 			</item>
 			<item
 			capname="row"
@@ -14628,6 +14644,13 @@ AAAAAElFTkSuQmCC
 			name="txt_LabelName1"
 			searchtimeout="90000ms">
 				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text=$sLabelName]
+			</item>
+			<item
+			capname="text"
+			id="04871938-6d5f-44c9-81aa-1c1b82bd47ef"
+			name="Copy_otetstf_txt_LabelName11"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text='RIM 800 - 2']
 			</item>
 			<item
 			capname="text"

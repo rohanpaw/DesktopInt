@@ -11959,7 +11959,7 @@ MxDesigner]]>
 			id="9a83cacb-767c-4c29-8f54-3ecd09a20c89"
 			name="Verify_5V/24V/40V_Load_on_changing_CPU_of_panel_FC">
 				<description>
-					<![CDATA[NGC-1854/TC-64716 - Need to update the correct test data]]>
+					<![CDATA[NGC-1854/TC-64716 -Updated the correct test data]]>
 				</description>
 				<parameters>
 					<param
@@ -16436,12 +16436,6 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="dee0d0ea-2e49-4766-8f1e-6059fc89e70b"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="df2485ee-8be3-4ea7-b0f1-5e049231be12"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -17681,7 +17675,7 @@ persisted in panel properties&nbsp;]]>
 			id="f039533c-f3a2-4115-8ae4-12223084e3ff"
 			name="Verify_5V/24V/40V_load_on_addition/deletion_of_Rbus_connection_and_Xbus_template_FC">
 				<description>
-					<![CDATA[NGC-1854/TC-64864 Need correct test data]]>
+					<![CDATA[NGC-1854/TC-64864&nbsp;Update correct test data]]>
 				</description>
 				<parameters>
 					<param
@@ -22268,46 +22262,6 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
-					id="f70a6481-f782-4dfc-a575-6245d0033714"
-					name="Verify_DC_Units_on_changing_Device_Sensitivity_Mode_for_Sounders">
-						<testmodule
-						id="22e3c73d-3702-4dec-893e-eb43b5050784"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="4d451e17-287c-4bb2-876a-c02a264ced84"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="8674abe7-51b4-4a8d-949a-6fb8cbbca639"
-						name="Verify_DC_Units_on_changing_Device_Sensitivity_and_Device_Mode_for_Sounders">
-						</testmodule>
-						<testmodule
-						id="9951f760-28f0-4e04-b1fe-2b19720ee182"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="f67dd6a6-3b67-40d1-99e1-090aa4e17bce"
-					name="Verify_DC_Units_on_changing_Device_Sensitivity_and_Mode_except_Sounders_or_Beacons">
-						<testmodule
-						id="54a0ff50-5d20-4d3b-92b8-d9874933a918"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="ad56b832-3587-4780-9343-a901aa77b875"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="f69746de-2d68-4823-b901-f68eb563f70f"
-						name="Verify_DC_Units_on_changing_Device_Sensitivity_and_Device_Mode">
-						</testmodule>
-						<testmodule
-						id="852b1405-8222-4414-ac0a-2175f81db7cf"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="e123e7f4-aa9a-4884-98aa-b72c106c143a"
 					name="Verify_The_Flash_And_Sounder_Volume_Row_Present_Under_'Basic'_Section">
 						<testmodule
@@ -22324,38 +22278,6 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="6445dc99-16ae-4071-9d6e-11d242b87dd0"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
-					id="83bc95e7-6f8d-4c5c-af5d-923ef3c19cdc"
-					name="Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light">
-						<testmodule
-						id="577a9ac6-c5fd-43d3-902b-4cb94ae021de"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="57db93fe-5ae3-4dfd-8f78-95cd3200902b"
-						name="Create_Project">
-						</testmodule>
-						<testmodule
-						id="376396b1-5979-4b2d-a738-60bcc5e15c74"
-						name="Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light">
-						</testmodule>
-						<testmodule
-						id="40c8d36d-f3e7-4064-83e2-076c16e95617"
-						name="Close_Application">
-						</testmodule>
-						<testmodule
-						id="ecf09e39-a5e0-465c-9c48-1110e96ba171"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="ba34f9f5-b2c9-408b-adb1-e681b34664a9"
-						name="Reopen_DC_Calc_on_Changing_Value_Of_Sounder_Volume_and_Flash_Light">
-						</testmodule>
-						<testmodule
-						id="152f4ae5-cb26-447c-8fc2-6ff75f88149b"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
@@ -22412,6 +22334,78 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="29a27de7-e06a-4b59-b9ab-52694ac7b5c4"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="83bc95e7-6f8d-4c5c-af5d-923ef3c19cdc"
+					name="Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light">
+						<testmodule
+						id="577a9ac6-c5fd-43d3-902b-4cb94ae021de"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="57db93fe-5ae3-4dfd-8f78-95cd3200902b"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="376396b1-5979-4b2d-a738-60bcc5e15c74"
+						name="Verify_The_DC_Calculations_on_Changing_Values_Of_Sounder_Volume_and_Flash_Light">
+						</testmodule>
+						<testmodule
+						id="40c8d36d-f3e7-4064-83e2-076c16e95617"
+						name="Close_Application">
+						</testmodule>
+						<testmodule
+						id="ecf09e39-a5e0-465c-9c48-1110e96ba171"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="ba34f9f5-b2c9-408b-adb1-e681b34664a9"
+						name="Reopen_DC_Calc_on_Changing_Value_Of_Sounder_Volume_and_Flash_Light">
+						</testmodule>
+						<testmodule
+						id="152f4ae5-cb26-447c-8fc2-6ff75f88149b"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="f70a6481-f782-4dfc-a575-6245d0033714"
+					name="Verify_DC_Units_on_changing_Device_Sensitivity_Mode_for_Sounders">
+						<testmodule
+						id="22e3c73d-3702-4dec-893e-eb43b5050784"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="4d451e17-287c-4bb2-876a-c02a264ced84"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="8674abe7-51b4-4a8d-949a-6fb8cbbca639"
+						name="Verify_DC_Units_on_changing_Device_Sensitivity_and_Device_Mode_for_Sounders">
+						</testmodule>
+						<testmodule
+						id="9951f760-28f0-4e04-b1fe-2b19720ee182"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="f67dd6a6-3b67-40d1-99e1-090aa4e17bce"
+					name="Verify_DC_Units_on_changing_Device_Sensitivity_and_Mode_except_Sounders_or_Beacons">
+						<testmodule
+						id="54a0ff50-5d20-4d3b-92b8-d9874933a918"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="ad56b832-3587-4780-9343-a901aa77b875"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="f69746de-2d68-4823-b901-f68eb563f70f"
+						name="Verify_DC_Units_on_changing_Device_Sensitivity_and_Device_Mode">
+						</testmodule>
+						<testmodule
+						id="852b1405-8222-4414-ac0a-2175f81db7cf"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
@@ -23317,10 +23311,6 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="dab45c4c-2218-4ca2-8bb1-cc2a535e6d35"
 						name="Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800">
-						</testmodule>
-						<testmodule
-						id="dee0d0ea-2e49-4766-8f1e-6059fc89e70b"
-						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24839,6 +24829,9 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="71e2d7f3-0da9-4054-8721-c56c8a32abe5">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

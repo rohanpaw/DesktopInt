@@ -94,6 +94,14 @@ namespace TestProject.Libraries
 			set { repo.sPanelLabelIndex = value; }
 		}
 		
+		static string ModelNumber
+		{
+			
+			get { return repo.ModelNumber; }
+			set { repo.ModelNumber = value; }
+		}
+		
+		
 		/// <summary>
 		/// This is a placeholder text. Please describe the purpose of the
 		/// user code method here. The method is published to the user code library
@@ -128,6 +136,7 @@ namespace TestProject.Libraries
 		 * Last Update : 28/12/2018 Alpesh Dhakad - Line 162 Commented
 		 * Alpesh Dhakad - 19/08/2019 - Updated with new navigation tree method, xpath and devices gallery
 		 * Alpesh Dhakad - 01/10/2019 - Added step as per new Panel Node in Build 43
+		 * Alpesh Dhakad - 27/06/2020 - Added 2 lines to selct panel with generic xpath
 		 **********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddPanels(int NumberofPanels,string PanelNames,string sPanelCPU)
@@ -141,6 +150,9 @@ namespace TestProject.Libraries
 				
 				string PanelNameWithSpace=splitPanelNames[i];
 				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
+			
+				// Added this line on 27/06/2020 to select panel with generic xpath
+				ModelNumber = PanelName;
 				
 				if(PanelName.StartsWith("P"))
 				{
@@ -150,11 +162,14 @@ namespace TestProject.Libraries
 				{
 					sPanelLabelIndex ="7";
 				}
-				repo.ProfileConsys1.btnDropDownPanelsGallery.Click();
 				
-				//repo.FormMe.btn_AllGalleryDropdown.Click();
-				
-				repo.ContextMenu.txt_SelectPanel.Click();
+				//Commened 2 lines on 27/06/2020
+				//repo.ProfileConsys1.btnDropDownPanelsGallery.Click();
+				//repo.ContextMenu.txt_SelectPanel.Click();
+			
+				// Added this line on 27/06/2020 to select panel with generic xpath				
+				repo.FormMe.btn_AllGalleryDropdown.Click();
+				repo.ContextMenu.txt_SelectDevice.Click();
 				
 				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
 				iAddress=i+1;
@@ -511,19 +526,41 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/********************************************************************************************************
 		 * Function Name: DevicePoweredFrom
 		 * Function Details:Used to change 2nd PSU of panel
 		 * Parameter/Arguments:PSU to be selected
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 09/01/2019
-		 ********************************************************************/
+		 * Last Update : 09/01/2019 Alpesh Dhakad - 30/06/2020 Updated script as per new implementation
+		 ********************************************************************************************************/
+		[UserCodeMethod]
 		public static void DevicePoweredFrom(string PoweredBy)
 		{
-			repo.FormMe.PoweredFrom.Click();
-			repo.FormMe.PoweredFrom.PressKeys(PoweredBy+"{ENTER}");
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
+			// Enter the Device text in Search Properties fields to view Power supply related text
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Powered" +"{ENTER}" );
+			
+			
+			repo.FormMe.PoweredFrom.Click();
+			
+			// Enter the value to change PSU value
+			repo.FormMe.PoweredFrom.PressKeys((PoweredBy) +"{ENTER}" + "{ENTER}");
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+
+			//repo.ContextMenu.lstPSU.Click();
+			Report.Log(ReportLevel.Info," Powered from change to  " +PoweredBy + " successfully  ");
+		
+//			repo.FormMe.PoweredFrom.Click();
+//			repo.FormMe.PoweredFrom.PressKeys(PoweredBy+"{ENTER}");
+//			
 		}
 		
 		/**************************************************************************************************************
@@ -1189,6 +1226,78 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure, "CPU Type: "+sExpectedCPU+ " selection is not persisted");
 			}
 			
+		}
+		
+		
+		/**********************************************************************************************************************************
+		 * Function Name: AddPanels
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Shweta Bhosale
+		 * Last Update : 28/12/2018 Alpesh Dhakad - Line 162 Commented
+		 * Alpesh Dhakad - 19/08/2019 - Updated with new navigation tree method, xpath and devices gallery
+		 * Alpesh Dhakad - 01/10/2019 - Added step as per new Panel Node in Build 43
+		 **********************************************************************************************************************************/
+		[UserCodeMethod]
+		public static void AddPanelsMultipleTimes(int NumberofPanels,string PanelNames,string sPanelCPU)
+		{
+			for (int i=0; i<NumberofPanels;i++)
+			{
+				string[] splitPanelNames = PanelNames.Split(',');
+				
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+				
+				string PanelNameWithSpace=splitPanelNames[i];
+				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
+				
+				ModelNumber = PanelName;
+				
+				if(PanelName.StartsWith("P"))
+				{
+					sPanelLabelIndex ="5";
+				}
+				else
+				{
+					sPanelLabelIndex ="7";
+				}
+				repo.FormMe.btn_AllGalleryDropdown.Click();
+				
+				//repo.FormMe.btn_AllGalleryDropdown.Click();
+				
+				repo.ContextMenu.txt_SelectDevice.Click();
+				
+				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
+				iAddress=i+1;
+				Address =iAddress.ToString();
+				repo.ContextMenu.lstPanelAddress.Click();
+				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				Label="Node"+iAddress;
+				
+				//Added this step after 43 build update
+				Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				
+				
+				Keyboard.Press(Label);
+				if (!sPanelCPU.IsEmpty())
+				{
+					repo.AddANewPanel.AddNewPanelContainer.cmb_CPU.Click();
+					sCPU=sPanelCPU;
+					repo.ContextMenu.lstPanelCPU.Click();
+				}
+				repo.AddANewPanel.ButtonOK.Click();
+				
+				if(PanelNameWithSpace == "MZX252")
+				{
+					PanelNameWithSpace = "MZX 252";
+				}
+				PanelNode = Label+" "+"-"+" "+PanelNameWithSpace;
+				
+				//Commenting below line as for Panel name with Space and hi-fen it is not displaying as it is displaying while adding panel
+				//Validate.AttributeEqual(repo.ProfileConsys1.NavigationTree.VerifyPanelNodeInfo, "Text", PanelNode);
+				Report.Log(ReportLevel.Success, "Panel "+PanelNames+" Added Successfully");
+			}
 		}
 		
 	}

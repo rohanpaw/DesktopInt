@@ -381,7 +381,7 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<explicitdelayitem
-		duration="25000ms"
+		duration="5000ms"
 		enabled="True"
 		optional="False">
 			<comment>
@@ -389,6 +389,21 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 		</explicitdelayitem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPointsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
@@ -578,7 +593,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDeviceUsingLabelName"
+		methodname="SelectRowUsingLabelNameOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -603,6 +618,31 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameOnReopen"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="01b82f96-739d-4cec-b8c2-136519490f90">
+				<argument
+				argname="sLabel"
+				id="6bdad1cc-771a-4fc9-950c-6eec8034344e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						RIM 800 - 2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
 		methodname="VerifyDeviceUsingLabelName"
 		namespace="TestProject.Libraries"
 		optional="False">
@@ -620,6 +660,50 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						RIM 800 - 2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Application_Close"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="25a35bfd-36ee-4578-9424-b0dcb7d66160">
+				<argument
+				argname="Save"
+				id="0c3171f3-096b-478f-80c5-5a25451e5502">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="SaveConfirmation"
+				id="a8262810-174e-423f-8c53-77728ae90174">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="sProjectName"
+				id="1c92cbdb-774b-4523-b4ef-35e9ea851f78">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>

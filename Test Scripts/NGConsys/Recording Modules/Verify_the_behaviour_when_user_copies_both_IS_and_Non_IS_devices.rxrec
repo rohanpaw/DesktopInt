@@ -267,9 +267,34 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SelectPointsGridRow"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a0426179-45cb-419b-ada3-db6a38171e65">
+				<argument
+				argname="sRowNumber"
+				id="05189f29-b908-40db-bf3f-4c7d1ea6d0d2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectPointsGridRowForEXIDEvice"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -367,9 +392,34 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SelectPointsGridRow"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a0426179-45cb-419b-ada3-db6a38171e65">
+				<argument
+				argname="sRowNumber"
+				id="05189f29-b908-40db-bf3f-4c7d1ea6d0d2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectPointsGridRowForEXIDEvice"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>

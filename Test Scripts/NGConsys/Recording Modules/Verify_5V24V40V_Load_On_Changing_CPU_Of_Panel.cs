@@ -142,11 +142,14 @@ namespace TestProject.Recording_Modules
             //Libraries.Common_Functions.clickOnSearchProperties();
             //Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.ChangeCPUType("CPU 801");
+            Libraries.Panel_Functions.ChangeCPUType("CPU 800");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM Loop Card");
             //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -154,13 +157,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.433", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.103", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.122", "24V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPropertiesTab();
@@ -238,15 +241,18 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node1 - FireClass 240-4");
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(53));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(54));
             //repo.ProfileConsys1.txt_SearchProperties.Click();
             //Delay.Milliseconds(200);
             
-            Libraries.Panel_Functions.ChangeCPUType("CPU 801");
+            Libraries.Panel_Functions.ChangeCPUType("CPU 800");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -254,13 +260,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.433", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.091", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.122", "24V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.433", "5V");

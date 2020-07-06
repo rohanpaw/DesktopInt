@@ -493,7 +493,7 @@ namespace TestProject.Libraries
 				AddDevicesfromGallery(sDeviceName,sType);
 				
 				string state =  ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
-				VerifyGalleryItem(sType,sDeviceName,state);
+				//VerifyGalleryItem(sType,sDeviceName,state);
 				
 				if(sRow.Equals("1"))
 				{
@@ -534,6 +534,8 @@ namespace TestProject.Libraries
 				string ChangedValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				repo.ProfileConsys1.cell_CableCapacitance.DoubleClick();
 				repo.ProfileConsys1.txt_CableCapacitance.PressKeys((ChangedValue) +"{ENTER}");
+				
+				Report.Log(ReportLevel.Success,"Cable capacitance changed to "+ChangedValue);
 
 				
 				if(sRow.Equals("1"))
@@ -549,7 +551,7 @@ namespace TestProject.Libraries
 				Common_Functions.clickOnPointsTab();
 				
 				state =  ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
-				VerifyGalleryItem(sType,sDeviceName,state);
+				//VerifyGalleryItem(sType,sDeviceName,state);
 				
 				if(sRow.Equals("1"))
 				{
@@ -8972,6 +8974,23 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
 		}
 		
+		/********************************************************************
+		 * Function Name: SelectPointsGridRow
+		 * Function Details: To select points grid row
+		 * Parameter/Arguments: sRowNumber
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 27/06/2020
+		 ********************************************************************/
+		// Change cable resistance method
+		[UserCodeMethod]
+		public static void SelectPointsGridRowForEXIDEvice(string sRowNumber)
+		{
+			sRowIndex=sRowNumber;
+			//Click on row from points grid
+			repo.FormMe.PointsGridRowForEXI.Click();
+		}
+
 	}
 }
 

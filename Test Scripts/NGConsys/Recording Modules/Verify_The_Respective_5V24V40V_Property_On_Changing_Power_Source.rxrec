@@ -180,7 +180,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.349
+						1.211
 					</argvalue>
 				</argument>
 				<argument
@@ -215,7 +215,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.174
+						0.205
 					</argvalue>
 				</argument>
 				<argument
@@ -615,7 +615,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.349
+						1.211
 					</argvalue>
 				</argument>
 				<argument
@@ -650,7 +650,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.193
+						0.224
 					</argvalue>
 				</argument>
 				<argument
@@ -1055,7 +1055,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.461
+						1.323
 					</argvalue>
 				</argument>
 				<argument
@@ -1090,7 +1090,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.174
+						0.205
 					</argvalue>
 				</argument>
 				<argument
@@ -1460,7 +1460,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.461
+						1.323
 					</argvalue>
 				</argument>
 				<argument
@@ -1495,7 +1495,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.174
+						0.205
 					</argvalue>
 				</argument>
 				<argument
@@ -1900,7 +1900,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.349
+						1.211
 					</argvalue>
 				</argument>
 				<argument
@@ -1935,7 +1935,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.174
+						0.205
 					</argvalue>
 				</argument>
 				<argument

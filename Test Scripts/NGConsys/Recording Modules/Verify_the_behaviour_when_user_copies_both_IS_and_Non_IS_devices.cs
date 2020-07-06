@@ -103,7 +103,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectPointsGridRow("1");
+            //Libraries.Devices_Functions.SelectPointsGridRow("1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectPointsGridRowForEXIDEvice("1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CHEx IS", "Detectors");
@@ -115,7 +118,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnCopyButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectPointsGridRow("2");
+            //Libraries.Devices_Functions.SelectPointsGridRow("2");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectPointsGridRowForEXIDEvice("2");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPasteButton();

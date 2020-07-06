@@ -1894,6 +1894,7 @@ namespace TestProject
             RepoItemInfo _voltdropprogressbarInfo;
             RepoItemInfo _voltdropworstcaseprogressbarInfo;
             RepoItemInfo _maxbatterystandbyInfo;
+            RepoItemInfo _copy_of_maxbatterystandbyInfo;
             RepoItemInfo _maxalarmloadInfo;
             RepoItemInfo _galleryInfo;
             RepoItemInfo _devicesensitivityInfo;
@@ -1974,6 +1975,7 @@ namespace TestProject
                 _voltdropprogressbarInfo = new RepoItemInfo(this, "VoltDropProgressBar", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='4']/?/?/progressbar", 30000, null, "3bfc2b8e-561e-43a0-97a0-aacb2f26f397");
                 _voltdropworstcaseprogressbarInfo = new RepoItemInfo(this, "VoltDropWorstCaseProgressBar", "progressbar/picture[7]//container[@automationid='PART_ItemsPresenter']/row[@index='5']/?/?/progressbar", 30000, null, "7ece1cc2-f37f-4413-97d8-94d850006f0f");
                 _maxbatterystandbyInfo = new RepoItemInfo(this, "MaxBatteryStandby", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[3]", 30000, null, "01a2d87b-f4ba-4482-ad37-f4b1843eeca7");
+                _copy_of_maxbatterystandbyInfo = new RepoItemInfo(this, "Copy_of_MaxBatteryStandby", "progressbar/list[@automationid='PART_BarContainerControl']/list/container[@automationid='PART_ItemsPresenter']//row[@index=$sRow]//text[1]", 30000, null, "45f869df-f234-4e8d-b50d-0bcef50bab9b");
                 _maxalarmloadInfo = new RepoItemInfo(this, "MaxAlarmLoad", "progressbar/picture[7]/container[2]/list/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]//text[3]", 30000, null, "ccb5f7b9-5694-4c6f-b684-c89fe07795b2");
                 _galleryInfo = new RepoItemInfo(this, "Gallery", "?/?/container[@automationid='PART_AutoHideControl']/list/list[11]/container[@automationid='PART_Caption']/text[@caption=$sGalleryName]", 30000, null, "b35aad23-6e80-428d-b6c9-a593870fbe9f");
                 _devicesensitivityInfo = new RepoItemInfo(this, "DeviceSensitivity", "progressbar/picture/?/?/table/list/container[@automationid='PART_ItemsPresenter']//combobox/text[@automationid='PART_Editor']", 30000, null, "e78b1807-bb5b-430d-a250-35031012d3a0");
@@ -3446,6 +3448,30 @@ namespace TestProject
                 get
                 {
                     return _maxbatterystandbyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_MaxBatteryStandby item.
+            /// </summary>
+            [RepositoryItem("45f869df-f234-4e8d-b50d-0bcef50bab9b")]
+            public virtual Ranorex.Text Copy_of_MaxBatteryStandby
+            {
+                get
+                {
+                    return _copy_of_maxbatterystandbyInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_of_MaxBatteryStandby item info.
+            /// </summary>
+            [RepositoryItemInfo("45f869df-f234-4e8d-b50d-0bcef50bab9b")]
+            public virtual RepoItemInfo Copy_of_MaxBatteryStandbyInfo
+            {
+                get
+                {
+                    return _copy_of_maxbatterystandbyInfo;
                 }
             }
 
@@ -6604,6 +6630,7 @@ namespace TestProject
             RepoItemInfo _extraisunitprogressbarInfo;
             RepoItemInfo _copy_of_extraisunitprogressbarInfo;
             RepoItemInfo _pointsgridrowInfo;
+            RepoItemInfo _pointsgridrowforexiInfo;
             RepoItemInfo _pointsgridrowonreopenInfo;
             RepoItemInfo _copy_of_pointsgridrowonreopenInfo;
             RepoItemInfo _copy_of_pointsgridrow1Info;
@@ -6846,6 +6873,7 @@ namespace TestProject
             RepoItemInfo _btn_restoreInfo;
             RepoItemInfo _btn_maximizeInfo;
             RepoItemInfo _txt_labelname1Info;
+            RepoItemInfo _copy_otetstf_txt_labelname11Info;
             RepoItemInfo _txt_labelnameforexiInfo;
             RepoItemInfo _copy_of_txt_labelnameforexiInfo;
             RepoItemInfo _txt_labelnameforonerowInfo;
@@ -6933,6 +6961,7 @@ namespace TestProject
                 _extraisunitprogressbarInfo = new RepoItemInfo(this, "ExtraISUnitProgressBar", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_ItemsPresenter']/row[@index=$sRow]/cell/container[2]/progressbar", 30000, null, "0dd334cc-c270-4986-a2ed-00d1898a720d");
                 _copy_of_extraisunitprogressbarInfo = new RepoItemInfo(this, "Copy_of_ExtraISUnitProgressBar", "progressbar/list[@automationid='PART_BarContainerControl']/?/?/container[@automationid='PART_ItemsPresenter']/row[@index='21']/cell/container[2]/progressbar", 30000, null, "7f22642b-0819-4ed1-8633-e8fbfc5bf519");
                 _pointsgridrowInfo = new RepoItemInfo(this, "PointsGridRow", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[$sRowIndex]", 60000, null, "ae14b854-e471-4e95-a072-57bb7e68423d");
+                _pointsgridrowforexiInfo = new RepoItemInfo(this, "PointsGridRowForEXI", "progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[$sRowIndex]", 60000, null, "e15e9570-6601-4547-9fd9-cc52e5abb103");
                 _pointsgridrowonreopenInfo = new RepoItemInfo(this, "PointsGridRowOnReopen", "progressbar/list[8]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[$sRowIndex]/row", 60000, null, "afa9aae5-455a-4aff-97c3-c373d4be651c");
                 _copy_of_pointsgridrowonreopenInfo = new RepoItemInfo(this, "Copy_of_PointsGridRowOnReopen", "progressbar/list[8]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[2]/row", 60000, null, "b4cfbe6e-25c6-404b-ad48-5b38e0e1b6fc");
                 _copy_of_pointsgridrow1Info = new RepoItemInfo(this, "Copy_of_PointsGridRow1", "progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[2]", 60000, null, "d8cfe9dc-bbbf-4f9e-870e-a2117f137b7a");
@@ -7175,6 +7204,7 @@ namespace TestProject
                 _btn_restoreInfo = new RepoItemInfo(this, "btn_Restore", "container[@automationid='Root_Grid']//button[@automationid='PART_Restore']", 30000, null, "11da52b0-fd7c-4586-8da3-975f16dd1351");
                 _btn_maximizeInfo = new RepoItemInfo(this, "btn_Maximize", "container[@automationid='PART_Buttons']/?/?/button[@automationid='PART_Maximize']", 30000, null, "81e21849-b7cc-43c1-990a-f3f0468ffbe8");
                 _txt_labelname1Info = new RepoItemInfo(this, "txt_LabelName1", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text=$sLabelName]", 90000, null, "e93ef5e7-f1ea-4b48-affa-7fa0bae38354");
+                _copy_otetstf_txt_labelname11Info = new RepoItemInfo(this, "Copy_otetstf_txt_LabelName11", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text='RIM 800 - 2']", 90000, null, "04871938-6d5f-44c9-81aa-1c1b82bd47ef");
                 _txt_labelnameforexiInfo = new RepoItemInfo(this, "txt_LabelNameForEXI", "progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text=$sLabelName]", 90000, null, "75b4c5b8-76c7-4b2e-aad2-4c470eb405f5");
                 _copy_of_txt_labelnameforexiInfo = new RepoItemInfo(this, "Copy_of_txt_LabelNameForEXI", "progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text='Exi800 - 1']", 90000, null, "b85d8c78-d42c-4fb9-a6c9-760c3739a998");
                 _txt_labelnameforonerowInfo = new RepoItemInfo(this, "txt_LabelNameForOneRow", "progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row/cell[5]/text[@text=$sLabelName]", 90000, null, "ff318881-96d4-4b8c-a1b6-da59c70ae22a");
@@ -8073,6 +8103,30 @@ namespace TestProject
                 get
                 {
                     return _pointsgridrowInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PointsGridRowForEXI item.
+            /// </summary>
+            [RepositoryItem("e15e9570-6601-4547-9fd9-cc52e5abb103")]
+            public virtual Ranorex.Row PointsGridRowForEXI
+            {
+                get
+                {
+                    return _pointsgridrowforexiInfo.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PointsGridRowForEXI item info.
+            /// </summary>
+            [RepositoryItemInfo("e15e9570-6601-4547-9fd9-cc52e5abb103")]
+            public virtual RepoItemInfo PointsGridRowForEXIInfo
+            {
+                get
+                {
+                    return _pointsgridrowforexiInfo;
                 }
             }
 
@@ -13881,6 +13935,30 @@ namespace TestProject
                 get
                 {
                     return _txt_labelname1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Copy_otetstf_txt_LabelName11 item.
+            /// </summary>
+            [RepositoryItem("04871938-6d5f-44c9-81aa-1c1b82bd47ef")]
+            public virtual Ranorex.Text Copy_otetstf_txt_LabelName11
+            {
+                get
+                {
+                    return _copy_otetstf_txt_labelname11Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Copy_otetstf_txt_LabelName11 item info.
+            /// </summary>
+            [RepositoryItemInfo("04871938-6d5f-44c9-81aa-1c1b82bd47ef")]
+            public virtual RepoItemInfo Copy_otetstf_txt_LabelName11Info
+            {
+                get
+                {
+                    return _copy_otetstf_txt_labelname11Info;
                 }
             }
 

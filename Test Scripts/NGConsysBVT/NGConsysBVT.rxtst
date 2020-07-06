@@ -1034,12 +1034,6 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="bbb57211-6df9-4507-b0b3-1df27a033e51">
-			</testcontainer>
-			<testcontainer
-			id="dc1de77b-f38a-4346-a02d-b228a9dcc945">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

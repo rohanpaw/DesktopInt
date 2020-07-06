@@ -94,10 +94,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.349", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.174", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.205", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -139,10 +139,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.349", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.193", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.224", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -187,10 +187,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.461", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.323", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.174", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.205", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -232,10 +232,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.461", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.323", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.174", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.205", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -280,10 +280,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.349", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.174", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.205", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");

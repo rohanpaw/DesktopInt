@@ -265,8 +265,8 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.160", "40V");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
@@ -307,16 +307,25 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Zonal Alarm Display 64", "Attached Functionality", "");
+            //Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Zonal Alarm Display 64", "Attached Functionality", "");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Zonal Alarm Display max 80", "Attached Functionality", "");
             Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(78));
+            Delay.Duration(7000, false);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "5V Rail(A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.271", "5V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.249", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -337,19 +346,23 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
+            // Delete
+            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("4");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.298", "5V Rail(A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.250", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.186", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.270", "40V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "24V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.298", "5V");

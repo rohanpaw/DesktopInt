@@ -1865,7 +1865,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -2275,7 +2275,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
@@ -2318,6 +2318,59 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromMainProcessorGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="cda08457-adbb-421f-b414-015d06b36fc8">
+				<argument
+				argname="sDeviceName"
+				id="de95c816-dbc2-4335-86d6-11aa7e440d9a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Zonal Alarm Display max 80
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="264738f6-a206-4c70-ad48-b3587fce0e13">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Attached Functionality
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="a7bdee59-cdd6-4edb-8bf2-36bba5832b4e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<explicitdelayitem
+		duration="7000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -2343,6 +2396,21 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -2362,7 +2430,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.298
+						1.271
 					</argvalue>
 				</argument>
 				<argument
@@ -2397,7 +2465,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.110
+						0.249
 					</argvalue>
 				</argument>
 				<argument
@@ -2610,6 +2678,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Delete
 			</comment>
 			<bindings>
 			</bindings>
@@ -2622,7 +2691,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Delete
+						4
 					</argvalue>
 				</argument>
 			</arguments>
@@ -2653,6 +2722,21 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -2672,7 +2756,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.298
+						1.186
 					</argvalue>
 				</argument>
 				<argument
@@ -2707,7 +2791,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.250
+						0.110
 					</argvalue>
 				</argument>
 				<argument
@@ -2742,7 +2826,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.270
+						0.160
 					</argvalue>
 				</argument>
 				<argument

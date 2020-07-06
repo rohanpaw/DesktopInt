@@ -3307,11 +3307,11 @@ namespace TestProject.Libraries
 		{
 			if(isSecondPSU)
 			{
-				sRow=(18).ToString();
+				sRow=(7).ToString();
 			}
 			else
 			{
-				sRow=(16).ToString();
+				sRow=(6).ToString();
 			}
 			
 			// Click on Physical layout tab
@@ -3347,11 +3347,11 @@ namespace TestProject.Libraries
 				sCell= "[4]";
 				if(isSecondPSU)
 				{
-					sRow=(18).ToString();
+					sRow=(7).ToString();
 				}
 				else
 				{
-					sRow=(16).ToString();
+					sRow=(6).ToString();
 				}
 				
 			}
@@ -5072,6 +5072,15 @@ namespace TestProject.Libraries
 				// Verify Alarm load value
 				//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
 				
+				//=======================This 2 lines should be removed after defect 3270 fix===========================================
+				
+				// Click on Site node
+					Common_Functions.ClickOnNavigationTreeItem("Site");
+					
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				//=======================This 2 lines should be removed after defect 3270 fix===========================================
 				
 				Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
@@ -5079,7 +5088,7 @@ namespace TestProject.Libraries
 				// Click on Properties tab
 				Common_Functions.clickOnPropertiesTab();
 				
-				for(int j=8; j<=9; j++)
+				for(int j=8; j<=rows; j++)
 				{
 					SecondPSU = ((Range)Excel_Utilities.ExcelRange.Cells[j,12]).Value.ToString();
 					expectedMaxBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,13]).Value.ToString();
@@ -5121,6 +5130,7 @@ namespace TestProject.Libraries
 					//verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
 					
 					//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+					//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandbyOnAddingPSU,sStandbyLoadingDetail);
 					Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 				
 					// Click on Properties tab
@@ -5133,7 +5143,7 @@ namespace TestProject.Libraries
 					
 					
 					
-					for(int k=8; j<9; j++)
+					for(int k=8; k<=rows; k++)
 					{
 						
 						ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[k,18]).Value.ToString();
@@ -5160,6 +5170,7 @@ namespace TestProject.Libraries
 						// Verify Alarm load value
 						//verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
 						
+						//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 						//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 						Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 				
@@ -5198,6 +5209,7 @@ namespace TestProject.Libraries
 						//verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
 						
 						
+						//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 						//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 						Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 						
@@ -6274,7 +6286,8 @@ namespace TestProject.Libraries
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				// Add panels using test data in excel sheet
-				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				//Panel_Functions.AddPanels(1,PanelName,CPUType);
+				Panel_Functions.AddPanelsMultipleTimes(1,PanelName,CPUType);
 				
 				// Click on Expander node
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);

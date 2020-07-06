@@ -318,41 +318,6 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						557.080.007
-					</argvalue>
-				</argument>
-				<argument
-				argname="sExist"
-				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						True
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Export_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="SearchDeviceInExportUsingSKUOrDescription"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="d2861279-282b-486a-847a-e8df7bcd93ec">
-				<argument
-				argname="sValue"
-				id="27737633-f539-4e24-8813-314cb86242b3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
 						557.080.011
 					</argvalue>
 				</argument>
@@ -424,6 +389,41 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						557.080.012
+					</argvalue>
+				</argument>
+				<argument
+				argname="sExist"
+				id="37bc2196-89b6-49ca-bcf8-d9b7e5f71e9e">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						True
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Export_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="d2861279-282b-486a-847a-e8df7bcd93ec">
+				<argument
+				argname="sValue"
+				id="27737633-f539-4e24-8813-314cb86242b3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						557.080.007
 					</argvalue>
 				</argument>
 				<argument

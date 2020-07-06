@@ -107,9 +107,6 @@ namespace TestProject.Recording_Modules
             //Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("S-BOXR Shallow box wallsdr Red", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             //Delay.Milliseconds(0);
             
-            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.007", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
-            Delay.Milliseconds(0);
-            
             Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.011", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
@@ -117,6 +114,9 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.012", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.007", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
         }

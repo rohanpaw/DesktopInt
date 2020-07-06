@@ -2021,7 +2021,7 @@ verifyMaxISUnits(expectedMaxISUnit,sRow);
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
 				// Verify gallery item state
-				Devices_Functions.VerifyGalleryItem(sType,ModelNumber,state);
+				//Devices_Functions.VerifyGalleryItem(sType,ModelNumber,state);
 				
 				// Click on Points tab
 				Common_Functions.clickOnPointsTab();
@@ -2039,7 +2039,7 @@ verifyMaxISUnits(expectedMaxISUnit,sRow);
 				Common_Functions.clickOnPointsTab();
 				
 				// Click on added EXI800
-				Devices_Functions.SelectPointsGridRow(sRowNumber);
+				Devices_Functions.SelectPointsGridRowForEXIDEvice(sRowNumber);
 				
 				// Click on Cable capacitance cell
 				repo.ProfileConsys1.cell_CableCapacitance.Click();
@@ -2075,7 +2075,7 @@ verifyMaxISUnits(expectedMaxISUnit,sRow);
 				Common_Functions.clickOnPointsTab();
 				
 				// Verify gallery item state
-				Devices_Functions.VerifyGalleryItem(sType,ModelNumber,changedState);
+				//Devices_Functions.VerifyGalleryItem(sType,ModelNumber,changedState);
 			}
 			
 			//Close excel
@@ -2159,7 +2159,7 @@ verifyMaxISUnits(expectedMaxISUnit,sRow);
 				Common_Functions.clickOnPointsTab();
 				
 				// Verify gallery item state
-				Devices_Functions.VerifyGalleryItem(sType,ModelNumber,changedState);
+				//Devices_Functions.VerifyGalleryItem(sType,ModelNumber,changedState);
 
 			}
 			//Close opened excel sheet
