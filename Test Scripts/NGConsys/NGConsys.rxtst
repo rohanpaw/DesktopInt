@@ -2616,11 +2616,11 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.33">
+					value="C:\Program Files (x86)\TFS\FireClass 30.0.41">
 					</param>
 					<param
 					name="Mode"
-					value="0">
+					value="2">
 					</param>
 					<param
 					name="row"
@@ -24831,7 +24831,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="71e2d7f3-0da9-4054-8721-c56c8a32abe5">
+			id="f37d6bae-dea8-455a-a9c9-2418b489d530">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

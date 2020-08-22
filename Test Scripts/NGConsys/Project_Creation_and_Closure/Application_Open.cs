@@ -100,7 +100,11 @@ namespace TestProject
 			{
 				Keyboard.Press("ProfileConsys.exe -mode:Consys");
 			}
-			else
+			else if(App_Mode==2)
+			{
+				Keyboard.Press("ProfileConsys.exe -mode:fcdesigner");
+			}
+			else 
 			{
 				Keyboard.Press("ProfileConsys.exe -mode:fast");
 			}
