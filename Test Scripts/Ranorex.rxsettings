@@ -389,6 +389,14 @@ rxversion="9.2">
 	</plugins.win32.enablebitbridge>
 	<plugins.rawtext.whitelist>
 		<rawtextconfig>
+			<include
+			name="PART_ItemsPresenter"
+			type="process">
+			</include>
+			<include
+			name="PART_ItemsPresenter"
+			type="class">
+			</include>
 		</rawtextconfig>
 	</plugins.rawtext.whitelist>
 	<Telemetry.Enabled>
