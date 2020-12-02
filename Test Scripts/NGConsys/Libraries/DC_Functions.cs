@@ -1916,5 +1916,133 @@ namespace TestProject.Libraries
 				
 			}
 		}
+		
+		/***********************************************************************************************************************
+		 * Function Name: verifyDCUnitCalculationForSplitLoops
+		 * Function Details: Verify DC Units for Split loops
+		 * Parameter/Arguments: fileName, loopAdevices,loopBdevices
+		 * Output:
+		 * Function Owner: Alpesh Dhakad 
+		 * Last Update : 31/08/2020
+		 ***********************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyDCUnitCalculationForSplitLoops(string fileName, string loopAdevices, string loopBdevices)
+		{
+			// Declared various fields as String type
+			string expectedDCUnits, sType,DCUnitLoopLoadingName,DCUnitWorstCaseLoopLoadingName;
+			
+			Excel_Utilities.OpenExcelFile(fileName,loopAdevices);
+			
+			// Count the number of rows in excel
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			Report.Log(ReportLevel.Info, "No of rows: "+rows);
+			
+			// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
+			for (int i=8; i<=rows; i++)
+			{
+				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				
+				// Add devices from the gallery as per test data from the excel sheet
+				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
+				
+			}
+			
+			//Fetch value from excel sheet and store it
+			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
+			DCUnitLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();
+			DCUnitWorstCaseLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
+			
+			
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			
+			
+			Report.Log(ReportLevel.Info, "Verified DC units for Loop A.");
+			
+			//Select Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on Loop B node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
+			
+			//Click on Physical Layout tab
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
+			//Fetch value from excel sheet and store it
+			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
+			DCUnitLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();
+			DCUnitWorstCaseLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
+			
+			
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			Report.Log(ReportLevel.Info, "Verified DC units for Loop C");
+			
+			//Close excel
+			Excel_Utilities.CloseExcel();
+			
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on Loop B node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
+					
+			AddDevicesFromExcel(fileName, loopBdevices);
+			
+			Excel_Utilities.OpenExcelFile(fileName,loopBdevices);
+			
+			//Fetch value from excel sheet and store it
+			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
+			DCUnitLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();
+			DCUnitWorstCaseLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
+			
+			
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			Report.Log(ReportLevel.Info, "Verified DC units after adding devices in Loop C.");
+			
+			//Select Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
+			//Click on Physical Layout tab
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			Common_Functions.clickOnPhysicalLayoutTab();
+			
+			
+			//Fetch value from excel sheet and store it
+			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
+			DCUnitLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();
+			DCUnitWorstCaseLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
+			
+			
+			//verifyDCUnitsValue(expectedDCUnits);
+			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			Report.Log(ReportLevel.Info, "Verified DC units for Loop A");
+
+			//Close excel
+			Excel_Utilities.CloseExcel();
+
+			
+		}
+		
 	}
 }

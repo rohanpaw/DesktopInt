@@ -61,31 +61,6 @@ rxversion="8.3">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<userrecorditem
-		classname="Panel_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ChangeCPUType"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="fd9dafe4-cffe-4c4f-98f9-80289ad3824d">
-				<argument
-				argname="SelectCPU"
-				id="8620b907-10f9-4de0-b6c3-d6119eb51ddc">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						CPU 801
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
 	</recorditems>
 	<repository
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"

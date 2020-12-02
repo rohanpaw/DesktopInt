@@ -81,6 +81,12 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="16212b7c-fa3a-4b50-a550-aa7d076a3067"
+			name="Delete_Panel"
+			ref="8be0600b-c1ac-42b1-a20d-f61faad8c119"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="166c830b-3101-40fa-ab82-5b974a98eac0"
 			name="BuildVerificationTest-TC10">
@@ -115,7 +121,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 81.2.24">
+					value="C:\Program Files (x86)\TFS\Profile Consys 30.0.74">
 					</param>
 					<param
 					name="Mode"
@@ -296,6 +302,26 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="60488d66-2042-4761-b8bc-f74692baefe1"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="187daa63-7f01-41f8-8ea7-329d42f303ec"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="187daa63-7f01-41f8-8ea7-329d42f303ec"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="60af00a6-5327-467b-bac3-90bfdd0b2943"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -411,6 +437,20 @@ rxversion="8.3">
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="85deccd4-c36f-4c40-be14-c043e3e01f5d"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="cf7d72bf-1149-4947-ad79-4d2de9d899b5"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="886785d5-46df-494e-907e-60da58deabec"
@@ -623,6 +663,23 @@ rxversion="8.3">
 			ref="89db9bb9-3cb8-4e40-8420-d10d24fe946f"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="cf7d72bf-1149-4947-ad79-4d2de9d899b5"
+			name="FC">
+				<description>
+					<![CDATA[<p>NGC-T37 Verify deletion of Panels from project</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+					<param
+					name="ProjectName"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="d9b97dd5-29a5-4863-a435-ba724a382bee"
 			name="Application_Open"
@@ -823,6 +880,22 @@ rxversion="8.3">
 						</testmodule>
 						<testmodule
 						id="defb7dc0-16f1-41e2-8c9a-c9f318df85c9"
+						name="Delete_Panel">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="cf7d72bf-1149-4947-ad79-4d2de9d899b5"
+					name="FC">
+						<testmodule
+						id="60488d66-2042-4761-b8bc-f74692baefe1"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="85deccd4-c36f-4c40-be14-c043e3e01f5d"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="16212b7c-fa3a-4b50-a550-aa7d076a3067"
 						name="Delete_Panel">
 						</testmodule>
 					</testcase>

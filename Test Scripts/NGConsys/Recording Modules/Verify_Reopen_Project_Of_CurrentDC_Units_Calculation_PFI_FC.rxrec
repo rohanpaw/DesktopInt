@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="2424d6d2-0209-408b-ad8d-87ef425aaa3b"
-mode="Global"
-rxversion="8.3">
+id="e1b5e03e-9ecf-4dcd-b6cd-47815d6cd996"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -20,7 +19,7 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC"
+	classname="Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_PFI_FC"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
@@ -55,7 +54,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						TC_63769.pjl
+						TC_63769_PFI.pjl
 					</argvalue>
 				</argument>
 			</arguments>
@@ -114,7 +113,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FIM
+						PFI
 					</argvalue>
 				</argument>
 			</arguments>
@@ -214,7 +213,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						286.32
+						286
 					</argvalue>
 				</argument>
 				<argument
@@ -249,7 +248,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						286.32
+						286
 					</argvalue>
 				</argument>
 				<argument
@@ -325,7 +324,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC.UserCode.cs
+		Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_PFI_FC.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

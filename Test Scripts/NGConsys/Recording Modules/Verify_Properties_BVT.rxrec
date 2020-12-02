@@ -235,7 +235,7 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyInventoryDeviceProperty"
 		namespace="TestProject.Libraries"
-		optional="True">
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
@@ -344,7 +344,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PFI
+						PFI Loop Card
 					</argvalue>
 				</argument>
 			</arguments>

@@ -28,6 +28,50 @@ rxversion="8.3">
 	<recorditems>
 		<userrecorditem
 		classname="Panel_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="AddPanelsFC"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="262e59de-1d89-4918-8057-e3a76f12d98d">
+				<argument
+				argname="NumberofPanels"
+				id="5f82786e-4394-4e15-b5e6-43af26144453">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNames"
+				id="9d508494-e004-4edf-a584-bb3a84d54808">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FC702D
+					</argvalue>
+				</argument>
+				<argument
+				argname="sPanelCPU"
+				id="60c0dc2f-bc0b-4ec8-87aa-1de6fb5e067a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
 		methodname="AddPanels"
@@ -38,30 +82,74 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="6e9c7453-553d-4c77-8492-13357b025bb7">
+			id="fa54605a-4174-45ed-bcde-f4c4bc83dc3c">
 				<argument
 				argname="NumberofPanels"
-				id="97e1a105-f907-406c-a170-40f0b972ab50">
+				id="a23cf5b8-fa95-4a42-be47-e21598d4e6b7">
 					<argvaluetype>
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						3
+						2
 					</argvalue>
 				</argument>
 				<argument
 				argname="PanelNames"
-				id="4af207de-6ba7-4258-b8a7-beb2152cec77">
+				id="77570a40-3a58-4280-830b-2a6bee846e83">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro32xD,P485D,MX1000
+						Pro32xD,Pro16xD
 					</argvalue>
 				</argument>
 				<argument
 				argname="sPanelCPU"
-				id="368d7b24-fba5-4865-8111-fd477a71decc">
+				id="82101809-3c13-48c1-9e61-854a0b36fb76">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="AddPanelsFC"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="262e59de-1d89-4918-8057-e3a76f12d98d">
+				<argument
+				argname="NumberofPanels"
+				id="5f82786e-4394-4e15-b5e6-43af26144453">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNames"
+				id="9d508494-e004-4edf-a584-bb3a84d54808">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FIRECLASS 64-2
+					</argvalue>
+				</argument>
+				<argument
+				argname="sPanelCPU"
+				id="60c0dc2f-bc0b-4ec8-87aa-1de6fb5e067a">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -107,7 +195,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyElementVisibilityInNavigationTree"
 		namespace="TestProject.Libraries"
@@ -142,7 +230,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyElementVisibilityInNavigationTree"
 		namespace="TestProject.Libraries"
@@ -195,7 +283,7 @@ rxversion="8.3">
 						System.Int32
 					</argvaluetype>
 					<argvalue>
-						3
+						1
 					</argvalue>
 				</argument>
 				<argument
@@ -345,7 +433,7 @@ rxversion="8.3">
 						System.Boolean
 					</argvaluetype>
 					<argvalue>
-						False
+						True
 					</argvalue>
 				</argument>
 				<argument
@@ -425,7 +513,7 @@ rxversion="8.3">
 						System.Boolean
 					</argvaluetype>
 					<argvalue>
-						True
+						False
 					</argvalue>
 				</argument>
 				<argument

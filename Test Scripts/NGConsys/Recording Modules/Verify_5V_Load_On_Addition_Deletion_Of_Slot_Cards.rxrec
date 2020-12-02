@@ -788,7 +788,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FB800-1
+						Fuse board-1
 					</argvalue>
 				</argument>
 			</arguments>

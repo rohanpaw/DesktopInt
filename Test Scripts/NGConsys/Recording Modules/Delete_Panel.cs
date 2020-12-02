@@ -79,19 +79,25 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "3"), "Pro32xD,P485D,MX1000", "");
+            //Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC702D", "");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "2"), "Pro32xD,Pro16xD", "");
             Delay.Milliseconds(0);
+            
+            //Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 64-2", "");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node1");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node2");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node2");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node3");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node3");
+            //Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "3"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
             //Libraries.Panel_Functions.DeletePanel("Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
@@ -103,13 +109,13 @@ namespace TestProject.Recording_Modules
             //Libraries.Panel_Functions.DeleteSinglePanel("Node3", ValueConverter.ArgumentFromString<int>("rowNumber", "3"));
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "Node2");
+            Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "True"), "Node2");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.VerifyElementVisibilityInNavigationTree(ValueConverter.ArgumentFromString<bool>("sExists", "False"), "Node3");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "True"), "");
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
             
         }

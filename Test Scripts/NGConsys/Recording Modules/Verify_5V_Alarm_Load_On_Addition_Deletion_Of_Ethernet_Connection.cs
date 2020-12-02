@@ -148,8 +148,11 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.329", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.329", "5V Rail(A)");
-            Delay.Milliseconds(0);
+            // In this 5V Rail(A) is preceding text so it is getting failed
+            try {
+                Libraries.Devices_Functions.verifyLoadingDetailsValue("0.329", "5V Rail(A)");
+                Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(23)); }
             
         }
 

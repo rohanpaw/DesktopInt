@@ -118,19 +118,25 @@ namespace TestProject.Libraries
 //					repo.ProjectChangeDescription.btn_OK.Click();
 //				}
 				
-				if(repo.SaveConfirmationWindow.ButtonSave.Visible)
+				//if(repo.SaveConfirmationWindow.ButtonSave.Visible)
+					if(repo.FormMe2.ButtonSave.Visible)
 				{
 					
 					string actualDirPath= Common_Functions.GetDirPath();
 					string sSaveProjectDirPath = actualDirPath+ "NGDesigner Saved Projects";
 					repo.SaveConfirmationWindow.Save_Open_Window.Click();
+					
 					sProjectName= sSaveProjectDirPath + "\\"+ sProjectName;
+					
 					repo.SaveConfirmationWindow.txt_Path.PressKeys(sProjectName);
+					
+					
 					//repo.SaveConfirmationWindow.txt_Path.PressKeys("{Return}");
 					
 					//   	repo.SaveConfirmationWindow.txt_ProjectName.Click();
 					//	repo.SaveConfirmationWindow.txt_ProjectName.PressKeys(sProjectName);
 					repo.SaveConfirmationWindow.ButtonSave.Click();
+					
 					
 				}
 //			}
@@ -1070,8 +1076,9 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void clickOnPhysicalLayoutTab()
 		{
-			repo.ProfileConsys1.tab_PhysicalLayout.Click();
-			Report.Log(ReportLevel.Info," Physical Layout clicked successfully  ");
+//			repo.ProfileConsys1.tab_PhysicalLayout.Click();
+//			Report.Log(ReportLevel.Info," Physical Layout clicked successfully  ");
+			Report.Log(ReportLevel.Info," No action as physical layout tab not available  ");
 		}
 		
 		/********************************************************************
@@ -1307,6 +1314,86 @@ namespace TestProject.Libraries
 				repo.ProfileConsys1.ButtonAccept.Click();
 				Report.Log(ReportLevel.Info," Accept Button clicked on Licensing window");
 			}
+		}
+		
+		
+		/********************************************************************
+		 * Function Name: Application_Close
+		 * Function Details: To close application
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 03/09/2020
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void Application_CloseFC(bool Save, bool SaveConfirmation, string sProjectName)
+		{
+			//repo.ProfileConsys1.btn_Close.Click();
+			
+			repo.FormMe.btn_Close1.Click();
+			//repo.FormMe.btn_Close.Click();
+			
+			
+			if (Save)
+			{
+				if(repo.FormMe2.SelfInfo.Exists())
+				{
+					repo.FormMe2.ButtonYes.Click();
+					Report.Log(ReportLevel.Success, "Save confirmation asked");
+					
+					if(repo.ProjectChangeDescription.SelfInfo.Exists())
+					{
+						repo.ProjectChangeDescription.txt_Desc.Click();
+						Keyboard.Press("Automation....");
+						repo.ProjectChangeDescription.btn_OK.Click();
+					}
+					
+					if(repo.SaveConfirmationWindow.SelfInfo.Exists())
+					{
+						
+//						string actualDirPath= Common_Functions.GetDirPath();
+//						Console.WriteLine("PAth:" + actualDirPath);
+//						string sSaveProjectDirPath = actualDirPath+ "NGDesigner Saved Projects";
+//						repo.SaveConfirmationWindow.Btn_PreviousLocations.Click();
+//						repo.SaveConfirmationWindow.txt_Path.PressKeys("{Return}");
+//						repo.SaveConfirmationWindow.txt_Path.PressKeys(sSaveProjectDirPath);
+//						repo.SaveConfirmationWindow.txt_Path.PressKeys("{Return}");
+						
+						repo.SaveConfirmationWindow.txt_ProjectName.Click();
+						repo.SaveConfirmationWindow.txt_ProjectName.PressKeys(sProjectName);
+						repo.SaveConfirmationWindow.ButtonSave.Click();
+						
+					}
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Save confirmation not asked");
+				}
+				
+			}
+			
+			else
+			{
+				if(SaveConfirmation)
+				{
+					if(repo.FCDesignerCloseWindow.btn_NoInfo.Exists())
+					{
+						repo.FCDesignerCloseWindow.btn_No.Click();
+						Report.Log(ReportLevel.Success, "Save confirmation asked");
+						
+					}
+					else
+					{
+						Report.Log(ReportLevel.Failure, "Save confirmation not asked");
+					}
+				}
+				else
+				{
+					Report.Log(ReportLevel.Success, "Save confirmation not asked");
+				}
+				
+			}
+			
 		}
 	
 	}

@@ -83,7 +83,7 @@ namespace TestProject.Recording_Modules
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             
-            Libraries.Panel_Functions.ChangeCPUType("CPU 801");
+            //Libraries.Panel_Functions.ChangeCPUType("CPU 801");
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             
@@ -163,6 +163,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("1.076", "5V Rail(A)");
             
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("1.076", "FIM");
+            
+            //test();
             
         }
 

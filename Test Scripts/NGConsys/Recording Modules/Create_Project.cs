@@ -119,7 +119,7 @@ namespace TestProject.Recording_Modules
             
             Select_Market("United Kingdom");
             
-            ListItem(ValueConverter.ArgumentFromString<int>("iListIndex", "1"));
+            ListItem(ValueConverter.ArgumentFromString<int>("iListIndex", "0"));
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.PARTRight.btn_CreateNewProject' at Center.", repo.ProfileConsys1.PARTRight.btn_CreateNewProjectInfo, new RecordItemIndex(12));
             //repo.ProfileConsys1.PARTRight.btn_CreateNewProject.Click();

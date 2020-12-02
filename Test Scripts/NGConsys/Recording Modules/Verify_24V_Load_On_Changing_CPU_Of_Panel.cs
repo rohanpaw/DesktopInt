@@ -82,9 +82,6 @@ namespace TestProject.Recording_Modules
             Libraries.PSULoad_Functions.verify24VLoadOnChangingCPU("Verify_24V_Load_On_Changing_CPU_Of_Panel", "Add Panels");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.ChangeCPUType("CPU 801");
-            Delay.Milliseconds(0);
-            
         }
 
 #region Image Feature Data

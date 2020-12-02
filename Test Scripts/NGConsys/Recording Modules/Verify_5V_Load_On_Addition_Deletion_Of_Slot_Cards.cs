@@ -160,7 +160,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("PNI800-2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("FB800-1");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("Fuse board-1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("IOB800-1");

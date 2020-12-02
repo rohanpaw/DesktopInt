@@ -2616,11 +2616,11 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\FireClass 30.0.41">
+					value="C:\Program Files (x86)\TFS\Profile Consys 30.0.81">
 					</param>
 					<param
 					name="Mode"
-					value="2">
+					value="0">
 					</param>
 					<param
 					name="row"
@@ -3612,6 +3612,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="2fdb4b27-c6f2-4007-918b-e941a5afcdf9"
+			name="Verify_CurrentDC_Units_Calculation_PFI_FC"
+			ref="ce6d2c44-ff91-474b-b9b5-4106cdaf45a9"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="31724d05-298e-4c37-b76a-a657d9745f03"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -3781,7 +3787,7 @@ rxversion="8.3">
 			id="32ef10b0-f04a-49a2-8169-31740fce6404"
 			name="Verify_5V_Load_On_Addition_Deletion_Of_Slot_Cards">
 				<description>
-					<![CDATA[<p>NGC-149/TC-157 OR NGC-1519/63081&nbsp;&nbsp; Defect-2623</p>]]>
+					<![CDATA[<p>NGC-149/TC-157 OR NGC-1519/63081</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -4019,6 +4025,7 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="360f016e-3f11-4ccf-b1b9-465e4b56e965"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -4238,6 +4245,12 @@ rxversion="8.3">
 			id="38609da4-52f6-4df0-9a9e-60b365ae1c71"
 			name="Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC"
 			ref="a6a70508-bfa5-49c7-8d19-a69e09a61eda"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="39128151-3842-44d9-89cd-d60af0a5f21a"
+			name="Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_PFI_FC"
+			ref="e1b5e03e-9ecf-4dcd-b6cd-47815d6cd996"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -4728,6 +4741,26 @@ rxversion="8.3">
 				</parameters>
 			</testcase>
 			<testmodule
+			id="406fef60-e3d7-482f-a326-9668e5fd9860"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4070d087-7205-44c6-a01f-b6d62513708c"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -4982,6 +5015,12 @@ rxversion="8.3">
 			id="433e4f30-5f77-4f99-b463-c0764d8bc606"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4362a50c-925f-483a-ba79-c84a8e5c30a4"
+			name="Verify_DC_Units_Displayed_For_Split_Loops_FC"
+			ref="ba9786e7-7ae7-46bd-b78c-090a734cff3c"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -5855,6 +5894,19 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="4d478008-9a03-4f78-a765-5ccf936279c5"
+			name="Verify_Current(DC_Units)_Calculation_PFI_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63769 Tested with wrong test data. Now, test data is updated (As Expected)</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="4d77fa59-bbbd-4065-910a-c969f394318d"
 			name="Application_Open"
@@ -6214,6 +6266,20 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="50ed9b8b-0d33-4901-8b74-fe51c0ca1e08"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="4d478008-9a03-4f78-a765-5ccf936279c5"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="50f6e607-9d97-48ba-b708-8439b972a22b"
 			name="Verify_Impact_of_2nd_PSU_on_Battery_Loading">
@@ -7025,6 +7091,26 @@ rxversion="8.3">
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
 					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5ac5db98-4515-4aae-b028-9bc5b43746dc"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
 					</var>
 				</databinding>
 			</testmodule>
@@ -8401,6 +8487,12 @@ rxversion="8.3">
 			id="6b6e3dad-65b9-4199-8981-831641ad2db3"
 			name="Verify_Power_Calculation_Is_Populated_Warning_Error_Messages_For_Extra_IS_Units_FIM"
 			ref="32d8e83f-6312-47a2-921b-2733d21b9061"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="6b883017-df20-4551-a5e7-e8cd65220aeb"
+			name="RecordingTest"
+			ref="725d69dc-595d-4c9f-9b3b-b56a57002314"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -10112,6 +10204,7 @@ MxDesigner]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="82f3516b-1308-4b59-ab2b-4fd254191724"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -13037,6 +13130,20 @@ div.WordSection1
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="abaff6f1-e872-4037-abdf-27e0ae356e5b"
+			name="Create_Project_FC"
+			ref="94f4aa26-aedb-431a-ba8d-ca56a934d765"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="af13af70-b445-4fdd-b0ba-32a791c2b261"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="abc13da1-40aa-4cf6-adb9-16b16883cc75"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -13246,6 +13353,19 @@ project]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="af13af70-b445-4fdd-b0ba-32a791c2b261"
+			name="Verify_DC_Units_Displayed_For_Split_Loops_FC">
+				<description>
+					<![CDATA[<p>NGC-1826/TC-63775</p>]]>
+				</description>
+				<parameters>
+					<param
+					name="sListIndex"
+					value="">
+					</param>
+				</parameters>
+			</testcase>
 			<testmodule
 			id="af64ef85-b016-4d29-802f-0e2e17edbbe7"
 			name="Create_Project_FC"
@@ -13856,6 +13976,12 @@ persisted in panel properties&nbsp;]]>
 			id="b841c4fa-ae52-45fd-b6c1-170395f300fe"
 			name="Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices"
 			ref="893fef41-5d10-4cac-8a3f-cea287c70a18"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b85f76c9-e45c-48e8-bb03-b0269c69b841"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -16142,6 +16268,26 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d8a0b93c-ff90-4edb-a2e4-1106b60db3f1"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="d8b098dd-855f-45ee-91eb-50089bd398b2"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -16151,7 +16297,7 @@ persisted in panel properties&nbsp;]]>
 			id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed"
 			name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
 				<description>
-					<![CDATA[<p>NGC-149/TC-153 OR NGC-1513/63071&nbsp; Defect-3270</p>]]>
+					<![CDATA[<p>Defect-3686 NGC-149/TC-153 OR NGC-1513/63071</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16367,6 +16513,10 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="dd046673-e1a0-48b1-98cb-e1318ac81e83"
+			name="TestCase">
+			</testcase>
 			<testmodule
 			id="dd51e290-a235-4061-87b9-aa76192f7900"
 			name="Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List"
@@ -16433,6 +16583,12 @@ persisted in panel properties&nbsp;]]>
 			id="dedfed36-7ce9-46d2-8899-b77727c0ece3"
 			name="Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC"
 			ref="98d6155f-13cd-47f6-89ee-4d1fca67f57c"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="defa7be0-d1e5-4f3b-8353-20931813d991"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -17675,7 +17831,7 @@ persisted in panel properties&nbsp;]]>
 			id="f039533c-f3a2-4115-8ae4-12223084e3ff"
 			name="Verify_5V/24V/40V_load_on_addition/deletion_of_Rbus_connection_and_Xbus_template_FC">
 				<description>
-					<![CDATA[NGC-1854/TC-64864&nbsp;Update correct test data]]>
+					<![CDATA[NGC-1854/TC-64864&nbsp;Update correct test data. For one panel test data is commented.]]>
 				</description>
 				<parameters>
 					<param
@@ -18423,6 +18579,12 @@ persisted in panel properties&nbsp;]]>
 			id="fb8515ff-194e-43c5-b4d6-4676ab7573dc"
 			name="Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC"
 			ref="92213869-7c7a-45fc-b90e-f226fd0f903b"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fb94be72-fbae-4dd0-927f-4c19f01d6e73"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -23758,6 +23920,30 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 					</testcase>
 					<testcase
+					id="4d478008-9a03-4f78-a765-5ccf936279c5"
+					name="Verify_Current(DC_Units)_Calculation_PFI_FC">
+						<testmodule
+						id="406fef60-e3d7-482f-a326-9668e5fd9860"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="50ed9b8b-0d33-4901-8b74-fe51c0ca1e08"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="2fdb4b27-c6f2-4007-918b-e941a5afcdf9"
+						name="Verify_CurrentDC_Units_Calculation_PFI_FC">
+						</testmodule>
+						<testmodule
+						id="d8a0b93c-ff90-4edb-a2e4-1106b60db3f1"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="39128151-3842-44d9-89cd-d60af0a5f21a"
+						name="Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_PFI_FC">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="36b7ddba-8c37-4327-884b-087255c64529"
 					name="Verify_DC_Units_Displayed_For_Non_Split_Loops_FC">
 						<testmodule
@@ -23774,6 +23960,26 @@ persisted in panel properties&nbsp;]]>
 						</testmodule>
 						<testmodule
 						id="e75f29ab-4465-4ed5-94d3-f4edfe8ce3e0"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="af13af70-b445-4fdd-b0ba-32a791c2b261"
+					name="Verify_DC_Units_Displayed_For_Split_Loops_FC">
+						<testmodule
+						id="5ac5db98-4515-4aae-b028-9bc5b43746dc"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="abaff6f1-e872-4037-abdf-27e0ae356e5b"
+						name="Create_Project_FC">
+						</testmodule>
+						<testmodule
+						id="4362a50c-925f-483a-ba79-c84a8e5c30a4"
+						name="Verify_DC_Units_Displayed_For_Split_Loops_FC">
+						</testmodule>
+						<testmodule
+						id="fb94be72-fbae-4dd0-927f-4c19f01d6e73"
 						name="Close_Application">
 						</testmodule>
 					</testcase>
@@ -24081,6 +24287,10 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel">
 						</testmodule>
 						<testmodule
+						id="b85f76c9-e45c-48e8-bb03-b0269c69b841"
+						name="Close_ApplicationFC">
+						</testmodule>
+						<testmodule
 						id="360f016e-3f11-4ccf-b1b9-465e4b56e965"
 						name="Close_Application">
 						</testmodule>
@@ -24369,6 +24579,10 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Normal_Load_On_Changing_Of_Power_Supply_Of_MPM_FC">
 						</testmodule>
 						<testmodule
+						id="defa7be0-d1e5-4f3b-8353-20931813d991"
+						name="Close_ApplicationFC">
+						</testmodule>
+						<testmodule
 						id="82f3516b-1308-4b59-ab2b-4fd254191724"
 						name="Close_Application">
 						</testmodule>
@@ -24595,6 +24809,14 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="c153d80d-34f2-4db4-ac2d-273f0547ed46"
 						name="Testing">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="dd046673-e1a0-48b1-98cb-e1318ac81e83"
+					name="TestCase">
+						<testmodule
+						id="6b883017-df20-4551-a5e7-e8cd65220aeb"
+						name="RecordingTest">
 						</testmodule>
 					</testcase>
 					<teardown
@@ -24831,7 +25053,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="f37d6bae-dea8-455a-a9c9-2418b489d530">
+			id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

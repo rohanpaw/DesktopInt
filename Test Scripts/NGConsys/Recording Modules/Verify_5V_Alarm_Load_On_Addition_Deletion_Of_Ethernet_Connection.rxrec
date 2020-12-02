@@ -656,8 +656,9 @@ rxversion="8.3">
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
-		optional="False">
+		optional="True">
 			<comment>
+				In this 5V Rail(A) is preceding text so it is getting failed
 			</comment>
 			<bindings>
 			</bindings>

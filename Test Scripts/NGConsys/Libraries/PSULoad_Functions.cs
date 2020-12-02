@@ -573,7 +573,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,sType,LoadingDetailsName;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,sType,LoadingDetailsName,ModelNumber1;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -585,7 +585,7 @@ namespace TestProject.Libraries
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expected24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
-				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				ModelNumber1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expected2nd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
@@ -615,6 +615,8 @@ namespace TestProject.Libraries
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				ModelNumber = ModelNumber1;
 				
 				// Add Devices from gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
@@ -6706,6 +6708,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 20/09/2019 Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
 		 * Alpesh Dhakad - 27/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 07/09/2020 - Updated panel start name as name changed for panels
 		 ***************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnChangingPowerSupply(string sFileName,string sAddPanelSheet)
@@ -6738,7 +6741,7 @@ namespace TestProject.Libraries
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
-				if(PanelName.StartsWith("FIRE"))
+				if(PanelName.StartsWith("F"))
 				{
 					// Add panels using test data in excel sheet
 					Panel_Functions.AddPanelsFC(1,PanelName,CPUType);
@@ -6786,15 +6789,24 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
 				
-				for(int j=8; j<9; j++)
-				{
+//				for(int j=8; j<9; j++)
+//				{
+//					
+//					ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[j,9]).Value.ToString();
+//					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
+//					sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[j,11]).Value.ToString();
+//					sBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,14]).Value.ToString();
+//					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,15]).Value.ToString();
+//					changePowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[j,16]).Value.ToString();
+//					
+
+					ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+					sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+					sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+					sBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+					changePowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
 					
-					ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[j,9]).Value.ToString();
-					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
-					sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[j,11]).Value.ToString();
-					sBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,14]).Value.ToString();
-					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,15]).Value.ToString();
-					changePowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[j,16]).Value.ToString();
 
 					
 					float.TryParse(sBatteryStandby, out RBusBatteryStandby);
@@ -6815,8 +6827,8 @@ namespace TestProject.Libraries
 					
 					// Verify Alarm load value on addition of R-Bus & X-Bus template
 					//verifyAlarmLoad(sAlarmLoad,false,PanelType);
-					Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sStandbyLoadingDetail);
-				    Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
+					Devices_Functions.verifyLoadingDetailsValue(sBatteryStandby,sStandbyLoadingDetail);
+				    Devices_Functions.verifyLoadingDetailsValue(sAlarmLoad,sAlarmLoadingDetail);
 					
 					// Click on Main node
 					Common_Functions.ClickOnNavigationTreeItem("Main");
@@ -6825,6 +6837,9 @@ namespace TestProject.Libraries
 					//Devices_Functions.SelectRowUsingLabelName(sLabelName);
 					Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(sLabelName);
 					
+					// Click on Properties tab
+					Common_Functions.clickOnPropertiesTab();	
+					
 					// Click on SearchProperties text field
 					repo.ProfileConsys1.txt_SearchProperties.Click();
 					
@@ -6832,10 +6847,14 @@ namespace TestProject.Libraries
 					repo.ProfileConsys1.txt_SearchProperties.PressKeys("Power Supply" +"{ENTER}" );
 					
 					// Click on Day Sensitivity cell
-					repo.FormMe.cell_SearchPropertiesFirstRow.Click();
+					//repo.FormMe.cell_SearchPropertiesFirstRow.Click();
+					repo.FormMe.cell_PowerSupply.Click();
 					
 					// Enter the changeDaySensitivity value and click Enter twice
-					repo.FormMe.txt_SearchPropertiesCellTextValue.PressKeys((changePowerSupply) +"{ENTER}" + "{ENTER}");
+					repo.FormMe.txt_PowerSupply.PressKeys((changePowerSupply) +"{ENTER}" + "{ENTER}");
+					
+					// Click on Power Supply cell
+					repo.FormMe.cell_PowerSupply.Click();
 					
 					// Click on SearchProperties text field
 					repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -6851,8 +6870,8 @@ namespace TestProject.Libraries
 					Common_Functions.clickOnPanelCalculationsTab();
 				
 					
-					sBatteryStandbyOnChangingPowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[j,17]).Value.ToString();
-					sAlarmLoadOnChangingPowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[j,18]).Value.ToString();
+					sBatteryStandbyOnChangingPowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[i,17]).Value.ToString();
+					sAlarmLoadOnChangingPowerSupply = ((Range)Excel_Utilities.ExcelRange.Cells[i,18]).Value.ToString();
 					
 					// Verify Battery Standby and Alarm load value on addition of Ethernet
 					//verifyBatteryStandby(sBatteryStandbyOnChangingPowerSupply,false,PanelType);
@@ -6863,7 +6882,7 @@ namespace TestProject.Libraries
 				    // Click on Properties tab
 					Common_Functions.clickOnPropertiesTab();
 					
-				}
+				
 				
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -6886,6 +6905,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 20/09/2019  Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
 		 * Alpesh Dhakad - 27/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 08/09/2020 - Updated panel start name as name changed for panels
 		 *********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyNormalAndAlarmLoadOnChangingHousingPropertyOfDIM(string sFileName,string sAddPanelSheet)
@@ -6897,7 +6917,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared variables
-			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,CPUType,sRowNumber,sType,PanelType,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,sStandbyLoadingDetail,sAlarmLoadingDetail;
+			string PanelName,PanelNode,sBatteryStandby,sAlarmLoad,CPUType,sRowNumber,sType,PanelType,expectedDefaultBatteryStandby,expectedDefaultAlarmLoad,sStandbyLoadingDetail,sAlarmLoadingDetail,ModelNumberName;
 			
 			string changeHousingProperty,sBatteryStandbyOnChangingHousingProperty,sAlarmLoadOnChangingHousingProperty;
 			int rowNumber;
@@ -6912,7 +6932,7 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				ModelNumberName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
 				sBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
@@ -6923,7 +6943,7 @@ namespace TestProject.Libraries
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
-				if(PanelName.StartsWith("FIRE"))
+				if(PanelName.StartsWith("F"))
 				{
 					// Add panels using test data in excel sheet
 					Panel_Functions.AddPanelsFC(1,PanelName,CPUType);
@@ -6964,7 +6984,7 @@ namespace TestProject.Libraries
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
-				
+				ModelNumber = ModelNumberName;
 				
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
@@ -6987,8 +7007,8 @@ namespace TestProject.Libraries
 				
 				//Common_Functions.clickOnPointsTab();
 				
-				Devices_Functions.SelectRowUsingLabelName(sLabelName);
-				
+				//Devices_Functions.SelectRowUsingLabelName(sLabelName);
+				Devices_Functions.SelectRowUsingLabelNameForOneRow(sLabelName);
 				
 				// Click on SearchProperties text field
 				repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -6997,10 +7017,10 @@ namespace TestProject.Libraries
 				repo.ProfileConsys1.txt_SearchProperties.PressKeys("Housing" +"{ENTER}" );
 				
 				// Click on cell Search properties device first row
-				repo.FormMe.cell_SearchPropertiesDevicesFirstRow.Click();
+				repo.FormMe.cell_LabelNameProperties.Click();
 				
 				// Enter the changeDaySensitivity value and click Enter twice
-				repo.FormMe.txt_SearchPropertiesDeviceCellTextValue.PressKeys((changeHousingProperty) +"{ENTER}" + "{ENTER}");
+				repo.FormMe.txt_LabelNameProperties.PressKeys((changeHousingProperty) +"{ENTER}" + "{ENTER}");
 				
 				// Click on SearchProperties text field
 				repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -7481,6 +7501,119 @@ namespace TestProject.Libraries
 				}
 			}
 		}
+		
+		/***********************************************************************************************************************
+		 * Function Name: verifyMaxLimitFor5V24V40V
+		 * Function Details: To verify MaxLimit For 5V24V40V
+		 * Parameter/Arguments: fileName, PanelNames
+		 * Output:
+		 * Function Owner: Alpesh Dhakad 
+		 * Last Update : 1/09/2020
+		 ***********************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyMaxLimitFor5V24V40V(string fileName, string PanelNames)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(fileName,PanelNames);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string PanelName,PanelNode,CPUType,sRowNumber,expectedMax5VPSU,expectedMax24VPSU,expectedMax40VPSU,PanelType;
+			string LoadingDetailsName5V,LoadingDetailsName24V,LoadingDetailsName40V;
+			int rowNumber;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				expectedMax5VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				expectedMax24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				expectedMax40VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				
+
+				LoadingDetailsName5V = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();
+				LoadingDetailsName24V = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
+				LoadingDetailsName40V = ((Range)Excel_Utilities.ExcelRange.Cells[4,5]).Value.ToString();	
+				
+				int.TryParse(sRowNumber, out rowNumber);
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanelsFC(1,PanelName,CPUType);
+				
+				
+				// Click on Expander node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				// Click on Expander node
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+			
+				sLoadingDetail = LoadingDetailsName5V;
+				
+				string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValue.TextValue;
+			
+				if(MaxLoadingUnits.Equals(expectedMax5VPSU))
+				{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetailsName5V + " value  "+ expectedMax5VPSU + " displayed correctly");
+				}
+				else
+				{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetailsName5V + " value are not displayed correctly " + ", Expected Units:  " + expectedMax5VPSU  + " Actual Units: "+ MaxLoadingUnits);
+				}
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				sLoadingDetail = LoadingDetailsName24V;
+				
+				string MaxLoadingUnits24v = repo.FormMe.txt_MaxLoadingDetailsValue.TextValue;
+			
+				if(MaxLoadingUnits24v.Equals(expectedMax24VPSU))
+				{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetailsName24V + " value  "+ expectedMax24VPSU + " displayed correctly");
+				}
+				else
+				{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetailsName24V + " value are not displayed correctly " + ", Expected Units:  " + expectedMax24VPSU  + " Actual Units: "+ MaxLoadingUnits);
+				}
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				sLoadingDetail = LoadingDetailsName40V;
+				
+				string MaxLoadingUnits40v = repo.FormMe.txt_MaxLoadingDetailsValue.TextValue;
+			
+				if(MaxLoadingUnits40v.Equals(expectedMax40VPSU))
+				{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetailsName40V + " value  "+ expectedMax40VPSU + " displayed correctly");
+				}
+				else
+				{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetailsName40V + " value are not displayed correctly " + ", Expected Units:  " + expectedMax40VPSU  + " Actual Units: "+ MaxLoadingUnits);
+				}
+				
+				// Delete panel using PanelNode details from excel sheet
+				Panel_Functions.DeletePanel(1,PanelNode,1);
+				
+				
+			}
+			//Close opened excel sheet
+			Excel_Utilities.CloseExcel();
+			
+			}
+				
+			
+			
 		
 	}
 }

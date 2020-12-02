@@ -97,13 +97,13 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.VerifyDeviceUsingLabelNameOnReopen("LPBS 3000 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelNameOnReopen("801 CH - 3");
-            Delay.Milliseconds(0);
-            
             Libraries.Devices_Functions.VerifyDeviceUsingLabelNameOnReopen("801 PH - 4");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyDeviceUsingLabelNameOnReopen("LPBS 3000 - 14");
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelNameOnReopen("LPBS 3000 - 5");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.VerifyDeviceUsingLabelNameOnReopen("LPBS 3000 - 6");
             Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.MoveScrollBarDownInPointsGrid();

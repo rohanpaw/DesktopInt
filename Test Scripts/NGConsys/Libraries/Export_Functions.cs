@@ -466,19 +466,28 @@ namespace TestProject.Libraries
 			
 		}
 		
-		/********************************************************************
+		/******************************************************************************************************************************************************
 		 * Function Name: clickOnExportButton
 		 * Function Details: 
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update :11/02/2020
-		 ********************************************************************/
+		 * Last Update :11/02/2020 Alpesh Dhakad - 26/10/2020 Added Script as per new implementation of shopping list and export button
+		 ******************************************************************************************************************************************************/
 		
 		[UserCodeMethod]
 		public static void clickOnExportButton()
 		{
 			repo.FormMe.Export2ndTime.Click();
+			
+			Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfOnly;
+				
+				repo.ContextMenu.ShoppingList.Click();
+				
+				Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+				
+			
+			
 		}
 		
 		

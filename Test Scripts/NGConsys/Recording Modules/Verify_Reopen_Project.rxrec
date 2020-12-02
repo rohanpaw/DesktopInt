@@ -186,31 +186,6 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						801 CH - 3
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyDeviceUsingLabelNameOnReopen"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="bbafc54f-95d5-42a0-821e-52f8809ea394">
-				<argument
-				argname="sLabel"
-				id="ded5e4f7-2129-4288-a650-5a4d223aaebe">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
 						801 PH - 4
 					</argvalue>
 				</argument>
@@ -236,7 +211,32 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						LPBS 3000 - 14
+						LPBS 3000 - 5
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyDeviceUsingLabelNameOnReopen"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="bbafc54f-95d5-42a0-821e-52f8809ea394">
+				<argument
+				argname="sLabel"
+				id="ded5e4f7-2129-4288-a650-5a4d223aaebe">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						LPBS 3000 - 6
 					</argvalue>
 				</argument>
 			</arguments>

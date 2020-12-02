@@ -304,6 +304,18 @@
       <UserCode>true</UserCode>
       <id>49dd13dd-eed5-4e14-b155-d2afb3caad8b</id>
     </Compile>
+    <Compile Include="Recording Modules\Close_ApplicationFC.cs">
+      <BoundTo>08b5b36c-121e-4c34-b112-4a27ddd60e29</BoundTo>
+      <DependentUpon>Close_ApplicationFC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>168207fd-cd27-4c4f-aea6-dfc467f9cee1</id>
+    </Compile>
+    <Compile Include="Recording Modules\Close_ApplicationFC.UserCode.cs">
+      <BoundTo>08b5b36c-121e-4c34-b112-4a27ddd60e29</BoundTo>
+      <DependentUpon>Close_ApplicationFC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2ecf4611-c58f-4a7e-b4d1-18cd52746271</id>
+    </Compile>
     <Compile Include="Recording Modules\CreateProject_Build.cs">
       <BoundTo>2143541b-50c8-43ef-aa03-8f3c1f57d343</BoundTo>
       <DependentUpon>CreateProject_Build.rxrec</DependentUpon>
@@ -411,6 +423,18 @@
       <DependentUpon>Observe_Units_Gallery_On_Navigation_Tree_Node_Selection.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>d6b30504-290f-40db-8fb6-c5a8295aab67</id>
+    </Compile>
+    <Compile Include="Recording Modules\RecordingTest.cs">
+      <BoundTo>00713d0e-0310-4f06-b5f0-244202668570</BoundTo>
+      <DependentUpon>RecordingTest.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5dd2f636-5554-420b-8c2e-687542050b27</id>
+    </Compile>
+    <Compile Include="Recording Modules\RecordingTest.UserCode.cs">
+      <BoundTo>00713d0e-0310-4f06-b5f0-244202668570</BoundTo>
+      <DependentUpon>RecordingTest.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>149a3194-caee-456d-b19d-b25a2aeee041</id>
     </Compile>
     <Compile Include="Recording Modules\Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.cs">
       <BoundTo>a9f453dd-9eb6-4866-a12f-6744f3fa87ec</BoundTo>
@@ -579,6 +603,30 @@
       <DependentUpon>Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>fadb3ca7-a729-4f91-b168-66d154db3bc0</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_CurrentDC_Units_Calculation_PFI_FC.cs">
+      <BoundTo>20a74951-1d3a-4e8a-92d9-958dbd92066e</BoundTo>
+      <DependentUpon>Verify_CurrentDC_Units_Calculation_PFI_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>46c5967f-9849-4493-aa97-c0692e31a622</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_CurrentDC_Units_Calculation_PFI_FC.UserCode.cs">
+      <BoundTo>20a74951-1d3a-4e8a-92d9-958dbd92066e</BoundTo>
+      <DependentUpon>Verify_CurrentDC_Units_Calculation_PFI_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e8223db6-9e05-4f1d-ad80-ffdcd67af27b</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_DC_Units_Displayed_For_Split_Loops_FC.cs">
+      <BoundTo>1eacd853-1be6-4235-b1a4-a67d50397646</BoundTo>
+      <DependentUpon>Verify_DC_Units_Displayed_For_Split_Loops_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3d9f95e8-cddf-483a-8007-f9fdc8524c0e</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_DC_Units_Displayed_For_Split_Loops_FC.UserCode.cs">
+      <BoundTo>1eacd853-1be6-4235-b1a4-a67d50397646</BoundTo>
+      <DependentUpon>Verify_DC_Units_Displayed_For_Split_Loops_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ce7daf46-5ff9-4395-a4cc-d1c6989806ea</id>
     </Compile>
     <Compile Include="Recording Modules\Verify_Export_Of_Region_Data_With_Pro16xD_Panel.cs">
       <BoundTo>6e902786-a15d-410c-a43e-4176dc98c116</BoundTo>
@@ -3592,6 +3640,18 @@
       <UserCode>true</UserCode>
       <id>746d0175-e323-4fc2-88b2-949c8d9a784d</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_PFI_FC.cs">
+      <BoundTo>bb08c4e4-afaa-4877-8c62-b3df6320c7a7</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_PFI_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a0ca73d7-a4c7-4be0-b4f1-df43a5477b56</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_PFI_FC.UserCode.cs">
+      <BoundTo>bb08c4e4-afaa-4877-8c62-b3df6320c7a7</BoundTo>
+      <DependentUpon>Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_PFI_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e9dcfcbf-4117-48a5-bd76-74025623b523</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.cs">
       <BoundTo>edf167dd-bcd2-4ac0-8598-7edfe57049f9</BoundTo>
       <DependentUpon>Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.rxrec</DependentUpon>
@@ -4436,6 +4496,11 @@
       <recordtableid>04f2c1bc-a14b-44db-b656-60d601f7de36</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="Recording Modules\Close_ApplicationFC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>08b5b36c-121e-4c34-b112-4a27ddd60e29</id>
+      <recordtableid>24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff</recordtableid>
+    </None>
     <None Include="Recording Modules\CreateProject_Build.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>2143541b-50c8-43ef-aa03-8f3c1f57d343</id>
@@ -4480,6 +4545,11 @@
       <id>b89afd1f-57cf-4fc5-9d9a-a3d4681b6a7c</id>
       <recordtableid>ffcac337-4901-4f88-970a-dc4cc97128bb</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\RecordingTest.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>00713d0e-0310-4f06-b5f0-244202668570</id>
+      <recordtableid>725d69dc-595d-4c9f-9b3b-b56a57002314</recordtableid>
     </None>
     <None Include="Recording Modules\Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec">
       <id>a9f453dd-9eb6-4866-a12f-6744f3fa87ec</id>
@@ -4550,6 +4620,16 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>966cd594-f837-42fd-890b-ea7e43f1852a</id>
       <recordtableid>082dffce-d287-401e-a4f1-76d4a095c6c2</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_CurrentDC_Units_Calculation_PFI_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>20a74951-1d3a-4e8a-92d9-958dbd92066e</id>
+      <recordtableid>ce6d2c44-ff91-474b-b9b5-4106cdaf45a9</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_DC_Units_Displayed_For_Split_Loops_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>1eacd853-1be6-4235-b1a4-a67d50397646</id>
+      <recordtableid>ba9786e7-7ae7-46bd-b78c-090a734cff3c</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Export_Of_Region_Data_With_Pro16xD_Panel.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -5422,9 +5502,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Main_Processor_24V_Maximum_Value.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>dbddc148-235a-4812-bbdd-951a34fb95d5</id>
       <recordtableid>68cd4554-5a36-401c-ac2f-01ae02bf3f18</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Main_Processor_5V_Maximum_Value.rxrec">
       <id>56e5b5cc-5eeb-4892-b583-352135403ab5</id>
@@ -5805,6 +5885,11 @@
       <id>1ffb1ceb-f509-4f8f-a178-a82ec14e53a6</id>
       <recordtableid>2424d6d2-0209-408b-ad8d-87ef425aaa3b</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_PFI_FC.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>bb08c4e4-afaa-4877-8c62-b3df6320c7a7</id>
+      <recordtableid>e1b5e03e-9ecf-4dcd-b6cd-47815d6cd996</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Reopen_Project_Of_Flash_And_Sounder_Volume_Row_Present_Under_Basic_Section_FC.rxrec">
       <id>edf167dd-bcd2-4ac0-8598-7edfe57049f9</id>

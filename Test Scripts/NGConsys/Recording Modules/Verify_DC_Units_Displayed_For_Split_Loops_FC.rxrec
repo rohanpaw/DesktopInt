@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="2424d6d2-0209-408b-ad8d-87ef425aaa3b"
-mode="Global"
-rxversion="8.3">
+id="ba9786e7-7ae7-46bd-b78c-090a734cff3c"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -20,26 +19,17 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC"
+	classname="Verify_DC_Units_Displayed_For_Split_Loops_FC"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
-		<explicitdelayitem
-		duration="5000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ReopenProject"
+		methodname="AddPanelsFC"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -47,28 +37,38 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="3ffdab48-adcb-4b02-9004-39405a281246">
+			id="262e59de-1d89-4918-8057-e3a76f12d98d">
 				<argument
-				argname="sProjectName"
-				id="d944b2f2-8c8d-4bd9-8d09-eac651622984">
+				argname="NumberofPanels"
+				id="5f82786e-4394-4e15-b5e6-43af26144453">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNames"
+				id="9d508494-e004-4edf-a584-bb3a84d54808">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						TC_63769.pjl
+						FC708D
+					</argvalue>
+				</argument>
+				<argument
+				argname="sPanelCPU"
+				id="60c0dc2f-bc0b-4ec8-87aa-1de6fb5e067a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<explicitdelayitem
-		duration="5000ms"
-		enabled="True"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</explicitdelayitem>
 		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
@@ -148,7 +148,7 @@ rxversion="8.3">
 		classname="DC_Functions"
 		enabled="False"
 		isexternaltestmethod="True"
-		methodname="verifyDCUnitsValueAfterReopen"
+		methodname="verifyDCUnitsValue"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -156,15 +156,15 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			id="4ffd0b27-f259-4cb6-a645-b3a6e6ebde84">
 				<argument
 				argname="expectedDCUnits"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
+				id="92bae067-bb9d-4cd8-892b-714da51ca1e4">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						286.32
+						220
 					</argvalue>
 				</argument>
 			</arguments>
@@ -173,7 +173,7 @@ rxversion="8.3">
 		classname="DC_Functions"
 		enabled="False"
 		isexternaltestmethod="True"
-		methodname="verifyDCUnitsWorstCaseValueAfterReopen"
+		methodname="verifyMaxDCUnits"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -181,15 +181,15 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			id="4ffd0b27-f259-4cb6-a645-b3a6e6ebde84">
 				<argument
-				argname="expectedWorstCaseDCUnits"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
+				argname="expectedMaxDCUnits"
+				id="92bae067-bb9d-4cd8-892b-714da51ca1e4">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						286.32
+						2200
 					</argvalue>
 				</argument>
 			</arguments>
@@ -198,7 +198,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyLoadingDetailsValueAfterReopen"
+		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -214,7 +214,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						286.32
+						220
 					</argvalue>
 				</argument>
 				<argument
@@ -233,7 +233,117 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyLoadingDetailsValueAfterReopen"
+		methodname="verifyMaxLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedMaxUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4000
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Current (DC Units)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-C
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="DC_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="verifyDCUnitsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4ffd0b27-f259-4cb6-a645-b3a6e6ebde84">
+				<argument
+				argname="expectedDCUnits"
+				id="92bae067-bb9d-4cd8-892b-714da51ca1e4">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						220
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="DC_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="verifyMaxDCUnits"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4ffd0b27-f259-4cb6-a645-b3a6e6ebde84">
+				<argument
+				argname="expectedMaxDCUnits"
+				id="92bae067-bb9d-4cd8-892b-714da51ca1e4">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						2200
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -249,7 +359,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						286.32
+						220
 					</argvalue>
 				</argument>
 				<argument
@@ -259,16 +369,16 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Current (worst case)
+						Current (DC Units)
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="Application_Close"
+		methodname="verifyMaxLoadingDetailsValue"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -276,34 +386,70 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
 				<argument
-				argname="Save"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="SaveConfirmation"
-				id="73d4ee71-e930-4860-9708-b1d40c995fcc">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="sProjectName"
-				id="5e4941cf-8302-4ade-ab09-0220fc10d358">
+				argname="expectedMaxUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						4000
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Current (DC Units)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="DC_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyDCUnitCalculationForSplitLoops"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4ffd0b27-f259-4cb6-a645-b3a6e6ebde84">
+				<argument
+				argname="fileName"
+				id="92bae067-bb9d-4cd8-892b-714da51ca1e4">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_63775_Verify_DC_Units_Displayed_For_Split_Loops_FC
+					</argvalue>
+				</argument>
+				<argument
+				argname="loopAdevices"
+				id="c25dedc9-cf99-4f38-b0bd-2cef2d65c6b5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add_Devices_LoopA
+					</argvalue>
+				</argument>
+				<argument
+				argname="loopBdevices"
+				id="40533941-64b1-4a8a-9c38-70c36fa835d3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add_Devices_LoopC
 					</argvalue>
 				</argument>
 			</arguments>
@@ -325,7 +471,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Reopen_Project_Of_CurrentDC_Units_Calculation_FC.UserCode.cs
+		Verify_DC_Units_Displayed_For_Split_Loops_FC.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

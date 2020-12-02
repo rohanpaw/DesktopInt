@@ -100,10 +100,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            try {
-                Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Name", "Node1");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
+            Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Name", "Node1");
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main Processor");
             Delay.Milliseconds(0);
@@ -111,7 +109,7 @@ namespace TestProject.Recording_Modules
             Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Model", "Profile 800 Main Processor board");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("PFI");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PFI Loop Card");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Model", "Built-in Loop");
