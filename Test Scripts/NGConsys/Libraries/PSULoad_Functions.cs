@@ -193,7 +193,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected5VPSU,expected2nd5VPSU,expected3rd5VPSU,sType,LoadingDetailsName;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected5VPSU,expected2nd5VPSU,expected3rd5VPSU,sType,LoadingDetailsName,DeviceName;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -205,7 +205,7 @@ namespace TestProject.Libraries
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expected5VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
-				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				DeviceName = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expected2nd5VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
@@ -241,7 +241,7 @@ namespace TestProject.Libraries
 				
 				
 				// Add devices from Panel node gallery
-				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+				Devices_Functions.AddDevicesfromMainProcessorGallery(DeviceName,sType,PanelType);
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -676,6 +676,8 @@ namespace TestProject.Libraries
 		 * Last Update : 18/01/2019   Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
 		 *  Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 * Alpesh Dhakad - 15/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 31/12/2020 Added and Updated 1 line with Model number1 and 2 (ModelNumber = ModelNumber1&2;)
+		 * Also, added step for verification of max values of 24v on addition on PCH
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfSlotCards(string sFileName,string sAddPanelandDevicesSheet)
@@ -688,7 +690,7 @@ namespace TestProject.Libraries
 			
 			// Declared string type
 			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU,sType;
-			string ModelNumber1,sLabelName1,sType1,LoadingDetailsName;
+			string ModelNumber1,sLabelName1,sType1,LoadingDetailsName,ModelNumber2,expectedMax24VPSU,expected2ndMax24VPSU;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -700,16 +702,18 @@ namespace TestProject.Libraries
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expected24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
-				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				ModelNumber1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expected2nd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
-				ModelNumber1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				ModelNumber2 = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
 				sLabelName1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
 				sType1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
 				expected3rd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				expected4th24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
 				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				expectedMax24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,17]).Value.ToString();
+				expected2ndMax24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,18]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -737,6 +741,8 @@ namespace TestProject.Libraries
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
+				ModelNumber = ModelNumber1;
+				
 				// Split Device name and then add devices as per the device name and number of devices from Panel node gallery
 				string[] splitDeviceName  = ModelNumber.Split(',');
 				int splitDevicesCount  = ModelNumber.Split(',').Length;
@@ -757,6 +763,8 @@ namespace TestProject.Libraries
 				//verify24VPSULoadValue(expected2nd24VPSU,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(expected2nd24VPSU,LoadingDetailsName);
 				
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMax24VPSU,LoadingDetailsName);
+				
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -765,7 +773,7 @@ namespace TestProject.Libraries
 				Common_Functions.clickOnPanelAccessoriesTab();
 
 				// Split Device name and then add devices as per the device name and number of devices from Panel node gallery
-				ModelNumber = ModelNumber1;
+				ModelNumber = ModelNumber2;
 				sType = sType1;
 				string[] splitDeviceName1  = ModelNumber.Split(',');
 				int splitDevicesCount1  = ModelNumber.Split(',').Length;
@@ -813,6 +821,7 @@ namespace TestProject.Libraries
 				//verify24VPSULoadValue(expected4th24VPSU,PanelType);
 				Devices_Functions.verifyLoadingDetailsValue(expected4th24VPSU,LoadingDetailsName);
 				
+				Devices_Functions.verifyMaxLoadingDetailsValue(expected2ndMax24VPSU,LoadingDetailsName);
 				
 				// Delete added Panel
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -833,6 +842,7 @@ namespace TestProject.Libraries
 		 * Last Update : 21/01/2019  Alpesh Dhakad - 30/07/2019 & 21/08/2019- Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 * Alpesh Dhakad - 15/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 31/12/2020 Added 1 line with Model number1(ModelNumber = ModelNumber1;)
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfAccessories(string sFileName,string sAddPanelandDevicesSheet)
@@ -844,7 +854,7 @@ namespace TestProject.Libraries
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
-			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,sType,LoadingDetailsName;
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,sType,LoadingDetailsName,ModelNumber1;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -856,7 +866,7 @@ namespace TestProject.Libraries
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expected24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
-				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				ModelNumber1 = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expected2nd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
@@ -888,6 +898,8 @@ namespace TestProject.Libraries
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				ModelNumber = ModelNumber1;
 				
 				// Add devices from Panel node gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
@@ -940,6 +952,7 @@ namespace TestProject.Libraries
 		 * Last Update : 22/01/2019  Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 * Alpesh Dhakad - 15/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 04/01/2021 Added 1 line with Model number2(ModelNumber = ModelNumber2;)
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInZetfastLoop(string sFileName,string sAddPanelandDevicesSheet)
@@ -952,7 +965,7 @@ namespace TestProject.Libraries
 			
 			// Declared string type
 			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU,sType;
-			string ModelNumber1,sLabelName1,sType1,LoadingDetailsName;
+			string ModelNumber1,sLabelName1,sType1,LoadingDetailsName,ModelNumber2;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -964,7 +977,7 @@ namespace TestProject.Libraries
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expected24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
-				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				ModelNumber2 = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expected2nd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
@@ -1002,6 +1015,8 @@ namespace TestProject.Libraries
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				ModelNumber = ModelNumber2;
 				
 				// Add devices from Panel node gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
@@ -1091,6 +1106,7 @@ namespace TestProject.Libraries
 		 * Last Update : 22/01/2019   Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 * Alpesh Dhakad - 15/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 04/01/2021 Added 1 line with Model number2(ModelNumber = ModelNumber2;)
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInXLMLoop(string sFileName,string sAddPanelandDevicesSheet)
@@ -1103,7 +1119,7 @@ namespace TestProject.Libraries
 			
 			// Declared string type
 			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU;
-			string sType,ModelNumber1,sLabelName1,sType1,LoadingDetailsName;
+			string sType,ModelNumber1,sLabelName1,sType1,LoadingDetailsName,ModelNumber2;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -1115,7 +1131,7 @@ namespace TestProject.Libraries
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expected24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
-				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				ModelNumber2 = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expected2nd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
@@ -1152,6 +1168,7 @@ namespace TestProject.Libraries
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
+				ModelNumber = ModelNumber2;
 				// Add devices from Panel node gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
 				
@@ -1237,6 +1254,7 @@ namespace TestProject.Libraries
 		 * Last Update : 23/01/2019  Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 02/12/2019 - Updated test scripts with new method for loading details
 		 * Alpesh Dhakad - 15/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 04/01/2021 Added 1 line with Model number2(ModelNumber = ModelNumber2;)
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify24VPsuLoadOnAdditionDeletionOfLoopDevicesInPLXLoop(string sFileName,string sAddPanelandDevicesSheet)
@@ -1249,7 +1267,7 @@ namespace TestProject.Libraries
 			
 			// Declared string type
 			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU,sType;
-			string ModelNumber1,sLabelName1,sType1,LoadingDetailsName;
+			string ModelNumber1,sLabelName1,sType1,LoadingDetailsName,ModelNumber2;
 			int rowNumber;
 			
 			// For loop to iterate on data present in excel
@@ -1261,7 +1279,7 @@ namespace TestProject.Libraries
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expected24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
-				ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				ModelNumber2 = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				expected2nd24VPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
@@ -1298,6 +1316,8 @@ namespace TestProject.Libraries
 				
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				ModelNumber =ModelNumber2;
 				
 				// Add devices from Panel node gallery
 				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
@@ -1862,6 +1882,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 22/01/2019
 		 * Alpesh Dhakad - 19/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 06/01/2021 Updated script as per new UI Changes of preceding values
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static string Get40VPSULoadValue(string PanelType)
@@ -1890,9 +1911,21 @@ namespace TestProject.Libraries
 				Common_Functions.clickOnPanelCalculationsTab();
 
 			
-			string Actual40VPSUValue = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
+			//string Actual40VPSUValue = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
 			
+			//return Actual40VPSUValue;
+			
+			if(repo.FormMe.txt_ActualLoadingDetailsValueInfo.Exists())
+			{
+			string Actual40VPSUValue = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
 			return Actual40VPSUValue;
+			}
+			else
+			{
+			string Actual40VPSUValue = repo.FormMe.txt_ActualLoadingDetailsValuePreceding.TextValue;
+			return Actual40VPSUValue;
+			}
+			
 		}
 		
 		
@@ -2049,6 +2082,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 23/01/2019 Alpesh Dhakad - 01/08/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 18/05/2020 & 29/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 06/01/2021 Updated script as per new UI changes and test data modification
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VLoadOnZetfastLoopAddDelete(string sFileName,string sAddPanelSheet)
@@ -2085,6 +2119,7 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
 				
+				
 				//Add zetfast loop and devices and verify 40 V load
 				for(int j=7; j<=9; j++)
 				{
@@ -2092,6 +2127,15 @@ namespace TestProject.Libraries
 					sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,8]).Value.ToString();
 					sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[j,9]).Value.ToString();
 					s40VLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
+					
+					// Click on Panel Calculation tab
+					Common_Functions.clickOnPanelCalculationsTab();
+				
+					//Get 40V load from UI
+					sDefault40V = Get40VPSULoadValue(PanelType);
+					
+					// Click on Properties tab
+					Common_Functions.clickOnPropertiesTab();
 					
 					if(j==7)
 					{
@@ -2149,11 +2193,7 @@ namespace TestProject.Libraries
 					float.TryParse(s40VLoad, out ZetfastFourtyVLoad);
 					
 					
-					// Click on Panel Calculation tab
-				Common_Functions.clickOnPanelCalculationsTab();
-				
-					//Get 40V load from UI
-					sDefault40V = Get40VPSULoadValue(PanelType);
+					
 					
 					//Generate expected 40V load
 					float.TryParse(sDefault40V, out Default40V);
@@ -2191,7 +2231,7 @@ namespace TestProject.Libraries
 					Expected40VPSU = Default40V-ZetfastFourtyVLoad;
 					sExpected40VPSU = Expected40VPSU.ToString("0.000");
 					
-					if(k==8)
+					if(k==7)
 					{
 						// Click on Panel node
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -2990,6 +3030,7 @@ namespace TestProject.Libraries
 		 * Last Update : 13/02/2019  Alpesh Dhakad - 31/07/2019 & 21/08/2019- Updated test scripts as per new build and xpaths
 		 * Last update: 10/12/19-Poonam Kadam - Updated 40V methods
 		 * Alpesh Dhakad - 18/05/2020 & 29/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 06/01/2021 Updated script as per new UI changes and test data modification
 		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verify40VCalculationforXLMLoopWithDevices(string sFileName,string sAddPanelSheet)
@@ -3096,7 +3137,7 @@ namespace TestProject.Libraries
 						
 						// Verify 40V PSU load value of loop card
 						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
-						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
+						Devices_Functions.verifyLoadingDetailsValue(sCalcExpected40VPSU,s40VLoadingDetails);
 						
 						// Click on Properties tab
 						Common_Functions.clickOnPropertiesTab();
@@ -3107,15 +3148,15 @@ namespace TestProject.Libraries
 						
 						//repo.FormMe.XLMExternalLoopCardDevices_C.Click();
 						
-						// Click on Panel Calculation tab
-						Common_Functions.clickOnPanelCalculationsTab();
-				
-						// Verify 40V PSU load value of loop card
-						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
-						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
-						
-						// Click on Properties tab
-						Common_Functions.clickOnPropertiesTab();
+//						// Click on Panel Calculation tab
+//						Common_Functions.clickOnPanelCalculationsTab();
+//				
+//						// Verify 40V PSU load value of loop card
+//						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
+//						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
+//						
+//						// Click on Properties tab
+//						Common_Functions.clickOnPropertiesTab();
 						
 						// 40 V load on Addition of devices
 						sExpected40VLoadofDevices = ((Range)Excel_Utilities.ExcelRange.Cells[6,15]).Value.ToString();
@@ -3137,7 +3178,8 @@ namespace TestProject.Libraries
 							// Fetch devices data and add devices in XLM loop card
 							ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[k,14]).Value.ToString();
 							sType = ((Range)Excel_Utilities.ExcelRange.Cells[k,15]).Value.ToString();
-							Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+							//Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+							Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 						}
 						
 						// Click on Panel Calculation tab
@@ -3145,7 +3187,7 @@ namespace TestProject.Libraries
 				
 						// Verify 40V PSU load value of loop after addition of devices
 						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
-						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
+						Devices_Functions.verifyLoadingDetailsValue(sCalcExpected40VPSU,s40VLoadingDetails);
 						
 						// Click on Properties tab
 						Common_Functions.clickOnPropertiesTab();
@@ -3165,7 +3207,8 @@ namespace TestProject.Libraries
 							// Fetch devices data and add devices in XLM loop card
 							ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[k,14]).Value.ToString();
 							sType = ((Range)Excel_Utilities.ExcelRange.Cells[k,15]).Value.ToString();
-							Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+							//Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+							Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 						}
 						
 						// Click on Panel Calculation tab
@@ -3174,7 +3217,7 @@ namespace TestProject.Libraries
 						
 						// Verify 40V PSU load value of loop after addition of devices
 						//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
-						Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
+						Devices_Functions.verifyLoadingDetailsValue(sCalcExpected40VPSU,s40VLoadingDetails);
 						
 						// Click on Properties tab
 						Common_Functions.clickOnPropertiesTab();
@@ -3201,7 +3244,8 @@ namespace TestProject.Libraries
 						// Fetch devices data and add devices in XLM loop card
 						ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[k,14]).Value.ToString();
 						sType = ((Range)Excel_Utilities.ExcelRange.Cells[k,15]).Value.ToString();
-						Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+						//Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+							Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 					}
 					
 					// Click on Panel Calculation tab
@@ -3209,7 +3253,7 @@ namespace TestProject.Libraries
 				
 					// Verify 40V PSU load value of loop after addition of devices
 					//verify40VPSULoadValue(sCalcExpected40VPSU,PanelType);
-					Devices_Functions.verifyLoadingDetailsValue(sDefault40V,s40VLoadingDetails);
+					Devices_Functions.verifyLoadingDetailsValue(sCalcExpected40VPSU,s40VLoadingDetails);
 					
 					// Click on Properties tab
 						Common_Functions.clickOnPropertiesTab();
@@ -3652,7 +3696,7 @@ namespace TestProject.Libraries
 				
 				// Verify Default Alarm load value
 				//verifyAlarmLoad(expectedDefaultAlarmLoad,false,PanelType);
-				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultBatteryStandby,sAlarmLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmLoad,sAlarmLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -3797,6 +3841,7 @@ namespace TestProject.Libraries
 					//Get Battery Standby from UI
 					sDefaultBatteryStandyby = expectedDefaultBatteryStandby;
 					sDefaultAlarmLoad = expectedDefaultAlarmLoad;
+			
 					
 					//Generate expected Battery Standby and alarm load
 					float.TryParse(sDefaultBatteryStandyby, out DefaultBatteryStandby);
@@ -4117,6 +4162,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 22/01/2019
 		 * Alpesh Dhakad - 19/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 04/01/2021 Updated script as per new UI Changes of preceding values
 		 *****************************************************************************************************************/
 		public static string GetBatteryStandbyValue(string PanelType)
 		{
@@ -4142,9 +4188,21 @@ namespace TestProject.Libraries
 
 			
 			// Fetch BatteryStandby and store in Actual BatteryStandby value
-			string ActualBatteryStandbyValue = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
+			//string ActualBatteryStandbyValue = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
 			
+			if(repo.FormMe.txt_ActualLoadingDetailsValueInfo.Exists())
+			{
+			string ActualBatteryStandbyValue = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
 			return ActualBatteryStandbyValue;
+			}
+			else
+			{
+			string ActualBatteryStandbyValue = repo.FormMe.txt_ActualLoadingDetailsValuePreceding.TextValue;
+			return ActualBatteryStandbyValue;
+			}
+			
+			
+			
 		}
 		
 
@@ -4156,6 +4214,7 @@ namespace TestProject.Libraries
 		 * Function Owner:Purvi Bhasin
 		 * Last Update : 22/01/2019
 		 * Alpesh Dhakad - 19/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 04/01/2021 Updated script as per new UI Changes of preceding values
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static string GetAlarmLoadValue(string PanelType)
@@ -4180,9 +4239,23 @@ namespace TestProject.Libraries
 			Common_Functions.clickOnPanelCalculationsTab();
 			
 			// Fetch BatteryStandby and store in Actual 40VPSU value
-			string ActualAlarmLoadValue = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
+			//string ActualAlarmLoadValue = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
 			
+			if(repo.FormMe.txt_ActualLoadingDetailsValueInfo.Exists())
+			{
+			string ActualAlarmLoadValue = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
 			return ActualAlarmLoadValue;
+			}
+			else
+			{
+			string ActualAlarmLoadValue = repo.FormMe.txt_ActualLoadingDetailsValuePreceding.TextValue;
+			return ActualAlarmLoadValue;
+			}
+			
+			
+			
+			
+			
 		}
 		
 		/*****************************************************************************************************************
@@ -4196,6 +4269,7 @@ namespace TestProject.Libraries
 		 * Alpesh Dhakad - 21/08/2019 - Updated with new navigation tree method, xpath and devices gallery
 		 * Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
 		 * Alpesh Dhakad - 19/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 05/01/2021 Updated script as per new calculations
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnAdditionAndDeletionOfAccessories(string sFileName,string sAddPanelSheet)
@@ -4221,8 +4295,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
-				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
 				// Add panels using test data in excel sheet
@@ -4279,6 +4353,11 @@ namespace TestProject.Libraries
 					
 					Common_Functions.clickOnPointsTab();
 					
+					
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+					
 					float.TryParse(sBatteryStandby, out PrinterBatteryStandby);
 					float.TryParse(sAlarmLoad, out PrinterAlarmLoad);
 					Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
@@ -4297,8 +4376,13 @@ namespace TestProject.Libraries
 					// Verify Battery Standby value on addition of Accessories
 					//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
 					
+					
+					// Click on Loop A node
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+					
 					// Click on Panel Calculation tab
-					Common_Functions.clickOnPanelCalculationsTab();
+						Common_Functions.clickOnPanelCalculationsTab();
+					
 					
 					// Verify Alarm load value on addition of Accessories
 					//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
@@ -4372,6 +4456,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Purvi Bhasin
 		 * Last Update : 23/01/2019 Alpesh Dhakad - 30/07/2019,21/08/2019,30/08/2019,08/09/2019- Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 19/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 06/01/2021 Updated code as per new UI changes
 		 ***********************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnZetfastLoopAddDelete(string sFileName,string sAddPanelSheet)
@@ -4397,8 +4482,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
-				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -4420,6 +4505,29 @@ namespace TestProject.Libraries
 					sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[j,10]).Value.ToString();
 					sBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,11]).Value.ToString();
 					sAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,12]).Value.ToString();
+					
+					
+					float.TryParse(sBatteryStandby, out ZetfastBatteryStandby);
+					float.TryParse(sAlarmLoad, out ZetfastAlarmLoad);
+					
+					// Click on Panel Calculation tab
+					Common_Functions.clickOnPanelCalculationsTab();
+					
+					//Get Battery Standby load from UI
+					sDefaultBatteryStandby = GetBatteryStandbyValue(PanelType);
+					
+					//Get Alarm load from UI
+					sDefaultAlarmLoad = GetAlarmLoadValue(PanelType);
+					
+					//Generate expected Battery Standby
+					float.TryParse(sDefaultBatteryStandby, out DefaultBatteryStandby);
+					ExpectedBatteryStandby = DefaultBatteryStandby+ZetfastBatteryStandby;
+					sExpectedBatteryStandby= ExpectedBatteryStandby.ToString("0.000");
+					
+					//Generate expected Alarm load
+					float.TryParse(sDefaultAlarmLoad, out DefaultAlarmLoad);
+					ExpectedAlarmLoad = DefaultAlarmLoad+ZetfastAlarmLoad;
+					sExpectedAlarmLoad= ExpectedAlarmLoad.ToString("0.000");
 					
 					if(j==6)
 					{
@@ -4452,27 +4560,7 @@ namespace TestProject.Libraries
 					Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
 					
 					
-					float.TryParse(sBatteryStandby, out ZetfastBatteryStandby);
-					float.TryParse(sAlarmLoad, out ZetfastAlarmLoad);
 					
-					// Click on Panel Calculation tab
-					Common_Functions.clickOnPanelCalculationsTab();
-					
-					//Get Battery Standby load from UI
-					sDefaultBatteryStandby = GetBatteryStandbyValue(PanelType);
-					
-					//Get Alarm load from UI
-					sDefaultAlarmLoad = GetAlarmLoadValue(PanelType);
-					
-					//Generate expected Battery Standby
-					float.TryParse(sDefaultBatteryStandby, out DefaultBatteryStandby);
-					ExpectedBatteryStandby = DefaultBatteryStandby+ZetfastBatteryStandby;
-					sExpectedBatteryStandby= ExpectedBatteryStandby.ToString("0.000");
-					
-					//Generate expected Alarm load
-					float.TryParse(sDefaultAlarmLoad, out DefaultAlarmLoad);
-					ExpectedAlarmLoad = DefaultAlarmLoad+ZetfastAlarmLoad;
-					sExpectedAlarmLoad= ExpectedAlarmLoad.ToString("0.000");
 					
 					// Verify Battery Standby value on addition of zetfast loop with devices
 					//verifyBatteryStandby(sExpectedBatteryStandby,false,PanelType);
@@ -4521,7 +4609,7 @@ namespace TestProject.Libraries
 					ExpectedAlarmLoad = DefaultAlarmLoad-ZetfastAlarmLoad;
 					sExpectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
 					
-					if(k==8)
+					if(k==6)
 					{
 						// Click on Panel node
 						Common_Functions.ClickOnNavigationTreeItem(PanelNode);
@@ -4618,6 +4706,7 @@ namespace TestProject.Libraries
 		 * Last Update : 22/01/2019  Alpesh Dhakad - 30/07/2019,21/08/2019,08/09/2019- Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 17/09/2019 - Updated script
 		 * Alpesh Dhakad - 19/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 05/01/2021 Updated script as per new calculations
 		 ***********************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnSlotCardAddDelete(string sFileName,string sAddPanelSheet)
@@ -4643,8 +4732,8 @@ namespace TestProject.Libraries
 				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
 				expectedDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
 				expectedDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
-				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
-				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				sStandbyLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,20]).Value.ToString();
+				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,19]).Value.ToString();
 				
 				int.TryParse(sRowNumber, out rowNumber);
 				
@@ -4676,7 +4765,7 @@ namespace TestProject.Libraries
 				// Click on Loop Card node
 				//Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				
-				for(int j=8; j<9; j++)
+				for(int j=8; j<=rows; j++)
 				{
 					
 					ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[j,9]).Value.ToString();
@@ -4735,14 +4824,14 @@ namespace TestProject.Libraries
 					//sDefaultAlarmLoad = GetAlarmLoadValue(PanelType);
 					
 					//Generate expected Battery Standby load on Deletion
-					sDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,6]).Value.ToString();
-					float.TryParse(sDefaultBatteryStandby, out DefaultBatteryStandby);
+					//sDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,6]).Value.ToString();
+					float.TryParse(sExpectedBatteryStandby, out DefaultBatteryStandby);
 					ExpectedBatteryStandby = DefaultBatteryStandby-SCBatteryStandby;
 					sExpectedBatteryStandby = ExpectedBatteryStandby.ToString("0.000");
 					
 					//Generate expected Alarm load on Deletion
-					sDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,7]).Value.ToString();
-					float.TryParse(sDefaultAlarmLoad, out DefaultAlarmLoad);
+					//sDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,7]).Value.ToString();
+					float.TryParse(sExpectedAlarmLoad, out DefaultAlarmLoad);
 					ExpectedAlarmLoad = DefaultAlarmLoad-SCAlarmLoad;
 					sExpectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
 					
@@ -4784,7 +4873,7 @@ namespace TestProject.Libraries
 				}
 				
 				//for adding panel accessories
-				for(int j=8; j<=9; j++)
+				for(int j=8; j<=rows; j++)
 				{
 					
 					ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[j,14]).Value.ToString();
@@ -4844,30 +4933,40 @@ namespace TestProject.Libraries
 					sDefaultAlarmLoad = GetAlarmLoadValue(PanelType);
 					
 					//Generate expected Battery Standby load on Deletion
-					sDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,6]).Value.ToString();
-					float.TryParse(sDefaultBatteryStandby, out DefaultBatteryStandby);
+					//sDefaultBatteryStandby = ((Range)Excel_Utilities.ExcelRange.Cells[j,6]).Value.ToString();
+					float.TryParse(sExpectedBatteryStandby, out DefaultBatteryStandby);
 					ExpectedBatteryStandby = DefaultBatteryStandby-PABatteryStandby;
 					sExpectedBatteryStandby = ExpectedBatteryStandby.ToString("0.000");
 					
 					//Generate expected Alarm load on Deletion
-					sDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,7]).Value.ToString();
-					float.TryParse(sDefaultAlarmLoad, out DefaultAlarmLoad);
+					//sDefaultAlarmLoad = ((Range)Excel_Utilities.ExcelRange.Cells[j,7]).Value.ToString();
+					float.TryParse(sExpectedAlarmLoad, out DefaultAlarmLoad);
 					ExpectedAlarmLoad = DefaultAlarmLoad-PAAlarmLoad;
 					sExpectedAlarmLoad = ExpectedAlarmLoad.ToString("0.000");
 					
 					// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 					
-					//click on panel accessories tab
-					Common_Functions.clickOnPanelAccessoriesTab();
+//					//click on panel accessories tab
+//					Common_Functions.clickOnPanelAccessoriesTab();
+//					
+//					//repo.FormMe.cell_Label.Click();
+//					//Devices_Functions.SelectRowUsingLabelName(sLabelName);
+//					
+//					Devices_Functions.SelectRowUsingLabelNameForPanelAccOneRow(sLabelName);
+//					
+//					if(repo.FormMe.txt_LabelNameForPanelAccOneRowInfo.Exists())
+//					{
 					
-					//repo.FormMe.cell_Label.Click();
+					//Click on Inventory tab
+					Common_Functions.clickOnInventoryTab();
+					
 					//Devices_Functions.SelectRowUsingLabelName(sLabelName);
+					Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(sLabelName);
 					
-					Devices_Functions.SelectRowUsingLabelNameForPanelAccOneRow(sLabelName);
-					
-					if(repo.FormMe.txt_LabelNameForPanelAccOneRowInfo.Exists())
-					{
+					//if(repo.FormMe.txt_LabelName1Info.Exists())
+					if(repo.FormMe.txt_LabelNameForInventoryInfo.Exists())
+					{				
 						Common_Functions.clickOnDeleteButton();
 						//Validate.AttributeEqual(repo.FormMe.cell_LabelInfo, "Text", sLabelName);
 						Report.Log(ReportLevel.Success, "Device "+sLabelName+" deleted successfully");

@@ -79,10 +79,10 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Devices_Functions.EnableISDevices();
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            Libraries.Devices_Functions.EnableISDevices();
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -103,7 +103,14 @@ namespace TestProject.Recording_Modules
             //Libraries.AC_Functions.verifyMaxACUnitsValue("20.39999");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("20.39999", "Signal (AC Units)");
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("20.39999", "Signal (AC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // ACUnits
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("20", "Built-in Loop-A", "1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CHEx IS", "Detectors");
@@ -118,7 +125,11 @@ namespace TestProject.Recording_Modules
             //Libraries.AC_Functions.verifyMaxACUnitsValue("3.6");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.6", "Signal (AC Units)");
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.6", "Signal (AC Units)");
+            //Delay.Milliseconds(0);
+            
+            // ACUnits
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("4", "Built-in Loop-A", "1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPropertiesTab();
@@ -130,10 +141,17 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
             //Libraries.AC_Functions.verifyMaxACUnitsValue("53.6");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("53.6", "Signal (AC Units)");
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("53.6", "Signal (AC Units)");
+            //Delay.Milliseconds(0);
+            
+            // ACUnits
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("54", "Built-in Loop-A", "1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPropertiesTab();
@@ -148,25 +166,38 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // ACUnits
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("104", "Built-in Loop-A", "1");
+            Delay.Milliseconds(0);
+            
             //Libraries.AC_Functions.verifyMaxACUnitsValue("104");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("104", "Signal (AC Units)");
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("104", "Signal (AC Units)");
+            //Delay.Milliseconds(0);
+            
+            // ACUnits
+            Libraries.AC_Functions.VerifyACUnitIndicationWithISDevices("Built-in Loop-A", "1");
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.VerifyACUnitIndicationWithISDevices();
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("DDM 800 Loop", ValueConverter.ArgumentFromString<int>("DeviceQty", "28"));
+            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("DDM 800 Loop", ValueConverter.ArgumentFromString<int>("DeviceQty", "20"));
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.VerifyACUnitIndicationWithISDevices();
+            // ACUnits
+            Libraries.AC_Functions.VerifyACUnitIndicationWithISDevices("Built-in Loop-A", "1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("DDM 800 Loop", ValueConverter.ArgumentFromString<int>("DeviceQty", "2"));
             Delay.Milliseconds(0);
             
-            Libraries.AC_Functions.VerifyACUnitIndicationWithISDevices();
+            // ACUnits
+            Libraries.AC_Functions.VerifyACUnitIndicationWithISDevices("Built-in Loop-A", "1");
             Delay.Milliseconds(0);
             
         }

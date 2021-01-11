@@ -38,5 +38,11 @@ namespace TestProject.Recording_Modules
             // Your recording specific initialization code goes here.
         }
 
+        public void VerifyACUnitIndicationWithISDevices()
+        {
+            // TODO: Replace the following line with your code implementation.
+            throw new NotImplementedException();
+        }
+
     }
 }

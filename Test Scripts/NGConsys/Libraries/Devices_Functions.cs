@@ -637,6 +637,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : Alpesh Dhakad - 30/07/2019 & 23/08/2019,12/06/2020 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 07/01/2021 Added click on built in loop A node click event (twice)
 		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void ChangeCableLength(String sLoopType,int fCableLength1,int fCableLength2)
@@ -646,6 +647,10 @@ namespace TestProject.Libraries
 			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
+			
+			// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
 			
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -1288,7 +1293,7 @@ namespace TestProject.Libraries
 			
 			if(repo.FormMe.txt_LabelName1Info.Exists())
 			{
-				if(repo.ProfileConsys1.btn_Delete.Visible){
+				if(repo.FormMe.btn_Delete.Visible){
 					Common_Functions.clickOnDeleteButton();
 					
 					if(repo.FormDeleteSpur.btn_Ok_WarningInfo.Exists())
@@ -2238,6 +2243,7 @@ namespace TestProject.Libraries
 		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated scripts as per new build and xpath
 		 * Alpesh Dhakad - 07/08/2019 - Updated scripts for cable length
 		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath
+		 * Alpesh Dhakad - 08/01/2021 - Added 1 click event on Loop A node
 		 *****************************************************************************************/
 		// Change cable length method
 		[UserCodeMethod]
@@ -2248,6 +2254,9 @@ namespace TestProject.Libraries
 			
 			// Click on Panel node
 			Common_Functions.ClickOnNavigationTreeItem("Node");
+			
+			// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 			
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -7982,19 +7991,23 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
 		
-		/**************************************************************************************
+		/*************************************************************************************************************************
 		 * Function Name: verifyLoadingDetailsValue
 		 * Function Details: To verify actual loading details value of searched detail unit
 		 * Parameter/Arguments: expectedUnits and loading detail name
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
-		 * Last Update : 25/11/2019
-		 **************************************************************************************/
+		 * Last Update : 25/11/2019 
+		 * Alpesh Dhakad - 28/12/2020 Updated as per object identification by adding new xpath by adding preceding method
+		 **************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyLoadingDetailsValue(string expectedUnits, string LoadingDetail)
 		{
-			Common_Functions.clickOnPhysicalLayoutTab();
+			//Common_Functions.clickOnPhysicalLayoutTab();
 			sLoadingDetail = LoadingDetail;
+			
+			if(repo.FormMe.txt_ActualLoadingDetailsValueInfo.Exists())
+			{
 			
 			string LoadingUnits = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
 			
@@ -8005,6 +8018,21 @@ namespace TestProject.Libraries
 			else
 			{
 				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoadingUnits);
+			}
+			
+			}
+			else
+			{
+			string LoadingUnits = repo.FormMe.txt_ActualLoadingDetailsValuePreceding.TextValue;
+			
+			if(LoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoadingUnits);
+			}
 			}
 			
 			//Click on Points tab
@@ -8022,8 +8050,11 @@ namespace TestProject.Libraries
 		[UserCodeMethod]
 		public static void verifyMaxLoadingDetailsValue(string expectedMaxUnits, string LoadingDetail)
 		{
-			Common_Functions.clickOnPhysicalLayoutTab();
+			//Common_Functions.clickOnPhysicalLayoutTab();
 			sLoadingDetail = LoadingDetail;
+			
+			if(repo.FormMe.txt_MaxLoadingDetailsValueInfo.Exists())
+			{
 			
 			string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValue.TextValue;
 			
@@ -8036,8 +8067,26 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedMaxUnits  + " Actual Units: "+ MaxLoadingUnits);
 			}
 			
+			}
+			else
+			{
+			string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValuePreceding.TextValue;
+			
+			if(MaxLoadingUnits.Equals(expectedMaxUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " value  "+ expectedMaxUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedMaxUnits  + " Actual Units: "+ MaxLoadingUnits);
+			}
+			}
+			
 			//Click on Points tab
 			Common_Functions.clickOnPointsTab();
+			
+			
+			
 		}
 		
 		/********************************************************************
@@ -8991,8 +9040,121 @@ namespace TestProject.Libraries
 			repo.FormMe.PointsGridRowForEXI.Click();
 		}
 		
-		
+		/**************************************************************************************
+		 * Function Name: verifyMaxLoopLoadingDetailsValue
+		 * Function Details: To verify maximum loading details value of searched detail unit
+		 * Parameter/Arguments: expectedUnits,column number and loading detail name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 16/12/2020
+		 * Alpesh Dhakad : 06/01/2021 Updated as per new UI changes
+		 **************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyMaxLoopLoadingDetailsValue(string expectedUnits, string LoadingDetail, string ColumnNumber)
+		{
+			sColumn=ColumnNumber;
+			sLoadingDetail = LoadingDetail;
+			
+			string MaxLoopLoadingUnits = repo.FormMe.txt_Loops_MaxLoadingDetailsValue.TextValue;
+			
+			string LoopLoadingUnits = MaxLoopLoadingUnits.Split('/')[1].Trim();
+			
+			if(LoopLoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Max Loop Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Max Loop Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoopLoadingUnits);
+			}
+			
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+		}
 
+		/**************************************************************************************
+		 * Function Name: verifyLoopLoadingDetailsValue
+		 * Function Details: To verify actual loading details value of searched detail unit
+		 * Parameter/Arguments: expectedUnits,column number and loading detail name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 16/12/2020
+		 * Alpesh Dhakad : 06/01/2021 Updated as per new UI changes
+		 **************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyLoopLoadingDetailsValue(string expectedUnits, string LoadingDetail,string ColumnNumber)
+		{
+			sColumn=ColumnNumber;
+			sLoadingDetail = LoadingDetail;
+			
+			string ActualLoopLoadingUnits = repo.FormMe.txt_Loops_ActualLoadingDetailsValue.TextValue;
+			
+			string LoopLoadingUnits = ActualLoopLoadingUnits.Split('/')[0].Trim();
+			
+			
+			if(LoopLoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loop Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loop Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoopLoadingUnits);
+			}
+			
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+		}
+
+		/********************************************************************
+		 * Function Name: verifyLoopLoadingDetailColor
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/12/2020
+		 * Alpesh Dhakad : 06/01/2021 Updated as per new UI changes
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void verifyLoopLoadingDetailColor(string LoadingDetail,string ColumnNumber)
+		{
+			string expectedColor;
+			sColumn=ColumnNumber;
+			sLoadingDetail = LoadingDetail;
+			
+			//Go to Physical layout
+			Common_Functions.clickOnPhysicalLayoutTab();
+			Delay.Duration(500, false);
+			
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			//float ActualLoadingUnits = float.Parse(repo.FormMe.txt_Loops_ActualLoadingDetailsValue.TextValue);
+			
+			string ActualLoopLoadingUnits = repo.FormMe.txt_Loops_ActualLoadingDetailsValue.TextValue;
+			
+			float LoopLoadingUnits = float.Parse(ActualLoopLoadingUnits.Split('/')[0].Trim());
+			
+			
+			string actualColour = repo.FormMe.LoopLoadingDetailsProgressbarColor.GetAttributeValue<string>("foreground");
+			
+			//Fetch max volt drop text value and storing it in string
+			//float MaxLoadingUnits = float.Parse(repo.FormMe.txt_Loops_MaxLoadingDetailsValue.TextValue);
+			
+			string MaxLoopLoadingUnits = repo.FormMe.txt_Loops_MaxLoadingDetailsValue.TextValue;
+			
+			float MaximumLoopLoadingUnits = float.Parse(MaxLoopLoadingUnits.Split('/')[1].Trim());
+			
+			
+			expectedColor = Devices_Functions.calculatePercentage(LoopLoadingUnits, MaximumLoopLoadingUnits);
+			
+			Devices_Functions.VerifyPercentage(expectedColor, actualColour);
+		}
+		
+		
+		
+		
+		
+		
+		
 	}
 }
 

@@ -879,7 +879,7 @@ rxversion="8.3">
 			id="0b994740-d598-48b5-9de2-cbc55320c04a"
 			name="Verify_AC_Units_Calculation_for_FIM_Loop">
 				<description>
-					<![CDATA[<p>NGC-493/TC-123&nbsp;OR NGC-990</p>]]>
+					<![CDATA[<p>NGC-493/T369 OR TC-123&nbsp;OR NGC-990</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -2390,7 +2390,7 @@ rxversion="8.3">
 			id="200b6f24-2d41-43ee-baff-a642c2702da4"
 			name="Verify_40V_load_on_addition/deletion_of_loop_devices_in_XLM_loop">
 				<description>
-					<![CDATA[NGC-601/TC-217]]>
+					<![CDATA[NGC-601/T1465 OR TC-217]]>
 				</description>
 				<parameters>
 					<param
@@ -2616,7 +2616,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 30.0.81">
+					value="C:\Program Files (x86)\TFS\Profile Consys 30.0.90">
 					</param>
 					<param
 					name="Mode"
@@ -3679,7 +3679,7 @@ rxversion="8.3">
 			id="31bdc4a3-6299-44fa-ab6a-9c4402b42cf0"
 			name="Verify_AC_Units_Calculation_For_Loops_With_IS_Devices_For_FIM">
 				<description>
-					<![CDATA[<p>NGC-493/TC-124&nbsp; Defect-3267 Test data needs to add devices count of DDM should be rechecked after defect fix.</p>]]>
+					<![CDATA[<p>NGC-493/T370 OR TC-124</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -3787,7 +3787,7 @@ rxversion="8.3">
 			id="32ef10b0-f04a-49a2-8169-31740fce6404"
 			name="Verify_5V_Load_On_Addition_Deletion_Of_Slot_Cards">
 				<description>
-					<![CDATA[<p>NGC-149/TC-157 OR NGC-1519/63081</p>]]>
+					<![CDATA[<p>NGC-149/TC-157 OR NGC-2493/T1165&nbsp;OR NGC-1519/63081</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -3933,7 +3933,7 @@ rxversion="8.3">
 			id="34abeb3f-69b9-420f-9c5b-a3b1852b887d"
 			name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_RBus_Connection">
 				<description>
-					<![CDATA[<p>NGC-488/TC-147</p>]]>
+					<![CDATA[<p>NGC-488/T394 OR TC-147</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -4174,7 +4174,7 @@ rxversion="8.3">
 			id="377591ae-1cd8-4791-ae2d-87f4de3a9304"
 			name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection">
 				<description>
-					<![CDATA[<p>NGC-149/TC-154 OR NGC-1517/63073&nbsp; Test data updated and for FIM panels Ethernet connection is not present so, manual test cases needs to be updated.&nbsp;</p><p>Note : To test with more panels we need to repeat this steps and edit test data only. Also, need to include delete panel step after each occurence.</p>]]>
+					<![CDATA[<p>Defect-3872 NGC-149/TC-154  OR NGC-2493/T1162 OR &nbsp;NGC-1517/63073</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -4615,7 +4615,7 @@ rxversion="8.3">
 			id="3de69654-6741-43c8-972a-dca620ff56fc"
 			name="Verify_24V_Load_On_Changing_CPU_Of_Panel">
 				<description>
-					<![CDATA[<p>NGC-571/TC-179 OR NGC-1532 Test data needs to be updated</p>]]>
+					<![CDATA[<p>NGC-571/T1394 OR TC-179 OR NGC-1532 </p>]]>
 				</description>
 				<parameters>
 					<param
@@ -4725,9 +4725,9 @@ rxversion="8.3">
 			</testmodule>
 			<testcase
 			id="405fcb6b-fb0a-45a5-b360-e8602f537671"
-			name="Verify_40V_Load_On_Changing_CPU_Of_Panel">
+			name="Verify_40V_Load_On_Changing_CPU_And_PSU_Of_Panel">
 				<description>
-					<![CDATA[<p>NGC-601/TC-206_TC-207</p>]]>
+					<![CDATA[<p>NGC-601/T1456 OR TC-206_TC-207</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -5180,7 +5180,7 @@ rxversion="8.3">
 			id="4568f5cd-852c-4854-931f-3a3d85e7fdf1"
 			name="Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Addition_Deletion_Of_Ethernet">
 				<description>
-					<![CDATA[<p>NGC-488/TC-146&nbsp; Test data needs to be updated because expected values not known</p>]]>
+					<![CDATA[<p>Defect-3872 NGC-488/T392 OR TC-146</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -5243,7 +5243,7 @@ rxversion="8.3">
 			id="4605b73e-00b5-4c8c-9986-ef5ce3021bfb"
 			name="Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template">
 				<description>
-					<![CDATA[<p>NGC-571/TC-181 OR NGC-1542&nbsp; Test Data updated.</p><p>Note : To test with more panels we need to update the panel name and test data</p>]]>
+					<![CDATA[<p>NGC-571/T1400 OR TC-181 OR NGC-1542</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -6173,7 +6173,7 @@ rxversion="8.3">
 			id="5027a08b-fbdc-4d1c-a923-710258af23ea"
 			name="Verify_40V_load_calculation_for_FIM">
 				<description>
-					<![CDATA[NGC-601/TC-214]]>
+					<![CDATA[NGC-601/T1463 OR TC-214]]>
 				</description>
 				<parameters>
 					<param
@@ -6324,7 +6324,7 @@ rxversion="8.3">
 			id="51aea801-243f-40e2-bae9-73753d6814bc"
 			name="Verify_Maximum_Battery_Standby_And_Battery_Alarm_Limits">
 				<description>
-					<![CDATA[NGC-488/TC-143]]>
+					<![CDATA[NGC-488/T381 OR TC-143]]>
 				</description>
 				<parameters>
 					<param
@@ -6411,7 +6411,7 @@ rxversion="8.3">
 			id="534c0419-c49f-48e5-b622-6c96911d2e38"
 			name="Verify_40V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection">
 				<description>
-					<![CDATA[<p>NGC-601/TC-208&nbsp; Updated for only 2 panels and all other panels Ethernet is not available</p>]]>
+					<![CDATA[<p>Defect-3872 NGC-601/T1457 OR TC-208</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -6434,7 +6434,7 @@ rxversion="8.3">
 			id="53bcf631-ac84-43d9-9864-983288d4ab13"
 			name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Accessories">
 				<description>
-					<![CDATA[<p>NGC-488/TC-149</p>]]>
+					<![CDATA[<p>NGC-488/T396 OR TC-149</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -6877,7 +6877,7 @@ rxversion="8.3">
 			id="57ed1357-6ad0-4f24-8b21-de92b7d2a98b"
 			name="Verify_AC_Units_Calculation_for_PFI_Loop">
 				<description>
-					<![CDATA[<p>NGC-493/TC-122 OR NGC-989- Ranorex exception occurs</p>]]>
+					<![CDATA[<p>NGC-493/T368 OR TC-122 OR NGC-989</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7537,7 +7537,7 @@ rxversion="8.3">
 			id="5f2480d6-3f96-4d6e-88c4-465c17a32111"
 			name="Verify_Maximum_Limit_For_5V_Load">
 				<description>
-					<![CDATA[<p>NGC-149/TC-152 OR NGC-1512/63034</p>]]>
+					<![CDATA[<p>NGC-149/TC-152 OR NGC-2493/T1160 OR&nbsp;NGC-1512/63034 </p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7957,7 +7957,7 @@ rxversion="8.3">
 			id="6485be24-83a7-493f-b1de-e7d3f41b6ed2"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Cards">
 				<description>
-					<![CDATA[<p>NGC-571/TC-182 OR NGC-1607</p>]]>
+					<![CDATA[<p>NGC-571/T1401 OR TC-182 OR NGC-1607</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7986,7 +7986,7 @@ rxversion="8.3">
 			id="65302c0c-7a8c-4fb8-bdce-3f7887e5394c"
 			name="Verify_40V_load_calculation_for_PFI">
 				<description>
-					<![CDATA[NGC-601/TC-213]]>
+					<![CDATA[<p>NGC-601/TC-213 Not Applicable now as PFI panels doesn't show 40V field</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -9110,7 +9110,7 @@ rxversion="8.3">
 			id="7497d310-701e-41d8-b7ed-077facb4a9db"
 			name="Verify_24V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection">
 				<description>
-					<![CDATA[<p>NGC-571/TC-180 OR NGC-1533 Test data needs to be updated and for FIM panels Ethernet connection is not present so, manual test cases needs to be updated.&nbsp;</p><p>Note : To test with more panels we need to repeat this steps and edit test data only. Also, need to include delete panel step after each occurence.</p>]]>
+					<![CDATA[<p>Defect-3872 NGC-571/T1395 OR TC-180 OR NGC-1533 Test data needs to be updated and for FIM panels Ethernet connection is not present so, manual test cases needs to be updated.&nbsp;</p><p>Note : To test with more panels we need to repeat this steps and edit test data only. Also, need to include delete panel step after each occurence.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -9656,7 +9656,7 @@ rxversion="8.3">
 			id="7c847ecf-8ad2-402e-ba53-ff65fb56a49d"
 			name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Devices_In_Zetfast">
 				<description>
-					<![CDATA[<p>NGC-488/TC-151</p>]]>
+					<![CDATA[<p>NGC-488/T399 OR TC-151</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -9934,7 +9934,7 @@ rxversion="8.3">
 			id="809819bd-bb6a-4d4f-a7dc-db08d939d5ea"
 			name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_Slot_Cards">
 				<description>
-					<![CDATA[<p>NGC-488/TC-148</p>]]>
+					<![CDATA[<p>NGC-488/T395 OR TC-148</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -9970,7 +9970,7 @@ rxversion="8.3">
 			id="80ac5864-eb38-4d35-8b11-cbe35b534c17"
 			name="Verify_5V_Load_On_Addition_Deletion_Of_Loop_Cards">
 				<description>
-					<![CDATA[<p>NGC-149/TC-156 OR NGC-1516/63077</p>]]>
+					<![CDATA[<p>NGC-149/TC-156 OR NGC-2493/T1164&nbsp;OR NGC-1516/63077</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10489,7 +10489,7 @@ MxDesigner]]>
 			id="8589c953-9535-40d9-94d0-523f450ee6fc"
 			name="Verify_40V_load_on_addition/deletion_of_loop_devices_in_PLX_loop">
 				<description>
-					<![CDATA[NGC-601/TC-215]]>
+					<![CDATA[<p>NGC-601/TC-215 Not Applicable now as PFI panels doesn't show 40V field</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10506,7 +10506,7 @@ MxDesigner]]>
 			id="858d9d76-4dae-4d43-b582-cfac67117bf3"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Slot_Cards">
 				<description>
-					<![CDATA[<p>NGC-571/TC-183 OR NGC-1608 Defect-3304</p>]]>
+					<![CDATA[<p>NGC-571/T1397 OR TC-183 OR NGC-1608</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10714,7 +10714,7 @@ MxDesigner]]>
 			id="87ffa96c-e0b5-4071-9c27-812f51d30973"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_Zetfast_Loop">
 				<description>
-					<![CDATA[<p>NGC-571/TC-185 OR NGC-1678</p>]]>
+					<![CDATA[<p>NGC-571/T1399 OR TC-185 OR NGC-1678</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10977,7 +10977,7 @@ MxDesigner]]>
 			id="8b24f119-1ca6-4cfc-a37a-84506abc17d4"
 			name="Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Rbus_Connection_And_Xbus_Template">
 				<description>
-					<![CDATA[<p>NGC-149/TC-155 OR NGC-1521/63076&nbsp; Test Data updated.</p><p>Note : To test with more panels we need to repeat this steps and edit test data only. Also, need to include delete panel step after each occurence.</p>]]>
+					<![CDATA[<p>NGC-149/TC-155 OR NGC-2493/T1163&nbsp;OR NGC-1521/63076</p><p>Note : To test with more panels we need to repeat this steps and edit test data only. Also, need to include delete panel step after each occurence.</p><p>Also, FIM panels(for MX4000 ) we need to select second row for MPM800 so method is changed in that Step to select that row.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -11717,7 +11717,7 @@ MxDesigner]]>
 			id="96340868-31b8-492e-add5-18a3eedde248"
 			name="Verify_5V_Load_On_Addition_Deletion_Of_Accessories">
 				<description>
-					<![CDATA[<p>NGC-149/TC-158/63084&nbsp;&nbsp; Printer 2 is not visible in label. Instead of it PLX800-E is visible.<br></p>]]>
+					<![CDATA[<p>NGC-149/TC-158/63084 OR NGC-2493/T1166&nbsp;<br></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -12204,7 +12204,7 @@ MxDesigner]]>
 			id="9d3c19ca-6732-451c-82bf-133ea5d738c3"
 			name="Verify_40V_Load_On_Addition_Deletion_Of_SlotCards">
 				<description>
-					<![CDATA[NGC-601/TC-212]]>
+					<![CDATA[<p>NGC-601/T1461 OR TC-212 Cannot add slot card in FIM loops and for PFI loop 40V field is not visible</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -12590,7 +12590,7 @@ div.WordSection1
 			id="a207c739-eb5c-4c9d-b188-95fdc048f215"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_XLM_Loop">
 				<description>
-					<![CDATA[<p>NGC-571/TC-186 OR NGC-1679</p>]]>
+					<![CDATA[<p>NGC-571/T1402 OR TC-186 OR NGC-1679</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -13905,7 +13905,7 @@ persisted in panel properties&nbsp;]]>
 			id="b7618595-1949-4373-bf5c-e474f06cd552"
 			name="Verify_40V_Load_On_Addition_Deletion_Of_Zetfast_Loop">
 				<description>
-					<![CDATA[NGC-601/TC-211]]>
+					<![CDATA[NGC-601/T1460 OR TC-211]]>
 				</description>
 				<parameters>
 					<param
@@ -14547,7 +14547,7 @@ persisted in panel properties&nbsp;]]>
 			id="c072cf02-e092-40e6-bada-79fe192fd3dc"
 			name="Verify_40V_Load_On_Addition_Deletion_Of_Accessories">
 				<description>
-					<![CDATA[NGC-601/TC-210]]>
+					<![CDATA[NGC-601/T1459 OR TC-210]]>
 				</description>
 				<parameters>
 					<param
@@ -15582,7 +15582,7 @@ persisted in panel properties&nbsp;]]>
 			id="d0c34cef-95cd-4083-b02b-d372bc193cc3"
 			name="Verify_40V_Alarm_Load_On_Addition_Deletion_Of_RBus_Connection">
 				<description>
-					<![CDATA[NGC-601/TC-209]]>
+					<![CDATA[NGC-601/T1458 OR TC-209]]>
 				</description>
 				<parameters>
 					<param
@@ -15759,7 +15759,7 @@ persisted in panel properties&nbsp;]]>
 			id="d29a6c80-d886-4c37-ac9c-50f9c0ba75bf"
 			name="Verify_AC_Units_Calculation_For_Loops_With_IS_Devices">
 				<description>
-					<![CDATA[<p>NGC-493/TC-124&nbsp; Defect-3267 Test data needs to add devices count of DDM should be rechecked after defect fix.</p>]]>
+					<![CDATA[<p>NGC-493/T370 OR TC-124</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -15786,7 +15786,7 @@ persisted in panel properties&nbsp;]]>
 			id="d2afcda7-50a8-4db0-9aee-8507634d952e"
 			name="Verify_Maximum_Limit_For_24V_Load">
 				<description>
-					<![CDATA[<p>NGC-571/TC-178 OR NGC-1526</p>]]>
+					<![CDATA[<p>NGC-571/T1393 OR TC-178 OR NGC-1526</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -15829,7 +15829,7 @@ persisted in panel properties&nbsp;]]>
 			id="d2ebb42b-d2ea-48f9-a1ae-976bfa404bca"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Loop_Devices_In_PLX_Loop">
 				<description>
-					<![CDATA[<p>NGC-571/TC-187 OR NGC-1680</p>]]>
+					<![CDATA[<p>NGC-571/T1398 OR TC-187 OR NGC-1680</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16297,7 +16297,7 @@ persisted in panel properties&nbsp;]]>
 			id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed"
 			name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
 				<description>
-					<![CDATA[<p>Defect-3686 NGC-149/TC-153 OR NGC-1513/63071</p>]]>
+					<![CDATA[<p>Defect-3686 NGC-149/TC-153 OR NGC-2493/T1161&nbsp;OR NGC-1513/63071</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -17235,7 +17235,7 @@ persisted in panel properties&nbsp;]]>
 			id="e66cdbe5-4c6a-442c-9f5e-3d38c552fe18"
 			name="Verify_24V_Load_On_Addition_Deletion_Of_Accessories">
 				<description>
-					<![CDATA[<p>NGC-571/TC-184 OR NGC-1609</p>]]>
+					<![CDATA[<p>NGC-571/T1396 OR TC-184 OR NGC-1609</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -17710,7 +17710,7 @@ persisted in panel properties&nbsp;]]>
 			id="ecfd79ea-8275-4f6e-89a6-09b478da25ec"
 			name="Verify_Battery_Standby_And_Battery_Alarm_Limits_On_Changing_CPU_And_PSU">
 				<description>
-					<![CDATA[NGC-488/TC-144 &amp; 145. Failing due to NGC-1689.]]>
+					<![CDATA[NGC-488/T386 OR TC-144 &amp; 145]]>
 				</description>
 				<parameters>
 					<param
@@ -22225,7 +22225,7 @@ persisted in panel properties&nbsp;]]>
 					</testcase>
 					<testcase
 					id="405fcb6b-fb0a-45a5-b360-e8602f537671"
-					name="Verify_40V_Load_On_Changing_CPU_Of_Panel">
+					name="Verify_40V_Load_On_Changing_CPU_And_PSU_Of_Panel">
 						<testmodule
 						id="3aea2687-26f0-4bc0-9c11-946200d7697f"
 						name="Application_Open">
@@ -24883,6 +24883,36 @@ persisted in panel properties&nbsp;]]>
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
+		name="BatteryStandBy__AlarmCurrent">
+			<testcontainer
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="34abeb3f-69b9-420f-9c5b-a3b1852b887d">
+			</testcontainer>
+			<testcontainer
+			id="4568f5cd-852c-4854-931f-3a3d85e7fdf1">
+			</testcontainer>
+			<testcontainer
+			id="51aea801-243f-40e2-bae9-73753d6814bc">
+			</testcontainer>
+			<testcontainer
+			id="53bcf631-ac84-43d9-9864-983288d4ab13">
+			</testcontainer>
+			<testcontainer
+			id="6bab3c88-91e1-47d4-8c62-025c840f9d18">
+			</testcontainer>
+			<testcontainer
+			id="7c847ecf-8ad2-402e-ba53-ff65fb56a49d">
+			</testcontainer>
+			<testcontainer
+			id="809819bd-bb6a-4d4f-a7dc-db08d939d5ea">
+			</testcontainer>
+			<testcontainer
+			id="ecfd79ea-8275-4f6e-89a6-09b478da25ec">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
 		name="DC">
 			<testcontainer
 			id="04ab4f81-48ac-4de0-9be1-9e4b9847e084">
@@ -25051,9 +25081,6 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

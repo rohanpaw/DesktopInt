@@ -85,9 +85,6 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
-            
             //Libraries.Devices_Functions.EnableISDevices();
             //Delay.Milliseconds(0);
             
@@ -97,111 +94,26 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.changeConfiguratonToUIA();
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.deleteButtonTest' at Center.", repo.FormMe.deleteButtonTestInfo, new RecordItemIndex(7));
-            repo.FormMe.deleteButtonTest.Click();
-            Delay.Milliseconds(200);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(8));
-            //repo.ProfileConsys1.btn_Delete.Click();
-            //Delay.Milliseconds(200);
-            
-            Libraries.Common_Functions.changeConfiguratonToWPF();
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("1", "Built-in Loop-A", "1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.08", "Built-in Loop-A", "4");
             Delay.Milliseconds(0);
             
-            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
-            //Delay.Milliseconds(0);
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("4000", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
             
-            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
-            //Delay.Milliseconds(0);
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("250", "Built-in Loop-A", "1");
+            Delay.Milliseconds(0);
             
-            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
-            //Delay.Milliseconds(0);
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("14.40", "Built-in Loop-A", "3");
+            Delay.Milliseconds(0);
             
-            //Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Backplane  1/3");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.VerifyNavigationTreeItemText("Other Slot Cards  (0 of 6)");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.VerifyNavigationTreeItemText("Other Slot Cards  (1 of 6)");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.DC_Functions.verifyPanelLEDEffectOnDC("Verify DC Units Calculation for PFI", "Panel LED");
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_C1' at Center.", repo.FormMe.Loop_C1Info, new RecordItemIndex(26));
-            //repo.FormMe.Loop_C1.Click();
-            //Delay.Milliseconds(200);
-            
-            //Libraries.DC_Functions.verifyDCUnitsValue("220");
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_D1' at Center.", repo.FormMe.Loop_D1Info, new RecordItemIndex(28));
-            //repo.FormMe.Loop_D1.Click();
-            //Delay.Milliseconds(200);
-            
-            //Libraries.DC_Functions.verifyDCUnitsValue("220");
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(30));
-            //repo.FormMe.Loop_A1.Click();
-            //Delay.Milliseconds(200);
-            
-            //Libraries.Devices_Functions.DeleteDevices("Verify DC Units Calculation for PFI", "Delete Devices Loop A");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.DC_Functions.verifyDCUnitsValue("366");
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_B1' at Center.", repo.FormMe.Loop_B1Info, new RecordItemIndex(33));
-            //repo.FormMe.Loop_B1.Click();
-            //Delay.Milliseconds(200);
-            
-            //Libraries.DC_Functions.verifyDCUnitsValue("366");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.DeleteDevices("Verify DC Units Calculation for PFI", "Delete Devices Loop B");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.DC_Functions.verifyDCUnitsValue("339.5");
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.Loop_A1' at Center.", repo.FormMe.Loop_A1Info, new RecordItemIndex(37));
-            //repo.FormMe.Loop_A1.Click();
-            //Delay.Milliseconds(200);
-            
-            //Libraries.DC_Functions.verifyDCUnitsValue("339.5");
-            //Delay.Milliseconds(0);
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("2200", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
             
         }
 

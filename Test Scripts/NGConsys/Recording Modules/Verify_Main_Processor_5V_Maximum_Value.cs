@@ -151,30 +151,6 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Panel 1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX2-100", "");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPanelCalculationsTab();
-            Delay.Milliseconds(0);
-            
-            //Libraries.PSULoad_Functions.verifyMax5VPSULoad("3.000", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
-            //Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "5V Rail(A)");
-            Delay.Milliseconds(0);
-            
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Panel 1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
-            Delay.Milliseconds(0);
-            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P885D", "");
             Delay.Milliseconds(0);
             

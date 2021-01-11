@@ -89,7 +89,12 @@ namespace TestProject.Recording_Modules
             
             //Libraries.DC_Functions.verifyMaxDCUnits("2200");
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("2200", "Built-in Loop-A", "2");
             
         }
 

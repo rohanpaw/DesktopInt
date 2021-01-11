@@ -106,7 +106,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("400", "Signal (AC Units)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("400", "Signal (AC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("400", "Built-in Loop-A", "1");
             Delay.Milliseconds(0);
             
         }

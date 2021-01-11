@@ -166,6 +166,99 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.329", "5V Rail(A)");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnPropertiesTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.329", "FIM1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.additionOfDevicesOnRBus("Verify_5V_Alarm_Load_On_Addition_Deletion_Of_RBus_And_XBus", "Add RBus Devices", "FIM");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.329", "FIM1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameForRBUS("MPM800-1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.additionOfDevicesForXBus("Verify_5V_Alarm_Load_On_Addition_Deletion_Of_RBus_And_XBus", "Add XBus Devices", "FIM");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.329", "FIM1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.DeleteDevices("Verify_5V_Alarm_Load_On_Addition_Deletion_Of_RBus_And_XBus", "Delete Devices");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameForRBUS("MPM800-1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.329", "FIM1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

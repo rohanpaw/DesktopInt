@@ -71,7 +71,7 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="DC_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
 		methodname="VerifyCurrentDCUnitscalculation"

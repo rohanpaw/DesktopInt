@@ -525,7 +525,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicesfromMainProcessorGallery"
 		namespace="TestProject.Libraries"
@@ -745,7 +745,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="DeleteDeviceUsingLabelInInventoryTab"
 		namespace="TestProject.Libraries"
@@ -788,7 +788,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Fuse board-1
+						Fuse board - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -813,7 +813,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						IOB800-1
+						IOB800 - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -838,7 +838,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						POS800-S-1
+						POS800-S - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -863,7 +863,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						POS800-M-1
+						POS800-M - 1
 					</argvalue>
 				</argument>
 			</arguments>

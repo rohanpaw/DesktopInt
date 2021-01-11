@@ -100,6 +100,11 @@ namespace TestProject.Libraries
 			set { repo.sDaySensitivity = value; }
 		}
 		
+		static string sColumn
+		{
+			get { return repo.sColumn; }
+			set { repo.sColumn = value; }
+		}
 		
 		/********************************************************************
 		 * Function Name: verifyMaxDCUnits
@@ -1134,7 +1139,13 @@ namespace TestProject.Libraries
 			
 			// Declared variables
 			string ModelNumber,sType,sLabelName,sAssignedBase,expectedDCUnits,DefaultDCUnits,ChangedDCUnit,sPanelLEDCount,LoadingDetailsName;
+			string LoopA_Details,LoopB_Details,LoopC_Details;
 			int PanelLED;
+			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
+				LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,6]).Value.ToString();
+				LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,6]).Value.ToString();
+				sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
 			
 			PanelLED=0;
 			ChangedDCUnit=string.Empty;
@@ -1154,6 +1165,7 @@ namespace TestProject.Libraries
 				sPanelLEDCount = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				ChangedDCUnit = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
 				LoadingDetailsName = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				
 
 				
 				int.TryParse(sPanelLEDCount,out PanelLED);
@@ -1173,10 +1185,14 @@ namespace TestProject.Libraries
 				//Assign Base to the device
 				Devices_Functions.AssignDeviceBase(sLabelName,sAssignedBase,sRowIndex);
 				
-
+				Common_Functions.clickOnPanelCalculationsTab();
+				
 				//Verify Default DC Units
 				//verifyDCUnitsValue(expectedDCUnits);
-				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,LoadingDetailsName);
+				//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,LoadingDetailsName);
+				Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+			
+				Common_Functions.clickOnPropertiesTab();
 
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -1202,11 +1218,13 @@ namespace TestProject.Libraries
 			//Paste the devices
 			Common_Functions.clickOnPasteButton();
 			
-			
+			Common_Functions.clickOnPanelCalculationsTab();
 			//Verify DC Units
 			//verifyDCUnitsValue(expectedDCUnits);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,"Current (DC Units)");
-
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,"Current (DC Units)");
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopC_Details,sColumn);
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			// Click on Site node
 			Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -1224,11 +1242,16 @@ namespace TestProject.Libraries
 			//Copy Devices
 			Common_Functions.clickOnCutButton();
 			
+			Common_Functions.clickOnPanelCalculationsTab();
 			
 			//Verify Default DC Units
 			//verifyDCUnitsValue(DefaultDCUnits);
-			Devices_Functions.verifyLoadingDetailsValue(DefaultDCUnits,"Current (DC Units)");
-
+			//Devices_Functions.verifyLoadingDetailsValue(DefaultDCUnits,"Current (DC Units)");
+			Devices_Functions.verifyLoopLoadingDetailsValue(DefaultDCUnits,LoopC_Details,sColumn);
+			
+			Common_Functions.clickOnPropertiesTab();
+			
+			
 			
 			// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -1244,9 +1267,15 @@ namespace TestProject.Libraries
 			// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 				
+				Common_Functions.clickOnPanelCalculationsTab();
+				
 			//Verify Default DC Units
 			//verifyDCUnitsValue(ChangedDCUnit);
-			Devices_Functions.verifyLoadingDetailsValue(ChangedDCUnit,"Current (DC Units)");
+			//Devices_Functions.verifyLoadingDetailsValue(ChangedDCUnit,"Current (DC Units)");
+			Devices_Functions.verifyLoopLoadingDetailsValue(ChangedDCUnit,LoopA_Details,sColumn);
+			
+			Common_Functions.clickOnPropertiesTab();
+			
 
 		}
 		

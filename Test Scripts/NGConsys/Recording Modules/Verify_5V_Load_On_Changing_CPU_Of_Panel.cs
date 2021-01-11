@@ -121,47 +121,6 @@ namespace TestProject.Recording_Modules
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX2-100", "");
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            
-            Libraries.Panel_Functions.ChangeCPUType("CPU 801");
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            
-            Libraries.Common_Functions.clickOnPanelCalculationsTab();
-            
-            //Libraries.PSULoad_Functions.verifyMax5VPSULoad("3.000", "FIM", ValueConverter.ArgumentFromString<int>("rowNumber", "12"));
-            
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("3.000", "5V Rail(A)");
-            
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
-            
-            //Libraries.PSULoad_Functions.verify5VPSULoadValue("1.211", "FIM");
-            
-            Libraries.Common_Functions.clickOnPropertiesTab();
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(34));
-            //repo.ProfileConsys1.txt_SearchProperties.Click();
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            
-            Libraries.Panel_Functions.ChangeCPUType("CPU 800");
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            
-            Libraries.Common_Functions.clickOnPanelCalculationsTab();
-            
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.076", "5V Rail(A)");
-            
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("1.076", "FIM");
             
             //test();

@@ -158,6 +158,10 @@ namespace TestProject.Libraries
 				{
 					sPanelLabelIndex ="5";
 				}
+				else if(PanelName.StartsWith("MZX"))
+				{
+					sPanelLabelIndex ="5";
+				}
 				else
 				{
 					sPanelLabelIndex ="7";
@@ -175,7 +179,19 @@ namespace TestProject.Libraries
 				iAddress=i+1;
 				Address =iAddress.ToString();
 				repo.ContextMenu.lstPanelAddress.Click();
-				repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				
+				if(repo.AddANewPanel.AddNewPanelContainer.txt_LabelInfo.Exists())
+				{
+					repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				}
+				else	
+				{
+					sPanelLabelIndex ="5";
+					repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				}
+				
+					
+				//repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
 				Label="Node"+iAddress;
 				
 				//Added this step after 43 build update

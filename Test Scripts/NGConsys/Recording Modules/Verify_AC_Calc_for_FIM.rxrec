@@ -301,8 +301,23 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Common_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="adb14c5f-87a9-4851-bd86-343c51ede29a">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyMaxLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -331,6 +346,51 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						Signal (AC Units)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyMaxLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9275e469-2bca-4246-a7fc-e07edfedbb6d">
+				<argument
+				argname="expectedUnits"
+				id="07d7a46e-c623-4492-a1a3-55a877c9f53e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						400
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="dd7ed241-5404-4f5c-9318-8c69a8b2c618">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="a31bd00f-2ede-4373-ac87-de69fa0b351f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
 					</argvalue>
 				</argument>
 			</arguments>

@@ -148,11 +148,86 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.329", "FIM1");
             //Delay.Milliseconds(0);
             
-            // In this 5V Rail(A) is preceding text so it is getting failed
-            try {
-                Libraries.Devices_Functions.verifyLoadingDetailsValue("0.329", "5V Rail(A)");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(23)); }
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.329", "5V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.329", "FIM1");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.additionOfDevicesOnEthernet("Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection", "Add Devices", "FIM1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.329", "FIM1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.DeleteDevices("Verify_5V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection", "Delete Devices");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-102");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR8AS-103");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            //Libraries.PSULoad_Functions.verify5VPSULoadValue("0.329", "FIM1");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
+            Delay.Milliseconds(0);
             
         }
 

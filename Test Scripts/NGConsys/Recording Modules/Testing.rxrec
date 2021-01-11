@@ -96,31 +96,6 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="ExpanderName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="Devices_Functions"
 		enabled="False"
 		isexternaltestmethod="True"
@@ -199,70 +174,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="changeConfiguratonToUIA"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="0a65f0e9-6123-4625-a2e3-bcf926b7918c"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="c1cace50-aa60-43af-9307-727c872299fc"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/container[@automationid='BarManager']/container[@automationid='mainRibbon']//button[3]
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="ddb1c9ff-e094-49e6-aad7-7deddda2d425"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="8e8210c0-314f-4c7d-97b4-86fb85d69656"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@win32ownerwindowlevel='0']/container[@automationid='BarManager']/container[@automationid='mainRibbon']//button[@text='Delete']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="changeConfiguratonToWPF"
+		methodname="clickOnPanelCalculationsTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -277,7 +189,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
+		methodname="verifyLoopLoadingDetailsValue"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -285,170 +197,20 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			id="9275e469-2bca-4246-a7fc-e07edfedbb6d">
 				<argument
-				argname="sDeviceName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
+				argname="expectedUnits"
+				id="07d7a46e-c623-4492-a1a3-55a877c9f53e">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						801 CH
+						1
 					</argvalue>
 				</argument>
 				<argument
-				argname="sType"
-				id="1766e23a-11ed-412a-92dc-248ebe0f034e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Detectors
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Main
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="ExpanderName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Main
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Ethernet
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						R-BUS
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="ExpanderName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PFI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
+				argname="LoadingDetail"
+				id="dd7ed241-5404-4f5c-9318-8c69a8b2c618">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -456,2109 +218,23 @@ rxversion="8.3">
 						Built-in Loop-A
 					</argvalue>
 				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
+				argname="ColumnNumber"
+				id="1cfcef16-3b6d-4fad-93cc-7572c83bdd34">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop-C
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="ExpanderName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Backplane
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Backplane  1/3
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="VerifyNavigationTreeItemText"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Backplane  1/3
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Other Slot Cards
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="VerifyNavigationTreeItemText"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Other Slot Cards  (0 of 6)
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="VerifyNavigationTreeItemText"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="TreeItemName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Other Slot Cards  (1 of 6)
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="ExpanderName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Backplane  1/3
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="DC_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyPanelLEDEffectOnDC"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="6348495e-c946-413f-b786-75a42e8e042f">
-				<argument
-				argname="sFileName"
-				id="9e9a0ef0-666f-458c-aa8d-d9ea4d67b0a6">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Verify DC Units Calculation for PFI
-					</argvalue>
-				</argument>
-				<argument
-				argname="sPanelLED"
-				id="0abdc303-a753-45ae-b064-81e1aacdb6c5">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Panel LED
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="07735082-ac33-455e-8631-28662fa2e0af"
-		sx="188"
-		sy="392"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="533663e2-9a68-4cdf-b010-b73531cd64b8"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="wpfelement, wpfgroupelement"
-				dontcache="False"
-				enabled="True"
-				flavor="wpf"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="82,380,212,25"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="caption"
-					type="System.String">
-						Built-in Loop-C (0 of 125)
-					</attribute>
-					<attribute
-					name="selectiontext"
-					type="System.String">
-						Built-in Loop-C (0 of 125)
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						Built-in Loop-C (0 of 125)
-					</attribute>
-					<attribute
-					name="automationproperties_acceleratorkey"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="automationproperties_accesskey"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="automationproperties_helptext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="automationproperties_iscolumnheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="automationproperties_isrequiredforform"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="automationproperties_isrowheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="automationproperties_itemstatus"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="automationproperties_itemtype"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="automationproperties_name"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="basetype"
-					type="System.String">
-						System.Windows.Controls.TextBlock
-					</attribute>
-					<attribute
-					name="fulltype"
-					type="System.String">
-						Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock&gt;
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						DepoGroup&lt;TextBlock&gt;
-					</attribute>
-					<attribute
-					name="ranorexgroupleaderid"
-					type="System.Guid">
-						ad8027ee-a294-4876-be14-7ae02b3014c0
-					</attribute>
-					<attribute
-					name="ranorexgroupmemberids"
-					type="System.Guid[]">
-						AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAgAAAAMLU3lzdGVtLkd1aWQE/v///wtTeXN0ZW0u
-R3VpZAsAAAACX2ECX2ICX2MCX2QCX2UCX2YCX2cCX2gCX2kCX2oCX2sAAAAAAAAAAAAAAAgHBwIC
-AgICAgICZZvSTHokZUW3wAzUIKhWGwH9/////v///+4ngK2UonZIvhR64CswFMAL
-					</attribute>
-					<attribute
-					name="ranorexgroupobjectid"
-					type="System.Guid">
-						b38a59e1-ee78-466f-8d42-ffa7ee890a83
-					</attribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ActualHeight property of type Double."
-					name="ActualHeight"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ActualWidth property of type Double."
-					name="ActualWidth"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.AllowDrop property of type Boolean."
-					name="AllowDrop"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Background property of type Brush."
-					name="Background"
-					readonly="False"
-					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.BaselineOffset property of type Double."
-					name="BaselineOffset"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.BindingGroup property of type BindingGroup."
-					name="BindingGroup"
-					readonly="False"
-					type="System.Windows.Data.BindingGroup, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.BitmapEffect property of type BitmapEffect."
-					name="BitmapEffect"
-					readonly="False"
-					type="System.Windows.Media.Effects.BitmapEffect, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.BitmapEffectInput property of type BitmapEffectInput."
-					name="BitmapEffectInput"
-					readonly="False"
-					type="System.Windows.Media.Effects.BitmapEffectInput, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.CacheMode property of type CacheMode."
-					name="CacheMode"
-					readonly="False"
-					type="System.Windows.Media.CacheMode, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Clip property of type Geometry."
-					name="Clip"
-					readonly="False"
-					type="System.Windows.Media.Geometry, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ClipToBounds property of type Boolean."
-					name="ClipToBounds"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Column property of type Int32."
-					name="Column"
-					readonly="False"
-					type="System.Int32">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Content property of type Object."
-					name="Content"
-					readonly="False"
-					type="System.Object">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ContentSource property of type String."
-					name="ContentSource"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ContentStringFormat property of type String."
-					name="ContentStringFormat"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ContextMenu property of type ContextMenu."
-					name="ContextMenu"
-					readonly="False"
-					type="System.Windows.Controls.ContextMenu, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.DataContext property of type Object."
-					name="DataContext"
-					readonly="False"
-					type="System.Object">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.DefaultStyleKey property of type Object."
-					name="DefaultStyleKey"
-					readonly="False"
-					type="System.Object">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Effect property of type Effect."
-					name="Effect"
-					readonly="False"
-					type="System.Windows.Media.Effects.Effect, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.FlowDirection property of type FlowDirection."
-					name="FlowDirection"
-					readonly="False"
-					type="System.Windows.FlowDirection, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Focusable property of type Boolean."
-					name="Focusable"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.FontSize property of type Double."
-					name="FontSize"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ForceCursor property of type Boolean."
-					name="ForceCursor"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Foreground property of type Brush."
-					name="Foreground"
-					readonly="False"
-					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ForegroundColor property of type String."
-					name="ForegroundColor"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Height property of type Double."
-					name="Height"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.HorizontalAlignment property of type HorizontalAlignment."
-					name="HorizontalAlignment"
-					readonly="False"
-					type="System.Windows.HorizontalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.IsHitTestVisible property of type Boolean."
-					name="IsHitTestVisible"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.IsHyphenationEnabled property of type Boolean."
-					name="IsHyphenationEnabled"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.IsManipulationEnabled property of type Boolean."
-					name="IsManipulationEnabled"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.LayoutTransform property of type Transform."
-					name="LayoutTransform"
-					readonly="False"
-					type="System.Windows.Media.Transform, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.LineHeight property of type Double."
-					name="LineHeight"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.LineStackingStrategy property of type LineStackingStrategy."
-					name="LineStackingStrategy"
-					readonly="False"
-					type="System.Windows.LineStackingStrategy, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.MaxHeight property of type Double."
-					name="MaxHeight"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.MaxWidth property of type Double."
-					name="MaxWidth"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.MinHeight property of type Double."
-					name="MinHeight"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.MinWidth property of type Double."
-					name="MinWidth"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Opacity property of type Double."
-					name="Opacity"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.OpacityMask property of type Brush."
-					name="OpacityMask"
-					readonly="False"
-					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.OverridesDefaultStyle property of type Boolean."
-					name="OverridesDefaultStyle"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.RecognizesAccessKey property of type Boolean."
-					name="RecognizesAccessKey"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.RenderTransform property of type Transform."
-					name="RenderTransform"
-					readonly="False"
-					type="System.Windows.Media.Transform, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.RenderTransformOrigin property of type Point."
-					name="RenderTransformOrigin"
-					readonly="False"
-					type="System.Windows.Point, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SnapsToDevicePixels property of type Boolean."
-					name="SnapsToDevicePixels"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Tag property of type Object."
-					name="Tag"
-					readonly="False"
-					type="System.Object">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.TextAlignment property of type TextAlignment."
-					name="TextAlignment"
-					readonly="False"
-					type="System.Windows.TextAlignment, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.TextDecorations property of type TextDecorationCollection."
-					name="TextDecorations"
-					readonly="False"
-					type="System.Windows.TextDecorationCollection, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.TextEffects property of type TextEffectCollection."
-					name="TextEffects"
-					readonly="False"
-					type="System.Windows.Media.TextEffectCollection, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.TextTrimming property of type TextTrimming."
-					name="TextTrimming"
-					readonly="False"
-					type="System.Windows.TextTrimming, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.TextWrapping property of type TextWrapping."
-					name="TextWrapping"
-					readonly="False"
-					type="System.Windows.TextWrapping, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ToolTip property of type Object."
-					name="ToolTip"
-					readonly="False"
-					type="System.Object">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Uid property of type String."
-					name="Uid"
-					readonly="False"
-					type="System.String"
-					weight="150">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.UseLayoutRounding property of type Boolean."
-					name="UseLayoutRounding"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.VerticalAlignment property of type VerticalAlignment."
-					name="VerticalAlignment"
-					readonly="False"
-					type="System.Windows.VerticalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Visibility property of type Visibility."
-					name="Visibility"
-					readonly="False"
-					type="System.Windows.Visibility, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Width property of type Double."
-					name="Width"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetBaselineOffset method."
-					displayName="GetBaselineOffset">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Double">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetFontFamily method."
-					displayName="GetFontFamily">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.Media.FontFamily, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetFontSize method."
-					displayName="GetFontSize">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Double">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetFontStretch method."
-					displayName="GetFontStretch">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.FontStretch, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetFontStyle method."
-					displayName="GetFontStyle">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.FontStyle, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetFontWeight method."
-					displayName="GetFontWeight">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.FontWeight, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetForeground method."
-					displayName="GetForeground">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetLineHeight method."
-					displayName="GetLineHeight">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Double">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetLineStackingStrategy method."
-					displayName="GetLineStackingStrategy">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.LineStackingStrategy, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetPositionFromPoint method."
-					displayName="GetPositionFromPoint">
-						<argument
-						description="A method argument of type Point."
-						displayName="point"
-						type="System.Windows.Point, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type Boolean."
-						displayName="snapToText"
-						type="System.Boolean">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.Documents.TextPointer, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetTextAlignment method."
-					displayName="GetTextAlignment">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.TextAlignment, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetBaselineOffset method."
-					displayName="SetBaselineOffset">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type Double."
-						displayName="value"
-						type="System.Double">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetFontFamily method."
-					displayName="SetFontFamily">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type FontFamily."
-						displayName="value"
-						type="System.Windows.Media.FontFamily, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetFontSize method."
-					displayName="SetFontSize">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type Double."
-						displayName="value"
-						type="System.Double">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetFontStretch method."
-					displayName="SetFontStretch">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type FontStretch."
-						displayName="value"
-						type="System.Windows.FontStretch, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetFontStyle method."
-					displayName="SetFontStyle">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type FontStyle."
-						displayName="value"
-						type="System.Windows.FontStyle, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetFontWeight method."
-					displayName="SetFontWeight">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type FontWeight."
-						displayName="value"
-						type="System.Windows.FontWeight, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetForeground method."
-					displayName="SetForeground">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type Brush."
-						displayName="value"
-						type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetLineHeight method."
-					displayName="SetLineHeight">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type Double."
-						displayName="value"
-						type="System.Double">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetLineStackingStrategy method."
-					displayName="SetLineStackingStrategy">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type LineStackingStrategy."
-						displayName="value"
-						type="System.Windows.LineStackingStrategy, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetTextAlignment method."
-					displayName="SetTextAlignment">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type TextAlignment."
-						displayName="value"
-						type="System.Windows.TextAlignment, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ShouldSerializeBaselineOffset method."
-					displayName="ShouldSerializeBaselineOffset">
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Boolean">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ShouldSerializeInlines method."
-					displayName="ShouldSerializeInlines">
-						<argument
-						description="A method argument of type XamlDesignerSerializationManager."
-						displayName="manager"
-						type="System.Windows.Markup.XamlDesignerSerializationManager, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Boolean">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ShouldSerializeText method."
-					displayName="ShouldSerializeText">
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Boolean">
-						</returns>
-					</dynamicaction>
-				</element>
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-C']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="DC_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyDCUnitsValue"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="e5afb02a-2310-4ab5-bd28-c97b140162a2">
-				<argument
-				argname="expectedDCUnits"
-				id="24dac58a-bb49-49b2-a513-c08ec47b9fde">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						220
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="84ad6b59-5cf1-4884-849b-67235b03b9fa"
-		sx="188"
-		sy="417"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="cfa07af2-afe5-453a-9f39-fadb3578ebe3"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="wpfelement, wpfgroupelement"
-				dontcache="False"
-				enabled="True"
-				flavor="wpf"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="82,405,212,25"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="caption"
-					type="System.String">
-						Built-in Loop-D (0 of 125)
-					</attribute>
-					<attribute
-					name="selectiontext"
-					type="System.String">
-						Built-in Loop-D (0 of 125)
-					</attribute>
-					<attribute
-					name="text"
-					type="System.String">
-						Built-in Loop-D (0 of 125)
-					</attribute>
-					<attribute
-					name="automationproperties_acceleratorkey"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="automationproperties_accesskey"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="automationproperties_helptext"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="automationproperties_iscolumnheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="automationproperties_isrequiredforform"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="automationproperties_isrowheader"
-					type="System.Boolean">
-						False
-					</attribute>
-					<attribute
-					name="automationproperties_itemstatus"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="automationproperties_itemtype"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="automationproperties_name"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="basetype"
-					type="System.String">
-						System.Windows.Controls.TextBlock
-					</attribute>
-					<attribute
-					name="fulltype"
-					type="System.String">
-						Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock&gt;
-					</attribute>
-					<attribute
-					name="type"
-					type="System.String">
-						DepoGroup&lt;TextBlock&gt;
-					</attribute>
-					<attribute
-					name="ranorexgroupleaderid"
-					type="System.Guid">
-						9d0ba103-388c-4487-80ca-396cceb8818e
-					</attribute>
-					<attribute
-					name="ranorexgroupmemberids"
-					type="System.Guid[]">
-						AAEAAAD/////AQAAAAAAAAAHAQAAAAABAAAAAgAAAAMLU3lzdGVtLkd1aWQE/v///wtTeXN0ZW0u
-R3VpZAsAAAACX2ECX2ICX2MCX2QCX2UCX2YCX2cCX2gCX2kCX2oCX2sAAAAAAAAAAAAAAAgHBwIC
-AgICAgICDxHBgNSjVUmsOLl1h6bdbQH9/////v///wOhC52MOIdEgMo5bM64gY4L
-					</attribute>
-					<attribute
-					name="ranorexgroupobjectid"
-					type="System.Guid">
-						07c91aae-75a0-48a8-8298-5449e8015b76
-					</attribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ActualHeight property of type Double."
-					name="ActualHeight"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ActualWidth property of type Double."
-					name="ActualWidth"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.AllowDrop property of type Boolean."
-					name="AllowDrop"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Background property of type Brush."
-					name="Background"
-					readonly="False"
-					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.BaselineOffset property of type Double."
-					name="BaselineOffset"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.BindingGroup property of type BindingGroup."
-					name="BindingGroup"
-					readonly="False"
-					type="System.Windows.Data.BindingGroup, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.BitmapEffect property of type BitmapEffect."
-					name="BitmapEffect"
-					readonly="False"
-					type="System.Windows.Media.Effects.BitmapEffect, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.BitmapEffectInput property of type BitmapEffectInput."
-					name="BitmapEffectInput"
-					readonly="False"
-					type="System.Windows.Media.Effects.BitmapEffectInput, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.CacheMode property of type CacheMode."
-					name="CacheMode"
-					readonly="False"
-					type="System.Windows.Media.CacheMode, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Clip property of type Geometry."
-					name="Clip"
-					readonly="False"
-					type="System.Windows.Media.Geometry, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ClipToBounds property of type Boolean."
-					name="ClipToBounds"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Column property of type Int32."
-					name="Column"
-					readonly="False"
-					type="System.Int32">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Content property of type Object."
-					name="Content"
-					readonly="False"
-					type="System.Object">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ContentSource property of type String."
-					name="ContentSource"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ContentStringFormat property of type String."
-					name="ContentStringFormat"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ContextMenu property of type ContextMenu."
-					name="ContextMenu"
-					readonly="False"
-					type="System.Windows.Controls.ContextMenu, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.DataContext property of type Object."
-					name="DataContext"
-					readonly="False"
-					type="System.Object">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.DefaultStyleKey property of type Object."
-					name="DefaultStyleKey"
-					readonly="False"
-					type="System.Object">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Effect property of type Effect."
-					name="Effect"
-					readonly="False"
-					type="System.Windows.Media.Effects.Effect, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.FlowDirection property of type FlowDirection."
-					name="FlowDirection"
-					readonly="False"
-					type="System.Windows.FlowDirection, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Focusable property of type Boolean."
-					name="Focusable"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.FontSize property of type Double."
-					name="FontSize"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ForceCursor property of type Boolean."
-					name="ForceCursor"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Foreground property of type Brush."
-					name="Foreground"
-					readonly="False"
-					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ForegroundColor property of type String."
-					name="ForegroundColor"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Height property of type Double."
-					name="Height"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.HorizontalAlignment property of type HorizontalAlignment."
-					name="HorizontalAlignment"
-					readonly="False"
-					type="System.Windows.HorizontalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.IsHitTestVisible property of type Boolean."
-					name="IsHitTestVisible"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.IsHyphenationEnabled property of type Boolean."
-					name="IsHyphenationEnabled"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.IsManipulationEnabled property of type Boolean."
-					name="IsManipulationEnabled"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.LayoutTransform property of type Transform."
-					name="LayoutTransform"
-					readonly="False"
-					type="System.Windows.Media.Transform, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.LineHeight property of type Double."
-					name="LineHeight"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.LineStackingStrategy property of type LineStackingStrategy."
-					name="LineStackingStrategy"
-					readonly="False"
-					type="System.Windows.LineStackingStrategy, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.MaxHeight property of type Double."
-					name="MaxHeight"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.MaxWidth property of type Double."
-					name="MaxWidth"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.MinHeight property of type Double."
-					name="MinHeight"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.MinWidth property of type Double."
-					name="MinWidth"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Opacity property of type Double."
-					name="Opacity"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.OpacityMask property of type Brush."
-					name="OpacityMask"
-					readonly="False"
-					type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.OverridesDefaultStyle property of type Boolean."
-					name="OverridesDefaultStyle"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.RecognizesAccessKey property of type Boolean."
-					name="RecognizesAccessKey"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.RenderTransform property of type Transform."
-					name="RenderTransform"
-					readonly="False"
-					type="System.Windows.Media.Transform, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.RenderTransformOrigin property of type Point."
-					name="RenderTransformOrigin"
-					readonly="False"
-					type="System.Windows.Point, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SnapsToDevicePixels property of type Boolean."
-					name="SnapsToDevicePixels"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Tag property of type Object."
-					name="Tag"
-					readonly="False"
-					type="System.Object">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.TextAlignment property of type TextAlignment."
-					name="TextAlignment"
-					readonly="False"
-					type="System.Windows.TextAlignment, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.TextDecorations property of type TextDecorationCollection."
-					name="TextDecorations"
-					readonly="False"
-					type="System.Windows.TextDecorationCollection, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.TextEffects property of type TextEffectCollection."
-					name="TextEffects"
-					readonly="False"
-					type="System.Windows.Media.TextEffectCollection, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.TextTrimming property of type TextTrimming."
-					name="TextTrimming"
-					readonly="False"
-					type="System.Windows.TextTrimming, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.TextWrapping property of type TextWrapping."
-					name="TextWrapping"
-					readonly="False"
-					type="System.Windows.TextWrapping, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ToolTip property of type Object."
-					name="ToolTip"
-					readonly="False"
-					type="System.Object">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Uid property of type String."
-					name="Uid"
-					readonly="False"
-					type="System.String"
-					weight="150">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.UseLayoutRounding property of type Boolean."
-					name="UseLayoutRounding"
-					readonly="False"
-					type="System.Boolean">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.VerticalAlignment property of type VerticalAlignment."
-					name="VerticalAlignment"
-					readonly="False"
-					type="System.Windows.VerticalAlignment, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Visibility property of type Visibility."
-					name="Visibility"
-					readonly="False"
-					type="System.Windows.Visibility, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-					</dynamicattribute>
-					<dynamicattribute
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.Width property of type Double."
-					name="Width"
-					readonly="False"
-					type="System.Double">
-					</dynamicattribute>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetBaselineOffset method."
-					displayName="GetBaselineOffset">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Double">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetFontFamily method."
-					displayName="GetFontFamily">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.Media.FontFamily, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetFontSize method."
-					displayName="GetFontSize">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Double">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetFontStretch method."
-					displayName="GetFontStretch">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.FontStretch, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetFontStyle method."
-					displayName="GetFontStyle">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.FontStyle, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetFontWeight method."
-					displayName="GetFontWeight">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.FontWeight, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetForeground method."
-					displayName="GetForeground">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetLineHeight method."
-					displayName="GetLineHeight">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Double">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetLineStackingStrategy method."
-					displayName="GetLineStackingStrategy">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.LineStackingStrategy, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetPositionFromPoint method."
-					displayName="GetPositionFromPoint">
-						<argument
-						description="A method argument of type Point."
-						displayName="point"
-						type="System.Windows.Point, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type Boolean."
-						displayName="snapToText"
-						type="System.Boolean">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.Documents.TextPointer, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.GetTextAlignment method."
-					displayName="GetTextAlignment">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Windows.TextAlignment, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetBaselineOffset method."
-					displayName="SetBaselineOffset">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type Double."
-						displayName="value"
-						type="System.Double">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetFontFamily method."
-					displayName="SetFontFamily">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type FontFamily."
-						displayName="value"
-						type="System.Windows.Media.FontFamily, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetFontSize method."
-					displayName="SetFontSize">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type Double."
-						displayName="value"
-						type="System.Double">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetFontStretch method."
-					displayName="SetFontStretch">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type FontStretch."
-						displayName="value"
-						type="System.Windows.FontStretch, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetFontStyle method."
-					displayName="SetFontStyle">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type FontStyle."
-						displayName="value"
-						type="System.Windows.FontStyle, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetFontWeight method."
-					displayName="SetFontWeight">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type FontWeight."
-						displayName="value"
-						type="System.Windows.FontWeight, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetForeground method."
-					displayName="SetForeground">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type Brush."
-						displayName="value"
-						type="System.Windows.Media.Brush, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetLineHeight method."
-					displayName="SetLineHeight">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type Double."
-						displayName="value"
-						type="System.Double">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetLineStackingStrategy method."
-					displayName="SetLineStackingStrategy">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type LineStackingStrategy."
-						displayName="value"
-						type="System.Windows.LineStackingStrategy, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.SetTextAlignment method."
-					displayName="SetTextAlignment">
-						<argument
-						description="A method argument of type DependencyObject."
-						displayName="element"
-						type="System.Windows.DependencyObject, WindowsBase, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<argument
-						description="A method argument of type TextAlignment."
-						displayName="value"
-						type="System.Windows.TextAlignment, PresentationCore, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Void">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ShouldSerializeBaselineOffset method."
-					displayName="ShouldSerializeBaselineOffset">
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Boolean">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ShouldSerializeInlines method."
-					displayName="ShouldSerializeInlines">
-						<argument
-						description="A method argument of type XamlDesignerSerializationManager."
-						displayName="manager"
-						type="System.Windows.Markup.XamlDesignerSerializationManager, PresentationFramework, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-						</argument>
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Boolean">
-						</returns>
-					</dynamicaction>
-					<dynamicaction
-					description="The WPF Ranorex.Plugin.Wpf.DepoGroup&lt;System.Windows.Controls.TextBlock>.ShouldSerializeText method."
-					displayName="ShouldSerializeText">
-						<returns
-						description="Return value."
-						displayName="returns"
-						type="System.Boolean">
-						</returns>
-					</dynamicaction>
-				</element>
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-D']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="DC_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyDCUnitsValue"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="e5afb02a-2310-4ab5-bd28-c97b140162a2">
-				<argument
-				argname="expectedDCUnits"
-				id="24dac58a-bb49-49b2-a513-c08ec47b9fde">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						220
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="f66a6e4b-422c-4a39-aef9-a56bc80d48ce"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5ef2233c-dff3-4ed0-8c90-e2f8a85869ed"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-A']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="DeleteDevices"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="b61d679c-21c8-42df-8466-1d5678fb2d39">
-				<argument
-				argname="sFileName"
-				id="19ffc89e-fce3-4a4d-8941-3834ce7dedd5">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Verify DC Units Calculation for PFI
-					</argvalue>
-				</argument>
-				<argument
-				argname="sSheetName"
-				id="871c7742-7687-449b-aeca-cb34979f0792">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Delete Devices Loop A
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="DC_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyDCUnitsValue"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="e5afb02a-2310-4ab5-bd28-c97b140162a2">
-				<argument
-				argname="expectedDCUnits"
-				id="24dac58a-bb49-49b2-a513-c08ec47b9fde">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						366
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="805e2818-b89b-4067-af1c-6b009e45c272"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="0af98b21-9a1a-42db-9abf-6a39978b72b9"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-B']
-				</path>
-			</info>
-		</mouseitem>
-		<userrecorditem
-		classname="DC_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="verifyDCUnitsValue"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="e5afb02a-2310-4ab5-bd28-c97b140162a2">
-				<argument
-				argname="expectedDCUnits"
-				id="24dac58a-bb49-49b2-a513-c08ec47b9fde">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						366
+						1
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="DeleteDevices"
+		methodname="verifyLoopLoadingDetailsValue"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -2566,34 +242,44 @@ AgICAgICDxHBgNSjVUmsOLl1h6bdbQH9/////v///wOhC52MOIdEgMo5bM64gY4L
 			<bindings>
 			</bindings>
 			<arguments
-			id="b61d679c-21c8-42df-8466-1d5678fb2d39">
+			id="9275e469-2bca-4246-a7fc-e07edfedbb6d">
 				<argument
-				argname="sFileName"
-				id="19ffc89e-fce3-4a4d-8941-3834ce7dedd5">
+				argname="expectedUnits"
+				id="07d7a46e-c623-4492-a1a3-55a877c9f53e">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Verify DC Units Calculation for PFI
+						0.08
 					</argvalue>
 				</argument>
 				<argument
-				argname="sSheetName"
-				id="871c7742-7687-449b-aeca-cb34979f0792">
+				argname="LoadingDetail"
+				id="dd7ed241-5404-4f5c-9318-8c69a8b2c618">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Delete Devices Loop B
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="1cfcef16-3b6d-4fad-93cc-7572c83bdd34">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="DC_Functions"
-		enabled="False"
+		classname="Devices_Functions"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyDCUnitsValue"
+		methodname="verifyMaxLoopLoadingDetailsValue"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -2601,48 +287,44 @@ AgICAgICDxHBgNSjVUmsOLl1h6bdbQH9/////v///wOhC52MOIdEgMo5bM64gY4L
 			<bindings>
 			</bindings>
 			<arguments
-			id="e5afb02a-2310-4ab5-bd28-c97b140162a2">
+			id="9275e469-2bca-4246-a7fc-e07edfedbb6d">
 				<argument
-				argname="expectedDCUnits"
-				id="24dac58a-bb49-49b2-a513-c08ec47b9fde">
+				argname="expectedUnits"
+				id="07d7a46e-c623-4492-a1a3-55a877c9f53e">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						339.5
+						4000
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="dd7ed241-5404-4f5c-9318-8c69a8b2c618">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="1cfcef16-3b6d-4fad-93cc-7572c83bdd34">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						2
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="False"
-		loc="Center"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="787eeebb-ea11-4e60-b664-5a1fc82d2739"
-		sx="0"
-		sy="0"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="5ef2233c-dff3-4ed0-8c90-e2f8a85869ed"
-			sourcename="RepositoryEditor">
-				<path>
-					/form[@automationid='me']/progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\ Loop-A']
-				</path>
-			</info>
-		</mouseitem>
 		<userrecorditem
-		classname="DC_Functions"
-		enabled="False"
+		classname="Devices_Functions"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyDCUnitsValue"
+		methodname="verifyMaxLoopLoadingDetailsValue"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -2650,15 +332,125 @@ AgICAgICDxHBgNSjVUmsOLl1h6bdbQH9/////v///wOhC52MOIdEgMo5bM64gY4L
 			<bindings>
 			</bindings>
 			<arguments
-			id="e5afb02a-2310-4ab5-bd28-c97b140162a2">
+			id="9275e469-2bca-4246-a7fc-e07edfedbb6d">
 				<argument
-				argname="expectedDCUnits"
-				id="24dac58a-bb49-49b2-a513-c08ec47b9fde">
+				argname="expectedUnits"
+				id="07d7a46e-c623-4492-a1a3-55a877c9f53e">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						339.5
+						250
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="dd7ed241-5404-4f5c-9318-8c69a8b2c618">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="1cfcef16-3b6d-4fad-93cc-7572c83bdd34">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyMaxLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9275e469-2bca-4246-a7fc-e07edfedbb6d">
+				<argument
+				argname="expectedUnits"
+				id="07d7a46e-c623-4492-a1a3-55a877c9f53e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						14.40
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="dd7ed241-5404-4f5c-9318-8c69a8b2c618">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="1cfcef16-3b6d-4fad-93cc-7572c83bdd34">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyMaxLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9275e469-2bca-4246-a7fc-e07edfedbb6d">
+				<argument
+				argname="expectedUnits"
+				id="07d7a46e-c623-4492-a1a3-55a877c9f53e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						2200
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="dd7ed241-5404-4f5c-9318-8c69a8b2c618">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="1cfcef16-3b6d-4fad-93cc-7572c83bdd34">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						2
 					</argvalue>
 				</argument>
 			</arguments>

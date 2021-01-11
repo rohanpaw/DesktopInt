@@ -14479,15 +14479,15 @@ AAAAAElFTkSuQmCC
 			name="txt_ActualLoadingDetailsValuePreceding"
 			refimgid="2ae6330a-9a2b-4359-8517-db83a5899695"
 			searchtimeout="90000ms">
-				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='5V Rail(A)']/preceding-sibling::cell/?/text/text[1]
+				/form[@automationid='me']//progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/preceding-sibling::cell//text/text[1]
 			</item>
 			<item
 			capname="text"
 			id="0d6583e8-1033-49fd-a89d-a000fc93427c"
-			name="Copy_of_txt_ActualLoadingDetailsValuePreceding"
-			refimgid="2ae6330a-9a2b-4359-8517-db83a5899695"
+			name="txt_MaxLoadingDetailsValuePreceding"
+			refimgid="e5fab57f-028f-4dcf-89d7-54d6ffc77f45"
 			searchtimeout="90000ms">
-				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='5V Rail(A)']/preceding-sibling::cell/?/text/text[1]
+				/form[@automationid='me']//progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/preceding-sibling::cell//text[3]
 			</item>
 			<item
 			capname="text"
@@ -14574,9 +14574,8 @@ AAAAAElFTkSuQmCC
 			id="b3daf139-dd16-413d-b42d-705e8bb2f5be"
 			name="btn_back"
 			refimgid="53ded74b-b9b5-492f-91f3-a2bcaedacf88"
-			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/button[@automationid='PART_ApplicationButton']"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']
+				/form[@automationid='me']/?/?/ontainer[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']
 			</item>
 			<item
 			capname="text"
@@ -14615,7 +14614,7 @@ AAAAAElFTkSuQmCC
 			id="f64f951b-f31f-47e7-816d-53d828527cc1"
 			name="SearchMarket"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar//container[@automationid='PART_Right']//container[3]/text[@caption='']
+				/form[@automationid='me']/progressbar//text/container[7]/text[@caption='']/text[@caption='']
 			</item>
 			<item
 			capname="text"
@@ -14625,9 +14624,17 @@ AAAAAElFTkSuQmCC
 				/form[@automationid='me']/progressbar//container[@automationid='PART_Right']/container[5]/text[@caption='']
 			</item>
 			<item
-			capname="button"
+			capname="text"
 			id="83c8573f-50c3-43da-be48-e24ab04e54da"
 			name="btn_CreateNewProject"
+			refimgid="bd7c838c-7c64-4afe-9198-dd0197142c39"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar//button//text[@caption='Create new project...']
+			</item>
+			<item
+			capname="button"
+			id="a22414b0-871d-4fb5-b0c9-fe56008fc8a4"
+			name="Copy_of_btn_CreateNewProject"
 			refimgid="bd7c838c-7c64-4afe-9198-dd0197142c39"
 			searchtimeout="60000ms">
 				/form[@automationid='me']/progressbar//container[2]/button
@@ -14829,7 +14836,7 @@ AAAAAElFTkSuQmCC
 			name="btn_Delete"
 			refimgid="ea268138-80c9-47a3-bd01-d9279b34b59e"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/?/?/container[@automationid='PART_ItemsPresenter']/container[4]
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list//container[@automationid='PART_ItemsPresenter']/container[4]
 			</item>
 			<item
 			capname="cell"
@@ -15081,6 +15088,71 @@ AAAAAElFTkSuQmCC
 			name="testing"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/container[@automationid='PART_ItemsPresenter']/row[@index='10']/cell[@text='[0]']/container[2]/text[@caption='']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="e773ac9a-4fb2-4ac3-b389-7c8db0f18ae4"
+			name="lst_Market"
+			refimgid="b65630f1-7896-4d5f-9877-25de62808550"
+			searchtimeout="30000ms">
+				/form[@automationid='me']//text[@caption='Recently Used Markets']/button[2]/list[@automationid='PART_Groups']/listitem[@index=$sListIndex]
+			</item>
+			<item
+			capname="text"
+			id="eca5db12-072d-4e5d-90f2-f900d493c424"
+			name="txt_Loops_ActualLoadingDetailsValue"
+			refimgid="cc2ce901-56bb-4bca-b3e6-056eb23c3025"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/container[$sColumn]//text
+			</item>
+			<item
+			capname="text"
+			id="88f64324-a177-4f1b-82e3-20463db24744"
+			name="Copy_of_txt_LoopA_ActualLoadingDetailsValue"
+			refimgid="cc2ce901-56bb-4bca-b3e6-056eb23c3025"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Built-in Loop-A']/following-sibling::cell/container[1]//text
+			</item>
+			<item
+			capname="text"
+			id="278718b1-db41-4366-9b2a-8d02c203a896"
+			name="txt_Loops_MaxLoadingDetailsValue"
+			refimgid="7f136cf0-5432-4af9-ac25-a92804f89d30"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/container[$sColumn]/?/text
+			</item>
+			<item
+			capname="text"
+			id="6d0b5928-e24a-4f2c-a8b9-08dd01f9426e"
+			name="Copy_of_txt_Loops_MaxLoadingDetailsValue"
+			refimgid="7f136cf0-5432-4af9-ac25-a92804f89d30"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Built-in Loop-A']/following-sibling::cell/container[2]/?/text
+			</item>
+			<item
+			capname="text"
+			id="746a1036-6ebe-4041-9a1e-630a79f67705"
+			name="Copy_of_txt_LoopA_ActualLoadingDetailsValue1"
+			refimgid="cc2ce901-56bb-4bca-b3e6-056eb23c3025"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Built-in Loop-A']/following-sibling::cell/container[2]/?/text[1]
+			</item>
+			<item
+			capname="progressbar"
+			id="7d698629-0e62-451f-8d30-7a94c49dfad5"
+			name="LoopLoadingDetailsProgressbarColor"
+			refimgid="cc2ce901-56bb-4bca-b3e6-056eb23c3025"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/container[$sColumn]/progressbar
+			</item>
+			<item
+			capname="progressbar"
+			id="967a9b3e-10dd-4121-82c0-93337dd9b0f4"
+			name="Copy_of_Copy_of_txt_LoopA_ActualLoadingDetailsValue1"
+			refimgid="cc2ce901-56bb-4bca-b3e6-056eb23c3025"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Built-in Loop-A']/following-sibling::cell/container[1]/progressbar
 			</item>
 			<basepath>
 				/form[@automationid='me']

@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.301", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.301", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.291", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Main");
@@ -118,7 +118,7 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.348", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.320", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.310", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
@@ -142,7 +142,7 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.348", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.546", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.310", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
@@ -166,7 +166,7 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify24VPSULoadValue("0.365", "FIM1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.301", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.291", "24V Rail(A)");
             Delay.Milliseconds(0);
             
         }

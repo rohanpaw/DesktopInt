@@ -133,8 +133,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800 5.0A", "Slot Cards", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PNI800", "Slot Cards", "PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PNI800", "Slot Cards", "PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -157,19 +157,19 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("PCH800 5.0A-1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("PNI800-2");
+            //Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("PNI800-2");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("Fuse board - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("Fuse board-1");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("IOB800 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("IOB800-1");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("POS800-S - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("POS800-S-1");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("POS800-M-1");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("POS800-M - 1");
             Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.DeleteDeviceUsingLabel("PCS800-1");
