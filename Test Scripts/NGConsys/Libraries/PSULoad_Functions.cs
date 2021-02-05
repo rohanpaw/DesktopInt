@@ -3931,6 +3931,7 @@ namespace TestProject.Libraries
 		 * Alpesh Dhakad - 17/09/2019 & 18/09/2019 - Updated code with for battery stand by and alarm, also Updated test data
 		 * Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
 		 * Alpesh Dhakad - 18/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 18/01/2021 Updated script as per new naming convention of FC panels
 		 ************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnRbusAddDelete(string sFileName,string sAddPanelSheet)
@@ -3960,7 +3961,7 @@ namespace TestProject.Libraries
 				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
-				if(PanelName.StartsWith("FIRE"))
+				if(PanelName.StartsWith("FC"))
 				{
 					// Add panels using test data in excel sheet
 					Panel_Functions.AddPanelsFC(1,PanelName,CPUType);
@@ -4270,6 +4271,7 @@ namespace TestProject.Libraries
 		 * Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
 		 * Alpesh Dhakad - 19/05/2020 Updated script as per new implementation changes
 		 * Alpesh Dhakad - 05/01/2021 Updated script as per new calculations
+		 * Alpesh Dhakad - 18/01/2021 Updated script as per new naming convention of FC panels
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyBatteryStandbyAndAlarmLoadOnAdditionAndDeletionOfAccessories(string sFileName,string sAddPanelSheet)
@@ -4299,8 +4301,20 @@ namespace TestProject.Libraries
 				sAlarmLoadingDetail=((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
 				int.TryParse(sRowNumber, out rowNumber);
 				
-				// Add panels using test data in excel sheet
-				Panel_Functions.AddPanels(1,PanelName,CPUType);
+				
+				if(PanelName.StartsWith("FC"))
+				{
+					// Add panels using test data in excel sheet
+					Panel_Functions.AddPanelsFC(1,PanelName,CPUType);
+					
+				}
+				else
+				{
+					
+					// Add panels using test data in excel sheet
+					Panel_Functions.AddPanels(1,PanelName,CPUType);
+				}
+				
 				Report.Log(ReportLevel.Info, "Panel "+PanelName+" added successfully");
 				
 				// Click on Expander node
@@ -5058,6 +5072,7 @@ namespace TestProject.Libraries
 				// Verify max System Load load value
 				//verifyMaxSystemLoad(expectedMaxSystemLoad);
 				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxSystemLoad,SystemLoadingDetail);
+				
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -6430,7 +6445,7 @@ namespace TestProject.Libraries
 				
 				// Verify max System Load load value
 				//verifySystemLoadValue(expectedSystemLoad);
-				Devices_Functions.verifyLoadingDetailsValue(DefaultSystemLoad,SystemLoadingDetail);
+				Devices_Functions.verifyLoadingDetailsValue(expectedSystemLoad,SystemLoadingDetail);
 				
 				// Click on Site node
 				Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -7005,6 +7020,7 @@ namespace TestProject.Libraries
 		 * Last Update : 20/09/2019  Alpesh Dhakad - 23/12/2019 - Added rows and column to implement new loop loading details methods
 		 * Alpesh Dhakad - 27/05/2020 Updated script as per new implementation changes
 		 * Alpesh Dhakad - 08/09/2020 - Updated panel start name as name changed for panels
+		 * 
 		 *********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyNormalAndAlarmLoadOnChangingHousingPropertyOfDIM(string sFileName,string sAddPanelSheet)
@@ -7107,7 +7123,7 @@ namespace TestProject.Libraries
 				//Common_Functions.clickOnPointsTab();
 				
 				//Devices_Functions.SelectRowUsingLabelName(sLabelName);
-				Devices_Functions.SelectRowUsingLabelNameForOneRow(sLabelName);
+				Devices_Functions.SelectRowUsingLabelNameForOneRowFC(sLabelName);
 				
 				// Click on SearchProperties text field
 				repo.ProfileConsys1.txt_SearchProperties.Click();
@@ -7264,6 +7280,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 20/09/2019
 		 * Alpesh Dhakad - 27/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 18/01/2021 Added change alarm hours method and also added in test data 
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyStandyByAlarmHourAndBatteryFactor(string sFileName,string sAddPanelSheet)
@@ -7276,7 +7293,7 @@ namespace TestProject.Libraries
 			
 			// Declared variables
 			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,minimumBatteryValue,changeStandByHoursValue,changeBatteryFactorValue,sMinBatteryLoadingDetail;
-			string changedMinimumBatteryValue,sIsSecondPSU;
+			string changedMinimumBatteryValue,sIsSecondPSU,changeAlarmHoursValue;
 			int rowNumber;
 			bool IsSecondPSU;
 			
@@ -7292,8 +7309,9 @@ namespace TestProject.Libraries
 				sIsSecondPSU = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				changeStandByHoursValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				changeBatteryFactorValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
-				changedMinimumBatteryValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
-				sMinBatteryLoadingDetail= ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				changeAlarmHoursValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				changedMinimumBatteryValue = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				sMinBatteryLoadingDetail= ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
 				
 				bool.TryParse(sIsSecondPSU, out IsSecondPSU);
 				
@@ -7340,6 +7358,8 @@ namespace TestProject.Libraries
 				changeStandByHours(changeStandByHoursValue);
 				
 				changeBatteryFactor(changeBatteryFactorValue);
+				
+				changeAlarmHours(changeAlarmHoursValue);
 				
 				// Click on Loop A node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -7446,7 +7466,7 @@ namespace TestProject.Libraries
 		}
 		
 		/*****************************************************************************************************************
-		 * Function Name: changeStandByHours
+		 * Function Name: changeBatteryFactor
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Function Owner: Alpesh Dhakad
@@ -7608,6 +7628,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad 
 		 * Last Update : 1/09/2020
+		 * Alpesh Dhakad - 15/01/2021 Updated script as per new UI Changes and method change
 		 ***********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMaxLimitFor5V24V40V(string fileName, string PanelNames)
@@ -7652,54 +7673,41 @@ namespace TestProject.Libraries
 				// Click on Expander node
 				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
 				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				
 				// CLick on Panel Calculation tab
 				Common_Functions.clickOnPanelCalculationsTab();
 				
 			
 				sLoadingDetail = LoadingDetailsName5V;
 				
-				string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValue.TextValue;
-			
-				if(MaxLoadingUnits.Equals(expectedMax5VPSU))
-				{
-				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetailsName5V + " value  "+ expectedMax5VPSU + " displayed correctly");
-				}
-				else
-				{
-				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetailsName5V + " value are not displayed correctly " + ", Expected Units:  " + expectedMax5VPSU  + " Actual Units: "+ MaxLoadingUnits);
-				}
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMax5VPSU,sLoadingDetail);
 			
 				// CLick on Panel Calculation tab
 				Common_Functions.clickOnPanelCalculationsTab();
 				
 				sLoadingDetail = LoadingDetailsName24V;
 				
-				string MaxLoadingUnits24v = repo.FormMe.txt_MaxLoadingDetailsValue.TextValue;
-			
-				if(MaxLoadingUnits24v.Equals(expectedMax24VPSU))
-				{
-				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetailsName24V + " value  "+ expectedMax24VPSU + " displayed correctly");
-				}
-				else
-				{
-				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetailsName24V + " value are not displayed correctly " + ", Expected Units:  " + expectedMax24VPSU  + " Actual Units: "+ MaxLoadingUnits);
-				}
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMax24VPSU,sLoadingDetail);
 			
 				// CLick on Panel Calculation tab
 				Common_Functions.clickOnPanelCalculationsTab();
 				
 				sLoadingDetail = LoadingDetailsName40V;
 				
-				string MaxLoadingUnits40v = repo.FormMe.txt_MaxLoadingDetailsValue.TextValue;
-			
-				if(MaxLoadingUnits40v.Equals(expectedMax40VPSU))
+				
+				if(expectedMax40VPSU.Equals("NA"))
 				{
-				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetailsName40V + " value  "+ expectedMax40VPSU + " displayed correctly");
+					Report.Log(ReportLevel.Info, "40V Field is not applicable for these panels");
 				}
 				else
 				{
-				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetailsName40V + " value are not displayed correctly " + ", Expected Units:  " + expectedMax40VPSU  + " Actual Units: "+ MaxLoadingUnits);
+					Devices_Functions.verifyMaxLoadingDetailsValue(expectedMax40VPSU,sLoadingDetail);
 				}
+				
+				Common_Functions.clickOnPropertiesTab();
 				
 				// Delete panel using PanelNode details from excel sheet
 				Panel_Functions.DeletePanel(1,PanelNode,1);
@@ -7712,7 +7720,39 @@ namespace TestProject.Libraries
 			}
 				
 			
+			/*****************************************************************************************************************
+		 * Function Name: changeAlarmHours
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 18/01/2021
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void changeAlarmHours(string changeAlarmHoursValue)
+		{
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
+			// Enter the Housing text in Search Properties fields to view housing related text;
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("Alarm" +"{ENTER}" );
+			
+			// Click on cell Search properties device first row
+			//repo.FormMe.cell_SearchPropertiesFirstRow.Click();
+			repo.FormMe.cell_AlarmHours.Click();
+			
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+changeAlarmHoursValue + "{Enter}");
+			
+			
+			//repo.FormMe.cableLengthSpinUpButton.DoubleClick();
+			
+			//repo.FormMe.cableLengthSpinUpButton.DoubleClick();
+			
+			// Click on SearchProperties text field
+			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+		}
 		
 	}
 }

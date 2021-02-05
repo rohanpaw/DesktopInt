@@ -97,7 +97,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -178,6 +178,16 @@ rxversion="8.3">
 						Add Devices Loop A
 					</argvalue>
 				</argument>
+				<argument
+				argname="LoopDetails"
+				id="f594ad56-d3e1-49e3-ab8a-36fd2b101a28">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -206,11 +216,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="VoltageDrop_Functions"
+		classname="Verify_Voltage_Drop_on_Other_Loops_for_PFI"
 		enabled="False"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="verifyVoltDropValue"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False">
 			<comment>
 			</comment>
@@ -231,11 +241,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="VoltageDrop_Functions"
+		classname="Verify_Voltage_Drop_on_Other_Loops_for_PFI"
 		enabled="False"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="verifyVoltDropWorstCaseValue"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False">
 			<comment>
 			</comment>
@@ -257,7 +267,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -292,7 +302,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -323,6 +333,128 @@ rxversion="8.3">
 						Volt Drop (worst case)
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop (V)
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9275e469-2bca-4246-a7fc-e07edfedbb6d">
+				<argument
+				argname="expectedUnits"
+				id="07d7a46e-c623-4492-a1a3-55a877c9f53e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.00
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="dd7ed241-5404-4f5c-9318-8c69a8b2c618">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-B
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="fd6745b3-1894-49c5-b5f1-8c09b668eddd">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop (worst case)
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9275e469-2bca-4246-a7fc-e07edfedbb6d">
+				<argument
+				argname="expectedUnits"
+				id="07d7a46e-c623-4492-a1a3-55a877c9f53e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.00
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="dd7ed241-5404-4f5c-9318-8c69a8b2c618">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-B
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="fd6745b3-1894-49c5-b5f1-8c09b668eddd">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -383,6 +515,16 @@ rxversion="8.3">
 						Add Devices Loop B
 					</argvalue>
 				</argument>
+				<argument
+				argname="LoopDetails"
+				id="c96d11d5-6a5d-4cf9-9f8e-7fd6ac042dda">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-B
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -411,11 +553,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="VoltageDrop_Functions"
+		classname="Verify_Voltage_Drop_on_Other_Loops_for_PFI"
 		enabled="False"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="verifyVoltDropValue"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False">
 			<comment>
 			</comment>
@@ -436,11 +578,11 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="VoltageDrop_Functions"
+		classname="Verify_Voltage_Drop_on_Other_Loops_for_PFI"
 		enabled="False"
-		isexternaltestmethod="True"
+		isexternaltestmethod="False"
 		methodname="verifyVoltDropWorstCaseValue"
-		namespace="TestProject.Libraries"
+		namespace="TestProject.Recording_Modules"
 		optional="False">
 			<comment>
 			</comment>
@@ -462,7 +604,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -497,7 +639,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -528,6 +670,128 @@ rxversion="8.3">
 						Volt Drop (worst case)
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop (V)
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9275e469-2bca-4246-a7fc-e07edfedbb6d">
+				<argument
+				argname="expectedUnits"
+				id="07d7a46e-c623-4492-a1a3-55a877c9f53e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.00
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="dd7ed241-5404-4f5c-9318-8c69a8b2c618">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-C
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="fd6745b3-1894-49c5-b5f1-8c09b668eddd">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop (worst case)
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9275e469-2bca-4246-a7fc-e07edfedbb6d">
+				<argument
+				argname="expectedUnits"
+				id="07d7a46e-c623-4492-a1a3-55a877c9f53e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.00
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="dd7ed241-5404-4f5c-9318-8c69a8b2c618">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-C
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="fd6745b3-1894-49c5-b5f1-8c09b668eddd">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -588,6 +852,16 @@ rxversion="8.3">
 						Add Devices Loop C
 					</argvalue>
 				</argument>
+				<argument
+				argname="LoopDetails"
+				id="a25d8721-3db4-482f-9c1f-f49fa2b630a6">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-C
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -646,6 +920,16 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						Add Devices Loop D
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoopDetails"
+				id="bc29b385-64b5-4602-bb81-c3da439eab59">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-D
 					</argvalue>
 				</argument>
 			</arguments>

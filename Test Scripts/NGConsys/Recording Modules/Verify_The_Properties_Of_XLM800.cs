@@ -100,8 +100,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnInventoryTab();
             Delay.Milliseconds(0);
             
-            //Libraries.Devices_Functions.SelectRowUsingLabelName("XLM800-C");
-            //Delay.Milliseconds(0);
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("XLM800-D");
+            Delay.Milliseconds(0);
             
             //Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Description", "Loop Expansion Module controls the communications between the detectors (and other ancillaries) connected on the 2-wire loop circuits and the controller");
             //Delay.Milliseconds(0);

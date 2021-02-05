@@ -85,61 +85,89 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop A");
+            Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop A", "Built-in Loop-A");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.07");
+            //verifyVoltDropValue("0.07");
             //Delay.Milliseconds(0);
             
-            //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.15");
+            //verifyVoltDropWorstCaseValue("0.15");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (V)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (V)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (worst case)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (worst case)");
+            // Volt Drop (V)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.00", "Built-in Loop-B", "3");
+            Delay.Milliseconds(0);
+            
+            // Volt Drop (worst case)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.00", "Built-in Loop-B", "4");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop B");
+            Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop B", "Built-in Loop-B");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
             Delay.Milliseconds(0);
             
-            //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.00");
+            //verifyVoltDropValue("0.00");
             //Delay.Milliseconds(0);
             
-            //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.00");
+            //verifyVoltDropWorstCaseValue("0.00");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (V)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (V)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (worst case)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.00", "Volt Drop (worst case)");
+            // Volt Drop (V)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.00", "Built-in Loop-C", "3");
+            Delay.Milliseconds(0);
+            
+            // Volt Drop (worst case)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.00", "Built-in Loop-C", "4");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop C");
+            Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop C", "Built-in Loop-C");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-D");
             Delay.Milliseconds(0);
             
-            Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop D");
+            Libraries.VoltageDrop_Functions.verifyVoltageDropCalculation("Verify Voltage Drop Calculation on adding devices in Multiple loops", "Add Devices Loop D", "Built-in Loop-D");
             Delay.Milliseconds(0);
             
         }

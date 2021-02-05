@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 64-4", "");
+            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC64-4", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -91,10 +91,11 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400P", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBase("400P", "4BI 4\" [517.050.043]", "4");
+            // 4BI 4" [517.050.043]
+            Libraries.Devices_Functions.AssignDeviceBase("460H - 1", "4", "6");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("410LPSY - R/W", "Sounders/Beacons");
@@ -106,13 +107,21 @@ namespace TestProject.Recording_Modules
             //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.27", "Volt Drop (V)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.54", "Volt Drop (worst case)");
+            // Volt Drop Mean
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.52", "Built-in Loop-A", "3");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Detectors");
+            // Volt Drop (worst case)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("1.05", "Built-in Loop-A", "4");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("460PH", "Detectors");
             Delay.Milliseconds(0);
             
             //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.27");
@@ -121,17 +130,37 @@ namespace TestProject.Recording_Modules
             //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.27", "Volt Drop (V)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.27", "Volt Drop (V)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.54", "Volt Drop (worst case)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.54", "Volt Drop (worst case)");
+            // Volt Drop Mean
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.60", "Built-in Loop-A", "3");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedRow("2");
+            // Volt Drop (worst case)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("1.21", "Built-in Loop-A", "4");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.RightClickOnSelectedRow("2");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelName("410LPSY - R/W - 2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
+            //Delay.Milliseconds(0);
             
             //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.16");
             //Delay.Milliseconds(0);
@@ -139,31 +168,46 @@ namespace TestProject.Recording_Modules
             //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.31");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.16", "Volt Drop (V)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.16", "Volt Drop (V)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.31", "Volt Drop (worst case)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.31", "Volt Drop (worst case)");
+            // Volt Drop Mean
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.40", "Built-in Loop-A", "3");
+            Delay.Milliseconds(0);
+            
+            // Volt Drop (worst case)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.81", "Built-in Loop-A", "4");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 240-4", "");
+            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC240-4", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("400P", "Detectors");
+            Libraries.Devices_Functions.AddDevicesfromGallery("460PH", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AssignDeviceBase("400P", "4BI 4\" [517.050.043]", "4");
+            // 4BI 4" [517.050.043]
+            Libraries.Devices_Functions.AssignDeviceBase("460PH - 1", "4", "6");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("410LPSY - R/W", "Sounders/Beacons");
@@ -175,10 +219,24 @@ namespace TestProject.Recording_Modules
             //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("1.03");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.51", "Volt Drop (V)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.51", "Volt Drop (V)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("1.03", "Volt Drop (worst case)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.03", "Volt Drop (worst case)");
+            // Volt Drop Mean
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.52", "Built-in Loop-A", "3");
+            Delay.Milliseconds(0);
+            
+            // Volt Drop (worst case)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("1.05", "Built-in Loop-A", "4");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("460H", "Detectors");
@@ -190,16 +248,36 @@ namespace TestProject.Recording_Modules
             //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.54");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.27", "Volt Drop (V)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.27", "Volt Drop (V)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.54", "Volt Drop (worst case)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.54", "Volt Drop (worst case)");
+            // Volt Drop Mean
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.60", "Built-in Loop-A", "3");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedRow("2");
+            // Volt Drop (worst case)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("1.21", "Built-in Loop-A", "4");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
+            Libraries.Common_Functions.clickOnPropertiesTab();
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.RightClickOnSelectedRow("2");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.clickContextMenuOptionOnRightClick("Delete");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelName("410LPSY - R/W - 2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
             //Libraries.VoltageDrop_Functions.verifyVoltDropValue("0.16");
@@ -208,10 +286,24 @@ namespace TestProject.Recording_Modules
             //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.31");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.16", "Volt Drop (V)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.16", "Volt Drop (V)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.31", "Volt Drop (worst case)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.31", "Volt Drop (worst case)");
+            // Volt Drop Mean
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.40", "Built-in Loop-A", "3");
+            Delay.Milliseconds(0);
+            
+            // Volt Drop (worst case)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.81", "Built-in Loop-A", "4");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
         }

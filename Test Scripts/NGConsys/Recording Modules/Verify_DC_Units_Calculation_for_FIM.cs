@@ -97,10 +97,24 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyMaxDCUnits("2200");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (worst case)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (worst case)");
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("220", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("2200", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.DC_Functions.VerifyDCCalculationOnAddingDevices("Verify DC Units Calculation for FIM", "Add Devices Loop A", "Add Devices Loop B");
@@ -115,7 +129,17 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsValue("259.3");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("259.3", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("259.3", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("283", "Built-in Loop-B", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -127,7 +151,17 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsValue("286.2");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("286.2", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("286.2", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("286", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
@@ -136,13 +170,33 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsValue("259.3");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("259.3", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("259.3", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("283", "Built-in Loop-B", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DeleteDevices("Verify DC Units Calculation for FIM", "Delete Devices Loop B");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("233.1", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("233.1", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("233", "Built-in Loop-B", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             //Libraries.DC_Functions.verifyDCUnitsValue("233.1");
@@ -154,7 +208,17 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsValue("286.2");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("286.2", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("286.2", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("286", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
         }

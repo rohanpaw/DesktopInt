@@ -232,9 +232,9 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="False"
+		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelName"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -250,7 +250,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						XLM800-C
+						XLM800-D
 					</argvalue>
 				</argument>
 			</arguments>

@@ -85,8 +85,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -106,10 +106,24 @@ namespace TestProject.Recording_Modules
             //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.38");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.22", "Volt Drop (V)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.38", "Volt Drop (worst case)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.21", "Volt Drop (V)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.38", "Volt Drop (worst case)");
+            //Delay.Milliseconds(0);
+            
+            // Volt Drop (V)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.21", "Built-in Loop-A", "3");
+            Delay.Milliseconds(0);
+            
+            // Volt Drop (worst case)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.36", "Built-in Loop-A", "4");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.ChangeCableResistance("15 Ohms (2.5 mm2)");
@@ -124,10 +138,18 @@ namespace TestProject.Recording_Modules
             //Libraries.VoltageDrop_Functions.verifyVoltDropWorstCaseValue("0.26");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.16", "Volt Drop (V)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.16", "Volt Drop (V)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.27", "Volt Drop (worst case)");
+            //Delay.Milliseconds(0);
+            
+            // Volt Drop (V)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.16", "Built-in Loop-A", "3");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.27", "Volt Drop (worst case)");
+            // Volt Drop (worst case)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("0.25", "Built-in Loop-A", "4");
             Delay.Milliseconds(0);
             
         }

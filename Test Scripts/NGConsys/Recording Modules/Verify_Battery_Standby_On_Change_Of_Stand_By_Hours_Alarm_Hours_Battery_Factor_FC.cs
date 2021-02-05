@@ -82,7 +82,7 @@ namespace TestProject.Recording_Modules
             Libraries.PSULoad_Functions.verifyStandyByAlarmHourAndBatteryFactor("TC_71697_Verify_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC", "Add Panels");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.SaveProject("TC_71697");
+            Libraries.Common_Functions.SaveFCProject("TC_71697");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

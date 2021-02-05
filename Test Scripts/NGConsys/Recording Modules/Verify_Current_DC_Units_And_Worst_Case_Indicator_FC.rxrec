@@ -56,7 +56,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FIRECLASS 64-4
+						FC64-4
 					</argvalue>
 				</argument>
 				<argument

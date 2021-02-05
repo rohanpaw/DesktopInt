@@ -56,7 +56,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FIRECLASS 64-4
+						FC64-4
 					</argvalue>
 				</argument>
 				<argument
@@ -155,7 +155,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1.238
+						1.184
 					</argvalue>
 				</argument>
 				<argument
@@ -190,7 +190,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.122
+						0.165
 					</argvalue>
 				</argument>
 				<argument
@@ -385,7 +385,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1.238
+						1.184
 					</argvalue>
 				</argument>
 				<argument
@@ -420,7 +420,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.141
+						0.184
 					</argvalue>
 				</argument>
 				<argument
@@ -536,6 +536,51 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromMainProcessorGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				ANN880
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="cda08457-adbb-421f-b414-015d06b36fc8">
+				<argument
+				argname="sDeviceName"
+				id="de95c816-dbc2-4335-86d6-11aa7e440d9a">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Zonal Alarm Display max 80
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="264738f6-a206-4c70-ad48-b3587fce0e13">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Attached Functionality
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelType"
+				id="a7bdee59-cdd6-4edb-8bf2-36bba5832b4e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -595,7 +640,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1.238
+						1.184
 					</argvalue>
 				</argument>
 				<argument
@@ -630,7 +675,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.141
+						0.207
 					</argvalue>
 				</argument>
 				<argument
@@ -820,7 +865,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1.238
+						1.184
 					</argvalue>
 				</argument>
 				<argument
@@ -855,7 +900,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.122
+						0.165
 					</argvalue>
 				</argument>
 				<argument
@@ -1129,7 +1174,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.329
+						0.319
 					</argvalue>
 				</argument>
 				<argument
@@ -1146,7 +1191,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -1359,7 +1404,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.348
+						0.338
 					</argvalue>
 				</argument>
 				<argument
@@ -1376,7 +1421,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -1453,7 +1498,7 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectInventoryGridRow"
+		methodname="SelectInventoryGridFirstRow"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1469,7 +1514,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						2
+						1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1622,7 +1667,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.468
+						0.361
 					</argvalue>
 				</argument>
 				<argument
@@ -1639,7 +1684,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -1717,7 +1762,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						2
+						1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1843,7 +1888,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.348
+						0.319
 					</argvalue>
 				</argument>
 				<argument
@@ -1860,7 +1905,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"

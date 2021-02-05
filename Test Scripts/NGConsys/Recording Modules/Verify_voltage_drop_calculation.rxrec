@@ -56,7 +56,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FIRECLASS 64-4
+						FC64-4
 					</argvalue>
 				</argument>
 				<argument
@@ -165,7 +165,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400P
+						460H
 					</argvalue>
 				</argument>
 				<argument
@@ -188,6 +188,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				4BI 4&quot; [517.050.043]
 			</comment>
 			<bindings>
 			</bindings>
@@ -200,7 +201,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400P
+						460H - 1
 					</argvalue>
 				</argument>
 				<argument
@@ -210,7 +211,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						4BI 4&quot; [517.050.043]
+						4
 					</argvalue>
 				</argument>
 				<argument
@@ -220,7 +221,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						4
+						6
 					</argvalue>
 				</argument>
 			</arguments>
@@ -311,13 +312,29 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyLoadingDetailsValue"
+		methodname="clickOnPanelCalculationsTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop Mean
 			</comment>
 			<bindings>
 			</bindings>
@@ -330,7 +347,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.27
+						0.52
 					</argvalue>
 				</argument>
 				<argument
@@ -340,7 +357,17 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Volt Drop (V)
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="a4075e4b-7a8b-4783-a561-79663d3e9df5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -349,10 +376,11 @@ rxversion="8.3">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyLoadingDetailsValue"
+		methodname="verifyLoopLoadingDetailsValue"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Volt Drop (worst case)
 			</comment>
 			<bindings>
 			</bindings>
@@ -365,7 +393,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.54
+						1.05
 					</argvalue>
 				</argument>
 				<argument
@@ -375,9 +403,34 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Volt Drop (worst case)
+						Built-in Loop-A
 					</argvalue>
 				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="70cf5e24-04b7-498a-a2f9-5bbd5f2c753f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -400,7 +453,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						460H
+						460PH
 					</argvalue>
 				</argument>
 				<argument
@@ -467,7 +520,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -502,7 +555,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -536,8 +589,130 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop Mean
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.60
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="a4075e4b-7a8b-4783-a561-79663d3e9df5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop (worst case)
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1.21
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="70cf5e24-04b7-498a-a2f9-5bbd5f2c753f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedRow"
 		namespace="TestProject.Libraries"
@@ -563,6 +738,46 @@ rxversion="8.3">
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelName"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="571d643d-0655-43c6-9f60-6671c35aa810">
+				<argument
+				argname="sLabel"
+				id="07271b9b-4b2d-4e6e-aa09-b7fabb123a8d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						410LPSY - R/W - 2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnDeleteButton"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="571d643d-0655-43c6-9f60-6671c35aa810">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
@@ -637,7 +852,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -672,7 +887,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -703,6 +918,128 @@ rxversion="8.3">
 						Volt Drop (worst case)
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop Mean
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.40
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="a4075e4b-7a8b-4783-a561-79663d3e9df5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop (worst case)
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.81
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="70cf5e24-04b7-498a-a2f9-5bbd5f2c753f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -780,7 +1117,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FIRECLASS 240-4
+						FC240-4
 					</argvalue>
 				</argument>
 				<argument
@@ -821,7 +1158,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
@@ -889,7 +1226,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400P
+						460PH
 					</argvalue>
 				</argument>
 				<argument
@@ -912,6 +1249,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				4BI 4&quot; [517.050.043]
 			</comment>
 			<bindings>
 			</bindings>
@@ -924,7 +1262,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						400P
+						460PH - 1
 					</argvalue>
 				</argument>
 				<argument
@@ -934,7 +1272,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						4BI 4&quot; [517.050.043]
+						4
 					</argvalue>
 				</argument>
 				<argument
@@ -944,7 +1282,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						4
+						6
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1036,7 +1374,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -1071,7 +1409,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -1102,6 +1440,128 @@ rxversion="8.3">
 						Volt Drop (worst case)
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop Mean
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.52
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="a4075e4b-7a8b-4783-a561-79663d3e9df5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop (worst case)
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1.05
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="70cf5e24-04b7-498a-a2f9-5bbd5f2c753f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -1191,7 +1651,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -1226,7 +1686,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -1260,8 +1720,130 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop Mean
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.60
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="a4075e4b-7a8b-4783-a561-79663d3e9df5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop (worst case)
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1.21
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="70cf5e24-04b7-498a-a2f9-5bbd5f2c753f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="RightClickOnSelectedRow"
 		namespace="TestProject.Libraries"
@@ -1286,7 +1868,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickContextMenuOptionOnRightClick"
 		namespace="TestProject.Libraries"
@@ -1307,6 +1889,46 @@ rxversion="8.3">
 						Delete
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelName"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="571d643d-0655-43c6-9f60-6671c35aa810">
+				<argument
+				argname="sLabel"
+				id="07271b9b-4b2d-4e6e-aa09-b7fabb123a8d">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						410LPSY - R/W - 2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnDeleteButton"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="571d643d-0655-43c6-9f60-6671c35aa810">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -1361,7 +1983,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -1396,7 +2018,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -1427,6 +2049,128 @@ rxversion="8.3">
 						Volt Drop (worst case)
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop Mean
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.40
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="a4075e4b-7a8b-4783-a561-79663d3e9df5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						3
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Volt Drop (worst case)
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						0.81
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="70cf5e24-04b7-498a-a2f9-5bbd5f2c753f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						4
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
 			</arguments>
 		</userrecorditem>
 	</recorditems>

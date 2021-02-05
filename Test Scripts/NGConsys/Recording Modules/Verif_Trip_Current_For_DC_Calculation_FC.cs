@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 32-1", "");
+            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC32-1", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -94,13 +94,20 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyMaxDCUnits("2200");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("2200", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
+            //Delay.Milliseconds(0);
             
             Libraries.DC_Functions.verifyTripCurrentForDCCalculation("TC_63797_Verify Trip Current Calculation", "Add Devices Loop A", "Other Devices Loop A");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.SaveProject("TC_63797");
+            Libraries.Common_Functions.SaveFCProject("TC_63797");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

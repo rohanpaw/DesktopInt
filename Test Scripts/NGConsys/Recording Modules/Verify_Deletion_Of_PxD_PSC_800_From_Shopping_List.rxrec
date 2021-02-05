@@ -334,6 +334,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Other Slot Cards  (2 of 18)
 			</comment>
 			<bindings>
 			</bindings>
@@ -346,7 +347,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other Slot Cards  (2 of 18)
+						Other Slot Cards  (2 of
 					</argvalue>
 				</argument>
 			</arguments>
@@ -455,6 +456,7 @@ rxversion="8.3">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Other Slot Cards  (3 of 18)
 			</comment>
 			<bindings>
 			</bindings>
@@ -467,7 +469,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other Slot Cards  (3 of 18)
+						Other Slot Cards  (3 of
 					</argvalue>
 				</argument>
 			</arguments>

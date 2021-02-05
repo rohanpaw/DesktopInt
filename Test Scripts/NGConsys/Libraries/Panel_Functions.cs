@@ -1268,6 +1268,7 @@ namespace TestProject.Libraries
 		 * Last Update : 28/12/2018 Alpesh Dhakad - Line 162 Commented
 		 * Alpesh Dhakad - 19/08/2019 - Updated with new navigation tree method, xpath and devices gallery
 		 * Alpesh Dhakad - 01/10/2019 - Added step as per new Panel Node in Build 43
+		 * Alpesh Dhakad - 29/01/2021 - Updated script as per new UI implementation
 		 **********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddPanelsMultipleTimes(int NumberofPanels,string PanelNames,string sPanelCPU)
@@ -1284,7 +1285,20 @@ namespace TestProject.Libraries
 				
 				ModelNumber = PanelName;
 				
+//				if(PanelName.StartsWith("P"))
+//				{
+//					sPanelLabelIndex ="5";
+//				}
+//				else
+//				{
+//					sPanelLabelIndex ="7";
+//				}
+				
 				if(PanelName.StartsWith("P"))
+				{
+					sPanelLabelIndex ="5";
+				}
+				else if(PanelName.StartsWith("MZX"))
 				{
 					sPanelLabelIndex ="5";
 				}
@@ -1292,6 +1306,9 @@ namespace TestProject.Libraries
 				{
 					sPanelLabelIndex ="7";
 				}
+				
+				
+				
 				repo.FormMe.btn_AllGalleryDropdown.Click();
 				
 				//repo.FormMe.btn_AllGalleryDropdown.Click();

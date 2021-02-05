@@ -1396,6 +1396,52 @@ namespace TestProject.Libraries
 			
 		}
 	
+		/********************************************************************
+		 * Function Name: SaveProject
+		 * Function Details: To save project
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Shweta Bhosale
+		 * Last Update : 15/09/2019 - Alpesh Dhakad Updated btn_Save Xpath
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void SaveFCProject(string sProjectName)
+		{
+			repo.FormMe.File.Click();
+			
+			repo.FormMe.Save.Click();
+			
+			repo.ProjectChangeDescription.txt_Desc.Click();
+					Keyboard.Press("Automation....");
+					repo.ProjectChangeDescription.btn_OK.Click();
+			
+			
+			
+					if(repo.FormMe2.ButtonSave.Visible)
+				{
+					
+					string actualDirPath= Common_Functions.GetDirPath();
+					string sSaveProjectDirPath = actualDirPath+ "NGDesigner Saved Projects";
+					repo.SaveFCConfirmationWindow.Save_Open_Window.Click();
+					
+					sProjectName= sSaveProjectDirPath + "\\"+ sProjectName;
+					
+					repo.SaveFCConfirmationWindow.txt_Path.PressKeys(sProjectName);
+					
+					
+					//repo.SaveConfirmationWindow.txt_Path.PressKeys("{Return}");
+					
+					//   	repo.SaveConfirmationWindow.txt_ProjectName.Click();
+					//	repo.SaveConfirmationWindow.txt_ProjectName.PressKeys(sProjectName);
+					repo.SaveFCConfirmationWindow.ButtonSave.Click();
+					
+					
+				}
+			
+		}
+		
+		
+		
 	}
 }
 

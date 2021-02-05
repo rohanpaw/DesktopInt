@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 64-4", "");
+            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC64-4", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -91,10 +91,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.238", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.184", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.122", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.165", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -115,10 +115,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.238", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.184", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.141", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.184", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -133,16 +133,20 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectInventoryGridRow("3");
             Delay.Milliseconds(0);
             
+            // ANN880
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Zonal Alarm Display max 80", "Attached Functionality", "");
+            Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.238", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.184", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.141", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.207", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -166,10 +170,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.238", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.184", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.122", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.165", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -196,11 +200,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.329", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.319", "24V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "40V Rail(A)");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "40V Rail(A)");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
@@ -220,11 +224,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.348", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.338", "24V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "40V Rail(A)");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "40V Rail(A)");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
@@ -232,13 +236,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectInventoryGridRow("2");
+            Libraries.Devices_Functions.SelectInventoryGridFirstRow("1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Zonal Alarm Display max 80", "Attached Functionality", "");
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(53));
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(54));
             //Delay.Duration(7000, false);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -250,16 +254,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.468", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.361", "24V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "40V Rail(A)");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "40V Rail(A)");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("2");
+            Libraries.Devices_Functions.RightClickOnSelectedInventoryGridRow("1");
             Delay.Milliseconds(0);
             
             // Delete
@@ -275,11 +279,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.000", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.348", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.319", "24V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "40V Rail(A)");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.110", "40V Rail(A)");
+            //Delay.Milliseconds(0);
             
             //Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             //Delay.Milliseconds(0);
@@ -341,7 +345,7 @@ namespace TestProject.Recording_Modules
             //Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("Zonal Alarm Display max 80", "Attached Functionality", "");
             //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(87));
+            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 7s.", new RecordItemIndex(88));
             //Delay.Duration(7000, false);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");

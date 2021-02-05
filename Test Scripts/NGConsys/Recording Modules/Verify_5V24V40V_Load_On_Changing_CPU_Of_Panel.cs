@@ -79,10 +79,10 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 64-4", "");
+            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC64-4", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1 - FireClass 64-4 ZL");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1 - FC64-4");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
@@ -121,10 +121,10 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.238", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.184", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.122", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.165", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -136,7 +136,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node1 - FireClass 64-4 ZL");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node1 - FC64-4");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.clickOnSearchProperties();
@@ -157,10 +157,13 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.103", "5V Rail(A)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.122", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.049", "5V Rail(A)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.165", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -181,10 +184,10 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 240-4", "");
+            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC240-4", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1 - FireClass 240-4");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1 - FC240-4");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("FIM");
@@ -223,10 +226,10 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verify_5_24_40PSULoadValueFC("0.270", "40V");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.226", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.172", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.122", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.165", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -238,10 +241,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node1 - FireClass 240-4");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node1 - FC240-4");
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(54));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.txt_SearchProperties' at Center.", repo.ProfileConsys1.txt_SearchPropertiesInfo, new RecordItemIndex(55));
             //repo.ProfileConsys1.txt_SearchProperties.Click();
             //Delay.Milliseconds(200);
             
@@ -260,10 +263,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.091", "5V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.037", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.122", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.165", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");

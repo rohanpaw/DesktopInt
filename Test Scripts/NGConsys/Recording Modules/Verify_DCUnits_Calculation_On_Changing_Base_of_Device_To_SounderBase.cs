@@ -97,10 +97,27 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyMaxDCUnits("2200");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("220", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("2200", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.DC_Functions.VerifyDCCalculationOnChangingBase("Verify DC Units Calculation on changing base of device to sounder base", "Add Devices Loop A", "Add Sounder Base Device");
@@ -112,11 +129,18 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsWorstCaseValue("384.9");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("384.9", "Current (DC Units)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("384.9", "Current (worst case)");
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("377", "Built-in Loop-A", "2");
             Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("384.9", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("384.9", "Current (worst case)");
+            //Delay.Milliseconds(0);
             
         }
 

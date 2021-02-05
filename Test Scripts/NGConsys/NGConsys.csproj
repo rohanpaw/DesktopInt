@@ -640,6 +640,18 @@
       <UserCode>true</UserCode>
       <id>fe1cebd6-5577-4576-b00f-2aafba2c7939</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_High_Power_Loop_Calculation.cs">
+      <BoundTo>eba660c3-9e3c-456c-951d-a49cdffc18c8</BoundTo>
+      <DependentUpon>Verify_High_Power_Loop_Calculation.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>79911618-6ae8-40da-b5ec-e97d02815357</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_High_Power_Loop_Calculation.UserCode.cs">
+      <BoundTo>eba660c3-9e3c-456c-951d-a49cdffc18c8</BoundTo>
+      <DependentUpon>Verify_High_Power_Loop_Calculation.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8ccf837b-9bed-45b5-86c8-c177c03c25a2</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels.cs">
       <BoundTo>4bdea097-97f0-45be-a86b-c1963f4f3db9</BoundTo>
       <DependentUpon>Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels.rxrec</DependentUpon>
@@ -4617,9 +4629,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_5V24V40V_Load_On_Changing_CPU_Of_Panel.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>966cd594-f837-42fd-890b-ea7e43f1852a</id>
       <recordtableid>082dffce-d287-401e-a4f1-76d4a095c6c2</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_CurrentDC_Units_Calculation_PFI_FC.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -4635,6 +4647,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>6e902786-a15d-410c-a43e-4176dc98c116</id>
       <recordtableid>5db8f58a-d772-480b-a7a0-32c5861b0327</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_High_Power_Loop_Calculation.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>eba660c3-9e3c-456c-951d-a49cdffc18c8</id>
+      <recordtableid>1dae8649-092b-4b32-b5ee-63013d66d5ff</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -6067,9 +6084,9 @@
       <recordtableid>155e3ff8-bcca-4c1c-ab0a-c36d7a2b2d2b</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_The_Properties_Of_XLM800.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>04c4c31c-ba73-49dd-a836-ed25435ffe52</id>
       <recordtableid>0f96478c-09af-47c3-82ea-a8bdd39f711c</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_The_Respective_5V24V40V_Property_On_Changing_Power_Source.rxrec">
       <id>d594399a-7ff5-4438-b4b4-03165d779d5a</id>
@@ -6212,9 +6229,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verif_Trip_Current_For_DC_Calculation_FC.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>36a67c14-6987-4846-b132-4b1db459a5b1</id>
       <recordtableid>0679320e-7fb5-4680-acc5-285d1fc0caeb</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
   </ItemGroup>
   <ItemGroup>

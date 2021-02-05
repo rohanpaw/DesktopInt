@@ -79,7 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FIRECLASS 64-2", "");
+            Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC64-2", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -97,10 +97,24 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyMaxDCUnits("2200");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("220", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("2200", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
@@ -112,10 +126,24 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyMaxDCUnits("2200");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("2200", "Current (DC Units)");
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("220", "Built-in Loop-B", "2");
+            Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("2200", "Built-in Loop-B", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.DC_Functions.verifyDCUnitCalculationForNonSplitLoops("TC_63775_Verify_DC_Units_Displayed_For_Non_Split_Loops_FC", "Add_Devices_LoopA", "Add_Devices_LoopB");

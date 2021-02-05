@@ -56,7 +56,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FIRECLASS 64-2
+						FC64-2
 					</argvalue>
 				</argument>
 				<argument
@@ -172,7 +172,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyMaxLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -254,7 +254,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SaveProject"
+		methodname="SaveFCProject"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>

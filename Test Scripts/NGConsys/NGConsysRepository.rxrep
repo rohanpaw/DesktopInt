@@ -76,6 +76,15 @@ rxversion="8.3">
 			searchtimeout="30000ms">
 				/form[@title='Designer Pro']/list[1]/button[2]
 			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="15cfbb70-0075-4a32-8380-21d522402b73"
+			name="btn_Cancel"
+			refimgid="7ce4bcc4-c1f5-4b5c-b665-3aa76d9debff"
+			searchtimeout="30000ms">
+				/form[@title='Designer Pro']/?/?/button[@text='Cancel']
+			</item>
 			<basepath>
 				/form[@title='Designer Pro']
 			</basepath>
@@ -2321,6 +2330,22 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="row"
+			id="1ceeba68-62de-4235-8943-d88ccda2bcfe"
+			name="Copy_of_InventoryGridRow3"
+			refimgid="2532eb34-0dcb-4a63-baa8-9b93ce2ac452"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[1]
+			</item>
+			<item
+			capname="row"
+			id="25f9ce92-feb7-402b-b0f5-9069a1e3d5fc"
+			name="Copy_of_InventoryGridRow4"
+			refimgid="2532eb34-0dcb-4a63-baa8-9b93ce2ac452"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]/row[$sRow]
+			</item>
+			<item
+			capname="row"
 			id="c1bcacb1-2408-4e60-8266-4b297e256ff3"
 			name="InventoryGridRowForEXI"
 			refimgid="2532eb34-0dcb-4a63-baa8-9b93ce2ac452"
@@ -2846,7 +2871,15 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			name="btn_MultiplePointWizard"
 			refimgid="6a018d65-2cf0-4b18-b480-99a13ab5d487"
 			searchtimeout="90000ms">
-				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/container[1]
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[2]/list[1]/list[3]/container[@automationid='PART_ItemsPresenter']/container[1]
+			</item>
+			<item
+			capname="container"
+			id="f5512145-d8c8-469d-96c7-ddd2ccb0eefe"
+			name="Copy_of_btn_MultiplePointWizard1"
+			refimgid="6a018d65-2cf0-4b18-b480-99a13ab5d487"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']//container[@automationid='PART_ItemsPresenter']/container[1]
 			</item>
 			<item
 			capname="button"
@@ -13966,7 +13999,7 @@ AAAAAElFTkSuQmCC
 			id="78c3cb5c-ed89-4929-ba32-2b396f70cb5a"
 			name="InventoryGridFirstRow"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar/list[7]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row
 			</item>
 			<item
 			capname="text"
@@ -14531,6 +14564,14 @@ AAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="text"
+			id="c1c0f559-206b-4829-8450-14bb830202a9"
+			name="txt_ActualLoadingDetailsValueAfterReopenPreceding"
+			refimgid="2ae6330a-9a2b-4359-8517-db83a5899695"
+			searchtimeout="150000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/preceding-sibling::cell/?/text[1]
+			</item>
+			<item
+			capname="text"
 			id="dfc1020f-cc89-45ac-9984-9ee94cd70abb"
 			name="Copy_of_txt_ActualLoadingDetailsValueAfterReopen"
 			refimgid="2ae6330a-9a2b-4359-8517-db83a5899695"
@@ -14569,13 +14610,21 @@ AAAAAElFTkSuQmCC
 				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]
 			</item>
 			<item
+			capname="text"
+			id="1070ef49-1469-4ccd-8a33-3154543f2854"
+			name="txt_MaxLoadingDetailsValueAfterReopenPreceding"
+			refimgid="eba2df63-f1e5-4576-a579-6870d163961d"
+			searchtimeout="150000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/preceding-sibling::cell//text[3]
+			</item>
+			<item
 			addcaps="button,wpfelement,wpfgroupelement"
 			capname="button"
 			id="b3daf139-dd16-413d-b42d-705e8bb2f5be"
 			name="btn_back"
 			refimgid="53ded74b-b9b5-492f-91f3-a2bcaedacf88"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/?/?/ontainer[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']
 			</item>
 			<item
 			capname="text"
@@ -14693,7 +14742,7 @@ AAAAAElFTkSuQmCC
 			id="04871938-6d5f-44c9-81aa-1c1b82bd47ef"
 			name="Copy_otetstf_txt_LabelName11"
 			searchtimeout="90000ms">
-				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[3]/text[@text='LPBS 3000 - 1']
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[3]/text[@text='XLM800-C']
 			</item>
 			<item
 			capname="text"
@@ -14714,7 +14763,21 @@ AAAAAElFTkSuQmCC
 			id="ff318881-96d4-4b8c-a1b6-da59c70ae22a"
 			name="txt_LabelNameForOneRow"
 			searchtimeout="90000ms">
-				/form[@automationid='me']/progressbar/list[9]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row/cell[5]/text[@text=$sLabelName]
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/row/row/cell[3]/text[@text=$sLabelName]
+			</item>
+			<item
+			capname="text"
+			id="2e809848-3e2d-48e7-8191-781e64e78df2"
+			name="txt_LabelNameForOneRowFC"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']//row/?/?/text[@text=$sLabelName]
+			</item>
+			<item
+			capname="text"
+			id="ad5476d9-c085-44ee-a918-9df400f9501c"
+			name="Copy_of_txt_LabelNameForOneRow"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']//row/?/?/text[@text='410DIM - 1']
 			</item>
 			<item
 			capname="row"
@@ -14757,7 +14820,7 @@ AAAAAElFTkSuQmCC
 			id="34bcc207-b702-4df8-a7a7-156046153343"
 			name="txt_LabelNameForInventory"
 			searchtimeout="90000ms">
-				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[3]/text[@text=$sLabelName]
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/?/?/container[@caption='']//row/cell[3]/text[@text=$sLabelName]
 			</item>
 			<item
 			capname="text"
@@ -14821,7 +14884,7 @@ AAAAAElFTkSuQmCC
 			id="36452b86-e800-49ab-b8fe-b838f08f0455"
 			name="txt_LabelName1Reopen"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='TreeListView']/container[@automationid='rowPresenterGrid']/container[@caption='']/container[1]//row/cell[5]/text[@text=$sLabelName]
+				/form[@automationid='me']/progressbar/list[6]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/?/?/container[@caption='']//row/cell[3]/text[@text=$sLabelName]
 			</item>
 			<item
 			capname="button"
@@ -14835,7 +14898,7 @@ AAAAAElFTkSuQmCC
 			id="b177bba8-4f80-4ba5-9f97-1168b0bfc2cf"
 			name="btn_Delete"
 			refimgid="ea268138-80c9-47a3-bd01-d9279b34b59e"
-			searchtimeout="60000ms">
+			searchtimeout="102000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/list//container[@automationid='PART_ItemsPresenter']/container[4]
 			</item>
 			<item
@@ -14932,6 +14995,14 @@ AAAAAElFTkSuQmCC
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']//container[@automationid='PART_ItemsPresenter']/row[@index=$sRowIndex]
 			</item>
 			<item
+			capname="row"
+			id="41d021db-7a51-40b9-8d96-479cea2f8acc"
+			name="Copy_of_BaseofDeviceRow"
+			refimgid="7df9cdb6-ff3a-4fb9-8497-d26fde48cd21"
+			searchtimeout="45000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']//container[@automationid='PART_ItemsPresenter']/row[@index='10']
+			</item>
+			<item
 			capname="cell"
 			id="9a8c6012-f601-431c-80f0-1f94acc60318"
 			name="Cell_BaseofDevice"
@@ -14985,6 +15056,22 @@ AAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="cell"
+			id="f6355532-fdce-4e39-bd31-c967d74236e4"
+			name="cell_LabelNamePropertiesFC"
+			refimgid="6247f023-b57e-4f6f-babd-7822f1273bcf"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/?/table/list/container[@automationid='PART_ItemsPresenter']/?/?/cell[@isheader='False']
+			</item>
+			<item
+			capname="text"
+			id="3f151d34-71a7-489f-bbf4-9a6d4ef23185"
+			name="txt_LabelNamePropertiesFC"
+			refimgid="dad96ca0-b8a5-4e89-b9c1-d29dc5de1b18"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar/?/table/list/container[@automationid='PART_ItemsPresenter']//text[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="cell"
 			id="9276f3c5-5383-457b-9e24-f20cbfbdac91"
 			name="cell_CableCapacitance"
 			refimgid="cd908151-27ac-4cb8-9df1-732b3f11947c"
@@ -15022,6 +15109,14 @@ AAAAAElFTkSuQmCC
 			refimgid="9a4074e5-31dd-452f-bbf6-59915ebea1e5"
 			searchtimeout="45000ms">
 				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/?/?/cell[@text='Battery Factor']
+			</item>
+			<item
+			capname="cell"
+			id="436462c5-2d18-466b-8863-98fc1696cc09"
+			name="cell_AlarmHours"
+			refimgid="9a4074e5-31dd-452f-bbf6-59915ebea1e5"
+			searchtimeout="45000ms">
+				/form[@automationid='me']/progressbar/list[@automationid='PART_BarContainerControl']/list/?/?/cell[@text='Alarm Hours']
 			</item>
 			<item
 			capname="button"
@@ -15103,8 +15198,16 @@ AAAAAElFTkSuQmCC
 			id="eca5db12-072d-4e5d-90f2-f900d493c424"
 			name="txt_Loops_ActualLoadingDetailsValue"
 			refimgid="cc2ce901-56bb-4bca-b3e6-056eb23c3025"
-			searchtimeout="90000ms">
+			searchtimeout="120000ms">
 				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/container[$sColumn]//text
+			</item>
+			<item
+			capname="text"
+			id="c0ec4d26-ff74-492f-bd35-b10780e608ec"
+			name="txt_Loops_ActualLoadingDetailsValuePreceding"
+			refimgid="cc2ce901-56bb-4bca-b3e6-056eb23c3025"
+			searchtimeout="120000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/preceding-sibling::cell/container[$sColumn]//text
 			</item>
 			<item
 			capname="text"
@@ -15112,15 +15215,23 @@ AAAAAElFTkSuQmCC
 			name="Copy_of_txt_LoopA_ActualLoadingDetailsValue"
 			refimgid="cc2ce901-56bb-4bca-b3e6-056eb23c3025"
 			searchtimeout="30000ms">
-				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Built-in Loop-A']/following-sibling::cell/container[1]//text
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Built-in Loop-B']/following-sibling::cell/container[3]//text
 			</item>
 			<item
 			capname="text"
 			id="278718b1-db41-4366-9b2a-8d02c203a896"
 			name="txt_Loops_MaxLoadingDetailsValue"
 			refimgid="7f136cf0-5432-4af9-ac25-a92804f89d30"
-			searchtimeout="90000ms">
+			searchtimeout="120000ms">
 				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/container[$sColumn]/?/text
+			</item>
+			<item
+			capname="text"
+			id="07f93222-b2e9-4f68-aa5b-f9c7c60bb911"
+			name="txt_Loops_MaxLoadingDetailsValuePreceding"
+			refimgid="7f136cf0-5432-4af9-ac25-a92804f89d30"
+			searchtimeout="120000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/preceding-sibling::cell/container[$sColumn]/?/text
 			</item>
 			<item
 			capname="text"
@@ -15148,11 +15259,35 @@ AAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="progressbar"
+			id="63dbdbe0-a292-4e96-a419-e1fdd02116a0"
+			name="LoopLoadingDetailsProgressbarColorPreceding"
+			refimgid="cc2ce901-56bb-4bca-b3e6-056eb23c3025"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/preceding-sibling::cell/container[$sColumn]/progressbar
+			</item>
+			<item
+			capname="progressbar"
+			id="6361c77b-a744-4a22-9935-3b7cd378bcea"
+			name="Copy_of_LoopLoadingDetailsProgressbarColorPreceding"
+			refimgid="cc2ce901-56bb-4bca-b3e6-056eb23c3025"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Built-in Loop-B']/preceding-sibling::cell/container[3]/progressbar
+			</item>
+			<item
+			capname="progressbar"
 			id="967a9b3e-10dd-4121-82c0-93337dd9b0f4"
 			name="Copy_of_Copy_of_txt_LoopA_ActualLoadingDetailsValue1"
 			refimgid="cc2ce901-56bb-4bca-b3e6-056eb23c3025"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Built-in Loop-A']/following-sibling::cell/container[1]/progressbar
+			</item>
+			<item
+			capname="text"
+			id="13a89180-229e-4a62-a408-ac3b96e25a95"
+			name="btn_Close"
+			refimgid="21200b1f-b61a-4c50-a40e-f768e01ff516"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar//text[@text='Close']
 			</item>
 			<basepath>
 				/form[@automationid='me']
@@ -16319,6 +16454,44 @@ xiBBEMYnDmIcOHAALM6watspkCQYICvEL84A5oANWLz+KJgBwzCFuMRBGFkMLkguZmicuOp/UfO8
 /+lVU8EYJkGsOIpp5GCsgqRgMEFqOkDGGPEKk8CVDtAxRrzCJHClA3QMJrDZgi8dIGOsgqRgktMB
 OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="acee029d-eb2d-4e16-978e-a2700a4e6e08"
+		isrooted="True"
+		name="SaveFCConfirmationWindow"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="toolbar,nativewindow"
+			capname="toolbar"
+			id="ac2455b6-3e3f-4efd-a573-8154f25aae54"
+			name="Save_Open_Window"
+			refimgid="4aa6a2a8-562a-4de6-a9eb-e49eacafe623"
+			searchtimeout="30000ms">
+				/form[@title='FC Designer Pro']/element[@class='WorkerW']/?/?/element[@controlid='41477']//toolbar[@controlid='1001']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="430c3a03-3a6a-461a-b0ad-957e340917b7"
+			name="txt_Path"
+			refimgid="32bd4323-b6fc-4ab2-9a7b-78b1e53e4062"
+			searchtimeout="30000ms">
+				/form[@title='FC Designer Pro']/element[@class='DUIViewWndClassName']//combobox[@class='ComboBox']/text[@controlid='1001']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="5cf37a6c-02a0-49ab-b7f8-827d217ec3d3"
+			name="ButtonSave"
+			refimgid="c4f69fdf-f908-4554-ad26-9316eba224f8"
+			searchtimeout="30000ms">
+				/form[@title='FC Designer Pro']/button[@text='&amp;Save']
+			</item>
+			<basepath>
+				/form[@title='FC Designer Pro']
+			</basepath>
 		</appfolder>
 		<basepath>
 		</basepath>

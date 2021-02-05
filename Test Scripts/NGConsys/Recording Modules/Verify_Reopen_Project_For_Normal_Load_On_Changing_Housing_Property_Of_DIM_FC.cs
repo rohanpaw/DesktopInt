@@ -100,10 +100,10 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("410DIM - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("0.25", "Battery Standby (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("0.276", "Battery Standby (A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("0.443", "Battery Alarm (A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("0.432", "Battery Alarm (A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verifyBatteryStandbyFCOnReopen("0.25", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "FIM");

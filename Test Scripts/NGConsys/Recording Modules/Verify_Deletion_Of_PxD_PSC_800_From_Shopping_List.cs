@@ -109,7 +109,8 @@ namespace TestProject.Recording_Modules
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of 18)");
+            // Other Slot Cards  (2 of 18)
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of");
             Delay.Milliseconds(60000);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800 5.0A", "Slot Cards", "PFI");
@@ -121,7 +122,8 @@ namespace TestProject.Recording_Modules
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (3 of 18)");
+            // Other Slot Cards  (3 of 18)
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (3 of");
             Delay.Milliseconds(60000);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");

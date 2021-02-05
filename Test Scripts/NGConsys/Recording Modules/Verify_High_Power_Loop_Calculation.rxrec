@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="ef0bfe30-a9fa-4bf3-bed1-51ccf2ac3298"
-mode="Global"
-rxversion="8.3">
+id="1dae8649-092b-4b32-b5ee-63013d66d5ff"
+mode="Global">
 	<repeatcount>
 		1
 	</repeatcount>
@@ -20,17 +19,17 @@ rxversion="8.3">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC"
+	classname="Verify_High_Power_Loop_Calculation"
 	namespace="TestProject.Recording_Modules">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyStandyByAlarmHourAndBatteryFactor"
+		methodname="AddPanels"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -38,25 +37,34 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="05e2585b-fa7f-4e40-a936-154fd0465a98">
+			id="f991bfc7-bc03-4931-861c-d86818dbbaae">
 				<argument
-				argname="sFileName"
-				id="35915d47-9db2-4d0d-a297-bcbabc9f904e">
+				argname="NumberofPanels"
+				id="70d0b1d9-4601-4fe6-83d3-8eae9d6c1a07">
 					<argvaluetype>
-						System.String
+						System.Int32
 					</argvaluetype>
 					<argvalue>
-						TC_71697_Verify_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC
+						1
 					</argvalue>
 				</argument>
 				<argument
-				argname="sAddPanelSheet"
-				id="38815609-f4f9-4d72-9b11-068f19aab16e">
+				argname="PanelNames"
+				id="3fcef297-1f34-4573-8353-8bd110942ae3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Add Panels
+						Pro32xD
+					</argvalue>
+				</argument>
+				<argument
+				argname="sPanelCPU"
+				id="7ceb68d2-7408-407f-af49-e1e511f43ad3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>
@@ -65,7 +73,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SaveFCProject"
+		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -73,15 +81,15 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="4ffd0b27-f259-4cb6-a645-b3a6e6ebde84">
+			id="98249a6e-ec84-4132-8b23-ff69d09e25f7">
 				<argument
-				argname="sProjectName"
-				id="92bae067-bb9d-4cd8-892b-714da51ca1e4">
+				argname="ExpanderName"
+				id="e4ce34bf-bb10-4a2e-b870-f5294553eec9">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						TC_71697
+						Node1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -90,7 +98,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="Application_Close"
+		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -98,34 +106,50 @@ rxversion="8.3">
 			<bindings>
 			</bindings>
 			<arguments
-			id="4ffd0b27-f259-4cb6-a645-b3a6e6ebde84">
+			id="6cbe872d-5edc-4d9a-ac09-20c54600b560">
 				<argument
-				argname="Save"
-				id="92bae067-bb9d-4cd8-892b-714da51ca1e4">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="SaveConfirmation"
-				id="d416f5fb-1547-4ab2-b180-2b4a3a84a011">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="sProjectName"
-				id="d4f4ed4f-454f-4045-86ae-245dee68077a">
+				argname="TreeItemName"
+				id="0cfcad53-ef6c-42a5-bb59-e431c43b866f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="DC_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyHPLCalc"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="66255811-e2f9-404c-a7c2-67e7a6e68bf0">
+				<argument
+				argname="fileName"
+				id="34fad855-800c-4fbf-a583-aef956745922">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_51823_Verify_Deletion_Of_Sounders_Connected_To_LPS800
+					</argvalue>
+				</argument>
+				<argument
+				argname="loopAdevices"
+				id="674adf34-ab67-4fed-ab0b-5d1f8d9895b2">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Devices
 					</argvalue>
 				</argument>
 			</arguments>
@@ -147,7 +171,7 @@ rxversion="8.3">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC.UserCode.cs
+		Verify_High_Power_Loop_Calculation.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

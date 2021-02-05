@@ -103,10 +103,17 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsWorstCaseValueAfterReopen("300.5");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("300.5", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("300.5", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("300.5", "Current (worst case)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("300.5", "Current (worst case)");
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("325", "Built-in Loop-A", "2");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

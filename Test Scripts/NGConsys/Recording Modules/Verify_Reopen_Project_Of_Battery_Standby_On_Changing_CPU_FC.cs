@@ -103,7 +103,7 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verifyBatteryStandbyFC("0.227\r\n", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "FIM");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("0.227\r\n", "Standby Current(A)\r\n");
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("0.198", "Standby Current(A)\r\n");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

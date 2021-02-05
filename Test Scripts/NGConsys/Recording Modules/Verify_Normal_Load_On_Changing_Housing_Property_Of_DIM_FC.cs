@@ -82,7 +82,7 @@ namespace TestProject.Recording_Modules
             Libraries.PSULoad_Functions.verifyNormalAndAlarmLoadOnChangingHousingPropertyOfDIM("TC_71808_Verify_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC", "Add Panels");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.SaveProject("TC_71808");
+            Libraries.Common_Functions.SaveFCProject("TC_71808");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

@@ -100,10 +100,17 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsAfterReopen("Verify Trip Current Calculation for Multiple Base", "Add Devices Loop A", "427.2");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("427.2", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("427.2", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("427.2", "Current (worst case)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("427.2", "Current (worst case)");
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("449", "Built-in Loop-A", "2");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

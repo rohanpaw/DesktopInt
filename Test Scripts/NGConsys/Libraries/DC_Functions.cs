@@ -263,13 +263,22 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update :Alpesh Dhakad 29/11/2018   Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
+		 * Alpesh Dhakad - 11/01/2021 Updated script as per new UI Changes
 		 **************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyPanelLEDEffectOnDC(string sFileName,string sPanelLED)
 		{
 			Excel_Utilities.OpenExcelFile(sFileName,sPanelLED);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
-			string expectedDCUnits,DCUnitLoadingDetailName,DCUnitWorstCaseLoadingDetailName;
+			string expectedDCUnits,DCUnitLoadingDetailName,DCUnitWorstCaseLoadingDetailName,LoopA_Details,LoopB_Details,LoopC_Details;
+				
+			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+			
+			
 			for (int i=8; i<=rows;i++)
 			{
 				int PanelLED;
@@ -299,8 +308,15 @@ namespace TestProject.Libraries
 				//verifyDCUnitsValue(expectedDCUnits);
 				//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 				
-				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+				//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+				//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+				
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+			
+				Common_Functions.clickOnPropertiesTab();
+				
 
 			}
 			Excel_Utilities.CloseExcel();
@@ -496,23 +512,37 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Poonam Kadam
 		 * Last Update : Alpesh Dhakad - 23/06/2020 Added EditPoweredValue method with Loop Powered steps as per new implementation
+		 * Alpesh Dhakad - 11/01/2021 Updated script as per new UI Changes and new Power calculation update
 		 *****************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDCUnitsAndWorstCaseIndicators(string sFileName,string sAddDevicesSheet)
 		{
 			string expectedColorCodeDC, expectedColorCodeWorstCase, sType,sDeviceName,DCUnitLoadingDetailName,DCUnitWorstCaseLoadingDetailName;
+			string LoopA_Details,LoopB_Details,LoopC_Details;
+			
+			
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
 			DCUnitWorstCaseLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[3,6]).Value.ToString();
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+			
 			
 			
 			for(int j=8;j<=rows;j++)
 			{
+				
 				sDeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[j,1]).Value.ToString();
 				sType = ((Range)Excel_Utilities.ExcelRange.Cells[j,2]).Value.ToString();
 				int Qty = int.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,3]).Value.ToString());
+				
+				if(j==8)
+				{
+
 				for( int i=1;i<=Qty;i++)
 				{
 					Devices_Functions.AddDevicesfromGallery(sDeviceName,sType);
@@ -520,27 +550,39 @@ namespace TestProject.Libraries
 					Devices_Functions.EditPoweredValue("Powered","Loop Powered");
 				}
 				
+				}
+				else
+				{
+					Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,Qty);
+				}
 				float expectedDCUnits = float.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,4]).Value.ToString());
 				float maxDCUnits = float.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,5]).Value.ToString());
 				float expectedWorstCaseUnits = float.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,6]).Value.ToString());
 				float maxWorstCaseUnits = float.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,7]).Value.ToString());
 				
 				//verifyDCUnitsValue(expectedDCUnits.ToString());
-				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits.ToString(),DCUnitLoadingDetailName);
+				//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits.ToString(),DCUnitLoadingDetailName);
 
+				Common_Functions.clickOnPanelCalculationsTab();
 				
+				Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits.ToString(),LoopA_Details,sColumn);
+			
+
+				Devices_Functions.verifyLoopLoadingDetailColor(LoopA_Details,sColumn);
 				
-				
-				//verifyWorstCaseValue
-				expectedColorCodeDC = Devices_Functions.calculatePercentage(expectedDCUnits, maxDCUnits);
-				expectedColorCodeWorstCase = Devices_Functions.calculatePercentage(expectedWorstCaseUnits, maxWorstCaseUnits);
-				//repo.ProfileConsys1.cell_ACUnits.Click();
-				string actualColourDC = Devices_Functions.getProgressBarColors("Current (DC Units)");
-				string actualColourWorstCase = Devices_Functions.getProgressBarColors("Current (worst case)");
-				Devices_Functions.VerifyPercentage(expectedColorCodeDC,actualColourDC);
-				Devices_Functions.VerifyPercentage(expectedColorCodeWorstCase,actualColourWorstCase);
+				Common_Functions.clickOnPropertiesTab();
+//				//verifyWorstCaseValue
+//				expectedColorCodeDC = Devices_Functions.calculatePercentage(expectedDCUnits, maxDCUnits);
+//				//expectedColorCodeWorstCase = Devices_Functions.calculatePercentage(expectedWorstCaseUnits, maxWorstCaseUnits);
+//				//repo.ProfileConsys1.cell_ACUnits.Click();
+//				string actualColourDC = Devices_Functions.getProgressBarColors("Current (DC Units)");
+//				
+//				
+//				//string actualColourWorstCase = Devices_Functions.getProgressBarColors("Current (worst case)");
+//				Devices_Functions.VerifyPercentage(expectedColorCodeDC,actualColourDC);
+//				//Devices_Functions.VerifyPercentage(expectedColorCodeWorstCase,actualColourWorstCase);
 				Common_Functions.clickOnPointsTab();
-				Devices_Functions.DeleteAllDevices();
+				//Devices_Functions.DeleteAllDevices();
 			}
 		}
 		
@@ -553,14 +595,22 @@ namespace TestProject.Libraries
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 30/11/2018  Updated on 22/01/2018 - Alpesh Dhakad Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
 		 *  Alpesh Dhakad - 10/12/2019 - Updated test scripts with new method for loading details
+		 * Alpesh Dhakad - 11/01/2021 Updated script as per new UI Changes
  		 **************************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyTripCurrentForDCCalculation(string sFileName, string sAddDevicesLoopA, string sAddOtherDevices)
 		{
 			// Declared various fields as String type
 			string sLabelName,expectedDCUnits,DCUnitLoadingDetailName;
+			string LoopA_Details,LoopB_Details,LoopC_Details;
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesLoopA);
+			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,10]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,10]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,10]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,11]).Value.ToString();
+				
 			
 			// Count the number of rows in excel
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
@@ -569,20 +619,25 @@ namespace TestProject.Libraries
 			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Common_Functions.clickOnPhysicalLayoutTab();
 			
+			Common_Functions.clickOnPanelCalculationsTab();
+			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
 			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
 			
 			//verifyDCUnitsValue(expectedDCUnits);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+	
 			Report.Log(ReportLevel.Info, "Verified Default DC units");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 					
 			int rowNumber=8;
 			ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[rowNumber,1]).Value.ToString();
@@ -629,18 +684,24 @@ namespace TestProject.Libraries
 			//Select Physical Layout tab
 			Common_Functions.clickOnPhysicalLayoutTab();
 			
+			Common_Functions.clickOnPanelCalculationsTab();
+			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
 			//verifyDCUnitsValue(expectedDCUnits);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+	
 
 			Report.Log(ReportLevel.Info, "Verified DC units after adding Devices and Base");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
 			
 			// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 					
 			//Close excel
 			Excel_Utilities.CloseExcel();
@@ -650,6 +711,11 @@ namespace TestProject.Libraries
 			
 			// Count the number of rows in excel
 			rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,10]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,10]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,10]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,11]).Value.ToString();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -665,24 +731,31 @@ namespace TestProject.Libraries
 				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
 				
 				// Click on Loop A node
-					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
+					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 					
 				// Click on Loop A node
 					Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-				
+					
+				//Select Points tab
+				Common_Functions.clickOnPointsTab();
+			
 				
 			}
 			//Select Physical Layout tab
 			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Common_Functions.clickOnPhysicalLayoutTab();
 			
+			Common_Functions.clickOnPanelCalculationsTab();
 			
 			//Fetch value from excel sheet and store it
 			String expectedDCUnits1 = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
 			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
 			
 			//verifyDCUnitsValue(expectedDCUnits1);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits1,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits1,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits1,LoopA_Details,sColumn);
+
+			Common_Functions.clickOnPropertiesTab();
 
 			Report.Log(ReportLevel.Info, "Verified DC units after adding other Devices");
 			
@@ -699,8 +772,13 @@ namespace TestProject.Libraries
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
 			
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			
 			//verifyDCUnitsValue(expectedDCUnits);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+
 
 			Report.Log(ReportLevel.Info, "Verified DC units after adding other Devices");
 			
@@ -718,14 +796,21 @@ namespace TestProject.Libraries
 		 * Function Owner: Devendra Kulkarni
 		 * Last Update : 30/11/2018
 		 * Alpesh Dhakad - 10/12/2019 - Updated test scripts with new method for loading details
+		 * Alpesh Dhakad - 12/01/2021 Updated script as per new UI Changes
 		 **********************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyTripCurrentWithMultipleBase(string fileName, string sheetName)
 		{
 			// Declared various fields as String type
 			string sLabelName, expectedDCUnits, sType,DCUnitLoadingDetailName,DCUnitWorstCaseLoadingDetailName;
+			string LoopA_Details,LoopB_Details,LoopC_Details;
 			
 			Excel_Utilities.OpenExcelFile(fileName,sheetName);
+			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,10]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,10]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,10]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,11]).Value.ToString();
 			
 			// Count the number of rows in excel
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
@@ -749,11 +834,17 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
 
 			
 			Report.Log(ReportLevel.Info, "Verified default DC units.");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -769,11 +860,17 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
 
 			
 			Report.Log(ReportLevel.Info, "Verified DC units changing base.");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -787,8 +884,12 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
 
 			
 			Report.Log(ReportLevel.Info, "Verified DC units after deleting base.");
@@ -844,11 +945,14 @@ namespace TestProject.Libraries
 		 * Function Owner: Devendra Kulkarni
 		 * Last Update : 30/11/2018   Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 10/12/2019 - Updated test scripts with new method for loading details
+		 * Alpesh Dhakad - 12/01/2021 Updated script as per new UI Changes
 		 ****************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyTripCurrentWithMultipleLoop(string fileName, string sheetNameA, string sheetNameB)
 		{
 			string expectedDCUnits,DCUnitLoadingDetailName,DCUnitWorstCaseLoadingDetailName;
+			string LoopA_Details,LoopB_Details,LoopC_Details;
+			
 			AddDevicesFromExcel(fileName, sheetNameA);
 			Excel_Utilities.OpenExcelFile(fileName,sheetNameA);
 			//Fetch value from excel sheet and store it
@@ -856,16 +960,25 @@ namespace TestProject.Libraries
 			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
 			DCUnitWorstCaseLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[3,9]).Value.ToString();
 			
-			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,10]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,10]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,10]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,11]).Value.ToString();
 			
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
 
 			
 			Report.Log(ReportLevel.Info, "Verified default DC units.");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Close excel
 			Excel_Utilities.CloseExcel();
@@ -885,14 +998,23 @@ namespace TestProject.Libraries
 			DCUnitLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
 			DCUnitWorstCaseLoadingDetailName= ((Range)Excel_Utilities.ExcelRange.Cells[3,9]).Value.ToString();
 			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,10]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,10]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,10]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,11]).Value.ToString();
 			
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
 
+			Common_Functions.clickOnPanelCalculationsTab();
 			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopB_Details,sColumn);
+
 			Report.Log(ReportLevel.Info, "Verified DC units after adding devices in Loop B.");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -907,8 +1029,12 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopB_Details,sColumn);
 
 			
 			Report.Log(ReportLevel.Info, "Verified DC units after removing base in Loop B.");
@@ -956,6 +1082,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated test scripts as per new build and xpaths
 		 * Alpesh Dhakad - 06/12/2019 - Updated test scripts with new method for loading details
+		 * Alpesh Dhakad - 11/01/2021 Updated script as per new UI Changes
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDCCalculationOnAddingDevices(string sFileName, string sAddDevicesLoopA, string sAddDevicesLoopB)
@@ -964,6 +1091,15 @@ namespace TestProject.Libraries
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesLoopA);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			string expectedDCUnits, sType, sLabelName,DCUnitLoadingDetailName,DCUnitWorstCaseLoadingDetailName;
+			string LoopA_Details,LoopB_Details,LoopC_Details;
+			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+			
+			
+			
 			for(int i=8; i<=rows; i++)
 			{
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
@@ -985,8 +1121,15 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			
+			Common_Functions.clickOnPanelCalculationsTab();
+				
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+			
+			Common_Functions.clickOnPropertiesTab();
+
 
 			
 			//Verify DC Units of Loop B
@@ -1000,15 +1143,28 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
-
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			
+			
+			Common_Functions.clickOnPanelCalculationsTab();
+				
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopB_Details,sColumn);
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			Excel_Utilities.CloseExcel();
 			
 			//Add devices in loop B
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesLoopB);
 			rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+			
+			
 			
 			// Click on Loop B node
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");
@@ -1037,10 +1193,14 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
 
+			Common_Functions.clickOnPanelCalculationsTab();
+				
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopB_Details,sColumn);
 			
+			Common_Functions.clickOnPropertiesTab();
 			
 			
 			//Verify DC Units of Loop A
@@ -1057,10 +1217,14 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoadingDetailName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoadingDetailName);
 
+			Common_Functions.clickOnPanelCalculationsTab();
+				
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
 			
+			Common_Functions.clickOnPropertiesTab();
 			
 			Excel_Utilities.CloseExcel();
 
@@ -1081,6 +1245,7 @@ namespace TestProject.Libraries
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesLoopA);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			string sType, sLabelName;
+			
 			for(int i=8; i<=rows; i++)
 			{
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
@@ -1127,6 +1292,7 @@ namespace TestProject.Libraries
 		 * Last Update : 08/01/2019 Alpesh Dhakad - 30/07/2019 & 21/08/2019 - Updated scripts as per new build and xpaths
 		 * Alpesh Dhakad - 06/12/2019 - Updated test scripts with new method for loading details
 		 * Alpesh Dhakad - 15/05/2020 Updated script as per new implementation changes
+		 * Alpesh Dhakad - 11/01/2021 Updated script as per new UI Changes
 		 *****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCurrentDCUnitscalculation(string sFileName,string sAddPanelSheet)
@@ -1286,15 +1452,23 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad 
 		 * Last Update : 11/09/2019 Alpesh Dhakad - 12/12/2019 - Updated test scripts with new method for loading details
+		 * Alpesh Dhakad - 12/01/2021 Updated script as per new UI Changes
 		 *************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyTripCurrentCalculationForFIMLoopFC(string fileName, string loopAdevices, string loopBdevices)
 		{
 			// Declared various fields as String type
 			string sLabelName, expectedDCUnits, sType,DCUnitLoopLoadingName,DCUnitWorstCaseLoopLoadingName;
+			string LoopA_Details,LoopB_Details,LoopC_Details;
 			
 			Excel_Utilities.OpenExcelFile(fileName,loopAdevices);
 			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+				
+						
 			// Count the number of rows in excel
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			Report.Log(ReportLevel.Info, "No of rows: "+rows);
@@ -1314,15 +1488,18 @@ namespace TestProject.Libraries
 			DCUnitLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();
 			DCUnitWorstCaseLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
 			
-			
+			Common_Functions.clickOnPanelCalculationsTab();
 			
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
 	
-			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+
 			Report.Log(ReportLevel.Info, "Verified default DC units.");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -1338,11 +1515,17 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
 	
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+
 			
 			Report.Log(ReportLevel.Info, "Verified DC units changing base.");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -1366,14 +1549,24 @@ namespace TestProject.Libraries
 			DCUnitLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();
 			DCUnitWorstCaseLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
 			
-			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+				
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
-	
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopB_Details,sColumn);
+
+			
 			Report.Log(ReportLevel.Info, "Verified DC units after adding devices in Loop B.");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -1389,11 +1582,17 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
 	
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopB_Details,sColumn);
+
+			
 			Report.Log(ReportLevel.Info, "Verified DC units changing base.");
 			
+			Common_Functions.clickOnPropertiesTab();
 			
 			// Remove base from Loop B
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[10,3]).Value.ToString();
@@ -1405,10 +1604,17 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopB_Details,sColumn);
+
 	
 			Report.Log(ReportLevel.Info, "Verified DC units after removing base in Loop B.");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -1421,11 +1627,15 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
 	
+			Common_Functions.clickOnPanelCalculationsTab();
 			
-			Report.Log(ReportLevel.Info, "Verified DC units after removing base in Loop B.");
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+
+			
+			Report.Log(ReportLevel.Info, "Verified DC units in Loop A.");
 			
 			
 
@@ -1444,22 +1654,31 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 11/09/2019 Alpesh Dhakad - 12/12/2019 - Updated test scripts with new method for loading details
+		 * Alpesh Dhakad - 12/01/2021 Updated script as per new UI Changes
 		 ***************************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyTripCurrentOnAdditionDeletionOfIsolatorBase(string sFileName, string sAddDevicesLoopA, string sOtherDevices)
 		{
 			// Declared various fields as String type
 			string sLabelName,expectedDCUnits,DCUnitLoopLoadingName,DCUnitWorstCaseLoopLoadingName;
+			string LoopA_Details,LoopB_Details,LoopC_Details;
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesLoopA);
 			
 			// Count the number of rows in excel
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+				
+			
 			//Select Physical Layout tab
 			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
 			Common_Functions.clickOnPhysicalLayoutTab();
 			
+			Common_Functions.clickOnPanelCalculationsTab();
 			
 			//Fetch value from excel sheet and store it
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
@@ -1467,9 +1686,13 @@ namespace TestProject.Libraries
 			DCUnitWorstCaseLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
 	
 			//verifyDCUnitsValue(expectedDCUnits);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+
 			
 			Report.Log(ReportLevel.Info, "Verified Default DC units");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -1528,11 +1751,16 @@ namespace TestProject.Libraries
 			expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[1,7]).Value.ToString();
 			DCUnitLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();
 			DCUnitWorstCaseLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
+			
+			Common_Functions.clickOnPanelCalculationsTab();
 	
 			//verifyDCUnitsValue(expectedDCUnits);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
 
 			Report.Log(ReportLevel.Info, "Verified DC units after adding Devices and Base");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -1548,6 +1776,13 @@ namespace TestProject.Libraries
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
 			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+				
+			
+			
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[8,3]).Value.ToString();
 			sRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[8,10]).Value.ToString();
 			Devices_Functions.RemoveBase(sLabelName, sRowIndex);
@@ -1561,10 +1796,18 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			
+			Common_Functions.clickOnPanelCalculationsTab();
+	
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+
+			
 			
 			Report.Log(ReportLevel.Info, "Verified DC units after deleting base.");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -1579,10 +1822,13 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
 			
-			
+			Common_Functions.clickOnPanelCalculationsTab();
+	
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+
 			Report.Log(ReportLevel.Info, "Verified DC units after deleting base.");
 			
 			
@@ -1652,6 +1898,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 12/09/2019 Alpesh Dhakad - 12/12/2019 - Updated test scripts with new method for loading details
+		 * Alpesh Dhakad - 12/01/2021 Updated script as per new UI Changes
 		 ****************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyCurrentDCCalculation(string sFileName, string sAddDevicesLoopA, string sOtherDevicesLoopA)
@@ -1659,6 +1906,15 @@ namespace TestProject.Libraries
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesLoopA);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			string sType, sLabelName,expectedDCUnits,DCUnitLoopLoadingName,DCUnitWorstCaseLoopLoadingName;
+			string LoopA_Details,LoopB_Details,LoopC_Details;
+			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,10]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,10]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,10]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,11]).Value.ToString();
+	
+			
+			
 			for(int i=8; i<=rows; i++)
 			{
 				ModelNumber =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
@@ -1684,15 +1940,25 @@ namespace TestProject.Libraries
 			DCUnitLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();
 			DCUnitWorstCaseLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
 			
+			Common_Functions.clickOnPanelCalculationsTab();
 			
 			//verifyDCUnitsValue(expectedDCUnits);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
 			
 			Report.Log(ReportLevel.Info, "Verified DC units after adding Devices and Base");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			Excel_Utilities.CloseExcel();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sOtherDevicesLoopA);
+			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,10]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,10]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,10]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,11]).Value.ToString();
+	
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -1712,15 +1978,26 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			
+			Common_Functions.clickOnPanelCalculationsTab();
 			
+			//verifyDCUnitsValue(expectedDCUnits);
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			
 			Excel_Utilities.CloseExcel();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sOtherDevicesLoopA);
 			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,10]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,10]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,10]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,11]).Value.ToString();
+	
 			
 			sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[9,3]).Value.ToString();
 			sRowIndex= ((Range)Excel_Utilities.ExcelRange.Cells[9,10]).Value.ToString();
@@ -1735,15 +2012,26 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
 			
+			Common_Functions.clickOnPanelCalculationsTab();
 			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+
 			Report.Log(ReportLevel.Info, "Verified DC units after deleting base.");
+			
+			Common_Functions.clickOnPropertiesTab();
 		
 			Excel_Utilities.CloseExcel();
 			
 			Excel_Utilities.OpenExcelFile(sFileName,sOtherDevicesLoopA);
+			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,10]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,10]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,10]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,11]).Value.ToString();
+	
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -1763,8 +2051,16 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+			//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+
+			
+			Common_Functions.clickOnPropertiesTab();
+		
 			
 			
 			Excel_Utilities.CloseExcel();
@@ -1778,19 +2074,26 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad 
 		 * Last Update : 13/09/2019 Alpesh Dhakad - 12/12/2019 - Updated test scripts with new method for loading details
+		 * Alpesh Dhakad - 12/01/2021 Updated script as per new UI Changes
 		 ***********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyDCUnitCalculationForNonSplitLoops(string fileName, string loopAdevices, string loopBdevices)
 		{
 			// Declared various fields as String type
 			string expectedDCUnits, sType,DCUnitLoopLoadingName,DCUnitWorstCaseLoopLoadingName;
-			
+			string LoopA_Details,LoopB_Details,LoopC_Details;
+	
 			Excel_Utilities.OpenExcelFile(fileName,loopAdevices);
 			
 			// Count the number of rows in excel
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			Report.Log(ReportLevel.Info, "No of rows: "+rows);
 			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+
 			// Click on Loop A node
 			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
 			
@@ -1813,11 +2116,17 @@ namespace TestProject.Libraries
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			
+			Common_Functions.clickOnPanelCalculationsTab();
 			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+
 			
 			Report.Log(ReportLevel.Info, "Verified DC units for Loop A.");
+			
+			Common_Functions.clickOnPropertiesTab();
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -1839,9 +2148,20 @@ namespace TestProject.Libraries
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopB_Details,sColumn);
+
+			
 			Report.Log(ReportLevel.Info, "Verified DC units for Loop B");
+			
+			
+			Common_Functions.clickOnPropertiesTab();
+			
+			
 			
 			//Close excel
 			Excel_Utilities.CloseExcel();
@@ -1861,13 +2181,29 @@ namespace TestProject.Libraries
 			DCUnitLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();
 			DCUnitWorstCaseLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
 			
+			LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,8]).Value.ToString();
+			LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,8]).Value.ToString();
+			LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,8]).Value.ToString();
+			sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,9]).Value.ToString();
+
 			
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
 			
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+			
+			
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopB_Details,sColumn);
+
+			
 			Report.Log(ReportLevel.Info, "Verified DC units after adding devices in Loop B.");
+			
+			
+			Common_Functions.clickOnPropertiesTab();
+			
 			
 			//Select Points tab
 			Common_Functions.clickOnPointsTab();
@@ -1888,9 +2224,21 @@ namespace TestProject.Libraries
 			
 			//verifyDCUnitsValue(expectedDCUnits);
 			//verifyDCUnitsWorstCaseValue(expectedDCUnits);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
-			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitLoopLoadingName);
+//			Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits,DCUnitWorstCaseLoopLoadingName);
+
+			
+			Common_Functions.clickOnPanelCalculationsTab();
+			
+			Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits,LoopA_Details,sColumn);
+
+			
 			Report.Log(ReportLevel.Info, "Verified DC units for Loop A");
+			
+			
+			Common_Functions.clickOnPropertiesTab();
+			
+			
 
 			//Close excel
 			Excel_Utilities.CloseExcel();
@@ -1905,11 +2253,14 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : Alpesh Dhakad - 12/12/2019 - Updated test scripts with new method for loading details
+		 * Alpesh Dhakad - 12/01/2021 Updated script as per new UI Changes
 		 ************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyDCUnitsAndWorstCaseColorAndValueIndicators(string sFileName,string sAddDevicesSheet)
 		{
 			string expectedColorCodeDC, expectedColorCodeWorstCase, sType,sDeviceName,DCUnitLoopLoadingName,DCUnitWorstCaseLoopLoadingName;
+			string LoopA_Details,LoopB_Details,LoopC_Details;
+		
 			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			for(int j=8;j<=rows;j++)
@@ -1919,7 +2270,13 @@ namespace TestProject.Libraries
 				//sDeviceQty = ((Range)Excel_Utilities.ExcelRange.Cells[j,3]).Value.ToString();
 				int Qty = int.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,3]).Value.ToString());
 				
-					Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,Qty);
+				LoopA_Details=((Range)Excel_Utilities.ExcelRange.Cells[2,6]).Value.ToString();
+				LoopB_Details=((Range)Excel_Utilities.ExcelRange.Cells[3,6]).Value.ToString();
+				LoopC_Details=((Range)Excel_Utilities.ExcelRange.Cells[4,6]).Value.ToString();
+				sColumn=((Range)Excel_Utilities.ExcelRange.Cells[2,7]).Value.ToString();
+					
+				
+				Devices_Functions.AddDevicesfromMultiplePointWizard(sDeviceName,Qty);
 				
 				float expectedDCUnits = float.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,4]).Value.ToString());
 				float maxDCUnits = float.Parse(((Range)Excel_Utilities.ExcelRange.Cells[j,5]).Value.ToString());
@@ -1929,18 +2286,25 @@ namespace TestProject.Libraries
 				DCUnitLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[2,5]).Value.ToString();
 				DCUnitWorstCaseLoopLoadingName = ((Range)Excel_Utilities.ExcelRange.Cells[3,5]).Value.ToString();
 				
+				Common_Functions.clickOnPanelCalculationsTab();
+				
 				//verifyDCUnitsValue(expectedDCUnits.ToString());
-				Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits.ToString(),DCUnitLoopLoadingName);
-			
+				//Devices_Functions.verifyLoadingDetailsValue(expectedDCUnits.ToString(),DCUnitLoopLoadingName);
+				Devices_Functions.verifyLoopLoadingDetailsValue(expectedDCUnits.ToString(),LoopA_Details,sColumn);
+
+				
+				Devices_Functions.verifyLoopLoadingDetailColor(LoopA_Details,sColumn);
+				
+				Common_Functions.clickOnPropertiesTab();
 				
 				//verifyWorstCaseValue
-				expectedColorCodeDC = Devices_Functions.calculatePercentage(expectedDCUnits, maxDCUnits);
-				expectedColorCodeWorstCase = Devices_Functions.calculatePercentage(expectedWorstCaseUnits, maxWorstCaseUnits);
-				//repo.ProfileConsys1.cell_ACUnits.Click();
-				string actualColourDC = Devices_Functions.getProgressBarColors(DCUnitLoopLoadingName);
-				string actualColourWorstCase = Devices_Functions.getProgressBarColors(DCUnitWorstCaseLoopLoadingName);
-				Devices_Functions.VerifyPercentage(expectedColorCodeDC,actualColourDC);
-				Devices_Functions.VerifyPercentage(expectedColorCodeWorstCase,actualColourWorstCase);
+//				expectedColorCodeDC = Devices_Functions.calculatePercentage(expectedDCUnits, maxDCUnits);
+//				expectedColorCodeWorstCase = Devices_Functions.calculatePercentage(expectedWorstCaseUnits, maxWorstCaseUnits);
+//				//repo.ProfileConsys1.cell_ACUnits.Click();
+//				string actualColourDC = Devices_Functions.getProgressBarColors(DCUnitLoopLoadingName);
+//				string actualColourWorstCase = Devices_Functions.getProgressBarColors(DCUnitWorstCaseLoopLoadingName);
+//				Devices_Functions.VerifyPercentage(expectedColorCodeDC,actualColourDC);
+//				Devices_Functions.VerifyPercentage(expectedColorCodeWorstCase,actualColourWorstCase);
 				Common_Functions.clickOnPointsTab();
 				
 			}
@@ -2070,6 +2434,32 @@ namespace TestProject.Libraries
 			//Close excel
 			Excel_Utilities.CloseExcel();
 
+			
+		}
+		
+		
+		/***********************************************************************************************************************
+		 * Function Name: 
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad 
+		 * Last Update : 03/02/2021
+		 ***********************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyHPLCalc(string fileName, string loopAdevices)
+		{
+			Excel_Utilities.OpenExcelFile(fileName,loopAdevices);
+			
+			
+			repo.FormMe.btn_AllGalleryDropdown.Click();
+			
+			repo.Export.ButtonOK.Click();
+			
+			repo.AddANewPanel.SecondPSU_txt1Info.Exists();
+			
+			
+		
 			
 		}
 		

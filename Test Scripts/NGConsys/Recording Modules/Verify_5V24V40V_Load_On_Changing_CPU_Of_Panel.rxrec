@@ -56,7 +56,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FIRECLASS 64-4
+						FC64-4
 					</argvalue>
 				</argument>
 				<argument
@@ -90,7 +90,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1 - FireClass 64-4 ZL
+						Node1 - FC64-4
 					</argvalue>
 				</argument>
 			</arguments>
@@ -515,7 +515,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1.238
+						1.184
 					</argvalue>
 				</argument>
 				<argument
@@ -550,7 +550,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.122
+						0.165
 					</argvalue>
 				</argument>
 				<argument
@@ -660,7 +660,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1 - FireClass 64-4 ZL
+						Node1 - FC64-4
 					</argvalue>
 				</argument>
 			</arguments>
@@ -796,6 +796,21 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -815,7 +830,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1.103
+						1.049
 					</argvalue>
 				</argument>
 				<argument
@@ -850,7 +865,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.122
+						0.165
 					</argvalue>
 				</argument>
 				<argument
@@ -1095,7 +1110,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FIRECLASS 240-4
+						FC240-4
 					</argvalue>
 				</argument>
 				<argument
@@ -1129,7 +1144,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1 - FireClass 240-4
+						Node1 - FC240-4
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1554,7 +1569,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1.226
+						1.172
 					</argvalue>
 				</argument>
 				<argument
@@ -1589,7 +1604,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.122
+						0.165
 					</argvalue>
 				</argument>
 				<argument
@@ -1699,7 +1714,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1 - FireClass 240-4
+						Node1 - FC240-4
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1863,7 +1878,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1.091
+						1.037
 					</argvalue>
 				</argument>
 				<argument
@@ -1898,7 +1913,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.122
+						0.165
 					</argvalue>
 				</argument>
 				<argument

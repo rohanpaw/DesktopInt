@@ -703,14 +703,14 @@ namespace TestProject.Libraries
 		}
 		
 		
-		/********************************************************************
+		/**********************************************************************************************************************
 		 * Function Name: calculatePercentage
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Shweta Bhosale
-		 * Last Update :
-		 ********************************************************************/
+		 * Last Update :  Alpesh Dhakad - 27/01/2021 - Updated percentage i.e. 100% for Yellow color as per MX Designer Update
+		 **********************************************************************************************************************/
 		[UserCodeMethod]
 		public static string calculatePercentage(float min,float max)
 		{
@@ -720,11 +720,11 @@ namespace TestProject.Libraries
 			{
 				expectedColorCode="GREEN";
 			}
-			else if(percentage>=95 && percentage<100)
+			else if(percentage>=95 && percentage<=100)
 			{
 				expectedColorCode="YELLOW";
 			}
-			else if(percentage>=100)
+			else if(percentage>100)
 			{
 				expectedColorCode="PINK";
 			}
@@ -938,10 +938,10 @@ namespace TestProject.Libraries
 			int.TryParse(sRowIndex, out iRowIndex);
 			iRowIndex = iRowIndex+1;
 			sRowIndex = iRowIndex.ToString();
-			//repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19");
+			//repo.ProfileConsys1.BaseofDeviceRow.MoveTo("760;19",560'19);
 			//repo.ProfileConsys1.BaseofDeviceRow.Click("760;19");
-			repo.FormMe.BaseofDeviceRow.MoveTo("560;19");
-			repo.FormMe.BaseofDeviceRow.Click("560;19");
+			repo.FormMe.BaseofDeviceRow.MoveTo("558;18");
+			repo.FormMe.BaseofDeviceRow.Click("558;18");
 			
 			Report.Log(ReportLevel.Info, "Base removed was performed successfully.");
 		}
@@ -2296,6 +2296,7 @@ namespace TestProject.Libraries
 		 * Last Update : Alpesh Dhakad - 30/07/2019 - Updated script as per new build and xpath
 		 * Alpesh Dhakad - 08/08/2019 - Updated code for cable resistance
 		 * Alpesh Dhakad - 23/08/2019 - Updated with new navigation tree method, xpath
+		 * Alpesh Dhakad - 19/01/2021 - Updated Resistance name as per new UI Change
 		 ***************************************************************************************************/
 		// Change cable resistance method
 		[UserCodeMethod]
@@ -2314,7 +2315,7 @@ namespace TestProject.Libraries
 			repo.ProfileConsys1.txt_SearchProperties.Click();
 			
 			// Enter the Day Matches night text in Search Properties fields to view cable length;
-			repo.ProfileConsys1.txt_SearchProperties.PressKeys("{LControlKey down}{Akey}{LControlKey up}Details" +"{ENTER}" );
+			repo.ProfileConsys1.txt_SearchProperties.PressKeys("{LControlKey down}{Akey}{LControlKey up}Resistance" +"{ENTER}" );
 			
 			//Click on cable resistance cell
 			repo.FormMe.cell_CableLength.Click();
@@ -2322,8 +2323,12 @@ namespace TestProject.Libraries
 			//Change the value of cable resistance
 			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableResistance + "{Enter}");
 			
+			
 			// Click on SearchProperties text field
 			repo.ProfileConsys1.txt_SearchProperties.Click();
+			
+			Report.Log(ReportLevel.Info,"Cable Resistance changed to " +fchangeCableResistance+ " successfully");
+		
 			
 			// Select the text in SearchProperties text field and delete it
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
@@ -2715,6 +2720,7 @@ namespace TestProject.Libraries
 		public static void SelectInventoryGridRow(string sRowNumber)
 		{
 			sRow=sRowNumber;
+			
 			repo.FormMe.InventoryGridRow.Click();
 			Report.Log(ReportLevel.Success, "Inventory grid row selected");
 		}
@@ -8039,14 +8045,15 @@ namespace TestProject.Libraries
 			Common_Functions.clickOnPointsTab();
 		}
 		
-		/**************************************************************************************
+		/*************************************************************************************************************************
 		 * Function Name: verifyMaxLoadingDetailsValue
 		 * Function Details: To verify max loading details value of searched detail unit
 		 * Parameter/Arguments: expectedMaxUnits and loading detail name
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 25/11/2019
-		 **************************************************************************************/
+		 * Alpesh Dhakad - 28/12/2020 Updated as per object identification by adding new xpath by adding preceding method
+		 *************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMaxLoadingDetailsValue(string expectedMaxUnits, string LoadingDetail)
 		{
@@ -8148,12 +8155,16 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 11/12/2019
+		 * Alpesh Dhakad - 18/01/2021 Updated script as per new UI implementation
 		 **************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyLoadingDetailsValueAfterReopen(string expectedUnits, string LoadingDetail)
 		{
 			Common_Functions.clickOnPhysicalLayoutTab();
 			sLoadingDetail = LoadingDetail;
+
+			if(repo.FormMe.txt_ActualLoadingDetailsValueAfterReopenInfo.Exists())
+			{
 			
 			string LoadingUnits = repo.FormMe.txt_ActualLoadingDetailsValueAfterReopen.TextValue;
 			
@@ -8166,8 +8177,24 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoadingUnits);
 			}
 			
+			}
+			else
+			{
+			string LoadingUnits = repo.FormMe.txt_ActualLoadingDetailsValueAfterReopenPreceding.TextValue;
+			
+			if(LoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoadingUnits);
+			}
+			}
+			
 			//Click on Points tab
 			Common_Functions.clickOnPointsTab();
+		
 		}
 		
 		/**************************************************************************************
@@ -8177,12 +8204,17 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 11/12/2019
+		 * Alpesh Dhakad - 18/01/2021 Updated script as per new UI implementation
 		 **************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMaxLoadingDetailsValueAfterReopen(string expectedMaxUnits, string LoadingDetail)
 		{
 			Common_Functions.clickOnPhysicalLayoutTab();
+		
 			sLoadingDetail = LoadingDetail;
+			
+			if(repo.FormMe.txt_MaxLoadingDetailsValueAfterReopenInfo.Exists())
+			{
 			
 			string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValueAfterReopen.TextValue;
 			
@@ -8195,8 +8227,24 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedMaxUnits  + " Actual Units: "+ MaxLoadingUnits);
 			}
 			
+			}
+			else
+			{
+			string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValueAfterReopenPreceding.TextValue;
+			
+			if(MaxLoadingUnits.Equals(expectedMaxUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " value  "+ expectedMaxUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedMaxUnits  + " Actual Units: "+ MaxLoadingUnits);
+			}
+			}
+			
 			//Click on Points tab
 			Common_Functions.clickOnPointsTab();
+			
 		}
 		
 		/**************************************************************************************
@@ -8207,6 +8255,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 27/12/2019
 		 * Alpesh Dhakad - 14/05/2020 Updated as per new implementation
+		 * Alpesh Dhakad - 04/02/2021 Updated script as per new Devexpress upgrade
 		 **************************************************************************************/
 		[UserCodeMethod]
 		public static void EnableISDevices()
@@ -8222,7 +8271,11 @@ namespace TestProject.Libraries
 			
 			repo.FormEnableISDevices.btn_Ok_Warning.Click();
 			
-			repo.FormMe.btn_back.Click();
+			//repo.FormMe.btn_back.Click();
+			
+			repo.FormMe.btn_Close.Click();
+			
+			repo.SaveConfirmationWindow.btn_Cancel.Click();
 			
 			Report.Log(ReportLevel.Info, "IS Devices Enabled successfully");
 			
@@ -9047,7 +9100,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 16/12/2020
-		 * Alpesh Dhakad : 06/01/2021 Updated as per new UI changes
+		 * Alpesh Dhakad : 06/01/2021 and 12/01/2021 Updated as per new UI changes
 		 **************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyMaxLoopLoadingDetailsValue(string expectedUnits, string LoadingDetail, string ColumnNumber)
@@ -9055,6 +9108,8 @@ namespace TestProject.Libraries
 			sColumn=ColumnNumber;
 			sLoadingDetail = LoadingDetail;
 			
+			if(repo.FormMe.txt_Loops_MaxLoadingDetailsValueInfo.Exists())
+			{
 			string MaxLoopLoadingUnits = repo.FormMe.txt_Loops_MaxLoadingDetailsValue.TextValue;
 			
 			string LoopLoadingUnits = MaxLoopLoadingUnits.Split('/')[1].Trim();
@@ -9067,7 +9122,23 @@ namespace TestProject.Libraries
 			{
 				Report.Log(ReportLevel.Failure,"Max Loop Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoopLoadingUnits);
 			}
+			}
+			else
+			{
+			string MaxLoopLoadingUnits = repo.FormMe.txt_Loops_MaxLoadingDetailsValuePreceding.TextValue;
 			
+			string LoopLoadingUnits = MaxLoopLoadingUnits.Split('/')[1].Trim();
+			
+			if(LoopLoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Max Loop Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Max Loop Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoopLoadingUnits);
+			}
+		}	
+	
 			//Click on Points tab
 			Common_Functions.clickOnPointsTab();
 		}
@@ -9079,7 +9150,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 16/12/2020
-		 * Alpesh Dhakad : 06/01/2021 Updated as per new UI changes
+		 * Alpesh Dhakad : 06/01/2021  and 12/01/2021 Updated as per new UI changes
 		 **************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyLoopLoadingDetailsValue(string expectedUnits, string LoadingDetail,string ColumnNumber)
@@ -9087,6 +9158,8 @@ namespace TestProject.Libraries
 			sColumn=ColumnNumber;
 			sLoadingDetail = LoadingDetail;
 			
+			if(repo.FormMe.txt_Loops_ActualLoadingDetailsValueInfo.Exists())
+			{
 			string ActualLoopLoadingUnits = repo.FormMe.txt_Loops_ActualLoadingDetailsValue.TextValue;
 			
 			string LoopLoadingUnits = ActualLoopLoadingUnits.Split('/')[0].Trim();
@@ -9101,19 +9174,37 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Failure,"Loop Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoopLoadingUnits);
 			}
 			
+			}
+			else
+			{
+			string ActualLoopLoadingUnits = repo.FormMe.txt_Loops_ActualLoadingDetailsValuePreceding.TextValue;
+			
+			string LoopLoadingUnits = ActualLoopLoadingUnits.Split('/')[0].Trim();
+			
+			
+			if(LoopLoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loop Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loop Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoopLoadingUnits);
+			}
+			
+			}
 			//Click on Points tab
 			Common_Functions.clickOnPointsTab();
 		}
 
-		/********************************************************************
+		/***************************************************************************************
 		 * Function Name: verifyLoopLoadingDetailColor
 		 * Function Details:
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 24/12/2020
-		 * Alpesh Dhakad : 06/01/2021 Updated as per new UI changes
-		 ********************************************************************/
+		 * Alpesh Dhakad : 06/01/2021 and 21/01/2021 Updated as per new UI changes
+		 ***************************************************************************************/
 		[UserCodeMethod]
 		public static void verifyLoopLoadingDetailColor(string LoadingDetail,string ColumnNumber)
 		{
@@ -9129,6 +9220,9 @@ namespace TestProject.Libraries
 			
 			//float ActualLoadingUnits = float.Parse(repo.FormMe.txt_Loops_ActualLoadingDetailsValue.TextValue);
 			
+			if(repo.FormMe.txt_Loops_ActualLoadingDetailsValueInfo.Exists())
+			{
+	
 			string ActualLoopLoadingUnits = repo.FormMe.txt_Loops_ActualLoadingDetailsValue.TextValue;
 			
 			float LoopLoadingUnits = float.Parse(ActualLoopLoadingUnits.Split('/')[0].Trim());
@@ -9143,14 +9237,72 @@ namespace TestProject.Libraries
 			
 			float MaximumLoopLoadingUnits = float.Parse(MaxLoopLoadingUnits.Split('/')[1].Trim());
 			
+			expectedColor = Devices_Functions.calculatePercentage(LoopLoadingUnits, MaximumLoopLoadingUnits);
+			
+			Devices_Functions.VerifyPercentage(expectedColor, actualColour);
+			}
+			else
+			{
+			string ActualLoopLoadingUnits = repo.FormMe.txt_Loops_ActualLoadingDetailsValuePreceding.TextValue;
+			
+			float LoopLoadingUnits = float.Parse(ActualLoopLoadingUnits.Split('/')[0].Trim());
+			
+			
+			string actualColour = repo.FormMe.LoopLoadingDetailsProgressbarColorPreceding.GetAttributeValue<string>("foreground");
+			
+			//Fetch max volt drop text value and storing it in string
+			//float MaxLoadingUnits = float.Parse(repo.FormMe.txt_Loops_MaxLoadingDetailsValue.TextValue);
+			
+			string MaxLoopLoadingUnits = repo.FormMe.txt_Loops_MaxLoadingDetailsValuePreceding.TextValue;
+			
+			float MaximumLoopLoadingUnits = float.Parse(MaxLoopLoadingUnits.Split('/')[1].Trim());
 			
 			expectedColor = Devices_Functions.calculatePercentage(LoopLoadingUnits, MaximumLoopLoadingUnits);
 			
 			Devices_Functions.VerifyPercentage(expectedColor, actualColour);
+			}
+			
+			
 		}
 		
 		
+		/********************************************************************
+		 * Function Name: SelectInventoryGridFirstRow
+		 * Function Details: To select inventory grid row
+		 * Parameter/Arguments: sRowNumber, sSkuNumber
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 15/01/2021
+		 ********************************************************************/
+		// Change cable resistance method
+		[UserCodeMethod]
+		public static void SelectInventoryGridFirstRow(string sRowNumber)
+		{
+			sRow=sRowNumber;
+			
+			repo.FormMe.InventoryGridFirstRow.Click();
+			Report.Log(ReportLevel.Success, "Inventory grid row selected");
+		}
 		
+		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelNameForOneRowFC
+		 * Function Details: To select item from grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad 
+		 * Last Update : 18/01/2021
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameForOneRowFC(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_LabelNameForOneRowFC.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
 		
 		
 		
