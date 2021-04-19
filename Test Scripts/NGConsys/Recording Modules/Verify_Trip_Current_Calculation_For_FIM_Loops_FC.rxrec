@@ -279,7 +279,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="Application_Close"
+		methodname="Application_CloseFC"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -300,7 +300,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="SaveConfirmation"
-				id="d416f5fb-1547-4ab2-b180-2b4a3a84a011">
+				id="75daa3a9-1ce5-453c-9894-9cef593b605c">
 					<argvaluetype>
 						System.Boolean
 					</argvaluetype>
@@ -310,12 +310,11 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="sProjectName"
-				id="d4f4ed4f-454f-4045-86ae-245dee68077a">
+				id="81edc264-900d-4718-95dc-dd5b22003fd4">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						TC_65166
 					</argvalue>
 				</argument>
 			</arguments>

@@ -673,7 +673,7 @@ namespace TestProject.Libraries
 			Common_Functions.clickOnPhysicalLayoutTab();
 			
 			// Click on Panel Calculation tab
-			//Common_Functions.clickOnPanelCalculationsTab();
+			Common_Functions.clickOnPanelCalculationsTab();
 			
 			
 			Devices_Functions.verifyLoopLoadingDetailColor(LoadingDetail,ColumnNumber);

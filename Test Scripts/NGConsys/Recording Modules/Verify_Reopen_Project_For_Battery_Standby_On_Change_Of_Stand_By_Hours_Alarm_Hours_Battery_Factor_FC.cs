@@ -82,10 +82,13 @@ namespace TestProject.Recording_Modules
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(0));
             Delay.Duration(5000, false);
             
-            Libraries.Common_Functions.ReopenProjectForDifferentProjectType("TC_71697", "Express Projects (*.pjl)");
+            //Libraries.Common_Functions.ReopenProjectForDifferentProjectType("TC_71697", "Express Projects (*.pjl)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ReopenProject("TC_71697");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(3));
             Delay.Duration(5000, false);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -100,7 +103,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("37.8", "Minimum Battery size(Ah)\r\n");
+            Libraries.Devices_Functions.verifyLoadingDetailsValueAfterReopen("37.86", "Minimum Battery size(Ah)\r\n");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");

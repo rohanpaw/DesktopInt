@@ -96,7 +96,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Backplane  2/3
+						Backplane  1/3
 					</argvalue>
 				</argument>
 			</arguments>

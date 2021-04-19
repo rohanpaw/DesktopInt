@@ -109,7 +109,7 @@ namespace TestProject.Recording_Modules
             //repo.ProfileConsys1.tab_PhysicalLayout.Click();
             //Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.718", "Total System Load(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.645", "Total System Load(A)");
             Delay.Milliseconds(0);
             
             // Data isnt present
@@ -126,7 +126,7 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             // Different oin test data
-            Libraries.Panel_Functions.ChangeCPUType("CPU 801");
+            Libraries.Panel_Functions.ChangeCPUType("CPU 800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -139,7 +139,7 @@ namespace TestProject.Recording_Modules
             //repo.ProfileConsys1.tab_PhysicalLayout.Click();
             //Delay.Milliseconds(200);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.750", "Total System Load(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.613", "Total System Load(A)");
             Delay.Milliseconds(0);
             
             // Data isnt present

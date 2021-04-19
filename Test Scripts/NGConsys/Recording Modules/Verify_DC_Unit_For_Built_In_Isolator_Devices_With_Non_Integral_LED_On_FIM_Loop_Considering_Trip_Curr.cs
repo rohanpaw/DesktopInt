@@ -100,7 +100,17 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsValue("287");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("287", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("287", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // Current (DC Units)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("278", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("P80SB", "Sounders/Beacons");
@@ -112,7 +122,17 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyDCUnitsValue("311");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("347", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("347", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // Current (DC Units)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("305", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
         }

@@ -91,7 +91,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PLX800", "Loops", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "PLX800-E");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("8", "Label", "PLX800-F");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -121,7 +121,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyExportButtonInGalleryEnabledOrDisabled();
             Delay.Milliseconds(0);
             
-            Libraries.Export_Functions.clickOnExportButton();
+            Libraries.Export_Functions.clickOnExportInventoryButton();
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'PrintPreview.btn_CloseB' at Center.", repo.PrintPreview.btn_CloseBInfo, new RecordItemIndex(15));

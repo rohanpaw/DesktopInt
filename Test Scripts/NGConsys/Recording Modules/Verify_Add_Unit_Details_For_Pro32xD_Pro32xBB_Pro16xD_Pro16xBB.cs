@@ -121,16 +121,19 @@ namespace TestProject.Recording_Modules
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (3 of 18)");
+            //Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (3 of 18");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItemForSlotCard("Other Slot Cards  (3 of 18");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("IOB800-1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("IOB800(x2)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("FB800-1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Fuse board - 1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
@@ -142,8 +145,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("IOB800", "Accessories", "Enabled");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("IOB800", "Accessories", "Enabled");
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.VerifyPanelNodePanelAccessoriesGallery("FB800", "Accessories", "Enabled");
             Delay.Milliseconds(0);

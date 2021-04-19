@@ -113,7 +113,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CHEx IS", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("Exi800 - 1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameForEXIDevice("Exi800 - 1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("801 HEx IS", "Detectors");
@@ -157,11 +157,14 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.ChangeCableCapacitance(ValueConverter.ArgumentFromString<int>("fchangeCableCapacitance", "90"), "Exi800 - 1");
+            Libraries.Devices_Functions.ChangeCableCapacitanceForEXI(ValueConverter.ArgumentFromString<int>("fchangeCableCapacitance", "90"), "Exi800 - 1");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -192,7 +195,7 @@ namespace TestProject.Recording_Modules
             Libraries.AC_Functions.VerifyACUnitIndicationWithISDevices("Built-in Loop-A", "1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("DDM 800 Loop", ValueConverter.ArgumentFromString<int>("DeviceQty", "30"));
+            Libraries.Devices_Functions.AddDevicesfromMultiplePointWizard("DDM 800 Loop", ValueConverter.ArgumentFromString<int>("DeviceQty", "2"));
             Delay.Milliseconds(0);
             
             //VerifyACUnitIndicationWithISDevices();

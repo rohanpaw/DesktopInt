@@ -85,10 +85,17 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            //Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
+            //Delay.Milliseconds(0);
+            
+            // PFI Local I/O
+            Libraries.Devices_Functions.SelectInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
+            Libraries.Devices_Functions.AddDevicesfromGallery("IOB800(x1)", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -97,16 +104,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "SKU", "557.202.006");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("2", "SKU", "557.202.006");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Model", "IOB800");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "IOB800-1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "IOB800(x1)");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Connection", "Backplane");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Connection", "PFI XBus");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.editDeviceLabel("7", "Label", "IOB-Test");

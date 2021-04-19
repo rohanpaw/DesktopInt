@@ -211,7 +211,7 @@ rxversion="8.3">
 			id="028f3d71-0373-43d9-9b34-c0bc16df72b1"
 			name="Verify_Multiple_PCH_Can_Be_Added_On_Same_Backplane">
 				<description>
-					<![CDATA[<p>NGC-2299/TC-76704</p>]]>
+					<![CDATA[<p>NGC-2299/T1061 OR TC-76704</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -440,12 +440,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="05359671-7174-434a-905d-e0efa46156f2"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="05c10e2a-d39d-4828-a8f2-ab3070e97184"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -492,7 +486,7 @@ rxversion="8.3">
 			id="065a1a7d-5034-4dce-9553-d8f7c622aa75"
 			name="Verify_APM800_Will_Get_Added_To_Available_Loop_Address_When_Second_PUS(PSB800K)_Is_Selected">
 				<description>
-					<![CDATA[<p>NGC-1105/TC-52687 &amp; NGC-1344/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55045</font></p>]]>
+					<![CDATA[<p>NGC-1105/T194 OR TC-52687 &amp; NGC-1344/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55045</font></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -517,7 +511,7 @@ rxversion="8.3">
 			id="072607cf-9dd5-46ef-b302-407f467fca4d"
 			name="Verify_DC_Unit_For_Built_In_Isolator_Devices_With_Non_Integral_LED_On_PFI_Loop_Considering_Trip_Curr">
 				<description>
-					<![CDATA[<p>NGC-1139/TC-53543 <span style="color: rgb(151, 155, 133);">verifyIsolatorCheckbox is disabled as its isCheked&nbsp;properties not enabled and isolator checkbox is already checked and disabled</span></p>]]>
+					<![CDATA[<p>NGC-1139/T259 OR TC-53543 <span style="color: rgb(151, 155, 133);">verifyIsolatorCheckbox is disabled as its isCheked&nbsp;properties not enabled and isolator checkbox is already checked and disabled</span></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -639,7 +633,7 @@ rxversion="8.3">
 			id="08c6ac28-0cfd-489a-8946-e061739b790f"
 			name="Verify_Panel_LED">
 				<description>
-					<![CDATA[<p>NGC-260/TC-104 OR NGC-987</p>]]>
+					<![CDATA[<p>NGC-260/T1358 OR TC-104 OR NGC-987</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -961,12 +955,6 @@ rxversion="8.3">
 			id="0cef430e-3bf0-4b34-b299-4bb4ba6c2df3"
 			name="Verify_Current_DC_Units_And_Worst_Case_Indicator_FC"
 			ref="c04f6e17-c585-49b0-ac3c-427cd9432808"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="0cf9d215-a385-4871-ac60-472cd0e5feac"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -1723,6 +1711,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="1687f916-9eb9-40f3-b35a-113b05b3e8bf"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="16d12f1c-0776-4d47-8189-8e41f715185e"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -2101,7 +2095,7 @@ rxversion="8.3">
 			id="1b02544a-4a62-4f03-b345-0fcea739089d"
 			name="Verify_Surface_Box_Combobox_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices">
 				<description>
-					<![CDATA[<p>NGC-1345/TC-55056</p>]]>
+					<![CDATA[<p>NGC-1345/T465 OR TC-55056</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -2454,7 +2448,7 @@ rxversion="8.3">
 			id="20836adb-a235-4806-8cc8-bcbe7485be64"
 			name="Verify_The_Shopping_List_When_XML800_Is_Added/removed_From_Panel">
 				<description>
-					<![CDATA[NGC-60/TC-55138]]>
+					<![CDATA[NGC-60/T469 OR TC-55138]]>
 				</description>
 				<parameters>
 					<param
@@ -2499,7 +2493,7 @@ rxversion="8.3">
 			id="20c2e5a6-a39c-4ba9-8e4d-a35087a8bd76"
 			name="Verify_A-CON_Conduct_Adapt_Sd_AV_Base_For_P81AVB_P80SB_P80AVB_P80AIB_Devices">
 				<description>
-					<![CDATA[NGC-1345/TC-55046]]>
+					<![CDATA[NGC-1345/T463 OR TC-55046]]>
 				</description>
 				<parameters>
 					<param
@@ -2622,7 +2616,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TFS\Profile Consys 30.1.3">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 30.1.24">
 					</param>
 					<param
 					name="Mode"
@@ -2903,6 +2897,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="26162601-0b76-457b-b471-77aa8c56ef75"
+			name="Reopen_Project_When_XLM800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically"
+			ref="8324909a-3fb0-4332-8033-5e8a8e8269df"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="261ba791-3167-4650-8675-e34dc9f42006"
 			name="Verify_if_detectors_are_imported_from_Fireclass_Designer_to_NGDesigner_for_FC_panels"
 			ref="71128d79-3047-4663-b47f-188ba3d6f72b"
@@ -3006,7 +3006,7 @@ rxversion="8.3">
 			id="278f0eea-0baa-49ec-b4ed-4c9aef896d58"
 			name="Verify_Export_Of_Region_Data_With_Pro16xD_Panel">
 				<description>
-					<![CDATA[<p>NGC-387/TC-43</p>]]>
+					<![CDATA[<p>NGC-387/T249 OR TC-43_2</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -3347,7 +3347,7 @@ rxversion="8.3">
 			id="2bb77d07-695c-4f1f-97c9-ad3d54e10be8"
 			name="Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB">
 				<description>
-					<![CDATA[<p>NGC-360/TC-27/TC-28/Defect-1545 . </p><p>Note : Defect 1545 was not completed automated so need to test it manually</p>]]>
+					<![CDATA[<p>NGC-360/T285/T288 or TC-27/TC-28/Defect-1545</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -3531,12 +3531,6 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
-			<testmodule
-			id="2eb156a7-1c1e-42e4-97f6-fc1d5c19f6ba"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="2f0533f6-e89f-4803-9e51-bf08353af1fd"
 			name="Application_Open"
@@ -3922,7 +3916,7 @@ rxversion="8.3">
 			id="348d69b9-f388-490c-937f-a10bce7e2a13"
 			name="Verify_Voltage_Drop_Error_and_Warning_Indication">
 				<description>
-					<![CDATA[<p>Defect-3899 NGC-491/T377 OR TC-128 OR NGC-1289</p>]]>
+					<![CDATA[<p>NGC-491/T377 OR TC-128 OR NGC-1289</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -4040,13 +4034,6 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="35c2dd66-788b-40d7-b2dd-804114c8e029"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			enabled="False"
-			id="360f016e-3f11-4ccf-b1b9-465e4b56e965"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -4325,7 +4312,7 @@ rxversion="8.3">
 			id="3960e53b-98cb-4851-bc40-8e395c6834ab"
 			name="Verify_Battery_Standby_On_Changing_CPU_FC">
 				<description>
-					<![CDATA[<p>NGC-1928/T959 OR TC-71688 Application Open in not working after saved project. All other features are tested.</p>]]>
+					<![CDATA[<p>NGC-1928/T959 OR TC-71688 </p>]]>
 				</description>
 				<parameters>
 					<param
@@ -4391,15 +4378,15 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="3a401967-5bf8-4bed-882d-1e108c67c781"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="3a5cfe69-f6b7-4f18-9443-bc955df01e54"
 			name="Verify_Shopping_List_When_User_Add_TLI800_TLI800EN_To_Network_Card"
 			ref="da57bb22-d09f-4579-bef0-4365a462e6e4"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3a5dc747-aeaf-4fc8-b069-402cbb251614"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -4478,6 +4465,12 @@ rxversion="8.3">
 			id="3b07c41f-e99e-4423-bb05-b9314bc33f57"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3b210238-6f79-4af6-9486-6ddcf20fe334"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -4577,12 +4570,6 @@ rxversion="8.3">
 			id="3ccd44b5-055a-4739-9d9b-7511ae664e56"
 			name="Verify_Reopen_Project_If_User_Changed_And_Saved_Power_Source"
 			ref="aa2f34c5-9f54-4d2c-b609-3ce739396e04"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="3cd638ce-ac2a-42f1-893c-233c05c9568f"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -5711,12 +5698,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="4b0b72a2-fc09-4f8e-84fa-894141f5ceeb"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="4b1aa10e-2c52-42fc-a51d-8a7cb809cbfc"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -5877,12 +5858,6 @@ rxversion="8.3">
 			</testmodule>
 			<testmodule
 			id="4ccfa15c-20c0-43fc-ab50-776d50a8a72b"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="4d10bf7f-ea1e-4705-8460-6e4188fc5184"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -6063,7 +6038,7 @@ rxversion="8.3">
 			id="4e8e429d-5507-428e-b2ab-40c1df197167"
 			name="Verify_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800">
 				<description>
-					<![CDATA[NGC-1277/TC-54250]]>
+					<![CDATA[NGC-1277/T445 OR TC-54250]]>
 				</description>
 				<parameters>
 					<param
@@ -6165,6 +6140,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="4f9cc005-2c49-4453-9899-f752139d9861"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4fca1204-78bd-4924-9a90-87f4511cccec"
 			name="Verify_FBI800_card_details"
 			ref="aa209ed5-2360-4a04-b4f0-d223a15560e0"
@@ -6180,7 +6161,7 @@ rxversion="8.3">
 			id="5025fcf1-c285-41aa-b0ae-bef9f25fa974"
 			name="Verify_IOB_In_Accessories_Gallery">
 				<description>
-					<![CDATA[<p>NGC-390/TC-57</p>]]>
+					<![CDATA[<p>Obsolete NGC-390/TC-57</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -6427,6 +6408,12 @@ rxversion="8.3">
 			ref="8201c29b-2d49-4b3c-b375-34e6842b4241"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="52f2b325-bbac-47e0-bb37-e53d507355f9"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="534c0419-c49f-48e5-b622-6c96911d2e38"
 			name="Verify_40V_Alarm_Load_On_Addition_Deletion_Of_Ethernet_Connection">
@@ -6498,7 +6485,7 @@ rxversion="8.3">
 			id="540564b6-2b87-4fc5-b5fb-2f193318262a"
 			name="Verify_Addition_Of_PCS_POS_IOB_And_FB_In_Backplane">
 				<description>
-					<![CDATA[<p>NGC-390/TC-59</p>]]>
+					<![CDATA[<p>NGC-390/T316 OR TC-59</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -6689,7 +6676,7 @@ rxversion="8.3">
 			id="5627997c-99f0-4047-b553-6f083e959de1"
 			name="Verify_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC">
 				<description>
-					<![CDATA[<p>NGC-1928/T964 OR TC-71808 Application Open in not working after saved project. All other features are tested.</p>]]>
+					<![CDATA[<p>NGC-1928/T964 OR TC-71808 Application Open in not working after saved project as panel is deleted. So, nothing to verify.</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -6962,7 +6949,7 @@ rxversion="8.3">
 			id="589f8693-8e78-40df-88da-50aebdf8c087"
 			name="Verify_PCH800_POS800_PNI800_FBI800_Can_Be_On_The_Same_Backplane">
 				<description>
-					<![CDATA[<p>NGC-2299/TC-76701&nbsp; Defect-NGC-2860</p>]]>
+					<![CDATA[<p>NGC-2299/T1060 OR TC-76701</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7047,7 +7034,7 @@ rxversion="8.3">
 			id="596feba0-7917-46f6-8198-bb3d116911f7"
 			name="Verify_The_DC_Calculation_When_Total_Output_Load_is_Less_Than_12_mA">
 				<description>
-					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"><p>NGC-492/TC-53903/TC-53904</p></font><p><br></p></font><p><br></p></p>]]>
+					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"></font></font><p><font face="Calibri" size="3"><font face="Calibri" size="3">NGC-492/T418/T419 OR TC-53903/TC-53904</font></font></p><p><font face="Calibri" size="3"><br></font></p><p><br></p><p></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7255,12 +7242,6 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="5c14cee0-1f8d-4116-be7c-dba0d4931bd0"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="5c3b0691-4307-4626-a13d-c062f67d0230"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -7321,7 +7302,7 @@ rxversion="8.3">
 			id="5c6f9f0d-92d3-4f42-ab23-94479bb53443"
 			name="Verify_Cut_Copy_Paste_Option_for_RIM800_And_HVR800">
 				<description>
-					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"></font></font><p><font face="Calibri" size="3"><font face="Calibri" size="3">NGC-1277/TC-54241&nbsp; Copy button enable/disable step is disabled as Copy button properties is not displayed</font></font></p><p></p>]]>
+					<![CDATA[<p><font face="Calibri" size="3"><font face="Calibri" size="3"></font></font><p><font face="Calibri" size="3"><font face="Calibri" size="3">NGC-1277/T444 or TC-54241&nbsp; Copy button enable/disable step is disabled as Copy button properties is not displayed</font></font></p><p></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7425,7 +7406,7 @@ rxversion="8.3">
 			id="5d6cf3a6-3f2f-48aa-a965-c29bfdffc1fd"
 			name="Verify_the_properties_of_Audix_Interface">
 				<description>
-					<![CDATA[NGC-1113/ TC-52685]]>
+					<![CDATA[NGC-1113/T542 OR&nbsp;TC-52685]]>
 				</description>
 				<parameters>
 					<param
@@ -7550,7 +7531,7 @@ rxversion="8.3">
 			id="5ea2aa81-9623-4312-b26b-e26b4e482512"
 			name="Verify_PCS800_Is_Displayed_Only_For_Pro215S_Panel">
 				<description>
-					<![CDATA[<p>NGC-2299/TC-76713</p>]]>
+					<![CDATA[<p>NGC-2299/T1062 OR TC-76713</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -7838,6 +7819,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="6230b3bd-1e7a-475e-9571-3d1450aabbe3"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6232167a-8995-4162-8834-d11d02ef7881"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -7898,7 +7899,7 @@ rxversion="8.3">
 			id="6358d864-fae6-4b0b-b9c2-d56543c3a4c2"
 			name="Verify_If_User_Added_SIO800_RIM800_Not_Part_Of_Audix_It_Should_Be_Shown_In_Shopping_List">
 				<description>
-					<![CDATA[<p>NGC-1343/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55039</font></p>]]>
+					<![CDATA[<p>NGC-1343/T448 OR TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55039</font></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -8043,7 +8044,7 @@ rxversion="8.3">
 			id="65aff3e5-aa9b-4f3e-95bd-4713e92128ee"
 			name="Verify_new_gallery(Conventional_Sounders)_displayed_after_selecting_LPS800">
 				<description>
-					<![CDATA[NGC-583/TC-51317]]>
+					<![CDATA[NGC-583/T226 OR TC-51317]]>
 				</description>
 				<parameters>
 					<param
@@ -8545,7 +8546,7 @@ rxversion="8.3">
 			id="6bab3c88-91e1-47d4-8c62-025c840f9d18"
 			name="Verify_Battery_Standby_and_Battery_Alarm_on_Addition_Deletion_of_Devices_in_PLX_or_XLM_Loop">
 				<description>
-					<![CDATA[<p>NGC-488/TC-150 Issue in the values</p>]]>
+					<![CDATA[<p>NGC-488/T398 OR TC-150 Issue in the values</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -8619,7 +8620,7 @@ rxversion="8.3">
 			id="6d5d82b9-20db-4977-8bfb-43d9c590ea06"
 			name="Verify_Other_Slot_Card_Node_Count">
 				<description>
-					<![CDATA[<p>NGC-2299/TC-76728</p>]]>
+					<![CDATA[<p>NGC-2299/T1063 OR TC-76728</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -8656,11 +8657,17 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="6df438bf-671f-476c-867e-58d09220ea4f"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="6e24e3cd-d477-4529-acc0-fe227050c7f4"
 			name="Verify_Main_Processor_loading_after_adding_1/2_IOB800_device">
 				<description>
-					<![CDATA[<p>NGC-606/TC-55851 &amp; 55852</p>]]>
+					<![CDATA[<p>NGC-606/T595 OR TC-55851 &amp; 55852</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -8832,7 +8839,7 @@ rxversion="8.3">
 			id="70acad87-81db-41b2-995c-68a497b0d309"
 			name="Verify_Add_Unit_Details_For_Pro215S_Pro215D_Pro815D_Pro885D">
 				<description>
-					<![CDATA[<p>NGC-360/TC-29/TC-30</p>]]>
+					<![CDATA[<p>NGC-360/T287 OR TC-29/TC-30</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -9343,7 +9350,7 @@ rxversion="8.3">
 			id="7705eef2-8e6f-4b98-8629-6fda694997a9"
 			name="Verify_System_Load_On_Changing_CPU_Of_Panel">
 				<description>
-					<![CDATA[<p>NGC-605/TC-50945</p><p><br></p>]]>
+					<![CDATA[<p>NGC-605/T183 OR TC-50945</p><p><br></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -9512,6 +9519,12 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="793caa28-3c62-4fac-82af-fb9cb33a1f8d"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="795308cc-2aeb-40bc-80c7-120414b02731"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -9578,7 +9591,7 @@ rxversion="8.3">
 			id="7ab8afa3-08a9-4ecf-9046-2381eaf929fa"
 			name="Verify_APM800_Should_Not_Get_Added_To_Shopping_List_When_Second_PSU_Selected_At_The_Time_Of_Panel_Se">
 				<description>
-					<![CDATA[NGC-1344/TC-55129]]>
+					<![CDATA[NGC-1344/T462 OR TC-55129]]>
 				</description>
 				<parameters>
 					<param
@@ -9830,7 +9843,7 @@ rxversion="8.3">
 			id="7e6db6e0-723e-447c-93c6-b8931f63de09"
 			name="Verify_The_Properties_Of_APM800">
 				<description>
-					<![CDATA[<p>NGC-1105/TC-52703</p>]]>
+					<![CDATA[<p>Obsolete NGC-1105/T198 OR TC-52703</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10224,6 +10237,12 @@ MxDesigner]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="82cc6855-12f9-46b7-846b-b8b439a3ce90"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="82d8e87b-9548-4ed6-a1be-f3ef93b6f731"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -10243,18 +10262,11 @@ MxDesigner]]>
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			enabled="False"
-			id="82f3516b-1308-4b59-ab2b-4fd254191724"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="82fac0cc-8149-49ea-9128-3bd476ad4daa"
 			name="Verify_Enabling_Or_Disabling_Of_Paste_Button_For_Copy_Paste_Functionality_For_Audix">
 				<description>
-					<![CDATA[NGC-1113/TC-52775,52681 Copy,Paste enabled and disabled option we are not able to verify as those properties are now not available.]]>
+					<![CDATA[NGC-1113/T543 OR TC-52775,52681 Copy,Paste enabled and disabled option we are not able to verify as those properties are now not available.]]>
 				</description>
 				<parameters>
 					<param
@@ -10382,7 +10394,7 @@ MxDesigner]]>
 			id="83e5e305-9ded-4d01-84a4-86f97e98ade9"
 			name="Verify_FBI800_card_details">
 				<description>
-					<![CDATA[<p><span style="text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">NGC-389/TC-45</span></p>]]>
+					<![CDATA[<p><span style="text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">NGC-389/T255 OR TC-45</span></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -10399,7 +10411,7 @@ MxDesigner]]>
 			id="844ee248-c88e-4ee8-a935-354096568590"
 			name="Verify_The_Properties_Of_XLM800">
 				<description>
-					<![CDATA[NGC-60/TC-55143]]>
+					<![CDATA[NGC-60/T470 OR TC-55143]]>
 				</description>
 				<parameters>
 					<param
@@ -10582,6 +10594,12 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="85af5fcd-7f47-4bc8-bbde-4190b2531118"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="85e2e3ca-69e7-4271-8440-bb49d4e80a61"
 			name="Application_Open"
@@ -10771,7 +10789,7 @@ MxDesigner]]>
 			id="8813a9dc-563e-49be-ba72-a785ef31e69a"
 			name="Verify_If_User_Is_Able_To_Switch_Allowed_Power_Source">
 				<description>
-					<![CDATA[<p>NGC-699/TC-218</p>]]>
+					<![CDATA[<p>NGC-699/T1385 OR TC-218</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -11074,7 +11092,7 @@ MxDesigner]]>
 			id="8b6e3cd6-d840-4924-b339-e24fa0f318a1"
 			name="Verify_IOB_FB_Will_Take_One_Slot_Position_Per_Card">
 				<description>
-					<![CDATA[<p>NGC-2299/TC-76689</p>]]>
+					<![CDATA[<p>NGC-2299/T1058 OR TC-76689</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -11267,6 +11285,12 @@ MxDesigner]]>
 			id="8db15a7e-ed45-4e21-9e95-b763970defe5"
 			name="Trip_Current_With_MultipleBase"
 			ref="773e468a-067e-4503-a291-e3f9eeebaeba"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="8dd16f11-6550-4658-a858-6e2154fbb71c"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -11508,7 +11532,7 @@ MxDesigner]]>
 			id="9211a256-9176-4fce-87c6-e7858dd0b460"
 			name="Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete">
 				<description>
-					<![CDATA[<p>NGC-1105/TC-52689</p>]]>
+					<![CDATA[<p>NGC-1105/T196 OR TC-52689</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -11555,7 +11579,7 @@ MxDesigner]]>
 			id="92b30f9d-f5d7-4200-ae8f-4d00887182de"
 			name="Verify_Max_allowed_Alarm_Sounder_current_value_for_LPS800">
 				<description>
-					<![CDATA[NGC-583/TC-51341]]>
+					<![CDATA[NGC-583/T227 OR TC-51341]]>
 				</description>
 				<parameters>
 					<param
@@ -11820,7 +11844,7 @@ MxDesigner]]>
 			id="974ede1d-e022-450d-9300-6b776213cec6"
 			name="Verify_Deletion_Of_PCS_POS_IOB_And_FB_From_Backplane">
 				<description>
-					<![CDATA[<p>NGC-390/TC-60</p>]]>
+					<![CDATA[<p>NGC-390/T317 OR TC-60</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -12032,7 +12056,7 @@ MxDesigner]]>
 			id="99979e33-ab40-4086-ae9b-f848dcc21aac"
 			name="Verify_Cable_Length_Displayed_For_Pro_Panels">
 				<description>
-					<![CDATA[<p>NGC-428/TC-86</p>]]>
+					<![CDATA[<p>This is a bug not a userstory NGC-428/TC-86 </p>]]>
 				</description>
 				<parameters>
 					<param
@@ -12092,7 +12116,7 @@ MxDesigner]]>
 			id="9a83cacb-767c-4c29-8f54-3ecd09a20c89"
 			name="Verify_5V/24V/40V_Load_on_changing_CPU_of_panel_FC">
 				<description>
-					<![CDATA[NGC-1854/T764 OR TC-64716 -Updated the correct test data]]>
+					<![CDATA[Defect-3978 NGC-1854/T764 OR TC-64716 -Updated the correct test data]]>
 				</description>
 				<parameters>
 					<param
@@ -12128,12 +12152,6 @@ MxDesigner]]>
 					</param>
 				</parameters>
 			</testcase>
-			<testmodule
-			id="9b823004-4c41-4f1f-b166-e96c8a30b635"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
 			<testmodule
 			id="9b90e873-f253-46ce-b27c-a6fce8418e7c"
 			name="Verify_Persistance_Of_Loop_Properties_on_Cut_Paste"
@@ -12575,7 +12593,7 @@ div.WordSection1
 			id="a0f00c7a-352a-4ea6-8590-7d09ca6a596f"
 			name="Verify_Paste_Options_Displayed_For_Loop">
 				<description>
-					<![CDATA[NGC-372/TC-31 Defect-2654]]>
+					<![CDATA[NGC-372/TC-31]]>
 				</description>
 				<parameters>
 					<param
@@ -12588,6 +12606,12 @@ div.WordSection1
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="a123c92d-8d5e-4701-afa4-3671a7e32347"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="a1a63151-2abc-4d76-8d9c-7515ebe41a4e"
 			name="Close_Application"
@@ -12840,12 +12864,6 @@ div.WordSection1
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="a4525d94-b68c-447d-9c96-d8c817c61b8c"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="a563d6ff-b87c-4fc8-8464-d0864b3a6f7b"
 			name="Verify_Isolator_Units_Calculation_On_Changing_Base_Of_Non_Isolator_Device_To_Isolator_Base_FC"
 			ref="9544df86-5f59-4978-8aac-1422cd7cfdf5"
@@ -13027,6 +13045,12 @@ div.WordSection1
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a7f66843-bcc4-4b20-9029-764d8711534a"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="a81db759-1866-4dba-8c5a-97b319c3b895"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -13113,12 +13137,6 @@ div.WordSection1
 			</testmodule>
 			<testmodule
 			id="aa2dfeb4-6385-46bb-bdf6-c433ede8b538"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="aa60a462-a4ad-4323-a192-163ce4427579"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -13318,6 +13336,12 @@ div.WordSection1
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="ae22ea69-ea4f-451f-a6a1-33512d400939"
+			name="Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800"
+			ref="3694c5f6-f927-454e-9994-9e3b6cc6140d"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="ae423bb5-cd64-4149-b7e4-bbc3c041963d"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -13417,6 +13441,26 @@ project]]>
 					datasourceid="442798fe-9147-4901-9059-da1a829fd6d1"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="afacbd39-f937-486a-ab49-5833d7a1c813"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -14111,6 +14155,12 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="b9c7ccd1-9afc-40d0-90d5-1f6856071756"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="ba0db839-ed99-4a04-a90f-5378c531aa1e"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -14251,7 +14301,7 @@ persisted in panel properties&nbsp;]]>
 			id="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96"
 			name="Verify_Export_Of_Region_Data">
 				<description>
-					<![CDATA[<p>NGC-387/TC-43</p>]]>
+					<![CDATA[<p>NGC-387/T249 OR TC-43</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -14472,6 +14522,7 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="bef0397a-bec7-42d9-b764-28920fff6340"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -14604,7 +14655,7 @@ persisted in panel properties&nbsp;]]>
 			id="c09b1b47-52fc-439e-8c21-cef3acd226f9"
 			name="Verify_Slot_Address_DIP_Switches_Are_Not_Available_In_NGDesigner">
 				<description>
-					<![CDATA[<p>NGC-2299/TC-76691</p>]]>
+					<![CDATA[<p>NGC-2299/T1059 OR TC-76691</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -14890,7 +14941,7 @@ persisted in panel properties&nbsp;]]>
 			id="c71c0d6b-d6ed-43d4-ba4c-1d25ad997a40"
 			name="Verify_Addition_Of_PxD_PSC_800_In_Shopping_List">
 				<description>
-					<![CDATA[<p>NGC-361/TC-12</p>]]>
+					<![CDATA[<p>NGC-361/T244 OR TC-12</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -15058,7 +15109,7 @@ persisted in panel properties&nbsp;]]>
 			id="c868d8b7-e2fe-4222-97b2-e27171de49b6"
 			name="Verify_Integral/internal_LED_Indicator_Property_For_Devices">
 				<description>
-					<![CDATA[<p>NGC-260/TC-106</p><p><br></p>]]>
+					<![CDATA[<p>NGC-260/T1357 OR TC-106</p><p><br></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -15287,7 +15338,7 @@ persisted in panel properties&nbsp;]]>
 			id="cb92c02c-e1f9-422d-b78c-1f95b097a4b4"
 			name="Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus">
 				<description>
-					<![CDATA[<p>NGC-1343/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55040</font></p>]]>
+					<![CDATA[<p>NGC-1343/T449 OR TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55040</font></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -15847,7 +15898,7 @@ persisted in panel properties&nbsp;]]>
 			id="d2cdb4f7-be4e-48bd-9b3c-2a8fb55099db"
 			name="Verify_Deletion_Of_Slot_Loop_Cards_From_Pro32xD_Pro32xBB_Panels">
 				<description>
-					<![CDATA[<p>NGC-362/TC-15</p>]]>
+					<![CDATA[<p>NGC-362/T246 OR TC-15</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16003,7 +16054,7 @@ persisted in panel properties&nbsp;]]>
 			id="d4e2f572-a291-43ae-9769-cf8bd8686a40"
 			name="Verify_When_User_Add_Audix_To_RBus_SIO800_RIM800_Should_Not_Get_Added_To_Shoping_List">
 				<description>
-					<![CDATA[<p>NGC-1343/TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55038</font></p>]]>
+					<![CDATA[<p>NGC-1343/T447 OR TC-<font color="#000000" face="Segoe UI" style="background-color: rgb(255, 255, 255);">55038</font></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16095,7 +16146,7 @@ persisted in panel properties&nbsp;]]>
 			id="d6418927-4366-415d-8a36-214627c8ef62"
 			name="Verify_Export_Of_Shopping_List">
 				<description>
-					<![CDATA[<p>NGC-362/TC-22</p>]]>
+					<![CDATA[<p>NGC-362/T247 OR TC-22</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16254,7 +16305,7 @@ persisted in panel properties&nbsp;]]>
 			id="d84f3eb7-a76c-4b26-8b2e-8f6dd91a2713"
 			name="Verify_DC_Unit_For_Built_In_Isolator_Devices_With_Non_Integral_LED_On_FIM_Loop_Considering_Trip_Curr">
 				<description>
-					<![CDATA[<p>NGC-1139/TC-53545 <span style="color: rgb(151, 155, 133);">verifyIsolatorCheckbox is disabled as its isCheked&nbsp;properties not enabled and isolator checkbox is already checked and disabled</span></p>]]>
+					<![CDATA[<p>NGC-1139/T261 OR TC-53545 <span style="color: rgb(151, 155, 133);">verifyIsolatorCheckbox is disabled as its isCheked&nbsp;properties not enabled and isolator checkbox is already checked and disabled</span></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16341,7 +16392,7 @@ persisted in panel properties&nbsp;]]>
 			id="d8bf6f00-ec7e-4bdf-b805-92f516db03ed"
 			name="Verify_5V_Load_On_Changing_CPU_Of_Panel">
 				<description>
-					<![CDATA[<p>Defect-3686 NGC-149/TC-153 OR NGC-2493/T1161&nbsp;OR NGC-1513/63071</p>]]>
+					<![CDATA[<p>NGC-149/TC-153 OR NGC-2493/T1161&nbsp;OR NGC-1513/63071</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16378,7 +16429,7 @@ persisted in panel properties&nbsp;]]>
 			id="d8f95cc6-b027-4b5b-b4ae-0fb905076b76"
 			name="Verify_Deletion_Of_PxD_PSC_800_From_Shopping_List">
 				<description>
-					<![CDATA[<p>NGC-361/TC-13</p>]]>
+					<![CDATA[<p>NGC-361/T245 OR TC-13</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -16580,12 +16631,6 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="ddbd8c73-3b0b-4903-a8ac-c1f2497fdb96"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="de200f5c-48c0-4920-a1a1-041c1782aa6a"
 			name="Verify_the_properties_of_Audix_Interface"
 			ref="e5591827-cfa7-4c05-9578-6ea1d74f4404"
@@ -16624,6 +16669,7 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="dedfed36-7ce9-46d2-8899-b77727c0ece3"
 			name="Verify_Reopen_Project_For_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC"
 			ref="98d6155f-13cd-47f6-89ee-4d1fca67f57c"
@@ -17005,7 +17051,7 @@ persisted in panel properties&nbsp;]]>
 			id="e2b2e6f6-73e5-4b6f-a11e-37f2902d6e2e"
 			name="Verify_PNI800_Card_Details">
 				<description>
-					<![CDATA[<p><span style="text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">NGC-389/TC-44</span></p>]]>
+					<![CDATA[<p><span style="text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !important; white-space: pre-wrap; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">NGC-389/T250 OR TC-44</span></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -17070,7 +17116,7 @@ persisted in panel properties&nbsp;]]>
 			id="e4178d2c-0d14-4ed5-aa10-3f07149df295"
 			name="Verify_Normal_Load_And_Alarm_Load_Property_On_Changing_Power_Source">
 				<description>
-					<![CDATA[<p>NGC-699/TC-220</p><p><br></p>]]>
+					<![CDATA[<p>NGC-699/T1387 OR TC-220</p><p><br></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -17153,7 +17199,7 @@ persisted in panel properties&nbsp;]]>
 			id="e572ebf8-e8ca-45a2-b26d-4f148b229189"
 			name="Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically">
 				<description>
-					<![CDATA[<p>NGC-60/TC-55131,55132 &amp; 55136</p><p><br></p>]]>
+					<![CDATA[<p>NGC-60/T467/T468 OR TC-55131,55132 &amp; 55136</p><p><br></p>]]>
 				</description>
 				<parameters>
 					<param
@@ -17352,12 +17398,6 @@ persisted in panel properties&nbsp;]]>
 				</parameters>
 			</testcase>
 			<testmodule
-			id="e75f29ab-4465-4ed5-94d3-f4edfe8ce3e0"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="e7cf88b6-21e6-4a8d-bccc-a63baf72b5b3"
 			name="Verify_Reopen_Project_For_Trip_Current_Calculation_On_Addition_Deletion_Of_Isolator_Base_FC"
 			ref="b04bd053-b3ae-4ec2-aa73-e2a7a86b9ebe"
@@ -17445,7 +17485,7 @@ persisted in panel properties&nbsp;]]>
 			id="e920721a-3dae-4973-96f4-2f314ac9cef1"
 			name="Verify_Deletion_of__FBI800_And_PNI800_Cards">
 				<description>
-					<![CDATA[NGC-389/TC-46]]>
+					<![CDATA[NGC-389/T256 OR TC-46]]>
 				</description>
 				<parameters>
 					<param
@@ -17504,7 +17544,7 @@ persisted in panel properties&nbsp;]]>
 			id="ea0d1762-6658-460e-ab2a-05a05e7f437a"
 			name="Verify_Battery_Standby_On_Change_Of_Stand_By_Hours_Alarm_Hours_Battery_Factor_FC">
 				<description>
-					<![CDATA[<p>NGC-1928/T962 OR TC-71697 Need&nbsp;to execute again.&nbsp;Tested with wrong test data. Application Open in not working after saved project. All other features are tested</p>]]>
+					<![CDATA[<p>Defect-4032 Or NGC-1928/T962 OR TC-71697 Application Open in not working after saved project. All other features are tested</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -17875,7 +17915,7 @@ persisted in panel properties&nbsp;]]>
 			id="f039533c-f3a2-4115-8ae4-12223084e3ff"
 			name="Verify_5V/24V/40V_load_on_addition/deletion_of_Rbus_connection_and_Xbus_template_FC">
 				<description>
-					<![CDATA[NGC-1854/T765 OR TC-64864]]>
+					<![CDATA[Defect-3978 NGC-1854/T765 OR TC-64864]]>
 				</description>
 				<parameters>
 					<param
@@ -17972,7 +18012,7 @@ persisted in panel properties&nbsp;]]>
 			id="f14c8b61-0ef9-470f-bb93-dd6781b0b6b7"
 			name="Verify_A-Box_Flush_Adapt_In_Wall_Sdr_For_P80AIR_P80AIW_P80AVW_P80AVR_Devices">
 				<description>
-					<![CDATA[<p>NGC-1345/TC-55052</p>]]>
+					<![CDATA[<p>NGC-1345/T464 OR TC-55052</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -18275,7 +18315,7 @@ persisted in panel properties&nbsp;]]>
 			id="f521de22-99d9-415f-93dc-e107663f9e8e"
 			name="Verify_when_user_edit_the_HVR800_Properties">
 				<description>
-					<![CDATA[NGC-1277/TC-55208]]>
+					<![CDATA[NGC-1277/T446 OR TC-55208]]>
 				</description>
 				<parameters>
 					<param
@@ -18292,7 +18332,7 @@ persisted in panel properties&nbsp;]]>
 			id="f538a592-8dd0-4cd8-ae5b-0ca3cd5f795c"
 			name="Verify_The_Respective_5V24V40V_Property_On_Changing_Power_Source">
 				<description>
-					<![CDATA[<p>NGC-699/TC-219_And_223</p>]]>
+					<![CDATA[<p>NGC-699/T1386 and T1388 OR TC-219_And_223</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -18325,6 +18365,12 @@ persisted in panel properties&nbsp;]]>
 			id="f54e42d3-3349-44ae-8ace-424bf7907900"
 			name="Verify_Max_DC_Units_for_PFI"
 			ref="0018cbaf-345a-47fa-8203-d06a50b382b4"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f567e9bd-2316-4f31-81ed-d440eeced87f"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -18439,12 +18485,6 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
-			id="f7b76de3-4ecd-4f1c-95f2-47eb45f18f75"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="f7d97119-5665-4118-8c9e-9ae5df94c8a9"
 			name="Verify_impact_of_character_based_repeater_on_loops"
 			ref="b49d100e-b1ad-4cf1-b81e-76e671dad72c"
@@ -18502,7 +18542,7 @@ persisted in panel properties&nbsp;]]>
 			id="f91756d1-b8a2-41c6-aae8-ae2582d7e756"
 			name="Verify_Alarm_and_Battery_Load_After_Adding_1_2__IOBs">
 				<description>
-					<![CDATA[<p>NGC-606/TC-55848 &amp; 58489</p>]]>
+					<![CDATA[<p>NGC-606/T563 &amp; T564 OR TC-55848 &amp; 58489</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -18623,12 +18663,6 @@ persisted in panel properties&nbsp;]]>
 			id="fb8515ff-194e-43c5-b4d6-4676ab7573dc"
 			name="Verify_IB_Units_On_Assigning_Base_And_Additional_Base_FC"
 			ref="92213869-7c7a-45fc-b90e-f226fd0f903b"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="fb94be72-fbae-4dd0-927f-4c19f01d6e73"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -19023,8 +19057,12 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_When_XML800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically">
 						</testmodule>
 						<testmodule
-						id="0cf9d215-a385-4871-ac60-472cd0e5feac"
-						name="Close_Application">
+						id="afacbd39-f937-486a-ab49-5833d7a1c813"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="26162601-0b76-457b-b471-77aa8c56ef75"
+						name="Reopen_Project_When_XLM800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -23498,10 +23536,6 @@ persisted in panel properties&nbsp;]]>
 						id="84a5ad16-3cc9-4277-90fc-6e522d10ffae"
 						name="Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800">
 						</testmodule>
-						<testmodule
-						id="a4525d94-b68c-447d-9c96-d8c817c61b8c"
-						name="Close_Application">
-						</testmodule>
 					</testcase>
 					<testcase
 					id="4e8e429d-5507-428e-b2ab-40c1df197167"
@@ -23517,6 +23551,14 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="dab45c4c-2218-4ca2-8bb1-cc2a535e6d35"
 						name="Verify_address_should_not_be_occupied_on_loopcard_for_non_addresable_device_HVR800">
+						</testmodule>
+						<testmodule
+						id="6230b3bd-1e7a-475e-9571-3d1450aabbe3"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="ae22ea69-ea4f-451f-a6a1-33512d400939"
+						name="Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24003,8 +24045,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_DC_Units_Displayed_For_Non_Split_Loops_FC">
 						</testmodule>
 						<testmodule
-						id="e75f29ab-4465-4ed5-94d3-f4edfe8ce3e0"
-						name="Close_Application">
+						id="8dd16f11-6550-4658-a858-6e2154fbb71c"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24023,8 +24065,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_DC_Units_Displayed_For_Split_Loops_FC">
 						</testmodule>
 						<testmodule
-						id="fb94be72-fbae-4dd0-927f-4c19f01d6e73"
-						name="Close_Application">
+						id="793caa28-3c62-4fac-82af-fb9cb33a1f8d"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24043,8 +24085,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Current_DC_Units_And_Worst_Case_Indicator_FC">
 						</testmodule>
 						<testmodule
-						id="9b823004-4c41-4f1f-b166-e96c8a30b635"
-						name="Close_Application">
+						id="b9c7ccd1-9afc-40d0-90d5-1f6856071756"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24311,8 +24353,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Maximum_Limit_For_5V__24V__40V">
 						</testmodule>
 						<testmodule
-						id="3a401967-5bf8-4bed-882d-1e108c67c781"
-						name="Close_Application">
+						id="f567e9bd-2316-4f31-81ed-d440eeced87f"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24334,10 +24376,6 @@ persisted in panel properties&nbsp;]]>
 						id="b85f76c9-e45c-48e8-bb03-b0269c69b841"
 						name="Close_ApplicationFC">
 						</testmodule>
-						<testmodule
-						id="360f016e-3f11-4ccf-b1b9-465e4b56e965"
-						name="Close_Application">
-						</testmodule>
 					</testcase>
 					<testcase
 					id="f039533c-f3a2-4115-8ae4-12223084e3ff"
@@ -24355,8 +24393,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_5V24V40V_Load_On_AddDeletion_Of_Rbus_Conn__Xbus_Template">
 						</testmodule>
 						<testmodule
-						id="5c14cee0-1f8d-4116-be7c-dba0d4931bd0"
-						name="Close_Application">
+						id="6df438bf-671f-476c-867e-58d09220ea4f"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24375,8 +24413,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_voltage_drop_calculation">
 						</testmodule>
 						<testmodule
-						id="4b0b72a2-fc09-4f8e-84fa-894141f5ceeb"
-						name="Close_Application">
+						id="3b210238-6f79-4af6-9486-6ddcf20fe334"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24395,8 +24433,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Impact_Of_Cable_Length_Cable_Resistance_On_Volt_Drop_Calculation_FC">
 						</testmodule>
 						<testmodule
-						id="4d10bf7f-ea1e-4705-8460-6e4188fc5184"
-						name="Close_Application">
+						id="3a5dc747-aeaf-4fc8-b069-402cbb251614"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24415,8 +24453,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Voltage_Drop_Error_and_Warning_Indication_FC">
 						</testmodule>
 						<testmodule
-						id="aa60a462-a4ad-4323-a192-163ce4427579"
-						name="Close_Application">
+						id="82cc6855-12f9-46b7-846b-b8b439a3ce90"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24435,8 +24473,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Volt_Drop_And_Volt_Drop_Worst_Case_For_Other_Loops_FC">
 						</testmodule>
 						<testmodule
-						id="3cd638ce-ac2a-42f1-893c-233c05c9568f"
-						name="Close_Application">
+						id="4f9cc005-2c49-4453-9899-f752139d9861"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24495,8 +24533,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Maximum_Battery_Standby_Limits_FC">
 						</testmodule>
 						<testmodule
-						id="f7b76de3-4ecd-4f1c-95f2-47eb45f18f75"
-						name="Close_Application">
+						id="52f2b325-bbac-47e0-bb37-e53d507355f9"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24515,8 +24553,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Default_Battery_Standby_Load_FC">
 						</testmodule>
 						<testmodule
-						id="05359671-7174-434a-905d-e0efa46156f2"
-						name="Close_Application">
+						id="85af5fcd-7f47-4bc8-bbde-4190b2531118"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24559,8 +24597,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Battery_Standby_On_Addition_Deletion_Of_RBus_Connections_And_XBus_Template_FC">
 						</testmodule>
 						<testmodule
-						id="2eb156a7-1c1e-42e4-97f6-fc1d5c19f6ba"
-						name="Close_Application">
+						id="a7f66843-bcc4-4b20-9029-764d8711534a"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24579,8 +24617,8 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Battery_Standby_On_Addition_Deletion_Of_Accessories_FC">
 						</testmodule>
 						<testmodule
-						id="ddbd8c73-3b0b-4903-a8ac-c1f2497fdb96"
-						name="Close_Application">
+						id="a123c92d-8d5e-4701-afa4-3671a7e32347"
+						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -24626,10 +24664,6 @@ persisted in panel properties&nbsp;]]>
 						id="defa7be0-d1e5-4f3b-8353-20931813d991"
 						name="Close_ApplicationFC">
 						</testmodule>
-						<testmodule
-						id="82f3516b-1308-4b59-ab2b-4fd254191724"
-						name="Close_Application">
-						</testmodule>
 					</testcase>
 					<testcase
 					id="5627997c-99f0-4047-b553-6f083e959de1"
@@ -24645,6 +24679,10 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="6275d231-8dae-4469-82c7-e30d431ba8d4"
 						name="Verify_Normal_Load_On_Changing_Housing_Property_Of_DIM_FC">
+						</testmodule>
+						<testmodule
+						id="1687f916-9eb9-40f3-b35a-113b05b3e8bf"
+						name="Close_ApplicationFC">
 						</testmodule>
 						<testmodule
 						id="bef0397a-bec7-42d9-b764-28920fff6340"
@@ -25140,10 +25178,34 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="0326356e-9f92-4955-b531-f51571009876">
+			</testcontainer>
+			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="22a03e84-3c2a-46a9-808c-fd2135a2a6fb">
+			id="405fcb6b-fb0a-45a5-b360-e8602f537671">
+			</testcontainer>
+			<testcontainer
+			id="65302c0c-7a8c-4fb8-bdce-3f7887e5394c">
+			</testcontainer>
+			<testcontainer
+			id="99f2ef92-02c4-4fca-9563-77ae5bce5696">
+			</testcontainer>
+			<testcontainer
+			id="b7618595-1949-4373-bf5c-e474f06cd552">
+			</testcontainer>
+			<testcontainer
+			id="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96">
+			</testcontainer>
+			<testcontainer
+			id="c072cf02-e092-40e6-bada-79fe192fd3dc">
+			</testcontainer>
+			<testcontainer
+			id="d0c34cef-95cd-4083-b02b-d372bc193cc3">
+			</testcontainer>
+			<testcontainer
+			id="d2cdb4f7-be4e-48bd-9b3c-2a8fb55099db">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

@@ -330,7 +330,7 @@ rxversion="8.3">
 		duration="60000ms"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyAndClickNavigationTreeItemText"
+		methodname="ClickOnNavigationTreeItemForSlotCard"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -347,7 +347,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other Slot Cards  (2 of
+						Other Slot Cards  (2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -452,7 +452,7 @@ rxversion="8.3">
 		duration="60000ms"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyAndClickNavigationTreeItemText"
+		methodname="ClickOnNavigationTreeItemForSlotCard"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -516,7 +516,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -541,7 +541,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -566,7 +566,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnShoppingListTab"
 		namespace="TestProject.Libraries"
@@ -1074,7 +1074,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						IOB800
+						PCS800
 					</argvalue>
 				</argument>
 				<argument
@@ -1148,7 +1148,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyAndClickNavigationTreeItemText"
+		methodname="ClickOnNavigationTreeItemForSlotCard"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1198,7 +1198,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyAndClickNavigationTreeItemText"
+		methodname="ClickOnNavigationTreeItemForSlotCard"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -1214,7 +1214,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other Slot Cards  (13 of 18)
+						Other Slot Cards  (13
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1504,7 +1504,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						POS800-S-1
+						POS800-S - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1544,7 +1544,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						POS800-S-2
+						POS800-S - 2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1584,7 +1584,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						POS800-S-3
+						POS800-S - 3
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1624,7 +1624,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						POS800-S-4
+						POS800-S - 4
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1664,7 +1664,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						POS800-S-5
+						POS800-S - 5
 					</argvalue>
 				</argument>
 			</arguments>

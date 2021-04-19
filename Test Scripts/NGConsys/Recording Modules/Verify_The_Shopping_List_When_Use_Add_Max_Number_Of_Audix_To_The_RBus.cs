@@ -82,6 +82,9 @@ namespace TestProject.Recording_Modules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
             Libraries.LinkedHardware_Fuctions.VerifyLinkedDevicesGetAddedInLoop("TC_55040_Verify_The_Shopping_List_When_Use_Add_Max_Number_Of_Audix_To_The_RBus", "Add Devices");
             Delay.Milliseconds(0);
             

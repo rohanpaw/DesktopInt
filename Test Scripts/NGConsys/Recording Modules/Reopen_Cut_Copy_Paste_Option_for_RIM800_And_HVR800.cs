@@ -94,13 +94,16 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("RIM 800 - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("HVR800 - 1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("HVR800 - 0");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("RIM 800 - 2");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("HVR800 - 2");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("HVR800 - 1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
             
         }

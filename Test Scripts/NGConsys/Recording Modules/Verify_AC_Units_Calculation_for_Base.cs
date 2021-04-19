@@ -101,7 +101,17 @@ namespace TestProject.Recording_Modules
             //Libraries.AC_Functions.verifyACUnitsValue("1.2");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1.2", "Signal (AC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("1.2", "Signal (AC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // Signal (AC Units)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("1", "Built-in Loop-C", "1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             // 801SB [516.800.907] @ 90dB
@@ -111,7 +121,17 @@ namespace TestProject.Recording_Modules
             //Libraries.AC_Functions.verifyACUnitsValue("3.6");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("3.6", "Signal (AC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("3.6", "Signal (AC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // Signal (AC Units)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("3", "Built-in Loop-C", "1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.RemoveBase("801 CH - 1", "6");
@@ -120,7 +140,17 @@ namespace TestProject.Recording_Modules
             //Libraries.AC_Functions.verifyACUnitsValue("1");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("1", "Signal (AC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("1", "Signal (AC Units)");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            Delay.Milliseconds(0);
+            
+            // Signal (AC Units)
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("1", "Built-in Loop-C", "1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
         }

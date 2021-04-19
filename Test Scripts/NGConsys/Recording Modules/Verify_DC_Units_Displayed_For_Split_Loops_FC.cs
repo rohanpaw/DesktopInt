@@ -97,10 +97,24 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyMaxDCUnits("2200");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("4000", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("4000", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("220", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("4000", "Built-in Loop-A", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-C");
@@ -112,10 +126,24 @@ namespace TestProject.Recording_Modules
             //Libraries.DC_Functions.verifyMaxDCUnits("2200");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("4000", "Current (DC Units)");
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("220", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("4000", "Current (DC Units)");
+            //Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyLoopLoadingDetailsValue("220", "Built-in Loop-C", "2");
+            Delay.Milliseconds(0);
+            
+            // DC Units
+            Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("4000", "Built-in Loop-C", "2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
             Libraries.DC_Functions.verifyDCUnitCalculationForSplitLoops("TC_63775_Verify_DC_Units_Displayed_For_Split_Loops_FC", "Add_Devices_LoopA", "Add_Devices_LoopC");

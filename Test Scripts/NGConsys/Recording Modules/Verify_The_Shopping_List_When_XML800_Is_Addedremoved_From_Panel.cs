@@ -110,8 +110,8 @@ namespace TestProject.Recording_Modules
             Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.202.073", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.202.612", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
-            Delay.Milliseconds(0);
+            //Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.202.612", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);

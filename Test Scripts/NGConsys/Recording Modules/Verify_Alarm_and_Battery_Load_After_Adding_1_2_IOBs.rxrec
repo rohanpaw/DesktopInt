@@ -97,7 +97,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPanelAccessoriesTab"
 		namespace="TestProject.Libraries"
@@ -113,6 +113,66 @@ rxversion="8.3">
 		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectInventoryGridRow"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				PFI Local I/O
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c77d8da2-db8f-41e4-bdd4-8367233c354a">
+				<argument
+				argname="sRowNumber"
+				id="64a2a9e5-7e48-43bc-8696-3908f40e3c8e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="06e8d4ab-ec7f-4862-9cd7-d76794947b2d">
+				<argument
+				argname="sDeviceName"
+				id="60687fa3-29a1-429f-8e9c-dd7de2e9e9a8">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						IOB800(x1)
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="6050f2b8-91bb-46a5-9cf7-6a1286188314">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicefromPanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
@@ -255,7 +315,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.276
+						0.305
 					</argvalue>
 				</argument>
 				<argument
@@ -290,7 +350,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.426
+						0.634
 					</argvalue>
 				</argument>
 				<argument
@@ -446,8 +506,94 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="DeleteDeviceUsingLabelInInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="7a96e6f9-8d57-403f-ab46-4020a8c7d50f">
+				<argument
+				argname="LabelName"
+				id="3e4763f7-33dc-4f90-80f0-259130530f2f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						IOB800(x1)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectInventoryGridRow"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				PFI Local I/O
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="c77d8da2-db8f-41e4-bdd4-8367233c354a">
+				<argument
+				argname="sRowNumber"
+				id="64a2a9e5-7e48-43bc-8696-3908f40e3c8e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicefromPanelAccessoriesGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="06e8d4ab-ec7f-4862-9cd7-d76794947b2d">
+				<argument
+				argname="sDeviceName"
+				id="60687fa3-29a1-429f-8e9c-dd7de2e9e9a8">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						IOB800(x2)
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="ed89b7b3-42dd-4a5d-9da0-278ecf9cc1d4">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Accessories
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPanelAccessoriesTab"
 		namespace="TestProject.Libraries"
@@ -462,7 +608,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddDevicefromPanelAccessoriesGallery"
 		namespace="TestProject.Libraries"
@@ -645,7 +791,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.276
+						0.334
 					</argvalue>
 				</argument>
 				<argument
@@ -680,7 +826,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						0.426
+						0.842
 					</argvalue>
 				</argument>
 				<argument
@@ -765,7 +911,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						IOB800-2
+						IOB800(x2)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -972,7 +1118,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -997,7 +1143,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -1022,7 +1168,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelNameFromInventoryTab"
 		namespace="TestProject.Libraries"
@@ -1047,7 +1193,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnDeleteButton"
 		namespace="TestProject.Libraries"
@@ -1062,7 +1208,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ClickOnNavigationTreeItem"
 		namespace="TestProject.Libraries"
@@ -1087,7 +1233,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnPanelCalculationsTab"
 		namespace="TestProject.Libraries"
@@ -1192,7 +1338,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -1227,7 +1373,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"

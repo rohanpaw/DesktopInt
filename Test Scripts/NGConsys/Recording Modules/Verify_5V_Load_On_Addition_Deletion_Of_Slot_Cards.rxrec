@@ -322,6 +322,46 @@ rxversion="8.3">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="fac3c8dc-a792-4629-8d05-b939ff109009">
+				<argument
+				argname="sLabel"
+				id="e6f95835-75dc-4e9f-8689-fade6051deec">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PFI80x Local I/O
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -342,7 +382,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						IOB800
+						IOB800(x1)
 					</argvalue>
 				</argument>
 				<argument
@@ -390,6 +430,21 @@ rxversion="8.3">
 						Accessories
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelAccessoriesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -813,7 +868,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						IOB800 - 1
+						IOB800(x1)
 					</argvalue>
 				</argument>
 			</arguments>

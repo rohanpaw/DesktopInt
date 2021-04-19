@@ -85,11 +85,18 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            //Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            //Delay.Milliseconds(0);
+            
+            // PFI Local I/O
+            Libraries.Devices_Functions.SelectInventoryGridRow("1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
+            Libraries.Devices_Functions.AddDevicesfromGallery("IOB800(x1)", "");
             Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
@@ -103,10 +110,10 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPanelCalculationsTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.276", "Standby Current(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.305", "Standby Current(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.426", "Alarm Current(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.634", "Alarm Current(A)");
             Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verifyBatteryStandby("0.513", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
@@ -121,11 +128,21 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("IOB800(x1)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
+            // PFI Local I/O
+            Libraries.Devices_Functions.SelectInventoryGridRow("1");
             Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800(x2)", "Accessories");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
@@ -139,10 +156,10 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verifyAlarmLoad("1.258", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.276", "Standby Current(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.334", "Standby Current(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.426", "Alarm Current(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.842", "Alarm Current(A)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -151,7 +168,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("IOB800-2");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("IOB800(x2)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
@@ -172,23 +189,23 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.426", "Alarm Current(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("IOB800-1");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("IOB800-1");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnDeleteButton();
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnDeleteButton();
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelCalculationsTab();
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnPanelCalculationsTab();
+            //Delay.Milliseconds(0);
             
             //Libraries.PSULoad_Functions.verifyBatteryStandby("0.276", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             //Delay.Milliseconds(0);
@@ -196,13 +213,13 @@ namespace TestProject.Recording_Modules
             //Libraries.PSULoad_Functions.verifyAlarmLoad("0.426", ValueConverter.ArgumentFromString<bool>("isSecondPSU", "False"), "PFI");
             //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.276", "Standby Current(A)");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.276", "Standby Current(A)");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.426", "Alarm Current(A)");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.verifyLoadingDetailsValue("0.426", "Alarm Current(A)");
+            //Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(41));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.SiteNode' at Center.", repo.ProfileConsys1.SiteNodeInfo, new RecordItemIndex(46));
             //repo.ProfileConsys1.SiteNode.Click();
             //Delay.Milliseconds(200);
             

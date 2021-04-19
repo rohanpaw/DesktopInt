@@ -110,7 +110,7 @@ namespace TestProject.Recording_Modules
             //Delay.Milliseconds(0);
             
             // Other Slot Cards  (2 of 18)
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (2 of");
+            Libraries.Common_Functions.ClickOnNavigationTreeItemForSlotCard("Other Slot Cards  (2");
             Delay.Milliseconds(60000);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCH800 5.0A", "Slot Cards", "PFI");
@@ -123,7 +123,7 @@ namespace TestProject.Recording_Modules
             //Delay.Milliseconds(0);
             
             // Other Slot Cards  (3 of 18)
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (3 of");
+            Libraries.Common_Functions.ClickOnNavigationTreeItemForSlotCard("Other Slot Cards  (3 of");
             Delay.Milliseconds(60000);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -132,14 +132,14 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnShoppingListTab();
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Other Slot Cards");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnShoppingListTab();
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.clickOnShoppingListTab();
+            //Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "3"));
             Delay.Milliseconds(0);
@@ -180,19 +180,19 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("POS800-S", "Accessories", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("IOB800", "Accessories", "PFI");
+            Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("PCS800", "Accessories", "PFI");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("FB800", "Accessories", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Backplane  3/3");
+            Libraries.Common_Functions.ClickOnNavigationTreeItemForSlotCard("Backplane  3/3");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Backplane  3/3");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Other Slot Cards  (13 of 18)");
+            Libraries.Common_Functions.ClickOnNavigationTreeItemForSlotCard("Other Slot Cards  (13");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -228,31 +228,31 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("POS800-S-1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("POS800-S - 1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("POS800-S-2");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("POS800-S - 2");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("POS800-S-3");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("POS800-S - 3");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("POS800-S-4");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("POS800-S - 4");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("POS800-S-5");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("POS800-S - 5");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnDeleteButton();

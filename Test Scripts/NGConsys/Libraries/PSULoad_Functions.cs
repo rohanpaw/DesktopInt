@@ -1114,11 +1114,11 @@ namespace TestProject.Libraries
 			//Open excel sheet and read it values,
 			Excel_Utilities.OpenExcelFile(sFileName,sAddPanelandDevicesSheet);
 			
-			// Count number of rows in excel and store it in rows variable
 			int rows= Excel_Utilities.ExcelRange.Rows.Count;
 			
 			// Declared string type
 			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expected24VPSU,expected2nd24VPSU,expected3rd24VPSU,expected4th24VPSU;
+			// Count number of rows in excel and store it in rows variable
 			string sType,ModelNumber1,sLabelName1,sType1,LoadingDetailsName,ModelNumber2;
 			int rowNumber;
 			
@@ -5188,15 +5188,15 @@ namespace TestProject.Libraries
 				// Verify Alarm load value
 				//verifyAlarmLoad(sExpectedAlarmLoad,false,PanelType);
 				
-				//=======================This 2 lines should be removed after defect 3270 fix===========================================
-				
-				// Click on Site node
-					Common_Functions.ClickOnNavigationTreeItem("Site");
-					
-				// Click on Loop A node
-				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-				
-				//=======================This 2 lines should be removed after defect 3270 fix===========================================
+//				//=======================This 2 lines should be removed after defect 3270 fix===========================================
+//				
+//				// Click on Site node
+//					Common_Functions.ClickOnNavigationTreeItem("Site");
+//					
+//				// Click on Loop A node
+//				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+//				
+//				//=======================This 2 lines should be removed after defect 3270 fix===========================================
 				
 				Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 				Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
@@ -5240,13 +5240,14 @@ namespace TestProject.Libraries
 				
 					
 					// Verify Battery Standby load value
-					verifyBatteryStandby(sExpectedBatteryStandby,true,PanelType);
+					//verifyBatteryStandby(sExpectedBatteryStandby,true,PanelType);
 					
 					// Verify Alarm load value
 					//verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
 					
 					//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 					//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandbyOnAddingPSU,sStandbyLoadingDetail);
+					Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 					Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 				
 					// Click on Properties tab
@@ -5281,13 +5282,13 @@ namespace TestProject.Libraries
 						Common_Functions.clickOnPanelCalculationsTab();
 					
 						// Verify Battery Standby load value
-						verifyBatteryStandby(sExpectedBatteryStandby,true,PanelType);
+						//verifyBatteryStandby(sExpectedBatteryStandby,true,PanelType);
 						
 						// Verify Alarm load value
 						//verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
 						
 						//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
-						//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+						Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 						Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 				
 						// Click on Properties tab
@@ -5319,14 +5320,14 @@ namespace TestProject.Libraries
 					
 						
 						// Verify Battery Standby load value
-						verifyBatteryStandby(sExpectedBatteryStandby,true,PanelType);
+						//verifyBatteryStandby(sExpectedBatteryStandby,true,PanelType);
 						
 						// Verify Alarm load value
 						//verifyAlarmLoad(sExpectedAlarmLoad,true,PanelType);
 						
 						
 						//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
-						//Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
+						Devices_Functions.verifyLoadingDetailsValue(sExpectedBatteryStandby,sStandbyLoadingDetail);
 						Devices_Functions.verifyLoadingDetailsValue(sExpectedAlarmLoad,sAlarmLoadingDetail);
 						
 						// Click on Properties tab
@@ -6806,7 +6807,8 @@ namespace TestProject.Libraries
 				Common_Functions.ClickOnNavigationTreeItem("Site");
 				
 				// Delete panel using PanelNode details from excel sheet
-				Panel_Functions.DeletePanel(1,PanelNode,1);
+				//Commenting below line for delete panel as we need to verify for reopen project
+				//Panel_Functions.DeletePanel(1,PanelNode,1);
 				
 			}
 			//Close opened excel sheet

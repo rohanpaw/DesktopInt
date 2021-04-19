@@ -113,8 +113,8 @@ namespace TestProject.Recording_Modules
             Delay.Milliseconds(0);
             
             // Adding this step as object ref error occurs
-            Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.AddDevicesfromGallery("801 CH", "Detectors");
+            //Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("1", "SKU", "555.800.064");
             Delay.Milliseconds(0);

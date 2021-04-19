@@ -190,7 +190,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop-A (0 of 125)
+						Built-in Loop-A (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -215,7 +215,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop-B (0 of 125)
+						Built-in Loop-B (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -240,7 +240,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop-C (0 of 125)
+						Built-in Loop-C (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -265,7 +265,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Built-in Loop-D (0 of 125)
+						Built-in Loop-D (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -624,7 +624,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-E (0 of 125)
+						PLX800-E (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -649,7 +649,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-F (0 of 125)
+						PLX800-F (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -674,7 +674,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-G (0 of 125)
+						PLX800-G (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -699,7 +699,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-H (0 of 125)
+						PLX800-H (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1277,7 +1277,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-6 (0 of 125)
+						PLX800-6 (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1302,7 +1302,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-7 (0 of 125)
+						PLX800-7 (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1327,7 +1327,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-8 (0 of 125)
+						PLX800-8 (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1352,7 +1352,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						TEXT-5 (0 of 125)
+						TEXT-5 (0 of 125
 					</argvalue>
 				</argument>
 			</arguments>

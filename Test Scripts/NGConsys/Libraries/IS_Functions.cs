@@ -127,6 +127,8 @@ namespace TestProject.Libraries
 			string sType, sLabelName,ExpectedMaxISUnits,ChangedValue,PanelType;
 			int noOfDevices = 0;
 			PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[4,7]).Value.ToString();
+			
+			
 			// For loop to iterate on data present in excel
 			for(int i=8; i<=rows; i++)
 			{
@@ -156,11 +158,17 @@ namespace TestProject.Libraries
 				//Click on Physical layout tab
 				Common_Functions.clickOnPhysicalLayoutTab();
 				
+				Common_Functions.clickOnPanelCalculationsTab();
+				
 				//To call verifyMaxISUnits method and verify max IS units value
 				Report.Log(ReportLevel.Info,"Verification of Maximum IS Units on addition of devices");
 				verifyMaxISUnitsMultipleDevices(ExpectedMaxISUnits, noOfDevices, PanelType);
+				
+				
 				//Devices_Functions.verifyMaxLoadingDetailsValue(ExpectedMaxISUnits,sISUnitsLoadingDetail);
 				Report.Log(ReportLevel.Info, "Verified Maximum IS Units.");
+				
+				Common_Functions.clickOnPropertiesTab();
 				
 				//Click on Points tab
 				Common_Functions.clickOnPointsTab();

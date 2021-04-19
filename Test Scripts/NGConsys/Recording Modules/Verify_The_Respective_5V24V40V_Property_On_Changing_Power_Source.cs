@@ -97,7 +97,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.205", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.100", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -142,7 +142,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.224", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.119", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -190,7 +190,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("1.323", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.205", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.100", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -235,7 +235,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("1.323", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.205", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.119", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");
@@ -283,7 +283,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyLoadingDetailsValue("1.211", "5V Rail(A)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.205", "24V Rail(A)");
+            Libraries.Devices_Functions.verifyLoadingDetailsValue("0.100", "24V Rail(A)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyLoadingDetailsValue("0.160", "40V Rail(A)");

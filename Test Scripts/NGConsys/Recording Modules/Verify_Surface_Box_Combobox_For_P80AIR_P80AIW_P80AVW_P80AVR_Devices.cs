@@ -107,16 +107,16 @@ namespace TestProject.Recording_Modules
             //Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("S-BOXR Shallow box wallsdr Red", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             //Delay.Milliseconds(0);
             
-            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.011", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescriptionOnReopen("557.080.011", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.008", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescriptionOnReopen("557.080.008", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.012", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescriptionOnReopen("557.080.012", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
-            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.080.007", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescriptionOnReopen("557.080.007", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             Delay.Milliseconds(0);
             
         }

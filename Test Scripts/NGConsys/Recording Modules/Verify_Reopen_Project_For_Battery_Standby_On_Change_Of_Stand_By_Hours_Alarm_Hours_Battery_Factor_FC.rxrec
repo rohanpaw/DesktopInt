@@ -37,7 +37,7 @@ rxversion="8.3">
 		</explicitdelayitem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="ReopenProjectForDifferentProjectType"
 		namespace="TestProject.Libraries"
@@ -66,6 +66,31 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						Express Projects (*.pjl)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ReopenProject"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="38aaf23f-8b57-46c2-9efa-0625dbde1f99">
+				<argument
+				argname="sProjectName"
+				id="40172355-5f70-49e6-8c7a-1bc1e2723cf0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						TC_71697
 					</argvalue>
 				</argument>
 			</arguments>
@@ -189,7 +214,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						37.8
+						37.86
 					</argvalue>
 				</argument>
 				<argument

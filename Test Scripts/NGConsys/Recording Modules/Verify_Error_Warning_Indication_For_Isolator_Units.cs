@@ -109,7 +109,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPhysicalLayoutTab();
             Delay.Milliseconds(0);
             
-            Libraries.IS_Functions.VerifyIsolatorUnitsAndIndicator("100", "PINK", "FIM");
+            Libraries.IS_Functions.VerifyIsolatorUnitsAndIndicator("100", "YELLOW", "FIM");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(11));

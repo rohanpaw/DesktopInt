@@ -771,11 +771,64 @@ namespace TestProject.Libraries
 		 * Parameter/Arguments:
 		 * Output:
 		 * Function Owner: Purvi Bhasin
-		 * Last Update : 8/8/2019
+		 * Last Update : 8/8/2019 
+		 * Alpesh Dhakad : 12/2/2021 - Updated script for adding Panel
 		 ********************************************************************/
 		[UserCodeMethod]
-		public static void AddPSUDuringPanelSelection(string sPSU,string sSecondPSU)
+		public static void AddPanelAndPSUDuringPanelSelection(string PanelNames,string sPSU,string sSecondPSU)
 		{
+			
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+				
+				//string PanelNameWithSpace=splitPanelNames[i];
+				PanelName=PanelNames.Replace(" ",String.Empty);
+			
+				// Added this line on 27/06/2020 to select panel with generic xpath
+				ModelNumber = PanelName;
+				
+				if(PanelName.StartsWith("P"))
+				{
+					sPanelLabelIndex ="5";
+				}
+				else if(PanelName.StartsWith("MZX"))
+				{
+					sPanelLabelIndex ="5";
+				}
+				else
+				{
+					sPanelLabelIndex ="7";
+				}
+							
+				repo.FormMe.btn_AllGalleryDropdown.Click();
+				repo.ContextMenu.txt_SelectDevice.Click();
+				
+				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
+				iAddress=1;
+				Address =iAddress.ToString();
+				repo.ContextMenu.lstPanelAddress.Click();
+				
+				if(repo.AddANewPanel.AddNewPanelContainer.txt_LabelInfo.Exists())
+				{
+					repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				}
+				else	
+				{
+					sPanelLabelIndex ="5";
+					repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				}
+				
+					
+				//repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				Label="Node"+iAddress;
+				
+				//Added this step after 43 build update
+				Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				
+				Keyboard.Press(Label);
+			
+			
+			
 			//Before using this User code add AddPanelAndAddCPUAndPSU
 			repo.AddANewPanel.cmb_PowerSupply1.Click();
 			
@@ -796,6 +849,7 @@ namespace TestProject.Libraries
 			repo.AddANewPanel.ButtonOK.Click();
 			
 		}
+		
 		
 		/******************************************************************************************
 		 * Function Name: VerifyValueOf2ndPSU
@@ -987,7 +1041,8 @@ namespace TestProject.Libraries
 				{
 					sPanelLabelIndex ="7";
 				}
-				repo.ProfileConsys1.btnDropDownPanelsGallery.Click();
+				//repo.ProfileConsys1.btnDropDownPanelsGallery.Click();
+				repo.FormMe.btn_AllGalleryDropdown.Click();
 				
 				repo.ContextMenu.txt_SelectPanelFC.Click();
 				

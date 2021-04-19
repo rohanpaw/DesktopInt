@@ -490,21 +490,25 @@ namespace TestProject.Libraries
 				sRow=(i-7).ToString();
 				string sDeviceName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
 				string sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				string sLabelName = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				
 				AddDevicesfromGallery(sDeviceName,sType);
 				
 				string state =  ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
 				//VerifyGalleryItem(sType,sDeviceName,state);
 				
-				if(sRow.Equals("1"))
-				{
-					repo.FormMe.InventoryGridFirstRow.Click();
-				}
-				else
-				{
-					//repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
-					repo.FormMe.InventoryGridRowForEXI.Click();
-				}
+//				if(sRow.Equals("1"))
+//				{
+//					repo.FormMe.InventoryGridFirstRow.Click();
+//				}
+//				else
+//				{
+//					//repo.ProfileConsys1.PanelInvetoryGrid.InventoryGridRow.Click();
+//					repo.FormMe.InventoryGridRowForEXI.Click();
+//				}
 				
+				SelectRowUsingLabelNameForEXIDevice(sLabelName);
+					
 				string CableCapacitanceValue =  ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
 				repo.ProfileConsys1.cell_CableCapacitance.Click();
 				string capacitance=repo.ProfileConsys1.txt_CableCapacitance.TextValue;
@@ -3062,7 +3066,7 @@ namespace TestProject.Libraries
 				
 				// Retrieve value alarm load
 				//actualAlarmLoad = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
-				actualAlarmLoad = repo.FormMe.txt_PropertiesTextValue.TextValue;
+				actualAlarmLoad = repo.FormMe.txt_AlarmLoad.TextValue;
 
 				
 				int.TryParse(actualAlarmLoad, out Value);
@@ -3078,7 +3082,7 @@ namespace TestProject.Libraries
 			else if((rangeState.Equals("InvalidRange")))
 			{
 				//string initialValue = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
-				string initialValue = repo.FormMe.txt_PropertiesTextValue.TextValue;
+				string initialValue = repo.FormMe.txt_AlarmLoad.TextValue;
 				
 				int.TryParse(initialValue,out revertTo);
 				Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+AlarmLoad +"{ENTER}");
@@ -3087,7 +3091,7 @@ namespace TestProject.Libraries
 				repo.FormMe.cell_Properties.Click();
 				
 				//string revertedValue = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
-				string revertedValue = repo.FormMe.txt_PropertiesTextValue.TextValue;
+				string revertedValue = repo.FormMe.txt_AlarmLoad.TextValue;
 				
 				int.TryParse(revertedValue, out actualValue);
 				if(actualValue==revertTo)
@@ -3108,7 +3112,7 @@ namespace TestProject.Libraries
 				repo.FormMe.cell_Properties.Click();
 				
 				//string revertedValue = repo.ProfileConsys1.PARTItemsPresenter.txt_DayMatchesNight.TextValue;
-				string revertedValue = repo.FormMe.txt_PropertiesTextValue.TextValue;
+				string revertedValue = repo.FormMe.txt_AlarmLoad.TextValue;
 				int.TryParse(revertedValue,out actualValue);
 				if(actualValue==expectedResult)
 				{
@@ -9304,9 +9308,76 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
 		}
 		
+		/*****************************************************************************************************************************************
+		 * Function Name: ChangeCableCapacitanceForEXI
+		 * Function Details: To change cable capacitance
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 11/02/2021
+		 *****************************************************************************************************************************************/
+		// Change cable capacitance method
+		[UserCodeMethod]
+		public static void ChangeCableCapacitanceForEXI(int fchangeCableCapacitance, string sLabelName)
+		{
+			//Click on Points tab
+			Common_Functions.clickOnPointsTab();
+			
+			
+			// Click on Loop A node
+			Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+			
+			SelectRowUsingLabelNameForEXIDevice(sLabelName);
+			
+			//Click on cable capacitance cell
+			repo.ProfileConsys1.cell_CableCapacitance.Click();
+			
+			//Change the value of cable length
+			Keyboard.Press("{LControlKey down}{Akey}{LControlKey up}"+fchangeCableCapacitance + "{Enter}");
+			
+			// Click on Panel node
+			Common_Functions.ClickOnNavigationTreeExpander("Node");
+			
+			Delay.Duration(1000, false);
+		}
 		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingModelNameFromInventoryTab
+		 * Function Details: To select item from inventory grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 12/02/2021
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingModelNameFromInventoryTab(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_ModelNameForInventory.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with model name name " + sLabel+" selected");
+		}
 		
-		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingLabelNameForAPM
+		 * Function Details: To select item from grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad 
+		 * Last Update : 18/02/2021
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingLabelNameForAPM(string sLabel)
+		{
+			sLabelName = sLabel;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_LabelNameForAPM.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+		}
 	}
 }
 

@@ -1336,9 +1336,9 @@ namespace TestProject.Libraries
 			
 			if (Save)
 			{
-				if(repo.FormMe2.SelfInfo.Exists())
+				if(repo.SaveConfirmationWindowFC.SelfInfo.Exists())
 				{
-					repo.FormMe2.ButtonYes.Click();
+					repo.SaveConfirmationWindowFC.btnYes_SaveConfirmation.Click();
 					Report.Log(ReportLevel.Success, "Save confirmation asked");
 					
 					if(repo.ProjectChangeDescription.SelfInfo.Exists())
@@ -1348,7 +1348,7 @@ namespace TestProject.Libraries
 						repo.ProjectChangeDescription.btn_OK.Click();
 					}
 					
-					if(repo.SaveConfirmationWindow.SelfInfo.Exists())
+					if(repo.SaveConfirmationWindowFC.SelfInfo.Exists())
 					{
 						
 //						string actualDirPath= Common_Functions.GetDirPath();
@@ -1359,9 +1359,9 @@ namespace TestProject.Libraries
 //						repo.SaveConfirmationWindow.txt_Path.PressKeys(sSaveProjectDirPath);
 //						repo.SaveConfirmationWindow.txt_Path.PressKeys("{Return}");
 						
-						repo.SaveConfirmationWindow.txt_ProjectName.Click();
-						repo.SaveConfirmationWindow.txt_ProjectName.PressKeys(sProjectName);
-						repo.SaveConfirmationWindow.ButtonSave.Click();
+						repo.SaveConfirmationWindowFC.txt_ProjectName.Click();
+						repo.SaveConfirmationWindowFC.txt_ProjectName.PressKeys(sProjectName);
+						repo.SaveConfirmationWindowFC.ButtonSave.Click();
 						
 					}
 				}
@@ -1376,9 +1376,9 @@ namespace TestProject.Libraries
 			{
 				if(SaveConfirmation)
 				{
-					if(repo.FCDesignerCloseWindow.btn_NoInfo.Exists())
+					if(repo.SaveConfirmationWindowFC.btnNo_SaveConfirmationInfo.Exists())
 					{
-						repo.FCDesignerCloseWindow.btn_No.Click();
+						repo.SaveConfirmationWindowFC.btnNo_SaveConfirmation.Click();
 						Report.Log(ReportLevel.Success, "Save confirmation asked");
 						
 					}
@@ -1422,26 +1422,69 @@ namespace TestProject.Libraries
 					
 					string actualDirPath= Common_Functions.GetDirPath();
 					string sSaveProjectDirPath = actualDirPath+ "NGDesigner Saved Projects";
-					repo.SaveFCConfirmationWindow.Save_Open_Window.Click();
+					repo.SaveConfirmationWindowFC.Save_Open_Window.Click();
 					
 					sProjectName= sSaveProjectDirPath + "\\"+ sProjectName;
 					
-					repo.SaveFCConfirmationWindow.txt_Path.PressKeys(sProjectName);
+					repo.SaveConfirmationWindowFC.txt_ProjectName.PressKeys(sProjectName);
 					
 					
 					//repo.SaveConfirmationWindow.txt_Path.PressKeys("{Return}");
 					
 					//   	repo.SaveConfirmationWindow.txt_ProjectName.Click();
 					//	repo.SaveConfirmationWindow.txt_ProjectName.PressKeys(sProjectName);
-					repo.SaveFCConfirmationWindow.ButtonSave.Click();
+					repo.SaveConfirmationWindowFC.ButtonSave.Click();
 					
 					
 				}
 			
 		}
 		
-		
-		
+		/****************************************************************************************************
+		 * Function Name: ClickOnNavigationTreeItemForSlotCard
+		 * Function Details: To click on navigation tree item
+		 * Parameter/Arguments: Tree item name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/02/2021
+		 ****************************************************************************************************/
+		[UserCodeMethod]
+		public static void ClickOnNavigationTreeItemForSlotCard(string TreeItemName)
+		{
+			sTreeItem = TreeItemName;
+
+			repo.FormMe.NavigationTreeItemSlotCard.Click();
+			Report.Log(ReportLevel.Info," Tree Item name " +TreeItemName + " is displayed and clicked successfully  ");
+			
+			
+			
+		}
+		/****************************************************************************************************
+		 * Function Name: VerifyNavigationTreeItemText
+		 * Function Details: To verify navigation tree item text
+		 * Parameter/Arguments: Tree Item name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 18/02/2021
+		 ****************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyNavigationTreeItemTextSlotCard(string TreeItemName)
+		{
+			sTreeItem = TreeItemName;
+
+			repo.FormMe.txt_NavigationTreeItemSlotCard.Click();
+//			sTreeItem = TreeItemName;
+//			string ActualText = repo.FormMe.txt_NavigationTreeItemSlotCard.TextValue;
+//			
+//			if(ActualText.Equals(TreeItemName))
+//			{
+//				Report.Log(ReportLevel.Success,"Tree Item " +ActualText+ " text is as displayed as expected");
+//			}
+//			else
+//			{
+//				Report.Log(ReportLevel.Failure,"Tree Item text is displayed as " +ActualText+ "instead of " +TreeItemName);
+//			}
+		}
 	}
 }
 

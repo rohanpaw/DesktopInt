@@ -91,19 +91,19 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("FBI800", "Slot Cards", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "FBI800-1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "FBI800-1");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "SKU", "557.202.845");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "SKU", "557.202.845");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "FBI800");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Model", "FBI800");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "FBI800-3");
+            Libraries.InventoryGrid_Functions.editDeviceLabel("7", "Label", "FBI800-3");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Region name", "FBI800-3");
@@ -118,16 +118,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "FBI800-3");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "FBI800-3");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "SKU", "557.202.844");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "SKU", "557.202.845");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "FBI800");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Model", "FBI800");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
@@ -145,19 +145,19 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromMainProcessorGallery("FBI800", "Slot Cards", "PFI");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "FBI800-1");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "FBI800-1");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "SKU", "557.202.845");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "SKU", "557.202.845");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "FBI800");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Model", "FBI800");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.editDeviceLabel("6", "Label", "FBI800-3");
+            Libraries.InventoryGrid_Functions.editDeviceLabel("7", "Label", "FBI800-3");
             Delay.Milliseconds(0);
             
             Libraries.InventoryGrid_Functions.verifyInventoryDeviceProperty("Region name", "FBI800-3");
@@ -172,16 +172,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Label", "FBI800-3");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Label", "FBI800-3");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "SKU", "557.202.844");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "SKU", "557.202.844");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Model", "FBI800");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Model", "FBI800");
             Delay.Milliseconds(0);
             
-            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("6", "Connection", "Backplane");
+            Libraries.InventoryGrid_Functions.verifyInventoryGridProperties("7", "Connection", "Backplane");
             Delay.Milliseconds(0);
             
         }

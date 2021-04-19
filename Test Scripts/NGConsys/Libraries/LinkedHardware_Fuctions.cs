@@ -68,7 +68,7 @@ namespace TestProject.Libraries
 				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
 				
 				//Click on  node Expander
-				Common_Functions.ClickOnNavigationTreeExpander("Node");
+				//Common_Functions.ClickOnNavigationTreeExpander("Node");
 				
 				// Click on Loop Card node
 				//Common_Functions.ClickOnNavigationTreeExpander(PanelType);
@@ -76,11 +76,22 @@ namespace TestProject.Libraries
 				// Click on Panel node
 				Common_Functions.ClickOnNavigationTreeItem("Node");
 				
+				Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+				
 				//Add parent Device
 				Devices_Functions.AddDevicesfromPanelNodeGallery(ParentDeviceName,ParentDeviceType,PanelType);
 				
 				//Select row of parent Device
-				Devices_Functions.SelectRowUsingLabelNameFromInventoryTab(ParentLabel);
+				if(i==8){
+					Devices_Functions.SelectRowUsingLabelNameForRBUSOneRow(ParentLabel);
+				}
+				else{
+					Devices_Functions.SelectRowUsingLabelNameForRBUS(ParentLabel);
+				}
+				
+				
+				
+				//Devices_Functions.SelectRowUsingModelNameFromInventoryTab(ParentDeviceName);
 				
 				
 				if(!ChildDeviceName.IsEmpty())
@@ -88,6 +99,8 @@ namespace TestProject.Libraries
 					//Select Child Device
 					Devices_Functions.AddDevicesfromPanelNodeGallery(ChildDeviceName,ChildDeviceType,PanelType);
 				}
+				
+				
 				
 			}
 			//Verify Linked Devices are added in Loop A
@@ -104,7 +117,7 @@ namespace TestProject.Libraries
 				expectedLabel2 = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
 				
 				Devices_Functions.VerifyDeviceUsingLabelName(expectedLabel1);
-				Devices_Functions.VerifyDeviceUsingLabelName(expectedLabel1);
+				Devices_Functions.VerifyDeviceUsingLabelName(expectedLabel2);
 			}
 			
 		}
@@ -180,7 +193,8 @@ namespace TestProject.Libraries
 				Devices_Functions.SelectRowUsingLabelName(LabelName);
 				
 				//Click on copy
-				repo.FormMe.btn_Copy.Click();
+				//repo.FormMe.btn_Copy.Click();
+				Common_Functions.clickOnCopyButton();
 				
 				//Click on Loop A
 				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-B");

@@ -112,6 +112,9 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.verifyMinMaxThroughSpinControlForCableLength("100", "1,000");
             Delay.Milliseconds(0);
             
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
@@ -121,6 +124,9 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.ChangeCableLength(ValueConverter.ArgumentFromString<int>("fchangeCableLength", "450"));
             Delay.Milliseconds(0);
             
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
@@ -129,6 +135,9 @@ namespace TestProject.Recording_Modules
             
             Libraries.Devices_Functions.VerifyCableLength("450");
             Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            //Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);

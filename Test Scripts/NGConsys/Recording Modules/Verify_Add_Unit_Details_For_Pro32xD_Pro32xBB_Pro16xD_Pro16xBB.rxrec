@@ -485,7 +485,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Common_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyAndClickNavigationTreeItemText"
 		namespace="TestProject.Libraries"
@@ -503,7 +503,32 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other Slot Cards  (3 of 18)
+						Other Slot Cards  (3 of 18
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItemForSlotCard"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="TreeItemName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Other Slot Cards  (3 of 18
 					</argvalue>
 				</argument>
 			</arguments>
@@ -528,7 +553,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						IOB800-1
+						IOB800(x2)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -568,7 +593,7 @@ rxversion="8.3">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FB800-1
+						Fuse board - 1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -630,7 +655,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="VerifyPanelNodePanelAccessoriesGallery"
 		namespace="TestProject.Libraries"

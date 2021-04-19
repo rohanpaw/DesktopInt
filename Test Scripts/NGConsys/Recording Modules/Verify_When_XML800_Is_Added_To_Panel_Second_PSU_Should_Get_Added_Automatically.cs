@@ -100,43 +100,8 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.SaveProject("55131");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ReopenProject("55131");
+            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
             Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
-            
-            Libraries.Panel_Functions.VerifyValueOf2ndPSUOnReopen("PMM840");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnInventoryTab();
-            Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.tab_Inventory' at Center.", repo.FormMe.tab_InventoryInfo, new RecordItemIndex(12));
-            //repo.FormMe.tab_Inventory.Click();
-            //Delay.Milliseconds(200);
-            
-            //Libraries.Devices_Functions.SelectRowUsingLabelName("XLM800-C");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("XLM800-C");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnDeleteButton();
-            Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(16));
-            //repo.ProfileConsys1.btn_Delete.Click();
-            //Delay.Milliseconds(200);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Panel_Functions.VerifyValueOf2ndPSUOnReopen("None");
-            //Delay.Milliseconds(0);
             
         }
 

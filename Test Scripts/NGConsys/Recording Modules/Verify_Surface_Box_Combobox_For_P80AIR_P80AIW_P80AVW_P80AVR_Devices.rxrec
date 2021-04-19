@@ -302,7 +302,7 @@ rxversion="8.3">
 		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		methodname="SearchDeviceInExportUsingSKUOrDescriptionOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -337,7 +337,7 @@ rxversion="8.3">
 		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		methodname="SearchDeviceInExportUsingSKUOrDescriptionOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -372,7 +372,7 @@ rxversion="8.3">
 		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		methodname="SearchDeviceInExportUsingSKUOrDescriptionOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -407,7 +407,7 @@ rxversion="8.3">
 		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		methodname="SearchDeviceInExportUsingSKUOrDescriptionOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>

@@ -267,7 +267,7 @@ rxversion="8.3">
 		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		methodname="SearchDeviceInExportUsingSKUOrDescriptionOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -302,7 +302,7 @@ rxversion="8.3">
 		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		methodname="SearchDeviceInExportUsingSKUOrDescriptionOnReopen"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -329,6 +329,50 @@ rxversion="8.3">
 					</argvaluetype>
 					<argvalue>
 						True
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="Application_Close"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="25a35bfd-36ee-4578-9424-b0dcb7d66160">
+				<argument
+				argname="Save"
+				id="0c3171f3-096b-478f-80c5-5a25451e5502">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="SaveConfirmation"
+				id="a8262810-174e-423f-8c53-77728ae90174">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="sProjectName"
+				id="1c92cbdb-774b-4523-b4ef-35e9ea851f78">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>

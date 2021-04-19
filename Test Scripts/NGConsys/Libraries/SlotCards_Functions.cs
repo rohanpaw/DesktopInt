@@ -265,6 +265,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 13/05/2019  Alpesh Dhakad - 30/07/2019 - Updated test script as per new build xpaths
+		 * Alpesh Dhakad - 13/02/2021 - Updated test script as per new build xpaths
 		 ********************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifySlotCardsAndBackplanesDistributionWithOnePanel(string sFileName,string sAddDevicesSheet)
@@ -347,7 +348,8 @@ namespace TestProject.Libraries
 				{
 					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					//Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					//Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					Common_Functions.ClickOnNavigationTreeItemForSlotCard(sBackplane1SlotCardName);
 					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
@@ -480,8 +482,10 @@ namespace TestProject.Libraries
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
 					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
-					Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					//Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
+					//Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					Common_Functions.VerifyNavigationTreeItemTextSlotCard(sBackplane1SlotCardName);
+					
 					//Common_Functions.ClickOnNavigationTreeExpander("Backplane  1/3");
 					
 				}
@@ -1101,7 +1105,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : 06/06/2019 Alpesh Dhakad - 30/07/2019 - Updated script as per new build updated xpath
 		 * Alpesh Dhakad - 16/08/2019,19/08/2019,28/08/2019,07/09/2019 & 16/10/2019 - Updated with new navigation tree method, xpath and devices gallery 
-		 * 05/05/2020 - Alpesh Dhakad - Updated script as per new implementation
+		 * 05/05/2020 and 16/02/2021 - Alpesh Dhakad - Updated script as per new implementation
 		 **************************************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void VerifyAdditionOfDevicesInBackplaneWithOnePanel(string sFileName,string sAddDevicesSheet)
@@ -1182,7 +1186,8 @@ namespace TestProject.Libraries
 				{
 					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					//Common_Functions.VerifyNavigationTreeItemText("Backplane");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					//Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					Common_Functions.ClickOnNavigationTreeItemForSlotCard(sBackplane1SlotCardName);
 					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
@@ -1330,7 +1335,8 @@ namespace TestProject.Libraries
 				if(ExpectedBackplane1.Equals("Yes"))
 				{
 					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					//Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					Common_Functions.ClickOnNavigationTreeItemForSlotCard(sBackplane1SlotCardName);
 				//	Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}
@@ -2169,7 +2175,8 @@ namespace TestProject.Libraries
 				{
 					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					//Common_Functions.VerifyNavigationTreeItemText("Backplane");
-					Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					//Common_Functions.VerifyAndClickNavigationTreeItemText(sBackplane1SlotCardName);
+					Common_Functions.ClickOnNavigationTreeItemForSlotCard(sBackplane1SlotCardName);
 					//Common_Functions.ClickOnNavigationTreeExpander("Backplane");
 					
 				}

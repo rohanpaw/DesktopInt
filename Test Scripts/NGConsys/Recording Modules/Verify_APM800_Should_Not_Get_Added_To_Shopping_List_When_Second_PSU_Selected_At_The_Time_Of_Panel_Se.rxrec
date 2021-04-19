@@ -28,7 +28,7 @@ rxversion="8.3">
 	<recorditems>
 		<userrecorditem
 		classname="Panel_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="AddPanelAndAddCPUAndPSU"
 		namespace="TestProject.Libraries"
@@ -74,7 +74,7 @@ rxversion="8.3">
 		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddPSUDuringPanelSelection"
+		methodname="AddPanelAndPSUDuringPanelSelection"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -84,8 +84,18 @@ rxversion="8.3">
 			<arguments
 			id="c759b3d2-e582-497f-a4a8-3dcf42964853">
 				<argument
-				argname="sPSU"
+				argname="PanelNames"
 				id="c285dfe7-88ee-4ab8-ac66-9d17ccc4f512">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MX1000
+					</argvalue>
+				</argument>
+				<argument
+				argname="sPSU"
+				id="27c4f56d-a8a3-4a0e-9b6a-dbf67338067b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -95,7 +105,7 @@ rxversion="8.3">
 				</argument>
 				<argument
 				argname="sSecondPSU"
-				id="27c4f56d-a8a3-4a0e-9b6a-dbf67338067b">
+				id="fe88c180-e067-4da7-bd8c-391557aabb20">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

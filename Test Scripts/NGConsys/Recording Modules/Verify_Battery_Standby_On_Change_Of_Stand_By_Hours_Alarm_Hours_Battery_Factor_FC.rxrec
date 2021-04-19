@@ -90,7 +90,7 @@ rxversion="8.3">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="Application_Close"
+		methodname="Application_CloseFC"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>

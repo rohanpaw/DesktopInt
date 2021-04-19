@@ -184,7 +184,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						7
+						8
 					</argvalue>
 				</argument>
 				<argument
@@ -204,7 +204,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800-E
+						PLX800-F
 					</argvalue>
 				</argument>
 			</arguments>
@@ -398,7 +398,7 @@ mode="Global">
 		classname="Export_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnExportButton"
+		methodname="clickOnExportInventoryButton"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>

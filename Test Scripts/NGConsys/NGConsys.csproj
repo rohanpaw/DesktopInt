@@ -436,6 +436,18 @@
       <UserCode>true</UserCode>
       <id>149a3194-caee-456d-b19d-b25a2aeee041</id>
     </Compile>
+    <Compile Include="Recording Modules\Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800.cs">
+      <BoundTo>5b326560-0921-461c-9488-95930731d6a0</BoundTo>
+      <DependentUpon>Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>85f36d1b-abbb-4db9-bb25-9af93ee2aa3a</id>
+    </Compile>
+    <Compile Include="Recording Modules\Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800.UserCode.cs">
+      <BoundTo>5b326560-0921-461c-9488-95930731d6a0</BoundTo>
+      <DependentUpon>Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>290f7d69-7e8e-431b-aa65-34a4ad1860c2</id>
+    </Compile>
     <Compile Include="Recording Modules\Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.cs">
       <BoundTo>a9f453dd-9eb6-4866-a12f-6744f3fa87ec</BoundTo>
       <DependentUpon>Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec</DependentUpon>
@@ -447,6 +459,18 @@
       <DependentUpon>Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>7ab996b1-735b-469f-9151-c1d44345421d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Reopen_Project_When_XLM800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.cs">
+      <BoundTo>0071dccc-247f-48b0-9b33-e154612dee65</BoundTo>
+      <DependentUpon>Reopen_Project_When_XLM800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9be8125f-0ed5-49d7-a4dc-caa7d88c5790</id>
+    </Compile>
+    <Compile Include="Recording Modules\Reopen_Project_When_XLM800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.UserCode.cs">
+      <BoundTo>0071dccc-247f-48b0-9b33-e154612dee65</BoundTo>
+      <DependentUpon>Reopen_Project_When_XLM800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3b36174e-8451-49f3-8853-966ec0feea10</id>
     </Compile>
     <Compile Include="Recording Modules\Reopen_Remote_LED_Indicator_Property_For_Devices.cs">
       <BoundTo>b9a62ef7-3829-4313-be10-b1c607364429</BoundTo>
@@ -4563,10 +4587,20 @@
       <id>00713d0e-0310-4f06-b5f0-244202668570</id>
       <recordtableid>725d69dc-595d-4c9f-9b3b-b56a57002314</recordtableid>
     </None>
+    <None Include="Recording Modules\Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>5b326560-0921-461c-9488-95930731d6a0</id>
+      <recordtableid>3694c5f6-f927-454e-9994-9e3b6cc6140d</recordtableid>
+    </None>
     <None Include="Recording Modules\Reopen_Cut_Copy_Paste_Option_for_RIM800_And_HVR800.rxrec">
       <id>a9f453dd-9eb6-4866-a12f-6744f3fa87ec</id>
       <recordtableid>d4029ebc-dfbd-43ba-9c84-b12192982322</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Reopen_Project_When_XLM800_Is_Added_To_Panel_Second_PSU_Should_Get_Added_Automatically.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>0071dccc-247f-48b0-9b33-e154612dee65</id>
+      <recordtableid>8324909a-3fb0-4332-8033-5e8a8e8269df</recordtableid>
     </None>
     <None Include="Recording Modules\Reopen_Remote_LED_Indicator_Property_For_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

@@ -94,16 +94,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-A (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-A (0 of 125");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-B (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-B (0 of 125");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-C (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-C (0 of 125");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-D (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("Built-in Loop-D (0 of 125");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -136,16 +136,16 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-E (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-E (0 of 125");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-F (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-F (0 of 125");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-G (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-G (0 of 125");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-H (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-H (0 of 125");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
@@ -199,16 +199,16 @@ namespace TestProject.Recording_Modules
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PLX");
             //Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-6 (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-6 (0 of 125");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-7 (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-7 (0 of 125");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-8 (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("PLX800-8 (0 of 125");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("TEXT-5 (0 of 125)");
+            Libraries.Common_Functions.VerifyAndClickNavigationTreeItemText("TEXT-5 (0 of 125");
             Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='TEXT-5 (0 of 125)') on item 'FormMe2.ItemsHost.TEXT50Of125'.", repo.FormMe2.ItemsHost.TEXT50Of125Info, new RecordItemIndex(44));

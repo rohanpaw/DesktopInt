@@ -277,6 +277,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Poonam Kadam
 		 * Last Update : 05/04/2019  Updated on 02/07/2019 by Alpesh Dhakad : Updated log reports as readable format
 		 * Alpesh Dhakad - 22/10/2019 & 14/11/2019 - Updated column number as per new updated build
+		 * Alpesh Dhakad - 18/02/2021 - Updated column number as per new updated build
 		 **************************************************************************************************************/
 		[UserCodeMethod]
 		public static string getColumnNumberForInventoryGrid(string columnName)
@@ -292,12 +293,12 @@ namespace TestProject.Libraries
 					break;
 					
 				case "Model":
-					columnNumber="4";
+					columnNumber="2";
 					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
 					break;
 					
 				case "Label":
-					columnNumber="5";
+					columnNumber="3";
 					Report.Log(ReportLevel.Success,"Column number is set as " +columnNumber);
 					break;
 					

@@ -141,8 +141,8 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PCH800 5.0A-3");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.verifyDeleteButtonState(ValueConverter.ArgumentFromString<bool>("isReadOnly", "True"));
-            Delay.Milliseconds(0);
+            //Libraries.Common_Functions.verifyDeleteButtonState(ValueConverter.ArgumentFromString<bool>("isReadOnly", "True"));
+            //Delay.Milliseconds(0);
             
             //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ProfileConsys1.btn_Delete' at Center.", repo.ProfileConsys1.btn_DeleteInfo, new RecordItemIndex(21));
             //repo.ProfileConsys1.btn_Delete.Click();
@@ -160,7 +160,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnShoppingListTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "3"));
+            Libraries.Devices_Functions.verifyShoppingList(ValueConverter.ArgumentFromString<int>("ShoppingListDeviceCount", "4"));
             Delay.Milliseconds(0);
             
             Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("PxD", ValueConverter.ArgumentFromString<bool>("sExist", "False"));

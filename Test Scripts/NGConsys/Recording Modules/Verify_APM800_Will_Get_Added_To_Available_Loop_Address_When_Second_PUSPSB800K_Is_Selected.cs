@@ -106,6 +106,9 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingLabelNameForOneRow("APM 800 - 1");
             Delay.Milliseconds(0);
             
+            //Libraries.Devices_Functions.SelectRowUsingLabelNameForAPM("APM 800 - 1");
+            //Delay.Milliseconds(0);
+            
             //Libraries.Devices_Functions.VerifyDeviceUsingLabelName("APM 800 - 1");
             //Delay.Milliseconds(0);
             

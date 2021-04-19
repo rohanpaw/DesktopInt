@@ -232,7 +232,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -263,6 +263,82 @@ rxversion="8.3">
 						Current (DC Units)
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Current (DC Units)
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						278
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="ffe738e9-5007-4188-b8bd-9a110fbf690e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -352,7 +428,7 @@ rxversion="8.3">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyLoadingDetailsValue"
 		namespace="TestProject.Libraries"
@@ -383,6 +459,82 @@ rxversion="8.3">
 						Current (DC Units)
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelCalculationsTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyLoopLoadingDetailsValue"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+				Current (DC Units)
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
+				<argument
+				argname="expectedUnits"
+				id="35a46f7b-e72e-4c9f-b8b3-0721568ba63b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						305
+					</argvalue>
+				</argument>
+				<argument
+				argname="LoadingDetail"
+				id="d6cf3e3a-00b9-426f-a665-fbc55dc306a5">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Built-in Loop-A
+					</argvalue>
+				</argument>
+				<argument
+				argname="ColumnNumber"
+				id="ffe738e9-5007-4188-b8bd-9a110fbf690e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPropertiesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4606595b-9764-48c2-b738-7b49e58b0fac">
 			</arguments>
 		</userrecorditem>
 	</recorditems>

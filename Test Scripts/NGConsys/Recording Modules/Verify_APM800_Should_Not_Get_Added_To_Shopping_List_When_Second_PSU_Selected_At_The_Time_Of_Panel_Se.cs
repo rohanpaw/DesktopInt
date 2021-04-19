@@ -79,10 +79,10 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanelAndAddCPUAndPSU(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX1000", "");
-            Delay.Milliseconds(0);
+            //Libraries.Panel_Functions.AddPanelAndAddCPUAndPSU(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX1000", "");
+            //Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.AddPSUDuringPanelSelection("PSB800", "PSB800-KM");
+            Libraries.Panel_Functions.AddPanelAndPSUDuringPanelSelection("MX1000", "PSB800", "PSB800-KM");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");

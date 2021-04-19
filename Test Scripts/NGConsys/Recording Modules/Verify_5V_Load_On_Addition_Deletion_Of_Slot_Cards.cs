@@ -113,12 +113,21 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("FB800", "Accessories");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PFI80x Local I/O");
+            Delay.Milliseconds(0);
+            
             // AddedIOB800
-            Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800", "Accessories");
+            Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("IOB800(x1)", "Accessories");
             Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("PCS800", "Accessories");
             //Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicefromPanelAccessoriesGallery("POS800-S", "Accessories");
             Delay.Milliseconds(0);
@@ -163,7 +172,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("Fuse board - 1");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("IOB800 - 1");
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("IOB800(x1)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("POS800-S - 1");

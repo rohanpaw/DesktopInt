@@ -116,7 +116,7 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.AddDevicesfromGallery("801 CHEx IS", "Detectors");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelName("Exi800 - 1");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameForEXIDevice("Exi800 - 1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("801 HEx IS", "Detectors");
@@ -157,7 +157,7 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.clickOnPropertiesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.ChangeCableCapacitance(ValueConverter.ArgumentFromString<int>("fchangeCableCapacitance", "90"), "Exi800 - 1");
+            Libraries.Devices_Functions.ChangeCableCapacitanceForEXI(ValueConverter.ArgumentFromString<int>("fchangeCableCapacitance", "90"), "Exi800 - 1");
             Delay.Milliseconds(0);
             
             //Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -171,6 +171,9 @@ namespace TestProject.Recording_Modules
             
             // ACUnits
             Libraries.Devices_Functions.verifyMaxLoopLoadingDetailsValue("104", "Built-in Loop-A", "1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
             //Libraries.AC_Functions.verifyMaxACUnitsValue("104");

@@ -362,7 +362,12 @@ namespace TestProject.Libraries
 //			
 //			}
 			
-			repo.PrintPreview.btn_Maximize.Click();
+			if(repo.PrintPreview.btn_MaximizeInfo.Exists())
+			   {
+			   	repo.PrintPreview.btn_Maximize.Click();
+			   }
+			
+			
 			
 			repo.PrintPreview.PrintPreviewPage.DoubleClick();
 			
@@ -486,7 +491,7 @@ namespace TestProject.Libraries
 				
 				Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
 				
-			
+			Report.Log(ReportLevel.Info,"Export shopping list button clicked successfully");
 			
 		}
 		
@@ -504,6 +509,117 @@ namespace TestProject.Libraries
 		public static void clickOnSearchButton()
 		{
 			repo.PrintPreview.SearchExport1.Click();
+		}
+		
+		/******************************************************************************************************************************************************
+		 * Function Name: clickOnExportInventoryButton
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update :09/02/2021
+		 ******************************************************************************************************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnExportInventoryButton()
+		{
+			repo.FormMe.Export2ndTime.Click();
+			
+			Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfOnly;
+				
+				repo.ContextMenu.ShoppingListInventory.Click();
+				
+				Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+				
+			Report.Log(ReportLevel.Info,"Export inventory button clicked successfully");
+			
+		}
+		
+		/******************************************************************************************************************************************************
+		 * Function Name: clickOnExportButtonOnReopen
+		 * Function Details: 
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/02/2021
+		 ******************************************************************************************************************************************************/
+		
+		[UserCodeMethod]
+		public static void clickOnExportButtonOnReopen()
+		{
+			repo.FormMe.Export2ndTime.Click();
+			
+			Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfOnly;
+				
+				repo.ContextMenu.ShoppingListOnReopen.Click();
+				
+				Ranorex.Plugin.WpfConfiguration.WpfApplicationTrees = Ranorex.Plugin.WpfTreeSelection.WpfImprovedOnly;
+				
+			Report.Log(ReportLevel.Info,"Export shopping list button clicked successfully");
+			
+		}
+		
+		/***********************************************************************************************************
+		 * Function Name: SearchDeviceInExportUsingSKUOrDescriptionOnReopen
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 13/02/2021
+		 ************************************************************************************************************/
+		[UserCodeMethod]
+		public static void SearchDeviceInExportUsingSKUOrDescriptionOnReopen(string sValue,bool sExist)
+		{
+			
+			clickOnExportButtonOnReopen();
+			Delay.Milliseconds(200);
+			
+			repo.PrintPreview.btn_Maximize.Click();
+			
+			repo.PrintPreview.PrintPreviewPage.DoubleClick();
+				
+			// Select the text in SearchProperties text field and delete it
+			Keyboard.Press("{LControlKey down}{Fkey}{LControlKey up}");
+			
+			repo.PrintPreview.btn_Cross.Click();
+			
+			repo.PrintPreview.SearchBox_Export1.Click();
+						
+			//Enter the required Device's SKU no
+			Keyboard.Press(sValue +"{ENTER}");
+			
+			if(sExist)
+			{
+				
+				string ActualValue = repo.PrintPreview.txt_ExportResult.TextValue;
+				
+				repo.PrintPreview.txt_ExportResult.Click();
+				
+				if(ActualValue.Equals(sValue))
+				{
+					Report.Log(ReportLevel.Success,"Device with SKU "+sValue+" is displayed correctly");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device with SKU "+sValue+" is not getting displayed");
+				}
+			}
+			else
+			{
+				if(repo.PrintPreview.NoMatches_InExportInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success,"Device with SKU "+sValue+" is not getting displayed");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure,"Device with SKU "+sValue+" is getting displayed");
+				}
+			}
+			
+			Delay.Milliseconds(300);
+			
+			repo.PrintPreview.btn_CloseB.Click();
+			Delay.Milliseconds(200);
 		}
 		
 	}
