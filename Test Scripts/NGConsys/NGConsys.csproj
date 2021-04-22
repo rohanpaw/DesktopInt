@@ -424,6 +424,18 @@
       <UserCode>true</UserCode>
       <id>d6b30504-290f-40db-8fb6-c5a8295aab67</id>
     </Compile>
+    <Compile Include="Recording Modules\Ranorex3rdSession.cs">
+      <BoundTo>0aa6db2d-946d-4d02-b82f-d445b9752377</BoundTo>
+      <DependentUpon>Ranorex3rdSession.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4be82963-a397-4936-8046-c436c55fc17d</id>
+    </Compile>
+    <Compile Include="Recording Modules\Ranorex3rdSession.UserCode.cs">
+      <BoundTo>0aa6db2d-946d-4d02-b82f-d445b9752377</BoundTo>
+      <DependentUpon>Ranorex3rdSession.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0b212b16-41ab-476c-afea-7eda6a024dea</id>
+    </Compile>
     <Compile Include="Recording Modules\RecordingTest.cs">
       <BoundTo>00713d0e-0310-4f06-b5f0-244202668570</BoundTo>
       <DependentUpon>RecordingTest.rxrec</DependentUpon>
@@ -4581,6 +4593,11 @@
       <id>b89afd1f-57cf-4fc5-9d9a-a3d4681b6a7c</id>
       <recordtableid>ffcac337-4901-4f88-970a-dc4cc97128bb</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Ranorex3rdSession.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>0aa6db2d-946d-4d02-b82f-d445b9752377</id>
+      <recordtableid>936eeed3-512a-4c45-803a-c498048cc20a</recordtableid>
     </None>
     <None Include="Recording Modules\RecordingTest.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

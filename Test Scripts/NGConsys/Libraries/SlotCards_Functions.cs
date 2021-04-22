@@ -296,6 +296,7 @@ namespace TestProject.Libraries
 				
 				// Add panels
 				Panel_Functions.AddPanels(1,PanelName,CPUType);
+		
 				
 				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
 				

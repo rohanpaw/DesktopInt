@@ -57,6 +57,26 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="0079c8d8-7b40-494a-8625-3d750c9b9ab1"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="00ac04a3-a6d6-4d20-8a91-3ae53f3213a6"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -4966,6 +4986,13 @@ rxversion="8.3">
 					value="">
 					</param>
 				</parameters>
+			</testcase>
+			<testcase
+			id="42bd149f-9ab4-4258-a2fa-53029d5a34a6"
+			name="RanorexSession3rd">
+				<description>
+					<![CDATA[Training]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="42d3e4c9-abb5-481e-a2c0-2b64e6918f97"
@@ -14361,6 +14388,12 @@ persisted in panel properties&nbsp;]]>
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="bcdf9e7f-f905-4c77-9f34-9a6189603362"
+			name="Ranorex3rdSession"
+			ref="936eeed3-512a-4c45-803a-c498048cc20a"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="bd512e7b-9496-40b8-a38c-e5c1aabc3951"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -17838,6 +17871,20 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ed66f732-e136-44fe-b023-e80673ca64f9"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="row"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -24917,6 +24964,22 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_High_Power_Loop_Calculation">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="42bd149f-9ab4-4258-a2fa-53029d5a34a6"
+					name="RanorexSession3rd">
+						<testmodule
+						id="0079c8d8-7b40-494a-8625-3d750c9b9ab1"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="ed66f732-e136-44fe-b023-e80673ca64f9"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="bcdf9e7f-f905-4c77-9f34-9a6189603362"
+						name="Ranorex3rdSession">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -25178,34 +25241,10 @@ persisted in panel properties&nbsp;]]>
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0326356e-9f92-4955-b531-f51571009876">
-			</testcontainer>
-			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="405fcb6b-fb0a-45a5-b360-e8602f537671">
-			</testcontainer>
-			<testcontainer
-			id="65302c0c-7a8c-4fb8-bdce-3f7887e5394c">
-			</testcontainer>
-			<testcontainer
-			id="99f2ef92-02c4-4fca-9563-77ae5bce5696">
-			</testcontainer>
-			<testcontainer
-			id="b7618595-1949-4373-bf5c-e474f06cd552">
-			</testcontainer>
-			<testcontainer
-			id="bc57fd3d-61b4-4a19-a6fe-9a03b6224f96">
-			</testcontainer>
-			<testcontainer
-			id="c072cf02-e092-40e6-bada-79fe192fd3dc">
-			</testcontainer>
-			<testcontainer
-			id="d0c34cef-95cd-4083-b02b-d372bc193cc3">
-			</testcontainer>
-			<testcontainer
-			id="d2cdb4f7-be4e-48bd-9b3c-2a8fb55099db">
+			id="42bd149f-9ab4-4258-a2fa-53029d5a34a6">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
