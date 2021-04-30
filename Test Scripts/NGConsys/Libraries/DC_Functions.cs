@@ -2462,6 +2462,144 @@ namespace TestProject.Libraries
 		
 			
 		}
+		/***********************************************************************************************************************
+		 * Function Name: 
+		 * Function Details: 
+		 * Parameter/Arguments: fileName,sAddDeviceSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad 
+		 * Last Update : ]
+		 ***********************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyMTPanelPowerCalculations(string fileName, string sAddDeviceSheet)
+		{
+			
+			ModelNumber=sAddDeviceSheet;
+
+			repo.FormMe.btn_AllGalleryDropdown.Click();
+			//bool test1 = repo.ContextMenu.txt_SelectDevice.EnsureVisible();
+			
+			//Report.Log(ReportLevel.Info, "V "+ test1+ " u");
+	
+			
+//			
+//			repo.FormMe.test_btn_AllGalleryDropdown.Click();
+//			
+//			bool test = repo.ContextMenu.txt_SelectDevice.EnsureVisible();
+//			
+			
+			//	bool test = repo.ContextMenu.txt_SelectDevice.Enabled;
+					
+				//Report.Log(ReportLevel.Info, "V "+ test+ " l");
+	
+			//Report.Log(ReportLevel.Info, "Verified DC "+ deviceCount+ "units for Loop A");
+
+				//repo.FormMe.btn_AllGalleryDropdown.EnsureVisible
+				
+				
+				
+			string[] array2 = { "801 CH", "801 CH Car Park", "801 H" };	
+			
+			IList<Ranorex.Text> list = repo.ContextMenu.ListItemsTextInfo.CreateAdapters<Ranorex.Text>();
+			
+int i=0;			
+			foreach (Ranorex.Text test in list)
+			{
+				if(test.TextValue.Equals(array2[i]))
+				{
+					Report.Info(test.TextValue + "matching");
+					i++;
+				}
+				else
+				{
+					Report.Info(test.TextValue + "Not matching");
+					i++;
+				}
+				Report.Info(test.TextValue);
+			}
+			
+//		//	List<string> intList = new List<string>() { "801 CH",  "bb", "801 CH Car Park - 1", "hhh", "801 H - 4" ,"nn"};
+//   			 List<string> intList2 = new List<string>() {"{Text:801 CH}", "{Text:801 CH Car Park}", "801 H"};
+//       
+//        //for(int i =0; i < intList.Count; i++)
+//            //Console.WriteLine(intList[i]);
+//        int i=0;
+//        foreach (var el in list)
+//           
+//            if(el.Equals(intList2[i]))
+//            {
+//        	Report.Info((el+" = "+intList2[i]+"==>>Matched"));
+//                i++;
+//            }
+//        else{
+//        	Report.Info((el+"-----"+intList2[i]+"==>>not matched"));
+//            i++;
+//        }
+//			
+			
+				
+//			string[] array2 = { "801 CH", "801 CH Car Park", "801 H" };
+//			var values = new HashSet<string>(array2);
+//			
+//			foreach (Ranorex.Text test in list)
+//			{
+//				if(test.TextValue.Equals(array2[i]))
+//				   {
+//				   	Report.Info(test.TextValue  + " is matching ");
+//				   }
+//				else
+//				{
+//					Report.Info(test.TextValue  + " is not matching ");
+//				}
+//				   
+//			}
+				
+				// string[] array2 = { "801 CH", "801 CH Car Park", "801 H" };
+              		//var values = new HashSet<string>(array2);
+              
+              		
+				
+//				foreach (Ranorex.Text device in list)
+//				{
+//				    string result;
+//				    if (array2([i].Contains(device.Element.GetAttributeValueText("text")))
+//				    {
+//				        result = "Match";
+//				    }
+//				    else
+//				    {
+//				        result = "Not Match";
+//				    }
+//				    Report.Info(result);
+//				}
+//						string result;		   
+//              		for (int i = 0; i <list.Count; i++) {
+//							if(test.TextValue.IndexOf[i].Equals(array2[i]))
+//              			   {
+//              			   	result = "Match";
+//              			   }
+//				    else
+//				    {
+//				        result = "Not Match";
+//				    }
+//				    Report.Info(result);
+//              			  
+//				   }
+				   
+			//	Report.Info(test.TextValue + " is member of CategoryList");
+			//}
+				
+		//}
+//			foreach (Ranorex.Text item in list) {
+//				
+//				string list = item.Element.GetAttributeValueText("text");
+//				 Report.Info(item.Text + " is member of CategoryList"); 
+//			
+			
+			
+		
+		
+		}
 		
 	}
 }

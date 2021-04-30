@@ -1348,6 +1348,34 @@ W/AAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				/form[@title='Add a New Panel']//combobox/text[2]
 			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="69c9e3bc-566b-46fe-819a-766b7231f50b"
+			name="AddPanel_Maximize"
+			refimgid="94af6ef4-3980-4586-8ffa-1d871cadb94a"
+			refpath="/form[@title='Add a New Panel']/container[@automationid='PART_Buttons']/button[@automationid='PART_ShowModeSelector']/button[@automationid='PART_Maximize']"
+			searchtimeout="30000ms">
+				/form[@title='Add a New Panel']/container[@automationid='PART_Buttons']/?/?/button[@automationid='PART_Maximize']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="127823f2-6946-44f2-b22e-dfae8f053c74"
+			name="RdoBtn_HighPowerLoop"
+			refimgid="0ba69270-48bc-408d-bc72-61530ff24a0f"
+			searchtimeout="30000ms">
+				/form[@title='Add a New Panel']//radiobutton/text[@text='High Power. The first loop in each pair has the full address range. The second loop in each pair is not used.']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="button"
+			id="4f03ad85-f4e0-425c-8a5a-d70253fec0df"
+			name="btn_OkHighPowerLoop"
+			refimgid="0ba69270-48bc-408d-bc72-61530ff24a0f"
+			searchtimeout="30000ms">
+				/form[@title='Add a New Panel']/container[@caption='']//button[@text='OK']
+			</item>
 			<basepath>
 				/form[@title='Add a New Panel']
 			</basepath>
@@ -1657,6 +1685,23 @@ TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
 			name="ColumnChooserListsText"
 			searchtimeout="30000ms">
 				/contextmenu/contextmenu[@name=$sGalleryName]
+			</item>
+			<item
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="container"
+			id="5db890d4-c2a0-475e-a481-e6d200a37edf"
+			name="ListItems"
+			refpath="/contextmenu/list/container"
+			searchtimeout="30000ms">
+				/contextmenu/?/?/container
+			</item>
+			<item
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="text"
+			id="adb78f65-3f51-406c-ad37-c9a126f971e3"
+			name="ListItemsText"
+			searchtimeout="30000ms">
+				/contextmenu/list/?/?/text
 			</item>
 			<basepath>
 				/contextmenu
@@ -1968,6 +2013,16 @@ W/AAAAAASUVORK5CYII=
 			refpath="/form[@title='Add Devices']/grip[@automationid='PART_DragWidget']/container[@caption='']/button[4]"
 			searchtimeout="30000ms">
 				/form[@title='Add Devices']/grip[@automationid='PART_DragWidget']/container/button[4]
+			</item>
+			<item
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="container"
+			id="107166cc-5f9e-4c79-9671-684c8afe5860"
+			name="AllDevicesContainer"
+			refimgid="787630c8-a597-4537-adcb-846bac95eb27"
+			refpath="/form[@title='Add Devices']/container[1]/list/container[@automationid='PART_ContentContainer']/list/container[1]"
+			searchtimeout="30000ms">
+				/form[@title='Add Devices']/container[1]/list/container[@automationid='PART_ContentContainer']/list/container[1]
 			</item>
 			<basepath>
 				/form[@title='Add Devices']
@@ -14074,6 +14129,13 @@ AAAAAElFTkSuQmCC
 				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption=$ModelNumber]/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']
 			</item>
 			<item
+			capname="container"
+			id="4a3ccaea-acd6-4714-babd-80f5abff3bf2"
+			name="test_btn_AllGalleryDropdown"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption='801 CHEx IS']/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']
+			</item>
+			<item
 			capname="text"
 			id="6b36f1de-1f4a-4f75-8c4f-b965d96a3330"
 			name="SiteNode1"
@@ -14569,7 +14631,7 @@ AAAAAElFTkSuQmCC
 			name="Copy_of_txt_MaxLoadingDetailsValue"
 			refimgid="eba2df63-f1e5-4576-a579-6870d163961d"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Current (DC Units)']/following-sibling::cell//text[3]
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='5V Rail(A)']/following-sibling::cell//text[3]
 			</item>
 			<item
 			capname="progressbar"

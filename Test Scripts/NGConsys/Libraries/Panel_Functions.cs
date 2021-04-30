@@ -213,6 +213,7 @@ namespace TestProject.Libraries
 				}
 				PanelNode = Label+" "+"-"+" "+PanelNameWithSpace;
 				
+				
 				//Commenting below line as for Panel name with Space and hi-fen it is not displaying as it is displaying while adding panel
 				//Validate.AttributeEqual(repo.ProfileConsys1.NavigationTree.VerifyPanelNodeInfo, "Text", PanelNode);
 				Report.Log(ReportLevel.Success, "Panel "+PanelNames+" Added Successfully");
@@ -1486,6 +1487,179 @@ namespace TestProject.Libraries
 				Report.Log(ReportLevel.Success, "Panel "+PanelNames+" Added Successfully");
 			}
 		}
+		}
+		
+		/**********************************************************************************************************************************
+		 * Function Name: AddPanelsHighPowerLoops
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 23/04/2021
+		 **********************************************************************************************************************************/
+		[UserCodeMethod]
+		public static void AddPanelsHighPowerLoops(int NumberofPanels,string PanelNames)
+		{
+			for (int i=0; i<NumberofPanels;i++)
+			{
+				string[] splitPanelNames = PanelNames.Split(',');
+				
+				// Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+				
+				string PanelNameWithSpace=splitPanelNames[i];
+				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
+			
+				// Added this line on 27/06/2020 to select panel with generic xpath
+				ModelNumber = PanelName;
+				
+				if(PanelName.StartsWith("P"))
+				{
+					sPanelLabelIndex ="5";
+				}
+				else if(PanelName.StartsWith("MZX"))
+				{
+					sPanelLabelIndex ="5";
+				}
+				else
+				{
+					sPanelLabelIndex ="7";
+				}
+				
+				//Commened 2 lines on 27/06/2020
+				//repo.ProfileConsys1.btnDropDownPanelsGallery.Click();
+				//repo.ContextMenu.txt_SelectPanel.Click();
+			
+				// Added this line on 27/06/2020 to select panel with generic xpath				
+				repo.FormMe.btn_AllGalleryDropdown.Click();
+				repo.ContextMenu.txt_SelectDevice.Click();
+				
+				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
+				iAddress=i+1;
+				Address =iAddress.ToString();
+				repo.ContextMenu.lstPanelAddress.Click();
+				
+				if(repo.AddANewPanel.AddNewPanelContainer.txt_LabelInfo.Exists())
+				{
+					repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				}
+				else	
+				{
+					sPanelLabelIndex ="5";
+					repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				}
+				
+					
+				//repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				Label="Node"+iAddress;
+				
+				//Added this step after 43 build update
+				Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				
+				
+				Keyboard.Press(Label);
+				
+				repo.AddANewPanel.AddPanel_Maximize.Click();
+				
+				repo.AddANewPanel.RdoBtn_HighPowerLoop.Click();
+				
+				repo.AddANewPanel.btn_OkHighPowerLoop.Click();
+				
+				if(PanelNameWithSpace == "MZX252")
+				{
+					PanelNameWithSpace = "MZX 252";
+				}
+				PanelNode = Label+" "+"-"+" "+PanelNameWithSpace;
+				
+				//Commenting below line as for Panel name with Space and hi-fen it is not displaying as it is displaying while adding panel
+				//Validate.AttributeEqual(repo.ProfileConsys1.NavigationTree.VerifyPanelNodeInfo, "Text", PanelNode);
+				Report.Log(ReportLevel.Success, "Panel "+PanelNames+" Added Successfully");
+			}
+		}
+		
+		/**********************************************************************************************************************************
+		 * Function Name: AddPanelsMT
+		 * Function Details:
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: 
+		 * Last Update : 
+		 **********************************************************************************************************************************/
+		[UserCodeMethod]
+		public static void AddPanelsMT(int NumberofPanels,string PanelName,string sPanelCPU)
+		{
+			for (int i=0; i<NumberofPanels;i++)
+			{
+//				string[] splitPanelNames = PanelNames.Split(',');
+//				
+//				//Click on Site node
+				Common_Functions.ClickOnNavigationTreeItem("Site");
+//				
+//				string PanelNameWithSpace=splitPanelNames[i];
+//				PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
+//			
+				// Added this line on 27/06/2020 to select panel with generic xpath
+				ModelNumber = PanelName;
+				
+				if(PanelName.StartsWith("P"))
+				{
+					sPanelLabelIndex ="5";
+				}
+				else if(PanelName.StartsWith("MZX"))
+				{
+					sPanelLabelIndex ="5";
+				}
+				else
+				{
+					sPanelLabelIndex ="7";
+				}
+				
+				//Commened 2 lines on 27/06/2020
+				//repo.ProfileConsys1.btnDropDownPanelsGallery.Click();
+				//repo.ContextMenu.txt_SelectPanel.Click();
+			
+				// Added this line on 27/06/2020 to select panel with generic xpath				
+				repo.FormMe.btn_AllGalleryDropdown.Click();
+				repo.ContextMenu.txt_SelectDevice.Click();
+				
+				repo.AddANewPanel.AddNewPanelContainer.cmb_Addresses.Click();
+				iAddress=i+1;
+				Address =iAddress.ToString();
+				repo.ContextMenu.lstPanelAddress.Click();
+				
+				if(repo.AddANewPanel.AddNewPanelContainer.txt_LabelInfo.Exists())
+				{
+					repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				}
+				else	
+				{
+					sPanelLabelIndex ="5";
+					repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				}
+				
+					
+				//repo.AddANewPanel.AddNewPanelContainer.txt_Label.Click();
+				Label="Node"+iAddress;
+				
+				//Added this step after 43 build update
+				Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
+				
+				
+				Keyboard.Press(Label);
+				if (!sPanelCPU.IsEmpty())
+				{
+					repo.AddANewPanel.AddNewPanelContainer.cmb_CPU.Click();
+					sCPU=sPanelCPU;
+					repo.ContextMenu.lstPanelCPU.Click();
+				}
+				repo.AddANewPanel.ButtonOK.Click();
+				
+				
+				
+				//Commenting below line as for Panel name with Space and hi-fen it is not displaying as it is displaying while adding panel
+				//Validate.AttributeEqual(repo.ProfileConsys1.NavigationTree.VerifyPanelNodeInfo, "Text", PanelNode);
+				Report.Log(ReportLevel.Success, "Panel "+PanelName+" Added Successfully");
+			}
 		}
 	}
 }

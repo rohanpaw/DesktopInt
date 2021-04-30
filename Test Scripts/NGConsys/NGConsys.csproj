@@ -664,6 +664,18 @@
       <UserCode>true</UserCode>
       <id>ce7daf46-5ff9-4395-a4cc-d1c6989806ea</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_Default_Panel_Calculation_For_High_Powered_Loop.cs">
+      <BoundTo>bd8b4dec-b0f6-455c-ac78-2570220606c5</BoundTo>
+      <DependentUpon>Verify_Default_Panel_Calculation_For_High_Powered_Loop.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ecb1ae3e-28b7-4f0f-8d99-6c6d9b0ef7a3</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Default_Panel_Calculation_For_High_Powered_Loop.UserCode.cs">
+      <BoundTo>bd8b4dec-b0f6-455c-ac78-2570220606c5</BoundTo>
+      <DependentUpon>Verify_Default_Panel_Calculation_For_High_Powered_Loop.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9a84eded-e5ed-452b-8b0d-cbd90c4d4640</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Export_Of_Region_Data_With_Pro16xD_Panel.cs">
       <BoundTo>6e902786-a15d-410c-a43e-4176dc98c116</BoundTo>
       <DependentUpon>Verify_Export_Of_Region_Data_With_Pro16xD_Panel.rxrec</DependentUpon>
@@ -4693,6 +4705,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>1eacd853-1be6-4235-b1a4-a67d50397646</id>
       <recordtableid>ba9786e7-7ae7-46bd-b78c-090a734cff3c</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Default_Panel_Calculation_For_High_Powered_Loop.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>bd8b4dec-b0f6-455c-ac78-2570220606c5</id>
+      <recordtableid>b0164451-6d80-416a-940b-d029cae70c87</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Export_Of_Region_Data_With_Pro16xD_Panel.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

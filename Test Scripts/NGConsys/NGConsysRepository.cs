@@ -4777,6 +4777,9 @@ namespace TestProject
             RepoItemInfo _cmb_powersupply1Info;
             RepoItemInfo _secondpsuvalueInfo;
             RepoItemInfo _firstpsuvalueInfo;
+            RepoItemInfo _addpanel_maximizeInfo;
+            RepoItemInfo _rdobtn_highpowerloopInfo;
+            RepoItemInfo _btn_okhighpowerloopInfo;
 
             /// <summary>
             /// Creates a new AddANewPanel  folder.
@@ -4791,6 +4794,9 @@ namespace TestProject
                 _cmb_powersupply1Info = new RepoItemInfo(this, "cmb_PowerSupply1", ".//combobox/button[@automationid='MinimizeElement']", 30000, null, "e0359135-6677-43ff-8515-f87f2d867442");
                 _secondpsuvalueInfo = new RepoItemInfo(this, "SecondPSUValue", ".//combobox/text[4]", 30000, null, "d4160ea2-4429-46c9-8612-543e2f05d84f");
                 _firstpsuvalueInfo = new RepoItemInfo(this, "FirstPSUValue", ".//combobox/text[2]", 30000, null, "30427679-55a7-4f42-b2bb-6f7a4a667ee3");
+                _addpanel_maximizeInfo = new RepoItemInfo(this, "AddPanel_Maximize", "container[@automationid='PART_Buttons']/?/?/button[@automationid='PART_Maximize']", 30000, null, "69c9e3bc-566b-46fe-819a-766b7231f50b");
+                _rdobtn_highpowerloopInfo = new RepoItemInfo(this, "RdoBtn_HighPowerLoop", ".//radiobutton/text[@text='High Power. The first loop in each pair has the full address range. The second loop in each pair is not used.']", 30000, null, "127823f2-6946-44f2-b22e-dfae8f053c74");
+                _btn_okhighpowerloopInfo = new RepoItemInfo(this, "btn_OkHighPowerLoop", "container[@caption='']//button[@text='OK']", 30000, null, "4f03ad85-f4e0-425c-8a5a-d70253fec0df");
             }
 
             /// <summary>
@@ -4958,6 +4964,78 @@ namespace TestProject
                 get
                 {
                     return _firstpsuvalueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AddPanel_Maximize item.
+            /// </summary>
+            [RepositoryItem("69c9e3bc-566b-46fe-819a-766b7231f50b")]
+            public virtual Ranorex.Button AddPanel_Maximize
+            {
+                get
+                {
+                    return _addpanel_maximizeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AddPanel_Maximize item info.
+            /// </summary>
+            [RepositoryItemInfo("69c9e3bc-566b-46fe-819a-766b7231f50b")]
+            public virtual RepoItemInfo AddPanel_MaximizeInfo
+            {
+                get
+                {
+                    return _addpanel_maximizeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RdoBtn_HighPowerLoop item.
+            /// </summary>
+            [RepositoryItem("127823f2-6946-44f2-b22e-dfae8f053c74")]
+            public virtual Ranorex.Text RdoBtn_HighPowerLoop
+            {
+                get
+                {
+                    return _rdobtn_highpowerloopInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RdoBtn_HighPowerLoop item info.
+            /// </summary>
+            [RepositoryItemInfo("127823f2-6946-44f2-b22e-dfae8f053c74")]
+            public virtual RepoItemInfo RdoBtn_HighPowerLoopInfo
+            {
+                get
+                {
+                    return _rdobtn_highpowerloopInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btn_OkHighPowerLoop item.
+            /// </summary>
+            [RepositoryItem("4f03ad85-f4e0-425c-8a5a-d70253fec0df")]
+            public virtual Ranorex.Button btn_OkHighPowerLoop
+            {
+                get
+                {
+                    return _btn_okhighpowerloopInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btn_OkHighPowerLoop item info.
+            /// </summary>
+            [RepositoryItemInfo("4f03ad85-f4e0-425c-8a5a-d70253fec0df")]
+            public virtual RepoItemInfo btn_OkHighPowerLoopInfo
+            {
+                get
+                {
+                    return _btn_okhighpowerloopInfo;
                 }
             }
 
@@ -5131,6 +5209,8 @@ namespace TestProject
             RepoItemInfo _secondpsu_valueInfo;
             RepoItemInfo _btn_baseselection1Info;
             RepoItemInfo _columnchooserliststextInfo;
+            RepoItemInfo _listitemsInfo;
+            RepoItemInfo _listitemstextInfo;
 
             /// <summary>
             /// Creates a new ContextMenu  folder.
@@ -5174,6 +5254,8 @@ namespace TestProject
                 _secondpsu_valueInfo = new RepoItemInfo(this, "SecondPSU_Value", "list/?/?/text", 30000, null, "4e950e0d-7a39-46ba-8766-1c764f45171b");
                 _btn_baseselection1Info = new RepoItemInfo(this, "btn_BaseSelection1", "?/?/container/?/?/text[@text=$sBase]", 30000, null, "8dbbdb07-0630-4d89-a330-dd864f569ae9");
                 _columnchooserliststextInfo = new RepoItemInfo(this, "ColumnChooserListsText", "contextmenu[@name=$sGalleryName]", 30000, null, "c808c16c-3944-4da4-b7b7-36bd552d3806");
+                _listitemsInfo = new RepoItemInfo(this, "ListItems", "?/?/container", 30000, null, "5db890d4-c2a0-475e-a481-e6d200a37edf");
+                _listitemstextInfo = new RepoItemInfo(this, "ListItemsText", "list/?/?/text", 30000, null, "adb78f65-3f51-406c-ad37-c9a126f971e3");
             }
 
             /// <summary>
@@ -6063,6 +6145,54 @@ namespace TestProject
                     return _columnchooserliststextInfo;
                 }
             }
+
+            /// <summary>
+            /// The ListItems item.
+            /// </summary>
+            [RepositoryItem("5db890d4-c2a0-475e-a481-e6d200a37edf")]
+            public virtual Ranorex.Container ListItems
+            {
+                get
+                {
+                    return _listitemsInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItems item info.
+            /// </summary>
+            [RepositoryItemInfo("5db890d4-c2a0-475e-a481-e6d200a37edf")]
+            public virtual RepoItemInfo ListItemsInfo
+            {
+                get
+                {
+                    return _listitemsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListItemsText item.
+            /// </summary>
+            [RepositoryItem("adb78f65-3f51-406c-ad37-c9a126f971e3")]
+            public virtual Ranorex.Text ListItemsText
+            {
+                get
+                {
+                    return _listitemstextInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItemsText item info.
+            /// </summary>
+            [RepositoryItemInfo("adb78f65-3f51-406c-ad37-c9a126f971e3")]
+            public virtual RepoItemInfo ListItemsTextInfo
+            {
+                get
+                {
+                    return _listitemstextInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -6347,6 +6477,7 @@ namespace TestProject
             RepoItemInfo _txt_modelnumber1Info;
             RepoItemInfo _error_symbol_multiplepointwizardInfo;
             RepoItemInfo _cancel_multiple_point_wizard_dialogwindowInfo;
+            RepoItemInfo _alldevicescontainerInfo;
 
             /// <summary>
             /// Creates a new AddDevices  folder.
@@ -6368,6 +6499,7 @@ namespace TestProject
                 _txt_modelnumber1Info = new RepoItemInfo(this, "txt_ModelNumber1", "container[1]/list/container[@automationid='PART_ContentContainer']//text[@caption=$ModelNumber]", 30000, null, "d21c020b-3846-41ce-8174-73ba1c0f6ecc");
                 _error_symbol_multiplepointwizardInfo = new RepoItemInfo(this, "Error_Symbol_MultiplePointWizard", "container[1]/table[@automationid='gridControl']/container[@automationid='rowPresenterGrid']//row/cell[2]/text/picture", 30000, null, "3973de5a-79b0-4c96-a7f5-cd712894b011");
                 _cancel_multiple_point_wizard_dialogwindowInfo = new RepoItemInfo(this, "Cancel_Multiple_Point_Wizard_DialogWindow", "grip[@automationid='PART_DragWidget']/container/button[4]", 30000, null, "f735127c-343f-48bd-a1b4-5f48b63b7e09");
+                _alldevicescontainerInfo = new RepoItemInfo(this, "AllDevicesContainer", "container[1]/list/container[@automationid='PART_ContentContainer']/list/container[1]", 30000, null, "107166cc-5f9e-4c79-9671-684c8afe5860");
             }
 
             /// <summary>
@@ -6729,6 +6861,30 @@ namespace TestProject
                     return _cancel_multiple_point_wizard_dialogwindowInfo;
                 }
             }
+
+            /// <summary>
+            /// The AllDevicesContainer item.
+            /// </summary>
+            [RepositoryItem("107166cc-5f9e-4c79-9671-684c8afe5860")]
+            public virtual Ranorex.Container AllDevicesContainer
+            {
+                get
+                {
+                    return _alldevicescontainerInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AllDevicesContainer item info.
+            /// </summary>
+            [RepositoryItemInfo("107166cc-5f9e-4c79-9671-684c8afe5860")]
+            public virtual RepoItemInfo AllDevicesContainerInfo
+            {
+                get
+                {
+                    return _alldevicescontainerInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -6936,6 +7092,7 @@ namespace TestProject
             RepoItemInfo _txt_deviceswithoutimageInfo;
             RepoItemInfo _btn_devicesgallerydropdown1Info;
             RepoItemInfo _btn_allgallerydropdownInfo;
+            RepoItemInfo _test_btn_allgallerydropdownInfo;
             RepoItemInfo _sitenode1Info;
             RepoItemInfo _loop_a1Info;
             RepoItemInfo _loop_b1Info;
@@ -7303,6 +7460,7 @@ namespace TestProject
                 _txt_deviceswithoutimageInfo = new RepoItemInfo(this, "txt_DevicesWithoutImage", "?/?/container[@automationid='PART_AutoHideControl']/list/?/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text[@caption=$sDeviceName]", 30000, null, "d7a981eb-bf7e-4bce-b924-13151e412606");
                 _btn_devicesgallerydropdown1Info = new RepoItemInfo(this, "btn_DevicesGalleryDropDown1", "?/?/container[@automationid='PART_AutoHideControl']/list/list[1]/list[$sGalleryIndex]/container[@automationid='PART_ItemsPresenter']/container[@automationid='buttons']/container[@automationid='PART_DropDown']", 60000, null, "d3c40847-c329-45f6-a08b-ab1ef99f5d25");
                 _btn_allgallerydropdownInfo = new RepoItemInfo(this, "btn_AllGalleryDropdown", "progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption=$ModelNumber]/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']", 90000, null, "ce5451cf-a238-43f0-b78a-5a358cf5162c");
+                _test_btn_allgallerydropdownInfo = new RepoItemInfo(this, "test_btn_AllGalleryDropdown", "progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption='801 CHEx IS']/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']", 90000, null, "4a3ccaea-acd6-4714-babd-80f5abff3bf2");
                 _sitenode1Info = new RepoItemInfo(this, "SiteNode1", "progressbar/picture[@automationid='PART_Image']/tree//text", 30000, null, "6b36f1de-1f4a-4f75-8c4f-b965d96a3330");
                 _loop_a1Info = new RepoItemInfo(this, "Loop_A1", "progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\\ Loop-A']", 30000, null, "5ef2233c-dff3-4ed0-8c90-e2f8a85869ed");
                 _loop_b1Info = new RepoItemInfo(this, "Loop_B1", "progressbar/picture[6]/tree/container[8]//text[@caption~'^Built-in\\ Loop-B']", 30000, null, "0af98b21-9a1a-42db-9abf-6a39978b72b9");
@@ -7363,7 +7521,7 @@ namespace TestProject
                 _txt_actualloadingdetailsvalueprecedingInfo = new RepoItemInfo(this, "txt_ActualLoadingDetailsValuePreceding", ".//progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/preceding-sibling::cell//text/text[1]", 90000, null, "4574e3f4-4b90-4cba-81ed-bcc905481055");
                 _txt_maxloadingdetailsvalueprecedingInfo = new RepoItemInfo(this, "txt_MaxLoadingDetailsValuePreceding", ".//progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/preceding-sibling::cell//text[3]", 90000, null, "0d6583e8-1033-49fd-a89d-a000fc93427c");
                 _txt_maxloadingdetailsvalueInfo = new RepoItemInfo(this, "txt_MaxLoadingDetailsValue", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//text[3]", 120000, null, "c3f40fca-afc0-4654-a151-4012e61d599b");
-                _copy_of_txt_maxloadingdetailsvalueInfo = new RepoItemInfo(this, "Copy_of_txt_MaxLoadingDetailsValue", "progressbar//descendant-or-self::*//text[@text='Current (DC Units)']/following-sibling::cell//text[3]", 60000, null, "60c95339-acb7-40bd-9c7e-8a54d7649e34");
+                _copy_of_txt_maxloadingdetailsvalueInfo = new RepoItemInfo(this, "Copy_of_txt_MaxLoadingDetailsValue", "progressbar//descendant-or-self::*//text[@text='5V Rail(A)']/following-sibling::cell//text[3]", 60000, null, "60c95339-acb7-40bd-9c7e-8a54d7649e34");
                 _loadingdetailsprogressbarcolorInfo = new RepoItemInfo(this, "LoadingDetailsProgressbarColor", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell//progressbar", 90000, null, "99d9a410-5c33-4ff5-a73e-52776010ac39");
                 _copy_of_loadingdetailsprogressbarcolorInfo = new RepoItemInfo(this, "Copy_of_LoadingDetailsProgressbarColor", "progressbar//descendant-or-self::*//text[@text='Signal (AC Units)']/following-sibling::cell//progressbar", 60000, null, "4a28a79b-608d-4826-948f-1d29eb2019f9");
                 _txt_actualloadingdetailsvalueafterreopenInfo = new RepoItemInfo(this, "txt_ActualLoadingDetailsValueAfterReopen", "progressbar//descendant-or-self::*//text[@text=$sLoadingDetail]/following-sibling::cell/?/text[1]", 150000, null, "43c10983-3a80-4c6b-b6c2-bc03dd453f58");
@@ -12368,6 +12526,30 @@ namespace TestProject
                 get
                 {
                     return _btn_allgallerydropdownInfo;
+                }
+            }
+
+            /// <summary>
+            /// The test_btn_AllGalleryDropdown item.
+            /// </summary>
+            [RepositoryItem("4a3ccaea-acd6-4714-babd-80f5abff3bf2")]
+            public virtual Ranorex.Container test_btn_AllGalleryDropdown
+            {
+                get
+                {
+                    return _test_btn_allgallerydropdownInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The test_btn_AllGalleryDropdown item info.
+            /// </summary>
+            [RepositoryItemInfo("4a3ccaea-acd6-4714-babd-80f5abff3bf2")]
+            public virtual RepoItemInfo test_btn_AllGalleryDropdownInfo
+            {
+                get
+                {
+                    return _test_btn_allgallerydropdownInfo;
                 }
             }
 

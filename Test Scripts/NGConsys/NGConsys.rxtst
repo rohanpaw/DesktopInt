@@ -5191,6 +5191,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="44f9606e-a6b8-4fd8-babc-8d5c02508975"
+			name="Verify_Default_Panel_Calculation_For_High_Powered_Loop"
+			ref="b0164451-6d80-416a-940b-d029cae70c87"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4553af55-df6d-4198-bc19-781168fa501c"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -12658,6 +12664,26 @@ div.WordSection1
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="a1ec58f5-e322-4465-b44e-a3b8fbfd5360"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a1ecd748-639c-4e34-8e8c-7dee2b8b411c"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -14424,6 +14450,20 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_Main_Processor_24V_Maximum_Value"
 			ref="68cd4554-5a36-401c-ac2f-01ae02bf3f18"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="bda484ae-572d-4fa5-98ea-d36fcee669d2"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="row"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="bdc216b8-eb57-4fcc-b43b-cea0c89115be"
@@ -17757,6 +17797,13 @@ persisted in panel properties&nbsp;]]>
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="ec646c35-7a11-475c-8218-e291baae8cf4"
+			name="Verify_Default_Panel_Calculation_For_High_Powered_Loop">
+				<description>
+					<![CDATA[NGC-3893/T2716]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="ec805f72-8117-430e-9565-c39905106681"
 			name="Verify_Battery_Standby_And_Alarm_Load_On_Addition_Deletion_Of_RBus_Connection"
@@ -24980,6 +25027,22 @@ persisted in panel properties&nbsp;]]>
 						name="Ranorex3rdSession">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="ec646c35-7a11-475c-8218-e291baae8cf4"
+					name="Verify_Default_Panel_Calculation_For_High_Powered_Loop">
+						<testmodule
+						id="a1ec58f5-e322-4465-b44e-a3b8fbfd5360"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="bda484ae-572d-4fa5-98ea-d36fcee669d2"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="44f9606e-a6b8-4fd8-babc-8d5c02508975"
+						name="Verify_Default_Panel_Calculation_For_High_Powered_Loop">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -25244,7 +25307,7 @@ persisted in panel properties&nbsp;]]>
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
 			</testcontainer>
 			<testcontainer
-			id="42bd149f-9ab4-4258-a2fa-53029d5a34a6">
+			id="ec646c35-7a11-475c-8218-e291baae8cf4">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
