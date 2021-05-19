@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800 recording.
+    ///The Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel recording.
     /// </summary>
-    [TestModule("3694c5f6-f927-454e-9994-9e3b6cc6140d", ModuleType.Recording, 1)]
-    public partial class Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800 : ITestModule
+    [TestModule("5331d93d-6744-49a8-8c58-b08bf5f02f84", ModuleType.Recording, 1)]
+    public partial class Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800 instance = new Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800();
+        static Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel instance = new Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800()
+        public Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800 Instance
+        public static Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel Instance
         {
             get { return instance; }
         }
@@ -79,28 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Common_Functions.ReopenProject("54250");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("RIM 800 - 1");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("RIM 800 - 2");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.VerifyDeviceUsingLabelName("RIM 800 - 2");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
+            Libraries.PSULoad_Functions.VerifyDefaultMTPanelPowerCalculation("T_2692_Verify default  calculation value for  5V, 24V Rail and Total System Load for MT2 Panel", "MT2");
             Delay.Milliseconds(0);
             
         }

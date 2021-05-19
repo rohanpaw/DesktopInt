@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800 recording.
+    ///The Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet recording.
     /// </summary>
-    [TestModule("3694c5f6-f927-454e-9994-9e3b6cc6140d", ModuleType.Recording, 1)]
-    public partial class Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800 : ITestModule
+    [TestModule("15cc92e9-5f20-44d3-8936-06479f307719", ModuleType.Recording, 1)]
+    public partial class Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800 instance = new Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800();
+        static Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet instance = new Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800()
+        public Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Reopen_address_should_not_be_occupied_on_loop_card_for_non_addresable_device_HVR800 Instance
+        public static Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet Instance
         {
             get { return instance; }
         }
@@ -79,28 +79,7 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            Libraries.Common_Functions.ReopenProject("54250");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeExpander("PFI");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("RIM 800 - 1");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.SelectRowUsingLabelNameOnReopen("RIM 800 - 2");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.VerifyDeviceUsingLabelName("RIM 800 - 2");
-            //Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.Application_Close(ValueConverter.ArgumentFromString<bool>("Save", "False"), ValueConverter.ArgumentFromString<bool>("SaveConfirmation", "False"), "");
+            Libraries.PSULoad_Functions.VerifyPowerCalculationOnEthernetNodeForMT2Panel("TC_3137_Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet", "MT2");
             Delay.Milliseconds(0);
             
         }

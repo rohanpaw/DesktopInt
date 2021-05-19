@@ -7756,6 +7756,651 @@ namespace TestProject.Libraries
 			Keyboard.Press("{LControlKey down}{Akey}{Delete}{LControlKey up}");
 		}
 		
+		/*****************************************************************************************************************
+		 * Function Name:VerifyDefaultMTPanelPowerCalculation
+		 * Function Details:verify Default MT2 Panel Power Calculation
+		 * Parameter/Arguments: FileName,AddDeviceSheet
+		 * Output:
+		 * Function Owner: Juily Sukalkar
+		 * Last Update : 04/05/2021
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyDefaultMTPanelPowerCalculation(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expectedDefault5V,LoadingDetailName5V,expectedDefault24V,LoadingDetailName24V,expectedDefaultTotalSystemLoad,LoadingDetailNameTotalSystemLoad,expectedDefaultStandbyCurrent,LoadingDetailNameStandbyCurrent,expectedDefaultAlarmCurrent,LoadingDetailNameAlarmCurrent;
+			int rowNumber;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+			    CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				expectedDefault5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				LoadingDetailName5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				expectedDefault24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				LoadingDetailName24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				expectedDefaultTotalSystemLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				LoadingDetailNameTotalSystemLoad= ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				expectedDefaultStandbyCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				LoadingDetailNameStandbyCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				expectedDefaultAlarmCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				LoadingDetailNameAlarmCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				
+				int.TryParse(sRowNumber, out rowNumber);
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanelsMT(1,PanelName,CPUType);
+				
+				
+				// Click on Expander node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+	
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefault5V,LoadingDetailName5V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefault24V,LoadingDetailName24V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultTotalSystemLoad,LoadingDetailNameTotalSystemLoad);
+				
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultStandbyCurrent,LoadingDetailNameStandbyCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedDefaultAlarmCurrent,LoadingDetailNameAlarmCurrent);
+			
+				
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
+				// Delete panel using PanelNode details from excel sheet
+				Panel_Functions.DeletePanel(1,PanelNode,1);
+				
+				
+			}
+			//Close opened excel sheet
+			Excel_Utilities.CloseExcel();
+			
+		}
+		/*****************************************************************************************************************
+		 * Function Name:VerifyPowerCalculationOnEthernetNodeForMT2Panel
+		 * Function Details:Verify Power calculation value for MT2 Panel with Ethernet
+		 * Parameter/Arguments:  FileName,AddDeviceSheet
+		 * Output:
+		 * Function Owner: Juily Sukalkar
+		 * Last Update : 12/05/2021
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyPowerCalculationOnEthernetNodeForMT2Panel(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,ModelNumber,sType,expected5V,LoadingDetailName5V,expected24V,LoadingDetailName24V,expectedTotalSystemLoad,LoadingDetailNameTotalSystemLoad,expectedStandbyCurrent,LoadingDetailNameStandbyCurrent,expectedAlarmCurrent,LoadingDetailNameAlarmCurrent,expectedMinBatterySize,LoadingDetailNameMinBatterySize;
+			int rowNumber;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+			    CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+                ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				expected5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				LoadingDetailName5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				expected24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				LoadingDetailName24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				expectedTotalSystemLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				LoadingDetailNameTotalSystemLoad= ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				expectedStandbyCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				LoadingDetailNameStandbyCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				expectedAlarmCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,17]).Value.ToString();
+				LoadingDetailNameAlarmCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,18]).Value.ToString();
+				expectedMinBatterySize = ((Range)Excel_Utilities.ExcelRange.Cells[i,19]).Value.ToString();
+				LoadingDetailNameMinBatterySize= ((Range)Excel_Utilities.ExcelRange.Cells[i,20]).Value.ToString();
+				
+				
+				int.TryParse(sRowNumber, out rowNumber);
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanelsMT(1,PanelName,CPUType);
+				
+				
+				// Click on Loop Card node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				// Click on Loop Main Processor Node node
+				Common_Functions.ClickOnNavigationTreeItem("Main");
+				
+				//Add Device from Ethernet Gallery
+				//Devices_Functions.AddDevicesfromEthernetGallery(
+				
+				//Add Device from gallery
+				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+				
+				// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+			
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+	
+				Devices_Functions.verifyLoadingDetailsValue(expected5V,LoadingDetailName5V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expected24V,LoadingDetailName24V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedTotalSystemLoad,LoadingDetailNameTotalSystemLoad);
+				
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedStandbyCurrent,LoadingDetailNameStandbyCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedAlarmCurrent,LoadingDetailNameAlarmCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedMinBatterySize,LoadingDetailNameMinBatterySize);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
+				// Delete panel using PanelNode details from excel sheet
+				Panel_Functions.DeletePanel(1,PanelNode,1);
+				
+	//................................................................................................................................................//
+
+                // Add panels using test data in excel sheet
+				Panel_Functions.AddPanelsMTHighPower(1,PanelName,CPUType); 
+                 
+				// Click on Loop Card node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				// Click on Loop Main Processor Node node
+				Common_Functions.ClickOnNavigationTreeItem("Main");
+				
+				
+				//Add Device from gallery
+				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+				
+				// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+	
+				
+				Devices_Functions.verifyLoadingDetailsValue(expected5V,LoadingDetailName5V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expected24V,LoadingDetailName24V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedTotalSystemLoad,LoadingDetailNameTotalSystemLoad);
+				
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedStandbyCurrent,LoadingDetailNameStandbyCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedAlarmCurrent,LoadingDetailNameAlarmCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedMinBatterySize,LoadingDetailNameMinBatterySize);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
+				// Delete panel using PanelNode details from excel sheet
+				Panel_Functions.DeletePanel(1,PanelNode,1);				
+				
+				
+			}
+			//Close opened excel sheet
+			Excel_Utilities.CloseExcel();
+			
+		}
+			
+		/*****************************************************************************************************************
+		 * Function Name:VerifyPowerCalculationOnRepeaterNodeForMT2Panel
+		 * Function Details:Verify Power calculation value for MT2 Panel with Repeater
+		 * Parameter/Arguments:  FileName,AddDeviceSheet
+		 * Output:
+		 * Function Owner: Juily Sukalkar
+		 * Last Update : 13/05/2021
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyPowerCalculationOnRepeaterNodeForMT2Panel(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,ModelNumber,sType,expected5V,LoadingDetailName5V,expected24V,LoadingDetailName24V,expectedTotalSystemLoad,LoadingDetailNameTotalSystemLoad,expectedStandbyCurrent,LoadingDetailNameStandbyCurrent,expectedAlarmCurrent,LoadingDetailNameAlarmCurrent,expectedMinBatterySize,LoadingDetailNameMinBatterySize;
+			int rowNumber; 
+			 
+				for(int i=8; i<=rows; i++)
+			   {
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+			    CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+                ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				expected5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				LoadingDetailName5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				expected24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				LoadingDetailName24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				expectedTotalSystemLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				LoadingDetailNameTotalSystemLoad= ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				expectedStandbyCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				LoadingDetailNameStandbyCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				expectedAlarmCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,17]).Value.ToString();
+				LoadingDetailNameAlarmCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,18]).Value.ToString();
+				expectedMinBatterySize = ((Range)Excel_Utilities.ExcelRange.Cells[i,19]).Value.ToString();
+				LoadingDetailNameMinBatterySize= ((Range)Excel_Utilities.ExcelRange.Cells[i,20]).Value.ToString();
+				
+				
+				int.TryParse(sRowNumber, out rowNumber);
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanelsMT(1,PanelName,CPUType);
+				
+				
+				// Click on Loop Card node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				// Click on Loop Main Processor Node node
+				Common_Functions.ClickOnNavigationTreeItem("Main");
+				
+				
+				//Add Device from gallery
+				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+				
+				// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+	
+				
+				Devices_Functions.verifyLoadingDetailsValue(expected5V,LoadingDetailName5V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expected24V,LoadingDetailName24V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedTotalSystemLoad,LoadingDetailNameTotalSystemLoad);
+				
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedStandbyCurrent,LoadingDetailNameStandbyCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedAlarmCurrent,LoadingDetailNameAlarmCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedMinBatterySize,LoadingDetailNameMinBatterySize);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
+				// Delete panel using PanelNode details from excel sheet
+				Panel_Functions.DeletePanel(1,PanelNode,1); 
+				
+				//.......................................................................................//
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanelsMTHighPower(1,PanelName,CPUType); 
+				
+				// Click on Loop Card node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				// Click on Loop Main Processor Node node
+				Common_Functions.ClickOnNavigationTreeItem("Main");
+				
+				
+				//Add Device from gallery
+				Devices_Functions.AddDevicesfromMainProcessorGallery(ModelNumber,sType,PanelType);
+				
+				// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+	
+				
+				Devices_Functions.verifyLoadingDetailsValue(expected5V,LoadingDetailName5V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expected24V,LoadingDetailName24V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedTotalSystemLoad,LoadingDetailNameTotalSystemLoad);
+				
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedStandbyCurrent,LoadingDetailNameStandbyCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedAlarmCurrent,LoadingDetailNameAlarmCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedMinBatterySize,LoadingDetailNameMinBatterySize);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
+				// Delete panel using PanelNode details from excel sheet
+				Panel_Functions.DeletePanel(1,PanelNode,1); 
+				
+			}
+				 
+			//Close opened excel sheet
+			Excel_Utilities.CloseExcel();
+			
+		}
+				
+		
+		/*****************************************************************************************************************
+		 * Function Name:VerifyPowerCalculationOnSounderCircuitNodeForMT2Panel
+		 * Function Details:Verify Power calculation value for MT2 Panel with Sounder
+		 * Parameter/Arguments:  FileName,AddDeviceSheet
+		 * Output:
+		 * Function Owner: Juily Sukalkar
+		 * Last Update : 13/05/2021
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyPowerCalculationOnSounderCircuitNodeForMT2Panel(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,ModelNumber,sType,expected5V,LoadingDetailName5V,expected24V,LoadingDetailName24V,expectedTotalSystemLoad,LoadingDetailNameTotalSystemLoad,expectedStandbyCurrent,LoadingDetailNameStandbyCurrent,expectedAlarmCurrent,LoadingDetailNameAlarmCurrent,expectedMinBatterySize,LoadingDetailNameMinBatterySize;
+			int rowNumber;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+			    CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+                ModelNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				sType = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				expected5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				LoadingDetailName5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				expected24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				LoadingDetailName24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				expectedTotalSystemLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				LoadingDetailNameTotalSystemLoad= ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				expectedStandbyCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				LoadingDetailNameStandbyCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				expectedAlarmCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,17]).Value.ToString();
+				LoadingDetailNameAlarmCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,18]).Value.ToString();
+				expectedMinBatterySize = ((Range)Excel_Utilities.ExcelRange.Cells[i,19]).Value.ToString();
+				LoadingDetailNameMinBatterySize= ((Range)Excel_Utilities.ExcelRange.Cells[i,20]).Value.ToString();
+				
+				
+				int.TryParse(sRowNumber, out rowNumber);
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanelsMT(1,PanelName,CPUType);
+				
+				
+				// Click on Loop Card node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				
+				
+				//Click on Sounder Circuit Node
+				Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit1");
+				
+				//Add Sounder From Gallery
+				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
+				
+				// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+	
+				
+				Devices_Functions.verifyLoadingDetailsValue(expected5V,LoadingDetailName5V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expected24V,LoadingDetailName24V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedTotalSystemLoad,LoadingDetailNameTotalSystemLoad);
+				
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedStandbyCurrent,LoadingDetailNameStandbyCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedAlarmCurrent,LoadingDetailNameAlarmCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedMinBatterySize,LoadingDetailNameMinBatterySize);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
+				// Delete panel using PanelNode details from excel sheet
+				Panel_Functions.DeletePanel(1,PanelNode,1);               
+				
+				
+//..........................................................................................................................................//
+                  // Add panels using test data in excel sheet
+				Panel_Functions.AddPanelsMTHighPower(1,PanelName,CPUType); 
+				
+				// Click on Loop Card node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				
+				
+				//Click on Sounder Circuit Node
+				Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit1");
+				
+				//Add Sounder From Gallery
+				Devices_Functions.AddDevicesfromGallery(ModelNumber,sType);
+				
+				// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+	
+				
+				Devices_Functions.verifyLoadingDetailsValue(expected5V,LoadingDetailName5V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expected24V,LoadingDetailName24V);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedTotalSystemLoad,LoadingDetailNameTotalSystemLoad);
+				
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedStandbyCurrent,LoadingDetailNameStandbyCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedAlarmCurrent,LoadingDetailNameAlarmCurrent);
+			
+				// CLick on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyLoadingDetailsValue(expectedMinBatterySize,LoadingDetailNameMinBatterySize);
+				
+				// Click on Properties tab
+				Common_Functions.clickOnPropertiesTab();
+				
+				// Delete panel using PanelNode details from excel sheet
+				Panel_Functions.DeletePanel(1,PanelNode,1);
+				
+				
+			}
+			//Close opened excel sheet
+			Excel_Utilities.CloseExcel();
+			
+		}
+		
+		
+		
 	}
 }
 

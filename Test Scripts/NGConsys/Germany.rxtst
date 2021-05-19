@@ -504,9 +504,6 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="9d92d9de-44d5-4920-b835-4c1131b0e32b">
-			</testcontainer>
-			<testcontainer
 			id="c32a791f-aa98-438e-ad07-a446f859b606">
 			</testcontainer>
 		</testconfiguration>

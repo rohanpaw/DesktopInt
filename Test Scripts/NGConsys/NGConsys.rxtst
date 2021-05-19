@@ -367,6 +367,20 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="0444daa2-974f-44db-b723-b2697ce84a3f"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="row"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="04643d41-d70f-4177-81d8-4a38b4d83408"
 			name="Verify_Deletion_Of_Sounders_Connected_To_LPS800">
@@ -458,6 +472,12 @@ rxversion="8.3">
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="05abbe32-4392-49d5-a8e8-bb2bc74cc0a4"
+			name="Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel"
+			ref="5331d93d-6744-49a8-8c58-b08bf5f02f84"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="05c10e2a-d39d-4828-a8f2-ab3070e97184"
@@ -972,6 +992,12 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="0ca49e18-0979-4ea0-be5e-e37af52b757f"
+			name="Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet"
+			ref="15cc92e9-5f20-44d3-8936-06479f307719"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="0cef430e-3bf0-4b34-b299-4bb4ba6c2df3"
 			name="Verify_Current_DC_Units_And_Worst_Case_Indicator_FC"
 			ref="c04f6e17-c585-49b0-ac3c-427cd9432808"
@@ -1146,6 +1172,12 @@ rxversion="8.3">
 			id="0f1bb88f-b902-4b73-b6d0-aaa82535dc20"
 			name="Verify_Alarm_and_Battery_Load_After_Adding_1_2_IOBs"
 			ref="0cdc518c-ba50-453a-b1e8-912b420cd78d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="0f32dd88-3afe-4465-99f7-41a2db331d9a"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -1459,6 +1491,10 @@ rxversion="8.3">
 					value="">
 					</param>
 				</parameters>
+			</testcase>
+			<testcase
+			id="12e76f60-e6f9-41c4-95a1-e36ac6c34058"
+			name="Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet">
 			</testcase>
 			<testmodule
 			id="12fc594c-b149-4d2d-b6eb-fcb92b751835"
@@ -2741,6 +2777,20 @@ rxversion="8.3">
 			name="Acc_Gall_Update_On_Max_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached"
 			ref="d7004e74-b6ad-48ca-9651-bdd5f6064efd"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="23c6e16a-27b4-4667-8595-5902711ccee3"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="row"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="23dae6d1-eca4-4c9e-9a44-ef6a28bdfa47"
@@ -6185,6 +6235,26 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="4fa91629-da99-4169-8985-c8aba52711e9"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4fca1204-78bd-4924-9a90-87f4511cccec"
 			name="Verify_FBI800_card_details"
 			ref="aa209ed5-2360-4a04-b4f0-d223a15560e0"
@@ -6415,6 +6485,10 @@ rxversion="8.3">
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="52541831-8be2-4d88-ba75-b9c0eb527f23"
+			name="Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel">
+			</testcase>
 			<testmodule
 			id="525456af-55e7-45f4-b511-54da93c7e27b"
 			name="Application_Open"
@@ -6432,6 +6506,20 @@ rxversion="8.3">
 					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
 					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
 					variablename="App_Path">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="526c6a44-fcbd-4241-9fba-88c6eaf4fa06"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="row"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -7415,6 +7503,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="5ce3977e-ff71-4483-8474-1f8420b5e787"
+			name="Verify_Power_calculation_value_for_MT2_Panel_with_Sounder"
+			ref="f9d07ed1-8711-41a7-ae0e-feaf817042b8"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="5ce3a6b8-dca3-4a8c-85d9-d368c2b468d6"
 			name="Verify_Impact_of_2nd_PSU_on_Battery_Loading"
@@ -10729,6 +10823,10 @@ MxDesigner]]>
 			ref="79643dcd-8cd5-4d6a-a36d-de046882de58"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="8683f2d0-27e8-4e93-8d91-cb7ba4436e4b"
+			name="Verify_Power_calculation_value_for_MT2_Panel_with_Sounder">
+			</testcase>
 			<testmodule
 			id="86921910-a884-49ba-a4e0-f7371a0b2746"
 			name="Verify_5V_Load_On_Addition_Deletion_Of_Accessories"
@@ -12248,6 +12346,12 @@ MxDesigner]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="9cab81c4-d847-466a-8dba-9da1a6c3ecdd"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="9ccf97d2-14e1-4850-9f81-0601755bda99"
 			name="Verify_The_Functionality_Of_Sounder_Volume_And_Flash_Light_By_Changing_Its_Values_For_FIM"
 			ref="3aa07f72-6e83-443e-8a5a-745f77ecf137"
@@ -12595,6 +12699,26 @@ div.WordSection1
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="9f6a879e-edd5-4333-a940-cfe5dd57dfbd"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="9fef0a2d-da4d-41a4-ab65-5d74213ac406"
 			name="Verify_Error_Warning_Indication_For_Isolator_Units"
 			ref="c4df891b-279a-4098-9434-89cacda6aceb"
@@ -12631,6 +12755,26 @@ div.WordSection1
 			name="Verify_Add_Unit_Details_For_Pro32xD_Pro32xBB_Pro16xD_Pro16xBB"
 			ref="f6bffd3d-cac0-433b-82a2-2c50388c30ed"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a0c49464-6b60-4bf4-90b1-d7ce589a3e58"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="a0dde553-c65f-4616-b7d5-fc55b41c9823"
@@ -13127,6 +13271,10 @@ div.WordSection1
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="a7d25e52-7257-47cb-8855-2e4f0cb577ed"
+			name="Verify_Power_calculation_value_for_MT2_Panel_with_Repeaters">
+			</testcase>
 			<testmodule
 			id="a7f66843-bcc4-4b20-9029-764d8711534a"
 			name="Close_ApplicationFC"
@@ -13425,6 +13573,12 @@ div.WordSection1
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="ae2d7c66-ca65-450b-8c9a-aebc226a1f91"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="ae423bb5-cd64-4149-b7e4-bbc3c041963d"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -13584,6 +13738,26 @@ project]]>
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b0812be8-b513-4f9d-9285-4902a186f951"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="b0972ffb-de91-4861-b098-19fdbc60088c"
@@ -14957,6 +15131,12 @@ persisted in panel properties&nbsp;]]>
 			id="c4ec7ff9-a668-45e9-8819-7de75103d71e"
 			name="Testing123">
 			</testcase>
+			<testmodule
+			id="c500977e-9083-4326-9eff-663de864ef3a"
+			name="Verify_Power_calculation_value_for_MT2_Panel_with_Repeaters"
+			ref="4e203490-48bb-4760-80dd-c2af18623772"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="c52e6dae-b6c6-4683-90ae-ee313985f895"
 			name="Close_Application"
@@ -18030,6 +18210,20 @@ persisted in panel properties&nbsp;]]>
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="efc3b90f-c3e1-4264-a001-42ba1aa2409e"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="row"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="eff55cda-2507-4d8d-9513-76d2ccfba1ce"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -18651,6 +18845,12 @@ persisted in panel properties&nbsp;]]>
 					variablename="App_Path">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="f84a0f61-a8b9-4a36-8806-896fc7352649"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="f8a27eff-4791-4891-9db3-3830d7b5381d"
@@ -25115,6 +25315,86 @@ persisted in panel properties&nbsp;]]>
 						<testmodule
 						id="fe9ee5d7-a318-44e1-9138-9caa8a46fb9d"
 						name="Application_Open">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="52541831-8be2-4d88-ba75-b9c0eb527f23"
+					name="Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel">
+						<testmodule
+						id="a0c49464-6b60-4bf4-90b1-d7ce589a3e58"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="efc3b90f-c3e1-4264-a001-42ba1aa2409e"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="ae2d7c66-ca65-450b-8c9a-aebc226a1f91"
+						name="Close_Application">
+						</testmodule>
+						<testmodule
+						id="05abbe32-4392-49d5-a8e8-bb2bc74cc0a4"
+						name="Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="12e76f60-e6f9-41c4-95a1-e36ac6c34058"
+					name="Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet">
+						<testmodule
+						id="b0812be8-b513-4f9d-9285-4902a186f951"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="0444daa2-974f-44db-b723-b2697ce84a3f"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="0ca49e18-0979-4ea0-be5e-e37af52b757f"
+						name="Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet">
+						</testmodule>
+						<testmodule
+						id="9cab81c4-d847-466a-8dba-9da1a6c3ecdd"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="a7d25e52-7257-47cb-8855-2e4f0cb577ed"
+					name="Verify_Power_calculation_value_for_MT2_Panel_with_Repeaters">
+						<testmodule
+						id="4fa91629-da99-4169-8985-c8aba52711e9"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="23c6e16a-27b4-4667-8595-5902711ccee3"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="c500977e-9083-4326-9eff-663de864ef3a"
+						name="Verify_Power_calculation_value_for_MT2_Panel_with_Repeaters">
+						</testmodule>
+						<testmodule
+						id="f84a0f61-a8b9-4a36-8806-896fc7352649"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="8683f2d0-27e8-4e93-8d91-cb7ba4436e4b"
+					name="Verify_Power_calculation_value_for_MT2_Panel_with_Sounder">
+						<testmodule
+						id="9f6a879e-edd5-4333-a940-cfe5dd57dfbd"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="526c6a44-fcbd-4241-9fba-88c6eaf4fa06"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="5ce3977e-ff71-4483-8474-1f8420b5e787"
+						name="Verify_Power_calculation_value_for_MT2_Panel_with_Sounder">
+						</testmodule>
+						<testmodule
+						id="0f32dd88-3afe-4465-99f7-41a2db331d9a"
+						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<teardown

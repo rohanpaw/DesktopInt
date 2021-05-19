@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5331d93d-6744-49a8-8c58-b08bf5f02f84"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyDefaultMTPanelPowerCalculation"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="4cc2e97c-7a5d-4d11-aab7-b998bbd97e1b">
+				<argument
+				argname="sFileName"
+				id="76684c1c-7ddc-42e1-8fff-5d8d9c654e09">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						T_2692_Verify default  calculation value for  5V, 24V Rail and Total System Load for MT2 Panel
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddDevicesSheet"
+				id="91637e38-9618-4f1a-8b8f-91800c20a022">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MT2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

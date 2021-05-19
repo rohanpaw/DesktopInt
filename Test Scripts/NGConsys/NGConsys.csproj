@@ -376,6 +376,54 @@
       <UserCode>true</UserCode>
       <id>b4d1fd31-4c32-448f-8590-0185af9094ed</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel.cs">
+      <BoundTo>8a9bacdc-eb6e-42dd-a673-6827a8066bfa</BoundTo>
+      <DependentUpon>Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f93fef19-7f47-45b0-996f-e9e76f7c58ff</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel.UserCode.cs">
+      <BoundTo>8a9bacdc-eb6e-42dd-a673-6827a8066bfa</BoundTo>
+      <DependentUpon>Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>22bedd9f-6ba8-4872-9cd3-0a2a0a6e6693</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet.cs">
+      <BoundTo>1eec08f7-db09-447a-b14d-2c1f3e169a34</BoundTo>
+      <DependentUpon>Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6dad41b8-f0a3-402d-894a-92196fd129e4</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet.UserCode.cs">
+      <BoundTo>1eec08f7-db09-447a-b14d-2c1f3e169a34</BoundTo>
+      <DependentUpon>Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>db0002a6-1a62-4c1d-b97b-50fd1b858fe5</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Power_calculation_value_for_MT2_Panel_with_Repeaters.cs">
+      <BoundTo>aea1ea7c-09da-4394-98d5-ed0383b8bf46</BoundTo>
+      <DependentUpon>Verify_Power_calculation_value_for_MT2_Panel_with_Repeaters.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>81ad5b8e-0104-4cc1-955f-67418281e4bb</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Power_calculation_value_for_MT2_Panel_with_Repeaters.UserCode.cs">
+      <BoundTo>aea1ea7c-09da-4394-98d5-ed0383b8bf46</BoundTo>
+      <DependentUpon>Verify_Power_calculation_value_for_MT2_Panel_with_Repeaters.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a4053879-c00b-40dc-a01b-0d25710f5ecd</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Power_calculation_value_for_MT2_Panel_with_Sounder.cs">
+      <BoundTo>87e196cf-02c6-4e46-bc5b-3c151ba9eb14</BoundTo>
+      <DependentUpon>Verify_Power_calculation_value_for_MT2_Panel_with_Sounder.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8e608f88-f113-4c0e-b32f-a9ffe1e80eb1</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_Power_calculation_value_for_MT2_Panel_with_Sounder.UserCode.cs">
+      <BoundTo>87e196cf-02c6-4e46-bc5b-3c151ba9eb14</BoundTo>
+      <DependentUpon>Verify_Power_calculation_value_for_MT2_Panel_with_Sounder.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ed078564-4f08-44f5-9501-d14ccb87720c</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany.cs">
       <BoundTo>71a5b2ea-69a7-4d8d-9e96-b993dede0bc7</BoundTo>
       <DependentUpon>Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany.rxrec</DependentUpon>
@@ -4685,6 +4733,26 @@
       <id>78c9d55e-6385-4177-8910-97305be53fd0</id>
       <recordtableid>94f4aa26-aedb-431a-ba8d-ca56a934d765</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="Recording Modules\Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>8a9bacdc-eb6e-42dd-a673-6827a8066bfa</id>
+      <recordtableid>5331d93d-6744-49a8-8c58-b08bf5f02f84</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>1eec08f7-db09-447a-b14d-2c1f3e169a34</id>
+      <recordtableid>15cc92e9-5f20-44d3-8936-06479f307719</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Power_calculation_value_for_MT2_Panel_with_Repeaters.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>aea1ea7c-09da-4394-98d5-ed0383b8bf46</id>
+      <recordtableid>4e203490-48bb-4760-80dd-c2af18623772</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_Power_calculation_value_for_MT2_Panel_with_Sounder.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>87e196cf-02c6-4e46-bc5b-3c151ba9eb14</id>
+      <recordtableid>f9d07ed1-8711-41a7-ae0e-feaf817042b8</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
