@@ -61,6 +61,12 @@ namespace TestProject.Libraries
 			set { repo.sButtonName = value; }
 		}
 		
+		static string sListIndex
+		{
+			get { return repo.sListIndex; }
+			set { repo.sListIndex = value; }
+		}
+		
 		/********************************************************************
 		 * Function Name: GetDirPath
 		 * Function Details:
@@ -1486,6 +1492,41 @@ namespace TestProject.Libraries
 //				Report.Log(ReportLevel.Failure,"Tree Item text is displayed as " +ActualText+ "instead of " +TreeItemName);
 //			}
 		}
+		
+		
+		/****************************************************************************************************
+		 * Function Name: createNewProject
+		 * Function Details: To create project with a particular market
+		 * Parameter/Arguments: Market Name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 10/05/2021
+		 ****************************************************************************************************/
+		[UserCodeMethod]
+		public static void createNewProject(string MarketName, string iListIndex )
+		{
+			sListIndex=iListIndex.ToString();
+        	
+			maximizeApplication();
+			
+			repo.FormMe.File.Click();
+			
+			repo.FormMe.New.Click();
+			
+			repo.FormMe.SearchMarket.Click();
+			
+			repo.FormMe.SearchMarket.PressKeys(MarketName);
+			
+			repo.FormMe.lst_Market.Click();
+			
+			repo.FormMe.btn_CreateNewProject.Click();
+			
+			repo.CreateNewProject.CreateNewProjectContainer.btn_OK.Click();
+		}
+		
+		
+		
+		
 	}
 }
 

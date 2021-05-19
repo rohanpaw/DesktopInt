@@ -2636,7 +2636,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TSP MZX\Designer Pro 30.1.24">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 30.1.28">
 					</param>
 					<param
 					name="Mode"
@@ -4987,6 +4987,12 @@ rxversion="8.3">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="4295758e-6716-4c1d-8ad5-7fb80bfc6e54"
+			name="Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Turkey"
+			ref="1647ddd0-ef6b-4b34-ad8e-1e1c7521b76a"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="42bd149f-9ab4-4258-a2fa-53029d5a34a6"
 			name="RanorexSession3rd">
@@ -8734,6 +8740,26 @@ rxversion="8.3">
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="6e77b4ef-be9f-4395-aa15-ac0f8c3841d5"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6e7fe2a7-35a0-44c6-af37-ab05a81aab2a"
 			name="Create_Project"
 			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
@@ -9712,6 +9738,10 @@ rxversion="8.3">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="7bb98264-ecd8-4a1d-936f-df465cc3d84c"
+			name="Verify_Pro_panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany">
+			</testcase>
 			<testmodule
 			id="7bc9931f-df10-44c8-bb0f-c7c2c1722580"
 			name="Close_Application"
@@ -18285,6 +18315,10 @@ persisted in panel properties&nbsp;]]>
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="f296cb26-39a1-4be3-808f-4c2cb9d3e02e"
+			name="Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Turkey">
+			</testcase>
 			<testmodule
 			id="f29c0cd8-1f57-4620-832f-19352d364fec"
 			name="Create_Project"
@@ -18947,6 +18981,26 @@ persisted in panel properties&nbsp;]]>
 					datasourceid="9606b844-34eb-4256-81db-1e127a501947"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="fe9ee5d7-a318-44e1-9138-9caa8a46fb9d"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -25043,6 +25097,26 @@ persisted in panel properties&nbsp;]]>
 						name="Verify_Default_Panel_Calculation_For_High_Powered_Loop">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="f296cb26-39a1-4be3-808f-4c2cb9d3e02e"
+					name="Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Turkey">
+						<testmodule
+						id="6e77b4ef-be9f-4395-aa15-ac0f8c3841d5"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="4295758e-6716-4c1d-8ad5-7fb80bfc6e54"
+						name="Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Turkey">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="7bb98264-ecd8-4a1d-936f-df465cc3d84c"
+					name="Verify_Pro_panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany">
+						<testmodule
+						id="fe9ee5d7-a318-44e1-9138-9caa8a46fb9d"
+						name="Application_Open">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -25305,9 +25379,6 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="ec646c35-7a11-475c-8218-e291baae8cf4">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

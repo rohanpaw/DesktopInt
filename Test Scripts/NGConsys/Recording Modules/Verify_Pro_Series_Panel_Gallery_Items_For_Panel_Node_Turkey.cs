@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Default_Panel_Calculation_For_High_Powered_Loop recording.
+    ///The Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Turkey recording.
     /// </summary>
-    [TestModule("b0164451-6d80-416a-940b-d029cae70c87", ModuleType.Recording, 1)]
-    public partial class Verify_Default_Panel_Calculation_For_High_Powered_Loop : ITestModule
+    [TestModule("1647ddd0-ef6b-4b34-ad8e-1e1c7521b76a", ModuleType.Recording, 1)]
+    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Turkey : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Default_Panel_Calculation_For_High_Powered_Loop instance = new Verify_Default_Panel_Calculation_For_High_Powered_Loop();
+        static Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Turkey instance = new Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Turkey();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Default_Panel_Calculation_For_High_Powered_Loop()
+        public Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Turkey()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Default_Panel_Calculation_For_High_Powered_Loop Instance
+        public static Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Turkey Instance
         {
             get { return instance; }
         }
@@ -79,57 +79,44 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            //Libraries.Panel_Functions.AddPanelsMT(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro415S Lite", "");
-            //Delay.Milliseconds(0);
+            Libraries.Common_Functions.createNewProject("Turkey", "0");
+            Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.clickOnPanelCalculationsTab();
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.000", "5V Rail(A)");
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_MultiplePointWizard' at Center.", repo.FormMe.btn_MultiplePointWizardInfo, new RecordItemIndex(7));
-            //repo.FormMe.btn_MultiplePointWizard.Click();
-            //Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet2", "801 CH");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(10));
-            //Delay.Duration(3000, false);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet4", "CP 820");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Libraries.Gallery_Functions.verifyGalleryListItems("T3291", "Repeaters", "PR1DS");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet3", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("T3291", "Loops", "PLX800");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Libraries.Gallery_Functions.verifyGalleryListItems("T3291", "Slot Cards", "PCH800 5.0A");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet5", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("T3291", "Miscellaneous", "MPM800");
             Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("T3291", "Printers", "PX-PR");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryExist("True", ValueConverter.ArgumentFromString<bool>("Visibility", "False"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryExist("Loops", ValueConverter.ArgumentFromString<bool>("Visibility", "False"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryExist("Attached Functionality", ValueConverter.ArgumentFromString<bool>("Visibility", "False"));
+            //Delay.Milliseconds(0);
             
         }
 

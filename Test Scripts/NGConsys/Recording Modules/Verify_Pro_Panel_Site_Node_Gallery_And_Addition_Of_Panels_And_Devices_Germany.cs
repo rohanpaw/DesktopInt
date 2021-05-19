@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Default_Panel_Calculation_For_High_Powered_Loop recording.
+    ///The Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany recording.
     /// </summary>
-    [TestModule("b0164451-6d80-416a-940b-d029cae70c87", ModuleType.Recording, 1)]
-    public partial class Verify_Default_Panel_Calculation_For_High_Powered_Loop : ITestModule
+    [TestModule("e88cdd05-af27-4a56-be27-0dcc585ee18e", ModuleType.Recording, 1)]
+    public partial class Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Default_Panel_Calculation_For_High_Powered_Loop instance = new Verify_Default_Panel_Calculation_For_High_Powered_Loop();
+        static Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany instance = new Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Default_Panel_Calculation_For_High_Powered_Loop()
+        public Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Default_Panel_Calculation_For_High_Powered_Loop Instance
+        public static Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany Instance
         {
             get { return instance; }
         }
@@ -79,57 +79,38 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            //Libraries.Panel_Functions.AddPanelsMT(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro415S Lite", "");
+            Libraries.Common_Functions.createNewProject("Germany", "1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("T1727", "Panels", "Pro32xD");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("T1727", "Other Nodes", "TXG Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnSiteAccessoriesTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("T1727", "Accessories", "ANC125");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("ANC125", "Accessories");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("ANC250", "Accessories");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnShoppingListTab();
+            Delay.Milliseconds(0);
+            
+            //Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.202.622", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
             //Delay.Milliseconds(0);
-            
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.clickOnPanelCalculationsTab();
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.000", "5V Rail(A)");
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_MultiplePointWizard' at Center.", repo.FormMe.btn_MultiplePointWizardInfo, new RecordItemIndex(7));
-            //repo.FormMe.btn_MultiplePointWizard.Click();
-            //Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet2", "801 CH");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
-            Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(10));
-            //Delay.Duration(3000, false);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet4", "CP 820");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet3", "PR1D2");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet5", "MXR");
-            Delay.Milliseconds(0);
             
         }
 

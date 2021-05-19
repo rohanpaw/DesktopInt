@@ -24,29 +24,29 @@ namespace TestProject.Recording_Modules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Default_Panel_Calculation_For_High_Powered_Loop recording.
+    ///The Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_Germany recording.
     /// </summary>
-    [TestModule("b0164451-6d80-416a-940b-d029cae70c87", ModuleType.Recording, 1)]
-    public partial class Verify_Default_Panel_Calculation_For_High_Powered_Loop : ITestModule
+    [TestModule("c792c82c-4875-455b-8262-24c57164acaf", ModuleType.Recording, 1)]
+    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_Germany : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Default_Panel_Calculation_For_High_Powered_Loop instance = new Verify_Default_Panel_Calculation_For_High_Powered_Loop();
+        static Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_Germany instance = new Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_Germany();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Default_Panel_Calculation_For_High_Powered_Loop()
+        public Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_Germany()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Default_Panel_Calculation_For_High_Powered_Loop Instance
+        public static Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_Germany Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,8 @@ namespace TestProject.Recording_Modules
 
             Init();
 
-            //Libraries.Panel_Functions.AddPanelsMT(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro415S Lite", "");
-            //Delay.Milliseconds(0);
+            Libraries.Common_Functions.createNewProject("Germany", "1");
+            Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
@@ -88,47 +88,28 @@ namespace TestProject.Recording_Modules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit1");
             Delay.Milliseconds(0);
             
-            //Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Common_Functions.clickOnPanelCalculationsTab();
-            //Delay.Milliseconds(0);
-            
-            //Libraries.Devices_Functions.verifyMaxLoadingDetailsValue("1.000", "5V Rail(A)");
-            //Delay.Milliseconds(0);
-            
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FormMe.btn_MultiplePointWizard' at Center.", repo.FormMe.btn_MultiplePointWizardInfo, new RecordItemIndex(7));
-            //repo.FormMe.btn_MultiplePointWizard.Click();
-            //Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet2", "801 CH");
+            Libraries.Gallery_Functions.verifyGalleryListItems("T1747", "Sounders", "Generic Sounder");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+            Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(10));
-            //Delay.Duration(3000, false);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet4", "CP 820");
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit1 (1)");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit2");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Libraries.Gallery_Functions.verifyGalleryListItems("T1747", "Sounders", "Generic Sounder");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet3", "PR1D2");
+            Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("device1data", "Sheet5", "MXR");
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit2 (1)");
             Delay.Milliseconds(0);
             
         }

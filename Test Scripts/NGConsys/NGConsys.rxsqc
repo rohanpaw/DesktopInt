@@ -8,5 +8,10 @@
     "Enabled": "True",
     "TestSuite": "BuildVerificationTest",
     "RunConfig": "Default"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Germany",
+    "RunConfig": "TestRun"
   }
 ]

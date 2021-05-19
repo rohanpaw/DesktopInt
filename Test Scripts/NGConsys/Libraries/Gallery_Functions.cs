@@ -272,13 +272,14 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update :11/3/2019
+		 * 11/05/2021 - Alpesh Dhakad - Added Xpath for Gallery
 		 ********************************************************************/
 		[UserCodeMethod]
 		public static void verifyGalleryExist(string sGalleryName, bool Visibility)
 		{
 			if(Visibility)
 			{
-				if(repo.ProfileConsys1.GalleryInfo.Exists())
+				if(repo.FormMe.GalleryInfo.Exists())
 				{
 					Report.Log(ReportLevel.Success, "Gallery: " + sGalleryName+ " displayed in ribbon");
 				}
@@ -290,7 +291,7 @@ namespace TestProject.Libraries
 			
 			else
 			{
-				if(repo.ProfileConsys1.GalleryInfo.Exists())
+				if(repo.FormMe.GalleryInfo.Exists())
 				{
 					Report.Log(ReportLevel.Failure, "Gallery: " + sGalleryName+ " displayed in ribbon");
 				}
@@ -957,7 +958,197 @@ namespace TestProject.Libraries
 			
 		}
 		
+		/***********************************************************************************************************
+		 * Function Name: verifyGalleryListItems
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad and Sagar Kaware
+		 * Last Update : 03/05/2021 and 17/05/2021
+		 ************************************************************************************************************/
+        [UserCodeMethod]
+        public static void verifyGalleryListItems(string fileName, string sheetName, string GalleryDeviceName )
+        {
+        	
+          ModelNumber=GalleryDeviceName;       
+           
+            Excel_Utilities.OpenExcelFile(fileName,sheetName);
+           
+            //Fetch value from excel sheet and store it
+           
+            int rows= Excel_Utilities.ExcelRange.Rows.Count;
+            
+            List<string> deviceListFromTestData = new List<string>();           
+           
+            for(int j=8; j<=rows; j++){   
+               
+                string data=  ((Range)Excel_Utilities.ExcelRange.Cells[j,1]).Value.ToString();
+           
+                deviceListFromTestData.Add(data);
+           
+            }       
+           
+            //Close excel
+            Excel_Utilities.CloseExcel();
+
+       
+       
+            repo.FormMe.btn_AllGalleryDropdown.Click();
+           
+       
+            //fetch app  gallery data and store in list
+            IList<Ranorex.Text> list = repo.ContextMenu.ListItemsTextInfo.CreateAdapters<Ranorex.Text>();
+           
+            
+           
+            //store list into deviceListFromApp for cmpare to List
+            List<string> deviceListFromApp = new List<string>();
+           
+            foreach (Ranorex.Text test in list)            
+            {
+                deviceListFromApp.Add(test.TextValue);
+            }
+           
+               
+             var values1 = new HashSet<string>(deviceListFromApp);
+              
+               int deviceCountfromTestData = deviceListFromTestData.Count;
+               int deviceCountfromApp = deviceListFromApp.Count;
+               
+               if(deviceCountfromTestData.Equals(deviceCountfromApp))
+                  {
+                  	Report.Log(ReportLevel.Success, "Device count matching");
+                      
+                  }
+                 else
+                 {
+                 	Report.Log(ReportLevel.Failure, "Device count not matching");
+                      
+                 }
+             
+                foreach (string device in deviceListFromTestData)
+               
+                {
+                   
+                    if (values1.Contains(device))
+                    {
+                       // Report.Info(device+ " is displayed on application and matching with test data which is expected ");
+                        Report.Log(ReportLevel.Success, "Application displayed " +device+ " is matching with test data which is expected ");
+                      
+                    }
+                    else
+                    {
+                       // Report.Info( device+" is not displayed on application or not matching with test data");
+                        Report.Log(ReportLevel.Failure, "Application not displaying device " +device+ " or not matching with test data");
+                      
+                    }
+                  
+                }
+                
+                
+                 var values2 = new HashSet<string>(deviceListFromTestData);
+             
+                 foreach (string device in deviceListFromApp)
+               
+                {
+                   
+                    if (values2.Contains(device))
+                    {
+                       // Report.Info(device+ " is displayed on application and matching with test data which is expected ");
+                        //Report.Log(ReportLevel.Success, "Application displayed " +device+ " is matching with test data which is expected ");
+                      
+                    }
+                    else
+                    {
+                       // Report.Info( device+" is not displayed on application or not matching with test data");
+                        Report.Log(ReportLevel.Failure, "Application not displaying device " +device+ " or not matching with test data");
+                      
+                    }
+                  
+                }
+           
+           		//repo.FormMe.Header_Title.Click();
+           		repo.FormMe.Header_Title.Click();
+       
+        }
 		
+         /***********************************************************************************************************
+		 * Function Name: galleryList
+		 * Function Details: to retrieve the gallery list text
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad 
+		 * Last Update : 11/05/2021
+		 ************************************************************************************************************/
+        [UserCodeMethod]
+        public static void galleryList (string GalleryDeviceName)
+        {  
+			ModelNumber=GalleryDeviceName;   
+        	
+           repo.FormMe.btn_AllGalleryDropdown.Click();
+			
+			IList<Ranorex.Text> list = repo.ContextMenu.ListItemsTextInfo.CreateAdapters<Ranorex.Text>();
+				
+			foreach (Ranorex.Text test in list)
+			{
+				
+				Report.Info(test.TextValue);
+			}
+       
+        }
+        
+						
+        /***********************************************************************************************************
+		 * Function Name: verifyGalleryExistsWithDropdown
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad 
+		 * Last Update : 11/05/2021
+		 ************************************************************************************************************/
+        [UserCodeMethod]
+        public static void verifyGalleryExistsWithDropdown(bool GalleryVisibility, string GalleryDeviceName )
+        {
+        	ModelNumber=GalleryDeviceName;   
+        	
+        	if(GalleryVisibility)
+			{
+				if(repo.FormMe.btn_AllGalleryDropdownInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success, "Device "+GalleryDeviceName+" gallery exists");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Device "+GalleryDeviceName+" gallery not exists");
+				}
+			}
+			else
+			{ 
+				if(repo.FormMe.btn_AllGalleryDropdownInfo.Exists())
+				{
+					
+				
+					   repo.FormMe.btn_AllGalleryDropdown.Click();  
+					    //repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
+					    
+					    if(repo.ContextMenu.txt_SelectDeviceInfo.Exists())
+					    {  	
+					    	Report.Log(ReportLevel.Failure, "Device "+GalleryDeviceName+" gallery  exists");  
+					    }
+					    else
+					    {
+					    	Report.Log(ReportLevel.Success, "Device "+GalleryDeviceName+" gallery not exists");  
+					    }
+					     
+					    
+					}  
+					
+			}
+				
+				
+			}
+			
+        
 	}
 }
 

@@ -180,6 +180,15 @@ W/AAAAAASUVORK5CYII=
 				searchtimeout="30000ms">
 					/form[@title='Create New Project']/container[1]/?/?/text[@caption='My Project']/text[$sRow]
 				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="bc117435-b375-4ee6-bb49-c0c8b4c0e3f8"
+				name="Copy_of_CreateProject_FC_Parameter"
+				refimgid="2d5fe0d7-5a73-48b3-9347-223a5d8c3cc4"
+				searchtimeout="30000ms">
+					/form[@title='Create New Project']/container[1]/?/?/text[@caption='My Project']/text['9']
+				</item>
 				<basepath>
 					/form[@title='Create New Project']/container[1]
 				</basepath>
@@ -3343,11 +3352,20 @@ pC8rFM9Y1iuc1MkLANPwwX1h/swJAAAAAElFTkSuQmCC
 			addcaps="container,wpfelement,wpfgroupelement"
 			capname="container"
 			id="8e84cde2-938e-46e4-afc6-e8a89ec14ff2"
-			name="Header_ProfileConsys"
+			name="Header_Title2"
 			refimgid="70aa537b-0be6-416b-8ccc-a3521ae511c9"
 			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/container[@automationid='PART_HeaderBorder']"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/container[@automationid='PART_HeaderBorder']
+			</item>
+			<item
+			addcaps="container,wpfelement,wpfgroupelement"
+			capname="container"
+			id="3964b3fc-ec74-4b90-8969-7b22c0fa6333"
+			name="Header_Title"
+			refimgid="335bd23e-e758-4dab-bc14-16a773104d28"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']
 			</item>
 			<item
 			capname="text"
@@ -14133,7 +14151,7 @@ AAAAAElFTkSuQmCC
 			id="4a3ccaea-acd6-4714-babd-80f5abff3bf2"
 			name="test_btn_AllGalleryDropdown"
 			searchtimeout="90000ms">
-				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption='801 CHEx IS']/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']//button/list/listitem[@actualcaption='CP 820']/ancestor::container[@automationid='PART_ItemsPresenter']//container[@automationid='PART_DropDown']
 			</item>
 			<item
 			capname="text"
@@ -14337,7 +14355,15 @@ AAAAAElFTkSuQmCC
 			name="txt_NavigationTreeItem"
 			refimgid="39db4e49-5b71-4bb6-83cd-12592227ccd4"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar/tree/container[7]//text[@text=$sTreeItem]
+				/form[@automationid='me']/progressbar//tree/container[7]//text[@text=$sTreeItem]
+			</item>
+			<item
+			capname="text"
+			id="bceeda7a-276c-43ee-92f1-2cd6c2299369"
+			name="Copy_of_txt_NavigationTreeItem"
+			refimgid="39db4e49-5b71-4bb6-83cd-12592227ccd4"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar//tree/container[7]//text[@text='R-BUS (16 of 16)']
 			</item>
 			<item
 			capname="text"
@@ -14631,7 +14657,7 @@ AAAAAElFTkSuQmCC
 			name="Copy_of_txt_MaxLoadingDetailsValue"
 			refimgid="eba2df63-f1e5-4576-a579-6870d163961d"
 			searchtimeout="60000ms">
-				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='5V Rail(A)']/following-sibling::cell//text[3]
+				/form[@automationid='me']/progressbar//descendant-or-self::*//text[@text='Total System Load(A)']/following-sibling::cell//text[3]
 			</item>
 			<item
 			capname="progressbar"
@@ -14923,6 +14949,13 @@ AAAAAElFTkSuQmCC
 			name="txt_ModelNameForInventory"
 			searchtimeout="90000ms">
 				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/?/?/container[@caption='']//row/cell[2]/text[@text=$sLabelName]
+			</item>
+			<item
+			capname="text"
+			id="90be60c6-cae1-419e-b93a-1178633f131f"
+			name="txt_SKUForInventory"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/?/?/container[@caption='']//row/cell[1]/text[@text=$sLabelName]
 			</item>
 			<item
 			capname="text"
@@ -15405,6 +15438,14 @@ AAAAAElFTkSuQmCC
 			refimgid="8002df7d-941a-4565-9b57-7f13d2ca7506"
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/list[11]/table/list/container[@automationid='PART_ItemsPresenter']//text[@automationid='PART_Editor']
+			</item>
+			<item
+			capname="text"
+			id="6aa1ef53-c71f-4630-9d3c-4c519bfebd67"
+			name="Gallery"
+			refimgid="12f1c4d3-c301-4b12-87c3-c7df643b69b6"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/?/?/?/container[@automationid='PART_Caption']/text[@caption=$sGalleryName]
 			</item>
 			<basepath>
 				/form[@automationid='me']

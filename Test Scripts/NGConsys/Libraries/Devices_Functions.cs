@@ -9378,6 +9378,27 @@ namespace TestProject.Libraries
 				
 			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
 		}
+		
+		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingSKUFromInventoryTab
+		 * Function Details: To select item from inventory grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 19/05/2021
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingSKUFromInventoryTab(string sSKUNumber)
+		{
+			sLabelName = sSKUNumber;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_SKUForInventory.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with SKU number " + sSKUNumber+" selected");
+		}
+		
 	}
 }
 
