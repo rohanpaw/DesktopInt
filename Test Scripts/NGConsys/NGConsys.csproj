@@ -388,6 +388,18 @@
       <UserCode>true</UserCode>
       <id>22bedd9f-6ba8-4872-9cd3-0a2a0a6e6693</id>
     </Compile>
+    <Compile Include="Recording Modules\Verify_MT2_DefaultMax_Values_5V_24V_40V_Alarm_StandBy_BatterySize.cs">
+      <BoundTo>ef4ef056-d5c6-472b-bdab-9093ab5ced4d</BoundTo>
+      <DependentUpon>Verify_MT2_DefaultMax_Values_5V_24V_40V_Alarm_StandBy_BatterySize.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>71682517-872c-4bc0-b79e-ad7cc24ca0ff</id>
+    </Compile>
+    <Compile Include="Recording Modules\Verify_MT2_DefaultMax_Values_5V_24V_40V_Alarm_StandBy_BatterySize.UserCode.cs">
+      <BoundTo>ef4ef056-d5c6-472b-bdab-9093ab5ced4d</BoundTo>
+      <DependentUpon>Verify_MT2_DefaultMax_Values_5V_24V_40V_Alarm_StandBy_BatterySize.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>71bc8a74-403b-4bcc-b13c-785a3f4568a6</id>
+    </Compile>
     <Compile Include="Recording Modules\Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet.cs">
       <BoundTo>1eec08f7-db09-447a-b14d-2c1f3e169a34</BoundTo>
       <DependentUpon>Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet.rxrec</DependentUpon>
@@ -4738,6 +4750,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>8a9bacdc-eb6e-42dd-a673-6827a8066bfa</id>
       <recordtableid>5331d93d-6744-49a8-8c58-b08bf5f02f84</recordtableid>
+    </None>
+    <None Include="Recording Modules\Verify_MT2_DefaultMax_Values_5V_24V_40V_Alarm_StandBy_BatterySize.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>ef4ef056-d5c6-472b-bdab-9093ab5ced4d</id>
+      <recordtableid>c36b7393-57c3-44eb-8dff-01da70bc54fa</recordtableid>
     </None>
     <None Include="Recording Modules\Verify_Power_calculation_value_for_MT2_Panel_with_Ethernet.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

@@ -2082,6 +2082,20 @@ rxversion="8.3">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="19ea3e85-712b-41aa-895c-ebf06f4bf280"
+			name="Create_Project"
+			ref="28850e8e-b478-423e-9533-d1c1ec13c838"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="row"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="1a721089-8b3f-4c96-9c6f-1fa307218109"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -11865,6 +11879,12 @@ MxDesigner]]>
 				</parameters>
 			</testcase>
 			<testmodule
+			id="94ee8b42-05dc-4ed4-8607-d7d23666d9d6"
+			name="Verify_MT2_DefaultMax_Values_5V_24V_40V_Alarm_StandBy_BatterySize"
+			ref="c36b7393-57c3-44eb-8dff-01da70bc54fa"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="94effe45-0abd-4bf4-8793-44ef742e19ac"
 			name="Verify_Deletion_Of_PCS_POS_IOB_And_FB_From_Backplane"
 			ref="674e8a71-46ac-455d-8c1b-aa251c477155"
@@ -13888,6 +13908,10 @@ project]]>
 			ref="fd263429-f8ad-4d41-bf7b-07bdbb8e8fd0"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="b2ca27bf-3d33-4edb-8dfd-f81988db78e9"
+			name="Verify_MT2_DefaultMax_Values_5V_24V_40V_Alarm_StandBy_BatterySize">
+			</testcase>
 			<testmodule
 			id="b32c6983-ae64-4764-955b-808375401d88"
 			name="Create_Project_FC"
@@ -17812,6 +17836,26 @@ persisted in panel properties&nbsp;]]>
 			name="Verify_If_User_Decide_Not_To_Choose_Second_PSU_Option_Then_AMP800_Should_Get_Delete"
 			ref="a8c25af4-b36a-408a-b158-6c1d71bbe31c"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e9e2b45f-8ba1-416d-a6d2-3b42ba693bcd"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="222bd839-2099-4f92-ab1f-04972d99f2e0"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="ea06a259-e3fd-4eaf-a97d-826434f8a2ec"
@@ -25397,6 +25441,22 @@ persisted in panel properties&nbsp;]]>
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="b2ca27bf-3d33-4edb-8dfd-f81988db78e9"
+					name="Verify_MT2_DefaultMax_Values_5V_24V_40V_Alarm_StandBy_BatterySize">
+						<testmodule
+						id="e9e2b45f-8ba1-416d-a6d2-3b42ba693bcd"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="19ea3e85-712b-41aa-895c-ebf06f4bf280"
+						name="Create_Project">
+						</testmodule>
+						<testmodule
+						id="94ee8b42-05dc-4ed4-8607-d7d23666d9d6"
+						name="Verify_MT2_DefaultMax_Values_5V_24V_40V_Alarm_StandBy_BatterySize">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="55c252ae-96c8-4e96-b840-aeb1c3efef13"
 					name="teardown">
@@ -25659,6 +25719,9 @@ persisted in panel properties&nbsp;]]>
 		name="TestRun">
 			<testcontainer
 			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="b2ca27bf-3d33-4edb-8dfd-f81988db78e9">
 			</testcontainer>
 		</testconfiguration>
 		<testconfiguration

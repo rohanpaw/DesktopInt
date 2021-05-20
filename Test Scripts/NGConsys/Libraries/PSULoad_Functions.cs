@@ -8400,6 +8400,105 @@ namespace TestProject.Libraries
 		}
 		
 		
+		/*****************************************************************************************************************
+		 * Function Name: verifyMaxDefaultValueforMT2Panel
+		 * Function Details: verify Max Default Values for MT2 Panel
+		 * Parameter/Arguments: file name and add panel sheet name  
+		 * Output:
+		 * Function Owner: Rohan Pawar
+		 * Last Update : 18/05/2021
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyMaxDefaultValueforMT2Panel(string sFileName,string sAddPanelandDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddPanelandDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string PanelName,PanelNode,CPUType,sRowNumber,PanelType,expectedMax5V,LoadingDetailsName5V,expectedMax24V,LoadingDetailsName24V,expectedMaxTotalLoad,LoadingDetailsNameTotalLoad,expectedMaxStandByCurrentLoad,LoadingDetailsNameStandby,expectedMaxAlarmCurrentLoad,LoadingDetailsNameAlarm,expectedMaxBatterySize,LoadingDetailsNameBattery;
+			int rowNumber;
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				sRowNumber = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+				expectedMax5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				LoadingDetailsName5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				expectedMax24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				LoadingDetailsName24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				expectedMaxTotalLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				LoadingDetailsNameTotalLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				expectedMaxStandByCurrentLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				LoadingDetailsNameStandby = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				expectedMaxAlarmCurrentLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				LoadingDetailsNameAlarm = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				expectedMaxBatterySize = ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				LoadingDetailsNameBattery = ((Range)Excel_Utilities.ExcelRange.Cells[i,17]).Value.ToString();
+				
+				int.TryParse(sRowNumber, out rowNumber);
+				
+				// Add panels using test data in excel sheet
+				Panel_Functions.AddPanelsMT(1,PanelName,CPUType);
+				// Click on Expander node
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				// Click on Loop Card node
+				//Common_Functions.ClickOnNavigationTreeExpander(PanelType);
+				
+				// Click on Loop A node
+				Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
+				
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				// Verify 5V Max load value
+				//verify5VMaxLoadValue(expectedMax5V,PanelType);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMax5V,LoadingDetailsName5V);
+				
+				//verify24VMaxLoadValue(expectedMax24V,PanelType);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMax24V,LoadingDetailsName24V);
+				
+				//verifyTotalLoadMaxValue(expectedMax5V,PanelType);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxTotalLoad,LoadingDetailsNameTotalLoad);
+				
+				//verifyStandbyCurrentMaxLoadValue(expectedMax5V,PanelType);
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxStandByCurrentLoad,LoadingDetailsNameStandby);
+				
+				//verifyAlarmCurrentMaxLoadValue
+				Devices_Functions.verifyMaxLoadingDetailsValue(expectedMaxAlarmCurrentLoad,LoadingDetailsNameAlarm);
+				
+				//verify Battery Size
+				Devices_Functions.verifyLoadingDetailsValue(expectedMaxBatterySize,LoadingDetailsNameBattery);
+				
+				//Verify MAX AC Unit value
+				AC_Functions.verifyMaxACUnitsValueforMT2("0 / 250");
+				
+				//Verify MAX DC Unit value
+				DC_Functions.verifyMaxDCUnitsforMT2("220 / 4000");
+				
+				//Click on Point tab
+				Panel_Functions.SelectPanelNode(1);
+				
+				//Delete Panel
+				Panel_Functions.DeletePanel(1,PanelNode,1);
+				
+			
+			}
+		
+				
+			//Close opened excel sheet
+			Excel_Utilities.CloseExcel();
+			
+		}
+		
 		
 	}
 }

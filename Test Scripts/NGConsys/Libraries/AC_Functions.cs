@@ -701,6 +701,29 @@ namespace TestProject.Libraries
 			Common_Functions.clickOnPointsTab();
 		}
 		
-		
+		/********************************************************************
+		 * Function Name: verifyMaxACUnitsValueforMT2
+		 * Function Details: Verify Max AC Units Value for MT2 Panel
+		 * Parameter/Arguments:
+		 * Output:
+		 * Function Owner: Rohan Pawar
+		 * Last Update : 19/05/2021
+		 ********************************************************************/
+		[UserCodeMethod]
+			public static void verifyMaxACUnitsValueforMT2(string expectedMaxACUnits)
+		{
+			
+			string maxACUnits = repo.FormMe.RP_MaxAC.TextValue;
+			
+			if(maxACUnits.Equals(expectedMaxACUnits))
+			{
+				Report.Log(ReportLevel.Success,"Max AC Units " + maxACUnits + " is displayed correctly " );
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Max AC Units is not displayed correctly, it is displayed as: " + maxACUnits + " instead of : " +expectedMaxACUnits);
+			}
+			Common_Functions.clickOnPointsTab();
+		}
 	}
 }

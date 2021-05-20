@@ -15447,6 +15447,20 @@ AAAAAElFTkSuQmCC
 			searchtimeout="30000ms">
 				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/?/?/?/container[@automationid='PART_Caption']/text[@caption=$sGalleryName]
 			</item>
+			<item
+			capname="text"
+			id="24f9a446-412a-48c1-be6f-9083cb841793"
+			name="RP_MaxAC"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[11]/list/container[@automationid='PART_ItemsPresenter']//text[@text='0 / 250']
+			</item>
+			<item
+			capname="text"
+			id="2ac14f3f-98dd-416e-983d-0629ed92cbc1"
+			name="RP_MaxDC"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/list[11]/list/container[@automationid='PART_ItemsPresenter']//text[@text='220 / 4000']
+			</item>
 			<basepath>
 				/form[@automationid='me']
 			</basepath>

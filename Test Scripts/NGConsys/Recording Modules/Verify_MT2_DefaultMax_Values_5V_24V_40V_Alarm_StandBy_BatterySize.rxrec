@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c36b7393-57c3-44eb-8dff-01da70bc54fa"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Verify_MT2_DefaultMax_Values_5V_24V_40V_Alarm_StandBy_BatterySize"
+	namespace="TestProject.Recording_Modules">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<userrecorditem
+		classname="PSULoad_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyMaxDefaultValueforMT2Panel"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="a77f9479-2d76-4203-ac6e-a5e68f25c031">
+				<argument
+				argname="sFileName"
+				id="28b4af3e-91f3-488f-8bd1-3379dab1471b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						T2691_2702_2705_verify_Max_Limit_For_MT2_Panel_5V_24V_40V
+					</argvalue>
+				</argument>
+				<argument
+				argname="sAddPanelandDevicesSheet"
+				id="b810b618-62fb-4681-8f36-bad79cbaa6ee">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Add Panels and Devices
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+	</recorditems>
+	<repository
+	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
+	name="NGConsysRepository"
+	relativepath="..\NGConsysRepository.rxrep"
+	rxversion="8.3">
+		<codegen
+		classname="NGConsysRepository"
+		namespace="TestProject">
+		</codegen>
+		<rootfolder
+		id="031894a4-4ddd-4c79-8ec3-4b201f74a5f3"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Verify_MT2_DefaultMax_Values_5V_24V_40V_Alarm_StandBy_BatterySize.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

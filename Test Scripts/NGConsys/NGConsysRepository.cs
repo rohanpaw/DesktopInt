@@ -7284,6 +7284,8 @@ namespace TestProject
             RepoItemInfo _btn_closeInfo;
             RepoItemInfo _txt_alarmloadInfo;
             RepoItemInfo _galleryInfo;
+            RepoItemInfo _rp_maxacInfo;
+            RepoItemInfo _rp_maxdcInfo;
 
             /// <summary>
             /// Creates a new FormMe  folder.
@@ -7656,6 +7658,8 @@ namespace TestProject
                 _btn_closeInfo = new RepoItemInfo(this, "btn_Close", "progressbar//text[@text='Close']", 30000, null, "13a89180-229e-4a62-a408-ac3b96e25a95");
                 _txt_alarmloadInfo = new RepoItemInfo(this, "txt_AlarmLoad", "progressbar/list[11]/table/list/container[@automationid='PART_ItemsPresenter']//text[@automationid='PART_Editor']", 30000, null, "20e58239-5416-4f5d-a21c-7782fc6daf91");
                 _galleryInfo = new RepoItemInfo(this, "Gallery", "progressbar/container[@automationid='PART_AutoHideControl']/list/?/?/?/container[@automationid='PART_Caption']/text[@caption=$sGalleryName]", 30000, null, "6aa1ef53-c71f-4630-9d3c-4c519bfebd67");
+                _rp_maxacInfo = new RepoItemInfo(this, "RP_MaxAC", "progressbar/list[11]/list/container[@automationid='PART_ItemsPresenter']//text[@text='0 / 250']", 30000, null, "24f9a446-412a-48c1-be6f-9083cb841793");
+                _rp_maxdcInfo = new RepoItemInfo(this, "RP_MaxDC", "progressbar/list[11]/list/container[@automationid='PART_ItemsPresenter']//text[@text='220 / 4000']", 30000, null, "2ac14f3f-98dd-416e-983d-0629ed92cbc1");
             }
 
             /// <summary>
@@ -16544,6 +16548,54 @@ namespace TestProject
                 get
                 {
                     return _galleryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RP_MaxAC item.
+            /// </summary>
+            [RepositoryItem("24f9a446-412a-48c1-be6f-9083cb841793")]
+            public virtual Ranorex.Text RP_MaxAC
+            {
+                get
+                {
+                    return _rp_maxacInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RP_MaxAC item info.
+            /// </summary>
+            [RepositoryItemInfo("24f9a446-412a-48c1-be6f-9083cb841793")]
+            public virtual RepoItemInfo RP_MaxACInfo
+            {
+                get
+                {
+                    return _rp_maxacInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RP_MaxDC item.
+            /// </summary>
+            [RepositoryItem("2ac14f3f-98dd-416e-983d-0629ed92cbc1")]
+            public virtual Ranorex.Text RP_MaxDC
+            {
+                get
+                {
+                    return _rp_maxdcInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RP_MaxDC item info.
+            /// </summary>
+            [RepositoryItemInfo("2ac14f3f-98dd-416e-983d-0629ed92cbc1")]
+            public virtual RepoItemInfo RP_MaxDCInfo
+            {
+                get
+                {
+                    return _rp_maxdcInfo;
                 }
             }
         }

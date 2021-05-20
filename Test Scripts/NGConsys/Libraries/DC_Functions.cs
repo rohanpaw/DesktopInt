@@ -2502,5 +2502,34 @@ namespace TestProject.Libraries
 		
 		}
 		
+		/********************************************************************
+		 * Function Name: verifyMaxDCUnitsforMT2
+		 * Function Details: Verify maximum DC unit value for MT2 Panel
+		 * Parameter/Arguments: Expected Maximum DC unit value
+		 * Output:
+		 * Function Owner: Rohan Pawar
+		 * Last Update : 18/05/2021
+		 ********************************************************************/
+		[UserCodeMethod]
+		public static void verifyMaxDCUnitsforMT2(string expectedMaxDCUnits)
+		{
+			//repo.ProfileConsys1.tab_PhysicalLayout.Click();
+			//Common_Functions.clickOnPhysicalLayoutTab();
+			
+			string maxDCUnits = repo.FormMe.RP_MaxDC.TextValue;
+			
+			if(maxDCUnits.Equals(expectedMaxDCUnits))
+			{
+				Report.Log(ReportLevel.Success,"Max DC Units " + maxDCUnits + " is displayed correctly " );
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Max DC Units is not displayed correctly, it is displayed as: " + maxDCUnits + " instead of : " +expectedMaxDCUnits);
+			}
+			
+			Common_Functions.clickOnPointsTab();
+			
+			
+		}	
 	}
 }
