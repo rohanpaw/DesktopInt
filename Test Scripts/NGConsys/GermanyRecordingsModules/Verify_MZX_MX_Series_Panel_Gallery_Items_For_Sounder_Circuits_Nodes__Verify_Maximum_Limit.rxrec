@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e88cdd05-af27-4a56-be27-0dcc585ee18e"
+id="4be31498-1f0d-4c63-98d1-9cff2c56f237"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany"
-	namespace="TestProject.Recording_Modules">
+	classname="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit"
+	namespace="TestProject.GermanyRecordingsModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -61,6 +61,75 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddPanels"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2ca7df19-9781-4f88-9056-3fa97f0051f4">
+				<argument
+				argname="NumberofPanels"
+				id="913523e8-0df4-4cb2-a019-1495f987868c">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNames"
+				id="2dc05029-bb59-4c73-a8d0-a2517555c26f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MZX252
+					</argvalue>
+				</argument>
+				<argument
+				argname="sPanelCPU"
+				id="06d575c3-e0db-4002-a7c0-84acd7c5b55c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeExpander"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -80,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Site
+						Sounder Circuit1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -105,7 +174,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1727_T1755
+						T1763_T1823
 					</argvalue>
 				</argument>
 				<argument
@@ -115,7 +184,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Panels
+						Sounders
 					</argvalue>
 				</argument>
 				<argument
@@ -125,16 +194,16 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro32xD
+						Generic Sounder
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -144,33 +213,81 @@ mode="Global">
 			<arguments
 			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="fileName"
+				argname="sDeviceName"
 				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1727_T1755
+						Generic Sounder
 					</argvalue>
 				</argument>
 				<argument
-				argname="sheetName"
-				id="063f2257-2606-40d2-a7bd-bd02eb8663a8">
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other Nodes
 					</argvalue>
 				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="GalleryDeviceName"
-				id="eb708591-3892-4c87-8bc1-7c3bd9894825">
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						TXG Node
+						SB520
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="VerifyNavigationTreeItemText"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="TreeItemName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Sounder Circuit1 (2)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -195,24 +312,9 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Site
+						Sounder Circuit2
 					</argvalue>
 				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="clickOnSiteAccessoriesTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -235,27 +337,27 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1727_T1755
+						T1763_T1823
 					</argvalue>
 				</argument>
 				<argument
 				argname="sheetName"
-				id="063f2257-2606-40d2-a7bd-bd02eb8663a8">
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Sounders
 					</argvalue>
 				</argument>
 				<argument
 				argname="GalleryDeviceName"
-				id="eb708591-3892-4c87-8bc1-7c3bd9894825">
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						ANC125
+						Generic Sounder
 					</argvalue>
 				</argument>
 			</arguments>
@@ -272,60 +374,24 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
 				argname="sDeviceName"
-				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						ANC125
+						Generic Sounder
 					</argvalue>
 				</argument>
 				<argument
 				argname="sType"
-				id="7615070c-497f-43ab-9303-f84ccd6ecb8f">
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
-				<argument
-				argname="sDeviceName"
-				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						ANC250
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="7615070c-497f-43ab-9303-f84ccd6ecb8f">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Accessories
 					</argvalue>
 				</argument>
 			</arguments>
@@ -334,22 +400,7 @@ mode="Global">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnShoppingListTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Export_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="SearchDeviceInExportUsingSKUOrDescription"
+		methodname="VerifyNavigationTreeItemText"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -359,23 +410,13 @@ mode="Global">
 			<arguments
 			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="sValue"
-				id="25cb3ffc-62f3-4efd-94f6-aee9b73f08ac">
+				argname="TreeItemName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						557.202.622
-					</argvalue>
-				</argument>
-				<argument
-				argname="sExist"
-				id="d0101f57-1b50-4398-a6b1-a041944bdeb3">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						True
+						Sounder Circuit2 (1)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -397,7 +438,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany.UserCode.cs
+		Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

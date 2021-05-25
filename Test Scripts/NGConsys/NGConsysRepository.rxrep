@@ -14959,6 +14959,13 @@ AAAAAElFTkSuQmCC
 			</item>
 			<item
 			capname="text"
+			id="568e900c-d7c4-4e0d-be7b-8d542564d1df"
+			name="txt_ConnectionForInventory"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/progressbar/list[8]/tree[@automationid='RegionTableView']/container[@automationid='rowPresenterGrid']/?/?/container[@caption='']//row/cell[4]/text[@text=$sLabelName]
+			</item>
+			<item
+			capname="text"
 			id="2dd1b515-e30f-45aa-9069-d933a290cd59"
 			name="Copy_of_txt_LabelNameForInventory2"
 			searchtimeout="90000ms">

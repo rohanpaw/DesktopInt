@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="05305105-e27d-4900-9287-9e241ba1fc01"
+id="aa39dc37-cac6-450c-85ee-972a843fd047"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_Germany"
-	namespace="TestProject.Recording_Modules">
+	classname="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node"
+	namespace="TestProject.GermanyRecordingsModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -90,7 +90,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro16xBB
+						P805D
 					</argvalue>
 				</argument>
 				<argument
@@ -174,7 +174,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1743_T1745
+						T1758_T1760
 					</argvalue>
 				</argument>
 				<argument
@@ -219,7 +219,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1743_T1745
+						T1758_T1760
 					</argvalue>
 				</argument>
 				<argument
@@ -264,7 +264,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1743_T1745
+						T1758_T1760
 					</argvalue>
 				</argument>
 				<argument
@@ -354,7 +354,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PLX800
+						XLM800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -439,7 +439,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1743_T1745
+						T1758_T1760
 					</argvalue>
 				</argument>
 				<argument
@@ -538,6 +538,31 @@ mode="Global">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sLabel"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Printer 1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
 		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False">
@@ -554,7 +579,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PX-PR
+						RS800
 					</argvalue>
 				</argument>
 				<argument
@@ -564,6 +589,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
+						Printers
 					</argvalue>
 				</argument>
 			</arguments>
@@ -698,7 +724,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PX-PR
+						LCD800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -723,7 +749,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						557.202.864
+						557.200.030
 					</argvalue>
 				</argument>
 			</arguments>
@@ -770,7 +796,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_Germany.UserCode.cs
+		Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

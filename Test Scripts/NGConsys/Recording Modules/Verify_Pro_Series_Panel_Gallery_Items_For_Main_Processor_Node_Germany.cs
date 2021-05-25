@@ -100,9 +100,6 @@ namespace TestProject.Recording_Modules
             Libraries.Gallery_Functions.verifyGalleryListItems("T1743_T1745", "Printers", "LCD800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "LCD800");
-            Delay.Milliseconds(0);
-            
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
             Delay.Milliseconds(0);
             
@@ -142,8 +139,11 @@ namespace TestProject.Recording_Modules
             Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("PX-PR");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingSKUFromInventoryTab("557.202.864");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.SelectRowUsingSKUFromInventoryTab("557.202.864");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.SelectRowUsingConnectionFromInventoryTab("Serial Port");
+            //Delay.Milliseconds(0);
             
         }
 

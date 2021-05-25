@@ -6,9 +6,15 @@
 			id="01cff86b-b94b-4778-b4bb-9263e8a2ad1e"
 			name="Verify_Pro_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added_Germany">
 				<description>
-					<![CDATA[<p>NGC-3475/T1746</p>]]>
+					<![CDATA[<p>NGC-3475/T1746 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="05a563b5-5eb8-48d4-8552-03b8c2c3ad95"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node"
+			ref="4aa4334c-bc1c-4631-96c0-cef5270e0840"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="06e847f3-596f-4696-a0af-e3bfdb295c33"
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node_Germany">
@@ -43,7 +49,98 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="19cdfb99-d20f-402e-94bd-cd46294d542f"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="1c52504b-2e9a-45ee-8c7b-b8e1079a6412"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="20275cd7-cea8-4203-bdfd-5b0b83306826"
+			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
+			ref="c2c57ea8-c88c-4daf-990e-60d8274359ce"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="2345fdca-e501-4442-8ca9-284c34a52d0d"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="2c06639c-3c39-4598-9944-090936595f3a"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2d730225-9777-4529-9d21-ee3a2fe4b13e"
+			name="Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added"
+			ref="08393bbc-83ac-47e1-8832-89515b177de8"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="2fd2f858-ed04-4d18-b356-2633ee1caebd"
+			name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+				<description>
+					<![CDATA[<p>NGC-3475/T1839</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="38048144-97f0-4605-bcd4-ba7e63d1efaa"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3d7c45af-c3a4-4a76-888e-9c6228feaeba"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
 			type="UserCode">
@@ -68,13 +165,52 @@
 			ref="66fdbd1b-254e-4ca9-b519-4d4ce940e30a"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			enabled="False"
+			id="3f4de227-70b6-44f3-b97c-ef1ee07ba3d8"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="419f93f0-33a5-4b3b-9b8c-7e8533f6add6"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="429722b1-5897-478c-a0b8-e0c6a7899887"
+			name="Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices"
+			ref="a19ba1ea-4a66-4ce0-a384-25dae32d1968"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="4683cbe2-0494-4e58-8450-6a659b71e8ea"
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_Germany">
 				<description>
-					<![CDATA[<p>NGC-3475/T1743/T1745</p><p><br></p>]]>
+					<![CDATA[<p>NGC-3475/T1743/T1745&nbsp; SKU and Connection text are not verified as they are not visible</p><br>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="4f5b208e-f29c-4e5d-93a0-00840fd2275a"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="522c6ea6-b8be-4adb-ae0f-c56a83b4a9b7"
 			name="Application_Open"
@@ -102,9 +238,61 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="58183d85-0672-4481-8e2b-0c5912aed9b8"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="5d452603-147d-4c84-85f9-c968c4293016"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
+				<description>
+					<![CDATA[<p>NGC-3475/T1763 SB520/SB520 Front Cover is not hiding on adding 1 device which is maximum limit</p><p>Also, failing as SB520 can be added only in one sounder circuit ?</p><br>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="60d5cc1c-23bf-42e4-87ed-25d58b2ebca1"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="612d1d9c-c693-496c-95d6-c9c92bc907da"
 			name="Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added_Germany"
 			ref="80061fab-f894-49b9-9935-e12d3f660897"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="616e10f2-62a7-44e4-b8b6-0a19ed16aad2"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="6197fc13-612d-4d16-800c-f7063491edd2"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node">
+				<description>
+					<![CDATA[<p>NGC-3475/T1827</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="64248cdc-545c-4c08-b707-03e4de4472a6"
+			name="Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices"
+			ref="5a4fd02a-1e97-45c9-b085-aee5ef3dd25f"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -127,6 +315,12 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="6b5dfe78-8117-453d-8fb1-89719c235651"
+			name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
+			ref="c1bf37ca-60c3-4001-8bd7-7bc0c51b063a"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="71626b8e-58b8-47c9-b54e-17c64af89d80"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -146,6 +340,83 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="7242ae92-f4f3-4314-baf9-db494a99ebec"
+			name="Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices">
+				<description>
+					<![CDATA[NGC-3475/T1755/T1811]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="73cc3702-496c-436c-aa66-6e1f1d110651"
+			name="Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added"
+			ref="fbc1ef26-779c-49e3-b1ab-de26527b88f6"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="76062b0e-1009-4d6d-bf72-f8cc1ad6738b"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="76e2925c-946a-4327-a9d6-2395b937a95e"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="76f5e106-06fd-44ec-a3d0-2ab4e6bcbcc9"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7a6e6c5b-db05-4b22-aac9-c35f09ac6919"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Panel_Node"
+			ref="cb3f0351-15e5-41c4-9ab9-316b82107921"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7b086cee-db38-45c6-b8ea-33350251a60c"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7e25b43f-d240-4bbe-a68e-eae53f6a7a6d"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="820852f3-78b4-4585-8377-31dead39c33f"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+				<description>
+					<![CDATA[<p>NGC-3475/T1758/T1760&nbsp; SKU and Connection text are not verified as they are not visible</p><p>&nbsp;<br></p>]]>
+				</description>
+			</testcase>
+			<testcase
+			id="82260a9b-c115-434b-a92c-464eec3b3414"
+			name="Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_&amp;_Verify_Max_Limit_Of_Devices_Loop">
+				<description>
+					<![CDATA[<p>NGC-3475/T1824</p><p><br></p>]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="8829c9e4-5dbb-411e-b480-fbba46a696a1"
 			name="Application_Open"
@@ -173,6 +444,58 @@
 					<![CDATA[<p>NGC-3475/T1747</p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="8d127d82-133b-40db-b632-88ae1305d8be"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="9052e188-7492-496d-81c4-b0dcc4607ce1"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node"
+			ref="aacc4594-b76d-43de-93b6-22f40f3e91d5"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="908d8c09-9d8d-4419-8df2-52a9b6f1b462"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="924a4647-45b6-4b1d-83ce-3ea6dea8ca4a"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="93c4085b-ceb2-455b-b7d4-9df02d75177b"
 			name="ReportToPDFModule"
@@ -203,6 +526,12 @@
 					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
 					variablename="Details">
 					</var>
+					<var
+					dataname="DeleteRanorexReport"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
+					variablename="DeleteRanorexReport">
+					</var>
 				</databinding>
 			</testmodule>
 			<testsuite
@@ -224,11 +553,44 @@
 			reporttemplatefolder=""
 			reportwriteinterval="30000ms">
 			</testsuite>
+			<testmodule
+			id="994e059d-ff94-4b0c-9cfe-017daf357bb2"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="99cfca7c-7bd9-489e-bad7-215efb3683db"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="9d92d9de-44d5-4920-b835-4c1131b0e32b"
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node_Germany">
 				<description>
 					<![CDATA[<p>NGC-3475/T1752</p><p><br></p>]]>
+				</description>
+			</testcase>
+			<testcase
+			id="9fa8c93e-946f-4e99-91cf-5dc244d8b906"
+			name="Verify_MZX_MX_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
+				<description>
+					<![CDATA[<p>NGC-3475/T1820 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -257,11 +619,91 @@
 			ref="c792c82c-4875-455b-8262-24c57164acaf"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="a3017747-8cfa-40eb-96ad-c6f7204977a1"
+			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+				<description>
+					<![CDATA[<p>NGC-3475/T1838/T1840/T1841</p>]]>
+				</description>
+			</testcase>
+			<testcase
+			id="a3039acf-3bd0-4f5c-8f47-cd742918960c"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node">
+				<description>
+					<![CDATA[<p>NGC-3475/T1762</p><p><br></p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="a3c3cca6-b307-4508-8e92-207e973ba16b"
+			name="Verify_P_Series_Panel_Gallery_Items_For_FIM_Node"
+			ref="9444e6c2-7ba1-470c-9ce5-959a5318188f"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a42c87f0-7b78-4472-9d5c-a0e9c1818191"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a4b4005c-e103-4da6-a757-cdfc10d022e5"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="a586a325-345c-464a-a4a4-cddb3848daa2"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a92f5460-f0a0-4a4d-96e4-c8aa5f2d7ba5"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="b0433168-92f8-4de9-b3a5-3f5851907624"
@@ -276,6 +718,24 @@
 					<![CDATA[<p>NGC-3475/T1730</p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="b2b850e2-bcef-407c-b30e-3c854d4c805c"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node"
+			ref="aa39dc37-cac6-450c-85ee-972a843fd047"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b3952165-1d5f-4698-a01f-392bc6768819"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit"
+			ref="03dd3e88-62ec-4999-9233-66afa6c61591"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="bd1f64fc-577b-4915-89ed-b01787b98d6f"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit"
+			ref="4be31498-1f0d-4c63-98d1-9cff2c56f237"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="bfbb1754-02b3-4026-9664-6e08a8c5bd7c"
 			name="Application_Open"
@@ -315,7 +775,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TSP MZX\Designer Pro 30.1.28">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 30.1.30">
 					</param>
 					<param
 					name="Mode"
@@ -343,10 +803,75 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="c3713cbb-56e2-4ad1-be76-88d00b86c4a2"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="c4cc7fd7-9f7a-4469-a2d2-898dfe9c1897"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="c6a7fb38-d43c-4e92-a662-7670cf510bf5"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="c6f389dd-db82-454f-9923-6e300abd9bdf"
+			name="Verify_P_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
+				<description>
+					<![CDATA[<p>NGC-3475/T1761 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="c9a5893c-2e16-4d99-a2ec-423f898771d2"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node"
+			ref="fa56d57e-9dff-4416-ab2c-c6d4de5160fd"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="cce48f0f-ced3-4ff9-86d6-b14728275fba"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="cd7263b9-743b-4c56-9936-dbdea312e00a"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
+				<description>
+					<![CDATA[<p>NGC-3475/T1813/T1881</p><br>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="cda6698f-a4ba-47ae-a3fd-9be4c5d3b84e"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="cfabef3b-085f-45d7-bc6b-d0e9c2990f83"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Panel_Node">
+				<description>
+					<![CDATA[<p>NGC-3475/T1756</p><p><br></p>]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="d4a9ac8b-b932-4696-964a-4159dc72c1dc"
 			name="Close_Application"
@@ -354,9 +879,115 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="d4e971eb-309b-4406-aa78-83c288b2ac62"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="d5f3aa4e-c0a3-41f1-aceb-3bcd9cecdedd"
+			name="Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+				<description>
+					<![CDATA[<p>NGC-3475/T1832</p>]]>
+				</description>
+			</testcase>
+			<testcase
+			id="dd1a7384-b35a-4801-a715-40af6387f299"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
+				<description>
+					<![CDATA[<p>NGC-3475/T1823 SB520/SB520 Front Cover is not hiding on adding 1 device which is maximum limit</p><p>Also, failing as SB520 can be added only in one sounder circuit ?</p><br>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="de394ff8-728f-400f-972c-50dd5d8b4584"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="e00d2194-4b67-40fa-bc3e-c911f038b7eb"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+				<description>
+					<![CDATA[<p>NGC-3475/T1816/T1818&nbsp; SKU and Connection text are not verified as they are not visible</p><p>&nbsp;<br></p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="e02d3ede-6e90-47e8-8295-64dd58a41569"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="ee24f618-f9f9-4cb0-88e3-81f95036c3c6"
+			name="Verify_P_Series_Panel_Gallery_Items_For_FIM_Node">
+				<description>
+					<![CDATA[<p>NGC-3475/T1766</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="efd75da6-6aaa-415a-9997-e707a6fa68d7"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node"
+			ref="0475a23b-36d7-46e3-8c54-74a2720f04cc"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fa86694a-e486-465d-9bda-86fa34ff97d1"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="fbda61cb-e7e5-443a-9072-ce4d3a1aaa6d"
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node_Germany"
 			ref="c490cce2-c1da-4420-8774-bd83ad2428e8"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fc573f62-49f7-4c7f-8c91-2dbbf53fc69f"
+			name="Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop"
+			ref="df7264d0-8966-4bc3-b8d6-bdc4d931efe5"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -485,6 +1116,262 @@
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="7242ae92-f4f3-4314-baf9-db494a99ebec"
+					name="Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices">
+						<testmodule
+						id="a42c87f0-7b78-4472-9d5c-a0e9c1818191"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="429722b1-5897-478c-a0b8-e0c6a7899887"
+						name="Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices">
+						</testmodule>
+						<testmodule
+						id="c4cc7fd7-9f7a-4469-a2d2-898dfe9c1897"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="cfabef3b-085f-45d7-bc6b-d0e9c2990f83"
+					name="Verify_P_Series_Panel_Gallery_Items_For_Panel_Node">
+						<testmodule
+						id="cda6698f-a4ba-47ae-a3fd-9be4c5d3b84e"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="7a6e6c5b-db05-4b22-aac9-c35f09ac6919"
+						name="Verify_P_Series_Panel_Gallery_Items_For_Panel_Node">
+						</testmodule>
+						<testmodule
+						id="d4e971eb-309b-4406-aa78-83c288b2ac62"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="820852f3-78b4-4585-8377-31dead39c33f"
+					name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+						<testmodule
+						id="419f93f0-33a5-4b3b-9b8c-7e8533f6add6"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="b2b850e2-bcef-407c-b30e-3c854d4c805c"
+						name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+						</testmodule>
+						<testmodule
+						id="76f5e106-06fd-44ec-a3d0-2ab4e6bcbcc9"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="c6f389dd-db82-454f-9923-6e300abd9bdf"
+					name="Verify_P_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
+						<testmodule
+						id="3d7c45af-c3a4-4a76-888e-9c6228feaeba"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="73cc3702-496c-436c-aa66-6e1f1d110651"
+						name="Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added">
+						</testmodule>
+						<testmodule
+						id="60d5cc1c-23bf-42e4-87ed-25d58b2ebca1"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="a3039acf-3bd0-4f5c-8f47-cd742918960c"
+					name="Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node">
+						<testmodule
+						id="908d8c09-9d8d-4419-8df2-52a9b6f1b462"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="9052e188-7492-496d-81c4-b0dcc4607ce1"
+						name="Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node">
+						</testmodule>
+						<testmodule
+						id="4f5b208e-f29c-4e5d-93a0-00840fd2275a"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="5d452603-147d-4c84-85f9-c968c4293016"
+					name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
+						<testmodule
+						id="a92f5460-f0a0-4a4d-96e4-c8aa5f2d7ba5"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="b3952165-1d5f-4698-a01f-392bc6768819"
+						name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit">
+						</testmodule>
+						<testmodule
+						id="c6a7fb38-d43c-4e92-a662-7670cf510bf5"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="ee24f618-f9f9-4cb0-88e3-81f95036c3c6"
+					name="Verify_P_Series_Panel_Gallery_Items_For_FIM_Node">
+						<testmodule
+						id="7e25b43f-d240-4bbe-a68e-eae53f6a7a6d"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="a3c3cca6-b307-4508-8e92-207e973ba16b"
+						name="Verify_P_Series_Panel_Gallery_Items_For_FIM_Node">
+						</testmodule>
+						<testmodule
+						id="994e059d-ff94-4b0c-9cfe-017daf357bb2"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="cd7263b9-743b-4c56-9936-dbdea312e00a"
+					name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
+						<testmodule
+						id="616e10f2-62a7-44e4-b8b6-0a19ed16aad2"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="05a563b5-5eb8-48d4-8552-03b8c2c3ad95"
+						name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
+						</testmodule>
+						<testmodule
+						id="2345fdca-e501-4442-8ca9-284c34a52d0d"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="e00d2194-4b67-40fa-bc3e-c911f038b7eb"
+					name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+						<testmodule
+						id="2c06639c-3c39-4598-9944-090936595f3a"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="c9a5893c-2e16-4d99-a2ec-423f898771d2"
+						name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+						</testmodule>
+						<testmodule
+						id="8d127d82-133b-40db-b632-88ae1305d8be"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="9fa8c93e-946f-4e99-91cf-5dc244d8b906"
+					name="Verify_MZX_MX_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
+						<testmodule
+						id="38048144-97f0-4605-bcd4-ba7e63d1efaa"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="2d730225-9777-4529-9d21-ee3a2fe4b13e"
+						name="Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added">
+						</testmodule>
+						<testmodule
+						id="76e2925c-946a-4327-a9d6-2395b937a95e"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="dd1a7384-b35a-4801-a715-40af6387f299"
+					name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
+						<testmodule
+						id="de394ff8-728f-400f-972c-50dd5d8b4584"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="bd1f64fc-577b-4915-89ed-b01787b98d6f"
+						name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit">
+						</testmodule>
+						<testmodule
+						id="58183d85-0672-4481-8e2b-0c5912aed9b8"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="6197fc13-612d-4d16-800c-f7063491edd2"
+					name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node">
+						<testmodule
+						id="fa86694a-e486-465d-9bda-86fa34ff97d1"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="efd75da6-6aaa-415a-9997-e707a6fa68d7"
+						name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node">
+						</testmodule>
+						<testmodule
+						id="19cdfb99-d20f-402e-94bd-cd46294d542f"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="d5f3aa4e-c0a3-41f1-aceb-3bcd9cecdedd"
+					name="Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						<testmodule
+						id="e02d3ede-6e90-47e8-8295-64dd58a41569"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="64248cdc-545c-4c08-b707-03e4de4472a6"
+						name="Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						</testmodule>
+						<testmodule
+						id="7b086cee-db38-45c6-b8ea-33350251a60c"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="82260a9b-c115-434b-a92c-464eec3b3414"
+					name="Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_&amp;_Verify_Max_Limit_Of_Devices_Loop">
+						<testmodule
+						id="924a4647-45b6-4b1d-83ce-3ea6dea8ca4a"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="fc573f62-49f7-4c7f-8c91-2dbbf53fc69f"
+						name="Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop">
+						</testmodule>
+						<testmodule
+						id="3f4de227-70b6-44f3-b97c-ef1ee07ba3d8"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="2fd2f858-ed04-4d18-b356-2633ee1caebd"
+					name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+						<testmodule
+						id="99cfca7c-7bd9-489e-bad7-215efb3683db"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="6b5dfe78-8117-453d-8fb1-89719c235651"
+						name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+						</testmodule>
+						<testmodule
+						id="76062b0e-1009-4d6d-bf72-f8cc1ad6738b"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="a3017747-8cfa-40eb-96ad-c6f7204977a1"
+					name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+						<testmodule
+						id="a4b4005c-e103-4da6-a757-cdfc10d022e5"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="20275cd7-cea8-4203-bdfd-5b0b83306826"
+						name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+						</testmodule>
+						<testmodule
+						id="c3713cbb-56e2-4ad1-be76-88d00b86c4a2"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="cce48f0f-ced3-4ff9-86d6-b14728275fba"
 					name="teardown">
@@ -503,6 +1390,12 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="2fd2f858-ed04-4d18-b356-2633ee1caebd">
+			</testcontainer>
+			<testcontainer
+			id="a3017747-8cfa-40eb-96ad-c6f7204977a1">
+			</testcontainer>
 			<testcontainer
 			id="c32a791f-aa98-438e-ad07-a446f859b606">
 			</testcontainer>

@@ -1129,7 +1129,7 @@ namespace TestProject.Libraries
 					
 				
 					   repo.FormMe.btn_AllGalleryDropdown.Click();  
-					    //repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
+					   //repo.FormMe.btn_AllGalleryDropdown.EnsureVisible();
 					    
 					    if(repo.ContextMenu.txt_SelectDeviceInfo.Exists())
 					    {  	

@@ -25373,12 +25373,12 @@ persisted in panel properties&nbsp;]]>
 						name="Create_Project">
 						</testmodule>
 						<testmodule
-						id="ae2d7c66-ca65-450b-8c9a-aebc226a1f91"
-						name="Close_Application">
-						</testmodule>
-						<testmodule
 						id="05abbe32-4392-49d5-a8e8-bb2bc74cc0a4"
 						name="Verify_default_calculation_value_for_5V_24V_Rail_and_Total_System_Load_for_MT2_Panel">
+						</testmodule>
+						<testmodule
+						id="ae2d7c66-ca65-450b-8c9a-aebc226a1f91"
+						name="Close_Application">
 						</testmodule>
 					</testcase>
 					<testcase
@@ -25717,12 +25717,6 @@ persisted in panel properties&nbsp;]]>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
-			</testcontainer>
-			<testcontainer
-			id="b2ca27bf-3d33-4edb-8dfd-f81988db78e9">
-			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="Voltage_Calculation">

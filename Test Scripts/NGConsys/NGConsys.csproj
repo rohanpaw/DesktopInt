@@ -151,6 +151,198 @@
     <Compile Include="AssemblyInfo.cs">
       <id>abbc39a9-5d43-49f2-84c0-d467e7823a8d</id>
     </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <BoundTo>9eb4d0c0-c0cc-4934-b986-45b495be4206</BoundTo>
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a1b0f387-7913-4867-b46b-bdf1720c5962</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <BoundTo>9eb4d0c0-c0cc-4934-b986-45b495be4206</BoundTo>
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>47b420bf-426a-4b4c-aa50-c9eb83604dab</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <BoundTo>3b24fa87-b1df-4201-83cd-6747c0d52c4c</BoundTo>
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d1e6b10a-a5b5-423f-9db0-2aedb06b2046</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <BoundTo>3b24fa87-b1df-4201-83cd-6747c0d52c4c</BoundTo>
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23d77fa3-24a0-4923-a182-f10080efdeed</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop.cs">
+      <BoundTo>13963212-f85c-4454-99ab-1306a8818884</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>20015b28-6721-4c1f-920c-dcb240591aa7</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop.UserCode.cs">
+      <BoundTo>13963212-f85c-4454-99ab-1306a8818884</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a7ca9b2e-c376-404f-8cf2-faeb7674d10b</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.cs">
+      <BoundTo>2c85f578-0b86-43db-b430-0054cc4b9104</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a176438a-8626-4462-abef-c477359ead90</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.UserCode.cs">
+      <BoundTo>2c85f578-0b86-43db-b430-0054cc4b9104</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f7f538cd-5509-4df5-863f-60bf73d44599</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node.cs">
+      <BoundTo>a2d9f9c7-5121-48d8-89ee-610deb5105fe</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>73adcc65-0d9b-4a8b-a248-a85ac14d0c32</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node.UserCode.cs">
+      <BoundTo>a2d9f9c7-5121-48d8-89ee-610deb5105fe</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>750a7aa5-04fa-43f4-ae0f-0211991fbd61</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.cs">
+      <BoundTo>f6ca7a4c-155c-4d53-9863-e18860fb2206</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65464272-fbef-4cc5-9b10-e29fe570f214</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.UserCode.cs">
+      <BoundTo>f6ca7a4c-155c-4d53-9863-e18860fb2206</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0caa383d-5355-4736-a3f8-2a578772d804</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <BoundTo>a279704f-e455-4c4f-8c31-a73459137b17</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3b57b277-303b-45d4-b849-a7e2301e5b67</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <BoundTo>a279704f-e455-4c4f-8c31-a73459137b17</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>36a240f4-3c43-4fa2-9fa7-2bd74d5d6923</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.cs">
+      <BoundTo>1d972602-12a8-4489-9b86-e9bcacf2179e</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a387ac6f-6c83-4997-9660-80c6cc1329ac</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.UserCode.cs">
+      <BoundTo>1d972602-12a8-4489-9b86-e9bcacf2179e</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e1690319-7f98-4908-a5e7-ab8a8b285ac9</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <BoundTo>38b256f7-f514-4984-af35-240ecd29eb5c</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a9354c56-a390-4a0e-b52a-ebc2f0f8bfe3</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <BoundTo>38b256f7-f514-4984-af35-240ecd29eb5c</BoundTo>
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8addba5a-2f15-4c6b-b267-a730415f3f16</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.cs">
+      <BoundTo>aa617d66-b067-4d94-869f-63114a051c50</BoundTo>
+      <DependentUpon>Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>983683ad-0f47-4479-a650-fd4bf126dabd</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.UserCode.cs">
+      <BoundTo>aa617d66-b067-4d94-869f-63114a051c50</BoundTo>
+      <DependentUpon>Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d02f4079-6405-466c-95c0-e1aafc8d013f</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.cs">
+      <BoundTo>33d576a4-187c-4310-85c2-6cf6da6079bc</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>efd777c6-39de-4782-83cb-6fad9a25aef7</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.UserCode.cs">
+      <BoundTo>33d576a4-187c-4310-85c2-6cf6da6079bc</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5cbf04c2-7ca1-446f-88ec-3a1965e1ef69</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node.cs">
+      <BoundTo>c19ccba1-bc2f-4789-bb57-06a3b942fcbb</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e0ab5c04-946c-409d-9af7-ce415a432bb1</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node.UserCode.cs">
+      <BoundTo>c19ccba1-bc2f-4789-bb57-06a3b942fcbb</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9cf18692-fce2-420b-b637-26289c62d88d</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_FIM_Node.cs">
+      <BoundTo>85034baf-afd9-49ba-914d-e383e782629c</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c019b19e-5d9a-4f38-a979-764860c9f257</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_FIM_Node.UserCode.cs">
+      <BoundTo>85034baf-afd9-49ba-914d-e383e782629c</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>740a73f6-1d9a-4263-9e8a-18ccd2f6a6bd</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.cs">
+      <BoundTo>dea29c73-1f23-42b5-9103-d273e3c46081</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9644f76c-b9bb-48f0-b238-184a7d9b67f1</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.UserCode.cs">
+      <BoundTo>dea29c73-1f23-42b5-9103-d273e3c46081</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b40faeed-a531-448e-a3eb-41cee69a18e1</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <BoundTo>db1314ef-469b-4611-9c9e-9144ac36166b</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>64a928fc-d61a-4261-8286-5b19e42a6151</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <BoundTo>db1314ef-469b-4611-9c9e-9144ac36166b</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8920654b-fe53-401a-a433-46f493c2ea6a</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.cs">
+      <BoundTo>a4859f0d-13b9-4ce4-a740-cd6fb6c2f9c2</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a0fd9678-bbc0-4ba7-b19d-d531317bf51c</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.UserCode.cs">
+      <BoundTo>a4859f0d-13b9-4ce4-a740-cd6fb6c2f9c2</BoundTo>
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>18f68935-0144-49d6-8de1-c62a0f994347</id>
+    </Compile>
     <Compile Include="Libraries\Common_Functions.cs">
       <id>648b5bd1-c68d-4ffb-8102-d5e82202f91b</id>
     </Compile>
@@ -4665,6 +4857,86 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>38163132-2381-4d2c-90cf-3231723569af</id>
     </Content>
+    <None Include="GermanyRecordingsModules\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>9eb4d0c0-c0cc-4934-b986-45b495be4206</id>
+      <recordtableid>c1bf37ca-60c3-4001-8bd7-7bc0c51b063a</recordtableid>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>3b24fa87-b1df-4201-83cd-6747c0d52c4c</id>
+      <recordtableid>c2c57ea8-c88c-4daf-990e-60d8274359ce</recordtableid>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop.rxrec">
+      <id>13963212-f85c-4454-99ab-1306a8818884</id>
+      <recordtableid>df7264d0-8966-4bc3-b8d6-bdc4d931efe5</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
+      <id>2c85f578-0b86-43db-b430-0054cc4b9104</id>
+      <recordtableid>08393bbc-83ac-47e1-8832-89515b177de8</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node.rxrec">
+      <id>a2d9f9c7-5121-48d8-89ee-610deb5105fe</id>
+      <recordtableid>0475a23b-36d7-46e3-8c54-74a2720f04cc</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>f6ca7a4c-155c-4d53-9863-e18860fb2206</id>
+      <recordtableid>fa56d57e-9dff-4416-ab2c-c6d4de5160fd</recordtableid>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>a279704f-e455-4c4f-8c31-a73459137b17</id>
+      <recordtableid>4aa4334c-bc1c-4631-96c0-cef5270e0840</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec">
+      <id>1d972602-12a8-4489-9b86-e9bcacf2179e</id>
+      <recordtableid>4be31498-1f0d-4c63-98d1-9cff2c56f237</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <id>38b256f7-f514-4984-af35-240ecd29eb5c</id>
+      <recordtableid>5a4fd02a-1e97-45c9-b085-aee5ef3dd25f</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>aa617d66-b067-4d94-869f-63114a051c50</id>
+      <recordtableid>a19ba1ea-4a66-4ce0-a384-25dae32d1968</recordtableid>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
+      <id>33d576a4-187c-4310-85c2-6cf6da6079bc</id>
+      <recordtableid>fbc1ef26-779c-49e3-b1ab-de26527b88f6</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>c19ccba1-bc2f-4789-bb57-06a3b942fcbb</id>
+      <recordtableid>aacc4594-b76d-43de-93b6-22f40f3e91d5</recordtableid>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_FIM_Node.rxrec">
+      <id>85034baf-afd9-49ba-914d-e383e782629c</id>
+      <recordtableid>9444e6c2-7ba1-470c-9ce5-959a5318188f</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec">
+      <id>dea29c73-1f23-42b5-9103-d273e3c46081</id>
+      <recordtableid>aa39dc37-cac6-450c-85ee-972a843fd047</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>db1314ef-469b-4611-9c9e-9144ac36166b</id>
+      <recordtableid>cb3f0351-15e5-41c4-9ab9-316b82107921</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec">
+      <id>a4859f0d-13b9-4ce4-a740-cd6fb6c2f9c2</id>
+      <recordtableid>03dd3e88-62ec-4999-9233-66afa6c61591</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="Recording Modules\Acc_Gall_Update_On_Max_Of_IOBFBPCSPOS_Supported_By_Panel_Is_Reached.rxrec">
       <id>293cf98b-fbdf-43a7-90b6-cc14a117c092</id>
       <recordtableid>d7004e74-b6ad-48ca-9651-bdd5f6064efd</recordtableid>
@@ -4782,14 +5054,14 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node_Germany.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>ac5ed07f-2518-4233-a8ad-1ae69cf8f845</id>
       <recordtableid>c490cce2-c1da-4420-8774-bd83ad2428e8</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_Germany.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>e2519216-422d-484e-afc0-6fa30c111e2d</id>
       <recordtableid>05305105-e27d-4900-9287-9e241ba1fc01</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="Recording Modules\Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Germany.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -6542,6 +6814,11 @@
       <Project>{92AFF745-9019-442E-A2C2-A13170004D93}</Project>
       <Name>Ranorex Automation Helpers</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GermanyRecordingsModules">
+      <id>83f7240b-b99b-49ea-b3d2-d9c245c48613</id>
+    </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets">
   </Import>

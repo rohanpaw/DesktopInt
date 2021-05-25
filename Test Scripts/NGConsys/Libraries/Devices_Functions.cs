@@ -9399,6 +9399,259 @@ namespace TestProject.Libraries
 			Report.Log(ReportLevel.Success, "Device with SKU number " + sSKUNumber+" selected");
 		}
 		
+		/**************************************************************************************************
+		 * Function Name: SelectRowUsingSKUFromInventoryTab
+		 * Function Details: To select item from inventory grid using label
+		 * Parameter/Arguments: sLabelName
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 19/05/2021
+		 **************************************************************************************************/
+		[UserCodeMethod]
+		public static void SelectRowUsingConnectionFromInventoryTab(string sConnectionName)
+		{
+			sLabelName = sConnectionName;
+			//repo.FormMe.LabelName_txt.Click();
+			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
+			repo.FormMe.txt_SKUForInventory.Click();
+				
+			Report.Log(ReportLevel.Success, "Device with Connection name " + sConnectionName+" selected");
+		}
+		
+		
+		
+		
+		 /***********************************************************************************************************
+		 * Function Name: verifyInventoryLabelNameExist
+		 * Function Details: 
+		 * Parameter/Arguments: 
+		 * Output:
+		 * Function Owner: Alpesh Dhakad 
+		 * Last Update : 24/05/2021
+		 ************************************************************************************************************/
+        [UserCodeMethod]
+        public static void verifyInventoryLabelNameExist(bool Visibility, string LabelName )
+        {
+        	sLabelName=LabelName;   
+        	
+        	if(Visibility)
+			{
+				if(repo.FormMe.txt_LabelNameForInventoryInfo.Exists())
+				{
+					Report.Log(ReportLevel.Success, "Device "+LabelName+"  exists");
+				}
+				else
+				{
+					Report.Log(ReportLevel.Failure, "Device "+LabelName+"  not exists");
+				}
+			}
+			else
+			{ 
+				if(repo.FormMe.txt_LabelNameForInventoryInfo.Exists())
+				{
+					Report.Log(ReportLevel.Failure, "Device "+LabelName+"   exists");  
+				}
+				else
+				{
+					 Report.Log(ReportLevel.Success, "Device "+LabelName+"  not exists");  
+				}
+					     
+					    
+			}  
+	
+				
+			}
+        
+        /*************************************************************************************************************************
+		 * Function Name: verifyActualLoadingDetailsValue
+		 * Function Details: To verify actual loading details value of searched detail unit
+		 * Parameter/Arguments: expectedUnits and loading detail name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2021
+		 **************************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyActualLoadingDetailsValue(string expectedUnits, string LoadingDetail)
+		{
+			sLoadingDetail = LoadingDetail;
+			
+			if(repo.FormMe.txt_ActualLoadingDetailsValueInfo.Exists())
+			{
+			
+			string LoadingUnits = repo.FormMe.txt_ActualLoadingDetailsValue.TextValue;
+			
+			if(LoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoadingUnits);
+			}
+			
+			}
+			else
+			{
+			string LoadingUnits = repo.FormMe.txt_ActualLoadingDetailsValuePreceding.TextValue;
+			
+			if(LoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoadingUnits);
+			}
+			}
+			
+			
+		}
+		
+		/*************************************************************************************************************************
+		 * Function Name: verifyMaximumLoadingDetailsValue
+		 * Function Details: To verify max loading details value of searched detail unit
+		 * Parameter/Arguments: expectedMaxUnits and loading detail name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 25/05/2021
+		 *************************************************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyMaximumLoadingDetailsValue(string expectedMaxUnits, string LoadingDetail)
+		{
+			//Common_Functions.clickOnPhysicalLayoutTab();
+			sLoadingDetail = LoadingDetail;
+			
+			if(repo.FormMe.txt_MaxLoadingDetailsValueInfo.Exists())
+			{
+			
+			string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValue.TextValue;
+			
+			if(MaxLoadingUnits.Equals(expectedMaxUnits))
+			{
+				Report.Log(ReportLevel.Success,"Maximum Loading Unit " + LoadingDetail + " value  "+ expectedMaxUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Maximum Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedMaxUnits  + " Actual Units: "+ MaxLoadingUnits);
+			}
+			
+			}
+			else
+			{
+			string MaxLoadingUnits = repo.FormMe.txt_MaxLoadingDetailsValuePreceding.TextValue;
+			
+			if(MaxLoadingUnits.Equals(expectedMaxUnits))
+			{
+				Report.Log(ReportLevel.Success,"Maximum Loading Unit " + LoadingDetail + " value  "+ expectedMaxUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Maximum Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedMaxUnits  + " Actual Units: "+ MaxLoadingUnits);
+			}
+			}
+			
+			
+		}
+		
+		
+        /**************************************************************************************
+		 * Function Name: verifyMaximumLoopLoadingDetailsValue
+		 * Function Details: To verify maximum loading details value of searched detail unit
+		 * Parameter/Arguments: expectedUnits,column number and loading detail name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 25/05/2021
+		 **************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyMaximumLoopLoadingDetailsValue(string expectedUnits, string LoadingDetail, string ColumnNumber)
+		{
+			sColumn=ColumnNumber;
+			sLoadingDetail = LoadingDetail;
+			
+			if(repo.FormMe.txt_Loops_MaxLoadingDetailsValueInfo.Exists())
+			{
+			string MaxLoopLoadingUnits = repo.FormMe.txt_Loops_MaxLoadingDetailsValue.TextValue;
+			
+			string LoopLoadingUnits = MaxLoopLoadingUnits.Split('/')[1].Trim();
+			
+			if(LoopLoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Maximum Loop Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Maximum Loop Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoopLoadingUnits);
+			}
+			}
+			else
+			{
+			string MaxLoopLoadingUnits = repo.FormMe.txt_Loops_MaxLoadingDetailsValuePreceding.TextValue;
+			
+			string LoopLoadingUnits = MaxLoopLoadingUnits.Split('/')[1].Trim();
+			
+			if(LoopLoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Maximum Loop Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Maximum Loop Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoopLoadingUnits);
+			}
+		}	
+	
+		}
+
+		/**************************************************************************************
+		 * Function Name: verifyActualLoopLoadingDetailsValue
+		 * Function Details: To verify actual loading details value of searched detail unit
+		 * Parameter/Arguments: expectedUnits,column number and loading detail name
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 25/05/2021
+		 **************************************************************************************/
+		[UserCodeMethod]
+		public static void verifyActualLoopLoadingDetailsValue(string expectedUnits, string LoadingDetail,string ColumnNumber)
+		{
+			sColumn=ColumnNumber;
+			sLoadingDetail = LoadingDetail;
+			
+			if(repo.FormMe.txt_Loops_ActualLoadingDetailsValueInfo.Exists())
+			{
+			string ActualLoopLoadingUnits = repo.FormMe.txt_Loops_ActualLoadingDetailsValue.TextValue;
+			
+			string LoopLoadingUnits = ActualLoopLoadingUnits.Split('/')[0].Trim();
+			
+			
+			if(LoopLoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Actual Loop Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Actual Loop Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoopLoadingUnits);
+			}
+			
+			}
+			else
+			{
+			string ActualLoopLoadingUnits = repo.FormMe.txt_Loops_ActualLoadingDetailsValuePreceding.TextValue;
+			
+			string LoopLoadingUnits = ActualLoopLoadingUnits.Split('/')[0].Trim();
+			
+			
+			if(LoopLoadingUnits.Equals(expectedUnits))
+			{
+				Report.Log(ReportLevel.Success,"Actual Loop Loading Unit " + LoadingDetail + " value  "+ expectedUnits + " displayed correctly");
+			}
+			else
+			{
+				Report.Log(ReportLevel.Failure,"Actual Loop Loading Units " + LoadingDetail + " value are not displayed correctly " + ", Expected Units:  " + expectedUnits  + " Actual Units: "+ LoopLoadingUnits);
+			}
+			
+			}
+			
+		}
+
 	}
 }
 

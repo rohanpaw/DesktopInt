@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e88cdd05-af27-4a56-be27-0dcc585ee18e"
+id="a19ba1ea-4a66-4ce0-a384-25dae32d1968"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany"
-	namespace="TestProject.Recording_Modules">
+	classname="Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices"
+	namespace="TestProject.GermanyRecordingsModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -125,7 +125,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro32xD
+						P485D
 					</argvalue>
 				</argument>
 			</arguments>
@@ -280,7 +280,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						ANC125
+						PSU A17
 					</argvalue>
 				</argument>
 				<argument
@@ -315,7 +315,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						ANC250
+						PX-AN
 					</argvalue>
 				</argument>
 				<argument
@@ -326,6 +326,65 @@ mode="Global">
 					</argvaluetype>
 					<argvalue>
 						Accessories
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelNetworkTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddPanels"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+				<argument
+				argname="NumberofPanels"
+				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNames"
+				id="8952fc41-11b9-4cc9-94aa-dea51b7bd839">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						P885D
+					</argvalue>
+				</argument>
+				<argument
+				argname="sPanelCPU"
+				id="3e8beb0e-92aa-4fab-9fd5-6477e17d4274">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>
@@ -397,7 +456,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices_Germany.UserCode.cs
+		Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

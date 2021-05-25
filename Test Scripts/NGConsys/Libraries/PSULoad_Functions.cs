@@ -8499,6 +8499,251 @@ namespace TestProject.Libraries
 			
 		}
 		
+		/*****************************************************************************************************************
+		 * Function Name:VerifyDefaultPanelPowerCalculation
+		 * Function Details:verify Default Panel Power Calculation
+		 * Parameter/Arguments: FileName,AddDeviceSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 24/05/2021
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyDefaultPanelPowerCalculation(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string PanelName,PanelNode,CPUType,PanelType,expectedDefault5V,LoadingDetailName5V,expectedDefault24V,LoadingDetailName24V,expectedDefaultTotalSystemLoad,LoadingDetailNameTotalSystemLoad,expectedDefaultStandbyCurrent,LoadingDetailNameStandbyCurrent,expectedDefaultAlarmCurrent,LoadingDetailNameAlarmCurrent;
+			string expectedDefault40V,LoadingDetailName40V,expectedMinBatterySize,LoadingDetailNameMinBatterySize,expectedACUnits,expectedDCUnits,expectedVoltDropMean,expectedVoltDropWorst,LoopLoadingDetailName;
+			
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				expectedDefault5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+			    LoadingDetailName5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				expectedDefault24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				LoadingDetailName24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				expectedDefault40V = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				LoadingDetailName40V = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				expectedDefaultTotalSystemLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				LoadingDetailNameTotalSystemLoad= ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				expectedDefaultStandbyCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				LoadingDetailNameStandbyCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				expectedDefaultAlarmCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				LoadingDetailNameAlarmCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				expectedMinBatterySize = ((Range)Excel_Utilities.ExcelRange.Cells[i,17]).Value.ToString();
+				LoadingDetailNameMinBatterySize = ((Range)Excel_Utilities.ExcelRange.Cells[i,18]).Value.ToString();
+				expectedACUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,19]).Value.ToString();
+			    expectedDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,20]).Value.ToString();
+			    expectedVoltDropMean = ((Range)Excel_Utilities.ExcelRange.Cells[i,21]).Value.ToString();
+			    expectedVoltDropWorst = ((Range)Excel_Utilities.ExcelRange.Cells[i,22]).Value.ToString();
+			    LoopLoadingDetailName = ((Range)Excel_Utilities.ExcelRange.Cells[i,23]).Value.ToString();
+				
+				
+				// Verify panel type and then accordingly assign sRow value
+				if(PanelType.Equals("MT"))
+				{
+					Panel_Functions.AddPanelsMT(1,PanelName,CPUType);
+				}
+				else
+				{
+					Panel_Functions.AddPanels(1,PanelName,CPUType);
+				}
+
+				// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+	
+				Devices_Functions.verifyActualLoadingDetailsValue(expectedDefault5V,LoadingDetailName5V);
+
+				Devices_Functions.verifyActualLoadingDetailsValue(expectedDefault24V,LoadingDetailName24V);
+				
+				if(expectedDefault40V.Equals("NA"))
+				{
+					Report.Log(ReportLevel.Info, "40V field not applicable for this panel");
+				}
+				else
+				{
+					Devices_Functions.verifyActualLoadingDetailsValue(expectedDefault40V,LoadingDetailName40V);
+				}
+					
+
+				
+				Devices_Functions.verifyActualLoadingDetailsValue(expectedDefaultTotalSystemLoad,LoadingDetailNameTotalSystemLoad);
+				
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyActualLoadingDetailsValue(expectedDefaultStandbyCurrent,LoadingDetailNameStandbyCurrent);
+
+				Devices_Functions.verifyActualLoadingDetailsValue(expectedDefaultAlarmCurrent,LoadingDetailNameAlarmCurrent);
+			
+				Devices_Functions.verifyActualLoadingDetailsValue(expectedMinBatterySize,LoadingDetailNameMinBatterySize);
+				
+				
+			
+			
+				Common_Functions.ClickOnNavigationTreeItem(LoopLoadingDetailName);
+				
+				
+				Devices_Functions.verifyActualLoopLoadingDetailsValue(expectedACUnits,LoopLoadingDetailName,"1");
+				
+				Devices_Functions.verifyActualLoopLoadingDetailsValue(expectedDCUnits,LoopLoadingDetailName,"2");
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				Devices_Functions.verifyActualLoopLoadingDetailsValue(expectedVoltDropMean,LoopLoadingDetailName,"3");
+				
+				Devices_Functions.verifyActualLoopLoadingDetailsValue(expectedVoltDropWorst,LoopLoadingDetailName,"4");
+				
+			
+
+				// Delete panel using PanelNode details from excel sheet
+				Panel_Functions.DeletePanel(1,PanelNode,1);
+				
+				
+			}
+			//Close opened excel sheet
+			Excel_Utilities.CloseExcel();
+			
+		}
+		
+		/*****************************************************************************************************************
+		 * Function Name:VerifyDefaultPanelPowerCalculation
+		 * Function Details:verify Default Panel Power Calculation
+		 * Parameter/Arguments: FileName,AddDeviceSheet
+		 * Output:
+		 * Function Owner: Alpesh Dhakad
+		 * Last Update : 25/05/2021
+		 *****************************************************************************************************************/
+		[UserCodeMethod]
+		public static void VerifyMaximumPanelPowerCalculation(string sFileName,string sAddDevicesSheet)
+		{
+			//Open excel sheet and read it values,
+			Excel_Utilities.OpenExcelFile(sFileName,sAddDevicesSheet);
+			
+			// Count number of rows in excel and store it in rows variable
+			int rows= Excel_Utilities.ExcelRange.Rows.Count;
+			
+			// Declared string type
+			string PanelName,PanelNode,CPUType,PanelType,expectedMax5V,LoadingDetailName5V,expectedMax24V,LoadingDetailName24V,expectedMaxTotalSystemLoad,LoadingDetailNameTotalSystemLoad,expectedMaxStandbyCurrent,LoadingDetailNameStandbyCurrent,expectedMaxAlarmCurrent,LoadingDetailNameAlarmCurrent;
+			string expectedMax40V,LoadingDetailName40V,expectedMaxACUnits,expectedMaxDCUnits,expectedMaxVoltDropMean,expectedMaxVoltDropWorst,LoopLoadingDetailName;
+			
+			
+			// For loop to iterate on data present in excel
+			for(int i=8; i<=rows; i++)
+			{
+				PanelName =  ((Range)Excel_Utilities.ExcelRange.Cells[i,1]).Value.ToString();
+				PanelNode = ((Range)Excel_Utilities.ExcelRange.Cells[i,2]).Value.ToString();
+				CPUType = ((Range)Excel_Utilities.ExcelRange.Cells[i,3]).Value.ToString();
+				PanelType = ((Range)Excel_Utilities.ExcelRange.Cells[i,4]).Value.ToString();
+				expectedMax5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,5]).Value.ToString();
+			    LoadingDetailName5V = ((Range)Excel_Utilities.ExcelRange.Cells[i,6]).Value.ToString();
+				expectedMax24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,7]).Value.ToString();
+				LoadingDetailName24V = ((Range)Excel_Utilities.ExcelRange.Cells[i,8]).Value.ToString();
+				expectedMax40V = ((Range)Excel_Utilities.ExcelRange.Cells[i,9]).Value.ToString();
+				LoadingDetailName40V = ((Range)Excel_Utilities.ExcelRange.Cells[i,10]).Value.ToString();
+				expectedMaxTotalSystemLoad = ((Range)Excel_Utilities.ExcelRange.Cells[i,11]).Value.ToString();
+				LoadingDetailNameTotalSystemLoad= ((Range)Excel_Utilities.ExcelRange.Cells[i,12]).Value.ToString();
+				expectedMaxStandbyCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,13]).Value.ToString();
+				LoadingDetailNameStandbyCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,14]).Value.ToString();
+				expectedMaxAlarmCurrent = ((Range)Excel_Utilities.ExcelRange.Cells[i,15]).Value.ToString();
+				LoadingDetailNameAlarmCurrent= ((Range)Excel_Utilities.ExcelRange.Cells[i,16]).Value.ToString();
+				expectedMaxACUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,17]).Value.ToString();
+			    expectedMaxDCUnits = ((Range)Excel_Utilities.ExcelRange.Cells[i,18]).Value.ToString();
+			    expectedMaxVoltDropMean = ((Range)Excel_Utilities.ExcelRange.Cells[i,19]).Value.ToString();
+			    expectedMaxVoltDropWorst = ((Range)Excel_Utilities.ExcelRange.Cells[i,20]).Value.ToString();
+			    LoopLoadingDetailName = ((Range)Excel_Utilities.ExcelRange.Cells[i,21]).Value.ToString();
+				
+				
+				// Verify panel type and then accordingly assign sRow value
+				if(PanelType.Equals("MT"))
+				{
+					Panel_Functions.AddPanelsMT(1,PanelName,CPUType);
+				}
+				else
+				{
+					Panel_Functions.AddPanels(1,PanelName,CPUType);
+				}
+
+				// Click on Panel node
+				Common_Functions.ClickOnNavigationTreeItem(PanelNode);
+				
+				Common_Functions.ClickOnNavigationTreeExpander(PanelNode);
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+	
+				Devices_Functions.verifyMaximumLoadingDetailsValue(expectedMax5V,LoadingDetailName5V);
+
+				Devices_Functions.verifyActualLoadingDetailsValue(expectedMax24V,LoadingDetailName24V);
+				
+				if(expectedMax40V.Equals("NA"))
+				{
+					Report.Log(ReportLevel.Info, "40V field not applicable for this panel");
+				}
+				else
+				{
+					Devices_Functions.verifyMaximumLoadingDetailsValue(expectedMax40V,LoadingDetailName40V);
+				}
+					
+
+				Devices_Functions.verifyMaximumLoadingDetailsValue(expectedMaxTotalSystemLoad,LoadingDetailNameTotalSystemLoad);
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				Devices_Functions.verifyMaximumLoadingDetailsValue(expectedMaxStandbyCurrent,LoadingDetailNameStandbyCurrent);
+
+				Devices_Functions.verifyMaximumLoadingDetailsValue(expectedMaxAlarmCurrent,LoadingDetailNameAlarmCurrent);
+			
+			
+			
+			
+				Common_Functions.ClickOnNavigationTreeItem(LoopLoadingDetailName);
+				
+				
+				Devices_Functions.verifyMaximumLoopLoadingDetailsValue(expectedMaxACUnits,LoopLoadingDetailName,"1");
+				
+				Devices_Functions.verifyMaximumLoopLoadingDetailsValue(expectedMaxACUnits,LoopLoadingDetailName,"2");
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
+				Devices_Functions.verifyMaximumLoopLoadingDetailsValue(expectedMaxVoltDropMean,LoopLoadingDetailName,"3");
+				
+				Devices_Functions.verifyMaximumLoopLoadingDetailsValue(expectedMaxVoltDropWorst,LoopLoadingDetailName,"4");
+				
+			
+
+				// Delete panel using PanelNode details from excel sheet
+				Panel_Functions.DeletePanel(1,PanelNode,1);
+				
+				
+			}
+			//Close opened excel sheet
+			Excel_Utilities.CloseExcel();
+			
+		}
 		
 	}
 }
