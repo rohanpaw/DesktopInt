@@ -8693,7 +8693,7 @@ namespace TestProject.Libraries
 	
 				Devices_Functions.verifyMaximumLoadingDetailsValue(expectedMax5V,LoadingDetailName5V);
 
-				Devices_Functions.verifyActualLoadingDetailsValue(expectedMax24V,LoadingDetailName24V);
+				Devices_Functions.verifyMaximumLoadingDetailsValue(expectedMax24V,LoadingDetailName24V);
 				
 				if(expectedMax40V.Equals("NA"))
 				{
@@ -8723,7 +8723,7 @@ namespace TestProject.Libraries
 				
 				Devices_Functions.verifyMaximumLoopLoadingDetailsValue(expectedMaxACUnits,LoopLoadingDetailName,"1");
 				
-				Devices_Functions.verifyMaximumLoopLoadingDetailsValue(expectedMaxACUnits,LoopLoadingDetailName,"2");
+				Devices_Functions.verifyMaximumLoopLoadingDetailsValue(expectedMaxDCUnits,LoopLoadingDetailName,"2");
 				
 				// Click on Panel Calculation tab
 				Common_Functions.clickOnPanelCalculationsTab();

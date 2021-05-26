@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace TestProject.Recording_Modules
+namespace TestProject.GermanyRecordingsModules
 {
-    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node_Germany
+    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
@@ -31,12 +31,6 @@ namespace TestProject.Recording_Modules
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void verifyGalleryExistsssssssss(bool GalleryVisibility, string GalleryDeviceName)
-        {
-            // TODO: Replace the following line with your code implementation.
-            throw new NotImplementedException();
         }
 
     }

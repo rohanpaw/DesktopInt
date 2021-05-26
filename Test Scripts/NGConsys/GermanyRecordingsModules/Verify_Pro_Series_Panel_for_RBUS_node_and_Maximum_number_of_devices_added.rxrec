@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="80061fab-f894-49b9-9935-e12d3f660897"
+id="f5ed88fb-4d13-468f-92e6-413f7dcc2f1f"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added_Germany"
-	namespace="TestProject.Recording_Modules">
+	classname="Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added"
+	namespace="TestProject.GermanyRecordingsModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -1014,7 +1014,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added_Germany.UserCode.cs
+		Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

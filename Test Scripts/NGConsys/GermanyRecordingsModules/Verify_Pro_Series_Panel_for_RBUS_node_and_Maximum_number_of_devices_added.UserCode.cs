@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace TestProject.Recording_Modules
+namespace TestProject.GermanyRecordingsModules
 {
-    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node_Germany
+    public partial class Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
