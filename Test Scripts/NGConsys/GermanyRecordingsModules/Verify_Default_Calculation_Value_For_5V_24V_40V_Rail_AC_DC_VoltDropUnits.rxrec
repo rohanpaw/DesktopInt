@@ -26,41 +26,6 @@ mode="Global">
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="createNewProject"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="611d86f2-07dd-4756-996b-6a69d6360ec3">
-				<argument
-				argname="MarketName"
-				id="ecc3e52d-8d04-440a-a480-4589a72af2ef">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Germany
-					</argvalue>
-				</argument>
-				<argument
-				argname="iListIndex"
-				id="6f682930-e308-4418-9903-5163c1578959">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="PSULoad_Functions"
 		enabled="True"
 		isexternaltestmethod="True"

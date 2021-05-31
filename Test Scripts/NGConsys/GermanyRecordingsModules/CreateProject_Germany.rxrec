@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="c2c57ea8-c88c-4daf-990e-60d8274359ce"
+id="8012c1a0-c49f-461a-9ff5-1b851098f7a0"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,17 +19,17 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
+	classname="CreateProject_Germany"
 	namespace="TestProject.GermanyRecordingsModules">
 	</codegen>
 	<variables>
 	</variables>
 	<recorditems>
 		<userrecorditem
-		classname="PSULoad_Functions"
+		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyMaximumPanelPowerCalculation"
+		methodname="maximizeApplication"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -37,25 +37,40 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
+			id="dc766226-8e7e-42a9-b439-70b3ead53fb0">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="createNewProject"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="dc766226-8e7e-42a9-b439-70b3ead53fb0">
 				<argument
-				argname="sFileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+				argname="MarketName"
+				id="7737f994-c68d-431a-90dd-3646f16aac75">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1838_T1840_T1841
+						Germany
 					</argvalue>
 				</argument>
 				<argument
-				argname="sAddDevicesSheet"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+				argname="iListIndex"
+				id="93b8a1d6-ee9d-4126-9dd1-a057287ae1f8">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MaximumPanelCalculation
+						1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -77,7 +92,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs
+		CreateProject_Germany.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

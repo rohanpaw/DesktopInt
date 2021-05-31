@@ -79,9 +79,6 @@ namespace TestProject.GermanyRecordingsModules
 
             Init();
 
-            Libraries.Common_Functions.createNewProject("Germany", "1");
-            Delay.Milliseconds(0);
-            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MZX253", "");
             Delay.Milliseconds(0);
             
@@ -136,7 +133,7 @@ namespace TestProject.GermanyRecordingsModules
             try {
                 Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 2");
                 Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(18)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(17)); }
             
             Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("LCD800");
             Delay.Milliseconds(0);
@@ -207,7 +204,7 @@ namespace TestProject.GermanyRecordingsModules
             try {
                 Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 2");
                 Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(41)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(40)); }
             
             Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("LCD800");
             Delay.Milliseconds(0);

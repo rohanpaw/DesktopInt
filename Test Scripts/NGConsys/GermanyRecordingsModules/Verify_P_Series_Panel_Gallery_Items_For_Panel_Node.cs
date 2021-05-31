@@ -79,9 +79,6 @@ namespace TestProject.GermanyRecordingsModules
 
             Init();
 
-            Libraries.Common_Functions.createNewProject("Germany", "1");
-            Delay.Milliseconds(0);
-            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P805D", "");
             Delay.Milliseconds(0);
             

@@ -24,34 +24,44 @@ namespace TestProject.GermanyRecordingsModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices recording.
+    ///The CreateProject_Germany recording.
     /// </summary>
-    [TestModule("3ee9a084-e9c4-48a3-bf1d-8ae9b6c88852", ModuleType.Recording, 1)]
-    public partial class Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices : ITestModule
+    [TestModule("8012c1a0-c49f-461a-9ff5-1b851098f7a0", ModuleType.Recording, 1)]
+    public partial class CreateProject_Germany : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices instance = new Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices();
+        static CreateProject_Germany instance = new CreateProject_Germany();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices()
+        public CreateProject_Germany()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices Instance
+        public static CreateProject_Germany Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable sListIndex.
+        /// </summary>
+        [TestVariable("ca40602d-7ca3-47bc-a519-7a0fe6a76634")]
+        public string sListIndex
+        {
+            get { return repo.sListIndex; }
+            set { repo.sListIndex = value; }
+        }
 
 #endregion
 
@@ -79,35 +89,11 @@ namespace TestProject.GermanyRecordingsModules
 
             Init();
 
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            Libraries.Common_Functions.maximizeApplication();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1727_T1755", "Panels", "Pro32xD");
+            Libraries.Common_Functions.createNewProject("Germany", "1");
             Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1727_T1755", "Other Nodes", "TXG Node");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnSiteAccessoriesTab();
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1727_T1755", "Accessories", "ANC125");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("ANC125", "Accessories");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("ANC250", "Accessories");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnShoppingListTab();
-            Delay.Milliseconds(0);
-            
-            //Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.202.622", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
-            //Delay.Milliseconds(0);
             
         }
 

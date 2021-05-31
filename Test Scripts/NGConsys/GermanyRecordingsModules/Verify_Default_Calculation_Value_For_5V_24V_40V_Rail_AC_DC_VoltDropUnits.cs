@@ -79,9 +79,6 @@ namespace TestProject.GermanyRecordingsModules
 
             Init();
 
-            Libraries.Common_Functions.createNewProject("Germany", "1");
-            Delay.Milliseconds(0);
-            
             Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("T1839", "DefaultPanelCalculation");
             Delay.Milliseconds(0);
             

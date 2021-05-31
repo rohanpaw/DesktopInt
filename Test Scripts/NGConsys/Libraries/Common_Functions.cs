@@ -1507,7 +1507,7 @@ namespace TestProject.Libraries
 		{
 			sListIndex=iListIndex.ToString();
         	
-			maximizeApplication();
+			//maximizeApplication();
 			
 			repo.FormMe.File.Click();
 			
@@ -1518,12 +1518,13 @@ namespace TestProject.Libraries
 			repo.FormMe.SearchMarket.PressKeys(MarketName);
 			
 			repo.FormMe.lst_Market.Click();
+				
+				
 			
 			repo.FormMe.btn_CreateNewProject.Click();
 			
 			repo.CreateNewProject.CreateNewProjectContainer.btn_OK.Click();
 		}
-		
 		
 		
 		

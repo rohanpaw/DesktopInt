@@ -79,9 +79,6 @@ namespace TestProject.GermanyRecordingsModules
 
             Init();
 
-            Libraries.Common_Functions.createNewProject("Germany", "1");
-            Delay.Milliseconds(0);
-            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             

@@ -151,6 +151,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>abbc39a9-5d43-49f2-84c0-d467e7823a8d</id>
     </Compile>
+    <Compile Include="GermanyRecordingsModules\CreateProject_Germany.cs">
+      <DependentUpon>CreateProject_Germany.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>26a266e2-7630-4944-8679-42f58801fc1c</id>
+      <BoundTo>11754e79-0195-4cb3-b776-f05ddd170492</BoundTo>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\CreateProject_Germany.UserCode.cs">
+      <DependentUpon>CreateProject_Germany.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ee1bd5f5-8891-4ef8-a798-40ea2ceac447</id>
+      <BoundTo>11754e79-0195-4cb3-b776-f05ddd170492</BoundTo>
+    </Compile>
     <Compile Include="GermanyRecordingsModules\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
       <BoundTo>9eb4d0c0-c0cc-4934-b986-45b495be4206</BoundTo>
       <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
@@ -4869,6 +4881,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>38163132-2381-4d2c-90cf-3231723569af</id>
     </Content>
+    <None Include="GermanyRecordingsModules\CreateProject_Germany.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>11754e79-0195-4cb3-b776-f05ddd170492</id>
+      <recordtableid>8012c1a0-c49f-461a-9ff5-1b851098f7a0</recordtableid>
+    </None>
     <None Include="GermanyRecordingsModules\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>9eb4d0c0-c0cc-4934-b986-45b495be4206</id>
@@ -4920,9 +4937,9 @@
       <recordtableid>fb47dc0e-6d3c-4339-86eb-31349d84b068</recordtableid>
     </None>
     <None Include="GermanyRecordingsModules\Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>b4145386-1cd1-44e4-ad4f-ca7ee1955bab</id>
       <recordtableid>3ee9a084-e9c4-48a3-bf1d-8ae9b6c88852</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="GermanyRecordingsModules\Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
