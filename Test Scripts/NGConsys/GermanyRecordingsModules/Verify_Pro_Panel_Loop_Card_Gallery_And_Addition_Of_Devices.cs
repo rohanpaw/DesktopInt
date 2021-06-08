@@ -145,6 +145,9 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Devices_Functions.AddDevicesfromGallery("DDM 800 Loop (Fast CallPoints)", "Ancillary Conventional");
             Delay.Milliseconds(0);
             
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("PLX800-H");
             Delay.Milliseconds(0);
             

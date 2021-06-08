@@ -88,13 +88,13 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1743_T1745", "Repeaters", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MainProcessors_Repeaters_ProPanels", "Germany", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1743_T1745", "Miscellaneous", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ProPanels", "Germany", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1743_T1745", "Printers", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Germany", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
@@ -109,7 +109,7 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Serial");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1743_T1745", "Printers", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Germany", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FBI800");
@@ -130,11 +130,11 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PX-PR");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 2");
-            Delay.Milliseconds(0);
-            
             Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("PX-PR");
             Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 2");
+            //Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.SelectRowUsingSKUFromInventoryTab("557.202.864");
             //Delay.Milliseconds(0);

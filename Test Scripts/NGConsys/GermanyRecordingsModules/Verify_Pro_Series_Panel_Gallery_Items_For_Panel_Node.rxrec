@@ -114,7 +114,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1730
+						Gallery_PanelNode_Repeaters_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -124,7 +124,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -159,7 +159,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1730
+						Gallery_Loops_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -169,7 +169,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Loops
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -204,7 +204,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1730
+						Gallery_SlotCards_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -214,7 +214,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Slot Cards
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -224,7 +224,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FBI800
+						PCH800 5.0A
 					</argvalue>
 				</argument>
 			</arguments>
@@ -249,7 +249,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1730
+						Gallery_Miscellaneous_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -259,7 +259,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -294,7 +294,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1730
+						Gallery_Printers_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -304,7 +304,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -389,7 +389,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1730
+						Gallery_PanelAccessories_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -399,7 +399,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -563,7 +563,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1730
+						Gallery_PanelNode_Repeaters_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -573,7 +573,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -608,7 +608,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1730
+						Gallery_Loops_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -618,7 +618,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Slot Cards 215 Panel
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -653,7 +653,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1730
+						Gallery_Miscellaneous_Pro215Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -663,7 +663,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -673,7 +673,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PR1D2
+						MPM800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -698,7 +698,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1730
+						Gallery_Printers_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -708,7 +708,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -828,7 +828,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1730
+						Gallery_PanelAccessories_Pro215Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -838,7 +838,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories_215 Panel
+						Germany
 					</argvalue>
 				</argument>
 				<argument

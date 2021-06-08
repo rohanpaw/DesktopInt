@@ -139,7 +139,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1752
+						Gallery_Ethernet_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -149,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -218,7 +218,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1752
+						Gallery_Ethernet_AttachedFunctionality_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -228,7 +228,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Attached Functionality
+						Germany
 					</argvalue>
 				</argument>
 				<argument
