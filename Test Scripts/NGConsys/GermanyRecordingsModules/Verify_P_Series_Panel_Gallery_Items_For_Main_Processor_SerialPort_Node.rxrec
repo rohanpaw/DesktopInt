@@ -139,7 +139,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1758_T1760
+						Gallery_MainProcessor_Repeaters_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -149,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -184,7 +184,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1758_T1760
+						Gallery_Miscellaneous_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -194,7 +194,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -229,7 +229,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1758_T1760
+						Gallery_Printers_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -239,7 +239,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -404,7 +404,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1758_T1760
+						Gallery_Printers_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -414,7 +414,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -646,7 +646,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelNameFromInventoryTab"
 		namespace="TestProject.Libraries"
@@ -689,7 +689,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						LCD800
+						RS800
 					</argvalue>
 				</argument>
 			</arguments>

@@ -79,22 +79,22 @@ namespace TestProject.BelgiumRecordingModule
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P885D", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P485D", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("RBus");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("123456789", "Repeaters", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Repeaters_P_Panels", "Belgium", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1761", "Miscellaneous", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Belgium", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1761", "Printers", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Printers_P_Panels", "Belgium", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("MXR", "");
@@ -148,7 +148,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Devices_Functions.AddDevicesfromGallery("IOB800(x3)", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("R-BUS (16 of 16)");
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("RBus (16 of 16)");
             Delay.Milliseconds(0);
             
             //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "MXR");

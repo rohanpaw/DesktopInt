@@ -189,7 +189,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						AttachedFunctionality_PFI_Node
+						Gallery_AttachedFunctionality_FIM_Node
 					</argvalue>
 				</argument>
 				<argument

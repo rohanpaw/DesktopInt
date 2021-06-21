@@ -79,7 +79,7 @@ namespace TestProject.BelgiumRecordingModule
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P405D", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P805D", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -88,13 +88,13 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1762", "Repeaters", "PR8AS");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Ethernet_Repeaters_P_Panels", "Belgium", "PR8AS");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1752", "Attached Functionality", "PZ8DS");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Ethernet_AttachedFunctionality_P_Panels", "Belgium", "PZ8DS");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-102");
@@ -130,7 +130,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-108");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("Two PZ4DS", "Attached Functionality");
+            Libraries.Devices_Functions.AddDevicesfromGallery("Three PZ4DS", "Attached Functionality");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PR1DS");

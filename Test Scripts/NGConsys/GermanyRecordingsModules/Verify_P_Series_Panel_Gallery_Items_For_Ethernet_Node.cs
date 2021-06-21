@@ -88,13 +88,13 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1762", "Repeaters", "PR8AS");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Ethernet_Repeaters_P_Panels", "Germany", "PR8AS");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1752", "Attached Functionality", "PZ8DS");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Ethernet_AttachedFunctionality_P_Panels", "Germany", "PZ8DS");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-102");

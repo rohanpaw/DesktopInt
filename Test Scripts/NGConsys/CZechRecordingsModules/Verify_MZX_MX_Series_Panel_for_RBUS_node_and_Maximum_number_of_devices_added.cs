@@ -85,7 +85,7 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("RBus");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Front Door");
@@ -94,13 +94,16 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Zonal Alarm/Fault Display 32");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1820", "Repeaters", "MXR");
+            // Repeaters
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Repeaters_MZX_Panels", "Czech", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1820", "Miscellaneous", "PR1D2");
+            // Miscellaneous
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_MZX_Panels", "Czech", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1820", "Printers", "LCD800");
+            // Printers
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Printers_MZX_Panels", "Czech", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("MXR", "");
@@ -154,7 +157,7 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Devices_Functions.AddDevicesfromGallery("XIOM", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("R-BUS (16 of 16)");
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("RBus (16 of 16)");
             Delay.Milliseconds(0);
             
             //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "MXR");
@@ -175,7 +178,7 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("RBus");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.verifyInventoryLabelNameExist(ValueConverter.ArgumentFromString<bool>("Visibility", "True"), "Front Door");
@@ -184,13 +187,16 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Devices_Functions.verifyInventoryLabelNameExist(ValueConverter.ArgumentFromString<bool>("Visibility", "False"), "Zonal Alarm/Fault Display 32");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1820", "Repeaters", "MXR");
+            // Repeaters
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Repeaters_MZX_Panels", "Czech", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1820", "Miscellaneous_ZXPanels", "MPM800");
+            // Miscellaneous
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ZX_BB_Panels", "Czech", "MPM800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1820", "Printers", "LCD800");
+            // Printers
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Printers_MZX_Panels", "Czech", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("MXR", "");
@@ -241,7 +247,7 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Devices_Functions.AddDevicesfromGallery("COM820 I/O Module", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("R-BUS (16 of 16)");
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("RBus (16 of 16)");
             Delay.Milliseconds(0);
             
         }

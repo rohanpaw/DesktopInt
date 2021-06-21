@@ -164,7 +164,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1750
+						AttachedFunctionality_PFI_Node
 					</argvalue>
 				</argument>
 				<argument
@@ -174,7 +174,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Attached Functionality
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -438,7 +438,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1750
+						AttachedFunctionality_PFI_Node
 					</argvalue>
 				</argument>
 				<argument
@@ -448,7 +448,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Attached Functionality xBB
+						BelgiumxBB
 					</argvalue>
 				</argument>
 				<argument

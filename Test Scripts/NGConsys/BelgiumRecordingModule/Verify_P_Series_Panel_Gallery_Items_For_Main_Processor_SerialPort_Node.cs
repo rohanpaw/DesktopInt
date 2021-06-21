@@ -79,7 +79,7 @@ namespace TestProject.BelgiumRecordingModule
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P805D", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P885D", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -88,13 +88,13 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1758_T1760", "Repeaters", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MainProcessor_Repeaters_P_Panels", "Belgium", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1758_T1760", "Miscellaneous", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Belgium", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1758_T1760", "Printers", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Belgium", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
@@ -109,7 +109,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Serial");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1758_T1760", "Printers", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Belgium", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FBI800");
@@ -133,10 +133,10 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PX-PR");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 2");
-            Delay.Milliseconds(0);
+            //Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 2");
+            //Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("LCD800");
+            Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("RS800");
             Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.SelectRowUsingSKUFromInventoryTab("557.200.030");

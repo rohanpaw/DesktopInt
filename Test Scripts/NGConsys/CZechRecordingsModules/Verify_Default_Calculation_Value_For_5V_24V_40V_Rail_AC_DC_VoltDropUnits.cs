@@ -79,7 +79,7 @@ namespace TestProject.CZechRecordingsModules
 
             Init();
 
-            Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("T1839", "DefaultPanelCalculation");
+            Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("Power_Calculation_Default_Values", "Czech");
             Delay.Milliseconds(0);
             
         }

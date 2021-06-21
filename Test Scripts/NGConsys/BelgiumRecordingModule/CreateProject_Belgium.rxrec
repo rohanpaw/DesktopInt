@@ -70,7 +70,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						1
+						2
 					</argvalue>
 				</argument>
 			</arguments>

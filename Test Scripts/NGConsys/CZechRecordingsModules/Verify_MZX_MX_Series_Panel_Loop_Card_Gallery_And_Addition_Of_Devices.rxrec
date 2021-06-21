@@ -223,7 +223,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -233,7 +233,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Detectors
+						Detectors_P_MZX_MX
 					</argvalue>
 				</argument>
 				<argument
@@ -268,7 +268,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -278,7 +278,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Call points
+						CallPoints_VDS
 					</argvalue>
 				</argument>
 				<argument
@@ -313,7 +313,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -358,7 +358,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -403,7 +403,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -448,7 +448,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -493,7 +493,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -812,7 +812,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_Zetfas_STI_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -857,7 +857,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_Zetfas_STI_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -902,7 +902,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_Zetfas_STI_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -947,7 +947,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_Zetfas_STI_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -1231,7 +1231,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_Zetfas_STI_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -1276,7 +1276,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_Zetfas_STI_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -1321,7 +1321,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_Zetfas_STI_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument

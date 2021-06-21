@@ -367,6 +367,18 @@
       <id>a1a0664c-be8c-4012-a026-e2a0bef1394e</id>
       <BoundTo>a4149568-1fdc-4e4a-bb7f-d01a58e8d0a8</BoundTo>
     </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <DependentUpon>Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>db98171a-722b-4e4e-b5bb-5a47ba000836</id>
+      <BoundTo>6ef5a9ae-4908-4e85-8d22-11480c0904c8</BoundTo>
+    </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <DependentUpon>Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fd625148-c9fd-403a-854d-af3169a71cad</id>
+      <BoundTo>6ef5a9ae-4908-4e85-8d22-11480c0904c8</BoundTo>
+    </Compile>
     <Compile Include="BelgiumRecordingModule\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.cs">
       <DependentUpon>Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -667,6 +679,18 @@
       <id>416a27bb-cd35-41ff-ad63-779dbda534bb</id>
       <BoundTo>71549756-95f5-4fe5-85a8-d0b7ffc02cd4</BoundTo>
     </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <DependentUpon>Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5a495007-9c6d-4c0b-9f47-f76d2259ca1c</id>
+      <BoundTo>c893a226-d404-4fa8-996e-9274d4bc31ee</BoundTo>
+    </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <DependentUpon>Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>44a4dfb9-1a60-4a78-b603-16d899c58a2f</id>
+      <BoundTo>c893a226-d404-4fa8-996e-9274d4bc31ee</BoundTo>
+    </Compile>
     <Compile Include="CZechRecordingsModules\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.cs">
       <DependentUpon>Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -966,6 +990,18 @@
       <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>511dbb44-ae17-4d90-9032-5d87c64d8a5c</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <BoundTo>303d765f-fda8-4feb-8444-8260eef3e100</BoundTo>
+      <DependentUpon>Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b5b1c896-cd64-463a-aa79-906402b0fd90</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <BoundTo>303d765f-fda8-4feb-8444-8260eef3e100</BoundTo>
+      <DependentUpon>Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e69958f6-4b34-4a8d-ab71-7754d54ff4d6</id>
     </Compile>
     <Compile Include="GermanyRecordingsModules\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.cs">
       <BoundTo>aa617d66-b067-4d94-869f-63114a051c50</BoundTo>
@@ -5579,6 +5615,11 @@
       <id>a4149568-1fdc-4e4a-bb7f-d01a58e8d0a8</id>
       <recordtableid>95900ed3-8b27-4f44-a2b9-9a1665299c1c</recordtableid>
     </None>
+    <None Include="BelgiumRecordingModule\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>6ef5a9ae-4908-4e85-8d22-11480c0904c8</id>
+      <recordtableid>130fc577-36e4-4501-ab6f-5d0d0a44539c</recordtableid>
+    </None>
     <None Include="BelgiumRecordingModule\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>4b591985-20da-4bbc-a54b-94ade0126332</id>
@@ -5704,6 +5745,11 @@
       <id>71549756-95f5-4fe5-85a8-d0b7ffc02cd4</id>
       <recordtableid>43c5859f-7c51-47df-b1f1-b04f2f1c4b9a</recordtableid>
     </None>
+    <None Include="CZechRecordingsModules\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>c893a226-d404-4fa8-996e-9274d4bc31ee</id>
+      <recordtableid>120969b1-5fd3-43c0-b28e-967314782ca6</recordtableid>
+    </None>
     <None Include="CZechRecordingsModules\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>b0a84384-9383-4f37-b4e3-53843ad55da0</id>
@@ -5828,6 +5874,11 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>a7c3adf9-4d05-4d8f-8e23-ffb6dce61627</id>
       <recordtableid>ca0190a5-caf9-4191-8c20-6983117899a6</recordtableid>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>303d765f-fda8-4feb-8444-8260eef3e100</id>
+      <recordtableid>9f175fee-dff4-4c5c-9bc3-0ed0101d8f8d</recordtableid>
     </None>
     <None Include="GermanyRecordingsModules\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

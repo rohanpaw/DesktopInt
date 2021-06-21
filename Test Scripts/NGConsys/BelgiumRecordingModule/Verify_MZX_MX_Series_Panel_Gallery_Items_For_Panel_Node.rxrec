@@ -114,7 +114,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelNode_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -124,7 +124,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -159,7 +159,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Miscellaneous_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -169,7 +169,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -204,7 +204,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -214,7 +214,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -334,7 +334,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelAccessories_MZX125_MX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -344,7 +344,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -508,7 +508,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelNode_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -518,7 +518,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -553,7 +553,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Loops_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -563,7 +563,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Loops
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -598,7 +598,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Miscellaneous_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -608,7 +608,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -643,7 +643,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -653,7 +653,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -738,7 +738,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelAccessories_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -748,7 +748,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -912,7 +912,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelNode_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -922,7 +922,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -957,7 +957,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Miscellaneous_ZX_BB_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -967,7 +967,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous_ZX1_ZX4
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -1002,7 +1002,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1012,7 +1012,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -1132,7 +1132,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelAccessories_ZX_BB_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1142,7 +1142,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories_ZX1_ZX4
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -1247,7 +1247,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MZX252
+						MX4000
 					</argvalue>
 				</argument>
 				<argument
@@ -1306,7 +1306,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelNode_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1316,7 +1316,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -1351,7 +1351,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Miscellaneous_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1361,7 +1361,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Loops
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -1371,7 +1371,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						XLM800
+						PR1D2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1396,7 +1396,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1406,52 +1406,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						MPM800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="fileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						T1813_T1881
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Printers
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -1502,6 +1457,41 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryExistsWithDropdown"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="GalleryVisibility"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						XLM800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -1536,7 +1526,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelAccessories_MZX125_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1546,7 +1536,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Belgium_MX
 					</argvalue>
 				</argument>
 				<argument
@@ -1564,6 +1554,410 @@ mode="Global">
 		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="DeletePanel"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="NumberofPanels"
+				id="bfe4f44c-9ade-481e-9eb1-99ffdf03f05c">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNode"
+				id="b6800acc-e51a-4e38-95ce-cbafae7aabfc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node1
+					</argvalue>
+				</argument>
+				<argument
+				argname="rowNumber"
+				id="a9e6ddcd-e426-40db-ae7e-0e80fd3fd2b2">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="AddPanels"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2ca7df19-9781-4f88-9056-3fa97f0051f4">
+				<argument
+				argname="NumberofPanels"
+				id="913523e8-0df4-4cb2-a019-1495f987868c">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNames"
+				id="2dc05029-bb59-4c73-a8d0-a2517555c26f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						ZX4
+					</argvalue>
+				</argument>
+				<argument
+				argname="sPanelCPU"
+				id="06d575c3-e0db-4002-a7c0-84acd7c5b55c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+				<argument
+				argname="TreeItemName"
+				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryListItems"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Gallery_PanelNode_Repeaters_MZX_Panels
+					</argvalue>
+				</argument>
+				<argument
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Belgium
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MXR
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryListItems"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Gallery_Loops_MZX_Panels
+					</argvalue>
+				</argument>
+				<argument
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Belgium
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						XLM800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryListItems"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Gallery_Miscellaneous_ZX_BB_Panels
+					</argvalue>
+				</argument>
+				<argument
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Belgium
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MPM800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryListItems"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Gallery_Printers_MZX_Panels
+					</argvalue>
+				</argument>
+				<argument
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Belgium
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						LCD800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryExistsWithDropdown"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="GalleryVisibility"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						IOB800(x1)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="clickOnPanelAccessoriesTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryListItems"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Gallery_PanelAccessories_ZX_BB_Panels
+					</argvalue>
+				</argument>
+				<argument
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Belgium
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FB800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="clickOnInventoryTab"
 		namespace="TestProject.Libraries"

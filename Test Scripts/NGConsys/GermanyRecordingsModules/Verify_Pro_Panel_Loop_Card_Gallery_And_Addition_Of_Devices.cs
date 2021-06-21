@@ -82,7 +82,7 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.VerifyNavigationTreeItemText("Backplane  1/3");
@@ -91,7 +91,7 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Slot Cards", "PCH800 5.0A");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_SlotCards", "Germany", "PCH800 5.0A");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("PLX800", "");
@@ -103,28 +103,28 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-E");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Detectors", "801 CH");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Detectors", "801 CH");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Call points", "CP 820");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "CallPoints_VDS", "CP 820");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "SoundersBeacons", "LPAV 3000");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "SoundersBeacons", "LPAV 3000");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Ancillary", "CIM 800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary", "CIM 800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Ancillary Conventional", "DDM 800 Loop");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary Conventional", "DDM 800 Loop");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Ancillary Specific", "APM 800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary Specific", "APM 800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Other", "LI800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Other", "LI800");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("DIN 820", "Call points");
+            Libraries.Devices_Functions.AddDevicesfromGallery("DIN 820", "CallPoints_VDS");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("SAB 801", "SoundersBeacons");
@@ -151,13 +151,16 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("PLX800-H");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "SoundersBeacons", "LPAV 3000");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Built-in Loop-A");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Ancillary Conventional", "DDM 800 Loop");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "SoundersBeacons", "LPAV 3000");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("CP 820", "Call points");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary Conventional", "DDM 800 Loop");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("CP 820", "CallPoints_VDS");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("P85SR", "SoundersBeacons");
@@ -178,7 +181,7 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Slot Cards", "PCH800 5.0A");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_SlotCards", "Germany", "PCH800 5.0A");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("PLX800", "");
@@ -190,25 +193,25 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PLX800-G");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Detectors", "801 CH");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Detectors", "801 CH");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Call points", "CP 820");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "CallPoints_VDS", "CP 820");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "SoundersBeacons", "LPAV 3000");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "SoundersBeacons", "LPAV 3000");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Ancillary", "CIM 800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary", "CIM 800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Ancillary Conventional", "DDM 800 Loop");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary Conventional", "DDM 800 Loop");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Ancillary Specific", "APM 800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary Specific", "APM 800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1753", "Other", "LI800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Other", "LI800");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("830 P", "Detectors");

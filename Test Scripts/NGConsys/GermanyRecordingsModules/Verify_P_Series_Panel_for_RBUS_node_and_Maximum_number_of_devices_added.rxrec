@@ -114,7 +114,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						R-BUS
+						RBus
 					</argvalue>
 				</argument>
 			</arguments>
@@ -139,7 +139,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1761
+						Gallery_RBus_Repeaters_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -149,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -184,7 +184,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1761
+						Gallery_Miscellaneous_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -194,7 +194,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -229,7 +229,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1761
+						Gallery_RBus_Printers_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -239,7 +239,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -852,7 +852,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						R-BUS (16 of 16)
+						RBus (16 of 16)
 					</argvalue>
 				</argument>
 			</arguments>

@@ -45,7 +45,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1838_T1840_T1841
+						Power_Calculation_Max_Values
 					</argvalue>
 				</argument>
 				<argument
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MaximumPanelCalculation
+						Belgium
 					</argvalue>
 				</argument>
 			</arguments>

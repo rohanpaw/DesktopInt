@@ -114,7 +114,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1756
+						Gallery_PanelNode_Repeaters_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -124,7 +124,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -159,7 +159,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1756
+						Gallery_Loops_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -169,7 +169,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Loops
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -204,7 +204,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1756
+						Gallery_Miscellaneous_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -214,7 +214,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -249,7 +249,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1756
+						Gallery_Printers_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -259,7 +259,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -344,7 +344,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1756
+						Gallery_PanelAccessories_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -354,7 +354,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -518,7 +518,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1756
+						Gallery_PanelNode_Repeaters_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -528,7 +528,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -563,7 +563,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1756
+						Gallery_Miscellaneous_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -573,7 +573,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -608,7 +608,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1756
+						Gallery_Printers_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -618,7 +618,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -738,7 +738,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1756
+						Gallery_PanelAccessories_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -748,7 +748,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Belgium
 					</argvalue>
 				</argument>
 				<argument

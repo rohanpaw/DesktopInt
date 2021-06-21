@@ -85,16 +85,16 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1756", "Repeaters", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Belgium", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1756", "Loops", "XLM800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_P_Panels", "Belgium", "XLM800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1756", "Miscellaneous", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Belgium", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1756", "Printers", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Belgium", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
@@ -103,7 +103,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1756", "Accessories", "FB800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_P_Panels", "Belgium", "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();
@@ -118,13 +118,13 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1756", "Repeaters", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Belgium", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1756", "Miscellaneous", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Belgium", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1756", "Printers", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Belgium", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
@@ -136,7 +136,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1756", "Accessories", "FB800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_P_Panels", "Belgium", "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();

@@ -94,7 +94,8 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Interni XBUS");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1766_T1827", "Attached Functionality", "IOB800(x1)");
+            // Attached Functionality
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_AttachedFunctionality_FIM_Node", "Czech", "IOB800(x1)");
             Delay.Milliseconds(0);
             
         }

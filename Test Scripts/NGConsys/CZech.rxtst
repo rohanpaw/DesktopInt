@@ -3,6 +3,12 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="021db148-c7d2-420d-97d3-ec2e016f374e"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="03974e2d-a7ea-4421-b497-6e368cdbab11"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -22,6 +28,13 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="0699e176-1980-476c-bc29-83345172f602"
+			name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+				<description>
+					<![CDATA[NGC-3477/T1854]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="0c8b7680-22ea-4746-bb17-146699de1190"
 			name="Application_Open"
@@ -89,11 +102,17 @@
 					<![CDATA[<p>Defect-4254 NGC-3477/T1843/T1811 Export shopping list and column verification is not automated</p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="15689d37-28d9-464f-8461-6e22f0022e73"
+			name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices"
+			ref="120969b1-5fd3-43c0-b28e-967314782ca6"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="19f849d0-43e4-4dc1-908c-48e72394e664"
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
 				<description>
-					<![CDATA[<p>NGC-3477/T1739</p>]]>
+					<![CDATA[<p>NGC-3477/T1739 Last step to verify normal alarm load value is not automated</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -201,7 +220,7 @@
 			id="24bc2cc2-253b-4158-8a5c-5c9b94e899b0"
 			name="Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_&amp;_Verify_Max_Limit_Of_Devices_Loop">
 				<description>
-					<![CDATA[<p>NGC-3477/T1865</p><p><br></p>]]>
+					<![CDATA[<p>NGC-3477/T1865 Maximum capacity is not tested</p><p><br></p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -320,6 +339,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="3dc400c6-410a-4b3c-b20b-7456bf881de2"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="3f3965e8-97b9-433a-a7df-d618bd21992a"
 			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
 			ref="83d275f0-f32f-40fd-9dd1-8ff0ba23dd72"
@@ -336,7 +375,7 @@
 			id="43329fd3-4e2e-4477-8266-d97dc8199852"
 			name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
 				<description>
-					<![CDATA[<p>NGC-3477/T1851 SB520/SB520 Front Cover is not hiding on adding 1 device which is maximum limit</p><p>Also, failing as SB520 can be added only in one sounder circuit ?</p><br>]]>
+					<![CDATA[<p>NGC-3477/T1851 SB520/SB520 Front Cover is not hiding on adding 1 device which is maximum limit<br></p>]]>
 				</description>
 			</testcase>
 			<testcase
@@ -350,7 +389,7 @@
 			id="46fa733f-8a28-4ac9-a486-3df5fd314095"
 			name="Verify_Pro_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
 				<description>
-					<![CDATA[<p>NGC-3477/T1738 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+					<![CDATA[<p>Defect-4266 NGC-3477/T1738 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -405,7 +444,7 @@
 			id="4fbd94bd-f5f8-40f8-942d-b8089608333a"
 			name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-3477/T1846/T1848&nbsp; SKU and Connection text are not verified as they are not visible</p><p>&nbsp;<br></p>]]>
+					<![CDATA[<p>Defect-4266 NGC-3477/T1846/T1848&nbsp; SKU and Connection text are not verified as they are not visible</p>&nbsp;<br>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -469,7 +508,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TSP MZX\Designer Pro 30.1.34">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 30.1.37">
 					</param>
 					<param
 					name="Mode"
@@ -478,6 +517,26 @@
 					<param
 					name="sListIndex"
 					value="">
+					</param>
+					<param
+					name="PdfName"
+					value="">
+					</param>
+					<param
+					name="PdfDirectoryPath"
+					value="">
+					</param>
+					<param
+					name="Xml"
+					value="">
+					</param>
+					<param
+					name="Details"
+					value="all">
+					</param>
+					<param
+					name="DeleteRanorexReport"
+					value="false">
 					</param>
 				</parameters>
 			</testcase>
@@ -488,6 +547,12 @@
 					<![CDATA[<p>NGC-3477/T1734</p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="66431e43-bf80-41f9-b592-c81f6289e888"
+			name="Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added"
+			ref="74a9aa0b-0186-4b27-ba45-76fce9e3f1d2"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="67d51a89-d99c-42f9-bfaf-92ceb34bf28b"
 			name="Close_Application"
@@ -575,7 +640,7 @@
 			id="79b93f06-5d38-4167-83b4-41f4f3c41ea8"
 			name="Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices">
 				<description>
-					<![CDATA[Defect-4254 NGC-3477/T1731]]>
+					<![CDATA[Defect-4254 NGC-3477/T1731/T1843/T1858]]>
 				</description>
 				<parameters>
 					<param
@@ -803,6 +868,44 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="9e6a7c43-b37b-42e9-af82-c7708c66d2e8"
+			name="ReportToPDFModule"
+			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="PdfName"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
+					variablename="PdfName">
+					</var>
+					<var
+					dataname="PdfDirectoryPath"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="536f8a69-f246-4f2b-ae9e-1f62babb2ba9"
+					variablename="PdfDirectoryPath">
+					</var>
+					<var
+					dataname="Xml"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
+					variablename="Xml">
+					</var>
+					<var
+					dataname="Details"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
+					variablename="Details">
+					</var>
+					<var
+					dataname="DeleteRanorexReport"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
+					variablename="DeleteRanorexReport">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="9f9aeec7-1c8d-44d1-869e-8fef08a26fdf"
 			name="CreateProject_CZech"
 			ref="ebd3f0c4-fd7e-49c0-a24d-137e8c013e28"
@@ -815,12 +918,6 @@
 					variablename="sListIndex">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="9fa56adf-eef1-4dec-acb6-0bd547d20d22"
-			name="Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added"
-			ref="d900abb9-1ffc-4bc4-a96f-3f1da2119e3b"
-			type="Recording">
 			</testmodule>
 			<testmodule
 			id="9ff0dded-da37-4f3d-a456-8d67295318ee"
@@ -902,9 +999,23 @@
 			id="b4d9f1c6-d923-48cb-be4f-2ea992a61cbd"
 			name="Verify_P_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
 				<description>
-					<![CDATA[<p>NGC-3477/T1850 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+					<![CDATA[<p>Defect-4266 NGC-3477/T1850 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="b546034f-d77c-4215-8044-a7f1a0eeeba3"
+			name="CreateProject_Germany"
+			ref="8012c1a0-c49f-461a-9ff5-1b851098f7a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="b60cce45-bb78-41aa-81bd-4bf802bc16bd"
 			name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node"
@@ -941,7 +1052,7 @@
 			id="ba44110c-cf42-4acb-87cb-5a93a42ae04a"
 			name="Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
 				<description>
-					<![CDATA[<p>NGC-3477/T1858</p>]]>
+					<![CDATA[<p>NGC-3477</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -986,7 +1097,7 @@
 			id="c5786399-7ad0-4da6-b378-fa82bd894599"
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-3477/T1861&nbsp; SKU and Connection text are not verified as they are not visible</p><p>&nbsp;<br></p>]]>
+					<![CDATA[<p>Defect-4266 NGC-3477/T1861&nbsp; SKU and Connection text are not verified as they are not visible</p><p>&nbsp;<br></p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1082,6 +1193,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="ccff4382-5925-46e0-85b6-b7e3bbcf3c5f"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="cd515574-30aa-4062-bc52-33c54ae9ee32"
 			name="CreateProject_CZech"
@@ -1627,6 +1742,26 @@
 						</testmodule>
 					</testcase>
 					<testcase
+					id="0699e176-1980-476c-bc29-83345172f602"
+					name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						<testmodule
+						id="3dc400c6-410a-4b3c-b20b-7456bf881de2"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="b546034f-d77c-4215-8044-a7f1a0eeeba3"
+						name="CreateProject_Germany">
+						</testmodule>
+						<testmodule
+						id="15689d37-28d9-464f-8461-6e22f0022e73"
+						name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						</testmodule>
+						<testmodule
+						id="021db148-c7d2-420d-97d3-ec2e016f374e"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="4cd96c70-30dc-4270-87bf-8657f09e3ba0"
 					name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
 						<testmodule
@@ -1678,8 +1813,8 @@
 						name="CreateProject_CZech">
 						</testmodule>
 						<testmodule
-						id="9fa56adf-eef1-4dec-acb6-0bd547d20d22"
-						name="Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added">
+						id="66431e43-bf80-41f9-b592-c81f6289e888"
+						name="Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added">
 						</testmodule>
 						<testmodule
 						id="ec613ff8-f83d-4a62-986e-c099d0005929"
@@ -1806,6 +1941,14 @@
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<teardown
+					id="ccff4382-5925-46e0-85b6-b7e3bbcf3c5f"
+					name="teardown">
+						<testmodule
+						id="9e6a7c43-b37b-42e9-af82-c7708c66d2e8"
+						name="ReportToPDFModule">
+						</testmodule>
+					</teardown>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -1817,76 +1960,7 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="123ab0a7-7d2b-42cd-8324-62869409207a">
-			</testcontainer>
-			<testcontainer
-			id="19f849d0-43e4-4dc1-908c-48e72394e664">
-			</testcontainer>
-			<testcontainer
-			id="1ef295c0-4e98-45f2-9db1-09c327b836ae">
-			</testcontainer>
-			<testcontainer
-			id="24bc2cc2-253b-4158-8a5c-5c9b94e899b0">
-			</testcontainer>
-			<testcontainer
-			id="33a0c3a5-ab0a-4d78-99fb-0d5dd1d823d6">
-			</testcontainer>
-			<testcontainer
-			id="41ecb4eb-80da-438c-9dcf-97964c032d58">
-			</testcontainer>
-			<testcontainer
-			id="44d1c572-1d99-4d64-8eba-6eda3c6c0055">
-			</testcontainer>
-			<testcontainer
-			id="46fa733f-8a28-4ac9-a486-3df5fd314095">
-			</testcontainer>
-			<testcontainer
-			id="4c222e7c-4a38-4141-89c9-da3f392f3d82">
-			</testcontainer>
-			<testcontainer
-			id="4cd96c70-30dc-4270-87bf-8657f09e3ba0">
-			</testcontainer>
-			<testcontainer
-			id="4fbd94bd-f5f8-40f8-942d-b8089608333a">
-			</testcontainer>
-			<testcontainer
 			id="61269173-cbf1-4d81-9609-3ee677b1ceb6">
-			</testcontainer>
-			<testcontainer
-			id="64816483-8a16-45b3-954e-4c361bbd944a">
-			</testcontainer>
-			<testcontainer
-			id="6d8b8e39-6d7c-488a-becb-805789b9b2dc">
-			</testcontainer>
-			<testcontainer
-			id="79b93f06-5d38-4167-83b4-41f4f3c41ea8">
-			</testcontainer>
-			<testcontainer
-			id="7e36cb96-455e-4933-a44a-1142cd2c4465">
-			</testcontainer>
-			<testcontainer
-			id="8d3c37bc-1f5e-4d8a-bb96-6f0687a4e75d">
-			</testcontainer>
-			<testcontainer
-			id="985acc2b-d8df-4e42-8fd0-456dfe224177">
-			</testcontainer>
-			<testcontainer
-			id="985defb6-0ca1-4087-bd7d-eaf3083ac475">
-			</testcontainer>
-			<testcontainer
-			id="b4d9f1c6-d923-48cb-be4f-2ea992a61cbd">
-			</testcontainer>
-			<testcontainer
-			id="ba44110c-cf42-4acb-87cb-5a93a42ae04a">
-			</testcontainer>
-			<testcontainer
-			id="c5786399-7ad0-4da6-b378-fa82bd894599">
-			</testcontainer>
-			<testcontainer
-			id="f5ff4ab5-0a2f-4880-a603-5c6198096360">
-			</testcontainer>
-			<testcontainer
-			id="f93ab0c5-32b3-4040-8725-6488bd40ce5e">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

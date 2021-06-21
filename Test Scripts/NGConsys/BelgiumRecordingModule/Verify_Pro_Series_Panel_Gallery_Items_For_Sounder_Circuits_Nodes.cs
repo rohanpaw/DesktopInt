@@ -88,7 +88,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit1");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1747", "Sounders", "Generic Sounder");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_PFI", "Belgium", "Generic Sounder");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
@@ -100,7 +100,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1747", "Sounders", "Generic Sounder");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_PFI", "Belgium", "Generic Sounder");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");

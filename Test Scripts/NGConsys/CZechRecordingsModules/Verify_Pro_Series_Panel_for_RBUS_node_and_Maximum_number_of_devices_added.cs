@@ -85,7 +85,7 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("RBus");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Repeaters_ProPanels", "Czech", "MXR");
@@ -148,7 +148,7 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Devices_Functions.AddDevicesfromGallery("IOB800(x4)", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("R-BUS (16 of 16)");
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("RBus (16 of 16)");
             Delay.Milliseconds(0);
             
             //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "MXR");
@@ -157,8 +157,8 @@ namespace TestProject.CZechRecordingsModules
             //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "MPM800");
             //Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x2)");
-            Delay.Milliseconds(0);
+            //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x2)");
+            //Delay.Milliseconds(0);
             
         }
 

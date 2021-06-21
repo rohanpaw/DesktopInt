@@ -114,7 +114,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						R-BUS
+						RBus
 					</argvalue>
 				</argument>
 			</arguments>
@@ -139,7 +139,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1746
+						Gallery_RBus_Repeaters_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -149,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -184,7 +184,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1746
+						Gallery_Miscellaneous_Pro215Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -194,7 +194,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -229,7 +229,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1746
+						Gallery_RBus_Printers_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -239,7 +239,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -852,14 +852,14 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						R-BUS (16 of 16)
+						RBus (16 of 16)
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
 		classname="Gallery_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyGalleryExistsWithDropdown"
 		namespace="TestProject.Libraries"
@@ -894,7 +894,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="Gallery_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyGalleryExistsWithDropdown"
 		namespace="TestProject.Libraries"
@@ -929,7 +929,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="Gallery_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyGalleryExistsWithDropdown"
 		namespace="TestProject.Libraries"

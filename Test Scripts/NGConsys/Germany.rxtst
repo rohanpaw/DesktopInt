@@ -6,9 +6,15 @@
 			id="01cff86b-b94b-4778-b4bb-9263e8a2ad1e"
 			name="Verify_Pro_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
 				<description>
-					<![CDATA[<p>NGC-3475/T1746 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+					<![CDATA[<p>Defect-4266 NGC-3475/T1746 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="04912ce0-52ab-421a-9ca2-aab8e8f6aa85"
+			name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices"
+			ref="9f175fee-dff4-4c5c-9bc3-0ed0101d8f8d"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="05a563b5-5eb8-48d4-8552-03b8c2c3ad95"
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node"
@@ -340,6 +346,13 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="5276d42a-6a9d-4529-a388-e7d4ebfbb58e"
+			name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+				<description>
+					<![CDATA[NGC-3475/T1767]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="531de9d9-2bc6-4a18-a0af-ad6432fafabd"
 			name="Close_Application"
@@ -352,11 +365,31 @@
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="59419073-8f16-448f-88d5-c7a92d9c7921"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="5d452603-147d-4c84-85f9-c968c4293016"
 			name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
 				<description>
-					<![CDATA[<p>NGC-3475/T1763 SB520/SB520 Front Cover is not hiding on adding 1 device which is maximum limit</p><p>Also, failing as SB520 can be added only in one sounder circuit ?</p><br>]]>
+					<![CDATA[<p>NGC-3475/T1763 SB520/SB520 Front Cover is not hiding on adding 1 device which is maximum limit</p><br>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -392,6 +425,20 @@
 					<![CDATA[<p>NGC-3475/T1827</p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="64139c78-7ca5-4f90-8191-842bdf7b057a"
+			name="CreateProject_Germany"
+			ref="8012c1a0-c49f-461a-9ff5-1b851098f7a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="c32a791f-aa98-438e-ad07-a446f859b606"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="64248cdc-545c-4c08-b707-03e4de4472a6"
 			name="Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices"
@@ -468,6 +515,12 @@
 			id="73cc3702-496c-436c-aa66-6e1f1d110651"
 			name="Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added"
 			ref="fbc1ef26-779c-49e3-b1ab-de26527b88f6"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7503b054-b9d9-4306-8c6f-3cd86cc87bff"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -559,7 +612,7 @@
 			id="82260a9b-c115-434b-a92c-464eec3b3414"
 			name="Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_&amp;_Verify_Max_Limit_Of_Devices_Loop">
 				<description>
-					<![CDATA[<p>NGC-3475/T1824</p><p><br></p>]]>
+					<![CDATA[<p>NGC-3475/T1824 Maximum capacity is not tested</p><p><br></p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1059,7 +1112,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TSP MZX\Designer Pro 30.1.34">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 30.1.37">
 					</param>
 					<param
 					name="Mode"
@@ -1113,7 +1166,7 @@
 			id="c6f389dd-db82-454f-9923-6e300abd9bdf"
 			name="Verify_P_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
 				<description>
-					<![CDATA[<p>NGC-3475/T1761 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+					<![CDATA[<p>Defect-4266 NGC-3475/T1761 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1278,7 +1331,7 @@
 			id="e00d2194-4b67-40fa-bc3e-c911f038b7eb"
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-3475/T1816/T1818&nbsp; SKU and Connection text are not verified as they are not visible</p><p>&nbsp;<br></p>]]>
+					<![CDATA[<p>Defect-4266 NGC-3475/T1816/T1818&nbsp; SKU and Connection text are not verified as they are not visible</p>&nbsp;<br>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1689,6 +1742,26 @@
 						</testmodule>
 					</testcase>
 					<testcase
+					id="5276d42a-6a9d-4529-a388-e7d4ebfbb58e"
+					name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						<testmodule
+						id="59419073-8f16-448f-88d5-c7a92d9c7921"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="64139c78-7ca5-4f90-8191-842bdf7b057a"
+						name="CreateProject_Germany">
+						</testmodule>
+						<testmodule
+						id="04912ce0-52ab-421a-9ca2-aab8e8f6aa85"
+						name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						</testmodule>
+						<testmodule
+						id="7503b054-b9d9-4306-8c6f-3cd86cc87bff"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="cd7263b9-743b-4c56-9936-dbdea312e00a"
 					name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
 						<testmodule
@@ -1886,9 +1959,6 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="b16cb290-28c4-4002-b1bb-e920bb855e9f">
-			</testcontainer>
 			<testcontainer
 			id="c32a791f-aa98-438e-ad07-a446f859b606">
 			</testcontainer>

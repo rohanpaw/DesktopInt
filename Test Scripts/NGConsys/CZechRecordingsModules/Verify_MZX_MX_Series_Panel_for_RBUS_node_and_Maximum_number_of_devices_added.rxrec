@@ -114,7 +114,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						R-BUS
+						RBus
 					</argvalue>
 				</argument>
 			</arguments>
@@ -177,6 +177,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Repeaters
 			</comment>
 			<bindings>
 			</bindings>
@@ -189,7 +190,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1820
+						Gallery_RBus_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -199,7 +200,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Czech
 					</argvalue>
 				</argument>
 				<argument
@@ -222,6 +223,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Miscellaneous
 			</comment>
 			<bindings>
 			</bindings>
@@ -234,7 +236,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1820
+						Gallery_Miscellaneous_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -244,7 +246,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Czech
 					</argvalue>
 				</argument>
 				<argument
@@ -267,6 +269,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Printers
 			</comment>
 			<bindings>
 			</bindings>
@@ -279,7 +282,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1820
+						Gallery_RBus_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -289,7 +292,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Czech
 					</argvalue>
 				</argument>
 				<argument
@@ -902,7 +905,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						R-BUS (16 of 16)
+						RBus (16 of 16)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1146,7 +1149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						R-BUS
+						RBus
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1229,6 +1232,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Repeaters
 			</comment>
 			<bindings>
 			</bindings>
@@ -1241,7 +1245,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1820
+						Gallery_RBus_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1251,7 +1255,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Czech
 					</argvalue>
 				</argument>
 				<argument
@@ -1274,6 +1278,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Miscellaneous
 			</comment>
 			<bindings>
 			</bindings>
@@ -1286,7 +1291,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1820
+						Gallery_Miscellaneous_ZX_BB_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1296,7 +1301,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous_ZXPanels
+						Czech
 					</argvalue>
 				</argument>
 				<argument
@@ -1319,6 +1324,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Printers
 			</comment>
 			<bindings>
 			</bindings>
@@ -1331,7 +1337,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1820
+						Gallery_RBus_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1341,7 +1347,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Czech
 					</argvalue>
 				</argument>
 				<argument
@@ -1920,7 +1926,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						R-BUS (16 of 16)
+						RBus (16 of 16)
 					</argvalue>
 				</argument>
 			</arguments>

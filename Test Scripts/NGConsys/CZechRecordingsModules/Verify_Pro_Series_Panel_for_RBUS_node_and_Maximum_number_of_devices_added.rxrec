@@ -114,7 +114,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						R-BUS
+						RBus
 					</argvalue>
 				</argument>
 			</arguments>
@@ -852,7 +852,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						R-BUS (16 of 16)
+						RBus (16 of 16)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -929,7 +929,7 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="Gallery_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyGalleryExistsWithDropdown"
 		namespace="TestProject.Libraries"

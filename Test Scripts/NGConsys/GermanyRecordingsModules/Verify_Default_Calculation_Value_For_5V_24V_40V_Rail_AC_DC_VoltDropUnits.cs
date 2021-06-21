@@ -79,7 +79,7 @@ namespace TestProject.GermanyRecordingsModules
 
             Init();
 
-            Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("T1839", "DefaultPanelCalculation");
+            Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("Power_Calculation_Default_Values", "Germany");
             Delay.Milliseconds(0);
             
         }

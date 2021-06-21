@@ -85,13 +85,13 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Repeaters", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_MZX_Panels", "Belgium", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Miscellaneous", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_MZX_Panels", "Belgium", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Printers", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Belgium", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
@@ -103,7 +103,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Accessories", "FB800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_MZX125_MX_Panels", "Belgium", "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();
@@ -118,16 +118,16 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Repeaters", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_MZX_Panels", "Belgium", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Loops", "XLM800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_MZX_Panels", "Belgium", "XLM800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Miscellaneous", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_MZX_Panels", "Belgium", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Printers", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Belgium", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
@@ -136,7 +136,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Accessories", "FB800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_MZX_Panels", "Belgium", "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();
@@ -151,13 +151,13 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Repeaters", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_MZX_Panels", "Belgium", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Miscellaneous_ZX1_ZX4", "MPM800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ZX_BB_Panels", "Belgium", "MPM800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Printers", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Belgium", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
@@ -169,7 +169,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Accessories_ZX1_ZX4", "FB800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_ZX_BB_Panels", "Belgium", "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();
@@ -178,35 +178,68 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MZX252", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Repeaters", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_MZX_Panels", "Belgium", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Loops", "XLM800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_MZX_Panels", "Belgium", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Miscellaneous", "MPM800");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Printers", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Belgium", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
             Delay.Milliseconds(0);
             
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "XLM800");
+            Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1813_T1881", "Accessories", "FB800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_MZX125_Panels", "Belgium_MX", "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();
             Delay.Milliseconds(0);
+            
+            //Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "ZX4", "");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_MZX_Panels", "Belgium", "MXR");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_MZX_Panels", "Belgium", "XLM800");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ZX_BB_Panels", "Belgium", "MPM800");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Belgium", "LCD800");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_ZX_BB_Panels", "Belgium", "FB800");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Common_Functions.clickOnInventoryTab();
+            //Delay.Milliseconds(0);
             
         }
 

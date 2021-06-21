@@ -45,7 +45,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1839
+						Power_Calculation_Default_Values
 					</argvalue>
 				</argument>
 				<argument
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						DefaultPanelCalculation
+						Germany
 					</argvalue>
 				</argument>
 			</arguments>

@@ -85,16 +85,16 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("R-BUS");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("RBus");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Repeaters_ProPanels", "Czech", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Repeaters_P_Panels", "Czech", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ProPanels", "Czech", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Czech", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Printers_ProPanels", "Czech", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Printers_P_Panels", "Czech", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("MXR", "");
@@ -148,7 +148,7 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Devices_Functions.AddDevicesfromGallery("IOB800(x3)", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("R-BUS (16 of 16)");
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("RBus (16 of 16)");
             Delay.Milliseconds(0);
             
             //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "MXR");

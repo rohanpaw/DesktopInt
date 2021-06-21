@@ -92,7 +92,7 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Common_Functions.maximizeApplication();
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.createNewProject("CZech", "1");
+            Libraries.Common_Functions.createNewProject("Germany", "1");
             Delay.Milliseconds(0);
             
         }

@@ -88,13 +88,16 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1816_T1818", "Repeaters", "MXR");
+            // Repeaters
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MainProcessor_Repeaters_MZX_Panels", "Czech", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1816_T1818", "Miscellaneous", "PR1D2");
+            // Miscellaneous
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_MZX_Panels", "Czech", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1816_T1818", "Printers", "LCD800");
+            // Printers
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Czech", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
@@ -103,16 +106,17 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "XLM800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FBI800");
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Serial");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1816_T1818", "Printers", "LCD800");
+            // Printers
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Czech", "LCD800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FBI800");
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PR1D2");
@@ -127,16 +131,14 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Common_Functions.clickOnInventoryTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "LCD800");
-            Delay.Milliseconds(0);
-            
-            try {
-                Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 2");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(17)); }
-            
             Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("LCD800");
             Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "LCD800");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 2");
+            //Delay.Milliseconds(0);
             
             //Libraries.Devices_Functions.SelectRowUsingSKUFromInventoryTab("557.202.090");
             //Delay.Milliseconds(0);
@@ -159,13 +161,16 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1816_T1818", "Repeaters", "MXR");
+            // Repeaters
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MainProcessor_Repeaters_MZX_Panels", "Czech", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1816_T1818", "Miscellaneous_ZXPanels", "MPM800");
+            // Miscellaneous_ZXPanels
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ZX_BB_Panels", "Czech", "MPM800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1816_T1818", "Printers", "LCD800");
+            // Printers
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Czech", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
@@ -174,16 +179,17 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "XLM800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FBI800");
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Serial");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1816_T1818", "Printers", "LCD800");
+            // Printers
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Czech", "LCD800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FBI800");
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PR1D2");
@@ -198,16 +204,14 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Common_Functions.clickOnInventoryTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "LCD800");
-            Delay.Milliseconds(0);
-            
-            try {
-                Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 2");
-                Delay.Milliseconds(0);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(40)); }
-            
             Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("LCD800");
             Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 2");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "LCD800");
+            //Delay.Milliseconds(0);
             
         }
 

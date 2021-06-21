@@ -92,7 +92,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.maximizeApplication();
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.createNewProject("Belgium", "1");
+            Libraries.Common_Functions.createNewProject("Belgium", "2");
             Delay.Milliseconds(0);
             
         }

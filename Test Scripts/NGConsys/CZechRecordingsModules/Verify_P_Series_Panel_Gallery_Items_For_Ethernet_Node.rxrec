@@ -139,7 +139,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Ethernet_ProPanels
+						Gallery_Ethernet_Repeaters_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -218,7 +218,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Ethernet_AttachedFunctionality_ProPanels
+						Gallery_Ethernet_AttachedFunctionality_P_Panels
 					</argvalue>
 				</argument>
 				<argument

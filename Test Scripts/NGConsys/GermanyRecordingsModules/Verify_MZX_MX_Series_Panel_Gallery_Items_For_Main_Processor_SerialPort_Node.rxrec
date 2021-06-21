@@ -127,6 +127,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Repeaters
 			</comment>
 			<bindings>
 			</bindings>
@@ -139,7 +140,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1816_T1818
+						Gallery_MainProcessor_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -149,7 +150,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -172,6 +173,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Miscellaneous
 			</comment>
 			<bindings>
 			</bindings>
@@ -184,7 +186,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1816_T1818
+						Gallery_Miscellaneous_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -194,7 +196,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -217,6 +219,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Printers
 			</comment>
 			<bindings>
 			</bindings>
@@ -229,7 +232,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1816_T1818
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -239,7 +242,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -325,41 +328,6 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryExistsWithDropdown"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="GalleryVisibility"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						FBI800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -392,6 +360,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Printers
 			</comment>
 			<bindings>
 			</bindings>
@@ -404,7 +373,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1816_T1818
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -414,7 +383,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -575,8 +544,33 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingModelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sLabel"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						LCD800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyGalleryExistsWithDropdown"
 		namespace="TestProject.Libraries"
@@ -611,34 +605,9 @@ mode="Global">
 		</userrecorditem>
 		<userrecorditem
 		classname="Devices_Functions"
-		enabled="True"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="SelectRowUsingLabelNameFromInventoryTab"
-		namespace="TestProject.Libraries"
-		optional="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sLabel"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Printer 2
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="SelectRowUsingModelNameFromInventoryTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -654,7 +623,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						LCD800
+						Printer 2
 					</argvalue>
 				</argument>
 			</arguments>
@@ -871,6 +840,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Repeaters
 			</comment>
 			<bindings>
 			</bindings>
@@ -883,7 +853,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1816_T1818
+						Gallery_MainProcessor_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -893,7 +863,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -916,6 +886,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Miscellaneous_ZXPanels
 			</comment>
 			<bindings>
 			</bindings>
@@ -928,7 +899,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1816_T1818
+						Gallery_Miscellaneous_ZX_BB_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -938,7 +909,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous_ZXPanels
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -961,6 +932,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Printers
 			</comment>
 			<bindings>
 			</bindings>
@@ -973,7 +945,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1816_T1818
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -983,7 +955,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -1136,6 +1108,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Printers
 			</comment>
 			<bindings>
 			</bindings>
@@ -1148,7 +1121,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1816_T1818
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1158,7 +1131,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -1319,8 +1292,58 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
+		classname="Devices_Functions"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingModelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sLabel"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						LCD800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sLabel"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Printer 2
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="False"
 		isexternaltestmethod="True"
 		methodname="verifyGalleryExistsWithDropdown"
 		namespace="TestProject.Libraries"
@@ -1344,56 +1367,6 @@ mode="Global">
 				<argument
 				argname="GalleryDeviceName"
 				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						LCD800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelNameFromInventoryTab"
-		namespace="TestProject.Libraries"
-		optional="True">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sLabel"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Printer 2
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="SelectRowUsingModelNameFromInventoryTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sLabel"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>

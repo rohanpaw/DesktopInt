@@ -94,7 +94,7 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Local I/O");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1766_T1827", "Attached Functionality", "IOB800(x1)");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_AttachedFunctionality_FIM_Node", "Germany", "IOB800(x1)");
             Delay.Milliseconds(0);
             
         }

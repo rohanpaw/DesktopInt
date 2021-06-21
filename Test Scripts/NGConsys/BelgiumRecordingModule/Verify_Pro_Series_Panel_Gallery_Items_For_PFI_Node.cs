@@ -91,7 +91,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Local I/O");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1750", "Attached Functionality", "IOB800(x2)");
+            Libraries.Gallery_Functions.verifyGalleryListItems("AttachedFunctionality_PFI_Node", "Belgium", "IOB800(x2)");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
@@ -118,7 +118,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PFI Local I/O");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1750", "Attached Functionality xBB", "IOB800(x2)");
+            Libraries.Gallery_Functions.verifyGalleryListItems("AttachedFunctionality_PFI_Node", "BelgiumxBB", "IOB800(x2)");
             Delay.Milliseconds(0);
             
         }

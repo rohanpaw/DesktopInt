@@ -139,7 +139,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1747
+						Gallery_Sounder_PFI
 					</argvalue>
 				</argument>
 				<argument
@@ -149,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounders
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -268,7 +268,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1747
+						Gallery_Sounder_PFI
 					</argvalue>
 				</argument>
 				<argument
@@ -278,7 +278,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounders
+						Belgium
 					</argvalue>
 				</argument>
 				<argument

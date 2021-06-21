@@ -8593,6 +8593,9 @@ namespace TestProject.Libraries
 
 				Devices_Functions.verifyActualLoadingDetailsValue(expectedDefaultAlarmCurrent,LoadingDetailNameAlarmCurrent);
 			
+				Common_Functions.clickOnPanelCalculationsTab();
+				
+				
 				Devices_Functions.verifyActualLoadingDetailsValue(expectedMinBatterySize,LoadingDetailNameMinBatterySize);
 				
 				
@@ -8692,6 +8695,10 @@ namespace TestProject.Libraries
 				
 	
 				Devices_Functions.verifyMaximumLoadingDetailsValue(expectedMax5V,LoadingDetailName5V);
+				
+				// Click on Panel Calculation tab
+				Common_Functions.clickOnPanelCalculationsTab();
+				
 
 				Devices_Functions.verifyMaximumLoadingDetailsValue(expectedMax24V,LoadingDetailName24V);
 				

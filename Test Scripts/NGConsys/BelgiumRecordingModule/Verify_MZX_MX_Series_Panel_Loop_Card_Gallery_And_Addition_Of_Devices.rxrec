@@ -223,7 +223,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -233,7 +233,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Detectors
+						Detectors_P_MZX_MX
 					</argvalue>
 				</argument>
 				<argument
@@ -268,7 +268,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -278,7 +278,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Call points
+						CallPoints_VDS
 					</argvalue>
 				</argument>
 				<argument
@@ -313,7 +313,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -358,7 +358,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -403,7 +403,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -448,7 +448,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -493,7 +493,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -670,124 +670,15 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
-				<argument
-				argname="TreeItemName"
-				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Node
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="DeleteDeviceUsingLabelInInventoryTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
-				<argument
-				argname="LabelName"
-				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						XLM800-C
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sDeviceName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						XLM800-STI
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
 			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="ExpanderName"
+				argname="TreeItemName"
 				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						XLM
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
-				<argument
-				argname="TreeItemName"
-				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						XLM800-STI-D
+						Built-in Loop-A
 					</argvalue>
 				</argument>
 			</arguments>
@@ -812,7 +703,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -822,7 +713,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Detectors_STI
+						Detectors_P_MZX_MX
 					</argvalue>
 				</argument>
 				<argument
@@ -832,7 +723,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Analogue Sensor STI&#10;
+						801 CH
 					</argvalue>
 				</argument>
 			</arguments>
@@ -857,7 +748,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -867,7 +758,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Call points STI
+						CallPoints_VDS
 					</argvalue>
 				</argument>
 				<argument
@@ -877,7 +768,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Man. Callpoint STI&#10;
+						CP 820
 					</argvalue>
 				</argument>
 			</arguments>
@@ -902,7 +793,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -912,7 +803,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Ancillary STI
+						SoundersBeacons
 					</argvalue>
 				</argument>
 				<argument
@@ -922,7 +813,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Remote Indicat. STI&#10;
+						LPAV 3000
 					</argvalue>
 				</argument>
 			</arguments>
@@ -947,7 +838,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -957,7 +848,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other STI
+						Ancillary
 					</argvalue>
 				</argument>
 				<argument
@@ -967,246 +858,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Monitored Output STI&#10;
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sDeviceName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Zone Monitor STI&#10;
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Detectors_STI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sDeviceName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Remote Indicat. STI&#10;
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Ancillary STI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sDeviceName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Monitored Output STI&#10;
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Other STI
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
-				<argument
-				argname="TreeItemName"
-				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Node
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="DeleteDeviceUsingLabelInInventoryTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
-				<argument
-				argname="LabelName"
-				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						XLM800-STI-C
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sDeviceName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						XLM800-Zetfas
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeExpander"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="9f6229ba-3092-48a0-bbca-ce263a012619">
-				<argument
-				argname="ExpanderName"
-				id="73affd45-bfb0-462a-a124-300eec2faefa">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						XLM
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
-				<argument
-				argname="TreeItemName"
-				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						XLM800-Zetfas-C
+						CIM 800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1231,7 +883,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -1241,7 +893,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Detectors_Zetfas
+						Ancillary Conventional
 					</argvalue>
 				</argument>
 				<argument
@@ -1251,7 +903,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Ion Sensor IR3-S1&#10;
+						DDM 800 Loop
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1276,7 +928,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -1286,7 +938,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Ancillary Zetfas
+						Ancillary Specific
 					</argvalue>
 				</argument>
 				<argument
@@ -1296,7 +948,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						ADK/UAK&#10;
+						APM 800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1321,7 +973,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1832
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -1331,7 +983,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other Zetfas
+						Other
 					</argvalue>
 				</argument>
 				<argument
@@ -1341,7 +993,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Callpoint HM3-D1/S1
+						LI800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1366,7 +1018,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Ion Sensor IR3-S1&#10;
+						801 CH
 					</argvalue>
 				</argument>
 				<argument
@@ -1376,7 +1028,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Detectors_Zetfas
+						Detectors
 					</argvalue>
 				</argument>
 			</arguments>
@@ -1401,7 +1053,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Extinguisher LAV II&#10;
+						Junction Box
 					</argvalue>
 				</argument>
 				<argument
@@ -1411,42 +1063,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Ancillary Zetfas
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sDeviceName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Callpoint HM3-D1/S1&#10;
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Other Zetfas
+						Other
 					</argvalue>
 				</argument>
 			</arguments>

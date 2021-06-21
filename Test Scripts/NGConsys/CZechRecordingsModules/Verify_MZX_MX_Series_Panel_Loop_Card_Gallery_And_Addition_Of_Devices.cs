@@ -97,25 +97,25 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("XLM800-C");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Detectors", "801 CH");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Detectors_P_MZX_MX", "801 CH");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Call points", "CP 820");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "CallPoints_VDS", "CP 820");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "SoundersBeacons", "LPAV 3000");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "SoundersBeacons", "LPAV 3000");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Ancillary", "CIM 800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary", "CIM 800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Ancillary Conventional", "DDM 800 Loop");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary Conventional", "DDM 800 Loop");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Ancillary Specific", "APM 800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary Specific", "APM 800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Other", "LI800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Other", "LI800");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("DIN 830", "Call points");
@@ -145,16 +145,16 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("XLM800-STI-D");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Detectors_STI", "Analogue Sensor STI\r\n");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Zetfas_STI_Loop_Devices", "Detectors_STI", "Analogue Sensor STI\r\n");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Call points STI", "Man. Callpoint STI\r\n");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Zetfas_STI_Loop_Devices", "Call points STI", "Man. Callpoint STI\r\n");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Ancillary STI", "Remote Indicat. STI\r\n");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Zetfas_STI_Loop_Devices", "Ancillary STI", "Remote Indicat. STI\r\n");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Other STI", "Monitored Output STI\r\n");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Zetfas_STI_Loop_Devices", "Other STI", "Monitored Output STI\r\n");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("Zone Monitor STI\r\n", "Detectors_STI");
@@ -181,13 +181,13 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("XLM800-Zetfas-C");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Detectors_Zetfas", "Ion Sensor IR3-S1\r\n");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Zetfas_STI_Loop_Devices", "Detectors_Zetfas", "Ion Sensor IR3-S1\r\n");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Ancillary Zetfas", "ADK/UAK\r\n");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Zetfas_STI_Loop_Devices", "Ancillary Zetfas", "ADK/UAK\r\n");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1832", "Other Zetfas", "Callpoint HM3-D1/S1");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Zetfas_STI_Loop_Devices", "Other Zetfas", "Callpoint HM3-D1/S1");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("Ion Sensor IR3-S1\r\n", "Detectors_Zetfas");

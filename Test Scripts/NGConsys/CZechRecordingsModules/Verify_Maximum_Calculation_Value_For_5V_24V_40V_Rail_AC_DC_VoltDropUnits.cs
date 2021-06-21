@@ -79,7 +79,7 @@ namespace TestProject.CZechRecordingsModules
 
             Init();
 
-            Libraries.PSULoad_Functions.VerifyMaximumPanelPowerCalculation("T1838_T1840_T1841", "MaximumPanelCalculation");
+            Libraries.PSULoad_Functions.VerifyMaximumPanelPowerCalculation("Power_Calculation_Max_Values", "Czech");
             Delay.Milliseconds(0);
             
         }

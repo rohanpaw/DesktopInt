@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						P405D
+						P805D
 					</argvalue>
 				</argument>
 				<argument
@@ -139,7 +139,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1762
+						Gallery_Ethernet_Repeaters_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -149,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -218,7 +218,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1752
+						Gallery_Ethernet_AttachedFunctionality_P_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -228,7 +228,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Attached Functionality
+						Belgium
 					</argvalue>
 				</argument>
 				<argument
@@ -598,7 +598,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Two PZ4DS
+						Three PZ4DS
 					</argvalue>
 				</argument>
 				<argument

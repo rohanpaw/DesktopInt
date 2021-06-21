@@ -114,7 +114,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelNode_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -124,7 +124,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -159,7 +159,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Miscellaneous_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -169,7 +169,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -204,7 +204,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -214,7 +214,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -334,7 +334,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelAccessories_MZX125_MX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -344,7 +344,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -508,7 +508,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelNode_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -518,7 +518,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -553,7 +553,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Loops_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -563,7 +563,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Loops
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -598,7 +598,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Miscellaneous_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -608,7 +608,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -643,7 +643,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -653,7 +653,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -738,7 +738,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelAccessories_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -748,7 +748,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -912,7 +912,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelNode_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -922,7 +922,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -957,7 +957,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Miscellaneous_ZX_BB_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -967,7 +967,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous_ZX1_ZX4
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -1002,7 +1002,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1012,7 +1012,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -1132,7 +1132,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelAccessories_ZX_BB_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1142,7 +1142,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories_ZX1_ZX4
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -1247,7 +1247,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MZX252
+						ZX4
 					</argvalue>
 				</argument>
 				<argument
@@ -1306,7 +1306,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelNode_Repeaters_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1316,7 +1316,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Repeaters
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -1351,7 +1351,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Loops_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1361,7 +1361,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Loops
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -1396,7 +1396,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Miscellaneous_ZX_BB_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1406,7 +1406,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Miscellaneous
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -1441,7 +1441,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_Printers_MZX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1451,7 +1451,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Printers
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -1536,7 +1536,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1813_T1881
+						Gallery_PanelAccessories_ZX_BB_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1546,7 +1546,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Germany
 					</argvalue>
 				</argument>
 				<argument
