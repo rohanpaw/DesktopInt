@@ -118,7 +118,7 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PFI Local I/O");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("AttachedFunctionality_PFI_Node", "CzechxBB", "IOB800(x2)");
+            Libraries.Gallery_Functions.verifyGalleryListItems("AttachedFunctionality_PFI_Node_XX_Panel", "Czech", "IOB800(x2)");
             Delay.Milliseconds(0);
             
         }

@@ -1526,7 +1526,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_PanelAccessories_MZX125_Panels
+						Gallery_PanelAccessories_MX_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -1536,7 +1536,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium_MX
+						Belgium
 					</argvalue>
 				</argument>
 				<argument

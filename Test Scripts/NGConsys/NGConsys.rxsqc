@@ -15,13 +15,18 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "Belgium",
     "RunConfig": "TestRun"
   },
   {
     "Enabled": "False",
     "TestSuite": "CZech",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Swiss",
     "RunConfig": "TestRun"
   }
 ]

@@ -202,7 +202,7 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_MZX125_Panels", "Belgium_MX", "FB800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_MX_Panels", "Belgium", "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();

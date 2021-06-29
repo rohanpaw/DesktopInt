@@ -438,7 +438,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						AttachedFunctionality_PFI_Node
+						AttachedFunctionality_PFI_Node_XX_Panel
 					</argvalue>
 				</argument>
 				<argument
@@ -448,7 +448,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						GermanyxBB
+						Germany
 					</argvalue>
 				</argument>
 				<argument
