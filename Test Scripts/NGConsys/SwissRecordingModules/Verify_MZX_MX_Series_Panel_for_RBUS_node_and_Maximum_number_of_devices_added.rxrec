@@ -1200,7 +1200,7 @@ mode="Global">
 						System.Boolean
 					</argvaluetype>
 					<argvalue>
-						False
+						True
 					</argvalue>
 				</argument>
 				<argument
@@ -1210,7 +1210,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Zonal Alarm/Fault Display 32
+						Fire Brigade Panel - RBus
 					</argvalue>
 				</argument>
 			</arguments>

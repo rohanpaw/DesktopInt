@@ -803,7 +803,7 @@
 			id="8e8dcd3d-b565-4c91-ac01-1a3657fd869b"
 			name="Verify_MZX_MX_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
 				<description>
-					<![CDATA[<p>Defect-4352 NGC-3476/T2656 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+					<![CDATA[<p>NGC-3476/T2656 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1891,6 +1891,9 @@
 		name="TestRun">
 			<testcontainer
 			id="17176e25-011a-460b-85d5-264e8eed0779">
+			</testcontainer>
+			<testcontainer
+			id="c261f983-4603-4c9b-a915-bcd44a6f5394">
 			</testcontainer>
 			<testcontainer
 			id="ea9f097c-790a-4597-bab3-3a4aea758675">

@@ -184,7 +184,7 @@ namespace TestProject.SwissRecordingModules
             Libraries.Devices_Functions.verifyInventoryLabelNameExist(ValueConverter.ArgumentFromString<bool>("Visibility", "True"), "Front Door");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.verifyInventoryLabelNameExist(ValueConverter.ArgumentFromString<bool>("Visibility", "False"), "Zonal Alarm/Fault Display 32");
+            Libraries.Devices_Functions.verifyInventoryLabelNameExist(ValueConverter.ArgumentFromString<bool>("Visibility", "True"), "Fire Brigade Panel - RBus");
             Delay.Milliseconds(0);
             
             // Repeaters

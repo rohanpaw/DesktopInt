@@ -28,5 +28,10 @@
     "Enabled": "True",
     "TestSuite": "Swiss",
     "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Portugal",
+    "RunConfig": "TestRun"
   }
 ]
