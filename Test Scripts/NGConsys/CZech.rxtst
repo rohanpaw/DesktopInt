@@ -3,6 +3,20 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="00c36ad9-79c5-4a95-aa1f-0523dc7a9e77"
+			name="CreateProject_CZech"
+			ref="ebd3f0c4-fd7e-49c0-a24d-137e8c013e28"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="021db148-c7d2-420d-97d3-ec2e016f374e"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -35,6 +49,20 @@
 					<![CDATA[NGC-3477/T1854]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="0ab25edf-e756-4975-8796-fac18a90e61b"
+			name="CreateProject_CZech"
+			ref="ebd3f0c4-fd7e-49c0-a24d-137e8c013e28"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="0c8b7680-22ea-4746-bb17-146699de1190"
 			name="Application_Open"
@@ -95,11 +123,17 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="11ad7c48-26b8-40ae-9693-7c61e178345d"
+			name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node"
+			ref="6c5f0764-4ec1-4236-a08c-bdf456a6e61b"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="123ab0a7-7d2b-42cd-8324-62869409207a"
 			name="Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices">
 				<description>
-					<![CDATA[<p>Defect-4254 NGC-3477/T1843/T1811 Export shopping list and column verification is not automated</p>]]>
+					<![CDATA[<p>NGC-3477/T1843/T1811 Export shopping list and column verification is not automated</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -160,6 +194,12 @@
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="1d9e5e6c-c23a-4434-8675-3474f8d8f2c5"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="1e280d39-75ba-4a77-8796-c520ab63d0d4"
@@ -223,6 +263,26 @@
 					<![CDATA[<p>NGC-3477/T1865 Maximum capacity is not tested</p><p><br></p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="28ffc35e-9344-466f-9909-2c36e6df96e1"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="297784ba-8af1-416e-ac41-53783daf04c1"
 			name="CreateProject_CZech"
@@ -324,6 +384,19 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="375d2729-bf23-4993-bc4d-a1491cb97ecc"
+			name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node">
+				<description>
+					<![CDATA[<p>NGC-3477/T1732</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="38a795f5-4150-4c59-a3d3-a8a050dd39d7"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="3afae63a-f53a-431b-a8a4-0ab20ef8bded"
 			name="CreateProject_CZech"
@@ -372,6 +445,13 @@
 				</description>
 			</testcase>
 			<testcase
+			id="42ea0989-40b2-4e0f-82ac-a71b72cd2826"
+			name="Verify_Pro_Lite_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
+				<description>
+					<![CDATA[<p>NGC-3477/T1738 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+				</description>
+			</testcase>
+			<testcase
 			id="43329fd3-4e2e-4477-8266-d97dc8199852"
 			name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
 				<description>
@@ -389,7 +469,7 @@
 			id="46fa733f-8a28-4ac9-a486-3df5fd314095"
 			name="Verify_Pro_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
 				<description>
-					<![CDATA[<p>Defect-4266 NGC-3477/T1738 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+					<![CDATA[<p>NGC-3477/T1738 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -411,6 +491,12 @@
 					variablename="App_Mode">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="4b63c9d8-bf59-4401-afa0-396abcba087d"
+			name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node"
+			ref="f310318b-3e71-4c44-8873-6b42370c2e13"
+			type="Recording">
 			</testmodule>
 			<testcase
 			id="4c222e7c-4a38-4141-89c9-da3f392f3d82"
@@ -444,7 +530,7 @@
 			id="4fbd94bd-f5f8-40f8-942d-b8089608333a"
 			name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>Defect-4266 NGC-3477/T1846/T1848&nbsp; SKU and Connection text are not verified as they are not visible</p>&nbsp;<br>]]>
+					<![CDATA[<p>NGC-3477/T1846/T1848&nbsp; SKU and Connection text are not verified as they are not visible</p>&nbsp;<br>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -478,6 +564,26 @@
 					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="573ee8e9-2968-4eaa-88df-5b949f09503c"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -640,7 +746,7 @@
 			id="79b93f06-5d38-4167-83b4-41f4f3c41ea8"
 			name="Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices">
 				<description>
-					<![CDATA[Defect-4254 NGC-3477/T1731/T1843/T1858]]>
+					<![CDATA[NGC-3477/T1731/T1843/T1858]]>
 				</description>
 				<parameters>
 					<param
@@ -649,6 +755,26 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="7a1c0706-31ae-45a2-9708-7522ce04650b"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="7c5a191a-b833-4025-81e0-ce1e6fb7680d"
 			name="Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node"
@@ -702,6 +828,20 @@
 			</testmodule>
 			<testmodule
 			id="81df77f2-f784-4d08-a093-afb9e31c61c1"
+			name="CreateProject_CZech"
+			ref="ebd3f0c4-fd7e-49c0-a24d-137e8c013e28"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="838b24e7-853c-4b3f-b4c2-aa06493ae6ca"
 			name="CreateProject_CZech"
 			ref="ebd3f0c4-fd7e-49c0-a24d-137e8c013e28"
 			type="Recording">
@@ -786,6 +926,12 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="903dcf75-af51-48bd-8e6b-8a749b72cd72"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="9091ed93-74d8-47cd-9fa6-a0eb787f6394"
 			name="CreateProject_CZech"
 			ref="ebd3f0c4-fd7e-49c0-a24d-137e8c013e28"
@@ -798,6 +944,12 @@
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="93118d10-1b9c-44fe-8f26-994eca81b95b"
+			name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node"
+			ref="d34373f1-82e8-48b2-94aa-54414e558018"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="9536d79d-982b-4c90-82f6-2c50cc20781d"
@@ -831,6 +983,12 @@
 			id="97df5b1a-dc5b-4f81-a975-0be02edf3561"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="984317ed-8ca0-418b-b3a2-26a60cf02fb4"
+			name="Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added"
+			ref="a63435bc-b4c5-4f5d-9637-b531341cf4c8"
 			type="Recording">
 			</testmodule>
 			<testcase
@@ -999,7 +1157,7 @@
 			id="b4d9f1c6-d923-48cb-be4f-2ea992a61cbd"
 			name="Verify_P_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
 				<description>
-					<![CDATA[<p>Defect-4266 NGC-3477/T1850 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+					<![CDATA[<p>NGC-3477/T1850 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1022,6 +1180,13 @@
 			ref="298cbbd8-7334-4642-9f8c-f82c7a95e46f"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="b6d6abfc-7d98-49d4-98b3-b31a0bb17775"
+			name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+				<description>
+					<![CDATA[<p>NGC-3477/T1735/T1737&nbsp; SKU and Connection text are not verified as they are not visible</p><p><br><br></p>]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="b70da15d-9749-41b0-99fa-da3692bfda32"
 			name="Application_Open"
@@ -1061,6 +1226,19 @@
 			ref="8b3858d8-b7a9-4405-a8d0-67c16ee2c597"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="bc2220cf-c31d-4fa3-8d7f-4d749968c3dd"
+			name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node">
+				<description>
+					<![CDATA[<p>NGC-3477/T1734</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="bf4387fd-d7cb-4fd4-99ce-60190f42b76a"
+			name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node"
+			ref="e88f466d-b319-478d-8f02-563cd067230a"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="c1225522-8ced-443d-8772-1bba327eb548"
 			name="Close_Application"
@@ -1097,7 +1275,7 @@
 			id="c5786399-7ad0-4da6-b378-fa82bd894599"
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>Defect-4266 NGC-3477/T1861&nbsp; SKU and Connection text are not verified as they are not visible</p><p>&nbsp;<br></p>]]>
+					<![CDATA[<p>NGC-3477/T1861&nbsp; SKU and Connection text are not verified as they are not visible</p><p>&nbsp;<br></p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1137,6 +1315,26 @@
 					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
 					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c67815a9-e336-4a83-9863-27a390202604"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1212,6 +1410,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="cd67832d-8b83-4dac-a81b-edfbd8f4609f"
+			name="CreateProject_CZech"
+			ref="ebd3f0c4-fd7e-49c0-a24d-137e8c013e28"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="cf536043-ba6f-4ff7-be07-35dc862aff1c"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -1251,6 +1463,13 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="d1d33966-8e20-4eca-83f3-0a40a6c05e17"
+			name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node">
+				<description>
+					<![CDATA[<p>NGC-3477/T1736</p>]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="d1d44913-91d2-4459-8e7d-f391c0a34c7c"
 			name="Application_Open"
@@ -1362,10 +1581,30 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="e61469bb-a200-4ca0-a4f6-fdf94e8b1c45"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e7177d72-386c-4845-a5e8-8f34a39e6743"
 			name="Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added"
 			ref="d900abb9-1ffc-4bc4-a96f-3f1da2119e3b"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="eb6d6d33-de20-47f8-b4fb-317c521d9fd7"
+			name="CreateProject_CZech"
+			ref="ebd3f0c4-fd7e-49c0-a24d-137e8c013e28"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ec613ff8-f83d-4a62-986e-c099d0005929"
@@ -1420,6 +1659,26 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="f868fe34-e611-455f-bca1-e5038572a4cd"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="61269173-cbf1-4d81-9609-3ee677b1ceb6"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="f93ab0c5-32b3-4040-8725-6488bd40ce5e"
 			name="Verify_P_Series_Panel_Gallery_Items_For_Panel_Node">
@@ -1427,6 +1686,12 @@
 					<![CDATA[<p>NGC-3477/T1845</p><p><br></p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="fcebbc97-eeb2-42cb-abfc-a8eb734802d9"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="fecb708b-471d-4412-bc7e-92b2924a7c92"
 			name="Close_Application"
@@ -1941,6 +2206,106 @@
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="bc2220cf-c31d-4fa3-8d7f-4d749968c3dd"
+					name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node">
+						<testmodule
+						id="28ffc35e-9344-466f-9909-2c36e6df96e1"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="cd67832d-8b83-4dac-a81b-edfbd8f4609f"
+						name="CreateProject_CZech">
+						</testmodule>
+						<testmodule
+						id="4b63c9d8-bf59-4401-afa0-396abcba087d"
+						name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node">
+						</testmodule>
+						<testmodule
+						id="903dcf75-af51-48bd-8e6b-8a749b72cd72"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="b6d6abfc-7d98-49d4-98b3-b31a0bb17775"
+					name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+						<testmodule
+						id="573ee8e9-2968-4eaa-88df-5b949f09503c"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="eb6d6d33-de20-47f8-b4fb-317c521d9fd7"
+						name="CreateProject_CZech">
+						</testmodule>
+						<testmodule
+						id="11ad7c48-26b8-40ae-9693-7c61e178345d"
+						name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+						</testmodule>
+						<testmodule
+						id="1d9e5e6c-c23a-4434-8675-3474f8d8f2c5"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="375d2729-bf23-4993-bc4d-a1491cb97ecc"
+					name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node">
+						<testmodule
+						id="c67815a9-e336-4a83-9863-27a390202604"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="00c36ad9-79c5-4a95-aa1f-0523dc7a9e77"
+						name="CreateProject_CZech">
+						</testmodule>
+						<testmodule
+						id="bf4387fd-d7cb-4fd4-99ce-60190f42b76a"
+						name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node">
+						</testmodule>
+						<testmodule
+						id="38a795f5-4150-4c59-a3d3-a8a050dd39d7"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="d1d33966-8e20-4eca-83f3-0a40a6c05e17"
+					name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node">
+						<testmodule
+						id="7a1c0706-31ae-45a2-9708-7522ce04650b"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="838b24e7-853c-4b3f-b4c2-aa06493ae6ca"
+						name="CreateProject_CZech">
+						</testmodule>
+						<testmodule
+						id="93118d10-1b9c-44fe-8f26-994eca81b95b"
+						name="Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node">
+						</testmodule>
+						<testmodule
+						id="e61469bb-a200-4ca0-a4f6-fdf94e8b1c45"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="42ea0989-40b2-4e0f-82ac-a71b72cd2826"
+					name="Verify_Pro_Lite_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
+						<testmodule
+						id="f868fe34-e611-455f-bca1-e5038572a4cd"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="0ab25edf-e756-4975-8796-fac18a90e61b"
+						name="CreateProject_CZech">
+						</testmodule>
+						<testmodule
+						id="984317ed-8ca0-418b-b3a2-26a60cf02fb4"
+						name="Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added">
+						</testmodule>
+						<testmodule
+						id="fcebbc97-eeb2-42cb-abfc-a8eb734802d9"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
 					<teardown
 					id="ccff4382-5925-46e0-85b6-b7e3bbcf3c5f"
 					name="teardown">
@@ -1961,6 +2326,12 @@
 		name="TestRun">
 			<testcontainer
 			id="61269173-cbf1-4d81-9609-3ee677b1ceb6">
+			</testcontainer>
+			<testcontainer
+			id="b6d6abfc-7d98-49d4-98b3-b31a0bb17775">
+			</testcontainer>
+			<testcontainer
+			id="bc2220cf-c31d-4fa3-8d7f-4d749968c3dd">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

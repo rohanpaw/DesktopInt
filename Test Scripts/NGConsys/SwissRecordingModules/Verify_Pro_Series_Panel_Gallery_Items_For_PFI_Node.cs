@@ -124,6 +124,27 @@ namespace TestProject.SwissRecordingModules
             Libraries.Gallery_Functions.verifyGalleryListItems("AttachedFunctionality_PFI_Node_XX_Panel", "Swiss", "IOB800(x2)");
             Delay.Milliseconds(0);
             
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            // PRO LITE PANEL TEST CASE
+            Report.Log(ReportLevel.Info, "Section", "PRO LITE PANEL TEST CASE", new RecordItemIndex(16));
+            
+            Libraries.Panel_Functions.AddPanelsMT(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro215S Lite", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PFI80");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Local I/O");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_AttachedFunctionality_PFI_Node_Pro_Lite_Panels", "Swiss", "Transmission Unit");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

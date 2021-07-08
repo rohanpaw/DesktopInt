@@ -124,7 +124,7 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_ProPanels", "Germany", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_ProPanels", "Germany", "FBI800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_SlotCards_ProPanels", "Germany_SlotCards215Panel", "FBI800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_Pro215Panels", "Germany", "MPM800");

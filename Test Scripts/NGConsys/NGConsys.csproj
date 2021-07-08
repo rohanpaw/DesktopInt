@@ -271,6 +271,66 @@
       <id>7459a84e-1cd5-499c-9185-0d9a691e2393</id>
       <BoundTo>8af1c072-bb80-4ce3-b5a3-cf6baa73b057</BoundTo>
     </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>479cf2d0-a4cc-4b85-89ed-b33c996ffd4e</id>
+      <BoundTo>53057268-8272-4bcd-9dd4-7e434ceedf9e</BoundTo>
+    </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>acfd2f82-2944-44ae-bc67-ac861830fea4</id>
+      <BoundTo>53057268-8272-4bcd-9dd4-7e434ceedf9e</BoundTo>
+    </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>67f56e65-881a-4e80-b6fc-16f04eb2c066</id>
+      <BoundTo>2693f84a-6b82-4b3c-857d-96f7253c62be</BoundTo>
+    </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>41b1ba1e-d3a3-4f00-b9d8-b76459d0535d</id>
+      <BoundTo>2693f84a-6b82-4b3c-857d-96f7253c62be</BoundTo>
+    </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6845be15-36c4-4571-b368-baa2e0dda17f</id>
+      <BoundTo>260c5403-d1a0-4112-8cf2-697cdb9c5e0b</BoundTo>
+    </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ce72426e-6df9-4a84-8dad-b2fc390dfd26</id>
+      <BoundTo>260c5403-d1a0-4112-8cf2-697cdb9c5e0b</BoundTo>
+    </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b078802d-b92a-4aa1-bbd6-4d594e7e978f</id>
+      <BoundTo>339e1ccd-0fa8-4fdf-bf42-564fb3be88f1</BoundTo>
+    </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5839e17e-94f5-4a29-bd8f-0725d741f4df</id>
+      <BoundTo>339e1ccd-0fa8-4fdf-bf42-564fb3be88f1</BoundTo>
+    </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e2562af-5e35-41c4-8262-3dd199636076</id>
+      <BoundTo>e5a0cf32-1106-467f-98e8-425144255c58</BoundTo>
+    </Compile>
+    <Compile Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e7cd8594-0b96-4af8-8c0f-95df83c527ef</id>
+      <BoundTo>e5a0cf32-1106-467f-98e8-425144255c58</BoundTo>
+    </Compile>
     <Compile Include="BelgiumRecordingModule\Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
       <DependentUpon>Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -583,6 +643,66 @@
       <id>3ad67fb9-3810-4c22-890b-7d7db3f280d1</id>
       <BoundTo>8f4fdf65-d801-4e73-bc59-64d86ce2a67d</BoundTo>
     </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3ccb36b0-4c8c-4e44-838e-955413938d92</id>
+      <BoundTo>31998fbc-930f-46d8-a30d-61f26c6b1d84</BoundTo>
+    </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ed937108-a5e3-40a3-aed0-07f498b08a31</id>
+      <BoundTo>31998fbc-930f-46d8-a30d-61f26c6b1d84</BoundTo>
+    </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4919645b-056a-4510-86dc-ec53995674fa</id>
+      <BoundTo>b50b0c96-1d85-428b-b7c6-8aff899c89cb</BoundTo>
+    </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0769ad74-008e-43e6-b43b-8c2ef3731e0f</id>
+      <BoundTo>b50b0c96-1d85-428b-b7c6-8aff899c89cb</BoundTo>
+    </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6b829565-6522-4512-8b76-eab7243e13bb</id>
+      <BoundTo>d89b780e-27c5-403a-a213-1ef3d95c9c81</BoundTo>
+    </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>299fedc4-ac4a-4ce9-94e4-de7ccd435ded</id>
+      <BoundTo>d89b780e-27c5-403a-a213-1ef3d95c9c81</BoundTo>
+    </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3d5876e5-c09c-453c-a3db-2d6b5dd0d64e</id>
+      <BoundTo>c45bb8be-22f2-4920-99b4-3c00f3158091</BoundTo>
+    </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3a2b16d2-8f74-4b75-962f-f5c1ec7da329</id>
+      <BoundTo>c45bb8be-22f2-4920-99b4-3c00f3158091</BoundTo>
+    </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bc48b2e5-633d-4d4e-bbed-e3c382001c92</id>
+      <BoundTo>5bd601e5-3622-4efd-97ad-67e7a8e6a8c2</BoundTo>
+    </Compile>
+    <Compile Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ba55c535-43f0-482a-8728-2a55a6058278</id>
+      <BoundTo>5bd601e5-3622-4efd-97ad-67e7a8e6a8c2</BoundTo>
+    </Compile>
     <Compile Include="CZechRecordingsModules\Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
       <DependentUpon>Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -894,6 +1014,66 @@
       <DependentUpon>Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>8addba5a-2f15-4c6b-b267-a730415f3f16</id>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2d8f55da-dfc0-4345-94dc-b8a51953b752</id>
+      <BoundTo>c65b4c43-fa8b-4ffa-9ad6-894ed520aff9</BoundTo>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a42044d3-403f-4672-8448-06616ecdfc77</id>
+      <BoundTo>c65b4c43-fa8b-4ffa-9ad6-894ed520aff9</BoundTo>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>742ec3f7-910e-4f5f-bb2a-3b8d53d757c4</id>
+      <BoundTo>cd121fea-d274-403c-bb7e-7538739c53c2</BoundTo>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c11d8969-430a-42a4-a6d8-244f85499293</id>
+      <BoundTo>cd121fea-d274-403c-bb7e-7538739c53c2</BoundTo>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>16fc0287-e402-4478-b821-0c17522989a7</id>
+      <BoundTo>cb465f7c-c6da-48ab-bdd0-42cfd77b09b6</BoundTo>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>18752128-98be-4068-bc0a-bb302fcb4a70</id>
+      <BoundTo>cb465f7c-c6da-48ab-bdd0-42cfd77b09b6</BoundTo>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9eb7bd7d-4bff-49ce-b0c8-1022e50d0da2</id>
+      <BoundTo>d422702a-7725-407e-99ec-28ed2be63b17</BoundTo>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>35b8c1e2-e325-489c-912e-48a0b9cf3aa2</id>
+      <BoundTo>d422702a-7725-407e-99ec-28ed2be63b17</BoundTo>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>78625854-e4c5-401e-b2ce-716c683e8f2d</id>
+      <BoundTo>d5b8d61c-9e51-495a-b1a5-89987948880a</BoundTo>
+    </Compile>
+    <Compile Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1d3f7293-ce77-413d-9941-1bdaaee62c04</id>
+      <BoundTo>d5b8d61c-9e51-495a-b1a5-89987948880a</BoundTo>
     </Compile>
     <Compile Include="GermanyRecordingsModules\Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
       <BoundTo>91cdf727-7a8e-4da3-ac94-93d8661d81ab</BoundTo>
@@ -1246,6 +1426,66 @@
       <id>37bae3a1-1213-4410-a905-605aa08e8e49</id>
       <BoundTo>48d4956c-417d-488a-9257-583d43fbb380</BoundTo>
     </Compile>
+    <Compile Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.cs">
+      <BoundTo>f12cca56-a752-406a-b97d-1867dc93b0f4</BoundTo>
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bab124ef-683a-4213-bd23-ca63f499f843</id>
+    </Compile>
+    <Compile Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.UserCode.cs">
+      <BoundTo>f12cca56-a752-406a-b97d-1867dc93b0f4</BoundTo>
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1f0e3717-52d3-4ff1-ae4d-18f40b53a12d</id>
+    </Compile>
+    <Compile Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.cs">
+      <BoundTo>6e5e8ddd-7b13-4c56-821f-0dcf1e175918</BoundTo>
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>214eef1b-35c3-4e4b-874a-faab7c0a5874</id>
+    </Compile>
+    <Compile Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.UserCode.cs">
+      <BoundTo>6e5e8ddd-7b13-4c56-821f-0dcf1e175918</BoundTo>
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f7cd46a8-30e7-4e24-a663-0555e1834a7f</id>
+    </Compile>
+    <Compile Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.cs">
+      <BoundTo>8b8a8416-1a37-4c41-9ca1-2d4caa9c4e5d</BoundTo>
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2a72c10c-71ed-4b3e-a80d-7c093c29df37</id>
+    </Compile>
+    <Compile Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.UserCode.cs">
+      <BoundTo>8b8a8416-1a37-4c41-9ca1-2d4caa9c4e5d</BoundTo>
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>791e23fb-085f-4063-b49f-454ac1e4ce1f</id>
+    </Compile>
+    <Compile Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <BoundTo>6ce11e9c-f34d-4996-a200-53ff856f3125</BoundTo>
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3b34d443-b7fd-4d99-a3b4-cf6adf1281e0</id>
+    </Compile>
+    <Compile Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <BoundTo>6ce11e9c-f34d-4996-a200-53ff856f3125</BoundTo>
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>63872cf4-32d2-4330-8bb1-49892a347eff</id>
+    </Compile>
+    <Compile Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.cs">
+      <BoundTo>c165da1d-935e-4441-96cf-5d6a5ba348e5</BoundTo>
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>33af7b4a-9bd3-4c2a-be2d-836a650d5e4f</id>
+    </Compile>
+    <Compile Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.UserCode.cs">
+      <BoundTo>c165da1d-935e-4441-96cf-5d6a5ba348e5</BoundTo>
+      <DependentUpon>Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0afa9c71-67f8-4c1c-a518-3117058798bd</id>
+    </Compile>
     <Compile Include="PortugalRecordingModules\Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
       <DependentUpon>Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1426,14 +1666,14 @@
       <id>2ab0c5cc-0f34-4996-947e-2d1830b93da1</id>
       <BoundTo>f476a3af-4c2a-4f87-a561-b66d347934bd</BoundTo>
     </Compile>
-    <Compile Include="PortugalRecordingModules\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.cs">
-      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec</DependentUpon>
+    <Compile Include="PortugalRecordingModules\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_And_Verify_Maximum_Limit.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_And_Verify_Maximum_Limit.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>f03ec565-ed87-4391-a762-a478ddf6f090</id>
       <BoundTo>887311c8-89df-47a2-b2e0-4544aff58bf2</BoundTo>
     </Compile>
-    <Compile Include="PortugalRecordingModules\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.UserCode.cs">
-      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec</DependentUpon>
+    <Compile Include="PortugalRecordingModules\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_And_Verify_Maximum_Limit.UserCode.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_And_Verify_Maximum_Limit.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>ef13c518-e8ad-476b-87f7-fb402b5c4a74</id>
       <BoundTo>887311c8-89df-47a2-b2e0-4544aff58bf2</BoundTo>
@@ -6207,6 +6447,31 @@
       <recordtableid>e4607eb1-c969-42d5-933a-db7fd2cbe953</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
+      <id>53057268-8272-4bcd-9dd4-7e434ceedf9e</id>
+      <recordtableid>f5e2c85f-bd1a-4298-8d2a-6b0758408f1e</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
+      <id>2693f84a-6b82-4b3c-857d-96f7253c62be</id>
+      <recordtableid>2a16cb49-37fe-4f6f-b680-4457da658b62</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec">
+      <id>260c5403-d1a0-4112-8cf2-697cdb9c5e0b</id>
+      <recordtableid>a7bb6f69-ff70-41ac-b280-809b663e0e72</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>339e1ccd-0fa8-4fdf-bf42-564fb3be88f1</id>
+      <recordtableid>02f702b9-ab11-4a66-908a-43bc7d43304f</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="BelgiumRecordingModule\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec">
+      <id>e5a0cf32-1106-467f-98e8-425144255c58</id>
+      <recordtableid>702ca4a8-b206-4551-9f44-f5c5a4de98a4</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="BelgiumRecordingModule\Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>9c3f8127-e2f8-49e3-b818-a7d120b8caab</id>
@@ -6335,6 +6600,31 @@
     <None Include="CZechRecordingsModules\Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
       <id>8f4fdf65-d801-4e73-bc59-64d86ce2a67d</id>
       <recordtableid>04afc247-d893-43b8-a4fd-76cb5299b103</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
+      <id>31998fbc-930f-46d8-a30d-61f26c6b1d84</id>
+      <recordtableid>a63435bc-b4c5-4f5d-9637-b531341cf4c8</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
+      <id>b50b0c96-1d85-428b-b7c6-8aff899c89cb</id>
+      <recordtableid>e88f466d-b319-478d-8f02-563cd067230a</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec">
+      <id>d89b780e-27c5-403a-a213-1ef3d95c9c81</id>
+      <recordtableid>6c5f0764-4ec1-4236-a08c-bdf456a6e61b</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>c45bb8be-22f2-4920-99b4-3c00f3158091</id>
+      <recordtableid>f310318b-3e71-4c44-8873-6b42370c2e13</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CZechRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec">
+      <id>5bd601e5-3622-4efd-97ad-67e7a8e6a8c2</id>
+      <recordtableid>d34373f1-82e8-48b2-94aa-54414e558018</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="CZechRecordingsModules\Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
@@ -6467,6 +6757,31 @@
       <recordtableid>5a4fd02a-1e97-45c9-b085-aee5ef3dd25f</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
+      <id>c65b4c43-fa8b-4ffa-9ad6-894ed520aff9</id>
+      <recordtableid>7a417663-f988-4a76-b98d-1217d344ff04</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
+      <id>cd121fea-d274-403c-bb7e-7538739c53c2</id>
+      <recordtableid>8cbc6030-147a-4019-977a-e4aaf4951bf4</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec">
+      <id>cb465f7c-c6da-48ab-bdd0-42cfd77b09b6</id>
+      <recordtableid>b768966e-a284-431f-badb-4ff7fd7fe7f9</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>d422702a-7725-407e-99ec-28ed2be63b17</id>
+      <recordtableid>2533d9b0-f1d3-47e0-8cf0-95963a0f7616</recordtableid>
+    </None>
+    <None Include="GermanyRecordingsModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec">
+      <id>d5b8d61c-9e51-495a-b1a5-89987948880a</id>
+      <recordtableid>0cf25efb-96e1-45a5-be76-853aa326a475</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
     <None Include="GermanyRecordingsModules\Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>91cdf727-7a8e-4da3-ac94-93d8661d81ab</id>
@@ -6503,9 +6818,9 @@
       <recordtableid>9323c6e1-c898-45a2-8ec6-b182c937ecc4</recordtableid>
     </None>
     <None Include="GermanyRecordingsModules\Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>a7c3adf9-4d05-4d8f-8e23-ffb6dce61627</id>
       <recordtableid>ca0190a5-caf9-4191-8c20-6983117899a6</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="GermanyRecordingsModules\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
@@ -6597,6 +6912,31 @@
       <recordtableid>42305aa6-d726-44af-9c33-0ef5eeacd19e</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
+    <None Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>f12cca56-a752-406a-b97d-1867dc93b0f4</id>
+      <recordtableid>4b39116e-3dcc-4410-9b1c-3d09759831a9</recordtableid>
+    </None>
+    <None Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>6e5e8ddd-7b13-4c56-821f-0dcf1e175918</id>
+      <recordtableid>720e2f61-dcbb-4d62-84fe-edcadc24d005</recordtableid>
+    </None>
+    <None Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>8b8a8416-1a37-4c41-9ca1-2d4caa9c4e5d</id>
+      <recordtableid>6e3b1ae3-db72-4f48-bec4-9e7fa872fe42</recordtableid>
+    </None>
+    <None Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>6ce11e9c-f34d-4996-a200-53ff856f3125</id>
+      <recordtableid>e07267a3-188e-43c8-a892-c20dcc971d8f</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="PortugalRecordingModules\Verify_Pro_Lite_Series_Panel_Gallery_Items_For_PFI_Node.rxrec">
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+      <id>c165da1d-935e-4441-96cf-5d6a5ba348e5</id>
+      <recordtableid>9f2f1840-3b62-4ca4-a5f9-653dbe9844d0</recordtableid>
+    </None>
     <None Include="PortugalRecordingModules\Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>feeeb352-0d3d-4765-b959-25e647dd5b8d</id>
@@ -6623,9 +6963,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="PortugalRecordingModules\Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f37c33eb-ed78-4f48-aa1a-68272b9c10ab</id>
       <recordtableid>1e9f2cf8-12e5-4afd-91f5-038c5502a3b1</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="PortugalRecordingModules\Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node.rxrec">
       <id>3820a431-1ad1-419a-8da4-bceac115a73d</id>
@@ -6672,7 +7012,7 @@
       <recordtableid>ac58ac12-bf60-4dab-9e83-3002ef2fc3ba</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="PortugalRecordingModules\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec">
+    <None Include="PortugalRecordingModules\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_And_Verify_Maximum_Limit.rxrec">
       <id>887311c8-89df-47a2-b2e0-4544aff58bf2</id>
       <recordtableid>79936b4d-c2c1-43d4-9ab3-c224628ad2ed</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

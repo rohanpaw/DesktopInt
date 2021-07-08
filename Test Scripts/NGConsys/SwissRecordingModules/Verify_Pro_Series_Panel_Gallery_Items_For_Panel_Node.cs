@@ -115,6 +115,9 @@ namespace TestProject.SwissRecordingModules
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
+            // ACTIONS TO TEST ON ANOTHER PANEL
+            Report.Log(ReportLevel.Info, "Section", "ACTIONS TO TEST ON ANOTHER PANEL", new RecordItemIndex(12));
+            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro215S", "");
             Delay.Milliseconds(0);
             
@@ -140,6 +143,42 @@ namespace TestProject.SwissRecordingModules
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_Pro215Panels", "Swiss", "PCS800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            // PRO LITE PANEL TEST CASE
+            Report.Log(ReportLevel.Info, "Section", "PRO LITE PANEL TEST CASE", new RecordItemIndex(24));
+            
+            Libraries.Panel_Functions.AddPanelsMT(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro415S Lite", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_Pro_Lite_Panels", "Swiss", "P32AR");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ProPanels", "Swiss", "MPM800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Swiss", "LCD800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PLX800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_Pro_Lite_Panels", "Swiss", "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();

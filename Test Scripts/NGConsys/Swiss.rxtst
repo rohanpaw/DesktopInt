@@ -138,6 +138,9 @@
 			id="17176e25-011a-460b-85d5-264e8eed0779"
 			name="Swiss"
 			reportlevel="Info;20">
+				<description>
+					<![CDATA[Need to update Pro Lite panel name after defect get fixed]]>
+				</description>
 				<parameters>
 					<param
 					name="Application_Path"
@@ -150,6 +153,26 @@
 					<param
 					name="sListIndex"
 					value="">
+					</param>
+					<param
+					name="PdfName"
+					value="">
+					</param>
+					<param
+					name="PdfDirectoryPath"
+					value="">
+					</param>
+					<param
+					name="Xml"
+					value="">
+					</param>
+					<param
+					name="Details"
+					value="all">
+					</param>
+					<param
+					name="DeleteRanorexReport"
+					value="false">
 					</param>
 				</parameters>
 			</testcase>
@@ -338,6 +361,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="3d6c4b0b-fb2c-4d54-92ed-05ebae7d52a7"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="3dadf449-f534-4b62-baa1-b97a5beb791d"
 			name="Application_Open"
@@ -944,6 +971,44 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="acea7576-ad98-4a4e-bee9-9225dc473825"
+			name="ReportToPDFModule"
+			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="PdfName"
+					datasourceid="17176e25-011a-460b-85d5-264e8eed0779"
+					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
+					variablename="PdfName">
+					</var>
+					<var
+					dataname="PdfDirectoryPath"
+					datasourceid="17176e25-011a-460b-85d5-264e8eed0779"
+					variableid="536f8a69-f246-4f2b-ae9e-1f62babb2ba9"
+					variablename="PdfDirectoryPath">
+					</var>
+					<var
+					dataname="Xml"
+					datasourceid="17176e25-011a-460b-85d5-264e8eed0779"
+					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
+					variablename="Xml">
+					</var>
+					<var
+					dataname="Details"
+					datasourceid="17176e25-011a-460b-85d5-264e8eed0779"
+					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
+					variablename="Details">
+					</var>
+					<var
+					dataname="DeleteRanorexReport"
+					datasourceid="17176e25-011a-460b-85d5-264e8eed0779"
+					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
+					variablename="DeleteRanorexReport">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="acf82dea-5dfb-45b4-9a52-71ca8be31fc4"
 			name="CreateProject_Switzerland"
 			ref="7758aac0-6b53-4c40-bf98-0149b4eb3a14"
@@ -1072,7 +1137,7 @@
 			id="c261f983-4603-4c9b-a915-bcd44a6f5394"
 			name="Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices">
 				<description>
-					<![CDATA[Defect-4254 NGC-3476/T2343]]>
+					<![CDATA[NGC-3476/T2343]]>
 				</description>
 				<parameters>
 					<param
@@ -1879,6 +1944,14 @@
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<teardown
+					id="3d6c4b0b-fb2c-4d54-92ed-05ebae7d52a7"
+					name="teardown">
+						<testmodule
+						id="acea7576-ad98-4a4e-bee9-9225dc473825"
+						name="ReportToPDFModule">
+						</testmodule>
+					</teardown>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -1891,12 +1964,6 @@
 		name="TestRun">
 			<testcontainer
 			id="17176e25-011a-460b-85d5-264e8eed0779">
-			</testcontainer>
-			<testcontainer
-			id="c261f983-4603-4c9b-a915-bcd44a6f5394">
-			</testcontainer>
-			<testcontainer
-			id="ea9f097c-790a-4597-bab3-3a4aea758675">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

@@ -70,7 +70,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1727_T1755
+						Gallery_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -80,7 +80,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Panels
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -115,7 +115,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1727_T1755
+						Gallery_OtherNodes
 					</argvalue>
 				</argument>
 				<argument
@@ -125,7 +125,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Other Nodes
+						Germany
 					</argvalue>
 				</argument>
 				<argument
@@ -200,7 +200,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						T1727_T1755
+						Gallery_Accessories
 					</argvalue>
 				</argument>
 				<argument
@@ -210,7 +210,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Accessories
+						Germany
 					</argvalue>
 				</argument>
 				<argument

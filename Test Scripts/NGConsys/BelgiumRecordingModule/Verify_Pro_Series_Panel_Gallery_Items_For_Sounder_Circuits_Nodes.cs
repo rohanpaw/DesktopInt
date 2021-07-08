@@ -109,6 +109,39 @@ namespace TestProject.BelgiumRecordingModule
             Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit2 (1)");
             Delay.Milliseconds(0);
             
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.AddPanelsMT(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro415S Lite", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_PFI", "Belgium", "Generic Sounder");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit1 (1)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_PFI", "Belgium", "Generic Sounder");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit2 (1)");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

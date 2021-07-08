@@ -141,6 +141,72 @@ namespace TestProject.SwissRecordingModules
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "Two PZ4DS");
             Delay.Milliseconds(0);
             
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            // PRO LITE PANEL TEST CASE
+            Report.Log(ReportLevel.Info, "Section", "PRO LITE PANEL TEST CASE", new RecordItemIndex(21));
+            
+            Libraries.Panel_Functions.AddPanelsMT(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro415D Lite", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Ethernet_ProPanels", "Swiss", "PR8AS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Ethernet_AttachedFunctionality_ProPanels", "Swiss", "PZ8DS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-102");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("PR1DS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingSKUFromInventoryTab("557.200.801");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR8AS", "Repeaters");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Ethernet (8 of 8)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-108");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("Two PZ4DS", "Attached Functionality");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PR1DS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "Two PZ4DS");
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

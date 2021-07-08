@@ -82,10 +82,10 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1727_T1755", "Panels", "Pro32xD");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Panels", "Germany", "Pro32xD");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1727_T1755", "Other Nodes", "TXG Node");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_OtherNodes", "Germany", "TXG Node");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
@@ -94,7 +94,7 @@ namespace TestProject.GermanyRecordingsModules
             Libraries.Common_Functions.clickOnSiteAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("T1727_T1755", "Accessories", "ANC125");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Accessories", "Germany", "ANC125");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("ANC125", "Accessories");

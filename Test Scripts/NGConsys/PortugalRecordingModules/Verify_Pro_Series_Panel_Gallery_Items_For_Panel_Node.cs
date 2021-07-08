@@ -124,9 +124,6 @@ namespace TestProject.PortugalRecordingModules
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_ProPanels", "Portugal", "MXR");
             Delay.Milliseconds(0);
             
-            //Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_ProPanels", "Portugal", "FBI800");
-            //Delay.Milliseconds(0);
-            
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_Pro215Panels", "Portugal", "MPM800");
             Delay.Milliseconds(0);
             

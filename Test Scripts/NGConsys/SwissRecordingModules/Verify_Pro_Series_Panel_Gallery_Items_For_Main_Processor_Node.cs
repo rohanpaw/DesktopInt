@@ -142,6 +142,78 @@ namespace TestProject.SwissRecordingModules
             //Libraries.Devices_Functions.SelectRowUsingConnectionFromInventoryTab("Serial Port");
             //Delay.Milliseconds(0);
             
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Delay.Milliseconds(0);
+            
+            // PRO LITE PANEL TEST CASE
+            Report.Log(ReportLevel.Info, "Section", "PRO LITE PANEL TEST CASE", new RecordItemIndex(22));
+            
+            Libraries.Panel_Functions.AddPanelsMT(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro415S Lite", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MainProcessors_Repeaters_Pro_Lite_Panels", "Swiss", "P32AR");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ProPanels", "Swiss", "PR1D2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Swiss", "LCD800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "XLM800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FBI800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Serial");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Swiss", "LCD800");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FBI800");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PR1D2");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 1");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("RS800", "Printers");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "LCD800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PX-PR");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Printer 2");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("RS800");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.SelectRowUsingSKUFromInventoryTab("557.200.030");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Devices_Functions.SelectRowUsingConnectionFromInventoryTab("Serial Port");
+            //Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

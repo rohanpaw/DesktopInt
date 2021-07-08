@@ -608,7 +608,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Loops_ProPanels
+						Gallery_SlotCards_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -618,7 +618,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Germany
+						Germany_SlotCards215Panel
 					</argvalue>
 				</argument>
 				<argument
