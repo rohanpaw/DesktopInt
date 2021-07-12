@@ -656,6 +656,46 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
+						Fire Brigade Panel - LocalIO
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnDeleteButton"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+				<argument
+				argname="sLabel"
+				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 						Local I/O
 					</argvalue>
 				</argument>
@@ -701,7 +741,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Transmission Unit
+						Fire Brigade Panel - LocalIO
 					</argvalue>
 				</argument>
 			</arguments>

@@ -160,7 +160,7 @@ namespace TestProject.SwissRecordingModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_Pro_Lite_Panels", "Swiss", "P32AR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_Pro_Lite_Panels", "Swiss", "P32AR-CH");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ProPanels", "Swiss", "MPM800");

@@ -139,10 +139,16 @@ namespace TestProject.SwissRecordingModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("PFI80");
             Delay.Milliseconds(0);
             
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Fire Brigade Panel - LocalIO");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnDeleteButton();
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Local I/O");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_AttachedFunctionality_PFI_Node_Pro_Lite_Panels", "Swiss", "Transmission Unit");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_AttachedFunctionality_PFI_Node_Pro_Lite_Panels", "Swiss", "Fire Brigade Panel - LocalIO");
             Delay.Milliseconds(0);
             
         }

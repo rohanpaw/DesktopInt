@@ -103,9 +103,6 @@ namespace TestProject.CZechRecordingsModules
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PLX800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FBI800");
-            Delay.Milliseconds(0);
-            
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Serial");
             Delay.Milliseconds(0);
             

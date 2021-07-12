@@ -79,9 +79,6 @@ namespace TestProject.CZechRecordingsModules
 
             Init();
 
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Czech", "LCD800");
-            Delay.Milliseconds(0);
-            
             Libraries.Panel_Functions.AddPanelsMT(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro215S Lite", "");
             Delay.Milliseconds(0);
             
@@ -128,6 +125,9 @@ namespace TestProject.CZechRecordingsModules
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ProPanels", "Czech", "MPM800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Czech", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");

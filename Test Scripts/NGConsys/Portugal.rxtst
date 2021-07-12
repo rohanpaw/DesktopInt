@@ -1429,7 +1429,7 @@
 			</testcase>
 			<testmodule
 			id="d7aa395e-e2e5-4ece-a04e-de7910b013e4"
-			name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_And_Verify_Maximum_Limit"
 			ref="79936b4d-c2c1-43d4-9ab3-c224628ad2ed"
 			type="Recording">
 			</testmodule>
@@ -1979,7 +1979,7 @@
 						</testmodule>
 						<testmodule
 						id="d7aa395e-e2e5-4ece-a04e-de7910b013e4"
-						name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit">
+						name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_And_Verify_Maximum_Limit">
 						</testmodule>
 						<testmodule
 						id="5d66d879-7def-4685-bf0e-17bf43962b5e"
