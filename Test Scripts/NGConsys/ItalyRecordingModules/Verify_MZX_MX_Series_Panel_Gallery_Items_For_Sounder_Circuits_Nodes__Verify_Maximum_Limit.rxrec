@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="73ef3675-90b1-4288-aa42-2c4d94e906dd"
+id="8790d1f2-749f-4a2f-b817-39013a811258"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes"
-	namespace="TestProject.SlovakiaRecordingModules">
+	classname="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit"
+	namespace="TestProject.ItalyRecordingModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro32xD
+						MZX252
 					</argvalue>
 				</argument>
 				<argument
@@ -127,6 +127,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Sounders
 			</comment>
 			<bindings>
 			</bindings>
@@ -139,7 +140,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Sounder_PFI
+						Gallery_Sounder_FIM
 					</argvalue>
 				</argument>
 				<argument
@@ -149,7 +150,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Slovakia
+						Italy
 					</argvalue>
 				</argument>
 				<argument
@@ -199,6 +200,40 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						SB520
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
@@ -218,7 +253,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounder Circuit1 (1)
+						Sounder Circuit1 (2)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -256,6 +291,7 @@ mode="Global">
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
+				Sounders
 			</comment>
 			<bindings>
 			</bindings>
@@ -268,7 +304,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Sounder_PFI
+						Gallery_Sounder_FIM
 					</argvalue>
 				</argument>
 				<argument
@@ -278,7 +314,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Slovakia
+						Italy
 					</argvalue>
 				</argument>
 				<argument
@@ -352,51 +388,6 @@ mode="Global">
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<userrecorditem
-		classname="Panel_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="DeletePanel"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="NumberofPanels"
-				id="bfe4f44c-9ade-481e-9eb1-99ffdf03f05c">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelNode"
-				id="b6800acc-e51a-4e38-95ce-cbafae7aabfc">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Node1
-					</argvalue>
-				</argument>
-				<argument
-				argname="rowNumber"
-				id="a9e6ddcd-e426-40db-ae7e-0e80fd3fd2b2">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
 	</recorditems>
 	<repository
 	id="73d81cd9-9fc6-4e00-a974-a404f4cb1628"
@@ -414,7 +405,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs
+		Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

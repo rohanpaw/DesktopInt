@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.SlovakiaRecordingModules
+namespace TestProject.ItalyRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes recording.
+    ///The Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices recording.
     /// </summary>
-    [TestModule("73ef3675-90b1-4288-aa42-2c4d94e906dd", ModuleType.Recording, 1)]
-    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes : ITestModule
+    [TestModule("7cace616-d5d2-4b99-8cc2-40f966ceed92", ModuleType.Recording, 1)]
+    public partial class Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes instance = new Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes();
+        static Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices instance = new Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes()
+        public Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes Instance
+        public static Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices Instance
         {
             get { return instance; }
         }
@@ -79,37 +79,61 @@ namespace TestProject.SlovakiaRecordingModules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P485D", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit1");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_PFI", "Slovakia", "Generic Sounder");
+            Libraries.Devices_Functions.AddDevicesfromGallery("XLM800", "");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("XLM");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit1 (1)");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("XLM800-C");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Detectors_P_MZX_MX", "801 CH");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_PFI", "Slovakia", "Generic Sounder");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "CallPoints_VDS", "CP 820");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "SoundersBeacons", "LPAV 3000");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit2 (1)");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary", "CIM 800");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary Conventional", "DDM 800 Loop");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary Specific", "APM 800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Other", "LI800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("DIN 830", "Call points");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("LPSY 800 - R/W", "SoundersBeacons");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("DDM 800 Loop (Fast CallPoints)", "Ancillary Conventional");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("Junction Box\r\n", "Other");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("XLM800-C");
             Delay.Milliseconds(0);
             
         }

@@ -20,38 +20,48 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.SlovakiaRecordingModules
+namespace TestProject.ItalyRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes recording.
+    ///The CreateProject_Italy recording.
     /// </summary>
-    [TestModule("73ef3675-90b1-4288-aa42-2c4d94e906dd", ModuleType.Recording, 1)]
-    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes : ITestModule
+    [TestModule("41ae41a1-f666-43cc-89ce-a96454ac2446", ModuleType.Recording, 1)]
+    public partial class CreateProject_Italy : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes instance = new Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes();
+        static CreateProject_Italy instance = new CreateProject_Italy();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes()
+        public CreateProject_Italy()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes Instance
+        public static CreateProject_Italy Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable sListIndex.
+        /// </summary>
+        [TestVariable("ca40602d-7ca3-47bc-a519-7a0fe6a76634")]
+        public string sListIndex
+        {
+            get { return repo.sListIndex; }
+            set { repo.sListIndex = value; }
+        }
 
 #endregion
 
@@ -79,37 +89,10 @@ namespace TestProject.SlovakiaRecordingModules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            Libraries.Common_Functions.maximizeApplication();
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit1");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_PFI", "Slovakia", "Generic Sounder");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit1 (1)");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit2");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_PFI", "Slovakia", "Generic Sounder");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit2 (1)");
-            Delay.Milliseconds(0);
-            
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Common_Functions.createNewProject("Italy", "0");
             Delay.Milliseconds(0);
             
         }

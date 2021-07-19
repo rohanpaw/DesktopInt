@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="73ef3675-90b1-4288-aa42-2c4d94e906dd"
+id="8cc27515-bf76-41e6-b6fc-cd066a9db181"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes"
-	namespace="TestProject.SlovakiaRecordingModules">
+	classname="Verify_P_Series_Panel_Gallery_Items_For_FIM_Node"
+	namespace="TestProject.ItalyRecordingModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro32xD
+						P115S
 					</argvalue>
 				</argument>
 				<argument
@@ -114,52 +114,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounder Circuit1
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="fileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Gallery_Sounder_PFI
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Slovakia
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Generic Sounder
+						FIM
 					</argvalue>
 				</argument>
 			</arguments>
@@ -168,7 +123,7 @@ mode="Global">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
+		methodname="SelectRowUsingModelNameFromInventoryTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -178,56 +133,22 @@ mode="Global">
 			<arguments
 			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="sDeviceName"
+				argname="sLabel"
 				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Generic Sounder
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
+						FIM800
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyNavigationTreeItemText"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="TreeItemName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Sounder Circuit1 (1)
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -237,13 +158,13 @@ mode="Global">
 			<arguments
 			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
 				<argument
-				argname="TreeItemName"
+				argname="sLabel"
 				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounder Circuit2
+						I/O Locale
 					</argvalue>
 				</argument>
 			</arguments>
@@ -268,7 +189,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Sounder_PFI
+						Gallery_AttachedFunctionality_FIM_Node
 					</argvalue>
 				</argument>
 				<argument
@@ -278,7 +199,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Slovakia
+						Italy
 					</argvalue>
 				</argument>
 				<argument
@@ -288,111 +209,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Generic Sounder
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sDeviceName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Generic Sounder
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyNavigationTreeItemText"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="TreeItemName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Sounder Circuit2 (1)
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Panel_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="DeletePanel"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="NumberofPanels"
-				id="bfe4f44c-9ade-481e-9eb1-99ffdf03f05c">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelNode"
-				id="b6800acc-e51a-4e38-95ce-cbafae7aabfc">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Node1
-					</argvalue>
-				</argument>
-				<argument
-				argname="rowNumber"
-				id="a9e6ddcd-e426-40db-ae7e-0e80fd3fd2b2">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
+						IOB800(x1)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -414,7 +231,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs
+		Verify_P_Series_Panel_Gallery_Items_For_FIM_Node.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.SlovakiaRecordingModules
+namespace TestProject.ItalyRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes recording.
+    ///The Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit recording.
     /// </summary>
-    [TestModule("73ef3675-90b1-4288-aa42-2c4d94e906dd", ModuleType.Recording, 1)]
-    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes : ITestModule
+    [TestModule("91a5391e-e6b5-43ae-86dc-c282ac6a421e", ModuleType.Recording, 1)]
+    public partial class Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes instance = new Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes();
+        static Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit instance = new Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes()
+        public Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes Instance
+        public static Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit Instance
         {
             get { return instance; }
         }
@@ -79,7 +79,7 @@ namespace TestProject.SlovakiaRecordingModules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro32xD", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P115S", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
@@ -88,28 +88,31 @@ namespace TestProject.SlovakiaRecordingModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit1");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_PFI", "Slovakia", "Generic Sounder");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_FIM", "Italy", "Generic Sounder");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit1 (1)");
+            Libraries.Devices_Functions.AddDevicesfromGallery("SB520", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit1 (2)");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_PFI", "Slovakia", "Generic Sounder");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_FIM", "Italy", "Generic Sounder");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit2 (1)");
+            Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit2 (2)");
             Delay.Milliseconds(0);
             
         }

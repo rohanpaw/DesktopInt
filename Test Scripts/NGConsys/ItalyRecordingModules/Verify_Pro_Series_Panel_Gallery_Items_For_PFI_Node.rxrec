@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="73ef3675-90b1-4288-aa42-2c4d94e906dd"
+id="e1205091-7500-41bf-bcb0-007fc44d07f8"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes"
-	namespace="TestProject.SlovakiaRecordingModules">
+	classname="Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node"
+	namespace="TestProject.ItalyRecordingModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro32xD
+						Pro16xD
 					</argvalue>
 				</argument>
 				<argument
@@ -114,7 +114,32 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounder Circuit1
+						PFI80
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+				<argument
+				argname="sLabel"
+				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Local I/O
 					</argvalue>
 				</argument>
 			</arguments>
@@ -139,7 +164,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Sounder_PFI
+						AttachedFunctionality_PFI_Node
 					</argvalue>
 				</argument>
 				<argument
@@ -149,7 +174,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Slovakia
+						Italy
 					</argvalue>
 				</argument>
 				<argument
@@ -159,16 +184,16 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Generic Sounder
+						IOB800(x2)
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Devices_Functions"
+		classname="Panel_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
+		methodname="DeletePanel"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -176,20 +201,75 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
+			id="2ca7df19-9781-4f88-9056-3fa97f0051f4">
 				<argument
-				argname="sDeviceName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+				argname="NumberofPanels"
+				id="913523e8-0df4-4cb2-a019-1495f987868c">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNode"
+				id="2dc05029-bb59-4c73-a8d0-a2517555c26f">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Generic Sounder
+						Node1
 					</argvalue>
 				</argument>
 				<argument
-				argname="sType"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+				argname="rowNumber"
+				id="06d575c3-e0db-4002-a7c0-84acd7c5b55c">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddPanels"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2ca7df19-9781-4f88-9056-3fa97f0051f4">
+				<argument
+				argname="NumberofPanels"
+				id="913523e8-0df4-4cb2-a019-1495f987868c">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNames"
+				id="2dc05029-bb59-4c73-a8d0-a2517555c26f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Pro16xBB
+					</argvalue>
+				</argument>
+				<argument
+				argname="sPanelCPU"
+				id="06d575c3-e0db-4002-a7c0-84acd7c5b55c">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -202,7 +282,7 @@ mode="Global">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyNavigationTreeItemText"
+		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -210,15 +290,15 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
 				<argument
-				argname="TreeItemName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounder Circuit1 (1)
+						Node
 					</argvalue>
 				</argument>
 			</arguments>
@@ -243,7 +323,97 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounder Circuit2
+						PFI80
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+				<argument
+				argname="sLabel"
+				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Black Box
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingModelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+				<argument
+				argname="sLabel"
+				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						XIOM
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="clickOnDeleteButton"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+				<argument
+				argname="sLabel"
+				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PFI Local I/O
 					</argvalue>
 				</argument>
 			</arguments>
@@ -268,7 +438,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Sounder_PFI
+						AttachedFunctionality_PFI_Node_XX_Panel
 					</argvalue>
 				</argument>
 				<argument
@@ -278,7 +448,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Slovakia
+						Italy
 					</argvalue>
 				</argument>
 				<argument
@@ -288,111 +458,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Generic Sounder
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sDeviceName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Generic Sounder
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="VerifyNavigationTreeItemText"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="TreeItemName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Sounder Circuit2 (1)
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Panel_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="DeletePanel"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="NumberofPanels"
-				id="bfe4f44c-9ade-481e-9eb1-99ffdf03f05c">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelNode"
-				id="b6800acc-e51a-4e38-95ce-cbafae7aabfc">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Node1
-					</argvalue>
-				</argument>
-				<argument
-				argname="rowNumber"
-				id="a9e6ddcd-e426-40db-ae7e-0e80fd3fd2b2">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
+						IOB800(x2)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -414,7 +480,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs
+		Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
