@@ -124,10 +124,13 @@ namespace TestProject.ItalyRecordingModules
             Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
+            Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.VerifyNavigationTreeItemText("Ethernet (8 of 8)");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-108");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-9");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("Two PZ4DS", "Attached Functionality");
