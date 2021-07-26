@@ -935,6 +935,7 @@ namespace TestProject.Libraries
 		 * Function Owner: Alpesh Dhakad
 		 * Last Update : Alpesh Dhakad - 01/10/2019 - Added step as per new Panel Node in Build 43
 		 * Alpesh Dhakad - 02/09/2020 - Updated script to work dynamically for all panels
+		 * Alpesh Dhakad - 23/07/2020 - Updated script to work for all new MT panels
 		 **********************************************************************************************************************************/
 		[UserCodeMethod]
 		public static void AddPanelsFC(int NumberofPanels,string PanelNames,string sPanelCPU)
@@ -947,7 +948,12 @@ namespace TestProject.Libraries
 				PanelName = PanelNames;
 				//                string PanelNameWithSpace=splitPanelNames[i];
 				//                PanelName=PanelNameWithSpace.Replace(" ",String.Empty);
-				if(PanelName.StartsWith("FC7"))                {
+				if(PanelName.StartsWith("FC7"))                
+				{
+					sPanelLabelIndex ="5";
+				}
+				else if (PanelName.StartsWith("FC60")) 
+				{
 					sPanelLabelIndex ="5";
 				}
 				else

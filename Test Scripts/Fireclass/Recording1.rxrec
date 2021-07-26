@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1aec77a4-7602-4579-97fd-d8c6825cec46"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="Fireclass">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="e626f4d5-8af8-4b61-958e-9e2b196a751e"
+	name="FireclassRepository"
+	relativepath="FireclassRepository.rxrep">
+		<codegen
+		classname="FireclassRepository"
+		namespace="Fireclass">
+		</codegen>
+		<rootfolder
+		id="b2bee9a8-64d7-434d-b7f3-4f56d99560ae"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,135 @@
+﻿<repository
+id="e626f4d5-8af8-4b61-958e-9e2b196a751e"
+name="FireclassRepository">
+	<codegen
+	classname="FireclassRepository"
+	namespace="Fireclass">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="b2bee9a8-64d7-434d-b7f3-4f56d99560ae"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="ed84a4da-623f-4bbf-92bb-8ba46ee2dc76"
+		isrooted="True"
+		name="FormMe"
+		refpath="/form[@automationid='me']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			capname="text"
+			id="d781f505-8a88-4245-82c1-c3201a92c693"
+			name="File"
+			refimgid="0e3c5675-659f-4a0d-b4bd-222b07abdecc"
+			searchtimeout="90000ms">
+				/form[@automationid='me']/?/?/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']/?/?/text[@text='File']
+			</item>
+			<item
+			capname="text"
+			id="6d3ee0c8-d5ba-40ea-9764-e2367fa4d9a1"
+			name="New"
+			refimgid="1fe49c44-0e98-46e0-8360-cca4849c9d17"
+			searchtimeout="60000ms">
+				/form[@automationid='me']//text[@text='New']
+			</item>
+			<item
+			capname="text"
+			id="f892686f-16c1-410e-a76e-b57e2470f123"
+			name="SearchMarket"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar//text/container[7]/text[@caption='']/text[@caption='']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="13cd759c-53df-4144-8f19-b1b4dedfecc5"
+			name="lst_Market"
+			refimgid="e9d7c8b0-7521-438b-a0e3-d607d4f20eb4"
+			searchtimeout="30000ms">
+				/form[@automationid='me']//text[@caption='Recently Used Markets']/button[2]/list[@automationid='PART_Groups']/listitem[@index=$sListIndex]
+			</item>
+			<item
+			capname="text"
+			id="becb4828-1b99-4df3-bdbf-84e7de7ed9c4"
+			name="btn_CreateNewProject"
+			refimgid="a37ad762-f76c-413f-a868-f2fc3fb1450d"
+			searchtimeout="60000ms">
+				/form[@automationid='me']/progressbar//button//text[@caption='Create new project...']
+			</item>
+			<basepath>
+				/form[@automationid='me']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAMBJREFUOE+dkYENwyAMBLNCVsgsrMBwnakrZIZugNyc4ZFDkWj70sso
+/vugZFvIgv+SHcfh5hz8tSznbA8zn0PRUg4An9dZ85ciSyl1+HXNsYhMjc7lofKsYISZqwK/JiGA
+UmqBJrdZFmBCMrD7uhEFLfMhX/D2fd8VuhVxA2bbdfUgoDx87VtRe+a6LXAsmRUFuzwkmF8njyU6
+wyhTK1ojSxXpL2A9F8yMsORLHIsiKM/gqB4EjPAKHNVBPIe37Q3xt/6sRylb8AAAAABJRU5ErkJg
+gg==
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="form"
+		id="e07a3156-af95-4f3e-ac35-c1748ae9bc23"
+		isrooted="True"
+		name="CreateNewProject"
+		refpath="/form[@title='Create New Project']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			capname="container"
+			id="5e72c4f0-65b6-4c68-856c-46296adc932c"
+			isrooted="True"
+			name="CreateNewProjectContainer"
+			refpath="/form[@title='Create New Project']/container[1]"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="7be3706a-c77b-4d38-8abc-73e95fd77029"
+				name="btn_OK"
+				refimgid="92ef1252-be58-48ee-9134-cf4adb9435ba"
+				refpath="/form[@title='Create New Project']/container[1]/container[@caption='']/container/button[@text='OK']"
+				searchtimeout="30000ms">
+					/form[@title='Create New Project']/container[1]//button[@text='OK']
+				</item>
+				<basepath>
+					/form[@title='Create New Project']/container[1]
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@title='Create New Project']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAr5JREFUOE+FkVtIU3Ecx1fUQw0kIgKhlx56yTS6GEJlZloJNclWNiGs
+oAsp1aMQkUEP9RS9ZC+VMiVh2VgauYutXF5yXqq529nVec7uO87teLZZ9u1/NqHCRl/4cjiH3/dz
+/r/vX7Rjq7ikvm7v+VvXq1qar1S1XGysaZJJ9zSXlpadKiopPSG4oGDLRpFItIp4pSTHt0uNyjPO
+TPg+UqE2xE3XwDMKpNML4FMZWFwMnnVrhutkV7eR8dW51B+S1hbVUyOX6R9JOZYySiTNF0BTXfgw
+9Bl92lFQMyFQ3nDm3mP5293ltcXLsd+SSnadc5luzy7x3fi5qEYm1oovxnY87VDAMGaG3RNEZI6H
+yuBYkjW16sRi8eblaE7VlcU1FrWEZicbkA4/REB3DAl2EEyIRSyegs8/hyfyXjxo68q6/GRDP4mt
+yaWJDpRtOqSSN3Wy9BtEmQGEmGE4vqkwbrLB5g4hOs8vO4Vk6jsByHQkti6XJiosFK3v6X0n8TEM
+LA43TJQHX61OGE0u2DxhvP9shW7UQp52BCLJlQBBI1OOCpcvjOFJJ3RDZmg/TUM9aILJ7odmaBr9
+5H3C4kMskc4P8MxGs3+YCczBS+xmWDjJN4cvAoqYCScRT2b+DTAQgJsMC20HYsnsMB2ax2wwToBx
+eP1x+IIJRON5TmAwOiqcMxFM2WgMTjjwcZyC3kiRvW1kfyv0Y3aYnEEC5/MDKAIYN/uyZQ2QkHbE
+CjXpQ9hfsGHSRU6Tp0QB4CAAJpSAh2bhomNk9yjs3gis5CZs3ijoMI8gm6cDvdFaIZQ1zy0iRu47
+GucRJn0EYwvwRxbARIRu0giweTqQK3UHX6r0XLdqgOtSarnO1xpOTtzRo+HaX2m4F4IVGu65op/b
+X3O2j0T+Bty8+2hD4407R6pPXzp6+D/eWVa5j0TW5pIi0S/z9jbQeFglSQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="52ecb0f0-af2f-4d5e-bd04-1dafb7e347ce"
+		name="sListIndex">
+			2
+		</var>
+	</variables>
+</repository>

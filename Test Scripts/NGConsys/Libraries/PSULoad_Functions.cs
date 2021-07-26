@@ -8554,6 +8554,10 @@ namespace TestProject.Libraries
 				{
 					Panel_Functions.AddPanelsMT(1,PanelName,CPUType);
 				}
+				else if(PanelType.Equals("FC"))
+				{
+					Panel_Functions.AddPanelsFC(1,PanelName,CPUType);
+				}
 				else
 				{
 					Panel_Functions.AddPanels(1,PanelName,CPUType);

@@ -85,7 +85,7 @@ namespace TestProject.ItalyRecordingModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Itlay", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Italy", "MXR");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_P_Panels", "Italy", "XLM800");

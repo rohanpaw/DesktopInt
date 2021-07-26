@@ -1,0 +1,17 @@
+[
+  {
+    "Enabled": "False",
+    "TestSuite": "Fireclass",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "BelgiumFC",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "False",
+    "TestSuite": "UK",
+    "RunConfig": "TestRun"
+  }
+]

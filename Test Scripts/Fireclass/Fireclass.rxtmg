@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="Fireclass"
+      id="20ba459e-f026-4279-9990-083bf59695ef"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="Fireclass"
+      id="20ba459e-f026-4279-9990-083bf59695ef"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
