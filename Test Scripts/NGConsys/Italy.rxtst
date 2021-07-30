@@ -729,7 +729,7 @@
 			id="79fdf0e4-1a81-4a6f-9d4c-d08e7a19e615"
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
 				<description>
-					<![CDATA[<p>NGC-3145/T2156/T2158&nbsp; SKU and Connection text are not verified as they are not visible</p><br>]]>
+					<![CDATA[<p>NGC-3135/T2136/T2138 SKU and Connection text are not verified as they are not visible</p><br>]]>
 				</description>
 			</testcase>
 			<testcase
@@ -2179,25 +2179,7 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="172ed32f-372f-4861-a9e4-71faa8b7e47b">
-			</testcontainer>
-			<testcontainer
-			id="2b35ddd0-77f4-48c8-8fc7-b997463a2bee">
-			</testcontainer>
-			<testcontainer
 			id="31e60409-81e2-4b6d-b200-14fbbbeddebc">
-			</testcontainer>
-			<testcontainer
-			id="40f78a71-8de7-4526-b506-c5d0e1014633">
-			</testcontainer>
-			<testcontainer
-			id="4bd57913-f05f-440d-94dd-7e9b800e0357">
-			</testcontainer>
-			<testcontainer
-			id="56c20737-9442-44b0-82c6-17049238bdaf">
-			</testcontainer>
-			<testcontainer
-			id="cf8755ae-4f2d-4a20-b848-5a19ea146b69">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
