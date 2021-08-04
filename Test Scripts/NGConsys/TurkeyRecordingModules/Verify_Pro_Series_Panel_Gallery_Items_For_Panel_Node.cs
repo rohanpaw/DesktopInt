@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.SpainRecordingModules
+namespace TestProject.TurkeyRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_P_Series_Panel_Gallery_Items_For_Panel_Node recording.
+    ///The Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node recording.
     /// </summary>
-    [TestModule("531f5c44-d859-45d5-b5c0-a280b907a969", ModuleType.Recording, 1)]
-    public partial class Verify_P_Series_Panel_Gallery_Items_For_Panel_Node : ITestModule
+    [TestModule("82625a2f-a303-4e04-86c2-2280db016276", ModuleType.Recording, 1)]
+    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_P_Series_Panel_Gallery_Items_For_Panel_Node instance = new Verify_P_Series_Panel_Gallery_Items_For_Panel_Node();
+        static Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node instance = new Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_P_Series_Panel_Gallery_Items_For_Panel_Node()
+        public Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_P_Series_Panel_Gallery_Items_For_Panel_Node Instance
+        public static Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node Instance
         {
             get { return instance; }
         }
@@ -79,22 +79,25 @@ namespace TestProject.SpainRecordingModules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P805D", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Spain", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_ProPanels", "Turkey", "PR1DS");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_P_Panels", "Spain", "XLM800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_ProPanels", "Turkey", "PLX800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Spain", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_SlotCards_ProPanels", "Turkey", "PCH800 5.0A");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Spain", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ProPanels", "Turkey", "PR1D2");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Turkey", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
@@ -103,7 +106,7 @@ namespace TestProject.SpainRecordingModules
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_P_Panels", "Spain", "FB800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_ProPanels", "Turkey", "PCS800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();
@@ -113,33 +116,33 @@ namespace TestProject.SpainRecordingModules
             Delay.Milliseconds(0);
             
             // ACTIONS TO TEST ON ANOTHER PANEL
-            Report.Log(ReportLevel.Info, "Section", "ACTIONS TO TEST ON ANOTHER PANEL", new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Section", "ACTIONS TO TEST ON ANOTHER PANEL", new RecordItemIndex(12));
             
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P115D", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro215S", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Spain", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_ProPanels", "Turkey", "PR1DS");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Spain", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_Pro215Panels", "Turkey", "MPM800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Spain", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Turkey", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "XLM800");
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PLX800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_P_Panels", "Spain", "FB800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_Pro215Panels", "Turkey", "PCS800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();

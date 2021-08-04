@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.SpainRecordingModules
+namespace TestProject.TurkeyRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_P_Series_Panel_Gallery_Items_For_Panel_Node recording.
+    ///The Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node recording.
     /// </summary>
-    [TestModule("531f5c44-d859-45d5-b5c0-a280b907a969", ModuleType.Recording, 1)]
-    public partial class Verify_P_Series_Panel_Gallery_Items_For_Panel_Node : ITestModule
+    [TestModule("835b88bb-9fc4-405d-890e-c4a9c6031c50", ModuleType.Recording, 1)]
+    public partial class Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_P_Series_Panel_Gallery_Items_For_Panel_Node instance = new Verify_P_Series_Panel_Gallery_Items_For_Panel_Node();
+        static Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node instance = new Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_P_Series_Panel_Gallery_Items_For_Panel_Node()
+        public Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_P_Series_Panel_Gallery_Items_For_Panel_Node Instance
+        public static Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node Instance
         {
             get { return instance; }
         }
@@ -79,70 +79,73 @@ namespace TestProject.SpainRecordingModules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P805D", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P405D", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Spain", "MXR");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_P_Panels", "Spain", "XLM800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Ethernet_Repeaters_P_Panels", "Turkey", "PR8AS");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Spain", "PR1D2");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Spain", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Ethernet_AttachedFunctionality_P_Panels", "Turkey", "PZ8DS");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-102");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("PR1DS");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_P_Panels", "Spain", "FB800");
+            Libraries.Devices_Functions.SelectRowUsingSKUFromInventoryTab("557.200.801");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnInventoryTab();
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
-            // ACTIONS TO TEST ON ANOTHER PANEL
-            Report.Log(ReportLevel.Info, "Section", "ACTIONS TO TEST ON ANOTHER PANEL", new RecordItemIndex(11));
-            
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P115D", "");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Spain", "MXR");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Spain", "PR1D2");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Spain", "LCD800");
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Ethernet (8 of 8)");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-108");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "XLM800");
+            Libraries.Devices_Functions.AddDevicesfromGallery("Two PZ4DS", "Attached Functionality");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PR1DS");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_P_Panels", "Spain", "FB800");
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "Two PZ4DS");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnInventoryTab();
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("PR1DS-107");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR8AS", "Repeaters");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PZ8DS");
             Delay.Milliseconds(0);
             
         }

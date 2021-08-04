@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="531f5c44-d859-45d5-b5c0-a280b907a969"
+id="569243d8-f983-45ea-8c1e-5b7ebe907139"
 mode="Global">
 	<repeatcount>
 		1
@@ -20,7 +20,7 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="Verify_P_Series_Panel_Gallery_Items_For_Panel_Node"
-	namespace="TestProject.SpainRecordingModules">
+	namespace="TestProject.TurkeyRecordingModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -124,7 +124,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -134,7 +134,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MXR
+						PR1DS
 					</argvalue>
 				</argument>
 			</arguments>
@@ -169,7 +169,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -214,7 +214,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -259,7 +259,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -354,7 +354,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -367,21 +367,6 @@ mode="Global">
 						FB800
 					</argvalue>
 				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="clickOnInventoryTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -433,7 +418,7 @@ mode="Global">
 		enabled="True"
 		optional="False">
 			<comment>
-				ACTIONS TO TEST ON ANOTHER PANEL
+				NEW ACTION Execution with New Panel
 			</comment>
 			<bindings>
 			</bindings>
@@ -537,7 +522,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -547,7 +532,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MXR
+						PR1DS
 					</argvalue>
 				</argument>
 			</arguments>
@@ -582,7 +567,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -627,7 +612,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -757,7 +742,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="531f5c44-d859-45d5-b5c0-a280b907a969"
+id="82625a2f-a303-4e04-86c2-2280db016276"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_P_Series_Panel_Gallery_Items_For_Panel_Node"
-	namespace="TestProject.SpainRecordingModules">
+	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node"
+	namespace="TestProject.TurkeyRecordingModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						P805D
+						Pro16xD
 					</argvalue>
 				</argument>
 				<argument
@@ -114,7 +114,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_PanelNode_Repeaters_P_Panels
+						Gallery_PanelNode_Repeaters_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -124,7 +124,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -134,7 +134,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MXR
+						PR1DS
 					</argvalue>
 				</argument>
 			</arguments>
@@ -159,7 +159,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Loops_P_Panels
+						Gallery_Loops_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -169,7 +169,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -179,7 +179,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						XLM800
+						PLX800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -204,7 +204,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Miscellaneous_P_Panels
+						Gallery_SlotCards_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -214,7 +214,52 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						PCH800 5.0A
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryListItems"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Gallery_Miscellaneous_ProPanels
+					</argvalue>
+				</argument>
+				<argument
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -249,7 +294,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Printers_P_Panels
+						Gallery_Printers_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -259,7 +304,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -344,7 +389,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_PanelAccessories_P_Panels
+						Gallery_PanelAccessories_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -354,7 +399,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -364,7 +409,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FB800
+						PCS800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -468,7 +513,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						P115D
+						Pro215S
 					</argvalue>
 				</argument>
 				<argument
@@ -527,7 +572,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_PanelNode_Repeaters_P_Panels
+						Gallery_PanelNode_Repeaters_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -537,7 +582,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -547,7 +592,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MXR
+						PR1DS
 					</argvalue>
 				</argument>
 			</arguments>
@@ -572,7 +617,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Miscellaneous_P_Panels
+						Gallery_Miscellaneous_Pro215Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -582,7 +627,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -592,7 +637,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PR1D2
+						MPM800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -617,7 +662,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_Printers_P_Panels
+						Gallery_Printers_ProPanels
 					</argvalue>
 				</argument>
 				<argument
@@ -627,7 +672,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -707,7 +752,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						XLM800
+						PLX800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -747,7 +792,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_PanelAccessories_P_Panels
+						Gallery_PanelAccessories_Pro215Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -757,7 +802,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Spain
+						Turkey
 					</argvalue>
 				</argument>
 				<argument
@@ -767,7 +812,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FB800
+						PCS800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -804,7 +849,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_P_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs
+		Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

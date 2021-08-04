@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.SpainRecordingModules
+namespace TestProject.TurkeyRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_P_Series_Panel_Gallery_Items_For_Panel_Node recording.
+    ///The Verify_BlackBox_Panel_for_Loop_Card_Gallery_And_Addition_Of_Devices recording.
     /// </summary>
-    [TestModule("531f5c44-d859-45d5-b5c0-a280b907a969", ModuleType.Recording, 1)]
-    public partial class Verify_P_Series_Panel_Gallery_Items_For_Panel_Node : ITestModule
+    [TestModule("64fc98a5-f4a8-4321-b735-2761c11a2bf0", ModuleType.Recording, 1)]
+    public partial class Verify_BlackBox_Panel_for_Loop_Card_Gallery_And_Addition_Of_Devices : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_P_Series_Panel_Gallery_Items_For_Panel_Node instance = new Verify_P_Series_Panel_Gallery_Items_For_Panel_Node();
+        static Verify_BlackBox_Panel_for_Loop_Card_Gallery_And_Addition_Of_Devices instance = new Verify_BlackBox_Panel_for_Loop_Card_Gallery_And_Addition_Of_Devices();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_P_Series_Panel_Gallery_Items_For_Panel_Node()
+        public Verify_BlackBox_Panel_for_Loop_Card_Gallery_And_Addition_Of_Devices()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_P_Series_Panel_Gallery_Items_For_Panel_Node Instance
+        public static Verify_BlackBox_Panel_for_Loop_Card_Gallery_And_Addition_Of_Devices Instance
         {
             get { return instance; }
         }
@@ -79,70 +79,61 @@ namespace TestProject.SpainRecordingModules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P805D", "");
+            Libraries.Panel_Functions.AddPanelsMT(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Black Box", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Spain", "MXR");
+            Libraries.Devices_Functions.AddDevicesfromGallery("XLM800", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_P_Panels", "Spain", "XLM800");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("XLM");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Spain", "PR1D2");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("XLM800-C");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Spain", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Detectors_P_MZX_MX", "801 CH");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "CallPoints_VDS", "CP 820");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "SoundersBeacons", "LPAV 3000");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_P_Panels", "Spain", "FB800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary", "CIM 800");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnInventoryTab();
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary Conventional", "DDM 800 Loop");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Ancillary Specific", "APM 800");
             Delay.Milliseconds(0);
             
-            // ACTIONS TO TEST ON ANOTHER PANEL
-            Report.Log(ReportLevel.Info, "Section", "ACTIONS TO TEST ON ANOTHER PANEL", new RecordItemIndex(11));
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_All_Loop_Devices", "Other", "LI800");
+            Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P115D", "");
+            Libraries.Devices_Functions.AddDevicesfromGallery("DIN 830", "Call points");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("LPSY 800 - R/W", "SoundersBeacons");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("DDM 800 Loop (Fast CallPoints)", "Ancillary Conventional");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("Junction Box\r\n", "Other");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Spain", "MXR");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Spain", "PR1D2");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Spain", "LCD800");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "XLM800");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_P_Panels", "Spain", "FB800");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnInventoryTab();
+            Libraries.Devices_Functions.DeleteDeviceUsingLabelInInventoryTab("XLM800-C");
             Delay.Milliseconds(0);
             
         }

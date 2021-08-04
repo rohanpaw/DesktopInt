@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.SpainRecordingModules
+namespace TestProject.TurkeyRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_P_Series_Panel_Gallery_Items_For_Panel_Node recording.
+    ///The Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node recording.
     /// </summary>
-    [TestModule("531f5c44-d859-45d5-b5c0-a280b907a969", ModuleType.Recording, 1)]
-    public partial class Verify_P_Series_Panel_Gallery_Items_For_Panel_Node : ITestModule
+    [TestModule("d7b301f9-88c4-434c-a764-39c4599869ce", ModuleType.Recording, 1)]
+    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_P_Series_Panel_Gallery_Items_For_Panel_Node instance = new Verify_P_Series_Panel_Gallery_Items_For_Panel_Node();
+        static Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node instance = new Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_P_Series_Panel_Gallery_Items_For_Panel_Node()
+        public Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_P_Series_Panel_Gallery_Items_For_Panel_Node Instance
+        public static Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node Instance
         {
             get { return instance; }
         }
@@ -79,70 +79,46 @@ namespace TestProject.SpainRecordingModules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P805D", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Spain", "MXR");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PFI80x");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_P_Panels", "Spain", "XLM800");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Local I/O");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Spain", "PR1D2");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Spain", "LCD800");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_P_Panels", "Spain", "FB800");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnInventoryTab();
+            Libraries.Gallery_Functions.verifyGalleryListItems("AttachedFunctionality_PFI_Node", "Turkey", "IOB800(x2)");
             Delay.Milliseconds(0);
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
-            // ACTIONS TO TEST ON ANOTHER PANEL
-            Report.Log(ReportLevel.Info, "Section", "ACTIONS TO TEST ON ANOTHER PANEL", new RecordItemIndex(11));
-            
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P115D", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xBB", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_P_Panels", "Spain", "MXR");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PFI80x");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Spain", "PR1D2");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Black Box");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Spain", "LCD800");
+            Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("XIOM");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
+            Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "XLM800");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PFI Yerel I/O");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_P_Panels", "Spain", "FB800");
-            Delay.Milliseconds(0);
-            
-            Libraries.Common_Functions.clickOnInventoryTab();
+            Libraries.Gallery_Functions.verifyGalleryListItems("AttachedFunctionality_PFI_Node_XX_Panel", "Turkey", "IOB800(x2)");
             Delay.Milliseconds(0);
             
         }
