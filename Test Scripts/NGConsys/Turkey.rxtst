@@ -134,7 +134,7 @@
 			</testcase>
 			<testcase
 			id="1b2b343a-43db-4abc-9d38-c1c08cf01228"
-			name="Verify_BlackBox_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit1">
+			name="Verify_BlackBox_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
 				<description>
 					<![CDATA[<p>NGC-3191/T3318 SB520/SB520 Front Cover is not hiding on adding 1 device which is maximum limit</p><br>]]>
 				</description>
@@ -1737,7 +1737,7 @@
 					</testcase>
 					<testcase
 					id="1b2b343a-43db-4abc-9d38-c1c08cf01228"
-					name="Verify_BlackBox_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit1">
+					name="Verify_BlackBox_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
 						<testmodule
 						id="4d9e7639-35d2-4309-87ef-c19e8cc41a49"
 						name="Application_Open">
@@ -1818,9 +1818,6 @@
 			</testcontainer>
 			<testcontainer
 			id="2ff5ebbd-4d48-450d-bdd3-8e324b048e3f">
-			</testcontainer>
-			<testcontainer
-			id="6ed572a3-73a8-4842-ab28-c296ed8050c1">
 			</testcontainer>
 			<testcontainer
 			id="e1b968eb-28ce-4246-ac36-a7ea4e167afb">

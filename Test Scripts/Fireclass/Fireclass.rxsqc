@@ -5,13 +5,28 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
+    "TestSuite": "UK",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "False",
     "TestSuite": "BelgiumFC",
     "RunConfig": "TestRun"
   },
   {
     "Enabled": "False",
-    "TestSuite": "UK",
+    "TestSuite": "DenmarkFC",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "SwedenFC",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "NorwayFC",
     "RunConfig": "TestRun"
   }
 ]

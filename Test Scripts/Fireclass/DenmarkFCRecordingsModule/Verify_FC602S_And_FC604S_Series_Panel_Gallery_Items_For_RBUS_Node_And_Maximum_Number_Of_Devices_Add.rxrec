@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="a8975679-26e7-4e53-9a89-cbe814a44061"
+id="9ba4b15e-32f5-4d8c-aa89-f77cc59218f8"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node"
-	namespace="Fireclass.BelgiumFCRecordingsModule">
+	classname="Verify_FC602S_And_FC604S_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Add"
+	namespace="Fireclass.DenmarkFCRecordingsModule">
 	</codegen>
 	<variables>
 	</variables>
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FC604S
+						FC602S
 					</argvalue>
 				</argument>
 				<argument
@@ -114,7 +114,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Main
+						RBus
 					</argvalue>
 				</argument>
 			</arguments>
@@ -139,7 +139,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FC_Gallery_MainProcessor_Repeaters_FC600_Series_Panels
+						FC_Gallery_RBUS_Repeaters_FC600_Series_Panels
 					</argvalue>
 				</argument>
 				<argument
@@ -149,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Denmark
 					</argvalue>
 				</argument>
 				<argument
@@ -194,7 +194,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Denmark
 					</argvalue>
 				</argument>
 				<argument
@@ -213,7 +213,7 @@ mode="Global">
 		classname="Gallery_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
+		methodname="verifyGalleryExistsWithDropdown"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -223,33 +223,193 @@ mode="Global">
 			<arguments
 			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="fileName"
+				argname="GalleryVisibility"
 				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
-						System.String
+						System.Boolean
 					</argvaluetype>
 					<argvalue>
-						FC_Gallery_Printers_FC_Series_Panels
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Belgium
+						False
 					</argvalue>
 				</argument>
 				<argument
 				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
 						Generic Printer
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FC32AR
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FC32AR
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FC32DR
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FC32AR
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FC32DR
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>
@@ -292,7 +452,7 @@ mode="Global">
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SelectRowUsingLabelNameFromInventoryTab"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -302,22 +462,31 @@ mode="Global">
 			<arguments
 			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="sLabel"
+				argname="sDeviceName"
 				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MPM800-1
+						MPM800
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -327,28 +496,280 @@ mode="Global">
 			<arguments
 			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="fileName"
+				argname="sDeviceName"
 				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FC_Gallery_MPM_AttachedFunctionality_FC600_Series_Panels
+						MPM800
 					</argvalue>
 				</argument>
 				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MPM800
 					</argvalue>
 				</argument>
 				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MPM800
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MPM800
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MPM800
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MPM800
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MPM800
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						MPM800
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
@@ -356,31 +777,6 @@ mode="Global">
 						Zonal Alarm Display max 80
 					</argvalue>
 				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sDeviceName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						FC1D2
-					</argvalue>
-				</argument>
 				<argument
 				argname="sType"
 				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
@@ -393,90 +789,10 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="fileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						FC_Gallery_FC1D2_AttachedFunctionality
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Belgium
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						FCZ4DS
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryExistsWithDropdown"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="GalleryVisibility"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="ClickOnNavigationTreeItem"
+		methodname="VerifyNavigationTreeItemText"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -484,274 +800,15 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
 				argname="TreeItemName"
-				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Serial
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="fileName"
 				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FC_Gallery_Printers_FC_Series_Panels
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Belgium
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Generic Printer
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryExistsWithDropdown"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="GalleryVisibility"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						FC1D2
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Devices_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="AddDevicesfromGallery"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="sDeviceName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Generic 3rd Party Interface
-					</argvalue>
-				</argument>
-				<argument
-				argname="sType"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="clickOnInventoryTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryExistsWithDropdown"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="GalleryVisibility"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Generic Printer
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryExistsWithDropdown"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="GalleryVisibility"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Generic 3rd Party Interface
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="clickOnInventoryTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Panel_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="DeletePanel"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="NumberofPanels"
-				id="bfe4f44c-9ade-481e-9eb1-99ffdf03f05c">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelNode"
-				id="b6800acc-e51a-4e38-95ce-cbafae7aabfc">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Node1
-					</argvalue>
-				</argument>
-				<argument
-				argname="rowNumber"
-				id="a9e6ddcd-e426-40db-ae7e-0e80fd3fd2b2">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
+						RBus (16 of 16)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -772,7 +829,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.UserCode.cs
+		Verify_FC602S_And_FC604S_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Add.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

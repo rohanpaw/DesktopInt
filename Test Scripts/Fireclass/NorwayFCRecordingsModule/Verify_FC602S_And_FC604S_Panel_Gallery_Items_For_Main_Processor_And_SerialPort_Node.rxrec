@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="a8975679-26e7-4e53-9a89-cbe814a44061"
+id="d551f24c-d313-445b-84fd-491ad0c8913d"
 mode="Global">
 	<repeatcount>
 		1
@@ -20,7 +20,7 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node"
-	namespace="Fireclass.BelgiumFCRecordingsModule">
+	namespace="Fireclass.NorwayFCRecordingsModule">
 	</codegen>
 	<variables>
 	</variables>
@@ -149,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Norway
 					</argvalue>
 				</argument>
 				<argument
@@ -194,7 +194,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Norway
 					</argvalue>
 				</argument>
 				<argument
@@ -239,7 +239,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Norway
 					</argvalue>
 				</argument>
 				<argument
@@ -343,7 +343,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Norway
 					</argvalue>
 				</argument>
 				<argument
@@ -422,7 +422,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Norway
 					</argvalue>
 				</argument>
 				<argument
@@ -527,7 +527,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Norway
 					</argvalue>
 				</argument>
 				<argument
@@ -709,51 +709,6 @@ mode="Global">
 			</bindings>
 			<arguments
 			id="605cabe0-579e-407d-ad47-62d457833ce1">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Panel_Functions"
-		enabled="False"
-		isexternaltestmethod="True"
-		methodname="DeletePanel"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="NumberofPanels"
-				id="bfe4f44c-9ade-481e-9eb1-99ffdf03f05c">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelNode"
-				id="b6800acc-e51a-4e38-95ce-cbafae7aabfc">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Node1
-					</argvalue>
-				</argument>
-				<argument
-				argname="rowNumber"
-				id="a9e6ddcd-e426-40db-ae7e-0e80fd3fd2b2">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
 			</arguments>
 		</userrecorditem>
 	</recorditems>

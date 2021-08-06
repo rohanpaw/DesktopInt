@@ -121,7 +121,7 @@ namespace Fireclass.BelgiumFCRecordingsModule
             TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_Printers_FC_Series_Panels", "Belgium", "Generic Printer");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PR1D2");
+            TestProject.Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FC1D2");
             Delay.Milliseconds(0);
             
             TestProject.Libraries.Devices_Functions.AddDevicesfromGallery("Generic 3rd Party Interface", "");

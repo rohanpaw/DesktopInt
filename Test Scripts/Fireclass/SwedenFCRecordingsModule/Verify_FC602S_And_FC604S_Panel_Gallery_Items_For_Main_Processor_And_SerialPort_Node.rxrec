@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="a8975679-26e7-4e53-9a89-cbe814a44061"
+id="db2c2ad8-7a1e-4d78-9eaf-708a7780ec38"
 mode="Global">
 	<repeatcount>
 		1
@@ -20,7 +20,7 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node"
-	namespace="Fireclass.BelgiumFCRecordingsModule">
+	namespace="Fireclass.SwedenFCRecordingsModule">
 	</codegen>
 	<variables>
 	</variables>
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FC604S
+						FC602S
 					</argvalue>
 				</argument>
 				<argument
@@ -149,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Sweden
 					</argvalue>
 				</argument>
 				<argument
@@ -194,7 +194,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Sweden
 					</argvalue>
 				</argument>
 				<argument
@@ -239,7 +239,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Sweden
 					</argvalue>
 				</argument>
 				<argument
@@ -343,7 +343,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Sweden
 					</argvalue>
 				</argument>
 				<argument
@@ -422,7 +422,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Sweden
 					</argvalue>
 				</argument>
 				<argument
@@ -527,7 +527,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Belgium
+						Sweden
 					</argvalue>
 				</argument>
 				<argument

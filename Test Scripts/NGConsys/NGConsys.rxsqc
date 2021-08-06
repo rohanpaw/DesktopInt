@@ -1,6 +1,6 @@
 [
   {
-    "Enabled": "False",
+    "Enabled": "True",
     "TestSuite": "NGConsys",
     "RunConfig": "TestRun"
   },
@@ -20,7 +20,7 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "CZech",
     "RunConfig": "TestRun"
   },
@@ -35,22 +35,22 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "Slovakia",
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "Italy",
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "Spain",
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "Turkey",
     "RunConfig": "TestRun"
   }
