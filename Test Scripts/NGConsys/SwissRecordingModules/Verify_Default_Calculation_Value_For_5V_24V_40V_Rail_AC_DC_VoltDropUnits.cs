@@ -79,7 +79,7 @@ namespace TestProject.SwissRecordingModules
 
             Init();
 
-            Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("Power_Calculation_Default_Values", "Swiss");
+            Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("Power_Calculation_Default_Values", "Croatia");
             Delay.Milliseconds(0);
             
         }

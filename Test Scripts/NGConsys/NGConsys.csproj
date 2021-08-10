@@ -523,6 +523,318 @@
       <id>a9d3eb42-6046-48c9-9434-f79bfe3f8700</id>
       <BoundTo>d13bb4ed-b88d-4767-881f-dac70d4f2b42</BoundTo>
     </Compile>
+    <Compile Include="CroatiaRecordingModule\CreateProject_Croatia.cs">
+      <DependentUpon>CreateProject_Croatia.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2ceb9f2f-27ab-4c18-8299-87e54817cb84</id>
+      <BoundTo>10f47566-da15-43f6-ace9-148e6b0e221e</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\CreateProject_Croatia.UserCode.cs">
+      <DependentUpon>CreateProject_Croatia.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>760385e1-9aa3-404f-8e48-095d1cc26809</id>
+      <BoundTo>10f47566-da15-43f6-ace9-148e6b0e221e</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d6a1477f-2bb3-49d0-9b0d-cd549e852d91</id>
+      <BoundTo>51a482e5-b580-4bc5-88c7-417d36ffe68c</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8b4245f4-47f4-4ccf-8217-39f23882dc46</id>
+      <BoundTo>51a482e5-b580-4bc5-88c7-417d36ffe68c</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c5bbd386-1419-4707-a291-eea408748552</id>
+      <BoundTo>214786a8-953e-41cc-9c54-cdace482c990</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4cb93af0-49a4-47fb-9d1d-9c4fb5ac8a4f</id>
+      <BoundTo>214786a8-953e-41cc-9c54-cdace482c990</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>084b1c2b-b9c9-4e5d-a476-1759c3c6bedc</id>
+      <BoundTo>95b0252c-05ea-48ca-96a9-be5badfa0066</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop.UserCode.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3be7cbcc-4d99-4434-a24b-04da982986c0</id>
+      <BoundTo>95b0252c-05ea-48ca-96a9-be5badfa0066</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f41a715-66c8-49fd-b7ea-8d9176d0e456</id>
+      <BoundTo>f88a5a95-9a08-47d8-9652-41a9b52fa861</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.UserCode.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>11cd2232-801f-440e-8deb-3b912cecaee1</id>
+      <BoundTo>f88a5a95-9a08-47d8-9652-41a9b52fa861</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a5115ebc-f37f-4343-8c36-a11be16f4cfc</id>
+      <BoundTo>7a57f0ad-0710-4473-905e-96dda40b7ae3</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node.UserCode.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>19a04d79-cb68-4c9d-ae84-29e93b1baeea</id>
+      <BoundTo>7a57f0ad-0710-4473-905e-96dda40b7ae3</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d91bc56e-55ef-4a90-9271-8ec651420e64</id>
+      <BoundTo>ceaef967-5c8a-4440-b304-a73b9f422b6c</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cc10f8b8-9dec-493b-a77f-547143bc3e7b</id>
+      <BoundTo>ceaef967-5c8a-4440-b304-a73b9f422b6c</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e3e5383-bf70-4f42-8e1d-aa2ee0aeae93</id>
+      <BoundTo>7bda1d6e-7c41-41e1-a696-fbf9160aaa36</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>39806b5f-c366-417a-9e63-b3ec21349b74</id>
+      <BoundTo>7bda1d6e-7c41-41e1-a696-fbf9160aaa36</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f1649774-cbea-414f-be91-aacc640c4026</id>
+      <BoundTo>4107d76d-6dc7-4e3d-9ccc-d65098252f37</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.UserCode.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1455bac5-4762-4e7a-8067-aa40d574010b</id>
+      <BoundTo>4107d76d-6dc7-4e3d-9ccc-d65098252f37</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5d2bcee7-713a-41c0-b9f6-06423e2320bf</id>
+      <BoundTo>14f25a00-55d8-45a2-8fb3-95ffa67c5563</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <DependentUpon>Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5b85bcc9-7850-45e4-b10b-6c629d8f7685</id>
+      <BoundTo>14f25a00-55d8-45a2-8fb3-95ffa67c5563</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <DependentUpon>Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1d3dd90c-449a-4f62-976f-f8692295e53c</id>
+      <BoundTo>0afb518a-9130-4a2d-ad00-d68f91f18d46</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <DependentUpon>Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>acd3aeb1-6d6c-415b-b23c-4e53936cb97e</id>
+      <BoundTo>0afb518a-9130-4a2d-ad00-d68f91f18d46</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.cs">
+      <DependentUpon>Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dc4480cb-6331-4af6-b3ba-d409a71a7093</id>
+      <BoundTo>f2dd3cab-6725-4791-be73-4eccc1a8a09e</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.UserCode.cs">
+      <DependentUpon>Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>15ca4182-3fd4-4363-a6af-3a7cac2ad9a5</id>
+      <BoundTo>f2dd3cab-6725-4791-be73-4eccc1a8a09e</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d78ff423-51c0-4266-a0c7-d9740ac546f2</id>
+      <BoundTo>be5c40a4-a15c-4f9d-a394-4e1982e35b28</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.UserCode.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ea3a47fd-8771-446a-8a62-d7642eacbcec</id>
+      <BoundTo>be5c40a4-a15c-4f9d-a394-4e1982e35b28</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6aac8a12-0947-4fd5-a9db-8295ad904d91</id>
+      <BoundTo>c73650b5-fd76-445b-8446-4b48ea4408a5</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>59790119-d02c-4702-9948-452c239044ff</id>
+      <BoundTo>c73650b5-fd76-445b-8446-4b48ea4408a5</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>754b041e-1886-4dec-ad8e-ade6b8a3fac2</id>
+      <BoundTo>73e7395b-a299-4cd9-a06a-d3d7d6a312df</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>93139230-59fe-4732-b0fc-11f556f884ed</id>
+      <BoundTo>73e7395b-a299-4cd9-a06a-d3d7d6a312df</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0eebe1b1-aa22-48af-b000-a2c09a51b30c</id>
+      <BoundTo>deb63b5c-f6be-43de-af8a-526a8babedd9</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1c9dfb4a-a44a-4bb4-a011-89ba4183b58f</id>
+      <BoundTo>deb63b5c-f6be-43de-af8a-526a8babedd9</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>be474804-607c-4670-8e7d-3ab4e7112c79</id>
+      <BoundTo>0d63cadf-7972-4ef0-b40f-db5e4b8989e3</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cf108ffc-bf82-4c24-bd8a-fe9cf64efd11</id>
+      <BoundTo>0d63cadf-7972-4ef0-b40f-db5e4b8989e3</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4baa5cdc-3df6-47f1-a0b0-b26303ec4ca0</id>
+      <BoundTo>9254dc4e-d982-4080-9ad1-a36eddaf9835</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>154f8352-9aa0-485c-b71f-f9cfe5da391e</id>
+      <BoundTo>9254dc4e-d982-4080-9ad1-a36eddaf9835</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <DependentUpon>Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9f451af3-19a0-477c-80cf-a15e38fda42f</id>
+      <BoundTo>c283e897-5d2b-41be-aae2-8830fd36a031</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <DependentUpon>Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aed50b73-9d15-4088-8f41-c61040061277</id>
+      <BoundTo>c283e897-5d2b-41be-aae2-8830fd36a031</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.cs">
+      <DependentUpon>Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d8be16d-2e11-4a13-be68-2f69447b4c37</id>
+      <BoundTo>653a8bd9-8ab8-4ac6-83e8-48f82e74276c</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.UserCode.cs">
+      <DependentUpon>Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>21698067-f593-4c04-8571-0d1e92ecda32</id>
+      <BoundTo>653a8bd9-8ab8-4ac6-83e8-48f82e74276c</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.cs">
+      <DependentUpon>Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>172e7bad-f937-4edd-abdc-5c842933d3e0</id>
+      <BoundTo>22909bc1-2c61-4784-92a7-f8872e33895e</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.UserCode.cs">
+      <DependentUpon>Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9343f7ea-a519-41ed-9167-57e481a102a2</id>
+      <BoundTo>22909bc1-2c61-4784-92a7-f8872e33895e</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>85282d3c-9616-4018-8697-9dcf212df757</id>
+      <BoundTo>0a528ced-943e-4191-a13b-18cdfd9eb39b</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node.UserCode.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>47558bfe-9319-4f55-8f0c-c042d8ce4358</id>
+      <BoundTo>0a528ced-943e-4191-a13b-18cdfd9eb39b</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_FIM_Node.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aadff2b0-6b29-403a-a12a-52b1dbc37b15</id>
+      <BoundTo>85263ec0-dfa0-4b1d-a1db-e4fdb3bb010a</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_FIM_Node.UserCode.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9e7f7f0f-f4d8-44e3-a59a-d349deafa14b</id>
+      <BoundTo>85263ec0-dfa0-4b1d-a1db-e4fdb3bb010a</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>07f6c19b-a526-4ed7-9700-dcff9743828c</id>
+      <BoundTo>2a8dfe29-3596-49e1-86b7-dbdef8c645dd</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b4420005-6696-439d-ad77-38007e84a3f7</id>
+      <BoundTo>2a8dfe29-3596-49e1-86b7-dbdef8c645dd</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cbdb4248-6941-4f2d-acb8-77949b8b44fc</id>
+      <BoundTo>bbf78b0f-d61b-45be-bda4-f8d833bdc6d6</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>32d9998b-97ec-4a24-ae41-e141483b1db9</id>
+      <BoundTo>bbf78b0f-d61b-45be-bda4-f8d833bdc6d6</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6ca23175-f3b8-42c7-baf1-9062231c00b0</id>
+      <BoundTo>c70a08df-7d01-422e-bb27-e5218ac6b5f7</BoundTo>
+    </Compile>
+    <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.UserCode.cs">
+      <DependentUpon>Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9ff088a0-edeb-41bc-8d66-9fb199dc43ce</id>
+      <BoundTo>c70a08df-7d01-422e-bb27-e5218ac6b5f7</BoundTo>
+    </Compile>
     <Compile Include="CZechRecordingsModules\CreateProject_CZech.cs">
       <DependentUpon>CreateProject_CZech.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -7670,6 +7982,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>fad6c612-593b-42a7-ae4d-93e03056f2e3</id>
     </Content>
+    <Content Include="Croatia.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>595ba50b-b82d-4325-ab1d-2949d53c47a8</id>
+    </Content>
     <Content Include="CZech.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>60db074d-0193-40f7-8eb8-206d00dc3f7c</id>
@@ -7862,6 +8178,136 @@
     <None Include="BelgiumRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec">
       <id>d13bb4ed-b88d-4767-881f-dac70d4f2b42</id>
       <recordtableid>553cdecf-60e4-404f-8682-f5ad51249176</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\CreateProject_Croatia.rxrec">
+      <id>10f47566-da15-43f6-ace9-148e6b0e221e</id>
+      <recordtableid>7500e2fb-c3b9-43b6-9fc7-a54f66eacc18</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <id>51a482e5-b580-4bc5-88c7-417d36ffe68c</id>
+      <recordtableid>f0ae3162-3b6c-4222-8f43-f5f864e5eed5</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <id>214786a8-953e-41cc-9c54-cdace482c990</id>
+      <recordtableid>433db294-eb3b-4c26-8ec5-581ef7ef4f7e</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop.rxrec">
+      <id>95b0252c-05ea-48ca-96a9-be5badfa0066</id>
+      <recordtableid>44022bbd-612f-4ea1-ae3b-6c8691590f3d</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
+      <id>f88a5a95-9a08-47d8-9652-41a9b52fa861</id>
+      <recordtableid>b59e6b0d-0036-4e41-81a3-9511827b96c0</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node.rxrec">
+      <id>7a57f0ad-0710-4473-905e-96dda40b7ae3</id>
+      <recordtableid>0c14000b-62bd-4dcf-a8ee-7339bcb3174d</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec">
+      <id>ceaef967-5c8a-4440-b304-a73b9f422b6c</id>
+      <recordtableid>a1988bb1-0b73-4c86-844d-42f279c6c3c9</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>7bda1d6e-7c41-41e1-a696-fbf9160aaa36</id>
+      <recordtableid>550a5eb7-9cd6-4864-9460-3830effc1bca</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec">
+      <id>4107d76d-6dc7-4e3d-9ccc-d65098252f37</id>
+      <recordtableid>76113aae-2035-445e-bfeb-6eed9016df94</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <id>14f25a00-55d8-45a2-8fb3-95ffa67c5563</id>
+      <recordtableid>49694bf4-63b2-4edc-a609-a717b2f64699</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <id>0afb518a-9130-4a2d-ad00-d68f91f18d46</id>
+      <recordtableid>de54d0ad-4a88-4c7e-b454-014d6460b80d</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec">
+      <id>f2dd3cab-6725-4791-be73-4eccc1a8a09e</id>
+      <recordtableid>820d7cf5-c5d7-4deb-9ab2-453f3a816f5a</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
+      <id>be5c40a4-a15c-4f9d-a394-4e1982e35b28</id>
+      <recordtableid>8d924c45-9fd9-4994-bd95-414fc7bba69d</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
+      <id>c73650b5-fd76-445b-8446-4b48ea4408a5</id>
+      <recordtableid>ab1eb37f-3468-4bb2-b5c3-de2e29098c94</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.rxrec">
+      <id>73e7395b-a299-4cd9-a06a-d3d7d6a312df</id>
+      <recordtableid>36f54c57-f865-4b59-9d73-ef472bdcd576</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>deb63b5c-f6be-43de-af8a-526a8babedd9</id>
+      <recordtableid>a9ccb348-97d3-4300-8498-5468672fc2dc</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node.rxrec">
+      <id>0d63cadf-7972-4ef0-b40f-db5e4b8989e3</id>
+      <recordtableid>b64bab9c-4567-42db-83d3-5772b54b2572</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec">
+      <id>9254dc4e-d982-4080-9ad1-a36eddaf9835</id>
+      <recordtableid>00fb3f43-b019-44c1-83e2-82e033e497d8</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <id>c283e897-5d2b-41be-aae2-8830fd36a031</id>
+      <recordtableid>8e534437-5d7f-43b0-a1ca-b69bec965dd2</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec">
+      <id>653a8bd9-8ab8-4ac6-83e8-48f82e74276c</id>
+      <recordtableid>30510901-c4da-4e79-9485-982bcc3e611f</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
+      <id>22909bc1-2c61-4784-92a7-f8872e33895e</id>
+      <recordtableid>e2928180-160b-44ce-89ee-35205d3e6299</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
+      <id>0a528ced-943e-4191-a13b-18cdfd9eb39b</id>
+      <recordtableid>9f6e7efb-fb23-4161-915c-b6df262ae72e</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_FIM_Node.rxrec">
+      <id>85263ec0-dfa0-4b1d-a1db-e4fdb3bb010a</id>
+      <recordtableid>06c0b0f7-68b9-4b5c-8433-2e90ef74c1e3</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec">
+      <id>2a8dfe29-3596-49e1-86b7-dbdef8c645dd</id>
+      <recordtableid>3ad648d5-99dd-48d1-adbd-73e94e0170bf</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>bbf78b0f-d61b-45be-bda4-f8d833bdc6d6</id>
+      <recordtableid>add2f35b-61aa-4588-86dd-a545d52054e1</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
+    </None>
+    <None Include="CroatiaRecordingModule\Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit.rxrec">
+      <id>c70a08df-7d01-422e-bb27-e5218ac6b5f7</id>
+      <recordtableid>9687bfb7-1ff0-4394-b9ef-863197cc8ca0</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="CZechRecordingsModules\CreateProject_CZech.rxrec">
@@ -10854,6 +11300,9 @@
     </Folder>
     <Folder Include="ItalyRecordingModules">
       <id>1c2d0c5d-10b0-4c8e-8fc2-09fe296f1d6e</id>
+    </Folder>
+    <Folder Include="CroatiaRecordingModule">
+      <id>0e1d6934-9ade-4b81-8f90-740e25ef6895</id>
     </Folder>
     <Folder Include="TurkeyRecordingModules">
       <id>a0631420-ffa7-4048-9122-e9f8a035d1cc</id>
