@@ -137,26 +137,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="14d5c20e-c26e-429f-b8e5-4b23d29f0815"
-			name="Application_Open"
-			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
-			type="UserCode">
-				<databinding>
-					<var
-					dataname="Application_Path"
-					datasourceid="7f7d18ea-6c48-469f-abaf-e147d268c5c5"
-					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
-					variablename="App_Path">
-					</var>
-					<var
-					dataname="Mode"
-					datasourceid="7f7d18ea-6c48-469f-abaf-e147d268c5c5"
-					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
-					variablename="App_Mode">
-					</var>
-				</databinding>
-			</testmodule>
-			<testmodule
 			id="19e6df5c-d037-453a-846d-ce303b435275"
 			name="CreateProject_Croatia"
 			ref="7500e2fb-c3b9-43b6-9fc7-a54f66eacc18"
@@ -341,20 +321,6 @@
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node"
 			ref="a1988bb1-0b73-4c86-844d-42f279c6c3c9"
 			type="Recording">
-			</testmodule>
-			<testmodule
-			id="3b334aa6-f806-4882-a8ee-fc0770678062"
-			name="CreateProject_Croatia"
-			ref="7500e2fb-c3b9-43b6-9fc7-a54f66eacc18"
-			type="Recording">
-				<databinding>
-					<var
-					dataname="sListIndex"
-					datasourceid="7f7d18ea-6c48-469f-abaf-e147d268c5c5"
-					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
-					variablename="sListIndex">
-					</var>
-				</databinding>
 			</testmodule>
 			<testcase
 			id="3e6130c2-f2c6-4ca3-87b7-fad5e50875f9"
@@ -738,7 +704,7 @@
 					</param>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.17">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.18">
 					</param>
 					<param
 					name="Mode"
@@ -858,13 +824,6 @@
 			type="Recording">
 			</testmodule>
 			<testcase
-			id="9146724b-a4cb-46ec-a73c-ffe59147a7fc"
-			name="Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices">
-				<description>
-					<![CDATA[<p>NGC-3139/T2414 Export shopping list and column verification is not automated</p>]]>
-				</description>
-			</testcase>
-			<testcase
 			id="91cd0361-5e4f-4edb-91a1-f5e4c6be9451"
 			name="Verify_P_Series_Panel_Gallery_Items_For_Panel_Node">
 				<description>
@@ -927,18 +886,6 @@
 			id="a1519c03-b516-4699-8f65-c5f1fa97dac4"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="a2874eb5-b817-49f1-9751-af9ee2c22922"
-			name="Close_Application"
-			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
-			type="Recording">
-			</testmodule>
-			<testmodule
-			id="a330a2e4-d2ca-420b-8009-7908de21142d"
-			name="Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices"
-			ref="30510901-c4da-4e79-9485-982bcc3e611f"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -1602,26 +1549,6 @@
 						</testmodule>
 					</testcase>
 					<testcase
-					id="9146724b-a4cb-46ec-a73c-ffe59147a7fc"
-					name="Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices">
-						<testmodule
-						id="14d5c20e-c26e-429f-b8e5-4b23d29f0815"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="3b334aa6-f806-4882-a8ee-fc0770678062"
-						name="CreateProject_Croatia">
-						</testmodule>
-						<testmodule
-						id="a330a2e4-d2ca-420b-8009-7908de21142d"
-						name="Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices">
-						</testmodule>
-						<testmodule
-						id="a2874eb5-b817-49f1-9751-af9ee2c22922"
-						name="Close_Application">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="91cd0361-5e4f-4edb-91a1-f5e4c6be9451"
 					name="Verify_P_Series_Panel_Gallery_Items_For_Panel_Node">
 						<testmodule
@@ -1960,7 +1887,13 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
+			id="4dea11a6-bb8a-4fd5-bbb3-8849419992a4">
+			</testcontainer>
+			<testcontainer
 			id="7f7d18ea-6c48-469f-abaf-e147d268c5c5">
+			</testcontainer>
+			<testcontainer
+			id="a6f1a824-3780-4c3d-985b-2505edaa41c9">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

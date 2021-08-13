@@ -1,6 +1,6 @@
 [
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "NGConsys",
     "RunConfig": "TestRun"
   },
@@ -55,7 +55,7 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "Croatia",
     "RunConfig": "TestRun"
   },

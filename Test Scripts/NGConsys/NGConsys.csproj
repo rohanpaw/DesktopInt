@@ -751,18 +751,6 @@
       <id>aed50b73-9d15-4088-8f41-c61040061277</id>
       <BoundTo>c283e897-5d2b-41be-aae2-8830fd36a031</BoundTo>
     </Compile>
-    <Compile Include="CroatiaRecordingModule\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.cs">
-      <DependentUpon>Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>6d8be16d-2e11-4a13-be68-2f69447b4c37</id>
-      <BoundTo>653a8bd9-8ab8-4ac6-83e8-48f82e74276c</BoundTo>
-    </Compile>
-    <Compile Include="CroatiaRecordingModule\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.UserCode.cs">
-      <DependentUpon>Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>21698067-f593-4c04-8571-0d1e92ecda32</id>
-      <BoundTo>653a8bd9-8ab8-4ac6-83e8-48f82e74276c</BoundTo>
-    </Compile>
     <Compile Include="CroatiaRecordingModule\Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.cs">
       <DependentUpon>Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -8577,11 +8565,6 @@
     <None Include="CroatiaRecordingModule\Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
       <id>c283e897-5d2b-41be-aae2-8830fd36a031</id>
       <recordtableid>8e534437-5d7f-43b0-a1ca-b69bec965dd2</recordtableid>
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
-    </None>
-    <None Include="CroatiaRecordingModule\Verify_P_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices.rxrec">
-      <id>653a8bd9-8ab8-4ac6-83e8-48f82e74276c</id>
-      <recordtableid>30510901-c4da-4e79-9485-982bcc3e611f</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="CroatiaRecordingModule\Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
