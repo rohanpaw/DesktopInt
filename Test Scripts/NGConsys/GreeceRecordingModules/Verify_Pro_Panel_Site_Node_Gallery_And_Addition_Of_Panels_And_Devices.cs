@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.CroatiaRecordingModule
+namespace TestProject.GreeceRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits recording.
+    ///The Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices recording.
     /// </summary>
-    [TestModule("f0ae3162-3b6c-4222-8f43-f5f864e5eed5", ModuleType.Recording, 1)]
-    public partial class Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits : ITestModule
+    [TestModule("a47a39ae-d75e-4b65-9b39-05bd001f4d9e", ModuleType.Recording, 1)]
+    public partial class Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits instance = new Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits();
+        static Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices instance = new Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits()
+        public Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits Instance
+        public static Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices Instance
         {
             get { return instance; }
         }
@@ -79,8 +79,35 @@ namespace TestProject.CroatiaRecordingModule
 
             Init();
 
-            Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("Power_Calculation_Default_Values", "Croatia");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
             Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Panels", "Greece", "Pro32xD");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_OtherNodes", "Greece", "TXG Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Site");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnSiteAccessoriesTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Accessories", "Greece", "ANC125");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("ANC125", "Accessories");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("ANC250", "Accessories");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.clickOnShoppingListTab();
+            Delay.Milliseconds(0);
+            
+            //Libraries.Export_Functions.SearchDeviceInExportUsingSKUOrDescription("557.202.622", ValueConverter.ArgumentFromString<bool>("sExist", "True"));
+            //Delay.Milliseconds(0);
             
         }
 

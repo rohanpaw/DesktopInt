@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.CroatiaRecordingModule
+namespace TestProject.GreeceRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits recording.
+    ///The Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit recording.
     /// </summary>
-    [TestModule("f0ae3162-3b6c-4222-8f43-f5f864e5eed5", ModuleType.Recording, 1)]
-    public partial class Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits : ITestModule
+    [TestModule("a9f5d558-e7f7-4c71-a9b2-bc1f0e432c71", ModuleType.Recording, 1)]
+    public partial class Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits instance = new Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits();
+        static Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit instance = new Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits()
+        public Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits Instance
+        public static Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit Instance
         {
             get { return instance; }
         }
@@ -79,7 +79,39 @@ namespace TestProject.CroatiaRecordingModule
 
             Init();
 
-            Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("Power_Calculation_Default_Values", "Croatia");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX1000", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit1");
+            Delay.Milliseconds(0);
+            
+            // Sounders
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_FIM", "Greece", "Generic Sounder");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("SB520", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit1 (2)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Sounder Circuit2");
+            Delay.Milliseconds(0);
+            
+            // Sounders
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Sounder_FIM", "Greece", "Generic Sounder");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("Generic Sounder", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit2 (1)");
             Delay.Milliseconds(0);
             
         }

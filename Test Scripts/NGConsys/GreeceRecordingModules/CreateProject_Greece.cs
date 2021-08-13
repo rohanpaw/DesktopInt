@@ -20,38 +20,48 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.CroatiaRecordingModule
+namespace TestProject.GreeceRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits recording.
+    ///The CreateProject_Greece recording.
     /// </summary>
-    [TestModule("f0ae3162-3b6c-4222-8f43-f5f864e5eed5", ModuleType.Recording, 1)]
-    public partial class Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits : ITestModule
+    [TestModule("6680343e-64a1-4f86-bd8c-dd09315f043f", ModuleType.Recording, 1)]
+    public partial class CreateProject_Greece : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits instance = new Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits();
+        static CreateProject_Greece instance = new CreateProject_Greece();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits()
+        public CreateProject_Greece()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits Instance
+        public static CreateProject_Greece Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable sListIndex.
+        /// </summary>
+        [TestVariable("ca40602d-7ca3-47bc-a519-7a0fe6a76634")]
+        public string sListIndex
+        {
+            get { return repo.sListIndex; }
+            set { repo.sListIndex = value; }
+        }
 
 #endregion
 
@@ -79,7 +89,10 @@ namespace TestProject.CroatiaRecordingModule
 
             Init();
 
-            Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("Power_Calculation_Default_Values", "Croatia");
+            Libraries.Common_Functions.maximizeApplication();
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.createNewProject("Greece", "0");
             Delay.Milliseconds(0);
             
         }

@@ -37,12 +37,6 @@
 				</databinding>
 			</testmodule>
 			<testmodule
-			id="0764cf8e-535e-4eb9-bda0-ea60e8ca87cb"
-			name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
-			ref="5340e205-09ef-4512-99e3-2a0cf28c8fab"
-			type="Recording">
-			</testmodule>
-			<testmodule
 			id="080107ed-cc45-4feb-8ccd-5c079e5186e1"
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node"
 			ref="36f54c57-f865-4b59-9d73-ef472bdcd576"
@@ -161,12 +155,6 @@
 					variablename="App_Mode">
 					</var>
 				</databinding>
-			</testmodule>
-			<testmodule
-			id="16ccda97-8d93-4da6-9cc4-74c242bdd513"
-			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
-			ref="5e89b273-288a-42ed-9d33-1a421f3a2050"
-			type="Recording">
 			</testmodule>
 			<testmodule
 			id="19e6df5c-d037-453a-846d-ce303b435275"
@@ -723,12 +711,6 @@
 					</var>
 				</databinding>
 			</testmodule>
-			<testmodule
-			id="7e5e099f-8b36-411a-bf2e-d5cebb1c7064"
-			name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices"
-			ref="3e2e08df-af01-4f05-8137-27cca0b0a5aa"
-			type="Recording">
-			</testmodule>
 			<testcase
 			id="7f7d18ea-6c48-469f-abaf-e147d268c5c5"
 			name="Croatia"
@@ -1000,6 +982,12 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="a5dc031c-981f-482d-9cae-5a6ef0c27d42"
+			name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
+			ref="f0ae3162-3b6c-4222-8f43-f5f864e5eed5"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="a6f1a824-3780-4c3d-985b-2505edaa41c9"
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
@@ -1184,6 +1172,18 @@
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="d0193460-8471-4b44-8874-990e80605f8a"
+			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
+			ref="433db294-eb3b-4c26-8ec5-581ef7ef4f7e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d1de5f16-4dd6-4000-8b0e-66a085e39163"
+			name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices"
+			ref="8e534437-5d7f-43b0-a1ca-b69bec965dd2"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="daf5aa15-1d03-4515-864c-2dbe96362e0e"
@@ -1753,7 +1753,7 @@
 						name="CreateProject_Croatia">
 						</testmodule>
 						<testmodule
-						id="7e5e099f-8b36-411a-bf2e-d5cebb1c7064"
+						id="d1de5f16-4dd6-4000-8b0e-66a085e39163"
 						name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
 						</testmodule>
 						<testmodule
@@ -1913,7 +1913,7 @@
 						name="CreateProject_Croatia">
 						</testmodule>
 						<testmodule
-						id="0764cf8e-535e-4eb9-bda0-ea60e8ca87cb"
+						id="a5dc031c-981f-482d-9cae-5a6ef0c27d42"
 						name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
 						</testmodule>
 						<testmodule
@@ -1933,7 +1933,7 @@
 						name="CreateProject_Croatia">
 						</testmodule>
 						<testmodule
-						id="16ccda97-8d93-4da6-9cc4-74c242bdd513"
+						id="d0193460-8471-4b44-8874-990e80605f8a"
 						name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
 						</testmodule>
 						<testmodule

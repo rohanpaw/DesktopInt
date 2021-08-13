@@ -58,5 +58,10 @@
     "Enabled": "True",
     "TestSuite": "Croatia",
     "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Greece",
+    "RunConfig": "TestRun"
   }
 ]

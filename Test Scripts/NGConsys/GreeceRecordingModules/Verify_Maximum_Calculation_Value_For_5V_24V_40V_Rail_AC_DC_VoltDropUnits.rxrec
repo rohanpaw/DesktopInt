@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="f0ae3162-3b6c-4222-8f43-f5f864e5eed5"
+id="b24a163b-11c4-4b18-bf33-2a31a2ba1134"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
-	namespace="TestProject.CroatiaRecordingModule">
+	classname="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
+	namespace="TestProject.GreeceRecordingModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -29,7 +29,7 @@ mode="Global">
 		classname="PSULoad_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyDefaultPanelPowerCalculation"
+		methodname="VerifyMaximumPanelPowerCalculation"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -45,7 +45,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Power_Calculation_Default_Values
+						Power_Calculation_Max_Values
 					</argvalue>
 				</argument>
 				<argument
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Croatia
+						Greece
 					</argvalue>
 				</argument>
 			</arguments>
@@ -77,7 +77,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs
+		Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

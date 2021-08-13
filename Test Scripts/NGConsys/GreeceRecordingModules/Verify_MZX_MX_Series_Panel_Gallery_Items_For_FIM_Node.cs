@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.CroatiaRecordingModule
+namespace TestProject.GreeceRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits recording.
+    ///The Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node recording.
     /// </summary>
-    [TestModule("f0ae3162-3b6c-4222-8f43-f5f864e5eed5", ModuleType.Recording, 1)]
-    public partial class Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits : ITestModule
+    [TestModule("3fc2bb2c-f657-4801-9610-a6139a19ce07", ModuleType.Recording, 1)]
+    public partial class Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits instance = new Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits();
+        static Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node instance = new Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits()
+        public Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits Instance
+        public static Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node Instance
         {
             get { return instance; }
         }
@@ -79,7 +79,22 @@ namespace TestProject.CroatiaRecordingModule
 
             Init();
 
-            Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("Power_Calculation_Default_Values", "Croatia");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MZX252", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("FIM");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("FIM800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("FIM800");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_AttachedFunctionality_FIM_Node", "Greece", "IOB800(x1)");
             Delay.Milliseconds(0);
             
         }

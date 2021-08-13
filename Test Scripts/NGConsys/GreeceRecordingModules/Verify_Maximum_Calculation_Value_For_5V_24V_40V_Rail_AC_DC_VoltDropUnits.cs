@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace TestProject.CroatiaRecordingModule
+namespace TestProject.GreeceRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits recording.
+    ///The Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits recording.
     /// </summary>
-    [TestModule("f0ae3162-3b6c-4222-8f43-f5f864e5eed5", ModuleType.Recording, 1)]
-    public partial class Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits : ITestModule
+    [TestModule("b24a163b-11c4-4b18-bf33-2a31a2ba1134", ModuleType.Recording, 1)]
+    public partial class Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits instance = new Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits();
+        static Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits instance = new Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits()
+        public Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits Instance
+        public static Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits Instance
         {
             get { return instance; }
         }
@@ -79,7 +79,7 @@ namespace TestProject.CroatiaRecordingModule
 
             Init();
 
-            Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("Power_Calculation_Default_Values", "Croatia");
+            Libraries.PSULoad_Functions.VerifyMaximumPanelPowerCalculation("Power_Calculation_Max_Values", "Greece");
             Delay.Milliseconds(0);
             
         }

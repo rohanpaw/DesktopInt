@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="f0ae3162-3b6c-4222-8f43-f5f864e5eed5"
+id="9010045c-ea3c-42ae-93ee-5253458578cb"
 mode="Global">
 	<repeatcount>
 		1
@@ -20,7 +20,7 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
-	namespace="TestProject.CroatiaRecordingModule">
+	namespace="TestProject.GreeceRecordingModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Croatia
+						Greece
 					</argvalue>
 				</argument>
 			</arguments>
