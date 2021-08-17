@@ -20,13 +20,18 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "SwedenFC",
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "NorwayFC",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "ItalyFC",
     "RunConfig": "TestRun"
   }
 ]

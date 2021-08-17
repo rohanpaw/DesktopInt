@@ -368,6 +368,9 @@
 			<testcase
 			id="a4340798-9d7e-4deb-8923-ca593d874728"
 			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+				<description>
+					<![CDATA[<p>NGC-3465/T3760</p>]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="a83b52a0-cfbe-4b0e-bd1a-8fef118093a5"
@@ -602,6 +605,9 @@
 			<testcase
 			id="edde9b33-7b89-422b-b9db-712a9b4e0e15"
 			name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+				<description>
+					<![CDATA[NGC-3465/T3759]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="ef982045-b04b-4340-96cd-18b8dcc9f716"
@@ -930,33 +936,6 @@
 		name="TestRun">
 			<testcontainer
 			id="09bbe186-ed7f-4e5c-b9a2-53b273284c11">
-			</testcontainer>
-			<testcontainer
-			id="3a108ac2-6ed4-4646-961f-bcf33668650f">
-			</testcontainer>
-			<testcontainer
-			id="47505466-043c-4c47-97f6-eed0b84dba47">
-			</testcontainer>
-			<testcontainer
-			id="5e1a8eaf-f7c4-4fe1-a8e5-e7016b1b8792">
-			</testcontainer>
-			<testcontainer
-			id="749a7753-635c-48ed-afc2-0ef929b18225">
-			</testcontainer>
-			<testcontainer
-			id="83d50bb0-da5d-4341-a9a8-522714cf8504">
-			</testcontainer>
-			<testcontainer
-			id="9857f150-9b5a-405b-9e00-0e575bffd41f">
-			</testcontainer>
-			<testcontainer
-			id="c1fdf968-2b16-4d61-af75-1c8bc5e16210">
-			</testcontainer>
-			<testcontainer
-			id="c57f4ae4-1542-4ec3-8b79-2ba423122c8c">
-			</testcontainer>
-			<testcontainer
-			id="f2012875-94f9-455f-b9b9-62bf55f3e4e2">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

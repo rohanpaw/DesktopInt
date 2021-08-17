@@ -12,7 +12,7 @@
 			id="05fe883e-3a88-4028-9c82-50b43aefa4f3"
 			name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-3464/T1920/T1922</p>]]>
+					<![CDATA[<p>NGC-3464/T1920/T1922/T1923</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -24,6 +24,9 @@
 			<testcase
 			id="080bbf00-7f58-41df-b512-306997d0836d"
 			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+				<description>
+					<![CDATA[NGC-3464/T3755]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="085f139f-d9a4-4ffb-9cc8-a0bfc96a093d"
@@ -509,7 +512,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\FIRECLASS\FC Designer Pro 31.0.17">
+					value="C:\Program Files (x86)\FIRECLASS\FC Designer Pro 31.0.18">
 					</param>
 					<param
 					name="Mode"
@@ -661,6 +664,9 @@
 			<testcase
 			id="f2dea459-1080-4d25-9c6e-3b5ff9793c5d"
 			name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+				<description>
+					<![CDATA[NGC-3464/T3756]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="f313f39b-8b78-4452-b4d0-0d9b14303b63"
@@ -929,34 +935,10 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="05fe883e-3a88-4028-9c82-50b43aefa4f3">
-			</testcontainer>
-			<testcontainer
-			id="16824881-2504-4e72-9e05-0a3f283ce4e4">
-			</testcontainer>
-			<testcontainer
-			id="2293aacf-4c72-44bb-bfde-12ae598844f5">
-			</testcontainer>
-			<testcontainer
-			id="3109c891-93f0-48cc-8172-6c081a9887ce">
-			</testcontainer>
-			<testcontainer
-			id="357f11e4-aea2-4880-a69e-368cac197fc6">
-			</testcontainer>
-			<testcontainer
-			id="76c89fbc-fbdd-4393-83e7-edd02907015a">
+			id="080bbf00-7f58-41df-b512-306997d0836d">
 			</testcontainer>
 			<testcontainer
 			id="ca56505b-9b59-4109-853a-8c3b246663fd">
-			</testcontainer>
-			<testcontainer
-			id="e05681b3-0daf-4cb7-8883-194148711ceb">
-			</testcontainer>
-			<testcontainer
-			id="e17aaad0-e16d-44d2-a813-050999c54d22">
-			</testcontainer>
-			<testcontainer
-			id="e8b85074-1e60-4d38-b88f-3274c24870fb">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
