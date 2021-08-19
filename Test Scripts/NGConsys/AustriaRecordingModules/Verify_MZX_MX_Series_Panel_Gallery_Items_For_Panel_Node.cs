@@ -124,7 +124,7 @@ namespace TestProject.AustriaRecordingModules
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_MZX_Panels", "Austria", "XLM800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_MZX_Panels", "Austria", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_MZX_Panels", "Austria", "MPM800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Austria", "LCD800");
