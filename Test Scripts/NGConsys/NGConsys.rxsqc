@@ -65,7 +65,7 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "Austria",
     "RunConfig": "TestRun"
   }

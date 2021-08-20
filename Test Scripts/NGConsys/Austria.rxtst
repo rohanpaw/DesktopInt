@@ -6,7 +6,7 @@
 			id="008e4deb-4fd8-4974-aa3e-b909132d3486"
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
 				<description>
-					<![CDATA[<p>NGC-3817/T2306</p><br>]]>
+					<![CDATA[<p>NGC-3817/T2306/T2315</p><br>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1887,10 +1887,10 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="50d52113-8fdc-4bc1-a716-7cb592fa5f28">
+			id="5f81a281-421f-4dc7-bde7-e28b9bb70909">
 			</testcontainer>
 			<testcontainer
-			id="5f81a281-421f-4dc7-bde7-e28b9bb70909">
+			id="69623d3b-e68c-4552-a209-26bf99d3f1d9">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

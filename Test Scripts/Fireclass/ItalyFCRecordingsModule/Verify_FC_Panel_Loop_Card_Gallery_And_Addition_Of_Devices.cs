@@ -124,9 +124,6 @@ namespace Fireclass.ItalyFCRecordingsModule
             TestProject.Libraries.Devices_Functions.AddDevicesfromGallery("410LI\r\n", "Other");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Common_Functions.VerifyNavigationTreeItemText("Backplane  1/1");
-            Delay.Milliseconds(0);
-            
             TestProject.Libraries.Common_Functions.VerifyNavigationTreeItemText("Built-in Loop-B (0 of 250)");
             Delay.Milliseconds(0);
             
@@ -137,7 +134,7 @@ namespace Fireclass.ItalyFCRecordingsModule
             Delay.Milliseconds(0);
             
             // ADDED STEPS FOR ANOTHER PANEL
-            Report.Log(ReportLevel.Info, "Section", "ADDED STEPS FOR ANOTHER PANEL", new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Section", "ADDED STEPS FOR ANOTHER PANEL", new RecordItemIndex(18));
             
             TestProject.Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC602S", "");
             Delay.Milliseconds(0);

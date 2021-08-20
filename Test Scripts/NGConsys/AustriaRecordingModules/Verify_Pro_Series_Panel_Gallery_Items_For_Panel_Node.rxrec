@@ -474,6 +474,15 @@ mode="Global">
 				</argument>
 			</arguments>
 		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				ADDED TEST STEPS FOR ANOTHER PANEL
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<userrecorditem
 		classname="Panel_Functions"
 		enabled="True"

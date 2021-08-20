@@ -112,7 +112,10 @@ namespace Fireclass.ItalyFCRecordingsModule
             TestProject.Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit2 (1)");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Devices_Functions.DeleteDeviceUsingLabel("SB520 - 1");
+            TestProject.Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("SB520");
+            Delay.Milliseconds(0);
+            
+            TestProject.Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
             TestProject.Libraries.Common_Functions.VerifyNavigationTreeItemText("Sounder Circuit2 (0)");
@@ -128,7 +131,7 @@ namespace Fireclass.ItalyFCRecordingsModule
             Delay.Milliseconds(0);
             
             // ADDED STEPS FOR ANOTHER PANEL
-            Report.Log(ReportLevel.Info, "Section", "ADDED STEPS FOR ANOTHER PANEL", new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Section", "ADDED STEPS FOR ANOTHER PANEL", new RecordItemIndex(17));
             
             TestProject.Libraries.Panel_Functions.AddPanelsMT(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC240-2", "");
             Delay.Milliseconds(0);

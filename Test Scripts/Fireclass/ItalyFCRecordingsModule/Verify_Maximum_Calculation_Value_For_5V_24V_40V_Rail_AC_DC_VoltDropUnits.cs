@@ -79,7 +79,7 @@ namespace Fireclass.ItalyFCRecordingsModule
 
             Init();
 
-            TestProject.Libraries.PSULoad_Functions.VerifyMaximumPanelPowerCalculation("FC_Power_Calculation_Max_Values", "Denmark");
+            TestProject.Libraries.PSULoad_Functions.VerifyMaximumPanelPowerCalculation("FC_Power_Calculation_Max_Values", "Italy");
             Delay.Milliseconds(0);
             
         }

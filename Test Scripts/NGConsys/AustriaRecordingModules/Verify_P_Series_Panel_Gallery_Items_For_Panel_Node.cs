@@ -112,6 +112,9 @@ namespace TestProject.AustriaRecordingModules
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
+            // ADDED TEST STEPS FOR ANOTHER PANEL
+            Report.Log(ReportLevel.Info, "Section", "ADDED TEST STEPS FOR ANOTHER PANEL", new RecordItemIndex(11));
+            
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P115D", "");
             Delay.Milliseconds(0);
             
