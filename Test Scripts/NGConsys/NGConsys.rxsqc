@@ -68,5 +68,15 @@
     "Enabled": "False",
     "TestSuite": "Austria",
     "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Netherlands",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Denmark",
+    "RunConfig": "TestRun"
   }
 ]
