@@ -146,7 +146,7 @@ namespace TestProject.DenmarkRecordingModules
             Delay.Milliseconds(0);
             
             // Attach functionality
-            Libraries.Gallery_Functions.verifyGalleryListItems("MPM_Attach_functionality", "Denmark", "IOB800(x3)");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MPM_Attached_Functionality", "Denmark", "IOB800(x3)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("IOB800(x3)", "");

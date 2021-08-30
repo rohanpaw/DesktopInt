@@ -142,7 +142,7 @@ namespace TestProject.NetherlandsRecordingModules
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Lite_Panel_MPM_Attach_functionality", "Netherlands", "XIOM");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MPM_Attached_Functionality_Pro_Lite_Panels", "Netherlands", "XIOM");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("XIOM", "");

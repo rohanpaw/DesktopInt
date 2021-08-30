@@ -871,7 +871,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						MPM_Attach_functionality
+						Gallery_MPM_Attached_Functionality
 					</argvalue>
 				</argument>
 				<argument
