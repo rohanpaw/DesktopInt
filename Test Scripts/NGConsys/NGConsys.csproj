@@ -3382,14 +3382,14 @@
       <id>92107dfa-a7fd-4d2b-9f36-6b6112b4ace3</id>
       <BoundTo>c40772c7-b58b-4505-9577-56b91c8a25a6</BoundTo>
     </Compile>
-    <Compile Include="NetherlandsRecordingModules\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.cs">
-      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.rxrec</DependentUpon>
+    <Compile Include="NetherlandsRecordingModules\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>31786996-4de0-4fb3-8cd3-355053eb1fd7</id>
       <BoundTo>2e689265-07aa-4ff9-b96c-e2663cbe7bfa</BoundTo>
     </Compile>
-    <Compile Include="NetherlandsRecordingModules\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.UserCode.cs">
-      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.rxrec</DependentUpon>
+    <Compile Include="NetherlandsRecordingModules\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>95179a5d-5f55-4c21-8608-526a991376a0</id>
       <BoundTo>2e689265-07aa-4ff9-b96c-e2663cbe7bfa</BoundTo>
@@ -10935,7 +10935,7 @@
       <recordtableid>9b1764b1-aa21-4cea-9549-40de2ff39a74</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="NetherlandsRecordingModules\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.rxrec">
+    <None Include="NetherlandsRecordingModules\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node.rxrec">
       <id>2e689265-07aa-4ff9-b96c-e2663cbe7bfa</id>
       <recordtableid>887c8d78-9cc2-4710-986f-d4bf2a90166e</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

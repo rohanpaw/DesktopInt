@@ -145,6 +145,9 @@ namespace TestProject.NetherlandsRecordingModules
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
+            Libraries.Gallery_Functions.verifyGalleryListItems("MPM_Attach_functionality", "Netherlands", "IOB800(x3)");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromGallery("IOB800(x3)", "");
             Delay.Milliseconds(0);
             

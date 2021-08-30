@@ -154,6 +154,10 @@ namespace TestProject.DenmarkRecordingModules
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
+            // Attach functionality
+            Libraries.Gallery_Functions.verifyGalleryListItems("MPM_Attach_functionality", "Denmark", "XIOM");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromGallery("XIOM", "");
             Delay.Milliseconds(0);
             
@@ -173,7 +177,7 @@ namespace TestProject.DenmarkRecordingModules
             Delay.Milliseconds(0);
             
             // ADDED TEST STEPS FOR ANOTHER PANEL
-            Report.Log(ReportLevel.Info, "Section", "ADDED TEST STEPS FOR ANOTHER PANEL", new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Section", "ADDED TEST STEPS FOR ANOTHER PANEL", new RecordItemIndex(31));
             
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MX4000", "");
             Delay.Milliseconds(0);
@@ -191,15 +195,15 @@ namespace TestProject.DenmarkRecordingModules
             Delay.Milliseconds(0);
             
             // Repeaters
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Repeaters_MZX_Panels", "Slovakia", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Repeaters_MZX_Panels", "Denmark", "MXR");
             Delay.Milliseconds(0);
             
             // Miscellaneous
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_MZX_Panels", "Slovakia", "MPM800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_MZX_Panels", "Denmark", "MPM800");
             Delay.Milliseconds(0);
             
             // Printers
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Printers_MZX_Panels", "Slovakia", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Printers_MZX_Panels", "Denmark", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("MXR", "");

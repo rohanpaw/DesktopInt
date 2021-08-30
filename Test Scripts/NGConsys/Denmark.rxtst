@@ -627,7 +627,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.15">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.20">
 					</param>
 					<param
 					name="Mode"
@@ -1887,13 +1887,16 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="16e35e3d-b809-47d7-be70-8f05cacd3359">
-			</testcontainer>
-			<testcontainer
-			id="1ac07a3d-e766-4ac3-82bf-4bb5a463a184">
+			id="36a4e6d1-cc41-4cf8-941b-ff4c0d8b5993">
 			</testcontainer>
 			<testcontainer
 			id="75f2fb6d-b894-436a-a3bd-ea6220acbcbd">
+			</testcontainer>
+			<testcontainer
+			id="90a922bf-a99f-4b2e-b626-84a0142d86e3">
+			</testcontainer>
+			<testcontainer
+			id="ff128977-51de-49dd-93ee-c1088c8ef32d">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

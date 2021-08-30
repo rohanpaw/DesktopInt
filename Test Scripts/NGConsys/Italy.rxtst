@@ -280,7 +280,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.15">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.20">
 					</param>
 					<param
 					name="Mode"
@@ -2180,6 +2180,9 @@
 		name="TestRun">
 			<testcontainer
 			id="31e60409-81e2-4b6d-b200-14fbbbeddebc">
+			</testcontainer>
+			<testcontainer
+			id="cf8755ae-4f2d-4a20-b848-5a19ea146b69">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace TestProject.NetherlandsRecordingModules
 {
-    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node
+    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -145,6 +145,9 @@ namespace TestProject.SlovakiaRecordingModules
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
+            Libraries.Gallery_Functions.verifyGalleryListItems("MPM_Attach_functionality", "Slovakia", "IOB800(x4)");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromGallery("IOB800(x3)", "");
             Delay.Milliseconds(0);
             

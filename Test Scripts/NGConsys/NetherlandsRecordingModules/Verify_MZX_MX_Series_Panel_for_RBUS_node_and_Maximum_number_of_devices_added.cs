@@ -154,6 +154,9 @@ namespace TestProject.NetherlandsRecordingModules
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
+            Libraries.Gallery_Functions.verifyGalleryListItems("MPM_Attach_functionality", "Netherlands", "XIOM");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromGallery("XIOM", "");
             Delay.Milliseconds(0);
             
@@ -173,7 +176,7 @@ namespace TestProject.NetherlandsRecordingModules
             Delay.Milliseconds(0);
             
             // ADDED TEST STEPS FOR ANOTHER PANEL
-            Report.Log(ReportLevel.Info, "Section", "ADDED TEST STEPS FOR ANOTHER PANEL", new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Section", "ADDED TEST STEPS FOR ANOTHER PANEL", new RecordItemIndex(31));
             
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "ZX1", "");
             Delay.Milliseconds(0);
