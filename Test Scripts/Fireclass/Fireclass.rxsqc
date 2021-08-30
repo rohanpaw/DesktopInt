@@ -30,8 +30,13 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "ItalyFC",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "SpainFC",
     "RunConfig": "TestRun"
   }
 ]

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="54a39919-82a9-43cc-aa6b-2fad0b3439d7"
+id="accf1512-79be-40a4-8b4d-aa27213c11b4"
 mode="Global">
 	<repeatcount>
 		1
@@ -20,7 +20,7 @@ mode="Global">
 	</useDefaultItemLogging>
 	<codegen
 	classname="Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node"
-	namespace="Fireclass.ItalyFCRecordingsModule">
+	namespace="Fireclass.SpainFCRecordingsModule">
 	</codegen>
 	<variables>
 	</variables>
@@ -164,7 +164,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						I/O Locale
+						Bus interno
 					</argvalue>
 				</argument>
 			</arguments>
@@ -199,7 +199,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Italy
+						Spain
 					</argvalue>
 				</argument>
 				<argument
@@ -476,7 +476,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						I/O Locale
+						Bus interno
 					</argvalue>
 				</argument>
 			</arguments>
@@ -511,7 +511,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Italy
+						Spain
 					</argvalue>
 				</argument>
 				<argument
