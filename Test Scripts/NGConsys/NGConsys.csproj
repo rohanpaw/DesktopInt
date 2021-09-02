@@ -14295,9 +14295,9 @@
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="TurkeyRecordingModules\Verify_Pro_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added.rxrec">
-      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
       <id>f328a121-14ce-45eb-b58c-7ed07143f61e</id>
       <recordtableid>468ab6fd-7a66-4c7a-ac32-7b3d4b9a5577</recordtableid>
+      <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
     <None Include="TurkeyRecordingModules\Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

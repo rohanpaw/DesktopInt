@@ -754,6 +754,51 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryListItems"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Gallery_MPM_Attached_Functionality
+					</argvalue>
+				</argument>
+				<argument
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Turkey
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						IOB800(x3)
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
 		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"

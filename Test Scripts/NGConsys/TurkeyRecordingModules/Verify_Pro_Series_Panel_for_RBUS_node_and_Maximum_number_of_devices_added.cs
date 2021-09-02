@@ -88,13 +88,10 @@ namespace TestProject.TurkeyRecordingModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("RBus");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_Pro215Panels", "Spain", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_Pro215Panels", "Turkey", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Printers_ProPanels", "Spain", "LCD800");
-            Delay.Milliseconds(0);
-            
-            Libraries.Devices_Functions.AddDevicesfromGallery("PR1D2", "");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Printers_ProPanels", "Turkey", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("PR1D2", "");
@@ -115,7 +112,7 @@ namespace TestProject.TurkeyRecordingModules
             Libraries.Devices_Functions.AddDevicesfromGallery("PR1D2", "");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1D2", "");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
@@ -140,6 +137,12 @@ namespace TestProject.TurkeyRecordingModules
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MPM_Attached_Functionality", "Turkey", "IOB800(x4)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("IOB800(x4)", "");

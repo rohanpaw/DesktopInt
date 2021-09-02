@@ -145,6 +145,9 @@ namespace TestProject.SpainRecordingModules
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MPM_Attached_Functionality", "Spain", "XIOM");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromGallery("IOB800(x4)", "");
             Delay.Milliseconds(0);
             

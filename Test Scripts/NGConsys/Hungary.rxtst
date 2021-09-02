@@ -769,9 +769,9 @@
 			</testmodule>
 			<testcase
 			id="93e9d3e3-b312-4b11-be5a-3ce2a318f84e"
-			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+			name="Verify_Pro_Series_Panel_gallery_items_for_Serial_Port_node_with_adding_devices">
 				<description>
-					<![CDATA[<p>NGC-3104/T2991&nbsp; SKU and Connection text are not verified as they are not visible</p><br>]]>
+					<![CDATA[<p>NGC-3104/T2995&nbsp; SKU and Connection text are not verified as they are not visible</p><br>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1430,7 +1430,7 @@
 					</testcase>
 					<testcase
 					id="93e9d3e3-b312-4b11-be5a-3ce2a318f84e"
-					name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+					name="Verify_Pro_Series_Panel_gallery_items_for_Serial_Port_node_with_adding_devices">
 						<testmodule
 						id="4fbf807a-143d-4743-8e21-1dfdf1c591ef"
 						name="Application_Open">
