@@ -154,6 +154,9 @@ namespace TestProject.PortugalRecordingModules
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MPM_Attached_Functionality", "Portugal", "IOB800(x4)");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromGallery("XIOM", "");
             Delay.Milliseconds(0);
             
@@ -171,6 +174,9 @@ namespace TestProject.PortugalRecordingModules
             
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
+            
+            // _________________________________________________________________________TEST SCRIPTS FOR NEW PANLE___________________________________________________________________________________________________________
+            Report.Log(ReportLevel.Info, "Section", "_________________________________________________________________________TEST SCRIPTS FOR NEW PANLE___________________________________________________________________________________________________________", new RecordItemIndex(31));
             
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "ZX4", "");
             Delay.Milliseconds(0);
@@ -242,6 +248,9 @@ namespace TestProject.PortugalRecordingModules
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MPM_Attached_Functionality", "Portugal", "IOB800(x4)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("COM820 I/O Module", "");

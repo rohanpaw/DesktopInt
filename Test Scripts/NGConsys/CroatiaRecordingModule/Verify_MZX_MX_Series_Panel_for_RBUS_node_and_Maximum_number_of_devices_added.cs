@@ -154,6 +154,9 @@ namespace TestProject.CroatiaRecordingModule
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MPM_Attached_Functionality", "Croatia", "IOB800(x4)");
+            Delay.Milliseconds(0);
+            
             Libraries.Devices_Functions.AddDevicesfromGallery("XIOM", "");
             Delay.Milliseconds(0);
             
@@ -173,7 +176,7 @@ namespace TestProject.CroatiaRecordingModule
             Delay.Milliseconds(0);
             
             // ___________________________________________________________________________________ADDED NEW PANEL______________________________________________________________________________________________________________________________________
-            Report.Log(ReportLevel.Info, "Section", "___________________________________________________________________________________ADDED NEW PANEL______________________________________________________________________________________________________________________________________", new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Section", "___________________________________________________________________________________ADDED NEW PANEL______________________________________________________________________________________________________________________________________", new RecordItemIndex(31));
             
             Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "ZX1", "");
             Delay.Milliseconds(0);
@@ -245,6 +248,9 @@ namespace TestProject.CroatiaRecordingModule
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MPM_Attached_Functionality", "Croatia", "IOB800(x4)");
             Delay.Milliseconds(0);
             
             Libraries.Devices_Functions.AddDevicesfromGallery("COM820 I/O Module", "");
