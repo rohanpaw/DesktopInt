@@ -4,9 +4,9 @@
 		<flatlistofchildren>
 			<testcase
 			id="00bdb0d2-9f5d-426a-beaf-9a8f3bfdfe97"
-			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-2931/T3060&nbsp; SKU and Connection text are not verified as they are not visible</p>]]>
+					<![CDATA[<p>NGC-2931/T3060/T3064&nbsp; SKU and Connection text are not verified as they are not visible</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -430,7 +430,7 @@
 			id="60257130-7dee-4744-a693-ca4d801a0d70"
 			name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-2931/T3070 SKU and Connection text are not verified as they are not visible</p>]]>
+					<![CDATA[<p>NGC-2931/T3070/T3073 SKU and Connection text are not verified as they are not visible</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -476,7 +476,7 @@
 			id="67902188-e45d-4b2b-a8f1-be290f78250e"
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
 				<description>
-					<![CDATA[<p>NGC-2931/T3086</p>]]>
+					<![CDATA[<p>NGC-2931/T3086/T3085</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -572,7 +572,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.20">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.23">
 					</param>
 					<param
 					name="Mode"
@@ -730,7 +730,7 @@
 			id="862e9b8d-5796-43c1-8027-8522c790ec03"
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-2931/T3084 SKU and Connection text are not verified as they are not visible</p>]]>
+					<![CDATA[<p>NGC-2931/T3084/T3087 SKU and Connection text are not verified as they are not visible</p>]]>
 				</description>
 			</testcase>
 			<testcase
@@ -1253,7 +1253,7 @@
 			id="ddd1ef19-6f49-4c55-8dcf-9f30a914ddea"
 			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
 				<description>
-					<![CDATA[<p>NGC-2931/T3094</p>]]>
+					<![CDATA[<p>NGC-2931/T3092/T3093/T3094</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1430,7 +1430,7 @@
 					</testcase>
 					<testcase
 					id="00bdb0d2-9f5d-426a-beaf-9a8f3bfdfe97"
-					name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+					name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 						<testmodule
 						id="ce87b8fc-0532-4a3c-97e5-0b16d9f2dafc"
 						name="Application_Open">
@@ -1888,6 +1888,9 @@
 		name="TestRun">
 			<testcontainer
 			id="7243281e-28df-4304-965d-d70c00986c12">
+			</testcontainer>
+			<testcontainer
+			id="e05094e3-426a-43d3-a333-72b9a411ef4c">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

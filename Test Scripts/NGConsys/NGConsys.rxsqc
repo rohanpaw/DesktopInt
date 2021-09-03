@@ -90,7 +90,7 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "Poland",
     "RunConfig": "TestRun"
   }
