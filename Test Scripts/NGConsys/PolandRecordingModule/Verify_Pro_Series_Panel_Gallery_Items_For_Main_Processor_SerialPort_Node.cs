@@ -24,29 +24,29 @@ namespace TestProject.PolandRecordingModule
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node recording.
+    ///The Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node recording.
     /// </summary>
     [TestModule("9c209290-321f-4fcd-ba86-4bb4c78e3b8f", ModuleType.Recording, 1)]
-    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node : ITestModule
+    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node instance = new Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node();
+        static Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node instance = new Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node()
+        public Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node Instance
+        public static Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node Instance
         {
             get { return instance; }
         }

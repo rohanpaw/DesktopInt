@@ -91,9 +91,6 @@ namespace TestProject.PolandRecordingModule
             Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("FIM800");
             Delay.Milliseconds(0);
             
-            Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("FIM800");
-            Delay.Milliseconds(0);
-            
             Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_AttachedFunctionality_FIM_Node", "Poland", "IOB800(x1)");
             Delay.Milliseconds(0);
             

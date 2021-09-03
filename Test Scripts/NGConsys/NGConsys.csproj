@@ -3994,14 +3994,14 @@
       <id>bebd3345-b55b-43f9-aa07-57f8a20649ea</id>
       <BoundTo>6a9ac19b-f259-4485-bc5d-925c567e2e12</BoundTo>
     </Compile>
-    <Compile Include="PolandRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.cs">
-      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.rxrec</DependentUpon>
+    <Compile Include="PolandRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>834702e9-c8ba-4ab7-8f8f-d22978ec50d8</id>
       <BoundTo>fadad0d9-4104-4f4c-b82d-5e8addf8cf71</BoundTo>
     </Compile>
-    <Compile Include="PolandRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.UserCode.cs">
-      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.rxrec</DependentUpon>
+    <Compile Include="PolandRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>4d07df91-e8f4-41ca-8389-69358d5a0ef9</id>
       <BoundTo>fadad0d9-4104-4f4c-b82d-5e8addf8cf71</BoundTo>
@@ -11798,7 +11798,7 @@
       <recordtableid>d86e28d0-2450-447a-b90b-7db8fd4be6ef</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>
     </None>
-    <None Include="PolandRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.rxrec">
+    <None Include="PolandRecordingModule\Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.rxrec">
       <id>fadad0d9-4104-4f4c-b82d-5e8addf8cf71</id>
       <recordtableid>9c209290-321f-4fcd-ba86-4bb4c78e3b8f</recordtableid>
       <BoundTo>20dc62bd-a92f-468f-b9dd-e54d2e20813f</BoundTo>

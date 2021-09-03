@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node"
+	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node"
 	namespace="TestProject.PolandRecordingModule">
 	</codegen>
 	<variables>
@@ -780,7 +780,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.UserCode.cs
+		Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

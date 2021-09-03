@@ -96,9 +96,9 @@
 			</testmodule>
 			<testcase
 			id="17d1e3d9-13d8-43a1-a626-456a2566073f"
-			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-2920/T3103&nbsp; SKU and Connection text are not verified as they are not visible</p>]]>
+					<![CDATA[<p>NGC-2920/T3103&nbsp;/T3107 SKU and Connection text are not verified as they are not visible</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -338,7 +338,7 @@
 			id="32802343-942f-4591-adb5-b5ea403c5ece"
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
 				<description>
-					<![CDATA[<p>NGC-2920/T3121</p>]]>
+					<![CDATA[<p>NGC-2920/T3121</p>/T3120]]>
 				</description>
 			</testcase>
 			<testcase
@@ -627,7 +627,7 @@
 			id="6d2122b2-81a5-4480-84b5-ddbac14f23af"
 			name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-2920/T3036 SKU and Connection text are not verified as they are not visible</p>]]>
+					<![CDATA[<p>NGC-2920/T3036/T3039 SKU and Connection text are not verified as they are not visible</p>]]>
 				</description>
 			</testcase>
 			<testcase
@@ -890,7 +890,7 @@
 			</testmodule>
 			<testmodule
 			id="a99747b4-44e8-4373-8ba3-150abb0d8181"
-			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node"
+			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node"
 			ref="9c209290-321f-4fcd-ba86-4bb4c78e3b8f"
 			type="Recording">
 			</testmodule>
@@ -1016,7 +1016,7 @@
 			id="b7d2ce80-6f23-4578-9ce0-34978a017c55"
 			name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
 				<description>
-					<![CDATA[<p>NGC-2920/T3128</p>]]>
+					<![CDATA[<p>NGC-2920/T3128/T3128</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1108,7 +1108,7 @@
 			id="c8b9cc07-ce10-4037-b499-e836af67b256"
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-2920/T3119 SKU and Connection text are not verified as they are not visible</p>]]>
+					<![CDATA[<p>NGC-2920/T3119/T3122 SKU and Connection text are not verified as they are not visible</p>]]>
 				</description>
 			</testcase>
 			<testcase
@@ -1204,7 +1204,7 @@
 			id="dc58c1bd-716e-477b-b82a-a5a76d2241c5"
 			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
 				<description>
-					<![CDATA[<p>NGC-2920/T3125</p>]]>
+					<![CDATA[<p>NGC-2920/T3125/T3126</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1430,7 +1430,7 @@
 					</testcase>
 					<testcase
 					id="17d1e3d9-13d8-43a1-a626-456a2566073f"
-					name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+					name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 						<testmodule
 						id="2374d4e9-d6d3-4866-a54f-7d7fd6db3d58"
 						name="Application_Open">
@@ -1441,7 +1441,7 @@
 						</testmodule>
 						<testmodule
 						id="a99747b4-44e8-4373-8ba3-150abb0d8181"
-						name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+						name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 						</testmodule>
 						<testmodule
 						id="48ebdc88-ed19-4620-8051-4ea19b868764"
