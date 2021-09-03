@@ -771,7 +771,7 @@
 			id="93e9d3e3-b312-4b11-be5a-3ce2a318f84e"
 			name="Verify_Pro_Series_Panel_gallery_items_for_Serial_Port_node_with_adding_devices">
 				<description>
-					<![CDATA[<p>NGC-3104/T2995&nbsp; SKU and Connection text are not verified as they are not visible</p><br>]]>
+					<![CDATA[<p>NGC-3104/T2991/T2995&nbsp; SKU and Connection text are not verified as they are not visible</p><br>]]>
 				</description>
 			</testcase>
 			<testmodule

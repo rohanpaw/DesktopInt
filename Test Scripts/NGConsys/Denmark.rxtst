@@ -252,7 +252,7 @@
 			id="28c4bd22-863a-4cd8-a3f9-de5a96c06af3"
 			name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
 				<description>
-					<![CDATA[<p>NGC-2930/T3240</p>]]>
+					<![CDATA[<p>NGC-2913/T2805</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -303,7 +303,7 @@
 			id="36a4e6d1-cc41-4cf8-941b-ff4c0d8b5993"
 			name="Verify_Pro_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
 				<description>
-					<![CDATA[<p>NGC-2930/T3224 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+					<![CDATA[<p>NGC-2930/T2754 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -417,7 +417,7 @@
 			</testmodule>
 			<testcase
 			id="48e3147a-8ce6-405f-932a-848da19b7d7c"
-			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node">
 				<description>
 					<![CDATA[<p>NGC-2913/T2751/T2752 &nbsp;SKU and Connection text are not verified as they are not visible</p><br>]]>
 				</description>
@@ -1077,7 +1077,7 @@
 			</testmodule>
 			<testmodule
 			id="bbd6820d-1ec9-48b0-83b4-686f36db9875"
-			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node"
+			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node__SerialPort_Node"
 			ref="faab2165-caec-4e13-a8d7-ffd107ab71be"
 			type="Recording">
 			</testmodule>
@@ -1430,7 +1430,7 @@
 					</testcase>
 					<testcase
 					id="48e3147a-8ce6-405f-932a-848da19b7d7c"
-					name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+					name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node">
 						<testmodule
 						id="3d3c5972-b6d9-4e8b-b7fd-c1c82041be95"
 						name="Application_Open">
@@ -1441,7 +1441,7 @@
 						</testmodule>
 						<testmodule
 						id="bbd6820d-1ec9-48b0-83b4-686f36db9875"
-						name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+						name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node__SerialPort_Node">
 						</testmodule>
 						<testmodule
 						id="aedbcbbe-e34e-428b-bbdd-6c9cd4a885ac"

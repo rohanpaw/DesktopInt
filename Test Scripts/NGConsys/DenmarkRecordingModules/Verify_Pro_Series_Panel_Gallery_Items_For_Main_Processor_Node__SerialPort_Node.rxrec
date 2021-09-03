@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="20b97627-5a16-472c-9a1c-41314260f40d"
+id="faab2165-caec-4e13-a8d7-ffd107ab71be"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node"
-	namespace="TestProject.ItalyRecordingModules">
+	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node__SerialPort_Node"
+	namespace="TestProject.DenmarkRecordingModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -149,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Italy
+						Denmark
 					</argvalue>
 				</argument>
 				<argument
@@ -194,7 +194,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Italy
+						Denmark
 					</argvalue>
 				</argument>
 				<argument
@@ -239,7 +239,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Italy
+						Denmark
 					</argvalue>
 				</argument>
 				<argument
@@ -414,7 +414,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Italy
+						Denmark
 					</argvalue>
 				</argument>
 				<argument
@@ -735,7 +735,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.UserCode.cs
+		Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node__SerialPort_Node.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

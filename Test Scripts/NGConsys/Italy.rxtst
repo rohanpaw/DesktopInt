@@ -727,7 +727,7 @@
 			</testmodule>
 			<testcase
 			id="79fdf0e4-1a81-4a6f-9d4c-d08e7a19e615"
-			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node">
 				<description>
 					<![CDATA[<p>NGC-3135/T2136/T2138 SKU and Connection text are not verified as they are not visible</p><br>]]>
 				</description>
@@ -1562,7 +1562,7 @@
 			</testmodule>
 			<testmodule
 			id="f49b161a-d739-4554-8d02-db4d7c1bef34"
-			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node"
+			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node"
 			ref="20b97627-5a16-472c-9a1c-41314260f40d"
 			type="Recording">
 			</testmodule>
@@ -1642,7 +1642,7 @@
 					</testcase>
 					<testcase
 					id="79fdf0e4-1a81-4a6f-9d4c-d08e7a19e615"
-					name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+					name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node">
 						<testmodule
 						id="c8fd4ead-374d-41ff-86eb-b29c9364c9f2"
 						name="Application_Open">
@@ -1653,7 +1653,7 @@
 						</testmodule>
 						<testmodule
 						id="f49b161a-d739-4554-8d02-db4d7c1bef34"
-						name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+						name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node">
 						</testmodule>
 						<testmodule
 						id="3d9c6f7a-dc78-437c-8c65-990bc881b632"

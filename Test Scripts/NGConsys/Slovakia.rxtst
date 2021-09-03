@@ -427,7 +427,7 @@
 			</testcase>
 			<testmodule
 			id="558a50a2-3701-40ac-9b99-0a15d33dda29"
-			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node"
+			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node"
 			ref="171beb88-ba35-4be8-84a3-773947d6cb49"
 			type="Recording">
 			</testmodule>
@@ -535,6 +535,14 @@
 			name="CreateProject_Slovakia"
 			ref="60821eec-cc8a-4573-b926-e86f90dce69b"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="857bb2f4-2ada-428d-8f78-a93f8607e625"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="62e34e5f-5661-4481-993e-01b84b968f4c"
@@ -1042,7 +1050,7 @@
 			</testmodule>
 			<testcase
 			id="bceb8baa-f6b2-4138-a910-c0255d9a3f11"
-			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node">
 				<description>
 					<![CDATA[<p>NGC-2930/T3221/T3225&nbsp; SKU and Connection text are not verified as they are not visible</p><br>]]>
 				</description>
@@ -1475,7 +1483,7 @@
 					</testcase>
 					<testcase
 					id="bceb8baa-f6b2-4138-a910-c0255d9a3f11"
-					name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+					name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node">
 						<testmodule
 						id="bafa7a02-87ad-454a-8799-46ab26877601"
 						name="Application_Open">
@@ -1486,7 +1494,7 @@
 						</testmodule>
 						<testmodule
 						id="558a50a2-3701-40ac-9b99-0a15d33dda29"
-						name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node">
+						name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node">
 						</testmodule>
 						<testmodule
 						id="0936512e-6b44-497b-8b97-e2ebeacad60b"

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="171beb88-ba35-4be8-84a3-773947d6cb49"
+id="4efe1f55-8a9a-4ac6-85cd-2bdda1aaa22f"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node"
-	namespace="TestProject.SlovakiaRecordingModules">
+	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node"
+	namespace="TestProject.AustriaRecordingModules">
 	</codegen>
 	<variables>
 	</variables>
@@ -149,7 +149,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Slovakia
+						Austria
 					</argvalue>
 				</argument>
 				<argument
@@ -194,7 +194,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Slovakia
+						Austria
 					</argvalue>
 				</argument>
 				<argument
@@ -204,7 +204,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PR1D2
+						Fire Brigade Panel
 					</argvalue>
 				</argument>
 			</arguments>
@@ -239,7 +239,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Slovakia
+						Austria
 					</argvalue>
 				</argument>
 				<argument
@@ -414,7 +414,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Slovakia
+						Austria
 					</argvalue>
 				</argument>
 				<argument
@@ -735,7 +735,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node.UserCode.cs
+		Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_Node_SerialPort_Node.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
