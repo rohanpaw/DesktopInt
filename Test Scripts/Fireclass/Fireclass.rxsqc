@@ -38,5 +38,15 @@
     "Enabled": "False",
     "TestSuite": "SpainFC",
     "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "False",
+    "TestSuite": "RomaniaFC",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "SlovakiaFC",
+    "RunConfig": "TestRun"
   }
 ]

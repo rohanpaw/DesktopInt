@@ -860,6 +860,294 @@
       <UserCode>true</UserCode>
       <id>abb2a58b-b2b1-42a3-8b3d-286a7407b8d3</id>
     </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\CreateProject_Romania_FC.cs">
+      <DependentUpon>CreateProject_Romania_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1d761bfd-a9c4-4229-aaf4-a5219d32d00d</id>
+      <BoundTo>0a931c51-ac14-4d73-a1fc-d3b0d8f4b548</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\CreateProject_Romania_FC.UserCode.cs">
+      <DependentUpon>CreateProject_Romania_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e470f9b4-b28f-4b2b-964f-369e498858bc</id>
+      <BoundTo>0a931c51-ac14-4d73-a1fc-d3b0d8f4b548</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>281af78b-be36-499c-ac69-3cad6fa0c9a2</id>
+      <BoundTo>47e5381f-b23c-456f-8a8e-7fd1b76c2869</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5eb81fc0-8d10-4e74-a429-44665c043b76</id>
+      <BoundTo>47e5381f-b23c-456f-8a8e-7fd1b76c2869</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>23254d2d-17dc-4050-a2c0-3cb6ac09afb9</id>
+      <BoundTo>0e24f286-c3f0-4c0b-a73f-937321ed3306</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6fc3289e-d2df-4c58-a83a-ff7c3bfe4005</id>
+      <BoundTo>0e24f286-c3f0-4c0b-a73f-937321ed3306</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a66f4634-dcf9-4e3f-a6c8-5910fc6044f2</id>
+      <BoundTo>e14937fe-d2f8-40a9-b370-18671ffe2661</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>be42f02e-c519-45e5-94cd-835e02ec4783</id>
+      <BoundTo>e14937fe-d2f8-40a9-b370-18671ffe2661</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aab3f4e5-3e91-485b-b95d-0becfdfc0739</id>
+      <BoundTo>8d81d2b3-85ce-4a32-a784-dbe31b34d380</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1cba1132-477d-4957-8265-c96a95001423</id>
+      <BoundTo>8d81d2b3-85ce-4a32-a784-dbe31b34d380</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4190f7b7-9a6b-40f4-9115-29e1ce4a5429</id>
+      <BoundTo>9f6c4a45-84e2-421c-b7c0-11060d535bd4</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>72305d83-46f2-4150-94bf-880c3ce91247</id>
+      <BoundTo>9f6c4a45-84e2-421c-b7c0-11060d535bd4</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>963d27b6-12b6-4df0-a00f-faa8c57ab914</id>
+      <BoundTo>994d6373-f7bc-449d-8a98-75fd2bff44fa</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d92c7dac-96fa-46c3-8176-20792211f2ec</id>
+      <BoundTo>994d6373-f7bc-449d-8a98-75fd2bff44fa</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c13a6252-3676-4518-9938-b6fb96f20492</id>
+      <BoundTo>85fcea21-e161-4f0a-8b47-957cc372d412</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>83d29080-324f-4ed5-adfd-6517882c0306</id>
+      <BoundTo>85fcea21-e161-4f0a-8b47-957cc372d412</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e78cc1c6-a159-4870-a227-040d755aed97</id>
+      <BoundTo>2111bf62-e6ea-459b-b6bc-e219684c5495</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bd616208-1e5e-42c3-86d5-fab71da50583</id>
+      <BoundTo>2111bf62-e6ea-459b-b6bc-e219684c5495</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0e0fe0e5-2ac1-4790-a435-612c3d544c17</id>
+      <BoundTo>1a2348b7-4e11-4bdd-a698-2b7c1d97fe36</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a3407f09-733b-40a2-a30c-cfeb488e7026</id>
+      <BoundTo>1a2348b7-4e11-4bdd-a698-2b7c1d97fe36</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.cs">
+      <DependentUpon>Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9bbe7629-baa1-4474-9b15-45fd1e65fa01</id>
+      <BoundTo>b9b10787-6885-4993-8879-e1d02cba3a76</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.UserCode.cs">
+      <DependentUpon>Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c9fafad7-4119-4d59-bf4e-37ddc182fe98</id>
+      <BoundTo>b9b10787-6885-4993-8879-e1d02cba3a76</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a670a8b7-f5ed-4025-a061-69afd0ffd455</id>
+      <BoundTo>2c95508a-22c8-400d-a508-5a124b414e4a</BoundTo>
+    </Compile>
+    <Compile Include="RomaniaFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76c2133a-2a80-4c94-a98e-9087aabcf5ae</id>
+      <BoundTo>2c95508a-22c8-400d-a508-5a124b414e4a</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\CreateProject_Slovakia_FC.cs">
+      <DependentUpon>CreateProject_Slovakia_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>590321c6-d4a0-42fe-abda-d93e7a71bf28</id>
+      <BoundTo>d8756f69-4060-49c8-b907-6606221dbbc6</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\CreateProject_Slovakia_FC.UserCode.cs">
+      <DependentUpon>CreateProject_Slovakia_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8e1f66ea-77a2-4681-b3d6-3d003dfbc52f</id>
+      <BoundTo>d8756f69-4060-49c8-b907-6606221dbbc6</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4879054a-f48c-4a22-a470-c7156d2fbdd8</id>
+      <BoundTo>9391a43c-81b2-4c4e-a72e-6ddb278e922c</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff5e52a5-8b85-4d96-a95a-6947a1ed7d3d</id>
+      <BoundTo>9391a43c-81b2-4c4e-a72e-6ddb278e922c</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>33d1ef47-1755-44bc-8b3d-6612d7976b9a</id>
+      <BoundTo>6d12e6f3-019b-4aeb-94d4-f8c2fab113c2</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd3b165e-c671-4c30-bdb7-88a99bfe2fdb</id>
+      <BoundTo>6d12e6f3-019b-4aeb-94d4-f8c2fab113c2</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ba167d2f-43f6-4427-8ca8-b0b740a40f66</id>
+      <BoundTo>d57d89e1-0b69-43e1-93dd-1d5b53b1553e</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>880d6868-5388-40e1-bd50-665b45df0b9f</id>
+      <BoundTo>d57d89e1-0b69-43e1-93dd-1d5b53b1553e</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9db27d87-b374-4978-a698-3417be837341</id>
+      <BoundTo>c66854b1-1a8b-4e93-aac8-6f84d5d060ea</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>58b8bfc4-e3a3-4802-8ce9-86d46d19444b</id>
+      <BoundTo>c66854b1-1a8b-4e93-aac8-6f84d5d060ea</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dd275a74-1db6-4db8-a0fa-d9a616ed6e9d</id>
+      <BoundTo>9adceb2a-78e0-461b-af61-c7bbe3518797</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7bd07dac-51f3-4503-b20d-6410472849f6</id>
+      <BoundTo>9adceb2a-78e0-461b-af61-c7bbe3518797</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e8612110-5a44-4dfd-8f28-d908e2ed0ebc</id>
+      <BoundTo>71c19485-5fbb-4f82-9e52-36278576eab1</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5a2a8b1a-354a-4863-b1e6-95d604ab2d3d</id>
+      <BoundTo>71c19485-5fbb-4f82-9e52-36278576eab1</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>09e4612c-02c6-4bc3-9bdc-efe9a25b66ea</id>
+      <BoundTo>70d29f19-fa9f-4517-af82-28381c6724e9</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3b1c83ac-2c62-448b-a176-d03148535de0</id>
+      <BoundTo>70d29f19-fa9f-4517-af82-28381c6724e9</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>03b58def-cae2-4356-9e72-7244ac3f8737</id>
+      <BoundTo>51e7f671-67c6-40bc-a61f-eb04c93a15f9</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>12973297-e5dd-46dd-b76d-74437d5122a0</id>
+      <BoundTo>51e7f671-67c6-40bc-a61f-eb04c93a15f9</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9c9aca03-a5b5-49a9-845f-d409a15a1098</id>
+      <BoundTo>3a6f1558-acde-426c-b61d-851dae847132</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9b171191-9164-4ea3-a27d-e69853698ff0</id>
+      <BoundTo>3a6f1558-acde-426c-b61d-851dae847132</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.cs">
+      <DependentUpon>Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ba2cad9a-cb67-4e2d-9983-f106001e56ef</id>
+      <BoundTo>2f22a876-6aca-4604-a6c8-43f51f7f5e86</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.UserCode.cs">
+      <DependentUpon>Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>830d946c-19ed-4a48-90c7-a5fddf47a2a1</id>
+      <BoundTo>2f22a876-6aca-4604-a6c8-43f51f7f5e86</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5018f230-4598-4e11-b293-0a0f160ac706</id>
+      <BoundTo>2e7f11cd-914c-4c3f-aee4-3f9b23a3040d</BoundTo>
+    </Compile>
+    <Compile Include="SlovakiaFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c7c64af4-03b0-4fe7-9327-6f34705251b3</id>
+      <BoundTo>2e7f11cd-914c-4c3f-aee4-3f9b23a3040d</BoundTo>
+    </Compile>
     <Compile Include="SpainFCRecordingsModule\CreateProject_Spain_FC.cs">
       <DependentUpon>CreateProject_Spain_FC.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1442,6 +1730,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>3904153e-3974-4398-a5b6-fb00a8279c13</id>
     </Content>
+    <Content Include="RomaniaFC.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>d660eb6b-116b-435d-97fb-249a6cbbae32</id>
+    </Content>
+    <Content Include="SlovakiaFC.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>483e1fd1-3556-4c39-9f6e-f5b5c6b0cb14</id>
+    </Content>
     <Content Include="SpainFC.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>b76709c5-cd58-4724-bd02-fb8ccc1d3876</id>
@@ -1492,9 +1788,9 @@
       <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
     </None>
     <None Include="BelgiumFCRecordingsModule\Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec">
-      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
       <id>ba699d86-7340-4147-9e36-dd84eb57ecc0</id>
       <recordtableid>89340380-f5ff-4550-bdbd-a6cba1585651</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
     </None>
     <None Include="BelgiumFCRecordingsModule\Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Panel_Node.rxrec">
       <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
@@ -1783,6 +2079,126 @@
       <id>75765aa2-4aa4-4bf7-9448-e02f19bbc306</id>
       <recordtableid>1aec77a4-7602-4579-97fd-d8c6825cec46</recordtableid>
     </None>
+    <None Include="RomaniaFCRecordingsModule\CreateProject_Romania_FC.rxrec">
+      <id>0a931c51-ac14-4d73-a1fc-d3b0d8f4b548</id>
+      <recordtableid>ae7a6f8e-db05-4300-8244-5967be7780e9</recordtableid>
+      <BoundTo>186a789f-b4f7-4a25-beb6-b8a04354b8db</BoundTo>
+    </None>
+    <None Include="RomaniaFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <id>47e5381f-b23c-456f-8a8e-7fd1b76c2869</id>
+      <recordtableid>54210ac5-32be-4d4d-b00e-06a1abe0caf4</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec">
+      <id>0e24f286-c3f0-4c0b-a73f-937321ed3306</id>
+      <recordtableid>3e4d78a6-88de-4558-b8f0-7c89187c6170</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <id>e14937fe-d2f8-40a9-b370-18671ffe2661</id>
+      <recordtableid>83ee3b30-f167-435b-8106-c249075a65c2</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec">
+      <id>8d81d2b3-85ce-4a32-a784-dbe31b34d380</id>
+      <recordtableid>a5bb2bdf-4930-4ae8-a5b7-ad90452c7222</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
+      <id>9f6c4a45-84e2-421c-b7c0-11060d535bd4</id>
+      <recordtableid>4718f2b2-18e4-4949-9179-39f8484ef151</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec">
+      <id>994d6373-f7bc-449d-8a98-75fd2bff44fa</id>
+      <recordtableid>01cbfabd-430f-406b-bebd-19ee6da6460e</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec">
+      <id>85fcea21-e161-4f0a-8b47-957cc372d412</id>
+      <recordtableid>9ac9112a-5737-4f2d-a894-c0bf7f21131f</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>2111bf62-e6ea-459b-b6bc-e219684c5495</id>
+      <recordtableid>72ae448a-52a2-4b87-bb83-cb8463e700d4</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="RomaniaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec">
+      <id>1a2348b7-4e11-4bdd-a698-2b7c1d97fe36</id>
+      <recordtableid>a865ce29-993d-442f-9275-4d640f63e491</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="RomaniaFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec">
+      <id>b9b10787-6885-4993-8879-e1d02cba3a76</id>
+      <recordtableid>777483be-3496-413b-89f2-fc32751b9c05</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="RomaniaFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <id>2c95508a-22c8-400d-a508-5a124b414e4a</id>
+      <recordtableid>ce0f933a-469e-4855-8575-b99a29af4af9</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\CreateProject_Slovakia_FC.rxrec">
+      <id>d8756f69-4060-49c8-b907-6606221dbbc6</id>
+      <recordtableid>5e9520aa-0e1e-4f21-aee7-c7206e082e6a</recordtableid>
+      <BoundTo>186a789f-b4f7-4a25-beb6-b8a04354b8db</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <id>9391a43c-81b2-4c4e-a72e-6ddb278e922c</id>
+      <recordtableid>f97bc3be-56d7-4529-ac64-f86d2c5f935b</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
+      <id>6d12e6f3-019b-4aeb-94d4-f8c2fab113c2</id>
+      <recordtableid>a3963f39-7771-449a-8e5c-c7b610454ab4</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec">
+      <id>d57d89e1-0b69-43e1-93dd-1d5b53b1553e</id>
+      <recordtableid>df30b3b6-53c3-4ef8-8e8a-fc8ce4a40bf2</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec">
+      <id>c66854b1-1a8b-4e93-aac8-6f84d5d060ea</id>
+      <recordtableid>ed9424b2-8ca8-40fa-9962-73ee1656d09f</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec">
+      <id>9adceb2a-78e0-461b-af61-c7bbe3518797</id>
+      <recordtableid>347b5f23-4937-4f15-8ac6-98c0f76b351b</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>71c19485-5fbb-4f82-9e52-36278576eab1</id>
+      <recordtableid>10413094-a20c-4df8-bad4-05b8c2889dbd</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec">
+      <id>70d29f19-fa9f-4517-af82-28381c6724e9</id>
+      <recordtableid>cdc02411-064a-4426-b34f-2eecff311647</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec">
+      <id>51e7f671-67c6-40bc-a61f-eb04c93a15f9</id>
+      <recordtableid>28a5b4da-5950-419f-b399-f9a1eb57b51a</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <id>3a6f1558-acde-426c-b61d-851dae847132</id>
+      <recordtableid>8d2ed1ee-ad4d-48d9-9610-20cc067335a6</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec">
+      <id>2f22a876-6aca-4604-a6c8-43f51f7f5e86</id>
+      <recordtableid>fcd4afef-e76b-404f-b2b4-0c3edefda4ad</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SlovakiaFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <id>2e7f11cd-914c-4c3f-aee4-3f9b23a3040d</id>
+      <recordtableid>8cb069a7-5bdf-41d5-bb5e-246f9f36bfab</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
     <None Include="SpainFCRecordingsModule\CreateProject_Spain_FC.rxrec">
       <id>909c7d65-d708-42cc-b315-8b27ca70153a</id>
       <recordtableid>e484ed7e-9414-463c-8bb8-c014b92b87ce</recordtableid>
@@ -2048,6 +2464,12 @@
     </Folder>
     <Folder Include="ItalyFCRecordingsModule">
       <id>4238c453-afd2-4e8c-841e-e9ea363959db</id>
+    </Folder>
+    <Folder Include="SlovakiaFCRecordingsModule">
+      <id>735c64e5-5e59-4db8-a332-0f38b1b95e29</id>
+    </Folder>
+    <Folder Include="RomaniaFCRecordingsModule">
+      <id>bfcb8194-ec88-49b6-8e3a-6d57ef10886c</id>
     </Folder>
     <Folder Include="SpainFCRecordingsModule">
       <id>1908f3fd-fd8d-48e3-b0a1-e99925327b21</id>
