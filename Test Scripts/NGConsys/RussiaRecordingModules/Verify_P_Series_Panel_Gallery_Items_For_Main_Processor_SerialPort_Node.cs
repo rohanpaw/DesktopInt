@@ -88,13 +88,13 @@ namespace TestProject.RussiaRecordingModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Main");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MainProcessor_Repeaters_P_Panels", "Hungary", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MainProcessor_Repeaters_P_Panels", "Russia", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Hungary", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Russia", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Hungary", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Russia", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
@@ -109,7 +109,7 @@ namespace TestProject.RussiaRecordingModules
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Serial");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Hungary", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_P_Panels", "Russia", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "FBI800");

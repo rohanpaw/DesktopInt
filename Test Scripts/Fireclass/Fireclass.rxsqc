@@ -45,7 +45,7 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "SlovakiaFC",
     "RunConfig": "TestRun"
   }

@@ -241,7 +241,7 @@
 			id="317d8d32-e8fa-44a9-b2d0-3710cf839a6c"
 			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
 				<description>
-					<![CDATA[<p>NGC-2929/T2925</p><br>]]>
+					<![CDATA[<p>NGC-2929/T2925/T2924</p><br>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -298,7 +298,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.23">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.24">
 					</param>
 					<param
 					name="Mode"
@@ -1254,7 +1254,7 @@
 			id="ec8b978c-96b1-47ae-8d8d-f67a116b53d6"
 			name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
 				<description>
-					<![CDATA[<p>NGC-2929/T2933/T2932</p>]]>
+					<![CDATA[<p>NGC-2929/T2933</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -1887,28 +1887,10 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="23e9b17a-cdfb-44a5-b25c-813d5d832672">
-			</testcontainer>
-			<testcontainer
-			id="282b717d-c5d0-44c0-9aa3-3acb42ee054e">
-			</testcontainer>
-			<testcontainer
-			id="2cc0a1cb-645c-4c69-8f33-09590cdb81df">
-			</testcontainer>
-			<testcontainer
 			id="317d8d32-e8fa-44a9-b2d0-3710cf839a6c">
 			</testcontainer>
 			<testcontainer
 			id="351aa3e1-0588-44d6-88a6-ec41cf297210">
-			</testcontainer>
-			<testcontainer
-			id="8e0b99ee-e843-44ed-a70d-18d4f90b19c1">
-			</testcontainer>
-			<testcontainer
-			id="b1077349-ce5f-435b-b4f9-62e60d2f05a3">
-			</testcontainer>
-			<testcontainer
-			id="d88abfc2-0c7d-4501-acee-a350f693d4dc">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
