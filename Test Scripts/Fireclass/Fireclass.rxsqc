@@ -48,5 +48,10 @@
     "Enabled": "False",
     "TestSuite": "SlovakiaFC",
     "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "HungaryFC",
+    "RunConfig": "TestRun"
   }
 ]

@@ -491,6 +491,222 @@
       <RepositoryCode>true</RepositoryCode>
       <id>fe774f26-7873-4f17-af11-40090ac9b17e</id>
     </Compile>
+    <Compile Include="HungaryFCRecordingsModule\CreateProject_Hungary_FC.cs">
+      <DependentUpon>CreateProject_Hungary_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e24af49b-4838-42e0-8c29-e0d06a412d4f</id>
+      <BoundTo>0e5a71c3-f742-4829-ad0a-dc4b04dc7fa5</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\CreateProject_Hungary_FC.UserCode.cs">
+      <DependentUpon>CreateProject_Hungary_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c1ceeee9-7e08-41c5-bacb-7dc0df2229f4</id>
+      <BoundTo>0e5a71c3-f742-4829-ad0a-dc4b04dc7fa5</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9ed1df60-eed4-485c-8aef-a9f2cce08478</id>
+      <BoundTo>e18dc578-ec30-4ccf-8a49-231170a7189a</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1b48db1c-7766-4c99-9496-8a008949dcfa</id>
+      <BoundTo>e18dc578-ec30-4ccf-8a49-231170a7189a</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5dcf8ec0-326e-40d2-8648-9dd1968eda2c</id>
+      <BoundTo>35d2f73a-7787-42ba-b8fa-ecb3da5a69d4</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3d3cdb2a-2ffd-4fae-98c8-7cb335d660be</id>
+      <BoundTo>35d2f73a-7787-42ba-b8fa-ecb3da5a69d4</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>811321f8-27c3-4162-a9ca-86c24c238b85</id>
+      <BoundTo>b46c2c44-4da5-48da-a8e3-a63fe81dd578</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0fd19d75-1244-4ca9-b8b5-ce5a7224079a</id>
+      <BoundTo>b46c2c44-4da5-48da-a8e3-a63fe81dd578</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c268229d-e880-4b43-b74e-1505b8223faa</id>
+      <BoundTo>2a56ff2c-89c6-45a6-9c45-bb2dc697238b</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>77e759cf-b3ba-4881-b5d0-820da07c6192</id>
+      <BoundTo>2a56ff2c-89c6-45a6-9c45-bb2dc697238b</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>92f9db80-d289-403b-93cf-9ef70ce1ef74</id>
+      <BoundTo>5e02e80c-5c26-48f1-928d-398e7e585dcd</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>50175ff3-7048-4ce8-b45e-b58aa62d1587</id>
+      <BoundTo>5e02e80c-5c26-48f1-928d-398e7e585dcd</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d3c46817-cc38-4009-b544-1375c6deb58b</id>
+      <BoundTo>d242e24e-0727-4cdd-beec-493313b81181</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>424fccca-9b07-4d69-8f29-64ac722c1759</id>
+      <BoundTo>d242e24e-0727-4cdd-beec-493313b81181</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f7adda66-691d-47b1-9576-5da3a516bbc1</id>
+      <BoundTo>ca71a351-7e63-493b-b13d-2613a445ff8d</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2dd5a113-c546-47a9-a1ac-d8f1df496880</id>
+      <BoundTo>ca71a351-7e63-493b-b13d-2613a445ff8d</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5b257a44-9518-460d-823a-338abba3bc7b</id>
+      <BoundTo>3e6791a2-d603-450e-98b3-9fdaa8574603</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f3eea65a-fd8e-4f87-abf5-57db27a1465b</id>
+      <BoundTo>3e6791a2-d603-450e-98b3-9fdaa8574603</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>be1d9262-b123-45f8-b709-78b87b5fd15e</id>
+      <BoundTo>a1b72144-43f0-494f-b8ca-b941bf11f064</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4a28d827-0356-4641-a262-3f7ccde1a892</id>
+      <BoundTo>a1b72144-43f0-494f-b8ca-b941bf11f064</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>93377edf-8b1d-48a9-98fb-834b88161522</id>
+      <BoundTo>0a2aee74-ab06-422a-bf58-ce08e5df7ebe</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0d6c9c76-ded4-430e-bb61-4999b674303c</id>
+      <BoundTo>0a2aee74-ab06-422a-bf58-ce08e5df7ebe</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.cs">
+      <DependentUpon>Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65ca1b19-a569-494e-a54b-6e36e547e437</id>
+      <BoundTo>c572ce95-06e0-4d1c-936d-b51513289ff6</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.UserCode.cs">
+      <DependentUpon>Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>832bcea1-4f85-4cee-ba77-ddde9227d4b9</id>
+      <BoundTo>c572ce95-06e0-4d1c-936d-b51513289ff6</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7c62b4e9-a4a2-4f66-8220-03b8b2e18c12</id>
+      <BoundTo>290067f5-106a-40ac-b322-87b42bb3a547</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f1108ab4-2d24-4e84-a454-d6121c5bbb5e</id>
+      <BoundTo>290067f5-106a-40ac-b322-87b42bb3a547</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c8750087-bc60-4f05-b8fc-961b65f99c6e</id>
+      <BoundTo>b2057aee-4e31-4a4b-9537-455a46ee974f</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>07b36bf6-d03f-4df8-9b4f-126629063521</id>
+      <BoundTo>b2057aee-4e31-4a4b-9537-455a46ee974f</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6028ecc8-407a-4426-a7d1-6a417ce0ca5e</id>
+      <BoundTo>323092a1-58b3-4b33-8bcd-1a7295df44ce</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fe7812c6-ad36-4246-bccc-6b21ea8d8aac</id>
+      <BoundTo>323092a1-58b3-4b33-8bcd-1a7295df44ce</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>76336500-182e-43ad-9dbe-bdd71576b407</id>
+      <BoundTo>4555a5bb-887c-448b-a37f-e034e7b9b7de</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>98bae8ba-1f5f-4f60-a1ca-95cb2d1c9347</id>
+      <BoundTo>4555a5bb-887c-448b-a37f-e034e7b9b7de</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ce0664f4-285e-424c-8ea3-c98c9271c349</id>
+      <BoundTo>202f6213-27c3-480d-b87a-9e1baa340a56</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5c0c3a5b-e555-4394-a7c2-c9814a6721ef</id>
+      <BoundTo>202f6213-27c3-480d-b87a-9e1baa340a56</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7b39acaa-127d-469b-8315-cedde2ebf5b1</id>
+      <BoundTo>d5696261-9209-49c5-816e-e290998b70ca</BoundTo>
+    </Compile>
+    <Compile Include="HungaryFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6182497a-7432-4214-8b44-354f24988b54</id>
+      <BoundTo>d5696261-9209-49c5-816e-e290998b70ca</BoundTo>
+    </Compile>
     <Compile Include="ItalyFCRecordingsModule\CreateProject_Italy_FC.cs">
       <DependentUpon>CreateProject_Italy_FC.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1722,6 +1938,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>282a4050-fcbe-49eb-a67e-1c1faaae0559</id>
     </Content>
+    <Content Include="HungaryFC.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>f2486d7b-0138-4400-a477-fb67da97d08a</id>
+    </Content>
     <Content Include="ItalyFC.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>5fccf1b1-d0c8-4243-8158-3057d0585bab</id>
@@ -1917,6 +2137,96 @@
       <id>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</id>
       <repoid>e626f4d5-8af8-4b61-958e-9e2b196a751e</repoid>
       <reporootid>b2bee9a8-64d7-434d-b7f3-4f56d99560ae</reporootid>
+    </None>
+    <None Include="HungaryFCRecordingsModule\CreateProject_Hungary_FC.rxrec">
+      <id>0e5a71c3-f742-4829-ad0a-dc4b04dc7fa5</id>
+      <recordtableid>9b408bab-7769-4a36-a4fe-e34b64565e27</recordtableid>
+      <BoundTo>186a789f-b4f7-4a25-beb6-b8a04354b8db</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <id>e18dc578-ec30-4ccf-8a49-231170a7189a</id>
+      <recordtableid>cded8480-5df1-4525-b90d-729cd5a0fec8</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
+      <id>35d2f73a-7787-42ba-b8fa-ecb3da5a69d4</id>
+      <recordtableid>22ce8375-09c0-4bb5-a17d-4375aa4083d6</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec">
+      <id>b46c2c44-4da5-48da-a8e3-a63fe81dd578</id>
+      <recordtableid>90ebd05d-19eb-4c99-a78f-aae8a1fd2a65</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec">
+      <id>2a56ff2c-89c6-45a6-9c45-bb2dc697238b</id>
+      <recordtableid>ccf48693-d27c-4e15-9cb5-1e7d7d745896</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec">
+      <id>5e02e80c-5c26-48f1-928d-398e7e585dcd</id>
+      <recordtableid>2846f9e3-e621-4f67-b6de-6100bdeb6900</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>d242e24e-0727-4cdd-beec-493313b81181</id>
+      <recordtableid>2116c644-b1af-4a7d-871e-bebdc0094310</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec">
+      <id>ca71a351-7e63-493b-b13d-2613a445ff8d</id>
+      <recordtableid>a7bc3847-bed6-4737-b432-5b6b6cda91b5</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec">
+      <id>3e6791a2-d603-450e-98b3-9fdaa8574603</id>
+      <recordtableid>8ae60034-ef83-4b4d-9d3d-9690c33e3300</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <id>a1b72144-43f0-494f-b8ca-b941bf11f064</id>
+      <recordtableid>84114c44-d0ca-462a-be87-09369a72a1e4</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <id>0a2aee74-ab06-422a-bf58-ce08e5df7ebe</id>
+      <recordtableid>7c35eae5-0803-4c9d-b24f-25318580e05c</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec">
+      <id>c572ce95-06e0-4d1c-936d-b51513289ff6</id>
+      <recordtableid>2b32989a-8333-4a4d-9f8b-924c8b07d8b8</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node.rxrec">
+      <id>290067f5-106a-40ac-b322-87b42bb3a547</id>
+      <recordtableid>ce379494-a261-408f-abfe-01e4c9b1b89d</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec">
+      <id>b2057aee-4e31-4a4b-9537-455a46ee974f</id>
+      <recordtableid>43a88240-ad7c-487c-a645-d4fc03375dfe</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>323092a1-58b3-4b33-8bcd-1a7295df44ce</id>
+      <recordtableid>21d1c9d4-e6c5-460f-9d25-12262102c361</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec">
+      <id>4555a5bb-887c-448b-a37f-e034e7b9b7de</id>
+      <recordtableid>91f57394-0734-49d0-9589-c4f8129e5080</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec">
+      <id>202f6213-27c3-480d-b87a-9e1baa340a56</id>
+      <recordtableid>de0d31a8-8681-4e69-8d12-b4d4260fae15</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="HungaryFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <id>d5696261-9209-49c5-816e-e290998b70ca</id>
+      <recordtableid>7bb9193c-3527-4aea-a0f8-33f14432370d</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
     </None>
     <None Include="ItalyFCRecordingsModule\CreateProject_Italy_FC.rxrec">
       <id>f909c0b4-0e32-4822-890e-e7936fb9b44b</id>
@@ -2464,6 +2774,9 @@
     </Folder>
     <Folder Include="ItalyFCRecordingsModule">
       <id>4238c453-afd2-4e8c-841e-e9ea363959db</id>
+    </Folder>
+    <Folder Include="HungaryFCRecordingsModule">
+      <id>fd2f57af-553f-40ad-8603-8e6000547a32</id>
     </Folder>
     <Folder Include="SlovakiaFCRecordingsModule">
       <id>735c64e5-5e59-4db8-a332-0f38b1b95e29</id>

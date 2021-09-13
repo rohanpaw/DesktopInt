@@ -95,7 +95,7 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "Russia",
     "RunConfig": "TestRun"
   }
