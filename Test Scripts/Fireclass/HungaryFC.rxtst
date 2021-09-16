@@ -336,7 +336,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\FIRECLASS\FC Designer Pro 31.0.24">
+					value="C:\Program Files (x86)\FIRECLASS\FC Designer Pro 30.2.2">
 					</param>
 					<param
 					name="Mode"
@@ -1373,25 +1373,10 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="157f00fb-2187-4721-b124-716ba4211c0f">
-			</testcontainer>
-			<testcontainer
 			id="5eabf73f-269f-444e-bde7-d1d61e8a77de">
 			</testcontainer>
 			<testcontainer
-			id="8c08ee3d-e603-4e54-bfee-d8c807d646be">
-			</testcontainer>
-			<testcontainer
-			id="9c9f8f87-3511-4590-8408-c2cc221a1029">
-			</testcontainer>
-			<testcontainer
-			id="a4eedc18-93b8-4e83-a854-0255a6463950">
-			</testcontainer>
-			<testcontainer
-			id="ce832888-0e90-4066-ac32-b70daf018b89">
-			</testcontainer>
-			<testcontainer
-			id="e67431a8-1f5e-4962-a18d-3c84e534a3f7">
+			id="d886831e-5893-4509-8866-9efebbc98768">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

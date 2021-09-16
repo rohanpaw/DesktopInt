@@ -2939,6 +2939,7 @@ namespace TestProject.Libraries
 		 * Output:
 		 * Function Owner: Shweta Bhosale
 		 * Last Update : 21/2/2019 Alpesh Dhakad - 31/01/2020 Added xpath and updated below script
+		 * 16/09/2021 - Added if else statement to verify Logical template label name xpath as well
 		 **************************************************************************************************/
 		[UserCodeMethod]
 		public static void SelectRowUsingLabelName(string sLabel)
@@ -2946,9 +2947,18 @@ namespace TestProject.Libraries
 			sLabelName = sLabel;
 			//repo.FormMe.LabelName_txt.Click();
 			//repo.ProfileConsys1.PanelInvetoryGrid.txt_Label1.Click();
-			repo.FormMe.txt_LabelName1.Click();
-				
+			//repo.FormMe.txt_LabelName1.Click();			
+			
+			if(repo.FormMe.txt_LabelName1Info.Exists())
+			{
+				repo.FormMe.txt_LabelName1.Click();
+			}
+			else
+			{
+				repo.FormMe.txt_LabelNameForLogicalTemplate.Click();
+			}
 			Report.Log(ReportLevel.Success, "Device with Label name " + sLabel+" selected");
+				
 		}
 		
 		

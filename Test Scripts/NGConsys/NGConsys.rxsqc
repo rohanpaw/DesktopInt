@@ -1,6 +1,6 @@
 [
   {
-    "Enabled": "False",
+    "Enabled": "True",
     "TestSuite": "NGConsys",
     "RunConfig": "TestRun"
   },

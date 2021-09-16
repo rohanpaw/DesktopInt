@@ -50,7 +50,7 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "True",
+    "Enabled": "False",
     "TestSuite": "HungaryFC",
     "RunConfig": "TestRun"
   }

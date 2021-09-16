@@ -2686,7 +2686,7 @@ rxversion="8.3">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.14">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.25">
 					</param>
 					<param
 					name="Mode"
@@ -25717,6 +25717,12 @@ persisted in panel properties&nbsp;]]>
 		</testconfiguration>
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="222bd839-2099-4f92-ab1f-04972d99f2e0">
+			</testcontainer>
+			<testcontainer
+			id="ea06a259-e3fd-4eaf-a97d-826434f8a2ec">
+			</testcontainer>
 		</testconfiguration>
 		<testconfiguration
 		name="Voltage_Calculation">
