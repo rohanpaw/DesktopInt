@@ -98,5 +98,10 @@
     "Enabled": "False",
     "TestSuite": "Russia",
     "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "Finland",
+    "RunConfig": "TestRun"
   }
 ]

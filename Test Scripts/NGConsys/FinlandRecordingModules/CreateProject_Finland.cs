@@ -20,38 +20,48 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Fireclass.HungaryFCRecordingsModule
+namespace TestProject.FinlandRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits recording.
+    ///The CreateProject_Finland recording.
     /// </summary>
-    [TestModule("7bb9193c-3527-4aea-a0f8-33f14432370d", ModuleType.Recording, 1)]
-    public partial class Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits : ITestModule
+    [TestModule("f180f8e3-84f2-41af-948b-dd80a8aed0df", ModuleType.Recording, 1)]
+    public partial class CreateProject_Finland : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::Fireclass.FireclassRepository repository.
+        /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
-        public static global::Fireclass.FireclassRepository repo = global::Fireclass.FireclassRepository.Instance;
+        public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits instance = new Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits();
+        static CreateProject_Finland instance = new CreateProject_Finland();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits()
+        public CreateProject_Finland()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits Instance
+        public static CreateProject_Finland Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable sListIndex.
+        /// </summary>
+        [TestVariable("ca40602d-7ca3-47bc-a519-7a0fe6a76634")]
+        public string sListIndex
+        {
+            get { return repo.sListIndex; }
+            set { repo.sListIndex = value; }
+        }
 
 #endregion
 
@@ -79,7 +89,10 @@ namespace Fireclass.HungaryFCRecordingsModule
 
             Init();
 
-            TestProject.Libraries.PSULoad_Functions.VerifyMaximumPanelPowerCalculation("FC_Power_Calculation_Max_Values", "Hungary");
+            Libraries.Common_Functions.maximizeApplication();
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.createNewProject("Finland", "0");
             Delay.Milliseconds(0);
             
         }

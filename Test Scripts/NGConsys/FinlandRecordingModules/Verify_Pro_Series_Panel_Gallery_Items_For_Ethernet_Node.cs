@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Fireclass.HungaryFCRecordingsModule
+namespace TestProject.FinlandRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices recording.
+    ///The Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node recording.
     /// </summary>
-    [TestModule("7c35eae5-0803-4c9d-b24f-25318580e05c", ModuleType.Recording, 1)]
-    public partial class Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices : ITestModule
+    [TestModule("15a8bef0-9993-4d2a-9112-dc1e3c701a86", ModuleType.Recording, 1)]
+    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::Fireclass.FireclassRepository repository.
+        /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
-        public static global::Fireclass.FireclassRepository repo = global::Fireclass.FireclassRepository.Instance;
+        public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices instance = new Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices();
+        static Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node instance = new Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices()
+        public Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices Instance
+        public static Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node Instance
         {
             get { return instance; }
         }
@@ -79,55 +79,64 @@ namespace Fireclass.HungaryFCRecordingsModule
 
             Init();
 
-            TestProject.Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC64-4", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro815D", "");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node1");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Common_Functions.VerifyNavigationTreeItemText("Built-in Loop-A (0 of 250)");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("Ethernet");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Common_Functions.ClickOnNavigationTreeItem("XLM800-C");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Ethernet_ProPanels", "Finland", "PR8AS");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_All_Loop_Devices", "Detectors", "460H");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_All_Loop_Devices", "CallPoints", "420CP\r\n");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Ethernet_AttachedFunctionality_ProPanels", "Finland", "PZ8DS");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_All_Loop_Devices", "SoundersBeacons", "410LPAV 65\r\n");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-102");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_All_Loop_Devices", "Ancillary", "410CIM\r\n");
+            Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("PR1DS");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_All_Loop_Devices", "Ancillary Conventional", "410DDM 4-20mA\r\n");
+            Libraries.Devices_Functions.SelectRowUsingSKUFromInventoryTab("557.200.801");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_All_Loop_Devices", "Ancillary Specific", "410TSM\r\n");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_All_Loop_Devices", "Other", "410LI\r\n");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Devices_Functions.AddDevicesfromGallery("421CP\r\n", "CallPoints");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR8AS", "Repeaters");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Devices_Functions.AddDevicesfromGallery("440SB\r\n", "SoundersBeacons");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Devices_Functions.AddDevicesfromGallery("410TSM - Interrupt\r\n", "Ancillary Specific");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Devices_Functions.AddDevicesfromGallery("410LI\r\n", "Other");
+            Libraries.Devices_Functions.AddDevicesfromGallery("PR1DS", "Repeaters");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Common_Functions.VerifyNavigationTreeItemText("Built-in Loop-B (0 of 250)");
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("Ethernet (8 of 8)");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Common_Functions.VerifyNavigationTreeItemText("XLM800-D (0 of 250)");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PR1DS-108");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("Two PZ4DS", "Attached Functionality");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PR1DS");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "Two PZ4DS");
             Delay.Milliseconds(0);
             
         }

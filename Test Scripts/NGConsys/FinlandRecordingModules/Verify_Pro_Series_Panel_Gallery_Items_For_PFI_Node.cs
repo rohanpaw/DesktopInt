@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Fireclass.HungaryFCRecordingsModule
+namespace TestProject.FinlandRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node recording.
+    ///The Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node recording.
     /// </summary>
-    [TestModule("90ebd05d-19eb-4c99-a78f-aae8a1fd2a65", ModuleType.Recording, 1)]
-    public partial class Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node : ITestModule
+    [TestModule("e2e62cf5-2ff2-4c88-9bea-96744433e00f", ModuleType.Recording, 1)]
+    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::Fireclass.FireclassRepository repository.
+        /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
-        public static global::Fireclass.FireclassRepository repo = global::Fireclass.FireclassRepository.Instance;
+        public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node instance = new Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node();
+        static Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node instance = new Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node()
+        public Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node Instance
+        public static Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node Instance
         {
             get { return instance; }
         }
@@ -79,46 +79,49 @@ namespace Fireclass.HungaryFCRecordingsModule
 
             Init();
 
-            TestProject.Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC702D", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Common_Functions.ClickOnNavigationTreeItem("FC-FI");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PFI80");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Local I/O");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Local I/O");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_AttachedFunctionality_FCFI_Node", "Hungary", "IOB800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("AttachedFunctionality_PFI_Node", "Finland", "IOB800(x2)");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Devices_Functions.AddDevicesfromGallery("IOB800", "Attached Functionality");
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            // ---NEW PANEL EXECUTION------------------------------------------
+            Report.Log(ReportLevel.Info, "Section", "---NEW PANEL EXECUTION------------------------------------------", new RecordItemIndex(6));
+            
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xBB", "");
             Delay.Milliseconds(0);
             
-            // ANOTHER PANEL TEST CASE
-            Report.Log(ReportLevel.Info, "Section", "ANOTHER PANEL TEST CASE", new RecordItemIndex(7));
-            
-            TestProject.Libraries.Panel_Functions.AddPanelsFC(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "FC708D", "");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("PFI80");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Common_Functions.ClickOnNavigationTreeItem("FC-FI");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Black Box");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Local I/O");
+            Libraries.Devices_Functions.SelectRowUsingModelNameFromInventoryTab("XIOM");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_AttachedFunctionality_FCFI_Node", "Hungary", "IOB800");
+            Libraries.Common_Functions.clickOnDeleteButton();
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Devices_Functions.AddDevicesfromGallery("IOB800", "Attached Functionality");
+            Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("PFI Local I/O");
+            Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("AttachedFunctionality_PFI_Node_XX_Panel", "Finland", "IOB800(x2)");
             Delay.Milliseconds(0);
             
         }
