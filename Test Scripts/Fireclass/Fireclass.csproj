@@ -1220,6 +1220,150 @@
       <id>76c2133a-2a80-4c94-a98e-9087aabcf5ae</id>
       <BoundTo>2c95508a-22c8-400d-a508-5a124b414e4a</BoundTo>
     </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\CreateProject_Serbia_FC.cs">
+      <DependentUpon>CreateProject_Serbia_FC.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c2ee584a-91d5-48ea-b5af-e886d1a403fb</id>
+      <BoundTo>c9ab098f-af76-4c3e-ac18-bf61207d2db8</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\CreateProject_Serbia_FC.UserCode.cs">
+      <DependentUpon>CreateProject_Serbia_FC.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5e325781-b38f-429d-a054-90a70691533d</id>
+      <BoundTo>c9ab098f-af76-4c3e-ac18-bf61207d2db8</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4e283665-b34c-4303-a624-d6cffae27aa7</id>
+      <BoundTo>385ad95f-d4c8-42d7-a75f-7c6e9c30c820</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <DependentUpon>Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9a78003e-f40f-42c5-ae16-b117f4e2c78c</id>
+      <BoundTo>385ad95f-d4c8-42d7-a75f-7c6e9c30c820</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8c9efc2d-0720-40a7-b910-8335ea1e43f0</id>
+      <BoundTo>202f68cb-125c-4642-a8a3-10eeff2992c9</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff5c8e07-f790-4c7f-bc19-b5887ca424d9</id>
+      <BoundTo>202f68cb-125c-4642-a8a3-10eeff2992c9</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>af11b9af-1216-4a06-9d0b-e81fbbea42f8</id>
+      <BoundTo>d5f86aba-dce5-4345-ae30-facf2b431a21</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c1f33d93-be6d-4713-a6f1-2e9abc94968c</id>
+      <BoundTo>d5f86aba-dce5-4345-ae30-facf2b431a21</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1f8b851c-0183-460b-9761-a7b9789eb69a</id>
+      <BoundTo>f2702a60-3e84-4f83-8f4e-8d8cecacc0ee</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e93069c6-8fba-437b-a2ab-810da0b6f8b1</id>
+      <BoundTo>f2702a60-3e84-4f83-8f4e-8d8cecacc0ee</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dc1649d2-25ad-4e07-b6eb-72508dc6aac7</id>
+      <BoundTo>5f2e46ff-8588-49c5-ac9a-c26e6f0a3e7d</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7b5ce0b3-300e-4a7c-8b2e-ae1c5f921f75</id>
+      <BoundTo>5f2e46ff-8588-49c5-ac9a-c26e6f0a3e7d</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>88890128-614e-437f-8c0a-8755a5934702</id>
+      <BoundTo>a95df546-e08e-4020-ad88-d059cd41a954</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a11d210f-5a8d-48aa-bda8-555a8913f003</id>
+      <BoundTo>a95df546-e08e-4020-ad88-d059cd41a954</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2c771d84-cf83-4632-b646-e3847dd9d878</id>
+      <BoundTo>cd80c636-cb69-47e1-ab5b-01d6d9cf1ab5</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>52d583b1-f2a3-408e-b7d8-b950b9f105c0</id>
+      <BoundTo>cd80c636-cb69-47e1-ab5b-01d6d9cf1ab5</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>530ce4b3-177a-440d-a922-81f8a5fb3912</id>
+      <BoundTo>64e799a7-9ac6-4c7d-aac0-406ec0d637d0</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>20884ac2-7320-41b1-89fc-9e45d53b545d</id>
+      <BoundTo>64e799a7-9ac6-4c7d-aac0-406ec0d637d0</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d017fa65-1f0b-42c4-bace-914865a7f5b0</id>
+      <BoundTo>af3a09a5-07a5-4378-982b-cb3a666f5b63</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.UserCode.cs">
+      <DependentUpon>Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>066212b3-7ae0-4552-9ae8-e92f63c3a807</id>
+      <BoundTo>af3a09a5-07a5-4378-982b-cb3a666f5b63</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.cs">
+      <DependentUpon>Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8cf4e608-3325-4b3e-b114-9a466b7cc6ce</id>
+      <BoundTo>fd2fc68a-060f-4032-9fed-58326571df3e</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.UserCode.cs">
+      <DependentUpon>Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d0c836ae-9c55-45af-9364-d720b6a4ef4b</id>
+      <BoundTo>fd2fc68a-060f-4032-9fed-58326571df3e</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>50bf2fbd-f972-4801-88df-a1d3cc988bb1</id>
+      <BoundTo>14ac1c68-7437-4f37-b303-e48a69b99c30</BoundTo>
+    </Compile>
+    <Compile Include="SerbiaFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.UserCode.cs">
+      <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>63b249b7-78fc-4afb-bdb0-97c3a2908a4c</id>
+      <BoundTo>14ac1c68-7437-4f37-b303-e48a69b99c30</BoundTo>
+    </Compile>
     <Compile Include="SlovakiaFCRecordingsModule\CreateProject_Slovakia_FC.cs">
       <DependentUpon>CreateProject_Slovakia_FC.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1916,6 +2060,78 @@
       <id>109e7e27-5491-4240-a41d-a4388fea684f</id>
       <BoundTo>13e0658a-c7cc-41c0-a9ba-5e13b919ed7e</BoundTo>
     </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>17dd9b7c-85bf-4f0b-9048-9adbde022a80</id>
+      <BoundTo>010ec3d6-a65e-471c-9573-1e973552d158</BoundTo>
+    </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f77e8eda-867a-45b2-89f9-f41f8f62243a</id>
+      <BoundTo>010ec3d6-a65e-471c-9573-1e973552d158</BoundTo>
+    </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>982f0fee-f852-4a9f-b672-4249524fa982</id>
+      <BoundTo>636716f4-ef80-469d-adde-807866d61f47</BoundTo>
+    </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a7643346-58f3-4337-a669-a05d96fa31d6</id>
+      <BoundTo>636716f4-ef80-469d-adde-807866d61f47</BoundTo>
+    </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f71ac947-038c-4a05-9805-2c3a8315a607</id>
+      <BoundTo>0afd7ab8-d879-4050-bd71-ebb6855aa2e6</BoundTo>
+    </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d3a4c107-d3f7-4996-954b-8379d076af72</id>
+      <BoundTo>0afd7ab8-d879-4050-bd71-ebb6855aa2e6</BoundTo>
+    </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2171826-21e7-4958-8b36-8e3b0d4b182d</id>
+      <BoundTo>b8d0727e-1872-431f-9c9f-028375ca9088</BoundTo>
+    </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>53b141ca-8608-404b-8fe8-6ecfe7030c14</id>
+      <BoundTo>b8d0727e-1872-431f-9c9f-028375ca9088</BoundTo>
+    </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fe452f16-86bc-4498-a427-f1ad31bd6d84</id>
+      <BoundTo>0373a43d-58fb-46e0-9732-be3e91450c04</BoundTo>
+    </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e18e1be1-7349-4696-be90-682c9f41aa5a</id>
+      <BoundTo>0373a43d-58fb-46e0-9732-be3e91450c04</BoundTo>
+    </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>df55c43d-7e1c-4b2b-b2d6-b563f6f743f0</id>
+      <BoundTo>76a55d87-c715-4eae-90d4-942762c51fdd</BoundTo>
+    </Compile>
+    <Compile Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs">
+      <DependentUpon>Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0e5709ae-d2c0-48a2-8004-fabb52eea9bc</id>
+      <BoundTo>76a55d87-c715-4eae-90d4-942762c51fdd</BoundTo>
+    </Compile>
     <Compile Include="UKFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.cs">
       <DependentUpon>Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -1954,6 +2170,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>d660eb6b-116b-435d-97fb-249a6cbbae32</id>
     </Content>
+    <Content Include="SerbiaFC.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>8ec7ea56-121d-4a55-9f37-41e3f509b894</id>
+    </Content>
     <Content Include="SlovakiaFC.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>483e1fd1-3556-4c39-9f6e-f5b5c6b0cb14</id>
@@ -1966,7 +2186,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>446b713a-6264-4739-971d-e450a12e5745</id>
     </Content>
-    <Content Include="UK.rxtst">
+    <Content Include="UK_FC.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>095b5aa8-decb-4361-a3fb-490fc2c0355e</id>
     </Content>
@@ -2449,6 +2669,66 @@
       <recordtableid>ce0f933a-469e-4855-8575-b99a29af4af9</recordtableid>
       <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
     </None>
+    <None Include="SerbiaFCRecordingsModule\CreateProject_Serbia_FC.rxrec">
+      <id>c9ab098f-af76-4c3e-ac18-bf61207d2db8</id>
+      <recordtableid>116fdf13-2783-4d7d-8084-bf20ffbbaa2b</recordtableid>
+      <BoundTo>186a789f-b4f7-4a25-beb6-b8a04354b8db</BoundTo>
+    </None>
+    <None Include="SerbiaFCRecordingsModule\Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <id>385ad95f-d4c8-42d7-a75f-7c6e9c30c820</id>
+      <recordtableid>264b349e-292b-4b5e-b18c-538004a3cfa3</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <id>202f68cb-125c-4642-a8a3-10eeff2992c9</id>
+      <recordtableid>8de45382-c6e7-4b78-97d8-6d883f1c9dd6</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec">
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+      <id>d5f86aba-dce5-4345-ae30-facf2b431a21</id>
+      <recordtableid>3176112a-bbb1-4e70-8019-fb70d6c6f6f7</recordtableid>
+    </None>
+    <None Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node.rxrec">
+      <id>f2702a60-3e84-4f83-8f4e-8d8cecacc0ee</id>
+      <recordtableid>403effcc-fc51-4b03-a960-dcce818abc80</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_FCFI_Node.rxrec">
+      <id>5f2e46ff-8588-49c5-ac9a-c26e6f0a3e7d</id>
+      <recordtableid>5ead4d85-c5e6-4118-a1b3-0dbe20cd6f3b</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec">
+      <id>a95df546-e08e-4020-ad88-d059cd41a954</id>
+      <recordtableid>b4b66d28-7050-4381-9d47-a284e8548801</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node.rxrec">
+      <id>cd80c636-cb69-47e1-ab5b-01d6d9cf1ab5</id>
+      <recordtableid>42e07034-1e89-41aa-acf7-a699c1fdc8b2</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>64e799a7-9ac6-4c7d-aac0-406ec0d637d0</id>
+      <recordtableid>fe9fbf5b-7a7d-4703-ab74-eaccf05a7ac3</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SerbiaFCRecordingsModule\Verify_FC700_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec">
+      <id>af3a09a5-07a5-4378-982b-cb3a666f5b63</id>
+      <recordtableid>2e94e9ba-8c9c-4798-a381-8986471ad84c</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SerbiaFCRecordingsModule\Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices.rxrec">
+      <id>fd2fc68a-060f-4032-9fed-58326571df3e</id>
+      <recordtableid>841ba375-a6c1-4616-aa30-46ffd51585f1</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="SerbiaFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+      <id>14ac1c68-7437-4f37-b303-e48a69b99c30</id>
+      <recordtableid>a3f20c2f-5a71-4a87-bafb-96f541e40750</recordtableid>
+    </None>
     <None Include="SlovakiaFCRecordingsModule\CreateProject_Slovakia_FC.rxrec">
       <id>d8756f69-4060-49c8-b907-6606221dbbc6</id>
       <recordtableid>5e9520aa-0e1e-4f21-aee7-c7206e082e6a</recordtableid>
@@ -2739,6 +3019,36 @@
       <recordtableid>b21510f6-704f-44ec-b1e4-e8e9c74d6fa1</recordtableid>
       <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
     </None>
+    <None Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node.rxrec">
+      <id>010ec3d6-a65e-471c-9573-1e973552d158</id>
+      <recordtableid>1ba4d963-da33-42d2-b181-fe52a8ed25c3</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node.rxrec">
+      <id>636716f4-ef80-469d-adde-807866d61f47</id>
+      <recordtableid>e8e78b52-37f2-4074-aa96-b9f477528f5a</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node.rxrec">
+      <id>0afd7ab8-d879-4050-bd71-ebb6855aa2e6</id>
+      <recordtableid>a81e8962-e4fb-4b8a-a8ac-8f6ad5f0ae01</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added.rxrec">
+      <id>b8d0727e-1872-431f-9c9f-028375ca9088</id>
+      <recordtableid>d37d6761-e8ed-4782-afe9-e0ed34968ef5</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.rxrec">
+      <id>0373a43d-58fb-46e0-9732-be3e91450c04</id>
+      <recordtableid>4fb6e7f8-30fc-454b-aa0f-84ed1950231c</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
+    <None Include="UKFCRecordingsModule\Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.rxrec">
+      <id>76a55d87-c715-4eae-90d4-942762c51fdd</id>
+      <recordtableid>96822174-f244-4585-8940-7e521ebaaf82</recordtableid>
+      <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
+    </None>
     <None Include="UKFCRecordingsModule\Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits.rxrec">
       <BoundTo>88b0df8a-7f2d-4463-bb8c-5d1920336f2d</BoundTo>
       <id>1f27ad66-c6d4-4a4f-8df2-330e68d0fda2</id>
@@ -2777,6 +3087,9 @@
     </Folder>
     <Folder Include="HungaryFCRecordingsModule">
       <id>fd2f57af-553f-40ad-8603-8e6000547a32</id>
+    </Folder>
+    <Folder Include="SerbiaFCRecordingsModule">
+      <id>a87414bf-8194-4cc7-88ac-dd1044bfa30d</id>
     </Folder>
     <Folder Include="SlovakiaFCRecordingsModule">
       <id>735c64e5-5e59-4db8-a332-0f38b1b95e29</id>

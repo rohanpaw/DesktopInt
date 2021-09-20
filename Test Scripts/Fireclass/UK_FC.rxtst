@@ -26,6 +26,13 @@
 			id="0157fc55-c696-4038-8be8-ce38a2bb837f"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="02cfff56-4fc1-47a5-959e-74e099c8252e"
+			name="Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node">
+				<description>
+					<![CDATA[<p>NGC-3003/T1251/T1260</p>]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="037be429-0a1e-4194-bc09-84a977c60ec8"
 			name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_FCFI_Node"
@@ -58,11 +65,65 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="0483c093-82ae-40e4-986c-09eb2ccc2575"
+			name="Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node">
+				<description>
+					<![CDATA[<p>NGC-3003/T1235/T1239/T1245</p>]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="0891e7f7-3f75-4bce-a5cc-a9655a0b27f2"
 			name="Verify_FC602S_And_FC604S_Series_Panel_Gallery_Items_For_Ethernet_Node"
 			ref="466d0444-56c2-4827-834a-c640605755f3"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="0adaa862-a37c-47d8-be52-f0872b9c3c9c"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="0b3ff2ad-39b9-430d-ba87-d8b0c4f36900"
+			name="Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
+				<description>
+					<![CDATA[<p>NGC-3003/T1241/1248/T1257</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="0cbb4973-ee2e-48d5-b66e-90468cf9a4de"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="0dfb1109-82c4-4a45-90bf-572f097eafad"
+			name="CreateProject_UK_FC"
+			ref="c656785f-17f8-4770-a9fd-02b77fd63f3b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="a91ee1e0-033a-42b0-846f-eab0504bc091"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="0fccef91-21cf-4525-a979-0ac41f6ac1a6"
@@ -80,13 +141,47 @@
 			</testmodule>
 			<testcase
 			id="10b0d82c-e1db-4c8e-9c24-ffa795ac60c6"
-			name="Verify_FC600_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
+			name="Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
 				<description>
-					<![CDATA[NGC-3463/T1198/T1216]]>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T1198/T1216</p>]]>
 				</description>
 			</testcase>
 			<testmodule
+			id="121c8ed3-b31b-4b18-99f3-dd32e3054b85"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="14415fea-f1da-4da1-81ef-6f608dc8e2bc"
+			name="CreateProject_UK_FC"
+			ref="c656785f-17f8-4770-a9fd-02b77fd63f3b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="a91ee1e0-033a-42b0-846f-eab0504bc091"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1ab5b313-50d3-4f87-8108-3d0d605a66d4"
 			name="CreateProject_UK_FC"
 			ref="c656785f-17f8-4770-a9fd-02b77fd63f3b"
 			type="Recording">
@@ -132,7 +227,34 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="1e6766ac-21bc-4d57-96d6-ffb5e3add2b1"
+			name="Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node"
+			ref="e8e78b52-37f2-4074-aa96-b9f477528f5a"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="1f40a87d-58e1-489a-b30d-90ac5d38cd3c"
+			name="CreateProject_UK_FC"
+			ref="c656785f-17f8-4770-a9fd-02b77fd63f3b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="a91ee1e0-033a-42b0-846f-eab0504bc091"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="1fd7e604-8ef6-4708-bc97-cae362999e1d"
+			name="Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+				<description>
+					<![CDATA[NGC-3003/T1254]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="200ea993-052c-49bc-a2b4-3d2f982ca0a4"
 			name="CreateProject_UK_FC"
 			ref="c656785f-17f8-4770-a9fd-02b77fd63f3b"
 			type="Recording">
@@ -152,6 +274,26 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="23f7ad7c-1b30-4f5c-8efc-b09203e1f06e"
+			name="CreateProject_UK_FC"
+			ref="c656785f-17f8-4770-a9fd-02b77fd63f3b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="a91ee1e0-033a-42b0-846f-eab0504bc091"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="268d24f5-08d6-49c1-9895-8075c97652f3"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="2c0ff7d0-2990-4c7f-a534-75a10d05ed35"
 			name="Close_ApplicationFC"
 			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
@@ -159,12 +301,12 @@
 			</testmodule>
 			<testcase
 			id="318db1de-3bd9-4149-8f4c-9178f72b682f"
-			name="UK"
+			name="UK_FC"
 			reportlevel="Info;20">
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\FIRECLASS\FC Designer Pro 31.0.16">
+					value="C:\Program Files (x86)\FIRECLASS\FC Designer Pro 31.0.26">
 					</param>
 					<param
 					name="Mode"
@@ -273,7 +415,7 @@
 			enabletracingscreenshots="True"
 			id="3b896a6e-9060-44d2-b45f-c146b73df0dd"
 			junitreport="False"
-			name="UK"
+			name="UK_FC"
 			reportcompress="False"
 			reportdirectoryname="Reports"
 			reportenabled="True"
@@ -285,6 +427,12 @@
 			id="3c5611b6-8343-49f5-9d0b-db52719b28cc"
 			name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Other_Slot_Cards_Node"
 			ref="f9d7b6e0-f7bd-4acc-8ab0-7307cdb7ed4b"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3da78a49-5269-49e6-b21e-59830c165ccb"
+			name="Verify_FC600_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes"
+			ref="e3f3c479-8e3a-478b-bd54-9f8342656ac7"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -318,6 +466,9 @@
 			<testcase
 			id="3e7486df-4e07-48e2-b34b-673b3ad6ef57"
 			name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Panel_Node">
+				<description>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T3834</p>]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="405cb57c-951f-446b-871c-0d7fa29d037e"
@@ -330,6 +481,26 @@
 					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
 					variableid="a91ee1e0-033a-42b0-846f-eab0504bc091"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="41ad2577-9b3b-4413-be58-50c28ede6d68"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -348,6 +519,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="489c8670-32e1-4284-9ff9-19aeb9665fd1"
+			name="Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node"
+			ref="a81e8962-e4fb-4b8a-a8ac-8f6ad5f0ae01"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="4b796ddd-946c-432a-a31b-1059a8db4ca9"
 			name="Close_ApplicationFC"
 			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
@@ -356,20 +533,48 @@
 			<testcase
 			id="5145e500-4f6b-48cb-a916-ad6ee768cf41"
 			name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_FC-FI_Node">
+				<description>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T3831</p>]]>
+				</description>
 			</testcase>
 			<testcase
 			id="52bde68f-fb8a-40a6-a520-69e20b2e30a7"
 			name="Verify_FC602S_And_FC604S_Series_Panel_Gallery_Items_For_Ethernet_Node">
+				<description>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T3830</p>]]>
+				</description>
 			</testcase>
+			<testmodule
+			id="572282bf-811d-442a-a7ec-ba7f17e177d3"
+			name="Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node"
+			ref="1ba4d963-da33-42d2-b181-fe52a8ed25c3"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="58001c9f-a1c2-4f2f-ac0c-8f0f02149fa8"
 			name="Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node"
 			ref="e6326087-95ab-48bf-b56d-97d607a47f03"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="58804a55-dd42-438c-a379-d2208aee9c5d"
+			name="Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices"
+			ref="96822174-f244-4585-8940-7e521ebaaf82"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="5d6029cf-fa12-4aa2-8a58-c0b79f06b67f"
 			name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node">
+				<description>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T3832/T3836/T3835</p>]]>
+				</description>
+			</testcase>
+			<testcase
+			id="6211ffd7-ba8e-4946-a93a-49f4c17ef467"
+			name="Verify_FIM_Series_Panel_Gallery_Items_For_R-BUS_Node_And_Maximum_Number_Of_Devices_Added">
+				<description>
+					<![CDATA[<p>NGC-3003/T1240/T1246/T1255</p>]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="625d4171-89ce-4646-8821-09655b1d5ca9"
@@ -377,6 +582,13 @@
 			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="625f4d66-878f-4a72-b5cf-b22aae07f9fb"
+			name="Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node">
+				<description>
+					<![CDATA[<p>NGC-3003/T1237/T1244/T1252/T1238/T1247/T1253/T1240/T1246/T1255</p>]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="628da43a-9d52-4213-9a88-e1e85721f163"
 			name="Close_ApplicationFC"
@@ -387,7 +599,7 @@
 			id="62b0d6af-d937-4c29-b036-4f2121e06fc7"
 			name="Verify_FC700_Series_Panel_Gallery_Items_For_Other_Slot_Cards_Node">
 				<description>
-					<![CDATA[<p>NGC-3463/T1200/T1209</p>]]>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T1200/T1209</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -428,11 +640,17 @@
 			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="705dcba7-1346-40fc-a610-9a5a41db887e"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="718758e4-6acf-4e15-826d-447a352c13cf"
 			name="Verify_FC700_Series_Panel_Gallery_Items_For_Ethernet_Node">
 				<description>
-					<![CDATA[<p>NGC-3463/T1197/T1215 FC8AS Attached functionality gallery is not verified</p>]]>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T1197/T1215 FC8AS Attached functionality gallery is not verified</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -450,6 +668,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="786a056b-50ff-4cf1-83b9-0ab68096098d"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="79b4f29d-3de9-41f4-97ab-312b2a020ba4"
 			name="CreateProject_UK_FC"
 			ref="c656785f-17f8-4770-a9fd-02b77fd63f3b"
@@ -462,6 +700,12 @@
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="7a189414-1b5f-47d8-b5f5-a66a7f6a5d74"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="7b4bc015-cb29-4d74-9eb3-2984327ff4a5"
@@ -536,8 +780,18 @@
 			type="Recording">
 			</testmodule>
 			<testcase
+			id="858c8da0-422c-449a-9707-cf678e4fab03"
+			name="Verify_FC600_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
+				<description>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T3835</p>]]>
+				</description>
+			</testcase>
+			<testcase
 			id="877ffa06-a3fe-4491-9072-fb8baea315e9"
 			name="Verify_FC600_FC700_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+				<description>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T1217/T3838</p>]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="8ca284ec-0fd0-4e0c-abce-237d3c559b59"
@@ -569,7 +823,7 @@
 			id="8e3a41a8-58a4-44d1-ae6b-ae2c7d73c4de"
 			name="Verify_FC700_Series_Panel_Gallery_Items_For_Panel_Node">
 				<description>
-					<![CDATA[NGC-3463/T1193/T1211]]>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T1193/T1211</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -590,7 +844,7 @@
 			id="933f6414-abf0-47cf-89e1-cd6764e5715a"
 			name="Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices">
 				<description>
-					<![CDATA[<p>NGC-3463/T1192/T1210/T1234/T1233/T1236</p>]]>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T1192/T1210/T1234/T1233/T1236</p>]]>
 				</description>
 				<parameters>
 					<param
@@ -602,6 +856,9 @@
 			<testcase
 			id="93c77ae9-35d2-4876-957c-c80375d8edcf"
 			name="Verify_FC602S_And_FC604S_Series_Panel_Gallery_Items_For_R-BUS_Node_And_Maximum_Number_Of_Devices_Add">
+				<description>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T3835</p>]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="9505fe01-90e7-4c30-bcf3-58ab84e1ccfd"
@@ -661,9 +918,18 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="a7dfcab5-9a1e-43d5-a313-45c41259d226"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="a815c447-cde9-4aba-ab21-d117f51b877d"
 			name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Other_Slot_Cards_Node">
+				<description>
+					<![CDATA[NGC-3003 and NGC-3463/T3833]]>
+				</description>
 			</testcase>
 			<testmodule
 			id="a962f9b6-e4d3-405a-88f7-31b0ccdef115"
@@ -730,7 +996,33 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="adc8a8ae-dfa7-40cc-9bce-8f524d870b77"
+			name="Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added"
+			ref="d37d6761-e8ed-4782-afe9-e0ed34968ef5"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="b68067d7-da9e-43ab-bdc5-2a0ca66955cb"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b68ba820-b5cf-4bdd-98e6-e4c283ca9d64"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
 			type="UserCode">
@@ -786,6 +1078,40 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c3d8f38b-b25f-491e-ae0e-e5a5f96f7477"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c5582816-e8d3-4134-bfbe-5c18792c2562"
+			name="CreateProject_UK_FC"
+			ref="c656785f-17f8-4770-a9fd-02b77fd63f3b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="a91ee1e0-033a-42b0-846f-eab0504bc091"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="c6bf68eb-5306-458e-b929-4f3d6afab08b"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
@@ -802,6 +1128,20 @@
 					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
 					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
 					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="cc4b911d-be71-4467-a355-af034d1ff143"
+			name="CreateProject_UK_FC"
+			ref="c656785f-17f8-4770-a9fd-02b77fd63f3b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="a91ee1e0-033a-42b0-846f-eab0504bc091"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -849,11 +1189,17 @@
 			id="d5ca4e6d-26e1-4535-97bc-cbfdfa11beac"
 			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
 			</testcase>
+			<testmodule
+			id="d97deec8-00ca-4cc0-84a4-c0265d92d213"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="de9e5c5f-fd98-4c02-9e31-4a4485a6b960"
 			name="Verify_FC700_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-3463/T1194/T1195/T1212/T1213</p>]]>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T1194/T1195/T1212/T1213</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -867,6 +1213,32 @@
 					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
 					variableid="a91ee1e0-033a-42b0-846f-eab0504bc091"
 					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e0e1dd4e-a19a-4788-8c20-f2c2480cc983"
+			name="Close_ApplicationFC"
+			ref="24dbff3d-b2bd-45d1-b82b-8d204b7dd9ff"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e0f976a5-40ee-4fb2-9f6a-2c5323ca5173"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
 					</var>
 				</databinding>
 			</testmodule>
@@ -887,6 +1259,20 @@
 					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
 					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
 					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e5bea08e-ae70-40eb-8a9d-eff9601f4a30"
+			name="CreateProject_UK_FC"
+			ref="c656785f-17f8-4770-a9fd-02b77fd63f3b"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="318db1de-3bd9-4149-8f4c-9178f72b682f"
+					variableid="a91ee1e0-033a-42b0-846f-eab0504bc091"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -914,7 +1300,7 @@
 			id="eba86c41-a246-447d-b548-e6d9c9c1eb1b"
 			name="Verify_FC700_Series_Panel_Gallery_Items_For_FC-FI_Node">
 				<description>
-					<![CDATA[<p>NGC-3463/T1208/T1508</p>]]>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T1208/T1508</p>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -947,9 +1333,15 @@
 			id="f631341a-ddf1-44e4-b68d-06c237424247"
 			name="Verify_FC700_Series_Panel_Gallery_Items_For_R-BUS_Node_And_Maximum_Number_Of_Devices_Added">
 				<description>
-					<![CDATA[NGC-3463/T1196/T1214]]>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T1196/T1214</p>]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="f7adeab3-9a51-4aae-af69-cfcf44e077be"
+			name="Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes"
+			ref="4fb6e7f8-30fc-454b-aa0f-84ed1950231c"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="f880eebb-5cdf-41b9-b659-54460fa44434"
 			name="Close_ApplicationFC"
@@ -986,10 +1378,10 @@
 		<childhierarchy>
 			<testsuite
 			id="3b896a6e-9060-44d2-b45f-c146b73df0dd"
-			name="UK">
+			name="UK_FC">
 				<testcase
 				id="318db1de-3bd9-4149-8f4c-9178f72b682f"
-				name="UK">
+				name="UK_FC">
 					<testcase
 					id="933f6414-abf0-47cf-89e1-cd6764e5715a"
 					name="Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices">
@@ -1131,6 +1523,26 @@
 						</testmodule>
 					</testcase>
 					<testcase
+					id="10b0d82c-e1db-4c8e-9c24-ffa795ac60c6"
+					name="Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
+						<testmodule
+						id="f9da72fa-c2fa-455c-a534-42544a1ec765"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="79b4f29d-3de9-41f4-97ab-312b2a020ba4"
+						name="CreateProject_UK_FC">
+						</testmodule>
+						<testmodule
+						id="9505fe01-90e7-4c30-bcf3-58ab84e1ccfd"
+						name="Verify_FC600_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
+						</testmodule>
+						<testmodule
+						id="1c709287-0c3d-418e-b94b-f5860c7a918e"
+						name="Close_ApplicationFC">
+						</testmodule>
+					</testcase>
+					<testcase
 					id="3e7486df-4e07-48e2-b34b-673b3ad6ef57"
 					name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_Panel_Node">
 						<testmodule
@@ -1171,26 +1583,6 @@
 						</testmodule>
 					</testcase>
 					<testcase
-					id="5145e500-4f6b-48cb-a916-ad6ee768cf41"
-					name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_FC-FI_Node">
-						<testmodule
-						id="7b4bc015-cb29-4d74-9eb3-2984327ff4a5"
-						name="Application_Open">
-						</testmodule>
-						<testmodule
-						id="405cb57c-951f-446b-871c-0d7fa29d037e"
-						name="CreateProject_UK_FC">
-						</testmodule>
-						<testmodule
-						id="037be429-0a1e-4194-bc09-84a977c60ec8"
-						name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_FCFI_Node">
-						</testmodule>
-						<testmodule
-						id="a962f9b6-e4d3-405a-88f7-31b0ccdef115"
-						name="Close_ApplicationFC">
-						</testmodule>
-					</testcase>
-					<testcase
 					id="93c77ae9-35d2-4876-957c-c80375d8edcf"
 					name="Verify_FC602S_And_FC604S_Series_Panel_Gallery_Items_For_R-BUS_Node_And_Maximum_Number_Of_Devices_Add">
 						<testmodule
@@ -1207,6 +1599,26 @@
 						</testmodule>
 						<testmodule
 						id="f880eebb-5cdf-41b9-b659-54460fa44434"
+						name="Close_ApplicationFC">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="5145e500-4f6b-48cb-a916-ad6ee768cf41"
+					name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_FC-FI_Node">
+						<testmodule
+						id="7b4bc015-cb29-4d74-9eb3-2984327ff4a5"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="405cb57c-951f-446b-871c-0d7fa29d037e"
+						name="CreateProject_UK_FC">
+						</testmodule>
+						<testmodule
+						id="037be429-0a1e-4194-bc09-84a977c60ec8"
+						name="Verify_FC602S_And_FC604S_Panel_Gallery_Items_For_FCFI_Node">
+						</testmodule>
+						<testmodule
+						id="a962f9b6-e4d3-405a-88f7-31b0ccdef115"
 						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
@@ -1231,22 +1643,22 @@
 						</testmodule>
 					</testcase>
 					<testcase
-					id="10b0d82c-e1db-4c8e-9c24-ffa795ac60c6"
-					name="Verify_FC600_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
+					id="858c8da0-422c-449a-9707-cf678e4fab03"
+					name="Verify_FC600_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
 						<testmodule
-						id="f9da72fa-c2fa-455c-a534-42544a1ec765"
+						id="e0f976a5-40ee-4fb2-9f6a-2c5323ca5173"
 						name="Application_Open">
 						</testmodule>
 						<testmodule
-						id="79b4f29d-3de9-41f4-97ab-312b2a020ba4"
+						id="1ab5b313-50d3-4f87-8108-3d0d605a66d4"
 						name="CreateProject_UK_FC">
 						</testmodule>
 						<testmodule
-						id="9505fe01-90e7-4c30-bcf3-58ab84e1ccfd"
+						id="3da78a49-5269-49e6-b21e-59830c165ccb"
 						name="Verify_FC600_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
 						</testmodule>
 						<testmodule
-						id="1c709287-0c3d-418e-b94b-f5860c7a918e"
+						id="268d24f5-08d6-49c1-9895-8075c97652f3"
 						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
@@ -1287,6 +1699,126 @@
 						</testmodule>
 						<testmodule
 						id="625d4171-89ce-4646-8821-09655b1d5ca9"
+						name="Close_ApplicationFC">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="0483c093-82ae-40e4-986c-09eb2ccc2575"
+					name="Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node">
+						<testmodule
+						id="41ad2577-9b3b-4413-be58-50c28ede6d68"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="0dfb1109-82c4-4a45-90bf-572f097eafad"
+						name="CreateProject_UK_FC">
+						</testmodule>
+						<testmodule
+						id="489c8670-32e1-4284-9ff9-19aeb9665fd1"
+						name="Verify_FIM_Series_Panel_Gallery_Items_For_Panel_Node">
+						</testmodule>
+						<testmodule
+						id="e0e1dd4e-a19a-4788-8c20-f2c2480cc983"
+						name="Close_ApplicationFC">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="625f4d66-878f-4a72-b5cf-b22aae07f9fb"
+					name="Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node">
+						<testmodule
+						id="b68ba820-b5cf-4bdd-98e6-e4c283ca9d64"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="cc4b911d-be71-4467-a355-af034d1ff143"
+						name="CreateProject_UK_FC">
+						</testmodule>
+						<testmodule
+						id="1e6766ac-21bc-4d57-96d6-ffb5e3add2b1"
+						name="Verify_FIM_Series_Panel_Gallery_Items_For_Main_Processor_And_SerialPort_Node">
+						</testmodule>
+						<testmodule
+						id="d97deec8-00ca-4cc0-84a4-c0265d92d213"
+						name="Close_ApplicationFC">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="6211ffd7-ba8e-4946-a93a-49f4c17ef467"
+					name="Verify_FIM_Series_Panel_Gallery_Items_For_R-BUS_Node_And_Maximum_Number_Of_Devices_Added">
+						<testmodule
+						id="c3d8f38b-b25f-491e-ae0e-e5a5f96f7477"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="23f7ad7c-1b30-4f5c-8efc-b09203e1f06e"
+						name="CreateProject_UK_FC">
+						</testmodule>
+						<testmodule
+						id="adc8a8ae-dfa7-40cc-9bce-8f524d870b77"
+						name="Verify_FIM_Series_Panel_Gallery_Items_For_RBUS_Node_And_Maximum_Number_Of_Devices_Added">
+						</testmodule>
+						<testmodule
+						id="7a189414-1b5f-47d8-b5f5-a66a7f6a5d74"
+						name="Close_ApplicationFC">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="0b3ff2ad-39b9-430d-ba87-d8b0c4f36900"
+					name="Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
+						<testmodule
+						id="121c8ed3-b31b-4b18-99f3-dd32e3054b85"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="e5bea08e-ae70-40eb-8a9d-eff9601f4a30"
+						name="CreateProject_UK_FC">
+						</testmodule>
+						<testmodule
+						id="f7adeab3-9a51-4aae-af69-cfcf44e077be"
+						name="Verify_FIM_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
+						</testmodule>
+						<testmodule
+						id="705dcba7-1346-40fc-a610-9a5a41db887e"
+						name="Close_ApplicationFC">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="02cfff56-4fc1-47a5-959e-74e099c8252e"
+					name="Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node">
+						<testmodule
+						id="0adaa862-a37c-47d8-be52-f0872b9c3c9c"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="c5582816-e8d3-4134-bfbe-5c18792c2562"
+						name="CreateProject_UK_FC">
+						</testmodule>
+						<testmodule
+						id="572282bf-811d-442a-a7ec-ba7f17e177d3"
+						name="Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node">
+						</testmodule>
+						<testmodule
+						id="a7dfcab5-9a1e-43d5-a313-45c41259d226"
+						name="Close_ApplicationFC">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="1fd7e604-8ef6-4708-bc97-cae362999e1d"
+					name="Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						<testmodule
+						id="786a056b-50ff-4cf1-83b9-0ab68096098d"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="200ea993-052c-49bc-a2b4-3d2f982ca0a4"
+						name="CreateProject_UK_FC">
+						</testmodule>
+						<testmodule
+						id="58804a55-dd42-438c-a379-d2208aee9c5d"
+						name="Verify_FIM_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						</testmodule>
+						<testmodule
+						id="0cbb4973-ee2e-48d5-b66e-90468cf9a4de"
 						name="Close_ApplicationFC">
 						</testmodule>
 					</testcase>
@@ -1352,7 +1884,10 @@
 			id="318db1de-3bd9-4149-8f4c-9178f72b682f">
 			</testcontainer>
 			<testcontainer
-			id="62b0d6af-d937-4c29-b036-4f2121e06fc7">
+			id="c0616c20-3617-4db1-a2d7-c268510a0ce9">
+			</testcontainer>
+			<testcontainer
+			id="d5ca4e6d-26e1-4535-97bc-cbfdfa11beac">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

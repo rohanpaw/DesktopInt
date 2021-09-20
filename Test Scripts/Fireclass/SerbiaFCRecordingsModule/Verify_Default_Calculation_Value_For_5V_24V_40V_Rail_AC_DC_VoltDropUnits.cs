@@ -20,48 +20,38 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Fireclass.UKFCRecordingsModule
+namespace Fireclass.SerbiaFCRecordingsModule
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CreateProject_UK_FC recording.
+    ///The Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits recording.
     /// </summary>
-    [TestModule("c656785f-17f8-4770-a9fd-02b77fd63f3b", ModuleType.Recording, 1)]
-    public partial class CreateProject_UK_FC : ITestModule
+    [TestModule("264b349e-292b-4b5e-b18c-538004a3cfa3", ModuleType.Recording, 1)]
+    public partial class Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the global::Fireclass.NGConsysRepository repository.
+        /// Holds an instance of the global::Fireclass.FireclassRepository repository.
         /// </summary>
-        public static global::Fireclass.NGConsysRepository repo = global::Fireclass.NGConsysRepository.Instance;
+        public static global::Fireclass.FireclassRepository repo = global::Fireclass.FireclassRepository.Instance;
 
-        static CreateProject_UK_FC instance = new CreateProject_UK_FC();
+        static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits instance = new Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CreateProject_UK_FC()
+        public Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CreateProject_UK_FC Instance
+        public static Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits Instance
         {
             get { return instance; }
         }
 
 #region Variables
-
-        /// <summary>
-        /// Gets or sets the value of variable sListIndex.
-        /// </summary>
-        [TestVariable("a91ee1e0-033a-42b0-846f-eab0504bc091")]
-        public string sListIndex
-        {
-            get { return repo.sListIndex; }
-            set { repo.sListIndex = value; }
-        }
 
 #endregion
 
@@ -89,10 +79,7 @@ namespace Fireclass.UKFCRecordingsModule
 
             Init();
 
-            TestProject.Libraries.Common_Functions.maximizeApplication();
-            Delay.Milliseconds(0);
-            
-            TestProject.Libraries.Common_Functions.createNewProject("United Kingdom", "0");
+            TestProject.Libraries.PSULoad_Functions.VerifyDefaultPanelPowerCalculation("FC_Power_Calculation_Default_Values", "UK");
             Delay.Milliseconds(0);
             
         }

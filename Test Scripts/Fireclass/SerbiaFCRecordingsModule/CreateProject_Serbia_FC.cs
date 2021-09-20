@@ -20,33 +20,33 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Fireclass.UKFCRecordingsModule
+namespace Fireclass.SerbiaFCRecordingsModule
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The CreateProject_UK_FC recording.
+    ///The CreateProject_Serbia_FC recording.
     /// </summary>
-    [TestModule("c656785f-17f8-4770-a9fd-02b77fd63f3b", ModuleType.Recording, 1)]
-    public partial class CreateProject_UK_FC : ITestModule
+    [TestModule("116fdf13-2783-4d7d-8084-bf20ffbbaa2b", ModuleType.Recording, 1)]
+    public partial class CreateProject_Serbia_FC : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::Fireclass.NGConsysRepository repository.
         /// </summary>
         public static global::Fireclass.NGConsysRepository repo = global::Fireclass.NGConsysRepository.Instance;
 
-        static CreateProject_UK_FC instance = new CreateProject_UK_FC();
+        static CreateProject_Serbia_FC instance = new CreateProject_Serbia_FC();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public CreateProject_UK_FC()
+        public CreateProject_Serbia_FC()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static CreateProject_UK_FC Instance
+        public static CreateProject_Serbia_FC Instance
         {
             get { return instance; }
         }
@@ -92,7 +92,7 @@ namespace Fireclass.UKFCRecordingsModule
             TestProject.Libraries.Common_Functions.maximizeApplication();
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Common_Functions.createNewProject("United Kingdom", "0");
+            TestProject.Libraries.Common_Functions.createNewProject("Serbia", "0");
             Delay.Milliseconds(0);
             
         }

@@ -94,7 +94,7 @@ namespace Fireclass.HungaryFCRecordingsModule
             TestProject.Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Belső busz");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_AttachedFunctionality_FIM_Node", "Italy", "IOB800");
+            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_AttachedFunctionality_FIM_Node", "Hungary", "IOB800");
             Delay.Milliseconds(0);
             
             TestProject.Libraries.Devices_Functions.AddDevicesfromGallery("IOB800", "");
@@ -124,7 +124,7 @@ namespace Fireclass.HungaryFCRecordingsModule
             TestProject.Libraries.Devices_Functions.SelectRowUsingLabelNameFromInventoryTab("Belső busz");
             Delay.Milliseconds(0);
             
-            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_AttachedFunctionality_FIM_Node", "Italy", "IOB800");
+            TestProject.Libraries.Gallery_Functions.verifyGalleryListItems("FC_Gallery_AttachedFunctionality_FIM_Node", "Hungary", "IOB800");
             Delay.Milliseconds(0);
             
             TestProject.Libraries.Devices_Functions.AddDevicesfromGallery("IOB800", "");

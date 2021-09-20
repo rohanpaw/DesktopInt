@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e3f3c479-8e3a-478b-bd54-9f8342656ac7"
+id="1ba4d963-da33-42d2-b181-fe52a8ed25c3"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_FC600_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes"
+	classname="Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node"
 	namespace="Fireclass.UKFCRecordingsModule">
 	</codegen>
 	<variables>
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FC604S
+						FC32-1
 					</argvalue>
 				</argument>
 				<argument
@@ -114,7 +114,57 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounder Circuit1
+						FIM
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingModelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sLabel"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FIM800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+				<argument
+				argname="sLabel"
+				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Local I/O
 					</argvalue>
 				</argument>
 			</arguments>
@@ -139,7 +189,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FC_Gallery_Sounder_FC600_FC700_Series_Panel
+						FC_Gallery_AttachedFunctionality_FIM_Node
 					</argvalue>
 				</argument>
 				<argument
@@ -159,7 +209,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Generic Sounder
+						IOB800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -184,7 +234,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Generic Sounder
+						IOB800
 					</argvalue>
 				</argument>
 				<argument
@@ -199,10 +249,10 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Gallery_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyNavigationTreeItemText"
+		methodname="verifyGalleryExistsWithDropdown"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -212,13 +262,146 @@ mode="Global">
 			<arguments
 			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="TreeItemName"
+				argname="GalleryVisibility"
 				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounder Circuit1 (1)
+						IOB800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="DeletePanel"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="NumberofPanels"
+				id="bfe4f44c-9ade-481e-9eb1-99ffdf03f05c">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNode"
+				id="b6800acc-e51a-4e38-95ce-cbafae7aabfc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node1
+					</argvalue>
+				</argument>
+				<argument
+				argname="rowNumber"
+				id="a9e6ddcd-e426-40db-ae7e-0e80fd3fd2b2">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				ADDED STEPS FOR ANOTHER PANEL
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddPanelsFC"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="2ca7df19-9781-4f88-9056-3fa97f0051f4">
+				<argument
+				argname="NumberofPanels"
+				id="913523e8-0df4-4cb2-a019-1495f987868c">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNames"
+				id="2dc05029-bb59-4c73-a8d0-a2517555c26f">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FC240-2
+					</argvalue>
+				</argument>
+				<argument
+				argname="sPanelCPU"
+				id="06d575c3-e0db-4002-a7c0-84acd7c5b55c">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeExpander"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node
 					</argvalue>
 				</argument>
 			</arguments>
@@ -243,7 +426,57 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounder Circuit2
+						FIM
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingModelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sLabel"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						FIM800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SelectRowUsingLabelNameFromInventoryTab"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+				<argument
+				argname="sLabel"
+				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Local I/O
 					</argvalue>
 				</argument>
 			</arguments>
@@ -268,7 +501,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						FC_Gallery_Sounder_FC600_FC700_Series_Panel
+						FC_Gallery_AttachedFunctionality_FIM_Node
 					</argvalue>
 				</argument>
 				<argument
@@ -288,7 +521,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Generic Sounder
+						IOB800
 					</argvalue>
 				</argument>
 			</arguments>
@@ -313,7 +546,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Generic Sounder
+						IOB800
 					</argvalue>
 				</argument>
 				<argument
@@ -328,10 +561,10 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Gallery_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="VerifyNavigationTreeItemText"
+		methodname="verifyGalleryExistsWithDropdown"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -341,13 +574,68 @@ mode="Global">
 			<arguments
 			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="TreeItemName"
+				argname="GalleryVisibility"
 				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.Boolean
+					</argvaluetype>
+					<argvalue>
+						False
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Sounder Circuit2 (1)
+						IOB800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Panel_Functions"
+		enabled="False"
+		isexternaltestmethod="True"
+		methodname="DeletePanel"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="NumberofPanels"
+				id="bfe4f44c-9ade-481e-9eb1-99ffdf03f05c">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
+					</argvalue>
+				</argument>
+				<argument
+				argname="PanelNode"
+				id="b6800acc-e51a-4e38-95ce-cbafae7aabfc">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node1
+					</argvalue>
+				</argument>
+				<argument
+				argname="rowNumber"
+				id="a9e6ddcd-e426-40db-ae7e-0e80fd3fd2b2">
+					<argvaluetype>
+						System.Int32
+					</argvaluetype>
+					<argvalue>
+						1
 					</argvalue>
 				</argument>
 			</arguments>
@@ -368,7 +656,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_FC600_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs
+		Verify_FIM_Series_Panel_Gallery_Items_For_FIM_Node.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

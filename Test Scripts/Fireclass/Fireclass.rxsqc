@@ -5,8 +5,8 @@
     "RunConfig": "TestRun"
   },
   {
-    "Enabled": "False",
-    "TestSuite": "UK",
+    "Enabled": "True",
+    "TestSuite": "UKandTurkey",
     "RunConfig": "TestRun"
   },
   {
@@ -52,6 +52,11 @@
   {
     "Enabled": "False",
     "TestSuite": "HungaryFC",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "False",
+    "TestSuite": "SerbiaFC",
     "RunConfig": "TestRun"
   }
 ]

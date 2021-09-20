@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="e3f3c479-8e3a-478b-bd54-9f8342656ac7"
+id="3176112a-bbb1-4e70-8019-fb70d6c6f6f7"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,8 +19,8 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_FC600_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes"
-	namespace="Fireclass.UKFCRecordingsModule">
+	classname="Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes"
+	namespace="Fireclass.SerbiaFCRecordingsModule">
 	</codegen>
 	<variables>
 	</variables>
@@ -368,7 +368,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_FC600_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs
+		Verify_FC700_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
