@@ -783,7 +783,7 @@
 			id="858c8da0-422c-449a-9707-cf678e4fab03"
 			name="Verify_FC600_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes">
 				<description>
-					<![CDATA[<p>NGC-3003 and NGC-3463/T3835</p>]]>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T3837</p>]]>
 				</description>
 			</testcase>
 			<testcase
@@ -844,7 +844,7 @@
 			id="933f6414-abf0-47cf-89e1-cd6764e5715a"
 			name="Verify_FC_Series_Panel_Site_Node_Gallery_And_Addition_Of_Panels_Devices">
 				<description>
-					<![CDATA[<p>NGC-3003 and NGC-3463/T1192/T1210/T1234/T1233/T1236</p>]]>
+					<![CDATA[<p>NGC-3003 and NGC-3463/T1192</p>]]>
 				</description>
 				<parameters>
 					<param

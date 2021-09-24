@@ -627,7 +627,7 @@
 			id="518d39bc-e1a2-4942-aeb8-94a4d8b68f4f"
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
 				<description>
-					<![CDATA[<p>NGC-2741/T3343/T3346&nbsp; SKU and Connection text are not verified as they are not visible</p><br>]]>
+					<![CDATA[<p>NGC-2741/T3342/T3346&nbsp; SKU and Connection text are not verified as they are not visible</p><br>]]>
 				</description>
 			</testcase>
 			<testmodule
