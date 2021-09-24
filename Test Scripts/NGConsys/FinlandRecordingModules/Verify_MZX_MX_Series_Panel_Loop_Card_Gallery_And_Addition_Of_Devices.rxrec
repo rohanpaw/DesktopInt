@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="a2ed2e5c-21b8-4929-bef8-d2b8b01302ad"
+id="64701a83-7470-45dd-990a-410155174eb8"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node"
+	classname="Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices"
 	namespace="TestProject.FinlandRecordingModules">
 	</codegen>
 	<variables>
@@ -55,7 +55,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro16xD
+						MZX251
 					</argvalue>
 				</argument>
 				<argument
@@ -65,6 +65,31 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeExpander"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Node
 					</argvalue>
 				</argument>
 			</arguments>
@@ -95,10 +120,10 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
+		methodname="AddDevicesfromGallery"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -108,248 +133,22 @@ mode="Global">
 			<arguments
 			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="fileName"
+				argname="sDeviceName"
 				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_PanelNode_Repeaters_ProPanels
+						XLM800
 					</argvalue>
 				</argument>
 				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Finland
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						MXR
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="fileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Gallery_Loops_ProPanels
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Finland
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="fileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Gallery_SlotCards_ProPanels
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Finland
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PCH800 5.0A
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="fileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Gallery_Miscellaneous_ProPanels
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Finland
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PR1D2
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="fileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Gallery_Printers_ProPanels
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Finland
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						LCD800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryExistsWithDropdown"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="GalleryVisibility"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
+				argname="sType"
 				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						IOB800(x1)
 					</argvalue>
 				</argument>
 			</arguments>
@@ -358,7 +157,7 @@ mode="Global">
 		classname="Common_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnPanelAccessoriesTab"
+		methodname="ClickOnNavigationTreeExpander"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -366,7 +165,42 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
+			id="9f6229ba-3092-48a0-bbca-ce263a012619">
+				<argument
+				argname="ExpanderName"
+				id="73affd45-bfb0-462a-a124-300eec2faefa">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						XLM
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Common_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="ClickOnNavigationTreeItem"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
+				<argument
+				argname="TreeItemName"
+				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						XLM800-C
+					</argvalue>
+				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
@@ -389,7 +223,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_PanelAccessories_ProPanels
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
@@ -399,7 +233,7 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Finland
+						Detectors_P_MZX_MX
 					</argvalue>
 				</argument>
 				<argument
@@ -409,31 +243,16 @@ mode="Global">
 						System.String
 					</argvaluetype>
 					<argvalue>
-						PCS800
+						801 CH
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Common_Functions"
+		classname="Gallery_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="clickOnInventoryTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Panel_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="DeletePanel"
+		methodname="verifyGalleryListItems"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -443,51 +262,42 @@ mode="Global">
 			<arguments
 			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="NumberofPanels"
-				id="bfe4f44c-9ade-481e-9eb1-99ffdf03f05c">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelNode"
-				id="b6800acc-e51a-4e38-95ce-cbafae7aabfc">
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Node1
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
-				argname="rowNumber"
-				id="a9e6ddcd-e426-40db-ae7e-0e80fd3fd2b2">
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
 					<argvaluetype>
-						System.Int32
+						System.String
 					</argvaluetype>
 					<argvalue>
-						1
+						CallPoints_VDS
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						CP 820
 					</argvalue>
 				</argument>
 			</arguments>
 		</userrecorditem>
-		<separatoritem
-		enabled="True"
-		optional="False">
-			<comment>
-				----NEW PANEL EXECUTION-----------------------------------------
-			</comment>
-			<bindings>
-			</bindings>
-		</separatoritem>
 		<userrecorditem
-		classname="Panel_Functions"
+		classname="Gallery_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="AddPanels"
+		methodname="verifyGalleryListItems"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -495,34 +305,355 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="2ca7df19-9781-4f88-9056-3fa97f0051f4">
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
 				<argument
-				argname="NumberofPanels"
-				id="913523e8-0df4-4cb2-a019-1495f987868c">
-					<argvaluetype>
-						System.Int32
-					</argvaluetype>
-					<argvalue>
-						1
-					</argvalue>
-				</argument>
-				<argument
-				argname="PanelNames"
-				id="2dc05029-bb59-4c73-a8d0-a2517555c26f">
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Pro215S
+						Gallery_All_Loop_Devices
 					</argvalue>
 				</argument>
 				<argument
-				argname="sPanelCPU"
-				id="06d575c3-e0db-4002-a7c0-84acd7c5b55c">
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
+						SoundersBeacons
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						LPAV 3000
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryListItems"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Gallery_All_Loop_Devices
+					</argvalue>
+				</argument>
+				<argument
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Ancillary
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						CIM 800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryListItems"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Gallery_All_Loop_Devices
+					</argvalue>
+				</argument>
+				<argument
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Ancillary Conventional
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						DDM 800 Loop
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryListItems"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Gallery_All_Loop_Devices
+					</argvalue>
+				</argument>
+				<argument
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Ancillary Specific
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						APM 800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Gallery_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="verifyGalleryListItems"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="fileName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Gallery_All_Loop_Devices
+					</argvalue>
+				</argument>
+				<argument
+				argname="sheetName"
+				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Other
+					</argvalue>
+				</argument>
+				<argument
+				argname="GalleryDeviceName"
+				id="e84e2208-dc33-4513-849f-003c2b9378a0">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						LI800
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						DIN 830
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Call points
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						LPSY 800 - R/W
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						SoundersBeacons
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						DDM 800 Loop (Fast CallPoints)
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Ancillary Conventional
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
+		<userrecorditem
+		classname="Devices_Functions"
+		enabled="True"
+		isexternaltestmethod="True"
+		methodname="AddDevicesfromGallery"
+		namespace="TestProject.Libraries"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<arguments
+			id="605cabe0-579e-407d-ad47-62d457833ce1">
+				<argument
+				argname="sDeviceName"
+				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Junction Box&#10;
+					</argvalue>
+				</argument>
+				<argument
+				argname="sType"
+				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						Other
 					</argvalue>
 				</argument>
 			</arguments>
@@ -553,10 +684,10 @@ mode="Global">
 			</arguments>
 		</userrecorditem>
 		<userrecorditem
-		classname="Gallery_Functions"
+		classname="Devices_Functions"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
+		methodname="DeleteDeviceUsingLabelInInventoryTab"
 		namespace="TestProject.Libraries"
 		optional="False">
 			<comment>
@@ -564,272 +695,17 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
+			id="49ac5c19-a810-4390-bd95-f7160df5f80f">
 				<argument
-				argname="fileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
+				argname="LabelName"
+				id="085ea731-cfab-4f87-b6e7-e10d98fb602e">
 					<argvaluetype>
 						System.String
 					</argvaluetype>
 					<argvalue>
-						Gallery_PanelNode_Repeaters_ProPanels
+						XLM800-C
 					</argvalue>
 				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Finland
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						MXR
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="fileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Gallery_Miscellaneous_Pro215Panels
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Finland
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						MPM800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="fileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Gallery_Printers_ProPanels
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Finland
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						LCD800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryExistsWithDropdown"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="GalleryVisibility"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						IOB800(x1)
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryExistsWithDropdown"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="GalleryVisibility"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.Boolean
-					</argvaluetype>
-					<argvalue>
-						False
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="0d6541fe-7382-4b2e-962c-0ab1707cf11b">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PLX800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="clickOnPanelAccessoriesTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Gallery_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="verifyGalleryListItems"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
-				<argument
-				argname="fileName"
-				id="649651c6-2c9a-482a-839c-1b6adbd737c3">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Gallery_PanelAccessories_Pro215Panels
-					</argvalue>
-				</argument>
-				<argument
-				argname="sheetName"
-				id="e19d014a-bf90-4ef5-af03-10e02a04e779">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						Finland
-					</argvalue>
-				</argument>
-				<argument
-				argname="GalleryDeviceName"
-				id="e84e2208-dc33-4513-849f-003c2b9378a0">
-					<argvaluetype>
-						System.String
-					</argvaluetype>
-					<argvalue>
-						PCS800
-					</argvalue>
-				</argument>
-			</arguments>
-		</userrecorditem>
-		<userrecorditem
-		classname="Common_Functions"
-		enabled="True"
-		isexternaltestmethod="True"
-		methodname="clickOnInventoryTab"
-		namespace="TestProject.Libraries"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<arguments
-			id="605cabe0-579e-407d-ad47-62d457833ce1">
 			</arguments>
 		</userrecorditem>
 	</recorditems>
@@ -849,7 +725,7 @@ mode="Global">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node.UserCode.cs
+		Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

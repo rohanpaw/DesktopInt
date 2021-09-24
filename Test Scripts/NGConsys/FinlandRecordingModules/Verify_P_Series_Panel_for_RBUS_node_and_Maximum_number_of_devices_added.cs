@@ -24,29 +24,29 @@ namespace TestProject.FinlandRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node recording.
+    ///The Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added recording.
     /// </summary>
-    [TestModule("a2ed2e5c-21b8-4929-bef8-d2b8b01302ad", ModuleType.Recording, 1)]
-    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node : ITestModule
+    [TestModule("74983653-e62d-41ae-a818-829fbac8e290", ModuleType.Recording, 1)]
+    public partial class Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node instance = new Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node();
+        static Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added instance = new Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node()
+        public Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node Instance
+        public static Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added Instance
         {
             get { return instance; }
         }
@@ -79,74 +79,89 @@ namespace TestProject.FinlandRecordingModules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "P885D", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Common_Functions.ClickOnNavigationTreeExpander("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_ProPanels", "Finland", "MXR");
+            Libraries.Common_Functions.ClickOnNavigationTreeItem("RBus");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_ProPanels", "Finland", "PLX800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Repeaters_P_Panels", "Finland", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_SlotCards_ProPanels", "Finland", "PCH800 5.0A");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_P_Panels", "Finland", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ProPanels", "Finland", "PR1D2");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_RBus_Printers_P_Panels", "Finland", "LCD800");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Finland", "LCD800");
+            Libraries.Devices_Functions.AddDevicesfromGallery("MXR", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
+            Libraries.Devices_Functions.AddDevicesfromGallery("MXR-F", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Libraries.Devices_Functions.AddDevicesfromGallery("MXR", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_ProPanels", "Finland", "PCS800");
+            Libraries.Devices_Functions.AddDevicesfromGallery("MXR-F", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnInventoryTab();
+            Libraries.Devices_Functions.AddDevicesfromGallery("MXR", "");
             Delay.Milliseconds(0);
             
-            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
+            Libraries.Devices_Functions.AddDevicesfromGallery("MXR-F", "");
             Delay.Milliseconds(0);
             
-            // ----NEW PANEL EXECUTION-----------------------------------------
-            Report.Log(ReportLevel.Info, "Section", "----NEW PANEL EXECUTION-----------------------------------------", new RecordItemIndex(12));
-            
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro215S", "");
+            Libraries.Devices_Functions.AddDevicesfromGallery("MXR-F", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
+            Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_ProPanels", "Finland", "MXR");
+            Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_Pro215Panels", "Finland", "MPM800");
+            Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Finland", "LCD800");
+            Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
+            Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PLX800");
+            Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnPanelAccessoriesTab();
+            Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_Pro215Panels", "Finland", "PCS800");
+            Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
             
-            Libraries.Common_Functions.clickOnInventoryTab();
+            Libraries.Devices_Functions.AddDevicesfromGallery("MPM800", "");
             Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_MPM_Attached_Functionality", "Finland", "IOB800(x3)");
+            Delay.Milliseconds(0);
+            
+            Libraries.Devices_Functions.AddDevicesfromGallery("IOB800(x3)", "");
+            Delay.Milliseconds(0);
+            
+            Libraries.Common_Functions.VerifyNavigationTreeItemText("RBus (16 of 16)");
+            Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "MXR");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "MPM800");
+            //Delay.Milliseconds(0);
+            
+            //Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x2)");
+            //Delay.Milliseconds(0);
             
         }
 

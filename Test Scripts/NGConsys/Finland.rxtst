@@ -3,7 +3,59 @@
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testmodule
+			id="00b63050-840b-4a55-9f49-26bf4a15c033"
+			name="Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added"
+			ref="5d7d81dc-fd71-432c-aaad-e6dba96dab1b"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="01cd0d81-35aa-47fa-805f-3d5afe55d7f2"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="0271a711-c0e9-4dc6-9259-a6534bc1b2b5"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="04ccebe3-19b7-4d12-a926-8546c2531037"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="051b27ee-699e-497f-95a0-f5c3b97499b0"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="0db312bd-b9b5-4161-b66a-5e3e9145e1fc"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -25,6 +77,65 @@
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_PFI_Node">
 				<description>
 					<![CDATA[<p>NGC-3130/T2944</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="1b63486c-c107-4f84-875f-f90c3bef975c"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1bffa154-ca46-4d29-b79f-e00695b9f27c"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1d49e11c-fa7c-4318-9633-a53629b39ca3"
+			name="Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices"
+			ref="64701a83-7470-45dd-990a-410155174eb8"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1fd60ad8-6d82-48f7-afc3-456de25d787b"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="20e7992f-ed6f-404c-b128-aab76330add7"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit"
+			ref="594b405e-7fc2-4786-8069-a3e7946959cb"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="271d767a-61ef-45c9-93aa-2d8a2d71bc48"
+			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+				<description>
+					<![CDATA[<p>NGC-3130/T2962/T2963/T2964</p>]]>
 				</description>
 			</testcase>
 			<testcase
@@ -62,6 +173,57 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="2edeef4d-0176-492d-8722-59744279f20c"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="331c65cc-2302-4818-9b64-9b630161a7eb"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="33c9c5c1-65e9-40f6-a9c0-e5c8ff194de2"
+			name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+				<description>
+					<![CDATA[<p>NGC-3130/T2961</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="35e16909-0835-45af-8fcb-1eb3c4bc7cbc"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="3d02614a-9e79-4696-bbf8-22c389ace237"
+			name="teardown">
+			</teardown>
+			<testmodule
 			id="401db535-0b1c-4632-aba8-8c01f5d6024e"
 			name="CreateProject_Finland"
 			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
@@ -80,6 +242,40 @@
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="47f98575-61cc-4a88-9917-8f7368eea35c"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="492bb1f5-fd26-479d-96fd-fbf9b2f6671e"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4a99d719-fb9c-48a2-9f0e-8a8aa50fa7a7"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="4c8de658-85bd-429a-be3d-23584c7c2ccd"
@@ -136,17 +332,120 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5c810011-3b91-4015-955c-1111c19b8aeb"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6367e716-ab62-42b4-a774-d0c30244a7a5"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="63efb846-632f-48cf-a3f7-6c11834215a1"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="645de2f3-b936-4d0a-b229-2bc4410ecc63"
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node"
 			ref="15a8bef0-9993-4d2a-9112-dc1e3c701a86"
 			type="Recording">
 			</testmodule>
+			<testcase
+			id="650a8c52-8511-4ae9-b7d3-6115838b4e1e"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
+				<description>
+					<![CDATA[<p>NGC-3130/T2950&nbsp;&nbsp;SB520/SB520 Front Cover is not hiding on adding 1 device which is maximum limit</p><p>Also, failing as SB520 can be added only in one sounder circuit ?</p><br>]]>
+				</description>
+			</testcase>
+			<testcase
+			id="665a543f-6357-4f95-9083-b21f38d5bdd4"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
+				<description>
+					<![CDATA[<p>NGC-3130/T2890 SB520/SB520 Front Cover is not hiding on adding 1 device which is maximum limit</p><br>]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="699b9c6c-6b8c-4995-b14e-bd419ef3b5c1"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="6ba7184e-5d99-455b-92bb-d8ca9df1d124"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6bfb15e5-5fde-4a89-b134-55bec31a0535"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6c99e9a0-60e5-4e71-88b7-8fa295cd71e0"
+			name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
+			ref="1920c861-4928-4402-a0a6-f7d25704c2f5"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="6e8f265e-0b96-4ad0-abb3-ab144f68af7c"
+			name="Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_&amp;_Verify_Max_Limit_Of_Devices_Loop">
+				<description>
+					<![CDATA[<p>NGC-3130/T2951 Maximum capacity is not tested</p><br>]]>
+				</description>
+			</testcase>
 			<testmodule
 			id="6ebde332-2d03-4dfa-a828-fea1923628c2"
 			name="Application_Open"
@@ -164,6 +463,67 @@
 					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
 					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
 					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6fccdfd1-a407-46dd-80df-4b3a4180723e"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="6fdf03a7-57b6-4258-9bdb-2e1e987700c9"
+			name="Verify_P_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
+				<description>
+					<![CDATA[<p>NGC-3130/T2888 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="7669be1a-74fe-4b24-aab5-64afad8b452a"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="76ad831b-671d-4e6a-812e-1840a25436c5"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="79799c89-ae71-44be-bd4a-0fe7d0c5e9bf"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
 					</var>
 				</databinding>
 			</testmodule>
@@ -188,13 +548,138 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7e870a9a-dafa-4eda-a1c8-0e800a806c94"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7f45d293-29ec-4d82-b3fd-166697afc6ec"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="86f28f0b-8a1f-49e5-8c9e-6d94aaa149b7"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="874fef5a-72dc-4551-bc22-5e272c3a4e8d"
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes"
 			ref="53c9e5fb-4bb7-420b-86bb-c01d136cf517"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="893d03ad-a169-4ec4-b618-91ab13100254"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node"
+			ref="5f4b8c99-cfa0-4733-8f58-82f6336515f6"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="8a38c707-d6e0-4f64-b431-29d5e088a545"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8c371d2f-00d7-41f9-b2f7-00ebe55127a8"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="8c89f56c-5824-4c62-89e6-c2738cdd4ef9"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+				<description>
+					<![CDATA[<p>NGC-3130/T2886/T2889&nbsp; SKU and Connection text are not verified as they are not visible</p>&nbsp;<br>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="8d4f4c5b-042d-48b6-a259-322ae11ced18"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8d999ea2-5a3b-4161-a956-78d07edbcea1"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8e69cb92-423e-4851-b62b-062da02da0f9"
 			name="Application_Open"
 			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
 			type="UserCode">
@@ -240,6 +725,39 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="956a4cc0-8bb5-494a-81a5-4208f096a6b8"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="97a6d386-463c-4746-96a5-7a9383d9d4f2"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="992bf4d9-bfa2-4aa6-acfa-120c2adc049b"
+			name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+				<description>
+					<![CDATA[<p>NGC-3130/T2883</p>]]>
+				</description>
+			</testcase>
+			<testmodule
 			id="9a355761-f04b-4c0c-b229-841577dd7bbd"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
@@ -266,10 +784,42 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			id="9c2595bf-6873-477c-aa57-1ff03b8eeb1e"
+			name="Verify_P_Series_Panel_Gallery_Items_For_FIM_Node">
+				<description>
+					<![CDATA[<p>NGC-3130/T2885</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="a396ea46-dc69-4942-ba99-bf13dbcb500e"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a4cbf371-44e8-4654-9e15-16fc1aee0d86"
+			name="Verify_P_Series_Panel_Gallery_Items_For_FIM_Node"
+			ref="98558f9e-d1d8-464b-a05a-e5f8d9b1a913"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a501d31e-46b7-4d8b-93cd-7c95a22cf7fb"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node"
+			ref="f15ad3bd-78a9-49dc-9bb8-d0dbf841d5dd"
+			type="Recording">
+			</testmodule>
+			<testcase
 			id="a9c7061f-e074-4842-a344-d4e2f1601250"
 			name="Verify_Pro_Series_Panel_Gallery_Items_For_Ethernet_Node">
 				<description>
 					<![CDATA[<p>NGC-3130/T2941</p><p><br></p>]]>
+				</description>
+			</testcase>
+			<testcase
+			id="afba0909-0147-4af8-90c9-18134cd82e10"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+				<description>
+					<![CDATA[<p>NGC-3130/T2955/T2958&nbsp; SKU and Connection text are not verified as they are not visible</p>&nbsp;<br>]]>
 				</description>
 			</testcase>
 			<testmodule
@@ -314,7 +864,51 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="b760ea01-0deb-49ad-ad78-e157a015a8b8"
+			name="ReportToPDFModule"
+			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="PdfName"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1d09c6b5-db7a-4ed0-a13c-ee2add5d3d37"
+					variablename="PdfName">
+					</var>
+					<var
+					dataname="PdfDirectoryPath"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="536f8a69-f246-4f2b-ae9e-1f62babb2ba9"
+					variablename="PdfDirectoryPath">
+					</var>
+					<var
+					dataname="Xml"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="c15f25ea-9409-4e1a-b76e-cd208bae6c56"
+					variablename="Xml">
+					</var>
+					<var
+					dataname="Details"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="b9993b89-d8cb-45fe-829b-42b0f8dd8a00"
+					variablename="Details">
+					</var>
+					<var
+					dataname="DeleteRanorexReport"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="7f788c18-962c-41ab-b591-9c3122512c5e"
+					variablename="DeleteRanorexReport">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="b8352a42-5ab1-4a72-8395-a6cb682fa399"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="b9e8cfc4-95f2-4acd-a448-9ce99eabd6ad"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
@@ -334,6 +928,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="bec3a169-9f71-42bf-9766-b3a143c73eeb"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node"
+			ref="45be9111-b240-472b-9fb9-4642de93c1b9"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="bf8e3009-b567-47a7-8d3f-3c12eed16c12"
 			name="CreateProject_Finland"
 			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
@@ -346,6 +946,12 @@
 					variablename="sListIndex">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="c13faa11-02f7-4df5-b32f-349a35edc45a"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit"
+			ref="4091a1fc-60dc-48d3-9466-d4f19e2f739a"
+			type="Recording">
 			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -367,6 +973,38 @@
 			reportwriteinterval="30000ms">
 			</testsuite>
 			<testmodule
+			id="c5de0187-150c-4a43-939a-22345006d844"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c8b27fb4-6a07-4f0d-bb92-5c9f3f9cf31e"
+			name="Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop"
+			ref="870fafa7-df3a-4825-925d-060e8a8af09d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="cadd66a8-bbbd-4a9a-a316-24c17643c657"
+			name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits"
+			ref="0aa596ae-ad57-413d-819a-b1c346f83f80"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="cba14c1f-d01b-4b08-9158-04650aa285c4"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="cbd41208-e536-4dd6-9c46-9099d628ed18"
 			name="CreateProject_Finland"
 			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
@@ -381,10 +1019,56 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="cc644149-dbec-4ace-bba3-f664367fa3ec"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="cd2e51be-1223-4d5f-9014-ebfcf42e0097"
 			name="Close_Application"
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
+			</testmodule>
+			<testcase
+			id="cdc16d5d-8025-4679-8526-38f2bdc5bd3c"
+			name="Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+				<description>
+					<![CDATA[<p>NGC-3130/T2951</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="ce54c135-c3d2-403e-aec0-acd904929706"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node"
+			ref="c97019c5-c243-4680-9c16-1c8bd338fab4"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="cecefc52-6201-4433-af5e-bdfb7ea3601b"
+			name="Verify_MZX_MX_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
+				<description>
+					<![CDATA[<p>NGC-3130/T2949 After adding all the devices , not able to identify gallery is hidden or not. Need to check it manuallly</p>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="d0dda795-e23e-4d9b-ad2a-e645f3589807"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="d1d9702c-cdae-4498-8efc-77fdebfd7203"
@@ -399,6 +1083,38 @@
 			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="d878a54c-b11f-43df-b03e-9ab7af6e977e"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="da75f2bb-0bf1-4a5d-821f-e4e39bc0f8f4"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="da8ac9a3-a9fc-486a-90f8-bcbb2f5436ab"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node"
+			ref="0391858a-3ce6-4108-bb89-666dac5283a0"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
 			name="Finland"
@@ -406,7 +1122,7 @@
 				<parameters>
 					<param
 					name="Application_Path"
-					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.25">
+					value="C:\Program Files (x86)\TSP MZX\Designer Pro 31.0.26">
 					</param>
 					<param
 					name="Mode"
@@ -415,6 +1131,26 @@
 					<param
 					name="sListIndex"
 					value="">
+					</param>
+					<param
+					name="PdfName"
+					value="">
+					</param>
+					<param
+					name="PdfDirectoryPath"
+					value="">
+					</param>
+					<param
+					name="Xml"
+					value="">
+					</param>
+					<param
+					name="Details"
+					value="all">
+					</param>
+					<param
+					name="DeleteRanorexReport"
+					value="false">
 					</param>
 				</parameters>
 			</testcase>
@@ -425,12 +1161,45 @@
 			type="Recording">
 			</testmodule>
 			<testcase
+			id="de54ea4c-1381-4623-ab60-f5acbad4368e"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
+				<description>
+					<![CDATA[<p>NGC-3130/T2957</p><br>]]>
+				</description>
+			</testcase>
+			<testcase
 			id="dff98eac-2d7f-43eb-af53-d3cf66c6344e"
 			name="Verify_Pro_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
 				<description>
 					<![CDATA[NGC-3130/T2939]]>
 				</description>
 			</testcase>
+			<testmodule
+			id="e0d00db7-3ef3-43ff-9709-3689e90c488f"
+			name="Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added"
+			ref="74983653-e62d-41ae-a818-829fbac8e290"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e5f392c7-b3b9-4986-9b41-cfcb0f91d275"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e7164337-d47b-450e-867e-6c6b0c7bf4f9"
+			name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices"
+			ref="add789a4-918b-4509-aaa3-1668cd5813b1"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="e801d363-5cd5-4411-b006-13ead815b164"
 			name="Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices">
@@ -469,6 +1238,94 @@
 			name="Verify_Pro_Panel_Site_Node_Gallery_And_Addition_Of_Panels_And_Devices"
 			ref="f64e5fa5-90f9-4143-92e3-df51202a20b7"
 			type="Recording">
+			</testmodule>
+			<testcase
+			id="f1de6ce2-89ed-4562-b6b4-247eb70941f7"
+			name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node">
+				<description>
+					<![CDATA[<p>NGC-3130/T2954</p>]]>
+				</description>
+			</testcase>
+			<testcase
+			id="f475b371-267e-4793-b723-02e8f3a47d94"
+			name="Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node">
+				<description>
+					<![CDATA[<p>NGC-3130/T2884</p><br>]]>
+				</description>
+			</testcase>
+			<testmodule
+			id="f6c443f5-6f62-4688-ab46-bc625ac3ae8c"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f8b679d5-6812-488b-b129-2331ed0fba92"
+			name="Close_Application"
+			ref="04f2c1bc-a14b-44db-b656-60d601f7de36"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="fc3849b2-6921-4263-86c3-8f48e42dbf34"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="fcff040d-469f-4bc7-9ce6-783a5f9258ac"
+			name="CreateProject_Finland"
+			ref="f180f8e3-84f2-41af-948b-dd80a8aed0df"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="sListIndex"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="ca40602d-7ca3-47bc-a519-7a0fe6a76634"
+					variablename="sListIndex">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="fe5ecdff-f426-4ca2-a129-460e8b2b5a6b"
+			name="Application_Open"
+			ref="f25381c6-db7e-4bc9-a0c1-478ae17eef2d"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="Application_Path"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="1124e7b3-695e-4731-8f79-d1e83c8943fc"
+					variablename="App_Path">
+					</var>
+					<var
+					dataname="Mode"
+					datasourceid="dac9fbc4-14d9-40e4-ae9e-323130e946eb"
+					variableid="172fdd8c-61ee-4b80-8c82-2670b96cc40b"
+					variablename="App_Mode">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -638,6 +1495,314 @@
 						name="Close_Application">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="8c89f56c-5824-4c62-89e6-c2738cdd4ef9"
+					name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+						<testmodule
+						id="d0dda795-e23e-4d9b-ad2a-e645f3589807"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="47f98575-61cc-4a88-9917-8f7368eea35c"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="893d03ad-a169-4ec4-b618-91ab13100254"
+						name="Verify_P_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+						</testmodule>
+						<testmodule
+						id="331c65cc-2302-4818-9b64-9b630161a7eb"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="6fdf03a7-57b6-4258-9bdb-2e1e987700c9"
+					name="Verify_P_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
+						<testmodule
+						id="7f45d293-29ec-4d82-b3fd-166697afc6ec"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="051b27ee-699e-497f-95a0-f5c3b97499b0"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="e0d00db7-3ef3-43ff-9709-3689e90c488f"
+						name="Verify_P_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added">
+						</testmodule>
+						<testmodule
+						id="7e870a9a-dafa-4eda-a1c8-0e800a806c94"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="f475b371-267e-4793-b723-02e8f3a47d94"
+					name="Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node">
+						<testmodule
+						id="8d4f4c5b-042d-48b6-a259-322ae11ced18"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="79799c89-ae71-44be-bd4a-0fe7d0c5e9bf"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="bec3a169-9f71-42bf-9766-b3a143c73eeb"
+						name="Verify_P_Series_Panel_Gallery_Items_For_Ethernet_Node">
+						</testmodule>
+						<testmodule
+						id="a396ea46-dc69-4942-ba99-bf13dbcb500e"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="665a543f-6357-4f95-9083-b21f38d5bdd4"
+					name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
+						<testmodule
+						id="f6c443f5-6f62-4688-ab46-bc625ac3ae8c"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="6fccdfd1-a407-46dd-80df-4b3a4180723e"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="c13faa11-02f7-4df5-b32f-349a35edc45a"
+						name="Verify_P_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit">
+						</testmodule>
+						<testmodule
+						id="956a4cc0-8bb5-494a-81a5-4208f096a6b8"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="9c2595bf-6873-477c-aa57-1ff03b8eeb1e"
+					name="Verify_P_Series_Panel_Gallery_Items_For_FIM_Node">
+						<testmodule
+						id="35e16909-0835-45af-8fcb-1eb3c4bc7cbc"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="1bffa154-ca46-4d29-b79f-e00695b9f27c"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="a4cbf371-44e8-4654-9e15-16fc1aee0d86"
+						name="Verify_P_Series_Panel_Gallery_Items_For_FIM_Node">
+						</testmodule>
+						<testmodule
+						id="da75f2bb-0bf1-4a5d-821f-e4e39bc0f8f4"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="992bf4d9-bfa2-4aa6-acfa-120c2adc049b"
+					name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						<testmodule
+						id="76ad831b-671d-4e6a-812e-1840a25436c5"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="5c810011-3b91-4015-955c-1111c19b8aeb"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="e7164337-d47b-450e-867e-6c6b0c7bf4f9"
+						name="Verify_P_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						</testmodule>
+						<testmodule
+						id="0db312bd-b9b5-4161-b66a-5e3e9145e1fc"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="de54ea4c-1381-4623-ab60-f5acbad4368e"
+					name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
+						<testmodule
+						id="8c371d2f-00d7-41f9-b2f7-00ebe55127a8"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="fc3849b2-6921-4263-86c3-8f48e42dbf34"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="ce54c135-c3d2-403e-aec0-acd904929706"
+						name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node">
+						</testmodule>
+						<testmodule
+						id="cba14c1f-d01b-4b08-9158-04650aa285c4"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="afba0909-0147-4af8-90c9-18134cd82e10"
+					name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+						<testmodule
+						id="8e69cb92-423e-4851-b62b-062da02da0f9"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="e5f392c7-b3b9-4986-9b41-cfcb0f91d275"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="a501d31e-46b7-4d8b-93cd-7c95a22cf7fb"
+						name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Main_Processor_SerialPort_Node">
+						</testmodule>
+						<testmodule
+						id="f8b679d5-6812-488b-b129-2331ed0fba92"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="cecefc52-6201-4433-af5e-bdfb7ea3601b"
+					name="Verify_MZX_MX_Series_Panel_for_R-BUS_node_and_Maximum_number_of_devices_added">
+						<testmodule
+						id="1b63486c-c107-4f84-875f-f90c3bef975c"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="fcff040d-469f-4bc7-9ce6-783a5f9258ac"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="00b63050-840b-4a55-9f49-26bf4a15c033"
+						name="Verify_MZX_MX_Series_Panel_for_RBUS_node_and_Maximum_number_of_devices_added">
+						</testmodule>
+						<testmodule
+						id="b9e8cfc4-95f2-4acd-a448-9ce99eabd6ad"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="650a8c52-8511-4ae9-b7d3-6115838b4e1e"
+					name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes_&amp;_Verify_Maximum_Limit">
+						<testmodule
+						id="97a6d386-463c-4746-96a5-7a9383d9d4f2"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="63efb846-632f-48cf-a3f7-6c11834215a1"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="20e7992f-ed6f-404c-b128-aab76330add7"
+						name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_Sounder_Circuits_Nodes__Verify_Maximum_Limit">
+						</testmodule>
+						<testmodule
+						id="1fd60ad8-6d82-48f7-afc3-456de25d787b"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="f1de6ce2-89ed-4562-b6b4-247eb70941f7"
+					name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node">
+						<testmodule
+						id="6367e716-ab62-42b4-a774-d0c30244a7a5"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="c5de0187-150c-4a43-939a-22345006d844"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="da8ac9a3-a9fc-486a-90f8-bcbb2f5436ab"
+						name="Verify_MZX_MX_Series_Panel_Gallery_Items_For_FIM_Node">
+						</testmodule>
+						<testmodule
+						id="86f28f0b-8a1f-49e5-8c9e-6d94aaa149b7"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="cdc16d5d-8025-4679-8526-38f2bdc5bd3c"
+					name="Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						<testmodule
+						id="fe5ecdff-f426-4ca2-a129-460e8b2b5a6b"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="6ba7184e-5d99-455b-92bb-d8ca9df1d124"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="1d49e11c-fa7c-4318-9633-a53629b39ca3"
+						name="Verify_MZX_MX_Series_Panel_Loop_Card_Gallery_And_Addition_Of_Devices">
+						</testmodule>
+						<testmodule
+						id="0271a711-c0e9-4dc6-9259-a6534bc1b2b5"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="6e8f265e-0b96-4ad0-abb3-ab144f68af7c"
+					name="Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_&amp;_Verify_Max_Limit_Of_Devices_Loop">
+						<testmodule
+						id="8d999ea2-5a3b-4161-a956-78d07edbcea1"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="4a99d719-fb9c-48a2-9f0e-8a8aa50fa7a7"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="c8b27fb4-6a07-4f0d-bb92-5c9f3f9cf31e"
+						name="Verify_MZX_MX_Series_Gallery_Ribbon_Items_For_Loop_Nodes_Verify_Max_Limit_Of_Devices_Loop">
+						</testmodule>
+						<testmodule
+						id="cc644149-dbec-4ace-bba3-f664367fa3ec"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="33c9c5c1-65e9-40f6-a9c0-e5c8ff194de2"
+					name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+						<testmodule
+						id="d878a54c-b11f-43df-b03e-9ab7af6e977e"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="6bfb15e5-5fde-4a89-b134-55bec31a0535"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="cadd66a8-bbbd-4a9a-a316-24c17643c657"
+						name="Verify_Default_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+						</testmodule>
+						<testmodule
+						id="492bb1f5-fd26-479d-96fd-fbf9b2f6671e"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<testcase
+					id="271d767a-61ef-45c9-93aa-2d8a2d71bc48"
+					name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+						<testmodule
+						id="04ccebe3-19b7-4d12-a926-8546c2531037"
+						name="Application_Open">
+						</testmodule>
+						<testmodule
+						id="2edeef4d-0176-492d-8722-59744279f20c"
+						name="CreateProject_Finland">
+						</testmodule>
+						<testmodule
+						id="6c99e9a0-60e5-4e71-88b7-8fa295cd71e0"
+						name="Verify_Maximum_Calculation_Value_For_5V_24V_40V_Rail_AC_DC_VoltDropUnits">
+						</testmodule>
+						<testmodule
+						id="7669be1a-74fe-4b24-aab5-64afad8b452a"
+						name="Close_Application">
+						</testmodule>
+					</testcase>
+					<teardown
+					id="3d02614a-9e79-4696-bbf8-22c389ace237"
+					name="teardown">
+						<testmodule
+						id="b760ea01-0deb-49ad-ad78-e157a015a8b8"
+						name="ReportToPDFModule">
+						</testmodule>
+					</teardown>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -648,6 +1813,15 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="271d767a-61ef-45c9-93aa-2d8a2d71bc48">
+			</testcontainer>
+			<testcontainer
+			id="33c9c5c1-65e9-40f6-a9c0-e5c8ff194de2">
+			</testcontainer>
+			<testcontainer
+			id="dac9fbc4-14d9-40e4-ae9e-323130e946eb">
+			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

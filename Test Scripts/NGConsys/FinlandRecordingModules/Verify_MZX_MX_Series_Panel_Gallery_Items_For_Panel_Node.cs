@@ -24,29 +24,29 @@ namespace TestProject.FinlandRecordingModules
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node recording.
+    ///The Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node recording.
     /// </summary>
-    [TestModule("a2ed2e5c-21b8-4929-bef8-d2b8b01302ad", ModuleType.Recording, 1)]
-    public partial class Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node : ITestModule
+    [TestModule("c97019c5-c243-4680-9c16-1c8bd338fab4", ModuleType.Recording, 1)]
+    public partial class Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::TestProject.NGConsysRepository repository.
         /// </summary>
         public static global::TestProject.NGConsysRepository repo = global::TestProject.NGConsysRepository.Instance;
 
-        static Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node instance = new Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node();
+        static Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node instance = new Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node()
+        public Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Verify_Pro_Series_Panel_Gallery_Items_For_Panel_Node Instance
+        public static Verify_MZX_MX_Series_Panel_Gallery_Items_For_Panel_Node Instance
         {
             get { return instance; }
         }
@@ -79,34 +79,31 @@ namespace TestProject.FinlandRecordingModules
 
             Init();
 
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro16xD", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MZX125", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_ProPanels", "Finland", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_MZX_Panels", "Finland", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_ProPanels", "Finland", "PLX800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_MZX_Panels", "Finland", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_SlotCards_ProPanels", "Finland", "PCH800 5.0A");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_ProPanels", "Finland", "PR1D2");
-            Delay.Milliseconds(0);
-            
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Finland", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Finland", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
             Delay.Milliseconds(0);
             
+            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "XLM800");
+            Delay.Milliseconds(0);
+            
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_ProPanels", "Finland", "PCS800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_MZX125_MX_Panels", "Finland", "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();
@@ -115,37 +112,40 @@ namespace TestProject.FinlandRecordingModules
             Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
-            // ----NEW PANEL EXECUTION-----------------------------------------
-            Report.Log(ReportLevel.Info, "Section", "----NEW PANEL EXECUTION-----------------------------------------", new RecordItemIndex(12));
+            // ACTIONS TO TEST ON ANOTHER PANEL
+            Report.Log(ReportLevel.Info, "Section", "ACTIONS TO TEST ON ANOTHER PANEL", new RecordItemIndex(11));
             
-            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Pro215S", "");
+            Libraries.Panel_Functions.AddPanels(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "MZX251", "");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.ClickOnNavigationTreeItem("Node");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_ProPanels", "Finland", "MXR");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelNode_Repeaters_MZX_Panels", "Finland", "MXR");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_Pro215Panels", "Finland", "MPM800");
+            //Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Loops_MZX_Panels", "Finland", "XLM800");
+            //Delay.Milliseconds(0);
+            
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Miscellaneous_MZX_Panels", "Finland", "PR1D2");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_ProPanels", "Finland", "LCD800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_Printers_MZX_Panels", "Finland", "LCD800");
             Delay.Milliseconds(0);
             
             Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "IOB800(x1)");
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryExistsWithDropdown(ValueConverter.ArgumentFromString<bool>("GalleryVisibility", "False"), "PLX800");
-            Delay.Milliseconds(0);
-            
             Libraries.Common_Functions.clickOnPanelAccessoriesTab();
             Delay.Milliseconds(0);
             
-            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_Pro215Panels", "Finland", "PCS800");
+            Libraries.Gallery_Functions.verifyGalleryListItems("Gallery_PanelAccessories_MZX_Panels", "Finland", "FB800");
             Delay.Milliseconds(0);
             
             Libraries.Common_Functions.clickOnInventoryTab();
+            Delay.Milliseconds(0);
+            
+            Libraries.Panel_Functions.DeletePanel(ValueConverter.ArgumentFromString<int>("NumberofPanels", "1"), "Node1", ValueConverter.ArgumentFromString<int>("rowNumber", "1"));
             Delay.Milliseconds(0);
             
         }
