@@ -1,0 +1,232 @@
+﻿<repository
+id="c59be155-6e27-4898-8dd6-2078823af399"
+name="MyTest123Repository">
+	<codegen
+	classname="MyTest123Repository"
+	namespace="MyTest123">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="80ecf968-1a23-4bde-b1d3-73374d994a31"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow,wpfwin32element,wpfelement,wpfgroupelement"
+		capname="form"
+		id="b05011e4-1031-4866-ad13-1127af7c1691"
+		isrooted="True"
+		name="FormMe"
+		refpath="/form[@automationid='me']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="d98df69e-1c46-4a7f-ab15-3c67ddf66631"
+			name="NormalText"
+			refimgid="d1b84a4b-8104-476c-b940-9e11fad87b5e"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/container[@automationid='PART_HeaderAndTabsLayout']/button[@automationid='PART_ApplicationButton']/picture/text[@automationid='normalText']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']/?/?/text[@automationid='normalText']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="2d151c13-5fe9-4ad2-acfe-ee32f150f325"
+			name="TextNew"
+			refimgid="e473a724-0203-402b-a959-c385d6f25a59"
+			refpath="/form[@automationid='me']/progressbar/container[14]/container/text[@caption='New']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']//container[@name='PART_Content' and @caption='New']/text[@caption='New']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="4bad743a-e7d9-436a-8ee5-730de583a37a"
+			name="SomeText"
+			refimgid="0cecf019-8940-4677-be41-0fc79cafb396"
+			refpath="/form[@automationid='me']/progressbar/container[20]/text/container[7]/text/text[@caption='']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[20]/text/container[7]/text[@caption='']/text[@caption='']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="623aa09e-6303-4c5b-ac7d-7d08d526cd9b"
+			name="SomeListItem"
+			refimgid="41920436-9107-4ed1-bb9b-03d352339ab5"
+			refpath="/form[@automationid='me']/progressbar/container[20]/text/button[2]/list/listitem[@index='0']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']//text[@caption='Recently Used Markets']/button[2]/list[@automationid='PART_Groups']/listitem[@index='0']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="c090ef64-dd5c-421a-a7e4-0a3943f83727"
+			name="SomeButton"
+			refimgid="d979d648-621c-43e1-9aff-129e1cbba940"
+			refpath="/form[@automationid='me']/progressbar/container[20]/text/container[6]/button"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[20]/text/container[6]/button
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="af5a7f35-9dff-4634-989b-37f7f2769ae2"
+			name="SomeListItem1"
+			refimgid="7c43a128-cb7c-44c5-9dfa-ad8817ce1ad5"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[2]/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/button/list/listitem[@index='3']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[2]/list[1]/list[2]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/listitem[@index='3']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="1b809a4e-9fa5-4940-870c-a0dcc2cd8a5d"
+			name="PARTExpandButton"
+			refimgid="84fe9483-d76e-46f3-a4c8-b7b9fc4d4294"
+			refpath="/form[@automationid='me']/progressbar/picture[11]/tree/container[7]/container[@caption='']/indicator[2]/button[@automationid='PART_ExpandButton']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[11]/tree/container[7]/container[@caption='']/indicator[2]/button[@automationid='PART_ExpandButton']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="55ebde5f-12e5-439c-b8a0-24431d2382a3"
+			name="BuiltInLoopA0Of125"
+			refimgid="ef0970d6-4102-4a10-b960-293391220b4e"
+			refpath="/form[@automationid='me']/progressbar/picture[11]/tree/container[7]/container[@caption='']/indicator[11]/text[@caption>'Built-in Loop-A (0 of 125']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/picture[11]/tree/container[7]//text[@caption&gt;'Built-in Loop-A (0 of 125']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="6195f68c-ddd1-49ca-bdb7-2783c9af56dd"
+			name="Text813P"
+			refimgid="57d22e16-6c20-4609-832b-acbb3b48eb7a"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[2]/list[1]/list[5]/container[@automationid='PART_ItemsPresenter']/button/list/listitem[@index='0']/text[@caption='813 P']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[2]/list[1]/list[5]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text[@caption='813 P']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="5acc38e9-60d2-428a-9a49-4cd5d10d6821"
+			name="CP820"
+			refimgid="9bf7c1a8-6b81-45a9-bbc7-cd28e2072d97"
+			refpath="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[2]/list[1]/list[6]/container[@automationid='PART_ItemsPresenter']/button/list/listitem[@index='0']/text[@caption='CP 820']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/list/list[2]/list[1]/list[6]/container[@automationid='PART_ItemsPresenter']/button[@automationid='PART_Caption']/list[@automationid='PART_Groups']/?/?/text[@caption='CP 820']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="6f9f75c9-7869-4c5f-bdd3-01a2c4dbd18c"
+			name="PARTCloseButton"
+			refimgid="3839bf24-ba65-4a75-809d-c709c71faa51"
+			refpath="/form[@automationid='me']/container/container[@automationid='PART_Buttons']/button/button[@automationid='PART_CloseButton']"
+			searchtimeout="30000ms">
+				/form[@automationid='me']/container[@automationid='Root_Grid']//button[@automationid='PART_CloseButton']
+			</item>
+			<basepath>
+				/form[@automationid='me']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFfSURBVDhPzZKxSsNQFIYzuOns4mP4AIJv4OAD
+KD6BNbeQW0jSBlJoQyHNVtIlU4K4tJ0Fp9ItBRsIxKGFQhep2E4ZjvfeHElDal0c/OAQuOd83Psf
+Iv1PDEO/0jQtdl0XgiAA27ahWq0OLMs4w5H9qKp6RKmySpIE9uH7PtTr6h2Ol2HyGmd/JI5j0HX9
+ApUcwzCu5/O5GJpMJjAej0vFZY5ltQG1HJb5TXQZnU6HDVmieP5m0wTTNEUEzmbzCSxuMUq/3xfN
+XdI0hV6vJ+ThcIinGYQ8vKCawbe9y2KxECKv7XaDpzmKokxRzXC6XWwBeJ4nRP58njuKIlHL5RIn
+AGRZfkI1gxAywF5hB7s1Go1EfzZ75Reco5rRarVOv5f0G5TSNWpF2GZv+VMPUancA7vsGJUyjYZ6
+abXb8LEu/lPTMIRajb47jnOCo4dh/8UNIfIz23bIvo+lzH+DJH0BX2jJwduwHsUAAAAASUVORK5C
+YII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow,wpfwin32element,wpfelement,wpfgroupelement"
+		capname="form"
+		id="7f4c8323-641c-4e77-b139-0af7d268443a"
+		isrooted="True"
+		name="CreateNewProject"
+		refpath="/form[@title='Create New Project']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="b448f894-26b6-439e-bf8b-09efc7dd4e76"
+			name="ButtonOK"
+			refimgid="2d556e37-769e-421a-a35f-9273a047263f"
+			refpath="/form[@title='Create New Project']/container[1]/container[@caption='']/container/button[@text='OK']"
+			searchtimeout="30000ms">
+				/form[@title='Create New Project']/container[1]//button[@text='OK']
+			</item>
+			<basepath>
+				/form[@title='Create New Project']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAK/SURBVDhPhZJbSFNxHMdX1EMNJCICoZceesk0
+uhhCZWYaCjXJVrYixKAbSvUoRGTQQz1FL+VLpUxLMhvLwrmLI+d9Xso5dzm7uO3MXc7O3OVsbph8
+++9MqNDRF778z4Hz/fD7/s5fcGCvsKiu9uj1B3cqmptuVTQ31Fc3SsRHmoqLSy4UFBWfyzgvb89O
+gUCwiXi9RFX7xfqeS7ZU4CmS/lZEDHeR8HZjOZVAIpnGvI3Gmy7lSK3k9j7y+eZs6i+JawrqzKM3
+6ZWYFL9SMsSNDaCt76EdGkevagzWBT9xMP3kpfTb4dKawrXYH4lFh67YDQ89v5JdWE33I8224Ie+
+Da3t3dBNGGFx+sAsJSHXUauSxha1UCjcvRbNqrK8sNrYL6LZ6WtIBZ/Dp65ClB2E1x9GKJKEazGM
+V9JePHvdybv0/FUFiW3JpolOlOw6JZM2drCeL2C8GgS8I6Bm5Zg0mGF2BHhIKJLgz3hyhQAkahLb
+lk0T5ecLtvf09oncNI15ygGD1YmfJhv0BjsPGBg3QT02T04zfEx8PSCj0RmqzO4OYmSagnrYCNXQ
+HPoHDZi1LEI5PAcFeZ80usFGU7kBDg+DRSYGly8MJ+nt8IZh84RAuRlYXQzoYBxL8fTGAB0PCJFt
+J+ALxeANxkAHonD7IwQYIcAIeY6BieSYQKenymyuIGbMHgxOUfg+aYVWb4WG9FaPmTAwYYGB8sHH
+JnMBTGXksvA9B8Yt0JCQatSEfrKPPtI/swPdlJ1ME8sNoAggM7aDDsNOs6R7CJYFBiZnEGZy0sEE
+/OEcFbQZAKkQIUtio8v8Pw+Q2+djE2SxHLwM2Q27zHtDgFSmPvlBruW65BquU6biOj4rOSlxe4+S
+a/uk4N5l3K3g3n5UcMerL38lkX8B9x+/2FF/79GZyos3zp7+jw+WlB8jka3ZpEDwGwc6NlsMcmYy
+AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow,wpfwin32element,wpfelement,wpfgroupelement"
+		capname="form"
+		id="a27953cb-ab15-4d28-972b-2fa59a56a919"
+		isrooted="True"
+		name="AddANewPanel"
+		refpath="/form[@title='Add a New Panel']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="e014fb9e-04d5-4b69-8954-8bfa7abc0398"
+			name="ButtonOK"
+			refimgid="37dbf943-674f-4f18-9e18-bf54da129e50"
+			refpath="/form[@title='Add a New Panel']/container[1]/text/container/button[@text='OK']"
+			searchtimeout="30000ms">
+				/form[@title='Add a New Panel']/container[1]//button[@text='OK']
+			</item>
+			<basepath>
+				/form[@title='Add a New Panel']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJaSURBVDhPjVJLbxJRGCXpb2iiMbJ10bByoYmJ
+S5Zs3LjSNIFFDYsaY9xo2hQpGCFFXqGER2AQS1saGUYHhOH9GOjQAlVgurCtLEzTLmpibHTR4x2K
+jYmKPcnJTe79zvleV6bVanmv14vzcn5+/mB8fPyC7Beky3yxjE1xD43eKYXuLviWiFpbRLvdRrPZ
+RCqVgtlshiAIUCgUN4fyU4NUtgD7EgsTxcC+nMaLVwkw1Q5W0nW4XC7YbDaEw2EYDAY0Go0/DQqF
+AuJxBjRNg+M4MAwDURTB12pEbIfFYgEVCv3bIJPJwO/3D7JJmYLBIA4PD9Ht9eBwOGG1WhEaZVDh
+6+jsfEb30wG4SgOJPI+lGIvQKg3X4iIxceDlqBa4fAn+eBHOFQ5m3yrsYQbPvcvwRt8hmy8in2Dx
+JuAbUUGlQlhFLpfD+rqAVnsLmWwOHdLChthH7cN7rNHU3w18Ph8oikI0Gj1jMplEvV4Hy7Jndx6P
+B3q9frDSiYmJG0O5TEZ2WyZb2CdD+kqGdWwymU6kIUqbkU7y/p1U+S0SiXzpdHvHqebuCfU6HVep
+VFcGBnK5/KJGo7lFBnUvEAhMx2KxJ9lsdlYi+TyzxPiB2+2e1ul0U9VqNX3dUIKJbm5PajTXiHxs
+YPI/GI3G26VSydXv97cuPUzBwnaPeL62Wi6XncOQ0bj/zONULvCQxL/Tyu1gGDIaTy3uGevb9vYC
+2zmShJP+xo+56MYeK3wUhyGjoVQqL0s9S2XLH6WhW9vcezwzd0etnro6DDkXxqSeA5U+Mq0d8a5a
+TcQy2U/2PAiGGFKEvQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

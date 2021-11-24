@@ -1,0 +1,10 @@
+C:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\bin\Debug\MyTest123.rxtmg
+C:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\bin\Debug\MyTest123.rxtst
+C:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\bin\Debug\MyTest123.exe.config
+C:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\bin\Debug\MyTest123.xml
+C:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\bin\Debug\MyTest123.exe
+C:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\bin\Debug\MyTest123.pdb
+C:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\bin\Debug\Ranorex.Core.Resolver.dll
+C:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\obj\x86\Debug\MyTest123.csprojResolveAssemblyReference.cache
+C:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\obj\x86\Debug\MyTest123.exe
+C:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\obj\x86\Debug\MyTest123.pdb

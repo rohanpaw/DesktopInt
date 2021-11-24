@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="29.36s"
+		durationms="29360"
+		type="root"
+		rid="16334763e664eaee"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="1"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="1"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="1"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="jpawarro"
+		rxversion="9.2.1.0"
+		host="M5334467"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1920x1080"
+		timestamp="4/22/2021 2:43:50 PM"
+		timestampiso="2021-04-22T09:13:50"
+		endtime="4/22/2021 2:44:20 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Success"
+			duration="23.31s"
+			durationms="23309"
+			type="test-suite"
+			rid="bf78001b9a660c8"
+			totalerrorcount="0"
+			totalwarningcount="0"
+			totalsuccesstestcasecount="1"
+			totalfailedtestcasecount="0"
+			totalblockedtestcasecount="0"
+			childsuccesscount="1"
+			childfailedcount="0"
+			childblockedcount="0"
+			totalsuccesscount="1"
+			totalfailedcount="0"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="MyTest123"
+			headertext="MyTest123"
+			runconfigname="TestRun"
+			runlabel="">
+			<params>
+				<param
+					name="AppProcessID">
+				</param>
+			</params>
+			<activity
+				result="Success"
+				duration="23.27s"
+				durationms="23274"
+				type="test-case"
+				rid="213c1e948e753dde"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesstestcasecount="1"
+				totalfailedtestcasecount="0"
+				totalblockedtestcasecount="0"
+				childsuccesscount="1"
+				childfailedcount="0"
+				childblockedcount="0"
+				totalsuccesscount="1"
+				totalfailedcount="0"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="TestCase"
+				testcontainerid="1ef819ba-b4f1-4fba-9e12-43181f2f57b1"
+				headertext="TestCase"
+				displayName="TestCase"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Success"
+					duration="23.25s"
+					durationms="23250"
+					type="test-module"
+					rid="14fe587ca5e35c0"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="Recording1"
+					displayName="Recording1"
+					moduleid="84df5603-0c38-4caf-bf4a-f788cf6eed5f"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.061"
+						timeRelativeToTestModuleStartTime="00:00.015"
+						timeWallClock="14:43:56"
+						time="00:00.061"
+						level="Info"
+						category="Application">
+						<message>
+							Launch<br/>Run application 'C:\Program Files (x86)\TSP MZX\Designer Pro 30.1.24\ProfileConsys.exe' in normal mode.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\Recording1.cs"
+							codeline="83"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.630"
+						timeRelativeToTestModuleStartTime="00:00.584"
+						timeWallClock="14:43:57"
+						time="00:00.630"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'FormMe.NormalText' at 18;12.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@automationid='me']/progressbar/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']/?/?/text[@automationid='normalText']"
+							itempath="progressbar/container[@automationid='PART_AutoHideControl']/?/?/button[@automationid='PART_ApplicationButton']/?/?/text[@automationid='normalText']"
+							fullname="MyTest123Repository.FormMe.NormalText"
+							id="d98df69e1c464a7fab153c67ddf66631"
+							timeout="60000"
+							codefile="c:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\Recording1.cs"
+							codeline="87"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:10.910"
+						timeRelativeToTestModuleStartTime="00:10.863"
+						timeWallClock="14:44:07"
+						time="00:10.910"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'FormMe.TextNew' at 15;15.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@automationid='me']//container[@name='PART_Content' and @caption='New']/text[@caption='New']"
+							itempath=".//container[@name='PART_Content' and @caption='New']/text[@caption='New']"
+							fullname="MyTest123Repository.FormMe.TextNew"
+							id="2d151c135fe94ad2acfeee32f150f325"
+							timeout="60000"
+							codefile="c:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\Recording1.cs"
+							codeline="91"
+							itemindex="2"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.342"
+						timeRelativeToTestModuleStartTime="00:13.295"
+						timeWallClock="14:44:10"
+						time="00:13.342"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'FormMe.SomeText' at 25;11.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@automationid='me']/progressbar/container[20]/text/container[7]/text[@caption='']/text[@caption='']"
+							itempath="progressbar/container[20]/text/container[7]/text[@caption='']/text[@caption='']"
+							fullname="MyTest123Repository.FormMe.SomeText"
+							id="4bad743ae7d9436a8ee5730de583a37a"
+							timeout="60000"
+							codefile="c:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\Recording1.cs"
+							codeline="95"
+							itemindex="3"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:14.876"
+						timeRelativeToTestModuleStartTime="00:14.829"
+						timeWallClock="14:44:11"
+						time="00:14.876"
+						level="Info"
+						category="Keyboard">
+						<message>
+							Key sequence 'United'.
+						</message>
+						<metainfo
+							itemindex="4"
+							codefile="c:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\Recording1.cs"
+							codeline="99"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.221"
+						timeRelativeToTestModuleStartTime="00:15.174"
+						timeWallClock="14:44:12"
+						time="00:15.221"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'FormMe.SomeListItem' at 45;42.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@automationid='me']//text[@caption='Recently Used Markets']/button[2]/list[@automationid='PART_Groups']/listitem[@index='0']"
+							itempath=".//text[@caption='Recently Used Markets']/button[2]/list[@automationid='PART_Groups']/listitem[@index='0']"
+							fullname="MyTest123Repository.FormMe.SomeListItem"
+							id="623aa09e63034c5bac7d7d08d526cd9b"
+							timeout="60000"
+							codefile="c:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\Recording1.cs"
+							codeline="103"
+							itemindex="5"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:18.344"
+						timeRelativeToTestModuleStartTime="00:18.297"
+						timeWallClock="14:44:15"
+						time="00:18.344"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'FormMe.SomeButton' at 25;24.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@automationid='me']/progressbar/container[20]/text/container[6]/button"
+							itempath="progressbar/container[20]/text/container[6]/button"
+							fullname="MyTest123Repository.FormMe.SomeButton"
+							id="c090ef64dd5c421aa7e40a3943f83727"
+							timeout="60000"
+							codefile="c:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\Recording1.cs"
+							codeline="107"
+							itemindex="6"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:19.910"
+						timeRelativeToTestModuleStartTime="00:19.863"
+						timeWallClock="14:44:16"
+						time="00:19.910"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'CreateNewProject.ButtonOK' at 30;12.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@title='Create New Project']/container[1]//button[@text='OK']"
+							itempath="container[1]//button[@text='OK']"
+							fullname="MyTest123Repository.CreateNewProject.ButtonOK"
+							id="b448f89426b6439ebf8b09efc7dd4e76"
+							timeout="60000"
+							codefile="c:\Users\jpawarro\Documents\Ranorex\RanorexStudio Projects\MyTest123\MyTest123\Recording1.cs"
+							codeline="111"
+							itemindex="7"
+							loglvl="Info">
+						</metainfo>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

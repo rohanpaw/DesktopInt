@@ -1,0 +1,496 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyTest123</name>
+    </assembly>
+    <members>
+        <member name="T:MyTest123.AddPanel">
+             <summary>
+            The AddPanel recording.
+             </summary>
+        </member>
+        <member name="F:MyTest123.AddPanel.repo">
+            <summary>
+            Holds an instance of the MyTest123Repository repository.
+            </summary>
+        </member>
+        <member name="M:MyTest123.AddPanel.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:MyTest123.AddPanel.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyTest123.AddPanel.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyTest123.AddPanel.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyTest123.AddPanel.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:MyTest123.AddPanel.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:MyTest123.Close">
+             <summary>
+            The Close recording.
+             </summary>
+        </member>
+        <member name="F:MyTest123.Close.repo">
+            <summary>
+            Holds an instance of the MyTest123Repository repository.
+            </summary>
+        </member>
+        <member name="M:MyTest123.Close.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:MyTest123.Close.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyTest123.Close.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyTest123.Close.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyTest123.Close.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:MyTest123.Close.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:MyTest123.CloseAUT">
+             <summary>
+            The CloseAUT recording.
+             </summary>
+        </member>
+        <member name="F:MyTest123.CloseAUT.repo">
+            <summary>
+            Holds an instance of the MyTest123Repository repository.
+            </summary>
+        </member>
+        <member name="M:MyTest123.CloseAUT.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:MyTest123.CloseAUT.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyTest123.CloseAUT.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyTest123.CloseAUT.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyTest123.CloseAUT.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:MyTest123.CloseAUT.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyTest123.CloseAUT.CloseAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable CloseAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="T:MyTest123.Device">
+             <summary>
+            The Device recording.
+             </summary>
+        </member>
+        <member name="F:MyTest123.Device.repo">
+            <summary>
+            Holds an instance of the MyTest123Repository repository.
+            </summary>
+        </member>
+        <member name="M:MyTest123.Device.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:MyTest123.Device.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyTest123.Device.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyTest123.Device.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyTest123.Device.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:MyTest123.Device.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:MyTest123.MyTest123Repository">
+            <summary>
+            The class representing the MyTest123Repository element repository.
+            </summary>
+        </member>
+        <member name="M:MyTest123.MyTest123Repository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123Repository.Instance">
+            <summary>
+            Gets the singleton class instance representing the MyTest123Repository element repository.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123Repository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123Repository.FormMe">
+            <summary>
+            The FormMe folder.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123Repository.CreateNewProject">
+            <summary>
+            The CreateNewProject folder.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123Repository.AddANewPanel">
+            <summary>
+            The AddANewPanel folder.
+            </summary>
+        </member>
+        <member name="T:MyTest123.MyTest123RepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder">
+            <summary>
+            The FormMeAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new FormMe  folder.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.NormalText">
+            <summary>
+            The NormalText item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.NormalTextInfo">
+            <summary>
+            The NormalText item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.TextNew">
+            <summary>
+            The TextNew item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.TextNewInfo">
+            <summary>
+            The TextNew item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.SomeText">
+            <summary>
+            The SomeText item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.SomeTextInfo">
+            <summary>
+            The SomeText item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.SomeListItem">
+            <summary>
+            The SomeListItem item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.SomeListItemInfo">
+            <summary>
+            The SomeListItem item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.SomeButton">
+            <summary>
+            The SomeButton item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.SomeButtonInfo">
+            <summary>
+            The SomeButton item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.SomeListItem1">
+            <summary>
+            The SomeListItem1 item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.SomeListItem1Info">
+            <summary>
+            The SomeListItem1 item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.PARTExpandButton">
+            <summary>
+            The PARTExpandButton item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.PARTExpandButtonInfo">
+            <summary>
+            The PARTExpandButton item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.BuiltInLoopA0Of125">
+            <summary>
+            The BuiltInLoopA0Of125 item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.BuiltInLoopA0Of125Info">
+            <summary>
+            The BuiltInLoopA0Of125 item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.Text813P">
+            <summary>
+            The Text813P item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.Text813PInfo">
+            <summary>
+            The Text813P item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.CP820">
+            <summary>
+            The CP820 item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.CP820Info">
+            <summary>
+            The CP820 item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.PARTCloseButton">
+            <summary>
+            The PARTCloseButton item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.FormMeAppFolder.PARTCloseButtonInfo">
+            <summary>
+            The PARTCloseButton item info.
+            </summary>
+        </member>
+        <member name="T:MyTest123.MyTest123RepositoryFolders.CreateNewProjectAppFolder">
+            <summary>
+            The CreateNewProjectAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:MyTest123.MyTest123RepositoryFolders.CreateNewProjectAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new CreateNewProject  folder.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.CreateNewProjectAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.CreateNewProjectAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.CreateNewProjectAppFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.CreateNewProjectAppFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="T:MyTest123.MyTest123RepositoryFolders.AddANewPanelAppFolder">
+            <summary>
+            The AddANewPanelAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:MyTest123.MyTest123RepositoryFolders.AddANewPanelAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new AddANewPanel  folder.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.AddANewPanelAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.AddANewPanelAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.AddANewPanelAppFolder.ButtonOK">
+            <summary>
+            The ButtonOK item.
+            </summary>
+        </member>
+        <member name="P:MyTest123.MyTest123RepositoryFolders.AddANewPanelAppFolder.ButtonOKInfo">
+            <summary>
+            The ButtonOK item info.
+            </summary>
+        </member>
+        <member name="T:MyTest123.Recording1">
+             <summary>
+            The Recording1 recording.
+             </summary>
+        </member>
+        <member name="F:MyTest123.Recording1.repo">
+            <summary>
+            Holds an instance of the MyTest123Repository repository.
+            </summary>
+        </member>
+        <member name="M:MyTest123.Recording1.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:MyTest123.Recording1.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyTest123.Recording1.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyTest123.Recording1.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyTest123.Recording1.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:MyTest123.Recording1.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:MyTest123.StartAUT">
+             <summary>
+            The StartAUT recording.
+             </summary>
+        </member>
+        <member name="F:MyTest123.StartAUT.repo">
+            <summary>
+            Holds an instance of the MyTest123Repository repository.
+            </summary>
+        </member>
+        <member name="M:MyTest123.StartAUT.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:MyTest123.StartAUT.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:MyTest123.StartAUT.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:MyTest123.StartAUT.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:MyTest123.StartAUT.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:MyTest123.StartAUT.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:MyTest123.StartAUT.StartAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable StartAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="T:__RxMain.__RxProgram">
+            <summary>
+            Modified Program class that ensures that the Ranorex System gets initialized and cleaned up
+            correctly. This file is auto-generated during project build. This class will invoke the
+            original 'Main' method implementation as needed.
+            </summary>
+        </member>
+        <member name="M:__RxMain.__RxProgram.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">Contains any number of command line arguments.</param>
+            <returns>The return value of the projects original 'Main' implementation.</returns>
+        </member>
+    </members>
+</doc>
